@@ -1,0 +1,246 @@
+# Chapter 1: Historical Roots of Relativity
+
+## Experimental Foundation
+
+Before the 1900's, a popular theory about the propagation of light waves
+was that they traveled in some medium called the 'ether'. The 'ether' plays the analogous role that the air plays in the propagation of sound. The
+physical properties of the air determine the speed of the sound waves. In the case of the 'ether', it supported a speed of propagation of 3.0 x 108m/sec. Following the usual practices of physics, the validity of this theory would be determined by experiments. As a test of this theory, in 1881, Michelson did an experiment to measure the relative velocity of the ether with respect to
+the earth. The 'best' ether theory of the time suggested that the ether was at rest with respect to the fixed stars. The earth orbits the sun once a year at an orbital speed of about 3.0 x 104 m/sec. If a light beam on earth travels in the same direction as the orbital motion about the sun, then that beam of
+light is in a frame of reference that is moving at 3.0 
+x 104 m/sec with
+respect to the speed of the ether. If the beam of light is heading towards the sun, it is moving in a frame of reference that is at respect to the ether.
+Michelson designed an interferometer (schematically shown in Figure 1.1) that used partially silvered mirrors to split a beam of light into two legs that were at right angles to each other. By careful examination of the interfer- ence of the light after it traveled along the two beam lines and was recom- bined by the partially silvered mirrors, he could measure a difference in speed of light in the two arms of about 300 rn/sec, much smaller than the orbital speed of the earth about the sun. The interferometer was floated on a pot of mercury and allowed to rotate slowly. During a rotation of 360 aegrees, at one time one or the iegs woula be puiniing in ttie Jiiectiun of motion of the earth (moving with respect to the ether) and the other at rest with respect to the ether. A quarter of a turn later, the light in the arm that
+half silvered mirror
+mirror 1
+beam line 1
+recombined beam line
+Figure 1.1
+Schematic diagrain of the interferometer designed by Michelson to detect the stationary ether.
+velocity of the earth with respect to ether
+beam line 2
+a
+mirror 2
+ Experimental Background Introduction to Special Relativity
+was at rest with respect to the ether would be moving and vice versa. This anticipated change in the speed of light when the either was at rest with respect to the mirrors or moving with respect to the mirrors in the other arm could be detected in the changing of the interference pattern of the com- bined beams.
+Much to Michelson's surprise, he measured no difference in speed as the arm was at rest with respect to the ether or moving with respect to the ether. Michelson had this terse description of the experiment: "The interpretation
+of these results is that there is no displacement of the interference bands. ... The result of the hypothesis of a stationary ether is thus shown to be incorrect." (A. A. Michelson, Am. J. Sci, 122, 120 (1881)).
+Michelson was encouraged by some important English physicists to
+continue his research. Along with E.W. Morley, he built a much bigger interferometer that had multiple mirrors and was 10 times as sensitive to the relative motion. He could measure a relative velocity of 30 rn/sec. Again, they found no difference in the speed in the two arms. (A. A. Michelson
+and E. W. M6rley, Am. J. Sci., 134, 333 (1887)). The experiment was repeated often over the next few years, at even greater precision, but always gave the same nul result: there is no stationary ether. As a consequence of his careful and brilliant work about the nature of the propagation of light, Michelson was awarded the Nobel prize in 1907.
+As with most interesting experiments, Michelson got a result that did not agree with his intuition about the outcome of the experiment. After a number of very bright physicists examined these results, a relatively simple ar.d rather clever model was developed that agreed with the experimental results.
+1.1 Model to describe the experimental results.
+One interpretation of Michelson's experimental results is to say that every inertial (moving at constant speed... not accelerating) observer measures that light travels at the same speed. (This is quite in contrast to how sound moves ttu'ough the air. If I am moving towards the source, the sound seems to be traveling faster than when I am moving away from the source of the sound.) If an inertial observer measures the speed of the photons
+that come from a flashlight that she holds in her hand, she would get the value c = 3.0 x 108 m/s. If a second observer, moving at a speed of 2.8 x 108 rubs away from (or towards) the flash light would also measure the speed of the photons emitted by that same flashlight to be c, precisely the same value as the other observer. This is intuitatively absurd, but it agrees with the experiments, so it is a 'not wrong' model for the propagation of light.
+The next step in developing the model is to transform this literary statement into mathematical terms so that quantitative predictions can be made. Consider a point source emitting light waves in three dimension. An observer would see the light waves traveling out in the shape of a sphere whose radius is dependent of time (as seen in Figure 1.2). As the light is emitted, in some very small time interval dt, the wave front makes a spherical shape of radius r = c dt. The 3-dimensional equation for a spherical shape centered at the origin is:
+x2+y2+z2= ?
+Using the distances in Figure 1.2, equation 1.O becomes:
+(1.0)
+(1.1)
+
+ Introduction to Special Re(ativity Experimental Background
+where dx, dy, and dz are how much the observer measured the wave front to
+propagate in time dt, and c is the speed of light as measured by the observer.
+If a second inertial observer, traveling at a speed vH in the x direction with respect to the first observer (the observer who is moving with respect to the primed coordinate system shown in Figure 1.3) were to observer the same event (the wave front of the light propagating away from the point source), what should be seen? Common sense says that the wave front should not longer seem to be spherical, but should appear to be oblate (a squashed sphere). However, what Michelson found was that this spherical wave had to look the same to this observer as it appeared to the first observer. Other- wise, the second observer would measure a different velocity for the light wave. What the observer in the primed reference frame measures is a spherical wave that propagates outward at the same speed as shown in
+Equation 1.1 !. The second (or primed) observer also sees a spherical wave, but this time, as shown in Figure 1.3, the observer measures:
+(dx')2 + (dy')2 + (dz')2 = (C dl)2 (1.2)
+where dx', dy', and dz'are how much the second observer measured the wave front to propagate in time dt', and c (not c ") is the speed of light.
+Equations 1. 1 and 1.2 can be combined to be:
+((!X)2+ (a'y)2+ (dz)2 - (c dt)2 = (*')2 + (dy')2 + (dz')2 - (C dl)2 (1.3)
+It appears that there is a sum of squares of measured displacements and time intervals for the measurement of the propagation of the wave front of a light wave that are the same for each of the two observers (moving with respect
+to each other) that remains constant. This statement can be written as a conservation law. The sum:
+(d-)2-(dJ)2-(d=)2 -(-d=)o
+(1.4)
+must remain constant. This conservation law is quite different from what Newton and company thought was 'conserved' in the measurement of the motion of an thing. In the Newtonian world, the value of dt would be the same for both observers, not this strange looking sum. But, if this model
+Figure 1.2
+A spherical pulse of Liglit propagating outward at speed c as seen by two
+different inertial observers. The displacements shown are those measured by the unprimed observe.
+c dt
+)X'
+X
+
+ I
+R
+Experimental Background Introduction to Special Relativity
+agrees with the experiments, it is not wrong; even if it disagrees with Newton's model.
+1.2 4-vectors
+Equation 1.4 is the form of a 4 dimensional Pythagorean theorem, except for the - sign in the last term. Equation 1.4 can be put in the form of the Pythagorean theorem by introducing the complex number book keeping symbol j. This symbol keeps track of the imaginary part (a physically real number) of a complex number. The symbol j has no value in itself, but:
+y2, , s
+if there were a 4-dimensional object with elements:
+jc dt
+the size can be defined using the 4-dimensional Pythagorean theorem
+size=(dx)2+(dy)2*(dz)2*(jcdt)2=(dx)2+(dy)2*(dz)2-(cdt)2 The - sign appearsbecause of the f = -l term in equation 1.7.
+(1.5)
+(1.6)
+(1.7)
+What a person measures when Jight propagates is a set of 4 things, the three components of the physical displacement and the time interval it took to make this displacement. These values, when arranged as in equation 1.6, can be thought of as 4 components of a vector. The vector is called the
+displacement
+4-vector
+for the
+events:
+jc dt
+Figure 1.3
+A spherical light wave propagating outward. The distances sliown are those
+measuredby tlie observer in tlie primed referenceframe.
+)X
+(1.8)
+
+ Introduction to Special Relativity Experimental Background
+The results of Michelson-Morley experiment demand that the size of this 4- vector:
+[a4]-[a4] = [a4]i2=(=b)2-(=='y)2-(gz)2-(-,*)2 (1.9) has the same value for all inertial observers. The dot in Equation 1.9 is the vector dot product. Taking the (positive) square root of equation 1.9 shows how to calculate the size of the displacement 4-vector.
+IIdR.)i=4(d=)2-(dJ)2--((=-&d-)2)"
+(1.10)
+exainple 1.0
+An observer sees two events occuring. She measures a physical displace-
+ment of dx = 1.20 /7?, dy = 2.00 in and dz = 0.00 m. Tlie time interval between these events is measured to be O.0100 micro seconds. Write down
+tlie eleinents of the displacen'ient 4 vector measured by this observer and find the size of this displaceinei;it 4 vector.
+The displacement 4-vector is shown in equation 1.8. Thefirst 3 elements are given in the problem. What I need to do is to calculate the size of the
+4th eleinent. nentisj3.00in.
+cdt = 3 x 108 inks (1.00 x 10-8 s) = 3.00 in. Tlie 4th coinpo- Thedisplacement4-vectorfortliesetwoeventsis:
+tl'ie size of this displaceinent 4 vector is: V(1.270?2+)(2.00m)2+ (0.00/72)-2(3.00/71)=2?
+= j 1.89/?Z
+Event 1
+Event 2
+1.20 m 2.00 m 0.00 m
+j 3.00 /72
+The key to using this model of special relativity to describe physically real happenings is to be able to write down the displacement 4-vector for that happening. To do this, there must be two events occurring, events which both observers can detect. Then, each observer measures the physical displacements andthe time interval between the two events and converts them into the components of the displacement 4-vector as shown in Equa- tion 1.8.
+dx
+muon
+muon
+Figure 1.4
+electron
+Two observers watching the decay of a pion into a muon wliich in turn decays into an electron in a bubble chamber.
+
+ I
+Experimental Background Introduction to Special Relativity
+1.3 Some 'Relativistic' situations Creation and decay of a muon
+Consider the following interesting happening. A pion is traveling along in a bubble chamber, leaving a track of bubbles. At some time and place, it decays into a muon. I know that something happens because the track of bubbles changes direction. The muon moves on for a while and then decays into an electron. Again, I know this happens because the bubble track
+changes direction. The two events are the change in direction of the tracks as shown in Figure 1.4.
+Each observer measures the physical displacement between the events (in this case only in the x direction) and the time interval that it took for the muon to decay. These values and then put into the 4-vector format:
+displacement
+in the x-direction of the distance between earth and Alpha
+l
+Event 1 leaving
+Earth-A(phaCentauri l
+(3 = 0.75 - R
+earth
+Event arrmng Alpha
+2
+at
+Centauri a
+[a4i.,. =
+"!"lnuOli o
+o
+J c dfmuoii
+(1.10)
+If the results for the Michelson-Morley
+events, then the values of the components of the displacement 4-vector that each observer measures should be related to each other in such a manner
+that the length of the displacement 4-vector remains constant, yet each of the components can be different.
+A space ship traveling between Earth andAlpha Centaxiri at O.75 the speed of light
+For this scenario, there are two reference frames that are of interest: the one that is at rest with respect to the space ship and another that is at rest with respect to the earth. The two events will be the departure from earth and the arrival at alpha centauri. The relative speed between these two observers is
+just the speed of the space ship in the direction of Alpha Centauri. The events can be diagrammed as shown in Figure 1.5.
+The observer that is at rest with respect to the earth will measure a physical
+Figure 1.5
+Diagram for a space ship traveling from Earth to Mplia Ceritauri. The space ship is traveling at (J= 0.75
+experiment
+are to be valid for all
+
+ Introduction to Special Relativity Experimental Background
+Centauri of 4.2 light years. There will be no physical displacement in the y or z directions. There will be some time interval dt,,yH that the earth based observer will measure for the trip. Since we know the velocity that the space is traveling with respect to the earth, the time it takes to get to the star in the earth's reference frame is
+*enmi 4.2 /y dfa"' a vrockeisl+ip O.75 C
+The displacement 4-vector that the earth based observer is:
+4.2 /y
+4.2 /)I oo oo
+*enmi
+J c"tenmi
+o
+o
+4.2 /y ' CO.75 c
+(1.11)
+The observer aboard the space craft experiences these same two events: leaving the earth and arriving at Alpha Centauri. They both seem to occur just outside of the window of the space craft. There is no displacement between these two events! dxSp,,,,ryI = 0. The observer aboard the space craft will measure some time interval, dtspa,,c,a(1 between the time he sees the earth outside of his window and sees alpha centauri outside the window. The observer aboard the space craft measures a displacement 4-vector:
+The Michelson-Morley vectors be the same:
+experiment demands that the size of these two 4-
+["""']spncecraft-
+J Ca'tspncecriift
+('ennh)2- (c d(ei)2 a - (c dcspiiceraft)2
+(1.13)
+The - signs come about because j 2 = -1. Doing a bit of algebra on equation 1.13 gives:
+/ I&.,I
+(1.14)
+The time as measured by the observer aboard the space craft is smaller than the time as measured by an observer on the earth. This rather surprising
+result is given the name tirne dilation. This is quite different from what one would expect if this problem was set up using Newtonian mechanics.
+It is iinportant to note here that equation 1.14 is about the measureinentof tiine, not the aging process. The aging process (and consequently things
+suCh as dates) lias to do with tlie concept of entropy rather than that of tiine.
+The best theories about tjie nature of time are that it is reversible. If you
+change the sign of the time interval, it does not change the physics of what is happening. This is not true about entropy changes.
+1.4 Rest Frame and Time Dilation
+When an observer does not measure any physical displacement between two
+o o o
+(1.12)
+j5.6 /)l
+
+ Experimental Background Introduction to Special Relativity
+events, dx = dy = dz = 0, the observer is said to be in the rest frame of the events. All that is different about the two events is the time between them dtO. The o subscript is used to indicate that it is the time measured in the rest frame of the events. If a second observer is moving with respect to the rest frame, equation 1.14 can be used to determine the time measured in that reference frame. The term didt in the denominator of the right hand side of equation 1.14 is the speed that the second observer measured the rest frame to be traveling. We can simplify equation 1.14 by introducing a new notation. The speed of an object v, relative to the speed of light, c, is given the symbol B:
+(1.15)
+Equation 1.14 can be written in terms of B as
+"tSpuCcemft: dfeamir- 2 (1al6) The space craft is in the rest frame of the events, and the earth is moving
+with respect to this rest frame, so we can rewrite equation 1.16 as:
+dtg=dtll, (1.17)
+Example 1.1
+Ilie half-life for a muon is 2.20 x / 0-6seconds as ineasured in the rest frame of the muon. An particle accelerator, in the laboratory reference frame, produces beain of a large number of muons, traveling at a speed
+v = 2.900 x 108 mis is observed in the laboratory. Find the half-life of the rnuons as measured by the observer in the laboratory frame of reference.
+The vagueof dtO = 2.20xl0-6 s. What I am looking for is dt. Equation 1.1 7
+relates the two. What I need is to figure out a value for fi.
+fJ= 2.900x108rn/s/(3.000x10arn/s)=.9666. Thesquarerootof(1-fi2)
+has a value of O.256. so
+1.5 Space-Time diagrams
+dt =
+2.:h'l0-6s 0.256
+-e, = 8.59xlO s
+Another graphical way of representing the two events to to make a plot
+where one of the axes is time (or c dt) and the other position. Since the person working the problem gets to choose the x direction, it is often most useful to pick the physical displacement of the events to be in the x-
+direction. The laboratory space-time diagram for Example 1.1 is shown in Figure 1.6. The two events, the creation and decay of the muon are shown as asterisks. The time interval calculated in the laboratory frame between the creation and decay of the muon is 8.59xl0-6 s., so cdt = 2.58xl03 m.
+The muon is traveling with respect to the laboratory frame at a speed j3 = .9666, so the distance it travels in this time dx = v dt = p cdt = 2.43xl03 m. Figure 1.7 shows these same two events as seen by an observer in the rest frame of the pion.
+1.6 Summary
+This model of special theory of relativity tells how to analyze the measure- ments made by two different inertial observers detecting what is different about two well defined events.
+
+ Introduction
+to Special
+Relativity
+Experimental
+Background
+T
+Event2
+decay of muon
+T
+Event 2 decay pf muon
+Event 1 creation of muon
+Figure 1.7
+ISR ->
+ISH ->
+I
+ffl
+If
+Event
+creation of muon
+I
+dx
+muon
+c dt
+)X
+muon
+Figure 1.6
+Drawing ofthespacetimediagrainfor thetwoeventsdiscussedinExainple 1.1 as seen by an observer in the laboratoty
+The first step is to draw the space-time diagram for the events, identifying
+the two reference frames that correspond to each of the intertial observers. The primed observer (the outer co-ordinate system) moves with relative speed (3H with respect to the unprimed observer (inner co-ordinates) in the direction shown by the arrow.
+Once the displacement and time interval for each observer is identified, the data for each observer are organized as a 4-vector.
+Drawing of tlie space-time diagram for the two events discussed in Exainp[e 1.1 as seen by an observer in the restframe of the muon
+)X
+
+ I
+The size of the two displacement 4-vectors is found using the 4 dimensional Phthagorean theorem:
+[d?.]-[a.]=I[=={fl.]l'(=h)'-(-'.,=)a-(=='=)'(-d-)a
+[a.]'-[a.]'=i[a.]'l'(=b')a-(=/,')a-(=&')'(-={-')a The size of the two 4-vectors must be the same
+(dx)2+ (a'y)2+ (a'z)2- (c dt)2= (*')2 + (a'y')2+ (a'z')2- (C dl)2
+The elements of the displacement 4-vector measured by two inertial
+observers traveling at some speed relative to each other must be dependent on each other and the relative speed of the two observers. There must be a way of transforming the displacement 4-vector as measured by one ob- server to the displacement 4-vector as measured by the other observer.
+
