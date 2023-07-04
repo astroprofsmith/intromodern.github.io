@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Introduction to Modern Physics &#8212; Introduction to Modern Physics</title>
+    <title>Chapter 3: Four Vectors &#8212; Introduction to Modern Physics</title>
   
   
   
@@ -61,10 +61,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'c3fourvectors';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Chapter 1: Roots of Relativity" href="c1evidence.html" />
+    <link rel="prev" title="Chapter 2: Postulates of Relativity" href="c2postulates.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -130,7 +132,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -149,16 +151,16 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Introduction to Modern Physics
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="c1evidence.html">Chapter 1:  Roots of Relativity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c2postulates.html">Chapter 2:  Postulates of Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="c3fourvectors.html">Chapter 3: Four Vectors</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 3: Four Vectors</a></li>
 </ul>
 
     </div>
@@ -230,7 +232,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fc3fourvectors.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -260,7 +262,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/c3fourvectors.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -329,7 +331,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -340,11 +344,19 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduction to Modern Physics</h1>
+    <h1>Chapter 3: Four Vectors</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-as-a-dimension">Time as a Dimension</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -354,18 +366,136 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-modern-physics">
-<h1>Introduction to Modern Physics<a class="headerlink" href="#introduction-to-modern-physics" title="Permalink to this heading">#</a></h1>
-<p>This book covers an introduction to Special Relativity as well as an
-exploration of particle and nuclear physics, leading up to the Standard
-Model.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="c1evidence.html">Chapter 1:  Roots of Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="c2postulates.html">Chapter 2:  Postulates of Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="c3fourvectors.html">Chapter 3: Four Vectors</a></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-3-four-vectors">
+<h1>Chapter 3: Four Vectors<a class="headerlink" href="#chapter-3-four-vectors" title="Permalink to this heading">#</a></h1>
+<section id="time-as-a-dimension">
+<h2>Time as a Dimension<a class="headerlink" href="#time-as-a-dimension" title="Permalink to this heading">#</a></h2>
+<p>At the end of the last chapter, we argued that if the speed of light
+was to be invarient – to be measured the same in any reference frame
+– then the quantity <div class="math notranslate nohighlight">
+\[dx^2 + dy^2 + dz^2 - c^2dt^2\]</div>
+ must also be
+invariant across reference frames.  This formulation looks a lot like
+a kind of 4 dimensional Pythagorean theorem, except for the minus sign
+in the last term.  If it were not for that minus sign, we could well
+imagine we were looking at the magnitude of a four-dimensional
+displacment vector, just adding time as a new component.  If a
+spacial displacement vector is <span class="math notranslate nohighlight">\(d\vec{r} = (dx,dy,dz)\)</span>, and its
+magnitude is <span class="math notranslate nohighlight">\(dx^2+dy^2+dz^2\)</span>, perhaps it would make sense to have
+a four-dimensional vector <span class="math notranslate nohighlight">\(dx_4 = (cdt,dx,dy,dz)\)</span>, except that
+if we were to square each term and add them up, we would get
+<span class="math notranslate nohighlight">\(+c^2dt^2\)</span>, not minus.  We need a way to remember to include that
+minus sign.</p>
+<p>There are two ways of keeping track of the minus sign.  One is simpler
+for the beginner, and the other makes the more complicated material
+later easier to manage.  The simpler way is to introduce complex
+numbers as a bookkeeping trick.  If <span class="math notranslate nohighlight">\(i^2 = -1\)</span>, then we can write
+the time component of the vector as <span class="math notranslate nohighlight">\(icdt\)</span>, and its square will be
+<span class="math notranslate nohighlight">\(-c^2dt^2\)</span>.  This method ensures that the minus sign always goes in
+the right place.  There is nothing physical or mysterious about the
+<span class="math notranslate nohighlight">\(i\)</span>; it is no more and no less than a handy way to keep track of where
+to put the minus sign.  It always shows up in the time component of the
+four-vector, and it never shows up in the space components.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you ever see a time component without an <span class="math notranslate nohighlight">\(i\)</span>, or find an <span class="math notranslate nohighlight">\(i\)</span> in
+a space component, then you have made a mistake in your math somewhere.</p>
 </div>
+<p>With this tool, we can define a displacement four-vector as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-76101371-a7ec-4c09-9c18-d7909b75438e">
+<span class="eqno">(6)<a class="headerlink" href="#equation-76101371-a7ec-4c09-9c18-d7909b75438e" title="Permalink to this equation">#</a></span>\[\begin{equation}
+[dx_4] =
+\begin{bmatrix}
+icdt\\
+dx\\
+dy\\
+dz
+\end{bmatrix}
+\end{equation}\]</div>
+<p>The “size” of this four-dimensional object would then be <div class="math notranslate nohighlight">
+\[[dx_4]^2 =
+dx^2 + dy^2 + dz^2 - c^2dt^2.\]</div>
+ We need a better word than “size”, but
+“magnitude” is not a good choice, because we are so used to how
+magnitudes work with three-dimensional vectors.  The magnitude of a
+three-vector is always positive (unless all three of its components
+are zero), but <span class="math notranslate nohighlight">\([dx_4]^2\)</span> could be positive, negative, or zero!
+For a displacement four-vector, we call the size the “interval”, but
+there isn’t a better word than “size” for other four vectors.</p>
+<p>What a person measures when light propagates is a set of four things:
+the three components of the physical displacement and the time
+interval it took to make this displacement. These values, when
+arranged as above, can be thought of as 4 components of a
+vector.  The vector is called the displacement 4-vector for the events.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>There is no consensus on what order to put the four components.
+Some people put the three space components first and time in the
+fourth position.  My own preference is to count from zero and put
+time in the zeroth (first) position.  Then the space components
+are still 1, 2, and 3, but time is a bit different, just like zero
+is a bit different from the positive integers.  Having time first
+also makes writing easier.  We often don’t need to use <span class="math notranslate nohighlight">\(y\)</span> or <span class="math notranslate nohighlight">\(z\)</span>,
+but if you put time last, you always need to write all four.  If you
+put time first, you can sometimes only write the first two.  Finally,
+if you find yourself in the unusual circumstance of needing to have
+more than three spacial dimensions, it is easy to add 4, 5, 6, and so
+on, but if time is in space four, then you have space dimensions
+1, 2, 3, 5, 6, 7, etc., which is confusing and harder to program in
+a computer.</p>
+</div>
+<p>In general, a four vector is an object with four components,
+one of which gets a minus sign when you square the components,
+and the other three have the properties of normal three vectors.
+The size of any four vector is the same in any inertial reference
+frame, and to convert a four vector from one frame to another,
+there is a specific procedure one must follow (see Chapter 4).</p>
+<p>The second way involves being aware of a distinction between covariant
+and contravariant four-vectors.  The mathematical details are not
+necessary at this stage, but suffice to say that the contravariant
+version of a four vector should be written as a column, as in Equation
+6, only without the <span class="math notranslate nohighlight">\(i\)</span>.  The standard notion is to use a superscript
+greek letter to refer to the components, where the Greek letter could
+stand for 0, 1, 2, or 3.  So</p>
+<div class="amsmath math notranslate nohighlight" id="equation-bcfa7374-d051-4e9a-b66d-989312889528">
+<span class="eqno">(7)<a class="headerlink" href="#equation-bcfa7374-d051-4e9a-b66d-989312889528" title="Permalink to this equation">#</a></span>\[\begin{equation}
+dx^\alpha =
+\begin{bmatrix}
+cdt\\
+dx\\
+dy\\
+dz
+\end{bmatrix}
+\end{equation}\]</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The superscript here does NOT mean “raised to the power of”.  In this
+notation, <span class="math notranslate nohighlight">\(dy\)</span> would be written <span class="math notranslate nohighlight">\(dx^2\)</span>, but the 2 does not mean squared,
+it means the third component of the contravariant four-vector.  If
+people are using this notation, you have to be aware from the context
+whether they mean a contravariant component or an exponent.</p>
+</div>
+<p>There is also a covariant version of the four-vector, which is written
+as a row with a subscript Greek letter, but also includes the minus sign:
+<span class="math notranslate nohighlight">\(dx_\alpha = [-cdt,dx,dydz]\)</span>.  For the four vectors we are considering,
+<span class="math notranslate nohighlight">\(dx_0 =-dx^0\)</span>, but <span class="math notranslate nohighlight">\(dx_1=dx^1\)</span> and so forth.  So if you multiply the
+two together, according to the rules of multiplying matrices,
+<div class="math notranslate nohighlight">
+\[dx_\alpha dx^\alpha = dx_0dx^0 + dx_1dx^1+dx_2dx^2+dx_3dx^3\]</div>
+
+<div class="math notranslate nohighlight">
+\[dx_\alpha dx^\alpha = -dx^0dx^0 + dx^1dx^1+dx^2dx^2+dx^3dx^3\]</div>
+
+<div class="math notranslate nohighlight">
+\[dx_\alpha dx^\alpha = -c^2dt^2 + dx^2+dy^2+dz^2\]</div>
+
+where in that last equation, the 2 does mean squared.</p>
+<p>In this notation, whenever there is a Greek letter that appears twice,
+once up and once down, that is a shorthand for “multiply across the
+row and down the column and add them up”.  It plays the same role as a
+dummy variable in integration, and therefore does not appear in the
+result.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -399,14 +529,14 @@ Model.</p>
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="right-next"
-       href="c1evidence.html"
-       title="next page">
+    <a class="left-prev"
+       href="c2postulates.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Chapter 1:  Roots of Relativity</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Chapter 2:  Postulates of Relativity</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
@@ -417,6 +547,20 @@ Model.</p>
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-as-a-dimension">Time as a Dimension</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

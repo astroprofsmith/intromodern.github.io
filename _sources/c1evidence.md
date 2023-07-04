@@ -153,7 +153,7 @@ evidence that some of the light from the stars is getting here faster
 than other light.
 
 ```{image} images/SR_LC.png
-:alt: fishy
+:alt: lightcurveSR
 :class: bg-primary mb-1
 :width: 700px
 :align: center
@@ -161,7 +161,7 @@ than other light.
 ```
 
 ```{image} images/nonSR_LC.png
-:alt: fishy
+:alt: lightcurve_noSR
 :class: bg-primary mb-1
 :width: 700px
 :align: center
