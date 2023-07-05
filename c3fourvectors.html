@@ -355,6 +355,8 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-as-a-dimension">Time as a Dimension</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spacetime-diagrams">Spacetime Diagrams</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-four-vectors">Examples of Four Vectors</a></li>
 </ul>
             </nav>
         </div>
@@ -371,7 +373,7 @@ document.write(`
 <section id="time-as-a-dimension">
 <h2>Time as a Dimension<a class="headerlink" href="#time-as-a-dimension" title="Permalink to this heading">#</a></h2>
 <p>At the end of the last chapter, we argued that if the speed of light
-was to be invarient – to be measured the same in any reference frame
+was to be invariant – to be measured the same in any reference frame
 – then the quantity <div class="math notranslate nohighlight">
 \[dx^2 + dy^2 + dz^2 - c^2dt^2\]</div>
  must also be
@@ -402,8 +404,8 @@ four-vector, and it never shows up in the space components.</p>
 a space component, then you have made a mistake in your math somewhere.</p>
 </div>
 <p>With this tool, we can define a displacement four-vector as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-76101371-a7ec-4c09-9c18-d7909b75438e">
-<span class="eqno">(6)<a class="headerlink" href="#equation-76101371-a7ec-4c09-9c18-d7909b75438e" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-12f0d177-6181-498a-814d-60b58734bc91">
+<span class="eqno">(6)<a class="headerlink" href="#equation-12f0d177-6181-498a-814d-60b58734bc91" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4] =
 \begin{bmatrix}
 icdt\\
@@ -435,11 +437,11 @@ fourth position.  My own preference is to count from zero and put
 time in the zeroth (first) position.  Then the space components
 are still 1, 2, and 3, but time is a bit different, just like zero
 is a bit different from the positive integers.  Having time first
-also makes writing easier.  We often don’t need to use <span class="math notranslate nohighlight">\(y\)</span> or <span class="math notranslate nohighlight">\(z\)</span>,
+also saves writing.  We often don’t need to use <span class="math notranslate nohighlight">\(y\)</span> or <span class="math notranslate nohighlight">\(z\)</span>,
 but if you put time last, you always need to write all four.  If you
 put time first, you can sometimes only write the first two.  Finally,
 if you find yourself in the unusual circumstance of needing to have
-more than three spacial dimensions, it is easy to add 4, 5, 6, and so
+more than three spatial dimensions, it is easy to add 4, 5, 6, and so
 on, but if time is in space four, then you have space dimensions
 1, 2, 3, 5, 6, 7, etc., which is confusing and harder to program in
 a computer.</p>
@@ -452,13 +454,13 @@ frame, and to convert a four vector from one frame to another,
 there is a specific procedure one must follow (see Chapter 4).</p>
 <p>The second way involves being aware of a distinction between covariant
 and contravariant four-vectors.  The mathematical details are not
-necessary at this stage, but suffice to say that the contravariant
-version of a four vector should be written as a column, as in Equation
-6, only without the <span class="math notranslate nohighlight">\(i\)</span>.  The standard notion is to use a superscript
-greek letter to refer to the components, where the Greek letter could
-stand for 0, 1, 2, or 3.  So</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bcfa7374-d051-4e9a-b66d-989312889528">
-<span class="eqno">(7)<a class="headerlink" href="#equation-bcfa7374-d051-4e9a-b66d-989312889528" title="Permalink to this equation">#</a></span>\[\begin{equation}
+necessary at this stage (see Appendix?), but suffice to say that the
+contravariant version of a four vector should be written as a column,
+as in Equation 6, only without the <span class="math notranslate nohighlight">\(i\)</span>.  The standard notion is to use
+a superscript greek letter to refer to the components, where the Greek
+letter could stand for 0, 1, 2, or 3.  So</p>
+<div class="amsmath math notranslate nohighlight" id="equation-c5e91f4e-0345-492f-8fc2-d52ecfe8c661">
+<span class="eqno">(7)<a class="headerlink" href="#equation-c5e91f4e-0345-492f-8fc2-d52ecfe8c661" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dx^\alpha =
 \begin{bmatrix}
 cdt\\
@@ -495,6 +497,111 @@ once up and once down, that is a shorthand for “multiply across the
 row and down the column and add them up”.  It plays the same role as a
 dummy variable in integration, and therefore does not appear in the
 result.</p>
+<p>Once you have the concept of a four-vector, mathematically, it is
+useful to also have a method of displaying them, graphically.  Such a
+graph is called a “spacetime diagram”.  I will give a brief
+introduction to them here, and then we will explore their properties
+in much more depth in the next chapter.</p>
+</section>
+<section id="spacetime-diagrams">
+<h2>Spacetime Diagrams<a class="headerlink" href="#spacetime-diagrams" title="Permalink to this heading">#</a></h2>
+<p>Superficially, a spacetime diagram hardly seems worthy of its own
+distinct name: the convention is to use the vertical axis to represent
+time measurements (clock readings), and the horizontal axis to represent
+one of the spatial dimensions (ruler readings).  Traditionally, we choose
+to call this space axis <span class="math notranslate nohighlight">\(x\)</span>.  These are usually all the dimensions we
+have on a two-dimensional display like a computer screen, although we
+can cheat a little by adding a second spatial dimension in projection,
+coming out of the screen.  A three-dimensional representation of such a
+spacetime diagram is shown in Figure 3.1, along with some common features.</p>
+<p>It is also traditional to multiply the time axis by <span class="math notranslate nohighlight">\(c\)</span>, using <span class="math notranslate nohighlight">\(ct\)</span> as
+the dimension, rather than just <span class="math notranslate nohighlight">\(t\)</span>.  This has two benefits: first,
+this turns the dimensions of the axis from time into space, which
+allows it to have the same scale as the horizontal axis.  This makes
+it possible to compare lengths on both axes, which otherwise would
+have different dimensions and therefore be incomparable (which is
+bigger, one second or one meter?).  Also, the displacement four vector
+has a time component of <span class="math notranslate nohighlight">\(cdt\)</span>, so having the <span class="math notranslate nohighlight">\(c\)</span> included in the axis
+means that distances on the diagram can accurately represent the
+components of the displacement four-vector.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html">
+        <iframe
+            width="800"
+            height="600"
+            src="https://glowscript.org/#/user/dasmith/folder/Public/program/SRspacetimediag"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Figure 3.1 – Three-dimensional spacetime diagram, which you can
+rotate to observe from different angles.  Events are represented as
+two spheres: orange and purple.  The displacement four vector between
+them is black.  The projections of this four vector are also drawn
+within each of the three planes.  The black arrow in the magenta plane
+would be the spatial displacement (in <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> only, not <span class="math notranslate nohighlight">\(z\)</span>),
+while the cyan and yellow planes also include the elapsed time between
+the events.  Click and drag to rotate the “cube” so that you are
+looking face-on to the side bounded by <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(ct\)</span>, with the origin
+in the lower left corner.  This is the standard way to draw a 2D
+spacetime diagram.  The <span class="math notranslate nohighlight">\(y\)</span> axis would then be diagonal in projection.
+There is nowhere to put a <span class="math notranslate nohighlight">\(z\)</span> axis on the computer screen.</p>
+</div>
+<p>Much of special relativity amounts to comparing a set of observations
+in one reference frame to that of a second reference frame moving
+relative to the first.  By convention, we usually define the <span class="math notranslate nohighlight">\(x\)</span> axis
+to point along the direction of the relative motion, so that the
+second frame is moving to the right.  This is the default assumption,
+although it is certainly not <strong>necessary</strong>.  If you must choose <span class="math notranslate nohighlight">\(x\)</span>
+to lie in a different direction than the relative velocity, that
+will make the math more complicated, so always make sure to draw
+a picture before you start doing math, to make sure the equations
+actually match the setup.  Figure 3.2 shows the standard way to
+represent two spacetime diagrams in relative motion.</p>
+<p>Events, being infinitesimal in duration and extent, are represented on
+the spacetime diagram as dots.  A collection of events that represent
+the motion of a single object through space over time are called a
+worldline.  The tip of my nose at any given moment could be said to be
+an event, and if I am not moving, then the worldline of my nose would
+be a vertical line on a spacetime diagram.  If I were to walk at a
+constant speed, my nose’s worldline would be a tilted straight line,
+since for every time interval <span class="math notranslate nohighlight">\(cdt\)</span> I would have moved my nose a
+distance <span class="math notranslate nohighlight">\(dx=vdt=\beta cdt\)</span>.  The slope of the line, rise over run,
+would therefore be <span class="math notranslate nohighlight">\(1/\beta\)</span>, since we put the time axis on the
+vertical.  As my speed goes to zero, the slope becomes infinite: a
+vertical line.  The lowest slope the worldline of a real object can
+have is 1, since that would imply <span class="math notranslate nohighlight">\(1/\beta=1\)</span> or <span class="math notranslate nohighlight">\(v=c\)</span>, the fastest a
+real object can move.</p>
+<p>We’ll explore the implications of these properties more in the next chapter.
+For now, it is sufficient to note that we can define a displacement
+four-vector between two dots on a spacetime diagram, and that the
+components of this four vector represent horizontal and vertical sides
+of that triangle.  Be aware, however, that although this looks exactly
+like a triangle, that pesky minus sign is still there, which means the
+“size” of the hypoteneuse is not constrained to be positive, as it would
+with a normal triangle!  If the sides are equal, the length is zero, not
+<span class="math notranslate nohighlight">\(dx\sqrt{2}\)</span>.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/aeefa30f208b4adbffbdfc9b659433acf63598a47aca430429e8bc11d5b1ba25.png" src="_images/aeefa30f208b4adbffbdfc9b659433acf63598a47aca430429e8bc11d5b1ba25.png" />
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Figure 3.2 – Spacetime diagram of two reference frames in relative motion.
+The primed frame S’ (drawn to the left and down a little) is moving to the
+right at speed v_R, relative to the unprimed frame S, which is above and to
+the right.  The x and x’ axes are defined to be parallel to the vector direction
+of v_R.</p>
+</div>
+</section>
+<section id="examples-of-four-vectors">
+<h2>Examples of Four Vectors<a class="headerlink" href="#examples-of-four-vectors" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -557,6 +664,8 @@ result.</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-as-a-dimension">Time as a Dimension</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spacetime-diagrams">Spacetime Diagrams</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-four-vectors">Examples of Four Vectors</a></li>
 </ul>
   </nav></div>
 
