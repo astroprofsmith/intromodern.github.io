@@ -57,7 +57,8 @@ a space component, then you have made a mistake in your math somewhere.
 ```
 
 With this tool, we can define a displacement four-vector as
-\begin{equation}
+```{math}
+:label: eqdx4
 [dx_4] =
 \begin{bmatrix}
 icdt\\
@@ -65,8 +66,34 @@ dx\\
 dy\\
 dz
 \end{bmatrix}
-\label{eq:dx4}
-\end{equation}
+```
+
+```{margin} Example 3.1
+
+An observer sees two events occuring. She measures a physical
+displacement of $dx = 1.20$ m, $dy = 2.00$ m and $dz = 0.00$ m. The
+time interval between these events is measured to be $0.0100$
+microseconds. Write down the eleinents of the displacement 4 vector
+measured by this observer and find the size of this displacement 4
+vector.
+
+The three spatial elements are given in the problem. What I need to do
+is to calculate the size of the time component: $cdt = 3\times10^8$
+m/s $(1.00\times 10^{-8}$ s = 3.00 m.  The displacement four vector
+is therefore
+\begin{equation*}
+[dx_4] =
+\begin{bmatrix}
+i3.00~{\rm m}\\
+1.20~{\rm m}\\
+2.00~{\rm m}\\
+0.00~{\rm m}
+\end{bmatrix}
+\end{equation*}
+The size of this displacement 4 vector is:
+$$(1.20^2+2.00^2)~{\rm m}^2 = -3.56~{\rm m}^2$$
+```
+
 The "size" of this four-dimensional object would then be $$[dx_4]^2 =
 dx^2 + dy^2 + dz^2 - c^2dt^2.$$ We need a better word than "size", but
 "magnitude" is not a good choice, because we are so used to how
@@ -143,7 +170,11 @@ In this notation, whenever there is a Greek letter that appears twice,
 once up and once down, that is a shorthand for "multiply across the
 row and down the column and add them up".  It plays the same role as a
 dummy variable in integration, and therefore does not appear in the
-result.
+result.  This is called "Einstein summation notation" or just
+"Einstein notation", and it won't come up again in this book until we
+apply SR to Electromagnetism in Chapter XX.  I mention it here to stress
+that using the $i$ is not the **only** way to keep track of the minus
+sign.
 
 Once you have the concept of a four-vector, mathematically, it is
 useful to also have a method of displaying them, graphically.  Such a
@@ -291,5 +322,6 @@ displacement 4-vector for that happening. To do this, there must be
 two events occurring, events which both observers can detect. Then,
 each observer measures the physical displacements andthe time interval
 between the two events and converts them into the components of the
-displacement 4-vector as shown in Equation \eqref{eq:dx4}.
+displacement 4-vector as shown in Equation {eq}`eqdx4`.
+
 

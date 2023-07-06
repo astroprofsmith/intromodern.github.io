@@ -404,17 +404,41 @@ four-vector, and it never shows up in the space components.</p>
 a space component, then you have made a mistake in your math somewhere.</p>
 </div>
 <p>With this tool, we can define a displacement four-vector as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3aa9ea5d-c387-4d32-8be4-cca497d1fb77">
-<span class="eqno">(6)<a class="headerlink" href="#equation-3aa9ea5d-c387-4d32-8be4-cca497d1fb77" title="Permalink to this equation">#</a></span>\[\begin{equation}
-[dx_4] =
+<div class="math notranslate nohighlight" id="equation-eqdx4">
+<span class="eqno">(6)<a class="headerlink" href="#equation-eqdx4" title="Permalink to this equation">#</a></span>\[\begin{split}[dx_4] =
 \begin{bmatrix}
 icdt\\
 dx\\
 dy\\
 dz
+\end{bmatrix}\end{split}\]</div>
+<aside class="margin sidebar">
+<p class="sidebar-title">Example 3.1</p>
+<p>An observer sees two events occuring. She measures a physical
+displacement of <span class="math notranslate nohighlight">\(dx = 1.20\)</span> m, <span class="math notranslate nohighlight">\(dy = 2.00\)</span> m and <span class="math notranslate nohighlight">\(dz = 0.00\)</span> m. The
+time interval between these events is measured to be <span class="math notranslate nohighlight">\(0.0100\)</span>
+microseconds. Write down the eleinents of the displacement 4 vector
+measured by this observer and find the size of this displacement 4
+vector.</p>
+<p>The three spatial elements are given in the problem. What I need to do
+is to calculate the size of the time component: <span class="math notranslate nohighlight">\(cdt = 3\times10^8\)</span>
+m/s <span class="math notranslate nohighlight">\((1.00\times 10^{-8}\)</span> s = 3.00 m.  The displacement four vector
+is therefore</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+[dx_4] =
+\begin{bmatrix}
+i3.00~{\rm m}\\
+1.20~{\rm m}\\
+2.00~{\rm m}\\
+0.00~{\rm m}
 \end{bmatrix}
-\label{eq:dx4}
-\end{equation}\]</div>
+\end{equation*}\]</div>
+<p>The size of this displacement 4 vector is:
+<div class="math notranslate nohighlight">
+\[(1.20^2+2.00^2)~{\rm m}^2 = -3.56~{\rm m}^2\]</div>
+</p>
+</aside>
 <p>The “size” of this four-dimensional object would then be <div class="math notranslate nohighlight">
 \[[dx_4]^2 =
 dx^2 + dy^2 + dz^2 - c^2dt^2.\]</div>
@@ -460,8 +484,8 @@ contravariant version of a four vector should be written as a column,
 as in Equation 6, only without the <span class="math notranslate nohighlight">\(i\)</span>.  The standard notion is to use
 a superscript greek letter to refer to the components, where the Greek
 letter could stand for 0, 1, 2, or 3.  So</p>
-<div class="amsmath math notranslate nohighlight" id="equation-40af5fd0-366a-44e4-b529-e9d32d33029a">
-<span class="eqno">(7)<a class="headerlink" href="#equation-40af5fd0-366a-44e4-b529-e9d32d33029a" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-ab58ad24-2a5f-40f5-b4c7-a3b27b6d3c5e">
+<span class="eqno">(7)<a class="headerlink" href="#equation-ab58ad24-2a5f-40f5-b4c7-a3b27b6d3c5e" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dx^\alpha =
 \begin{bmatrix}
 cdt\\
@@ -497,7 +521,11 @@ where in that last equation, the 2 does mean squared.</p>
 once up and once down, that is a shorthand for “multiply across the
 row and down the column and add them up”.  It plays the same role as a
 dummy variable in integration, and therefore does not appear in the
-result.</p>
+result.  This is called “Einstein summation notation” or just
+“Einstein notation”, and it won’t come up again in this book until we
+apply SR to Electromagnetism in Chapter XX.  I mention it here to stress
+that using the <span class="math notranslate nohighlight">\(i\)</span> is not the <strong>only</strong> way to keep track of the minus
+sign.</p>
 <p>Once you have the concept of a four-vector, mathematically, it is
 useful to also have a method of displaying them, graphically.  Such a
 graph is called a “spacetime diagram”.  I will give a brief
@@ -608,7 +636,7 @@ displacement 4-vector for that happening. To do this, there must be
 two events occurring, events which both observers can detect. Then,
 each observer measures the physical displacements andthe time interval
 between the two events and converts them into the components of the
-displacement 4-vector as shown in Equation \eqref{eq:dx4}.</p>
+displacement 4-vector as shown in Equation <a class="reference internal" href="#equation-eqdx4">(6)</a>.</p>
 </section>
 </section>
 
