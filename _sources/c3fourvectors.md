@@ -79,7 +79,7 @@ vector.
 
 The three spatial elements are given in the problem. What I need to do
 is to calculate the size of the time component: $cdt = 3\times10^8$
-m/s $(1.00\times 10^{-8}$ s = 3.00 m.  The displacement four vector
+m/s $(1.00\times 10^{-8}$ s) = 3.00 m.  The displacement four vector
 is therefore
 \begin{equation*}
 [dx_4] =
@@ -219,7 +219,7 @@ this turns the dimensions of the axis from time into space, which
 allows it to have the same scale as the horizontal axis.  This makes
 it possible to compare lengths on both axes, which otherwise would
 have different dimensions and therefore be incomparable (which is
-bigger, one second or one meter?).  Also, the displacement four vector
+bigger, one second or one meter?).  Second, the displacement four vector
 has a time component of $cdt$, so having the $c$ included in the axis
 means that distances on the diagram can accurately represent the
 components of the displacement four-vector.
@@ -314,7 +314,7 @@ of v_R.
 ```
 
 
-## Examples of Four Vectors
+## Examples of Displacement Four Vectors
 
 The key to using this model of special relativity to describe
 physically real happenings is to be able to write down the
@@ -324,6 +324,7 @@ each observer measures the physical displacements andthe time interval
 between the two events and converts them into the components of the
 displacement 4-vector as shown in Equation {eq}`eqdx4`.
 
+### Muon Decay
 
 For example, consider the following interesting happening. A pion is
 traveling along in a bubble chamber, leaving a track of bubbles. At
@@ -370,7 +371,8 @@ down and to the right.  This diagram tells you nothing about how fast the
 particles are going, or how much time passes between the events.  On the right,
 we have a spacetime diagram, which tells us nothing about the motion in the $y$
 direction on the left plot (the tracks on this diagram do not turn around),
-but does convey the speed.  Can you describe how the speed changes throughout
+but does convey the velocity in the $x$ direction (not the $y$ or $z$!).
+Can you describe how this velocity component changes throughout
 this sequence of events?  (Note: this is not realistic.)
 ```
 
@@ -396,3 +398,265 @@ i2\\
 \end{equation}
 I put zero as the $z$ displacement although technically we simply have no information
 about whether there was any displacement in the $z$ direction.
+
+### Space ship
+
+Often in SR problems, it is important to make a graph showing the
+events under consideration, and to indicate the relative motion of
+the reference frames, as in Figure 3.2.  This will help you visualize
+what's happening and ensure that you set up your equations properly.
+
+Consider a space ship that leaves the Earth and travels 4.2 LY to the
+star Alpha Centauri at a constant speed of $\beta=0.75$.  For this
+scenario, there are two reference frames that are of interest: the one
+that is at rest with respect to the space ship and another that is at
+rest with respect to the earth. The two events will be the departure
+from earth and the arrival at alpha centauri. The relative speed
+between these two observers is just the speed of the space ship in the
+direction of Alpha Centauri. The events can be diagrammed as shown in
+Figure 3.3.
+
+An observer that is at rest with respect to the earth will measure
+(evenually -- once all the rulers and clocks are returned and
+collated) a physical displacement in the $x$-direction of the distance
+between earth and Alpha Centauri: 4.2 light years. There will be no
+physical displacement in the $y$ or $z$ directions. There will be some
+time interval $dt_\oplus$ that the earth based observer will measure
+for the trip. Since we know the velocity that the space is traveling
+with respect to the earth, the time it takes to get to the star in the
+Earth's reference frame is $$dt_\oplus = \frac{dx_\oplus}{v_{\rm
+rocket}} = \frac{4.2~{\rm LY}}{0.75c} \rightarrow cdt_\oplus =
+5.6~{\rm LY}$$ Note that $cdt_\oplus$ has units of length.
+
+
+```{code-cell}
+:tags: ["remove-input"]
+dx=4.2
+cdt = 5.6
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
+fig.suptitle('Journey to Alpha Centauri')
+ax1.arrow(0,0,5,0,head_width=0.2)
+ax1.arrow(0,0,0,6,head_width=0.2)
+
+ax1.arrow(-1.5,-1.5,2,0,head_width=0.2)
+ax1.arrow(-1.5,-1.5,0,2,head_width=0.2)
+
+ax1.arrow(2,-0.75,1.75,0,head_width=0.1)
+
+ax1.get_xaxis().set_visible(False)
+ax1.get_yaxis().set_visible(False)
+ax1.axis([-2,6,-2,8])
+ax1.text(1.0, 6, "S")
+ax1.text(-0.05, 6.5, "ct")
+ax1.text(5.5, 0, "x")
+ax1.text(4.5, -0.8, "v_R")
+ax1.text(-1.1, .1, "S'")
+ax1.text(-1.55, 1.0, "ct'")
+ax1.text(1.0, -1.5, "x'")
+ax1.set_title('Rest Frame of Earth')
+
+ax1.plot([0.5],[0.5],'ro')
+ax1.plot([0.5+dx],[0.5+cdt],'bo')
+
+ax2.arrow(0,0,5,0,head_width=0.2)
+ax2.arrow(0,0,0,6,head_width=0.2)
+
+ax2.arrow(-1.5,-1.5,2,0,head_width=0.2)
+ax2.arrow(-1.5,-1.5,0,2,head_width=0.2)
+
+ax2.arrow(4,-0.75,-1.75,0,head_width=0.1)
+
+ax2.get_xaxis().set_visible(False)
+ax2.get_yaxis().set_visible(False)
+ax2.axis([-2,6,-2,8])
+ax2.text(1.0, 6, "S'")
+ax2.text(-0.05, 6.5, "ct'")
+ax2.text(5.5, 0, "x'")
+ax2.text(4.5, -0.8, "v_R")
+ax2.text(-1.1, .1, "S")
+ax2.text(-1.55, 1.0, "ct")
+ax2.text(1.0, -1.5, "x")
+ax2.set_title('Rest Frame of Rocket')
+
+beta = 0.75
+gam = 1/np.sqrt(1-beta**2)
+cdtp = cdt/gam
+ax2.plot([3],[0.5],'ro')
+ax2.plot([3],[0.5+cdtp],'bo')
+
+plt.show()
+```
+```{note}
+Figure 3.3 -- Spacetime diagrams of two events in two different
+reference frames in relative motion.  The left diagram represents the
+reference frame at rest with respect to the Earth.  In this reference
+frame, the rocket leaves at the red dot on the lower left, travels 4.3
+LY and arrives at the blue dot 5.6 years later.  The primed frame in
+this case is the rest frame of the rocket.  The right diagram shows
+the same two events from the primed frame: the Earth falls away behind
+the rocket while Alpha Centauri comes to meet it, while the rocket remains
+in the same place.
+```
+
+We can therefore write a displacement four vector in the reference
+frame at rest with respect to the Earth:
+\begin{equation}
+[dx_4]_\oplus =
+\begin{bmatrix}
+icdt_\oplus\\
+dx\\
+0\\
+0
+\end{bmatrix}
+ =
+\begin{bmatrix}
+i5.6~{\rm LY}\\
+4.2~{\rm LY}\\
+0\\
+0
+\end{bmatrix}
+\end{equation}
+
+The observer aboard the space craft experiences these same two events:
+leaving the earth and arriving at Alpha Centauri. They both seem to
+occur just outside of the window of the space craft. There is no
+displacement between these two events! $dx_{\rm rocket} = 0$. The observer
+aboard the space craft will measure some time interval, $dt_{\rm rocket}$
+between the time he sees the earth outside of his window and sees
+alpha centauri outside the window. The observer aboard the space craft
+measures a displacement 4-vector:
+\begin{equation}
+[dx_4]_{\rm rocket} =
+\begin{bmatrix}
+icdt_{\rm rocket}\\
+0\\
+0\\
+0
+\end{bmatrix}
+\end{equation}
+The Michaelson-Morely experiment demands that the size of these two
+four-vectors be the same.  Clearly, the observer on the spacecraft will
+measure a different duration for the trip than the clocks in the
+reference frame at rest with respect to the Earth will!  Note this has
+nothing to do with the first observer being physically **on** the Earth --
+the $dt_\oplus$ is measured by the infinite lattice of clocks at
+rest with respect to the Earth.
+
+The sizes of the two four vectors are:
+\begin{equation}
+dx_\oplus^2 - (cdt_\oplus)^2 = -(cdt_{\rm rocket})^2
+\end{equation}
+Solve for $dt_{\rm rocket}$:
+\begin{equation}
+dt_{\rm rocket} = dt_\oplus\sqrt{1-\left(\frac{dx_\oplus}{cdt_\oplus}\right)^2}
+= dt_\oplus \sqrt{1-\beta^2}
+\end{equation}
+Note that the quantity under the square root will always be less than one,
+so the time interval on the rocket will always be less than the time
+interval in the Earth's reference frame!
+
+```{margin} Example 3.2
+
+The half-life for a muon is $2.20 \times 10^{-6}$ seconds as ineasured
+in the rest frame of the muon. A particle accelerator, in the
+laboratory reference frame, produces a beam of a large number of muons,
+traveling at a speed $v = 2.900 \times 10^8$ m/s as observed in the
+laboratory. Find the half-life of the muons as measured by the
+observer in the laboratory frame of reference.
+
+The value of $dt_0 = 2.20\times 10^{-6}$ s. What I am looking for is $dt$.
+Equation {eq}`eqtimed` relates the
+two. What I need is to figure out a value for $\beta$.  Since $\beta
+= v/c,$ it must be $2.900\times 10^8$ m/s/($3.000\times 10^8$ m/s)=.9666.
+The Lorentz Factor is therefore $\gamma = 3.906$, so
+$dt = \gamma dt_0 = 8.59\times 10^{-6}$ s
+```
+
+This is the famous **Time Dilation**, which is sometimes characterized as
+"moving clocks run slow", but I find this phrase confusing, as all clocks
+could be in motion, relative to something else.  A more precise formulation
+is "a clock in a reference frame at rest with respect to two events will
+measure the shortest possible time interval between those two events."
+This time interval, being unique, also gets a name, and is called the
+**proper time interval**, and is often designated $dt_0$.
+If you are not clear on which clock is moving, draw a spacetime diagram and
+see whether the two events you are considering are in the same place.
+Often, the confusion arises because someone is not carefully considering
+what the two events in question actually are, and mistakenly compares
+two different time intervals.
+
+The quantity $\sqrt{1-\beta^2}$ comes up so often it has a name: the
+Lorentz Factor, although it is usually more covenient to move it to the
+other side of the equation, since the clock on the rocket is the one
+at rest and therefore $dt_{\rm rocket}$ is the proper time interval.
+In this case,
+```{math}
+:label: eqtimed
+dt_\oplus = \frac{dt_{\rm rocket}}{\sqrt{1-\beta^2}} = dt_{\rm rocket}\gamma,
+```
+where $\gamma \equiv 1/\sqrt{1-\beta^2}$ is the Lorentz Factor.
+The Lorentz Factor is always greater than or equal to one (equality
+in the case of $\beta=0$ -- no relative motion means the clocks will agree),
+so the clocks in the Earth's frame will always measure a longer time
+interval, no matter the speed of the rocket.
+
+In the case presented here, $\beta = 0.75$, so $\gamma = 1.512$,
+and therefore the clocks on the rocket will measure a time interval
+of 3.7 years.
+
+### Muons in the Atmosphere
+
+Muons are created in the upper atmosphere (around 100 km up) of the
+Earth when cosmic rays from space collide with atoms in the air.
+These muons continue toward the Earth at high speed.  However, the
+half-life for muons at rest is only about 2.2 microseconds.  By the
+time $22~\mu$s have passed, the vast majority of them will have
+decayed.  Even at the speed of light, they could only travel about 6.6
+km in $22~\mu$s.  There should not be any muons reaching the ground,
+and yet you can see many of them in a cloud chamber at sea level.
+Even close to the speed of light, they would need at least 330
+microseconds to get down here.
+
+```{margin}
+Equation {eq}`eqlorentz` is a very useful relationship to know.
+```
+Much as in Example 3.2, the halflife of the muons needs to be dilated
+in the reference frame at rest with respect to the Earth.  For the
+muons to make it to the Earth's surface, the time dilation factor
+would have to be $\sim 330/2=115$.  We can solve for $\beta$ from the
+Lorentz Factor:
+```{math}
+:label: eqlorentz
+\gamma^2 = \frac{1}{1-\beta^2} \rightarrow \beta =
+\sqrt{1-\frac{1}{\gamma^2}}.
+```
+Plug in 115 for $\gamma$ and get $\beta
+\geq 0.999962$ -- this is the minimum speed the muons would have to be
+going if they are to reach the ground before they decay.  The
+fact that this actually happens is further solid evidence to support
+that time dilation is real.
+
+The spacetime diagrams for these events would look just like Figure
+3.3, only the $x$ axis would stand for the height above the ground,
+pointing down.  In that case, the left diagram would be the Earth's
+reference frame, while the right diagram would be the muon's reference
+frame.  The red dot would be the creation of the muon in the upper
+atmosphere, while the blue dot would be the muon reaching the ground.
+The vertical separation between the dots on the right would be $cdt_0
+= 6.6$ km, while the horizontal separation in the diagram on the left
+would be the 100 km height of the atmosphere.  The vertical separation
+in the left diagram would be $cdt = 100$ km (technically 100 km
+divided by 0.999962 -- therefore the ratio of $dx$ to $cdt$ would be
+$\beta$, as it should be.).
+
+Writing all those nines is a little boring, so usually when the speeds
+start to get close to the speed of light, we just write the speed **as
+the Lorentz Factor**, rather than converting it back to $\beta$, or
+even $v$.  So it would be perfectly acceptable to just say something
+like "travelling with a speed of $\gamma = 115$", even though technically
+$\gamma$ is not a speed.
+
+## Summary
+
+
+
