@@ -65,6 +65,7 @@ dx\\
 dy\\
 dz
 \end{bmatrix}
+\label{eq:dx4}
 \end{equation}
 The "size" of this four-dimensional object would then be $$[dx_4]^2 =
 dx^2 + dy^2 + dz^2 - c^2dt^2.$$ We need a better word than "size", but
@@ -202,11 +203,10 @@ display.IFrame(src=url,width=800,height=600)
 Figure 3.1 -- Three-dimensional spacetime diagram, which you can
 rotate to observe from different angles.  Events are represented as
 two spheres: orange and purple.  The displacement four vector between
-them is black.  The projections of this four vector are also drawn
-within each of the three planes.  The black arrow in the magenta plane
-would be the spatial displacement (in $x$ and $y$ only, not $z$),
-while the cyan and yellow planes also include the elapsed time between
-the events.  Click and drag to rotate the "cube" so that you are
+them is black.  The components of this four vector are also drawn
+as arrows parallel to the three axes.  Note that there could well be
+enormous displacement in $z$ that would not show up on this diagram.
+Click and drag to rotate the "cube" so that you are
 looking face-on to the side bounded by $x$ and $ct$, with the origin
 in the lower left corner.  This is the standard way to draw a 2D
 spacetime diagram.  The $y$ axis would then be diagonal in projection.
@@ -284,4 +284,12 @@ of v_R.
 
 
 ## Examples of Four Vectors
+
+The key to using this model of special relativity to describe
+physically real happenings is to be able to write down the
+displacement 4-vector for that happening. To do this, there must be
+two events occurring, events which both observers can detect. Then,
+each observer measures the physical displacements andthe time interval
+between the two events and converts them into the components of the
+displacement 4-vector as shown in Equation \eqref{eq:dx4}.
 
