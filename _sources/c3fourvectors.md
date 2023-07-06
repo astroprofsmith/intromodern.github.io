@@ -667,6 +667,92 @@ even $v$.  So it would be perfectly acceptable to just say something
 like "travelling with a speed of $\gamma = 115$", even though technically
 $\gamma$ is not a speed.
 
+```{note}
+Make sure you understand that nothing in SR makes any demands on what
+kind of clock is being used to make the measurements.  Time dilation
+is not a mechanical effect of the particular clock making the measurements.
+**Any** spatially repeating system (rotation, vibration, oscillation)
+can act as a clock, and **all** of them will measure time dilation.
+It's a necessary implication of the two postulates of Relativity,
+a property of time itself, not a description of gears winding down or
+some other feature of a particular kind of clock.
+```
+
+### Clock on a Train
+
+One more example of how you can use four-vectors to predict time dilation.
+Consider a clock, sitting on the floor of a train.  It is linked to a laser,
+such that at a particular moment, it will cause the laser to flash.  The
+laser is pointed at the ceiling of the train car, where a mirror reflects
+the laser beam right back down to the floor, where a detector stops the
+clock and therefore measures a time interval.
+
+To put this narrative into mathematical format, we define two events:
+the emission of the laser flash and the detection of the returning
+light.  The emission and detection of the light happen at the same
+position in space, so the clock is at rest with respect to the events,
+and therefore the time interval it measures is the proper time $dt_0$.
+If the height of the train car is designated $h$, then the proper time
+interval will be $dt_0 = 2h/c$, since the laser beam moves at the
+speed of light.
+
+Now consider that the train is moving along horizontal tracks at a
+speed $v$, relative to the ground.  Standing on the ground is another
+observer with a clock, and this observer starts and stops their clock
+at the same events (note that we are not worrying about the time it
+takes light to travel from the train to the person on the ground -- we
+are using these two clocks to stand in for the imaginary infinite lattice
+of rulers and clock that make up our conceptual reference frames).
+We say this person measures a time interval $dt$ between the emission
+and detection of the light.  How does $dt$ compare with $dt_0$?
+
+First, there are three relevant events: the light beam is emitted
+upward, it reflects off a mirror on the ceiling, and it returns to the
+detector next to the clock.  These three events happen, so they must
+happen in all reference frames.  Since according to the person on the
+ground, the train is moving, the mirror will be a distance $vdt/2$
+along the track when the light hits it, and $vdt$ further along when
+the light returns.  In the ground's reference frame, the light must
+therefore follow a triangular path, if it is to bounce off the mirror
+and return to the detector.
+
+This is the essence of time dilation: if the light is to travel a
+longer path (the hypoteneuse of a triangle will be longer than the
+vertical side) at the same speed, it must take more time to do so.
+The length of the horizontal side of the triangle is the distance the
+train moves, $vdt/2$ for each of the away and back segments.  The
+diagonal path is therefore of length $2\sqrt{h^2+(vdt/2)^2}$.  The
+time interval the person on the ground will measure is thus:
+```{math}
+dt = \frac{D}{c} = \frac{2\sqrt{h^2+(vdt/2)^2}}{c}
+```
+Substitute in $h=cdt_0/2$ and square both sides to get
+```{math}
+dt^2  = \frac{4(cdt_0/2)^2+(vdt/2)^2}{c^2}
+```
+The four cancels, and if we multiply both sides by $c^2$,
+```{math}
+c^2dt^2  = (cdt_0)^2+(vdt)^2 \rightarrow dt^2(c^2-v^2) = c^2dt_0^2
+```
+which means
+```{math}
+:label: eqpropertd
+dt  = dt_0\frac{1}{\sqrt{1-(v/c)^2}} = \gamma dt_0,
+```
+which is the same as Equation {eq}`eqtimed`!  The clock on the ground
+will measure a longer time interval than the clock on the train by a
+factor of $\gamma$.  From the point of view of the person on the
+ground, the clock on the train is therefore running slow, so often
+time dilation is summarized as "moving clocks run slow."
+
+This is a confusing and imprecise statement, for all its pithy brevity.
+Need to talk about "moving clocks run slow".
+
+Need to explain how to interpret these events in four-vector format
+
+
+
+
 ## Summary
 
 
