@@ -600,9 +600,20 @@ in the case of $\beta=0$ -- no relative motion means the clocks will agree),
 so the clocks in the Earth's frame will always measure a longer time
 interval, no matter the speed of the rocket.
 
-In the case presented here, $\beta = 0.75$, so $\gamma = 1.512$,
-and therefore the clocks on the rocket will measure a time interval
-of 3.7 years.
+In the case presented here, $\beta = 0.75$, so $\gamma = 1.512$, and
+therefore the clocks on the rocket will measure a time interval of 3.7
+years.  This is a simplified version of the famous **Twin Paradox**,
+which adds the extra step of bringing the rocket back to Earth at the
+same speed, whereupon comparing the clocks shows that 7.4 years have
+passed on the rocket while 11.2 years have passed on the Earth.  This
+may seem science fictional, but an experiment much like it has been
+carried out with jet planes going around the Earth in opposite
+directions, carrying extremely precise atomic clocks.  The predicted
+rates of time dilation had to be modified to account for the fact that
+the planes were not inertial reference frames, but when correctly
+calculated, the predicted differences in the clocks were not different from
+the measured elapsed times, on the orders of a hundred nanoseconds!
+Look up descriptions of the [Hafele-Keating Experiment](https://en.wikipedia.org/wiki/Hafele%E2%80%93Keating_experiment) for more details.
 
 ### Muons in the Atmosphere
 
