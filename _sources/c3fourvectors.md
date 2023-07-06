@@ -158,7 +158,7 @@ whether they mean a contravariant component or an exponent.
 ```
 There is also a covariant version of the four-vector, which is written
 as a row with a subscript Greek letter, but also includes the minus sign: 
-$dx_\alpha = [-cdt,dx,dydz]$.  For the four vectors we are considering,
+$dx_\alpha = [-cdt,dx,dy,dz]$.  For the four vectors we are considering,
 $dx_0 =-dx^0$, but $dx_1=dx^1$ and so forth.  So if you multiply the
 two together, according to the rules of multiplying matrices,
 $$dx_\alpha dx^\alpha = dx_0dx^0 + dx_1dx^1+dx_2dx^2+dx_3dx^3$$
@@ -325,3 +325,74 @@ between the two events and converts them into the components of the
 displacement 4-vector as shown in Equation {eq}`eqdx4`.
 
 
+For example, consider the following interesting happening. A pion is
+traveling along in a bubble chamber, leaving a track of bubbles. At
+some time and place, it decays into a muon. I know that something
+happens because the track of bubbles changes direction. The muon moves
+on for a while and then decays into an electron. Again, I know this
+happens because the bubble track changes direction. The two events are
+the change in direction of the tracks as shown in Figure 3.3.  Note
+that the figure on the left is a diagram of what happens in space, while
+the figure on the right is a spacetime diagram!
+
+```{code-cell}
+:tags: ["remove-input"]
+p = np.array([[0,0,0],
+[1,1,5],
+[2,1.5,7],
+[3,0,15]])
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
+fig.suptitle('Creation and Destruction of a Muon')
+ax1.plot(p[:,0], p[:,1], 'k:')
+ax1.plot([p[1,0],p[2,0]], [p[1,1],p[2,1]], 'r.-')
+ax1.set_xlim([0, 3])
+ax1.set_ylim([-1,3])
+ax1.set_title('Space Trajectory')
+ax1.set_xlabel('x')
+ax1.set_ylabel('y')
+
+ax2.plot(p[:,0], p[:,2], 'k:')
+ax2.plot([p[1,0],p[2,0]], [p[1,2],p[2,2]], 'r.-')
+ax2.set_xlim([0, 3])
+ax2.set_ylim([-1,15])
+ax2.set_title('Spacetime Diagram')
+ax2.set_xlabel('x')
+ax2.set_ylabel('ct')
+
+plt.show()
+```
+```{note}
+Figure 3.3 -- Two diagrams to display the motion of particles.  On the left,
+we have a plot of $y$ vs. $x$, which shows the trajectories of the particles.
+A pion enters from the lower left going up and to the right, turns into a
+muon and goes stright to the right, and then turns into an electron that goes
+down and to the right.  This diagram tells you nothing about how fast the
+particles are going, or how much time passes between the events.  On the right,
+we have a spacetime diagram, which tells us nothing about the motion in the $y$
+direction on the left plot (the tracks on this diagram do not turn around),
+but does convey the speed.  Can you describe how the speed changes throughout
+this sequence of events?  (Note: this is not realistic.)
+```
+
+If we consider the two events of the creation and disappearence of the muon,
+observers in the reference frame shown in Figure 3.3 could measure the displacement
+and time duration between these events (and we can read them off the graph,
+albiet with no units), and then put them into the four-vector format:
+\begin{equation}
+[dx_4] =
+\begin{bmatrix}
+icdt\\
+dx\\
+dy\\
+dz
+\end{bmatrix}
+ =
+\begin{bmatrix}
+i2\\
+1\\
+0.5\\
+0
+\end{bmatrix}
+\end{equation}
+I put zero as the $z$ displacement although technically we simply have no information
+about whether there was any displacement in the $z$ direction.

@@ -17,18 +17,26 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-# 3D plot of a spacetime diagram with x, ct, and y
-url='https://glowscript.org/#/user/dasmith/folder/Public/program/SRspacetimediag'
-display.IFrame(src=url1,width=600,height=500)
+p = [[0,0,0],
+[1,1,1],
+[2,1,2],
+[3,0,3]]
+fig, (ax1, ax2) = plt.subplots(1, 2)
+fig.suptitle('Creation and Destruction of a Muon')
+ax1.plot(p[:,0], p[:,1], 'k:')
+ax2.plot(p[1:2,0], p[1:2,1], 'r-')
+plt.show()
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m
-[0;31mNameError[0m                                 Traceback (most recent call last)
-Cell [0;32mIn[2], line 3[0m
-[1;32m      1[0m [38;5;66;03m# 3D plot of a spacetime diagram with x, ct, and y[39;00m
-[1;32m      2[0m url[38;5;241m=[39m[38;5;124m'[39m[38;5;124mhttps://glowscript.org/#/user/dasmith/folder/Public/program/SRspacetimediag[39m[38;5;124m'[39m
-[0;32m----> 3[0m display[38;5;241m.[39mIFrame(src[38;5;241m=[39m[43murl1[49m,width[38;5;241m=[39m[38;5;241m600[39m,height[38;5;241m=[39m[38;5;241m500[39m)
+[0;31mTypeError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[4], line 7[0m
+[1;32m      5[0m fig, (ax1, ax2) [38;5;241m=[39m plt[38;5;241m.[39msubplots([38;5;241m1[39m, [38;5;241m2[39m)
+[1;32m      6[0m fig[38;5;241m.[39msuptitle([38;5;124m'[39m[38;5;124mCreation and Destruction of a Muon[39m[38;5;124m'[39m)
+[0;32m----> 7[0m ax1[38;5;241m.[39mplot([43mp[49m[43m[[49m[43m:[49m[43m,[49m[38;5;241;43m0[39;49m[43m][49m, p[:,[38;5;241m1[39m], [38;5;124m'[39m[38;5;124mk:[39m[38;5;124m'[39m)
+[1;32m      8[0m ax2[38;5;241m.[39mplot(p[[38;5;241m1[39m:[38;5;241m2[39m,[38;5;241m0[39m], p[[38;5;241m1[39m:[38;5;241m2[39m,[38;5;241m1[39m], [38;5;124m'[39m[38;5;124mr-[39m[38;5;124m'[39m)
+[1;32m      9[0m plt[38;5;241m.[39mshow()
 
-[0;31mNameError[0m: name 'url1' is not defined
-NameError: name 'url1' is not defined
+[0;31mTypeError[0m: list indices must be integers or slices, not tuple
+TypeError: list indices must be integers or slices, not tuple
 

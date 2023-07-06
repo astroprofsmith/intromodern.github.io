@@ -484,8 +484,8 @@ contravariant version of a four vector should be written as a column,
 as in Equation 6, only without the <span class="math notranslate nohighlight">\(i\)</span>.  The standard notion is to use
 a superscript greek letter to refer to the components, where the Greek
 letter could stand for 0, 1, 2, or 3.  So</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ab58ad24-2a5f-40f5-b4c7-a3b27b6d3c5e">
-<span class="eqno">(7)<a class="headerlink" href="#equation-ab58ad24-2a5f-40f5-b4c7-a3b27b6d3c5e" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-a95ce0c8-a07d-41c8-ac55-f51383fc535a">
+<span class="eqno">(7)<a class="headerlink" href="#equation-a95ce0c8-a07d-41c8-ac55-f51383fc535a" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dx^\alpha =
 \begin{bmatrix}
 cdt\\
@@ -504,7 +504,7 @@ whether they mean a contravariant component or an exponent.</p>
 </div>
 <p>There is also a covariant version of the four-vector, which is written
 as a row with a subscript Greek letter, but also includes the minus sign:
-<span class="math notranslate nohighlight">\(dx_\alpha = [-cdt,dx,dydz]\)</span>.  For the four vectors we are considering,
+<span class="math notranslate nohighlight">\(dx_\alpha = [-cdt,dx,dy,dz]\)</span>.  For the four vectors we are considering,
 <span class="math notranslate nohighlight">\(dx_0 =-dx^0\)</span>, but <span class="math notranslate nohighlight">\(dx_1=dx^1\)</span> and so forth.  So if you multiply the
 two together, according to the rules of multiplying matrices,
 <div class="math notranslate nohighlight">
@@ -637,6 +637,56 @@ two events occurring, events which both observers can detect. Then,
 each observer measures the physical displacements andthe time interval
 between the two events and converts them into the components of the
 displacement 4-vector as shown in Equation <a class="reference internal" href="#equation-eqdx4">(6)</a>.</p>
+<p>For example, consider the following interesting happening. A pion is
+traveling along in a bubble chamber, leaving a track of bubbles. At
+some time and place, it decays into a muon. I know that something
+happens because the track of bubbles changes direction. The muon moves
+on for a while and then decays into an electron. Again, I know this
+happens because the bubble track changes direction. The two events are
+the change in direction of the tracks as shown in Figure 3.3.  Note
+that the figure on the left is a diagram of what happens in space, while
+the figure on the right is a spacetime diagram!</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/f18b9a553cfa538535fbd3b3133446a0073f00d5644592b9b684d3051e7193cd.png" src="_images/f18b9a553cfa538535fbd3b3133446a0073f00d5644592b9b684d3051e7193cd.png" />
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Figure 3.3 – Two diagrams to display the motion of particles.  On the left,
+we have a plot of <span class="math notranslate nohighlight">\(y\)</span> vs. <span class="math notranslate nohighlight">\(x\)</span>, which shows the trajectories of the particles.
+A pion enters from the lower left going up and to the right, turns into a
+muon and goes stright to the right, and then turns into an electron that goes
+down and to the right.  This diagram tells you nothing about how fast the
+particles are going, or how much time passes between the events.  On the right,
+we have a spacetime diagram, which tells us nothing about the motion in the <span class="math notranslate nohighlight">\(y\)</span>
+direction on the left plot (the tracks on this diagram do not turn around),
+but does convey the speed.  Can you describe how the speed changes throughout
+this sequence of events?  (Note: this is not realistic.)</p>
+</div>
+<p>If we consider the two events of the creation and disappearence of the muon,
+observers in the reference frame shown in Figure 3.3 could measure the displacement
+and time duration between these events (and we can read them off the graph,
+albiet with no units), and then put them into the four-vector format:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-100704f9-9d7e-4510-8d6d-ec68348c25c9">
+<span class="eqno">(8)<a class="headerlink" href="#equation-100704f9-9d7e-4510-8d6d-ec68348c25c9" title="Permalink to this equation">#</a></span>\[\begin{equation}
+[dx_4] =
+\begin{bmatrix}
+icdt\\
+dx\\
+dy\\
+dz
+\end{bmatrix}
+ =
+\begin{bmatrix}
+i2\\
+1\\
+0.5\\
+0
+\end{bmatrix}
+\end{equation}\]</div>
+<p>I put zero as the <span class="math notranslate nohighlight">\(z\)</span> displacement although technically we simply have no information
+about whether there was any displacement in the <span class="math notranslate nohighlight">\(z\)</span> direction.</p>
 </section>
 </section>
 
