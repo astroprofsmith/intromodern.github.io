@@ -164,6 +164,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="c3fourvectors.html">Chapter 3: Four Vectors</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 4: Lorentz Transformations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c5spacetime.html">Chapter 5: Properties of Spacetime Diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c6displacement.html">Chapter 6: The Displacement Four Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c7velocity.html">Chapter 7: The Velocity Four-Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c8momentum.html">Chapter 8: The Momentum Four-Vector</a></li>
 </ul>
 
     </div>
@@ -360,7 +363,9 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-the-problem">Setting Up the Problem</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determining-the-elements">Determining the Elements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-lorentz-transformations">Examples of Lorentz Transformations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transform-a-displacement-four-vector">Transform a Displacement Four-vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-1-transform-a-displacement-four-vector">Example 4.1: Transform a Displacement Four-vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-2-angles-in-space">Example 4.2: Angles in Space</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-3-using-an-inverse-lorentz-transformation">Example 4.3: Using an Inverse Lorentz Transformation</a></li>
 </ul>
 </li>
 </ul>
@@ -418,7 +423,7 @@ to lie along the <span class="math notranslate nohighlight">\(x\)</span>-axis, t
 diagram of Figure 4.1 into 4-vector notation, we need a tool that
 will take us from <span class="math notranslate nohighlight">\([dx_4]\)</span> to <span class="math notranslate nohighlight">\([dx_4]^\prime\)</span>, like so:</p>
 <div class="math notranslate nohighlight" id="equation-eqlort">
-<span class="eqno">(19)<a class="headerlink" href="#equation-eqlort" title="Permalink to this equation">#</a></span>\[[dx_4]^\prime = {\cal L}_x(\beta_R)[dx_4]\]</div>
+<span class="eqno">(18)<a class="headerlink" href="#equation-eqlort" title="Permalink to this equation">#</a></span>\[[dx_4]^\prime = {\cal L}_x(\beta_R)[dx_4]\]</div>
 <p>The Lorentz transformation can be mathematically represented as a
 matrix, because it transforms one vector into another. The Lorentz
 transformation, therefore, is a <span class="math notranslate nohighlight">\(4 \times 4\)</span> matrix because there are
@@ -427,7 +432,7 @@ element of this matrix (row <span class="math notranslate nohighlight">\(\alpha\
 Greek letters stand for 0, 1, 2, and 3), the transformation
 matrix has the form:</p>
 <div class="math notranslate nohighlight" id="equation-lormat1">
-<span class="eqno">(20)<a class="headerlink" href="#equation-lormat1" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L}_{\alpha\beta} = 
+<span class="eqno">(19)<a class="headerlink" href="#equation-lormat1" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L}_{\alpha\beta} = 
 \begin{bmatrix}
 L_{00} &amp; L_{01} &amp; L_{02} &amp; L_{03}\\
 L_{10} &amp; L_{11} &amp; L_{12} &amp; L_{13}\\
@@ -458,7 +463,7 @@ be contradicted.</p>
 <p>To determine some of the elements of the Lorentz transformation
 matrix, consider what happens when the displacement 4-vector</p>
 <div class="math notranslate nohighlight" id="equation-eqdisp4">
-<span class="eqno">(21)<a class="headerlink" href="#equation-eqdisp4" title="Permalink to this equation">#</a></span>\[\begin{split}[dx_4] =
+<span class="eqno">(20)<a class="headerlink" href="#equation-eqdisp4" title="Permalink to this equation">#</a></span>\[\begin{split}[dx_4] =
 \begin{bmatrix}
 icdt\\
 dx\\
@@ -483,7 +488,7 @@ We use the dimensional independence of <span class="math notranslate nohighlight
 <span class="math notranslate nohighlight">\(z\)</span> are unaffected in all circumstances at all times.  Be cautious.</p>
 </div>
 <p>This means that <span class="math notranslate nohighlight">\(dy^\prime = dy\)</span>.  However, if we write out the third
-row of Equation <a class="reference internal" href="#equation-eqlort">(19)</a>, we get <div class="math notranslate nohighlight">
+row of Equation <a class="reference internal" href="#equation-eqlort">(18)</a>, we get <div class="math notranslate nohighlight">
 \[dy^\prime = L_{20}icdt+L_{21}dx
 +L_{22}dy + L_{32}dz.\]</div>
 
@@ -491,7 +496,7 @@ The only way this equality can hold for all displacement four vectors
 is if <span class="math notranslate nohighlight">\(L_{22}=1\)</span> and the other elements are zero.  The same logic hold
 for the fourth row, so we know the matrix must look like</p>
 <div class="math notranslate nohighlight" id="equation-lormat2">
-<span class="eqno">(22)<a class="headerlink" href="#equation-lormat2" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L} = 
+<span class="eqno">(21)<a class="headerlink" href="#equation-lormat2" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L} = 
 \begin{bmatrix}
 L_{00} &amp; L_{01} &amp; L_{02} &amp; L_{03}\\
 L_{10} &amp; L_{11} &amp; L_{12} &amp; L_{13}\\
@@ -506,7 +511,7 @@ were at rest into a reference frame in which there would have
 to be motion for something to get from one event to the other.
 We know therefore that the original four displacement is</p>
 <div class="math notranslate nohighlight" id="equation-eqrestdx4">
-<span class="eqno">(23)<a class="headerlink" href="#equation-eqrestdx4" title="Permalink to this equation">#</a></span>\[\begin{split}[dx_4] =
+<span class="eqno">(22)<a class="headerlink" href="#equation-eqrestdx4" title="Permalink to this equation">#</a></span>\[\begin{split}[dx_4] =
 \begin{bmatrix}
 icdt_0\\
 0\\
@@ -522,8 +527,8 @@ location of the events would have to be moving left at the same speed,
 so <span class="math notranslate nohighlight">\(dx^\prime = -v_Rdt = -\beta_R cdt = -\beta_R\gamma_R cdt_0\)</span>, where
 we have used time dilation to turn the <span class="math notranslate nohighlight">\(dt\)</span> into <span class="math notranslate nohighlight">\(dt_0\)</span>.</p>
 <p>That gives us two further relations that will enable us to get four of the
-numbers.  We look at the first two rows of Equation <a class="reference internal" href="#equation-eqlort">(19)</a>, using
-Equation <a class="reference internal" href="#equation-eqrestdx4">(23)</a> as the four vector:
+numbers.  We look at the first two rows of Equation <a class="reference internal" href="#equation-eqlort">(18)</a>, using
+Equation <a class="reference internal" href="#equation-eqrestdx4">(22)</a> as the four vector:
 <div class="math notranslate nohighlight">
 \[icdt^\prime = L_{00}icdt_0\]</div>
 
@@ -536,7 +541,7 @@ if you take <span class="math notranslate nohighlight">\(L_{00}=\gamma_R\)</span
 the equation for <span class="math notranslate nohighlight">\(dx^\prime\)</span> as long as <span class="math notranslate nohighlight">\(L_{10}=i\beta_R\gamma_R\)</span>.</p>
 <p>This leaves us with (so far):</p>
 <div class="math notranslate nohighlight" id="equation-lormat3">
-<span class="eqno">(24)<a class="headerlink" href="#equation-lormat3" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L} = 
+<span class="eqno">(23)<a class="headerlink" href="#equation-lormat3" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L} = 
 \begin{bmatrix}
 \gamma_R &amp; L_{01} &amp; L_{02} &amp; L_{03}\\
 i\beta_R\gamma_R &amp; L_{11} &amp; L_{12} &amp; L_{13}\\
@@ -555,7 +560,7 @@ exhausted, the Lorentz transformation between two frames of reference
 (Fig 4.1) that have a relative speed of pg in the positive x direction
 is given by the matrix:</p>
 <div class="math notranslate nohighlight" id="equation-lormat">
-<span class="eqno">(25)<a class="headerlink" href="#equation-lormat" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L}_x(\beta_R) = 
+<span class="eqno">(24)<a class="headerlink" href="#equation-lormat" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L}_x(\beta_R) = 
 \begin{bmatrix}
 \gamma_R &amp; -i\beta_R\gamma_R &amp; 0 &amp; 0\\
 i\beta_R\gamma_R &amp; \gamma_R &amp; 0 &amp; 0\\
@@ -571,23 +576,130 @@ the <strong>inverse Lorentz transformation</strong>.</p>
 </section>
 <section id="examples-of-lorentz-transformations">
 <h2>Examples of Lorentz Transformations<a class="headerlink" href="#examples-of-lorentz-transformations" title="Permalink to this heading">#</a></h2>
-<section id="transform-a-displacement-four-vector">
-<h3>Transform a Displacement Four-vector<a class="headerlink" href="#transform-a-displacement-four-vector" title="Permalink to this heading">#</a></h3>
-<p>Ari observer measures the 4-displacement between two events:</p>
+<section id="example-4-1-transform-a-displacement-four-vector">
+<h3>Example 4.1: Transform a Displacement Four-vector<a class="headerlink" href="#example-4-1-transform-a-displacement-four-vector" title="Permalink to this heading">#</a></h3>
+<p>An observer measures the 4-displacement between two events:</p>
 <div class="math notranslate nohighlight" id="equation-eqdx41">
-<span class="eqno">(26)<a class="headerlink" href="#equation-eqdx41" title="Permalink to this equation">#</a></span>\[\begin{split}[dR_4] =
+<span class="eqno">(25)<a class="headerlink" href="#equation-eqdx41" title="Permalink to this equation">#</a></span>\[\begin{split}[dR_4] =
 \begin{bmatrix}
 i3.00~{\rm m}\\
 1.00~{\rm m}\\
--0.250~{\rm m}
+-0.250~{\rm m}\\
+0.00~{\rm m}
 \end{bmatrix}\end{split}\]</div>
 <p>A second observer, traveling with speed <span class="math notranslate nohighlight">\(1.31\times10^8\)</span>~m/s in the
 <span class="math notranslate nohighlight">\(x\)</span> direction with respect to the first observer measures the
 4-displacement for these same two events. What values of the elements
 of the 4-displaceinent does this second observer measure?</p>
 <p>To solve this problem, you use the form of the Lorentz transformation
-in equation <a class="reference internal" href="#equation-lormat">(25)</a>, plugging in the numbers.  We know that
+in equation <a class="reference internal" href="#equation-lormat">(24)</a>, plugging in the numbers.  We know that
 <span class="math notranslate nohighlight">\(\beta_R = v_R/c = 1.31/3.00 = 0.438\)</span>, and therefore <span class="math notranslate nohighlight">\(\gamma_R=1.11\)</span>.</p>
+<p>Now, we are ready to find the elements of <span class="math notranslate nohighlight">\([dR_4]'\)</span></p>
+<div class="math notranslate nohighlight" id="equation-ex41">
+<span class="eqno">(26)<a class="headerlink" href="#equation-ex41" title="Permalink to this equation">#</a></span>\[\begin{split}[dR_4]' = {\cal L}_x(\beta_R)[dR_4] = 
+\begin{bmatrix}
+1.11 &amp; -i0.486 &amp; 0 &amp; 0\\
+i0.486 &amp; 1.11 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+i3.00~{\rm m}\\
+1.00~{\rm m}\\
+-0.250~{\rm m}\\
+0.00~{\rm m}
+\end{bmatrix}\end{split}\]</div>
+<p>multiplying out the matrix gives</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}[dR_4]' =
+\begin{bmatrix}
+1.11(i3.00~{\rm m})-i0.486(1.00~{\rm m})+0+0\\
+-0.486(3.00~{\rm m})+1.11(1.00~{\rm m})+0+0\\
+0+0+-0.250~{\rm m}+0\\
+0+0+0+0.00~{\rm m}
+\end{bmatrix}
+=
+\begin{bmatrix}
+i2.79~{\rm m})\\
+-0.351~{\rm m}\\
+-0.250~{\rm m}\\
+0.00~{\rm m}
+\end{bmatrix}\end{split}\]</div>
+<p>As a check, you can note that the size of the two four-vectors is the
+same:
+<div class="math notranslate nohighlight">
+\[[dR_4]^2 = (-3.00^2+1.00^2+(-0.250)^2+0.0^2)~{\rm m}^2 = -8.009~{\rm m}^2\]</div>
+
+and
+<div class="math notranslate nohighlight">
+\[[dR_4]'^2 = (-2.79^2+(-0.351)^2+(-0.250)^2+0.00^2)~{\rm m}^2 = -8.009~{\rm m}^2\]</div>
+
+Note which minus signs go away because they are squared and which ones do not.
+Also note that all components have units of length.</p>
+</section>
+<section id="example-4-2-angles-in-space">
+<h3>Example 4.2: Angles in Space<a class="headerlink" href="#example-4-2-angles-in-space" title="Permalink to this heading">#</a></h3>
+<p>Find the physical angle that the displacement given in example 4.1
+makes with respect to the <span class="math notranslate nohighlight">\(x\)</span> axis. Determine the angle as measured by
+the primed observer.</p>
+<p>The angle that tlie unprimed observer makes is:
+<div class="math notranslate nohighlight">
+\[\tan{\theta} =\frac{dy}{dx} = \frac{1.00~{\rm m}}{-0.250~{\rm m}} = -4.00
+\rightarrow \theta = -76.0^\circ\]</div>
+
+The angle is in the 4th quadrant.<br />
+This makes sense since dy is negative and dx is positive.</p>
+<p>The second observer moving with respect to the first measures an angle:
+<div class="math notranslate nohighlight">
+\[\tan{\theta^\prime} =\frac{dy'}{dx'} = \frac{-0.351~{\rm m}}{-0.250~{\rm m}} = 1.40
+\rightarrow \theta^\prime = 234.0^\circ\]</div>
+
+This angle is in the third quadrant as both <span class="math notranslate nohighlight">\(dx'\)</span> and <span class="math notranslate nohighlight">\(dy'\)</span> are negative.
+Essentially, the second observer is overtaking the first, so the
+horizontal displacement flips around and points the other way.</p>
+</section>
+<section id="example-4-3-using-an-inverse-lorentz-transformation">
+<h3>Example 4.3: Using an Inverse Lorentz Transformation<a class="headerlink" href="#example-4-3-using-an-inverse-lorentz-transformation" title="Permalink to this heading">#</a></h3>
+<p>The primed observer in example 4.1 believes that the unprimed observer
+is moving with speed <span class="math notranslate nohighlight">\(v_R = 1.3\times10^8\)</span> m/s in the <span class="math notranslate nohighlight">\(-x\)</span> direction
+with respect to him. Show that this is a reasonable assumption by
+finding the elements of the inverse Lorentz transformation that
+transform the coinponents she measured for <span class="math notranslate nohighlight">\([dR4]'\)</span> into those
+measured by the observer in the unprimed reference frame.  In
+other words, imagine you didn’t know <span class="math notranslate nohighlight">\(\beta_R\)</span> and find it from
+the given four vectors.</p>
+<p>Going back to the transformation in example 4.1, but setting it
+up as an inverse transformation, we get:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
+i3.00~{\rm m}\\
+1.00~{\rm m}\\
+-0.250~{\rm m}\\
+0.00~{\rm m}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\gamma_R &amp; i\beta_R\gamma_R &amp; 0 &amp; 0\\
+-i\beta_R\gamma_R &amp; \gamma_R &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+i2.79~{\rm m})\\
+-0.351~{\rm m}\\
+-0.250~{\rm m}\\
+0.00~{\rm m}
+\end{bmatrix}\end{split}\]</div>
+<p>Note the minus sign has been switched.
+The <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> components don’t change, but if you work out the
+first two component and then take their ratio, you get
+<div class="math notranslate nohighlight">
+\[\frac{1.00~{\rm m}}{3.00~{\rm m}} =
+\frac{\gamma_R[-0.351~{\rm m} + \beta_R(2.79~{\rm m})]}{\gamma_R
+[2.79~{\rm m}-\beta_R(0.351~{rm m})]}\]</div>
+
+The factors of <span class="math notranslate nohighlight">\(\gamma_R\)</span> cancel, and then you can sove for <span class="math notranslate nohighlight">\(\beta_R\)</span>
+to get <span class="math notranslate nohighlight">\(\beta_R = 0.44\)</span> which means <span class="math notranslate nohighlight">\(v_R = 1.3\times10^8\)</span> m/s.</p>
 </section>
 </section>
 </section>
@@ -662,7 +774,9 @@ in equation <a class="reference internal" href="#equation-lormat">(25)</a>, plug
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-the-problem">Setting Up the Problem</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determining-the-elements">Determining the Elements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-lorentz-transformations">Examples of Lorentz Transformations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transform-a-displacement-four-vector">Transform a Displacement Four-vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-1-transform-a-displacement-four-vector">Example 4.1: Transform a Displacement Four-vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-2-angles-in-space">Example 4.2: Angles in Space</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-3-using-an-inverse-lorentz-transformation">Example 4.3: Using an Inverse Lorentz Transformation</a></li>
 </ul>
 </li>
 </ul>

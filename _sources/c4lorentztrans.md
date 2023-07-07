@@ -267,16 +267,17 @@ the **inverse Lorentz transformation**.
 
 ## Examples of Lorentz Transformations
 
-### Transform a Displacement Four-vector
+### Example 4.1: Transform a Displacement Four-vector
 
-Ari observer measures the 4-displacement between two events:
+An observer measures the 4-displacement between two events:
 ```{math}
 :label: eqdx41
 [dR_4] =
 \begin{bmatrix}
 i3.00~{\rm m}\\
 1.00~{\rm m}\\
--0.250~{\rm m}
+-0.250~{\rm m}\\
+0.00~{\rm m}
 \end{bmatrix}
 ```
 A second observer, traveling with speed $1.31\times10^8$~m/s in the
@@ -287,3 +288,107 @@ of the 4-displaceinent does this second observer measure?
 To solve this problem, you use the form of the Lorentz transformation
 in equation {eq}`lormat`, plugging in the numbers.  We know that
 $\beta_R = v_R/c = 1.31/3.00 = 0.438$, and therefore $\gamma_R=1.11$.
+
+Now, we are ready to find the elements of $[dR_4]'$
+```{math}
+:label: ex41
+[dR_4]' = {\cal L}_x(\beta_R)[dR_4] = 
+\begin{bmatrix}
+1.11 & -i0.486 & 0 & 0\\
+i0.486 & 1.11 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+i3.00~{\rm m}\\
+1.00~{\rm m}\\
+-0.250~{\rm m}\\
+0.00~{\rm m}
+\end{bmatrix}
+```
+multiplying out the matrix gives
+```{math}
+[dR_4]' =
+\begin{bmatrix}
+1.11(i3.00~{\rm m})-i0.486(1.00~{\rm m})+0+0\\
+-0.486(3.00~{\rm m})+1.11(1.00~{\rm m})+0+0\\
+0+0+-0.250~{\rm m}+0\\
+0+0+0+0.00~{\rm m}
+\end{bmatrix}
+=
+\begin{bmatrix}
+i2.79~{\rm m})\\
+-0.351~{\rm m}\\
+-0.250~{\rm m}\\
+0.00~{\rm m}
+\end{bmatrix}
+```
+As a check, you can note that the size of the two four-vectors is the
+same:
+$$[dR_4]^2 = (-3.00^2+1.00^2+(-0.250)^2+0.0^2)~{\rm m}^2 = -8.009~{\rm m}^2$$
+and
+$$[dR_4]'^2 = (-2.79^2+(-0.351)^2+(-0.250)^2+0.00^2)~{\rm m}^2 = -8.009~{\rm m}^2$$
+Note which minus signs go away because they are squared and which ones do not.
+Also note that all components have units of length.
+
+### Example 4.2: Angles in Space
+
+Find the physical angle that the displacement given in example 4.1
+makes with respect to the $x$ axis. Determine the angle as measured by
+the primed observer.
+
+The angle that tlie unprimed observer makes is:
+$$\tan{\theta} =\frac{dy}{dx} = \frac{1.00~{\rm m}}{-0.250~{\rm m}} = -4.00
+\rightarrow \theta = -76.0^\circ$$
+The angle is in the 4th quadrant.  
+This makes sense since dy is negative and dx is positive.
+
+The second observer moving with respect to the first measures an angle:
+$$\tan{\theta^\prime} =\frac{dy'}{dx'} = \frac{-0.351~{\rm m}}{-0.250~{\rm m}} = 1.40
+\rightarrow \theta^\prime = 234.0^\circ$$
+This angle is in the third quadrant as both $dx'$ and $dy'$ are negative.
+Essentially, the second observer is overtaking the first, so the
+horizontal displacement flips around and points the other way.
+
+### Example 4.3: Using an Inverse Lorentz Transformation
+
+The primed observer in example 4.1 believes that the unprimed observer
+is moving with speed $v_R = 1.3\times10^8$ m/s in the $-x$ direction
+with respect to him. Show that this is a reasonable assumption by
+finding the elements of the inverse Lorentz transformation that
+transform the coinponents she measured for $[dR4]'$ into those
+measured by the observer in the unprimed reference frame.  In
+other words, imagine you didn't know $\beta_R$ and find it from
+the given four vectors.
+
+Going back to the transformation in example 4.1, but setting it
+up as an inverse transformation, we get:
+```{math}
+\begin{bmatrix}
+i3.00~{\rm m}\\
+1.00~{\rm m}\\
+-0.250~{\rm m}\\
+0.00~{\rm m}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\gamma_R & i\beta_R\gamma_R & 0 & 0\\
+-i\beta_R\gamma_R & \gamma_R & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+i2.79~{\rm m})\\
+-0.351~{\rm m}\\
+-0.250~{\rm m}\\
+0.00~{\rm m}
+\end{bmatrix}
+```
+Note the minus sign has been switched.
+The $y$ and $z$ components don't change, but if you work out the
+first two component and then take their ratio, you get
+$$\frac{1.00~{\rm m}}{3.00~{\rm m}} =
+\frac{\gamma_R[-0.351~{\rm m} + \beta_R(2.79~{\rm m})]}{\gamma_R
+[2.79~{\rm m}-\beta_R(0.351~{rm m})]}$$
+The factors of $\gamma_R$ cancel, and then you can sove for $\beta_R$
+to get $\beta_R = 0.44$ which means $v_R = 1.3\times10^8$ m/s.

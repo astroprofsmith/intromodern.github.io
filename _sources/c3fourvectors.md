@@ -600,6 +600,17 @@ in the case of $\beta=0$ -- no relative motion means the clocks will agree),
 so the clocks in the Earth's frame will always measure a longer time
 interval, no matter the speed of the rocket.
 
+```{note}
+The relationships $\gamma = 1/\sqrt{1-\beta^2}$ and
+$\beta = \sqrt{1-1/\gamma^2}$ are very useful to know.
+When speeds 
+start to get close to the speed of light, we often just write the speed **as
+the Lorentz Factor**, rather than converting it back to $\beta$, or
+even $v$.  So it would be perfectly acceptable to just say something
+like "travelling with a speed of $\gamma = 115$", even though technically
+$\gamma$ is not a speed.
+```
+
 In the case presented here, $\beta = 0.75$, so $\gamma = 1.512$, and
 therefore the clocks on the rocket will measure a time interval of 3.7
 years.  This is a simplified version of the famous **Twin Paradox**,
@@ -614,69 +625,6 @@ the planes were not inertial reference frames, but when correctly
 calculated, the predicted differences in the clocks were not different from
 the measured elapsed times, on the orders of a hundred nanoseconds!
 Look up descriptions of the [Hafele-Keating Experiment](https://en.wikipedia.org/wiki/Hafele%E2%80%93Keating_experiment) for more details.
-
-### Muons in the Atmosphere
-
-Muons are created in the upper atmosphere (around 100 km up) of the
-Earth when cosmic rays from space collide with atoms in the air.
-These muons continue toward the Earth at high speed.  However, the
-half-life for muons at rest is only about 2.2 microseconds.  By the
-time $22~\mu$s have passed, the vast majority of them will have
-decayed.  Even at the speed of light, they could only travel about 6.6
-km in $22~\mu$s.  There should not be any muons reaching the ground,
-and yet you can see many of them in a cloud chamber at sea level.
-Even close to the speed of light, they would need at least 330
-microseconds to get down here.
-
-```{margin}
-Equation {eq}`eqlorentz` is a very useful relationship to know.
-```
-Much as in Example 3.2, the halflife of the muons needs to be dilated
-in the reference frame at rest with respect to the Earth.  For the
-muons to make it to the Earth's surface, the time dilation factor
-would have to be $\sim 330/2=115$.  We can solve for $\beta$ from the
-Lorentz Factor:
-```{math}
-:label: eqlorentz
-\gamma^2 = \frac{1}{1-\beta^2} \rightarrow \beta =
-\sqrt{1-\frac{1}{\gamma^2}}.
-```
-Plug in 115 for $\gamma$ and get $\beta
-\geq 0.999962$ -- this is the minimum speed the muons would have to be
-going if they are to reach the ground before they decay.  The
-fact that this actually happens is further solid evidence to support
-that time dilation is real.
-
-The spacetime diagrams for these events would look just like Figure
-3.3, only the $x$ axis would stand for the height above the ground,
-pointing down.  In that case, the left diagram would be the Earth's
-reference frame, while the right diagram would be the muon's reference
-frame.  The red dot would be the creation of the muon in the upper
-atmosphere, while the blue dot would be the muon reaching the ground.
-The vertical separation between the dots on the right would be $cdt_0
-= 6.6$ km, while the horizontal separation in the diagram on the left
-would be the 100 km height of the atmosphere.  The vertical separation
-in the left diagram would be $cdt = 100$ km (technically 100 km
-divided by 0.999962 -- therefore the ratio of $dx$ to $cdt$ would be
-$\beta$, as it should be.).
-
-Writing all those nines is a little boring, so usually when the speeds
-start to get close to the speed of light, we just write the speed **as
-the Lorentz Factor**, rather than converting it back to $\beta$, or
-even $v$.  So it would be perfectly acceptable to just say something
-like "travelling with a speed of $\gamma = 115$", even though technically
-$\gamma$ is not a speed.
-
-```{note}
-Make sure you understand that nothing in SR makes any demands on what
-kind of clock is being used to make the measurements.  Time dilation
-is not a mechanical effect of the particular clock making the measurements.
-**Any** spatially repeating system (rotation, vibration, oscillation)
-can act as a clock, and **all** of them will measure time dilation.
-It's a necessary implication of the two postulates of Relativity,
-a property of time itself, not a description of gears winding down or
-some other feature of a particular kind of clock.
-```
 
 ### Clock on a Train
 
@@ -765,6 +713,17 @@ run slow when measuring the time interval between two events at rest
 in the moing frame."  Or, more clearly, "a clock at rest with respect
 to two events will measure the shortest possible time interval between
 those two events."
+
+```{note}
+Make sure you understand that nothing in SR makes any demands on what
+kind of clock is being used to make the measurements.  Time dilation
+is not a mechanical effect of the particular clock making the measurements.
+**Any** spatially repeating system (rotation, vibration, oscillation)
+can act as a clock, and **all** of them will measure time dilation.
+It's a necessary implication of the two postulates of Relativity,
+a property of time itself, not a description of gears winding down or
+some other feature of a particular kind of clock.
+```
 
 You can also express this example through the formalism of the displacement
 four vectors.  In the reference frame of the train, the events of the

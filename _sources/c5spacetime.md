@@ -26,5 +26,10 @@ import matplotlib.pyplot as plt
 Now that we have the tools of the displacement four vector, the
 spacetime diagram, and the Lorentz transformation, it is worth taking
 some time to look at what we can learn about the properties of space
-and tiem by applying these tools to the spacetime diagram.
+and time by applying these tools to the spacetime diagram.
 
+## Types of Intervals
+
+## How do the Axes Change?
+
+I need my notebook to work on this one.

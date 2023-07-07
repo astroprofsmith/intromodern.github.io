@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Chapter 5: Properties of Spacetime Diagrams &#8212; Introduction to Modern Physics</title>
+    <title>Chapter 6: The Displacement Four Vector &#8212; Introduction to Modern Physics</title>
   
   
   
@@ -61,11 +61,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'c5spacetime';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'c6displacement';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="The Displacement Four Vector" href="c6displacement.html" />
-    <link rel="prev" title="Chapter 4: Lorentz Transformations" href="c4lorentztrans.html" />
+    <link rel="prev" title="Chapter 5: Properties of Spacetime Diagrams" href="c5spacetime.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -161,8 +162,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="c2postulates.html">Chapter 2:  Postulates of Relativity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c3fourvectors.html">Chapter 3: Four Vectors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c4lorentztrans.html">Chapter 4: Lorentz Transformations</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 5: Properties of Spacetime Diagrams</a></li>
-<li class="toctree-l1"><a class="reference internal" href="c6displacement.html">The Displacement Four Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c5spacetime.html">Chapter 5: Properties of Spacetime Diagrams</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 6: The Displacement Four Vector</a></li>
 </ul>
 
     </div>
@@ -234,7 +235,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fc5spacetime.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fc6displacement.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -264,7 +265,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/c5spacetime.md" target="_blank"
+      <li><a href="_sources/c6displacement.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -346,7 +347,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Chapter 5: Properties of Spacetime Diagrams</h1>
+    <h1>Chapter 6: The Displacement Four Vector</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -356,8 +357,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-intervals">Types of Intervals</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-the-axes-change">How do the Axes Change?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-difference-between-two-events">The Difference Between Two Events</a></li>
 </ul>
             </nav>
         </div>
@@ -369,18 +369,46 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="chapter-5-properties-of-spacetime-diagrams">
-<h1>Chapter 5: Properties of Spacetime Diagrams<a class="headerlink" href="#chapter-5-properties-of-spacetime-diagrams" title="Permalink to this heading">#</a></h1>
-<p>Now that we have the tools of the displacement four vector, the
-spacetime diagram, and the Lorentz transformation, it is worth taking
-some time to look at what we can learn about the properties of space
-and time by applying these tools to the spacetime diagram.</p>
-<section id="types-of-intervals">
-<h2>Types of Intervals<a class="headerlink" href="#types-of-intervals" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="how-do-the-axes-change">
-<h2>How do the Axes Change?<a class="headerlink" href="#how-do-the-axes-change" title="Permalink to this heading">#</a></h2>
-<p>I need my notebook to work on this one.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-6-the-displacement-four-vector">
+<h1>Chapter 6: The Displacement Four Vector<a class="headerlink" href="#chapter-6-the-displacement-four-vector" title="Permalink to this heading">#</a></h1>
+<p>In this chapter, we will take a deep dive into the properties of
+the displacement four vector, using all the tools developed in the
+previous chapters.  Some of the material will repeat what has been
+presented already, but in more depth.</p>
+<section id="the-difference-between-two-events">
+<h2>The Difference Between Two Events<a class="headerlink" href="#the-difference-between-two-events" title="Permalink to this heading">#</a></h2>
+<p>The model we will be using to predict the behavior of systems moving
+with speeds significant compared to the speed of light require that
+the physical process be one such that there are two events occurring
+that can be viewed by different observers. Some examples of physical
+processes that can be understood this way are:</p>
+<ol class="arabic simple">
+<li><p>A strange particle being produced (first event), and at some later
+time, decaying into other particles (second event).</p></li>
+<li><p>A rocket ship leaving the earth (first event), and arriving at
+another star (second event).</p></li>
+<li><p>A high energy electron striking a proton (first event) and then
+being scattered and leaving the interaction area at a different
+energy and direction of motion from the initial electron (second
+event).</p></li>
+<li><p>A photon with energy in the radar range sent out by a cop (first
+event) that is reflected by a moving car, and then returns to the
+cop at a different energy (second event)</p></li>
+<li><p>A star cruiser traveling at 0.900 the speed of light (first event)
+and then shooting of a laser pulse at an angle of <span class="math notranslate nohighlight">\(30^\circ\)</span> with
+respect to the direction of motion of the star cruiser (second
+event).</p></li>
+<li><p>A high energy proton entering the magnetic field of a bubble chamber
+(first event) and this same proton leaving the magnetic field
+traveling in a different direction (second event).</p></li>
+</ol>
+<p>This model (which of course is special relativity) suggests how an
+inertial observer, such as one that is moving at a constant speed (not
+accelerating), should analyze what is different about the two
+events. It also provides a way (called the Lorentz transformation) of
+calculating what other inertial observers, moving with respect to the
+first observer, would measure as the difference between these two
+events.</p>
 </section>
 </section>
 
@@ -416,22 +444,13 @@ and time by applying these tools to the spacetime diagram.</p>
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="c4lorentztrans.html"
+       href="c5spacetime.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Chapter 4: Lorentz Transformations</p>
+        <p class="prev-next-title">Chapter 5: Properties of Spacetime Diagrams</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="c6displacement.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">The Displacement Four Vector</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
@@ -451,8 +470,7 @@ and time by applying these tools to the spacetime diagram.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-intervals">Types of Intervals</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-the-axes-change">How do the Axes Change?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-difference-between-two-events">The Difference Between Two Events</a></li>
 </ul>
   </nav></div>
 
