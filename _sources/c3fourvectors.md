@@ -487,7 +487,7 @@ ax2.plot([3],[0.5+cdtp],'bo')
 plt.show()
 ```
 ```{note}
-Figure 3.3 -- Spacetime diagrams of two events in two different
+Figure 3.4 -- Spacetime diagrams of two events in two different
 reference frames in relative motion.  The left diagram represents the
 reference frame at rest with respect to the Earth.  In this reference
 frame, the rocket leaves at the red dot on the lower left, travels 4.3
@@ -732,6 +732,7 @@ dt^2  = \frac{4(cdt_0/2)^2+(vdt/2)^2}{c^2}
 ```
 The four cancels, and if we multiply both sides by $c^2$,
 ```{math}
+:label: eqdxlaser
 c^2dt^2  = (cdt_0)^2+(vdt)^2 \rightarrow dt^2(c^2-v^2) = c^2dt_0^2
 ```
 which means
@@ -746,11 +747,59 @@ ground, the clock on the train is therefore running slow, so often
 time dilation is summarized as "moving clocks run slow."
 
 This is a confusing and imprecise statement, for all its pithy brevity.
-Need to talk about "moving clocks run slow".
+One of the central premises of relativity is that all motion is relative.
+So which clock is moving?  From the point of view of the train, the
+ground is moving, but from the point of view of the ground, the train
+is moving.  If "moving clocks run slow", could we determine which clock
+is running slow, and then that would tell us which clock is **really**
+moving?
 
-Need to explain how to interpret these events in four-vector format
+The trick is that you have to make sure you are making symmetric
+comparisons.  From the ground, the train is moving, and therefore its
+clock runs slow when measuring time intervals **on the train**.  To
+make the comparison properly, if you wanted to test whether the clock
+on the ground was running slow, because it is moving relative to the
+train, you would have to pick two events at rest with respect to the
+**ground**.  In other words, the phrase really should be "moving clocks
+run slow when measuring the time interval between two events at rest
+in the moing frame."  Or, more clearly, "a clock at rest with respect
+to two events will measure the shortest possible time interval between
+those two events."
 
+You can also express this example through the formalism of the displacement
+four vectors.  In the reference frame of the train, the events of the
+light being emitted and then being detected are in the same place, so
+in the context of Figure 3.3, the train frame is the primed frame on
+the right.  The reference frame at rest with respect to the ground
+is the unprimed frame on the left.  The red dot is the emission of
+the light and the blue dot is the detection of the light.  The
+displacement four vector in the train frame would be:
+\begin{equation}
+[dx_4]_{\rm train} =
+\begin{bmatrix}
+icdt_0\\
+0\\
+0\\
+0
+\end{bmatrix}
+\end{equation}
+while the displacement four vector from the ground's reference frame is
+\begin{equation}
+[dx_4]_{\rm ground} =
+\begin{bmatrix}
+icdt\\
+vdt\\
+0\\
+0
+\end{bmatrix}
+\end{equation}
+Since the size of these four-vectors must be the same, that means
+$$-c^2dt_0^2 = -c^2dt^2+v^2dt^2,$$ which is exactly the same as Equation
+{eq}`eqdxlaser`, which means that, again, $dt = \gamma dt_0$.
 
+Despite what seem to be complete different contexts, the underlying
+physics of the rocket and the train are exactly the same, because
+the rules of time are the same.
 
 
 ## Summary
