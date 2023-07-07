@@ -266,3 +266,24 @@ the opposite direction, the $\beta_R$ would become $-\beta_R$,
 the **inverse Lorentz transformation**.
 
 ## Examples of Lorentz Transformations
+
+### Transform a Displacement Four-vector
+
+Ari observer measures the 4-displacement between two events:
+```{math}
+:label: eqdx41
+[dR_4] =
+\begin{bmatrix}
+i3.00~{\rm m}\\
+1.00~{\rm m}\\
+-0.250~{\rm m}
+\end{bmatrix}
+```
+A second observer, traveling with speed $1.31\times10^8$~m/s in the
+$x$ direction with respect to the first observer measures the
+4-displacement for these same two events. What values of the elements
+of the 4-displaceinent does this second observer measure?
+
+To solve this problem, you use the form of the Lorentz transformation
+in equation {eq}`lormat`, plugging in the numbers.  We know that
+$\beta_R = v_R/c = 1.31/3.00 = 0.438$, and therefore $\gamma_R=1.11$.
