@@ -357,6 +357,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-the-problem">Setting Up the Problem</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determining-the-elements">Determining the Elements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-lorentz-transformations">Examples of Lorentz Transformations</a></li>
 </ul>
             </nav>
         </div>
@@ -420,8 +421,8 @@ transformation, therefore, is a <span class="math notranslate nohighlight">\(4 \
 element of this matrix (row <span class="math notranslate nohighlight">\(\alpha\)</span> column <span class="math notranslate nohighlight">\(\beta\)</span>, where the
 Greek letters stand for 0, 1, 2, and 3), the transformation
 matrix has the form:</p>
-<div class="math notranslate nohighlight" id="equation-lormat">
-<span class="eqno">(20)<a class="headerlink" href="#equation-lormat" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L}_{\alpha\beta} = 
+<div class="math notranslate nohighlight" id="equation-lormat1">
+<span class="eqno">(20)<a class="headerlink" href="#equation-lormat1" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L}_{\alpha\beta} = 
 \begin{bmatrix}
 L_{00} &amp; L_{01} &amp; L_{02} &amp; L_{03}\\
 L_{10} &amp; L_{11} &amp; L_{12} &amp; L_{13}\\
@@ -516,22 +517,55 @@ location of the events would have to be moving left at the same speed,
 so <span class="math notranslate nohighlight">\(dx^\prime = -v_Rdt = -\beta_R cdt = -\beta_R\gamma_R cdt_0\)</span>, where
 we have used time dilation to turn the <span class="math notranslate nohighlight">\(dt\)</span> into <span class="math notranslate nohighlight">\(dt_0\)</span>.</p>
 <p>That gives us two further relations that will enable us to get four of the
-numbers.  We look at the first two rows of Equation <a class="reference internal" href="#equation-eqlort">(19)</a>:
+numbers.  We look at the first two rows of Equation <a class="reference internal" href="#equation-eqlort">(19)</a>, using
+Equation <a class="reference internal" href="#equation-eqrestdx4">(23)</a> as the four vector:
 <div class="math notranslate nohighlight">
-\[icdt^\prime = L_{00}icdt_0+L_{01}dx_0\]</div>
+\[icdt^\prime = L_{00}icdt_0\]</div>
 
 and
 <div class="math notranslate nohighlight">
-\[dx^\prime = L_{10}icdt_0+L_{11}dx_0.\]</div>
+\[dx^\prime = L_{10}icdt_0.\]</div>
 
-First of all, notice that <span class="math notranslate nohighlight">\(dy\)</span> and <span class="math notranslate nohighlight">\(dz\)</span> do not enter into these
-equations.  This means that the elements that would multiply
-<span class="math notranslate nohighlight">\(dy\)</span> and <span class="math notranslate nohighlight">\(dz\)</span> (<span class="math notranslate nohighlight">\(L_{02}\)</span>, <span class="math notranslate nohighlight">\(L_{03}\)</span>, <span class="math notranslate nohighlight">\(L_{12}\)</span>, <span class="math notranslate nohighlight">\(L_{13}\)</span>) must
-all be zero!  Second, we use the fact that <span class="math notranslate nohighlight">\(dx_0=0\)</span> (events at rest)
-to drop those terms out of the equations.  Divide what’s left
-by each other to get</p>
-<div class="math notranslate nohighlight" id="equation-eqlrat">
-<span class="eqno">(24)<a class="headerlink" href="#equation-eqlrat" title="Permalink to this equation">#</a></span>\[\frac{dx^\prime}{}\]</div>
+The first of these two equations will get you back the time dilation
+if you take <span class="math notranslate nohighlight">\(L_{00}=\gamma_R\)</span>, and then the second equation matches with
+the equation for <span class="math notranslate nohighlight">\(dx^\prime\)</span> as long as <span class="math notranslate nohighlight">\(L_{10}=i\beta_R\gamma_R\)</span>.</p>
+<p>This leaves us with (so far):</p>
+<div class="math notranslate nohighlight" id="equation-lormat3">
+<span class="eqno">(24)<a class="headerlink" href="#equation-lormat3" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L} = 
+\begin{bmatrix}
+\gamma_R &amp; L_{01} &amp; L_{02} &amp; L_{03}\\
+i\beta_R\gamma_R &amp; L_{11} &amp; L_{12} &amp; L_{13}\\
+0 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}\end{split}\]</div>
+<p>Not sure where to go next.  Perhaps use antisymmetric?
+But how do I justify that?  Can I show that dy and dz don’t
+come into it?</p>
+<p>The number of unknowns in the Lorentz transformation matrix has de-
+creased from 16 to 6. The rest can be found using similar tricks.  For
+example, you could set up the events in Figure 4.1 such that the
+primed observer was in the rest frame of the events and work out the
+values for the rest of the unknowns. When all such tricks are
+exhausted, the Lorentz transformation between two frames of reference
+(Fig 4.1) that have a relative speed of pg in the positive x direction
+is given by the matrix:</p>
+<div class="math notranslate nohighlight" id="equation-lormat">
+<span class="eqno">(25)<a class="headerlink" href="#equation-lormat" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L}_x(\beta_R) = 
+\begin{bmatrix}
+\gamma_R &amp; -i\beta_R\gamma_R &amp; 0 &amp; 0\\
+i\beta_R\gamma_R &amp; \gamma_R &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}\end{split}\]</div>
+<p>The subscript <span class="math notranslate nohighlight">\(x\)</span> is to remind us that the relative velocity is
+in the <span class="math notranslate nohighlight">\(x\)</span> direction.  If that were not the case, the matrix
+would look a lot more complicated!  Note that this formulation
+is based on the diagram in Figure 4.1 – if the velocity were in
+the opposite direction, the <span class="math notranslate nohighlight">\(\beta_R\)</span> would become <span class="math notranslate nohighlight">\(-\beta_R\)</span>,
+the <strong>inverse Lorentz transformation</strong>.</p>
+</section>
+<section id="examples-of-lorentz-transformations">
+<h2>Examples of Lorentz Transformations<a class="headerlink" href="#examples-of-lorentz-transformations" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -595,6 +629,7 @@ by each other to get</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-the-problem">Setting Up the Problem</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determining-the-elements">Determining the Elements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-lorentz-transformations">Examples of Lorentz Transformations</a></li>
 </ul>
   </nav></div>
 

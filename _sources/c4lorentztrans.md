@@ -109,7 +109,7 @@ element of this matrix (row $\alpha$ column $\beta$, where the
 Greek letters stand for 0, 1, 2, and 3), the transformation
 matrix has the form:
 ```{math}
-:label: lormat
+:label: lormat1
 {\cal L}_{\alpha\beta} = 
 \begin{bmatrix}
 L_{00} & L_{01} & L_{02} & L_{03}\\
@@ -214,17 +214,55 @@ so $dx^\prime = -v_Rdt = -\beta_R cdt = -\beta_R\gamma_R cdt_0$, where
 we have used time dilation to turn the $dt$ into $dt_0$.
 
 That gives us two further relations that will enable us to get four of the
-numbers.  We look at the first two rows of Equation {eq}`eqlort`:
-$$icdt^\prime = L_{00}icdt_0+L_{01}dx_0$$
+numbers.  We look at the first two rows of Equation {eq}`eqlort`, using
+Equation {eq}`eqrestdx4` as the four vector:
+$$icdt^\prime = L_{00}icdt_0$$
 and
-$$dx^\prime = L_{10}icdt_0+L_{11}dx_0.$$
-First of all, notice that $dy$ and $dz$ do not enter into these
-equations.  This means that the elements that would multiply
-$dy$ and $dz$ ($L_{02}$, $L_{03}$, $L_{12}$, $L_{13}$) must
-all be zero!  Second, we use the fact that $dx_0=0$ (events at rest)
-to drop those terms out of the equations.  Divide what's left
-by each other to get
+$$dx^\prime = L_{10}icdt_0.$$
+The first of these two equations will get you back the time dilation
+if you take $L_{00}=\gamma_R$, and then the second equation matches with
+the equation for $dx^\prime$ as long as $L_{10}=i\beta_R\gamma_R$.
+
+This leaves us with (so far):
 ```{math}
-:label: eqLrat
-\frac{dx^\prime}{}
+:label: lormat3
+{\cal L} = 
+\begin{bmatrix}
+\gamma_R & L_{01} & L_{02} & L_{03}\\
+i\beta_R\gamma_R & L_{11} & L_{12} & L_{13}\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{bmatrix}
 ```
+
+Not sure where to go next.  Perhaps use antisymmetric?
+But how do I justify that?  Can I show that dy and dz don't
+come into it?
+
+
+The number of unknowns in the Lorentz transformation matrix has de-
+creased from 16 to 6. The rest can be found using similar tricks.  For
+example, you could set up the events in Figure 4.1 such that the
+primed observer was in the rest frame of the events and work out the
+values for the rest of the unknowns. When all such tricks are
+exhausted, the Lorentz transformation between two frames of reference
+(Fig 4.1) that have a relative speed of pg in the positive x direction
+is given by the matrix:
+```{math}
+:label: lormat
+{\cal L}_x(\beta_R) = 
+\begin{bmatrix}
+\gamma_R & -i\beta_R\gamma_R & 0 & 0\\
+i\beta_R\gamma_R & \gamma_R & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{bmatrix}
+```
+The subscript $x$ is to remind us that the relative velocity is
+in the $x$ direction.  If that were not the case, the matrix
+would look a lot more complicated!  Note that this formulation
+is based on the diagram in Figure 4.1 -- if the velocity were in
+the opposite direction, the $\beta_R$ would become $-\beta_R$,
+the **inverse Lorentz transformation**.
+
+## Examples of Lorentz Transformations
