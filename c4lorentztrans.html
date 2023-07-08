@@ -167,6 +167,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="c6displacement.html">Chapter 6: The Displacement Four Vector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c7velocity.html">Chapter 7: The Velocity Four-Vector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c8momentum.html">Chapter 8: The Momentum Four-Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c9examples.html">Chapter 9: Examples of Relativity in Action</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c10force.html">Chapter 10: Relativistic Force and Acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c11electric.html">Chapter 11: The Electromagnetic Tensor</a></li>
 </ul>
 
     </div>
@@ -403,7 +406,7 @@ start by recreating this diagram and making sure that you are assigning
 the correct numbers to the elements, as defined in this diagram.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/d05999291a1cc0c752685bb808d880e04aa03797a2a196af0cf67afc5157b3b4.png" src="_images/d05999291a1cc0c752685bb808d880e04aa03797a2a196af0cf67afc5157b3b4.png" />
+<img alt="_images/d670ed30d1ac1c8bd98bdc17428e86ee1f59b7b19ad570e4aeaaaafb3b0e3995.png" src="_images/d670ed30d1ac1c8bd98bdc17428e86ee1f59b7b19ad570e4aeaaaafb3b0e3995.png" />
 </div>
 </div>
 <div class="admonition note">
@@ -484,8 +487,8 @@ does not apply to <strong>any</strong> object that you might perform a Lorentz t
 on.  In electromagnetism, for example, the electric and mangetic fields in
 the <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> direction are different in a frame moving in the <span class="math notranslate nohighlight">\(x\)</span> direction.
 We use the dimensional independence of <span class="math notranslate nohighlight">\(dy\)</span> and <span class="math notranslate nohighlight">\(dz\)</span> to derive values for
-<span class="math notranslate nohighlight">\({\cal L}\)</span>, but once we do that we don’t have to insist that <span class="math notranslate nohighlight">\(y\)</span> and
-<span class="math notranslate nohighlight">\(z\)</span> are unaffected in all circumstances at all times.  Be cautious.</p>
+<span class="math notranslate nohighlight">\({\cal L}\)</span>, but once we do that we don’t have to insist that the <span class="math notranslate nohighlight">\(y\)</span> and
+<span class="math notranslate nohighlight">\(z\)</span> for all vectors are unaffected in all circumstances at all times.  Be cautious.</p>
 </div>
 <p>This means that <span class="math notranslate nohighlight">\(dy^\prime = dy\)</span>.  However, if we write out the third
 row of Equation <a class="reference internal" href="#equation-eqlort">(18)</a>, we get <div class="math notranslate nohighlight">
@@ -551,14 +554,14 @@ i\beta_R\gamma_R &amp; L_{11} &amp; L_{12} &amp; L_{13}\\
 <p>Not sure where to go next.  Perhaps use antisymmetric?
 But how do I justify that?  Can I show that dy and dz don’t
 come into it?</p>
-<p>The number of unknowns in the Lorentz transformation matrix has de-
-creased from 16 to 6. The rest can be found using similar tricks.  For
-example, you could set up the events in Figure 4.1 such that the
+<p>The number of unknowns in the Lorentz transformation matrix has
+decreased from 16 to 6. The rest can be found using similar tricks.
+For example, you could set up the events in Figure 4.1 such that the
 primed observer was in the rest frame of the events and work out the
 values for the rest of the unknowns. When all such tricks are
 exhausted, the Lorentz transformation between two frames of reference
-(Fig 4.1) that have a relative speed of pg in the positive x direction
-is given by the matrix:</p>
+(Fig 4.1) that have a relative speed of <span class="math notranslate nohighlight">\(\beta_R\)</span> in the positive x
+direction is given by the matrix:</p>
 <div class="math notranslate nohighlight" id="equation-lormat">
 <span class="eqno">(24)<a class="headerlink" href="#equation-lormat" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L}_x(\beta_R) = 
 \begin{bmatrix}
@@ -593,7 +596,8 @@ i3.00~{\rm m}\\
 of the 4-displaceinent does this second observer measure?</p>
 <p>To solve this problem, you use the form of the Lorentz transformation
 in equation <a class="reference internal" href="#equation-lormat">(24)</a>, plugging in the numbers.  We know that
-<span class="math notranslate nohighlight">\(\beta_R = v_R/c = 1.31/3.00 = 0.438\)</span>, and therefore <span class="math notranslate nohighlight">\(\gamma_R=1.11\)</span>.</p>
+<span class="math notranslate nohighlight">\(\beta_R = v_R/c = 1.31/3.00 = 0.438\)</span>, and therefore <span class="math notranslate nohighlight">\(\gamma_R=1.11\)</span>.
+Multiply the two to get <span class="math notranslate nohighlight">\(\beta_R\gamma_R=0.486\)</span>.</p>
 <p>Now, we are ready to find the elements of <span class="math notranslate nohighlight">\([dR_4]'\)</span></p>
 <div class="math notranslate nohighlight" id="equation-ex41">
 <span class="eqno">(26)<a class="headerlink" href="#equation-ex41" title="Permalink to this equation">#</a></span>\[\begin{split}[dR_4]' = {\cal L}_x(\beta_R)[dR_4] = 
@@ -620,7 +624,7 @@ i3.00~{\rm m}\\
 \end{bmatrix}
 =
 \begin{bmatrix}
-i2.79~{\rm m})\\
+i2.79~{\rm m}\\
 -0.351~{\rm m}\\
 -0.250~{\rm m}\\
 0.00~{\rm m}
@@ -634,8 +638,8 @@ and
 <div class="math notranslate nohighlight">
 \[[dR_4]'^2 = (-2.79^2+(-0.351)^2+(-0.250)^2+0.00^2)~{\rm m}^2 = -8.009~{\rm m}^2\]</div>
 
-Note which minus signs go away because they are squared and which ones do not.
-Also note that all components have units of length.</p>
+Note which minus signs are squared (and therefore go away) and which
+ones are not.  Also note that all components have units of length.</p>
 </section>
 <section id="example-4-2-angles-in-space">
 <h3>Example 4.2: Angles in Space<a class="headerlink" href="#example-4-2-angles-in-space" title="Permalink to this heading">#</a></h3>
@@ -670,6 +674,8 @@ other words, imagine you didn’t know <span class="math notranslate nohighlight
 the given four vectors.</p>
 <p>Going back to the transformation in example 4.1, but setting it
 up as an inverse transformation, we get:</p>
+<div class="math notranslate nohighlight" id="equation-eqinvlort">
+<span class="eqno">(27)<a class="headerlink" href="#equation-eqinvlort" title="Permalink to this equation">#</a></span>\[[dx_4] = {\cal L}_x(-\beta_R)[dx_4]'\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{bmatrix}
 i3.00~{\rm m}\\
@@ -685,21 +691,22 @@ i3.00~{\rm m}\\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{bmatrix}
 \begin{bmatrix}
-i2.79~{\rm m})\\
+i2.79~{\rm m}\\
 -0.351~{\rm m}\\
 -0.250~{\rm m}\\
 0.00~{\rm m}
 \end{bmatrix}\end{split}\]</div>
 <p>Note the minus sign has been switched.
 The <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> components don’t change, but if you work out the
-first two component and then take their ratio, you get
+first two components and then take their ratio, you get
 <div class="math notranslate nohighlight">
-\[\frac{1.00~{\rm m}}{3.00~{\rm m}} =
+\[\frac{dx}{cdt}=\frac{1.00~{\rm m}}{3.00~{\rm m}} =
 \frac{\gamma_R[-0.351~{\rm m} + \beta_R(2.79~{\rm m})]}{\gamma_R
-[2.79~{\rm m}-\beta_R(0.351~{rm m})]}\]</div>
+[2.79~{\rm m}-\beta_R(0.351~{\rm m})]}\]</div>
 
 The factors of <span class="math notranslate nohighlight">\(\gamma_R\)</span> cancel, and then you can sove for <span class="math notranslate nohighlight">\(\beta_R\)</span>
-to get <span class="math notranslate nohighlight">\(\beta_R = 0.44\)</span> which means <span class="math notranslate nohighlight">\(v_R = 1.3\times10^8\)</span> m/s.</p>
+to get <span class="math notranslate nohighlight">\(\beta_R = 0.44\)</span> which means <span class="math notranslate nohighlight">\(v_R = 1.3\times10^8\)</span> m/s,
+as expected.</p>
 </section>
 </section>
 </section>

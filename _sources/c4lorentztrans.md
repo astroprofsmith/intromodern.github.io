@@ -63,7 +63,7 @@ plt.arrow(0.2,-0.25,0.75,0,head_width=0.05)
 
 plt.plot([0.2],[0.1],'ro')
 plt.plot([0.9],[1.1],'bo')
-plt.arrow(0.2,0.1,.7,1.0,head_width=0.15)
+plt.arrow(0.2,0.1,.7,1.0,head_width=0.15,length_includes_head=True)
 
 ax = plt.gca()
 ax.get_xaxis().set_visible(False)
@@ -166,8 +166,8 @@ does not apply to **any** object that you might perform a Lorentz transformation
 on.  In electromagnetism, for example, the electric and mangetic fields in
 the $y$ and $z$ direction are different in a frame moving in the $x$ direction.
 We use the dimensional independence of $dy$ and $dz$ to derive values for
-${\cal L}$, but once we do that we don't have to insist that $y$ and
-$z$ are unaffected in all circumstances at all times.  Be cautious.
+${\cal L}$, but once we do that we don't have to insist that the $y$ and
+$z$ for all vectors are unaffected in all circumstances at all times.  Be cautious.
 ```
 
 This means that $dy^\prime = dy$.  However, if we write out the third
@@ -240,14 +240,14 @@ But how do I justify that?  Can I show that dy and dz don't
 come into it?
 
 
-The number of unknowns in the Lorentz transformation matrix has de-
-creased from 16 to 6. The rest can be found using similar tricks.  For
-example, you could set up the events in Figure 4.1 such that the
+The number of unknowns in the Lorentz transformation matrix has
+decreased from 16 to 6. The rest can be found using similar tricks.
+For example, you could set up the events in Figure 4.1 such that the
 primed observer was in the rest frame of the events and work out the
 values for the rest of the unknowns. When all such tricks are
 exhausted, the Lorentz transformation between two frames of reference
-(Fig 4.1) that have a relative speed of pg in the positive x direction
-is given by the matrix:
+(Fig 4.1) that have a relative speed of $\beta_R$ in the positive x
+direction is given by the matrix:
 ```{math}
 :label: lormat
 {\cal L}_x(\beta_R) = 
@@ -288,6 +288,7 @@ of the 4-displaceinent does this second observer measure?
 To solve this problem, you use the form of the Lorentz transformation
 in equation {eq}`lormat`, plugging in the numbers.  We know that
 $\beta_R = v_R/c = 1.31/3.00 = 0.438$, and therefore $\gamma_R=1.11$.
+Multiply the two to get $\beta_R\gamma_R=0.486$.
 
 Now, we are ready to find the elements of $[dR_4]'$
 ```{math}
@@ -317,7 +318,7 @@ multiplying out the matrix gives
 \end{bmatrix}
 =
 \begin{bmatrix}
-i2.79~{\rm m})\\
+i2.79~{\rm m}\\
 -0.351~{\rm m}\\
 -0.250~{\rm m}\\
 0.00~{\rm m}
@@ -328,8 +329,8 @@ same:
 $$[dR_4]^2 = (-3.00^2+1.00^2+(-0.250)^2+0.0^2)~{\rm m}^2 = -8.009~{\rm m}^2$$
 and
 $$[dR_4]'^2 = (-2.79^2+(-0.351)^2+(-0.250)^2+0.00^2)~{\rm m}^2 = -8.009~{\rm m}^2$$
-Note which minus signs go away because they are squared and which ones do not.
-Also note that all components have units of length.
+Note which minus signs are squared (and therefore go away) and which
+ones are not.  Also note that all components have units of length.
 
 ### Example 4.2: Angles in Space
 
@@ -364,6 +365,10 @@ the given four vectors.
 Going back to the transformation in example 4.1, but setting it
 up as an inverse transformation, we get:
 ```{math}
+:label: eqinvlort
+[dx_4] = {\cal L}_x(-\beta_R)[dx_4]'
+```
+```{math}
 \begin{bmatrix}
 i3.00~{\rm m}\\
 1.00~{\rm m}\\
@@ -378,7 +383,7 @@ i3.00~{\rm m}\\
 0 & 0 & 0 & 1
 \end{bmatrix}
 \begin{bmatrix}
-i2.79~{\rm m})\\
+i2.79~{\rm m}\\
 -0.351~{\rm m}\\
 -0.250~{\rm m}\\
 0.00~{\rm m}
@@ -386,9 +391,10 @@ i2.79~{\rm m})\\
 ```
 Note the minus sign has been switched.
 The $y$ and $z$ components don't change, but if you work out the
-first two component and then take their ratio, you get
-$$\frac{1.00~{\rm m}}{3.00~{\rm m}} =
+first two components and then take their ratio, you get
+$$\frac{dx}{cdt}=\frac{1.00~{\rm m}}{3.00~{\rm m}} =
 \frac{\gamma_R[-0.351~{\rm m} + \beta_R(2.79~{\rm m})]}{\gamma_R
-[2.79~{\rm m}-\beta_R(0.351~{rm m})]}$$
+[2.79~{\rm m}-\beta_R(0.351~{\rm m})]}$$
 The factors of $\gamma_R$ cancel, and then you can sove for $\beta_R$
-to get $\beta_R = 0.44$ which means $v_R = 1.3\times10^8$ m/s.
+to get $\beta_R = 0.44$ which means $v_R = 1.3\times10^8$ m/s,
+as expected.

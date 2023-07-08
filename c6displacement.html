@@ -66,6 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'c6displacement';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Chapter 7: The Velocity Four-Vector" href="c7velocity.html" />
     <link rel="prev" title="Chapter 5: Properties of Spacetime Diagrams" href="c5spacetime.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -164,6 +165,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="c4lorentztrans.html">Chapter 4: Lorentz Transformations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c5spacetime.html">Chapter 5: Properties of Spacetime Diagrams</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 6: The Displacement Four Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c7velocity.html">Chapter 7: The Velocity Four-Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c8momentum.html">Chapter 8: The Momentum Four-Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c9examples.html">Chapter 9: Examples of Relativity in Action</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c10force.html">Chapter 10: Relativistic Force and Acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c11electric.html">Chapter 11: The Electromagnetic Tensor</a></li>
 </ul>
 
     </div>
@@ -358,6 +364,9 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-difference-between-two-events">The Difference Between Two Events</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-summory-of-the-story-so-far">A Summory of The Story So Far</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#muons-in-the-atmosphere">Muons in the Atmosphere</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#length-contraction">Length Contraction</a></li>
 </ul>
             </nav>
         </div>
@@ -410,6 +419,152 @@ calculating what other inertial observers, moving with respect to the
 first observer, would measure as the difference between these two
 events.</p>
 </section>
+<section id="a-summory-of-the-story-so-far">
+<h2>A Summory of The Story So Far<a class="headerlink" href="#a-summory-of-the-story-so-far" title="Permalink to this heading">#</a></h2>
+<p>Before diving into the analysis, a quick summary of what we have
+establishd so far.  Figure 6.1 reproduces Figure 4.1, showing two
+events in spacetime diagram with a displadcement four vector between
+them.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/d670ed30d1ac1c8bd98bdc17428e86ee1f59b7b19ad570e4aeaaaafb3b0e3995.png" src="_images/d670ed30d1ac1c8bd98bdc17428e86ee1f59b7b19ad570e4aeaaaafb3b0e3995.png" />
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Figure 6.1 – Two events in a spacetime diagram with a displacement
+four vector between them.</p>
+</div>
+<p>The displacement between these two events is to be analyzed by two
+inertial observers traveling at a relative velocity of <span class="math notranslate nohighlight">\(\beta_R\)</span> with
+respect to each other. By convention, the <span class="math notranslate nohighlight">\(x\)</span>-axis is chosen such that
+the relative velocity points in the <span class="math notranslate nohighlight">\(+x\)</span> direction. Each of the
+observers measures the physical displacement <span class="math notranslate nohighlight">\((dx,dy,dz)\)</span> and the time
+interval <span class="math notranslate nohighlight">\((dt)\)</span> between the two events. Using the measured values, each
+observer then constructs the displacement 4-vector that describes
+these two events:</p>
+<div class="math notranslate nohighlight" id="equation-eqtwo4disp">
+<span class="eqno">(28)<a class="headerlink" href="#equation-eqtwo4disp" title="Permalink to this equation">#</a></span>\[\begin{split}[dx_4] =
+\begin{bmatrix}
+icdt\\
+dx\\
+dy\\
+dz
+\end{bmatrix}
+\hspace{1cm}
+[dx_4]' =
+\begin{bmatrix}
+icdt'\\
+dx'\\
+dy'\\
+dz'
+\end{bmatrix}\end{split}\]</div>
+<p>Now, as an example, let us consider the displacement 4-vector as
+measured by two different observers. For simplicitly, we assume the
+two events as measured by the unprimed observer (shown in Figure 6.1)
+have real displacements <span class="math notranslate nohighlight">\(dy\)</span> and <span class="math notranslate nohighlight">\(dz\)</span> equal O. We can therefore ignore
+the last two components and write the displacement 4-vector in the
+unprimed co-ordinate system as:</p>
+<div class="math notranslate nohighlight" id="equation-equnprime">
+<span class="eqno">(29)<a class="headerlink" href="#equation-equnprime" title="Permalink to this equation">#</a></span>\[\begin{split}[dx_4] =
+\begin{bmatrix}
+icdt\\
+dx
+\end{bmatrix}\end{split}\]</div>
+<p>The elements of the displacement 4-vector as measured by the primed
+observer are found by operating on the unprimed displacement 4-vector
+(equation <a class="reference internal" href="#equation-equnprime">(29)</a>) with the Lorentz transformation (equation
+<a class="reference internal" href="c4lorentztrans.html#equation-lormat">(24)</a>) for relative velocity of <span class="math notranslate nohighlight">\(\beta_R\)</span> in the <span class="math notranslate nohighlight">\(+x\)</span> direction.
+<div class="math notranslate nohighlight">
+\[[dx_4]^\prime = {\cal L}_x(\beta_R) [dx_4]\]</div>
+</p>
+<div class="math notranslate nohighlight" id="equation-lortrans">
+<span class="eqno">(30)<a class="headerlink" href="#equation-lortrans" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
+icdt^\prime\\
+dx'
+\end{bmatrix}
+=
+\begin{bmatrix}
+\gamma_R &amp; -i\beta_R\gamma_R\\
+i\beta_R\gamma_R &amp; \gamma_R
+\end{bmatrix}
+\begin{bmatrix}
+icdt\\
+dx
+\end{bmatrix}\end{split}\]</div>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Why didn’t Newton notice this?</p>
+<p>In Newton’s time,a relative velocity of <span class="math notranslate nohighlight">\(1 \times 10^4\)</span> m/s (the
+orbital speed of the moon) was about as large as a relative velocity
+he could see. This implies <span class="math notranslate nohighlight">\(\beta_R = 3.3 \times 10^{-5}\)</span> and
+<span class="math notranslate nohighlight">\(\gamma_R = (1 + 5\times10^{-11})\)</span>. The value for <span class="math notranslate nohighlight">\(\gamma_R\)</span> is
+really very close to 1, so it is not surprising that Newton missed
+this small effect!  The time interval in any frame would have
+been less than a trillionth of a fractional change away from any
+other frame.  It’s no wonder Newton assumed time intervals were
+the same in any frame!</p>
+</aside>
+<p>Multiplying out the matrix equation <a class="reference internal" href="#equation-lortrans">(30)</a> to find the
+components of the displacement 4-vector as measured by the primed
+observer in terms of the values of the components measured by the
+unprimed observer gives:</p>
+<div class="math notranslate nohighlight" id="equation-eqdtp">
+<span class="eqno">(31)<a class="headerlink" href="#equation-eqdtp" title="Permalink to this equation">#</a></span>\[cdt' = \gamma_R(cdt - \beta_R dx)\]</div>
+<div class="math notranslate nohighlight" id="equation-eqdxp">
+<span class="eqno">(32)<a class="headerlink" href="#equation-eqdxp" title="Permalink to this equation">#</a></span>\[dx' = \gamma_R(dx - \beta_R c dt)\]</div>
+<p>In particular, we note that if <span class="math notranslate nohighlight">\(dx=0\)</span> and therefore <span class="math notranslate nohighlight">\(dt=dt_0\)</span>, then
+equations <a class="reference internal" href="#equation-eqdtp">(31)</a> and <a class="reference internal" href="#equation-eqdxp">(32)</a> simplify to <span class="math notranslate nohighlight">\(dt' = \gamma_R
+dt_0\)</span> and <span class="math notranslate nohighlight">\(dx'=-\gamma_R\beta_R c dt_0 = -v_R dt' \rightarrow
+dx'/dt'=-v_R\)</span>.  The first equation is <strong>Time Dilation</strong>, or that the
+time interval between two events in their rest frame is the shortest
+it can be, compared with any other frame in relative motion.  The
+latter equation is simply indicating that if the primed frame is
+moving right, the events that were at rest will be measured to have
+moved to the left at the same speed.</p>
+<p>The size of this four vector, also called the “interval”
+between the events, is <div class="math notranslate nohighlight">
+\[[dx_4]^2 = dx^2-c^2dt^2,\]</div>
+ which
+in the rest frame reduces to <span class="math notranslate nohighlight">\(-c^2dt_0^2\)</span>.  The interval in
+the primed frame is therefore <div class="math notranslate nohighlight">
+\[dx'^2-c^2dt'^2,\]</div>
+
+or
+<div class="math notranslate nohighlight">
+\[ \gamma_R^2(dx - \beta_R c dt)^2- \gamma_R^2(cdt - \beta_R dx)^2\]</div>
+
+Plugging in the definition for <span class="math notranslate nohighlight">\(\gamma_R\)</span> and expaning the
+binomial squares:</p>
+<div class="math notranslate nohighlight" id="equation-eqinvar">
+<span class="eqno">(33)<a class="headerlink" href="#equation-eqinvar" title="Permalink to this equation">#</a></span>\[\frac{dx^2-2dx\beta_Rcdt+\beta_R^2c^2dt^2-c^2dt^2+2cdt\beta_Rdx-\beta_R^2dx^2}{1-\beta_R^2}\]</div>
+<p>The cross terms cancel:</p>
+<div class="math notranslate nohighlight" id="equation-eqinvar2">
+<span class="eqno">(34)<a class="headerlink" href="#equation-eqinvar2" title="Permalink to this equation">#</a></span>\[\frac{dx^2+\beta_R^2c^2dt^2-c^2dt^2-\beta_R^2dx^2}{1-\beta_R^2}\]</div>
+<p>regroup and pull out a factor of <span class="math notranslate nohighlight">\(-\beta_R^2\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-eqinvar3">
+<span class="eqno">(35)<a class="headerlink" href="#equation-eqinvar3" title="Permalink to this equation">#</a></span>\[\frac{dx^2-c^2dt^2-\beta_R^2(dx^2-c^2dt^2)}{1-\beta_R^2}\]</div>
+<p>Pull out the common factor and the <span class="math notranslate nohighlight">\(1-\beta_R^2\)</span> will cancel,
+leaving <span class="math notranslate nohighlight">\(dx^2-c^2dt^2\)</span>, which is the same interval we started
+with in the unprimed frame!  The interval does not change under
+the Lorentz transformation.  This should of course be no surprise,
+because that is the condition under which we <strong>derived</strong> the
+elements of the matrix.  In particular, the interval in the
+rest frame is therefore <span class="math notranslate nohighlight">\(-c^2dt_0^2\)</span>, which means whatever the
+interval works out to be in any other frame, it must also
+end up being equal to <span class="math notranslate nohighlight">\(-c^2dt_0^2\)</span>.</p>
+<p>Hence, the size of the displacement 4-vector is an invariant under a
+Lorentz Transformation.  Therefore, we say that it is a Lorentz
+<strong>scalar</strong>.  It is interesting to note that the size of this invariant
+quantity is negative! This is quite different from the traditional 3
+vectors used in Newtonian mechanics.</p>
+</section>
+<section id="muons-in-the-atmosphere">
+<h2>Muons in the Atmosphere<a class="headerlink" href="#muons-in-the-atmosphere" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="length-contraction">
+<h2>Length Contraction<a class="headerlink" href="#length-contraction" title="Permalink to this heading">#</a></h2>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -452,6 +607,15 @@ events.</p>
         <p class="prev-next-title">Chapter 5: Properties of Spacetime Diagrams</p>
       </div>
     </a>
+    <a class="right-next"
+       href="c7velocity.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 7: The Velocity Four-Vector</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
@@ -471,6 +635,9 @@ events.</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-difference-between-two-events">The Difference Between Two Events</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-summory-of-the-story-so-far">A Summory of The Story So Far</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#muons-in-the-atmosphere">Muons in the Atmosphere</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#length-contraction">Length Contraction</a></li>
 </ul>
   </nav></div>
 
