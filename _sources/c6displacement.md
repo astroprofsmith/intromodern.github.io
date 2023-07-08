@@ -72,8 +72,8 @@ events.
 ## A Summory of The Story So Far
 
 Before diving into the analysis, a quick summary of what we have
-establishd so far.  Figure 6.1 reproduces Figure 4.1, showing two
-events in spacetime diagram with a displadcement four vector between
+established so far.  Figure 6.1 reproduces Figure 4.1, showing two
+events in spacetime diagram with a displacement four vector between
 them.
 
 
@@ -145,7 +145,7 @@ measured by two different observers. For simplicitly, we assume the
 two events as measured by the unprimed observer (shown in Figure 6.1)
 have real displacements $dy$ and $dz$ equal O. We can therefore ignore
 the last two components and write the displacement 4-vector in the
-unprimed co-ordinate system as:
+unprimed coordinate system as:
 ```{math}
 :label: equnprime
 [dx_4] =
@@ -254,6 +254,268 @@ quantity is negative! This is quite different from the traditional 3
 vectors used in Newtonian mechanics.
 
 ## Muons in the Atmosphere
+
+A good example of a system that has two clear events is the creation
+and decay of an unstable subatomic particle such as a neutron,
+lambda, pion or muon. The first event that is detected is the creation
+of the particle. At some later time (and perhaps displacement), the
+particle decays into sciething else. In the case of a muon, it decays
+into three particles: an electron, a mu-neutrino and an
+electron-neutrino:
+```{math}
+:label: muondecay
+\mu^- \rightarrow e^- + \nu_\mu + \bar{\nu}_e
+```
+The experimentally measured half-life (the time for half of a large
+sample to decay) is $2.20~\mu$s as determined by an observer in the
+rest frame of the decay.
+
+Consider this situation: D.H. Frish and J.H. Smith ("Measurement of
+the Relativistic Time-dilation using Mu-mesons", Am. J. Phys., 32, 342
+(1963)) report on an experiment they did ineasuring the flux of muons
+at the 6,300 foot summit of Mt. Washington (in New Hampshire) and at
+sea level in Cambridge Mass. At the top of Mt Washington, they
+measured the muon flux to be 568 muons/hour: When they used an
+identical apparatus down at sea levet in the lab at Harvard, they
+measured a flux of 412 muons/hour.
+
+The muons are produced when cosmic rays hit to upper limits of the
+atmosphere, A good assumption is that the rate of production of mesons
+at the top of the atmosphere is independent of time. The flux of muons
+then would be independent of time, but dependent on the altitude above
+sea level.  The flux loss at sea level from that at the top of
+Mt. Washington is due to the decay given in Equation
+{eq}`muondecay`. Knowing the vertical distance between the two flux
+measurements and the half-life of the muon, the task becomes to
+determine the speed of the muons.
+
+If Isaac Newton were to work this problem, he would calculate the time
+it took for the particles travel from Mt. Washington to sea level
+using the half-life and flux measurements.  Then velocity =
+distance/duration.  Particle decay rates are an exponentially
+dropping function,
+```{math}
+:label: particledecay
+N(t) = N_0e^{-\ln{2}\frac{t}{halflife}}
+```
+The $\ln{2}$ is to ensure that when $t=$halflife, then you have
+$e^{-\ln{2}}$, which is 1/2.  Given the flux numbers reported
+by Frisch and Smith, we can solve equation {eq}`particledecay`
+for time to get:
+```{math}
+:label: muonduration
+\Delta t = -\frac{{\rm halflife}}{\ln{2}}\ln{\left(\frac{N_{\rm
+sea level}}{N_{\rm Mt. Washington}}\right)}
+= -\frac{2.2\times 10^{-6}~{\rm s}}{0.693}\ln{0.725} = 1.0\times10^{-6}~{\rm s}
+```
+Now converting the altitude of Mt Washington to meters, the speed is
+```{math}
+v = \frac{distance}{duration} = \frac{1920~{\rm m}}{1.0\times 10^{-6}~{\rm s}}
+= 1.9\times 10^9~{\rm m/s}
+```
+For this many muons to reach the earth, they must be traveling at more
+than 6 times the speed of light! How can that happen? Or, is Newton's
+analysis wrong?
+
+
+What is wrong with Newton's analysis? The major problem is that the
+speed of the muons is close to the speed of light. So, the time that
+it takes for the muons to reach the surface of the earth in not the
+same for the observer that is at rest with respect to the muon as it
+is for the observer that is at rest with respect to the earth. We will
+have to use special relativity rather than the mechanics of dump
+trucks to work this problem.
+
+
+There are two reference frames of interest. Let the unprimed reference
+frame be the rest frame of the decay (where the observer is traveling
+at the same speed at the muons, and the Earth is racing toward the
+particle). Let the $+x$ direction be "down" (towards the center of the
+Earth). The second observer (the primed observer) is at rest with
+respect to the Earth and the muon is moving quickly. The relative
+speed of the two reference frames $\beta_R =-$speed of muon. (The sign
+of the relative speed is negative since the apparent motion of the
+Earth is up toward the muon).
+
+```{code-cell}
+:tags: ["remove-input"]
+dx=4.2
+cdt = 5.6
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
+fig.suptitle('Muon in the Atmosphere')
+ax1.arrow(0,0,5,0,head_width=0.2)
+ax1.arrow(0,0,0,6,head_width=0.2)
+
+ax1.arrow(-1.5,-1.5,2,0,head_width=0.2)
+ax1.arrow(-1.5,-1.5,0,2,head_width=0.2)
+
+ax1.arrow(2,-0.75,1.75,0,head_width=0.1)
+
+ax1.get_xaxis().set_visible(False)
+ax1.get_yaxis().set_visible(False)
+ax1.axis([-2,6,-2,8])
+ax1.text(1.0, 6, "S'")
+ax1.text(-0.05, 6.5, "ct'")
+ax1.text(5.5, 0, "x'")
+ax1.text(4.5, -0.8, "v_R")
+ax1.text(-1.1, .1, "S")
+ax1.text(-1.55, 1.0, "ct")
+ax1.text(1.0, -1.5, "x")
+ax1.set_title('Rest Frame of Earth')
+
+ax1.plot([0.5],[0.5],'ro')
+ax1.plot([0.5+dx],[0.5+cdt],'bo')
+
+ax2.arrow(0,0,5,0,head_width=0.2)
+ax2.arrow(0,0,0,6,head_width=0.2)
+
+ax2.arrow(-1.5,-1.5,2,0,head_width=0.2)
+ax2.arrow(-1.5,-1.5,0,2,head_width=0.2)
+
+ax2.arrow(4,-0.75,-1.75,0,head_width=0.1)
+
+ax2.get_xaxis().set_visible(False)
+ax2.get_yaxis().set_visible(False)
+ax2.axis([-2,6,-2,8])
+ax2.text(1.0, 6, "S")
+ax2.text(-0.05, 6.5, "ct")
+ax2.text(5.5, 0, "x")
+ax2.text(4.5, -0.8, "v_R")
+ax2.text(-1.1, .1, "S'")
+ax2.text(-1.55, 1.0, "ct'")
+ax2.text(1.0, -1.5, "x'")
+ax2.set_title('Rest Frame of the Muon')
+
+beta = 0.75
+gam = 1/np.sqrt(1-beta**2)
+cdtp = cdt/gam
+ax2.plot([3],[0.5],'ro')
+ax2.plot([3],[0.5+cdtp],'bo')
+
+plt.show()
+```
+```{note}
+Figure 6.2 -- Two spacetime diagrams to represent the creation of a
+muon in the upper atmosphere (red dot) and its subsequent decay at
+the Earth's surface (blue dot).  The unprimed frame (right diagram)
+is at rest with respect to the muon, while the primed frame (left
+diagram) is at rest with respect to the Earth.  The primed frame
+is moving left (up in real space) with respect to the unprimed frame.
+```
+
+I know how far the particles have to travel in the rest frame of the
+Earth ($\Delta x' = $1920 m), and how long they live in the rest frame
+of the muons ($\Delta t_0 = 2.2~\mu$s). What I need to determine is
+the half-life of the muons in the reference frame that is at rest with
+respect to the earth, and how long it takes for the muons to reach the
+earth in the rest frame of the earth.  To find the half-life in the
+rest frame of the earth, I need to find the displacement 4-vectors
+that each of the observers measure for the two events and use
+the Lorentz transformation to figure out the unknowns.
+
+The two displacement 4-vectors for this problem are
+```{math}
+:label: dx4muon
+[dx_4] =
+\begin{bmatrix}
+ic 1.0\times10^{-6}~{\rm s}\\
+0.0~{\rm m}
+\end{bmatrix}
+```
+The time as measured by the observer in the rest frame is correctly
+given by the analysis in Equation {eq}`muonduration` as this observer
+does not notice that the muon moves with respect to him.
+
+```{math}
+:label: dx4earth
+[dx_4]' =
+\begin{bmatrix}
+ic dt'\\
+1920~{\rm m}
+\end{bmatrix}
+```
+We set up the Lorentz transformation as per Equation {eq}`lortrans`
+```{math}
+:label: muonlort
+\begin{bmatrix}
+icdt\\
+dx
+\end{bmatrix}
+=
+{\cal L}_x(-\beta_R)
+\begin{bmatrix}
+icdt\\
+0
+\end{bmatrix}
+=
+\begin{bmatrix}
+\gamma_R & i\beta_R\gamma_R\\
+-i\beta_R\gamma_R & \gamma_R
+\end{bmatrix}
+\begin{bmatrix}
+icdt\\
+0
+\end{bmatrix}
+```
+```{math}
+:label: muonlort2
+\begin{bmatrix}
+icdt\\
+dx
+\end{bmatrix}
+=
+\begin{bmatrix}
+i\gamma_Rcdt_0\\
+\beta_R\gamma_Rcdt_0
+\end{bmatrix}
+```
+The second element in this matrix tells us that $\beta_R\gamma_Rcdt_0$
+must equal 1920 m.
+```{math}
+:label: muonheight
+1920~{\rm m} = \beta_R\gamma_Rcdt_0 \rightarrow \gamma_R\beta_R = \frac{1920~{\rm m}}{c1.0\times10^{-6}~{\rm s}} = 6.40
+```
+```{math}
+:label: muonbeta
+\gamma_R\beta_R = \frac{\beta_R}{\sqrt{1-\beta_R^2}} = 6.40
+\rightarrow \frac{\beta_R^2}{1-\beta_R^2} = 40.96
+\rightarrow \beta_R = \sqrt{\frac{40.96}{1+40.96}} = 0.988
+```
+Using the relativistically correct analysis gives a speed of the muon
+that is close to, but less than the speed of light.  Note what
+interpretation the experimental results seem to demand: for 73%
+of the muons at the height of Mt. Washington to reach sea level
+in Cambridge, it must seem to them that one microsecond has passed.
+But to cross 1920 m in one microsecond would require moving at a
+speed six times that of light.  Therefore we deduce that the clocks
+in the muon's frame are running slow, to give them more time to get
+to the ground.  To match the observed data, the muons must be moving
+at 98.8% the speed of light.
+
+Now this poses a further interpretive dilemma.
+One should be able to work this problem in either frame of reference,
+the one at rest with respect to the muons or the one at respect to the
+earth. The example done above used the distance as measured in the
+rest frame of the earth. In the frame that is at rest with respect to
+the muons, there is no time dilation -- the one microsecond is the
+measured time interval.  If the Earth is coming at the muon at 98.8%
+the speed of light, and is to reach the muon in one microsecond, the
+numbers don't add up.  But one of our postulates is that observers
+in both reference frames have to agree on what happens.  The second
+event **has** to happen in both reference frames.  
+
+The only available parameter we can change, if the time and the speed
+are set, is the distance.  The vertical distance between the top of
+the Mt Washington and Cambridge must be smaller in the rest frame of
+the muon than the same distance as determined in the rest frame of the
+earth (1920 m), if the same physical results (fraction reaching
+Cambridge = 73%) are to happen. Not only does measured time depend
+upon which reference frame in which it is measured, but a measured
+length also must depend on the relative speed of reference frame in
+which it is measured. The length must get shorter or contract when the
+relative speed between the two observers increases.  This is called
+**Length Contraction**, and we will explore this effect in greater
+detail in the next section.
 
 ## Length Contraction
 
