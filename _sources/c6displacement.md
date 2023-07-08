@@ -69,7 +69,7 @@ calculating what other inertial observers, moving with respect to the
 first observer, would measure as the difference between these two
 events.
 
-## A Summory of The Story So Far
+## A Summary of The Story So Far
 
 Before diving into the analysis, a quick summary of what we have
 established so far.  Figure 6.1 reproduces Figure 4.1, showing two
@@ -492,30 +492,305 @@ in the muon's frame are running slow, to give them more time to get
 to the ground.  To match the observed data, the muons must be moving
 at 98.8% the speed of light.
 
-Now this poses a further interpretive dilemma.
-One should be able to work this problem in either frame of reference,
-the one at rest with respect to the muons or the one at respect to the
-earth. The example done above used the distance as measured in the
-rest frame of the earth. In the frame that is at rest with respect to
-the muons, there is no time dilation -- the one microsecond is the
-measured time interval.  If the Earth is coming at the muon at 98.8%
-the speed of light, and is to reach the muon in one microsecond, the
-numbers don't add up.  But one of our postulates is that observers
-in both reference frames have to agree on what happens.  The second
-event **has** to happen in both reference frames.  
+Now this poses a further interpretive dilemma.  One should be able to
+work this problem in either frame of reference, the one at rest with
+respect to the muons or the one at respect to the earth.  In the frame
+that is at rest with respect to the muons, there is no time dilation
+-- the one microsecond is the measured time interval.  If the Earth is
+coming at the muon at 98.8% the speed of light, and is to reach the
+muon across 1920 m in one microsecond, the numbers don't add up.  But
+one of our postulates is that observers in both reference frames have
+to agree on what happens.  The second event **has** to happen in both
+reference frames.
 
 The only available parameter we can change, if the time and the speed
 are set, is the distance.  The vertical distance between the top of
-the Mt Washington and Cambridge must be smaller in the rest frame of
+the Mt. Washington and Cambridge must be smaller in the rest frame of
 the muon than the same distance as determined in the rest frame of the
 earth (1920 m), if the same physical results (fraction reaching
 Cambridge = 73%) are to happen. Not only does measured time depend
 upon which reference frame in which it is measured, but a measured
-length also must depend on the relative speed of reference frame in
-which it is measured. The length must get shorter or contract when the
-relative speed between the two observers increases.  This is called
-**Length Contraction**, and we will explore this effect in greater
-detail in the next section.
+length also must depend on the relative speed of the reference frame
+in which it is measured. The length must get shorter, or contract,
+when the relative speed between the two observers increases.  This is
+called **Length Contraction**, and we will explore this effect in
+greater detail in the next section.
 
 ## Length Contraction
 
+
+To determine how length contraction happens, we will first find a
+method of converting a length measurement into two events as required
+by the model for special relativity. Then, we can use the
+Lorentz transformation to get between the two reference frames and
+see what happens to a length measurement.
+
+```{warning}
+This first step of converting a length measurement into two events
+is absolutely critical for understanding how length contraction works.
+One of the most common confusions around length contraction arises
+when people just assume they know the length of an object (remember
+in Chapter 2 we talked about the importance of not assuming you just
+know something going on elsewhere.  It's important to specify **how**
+you are measuring length, so you can be clear on how that process
+changes when you shift into another reference frame: the importance
+of operational definitions!
+```
+
+To create two events while measuring the length of an object, one
+method would be to choose a reference frame in which the the object is
+moving at a known velocity $v_R$.  When the front edge passes the
+observer creates a flash of light.  That is the first event. When the
+back edge passes the observer, a second flash is created. A spacetime
+diagram for this process is shown in Figure 6.3, where the worldline
+of the observer (at rest) is a red vertical line.  The worldline of
+the front of the object is represented as a blue tilted line, and the
+worldline of the back of the obejct is a green tilted line.  The slope
+of these lines is $1/\beta$, where $\beta$ is the speed of the object.
+The first event is where the green line crosses the red line, and the
+second event is where the blue line crosses the red line.
+
+
+
+```{code-cell}
+:tags: ["remove-input"]
+# ST plot of object passing observer
+xrest = np.zeros((3,1))+0.3
+yrest = np.arange(3)*1.7/3.0
+beta = .55
+xfront = np.arange(0,.5,.1)
+yfront = 0.75-xfront/beta
+xback = np.arange(0,1.0,.2)
+yback = 1.45-xback/beta
+plt.figure(figsize=(5,5))
+plt.arrow(0,0,1,0,head_width=0.1)
+plt.arrow(0,0,0,1,head_width=0.1)
+
+plt.arrow(-0.5,-0.5,1,0,head_width=0.1)
+plt.arrow(-0.5,-0.5,0,1,head_width=0.1)
+
+plt.arrow(0.9,-0.25,-0.75,0,head_width=0.05)
+
+plt.plot(xrest,yrest,'r-')
+plt.plot(xfront,yfront,'g-')
+plt.plot(xback,yback,'b-')
+
+ax = plt.gca()
+ax.get_xaxis().set_visible(False)
+ax.get_yaxis().set_visible(False)
+plt.axis([-1,2,-1,2])
+ax.text(0.85, 1, "S_m")
+ax.text(-0.05, 1.2, "ct_m")
+ax.text(1.2, 0, "x_m")
+ax.text(1.1, -0.25, "v_R")
+ax.text(-0.35, .5, "S_r")
+ax.text(-.55, .7, "ct_r")
+ax.text(.7, -0.5, "x_r")
+plt.show()
+```
+```{note}
+Figure 6.3 -- A spacetime diagram that shows an object passing by
+an observer at rest.  The red line is the world line of the observer.
+The green line and the blue lines are the front and back of the object,
+respectively.  The object is moving to the left, at some speed $v_R$.
+```
+
+The physical displacement as measured by this
+observer between the two events is 0.0 m (the observer has not moved).
+The time interval between the two events would be calculated as
+```{math}
+:label: dt0obj
+dt_0 = \frac{\ell_m}{-v_R} =  -\frac{\ell_m}{c\beta_R}
+```
+where $\ell_m$ is the deduced (measured) length of the moving
+object: the duration of time it takes to pass, multiplied by the
+speed of travel.  The minus sign is because we have set this up with
+$v_R$ going to the left, so it will have a negative value, but length
+is always positive concept.
+
+As a four vector, we would write
+```{math}
+:label: dx4movobj
+[dx_4]_m = 
+\begin{bmatrix}
+-i\ell_m/\beta_R\\
+0.0
+\end{bmatrix}
+```
+and we drop the $y$ and $z$ components as not relevant.
+
+Let the second observer be in the rest frame of the object whose
+length you wish to measure. This observer will see the same two events
+as the first observer, a flash occurring on the left edge of the
+object and at a later time, $dt_{\rm rest}$, a second flash occurring
+at the right edge of the object. This observer is passing by the
+object as it is at rest, and this observer would interpret the
+physical displacement between the two events is the rest length of the
+object: $\ell_r = dx_{\rm rest}$, where $\ell_r$ represents the length
+of the object at rest.
+
+
+```{code-cell}
+:tags: ["remove-input"]
+# ST plot of object passing observer
+def lm(b,ct,x):
+    g = 1/np.sqrt(1-b**2)
+    ctp = g*(ct-b*x)
+    xp = g*(x-b*ct)
+    return(ctp,xp)
+
+xrest = np.zeros(3)+0.3
+yrest = np.arange(3)*1.7/3.0
+beta = .55
+xfront = np.arange(0,.5,.1)
+yfront = 0.75-xfront/beta
+xback = np.arange(0,1.0,.2)
+yback = 1.45-xback/beta
+yrest,xrest = lm(-beta,yrest,xrest)
+yfront,xfront = lm(-beta,yfront,xfront)
+yback,xback = lm(-beta,yback,xback)
+
+plt.figure(figsize=(5,5))
+plt.arrow(0,0,1,0,head_width=0.1)
+plt.arrow(0,0,0,1,head_width=0.1)
+
+plt.arrow(-0.5,-0.5,1,0,head_width=0.1)
+plt.arrow(-0.5,-0.5,0,1,head_width=0.1)
+
+plt.arrow(0.2,-0.25,0.75,0,head_width=0.05)
+
+plt.plot(xrest,yrest,'r-')
+plt.plot(xfront,yfront,'g-')
+plt.plot(xback,yback,'b-')
+
+ax = plt.gca()
+ax.get_xaxis().set_visible(False)
+ax.get_yaxis().set_visible(False)
+plt.axis([-1,2,-1,2])
+ax.text(0.1, 1, "S_r")
+ax.text(-0.05, 1.2, "ct_r")
+ax.text(1.2, 0, "x_r")
+ax.text(1.1, -0.25, "v_R")
+ax.text(-0.35, .5, "S_m")
+ax.text(-.55, .7, "ct_m")
+ax.text(.7, -0.5, "x_m")
+plt.show()
+```
+```{note}
+Figure 6.4 -- A spacetime diagram that shows an observer passing by
+an object at rest.  The red line is the world line of the observer.
+The green line and the blue lines are the front and back of the object,
+respectively.  The observer is moving to the right, at some speed $v_R$.
+Note that the lines in this diagram have been **calculated** by
+performing Lorentz transformations on points in the lines shown in Figure
+6.3 -- they have not been simply redrawn.
+```
+
+When we write the four vector in this reference frame, it looks like
+```{math}
+:label: dx4restobj
+[dx_4]_r = 
+\begin{bmatrix}
+icdt_r\\
+\ell_r
+\end{bmatrix}
+```
+We can connect Equation {eq}`dx4restobj` and {eq}`dx4movobj` through
+a Lorentz transformation:
+```{math}
+:label: lmobj
+[dx_4]_m = {\cal L}_x(\beta_R)[dx_4]_r
+```
+based on the diagram in Figure 6.4.
+```{math}
+:label: lmobj2
+\begin{bmatrix}
+-i\ell_m/\beta_R\\
+0.0
+\end{bmatrix} =
+\begin{bmatrix}
+\gamma_R & i\beta_R\gamma_R\\
+-i\beta_R\gamma_R & \gamma_R
+\end{bmatrix}
+\begin{bmatrix}
+icdt_r\\
+\ell_r
+\end{bmatrix}
+```
+```{math}
+:label: lmobj3
+\begin{bmatrix}
+-i\ell_m/\beta_R\\
+0.0
+\end{bmatrix} =
+\begin{bmatrix}
+i\gamma_Rcdt_r + i\beta_R\gamma_R\ell_r\\
+\beta_R\gamma_Rcdt_r + \gamma_R\ell_r
+\end{bmatrix}
+```
+We want a relationship between $\ell_r$ and $\ell_m$, but there's a
+$dt_r$ in Equation {eq}`lmobj3` that we need to get rid of.
+We can set the second element to zero to get
+```{math}
+cdt_r = -\frac{\ell_r}{\beta_R}
+```
+and then plug that into the first element:
+```{math}
+-\frac{\ell_m}{\beta_R} = -\gamma_R\frac{\ell_r}{\beta_R} + \beta_R\gamma_R\ell_r
+```
+multiply through by $\beta_R$ and factor out a $\gamma_R\ell_r$ to get
+```{math}
+:label: lencon1
+\ell_m = \gamma_R\ell_r(1 -\beta_R^2)
+```
+but the term in the parentheses is just $1/\gamma_R^2$!!! So we get
+that
+```{math}
+:label: lencon
+\ell_r = \gamma_R\ell_m
+```
+In other words, as the object moves faster and faster, $\gamma_R$ gets
+bigger and bigger, and therefore $\ell_m$ (the length of the moving
+object) must get smaller and smaller, to keep the product equal to the
+value of the length of the object at rest.  On the other hand, for
+very slow speds, $\gamma_R\rightarrow 1$, and the two lengths become
+indistinguishable.  This is, of course, why Newton never noticed such
+a thing.
+
+It is important to be clear on your definition of length.  The
+component $dx$ is not always the length of the object.  For example,
+in the "r" frame, the $x$ component of the four vector is zero -- this
+is not the length of the object.  But if you define your operation by
+which you are measuring the length of the object in a particular
+reference frame, you will always find that it is shorter the faster
+the object is moving.  See Chapter 5 for more examples.
+
+## Muon decay revisited
+
+
+A second way of working the muon problem is to use the contraction of
+the measured vertical distance between the top of the Mt Washington
+and Cambridge as determined by the fast moving muon.  According to
+Equation {eq}`lencon`, the observer at rest with the muon measures the
+distance it has to travel to get to the surface of the earth to be:
+```{math}
+:label: dxCam
+{\rm distance~to~Cambridge} = \frac{\ell_{\rm Earth}}{\gamma_R}
+= \frac{1920~{\rm m}}{6.478} = 296~{\rm m}
+```
+
+So, the muon thinks that it only has to travel 296 m to get to sea
+level. Now, from Equation {eq}`muonduration`, the muon thinks that it
+has traveled for 1 microsecond, so it calculates its velocity as:
+```{math}
+\frac{296~{\rm m}}{1.0\times10^{-6}~{\rm s}} =
+2.96\times10^8~{\rm m/s} \rightarrow \beta = 0.988
+```
+a value not different from the speed as measured by the observer on
+the Earth, calculated in Equation {eq}`muonbeta`.  In the frame of the
+Earth, the time is dilated, so the muons live longer and can reach the
+ground.  In the frame moving with the muon, the distance to the ground
+is shorter, and therefore the muons can reach the ground in the
+shorter time they have.  The events of being created and reaching the
+ground happen in both frames, but the reasons they can happen are
+interpreted differently in each frame.
