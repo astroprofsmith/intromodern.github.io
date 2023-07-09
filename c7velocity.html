@@ -61,6 +61,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c7velocity';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -165,6 +167,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="c6displacement.html">Chapter 6: The Displacement Four Vector</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 7: The Velocity Four-Vector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c8momentum.html">Chapter 8: The Momentum Four-Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c9examples.html">Chapter 9: Examples of Relativity in Action</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c10force.html">Chapter 10: Relativistic Force and Acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c11electric.html">Chapter 11: The Electromagnetic Tensor</a></li>
 </ul>
 
     </div>
@@ -335,7 +340,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -351,6 +358,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-four-velocity">The Four Velocity</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -362,6 +378,110 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="chapter-7-the-velocity-four-vector">
 <h1>Chapter 7: The Velocity Four-Vector<a class="headerlink" href="#chapter-7-the-velocity-four-vector" title="Permalink to this heading">#</a></h1>
+<section id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
+<p>In the slow moving world of dump trucks and physics professors, the
+physical velocity of an object as measured by an observer is given by
+the vector quantity:</p>
+<div class="math notranslate nohighlight" id="equation-oldvel">
+<span class="eqno">(55)<a class="headerlink" href="#equation-oldvel" title="Permalink to this equation">#</a></span>\[\vec{v} = \frac{d\vec{r}}{dt} = (dx/dt,dy/dt,dz/dt) = v_x\hat{x}
++v_y\hat{y}+v_z\hat{z}\]</div>
+<p>A second observer, moving at velocity <span class="math notranslate nohighlight">\(\vec{v}_R\)</span> in some direction,
+measures this same object moving with velocity:</p>
+<div class="math notranslate nohighlight" id="equation-olddvel">
+<span class="eqno">(56)<a class="headerlink" href="#equation-olddvel" title="Permalink to this equation">#</a></span>\[\vec{v}' = \vec{v}-\vec{v}_R = \frac{d\vec{r}'}{dt} = (dx'/dt,dy'/dt,dz'/dt) \]</div>
+<p>The value of the time interval dt is the same for both observers.  Prior
+to Einstein, it would have never occured to anyone to question whether
+<span class="math notranslate nohighlight">\(dt\)</span> might be different for different observers.</p>
+<p>In Equation <a class="reference internal" href="#equation-oldvel">(55)</a>, the derivative can be understood in two
+ways. It is operator that transforms the displacement vector, that can
+be a function of time, into the velocity vector (that also can be a
+function of time). A second way of understanding the derivative is
+that it is a ratio of two elements, a very very small vector change in
+the displacement divided by a very very small change in scalar time.</p>
+<p>Physical velocity is a vector because the displacement, <span class="math notranslate nohighlight">\(d\vec{R}\)</span> is a
+3-vector and <span class="math notranslate nohighlight">\(dt\)</span> is a scalar. A vector divided by a scalar is a vector.</p>
+</section>
+<section id="the-four-velocity">
+<h2>The Four Velocity<a class="headerlink" href="#the-four-velocity" title="Permalink to this heading">#</a></h2>
+<p>We cannot define a four velocity by simply taking the displacement
+four vector <span class="math notranslate nohighlight">\([dx_4]\)</span> and dividing by <span class="math notranslate nohighlight">\(dt\)</span>, because <span class="math notranslate nohighlight">\(dt\)</span> is not a
+scalar.  It changes under a Lorentz transformation, and therefore
+<span class="math notranslate nohighlight">\([dx_4]/dt\)</span> will not have the properties of a four vector as defined
+in Chapter 2.  However, the <strong>proper</strong> time interval, <span class="math notranslate nohighlight">\(dt_0\)</span>, <strong>is</strong> a
+scalar!  So we can define a four velocity as</p>
+<div class="math notranslate nohighlight" id="equation-eq4vdef">
+<span class="eqno">(57)<a class="headerlink" href="#equation-eq4vdef" title="Permalink to this equation">#</a></span>\[[v_4] = \frac{[dx_4]}{dt_0}\]</div>
+<p>where <span class="math notranslate nohighlight">\(dt_0\)</span> is the Lorentz scalar as described in Chapter 6. Since
+<span class="math notranslate nohighlight">\(dt_0\)</span> is a scalar, <span class="math notranslate nohighlight">\(1/dt_0\)</span> is also a scalar.  The
+4-velocity is a proper 4-vector because the displacement 4-vector is a
+proper 4-vector and <span class="math notranslate nohighlight">\(1/dt_0\)</span> is a Lorentz scalar. A Lorentz scalar times a
+proper 4-vector is a proper 4-vector.</p>
+<p>Wtien you multiply a vector by a scalar, what really happens is that
+you multiply each of the components of the vector by that scalar
+quantity. Putting in the components of the displacement 4-vector into
+equation <a class="reference internal" href="#equation-eq4vdef">(57)</a> and multiplying each by <span class="math notranslate nohighlight">\(1/dt_0\)</span> gives:</p>
+<div class="math notranslate nohighlight" id="equation-eq4v0">
+<span class="eqno">(58)<a class="headerlink" href="#equation-eq4v0" title="Permalink to this equation">#</a></span>\[\begin{split}[v_4] = \frac{[dx_4]}{dt_0} =
+\begin{bmatrix}
+ic\frac{dt}{dt_0}\\
+\frac{dx}{dt_0}\\
+\frac{dy}{dt_0}\\
+\frac{dz}{dt_0}
+\end{bmatrix}\end{split}\]</div>
+<p>The derivatives that are the three spatial components of the velocity
+4-vector are not the velocity of the object, as <span class="math notranslate nohighlight">\(dx\)</span> is in measured in
+a different reference frame than <span class="math notranslate nohighlight">\(dt_0\)</span>.  Within a given reference
+frame the motion of an object would be written as <span class="math notranslate nohighlight">\(dx/dt\)</span>, where <span class="math notranslate nohighlight">\(t\)</span>
+is measured <strong>in that reference frame</strong> (an observer in one reference
+frame does not “just know” what is going on in another reference
+frame, after all).  This would be the velocity as Isaac Newton would
+have understood the term.</p>
+<p>However, we can use the time-dilation formula from Equation <a class="reference internal" href="c6displacement.html#equation-timedilation">(33)</a>
+to convert <span class="math notranslate nohighlight">\(dt_0\)</span> to <span class="math notranslate nohighlight">\(dt\)</span>.  Equation <a class="reference internal" href="#equation-eq4v0">(58)</a> then can be
+written as:</p>
+<div class="math notranslate nohighlight" id="equation-eq4vgam">
+<span class="eqno">(59)<a class="headerlink" href="#equation-eq4vgam" title="Permalink to this equation">#</a></span>\[\begin{split}[v_4] = \frac{[dx_4]}{dt_0} = \gamma \frac{[dx_4]}{dt}
+\begin{bmatrix}
+ic\gamma\\
+\gamma v_x\\
+\gamma v_y\\
+\gamma v_z
+\end{bmatrix}\end{split}\]</div>
+<p>According to the correspondence principle, the theory we call special
+re(ativity has to reduce to Newton’s mechanics when <span class="math notranslate nohighlight">\(\beta\ll 1\)</span>. As
+<span class="math notranslate nohighlight">\(\beta\)</span> approaches 0, <span class="math notranslate nohighlight">\(\gamma\)</span> approaches 1. Notice that the three
+space terms of the 4-velocity are just the components of the physical
+velocity as Newton would know it. The time component is just the speed
+of light. At this point, the 4-velocity meets the requirements of the
+correspondence principle. If Newton had been able to observe things
+that were moving very fast with respect to him, he probably would have
+noticed that the factor of <span class="math notranslate nohighlight">\(\gamma\)</span> would have to be accounted for in
+the definition of the physical velocity of the object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>From here on, there are going to be several, perhaps even many,
+different instances of the factor <span class="math notranslate nohighlight">\(\gamma\)</span>.  In all cases, <span class="math notranslate nohighlight">\(\gamma =
+1/\sqrt{1-\beta^2}\)</span>, but <span class="math notranslate nohighlight">\(\beta\)</span> is a speed, and therefore must be
+relative to something else.  In the case of Equation <a class="reference internal" href="#equation-eq4vgam">(59)</a>,
+the speed in the <span class="math notranslate nohighlight">\(\gamma\)</span> is the speed of whatever it is that has the
+velocity this four-vector is describing.  It relates to the time
+interval between two events, compared with those two events at rest.
+This is <strong>not</strong> necessarily the same thing as the relative speed
+between two reference frames, which I will call <span class="math notranslate nohighlight">\(\beta_R\)</span> and
+<span class="math notranslate nohighlight">\(\gamma_R\)</span>.  You will soon see cases where there are three reference
+frames of interest: the rest frame of an object, a frame in which the
+object is moving, and then a third frame in which the object will be
+moving at a different speed.  There are therefore five velocities that
+could be of interest (the velocity of the object in the second frame,
+the velocity of the object in the third frame, the relative velocity
+between frame two and three, and the two relative velocities between
+frames two and three, each, to the rest frame).  Each of these
+velocities could have a useful <span class="math notranslate nohighlight">\(\gamma\)</span> associated with it.  From here
+on, you <strong>must</strong> pay attention to <strong>which</strong> <span class="math notranslate nohighlight">\(\beta\)</span> speed goes with
+which <span class="math notranslate nohighlight">\(\gamma\)</span>!</p>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -422,6 +542,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-four-velocity">The Four Velocity</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

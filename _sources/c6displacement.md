@@ -205,9 +205,17 @@ dx' = \gamma_R(dx - \beta_R c dt)
 ```
 
 In particular, we note that if $dx=0$ and therefore $dt=dt_0$, then
-equations {eq}`eqdtp` and {eq}`eqdxp` simplify to $dt' = \gamma_R
-dt_0$ and $dx'=-\gamma_R\beta_R c dt_0 = -v_R dt' \rightarrow
-dx'/dt'=-v_R$.  The first equation is **Time Dilation**, or that the
+equations {eq}`eqdtp` and {eq}`eqdxp` simplify to
+```{math}
+:label: timedilation
+dt' = \gamma_R dt_0
+```
+and
+```{math}
+dx'=-\gamma_R\beta_R c dt_0 = -v_R dt' \rightarrow
+dx'/dt'=-v_R.
+```
+The first equation is **Time Dilation**, or that the
 time interval between two events in their rest frame is the shortest
 it can be, compared with any other frame in relative motion.  The
 latter equation is simply indicating that if the primed frame is
