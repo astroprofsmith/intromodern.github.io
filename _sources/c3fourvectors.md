@@ -306,11 +306,13 @@ ax.text(.7, -0.5, "x'")
 plt.show()
 ```
 ```{note}
-Figure 3.2 -- Spacetime diagram of two reference frames in relative motion.
-The primed frame S' (drawn to the left and down a little) is moving to the
-right at speed v_R, relative to the unprimed frame S, which is above and to
-the right.  The x and x' axes are defined to be parallel to the vector direction
-of v_R.
+Figure 3.2 -- Spacetime diagram of two reference frames in relative
+motion.  The primed frame S' (drawn to the left and down a little,
+although of course both reference frames are infinite in extent, and
+the origins may or may not coincide at a particular moment in time) is
+moving to the right at speed v_R, relative to the unprimed frame S,
+which is above and to the right.  The x and x' axes are defined to be
+parallel to the vector direction of v_R.
 ```
 
 

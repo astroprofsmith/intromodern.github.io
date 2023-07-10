@@ -58,4 +58,3 @@ and off.
 
 ## How do the Axes Change?
 
-I need my notebook to work on this one.

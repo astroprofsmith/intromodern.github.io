@@ -398,3 +398,15 @@ $$\frac{dx}{cdt}=\frac{1.00~{\rm m}}{3.00~{\rm m}} =
 The factors of $\gamma_R$ cancel, and then you can sove for $\beta_R$
 to get $\beta_R = 0.44$ which means $v_R = 1.3\times10^8$ m/s,
 as expected.
+
+```{note}
+Programming a Lorentz Transformation
+
+It would be a very good idea for you to write your own code that
+takes a $\beta_R$ and a four vector and returns the transformed
+four vector.  You could also write it to return the size of the
+four vector before and after the transformation, so you could verify
+that it hasn't changed.  You could write the code to set up and
+multiply matrices, or you could write the four equations out
+separately.  Which method would be irrelevant to the output.
+```

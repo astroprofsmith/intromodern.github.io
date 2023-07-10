@@ -167,6 +167,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="c6displacement.html">Chapter 6: The Displacement Four Vector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c7velocity.html">Chapter 7: The Velocity Four-Vector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c8momentum.html">Chapter 8: The Momentum Four-Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c9examples.html">Chapter 9: Examples of Relativity in Action</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c10force.html">Chapter 10: Relativistic Force and Acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c11electric.html">Chapter 11: The Electromagnetic Tensor</a></li>
 </ul>
 
     </div>
@@ -496,8 +499,8 @@ contravariant version of a four vector should be written as a column,
 as in Equation 6, only without the <span class="math notranslate nohighlight">\(i\)</span>.  The standard notion is to use
 a superscript greek letter to refer to the components, where the Greek
 letter could stand for 0, 1, 2, or 3.  So</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b87ee96b-e5fa-4901-ab6f-4a1866a3b3a0">
-<span class="eqno">(7)<a class="headerlink" href="#equation-b87ee96b-e5fa-4901-ab6f-4a1866a3b3a0" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-10fbab2b-2ca0-42a2-8243-7c47430b8f31">
+<span class="eqno">(7)<a class="headerlink" href="#equation-10fbab2b-2ca0-42a2-8243-7c47430b8f31" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dx^\alpha =
 \begin{bmatrix}
 cdt\\
@@ -633,11 +636,13 @@ with a normal triangle!  If the sides are equal, the length is zero, not
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Figure 3.2 – Spacetime diagram of two reference frames in relative motion.
-The primed frame S’ (drawn to the left and down a little) is moving to the
-right at speed v_R, relative to the unprimed frame S, which is above and to
-the right.  The x and x’ axes are defined to be parallel to the vector direction
-of v_R.</p>
+<p>Figure 3.2 – Spacetime diagram of two reference frames in relative
+motion.  The primed frame S’ (drawn to the left and down a little,
+although of course both reference frames are infinite in extent, and
+the origins may or may not coincide at a particular moment in time) is
+moving to the right at speed v_R, relative to the unprimed frame S,
+which is above and to the right.  The x and x’ axes are defined to be
+parallel to the vector direction of v_R.</p>
 </div>
 </section>
 <section id="examples-of-displacement-four-vectors">
@@ -683,8 +688,8 @@ this sequence of events?  (Note: this is not realistic.)</p>
 observers in the reference frame shown in Figure 3.3 could measure the displacement
 and time duration between these events (and we can read them off the graph,
 albiet with no units), and then put them into the four-vector format:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-57a62b12-232d-4fcd-89af-6f9f86becc5e">
-<span class="eqno">(8)<a class="headerlink" href="#equation-57a62b12-232d-4fcd-89af-6f9f86becc5e" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-8dafbce4-1c6b-4236-b041-2fe70a6664f5">
+<span class="eqno">(8)<a class="headerlink" href="#equation-8dafbce4-1c6b-4236-b041-2fe70a6664f5" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4] =
 \begin{bmatrix}
 icdt\\
@@ -750,8 +755,8 @@ in the same place.</p>
 </div>
 <p>We can therefore write a displacement four vector in the reference
 frame at rest with respect to the Earth:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8f6587be-c291-4ac8-abaf-dba7113b0672">
-<span class="eqno">(9)<a class="headerlink" href="#equation-8f6587be-c291-4ac8-abaf-dba7113b0672" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-3edebb65-9251-4992-abc0-19eca135bd36">
+<span class="eqno">(9)<a class="headerlink" href="#equation-3edebb65-9251-4992-abc0-19eca135bd36" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_\oplus =
 \begin{bmatrix}
 icdt_\oplus\\
@@ -775,8 +780,8 @@ aboard the space craft will measure some time interval, <span class="math notran
 between the time he sees the earth outside of his window and sees
 alpha centauri outside the window. The observer aboard the space craft
 measures a displacement 4-vector:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e2975a32-e0d3-4bd8-9bde-1e872207086a">
-<span class="eqno">(10)<a class="headerlink" href="#equation-e2975a32-e0d3-4bd8-9bde-1e872207086a" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e0288d85-02de-476f-ac91-3b5f46084c1b">
+<span class="eqno">(10)<a class="headerlink" href="#equation-e0288d85-02de-476f-ac91-3b5f46084c1b" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm rocket} =
 \begin{bmatrix}
 icdt_{\rm rocket}\\
@@ -793,13 +798,13 @@ nothing to do with the first observer being physically <strong>on</strong> the E
 the <span class="math notranslate nohighlight">\(dt_\oplus\)</span> is measured by the infinite lattice of clocks at
 rest with respect to the Earth.</p>
 <p>The sizes of the two four vectors are:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-96426287-c4ff-48bf-a6fb-604f21af4a47">
-<span class="eqno">(11)<a class="headerlink" href="#equation-96426287-c4ff-48bf-a6fb-604f21af4a47" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-81fda014-7294-4354-9f08-36e682636891">
+<span class="eqno">(11)<a class="headerlink" href="#equation-81fda014-7294-4354-9f08-36e682636891" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dx_\oplus^2 - (cdt_\oplus)^2 = -(cdt_{\rm rocket})^2
 \end{equation}\]</div>
 <p>Solve for <span class="math notranslate nohighlight">\(dt_{\rm rocket}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a18869de-e5b8-48b8-abac-28b438695975">
-<span class="eqno">(12)<a class="headerlink" href="#equation-a18869de-e5b8-48b8-abac-28b438695975" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-372225e1-0c61-4a9e-a210-076e2b7f64c8">
+<span class="eqno">(12)<a class="headerlink" href="#equation-372225e1-0c61-4a9e-a210-076e2b7f64c8" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dt_{\rm rocket} = dt_\oplus\sqrt{1-\left(\frac{dx_\oplus}{cdt_\oplus}\right)^2}
 = dt_\oplus \sqrt{1-\beta^2}
 \end{equation}\]</div>
@@ -965,8 +970,8 @@ the right.  The reference frame at rest with respect to the ground
 is the unprimed frame on the left.  The red dot is the emission of
 the light and the blue dot is the detection of the light.  The
 displacement four vector in the train frame would be:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9ed1c73e-f6f5-4eaa-8724-b6b52fefc57c">
-<span class="eqno">(16)<a class="headerlink" href="#equation-9ed1c73e-f6f5-4eaa-8724-b6b52fefc57c" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-1f675d49-fd3f-4c2d-ad76-c2b919d24118">
+<span class="eqno">(16)<a class="headerlink" href="#equation-1f675d49-fd3f-4c2d-ad76-c2b919d24118" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm train} =
 \begin{bmatrix}
 icdt_0\\
@@ -976,8 +981,8 @@ icdt_0\\
 \end{bmatrix}
 \end{equation}\]</div>
 <p>while the displacement four vector from the ground’s reference frame is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-93c5da01-9001-4df6-ae86-b7029bd8f390">
-<span class="eqno">(17)<a class="headerlink" href="#equation-93c5da01-9001-4df6-ae86-b7029bd8f390" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-14de851e-3541-4dbb-9796-68db39ddf4f9">
+<span class="eqno">(17)<a class="headerlink" href="#equation-14de851e-3541-4dbb-9796-68db39ddf4f9" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm ground} =
 \begin{bmatrix}
 icdt\\
