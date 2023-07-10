@@ -256,6 +256,25 @@ Science Asylum YouTube
 video](https://www.youtube.com/watch?v=7HBKEDyFTv8).  Not an
 **operational** definition, mind you, but a useful description.
 
+Finally, it is important to articulate a principle that **every**
+prediction SR makes, every formula we derive, should not contradict
+what Newtonian Mechanics predicts **when the speed is very small**.
+We know Newtonian Mechanics works as well as you could like when you
+are dealing with the speeds of horses and dump trucks.  Although SR
+can (and will) make wildly different predictions at high speeds near
+the speed of light, the predicted relationships **must** reduce to the
+Newtonian predictions when you let the speed be very small.  This
+important check on our imagination is called the correspondence
+principle.
+
+```{image} images/fande.jpg
+:alt: frankearnest
+:class: bg-primary mb-1
+:width: 700px
+:align: center
+:name: fande
+```
+
 ## Model to describe the experimental results.
 
 One interpretation of Michelson's experimental results is to say that

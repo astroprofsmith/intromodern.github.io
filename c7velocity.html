@@ -365,6 +365,8 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-four-velocity">The Four Velocity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-of-velocities">Addition of Velocities</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exmple-of-off-axis-motion">Exmple of Off-Axis Motion</a></li>
 </ul>
             </nav>
         </div>
@@ -449,7 +451,7 @@ ic\gamma\\
 \gamma v_z
 \end{bmatrix}\end{split}\]</div>
 <p>According to the correspondence principle, the theory we call special
-re(ativity has to reduce to Newton’s mechanics when <span class="math notranslate nohighlight">\(\beta\ll 1\)</span>. As
+relativity has to reduce to Newton’s mechanics when <span class="math notranslate nohighlight">\(\beta\ll 1\)</span>. As
 <span class="math notranslate nohighlight">\(\beta\)</span> approaches 0, <span class="math notranslate nohighlight">\(\gamma\)</span> approaches 1. Notice that the three
 space terms of the 4-velocity are just the components of the physical
 velocity as Newton would know it. The time component is just the speed
@@ -480,6 +482,305 @@ frames two and three, each, to the rest frame).  Each of these
 velocities could have a useful <span class="math notranslate nohighlight">\(\gamma\)</span> associated with it.  From here
 on, you <strong>must</strong> pay attention to <strong>which</strong> <span class="math notranslate nohighlight">\(\beta\)</span> speed goes with
 which <span class="math notranslate nohighlight">\(\gamma\)</span>!</p>
+</div>
+<p>If the 4-velocity is a proper 4-vector, then the 4-velocity must obey
+the demand of the Michelson-Morley experiment that its size must be a
+scalar. The size of the 4-velocity is:</p>
+<div class="math notranslate nohighlight" id="equation-sizev4a">
+<span class="eqno">(60)<a class="headerlink" href="#equation-sizev4a" title="Permalink to this equation">#</a></span>\[[v_4]^2 = -\gamma^2c^2 + \gamma^2v_x^2+\gamma^2v_y^2\gamma^2v_z^2\]</div>
+<p>factor out the gamma and use <span class="math notranslate nohighlight">\(v^2=v_x^2+v_y^2+v_z^2\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-sizev4b">
+<span class="eqno">(61)<a class="headerlink" href="#equation-sizev4b" title="Permalink to this equation">#</a></span>\[[v_4]^2 = \gamma^2 (v^2-c^2) = -c^2\gamma^2\left(1-\left(\frac{v}{c}\right)^2\right) = -c^2\gamma^2(1-\beta^2) = -c^2\]</div>
+<p>Once again, the size of a 4-vector is a negative number. The experimental
+evidence is that the speed of light has the same value for all inertial
+observers, the size of the 4-velocity is a scalar quantity. The 4-velocity
+meets the requirements set forth by the Michelson-Morley experiment.</p>
+<p>When objects are traveling near the speed of light, a convenient quantity
+to define is a unitless 4-velocity known as the 4-beta. This saves
+writing down  “<span class="math notranslate nohighlight">\(\times 10^8\)</span> m/s” over and over again.</p>
+<div class="math notranslate nohighlight" id="equation-eqbeta4">
+<span class="eqno">(62)<a class="headerlink" href="#equation-eqbeta4" title="Permalink to this equation">#</a></span>\[\begin{split}[\beta_4] = \frac{[v_4]}{c} = 
+\begin{bmatrix}
+i\gamma\\
+\gamma \frac{v_x}{c}\\
+\gamma \frac{v_y}{c}\\
+\gamma \frac{v_z}{c}
+\end{bmatrix}
+=
+\begin{bmatrix}
+i\gamma\\
+\gamma \beta_x\\
+\gamma \beta_y\\
+\gamma \beta_z
+\end{bmatrix}\end{split}\]</div>
+<p>Note that the size of the beta four vector that you get if you square
+and add the terms is <span class="math notranslate nohighlight">\(-1\)</span>, which is just what you would expect if you
+took the square of the four velocity and divided by <span class="math notranslate nohighlight">\(c^2\)</span>.  The constant
+<span class="math notranslate nohighlight">\(-1\)</span> is of course also invarient across reference frames, and therefore
+also a Lorentz scalar, as the size of a four vector must be.</p>
+</section>
+<section id="addition-of-velocities">
+<h2>Addition of Velocities<a class="headerlink" href="#addition-of-velocities" title="Permalink to this heading">#</a></h2>
+<p>The universality of the speed of light poses a very difficult
+interpretive problem that we are now in a position to start to
+address.  If a person is on a train and throws a ball toward
+the front of the train, all observers on the train will agree
+that the ball has a certain velocity.  Let’s call it <span class="math notranslate nohighlight">\(+v_b\)</span>.
+To an observer on the ground, let’s say Galileo, who is
+being passed the train at this moment, the ball must
+be moving faster than the train (since it is catching up
+to the forward wall of the car), and if the train is going
+<span class="math notranslate nohighlight">\(+v_t\)</span>, Galileo would say the ball is going <span class="math notranslate nohighlight">\(v_b+v_t\)</span>.  The
+motion of the train gives the ball a boost, according to
+Galileo’s frame of reference on the ground.</p>
+<p>However, if we bring Einstein into it, we can ask, “what
+happens if the ball and the train are going at three-quarters
+the speed of light?”  Then, according to Galileo, the ball
+would be moving at <span class="math notranslate nohighlight">\(1.5c\)</span>, which Einstein says is impossible.
+To take it even further to an extreme, what if the person
+on the train flashes a laser pointer toward the front of the
+train.  The people on the train would certainly measure the
+photons in the laser beam to be moving at the speed of light,
+but Galileo would expect to measure the light moving at
+<span class="math notranslate nohighlight">\(c+v_t\)</span>, which both Einstein’s theory and the Michaelson-Morely
+experiment say is impossible.</p>
+<p>How do we resolve this dilemma???  By Lorentz-transforming
+the velocity four vector, we can determine how someone like
+Galileo would measure velocities in a reference frame in
+relative motion, compared with someone on the train.  So,
+we set up the problem…</p>
+<p>An observer at rest with respect to a reference frame (call it A)
+measures the components of the four velocity of an object that is
+moving with respect to her.  A second observer, moving with speed
+<span class="math notranslate nohighlight">\(\beta_R\)</span> in the <span class="math notranslate nohighlight">\(+x\)</span> direction with respect to the first observer,
+also measures the components of the 4-velocity for the object. How are
+the components of these two 4-vectors related?</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/813f66c8471cc56bb9f7752ee78d44073fb432dbbca59191bc74ff1cc5024300.png" src="_images/813f66c8471cc56bb9f7752ee78d44073fb432dbbca59191bc74ff1cc5024300.png" />
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Figure 7.1 – A beta four vector represented in a spacetime diagram
+for a reference frame <span class="math notranslate nohighlight">\(A\)</span>.  A second reference frame <span class="math notranslate nohighlight">\(A'\)</span> is moving
+to the right, relative to the first.  In this case, the time component
+of the beta four vector represented by the diagonal arrow is 1.0
+and the space component is 0.7, so the actual speed being represented
+here is <span class="math notranslate nohighlight">\(\beta = 0.7/1.0 = 0.7\)</span>, or seven tenths the speed of light.</p>
+</div>
+<p>To figure this out, let us first diagram this situation.  It’s not
+strictly necessary, but helps make sure we use the right minus sign.
+The spacetime diagrams that define a Lorentz transformation are shown
+in Figure 7.1.  In this case, depending on how <span class="math notranslate nohighlight">\(\beta_R\)</span> compares with
+<span class="math notranslate nohighlight">\(\beta\)</span>, we would expect <span class="math notranslate nohighlight">\(\beta^\prime\)</span> to be less than <span class="math notranslate nohighlight">\(\beta\)</span>,
+perhaps even going negative.  In particular, if <span class="math notranslate nohighlight">\(\beta_R=\beta\)</span>, our
+theory had better predict that <span class="math notranslate nohighlight">\(\beta^\prime=0\)</span>, or something is
+seriously wrong.  The correspondance principle demands that when
+<span class="math notranslate nohighlight">\(\beta_R\ll 1\)</span>, the prediction we get should reduce to
+<span class="math notranslate nohighlight">\(\beta'=\beta-\beta_R\)</span>, which is what Galileo would expect it to be.</p>
+<p>The unprimed observer measures a 4-beta:</p>
+<div class="math notranslate nohighlight" id="equation-b4unp">
+<span class="eqno">(63)<a class="headerlink" href="#equation-b4unp" title="Permalink to this equation">#</a></span>\[\begin{split}[\beta_4]
+= 
+\begin{bmatrix}
+i\gamma\\
+\gamma \beta\\
+0\\
+0
+\end{bmatrix}\end{split}\]</div>
+<p>from here, we will drop the zeros and just work with the
+first two components:</p>
+<div class="math notranslate nohighlight" id="equation-ltbeta">
+<span class="eqno">(64)<a class="headerlink" href="#equation-ltbeta" title="Permalink to this equation">#</a></span>\[\begin{split}[\beta_4]' =
+{\cal L}_x(\beta_R)[\beta_4]
+=
+\begin{bmatrix}
+\gamma_R &amp; -i\beta_R\gamma_R\\
+i\beta_R\gamma_R &amp; \gamma_R
+\end{bmatrix}
+\begin{bmatrix}
+i\gamma\\
+\gamma \beta
+\end{bmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-b4p">
+<span class="eqno">(65)<a class="headerlink" href="#equation-b4p" title="Permalink to this equation">#</a></span>\[\begin{split}[\beta_4]' =
+\begin{bmatrix}
+i\gamma^\prime\\
+\gamma^\prime \beta^\prime
+\end{bmatrix}
+=
+\begin{bmatrix}
+i\gamma\gamma_R-i\gamma\gamma_R\beta\beta_R\\
+\gamma_R\gamma \beta - \gamma_R\beta_R\gamma
+\end{bmatrix}
+=
+\gamma\gamma_R
+\begin{bmatrix}
+i(1-\beta\beta_R)\\
+\beta - \beta_R
+\end{bmatrix}\end{split}\]</div>
+<p>Again, remember that <span class="math notranslate nohighlight">\(\beta\)</span> is the velocity of the object as measured
+in the original frame (<span class="math notranslate nohighlight">\(\gamma = 1/\sqrt{1-\beta^2}\)</span>), <span class="math notranslate nohighlight">\(\beta_R\)</span> is
+the relative velocity of the two frames (<span class="math notranslate nohighlight">\(\gamma_R = 1/\sqrt{1-\beta_R^2}\)</span>),
+and <span class="math notranslate nohighlight">\(\beta^\prime\)</span> is the velocity of the object in the primed frame
+(<span class="math notranslate nohighlight">\(\gamma^\prime = 1/\sqrt{1-\beta^{'2}}\)</span>).  It gets tricky to keep all
+the different <span class="math notranslate nohighlight">\(\beta\)</span> and <span class="math notranslate nohighlight">\(\gamma\)</span> factors straight, but if you maintain
+a consistent notation, it’s easier to hold the connections in your head.</p>
+<p>If we divide the space component by the time component, we get
+<div class="math notranslate nohighlight">
+\[\frac{\gamma'\beta'}{\gamma'} = \frac{\gamma\gamma_R(\beta - \beta_R)}{\gamma\gamma_R(1-\beta\beta_R)}\]</div>
+
+cancel common factors to get</p>
+<div class="math notranslate nohighlight" id="equation-veladd1">
+<span class="eqno">(66)<a class="headerlink" href="#equation-veladd1" title="Permalink to this equation">#</a></span>\[\beta' = \frac{\beta - \beta_R}{1-\beta\beta_R}\]</div>
+<p>This is known as <strong>the velocity addition formula</strong>.  Note that
+although it is quite different from what Newton or Galileo would have
+expected, it does meet all the conditions we laid out before we
+started.  This formula does give us a <span class="math notranslate nohighlight">\(\beta'&lt;\beta\)</span>, if
+<span class="math notranslate nohighlight">\(\beta_R=\beta\)</span> we do get zero, and if <span class="math notranslate nohighlight">\(\beta_R&gt;\beta\)</span> the velocity
+goes negative (the relative velocity is faster, so the object is going
+backwards in the primed frame).  Furthermore, it also satisfies the
+correspondence principle, because if <span class="math notranslate nohighlight">\(\beta_R\ll 1\)</span>, then the
+denominator is basically not different from one, and therefore Galileo
+would insist his answer was not wrong.</p>
+<p>This formula also takes into account what happens if the relative velocity
+goes the other way: simply change the minus signs to plus signs.  Sometimes
+you will see the formula written with <span class="math notranslate nohighlight">\(\mp\)</span> symbols, but that’s not strictly
+necessary, as long as you remember to set up the problem with the reference
+frames as indicated in Figure 7.1.</p>
+<p>Finally, note that this formula allows us to avoid the problem of going
+faster than light if the speeds get large.  If <span class="math notranslate nohighlight">\(\beta=0.75\)</span> and <span class="math notranslate nohighlight">\(\beta_R=-0.75\)</span>,
+then <span class="math notranslate nohighlight">\(\beta'\neq1.5\)</span>!  If you plug those numbers in, you get 1.5 in the
+numerator, but you get 1.5625 in the denominator, so <span class="math notranslate nohighlight">\(\beta'=0.96\)</span>.
+That’s faster than <span class="math notranslate nohighlight">\(\beta\)</span>, which you expect, but not bigger than one.</p>
+<p>Most importantly, note what happens if <span class="math notranslate nohighlight">\(\beta=1\)</span>: the numerator
+becomes <span class="math notranslate nohighlight">\(1\mp\beta_R\)</span>, because <span class="math notranslate nohighlight">\(\beta=1\)</span>, but in the denominator, the
+product of <span class="math notranslate nohighlight">\(\beta\beta_R\)</span> becomes just <span class="math notranslate nohighlight">\(\beta_R\)</span>, so the denominator
+is also <span class="math notranslate nohighlight">\(1\mp\beta_R\)</span>!  This means that <span class="math notranslate nohighlight">\(\beta'=1\)</span>, which is another
+way of saying that anything going at the speed of light in one frame
+will be found to be going at the speed of light in <strong>any</strong> other frame!
+The speed of light is the same in all inertial frames, as consistent
+with the first postulate at the Michaelson-Morely experiment.</p>
+</section>
+<section id="exmple-of-off-axis-motion">
+<h2>Exmple of Off-Axis Motion<a class="headerlink" href="#exmple-of-off-axis-motion" title="Permalink to this heading">#</a></h2>
+<p>Suppose that a particle istraveling with a velocity of <span class="math notranslate nohighlight">\(\beta\)</span> at an
+angle <span class="math notranslate nohighlight">\(\theta\)</span> with respect to the <span class="math notranslate nohighlight">\(x\)</span> axis of the unprimed frame.
+The 4-beta measured by an observer in the unprimed frame now has more
+than two non-zero terms in it. The <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> components are found by
+applying trigonometry:</p>
+<div class="math notranslate nohighlight" id="equation-b4offax">
+<span class="eqno">(67)<a class="headerlink" href="#equation-b4offax" title="Permalink to this equation">#</a></span>\[\begin{split}[\beta_4] =
+\begin{bmatrix}
+i\gamma\\
+\gamma\beta\cos{\theta}\\
+\gamma\beta\sin{\theta}\\
+0
+\end{bmatrix}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\gamma=1/\sqrt{1-\beta^2}\)</span>, as usual.</p>
+<p>A second observer, moving with <span class="math notranslate nohighlight">\(\beta_R\)</span> pointing in the <span class="math notranslate nohighlight">\(+x\)</span>
+direction with respect to the first observer would measure this same
+velocity as having a different size and direction.  Setting up a
+Lorentz transformation into a primed frame:</p>
+<div class="math notranslate nohighlight" id="equation-b4offaxlt">
+<span class="eqno">(68)<a class="headerlink" href="#equation-b4offaxlt" title="Permalink to this equation">#</a></span>\[\begin{split}[\beta_4]' =
+\begin{bmatrix}
+i\gamma'\\
+\gamma'\beta'\cos{\theta'}\\
+\gamma'\beta'\sin{\theta'}\\
+0
+\end{bmatrix}
+=
+{\cal L}_x(\beta_R)[\beta_4] =
+\begin{bmatrix}
+\gamma_R &amp; -i\beta_R\gamma_R &amp; 0 &amp; 0\\
+i\beta_R\gamma_R &amp; \gamma_R &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+i\gamma\\
+\gamma\beta\cos{\theta}\\
+\gamma\beta\sin{\theta}\\
+0
+\end{bmatrix}\end{split}\]</div>
+<p>which yields</p>
+<div class="math notranslate nohighlight" id="equation-b4poffax">
+<span class="eqno">(69)<a class="headerlink" href="#equation-b4poffax" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
+i\gamma'\\
+\gamma'\beta'\cos{\theta'}\\
+\gamma'\beta'\sin{\theta'}\\
+0
+\end{bmatrix}
+=
+\begin{bmatrix}
+i\gamma\gamma_R - i\beta_R\gamma_R\gamma\beta\cos{\theta}\\
+-\gamma\gamma_R\beta_R + \gamma_R\gamma\beta\cos{\theta}\\
+\gamma\beta\sin{\theta}\\
+0
+\end{bmatrix}
+=
+\gamma_R\gamma
+\begin{bmatrix}
+i(1 - \beta_R\beta\cos{\theta})\\
+\beta\cos{\theta}-\beta_R\\
+\beta\sin{\theta}/\gamma_R\\
+0
+\end{bmatrix}\end{split}\]</div>
+<p>To deduce what the angle with the <span class="math notranslate nohighlight">\(x'\)</span> axis is, we take the ratio of the
+first two spatial components in the primed frame:</p>
+<div class="math notranslate nohighlight" id="equation-tanthp">
+<span class="eqno">(70)<a class="headerlink" href="#equation-tanthp" title="Permalink to this equation">#</a></span>\[\tan{\theta'} = 
+\frac{\gamma'\beta'\sin{\theta'}}{\gamma'\beta'\cos{\theta'}}
+=
+\frac{\gamma_R\gamma(\beta\sin{\theta}/\gamma_R)}{\gamma_R\gamma(\beta\cos{\theta}-\beta_R)}
+=
+\frac{\beta\sin{\theta}}{\gamma_R(\beta\cos{\theta}-\beta_R)}\]</div>
+<p>If Newton had tried to solve this problem, he would have deduced that
+the <span class="math notranslate nohighlight">\(x\)</span> component of <span class="math notranslate nohighlight">\(\beta\)</span> would be reduced by <span class="math notranslate nohighlight">\(\beta_R\)</span>, and
+the <span class="math notranslate nohighlight">\(y\)</span> component would be unchanged.  If you let <span class="math notranslate nohighlight">\(\gamma_R\rightarrow 1\)</span>,
+Equation <a class="reference internal" href="#equation-tanthp">(70)</a> reduces to this result, so the correspondance
+principle is satisfied, but if <span class="math notranslate nohighlight">\(\gamma_R\)</span> is bigger than 1, then
+the angle will be reduced relative to Newton’s prediction.</p>
+<p>If you wanted to know the value of <span class="math notranslate nohighlight">\(\beta'\)</span>, you would need to
+divide each space component of <span class="math notranslate nohighlight">\([\beta_4]'\)</span> by the time component
+(to get rid of the <span class="math notranslate nohighlight">\(\gamma'\)</span>) then square them and add them (to
+get rid of the trig functions):</p>
+<div class="math notranslate nohighlight" id="equation-bpmag">
+<span class="eqno">(71)<a class="headerlink" href="#equation-bpmag" title="Permalink to this equation">#</a></span>\[\beta^{'2} = \left(\frac{\gamma'\beta'\cos{\theta'}}{\gamma'}\right)^2
++  \left(\frac{\gamma'\beta'\sin{\theta'}}{\gamma'}\right)^2
+=
+\left(\frac{\beta\cos{\theta}-\beta_R}{1 - \beta_R\beta\cos{\theta}}\right)^2
++  \left(\frac{\beta\sin{\theta}}{\gamma_R(1 - \beta_R\beta\cos{\theta})}\right)^2\]</div>
+<p>This equation is a bit harder to get any intuition out of, but note
+that at slow speeds, as <span class="math notranslate nohighlight">\(\beta_R\rightarrow 0\)</span> and <span class="math notranslate nohighlight">\(\gamma_R\rightarrow 1\)</span>,
+the denominators all go to 1.  The numerators are just what Newton would
+expect, as explained above.  So the correspondance principle is satisfied.
+To try to get some more intuition about the implications of this equation,
+a graph is more helpful than an equation.  Figure 7.2 shows a graph of
+<span class="math notranslate nohighlight">\(\beta'\)</span> as a function of <span class="math notranslate nohighlight">\(\gamma_R\)</span> for an arbitrary choice of unprimed
+values of <span class="math notranslate nohighlight">\(\beta=0.866\)</span> and <span class="math notranslate nohighlight">\(\theta=\pi/4\)</span>.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/5152abc17eb3bd713ed878702af327880db49feb589ee16a0b41e818da98f828.png" src="_images/5152abc17eb3bd713ed878702af327880db49feb589ee16a0b41e818da98f828.png" />
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Figure 7.2 – Values for the off-axis beta velocity in the primed
+frame, for an unprimed <span class="math notranslate nohighlight">\(\beta=0.866\)</span> at <span class="math notranslate nohighlight">\(\pi/4\)</span> above the <span class="math notranslate nohighlight">\(x\)</span> axis.
+The blue line shows the horizontal component of <span class="math notranslate nohighlight">\(\beta'\)</span> while the red
+line shows the vertical component.  The magneta line is the total
+magnitude of <span class="math notranslate nohighlight">\(\beta'\)</span>.  A dotted green line shows the answer that
+Newtonian physics predicts for the magnitude of <span class="math notranslate nohighlight">\(\beta'\)</span>.  Note that
+the two theories agree near <span class="math notranslate nohighlight">\(\beta_R=0\)</span>, as the correspondence
+principle says they should, although the Newtonian theory of course
+predicts speeds faster than light.  Horizontal dotted lines show zero
+velocity and the speed of light, while a vertical dotted line shows
+the original magnitude of <span class="math notranslate nohighlight">\(\beta\)</span>.  Note that the horizontal component
+switches direction, as you expect.  All components of <span class="math notranslate nohighlight">\(\beta'\)</span> head
+toward one as the relative speed goes to one, in either direction.</p>
 </div>
 </section>
 </section>
@@ -553,6 +854,8 @@ which <span class="math notranslate nohighlight">\(\gamma\)</span>!</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-four-velocity">The Four Velocity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-of-velocities">Addition of Velocities</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exmple-of-off-axis-motion">Exmple of Off-Axis Motion</a></li>
 </ul>
   </nav></div>
 

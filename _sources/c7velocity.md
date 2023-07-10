@@ -112,7 +112,7 @@ ic\gamma\\
 ```
 
 According to the correspondence principle, the theory we call special
-re(ativity has to reduce to Newton's mechanics when $\beta\ll 1$. As
+relativity has to reduce to Newton's mechanics when $\beta\ll 1$. As
 $\beta$ approaches 0, $\gamma$ approaches 1. Notice that the three
 space terms of the 4-velocity are just the components of the physical
 velocity as Newton would know it. The time component is just the speed
@@ -144,4 +144,386 @@ frames two and three, each, to the rest frame).  Each of these
 velocities could have a useful $\gamma$ associated with it.  From here
 on, you **must** pay attention to **which** $\beta$ speed goes with
 which $\gamma$!
+```
+
+If the 4-velocity is a proper 4-vector, then the 4-velocity must obey
+the demand of the Michelson-Morley experiment that its size must be a
+scalar. The size of the 4-velocity is:
+```{math}
+:label: sizev4a
+[v_4]^2 = -\gamma^2c^2 + \gamma^2v_x^2+\gamma^2v_y^2\gamma^2v_z^2
+```
+factor out the gamma and use $v^2=v_x^2+v_y^2+v_z^2$:
+```{math}
+:label: sizev4b
+[v_4]^2 = \gamma^2 (v^2-c^2) = -c^2\gamma^2\left(1-\left(\frac{v}{c}\right)^2\right) = -c^2\gamma^2(1-\beta^2) = -c^2
+```
+Once again, the size of a 4-vector is a negative number. The experimental
+evidence is that the speed of light has the same value for all inertial
+observers, the size of the 4-velocity is a scalar quantity. The 4-velocity
+meets the requirements set forth by the Michelson-Morley experiment.
+
+When objects are traveling near the speed of light, a convenient quantity
+to define is a unitless 4-velocity known as the 4-beta. This saves
+writing down  "$\times 10^8$ m/s" over and over again.
+```{math}
+:label: eqbeta4
+[\beta_4] = \frac{[v_4]}{c} = 
+\begin{bmatrix}
+i\gamma\\
+\gamma \frac{v_x}{c}\\
+\gamma \frac{v_y}{c}\\
+\gamma \frac{v_z}{c}
+\end{bmatrix}
+=
+\begin{bmatrix}
+i\gamma\\
+\gamma \beta_x\\
+\gamma \beta_y\\
+\gamma \beta_z
+\end{bmatrix}
+```
+Note that the size of the beta four vector that you get if you square
+and add the terms is $-1$, which is just what you would expect if you
+took the square of the four velocity and divided by $c^2$.  The constant
+$-1$ is of course also invarient across reference frames, and therefore
+also a Lorentz scalar, as the size of a four vector must be.
+
+
+## Addition of Velocities
+
+The universality of the speed of light poses a very difficult
+interpretive problem that we are now in a position to start to
+address.  If a person is on a train and throws a ball toward
+the front of the train, all observers on the train will agree
+that the ball has a certain velocity.  Let's call it $+v_b$.
+To an observer on the ground, let's say Galileo, who is
+being passed the train at this moment, the ball must
+be moving faster than the train (since it is catching up
+to the forward wall of the car), and if the train is going
+$+v_t$, Galileo would say the ball is going $v_b+v_t$.  The
+motion of the train gives the ball a boost, according to
+Galileo's frame of reference on the ground.
+
+However, if we bring Einstein into it, we can ask, "what
+happens if the ball and the train are going at three-quarters
+the speed of light?"  Then, according to Galileo, the ball
+would be moving at $1.5c$, which Einstein says is impossible.
+To take it even further to an extreme, what if the person
+on the train flashes a laser pointer toward the front of the
+train.  The people on the train would certainly measure the
+photons in the laser beam to be moving at the speed of light,
+but Galileo would expect to measure the light moving at
+$c+v_t$, which both Einstein's theory and the Michaelson-Morely
+experiment say is impossible.
+
+How do we resolve this dilemma???  By Lorentz-transforming
+the velocity four vector, we can determine how someone like
+Galileo would measure velocities in a reference frame in
+relative motion, compared with someone on the train.  So,
+we set up the problem...
+
+An observer at rest with respect to a reference frame (call it A)
+measures the components of the four velocity of an object that is
+moving with respect to her.  A second observer, moving with speed
+$\beta_R$ in the $+x$ direction with respect to the first observer,
+also measures the components of the 4-velocity for the object. How are
+the components of these two 4-vectors related?
+
+
+
+```{code-cell}
+:tags: ["remove-input"]
+# 3D plot of a spacetime diagram with x, ct, and y
+plt.figure(figsize=(5,5))
+plt.arrow(0,0,1,0,head_width=0.1)
+plt.arrow(0,0,0,1,head_width=0.1)
+
+plt.arrow(-0.5,-0.5,1,0,head_width=0.1)
+plt.arrow(-0.5,-0.5,0,1,head_width=0.1)
+
+plt.arrow(0.2,-0.25,0.75,0,head_width=0.05)
+
+plt.arrow(0.2,0.1,.7,1.0,head_width=0.1,length_includes_head=True)
+
+ax = plt.gca()
+ax.get_xaxis().set_visible(False)
+ax.get_yaxis().set_visible(False)
+plt.axis([-1,2,-1,2])
+ax.text(0.15, 1, "A")
+ax.text(-0.05, 1.2, "ct")
+ax.text(1.2, 0, "x")
+ax.text(1.1, -0.25, "v_R")
+ax.text(-0.35, .5, "A'")
+ax.text(-.55, .7, "ct'")
+ax.text(.7, -0.5, "x'")
+ax.text(1.0,1.0,"beta_4")
+plt.show()
+```
+```{note}
+Figure 7.1 -- A beta four vector represented in a spacetime diagram
+for a reference frame $A$.  A second reference frame $A'$ is moving
+to the right, relative to the first.  In this case, the time component
+of the beta four vector represented by the diagonal arrow is 1.0
+and the space component is 0.7, so the actual speed being represented
+here is $\beta = 0.7/1.0 = 0.7$, or seven tenths the speed of light.
+```
+
+To figure this out, let us first diagram this situation.  It's not
+strictly necessary, but helps make sure we use the right minus sign.
+The spacetime diagrams that define a Lorentz transformation are shown
+in Figure 7.1.  In this case, depending on how $\beta_R$ compares with
+$\beta$, we would expect $\beta^\prime$ to be less than $\beta$,
+perhaps even going negative.  In particular, if $\beta_R=\beta$, our
+theory had better predict that $\beta^\prime=0$, or something is
+seriously wrong.  The correspondance principle demands that when
+$\beta_R\ll 1$, the prediction we get should reduce to
+$\beta'=\beta-\beta_R$, which is what Galileo would expect it to be.
+
+The unprimed observer measures a 4-beta:
+```{math}
+:label: b4unp
+[\beta_4]
+= 
+\begin{bmatrix}
+i\gamma\\
+\gamma \beta\\
+0\\
+0
+\end{bmatrix}
+```
+from here, we will drop the zeros and just work with the
+first two components:
+```{math}
+:label: ltbeta
+[\beta_4]' =
+{\cal L}_x(\beta_R)[\beta_4]
+=
+\begin{bmatrix}
+\gamma_R & -i\beta_R\gamma_R\\
+i\beta_R\gamma_R & \gamma_R
+\end{bmatrix}
+\begin{bmatrix}
+i\gamma\\
+\gamma \beta
+\end{bmatrix}
+```
+```{math}
+:label: b4p
+[\beta_4]' =
+\begin{bmatrix}
+i\gamma^\prime\\
+\gamma^\prime \beta^\prime
+\end{bmatrix}
+=
+\begin{bmatrix}
+i\gamma\gamma_R-i\gamma\gamma_R\beta\beta_R\\
+\gamma_R\gamma \beta - \gamma_R\beta_R\gamma
+\end{bmatrix}
+=
+\gamma\gamma_R
+\begin{bmatrix}
+i(1-\beta\beta_R)\\
+\beta - \beta_R
+\end{bmatrix}
+```
+Again, remember that $\beta$ is the velocity of the object as measured
+in the original frame ($\gamma = 1/\sqrt{1-\beta^2}$), $\beta_R$ is
+the relative velocity of the two frames ($\gamma_R = 1/\sqrt{1-\beta_R^2}$),
+and $\beta^\prime$ is the velocity of the object in the primed frame
+($\gamma^\prime = 1/\sqrt{1-\beta^{'2}}$).  It gets tricky to keep all
+the different $\beta$ and $\gamma$ factors straight, but if you maintain
+a consistent notation, it's easier to hold the connections in your head.
+
+If we divide the space component by the time component, we get
+$$\frac{\gamma'\beta'}{\gamma'} = \frac{\gamma\gamma_R(\beta - \beta_R)}{\gamma\gamma_R(1-\beta\beta_R)}$$
+cancel common factors to get
+```{math}
+:label: veladd1
+\beta' = \frac{\beta - \beta_R}{1-\beta\beta_R}
+```
+This is known as **the velocity addition formula**.  Note that
+although it is quite different from what Newton or Galileo would have
+expected, it does meet all the conditions we laid out before we
+started.  This formula does give us a $\beta'<\beta$, if
+$\beta_R=\beta$ we do get zero, and if $\beta_R>\beta$ the velocity
+goes negative (the relative velocity is faster, so the object is going
+backwards in the primed frame).  Furthermore, it also satisfies the
+correspondence principle, because if $\beta_R\ll 1$, then the
+denominator is basically not different from one, and therefore Galileo
+would insist his answer was not wrong.
+
+This formula also takes into account what happens if the relative velocity
+goes the other way: simply change the minus signs to plus signs.  Sometimes
+you will see the formula written with $\mp$ symbols, but that's not strictly
+necessary, as long as you remember to set up the problem with the reference
+frames as indicated in Figure 7.1.
+
+Finally, note that this formula allows us to avoid the problem of going
+faster than light if the speeds get large.  If $\beta=0.75$ and $\beta_R=-0.75$,
+then $\beta'\neq1.5$!  If you plug those numbers in, you get 1.5 in the
+numerator, but you get 1.5625 in the denominator, so $\beta'=0.96$.
+That's faster than $\beta$, which you expect, but not bigger than one.
+
+Most importantly, note what happens if $\beta=1$: the numerator
+becomes $1\mp\beta_R$, because $\beta=1$, but in the denominator, the
+product of $\beta\beta_R$ becomes just $\beta_R$, so the denominator
+is also $1\mp\beta_R$!  This means that $\beta'=1$, which is another
+way of saying that anything going at the speed of light in one frame
+will be found to be going at the speed of light in **any** other frame!
+The speed of light is the same in all inertial frames, as consistent
+with the first postulate at the Michaelson-Morely experiment.
+
+## Exmple of Off-Axis Motion
+
+Suppose that a particle istraveling with a velocity of $\beta$ at an
+angle $\theta$ with respect to the $x$ axis of the unprimed frame.
+The 4-beta measured by an observer in the unprimed frame now has more
+than two non-zero terms in it. The $x$ and $y$ components are found by
+applying trigonometry:
+```{math}
+:label: b4offax
+[\beta_4] =
+\begin{bmatrix}
+i\gamma\\
+\gamma\beta\cos{\theta}\\
+\gamma\beta\sin{\theta}\\
+0
+\end{bmatrix}
+```
+where $\gamma=1/\sqrt{1-\beta^2}$, as usual.
+
+
+A second observer, moving with $\beta_R$ pointing in the $+x$
+direction with respect to the first observer would measure this same
+velocity as having a different size and direction.  Setting up a
+Lorentz transformation into a primed frame:
+```{math}
+:label: b4offaxlt
+[\beta_4]' =
+\begin{bmatrix}
+i\gamma'\\
+\gamma'\beta'\cos{\theta'}\\
+\gamma'\beta'\sin{\theta'}\\
+0
+\end{bmatrix}
+=
+{\cal L}_x(\beta_R)[\beta_4] =
+\begin{bmatrix}
+\gamma_R & -i\beta_R\gamma_R & 0 & 0\\
+i\beta_R\gamma_R & \gamma_R & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+i\gamma\\
+\gamma\beta\cos{\theta}\\
+\gamma\beta\sin{\theta}\\
+0
+\end{bmatrix}
+```
+which yields
+```{math}
+:label: b4poffax
+\begin{bmatrix}
+i\gamma'\\
+\gamma'\beta'\cos{\theta'}\\
+\gamma'\beta'\sin{\theta'}\\
+0
+\end{bmatrix}
+=
+\begin{bmatrix}
+i\gamma\gamma_R - i\beta_R\gamma_R\gamma\beta\cos{\theta}\\
+-\gamma\gamma_R\beta_R + \gamma_R\gamma\beta\cos{\theta}\\
+\gamma\beta\sin{\theta}\\
+0
+\end{bmatrix}
+=
+\gamma_R\gamma
+\begin{bmatrix}
+i(1 - \beta_R\beta\cos{\theta})\\
+\beta\cos{\theta}-\beta_R\\
+\beta\sin{\theta}/\gamma_R\\
+0
+\end{bmatrix}
+```
+To deduce what the angle with the $x'$ axis is, we take the ratio of the
+first two spatial components in the primed frame:
+```{math}
+:label: tanthp
+\tan{\theta'} = 
+\frac{\gamma'\beta'\sin{\theta'}}{\gamma'\beta'\cos{\theta'}}
+=
+\frac{\gamma_R\gamma(\beta\sin{\theta}/\gamma_R)}{\gamma_R\gamma(\beta\cos{\theta}-\beta_R)}
+=
+\frac{\beta\sin{\theta}}{\gamma_R(\beta\cos{\theta}-\beta_R)}
+```
+If Newton had tried to solve this problem, he would have deduced that
+the $x$ component of $\beta$ would be reduced by $\beta_R$, and
+the $y$ component would be unchanged.  If you let $\gamma_R\rightarrow 1$,
+Equation {eq}`tanthp` reduces to this result, so the correspondance
+principle is satisfied, but if $\gamma_R$ is bigger than 1, then
+the angle will be reduced relative to Newton's prediction.
+
+If you wanted to know the value of $\beta'$, you would need to
+divide each space component of $[\beta_4]'$ by the time component
+(to get rid of the $\gamma'$) then square them and add them (to
+get rid of the trig functions):
+```{math}
+:label: bpmag
+\beta^{'2} = \left(\frac{\gamma'\beta'\cos{\theta'}}{\gamma'}\right)^2
++  \left(\frac{\gamma'\beta'\sin{\theta'}}{\gamma'}\right)^2
+=
+\left(\frac{\beta\cos{\theta}-\beta_R}{1 - \beta_R\beta\cos{\theta}}\right)^2
++  \left(\frac{\beta\sin{\theta}}{\gamma_R(1 - \beta_R\beta\cos{\theta})}\right)^2
+```
+This equation is a bit harder to get any intuition out of, but note
+that at slow speeds, as $\beta_R\rightarrow 0$ and $\gamma_R\rightarrow 1$,
+the denominators all go to 1.  The numerators are just what Newton would
+expect, as explained above.  So the correspondance principle is satisfied.
+To try to get some more intuition about the implications of this equation,
+a graph is more helpful than an equation.  Figure 7.2 shows a graph of
+$\beta'$ as a function of $\gamma_R$ for an arbitrary choice of unprimed
+values of $\beta=0.866$ and $\theta=\pi/4$.
+
+
+
+```{code-cell}
+:tags: ["remove-input"]
+betar = np.arange(-0.95,1.0,0.01)
+gamr = 1/np.sqrt(1-betar**2)
+th = np.pi/4
+beta = 0.866
+denom = 1-betar*beta*np.cos(th)
+bpx = (beta*np.cos(th)-betar)/denom
+bpy = beta*np.sin(th)/gamr/denom
+bp = np.sqrt(bpx**2+bpy**2)
+bpnosr = np.sqrt((beta*np.cos(th)-betar)**2+(beta*np.sin(th))**2)
+plt.figure(figsize=(9,5))
+plt.plot(betar,bp,'m-',label='Total Magnitude')
+plt.plot(betar,bpx,'b-',label='Horizontal Component')
+plt.plot(betar,bpy,'r-',label='Vertical Component')
+plt.plot(betar,bpnosr,'g.-',label='Newtonian Answer')
+plt.plot([-1,1],[0,0],'k:')
+plt.plot([-1,1],[1,1],'k:')
+plt.plot([beta,beta],[-1,1],'k:')
+plt.xlabel('Relative velocity between frames')
+plt.ylabel('Speed of object in primed frame')
+plt.legend()
+plt.show()
+```
+```{note}
+Figure 7.2 -- Values for the off-axis beta velocity in the primed
+frame, for an unprimed $\beta=0.866$ at $\pi/4$ above the $x$ axis.
+The blue line shows the horizontal component of $\beta'$ while the red
+line shows the vertical component.  The magneta line is the total
+magnitude of $\beta'$.  A dotted green line shows the answer that
+Newtonian physics predicts for the magnitude of $\beta'$.  Note that
+the two theories agree near $\beta_R=0$, as the correspondence
+principle says they should, although the Newtonian theory of course
+predicts speeds faster than light.  Horizontal dotted lines show zero
+velocity and the speed of light, while a vertical dotted line shows
+the original magnitude of $\beta$.  Note that the horizontal component
+switches direction, as you expect.  All components of $\beta'$ head
+toward one as the relative speed goes to one, in either direction.
 ```
