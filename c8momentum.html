@@ -367,6 +367,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-and-lorentz-transformations">Momentum and Lorentz Transformations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-transforming-momentum">Example of Transforming Momentum</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-and-energy">Momentum and Energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rest-energy">The Rest Energy</a></li>
 </ul>
             </nav>
         </div>
@@ -549,6 +550,160 @@ The time component in the rest frame should be the rest mass times
 </section>
 <section id="momentum-and-energy">
 <h2>Momentum and Energy<a class="headerlink" href="#momentum-and-energy" title="Permalink to this heading">#</a></h2>
+<p>The size of the momentum 4-vector can be found by squaring each of the
+components in Equation <a class="reference internal" href="#equation-p4comp">(73)</a> and adding them up.</p>
+<div class="math notranslate nohighlight" id="equation-p4size">
+<span class="eqno">(81)<a class="headerlink" href="#equation-p4size" title="Permalink to this equation">#</a></span>\[[p_4]^2 = p_x^2+p_y^2+p_z^2-(\gamma m_0 c)^2 = p^2 - (\gamma m_0 c)^2\]</div>
+<p>where we take <span class="math notranslate nohighlight">\(p\)</span> to be the physical momentum (including the <span class="math notranslate nohighlight">\(\gamma\)</span>!).
+Multiplying both sides by <span class="math notranslate nohighlight">\(c^2\)</span> and doing a bit of algebra gives</p>
+<div class="math notranslate nohighlight" id="equation-eqcp1">
+<span class="eqno">(82)<a class="headerlink" href="#equation-eqcp1" title="Permalink to this equation">#</a></span>\[(cp)^2 +(m_0 c^2)^2 = (\gamma m_0 c^2)^2\]</div>
+<p>The term on the right of Equation <a class="reference internal" href="#equation-eqcp1">(82)</a> can be identified
+by making use of the correspondence principle. Expanding the <span class="math notranslate nohighlight">\(\gamma\)</span>
+on the right using a Taylor expansion about <span class="math notranslate nohighlight">\(\beta = 0\)</span> gives:</p>
+<div class="math notranslate nohighlight" id="equation-gammataylor">
+<span class="eqno">(83)<a class="headerlink" href="#equation-gammataylor" title="Permalink to this equation">#</a></span>\[\gamma = (1-\beta^2)^{-1/2} \rightarrow 1 +\frac{1}{2}
+beta^2 + \frac{3}{8} beta^4  + \frac{15}{48} beta^6 + ...\]</div>
+<p>If we assume that <span class="math notranslate nohighlight">\(\beta\)</span> is small enough that we can ignore
+all the higher order powers, then <span class="math notranslate nohighlight">\(\gamma \approx \beta^2/2\)</span>
+and <span class="math notranslate nohighlight">\(\gamma m_0 c^2\)</span> becomes approximately</p>
+<div class="math notranslate nohighlight" id="equation-totaleexp">
+<span class="eqno">(84)<a class="headerlink" href="#equation-totaleexp" title="Permalink to this equation">#</a></span>\[\gamma m_0 c^2 \approx \left(1+\frac{1}{2}\beta^2\right) m_0 c^2
+= m_0c^2 + \frac{1}{2}m_0 v^2\]</div>
+<p>The last term on the right is recognizable as Newton’s definition
+of the kinetic energy of the particle. The dimensions of all the terms
+in Equation <a class="reference internal" href="#equation-totaleexp">(84)</a> are energy.  As the velocity becomes exactly
+equal to 0, the term on the right (and all the terms in the expansion,
+of course) disappear, but there still is a term left in this ‘energy’
+equation.  The term <span class="math notranslate nohighlight">\(m_0 c^2\)</span> can therefore be interpreted as an energy
+associated with the particle when it is at rest.  This is of course the
+rest energy of the particle, giving rise to that most famous of equations,</p>
+<div class="math notranslate nohighlight" id="equation-emc2">
+<span class="eqno">(85)<a class="headerlink" href="#equation-emc2" title="Permalink to this equation">#</a></span>\[E_0 = m_0 c^2\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>How did Newton miss the rest energy of a partide? The rest energy of a
+person with a (rest) mass of 100 kg is
+<span class="math notranslate nohighlight">\(E =100~{\rm kg}(3\times10^8~{\rm m/s})^2 = 9\times10^{18}\)</span> joules.
+This is an unbelievably large number.  The total yearly electrical
+demand of the entire US is on the order of <span class="math notranslate nohighlight">\(10^{19}\)</span> joules
+(according to the (EIA)[https://www.eia.gov/electricity/annual/html/epa_01_02.html]).
+This is about the same order of magnitude!!!  Two reasons Newton didn’t
+notice this massive amount of energy.  Most importantly, only a change
+in energy is connected with anything happening.  Secondly, a 100 kg
+person does not just vanish, in Newton’s time or now, so that <span class="math notranslate nohighlight">\(10^{19}\)</span>
+joules of energy isn’t available to be associated with anything else you
+could measure.  Until people discovered that the rest energy of particles
+can change (through processes like fusion or radioactivity), there was
+no reason to notice an energy associated with rest mass, because it never
+changed.  I even hear people today talk about a “Law of Conservation of
+Mass,” even though there is no such law.  Mass can and does change,
+freeing up that rest energy to be associate with motion.  This energy
+is the cause of making the Sun shine, nuclear power plants, or nuclear
+bombs.  Mass is most definitely not conserved, but Isaac Newton had no
+idea.</p>
+</div>
+<p>If <span class="math notranslate nohighlight">\(\gamma m_0 c^2\)</span> is the rest energy when the particle is not moving,
+the fact that it increases with the particle’s speed (<span class="math notranslate nohighlight">\(\gamma\)</span> gets bigger
+than one) suggests that the remaining energy above and beyond the rest
+energy would be the kinetic energy.  This conclusion is supported by
+the fact that when <span class="math notranslate nohighlight">\(\gamma\)</span> is small but not zero, <span class="math notranslate nohighlight">\(\gamma m_0 c^2\)</span> is
+approximately the rest energy plus the classical kinetic energy.
+The <span class="math notranslate nohighlight">\(1/2 mv^2\)</span> rule for kinetic energy that we all learned in introductory
+physics is therefore only an approximation.  A full equation would be</p>
+<div class="math notranslate nohighlight" id="equation-etotal">
+<span class="eqno">(86)<a class="headerlink" href="#equation-etotal" title="Permalink to this equation">#</a></span>\[E_{\rm total} =  \gamma m_0 c^2 = E_0 + KE \]</div>
+<p>We can use Equation <a class="reference internal" href="#equation-eqcp1">(82)</a> to say that</p>
+<div class="math notranslate nohighlight" id="equation-etotal2">
+<span class="eqno">(87)<a class="headerlink" href="#equation-etotal2" title="Permalink to this equation">#</a></span>\[E_{\rm total}^2 =  (\gamma m_0 c^2)^2 = E_0^2 + (cp)^2 \]</div>
+<p>In the world of fast moving objects, the momentum and energy of the
+system are connected as shown in equation <a class="reference internal" href="#equation-etotal2">(87)</a>.  This means
+that the momentum 4-vector can be written in terms of the physical
+momentum and total energy of the system as:</p>
+<div class="math notranslate nohighlight" id="equation-p4fulle">
+<span class="eqno">(88)<a class="headerlink" href="#equation-p4fulle" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4] =
+\begin{bmatrix}
+iE_{\rm tot}/c\\
+p_x\\
+p_y\\
+p_z
+\end{bmatrix}\end{split}\]</div>
+<p>which means the time component of the momentum four vector is telling
+you the total energy of the system.  Many people therefore call the
+momentum four vector “the energy-momentum four vector”.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please make a careful note that Equations <a class="reference internal" href="#equation-eqcp1">(82)</a> and <a class="reference internal" href="#equation-etotal2">(87)</a>
+are NOT the same equation!  Do NOT think that <span class="math notranslate nohighlight">\(cp\)</span> is the kinetic energy.
+Each term in Equation <a class="reference internal" href="#equation-etotal2">(87)</a> is <strong>squared</strong>, and the sum of squares
+is <strong>not</strong> the same thing as the square of a sum!  The term <span class="math notranslate nohighlight">\(cp\)</span> is clearly
+related to the kinetic energy – they have the same dimensions and they
+both go up and down together – but they are not the same thing.</p>
+</div>
+<p>Equation <a class="reference internal" href="#equation-etotal">(86)</a> can be used to find the speed of a particle of
+known rest and kinetic energy.  If the total energy is rest plus kinetic,
+and the total energy is <span class="math notranslate nohighlight">\(\gamma\)</span> times the rest energy, then</p>
+<div class="math notranslate nohighlight" id="equation-game">
+<span class="eqno">(89)<a class="headerlink" href="#equation-game" title="Permalink to this equation">#</a></span>\[E_{\rm tot} = \gamma E_0 = E_0 + KE \rightarrow \gamma = 1 + \frac{KE}{E_0}\]</div>
+<p>This suggests an easy test for deciding if you have to use the
+relativistic formulae to describe the motion of an object.  If you
+know the KE and the <span class="math notranslate nohighlight">\(E_0\)</span>, use Equation <a class="reference internal" href="#equation-game">(89)</a> to get <span class="math notranslate nohighlight">\(\gamma\)</span>.
+If this number is significantly greater than one, then you need to use
+the relativistic equations, but if it’s very close to one, you can get
+away with using Newtonian mechanics.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Example 8.3:</p>
+<p>An electron gun in the lab can accelerate electrons through a potential
+difference of up to 500 V.  In energy terms, this means the electron will
+gain 500 eV of kinetic energy.  The rest energy of an electron is about
+500 keV.  Therefore, the Lorentz factor for the electrons in this device
+will never be greater than <span class="math notranslate nohighlight">\(\gamma = 1 + 5\times10^2/5\times10^5 = 1.001\)</span>,
+and it is not important to use relativistic equations to describe the
+motion of the electrons in this apparatus.</p>
+<p>At <span class="math notranslate nohighlight">\(\gamma=1.001\)</span>, we can figure out the speed, and we get <span class="math notranslate nohighlight">\(\beta
+= \sqrt{1-1/\gamma^2} = 0.0447\)</span>, which works out to <span class="math notranslate nohighlight">\(1.3\times10^7\)</span> m/s.
+That’s still something like 25 million miles an hour, which shows you
+just how fast “close to the speed of light” really is.  Even 25 million
+miles an hour isn’t fast enough to really need to use relativity theory.</p>
+</aside>
+</section>
+<section id="the-rest-energy">
+<h2>The Rest Energy<a class="headerlink" href="#the-rest-energy" title="Permalink to this heading">#</a></h2>
+<p>The rest energy is the energy measured in the rest frame of a particle.
+It can be determined from the rest mass using Equation <a class="reference internal" href="#equation-emc2">(85)</a>.
+The elementary particles have fixed rest energies.  For the proton –
+938.26 MeV, the neutron – 939.55 MeV, the electron – 0.511 Mev, etc.
+However, not all particles have rest energy. A photon (gamma ray) does
+not have any rest energy, and a neutrino’s is so small it can barely be
+measured.</p>
+<p>Equation <a class="reference internal" href="#equation-game">(89)</a> would therefore imply that the value for the <span class="math notranslate nohighlight">\(\gamma\)</span>
+of these particles is infinite. If <span class="math notranslate nohighlight">\(\gamma\)</span> is infinite, then <span class="math notranslate nohighlight">\(\beta= 1\)</span>,
+and these particles must be traveling at the speed of light.  Always.
+This is not surprising for the gamma ray, as it is light. What is
+surprising is that other particles such as the neutrino, which are
+not photons, also travel at the same speed.</p>
+<p>Also surprising is that
+all of these particles have momentum even though they do not have
+any rest mass.  You might think, if you think of momentum as mass times
+velocity, that no mass means no momentum.  However, if you look at
+Equation <a class="reference internal" href="#equation-etotal2">(87)</a>, the only way this equation can work for
+particles that have energy but no mass is if <span class="math notranslate nohighlight">\(p=E/c\)</span>.  Particles
+with energy but no mass <strong>still have momentum</strong>!!!</p>
+<p>On the other hand,for a particle with <span class="math notranslate nohighlight">\(E_0 \neq 0\)</span> to travel <strong>at</strong>
+the speed of light, Equation <a class="reference internal" href="#equation-game">(89)</a> implies it must have
+infinite kinetic energy
+because <span class="math notranslate nohighlight">\(\gamma\)</span> is infinite for an object traveling the
+speed of light. No matter how much energy is given to this massive particle,
+it will always be traveling slower than the speed of light.
+Consequently, objects with <span class="math notranslate nohighlight">\(E_0 \neq 0\)</span> travel slower than the speed
+of light and objects with <span class="math notranslate nohighlight">\(E\approx 0\)</span> travel at the speed of light.
+Nothing that travels at or lower than the speed of light can ever travel
+faster than the speed of light because it would
+require an infinite amount of energy, which is not readily available
+to us, to make the transition from slightly less than the speed of
+light to slightly more than the speed of light.  As the saying goes…</p>
+<p><strong>The speed of light. It’s not only a good idea, it’s the law!</strong></p>
 </section>
 </section>
 
@@ -623,6 +778,7 @@ The time component in the rest frame should be the rest mass times
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-and-lorentz-transformations">Momentum and Lorentz Transformations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-transforming-momentum">Example of Transforming Momentum</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-and-energy">Momentum and Energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rest-energy">The Rest Energy</a></li>
 </ul>
   </nav></div>
 
