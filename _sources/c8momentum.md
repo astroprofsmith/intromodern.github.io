@@ -243,7 +243,7 @@ on the right using a Taylor expansion about $\beta = 0$ gives:
 ```{math}
 :label: gammataylor
 \gamma = (1-\beta^2)^{-1/2} \rightarrow 1 +\frac{1}{2}
-beta^2 + \frac{3}{8} beta^4  + \frac{15}{48} beta^6 + ...
+\beta^2 + \frac{3}{8} \beta^4  + \frac{15}{48} \beta^6 + ...
 ```
 If we assume that $\beta$ is small enough that we can ignore
 all the higher order powers, then $\gamma \approx \beta^2/2$
@@ -265,6 +265,19 @@ rest energy of the particle, giving rise to that most famous of equations,
 :label: emc2
 E_0 = m_0 c^2
 ```
+To be completely accurate, then, the kinetic energy should really
+include all those higher order terms.  Not just $1/2mv^2$, but
+a $v^4$ term and a $v^6$ term and a $v^8$ term and so on.  This
+expansion means that the closer $v$ gets to $c$, the more the KE
+must increase for small increases in $v$.  Or to put it another way,
+the same increase in KE will yield a much smaller increase in $v$
+if $v$ is already close to $c$.  That energy goes more and more into
+the higher order terms rather than into increasing $v$.  The closer
+you get to the speed of light, the more energy it takes to go any
+faster.  This is another way of saying that nothing can move faster
+than light.  It would take an infinite amount of energy.
+
+
 ```{note}
 How did Newton miss the rest energy of a partide? The rest energy of a
 person with a (rest) mass of 100 kg is
@@ -288,7 +301,8 @@ bombs.  Mass is most definitely not conserved, but Isaac Newton had no
 idea.
 ```
 
-If $\gamma m_0 c^2$ is the rest energy when the particle is not moving,
+If the total energy $\gamma m_0 c^2$ is just the rest energy when the
+particle is not moving,
 the fact that it increases with the particle's speed ($\gamma$ gets bigger
 than one) suggests that the remaining energy above and beyond the rest
 energy would be the kinetic energy.  This conclusion is supported by
@@ -405,3 +419,61 @@ light to slightly more than the speed of light.  As the saying goes...
 
 
 **The speed of light. It's not only a good idea, it's the law!**
+
+## Conservation Laws and the Momentum Four-Vector
+
+If an interaction happens that is isolated from its surroundings, the
+total energy $E_{\rm tot}$ (as measured by a particular inertial
+observer) of that system will be constant before, during, and after
+the interaction.  This is the same $E$ that appears in the time
+component of the total momentum 4-vector of this system. If the
+interaction experienced by each of the pieces of the system is only
+due to interactions with other pieces of the system, then the net
+physical momentum (as measured by a particular inertial observer) for
+this system is constant. The physical momentum is a 3-vector, so both
+its size and its direction must remain constant. These laws of physics
+hold for any particular inertial observer.
+
+
+When a certain physical parameter remains constant while time changes,
+then that parameter is said to be conserved. Under the conditions
+stated in the previous paragraph, the sum of spatial components of
+the momentum 4-vector, when added as 3-vectors, is conserved. In a
+similar manner, the time component of the momentum 4-vector is also
+conserved. For a particular inertial observer, the momentum 4-vector
+is conserved.
+
+If a particular inertial observer measures the total energy of the
+system, this value will remain constant as long as the system observed
+is isolated. A second inertial observer, traveling with some relative
+velocity $\beta_R$ with respect to the first, will also measure a
+constant total energy, but the value that that observer measures will,
+in general, be different from the value measured by the first
+observer. The Lorentz transformation shows how the two different total
+energy values are related. What remains constant between two two
+reference frames is the size of the momentum 4-vector, as it is a
+Lorentz invariant.
+
+We therefore try to use the words consistently: to be "conserved" is
+to remain constant within a particular reference frame, during a
+time interval, but to be "invariant" is to be the same in different
+reference frames moving with respect to each other.  Shifting from
+one reference frame to another is not a process that conserves energy.
+An object at rest in one frame will have only its rest energy,
+but in another frame it will have rest and kinetic energy.  Shifting
+between these frames does **not** do work upon the object.  If I
+change my walking speed relative to you, your speed changes relative
+to me, but I have not exerted a force on you to change your speed.
+The kinds of analysis that depend on conservation of energy or the
+work-energy theorem are meant to be carried out in a single frame
+of reference.  If you switch to another reference frame, you must
+recalculate the energy number somehow -- it will not in general be
+the same.
+
+## Example of Momentum Conservation
+
+A neutral pion (rest energy $E_0=135$ MeV) decays into two
+photons. Show that in the rest frame of the pion, the two photons move
+in opposite directions. Find the energy of these two photons.
+
+

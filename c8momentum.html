@@ -368,6 +368,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-transforming-momentum">Example of Transforming Momentum</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-and-energy">Momentum and Energy</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rest-energy">The Rest Energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-laws-and-the-momentum-four-vector">Conservation Laws and the Momentum Four-Vector</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-momentum-conservation">Example of Momentum Conservation</a></li>
 </ul>
             </nav>
         </div>
@@ -563,7 +565,7 @@ by making use of the correspondence principle. Expanding the <span class="math n
 on the right using a Taylor expansion about <span class="math notranslate nohighlight">\(\beta = 0\)</span> gives:</p>
 <div class="math notranslate nohighlight" id="equation-gammataylor">
 <span class="eqno">(83)<a class="headerlink" href="#equation-gammataylor" title="Permalink to this equation">#</a></span>\[\gamma = (1-\beta^2)^{-1/2} \rightarrow 1 +\frac{1}{2}
-beta^2 + \frac{3}{8} beta^4  + \frac{15}{48} beta^6 + ...\]</div>
+\beta^2 + \frac{3}{8} \beta^4  + \frac{15}{48} \beta^6 + ...\]</div>
 <p>If we assume that <span class="math notranslate nohighlight">\(\beta\)</span> is small enough that we can ignore
 all the higher order powers, then <span class="math notranslate nohighlight">\(\gamma \approx \beta^2/2\)</span>
 and <span class="math notranslate nohighlight">\(\gamma m_0 c^2\)</span> becomes approximately</p>
@@ -580,6 +582,17 @@ associated with the particle when it is at rest.  This is of course the
 rest energy of the particle, giving rise to that most famous of equations,</p>
 <div class="math notranslate nohighlight" id="equation-emc2">
 <span class="eqno">(85)<a class="headerlink" href="#equation-emc2" title="Permalink to this equation">#</a></span>\[E_0 = m_0 c^2\]</div>
+<p>To be completely accurate, then, the kinetic energy should really
+include all those higher order terms.  Not just <span class="math notranslate nohighlight">\(1/2mv^2\)</span>, but
+a <span class="math notranslate nohighlight">\(v^4\)</span> term and a <span class="math notranslate nohighlight">\(v^6\)</span> term and a <span class="math notranslate nohighlight">\(v^8\)</span> term and so on.  This
+expansion means that the closer <span class="math notranslate nohighlight">\(v\)</span> gets to <span class="math notranslate nohighlight">\(c\)</span>, the more the KE
+must increase for small increases in <span class="math notranslate nohighlight">\(v\)</span>.  Or to put it another way,
+the same increase in KE will yield a much smaller increase in <span class="math notranslate nohighlight">\(v\)</span>
+if <span class="math notranslate nohighlight">\(v\)</span> is already close to <span class="math notranslate nohighlight">\(c\)</span>.  That energy goes more and more into
+the higher order terms rather than into increasing <span class="math notranslate nohighlight">\(v\)</span>.  The closer
+you get to the speed of light, the more energy it takes to go any
+faster.  This is another way of saying that nothing can move faster
+than light.  It would take an infinite amount of energy.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>How did Newton miss the rest energy of a partide? The rest energy of a
@@ -603,7 +616,8 @@ is the cause of making the Sun shine, nuclear power plants, or nuclear
 bombs.  Mass is most definitely not conserved, but Isaac Newton had no
 idea.</p>
 </div>
-<p>If <span class="math notranslate nohighlight">\(\gamma m_0 c^2\)</span> is the rest energy when the particle is not moving,
+<p>If the total energy <span class="math notranslate nohighlight">\(\gamma m_0 c^2\)</span> is just the rest energy when the
+particle is not moving,
 the fact that it increases with the particle’s speed (<span class="math notranslate nohighlight">\(\gamma\)</span> gets bigger
 than one) suggests that the remaining energy above and beyond the rest
 energy would be the kinetic energy.  This conclusion is supported by
@@ -705,6 +719,58 @@ to us, to make the transition from slightly less than the speed of
 light to slightly more than the speed of light.  As the saying goes…</p>
 <p><strong>The speed of light. It’s not only a good idea, it’s the law!</strong></p>
 </section>
+<section id="conservation-laws-and-the-momentum-four-vector">
+<h2>Conservation Laws and the Momentum Four-Vector<a class="headerlink" href="#conservation-laws-and-the-momentum-four-vector" title="Permalink to this heading">#</a></h2>
+<p>If an interaction happens that is isolated from its surroundings, the
+total energy <span class="math notranslate nohighlight">\(E_{\rm tot}\)</span> (as measured by a particular inertial
+observer) of that system will be constant before, during, and after
+the interaction.  This is the same <span class="math notranslate nohighlight">\(E\)</span> that appears in the time
+component of the total momentum 4-vector of this system. If the
+interaction experienced by each of the pieces of the system is only
+due to interactions with other pieces of the system, then the net
+physical momentum (as measured by a particular inertial observer) for
+this system is constant. The physical momentum is a 3-vector, so both
+its size and its direction must remain constant. These laws of physics
+hold for any particular inertial observer.</p>
+<p>When a certain physical parameter remains constant while time changes,
+then that parameter is said to be conserved. Under the conditions
+stated in the previous paragraph, the sum of spatial components of
+the momentum 4-vector, when added as 3-vectors, is conserved. In a
+similar manner, the time component of the momentum 4-vector is also
+conserved. For a particular inertial observer, the momentum 4-vector
+is conserved.</p>
+<p>If a particular inertial observer measures the total energy of the
+system, this value will remain constant as long as the system observed
+is isolated. A second inertial observer, traveling with some relative
+velocity <span class="math notranslate nohighlight">\(\beta_R\)</span> with respect to the first, will also measure a
+constant total energy, but the value that that observer measures will,
+in general, be different from the value measured by the first
+observer. The Lorentz transformation shows how the two different total
+energy values are related. What remains constant between two two
+reference frames is the size of the momentum 4-vector, as it is a
+Lorentz invariant.</p>
+<p>We therefore try to use the words consistently: to be “conserved” is
+to remain constant within a particular reference frame, during a
+time interval, but to be “invariant” is to be the same in different
+reference frames moving with respect to each other.  Shifting from
+one reference frame to another is not a process that conserves energy.
+An object at rest in one frame will have only its rest energy,
+but in another frame it will have rest and kinetic energy.  Shifting
+between these frames does <strong>not</strong> do work upon the object.  If I
+change my walking speed relative to you, your speed changes relative
+to me, but I have not exerted a force on you to change your speed.
+The kinds of analysis that depend on conservation of energy or the
+work-energy theorem are meant to be carried out in a single frame
+of reference.  If you switch to another reference frame, you must
+recalculate the energy number somehow – it will not in general be
+the same.</p>
+</section>
+<section id="example-of-momentum-conservation">
+<h2>Example of Momentum Conservation<a class="headerlink" href="#example-of-momentum-conservation" title="Permalink to this heading">#</a></h2>
+<p>A neutral pion (rest energy <span class="math notranslate nohighlight">\(E_0=135\)</span> MeV) decays into two
+photons. Show that in the rest frame of the pion, the two photons move
+in opposite directions. Find the energy of these two photons.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -779,6 +845,8 @@ light to slightly more than the speed of light.  As the saying goes…</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-transforming-momentum">Example of Transforming Momentum</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-and-energy">Momentum and Energy</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rest-energy">The Rest Energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-laws-and-the-momentum-four-vector">Conservation Laws and the Momentum Four-Vector</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-momentum-conservation">Example of Momentum Conservation</a></li>
 </ul>
   </nav></div>
 
