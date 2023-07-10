@@ -111,7 +111,7 @@ Since $m_0$ is an invariant and so is $c$, the length of the
 momentum 4-vector is a Lorentz invariant. Once again, it's
 negative.
 
-f a system is made up of more than one particle, the total
+If a system is made up of more than one particle, the total
 4-momentum for the system is the sum of the momentum 4-vectors
 of each of the pieces. It is the size of the net (sum of
 momentum of each of the pieces) 4-momentum that is a Lorentz
@@ -279,7 +279,7 @@ than light.  It would take an infinite amount of energy.
 
 
 ```{note}
-How did Newton miss the rest energy of a partide? The rest energy of a
+How did Newton miss the rest energy of a particle? The rest energy of a
 person with a (rest) mass of 100 kg is
 $E =100~{\rm kg}(3\times10^8~{\rm m/s})^2 = 9\times10^{18}$ joules.
 This is an unbelievably large number.  The total yearly electrical
@@ -320,7 +320,26 @@ We can use Equation {eq}`eqcp1` to say that
 E_{\rm total}^2 =  (\gamma m_0 c^2)^2 = E_0^2 + (cp)^2 
 ```
 In the world of fast moving objects, the momentum and energy of the
-system are connected as shown in equation {eq}`etotal2`.  This means
+system are connected as shown in equation {eq}`etotal2`.
+
+```{note}
+One of the subjects where the rules of relativity cannot be ignored
+is in the realm of high energy particle physics.  In that regime, it
+is often useful to use units of eV for energy (or keV or even MeV).
+An eV is the amount the energy of an electron changes when moving
+through a potential difference of one volt.  One volt is a joule per
+coulomb, so 
+because the charge on an electron is $1.602\times10^{-19}$ C, the
+value of one eV in SI units is $1.602\times10^{-19}$ J.  Because
+of Equation {eq}`etotal2`, we know that $cp$ has dimensions of energy,
+so it is often more convenient when you know the energy in eV to
+express the momentum in eV/c.  Then you don't have to worry about
+converting everything to kg m/s.  See the example 8.3 in the margin,
+below, for how easy eV units can be.
+```
+
+
+This means
 that the momentum 4-vector can be written in terms of the physical
 momentum and total energy of the system as:
 ```{math}
@@ -476,4 +495,51 @@ A neutral pion (rest energy $E_0=135$ MeV) decays into two
 photons. Show that in the rest frame of the pion, the two photons move
 in opposite directions. Find the energy of these two photons.
 
+In the rest frame of the pion, the momentum 4-vector for the pion is:
+```{math}
+:label: p4pi
+[p_4]_{\rm before} =
+\begin{bmatrix}
+i135~{\rm MeV}/c\\
+0.0\\
+0.0\\
+0.0
+\end{bmatrix}
+```
+The observer in the rest frame of the pion watches the decay take place.
+The $x$-direction is defined as the direction that one of the dautgher photons
+takes. The second photon travels in some unknown direction. The observer in
+the rest frame of the pion measures a momentum 4-vector of the two photons as:
+```{math}
+:label: p42pho
+[p_4]_{\rm after} =
+\begin{bmatrix}
+i(E_1+E_2)/c\\
+p_{x1}+p_{x2}\\
+p_{y2}\\
+p_{z2}
+\end{bmatrix}
+```
+For two 4-vectors to be equal, each of their equivalent components have to
+be equal.  Therefore the second photon cannot have any momentum in the
+$y$ and $z$ directions, and the momentum of the second photon in the
+$x$ direction must be equal and opposite to that of the first photon,
+so that the momentum adds up to equal the zero it was before the collision.
+This shows that the photons, whichever direction they go, must go opposite
+to each other.
 
+```{note}
+The ease with which we can set things to zero and cancel them makes this
+particular frame of reference, in which the momentum was and remains
+zero, particularly useful.  It is referred to as the **center of momentum
+frame**, and we will use it in a detailed example in the next chapter.
+```
+
+We can examine the energy of the two photons by looking at the time
+component.  Since the four momentum is conserved, the time component
+must also be conserved, and therefore the sum of the two photon
+energies must be 135 MeV/c.  Since the photons have no mass, their
+momenta and their energies must be proportional (by Equation
+{eq}`eqcp1`), so the energy must be split evenly between them.  Each
+photon has an energy of 67.5 MeV, and therefore a momentum of 67.5
+MeV/c, but each in an opposite direction to the other.

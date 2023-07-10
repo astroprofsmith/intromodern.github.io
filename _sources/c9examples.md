@@ -23,5 +23,9 @@ import matplotlib.pyplot as plt
 
 # Chapter 9: Examples of Relativity in Action
 
+## The Center of Momentum Frame
+
+## Photons and the Doppler Shift
+
 
 
