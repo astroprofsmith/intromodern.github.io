@@ -41,7 +41,7 @@ measures this same object moving with velocity:
 \vec{v}' = \vec{v}-\vec{v}_R = \frac{d\vec{r}'}{dt} = (dx'/dt,dy'/dt,dz'/dt) 
 ```
 
-The value of the time interval dt is the same for both observers.  Prior
+The value of the time interval $dt$ is the same for both observers.  Prior
 to Einstein, it would have never occured to anyone to question whether
 $dt$ might be different for different observers.
 
@@ -58,11 +58,11 @@ Physical velocity is a vector because the displacement, $d\vec{R}$ is a
 ## The Four Velocity
 
 We cannot define a four velocity by simply taking the displacement
-four vector $[dx_4]$ and dividing by $dt$, because $dt$ is not a
-scalar.  It changes under a Lorentz transformation, and therefore
-$[dx_4]/dt$ will not have the properties of a four vector as defined
-in Chapter 2.  However, the **proper** time interval, $dt_0$, **is** a
-scalar!  So we can define a four velocity as
+four vector $[dx_4]$ and dividing by $dt$, because $dt$ is not, in
+fact, a scalar.  It changes under a Lorentz transformation, and
+therefore $[dx_4]/dt$ will not have the properties of a four vector as
+defined in Chapter 2.  However, the **proper** time interval, $dt_0$,
+**is** a scalar!  So we can define a four velocity as
 ```{math}
 :label: eq4vdef
 [v_4] = \frac{[dx_4]}{dt_0}
@@ -123,7 +123,7 @@ noticed that the factor of $\gamma$ would have to be accounted for in
 the definition of the physical velocity of the object.
 
 
-```{note}
+```{warning}
 From here on, there are going to be several, perhaps even many,
 different instances of the factor $\gamma$.  In all cases, $\gamma =
 1/\sqrt{1-\beta^2}$, but $\beta$ is a speed, and therefore must be
@@ -280,6 +280,20 @@ seriously wrong.  The correspondance principle demands that when
 $\beta_R\ll 1$, the prediction we get should reduce to
 $\beta'=\beta-\beta_R$, which is what Galileo would expect it to be.
 
+```{warning}
+In the diagram shown in Figure 7.1, the relative velocity refers
+to the reference frames.  The right-pointing arrow means that
+the **ground** is moving right, relative to the train.  This means
+from the ground's point of view, the train is travelling **left**,
+which is in the **opposite** direction of the ball's velocity.
+The initial set up I described above had the ball thrown in the
+**same** direction as the train's velocity.  To get that situation,
+mathematically, just flip the direction of $v_R$ in Figure 7.1.
+I will leave it this way because the default for a Lorentz transformation
+is to have $+v_R$ point to the right.  The minus case will be included
+later.
+```
+
 The unprimed observer measures a 4-beta:
 ```{math}
 :label: b4unp
@@ -359,11 +373,14 @@ you will see the formula written with $\mp$ symbols, but that's not strictly
 necessary, as long as you remember to set up the problem with the reference
 frames as indicated in Figure 7.1.
 
-Finally, note that this formula allows us to avoid the problem of going
-faster than light if the speeds get large.  If $\beta=0.75$ and $\beta_R=-0.75$,
-then $\beta'\neq1.5$!  If you plug those numbers in, you get 1.5 in the
-numerator, but you get 1.5625 in the denominator, so $\beta'=0.96$.
-That's faster than $\beta$, which you expect, but not bigger than one.
+Finally, note that this formula allows us to avoid the problem of
+going faster than light if the speeds get large.  Consider the inverse
+transformation where the train and the ball are moving in the same
+direction ($\beta_R\rightarrow -\beta_R$).  If $\beta=0.75$ and
+$\beta_R=-0.75$, then $\beta'\neq1.5$!  If you plug those numbers in,
+you get 1.5 in the numerator, but you get 1.5625 in the denominator,
+so $\beta'=0.96$.  That's faster than $\beta$, which you expect, but
+not bigger than one.
 
 Most importantly, note what happens if $\beta=1$: the numerator
 becomes $1\mp\beta_R$, because $\beta=1$, but in the denominator, the

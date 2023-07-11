@@ -183,11 +183,11 @@ velocity addition formula again!
 
 ## Example of Transforming Momentum
 
-Suppose that two observers in different reference frames were
-measuring the momentum of the particle in Example 5.1 above.
-Say the primed observer is moving with $\beta_R=0.866$ in the
-$+x$ direction with respect to the unprimed observer.  The
-unprimed observer would measure a momentum 4-vector of:
+Example 8.2: Suppose that two observers in different reference frames
+were measuring the momentum of the particle in Example 5.1 above.  Say
+the primed observer is moving with $\beta_R=0.866$ in the $+x$
+direction with respect to the unprimed observer.  The unprimed
+observer would measure a momentum 4-vector of:
 ```{math}
 [p_4] =
 \begin{bmatrix}
@@ -278,23 +278,24 @@ faster.  This is another way of saying that nothing can move faster
 than light.  It would take an infinite amount of energy.
 
 
-```{note}
-How did Newton miss the rest energy of a particle? The rest energy of a
-person with a (rest) mass of 100 kg is
-$E =100~{\rm kg}(3\times10^8~{\rm m/s})^2 = 9\times10^{18}$ joules.
-This is an unbelievably large number.  The total yearly electrical
-demand of the entire US is on the order of $10^{19}$ joules
-(according to the (EIA)[https://www.eia.gov/electricity/annual/html/epa_01_02.html]).
-This is about the same order of magnitude!!!  Two reasons Newton didn't
-notice this massive amount of energy.  Most importantly, only a change
-in energy is connected with anything happening.  Secondly, a 100 kg
-person does not just vanish, in Newton's time or now, so that $10^{19}$
-joules of energy isn't available to be associated with anything else you
-could measure.  Until people discovered that the rest energy of particles
-can change (through processes like fusion or radioactivity), there was
-no reason to notice an energy associated with rest mass, because it never
-changed.  I even hear people today talk about a "Law of Conservation of
-Mass," even though there is no such law.  Mass can and does change,
+```{note} How did Newton miss the rest energy of a particle? The rest
+energy of a person with a (rest) mass of 100 kg is $E =100~{\rm
+kg}(3\times10^8~{\rm m/s})^2 = 9\times10^{18}$ joules.  This is an
+unbelievably large number.  The total yearly electrical demand of the
+entire US is on the order of $10^{19}$ joules (according to the
+[EIA](https://www.eia.gov/electricity/annual/html/epa_01_02.html)).
+This is about the same order of magnitude!!!  Two reasons Newton
+didn't notice this massive amount of energy.  Most importantly, only a
+change in energy is connected with anything happening.  Energy that
+doesn't change has no measurable implications, so you would never know
+it was there.  Secondly, a 100 kg person does not just vanish, in
+Newton's time or now, so that $10^{19}$ joules of energy isn't
+available to be associated with anything else you could measure.
+Until people discovered that the rest energy of particles can change
+(through processes like fusion or radioactivity), there was no reason
+to notice an energy associated with rest mass, because it never
+changed.  I even hear people today talk about a "Law of Conservation
+of Mass," even though there is no such law.  Mass can and does change,
 freeing up that rest energy to be associate with motion.  This energy
 is the cause of making the Sun shine, nuclear power plants, or nuclear
 bombs.  Mass is most definitely not conserved, but Isaac Newton had no
@@ -357,7 +358,7 @@ you the total energy of the system.  Many people therefore call the
 momentum four vector "the energy-momentum four vector".
 
 ```{warning}
-Please make a careful note that Equations {eq}`eqcp1` and {eq}`etotal2`
+Please make a careful note that Equations {eq}`etotal` and {eq}`etotal2`
 are NOT the same equation!  Do NOT think that $cp$ is the kinetic energy.
 Each term in Equation {eq}`etotal2` is **squared**, and the sum of squares
 is **not** the same thing as the square of a sum!  The term $cp$ is clearly
@@ -491,9 +492,9 @@ the same.
 
 ## Example of Momentum Conservation
 
-A neutral pion (rest energy $E_0=135$ MeV) decays into two
-photons. Show that in the rest frame of the pion, the two photons move
-in opposite directions. Find the energy of these two photons.
+Example 8.4: A neutral pion (rest energy $E_0=135$ MeV) decays into
+two photons. Show that in the rest frame of the pion, the two photons
+move in opposite directions. Find the energy of these two photons.
 
 In the rest frame of the pion, the momentum 4-vector for the pion is:
 ```{math}

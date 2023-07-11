@@ -392,7 +392,7 @@ the vector quantity:</p>
 measures this same object moving with velocity:</p>
 <div class="math notranslate nohighlight" id="equation-olddvel">
 <span class="eqno">(60)<a class="headerlink" href="#equation-olddvel" title="Permalink to this equation">#</a></span>\[\vec{v}' = \vec{v}-\vec{v}_R = \frac{d\vec{r}'}{dt} = (dx'/dt,dy'/dt,dz'/dt) \]</div>
-<p>The value of the time interval dt is the same for both observers.  Prior
+<p>The value of the time interval <span class="math notranslate nohighlight">\(dt\)</span> is the same for both observers.  Prior
 to Einstein, it would have never occured to anyone to question whether
 <span class="math notranslate nohighlight">\(dt\)</span> might be different for different observers.</p>
 <p>In Equation <a class="reference internal" href="#equation-oldvel">(59)</a>, the derivative can be understood in two
@@ -407,11 +407,11 @@ the displacement divided by a very very small change in scalar time.</p>
 <section id="the-four-velocity">
 <h2>The Four Velocity<a class="headerlink" href="#the-four-velocity" title="Permalink to this heading">#</a></h2>
 <p>We cannot define a four velocity by simply taking the displacement
-four vector <span class="math notranslate nohighlight">\([dx_4]\)</span> and dividing by <span class="math notranslate nohighlight">\(dt\)</span>, because <span class="math notranslate nohighlight">\(dt\)</span> is not a
-scalar.  It changes under a Lorentz transformation, and therefore
-<span class="math notranslate nohighlight">\([dx_4]/dt\)</span> will not have the properties of a four vector as defined
-in Chapter 2.  However, the <strong>proper</strong> time interval, <span class="math notranslate nohighlight">\(dt_0\)</span>, <strong>is</strong> a
-scalar!  So we can define a four velocity as</p>
+four vector <span class="math notranslate nohighlight">\([dx_4]\)</span> and dividing by <span class="math notranslate nohighlight">\(dt\)</span>, because <span class="math notranslate nohighlight">\(dt\)</span> is not, in
+fact, a scalar.  It changes under a Lorentz transformation, and
+therefore <span class="math notranslate nohighlight">\([dx_4]/dt\)</span> will not have the properties of a four vector as
+defined in Chapter 2.  However, the <strong>proper</strong> time interval, <span class="math notranslate nohighlight">\(dt_0\)</span>,
+<strong>is</strong> a scalar!  So we can define a four velocity as</p>
 <div class="math notranslate nohighlight" id="equation-eq4vdef">
 <span class="eqno">(61)<a class="headerlink" href="#equation-eq4vdef" title="Permalink to this equation">#</a></span>\[[v_4] = \frac{[dx_4]}{dt_0}\]</div>
 <p>where <span class="math notranslate nohighlight">\(dt_0\)</span> is the Lorentz scalar as described in Chapter 6. Since
@@ -460,8 +460,8 @@ correspondence principle. If Newton had been able to observe things
 that were moving very fast with respect to him, he probably would have
 noticed that the factor of <span class="math notranslate nohighlight">\(\gamma\)</span> would have to be accounted for in
 the definition of the physical velocity of the object.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p>From here on, there are going to be several, perhaps even many,
 different instances of the factor <span class="math notranslate nohighlight">\(\gamma\)</span>.  In all cases, <span class="math notranslate nohighlight">\(\gamma =
 1/\sqrt{1-\beta^2}\)</span>, but <span class="math notranslate nohighlight">\(\beta\)</span> is a speed, and therefore must be
@@ -579,6 +579,20 @@ theory had better predict that <span class="math notranslate nohighlight">\(\bet
 seriously wrong.  The correspondance principle demands that when
 <span class="math notranslate nohighlight">\(\beta_R\ll 1\)</span>, the prediction we get should reduce to
 <span class="math notranslate nohighlight">\(\beta'=\beta-\beta_R\)</span>, which is what Galileo would expect it to be.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>In the diagram shown in Figure 7.1, the relative velocity refers
+to the reference frames.  The right-pointing arrow means that
+the <strong>ground</strong> is moving right, relative to the train.  This means
+from the ground’s point of view, the train is travelling <strong>left</strong>,
+which is in the <strong>opposite</strong> direction of the ball’s velocity.
+The initial set up I described above had the ball thrown in the
+<strong>same</strong> direction as the train’s velocity.  To get that situation,
+mathematically, just flip the direction of <span class="math notranslate nohighlight">\(v_R\)</span> in Figure 7.1.
+I will leave it this way because the default for a Lorentz transformation
+is to have <span class="math notranslate nohighlight">\(+v_R\)</span> point to the right.  The minus case will be included
+later.</p>
+</div>
 <p>The unprimed observer measures a 4-beta:</p>
 <div class="math notranslate nohighlight" id="equation-b4unp">
 <span class="eqno">(67)<a class="headerlink" href="#equation-b4unp" title="Permalink to this equation">#</a></span>\[\begin{split}[\beta_4]
@@ -649,11 +663,14 @@ goes the other way: simply change the minus signs to plus signs.  Sometimes
 you will see the formula written with <span class="math notranslate nohighlight">\(\mp\)</span> symbols, but that’s not strictly
 necessary, as long as you remember to set up the problem with the reference
 frames as indicated in Figure 7.1.</p>
-<p>Finally, note that this formula allows us to avoid the problem of going
-faster than light if the speeds get large.  If <span class="math notranslate nohighlight">\(\beta=0.75\)</span> and <span class="math notranslate nohighlight">\(\beta_R=-0.75\)</span>,
-then <span class="math notranslate nohighlight">\(\beta'\neq1.5\)</span>!  If you plug those numbers in, you get 1.5 in the
-numerator, but you get 1.5625 in the denominator, so <span class="math notranslate nohighlight">\(\beta'=0.96\)</span>.
-That’s faster than <span class="math notranslate nohighlight">\(\beta\)</span>, which you expect, but not bigger than one.</p>
+<p>Finally, note that this formula allows us to avoid the problem of
+going faster than light if the speeds get large.  Consider the inverse
+transformation where the train and the ball are moving in the same
+direction (<span class="math notranslate nohighlight">\(\beta_R\rightarrow -\beta_R\)</span>).  If <span class="math notranslate nohighlight">\(\beta=0.75\)</span> and
+<span class="math notranslate nohighlight">\(\beta_R=-0.75\)</span>, then <span class="math notranslate nohighlight">\(\beta'\neq1.5\)</span>!  If you plug those numbers in,
+you get 1.5 in the numerator, but you get 1.5625 in the denominator,
+so <span class="math notranslate nohighlight">\(\beta'=0.96\)</span>.  That’s faster than <span class="math notranslate nohighlight">\(\beta\)</span>, which you expect, but
+not bigger than one.</p>
 <p>Most importantly, note what happens if <span class="math notranslate nohighlight">\(\beta=1\)</span>: the numerator
 becomes <span class="math notranslate nohighlight">\(1\mp\beta_R\)</span>, because <span class="math notranslate nohighlight">\(\beta=1\)</span>, but in the denominator, the
 product of <span class="math notranslate nohighlight">\(\beta\beta_R\)</span> becomes just <span class="math notranslate nohighlight">\(\beta_R\)</span>, so the denominator

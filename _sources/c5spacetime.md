@@ -591,9 +591,13 @@ here, the points between the axes are being stretched.  Play with
 sliding the marker back and forth and see how the events move.  You
 could imagine this as the "pinched" axes in Figure 5.3 being streched
 back to perpendicular, and therefore all the events between them being
-pulled outward, too, as if they were on a rubber sheet.  It is useful
+pulled outward, too, as if they were on a rubber sheet.
+
+```{note}
+It is useful
 to start thinking about space and time as being able to be stretched
 and squeezed, as this is an important feature of General Relativity.
+```
 
 I have marked several spheres with color, and made three of them
 leave trails behind, to draw your attention to them
@@ -651,13 +655,20 @@ also measures the length of the object.
 If you increase the relative speed $\beta_R$ to about $0.67$, you will
 see that although the blue event is much further away, it also happens
 much earlier than the cyan event.  The spatial displacement between
-blue and cyan can no longer be considered to be the length of the object!
+blue and cyan can no longer be considered to be the length of the
+object!  In this reference frame, the object is moving, and if you
+consider the distance between the back end of a moving car ten seconds
+ago and the front end of the car now, then you are including the
+distance driven by the car during those ten seconds as part of the
+length of the car, which is not the way we usually would think of the
+length of the car.
+
 Instead, we must consider the magneta event, which is simultaneous in
-this reference frame with the cyan event.  Since it was at the end of
-the object in the original frame, it must also be at the end of the
-object in this frame, so in **this** frame, we would consider the "length"
-of the object to be the spatial displacement between the cyan and magenta
-events, which you can see from the trails is smaller than the spatial
-displacement between cyan and blue in the original frame of reference.
-Lengths contract.  We will work out examples of length contraction more
-thoroughly in the next chapter.
+**this** reference frame with the cyan event.  Since it was at the end
+of the object in the original frame, it must also be at the end of the
+object in this frame, so in **this** frame, we would consider the
+"length" of the object to be the spatial displacement between the cyan
+and magenta events, which you can see from the trails is smaller than
+the spatial displacement between cyan and blue in the original frame
+of reference.  Lengths contract.  We will work out examples of length
+contraction more thoroughly in the next chapter.

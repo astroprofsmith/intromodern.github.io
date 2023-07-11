@@ -335,15 +335,16 @@ have to use special relativity rather than the mechanics of dump
 trucks to work this problem.
 
 
-There are two reference frames of interest. Let the unprimed reference
-frame be the rest frame of the decay (where the observer is traveling
-at the same speed at the muons, and the Earth is racing toward the
-particle). Let the $+x$ direction be "down" (towards the center of the
-Earth). The second observer (the primed observer) is at rest with
-respect to the Earth and the muon is moving quickly. The relative
-speed of the two reference frames $\beta_R =-$speed of muon. (The sign
-of the relative speed is negative since the apparent motion of the
-Earth is up toward the muon).
+There are two reference frames of interest, and they are graphed in
+Figure 6.2. Let the unprimed reference (on the right) frame be the
+rest frame of the decay (where the observer is traveling at the same
+speed at the muons, and the Earth is racing toward the particle). Let
+the $+x$ direction be "down" (towards the center of the Earth). The
+second observer (the primed observer) is at rest with respect to the
+Earth and the muon is moving quickly. The relative speed of the two
+reference frames $\beta_R =-$speed of muon. (The sign of the relative
+speed is negative since the apparent motion of the Earth is up toward
+the muon).
 
 ```{code-cell}
 :tags: ["remove-input"]
