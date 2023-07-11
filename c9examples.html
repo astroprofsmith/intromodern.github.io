@@ -545,10 +545,154 @@ energy in the com frame is less than the amount of energy in the lab
 frame, but you have to be cautious with such generalizations, because
 <span class="math notranslate nohighlight">\(\gamma_{\rm com}\)</span> is also getting larger as <span class="math notranslate nohighlight">\(p_i\)</span> increases, so it’s
 not so trivial to see which effect will dominate.</p>
-<p>Need to make a graph of Ecom vs. KEi for two protons.</p>
+<p>However, Figure 9.1 shows how much energy is available in the COM
+frame, according to Equation <a class="reference internal" href="#equation-etotcom">(108)</a> (after subtracting off the
+rest energies of the original two particles) as a function of how much
+kinetic energy the incident particle has.  You can see that the amount
+of available energy is significantly less than the amount of KE put in
+(the black dotted line represent equality).  It appears that some of
+the energy in the lab frame goes into moving the center of momentum of
+the system.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/a2c3671531e356fff9dcd971221c7da95506ccbb6d1903d5596239292103cba6.png" src="_images/a2c3671531e356fff9dcd971221c7da95506ccbb6d1903d5596239292103cba6.png" />
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Figure 9.1 – Graph of energy available in the COM frame
+(after subtracting the rest energy of the two particles involved)
+as a function of the KE of the incident particle in the lab
+frame.  There is significantly less energy available in the
+COM frame to make particles than in the lab frame, if you
+put all the KE into accelerating one particle at the stationary
+target.</p>
+</div>
+<p>Need to add Examples 1 and 2.</p>
 </section>
 <section id="photons-and-the-doppler-shift">
 <h2>Photons and the Doppler Shift<a class="headerlink" href="#photons-and-the-doppler-shift" title="Permalink to this heading">#</a></h2>
+<p>The Doppler shift tells what happens to the measured energy of a
+photon when it is viewed by different inertial observers. The velocity
+of the photon is the same for both inertial observers, but the energy
+changes. The momentum 4-vector for a photon as seen by the first
+observer is</p>
+<div class="math notranslate nohighlight" id="equation-p4phot">
+<span class="eqno">(109)<a class="headerlink" href="#equation-p4phot" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_1 =
+\begin{bmatrix}
+iE_1/c\\
+E_1/c\\
+0\\
+0
+\end{bmatrix}
+=
+\begin{bmatrix}
+ih/\lambda_1\\
+h/\lambda_1\\
+0\\
+0
+\end{bmatrix}\end{split}\]</div>
+<p>where we use <span class="math notranslate nohighlight">\(E=hf\)</span> and <span class="math notranslate nohighlight">\(c=\lambda f\)</span> to get the latter form.</p>
+<p>Notice that the size of the momentum 4-vector for a photon (or any
+zero rest energy particle) is 0. That is because the size of the
+momentum 4-vector = <span class="math notranslate nohighlight">\(-m_0c^2\)</span>, and the particle does not have any rest
+energy.</p>
+<p>A second inertial observer moving with <span class="math notranslate nohighlight">\(\beta_R\)</span> in the <span class="math notranslate nohighlight">\(+x\)</span> direction
+with respect to the first inertial observer, watching this same photon,
+would measure a momentum 4-vector given by (again ignoring <span class="math notranslate nohighlight">\(y\)</span> and
+<span class="math notranslate nohighlight">\(z\)</span>):</p>
+<div class="math notranslate nohighlight" id="equation-p4photlort">
+<span class="eqno">(110)<a class="headerlink" href="#equation-p4photlort" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_2 =
+\begin{bmatrix}
+iE_2/c\\
+E_2/c
+\end{bmatrix}
+=
+\begin{bmatrix}
+\gamma_R &amp; -i\beta_R\gamma_R \\
+i\beta_R\gamma_R &amp; \gamma_R \\
+\end{bmatrix}
+\begin{bmatrix}
+iE_1/c\\
+E_1/c
+\end{bmatrix}
+=
+\gamma_R
+\begin{bmatrix}
+i(E_1/c-\beta_RE_1/c)\\
+E_1/c-\beta_RE_1/c
+\end{bmatrix}\end{split}\]</div>
+<p>So</p>
+<div class="math notranslate nohighlight" id="equation-p4phot2">
+<span class="eqno">(111)<a class="headerlink" href="#equation-p4phot2" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_2 = 
+\begin{bmatrix}
+iE_2/c\\
+E_2/c
+\end{bmatrix}
+=
+E_2/c
+\begin{bmatrix}
+i\\
+1
+\end{bmatrix}
+=
+\gamma_RE_1(1-\beta_R)/c
+\begin{bmatrix}
+i\\
+1
+\end{bmatrix}\end{split}\]</div>
+<p>The part in brackets is clearly the same, so <span class="math notranslate nohighlight">\(E_2=\gamma_R(1-\beta_R)E_1\)</span>.
+Plug in the definition of <span class="math notranslate nohighlight">\(\gamma_R\)</span> to get</p>
+<div class="math notranslate nohighlight" id="equation-edopp">
+<span class="eqno">(112)<a class="headerlink" href="#equation-edopp" title="Permalink to this equation">#</a></span>\[E_2 = E_1 \frac{1-\beta_R}{\sqrt{1-\beta^2}}
+=
+ E_1 \frac{1-\beta_R}{\sqrt{(1-\beta)(1+\beta)}}
+= E_1\sqrt{\frac{1-\beta}{1+\beta}}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(\beta\leq 1\)</span>, the numerator in Equation <a class="reference internal" href="#equation-edopp">(112)</a> will
+always be less than the denominator, so as long as the second observer
+is moving to the right (receding from the source of the light),
+she will measure a smaller energy than the first observer would.
+If the second observer switches direction and heads toward the source
+of light, the <span class="math notranslate nohighlight">\(\beta\)</span> will change sign, which effectively flips the
+ratio under the square root.  In that case, <span class="math notranslate nohighlight">\(E_2\geq E_1\)</span> – the
+energy goes up.</p>
+<p>This is qualitatively not different from the case of a massive particle:
+if you throw a ball at me, and I run toward you, the ball will have more
+energy in my reference frame.  If I run away, the ball will have less
+energy.  However, for a massive object like a ball or a proton, that
+energy is associated with speed.  For a massless particle like a photon,
+the speed does not change – it always moves at <span class="math notranslate nohighlight">\(c\)</span>.  The energy in that
+case is associated with the frequency (or equivalently, the wavelenth)
+of the light.  So, for light, we often write Equation <a class="reference internal" href="#equation-edopp">(112)</a> in
+terms of frequency (<span class="math notranslate nohighlight">\(f\)</span>) or wavelength (<span class="math notranslate nohighlight">\(\lambda\)</span>):</p>
+<div class="math notranslate nohighlight" id="equation-fdopp">
+<span class="eqno">(113)<a class="headerlink" href="#equation-fdopp" title="Permalink to this equation">#</a></span>\[f_2 = f_1\sqrt{\frac{1-\beta}{1+\beta}}\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight" id="equation-ldopp">
+<span class="eqno">(114)<a class="headerlink" href="#equation-ldopp" title="Permalink to this equation">#</a></span>\[\lambda_2 = \lambda_1\sqrt{\frac{1+\beta}{1-\beta}}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(\lambda = c/f\)</span>, these two equations are reciprocals.</p>
+<p>Since Equation <a class="reference internal" href="#equation-fdopp">(113)</a> says the photons will be shifted toward
+smaller frequencies if the relative velocity of the source and
+observer is positive (receding), and the smallest frequencies of
+visible light are red, we refer to this kind of change as a “redshift”,
+and if the source and receiver are approaching (negative relative
+velocity), we call this change a “blueshift”.  This can be confusing
+if you are considering photons outside the visible range of light.
+An x-ray, for example, subject to a blueshift, changes to an even higher
+frequency, <strong>away</strong> from blue light on the electromagnetic spectrum.
+So if the “blue” and “red” confuse you, just think of going to
+higher or lower frequency (which means going the opposite direction
+in wavelength).</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It doesn’t make sense to ask whether the source or the receiver is
+“really” moving, because all motion is relative.  For a sound wave,
+the medium it moves through provides a context in which it might
+make sense to say one or the other is “really” moving (relative to the
+medium), but in Chapter 1 we showed that the Michaelson Morely experiment
+disproves the hypothesis that light has a medium.  So any motion
+of source or receiver is equivalent and indistinguishable.</p>
+</div>
 </section>
 <section id="compton-scattering">
 <h2>Compton Scattering<a class="headerlink" href="#compton-scattering" title="Permalink to this heading">#</a></h2>

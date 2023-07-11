@@ -224,9 +224,187 @@ frame, but you have to be cautious with such generalizations, because
 $\gamma_{\rm com}$ is also getting larger as $p_i$ increases, so it's
 not so trivial to see which effect will dominate.
 
-Need to make a graph of Ecom vs. KEi for two protons.
+However, Figure 9.1 shows how much energy is available in the COM
+frame, according to Equation {eq}`Etotcom` (after subtracting off the
+rest energies of the original two particles) as a function of how much
+kinetic energy the incident particle has.  You can see that the amount
+of available energy is significantly less than the amount of KE put in
+(the black dotted line represent equality).  It appears that some of
+the energy in the lab frame goes into moving the center of momentum of
+the system.
 
+```{code-cell}
+:tags: ["remove-input"]
+E0 = 938
+KE = np.arange(0,100,1)*1000.0
+beta = np.sqrt(KE/(KE+2.0*E0))
+gam = 1.0/np.sqrt(1-beta**2)
+Elab = 2.0*E0+KE
+pi = np.sqrt(KE**2+2.0*E0*KE)
+Ecom = gam*(Elab-beta*pi)
+plt.figure(figsize=(9,5))
+plt.plot(KE,Ecom-2.0*E0,'b-',label='E in COM')
+plt.plot(KE,KE,'k:',label = 'Eout = Ein')
+plt.xlabel('Kinetic Energy of Incident Particle (MeV)')
+plt.ylabel('Available Energy in COM Frame (MeV)')
+plt.axis([0,1.0e5,0,1.25e4])
+plt.legend()
+plt.show()
+```
+```{note}
+Figure 9.1 -- Graph of energy available in the COM frame
+(after subtracting the rest energy of the two particles involved)
+as a function of the KE of the incident particle in the lab
+frame.  There is significantly less energy available in the
+COM frame to make particles than in the lab frame, if you
+put all the KE into accelerating one particle at the stationary
+target.
+```
+
+Need to add Examples 1 and 2.
 
 ## Photons and the Doppler Shift
+
+
+The Doppler shift tells what happens to the measured energy of a
+photon when it is viewed by different inertial observers. The velocity
+of the photon is the same for both inertial observers, but the energy
+changes. The momentum 4-vector for a photon as seen by the first
+observer is
+```{math}
+:label: p4phot
+[p_4]_1 =
+\begin{bmatrix}
+iE_1/c\\
+E_1/c\\
+0\\
+0
+\end{bmatrix}
+=
+\begin{bmatrix}
+ih/\lambda_1\\
+h/\lambda_1\\
+0\\
+0
+\end{bmatrix}
+```
+where we use $E=hf$ and $c=\lambda f$ to get the latter form.
+
+Notice that the size of the momentum 4-vector for a photon (or any
+zero rest energy particle) is 0. That is because the size of the
+momentum 4-vector = $-m_0c^2$, and the particle does not have any rest
+energy.
+
+A second inertial observer moving with $\beta_R$ in the $+x$ direction
+with respect to the first inertial observer, watching this same photon,
+would measure a momentum 4-vector given by (again ignoring $y$ and
+$z$):
+```{math}
+:label: p4photlort
+[p_4]_2 =
+\begin{bmatrix}
+iE_2/c\\
+E_2/c
+\end{bmatrix}
+=
+\begin{bmatrix}
+\gamma_R & -i\beta_R\gamma_R \\
+i\beta_R\gamma_R & \gamma_R \\
+\end{bmatrix}
+\begin{bmatrix}
+iE_1/c\\
+E_1/c
+\end{bmatrix}
+=
+\gamma_R
+\begin{bmatrix}
+i(E_1/c-\beta_RE_1/c)\\
+E_1/c-\beta_RE_1/c
+\end{bmatrix}
+```
+So
+```{math}
+:label: p4phot2
+[p_4]_2 = 
+\begin{bmatrix}
+iE_2/c\\
+E_2/c
+\end{bmatrix}
+=
+E_2/c
+\begin{bmatrix}
+i\\
+1
+\end{bmatrix}
+=
+\gamma_RE_1(1-\beta_R)/c
+\begin{bmatrix}
+i\\
+1
+\end{bmatrix}
+```
+The part in brackets is clearly the same, so $E_2=\gamma_R(1-\beta_R)E_1$.
+Plug in the definition of $\gamma_R$ to get
+```{math}
+:label: Edopp
+E_2 = E_1 \frac{1-\beta_R}{\sqrt{1-\beta^2}}
+=
+ E_1 \frac{1-\beta_R}{\sqrt{(1-\beta)(1+\beta)}}
+= E_1\sqrt{\frac{1-\beta}{1+\beta}}
+```
+Since $\beta\leq 1$, the numerator in Equation {eq}`Edopp` will
+always be less than the denominator, so as long as the second observer
+is moving to the right (receding from the source of the light),
+she will measure a smaller energy than the first observer would.
+If the second observer switches direction and heads toward the source
+of light, the $\beta$ will change sign, which effectively flips the
+ratio under the square root.  In that case, $E_2\geq E_1$ -- the
+energy goes up.
+
+This is qualitatively not different from the case of a massive particle:
+if you throw a ball at me, and I run toward you, the ball will have more
+energy in my reference frame.  If I run away, the ball will have less
+energy.  However, for a massive object like a ball or a proton, that
+energy is associated with speed.  For a massless particle like a photon,
+the speed does not change -- it always moves at $c$.  The energy in that
+case is associated with the frequency (or equivalently, the wavelenth)
+of the light.  So, for light, we often write Equation {eq}`Edopp` in
+terms of frequency ($f$) or wavelength ($\lambda$):
+```{math}
+:label: Fdopp
+f_2 = f_1\sqrt{\frac{1-\beta}{1+\beta}}
+```
+and
+```{math}
+:label: Ldopp
+\lambda_2 = \lambda_1\sqrt{\frac{1+\beta}{1-\beta}}
+```
+Since $\lambda = c/f$, these two equations are reciprocals.
+
+Since Equation {eq}`Fdopp` says the photons will be shifted toward
+smaller frequencies if the relative velocity of the source and
+observer is positive (receding), and the smallest frequencies of
+visible light are red, we refer to this kind of change as a "redshift",
+and if the source and receiver are approaching (negative relative
+velocity), we call this change a "blueshift".  This can be confusing
+if you are considering photons outside the visible range of light.
+An x-ray, for example, subject to a blueshift, changes to an even higher
+frequency, **away** from blue light on the electromagnetic spectrum.
+So if the "blue" and "red" confuse you, just think of going to
+higher or lower frequency (which means going the opposite direction
+in wavelength).
+
+```{warning}
+It doesn't make sense to ask whether the source or the receiver is
+"really" moving, because all motion is relative.  For a sound wave,
+the medium it moves through provides a context in which it might
+make sense to say one or the other is "really" moving (relative to the
+medium), but in Chapter 1 we showed that the Michaelson Morely experiment
+disproves the hypothesis that light has a medium.  So any motion
+of source or receiver is equivalent and indistinguishable.
+```
+
+
+
 
 ## Compton Scattering
