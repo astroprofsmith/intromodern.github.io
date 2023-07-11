@@ -28,24 +28,171 @@ spacetime diagram, and the Lorentz transformation, it is worth taking
 some time to look at what we can learn about the properties of space
 and time by applying these tools to the spacetime diagram.
 
-## Types of Intervals
+## Summary so Far
+
+So far in our journey through Special Relativity, we have been considering
+the relative displacement in spacetime of two events, as measured in two
+different inertial frames of reference that are in relative motion with
+some constant velocity $v_R$ (or $\beta_R$).  We draw these events on a
+spacetime diagram, such as in Figure 5.1 -- the left side shows two events
+at rest in a reference frame S, while the right side shows where those same
+two events would land in a frame S' which is moving to the right at speed
+$v_R$ relative to S.  Since S' is moving right, the events will be measured
+as moving to the left, separated by some displacement $dx'$ and some time
+interval $dt'$ (which is different from the time interval $dt_0$ in the rest
+frame).
 
 ```{code-cell}
 :tags: ["remove-input"]
-# Insert VPython simulation of a Michaelson Interferometer
-# Allow user to rotate system, relative to ether
-# Have radio button to include/remove ether
+dx=4.2
+cdt = 5.6
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
+fig.suptitle('Two Events in Two Reference Frames')
+ax2.arrow(0,0,5,0,head_width=0.2)
+ax2.arrow(0,0,0,6,head_width=0.2)
+
+ax2.arrow(-1.5,-1.5,2,0,head_width=0.2)
+ax2.arrow(-1.5,-1.5,0,2,head_width=0.2)
+
+ax2.arrow(4,-0.75,-1.75,0,head_width=0.1)
+
+ax2.get_xaxis().set_visible(False)
+ax2.get_yaxis().set_visible(False)
+ax2.axis([-2,6,-2,8])
+ax2.text(1.0, 6, "S'")
+ax2.text(-0.05, 6.5, "ct'")
+ax2.text(5.5, 0, "x'")
+ax2.text(4.5, -0.8, "v_R")
+ax2.text(-1.1, .1, "S")
+ax2.text(-1.55, 1.0, "ct")
+ax2.text(1.0, -1.5, "x")
+ax2.set_title('Frame in Relative Motion')
+
+ax2.plot([4.5],[0.5],'ro')
+ax2.plot([4.5-dx],[0.5+cdt],'bo')
+
+ax1.arrow(0,0,5,0,head_width=0.2)
+ax1.arrow(0,0,0,6,head_width=0.2)
+
+ax1.arrow(-1.5,-1.5,2,0,head_width=0.2)
+ax1.arrow(-1.5,-1.5,0,2,head_width=0.2)
+
+ax1.arrow(2,-0.75,1.75,0,head_width=0.1)
+
+ax1.get_xaxis().set_visible(False)
+ax1.get_yaxis().set_visible(False)
+ax1.axis([-2,6,-2,8])
+ax1.text(1.0, 6, "S")
+ax1.text(-0.05, 6.5, "ct")
+ax1.text(5.5, 0, "x")
+ax1.text(4.5, -0.8, "v_R")
+ax1.text(-1.1, .1, "S'")
+ax1.text(-1.55, 1.0, "ct'")
+ax1.text(1.0, -1.5, "x'")
+ax1.set_title('Rest Frame of the Events')
+
+beta = 0.75
+gam = 1/np.sqrt(1-beta**2)
+cdtp = cdt/gam
+ax1.plot([3],[0.5],'ro')
+ax1.plot([3],[0.5+cdtp],'bo')
+
+plt.show()
+```
+```{note}
+Figure 5.1 -- Two events at rest in an unprimed frame and in a primed frame
+moving to the right (which means the events displace to the left) with a speed
+of $\beta_R = 0.75$.
+```
+
+For two events at rest, we call the time interval between them the proper time, $dt_0$,
+and the square of the displacement four vector is $-c^2dt_0^2$.  Because the
+size of a four vector is invariant through a Lorentz transformation, this must
+be the size of the displacement four vector in the S' frame as well, which means
+```{math}
+-c^2dt_0^2 = dx^{'2} - c^2dt^{'2}
+```
+Factor out the $cdt'$ and divide through by $c^2$ to get
+```{math}
+dt_0^2 = dt^{'2} \left(1 - \left(\frac{dx'}{cdt'}\right)^2\right)
+```
+But we take $dx'/cdt'\equiv-\beta_R$, so
+```{math}
+dt_0^2 = dt^{'2} (1 - \beta_R^2)
+```
+and if we take $\gamma_R^2\equiv 1/(1-\beta_R^2)$, then
+```{math}
+:label: timedilation5
+dt' = \gamma_R dt_0
+```
+which we call **Time Dilation**, and that is why the blue dot on the
+right is higher than the blue dot on the left.
+
+What I wish to do in this chapter is to apply this kind of analysis to sets
+of events, to present patterns in spacetime that will help you improve your
+intuition about the implications that SR demands, which are so contrary to
+our day to day experience.
+
+## Types of Intervals
+
+In the list of principles that SR demands is the insistance that an
+observer can never "just know" what is going on somewhere else.  Since
+in many frames of reference two events are separated by some spatial
+displacement $dx$, it is worth considering just how the observer is to
+know that this displacement is indeed $dx$ and not some other number.
+In the primed frame shown in Figure 5.1, an observer cannot move from
+the red dot to the blue dot -- such an observer would not in fact be
+**in** the primed frame.  Such an observer would be at rest with
+respect to the unprimed frame, and the blue dot would be at the
+observer's location.  If the observer is at the location of the red
+dot in the primed frame they cannot be at the location of the blue
+dot.
+
+How, then, is our primed observer to measure the distance to the blue
+dot, if they cannot walk over there?  One imaginative method that is
+often used is to claim that the observer waits until everything is
+over, and then they collapse the whole lattice of rulers and clocks
+and piece together measurements of $dx'$ and $cdt'$ after the fact
+from the records of these clocks.
+
+While that would certainly work in principle, it's not very
+emotionally satisfying.  Breaking down an infinite lattice of infinite
+clocks takes a long time.  Is there a way an observer could determine
+$dx'$ in a more immediate fashion?  Indeed there is.  The observer
+could send a pulse of light from their location (in the same place as
+the red dot, but not necessarily at the same time) in such a way that
+it reflects off a strategically placed mirror at the same location as
+the blue dot (at the exact moment represented by the location of the
+blue dot on the $cdt'$ axis), and returns to the location of the
+observer at some later time.
+
+Such a setup is illustrated in Figure 5.2.  The worldline of the
+(stationary) observer is a vertical red line.  The red dot is
+stationary along this line, while the blue dot is off to the side.
+Orange lines represent the worldlines of the light that the observer
+must send and receive if they are to get information about the blue
+event back to their location.  There is a slider at the bottom of the
+diagram that allows you to move the blue dot up and down, relative to
+the red dot.  Note that "up and down" means "earlier or later" in
+time.
+
+
+
+```{code-cell}
+:tags: ["remove-input"]
+# A VPython tool to show types of intervals
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRintervals"
 display.IFrame(src=url1,width=880,height=700)
 ```
 ```{note}
-Figure 5.1 -- Interactive spacetime diagram.  The red line represents
+Figure 5.2 -- Interactive spacetime diagram.  The red line represents
 the worldline of a stationary observer.  The blue dot represents some
 event $p$ on that worldline.  The green dot represents some other event
 $q$ that most definitely does not reside on the worldline with $p$.
 To get information about $q$, therefore, the observer must send a
 light ray out to $q$ and get the reflection back.  The worldlines of
-these light rays are shown in orange.  The observer can therefore
+these light rays are shown in orange.  The speed of light is taken to
+be 1.  The observer can therefore
 define two time intervals that represent the elapsed time between
 event $p$ and the events when the light was emitted and received.
 From $t_1$ and $t_2$ the observer can calculate a $\Delta x$ and
@@ -53,8 +200,464 @@ a $\Delta t$, as described in the text.  These four values as
 well as the interval you get from the displacement four vector
 are shown on the diagram.  Move the slider to move $q$ up and down
 relative to $p$, and click the box to turn light cones for $p$ on
-and off.
+and off.  
 ```
+
+Given such a setup, the observer can define two time intervals, which
+we will call $t_1$ and $t_2$.  The first is the time from the red dot
+until the light returns, and the second is the time from the moment
+the light is sent out until the time of the red dot.  These time
+intervals are represented in Figure 5.2 by a white and a magenta
+arrow, respectively.  The value of $t_1$ is positive if the red dot
+happens before the light returns, and the value of $t_2$ is positive
+if the light is sent out before the red dot.  These two values, $t_1$
+and $t_2$, are printed out on the diagram, and you can see by moving
+the slider that if you shift the order of the red and blue events,
+either $t_1$ or $t_2$ (but not both!) will switch to negative.
+
+Given these two numbers and our knowledge about the speed of light,
+we can help our observer calculate values for $dx'$ and $cdt'$,
+without ever going over to the blue dot!  If the red and blue dots
+are simultaneous, then $dt'=0$, and $t_1$ must equal $t_2$ (this is
+the initial setup for Figure 5.3, and you can see the symmetry yourself).
+The later the blue dot shifts, the larger $dt'$ should get, and the
+earlier the blue dot shifts, the more negative $dt'$ should get.
+Therefore, our observer can conclude
+that the temporal displacement between the red and blue dots is
+```{math}
+:label: cdtp5
+dt' = \frac{t_1-t_2}{2}
+```
+
+The total time to go out and back is $t_1+t_2$.  At the speed of
+light, the distance traveled would be duration times speed, so
+```{math}
+:label: cdxp5
+dx' = c\frac{t_1+t_2}{2}
+```
+These numbers are also displayed in Figure 5.2 (without the primes),
+using units where $c=1$, for simplicity.
+The numbers in the diagram have been calculated from $t_1$ and $t_2$,
+not measured directly from the graph.
+
+```{margin}
+To show that $t_1t_2$ is the same as the interval, multiply
+Equation {eq}`cdtp5` by $c$ and then add it to Equation {eq}`cdxp5`:
+$$cdt'+dx' = ct_1$$ (the $t_2$ factors will cancel).  Then
+subtract {eq}`cdxp5` from {eq}`cdtp5` to cancel the $t_1$ terms
+and get
+$$dx'-cdt' = ct_2$$
+Multiply the two to get
+$$c^2t_1t_2 = (dx'-cdt')(dx'+cdt')$$
+which is
+$$c^2t_1t_2 = dx'^2-c^2dt'^2$$
+and the latter is just the square of the displacement four
+vector that we have been using.  So in units of $c=1$, the
+product of $t_1$ and $t_2$ is the interval!
+```
+
+The interval of the displacement four vector, $dx'^2-c^2dt'^2$ is also
+shown to the right of the red dot.  What is interesting is that we can
+take Equations {eq}`cdtp5` and {eq}`cdxp5` and solve them for $t_1$
+and $t_2$, and if you multiply $t_1$ by $t_2$, you can show this
+equals $dx'^2-c^2dt'^2$!  The product $t_1t_2$ (shown in the diagram
+to the right of the blue dot) is just another way of writing the
+square of the displacement four vector!
+
+Try sliding the blue dot up and down and verify that these two ways of
+writing the interval are always the same (to within possible rounding
+errors).  The lesson here is that it **is** possible to measure the
+displacement between two events without an observer actually going from
+one event to the other (which can only happen in the rest frame of the
+observer).
+
+Both these ways of writing the interval suggest three possible ranges
+of interest that an interval might fall into.  As you move the slider
+back and forth, you should be able to identify these three possibilities.
+Either both $t_1$ and $t_2$ are positive, in which case the interval is
+positive, or one of the two is positive and the other negative, in
+which case the interval is negative, or one of the two is zero, in
+which case the interval is zero.  These three options correspond to,
+in four-vector notation, to $dx'>cdt'$, $dx'<cdt'$, or $dx'=cdt'$,
+respectively.
+
+It is useful to classify a displacement four-vector into one of these
+three categories, because there are specific properties that each of
+these types of displacement four-vector have.  Move the slider such
+that the interval displays zero.  In this case, the displacement from
+red to blue will be one of the orange lines -- the worldline of the
+light that travels either out from or back to the observer's
+worldline.  The displacement between red and blue in this case must be
+just like the displacement that light would follow, so this kind of
+interval is called a "lightlike interval".  For a lightlike interval,
+either $t_1$ or $t_2$ is zero (depending on whether the red or the
+blue event happened first), which means that $dx'=cdt'$, or
+$dx'/dt'=c$, which means anything moving along that worldline has to
+be moving at the speed of light.
+
+If the interval is negative, that means that $dx'<cdt'$.  In the sum
+of squares that represent the size of the four vector, the time
+component has a minus sign, up to and including the extreme case of
+the proper interval $-c^2dt_0^2$.  A negative interval is therefore
+more like a time displacement than it is like a space displacement, so
+such intervals are called "timelike".  As you might probably guess at
+this point, intervals where $dx'>cdt'$ have positive intervals and are
+therefore called "spacelike".
+
+As you will see as this chapter develops, it is useful to group
+displacement four-vectors in these categories, because all timelike
+intervals share certain properties that it is useful to remember, as
+do all spacelike intervals.  All lightlike intervals are in some sense
+the same, as they all equal zero, and they all have to equal zero in
+all reference frames, although of course the time and space components
+can change individually.
+
+For example, consider all the possible events that are lightlike displaced
+from the red dot.  These are all events that lie along diagonal lines
+that cross at the red dot and make $45^\circ$ angles with the horizontal
+(if $dx'=cdt'$, then the slope is 1 and it makes a $45^\circ$ angle).
+If the red dot sends out light, that light will go up and away from the
+red dot at a $45^\circ$ angle.  Any event that sends light to the red
+dot must lie below the red dot at a $45^\circ$ angle.  All the lightlike
+intervals that connect to the red dot therefore make an $\times$ across
+this diagram.  However, this set of events is actually referred to as a
+"light cone".  Why a cone?  Because if we do include the $y$ dimension as
+pointing into the computer screen, then the $\times$ can be rotated around
+the vertical axis, and instead of an $\times$, we get a cone.  Click the
+button on Figure 5.2 to see the light cones associated with the red dot.
+
+Of course, it's only a cone if we include two space dimensions, $x$
+and $y$.  If we could include $z$, the light would be travelling in a
+sphere, either expanding out from the red dot or collapsing to it.  We
+can't make a four-dimensional graph, though, so we represent the
+sphere as a cone, and the term "light cone" has stuck.
+
+```{warning}
+We will always talk about the "light cones" associated with any event,
+but please remember that it's really a sphere in 3D space.
+```
+
+If any real thing wanted to get from the red dot to a point on the
+upper light cone, or from a point on the lower light cone to the red
+dot, this thing would have to travel at the speed of light to do so.
+However, for any event **inside** these cones, it would in principle
+be possible to get to or from the red dot without hitting light speed.
+Therefore, the set of events inside the upper light cone are all the
+events on which the event at the red dot could **possibly** exert any
+kind of influence.  We therefore call the events inside the cone the
+"future" of the red dot.  All the events in the lower cone could
+**possibly** influence what happens at the red dot, so we call this
+set of events the "past" of the red dot.  Every single event has
+its own light cones, and therefore its own set of past and future.
+
+Events that lie outside these light cones are neither past nor future,
+but some "other" that we don't have a good name for.  Events that are
+spacelike separated cannot influence each other, and one cannot be
+either cause or effect for the other.  It takes light from the Sun
+about eight minutes to get here.  If the Sun were to somehow vanish,
+that event would be outside the light cone of the Earth right now.  It
+would take eight minutes for the light cone of that event to intersect
+the world line of the Earth, and only then would the horrific darkness
+and bitter cold ensue.  So enjoy your eight minutes!
+
 
 ## How do the Axes Change?
 
+Consider the vertical and horizontal axes in a spacetime diagram.
+Each point on either axis is itself an event, with a coordinate of
+$x=0$ or $t=0$.  So an axis on a spacetime diagram is the set of
+events that has one of the two coordinates be zero.  The origin, of
+course, is the event where both coordinates are zero.  One of the
+principles described in Chapter 2 is that all events in spacetime
+have to be observed in all frames.  Switching reference frames can't
+just make something not happen.
+
+Therefore, we can ask how the coordinates of the set of events that
+make up the axes of the unprimed frame change when we shift into the
+primed frame.  Or, to turn it around, which events will land on the
+axes in the primed frame, and where were they originally in the
+unprimed frame?  I can explain this conceptually for the vertical
+axis, and then we will see what the math for the Lorentz
+transformation tells us.
+
+The vertical axis is all the events that occur at $x=0$.  A vertical
+worldline represents an object at rest.  Let's say I am an observer at
+rest at the origin, so my worldline is the vertical axis.  If I switch
+into a primed reference frame moving to the right at $v_R$, each
+successive event will shift further to the left, as I pass further and
+futher to the right.  So the original axis will tilt left in the
+primed frame.  Furthermore, as I walk to the right, successive events
+that were previously to my right will now move right next to me.  If I
+draw my worldline on the original spacetime diagram, it will be a
+rightward tilting line, and so this line will be the vertical axis in
+the new frame.
+
+Therefore, if I want to draw the set of events on the unprimed frame
+that will be the vertical axis in a primed frame, I will draw a tilted
+axis with a slope of $1/\beta_R$.  My speed is distance over time, but
+the spacetime diagram puts time on the vertical axis, so "rise over run"
+implies a slope of one over speed.  The faster the relative speed of
+the primed frame, the more tilted the new axis line will be, up to a
+speed (and therefore slope) of 1, since I can't go faster than light.
+
+```{warning}
+I stress that this axis is only tilted in the original, unprimed,
+frame.  If I were to redraw the spacetime diagram in the primed frame,
+the axes would be horizontal and vertical, as normal.  The set of events
+in the unprimed frame that will be vertical in the primed frame make
+up a tilted line in the unprimed frame.  Figure 5.4 shows a case where
+the axes are impllicitly redrawn every time the reference frame is
+shifted, while Figure 5.3 is keeping the same original axes while showing
+which events would be on the horizontal and vertical axes, if you were
+to redraw them.
+```
+
+We can show this intuitive prediction mathematically by performing
+a Lorentz transformation.  We can ask, of all the points $(ict,x)$
+in the spacetime plane, which ones will end up having $x'=0$ in the
+primed frame?  The transformation looks like:
+```{math}
+:label: axistrans5
+\begin{bmatrix}
+ict'\\
+x'
+\end{bmatrix}
+=
+\begin{bmatrix}
+\gamma_R & -i\beta_R\gamma_R\\
+i\beta_R\gamma_R & \gamma_R
+\end{bmatrix}
+\begin{bmatrix}
+ict\\
+x
+\end{bmatrix}
+=
+\gamma_R
+\begin{bmatrix}
+i(ct-\beta_R x)\\
+x-\beta_R ct
+\end{bmatrix}
+```
+According to Equation {eq}`axistrans5`, the set of points that will be
+at $x'=0$ will have the condition that $x=\beta_R ct$.  Since the time
+axis is vertical, this equation describes a straight line through the
+origin with a slope of $1/\beta_R$, as predicted by intuition, above.
+
+However, Equation {eq}`axistrans5` lets us go further, to ask a
+question that is much harder to describe intuitively: which events
+will land on the horizontal axis in the primed frame?  These are the
+points where $t'=0$, and we can find them by setting the time
+component of Equation {eq}`axistrans5` equal to zero.  In that case,
+$ct=\beta_R x$, and that is the equation of a straight line through
+the origin with a slope of $\beta_R$.  The primed horizontal axis
+will be an upward tilting line that shift to a steeper slope as you
+increase $\beta_R$, up to 1, since that is as fast as you can go.
+
+The results of these two equations are depicted graphically in Figure 5.3.
+You can shift the slider below the figure to change $\beta_R$.  The yellow
+arrows that represent which events will be on the axes in the primed
+frame will tilt as you change the relative speed.  Again, the actual
+unprimed axes remain unchanged -- the tilted axes are telling you which
+events will end up on the perpendicular axes in the primed frame, if
+you were to redraw them.
+
+```{code-cell}
+:tags: ["remove-input"]
+# Interactive spacetime diagram to allow the user to tilt the axes
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRlorentzaxes"
+display.IFrame(src=url1,width=880,height=650)
+```
+```{note}
+Figure 5.3 -- A spacetime diagram where the events that lie on the
+axes are indicated with yellow arrows.  A slider below the diagram
+allows you to change the relative speed of a primed reference frame,
+and the arrows will tilt to indicate which events will end up on the
+axes of the primed frame, were you to redraw the diagram in the new
+frame.  Note that the sets of events tilt together as you increase the
+relative velocity to the right.  The original axes remain where they
+were, indicated by white arrows.
+```
+
+## Simultaneity is Relative
+
+The behavior of the vertical axis is easy to understand just by
+imagining someone walking.  The faster you walk, the further apart in
+space the events that you pass by will be, and therefore your worldline
+(which is by definition the vertical axis in the primed frame) will
+tilt further and further.
+
+Consider the event represented by the blue dot in Figure 5.3: as the
+diagram is first drawn, with the observer at rest in the unprimed
+frame, the event is to the right of the vertical axis.  As you move
+the slider to the right and the axis tilts, you can choose a speed
+such that the yellow arrow lies on the blue dot.  This represents
+walking just fast enough that you get from the origin to the location
+of the blue dot just as it happens.  If you walk faster, you will pass
+the blue dot before it happens, and the event will happen to the left
+of the axis in the primed frame.
+
+It is therefore possible, by altering the relative speed, to choose a
+reference frame in which the blue dot event is either left, right, or
+at the same location as the origin.  This amounts to simply choosing a
+speed so that you fall short, overtake, or precisely reach the event
+as it happens.  Since you can get to the blue dot from the origin by
+moving at a speed less than $c$, the blue dot lies inside the light
+cone of the origin, and the interval between the origin and the blue
+dot is timelike.  This leads to the conclusion that through a careful
+choice of reference frame, a later event can be right, left, or at the
+same position in space as an earlier one, if the two are timelike
+separated.
+
+This hopefully seems rather intuitive.  You have overtaken or reached
+events many times in your life, so hopefully it is not hard to imagine
+the implications of shifting the vertical axis as shown in Figure 5.3.
+However, it is much harder to imagine how the red dot interacts with
+the horizontal axis.  The mathematical description is almost identical
+to the case of the blue dot, only rotated $90^\circ$.  I will repeat
+what I said above, in only slightly different words: through a careful
+choice of reference frame, an event to the right can be before, after,
+or at the same time as an event to the left, if the two are spacelike
+separated.
+
+Play with the slider and convince yourself that this is accurate.  By
+changing the relative speed, you can put the red dot above the
+horizontal axis (the red event happens after the event at the origin),
+below the horizontal axis (the red event happens before the event at
+the origin), or on the horizontal axis (the red event happens at the
+same time as the event at the origin).  This is very hard to accept,
+but this means that simultaneity is relative.  Whether events happen
+at the same time, or in which order they happen, depends on your
+choice of reference frame, as long as the events are spacelike
+separated.  The fastest you can go is $\beta_R=1$, which is a line
+with a $45^\circ$ angle slope, so you can never go fast enough to get
+the horizontal axis to reach, say, the blue dot.
+
+One of the reasons this may bother you is it may seem like this may
+contradict causality.  If I can arbitrarily switch the order of events by
+choosing a different reference frame, can I make effects happen before
+causes?  Thankfully, no.  You can only change the temporal sequence of
+events that are spacelike separated, and events that are spacelike
+separated can never be cause or effect for each other, because
+something would have to move faster than light to carry the influence
+from one event to the other.  Nature preserves causality, but what
+you think of as "simultaneous" will depend on what reference frame
+you are in.
+
+## Conclusions from Sets of Events
+
+To sum up what we have learned about spacetime from exploring how
+these diagrams change under Lorentz transformations, I have created
+one more interactive diagram, shown in Figure 5.4.  This diagram
+also has a slider that lets you change the relative speed of a primed
+reference frame, but every time you change it, the program redraws the
+diagram with the new axes.
+
+```{warning}
+The axes in Figure 5.4 are always labeled $x$ and $ct$, even though
+as soon as you change $\beta_R$ away from zero, they strictly should
+change to $x'$ and $ct'$.
+```
+
+On this diagram are shown sixteen spheres to represent a set of events.
+In the original, unprimed frame, the events make up a square, so you
+could think of them as four people standing still, snapping their fingers
+four times in unison.  Each vertical column of four events are happening
+at the same place, and each horizontal row of events are happening at
+the same time.
+
+```{code-cell}
+:tags: ["remove-input"]
+# Spacetime diagram to show how event shift under transformation
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRstgrid"
+display.IFrame(src=url1,width=880,height=650)
+```
+```{note}
+Figure 5.4 -- Interactive spacetime diagram that shows 16 events.  The
+default is to have the events in a grid.  You can think of this as
+four objects at rest, separated by some distance along the $x$ axis,
+with four events along each vertical worldline.  There is a slider to
+change a relative velocity $\beta_R$.  However, what happens when you
+change the slider is that the program applies a Lorentz transformation
+to each event and then plots the 16 events in a new reference frame.
+Each time you change the slider, you are changing to a new reference
+frame.  Certain points are marked in color, and the implications of
+how they shift are discussed in the text.
+```
+
+As you change the relative speed of the primed frame, these sixteen
+events will shift around according to the Lorentz transformation.
+This is the opposite operation to pinching the axes in Figure 5.3 --
+here, the points between the axes are being stretched.  Play with
+sliding the marker back and forth and see how the events move.  You
+could imagine this as the "pinched" axes in Figure 5.3 being streched
+back to perpendicular, and therefore all the events between them being
+pulled outward, too, as if they were on a rubber sheet.  It is useful
+to start thinking about space and time as being able to be stretched
+and squeezed, as this is an important feature of General Relativity.
+
+I have marked several spheres with color, and made three of them
+leave trails behind, to draw your attention to them
+and gain particular insights.  The cyan sphere marks the
+origin, and note that it does not move.  If all the components
+of a four vector are zero, the Lorentz transformation will not
+change them.  You can use the cyan sphere as an anchor by which
+you can compare the locations of the others.
+
+The orange event on the time axis will move left or right (since it is
+timelike separated from the origin) as well as up, leaving a
+bowl-shaped trail behind.  This is Time Dilation.  The shortest
+possible time interval will be measured in the frame where the
+two events (cyan and orange) are at rest.  If you zoom in on the orange
+sphere, you will see that the trail gets flatter and flatter, the
+more you zoom in.  This is a representation that for small $\beta_R$,
+the Lorentz factor gets close to one, in which case $dt'\approx dt_0$.
+If the intervals are equal, the trail would be flat, and the closer
+you zoom in, the flatter it gets.
+
+The red spheres are all lightlike separated from the origin, and you
+can see that when you move the slider, they **stay** along the
+$45^\circ$ line through the origin.  Since the speed of light is the
+same in all reference frames, events that are lightlike separated will
+be lightlike separated in all reference frames.  All the spheres above
+the red spheres are timelike separated from the cyan sphere, and all
+the spheres below the red spheres are spacelike separated from the
+cyan sphere.  You can see that no matter how you move the slider, you
+can never change a timelike interval into a spacelike interval, or
+vice versa.
+
+The blue sphere represents an event that is simulataneous with the
+cyan event at the origin in the original frame.  By moving the slider,
+you can see that the temporal order of these events can be switched.
+In fact, pick any two events you like that are separated by a spacelike
+interval, and you can find ranges of $\beta_R$ where the order is switched.
+What counts as "simultaneous" depends on your frame of reference.
+
+Finally, note that the blue event leaves a trail that looks just like
+the orange trail, only rotated $90^\circ$.  You might think from this
+similarity that there must also be a length dilation to match the
+time dilation illustrated by the orange trail.  This is not the case.
+Instead, we talk about a length **contraction**.  How can this be?
+The difference lies in what we mean by "length."
+
+Imagine that the leftmost and rightmost column of events lie upon
+vertical worldlines that represent the left and right ends of an
+object at rest.  Then the magenta sphere and the blue sphere are in
+the same place, and are separated from the cyan sphere by the same
+spatial distance.  However, the cyan and blue events are simultaneous,
+so we define the length of the object by the locations in space of
+these events.  The magenta event is the same distance away, and therefore
+also measures the length of the object.
+
+If you increase the relative speed $\beta_R$ to about $0.67$, you will
+see that although the blue event is much further away, it also happens
+much earlier than the cyan event.  The spatial displacement between
+blue and cyan can no longer be considered to be the length of the object!
+Instead, we must consider the magneta event, which is simultaneous in
+this reference frame with the cyan event.  Since it was at the end of
+the object in the original frame, it must also be at the end of the
+object in this frame, so in **this** frame, we would consider the "length"
+of the object to be the spatial displacement between the cyan and magenta
+events, which you can see from the trails is smaller than the spatial
+displacement between cyan and blue in the original frame of reference.
+Lengths contract.  We will work out examples of length contraction more
+thoroughly in the next chapter.

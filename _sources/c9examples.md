@@ -27,5 +27,4 @@ import matplotlib.pyplot as plt
 
 ## Photons and the Doppler Shift
 
-
-
+## Compton Scattering

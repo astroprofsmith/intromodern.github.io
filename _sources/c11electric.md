@@ -23,5 +23,9 @@ import matplotlib.pyplot as plt
 
 # Chapter 11: The Electromagnetic Tensor
 
+## Magnetic Force as a Relativistic Effect
 
+## How the Fields Transform
+
+## The Electromagnetic Field Tensor
 

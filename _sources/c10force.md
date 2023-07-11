@@ -23,5 +23,14 @@ import matplotlib.pyplot as plt
 
 # Chapter 10: Relativistic Force and Acceleration
 
+## Background
+
+## Newton's Second Law with Four Vectors
+
+## The Minkowski Force
+
+## The Acceleration Four Vector
+
+
 
 
