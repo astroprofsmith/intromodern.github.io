@@ -21,36 +21,47 @@ nbclient.exceptions.CellExecutionError: An error occurred while executing the fo
 def lm(b,ct,x):
     g = 1/np.sqrt(1-b**2)
     ctp = g*(ct-b*x)
-    xp = g*(x0-b*ct)
+    xp = g*(x-b*ct)
     return(ctp,xp)
 
-xrest = np.zeros((3,1))+0.3
-yrest = np.arange(3)*1.7/3.0
-beta = .55
-xfront = np.arange(0,.5,.1)
-yfront = 0.75-xfront/beta
-xback = np.arange(0,1.0,.2)
-yback = 1.45-xback/beta
-yrest,xrest = lm(-beta,yrest,xrest)
+# ST plot of ladder going through garage
+beta = .866
+gam = 1/np.sqrt(1-beta**2)
 
-plt.figure(figsize=(5,5))
+xfgar = np.zeros(4)+0.3
+yfgar = np.arange(4)*8.0/4.0
+(yfgar,xfgar) = lm(beta,yfgar,xfgar)
+
+xbgar = np.zeros(4)+2.3
+ybgar = np.arange(4)*8.0/4.0
+(ybgar,xbgar) = lm(beta,ybgar,xbgar)
+
+xflad = np.arange(0,4,.5)
+yflad = xflad/beta
+(yflad,xflad) = lm(beta,yflad,xflad)
+xblad = np.arange(-2,4,.5)
+yblad = xblad/beta+gam/beta
+(yblad,xblad) = lm(beta,yblad,xfbad)
+
+plt.figure(figsize=(3.5,6))
 plt.arrow(0,0,1,0,head_width=0.1)
 plt.arrow(0,0,0,1,head_width=0.1)
 
 plt.arrow(-0.5,-0.5,1,0,head_width=0.1)
 plt.arrow(-0.5,-0.5,0,1,head_width=0.1)
 
-plt.arrow(0.9,-0.25,-0.75,0,head_width=0.05)
+plt.arrow(0.2,-0.25,0.75,0,head_width=0.05)
 
-plt.plot(xrest,yrest,'r-')
-plt.plot(xfront,yfront,'g-')
-plt.plot(xback,yback,'b-')
+plt.plot(xflad,yflad,'r-')
+plt.plot(xblad,yblad,'c-')
+plt.plot(xfgar,yfgar,'g-')
+plt.plot(xbgar,ybgar,'b-')
 
 ax = plt.gca()
 ax.get_xaxis().set_visible(False)
 ax.get_yaxis().set_visible(False)
-plt.axis([-1,2,-1,2])
-ax.text(0.85, 1, "S")
+plt.axis([-10,3.5,-1,6])
+ax.text(0.1, 1, "S")
 ax.text(-0.05, 1.2, "ct")
 ax.text(1.2, 0, "x")
 ax.text(1.1, -0.25, "v_R")
@@ -62,19 +73,13 @@ plt.show()
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mNameError[0m                                 Traceback (most recent call last)
-Cell [0;32mIn[5], line 15[0m
-[1;32m     13[0m xback [38;5;241m=[39m np[38;5;241m.[39marange([38;5;241m0[39m,[38;5;241m1.0[39m,[38;5;241m.2[39m)
-[1;32m     14[0m yback [38;5;241m=[39m [38;5;241m1.45[39m[38;5;241m-[39mxback[38;5;241m/[39mbeta
-[0;32m---> 15[0m yrest,xrest [38;5;241m=[39m [43mlm[49m[43m([49m[38;5;241;43m-[39;49m[43mbeta[49m[43m,[49m[43myrest[49m[43m,[49m[43mxrest[49m[43m)[49m
-[1;32m     17[0m plt[38;5;241m.[39mfigure(figsize[38;5;241m=[39m([38;5;241m5[39m,[38;5;241m5[39m))
-[1;32m     18[0m plt[38;5;241m.[39marrow([38;5;241m0[39m,[38;5;241m0[39m,[38;5;241m1[39m,[38;5;241m0[39m,head_width[38;5;241m=[39m[38;5;241m0.1[39m)
+Cell [0;32mIn[7], line 25[0m
+[1;32m     23[0m xblad [38;5;241m=[39m np[38;5;241m.[39marange([38;5;241m-[39m[38;5;241m2[39m,[38;5;241m4[39m,[38;5;241m.5[39m)
+[1;32m     24[0m yblad [38;5;241m=[39m xblad[38;5;241m/[39mbeta[38;5;241m+[39mgam[38;5;241m/[39mbeta
+[0;32m---> 25[0m (yblad,xblad) [38;5;241m=[39m lm(beta,yblad,[43mxfbad[49m)
+[1;32m     27[0m plt[38;5;241m.[39mfigure(figsize[38;5;241m=[39m([38;5;241m3.5[39m,[38;5;241m6[39m))
+[1;32m     28[0m plt[38;5;241m.[39marrow([38;5;241m0[39m,[38;5;241m0[39m,[38;5;241m1[39m,[38;5;241m0[39m,head_width[38;5;241m=[39m[38;5;241m0.1[39m)
 
-Cell [0;32mIn[5], line 5[0m, in [0;36mlm[0;34m(b, ct, x)[0m
-[1;32m      3[0m g [38;5;241m=[39m [38;5;241m1[39m[38;5;241m/[39mnp[38;5;241m.[39msqrt([38;5;241m1[39m[38;5;241m-[39mb[38;5;241m*[39m[38;5;241m*[39m[38;5;241m2[39m)
-[1;32m      4[0m ctp [38;5;241m=[39m g[38;5;241m*[39m(ct[38;5;241m-[39mb[38;5;241m*[39mx)
-[0;32m----> 5[0m xp [38;5;241m=[39m g[38;5;241m*[39m([43mx0[49m[38;5;241m-[39mb[38;5;241m*[39mct)
-[1;32m      6[0m [38;5;28;01mreturn[39;00m(ctp,xp)
-
-[0;31mNameError[0m: name 'x0' is not defined
-NameError: name 'x0' is not defined
+[0;31mNameError[0m: name 'xfbad' is not defined
+NameError: name 'xfbad' is not defined
 

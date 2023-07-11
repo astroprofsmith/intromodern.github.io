@@ -803,3 +803,213 @@ is shorter, and therefore the muons can reach the ground in the
 shorter time they have.  The events of being created and reaching the
 ground happen in both frames, but the reasons they can happen are
 interpreted differently in each frame.
+
+## The Ladder in the Garage Paradox
+
+When people first grapple with length contraction, there is a common
+so-called paradox that often confuses them.  Sometimes it refers to a
+pole in a barn, or a train in a tunnel, but I will use a ladder in a
+garage.  The formulation of the "paradox" goes like this: consider a
+ladder that is 4 m long when it is at rest, and you want to try to fit
+it into a garage that is 2 m long when it is at rest.  SR seems to say
+that if you run with the ladder at the garage with a speed of
+$\beta=0.866$, then $\gamma=2$ and the ladder will be contracted to
+only 2 m long, and can therefore fit into the garage.  However, if you
+look at this situation in the rest frame of the ladder, the garage
+will be rushing at the ladder with a speed of $\beta=0.866$, and will
+therefore be only 1 m long in this frame, so how can a 4 m ladder fit
+in a 1 m garage?  The ladder can't both fit and not fit in the
+garage!!!  How can we resolve this paradox?
+
+We can solve this dilemma through careful analysis of the relevant
+displacement four vectors and keeping in mind a clear, operational
+definition of what it means for one object to "fit" inside another.
+
+Let's retell this story in terms of events that we can plot on a
+spacetime diagram and then use to define some useful displacement
+four-vectors.  Let's start in the rest frame of the garage.  The
+ladder is racing toward the garage, and the first important event
+is when the front of the ladder goes into the front of the garage.
+Let's say we have two helpers, Frank and Betty, who are standing at
+the front and back of the garage, respectively.  When the front
+of the ladder gets to the back of the garage, Betty opens a door
+that allows it to proceed without crashing into the wall.  Meanwhile,
+Frank will close his door when the back of the ladder passes through
+the front door.  If Frank closes his door before or at the same time
+as Betty, then the ladder can reasonably be said to be **in** the
+garage.
+
+We now have four events we can plot on a ST diagram:  the front of
+the ladder enters the front of the garage, the back of the ladder
+enters the front of the garage (and Frank closes the door), the
+front of the ladder arrives at the back of the garage (and Betty
+opens the door), and finally, the back of the ladder reaches the back
+of the garage.  We will look at the borderline case, where Frank
+closes his door the instant Betty opens hers.  The spacetime diagram
+is shown in Figure 6.5, with four different color worldlines
+representing the front and back of the ladder and the garage.
+Our four events are the points where these four lines cross.
+
+```{code-cell}
+:tags: ["remove-input"]
+# ST plot of ladder going through garage
+
+xfgar = np.zeros(4)+0.3
+yfgar = np.arange(4)*8.0/4.0
+
+xbgar = np.zeros(4)+2.3
+ybgar = np.arange(4)*8.0/4.0
+
+beta = .866
+gam = 1/np.sqrt(1-beta**2)
+xflad = np.arange(0,4,.5)
+yflad = xflad/beta
+xblad = np.arange(-2,4,.5)
+yblad = xblad/beta+gam/beta
+
+plt.figure(figsize=(3.5,6))
+plt.arrow(0,0,1,0,head_width=0.1)
+plt.arrow(0,0,0,1,head_width=0.1)
+
+plt.arrow(-0.5,-0.5,1,0,head_width=0.1)
+plt.arrow(-0.5,-0.5,0,1,head_width=0.1)
+
+plt.arrow(0.2,-0.25,0.75,0,head_width=0.05)
+
+plt.plot(xflad,yflad,'r-')
+plt.plot(xblad,yblad,'c-')
+plt.plot(xfgar,yfgar,'g-')
+plt.plot(xbgar,ybgar,'b-')
+
+ax = plt.gca()
+ax.get_xaxis().set_visible(False)
+ax.get_yaxis().set_visible(False)
+plt.axis([-1,3.5,-1,6])
+ax.text(0.1, 1, "S")
+ax.text(-0.05, 1.2, "ct")
+ax.text(1.2, 0, "x")
+ax.text(1.1, -0.25, "v_R")
+ax.text(-0.35, .5, "S'")
+ax.text(-.55, .7, "ct'")
+ax.text(.7, -0.5, "x'")
+plt.show()
+```
+```{note}
+Figure 6.5 -- A spacetime diagram showing a moving ladder
+passing through a garage at rest.  The green line is the
+front of the garage while the blue line is the back of the garage.
+The red line is the front of the ladder, while the cyan line
+is the back end of the ladder.  Reading up the time axis, the
+four events are: front of ladder enters from of garage (red
+crosses green), front of ladder reaches back of garage (red
+crosses blue), back of ladder enters front of garage (cyan
+crosses green), and back of ladder exits back of garage (cyan
+crosses blue).
+```
+
+In this reference frame, the ladder can be (barely) said to be in the
+garage.  The red line crosses the blue line at the same time as the
+cyan line crosses the green line.  For that brief instant, the ladder
+was in the garage.  These four events give us at least four
+displacement four vectors, each of which defines one side of the
+parallelogram depicted by the crossing lines.  Figure 6.6 shows
+what happens when you apply the Lorentz transformation to
+these events, to shift them into the rest frame of the ladder.
+
+In figure 6.6, the red and cyan lines have become vertical, confirming
+that the ladder is indeed at rest, while the green and blue lines tilt
+to the left.  The green and blue lines are closer together than they
+were (1 m in this frame) while the cyan and red lines are further
+apart (4 m long ladder at rest).
+
+
+```{code-cell}
+:tags: ["remove-input"]
+# ST plot of object passing observer
+def lm(b,ct,x):
+    g = 1/np.sqrt(1-b**2)
+    ctp = g*(ct-b*x)
+    xp = g*(x-b*ct)
+    return(ctp,xp)
+
+# ST plot of ladder going through garage
+beta = .866
+gam = 1/np.sqrt(1-beta**2)
+
+xfgar = np.zeros(4)+0.3
+yfgar = np.arange(4)*8.0/4.0
+(yfgar,xfgar) = lm(beta,yfgar,xfgar)
+
+xbgar = np.zeros(4)+2.3
+ybgar = np.arange(4)*8.0/4.0
+(ybgar,xbgar) = lm(beta,ybgar,xbgar)
+
+xflad = np.arange(0,4,.5)
+yflad = xflad/beta
+(yflad,xflad) = lm(beta,yflad,xflad)
+xblad = np.arange(-2,4,.5)
+yblad = xblad/beta+gam/beta
+(yblad,xblad) = lm(beta,yblad,xblad)
+
+plt.figure(figsize=(6,6))
+plt.arrow(-4,0,1,0,head_width=0.1)
+plt.arrow(-4,0,0,1,head_width=0.1)
+
+plt.arrow(-4.5,-0.5,1,0,head_width=0.1)
+plt.arrow(-4.5,-0.5,0,1,head_width=0.1)
+
+plt.arrow(-3,-0.25,-0.75,0,head_width=0.05)
+
+plt.plot(xflad,yflad,'r-')
+plt.plot(xblad,yblad,'c-')
+plt.plot(xfgar,yfgar,'g-')
+plt.plot(xbgar,ybgar,'b-')
+
+ax = plt.gca()
+ax.get_xaxis().set_visible(False)
+ax.get_yaxis().set_visible(False)
+plt.axis([-5,3,-1,7])
+ax.text(-3.8, 1, "S'")
+ax.text(-4.05, 1.2, "ct'")
+ax.text(-2.6, 0, "x'")
+ax.text(-2.9, -0.25, "v_R")
+ax.text(-4.35, .5, "S")
+ax.text(-4.55, .7, "ct")
+ax.text(-3.3, -0.6, "x")
+plt.show()
+```
+```{note}
+Figure 6.6 -- A spacetime diagram showing a stationary ladder
+with a garage passing around it.  The axes have been shifted four
+meters to the left to avoid crowding.  The colors of the worldlines
+and the four events are the same as in Figure 6.5, but note that
+these worldlines have been calculated via a Lorentz transformation.
+```
+
+Reading up the vertical axis, our four events as seen in this frame
+are: front of garage passes front of ladder (green crosses red), then
+back of garage passes front of the ladder (blue crosses red).  Some
+time later, the front of the garage passes the back of the ladder
+(green crosses cyan) and finally the back of the garage passes the
+back of the ladder (blue crosses cyan).  The garage slides across the
+ladder like a ring along a finger, and most of the time the ends
+of the ladder stick out both sides of the garage.
+
+How can this be?  Didn't we say events have to happen in all frames?
+How can the ladder fit inside the garage in the first frame, but stick
+out both ends in the second?
+
+The key to understanding why this is not a paradox resides in the
+definition of "fit in".  We defined the state of the ladder being in
+the garage as having both Frank and Betty close their doors **at the
+same time**.  But you now know that simultaneity is relative.  The
+"paradox" arose through a misunderstanding of what an "event" is.  To
+say "the ladder is inside the garage" is not an event, and therefore
+is not required to happen in any reference frame.  The **events** here
+are the ends of the ladder passing the ends of the garage.  The events
+of the front of the ladder reaching the back of the garage and the back
+of the ladder entering the front of the garage are spacelike separated,
+and therefore nature makes no requirements as to what order they will
+occur in.  All four events will happen, but not necessarily in the same
+order, so it is no paradox: the fact is that the ladder can fit inside
+the garage in one frame and not in another.  

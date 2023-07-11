@@ -595,8 +595,8 @@ faster.  This is another way of saying that nothing can move faster
 than light.  It would take an infinite amount of energy.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>How did Newton miss the rest energy of a particle? The rest
-energy of a person with a (rest) mass of 100 kg is <span class="math notranslate nohighlight">\(E =100~{\rm
+<p>How did Newton miss the rest energy of a particle? The rest energy of
+a person with a (rest) mass of 100 kg is <span class="math notranslate nohighlight">\(E =100~{\rm
 kg}(3\times10^8~{\rm m/s})^2 = 9\times10^{18}\)</span> joules.  This is an
 unbelievably large number.  The total yearly electrical demand of the
 entire US is on the order of <span class="math notranslate nohighlight">\(10^{19}\)</span> joules (according to the
@@ -632,6 +632,16 @@ physics is therefore only an approximation.  A full equation would be</p>
 <p>We can use Equation <a class="reference internal" href="#equation-eqcp1">(86)</a> to say that</p>
 <div class="math notranslate nohighlight" id="equation-etotal2">
 <span class="eqno">(91)<a class="headerlink" href="#equation-etotal2" title="Permalink to this equation">#</a></span>\[E_{\rm total}^2 =  (\gamma m_0 c^2)^2 = E_0^2 + (cp)^2 \]</div>
+<p>or we could turn it around and solve for the momentum
+of a particle given its energies:</p>
+<div class="math notranslate nohighlight" id="equation-pfrome1">
+<span class="eqno">(92)<a class="headerlink" href="#equation-pfrome1" title="Permalink to this equation">#</a></span>\[cp = \sqrt{E_{\rm total}^2 - E_0^2}\]</div>
+<p>Expanding the square using Equation <a class="reference internal" href="#equation-etotal">(90)</a>:</p>
+<div class="math notranslate nohighlight" id="equation-pfrome">
+<span class="eqno">(93)<a class="headerlink" href="#equation-pfrome" title="Permalink to this equation">#</a></span>\[cp = \sqrt{E_0^2+2E_0KE+KE^2 - E_0^2} = \sqrt{KE^2+2E_0KE}\]</div>
+<p>You could pull the KE out of the square root, to get</p>
+<div class="math notranslate nohighlight" id="equation-pfrome2">
+<span class="eqno">(94)<a class="headerlink" href="#equation-pfrome2" title="Permalink to this equation">#</a></span>\[p = \frac{KE}{c}\sqrt{1+2\frac{E_0}{KE}}\]</div>
 <p>In the world of fast moving objects, the momentum and energy of the
 system are connected as shown in equation <a class="reference internal" href="#equation-etotal2">(91)</a>.</p>
 <div class="admonition note">
@@ -654,7 +664,7 @@ below, for how easy eV units can be.</p>
 that the momentum 4-vector can be written in terms of the physical
 momentum and total energy of the system as:</p>
 <div class="math notranslate nohighlight" id="equation-p4fulle">
-<span class="eqno">(92)<a class="headerlink" href="#equation-p4fulle" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4] =
+<span class="eqno">(95)<a class="headerlink" href="#equation-p4fulle" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4] =
 \begin{bmatrix}
 iE_{\rm tot}/c\\
 p_x\\
@@ -671,16 +681,17 @@ are NOT the same equation!  Do NOT think that <span class="math notranslate nohi
 Each term in Equation <a class="reference internal" href="#equation-etotal2">(91)</a> is <strong>squared</strong>, and the sum of squares
 is <strong>not</strong> the same thing as the square of a sum!  The term <span class="math notranslate nohighlight">\(cp\)</span> is clearly
 related to the kinetic energy – they have the same dimensions and they
-both go up and down together – but they are not the same thing.</p>
+both go up and down together – but they are not the same thing.  You
+can see that they are related but not equal in Equation <a class="reference internal" href="#equation-pfrome2">(94)</a>.</p>
 </div>
 <p>Equation <a class="reference internal" href="#equation-etotal">(90)</a> can be used to find the speed of a particle of
 known rest and kinetic energy.  If the total energy is rest plus kinetic,
 and the total energy is <span class="math notranslate nohighlight">\(\gamma\)</span> times the rest energy, then</p>
 <div class="math notranslate nohighlight" id="equation-game">
-<span class="eqno">(93)<a class="headerlink" href="#equation-game" title="Permalink to this equation">#</a></span>\[E_{\rm tot} = \gamma E_0 = E_0 + KE \rightarrow \gamma = 1 + \frac{KE}{E_0}\]</div>
+<span class="eqno">(96)<a class="headerlink" href="#equation-game" title="Permalink to this equation">#</a></span>\[E_{\rm tot} = \gamma E_0 = E_0 + KE \rightarrow \gamma = 1 + \frac{KE}{E_0}\]</div>
 <p>This suggests an easy test for deciding if you have to use the
 relativistic formulae to describe the motion of an object.  If you
-know the KE and the <span class="math notranslate nohighlight">\(E_0\)</span>, use Equation <a class="reference internal" href="#equation-game">(93)</a> to get <span class="math notranslate nohighlight">\(\gamma\)</span>.
+know the KE and the <span class="math notranslate nohighlight">\(E_0\)</span>, use Equation <a class="reference internal" href="#equation-game">(96)</a> to get <span class="math notranslate nohighlight">\(\gamma\)</span>.
 If this number is significantly greater than one, then you need to use
 the relativistic equations, but if it’s very close to one, you can get
 away with using Newtonian mechanics.</p>
@@ -710,21 +721,28 @@ The elementary particles have fixed rest energies.  For the proton –
 However, not all particles have rest energy. A photon (gamma ray) does
 not have any rest energy, and a neutrino’s is so small it can barely be
 measured.</p>
-<p>Equation <a class="reference internal" href="#equation-game">(93)</a> would therefore imply that the value for the <span class="math notranslate nohighlight">\(\gamma\)</span>
+<p>Equation <a class="reference internal" href="#equation-game">(96)</a> would therefore imply that the value for the <span class="math notranslate nohighlight">\(\gamma\)</span>
 of these particles is infinite. If <span class="math notranslate nohighlight">\(\gamma\)</span> is infinite, then <span class="math notranslate nohighlight">\(\beta= 1\)</span>,
 and these particles must be traveling at the speed of light.  Always.
 This is not surprising for the gamma ray, as it is light. What is
 surprising is that other particles such as the neutrino, which are
 not photons, also travel at the same speed.</p>
-<p>Also surprising is that
-all of these particles have momentum even though they do not have
-any rest mass.  You might think, if you think of momentum as mass times
-velocity, that no mass means no momentum.  However, if you look at
-Equation <a class="reference internal" href="#equation-etotal2">(91)</a>, the only way this equation can work for
-particles that have energy but no mass is if <span class="math notranslate nohighlight">\(p=E/c\)</span>.  Particles
-with energy but no mass <strong>still have momentum</strong>!!!</p>
-<p>On the other hand,for a particle with <span class="math notranslate nohighlight">\(E_0 \neq 0\)</span> to travel <strong>at</strong>
-the speed of light, Equation <a class="reference internal" href="#equation-game">(93)</a> implies it must have
+<p>Also surprising is that all of these particles have momentum even
+though they do not have any rest mass.  You might think, if you think
+of momentum as mass times velocity, that no mass means no momentum.
+However, if you look at Equation <a class="reference internal" href="#equation-etotal2">(91)</a>, the only way this
+equation can work for particles that have energy but no mass is if
+<span class="math notranslate nohighlight">\(p=E/c\)</span>.  Particles with energy but no mass <strong>still have momentum</strong>!!!</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can also see this in Equation <a class="reference internal" href="#equation-pfrome2">(94)</a>: if the rest energy
+goes to zero, <span class="math notranslate nohighlight">\(p\rightarrow KE/c\)</span>.  For a photon, the KE is <span class="math notranslate nohighlight">\(hf\)</span>, Planck’s
+constant times the frequency, so the momentum of a photon is <span class="math notranslate nohighlight">\(hf/c\)</span>,
+or <span class="math notranslate nohighlight">\(h/\lambda\)</span>, where <span class="math notranslate nohighlight">\(\lambda\)</span> is the wavelength.  See also the
+treatment in the section of Chapter 9 on the Doppler Shift.</p>
+</div>
+<p>On the other hand, for a particle with <span class="math notranslate nohighlight">\(E_0 \neq 0\)</span> to travel <strong>at</strong>
+the speed of light, Equation <a class="reference internal" href="#equation-game">(96)</a> implies it must have
 infinite kinetic energy
 because <span class="math notranslate nohighlight">\(\gamma\)</span> is infinite for an object traveling the
 speed of light. No matter how much energy is given to this massive particle,
@@ -791,7 +809,7 @@ two photons. Show that in the rest frame of the pion, the two photons
 move in opposite directions. Find the energy of these two photons.</p>
 <p>In the rest frame of the pion, the momentum 4-vector for the pion is:</p>
 <div class="math notranslate nohighlight" id="equation-p4pi">
-<span class="eqno">(94)<a class="headerlink" href="#equation-p4pi" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm before} =
+<span class="eqno">(97)<a class="headerlink" href="#equation-p4pi" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm before} =
 \begin{bmatrix}
 i135~{\rm MeV}/c\\
 0.0\\
@@ -803,7 +821,7 @@ The <span class="math notranslate nohighlight">\(x\)</span>-direction is defined
 takes. The second photon travels in some unknown direction. The observer in
 the rest frame of the pion measures a momentum 4-vector of the two photons as:</p>
 <div class="math notranslate nohighlight" id="equation-p42pho">
-<span class="eqno">(95)<a class="headerlink" href="#equation-p42pho" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm after} =
+<span class="eqno">(98)<a class="headerlink" href="#equation-p42pho" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm after} =
 \begin{bmatrix}
 i(E_1+E_2)/c\\
 p_{x1}+p_{x2}\\

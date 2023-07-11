@@ -278,8 +278,9 @@ faster.  This is another way of saying that nothing can move faster
 than light.  It would take an infinite amount of energy.
 
 
-```{note} How did Newton miss the rest energy of a particle? The rest
-energy of a person with a (rest) mass of 100 kg is $E =100~{\rm
+```{note}
+How did Newton miss the rest energy of a particle? The rest energy of
+a person with a (rest) mass of 100 kg is $E =100~{\rm
 kg}(3\times10^8~{\rm m/s})^2 = 9\times10^{18}$ joules.  This is an
 unbelievably large number.  The total yearly electrical demand of the
 entire US is on the order of $10^{19}$ joules (according to the
@@ -320,8 +321,26 @@ We can use Equation {eq}`eqcp1` to say that
 :label: etotal2
 E_{\rm total}^2 =  (\gamma m_0 c^2)^2 = E_0^2 + (cp)^2 
 ```
+or we could turn it around and solve for the momentum
+of a particle given its energies:
+```{math}
+:label: pfrome1
+cp = \sqrt{E_{\rm total}^2 - E_0^2}
+```
+Expanding the square using Equation {eq}`etotal`:
+```{math}
+:label: pfrome
+cp = \sqrt{E_0^2+2E_0KE+KE^2 - E_0^2} = \sqrt{KE^2+2E_0KE}
+```
+You could pull the KE out of the square root, to get
+```{math}
+:label: pfrome2
+p = \frac{KE}{c}\sqrt{1+2\frac{E_0}{KE}}
+```
+
+
 In the world of fast moving objects, the momentum and energy of the
-system are connected as shown in equation {eq}`etotal2`.
+system are connected as shown in equation {eq}`etotal2`.  
 
 ```{note}
 One of the subjects where the rules of relativity cannot be ignored
@@ -363,7 +382,8 @@ are NOT the same equation!  Do NOT think that $cp$ is the kinetic energy.
 Each term in Equation {eq}`etotal2` is **squared**, and the sum of squares
 is **not** the same thing as the square of a sum!  The term $cp$ is clearly
 related to the kinetic energy -- they have the same dimensions and they
-both go up and down together -- but they are not the same thing.
+both go up and down together -- but they are not the same thing.  You
+can see that they are related but not equal in Equation {eq}`pfrome2`.
 ```
 
 Equation {eq}`etotal` can be used to find the speed of a particle of
@@ -415,15 +435,22 @@ This is not surprising for the gamma ray, as it is light. What is
 surprising is that other particles such as the neutrino, which are
 not photons, also travel at the same speed.
 
-Also surprising is that
-all of these particles have momentum even though they do not have
-any rest mass.  You might think, if you think of momentum as mass times
-velocity, that no mass means no momentum.  However, if you look at
-Equation {eq}`etotal2`, the only way this equation can work for
-particles that have energy but no mass is if $p=E/c$.  Particles
-with energy but no mass **still have momentum**!!!
+Also surprising is that all of these particles have momentum even
+though they do not have any rest mass.  You might think, if you think
+of momentum as mass times velocity, that no mass means no momentum.
+However, if you look at Equation {eq}`etotal2`, the only way this
+equation can work for particles that have energy but no mass is if
+$p=E/c$.  Particles with energy but no mass **still have momentum**!!!
 
-On the other hand,for a particle with $E_0 \neq 0$ to travel **at**
+```{note}
+You can also see this in Equation {eq}`pfrome2`: if the rest energy
+goes to zero, $p\rightarrow KE/c$.  For a photon, the KE is $hf$, Planck's
+constant times the frequency, so the momentum of a photon is $hf/c$,
+or $h/\lambda$, where $\lambda$ is the wavelength.  See also the
+treatment in the section of Chapter 9 on the Doppler Shift.
+```
+
+On the other hand, for a particle with $E_0 \neq 0$ to travel **at**
 the speed of light, Equation {eq}`gamE` implies it must have
 infinite kinetic energy 
 because $\gamma$ is infinite for an object traveling the
