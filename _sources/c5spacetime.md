@@ -123,7 +123,9 @@ dt_0^2 = dt^{'2} (1 - \beta_R^2)
 and if we take $\gamma_R^2\equiv 1/(1-\beta_R^2)$, then
 ```{math}
 :label: timedilation5
+\boxed{
 dt' = \gamma_R dt_0
+}
 ```
 which we call **Time Dilation**, and that is why the blue dot on the
 right is higher than the blue dot on the left.

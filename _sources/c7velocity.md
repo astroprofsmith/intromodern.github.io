@@ -102,7 +102,7 @@ to convert $dt_0$ to $dt$.  Equation {eq}`eq4v0` then can be
 written as:
 ```{math}
 :label: eq4vgam
-[v_4] = \frac{[dx_4]}{dt_0} = \gamma \frac{[dx_4]}{dt}
+[v_4] = \frac{[dx_4]}{dt_0} = \gamma \frac{[dx_4]}{dt}=
 \begin{bmatrix}
 ic\gamma\\
 \gamma v_x\\
@@ -110,6 +110,19 @@ ic\gamma\\
 \gamma v_z
 \end{bmatrix}
 ```
+
+$$\boxed{
+[v_4] =
+\gamma
+\begin{bmatrix}
+ic\\
+v_x\\
+v_y\\
+v_z
+\end{bmatrix}
+}
+$$
+
 
 According to the correspondence principle, the theory we call special
 relativity has to reduce to Newton's mechanics when $\beta\ll 1$. As
@@ -158,6 +171,8 @@ factor out the gamma and use $v^2=v_x^2+v_y^2+v_z^2$:
 :label: sizev4b
 [v_4]^2 = \gamma^2 (v^2-c^2) = -c^2\gamma^2\left(1-\left(\frac{v}{c}\right)^2\right) = -c^2\gamma^2(1-\beta^2) = -c^2
 ```
+$$\boxed{[v_4]^2 = -c^2}$$
+
 Once again, the size of a 4-vector is a negative number. The experimental
 evidence is that the speed of light has the same value for all inertial
 observers, the size of the 4-velocity is a scalar quantity. The 4-velocity
@@ -183,11 +198,25 @@ i\gamma\\
 \gamma \beta_z
 \end{bmatrix}
 ```
+$$\boxed{
+[\beta_4] =
+\gamma
+\begin{bmatrix}
+i\\
+\beta_x\\
+\beta_y\\
+\beta_z
+\end{bmatrix}
+}
+$$
+
 Note that the size of the beta four vector that you get if you square
 and add the terms is $-1$, which is just what you would expect if you
 took the square of the four velocity and divided by $c^2$.  The constant
 $-1$ is of course also invarient across reference frames, and therefore
-also a Lorentz scalar, as the size of a four vector must be.
+also a Lorentz scalar, as the size of a four vector must be.  In a sense,
+this is like defining a unit vector with a length of 1, only we are
+defining it to be 1 in the time direction.
 
 
 ## Addition of Velocities
@@ -354,7 +383,8 @@ $$\frac{\gamma'\beta'}{\gamma'} = \frac{\gamma\gamma_R(\beta - \beta_R)}{\gamma\
 cancel common factors to get
 ```{math}
 :label: veladd1
-\beta' = \frac{\beta - \beta_R}{1-\beta\beta_R}
+\boxed{
+\beta' = \frac{\beta - \beta_R}{1-\beta\beta_R}}
 ```
 This is known as **the velocity addition formula**.  Note that
 although it is quite different from what Newton or Galileo would have

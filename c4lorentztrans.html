@@ -551,9 +551,6 @@ i\beta_R\gamma_R &amp; L_{11} &amp; L_{12} &amp; L_{13}\\
 0 &amp; 0 &amp; 1 &amp; 0\\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{bmatrix}\end{split}\]</div>
-<p>Not sure where to go next.  Perhaps use antisymmetric?
-But how do I justify that?  Can I show that dy and dz don’t
-come into it?</p>
 <p>The number of unknowns in the Lorentz transformation matrix has
 decreased from 16 to 6. The rest can be found using similar tricks.
 For example, you could set up the events in Figure 4.1 such that the
@@ -563,13 +560,15 @@ exhausted, the Lorentz transformation between two frames of reference
 (Fig 4.1) that have a relative speed of <span class="math notranslate nohighlight">\(\beta_R\)</span> in the positive x
 direction is given by the matrix:</p>
 <div class="math notranslate nohighlight" id="equation-lormat">
-<span class="eqno">(24)<a class="headerlink" href="#equation-lormat" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L}_x(\beta_R) = 
+<span class="eqno">(24)<a class="headerlink" href="#equation-lormat" title="Permalink to this equation">#</a></span>\[\begin{split}\boxed{
+{\cal L}_x(\beta_R) = 
 \begin{bmatrix}
 \gamma_R &amp; -i\beta_R\gamma_R &amp; 0 &amp; 0\\
 i\beta_R\gamma_R &amp; \gamma_R &amp; 0 &amp; 0\\
 0 &amp; 0 &amp; 1 &amp; 0\\
 0 &amp; 0 &amp; 0 &amp; 1
-\end{bmatrix}\end{split}\]</div>
+\end{bmatrix}
+}\end{split}\]</div>
 <p>The subscript <span class="math notranslate nohighlight">\(x\)</span> is to remind us that the relative velocity is
 in the <span class="math notranslate nohighlight">\(x\)</span> direction.  If that were not the case, the matrix
 would look a lot more complicated!  Note that this formulation
@@ -716,7 +715,7 @@ four vector.  You could also write it to return the size of the
 four vector before and after the transformation, so you could verify
 that it hasn’t changed.  You could write the code to set up and
 multiply matrices, or you could write the four equations out
-separately.  Which method would be irrelevant to the output.</p>
+separately.  Which method you use would be irrelevant to the output.</p>
 </div>
 </section>
 </section>

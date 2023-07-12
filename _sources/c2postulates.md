@@ -215,6 +215,15 @@ confusions in special relativity arise from people assuming they just
 know what is going on at another location, without allowing for the
 time it would take to get from one location to another.
 
+
+```{image} images/fande.jpg
+:alt: frankearnest
+:class: bg-primary mb-1
+:width: 700px
+:align: center
+:name: fande
+```
+
 Most of special relativity is about comparing measurements according
 to two different reference frames that are in motion relative to each
 other.  *Special* relativity demands the assumption that the relative
@@ -266,14 +275,6 @@ the speed of light, the predicted relationships **must** reduce to the
 Newtonian predictions when you let the speed be very small.  This
 important check on our imagination is called the correspondence
 principle.
-
-```{image} images/fande.jpg
-:alt: frankearnest
-:class: bg-primary mb-1
-:width: 700px
-:align: center
-:name: fande
-```
 
 ## Model to describe the experimental results.
 

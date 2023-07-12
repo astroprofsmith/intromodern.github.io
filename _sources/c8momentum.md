@@ -49,7 +49,7 @@ The components of the momentum 4-vector introduced in equation
 {eq}`p4def` are
 ```{math}
 :label: p4comp
-[p_4] = m_0[v_4] = m_0 \gamma \frac{[dx_4]}{dt}
+[p_4] = m_0[v_4] = m_0 \gamma \frac{[dx_4]}{dt}=
 \begin{bmatrix}
 icm_0\gamma\\
 m_0\gamma v_x\\
@@ -79,7 +79,7 @@ momentum of a particle, which is usually defined as $\vec{p}\equiv
 m\vec{v}$.  What Newton missed was the factor of $\gamma$. It is not
 surprising that this happened as the value of $\gamma$ for the things
 Newton could observe
-is different from the value 1 by just a few parts in $10^{12}$,
+is different from the value 1 by just a few parts in $10^{12},$
 hardly worth taking into account.
 
 So, let us re-define the physical momentum of a particle as:
@@ -87,9 +87,10 @@ So, let us re-define the physical momentum of a particle as:
 :label: pdef
 \vec{p}\equiv m_0 \gamma \vec{v}
 ```
-which means Eqaution {eq}`p4def` becomes
+which means Equation {eq}`p4def` becomes
 ```{math}
 :label: p4full
+\boxed{
 [p_4] =
 \begin{bmatrix}
 icm_0\gamma\\
@@ -97,6 +98,7 @@ p_x\\
 p_y\\
 p_z
 \end{bmatrix}
+}
 ```
 To check if this 4-vector does follow the dictates of the
 Michelson-Morley experiment, we use the form for the
@@ -235,7 +237,8 @@ where we take $p$ to be the physical momentum (including the $\gamma$!).
 Multiplying both sides by $c^2$ and doing a bit of algebra gives
 ```{math}
 :label: eqcp1
-(cp)^2 +(m_0 c^2)^2 = (\gamma m_0 c^2)^2
+\boxed{
+(cp)^2 +(m_0 c^2)^2 = (\gamma m_0 c^2)^2}
 ```
 The term on the right of Equation {eq}`eqcp1` can be identified
 by making use of the correspondence principle. Expanding the $\gamma$
@@ -263,7 +266,8 @@ associated with the particle when it is at rest.  This is of course the
 rest energy of the particle, giving rise to that most famous of equations,
 ```{math}
 :label: emc2
-E_0 = m_0 c^2
+\boxed{
+E_0 = m_0 c^2}
 ```
 To be completely accurate, then, the kinetic energy should really
 include all those higher order terms.  Not just $1/2mv^2$, but
@@ -314,12 +318,14 @@ The $1/2 mv^2$ rule for kinetic energy that we all learned in introductory
 physics is therefore only an approximation.  A full equation would be
 ```{math}
 :label: etotal
-E_{\rm total} =  \gamma m_0 c^2 = E_0 + KE 
+\boxed{
+E_{\rm total} =  \gamma m_0 c^2 = E_0 + KE }
 ```
 We can use Equation {eq}`eqcp1` to say that
 ```{math}
 :label: etotal2
-E_{\rm total}^2 =  (\gamma m_0 c^2)^2 = E_0^2 + (cp)^2 
+\boxed{
+E_{\rm total}^2 =  (\gamma m_0 c^2)^2 = E_0^2 + (cp)^2 }
 ```
 or we could turn it around and solve for the momentum
 of a particle given its energies:
@@ -335,7 +341,8 @@ cp = \sqrt{E_0^2+2E_0KE+KE^2 - E_0^2} = \sqrt{KE^2+2E_0KE}
 You could pull the KE out of the square root, to get
 ```{math}
 :label: pfrome2
-p = \frac{KE}{c}\sqrt{1+2\frac{E_0}{KE}}
+\boxed{
+p = \frac{KE}{c}\sqrt{1+2\frac{E_0}{KE}}}
 ```
 
 
@@ -364,6 +371,7 @@ that the momentum 4-vector can be written in terms of the physical
 momentum and total energy of the system as:
 ```{math}
 :label: p4fullE
+\boxed{
 [p_4] =
 \begin{bmatrix}
 iE_{\rm tot}/c\\
@@ -371,6 +379,7 @@ p_x\\
 p_y\\
 p_z
 \end{bmatrix}
+}
 ```
 which means the time component of the momentum four vector is telling
 you the total energy of the system.  Many people therefore call the
@@ -391,7 +400,7 @@ known rest and kinetic energy.  If the total energy is rest plus kinetic,
 and the total energy is $\gamma$ times the rest energy, then
 ```{math}
 :label: gamE
-E_{\rm tot} = \gamma E_0 = E_0 + KE \rightarrow \gamma = 1 + \frac{KE}{E_0}
+E_{\rm tot} = \gamma E_0 = E_0 + KE \rightarrow \boxed{\gamma = 1 + \frac{KE}{E_0}}
 ```
 This suggests an easy test for deciding if you have to use the
 relativistic formulae to describe the motion of an object.  If you

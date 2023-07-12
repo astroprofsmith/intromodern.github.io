@@ -174,11 +174,12 @@ K_0 = i\gamma(\vec{F}\cdot\vec{\beta})
 So the Minkowski force becomes
 ```{math}
 :label: M4forcefin
+\boxed{
 [K_4] = 
 \begin{bmatrix}
 i\gamma (\vec{F}\cdot\vec{\beta})\\
 \gamma \vec{F}
-\end{bmatrix}
+\end{bmatrix}}
 ```
 Again, we know from Newtonian mechanics that the rate of
 change of the energy of an object is $\vec{F}\cdot\vec{v}$,
@@ -393,7 +394,8 @@ Since the four-vectors are the same, we can compare the factors out
 front to find that
 ```{math}
 :label: relacc
-\frac{dv}{dt} = \frac{1}{\gamma^3}\frac{F_x}{m_0}
+\boxed{
+\frac{dv}{dt} = \frac{1}{\gamma^3}\frac{F_x}{m_0}}
 ```
 The corrspondance principle check is satisfied because for
 $\gamma\approx 1$, this is just $a=F/m$, as Newton would expect.

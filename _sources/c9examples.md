@@ -181,8 +181,9 @@ the lab reference frame.  The two terms must cancel, if the total momentum
 is to be zero, and that can only happen if
 ```{math}
 :label: betacom
+\boxed{
 \beta_{\rm com} = \frac{cp_i}{E_{\rm lab}} =
-\frac{\sqrt{KE_i^2 + 2 E_{0i}KE_i}}{E_{0i} + KE_i + E_{0t}}
+\frac{\sqrt{KE_i^2 + 2 E_{0i}KE_i}}{E_{0i} + KE_i + E_{0t}}}
 ```
 There really isn't any further simplification one can do to
 Equation {eq}`betacom`.  Every quantity on the right would be
@@ -347,12 +348,16 @@ The part in brackets is clearly the same, so $E_2=\gamma_R(1-\beta_R)E_1$.
 Plug in the definition of $\gamma_R$ to get
 ```{math}
 :label: Edopp
-E_2 = E_1 \frac{1-\beta_R}{\sqrt{1-\beta^2}}
+E_2 = E_1 \frac{1-\beta_R}{\sqrt{1-\beta_R^2}}
 =
- E_1 \frac{1-\beta_R}{\sqrt{(1-\beta)(1+\beta)}}
-= E_1\sqrt{\frac{1-\beta}{1+\beta}}
+ E_1 \frac{1-\beta_R}{\sqrt{(1-\beta_R)(1+\beta_R)}}
+= E_1\sqrt{\frac{1-\beta_R}{1+\beta_R}}
 ```
-Since $\beta\leq 1$, the numerator in Equation {eq}`Edopp` will
+$$\boxed{
+E_2 =  E_1\sqrt{\frac{1-\beta_R}{1+\beta_R}}
+}$$
+
+Since $\beta_R\leq 1$, the numerator in Equation {eq}`Edopp` will
 always be less than the denominator, so as long as the second observer
 is moving to the right (receding from the source of the light),
 she will measure a smaller energy than the first observer would.
@@ -372,12 +377,14 @@ of the light.  So, for light, we often write Equation {eq}`Edopp` in
 terms of frequency ($f$) or wavelength ($\lambda$):
 ```{math}
 :label: Fdopp
-f_2 = f_1\sqrt{\frac{1-\beta}{1+\beta}}
+\boxed{
+f_2 = f_1\sqrt{\frac{1-\beta_R}{1+\beta_R}}}
 ```
 and
 ```{math}
 :label: Ldopp
-\lambda_2 = \lambda_1\sqrt{\frac{1+\beta}{1-\beta}}
+\boxed{
+\lambda_2 = \lambda_1\sqrt{\frac{1+\beta_R}{1-\beta_R}}}
 ```
 Since $\lambda = c/f$, these two equations are reciprocals.
 
@@ -577,7 +584,8 @@ We then use Equation {eq}`betacom` to find the speed of the
 center of momentum frame $\beta_{\rm com}$:
 ```{math}
 :label: betcomcs
-\beta_{\rm com} = \frac{E_{\rm phot}}{E_{\rm phot} + E_0}
+\boxed{
+\beta_{\rm com} = \frac{E_{\rm phot}}{E_{\rm phot} + E_0}}
 ```
 
 Now, we can use the results from the Doppler shift (Equation
@@ -693,8 +701,9 @@ This equation is usually written in a final form by dividing
 both sides by $E_0E_{\rm phot}E_{\rm photlab}$ to get
 ```{math}
 :label: csEeq
+\boxed{
 \frac{1}{E_{\rm photlab}} = \frac{1}{E_{\rm phot}}
-+ \frac{1}{E_0} (1-\cos{\theta})
++ \frac{1}{E_0} (1-\cos{\theta})}
 ```
 Why would you want to write it like this?  Well, first of all it gets
 each energy by itself instead of having three different products of

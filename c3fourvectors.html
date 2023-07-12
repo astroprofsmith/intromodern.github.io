@@ -499,8 +499,8 @@ contravariant version of a four vector should be written as a column,
 as in Equation 6, only without the <span class="math notranslate nohighlight">\(i\)</span>.  The standard notion is to use
 a superscript greek letter to refer to the components, where the Greek
 letter could stand for 0, 1, 2, or 3.  So</p>
-<div class="amsmath math notranslate nohighlight" id="equation-10fbab2b-2ca0-42a2-8243-7c47430b8f31">
-<span class="eqno">(7)<a class="headerlink" href="#equation-10fbab2b-2ca0-42a2-8243-7c47430b8f31" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-8ad244b9-93f9-43d5-9554-6ce91e68513d">
+<span class="eqno">(7)<a class="headerlink" href="#equation-8ad244b9-93f9-43d5-9554-6ce91e68513d" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dx^\alpha =
 \begin{bmatrix}
 cdt\\
@@ -532,20 +532,36 @@ two together, according to the rules of multiplying matrices,
 \[dx_\alpha dx^\alpha = -c^2dt^2 + dx^2+dy^2+dz^2\]</div>
 
 where in that last equation, the 2 does mean squared.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>The reason those relations work (like <span class="math notranslate nohighlight">\(dx_0=-dx^0\)</span>) is because <span class="math notranslate nohighlight">\(dx_\mu\)</span>
+can be written as <span class="math notranslate nohighlight">\(g_{\mu\nu}dx^\nu\)</span>, where <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> is a 4x4
+matrix called “the metric”.  All the off-diagonals of <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span>
+are zero, and the diagonals are <span class="math notranslate nohighlight">\(-1,1,1,1\)</span>.  So if you follow the
+Einstein notation, <span class="math notranslate nohighlight">\(g_{\mu\nu}dx^\nu\)</span> is a row with <span class="math notranslate nohighlight">\((-dx^0,dx^1,
+dx^2,dx^3)\)</span>.  The metric hold the information about the characteristics
+of space – since all the values here are just <span class="math notranslate nohighlight">\(\pm 1\)</span>, we say we
+are in “flat spacetime”.  If the values deviate from 1, we say the
+space is curved.  This becomes the foundation of General Relativity.
+Many people currently working in the field are skipping the <span class="math notranslate nohighlight">\(i\)</span> method
+altogether and going right to this notation from the beginning,
+because it is absolutely
+necessary in GR, but I am going to stick with <span class="math notranslate nohighlight">\(i\)</span> until Chapter 11.</p>
+</aside>
 <p>In this notation, whenever there is a Greek letter that appears twice,
 once up and once down, that is a shorthand for “multiply across the
 row and down the column and add them up”.  It plays the same role as a
 dummy variable in integration, and therefore does not appear in the
 result.  This is called “Einstein summation notation” or just
 “Einstein notation”, and it won’t come up again in this book until we
-apply SR to Electromagnetism in Chapter XX.  I mention it here to stress
+apply SR to Electromagnetism in Chapter 11.  I mention it here to stress
 that using the <span class="math notranslate nohighlight">\(i\)</span> is not the <strong>only</strong> way to keep track of the minus
 sign.</p>
 <p>Once you have the concept of a four-vector, mathematically, it is
 useful to also have a method of displaying them, graphically.  Such a
 graph is called a “spacetime diagram”.  I will give a brief
 introduction to them here, and then we will explore their properties
-in much more depth in the next chapter.</p>
+in much more depth in Chapter 5.</p>
 </section>
 <section id="spacetime-diagrams">
 <h2>Spacetime Diagrams<a class="headerlink" href="#spacetime-diagrams" title="Permalink to this heading">#</a></h2>
@@ -688,8 +704,8 @@ this sequence of events?  (Note: this is not realistic.)</p>
 observers in the reference frame shown in Figure 3.3 could measure the displacement
 and time duration between these events (and we can read them off the graph,
 albiet with no units), and then put them into the four-vector format:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8dafbce4-1c6b-4236-b041-2fe70a6664f5">
-<span class="eqno">(8)<a class="headerlink" href="#equation-8dafbce4-1c6b-4236-b041-2fe70a6664f5" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-090b7696-e072-4d50-afb6-1dc76fef7c34">
+<span class="eqno">(8)<a class="headerlink" href="#equation-090b7696-e072-4d50-afb6-1dc76fef7c34" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4] =
 \begin{bmatrix}
 icdt\\
@@ -755,8 +771,8 @@ in the same place.</p>
 </div>
 <p>We can therefore write a displacement four vector in the reference
 frame at rest with respect to the Earth:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3edebb65-9251-4992-abc0-19eca135bd36">
-<span class="eqno">(9)<a class="headerlink" href="#equation-3edebb65-9251-4992-abc0-19eca135bd36" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-eb7400e9-2932-478a-a03c-a30c3931471e">
+<span class="eqno">(9)<a class="headerlink" href="#equation-eb7400e9-2932-478a-a03c-a30c3931471e" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_\oplus =
 \begin{bmatrix}
 icdt_\oplus\\
@@ -780,8 +796,8 @@ aboard the space craft will measure some time interval, <span class="math notran
 between the time he sees the earth outside of his window and sees
 alpha centauri outside the window. The observer aboard the space craft
 measures a displacement 4-vector:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e0288d85-02de-476f-ac91-3b5f46084c1b">
-<span class="eqno">(10)<a class="headerlink" href="#equation-e0288d85-02de-476f-ac91-3b5f46084c1b" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-d6658760-3465-41af-93fb-d17b153c184f">
+<span class="eqno">(10)<a class="headerlink" href="#equation-d6658760-3465-41af-93fb-d17b153c184f" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm rocket} =
 \begin{bmatrix}
 icdt_{\rm rocket}\\
@@ -798,13 +814,13 @@ nothing to do with the first observer being physically <strong>on</strong> the E
 the <span class="math notranslate nohighlight">\(dt_\oplus\)</span> is measured by the infinite lattice of clocks at
 rest with respect to the Earth.</p>
 <p>The sizes of the two four vectors are:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-81fda014-7294-4354-9f08-36e682636891">
-<span class="eqno">(11)<a class="headerlink" href="#equation-81fda014-7294-4354-9f08-36e682636891" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-143d35c0-b777-46cf-b62b-5641ffc6a4e3">
+<span class="eqno">(11)<a class="headerlink" href="#equation-143d35c0-b777-46cf-b62b-5641ffc6a4e3" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dx_\oplus^2 - (cdt_\oplus)^2 = -(cdt_{\rm rocket})^2
 \end{equation}\]</div>
 <p>Solve for <span class="math notranslate nohighlight">\(dt_{\rm rocket}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-372225e1-0c61-4a9e-a210-076e2b7f64c8">
-<span class="eqno">(12)<a class="headerlink" href="#equation-372225e1-0c61-4a9e-a210-076e2b7f64c8" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-73f9689a-346a-4445-bb41-a8dc12250d8a">
+<span class="eqno">(12)<a class="headerlink" href="#equation-73f9689a-346a-4445-bb41-a8dc12250d8a" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dt_{\rm rocket} = dt_\oplus\sqrt{1-\left(\frac{dx_\oplus}{cdt_\oplus}\right)^2}
 = dt_\oplus \sqrt{1-\beta^2}
 \end{equation}\]</div>
@@ -946,11 +962,13 @@ clock runs slow when measuring time intervals <strong>on the train</strong>.  To
 make the comparison properly, if you wanted to test whether the clock
 on the ground was running slow, because it is moving relative to the
 train, you would have to pick two events at rest with respect to the
-<strong>ground</strong>.  In other words, the phrase really should be “moving clocks
-run slow when measuring the time interval between two events at rest
-in the moing frame.”  Or, more clearly, “a clock at rest with respect
-to two events will measure the shortest possible time interval between
-those two events.”</p>
+<strong>ground</strong>.  In other words, the phrase really should be “moving
+clocks run slow when measuring the time interval between two events at
+rest in the moving frame.”  Or, more clearly, “a clock at rest with
+respect to two events will measure the shortest possible time interval
+between those two events.”  There is only one frame where two events
+are at rest, and that breaks the symmetry underlying the question
+about which clock is moving.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Make sure you understand that nothing in SR makes any demands on what
@@ -970,8 +988,8 @@ the right.  The reference frame at rest with respect to the ground
 is the unprimed frame on the left.  The red dot is the emission of
 the light and the blue dot is the detection of the light.  The
 displacement four vector in the train frame would be:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1f675d49-fd3f-4c2d-ad76-c2b919d24118">
-<span class="eqno">(16)<a class="headerlink" href="#equation-1f675d49-fd3f-4c2d-ad76-c2b919d24118" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-578efb8d-0b41-40bd-b79c-0ec841d1c88e">
+<span class="eqno">(16)<a class="headerlink" href="#equation-578efb8d-0b41-40bd-b79c-0ec841d1c88e" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm train} =
 \begin{bmatrix}
 icdt_0\\
@@ -981,8 +999,8 @@ icdt_0\\
 \end{bmatrix}
 \end{equation}\]</div>
 <p>while the displacement four vector from the ground’s reference frame is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-14de851e-3541-4dbb-9796-68db39ddf4f9">
-<span class="eqno">(17)<a class="headerlink" href="#equation-14de851e-3541-4dbb-9796-68db39ddf4f9" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-9699d47b-2427-4325-ad99-8dc9270d00a5">
+<span class="eqno">(17)<a class="headerlink" href="#equation-9699d47b-2427-4325-ad99-8dc9270d00a5" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm ground} =
 \begin{bmatrix}
 icdt\\
@@ -995,7 +1013,7 @@ vdt\\
 <div class="math notranslate nohighlight">
 \[-c^2dt_0^2 = -c^2dt^2+v^2dt^2,\]</div>
  which is exactly the same as Equation
-<a class="reference internal" href="#equation-eqdxlaser">(14)</a>, which means that, again, <span class="math notranslate nohighlight">\(dt = \gamma dt_0\)</span>.</p>
+<a class="reference internal" href="#equation-eqdxlaser">(14)</a>, which means that, again, <span class="math notranslate nohighlight">\(\boxed{dt = \gamma dt_0}\)</span>.</p>
 <p>Despite what seem to be complete different contexts, the underlying
 physics of the rocket and the train are exactly the same, because
 the rules of time are the same.</p>

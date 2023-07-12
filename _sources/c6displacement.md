@@ -491,7 +491,7 @@ must equal 1920 m.
 \rightarrow \beta_R = \sqrt{\frac{40.96}{1+40.96}} = 0.988
 ```
 Using the relativistically correct analysis gives a speed of the muon
-that is close to, but less than the speed of light.  Note what
+that is close to, but less than, the speed of light.  Note what
 interpretation the experimental results seem to demand: for 73%
 of the muons at the height of Mt. Washington to reach sea level
 in Cambridge, it must seem to them that one microsecond has passed.
@@ -756,7 +756,9 @@ but the term in the parentheses is just $1/\gamma_R^2$!!! So we get
 that
 ```{math}
 :label: lencon
+\boxed{
 \ell_r = \gamma_R\ell_m
+}
 ```
 In other words, as the object moves faster and faster, $\gamma_R$ gets
 bigger and bigger, and therefore $\ell_m$ (the length of the moving

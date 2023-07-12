@@ -235,11 +235,6 @@ i\beta_R\gamma_R & L_{11} & L_{12} & L_{13}\\
 \end{bmatrix}
 ```
 
-Not sure where to go next.  Perhaps use antisymmetric?
-But how do I justify that?  Can I show that dy and dz don't
-come into it?
-
-
 The number of unknowns in the Lorentz transformation matrix has
 decreased from 16 to 6. The rest can be found using similar tricks.
 For example, you could set up the events in Figure 4.1 such that the
@@ -250,6 +245,7 @@ exhausted, the Lorentz transformation between two frames of reference
 direction is given by the matrix:
 ```{math}
 :label: lormat
+\boxed{
 {\cal L}_x(\beta_R) = 
 \begin{bmatrix}
 \gamma_R & -i\beta_R\gamma_R & 0 & 0\\
@@ -257,6 +253,7 @@ i\beta_R\gamma_R & \gamma_R & 0 & 0\\
 0 & 0 & 1 & 0\\
 0 & 0 & 0 & 1
 \end{bmatrix}
+}
 ```
 The subscript $x$ is to remind us that the relative velocity is
 in the $x$ direction.  If that were not the case, the matrix
@@ -408,5 +405,5 @@ four vector.  You could also write it to return the size of the
 four vector before and after the transformation, so you could verify
 that it hasn't changed.  You could write the code to set up and
 multiply matrices, or you could write the four equations out
-separately.  Which method would be irrelevant to the output.
+separately.  Which method you use would be irrelevant to the output.
 ```

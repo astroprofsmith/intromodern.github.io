@@ -166,13 +166,29 @@ $$dx_\alpha dx^\alpha = -dx^0dx^0 + dx^1dx^1+dx^2dx^2+dx^3dx^3$$
 $$dx_\alpha dx^\alpha = -c^2dt^2 + dx^2+dy^2+dz^2$$
 where in that last equation, the 2 does mean squared.
 
+```{margin}
+The reason those relations work (like $dx_0=-dx^0$) is because $dx_\mu$
+can be written as $g_{\mu\nu}dx^\nu$, where $g_{\mu\nu}$ is a 4x4
+matrix called "the metric".  All the off-diagonals of $g_{\mu\nu}$
+are zero, and the diagonals are $-1,1,1,1$.  So if you follow the
+Einstein notation, $g_{\mu\nu}dx^\nu$ is a row with $(-dx^0,dx^1,
+dx^2,dx^3)$.  The metric hold the information about the characteristics
+of space -- since all the values here are just $\pm 1$, we say we
+are in "flat spacetime".  If the values deviate from 1, we say the
+space is curved.  This becomes the foundation of General Relativity.
+Many people currently working in the field are skipping the $i$ method
+altogether and going right to this notation from the beginning,
+because it is absolutely
+necessary in GR, but I am going to stick with $i$ until Chapter 11.
+```
+
 In this notation, whenever there is a Greek letter that appears twice,
 once up and once down, that is a shorthand for "multiply across the
 row and down the column and add them up".  It plays the same role as a
 dummy variable in integration, and therefore does not appear in the
 result.  This is called "Einstein summation notation" or just
 "Einstein notation", and it won't come up again in this book until we
-apply SR to Electromagnetism in Chapter XX.  I mention it here to stress
+apply SR to Electromagnetism in Chapter 11.  I mention it here to stress
 that using the $i$ is not the **only** way to keep track of the minus
 sign.
 
@@ -180,7 +196,7 @@ Once you have the concept of a four-vector, mathematically, it is
 useful to also have a method of displaying them, graphically.  Such a
 graph is called a "spacetime diagram".  I will give a brief
 introduction to them here, and then we will explore their properties
-in much more depth in the next chapter.
+in much more depth in Chapter 5.
 
 %The number of Greek letters you need to specify a particular
 %component is called the "rank".  A four vector only needs one number,
@@ -710,11 +726,13 @@ clock runs slow when measuring time intervals **on the train**.  To
 make the comparison properly, if you wanted to test whether the clock
 on the ground was running slow, because it is moving relative to the
 train, you would have to pick two events at rest with respect to the
-**ground**.  In other words, the phrase really should be "moving clocks
-run slow when measuring the time interval between two events at rest
-in the moing frame."  Or, more clearly, "a clock at rest with respect
-to two events will measure the shortest possible time interval between
-those two events."
+**ground**.  In other words, the phrase really should be "moving
+clocks run slow when measuring the time interval between two events at
+rest in the moving frame."  Or, more clearly, "a clock at rest with
+respect to two events will measure the shortest possible time interval
+between those two events."  There is only one frame where two events
+are at rest, and that breaks the symmetry underlying the question
+about which clock is moving.
 
 ```{note}
 Make sure you understand that nothing in SR makes any demands on what
@@ -756,7 +774,7 @@ vdt\\
 \end{equation}
 Since the size of these four-vectors must be the same, that means
 $$-c^2dt_0^2 = -c^2dt^2+v^2dt^2,$$ which is exactly the same as Equation
-{eq}`eqdxlaser`, which means that, again, $dt = \gamma dt_0$.
+{eq}`eqdxlaser`, which means that, again, $\boxed{dt = \gamma dt_0}$.
 
 Despite what seem to be complete different contexts, the underlying
 physics of the rocket and the train are exactly the same, because

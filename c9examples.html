@@ -515,8 +515,9 @@ speed of the com reference frame if you know the total energy and momentum in
 the lab reference frame.  The two terms must cancel, if the total momentum
 is to be zero, and that can only happen if</p>
 <div class="math notranslate nohighlight" id="equation-betacom">
-<span class="eqno">(106)<a class="headerlink" href="#equation-betacom" title="Permalink to this equation">#</a></span>\[\beta_{\rm com} = \frac{cp_i}{E_{\rm lab}} =
-\frac{\sqrt{KE_i^2 + 2 E_{0i}KE_i}}{E_{0i} + KE_i + E_{0t}}\]</div>
+<span class="eqno">(106)<a class="headerlink" href="#equation-betacom" title="Permalink to this equation">#</a></span>\[\boxed{
+\beta_{\rm com} = \frac{cp_i}{E_{\rm lab}} =
+\frac{\sqrt{KE_i^2 + 2 E_{0i}KE_i}}{E_{0i} + KE_i + E_{0t}}}\]</div>
 <p>There really isn’t any further simplification one can do to
 Equation <a class="reference internal" href="#equation-betacom">(106)</a>.  Every quantity on the right would be
 known as inputs for a given experiment, so you could calculate
@@ -648,11 +649,15 @@ i\\
 <p>The part in brackets is clearly the same, so <span class="math notranslate nohighlight">\(E_2=\gamma_R(1-\beta_R)E_1\)</span>.
 Plug in the definition of <span class="math notranslate nohighlight">\(\gamma_R\)</span> to get</p>
 <div class="math notranslate nohighlight" id="equation-edopp">
-<span class="eqno">(112)<a class="headerlink" href="#equation-edopp" title="Permalink to this equation">#</a></span>\[E_2 = E_1 \frac{1-\beta_R}{\sqrt{1-\beta^2}}
+<span class="eqno">(112)<a class="headerlink" href="#equation-edopp" title="Permalink to this equation">#</a></span>\[E_2 = E_1 \frac{1-\beta_R}{\sqrt{1-\beta_R^2}}
 =
- E_1 \frac{1-\beta_R}{\sqrt{(1-\beta)(1+\beta)}}
-= E_1\sqrt{\frac{1-\beta}{1+\beta}}\]</div>
-<p>Since <span class="math notranslate nohighlight">\(\beta\leq 1\)</span>, the numerator in Equation <a class="reference internal" href="#equation-edopp">(112)</a> will
+ E_1 \frac{1-\beta_R}{\sqrt{(1-\beta_R)(1+\beta_R)}}
+= E_1\sqrt{\frac{1-\beta_R}{1+\beta_R}}\]</div>
+<div class="math notranslate nohighlight">
+\[\boxed{
+E_2 =  E_1\sqrt{\frac{1-\beta_R}{1+\beta_R}}
+}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(\beta_R\leq 1\)</span>, the numerator in Equation <a class="reference internal" href="#equation-edopp">(112)</a> will
 always be less than the denominator, so as long as the second observer
 is moving to the right (receding from the source of the light),
 she will measure a smaller energy than the first observer would.
@@ -670,10 +675,12 @@ case is associated with the frequency (or equivalently, the wavelenth)
 of the light.  So, for light, we often write Equation <a class="reference internal" href="#equation-edopp">(112)</a> in
 terms of frequency (<span class="math notranslate nohighlight">\(f\)</span>) or wavelength (<span class="math notranslate nohighlight">\(\lambda\)</span>):</p>
 <div class="math notranslate nohighlight" id="equation-fdopp">
-<span class="eqno">(113)<a class="headerlink" href="#equation-fdopp" title="Permalink to this equation">#</a></span>\[f_2 = f_1\sqrt{\frac{1-\beta}{1+\beta}}\]</div>
+<span class="eqno">(113)<a class="headerlink" href="#equation-fdopp" title="Permalink to this equation">#</a></span>\[\boxed{
+f_2 = f_1\sqrt{\frac{1-\beta_R}{1+\beta_R}}}\]</div>
 <p>and</p>
 <div class="math notranslate nohighlight" id="equation-ldopp">
-<span class="eqno">(114)<a class="headerlink" href="#equation-ldopp" title="Permalink to this equation">#</a></span>\[\lambda_2 = \lambda_1\sqrt{\frac{1+\beta}{1-\beta}}\]</div>
+<span class="eqno">(114)<a class="headerlink" href="#equation-ldopp" title="Permalink to this equation">#</a></span>\[\boxed{
+\lambda_2 = \lambda_1\sqrt{\frac{1+\beta_R}{1-\beta_R}}}\]</div>
 <p>Since <span class="math notranslate nohighlight">\(\lambda = c/f\)</span>, these two equations are reciprocals.</p>
 <p>Since Equation <a class="reference internal" href="#equation-fdopp">(113)</a> says the photons will be shifted toward
 smaller frequencies if the relative velocity of the source and
@@ -785,7 +792,8 @@ direction.</p>
 <p>We then use Equation <a class="reference internal" href="#equation-betacom">(106)</a> to find the speed of the
 center of momentum frame <span class="math notranslate nohighlight">\(\beta_{\rm com}\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-betcomcs">
-<span class="eqno">(116)<a class="headerlink" href="#equation-betcomcs" title="Permalink to this equation">#</a></span>\[\beta_{\rm com} = \frac{E_{\rm phot}}{E_{\rm phot} + E_0}\]</div>
+<span class="eqno">(116)<a class="headerlink" href="#equation-betcomcs" title="Permalink to this equation">#</a></span>\[\boxed{
+\beta_{\rm com} = \frac{E_{\rm phot}}{E_{\rm phot} + E_0}}\]</div>
 <p>Now, we can use the results from the Doppler shift (Equation
 <a class="reference internal" href="#equation-edopp">(112)</a>) to find the energy of the photon before the collision in
 the com reference frame.</p>
@@ -879,8 +887,9 @@ E_0E_{\rm phot}\]</div>
 <p>This equation is usually written in a final form by dividing
 both sides by <span class="math notranslate nohighlight">\(E_0E_{\rm phot}E_{\rm photlab}\)</span> to get</p>
 <div class="math notranslate nohighlight" id="equation-cseeq">
-<span class="eqno">(125)<a class="headerlink" href="#equation-cseeq" title="Permalink to this equation">#</a></span>\[\frac{1}{E_{\rm photlab}} = \frac{1}{E_{\rm phot}}
-+ \frac{1}{E_0} (1-\cos{\theta})\]</div>
+<span class="eqno">(125)<a class="headerlink" href="#equation-cseeq" title="Permalink to this equation">#</a></span>\[\boxed{
+\frac{1}{E_{\rm photlab}} = \frac{1}{E_{\rm phot}}
++ \frac{1}{E_0} (1-\cos{\theta})}\]</div>
 <p>Why would you want to write it like this?  Well, first of all it gets
 each energy by itself instead of having three different products of
 two energies, so it’s simpler in that regard.  More importantly,

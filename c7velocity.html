@@ -443,13 +443,25 @@ have understood the term.</p>
 to convert <span class="math notranslate nohighlight">\(dt_0\)</span> to <span class="math notranslate nohighlight">\(dt\)</span>.  Equation <a class="reference internal" href="#equation-eq4v0">(62)</a> then can be
 written as:</p>
 <div class="math notranslate nohighlight" id="equation-eq4vgam">
-<span class="eqno">(63)<a class="headerlink" href="#equation-eq4vgam" title="Permalink to this equation">#</a></span>\[\begin{split}[v_4] = \frac{[dx_4]}{dt_0} = \gamma \frac{[dx_4]}{dt}
+<span class="eqno">(63)<a class="headerlink" href="#equation-eq4vgam" title="Permalink to this equation">#</a></span>\[\begin{split}[v_4] = \frac{[dx_4]}{dt_0} = \gamma \frac{[dx_4]}{dt}=
 \begin{bmatrix}
 ic\gamma\\
 \gamma v_x\\
 \gamma v_y\\
 \gamma v_z
 \end{bmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\boxed{
+[v_4] =
+\gamma
+\begin{bmatrix}
+ic\\
+v_x\\
+v_y\\
+v_z
+\end{bmatrix}
+}
+\end{split}\]</div>
 <p>According to the correspondence principle, the theory we call special
 relativity has to reduce to Newton’s mechanics when <span class="math notranslate nohighlight">\(\beta\ll 1\)</span>. As
 <span class="math notranslate nohighlight">\(\beta\)</span> approaches 0, <span class="math notranslate nohighlight">\(\gamma\)</span> approaches 1. Notice that the three
@@ -491,6 +503,8 @@ scalar. The size of the 4-velocity is:</p>
 <p>factor out the gamma and use <span class="math notranslate nohighlight">\(v^2=v_x^2+v_y^2+v_z^2\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-sizev4b">
 <span class="eqno">(65)<a class="headerlink" href="#equation-sizev4b" title="Permalink to this equation">#</a></span>\[[v_4]^2 = \gamma^2 (v^2-c^2) = -c^2\gamma^2\left(1-\left(\frac{v}{c}\right)^2\right) = -c^2\gamma^2(1-\beta^2) = -c^2\]</div>
+<div class="math notranslate nohighlight">
+\[\boxed{[v_4]^2 = -c^2}\]</div>
 <p>Once again, the size of a 4-vector is a negative number. The experimental
 evidence is that the speed of light has the same value for all inertial
 observers, the size of the 4-velocity is a scalar quantity. The 4-velocity
@@ -513,11 +527,25 @@ i\gamma\\
 \gamma \beta_y\\
 \gamma \beta_z
 \end{bmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\boxed{
+[\beta_4] =
+\gamma
+\begin{bmatrix}
+i\\
+\beta_x\\
+\beta_y\\
+\beta_z
+\end{bmatrix}
+}
+\end{split}\]</div>
 <p>Note that the size of the beta four vector that you get if you square
 and add the terms is <span class="math notranslate nohighlight">\(-1\)</span>, which is just what you would expect if you
 took the square of the four velocity and divided by <span class="math notranslate nohighlight">\(c^2\)</span>.  The constant
 <span class="math notranslate nohighlight">\(-1\)</span> is of course also invarient across reference frames, and therefore
-also a Lorentz scalar, as the size of a four vector must be.</p>
+also a Lorentz scalar, as the size of a four vector must be.  In a sense,
+this is like defining a unit vector with a length of 1, only we are
+defining it to be 1 in the time direction.</p>
 </section>
 <section id="addition-of-velocities">
 <h2>Addition of Velocities<a class="headerlink" href="#addition-of-velocities" title="Permalink to this heading">#</a></h2>
@@ -647,7 +675,8 @@ a consistent notation, it’s easier to hold the connections in your head.</p>
 
 cancel common factors to get</p>
 <div class="math notranslate nohighlight" id="equation-veladd1">
-<span class="eqno">(70)<a class="headerlink" href="#equation-veladd1" title="Permalink to this equation">#</a></span>\[\beta' = \frac{\beta - \beta_R}{1-\beta\beta_R}\]</div>
+<span class="eqno">(70)<a class="headerlink" href="#equation-veladd1" title="Permalink to this equation">#</a></span>\[\boxed{
+\beta' = \frac{\beta - \beta_R}{1-\beta\beta_R}}\]</div>
 <p>This is known as <strong>the velocity addition formula</strong>.  Note that
 although it is quite different from what Newton or Galileo would have
 expected, it does meet all the conditions we laid out before we
