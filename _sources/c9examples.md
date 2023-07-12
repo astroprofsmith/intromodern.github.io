@@ -408,3 +408,347 @@ of source or receiver is equivalent and indistinguishable.
 
 
 ## Compton Scattering
+
+
+### Experimental Background
+
+
+Photon-electron scattering, called Compton scattering [A.H. Compton,
+Phys. Rev. 21, p. 715 (1923), and Phys. Rev., 22, p. 409 (1923)], was
+proposed by Arthur Compton as a way of finding out if the relativistic
+model of a photon having a momentum $p=E/c$ was valid. It seemed
+impossible that a particle with no mass (zero rest energy) could have
+momentum.
+
+Compton shot 17.5 keV X-ray photons at a carbon target as
+schematically shown in Figure 9.2. If the relativistic model were not
+wrong, the photons would interact with the valence electrons (those
+that are not tightly bound to the nucleus, typically 11 eV binding
+energy) in the atom.  According to relativity, the interaction should
+be similar to that of billiard balls colliding. The valence electron
+would get scattered at some angle $\phi$ and the scattered photon would be
+emitted at some other angle $\theta$ as schematically shown in
+Figure 9.3.
+
+
+```{code-cell}
+:tags: ["remove-input"]
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
+fig.suptitle('Photon Collides with an Electron: Lab Frame')
+ax1.arrow(0,0,2,0,head_width=0.1)
+ax1.arrow(0,0,0,2,head_width=0.1)
+ax1.arrow(0.2,1.0,.8,0,head_width=0.1)
+
+ax1.get_xaxis().set_visible(False)
+ax1.get_yaxis().set_visible(False)
+ax1.axis([-.3,2.7,-.3,2.7])
+ax1.text(0.0, 2.5, "y")
+ax1.text(2.5, 0, "x")
+ax1.text(0.2, 1.2, "photon p")
+ax1.text(1.8, 1.2, "e-")
+ax1.set_title('Before Collision')
+
+ax1.plot([1.8],[1.0],'ro')
+
+ax2.arrow(0,0,2,0,head_width=0.1)
+ax2.arrow(0,0,0,2,head_width=0.1)
+ax2.arrow(1.0,1.0,.5,-.3,head_width=0.1,length_includes_head=True)
+ax2.arrow(1.0,1.0,.3,.5,head_width=0.1,length_includes_head=True)
+
+ax2.get_xaxis().set_visible(False)
+ax2.get_yaxis().set_visible(False)
+ax2.axis([-.3,2.7,-.3,2.7])
+ax2.text(0.0, 2.5, "y")
+ax2.text(2.5, 0, "x")
+ax2.text(1.0, 1.7, "photon p")
+ax2.text(1.5, 0.4, "e- p")
+
+ax2.text(1.3, 1.2, r"$\theta$")
+ax2.text(1.5, 0.85, r"$\phi$")
+
+ax2.plot([1.5],[0.7],'ro')
+ax2.plot([1.0,2.0],[1.0,1.0],'k:')
+
+ax2.set_title('After Collision')
+plt.show()
+```
+```{note}
+Figure 9.2 -- Schematic diagram of a photon scattering off of an
+electron within the frame of reference of the laboratory.  The left
+side shows the situation before the collision, while the right side
+shows the scattering after the collision.  Note that these are **NOT**
+spacetime diagrams.  Both axes are spatial dimensions.  The arrows
+represent momentum.  Before the collision, the electron (red dot)
+is at rest and the $x$ axis is chosen to align with the incoming
+photon momentum.  After the collision, the photon is traveling
+with an angle $\theta$ with regards to the horizontal, while the
+electon now has a momentum, and is moving with an angle $\phi$
+below the horizontal.  The sum of the momenta of the photon and
+the electron after the collision is equal to the momentum of the
+photon before the collision.
+```
+
+```{code-cell}
+:tags: ["remove-input"]
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
+fig.suptitle('Photon Collides with an Electron: Center of Momentum Frame')
+ax1.arrow(0,0,2,0,head_width=0.1)
+ax1.arrow(0,0,0,2,head_width=0.1)
+ax1.arrow(0.2,1.0,.5,0,head_width=0.1)
+ax1.arrow(1.7,1.0,-.5,0,head_width=0.1)
+
+ax1.get_xaxis().set_visible(False)
+ax1.get_yaxis().set_visible(False)
+ax1.axis([-.3,2.7,-.3,2.7])
+ax1.text(0.0, 2.5, "y")
+ax1.text(2.5, 0, "x")
+ax1.text(0.2, 1.2, "photon p")
+ax1.text(1.8, 1.2, "e- p")
+ax1.set_title('Before Collision')
+
+ax1.plot([1.05],[1.0],'ro')
+
+ax2.arrow(0,0,2,0,head_width=0.1)
+ax2.arrow(0,0,0,2,head_width=0.1)
+ax2.arrow(1.0,1.0,.3,.5,head_width=0.1,length_includes_head=True)
+ax2.arrow(1.0,1.0,-.3,-.5,head_width=0.1,length_includes_head=True)
+
+ax2.get_xaxis().set_visible(False)
+ax2.get_yaxis().set_visible(False)
+ax2.axis([-.3,2.7,-.3,2.7])
+ax2.text(0.0, 2.5, "y")
+ax2.text(2.5, 0, "x")
+ax2.text(1.0, 1.7, "photon p")
+ax2.text(.3, 0.4, "e- p")
+
+ax2.text(1.3, 1.1, r"$\xi$")
+
+ax2.plot([.7],[0.5],'ro')
+ax2.plot([0.2,2.0],[1.0,1.0],'k:')
+
+ax2.set_title('After Collision')
+plt.show()
+```
+```{note}
+Figure 9.3 -- Schematic diagram of a photon scattering off of an
+electron within the center of momentum frame of reference. The left
+side shows the situation before the collision, while the right side
+shows the scattering after the collision.  Note that these are **NOT**
+spacetime diagrams.  Both axes are spatial dimensions.  The arrows
+represent momentum.  Before the collision, the electron (red dot)
+has a momentum equal and opposite to the photon momentum.
+After the collision, the photon and the electron both still have
+equal and opposite momentum, but the angle of their motion has
+changed completely. The photon now makes an angle of $\xi$
+with the horizontal axis.
+```
+
+The energy and momenta of the scattered particles would be determined
+by momentum and energy conservation. Compton worked out the theory for
+the scattering and did the experiment. He measured the energy of the
+scattered photons as a function of angle $\theta$. The theory and
+experiment were in beautiful agreement, giving a clear confirmation of
+the relativistic theory. For this work, Arthur Compton was awarded the
+1927 Nobel Prize in physics.
+
+### Special Relativistic Model
+
+
+In the laboratory frame (Figure 9.2), the momentum 4-vector for the
+system is
+```{math}
+:label: p4totcs
+[p_4]_{\rm lab} =
+\begin{bmatrix}
+i\frac{1}{c}(E_{\rm phot} + E_{0})\\
+\frac{E_{\rm phot}}{c}\\
+0\\
+0
+\end{bmatrix}
+```
+where $E_0$ is the rest energy of the electron and $E_{\rm phot}/c$
+is the momentum of the photon.
+
+I am **not** going to ignore $y$ and $z$ for this problem, because
+we will need to consider the motion of the particles in the $y$
+direction.
+
+We then use Equation {eq}`betacom` to find the speed of the
+center of momentum frame $\beta_{\rm com}$:
+```{math}
+:label: betcomcs
+\beta_{\rm com} = \frac{E_{\rm phot}}{E_{\rm phot} + E_0}
+```
+
+Now, we can use the results from the Doppler shift (Equation
+{eq}`Edopp`) to find the energy of the photon before the collision in
+the com reference frame.
+```{math}
+:label: ephotcomcs
+E_{\rm photcom} = \gamma_{\rm com}(1-\beta_{\rm com})E_{\rm phot}
+```
+After the
+collision (see Figure 9.3), the scattered photon and the recoiling
+electron still must have a total momentum of 0 and the same total
+energy as before the collision. The only way for this to happen at any
+angle $\xi$ for the two scattered particles to have the same size
+momentum as they did before the collision.
+
+So after the collision, the energy of the scattered photon is still
+the same as in Equation {eq}`ephotcomcs`. It is just going out at an
+angle $\xi$ with respect to the x axis. The 4-momentum of this scattered
+photon is
+```{math}
+:label: p4gcomaftcs
+[p_4]_{\rm photcom~AFTER} =
+\begin{bmatrix}
+i\frac{E_{\rm photcom}}{c}\\
+\frac{E_{\rm photcom}}{c}\cos{\xi}\\
+\frac{E_{\rm photcom}}{c}\sin{\xi}\\
+0
+\end{bmatrix}
+```
+This is the same photon that is scattered at an angle $\theta$ 
+and has energy $E_{\rm phot}$ in the laboratory reference frame.
+The 4-momentum for this same photon in the laboratory frame after
+the scattering is
+```{math}
+:label: p4glabaftcs
+[p_4]_{\rm phot~AFTER} =
+\begin{bmatrix}
+i\frac{E_{\rm photlab}}{c}\\
+\frac{E_{\rm photlab}}{c}\cos{\theta}\\
+\frac{E_{\rm photlab}}{c}\sin{\theta}\\
+0
+\end{bmatrix}
+```
+As you might suspect, the way to connect these two four vectors is
+through a Lorentz transformation!
+```{math}
+:label: p4lorentzcs
+\begin{bmatrix}
+i\frac{E_{\rm photcom}}{c}\\
+\frac{E_{\rm photcom}}{c}\cos{\xi}\\
+\frac{E_{\rm photcom}}{c}\sin{\xi}\\
+0
+\end{bmatrix}
+=
+\begin{bmatrix}
+\gamma_{\rm com} & -i\beta_{\rm com}\gamma_{\rm com} & 0 & 0\\
+i\beta_{\rm com}\gamma_{\rm com} & \gamma_{\rm com} & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1 
+\end{bmatrix}
+\begin{bmatrix}
+i\frac{E_{\rm photlab}}{c}\\
+\frac{E_{\rm photlab}}{c}\cos{\theta}\\
+\frac{E_{\rm photlab}}{c}\sin{\theta}\\
+0
+\end{bmatrix}
+```
+
+Multiplyting out the time component yields
+```{math}
+:label: cstime
+E_{\rm photcom} = \gamma_{\rm com}
+E_{\rm photlab}(1-\beta_{\rm com}\cos{\theta}) =
+\gamma_{\rm com}(1-\beta_{\rm com})E_{\rm phot}
+```
+where the rightmost term is the energy of the photon
+before the collision, in the lab frame.
+
+The factors of $\gamma_{\rm com}$ cancel, and we can substitute
+in Equation {eq}`betcomcs` for $\beta_{\rm com}$ to get
+Multiplyting out the time component yields
+```{math}
+:label: cstime1
+E_{\rm photlab}\left(1-
+\frac{E_{\rm phot}}{E_{\rm phot} + E_0}\cos{\theta}\right) =
+\left(1- \frac{E_{\rm phot}}{E_{\rm phot} + E_0}\right)E_{\rm phot}
+```
+Find a common denominator to get rid of the ones:
+```{math}
+:label: cstime2
+E_{\rm photlab}\left(
+\frac{E_0+E_{\rm phot}(1-\cos{\theta})}{E_{\rm phot} + E_0}\right)
+=
+\left(\frac{E_0}{E_{\rm phot} + E_0}\right)E_{\rm phot}
+```
+Cancel the denominator:
+```{math}
+:label: cstime3
+E_{\rm photlab}\left(
+E_0+E_{\rm phot}(1-\cos{\theta})\right)
+=
+E_0E_{\rm phot}
+```
+This equation is usually written in a final form by dividing
+both sides by $E_0E_{\rm phot}E_{\rm photlab}$ to get
+```{math}
+:label: csEeq
+\frac{1}{E_{\rm photlab} = \frac{1}{E_{\rm phot}}
++ \frac{1}{E_0} (1-\cos{\theta})\right)
+```
+Why would you want to write it like this?  Well, if you, like Compton,
+did an experiment where you varied $\theta$ by placing your detector
+(which measures $E_{\rm photlab}$) at different angles, then you could
+make a plot where your horizontal axis is $(1-\cos{\theta})$ and your
+vertical axis is $1/E_{\rm photlab}$, then you would expect to see
+a straight line relationship, where the y-intercept is not differnt
+from the known original value of $1/E_{\rm phot}$.  In which case
+you could interpret the slope of the line as giving you an estimate
+of $1/E_0$, which would mean that the reciprocal of the slope would
+be an estimate of the rest energy of the electron!
+
+Equation {eq}`csEeq`, which was derived assuming that the photon acts
+like a particle with momentum given by $p=E/c$, demanding that
+physical momentum and total energy be conserved in any particular
+reference frame and using the Lorentz transformation to move
+between two different inertial reference frames, predicts this
+simple linear relationship between measured energy of the
+scattered photon (reciprocal) and the angle of the scattering
+(expressed as $1-\cos{\theta}$).  We just need a linear plot
+to carry out the test!
+
+Unfortunately, Arthur Compton's Nobel Prize-winning 1923 paper does
+not actually include such a plot, but he does include the original
+spectra he recorded that show the energy shift for eight different
+values of $\theta$.  From these graphs, it is possible to measure
+$E_{\rm photlab}$ and construct the graph we need to test the
+hypothesis posed by Equation {eq}`csEeq`.  Such a graph for four of
+the measurements reported in 1923 is shown in Figure 9.4.
+
+Note the excellent agreement between experiment and the predictions
+of Equation {eq}`csEeq`! Check the y-intercept.
+The best fit slope in Figure 9.4 is
+XXX, which means the best estimate of the rest mass of
+the electron from this experiment is YYY
+This is within ZZ $\sigma$ of the current accepted value,
+$0.511$ MeV.
+
+
+```{code-cell}
+:tags: ["remove-input"]
+x = np.array([0.00727916669899,0.291343510515,1.00907060776,1.72012215409])
+y = np.array([0.000143505126673,0.000682172607672,0.00198582395962,0.00341847052919])+0.057
+z = np.polyfit(x, y, 2)
+f = np.poly1d(z)
+x_new = np.linspace(x[0], x[-1], 50)
+y_new = f(x_new)
+
+print(1/z[1],1/z[2])
+
+plt.figure(figsize=(8,8))
+plt.plot(x,y,'bs',label="Original Data")
+plt.plot(x_new,y_new,"k:",label="Linear Fit")
+plt.xlabel(r"1-$\cos{\theta}$")
+plt.ylabel("1/E scattered (1/keV)")
+plt.title("Testing Compton Scattering Hypothesis")
+plt.legend()
+plt.show()
+
+```
+```{note}
+Figure 9.4 -- Graph constructed from measurements reported
+in Compton's 1923 paper.
+```

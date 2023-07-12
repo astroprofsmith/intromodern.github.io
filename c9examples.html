@@ -365,7 +365,11 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-center-of-momentum-frame">The Center of Momentum Frame</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photons-and-the-doppler-shift">Photons and the Doppler Shift</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compton-scattering">Compton Scattering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compton-scattering">Compton Scattering</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experimental-background">Experimental Background</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#special-relativistic-model">Special Relativistic Model</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -696,6 +700,227 @@ of source or receiver is equivalent and indistinguishable.</p>
 </section>
 <section id="compton-scattering">
 <h2>Compton Scattering<a class="headerlink" href="#compton-scattering" title="Permalink to this heading">#</a></h2>
+<section id="experimental-background">
+<h3>Experimental Background<a class="headerlink" href="#experimental-background" title="Permalink to this heading">#</a></h3>
+<p>Photon-electron scattering, called Compton scattering [A.H. Compton,
+Phys. Rev. 21, p. 715 (1923), and Phys. Rev., 22, p. 409 (1923)], was
+proposed by Arthur Compton as a way of finding out if the relativistic
+model of a photon having a momentum <span class="math notranslate nohighlight">\(p=E/c\)</span> was valid. It seemed
+impossible that a particle with no mass (zero rest energy) could have
+momentum.</p>
+<p>Compton shot 17.5 keV X-ray photons at a carbon target as
+schematically shown in Figure 9.2. If the relativistic model were not
+wrong, the photons would interact with the valence electrons (those
+that are not tightly bound to the nucleus, typically 11 eV binding
+energy) in the atom.  According to relativity, the interaction should
+be similar to that of billiard balls colliding. The valence electron
+would get scattered at some angle <span class="math notranslate nohighlight">\(\phi\)</span> and the scattered photon would be
+emitted at some other angle <span class="math notranslate nohighlight">\(\theta\)</span> as schematically shown in
+Figure 9.3.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/4acb928d895d3c49e347b6a8e636cdcef86d6e37fdb4b9c1a5b11968d4be052c.png" src="_images/4acb928d895d3c49e347b6a8e636cdcef86d6e37fdb4b9c1a5b11968d4be052c.png" />
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Figure 9.2 – Schematic diagram of a photon scattering off of an
+electron within the frame of reference of the laboratory.  The left
+side shows the situation before the collision, while the right side
+shows the scattering after the collision.  Note that these are <strong>NOT</strong>
+spacetime diagrams.  Both axes are spatial dimensions.  The arrows
+represent momentum.  Before the collision, the electron (red dot)
+is at rest and the <span class="math notranslate nohighlight">\(x\)</span> axis is chosen to align with the incoming
+photon momentum.  After the collision, the photon is traveling
+with an angle <span class="math notranslate nohighlight">\(\theta\)</span> with regards to the horizontal, while the
+electon now has a momentum, and is moving with an angle <span class="math notranslate nohighlight">\(\phi\)</span>
+below the horizontal.  The sum of the momenta of the photon and
+the electron after the collision is equal to the momentum of the
+photon before the collision.</p>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/6b455fd207e9903d20f71a4d6c8998008b5193bccd99e50f9ea0734663374790.png" src="_images/6b455fd207e9903d20f71a4d6c8998008b5193bccd99e50f9ea0734663374790.png" />
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Figure 9.3 – Schematic diagram of a photon scattering off of an
+electron within the center of momentum frame of reference. The left
+side shows the situation before the collision, while the right side
+shows the scattering after the collision.  Note that these are <strong>NOT</strong>
+spacetime diagrams.  Both axes are spatial dimensions.  The arrows
+represent momentum.  Before the collision, the electron (red dot)
+has a momentum equal and opposite to the photon momentum.
+After the collision, the photon and the electron both still have
+equal and opposite momentum, but the angle of their motion has
+changed completely. The photon now makes an angle of <span class="math notranslate nohighlight">\(\xi\)</span>
+with the horizontal axis.</p>
+</div>
+<p>The energy and momenta of the scattered particles would be determined
+by momentum and energy conservation. Compton worked out the theory for
+the scattering and did the experiment. He measured the energy of the
+scattered photons as a function of angle <span class="math notranslate nohighlight">\(\theta\)</span>. The theory and
+experiment were in beautiful agreement, giving a clear confirmation of
+the relativistic theory. For this work, Arthur Compton was awarded the
+1927 Nobel Prize in physics.</p>
+</section>
+<section id="special-relativistic-model">
+<h3>Special Relativistic Model<a class="headerlink" href="#special-relativistic-model" title="Permalink to this heading">#</a></h3>
+<p>In the laboratory frame (Figure 9.2), the momentum 4-vector for the
+system is</p>
+<div class="math notranslate nohighlight" id="equation-p4totcs">
+<span class="eqno">(115)<a class="headerlink" href="#equation-p4totcs" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm lab} =
+\begin{bmatrix}
+i\frac{1}{c}(E_{\rm phot} + E_{0})\\
+\frac{E_{\rm phot}}{c}\\
+0\\
+0
+\end{bmatrix}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(E_0\)</span> is the rest energy of the electron and <span class="math notranslate nohighlight">\(E_{\rm phot}/c\)</span>
+is the momentum of the photon.</p>
+<p>I am <strong>not</strong> going to ignore <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> for this problem, because
+we will need to consider the motion of the particles in the <span class="math notranslate nohighlight">\(y\)</span>
+direction.</p>
+<p>We then use Equation <a class="reference internal" href="#equation-betacom">(106)</a> to find the speed of the
+center of momentum frame <span class="math notranslate nohighlight">\(\beta_{\rm com}\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-betcomcs">
+<span class="eqno">(116)<a class="headerlink" href="#equation-betcomcs" title="Permalink to this equation">#</a></span>\[\beta_{\rm com} = \frac{E_{\rm phot}}{E_{\rm phot} + E_0}\]</div>
+<p>Now, we can use the results from the Doppler shift (Equation
+<a class="reference internal" href="#equation-edopp">(112)</a>) to find the energy of the photon before the collision in
+the com reference frame.</p>
+<div class="math notranslate nohighlight" id="equation-ephotcomcs">
+<span class="eqno">(117)<a class="headerlink" href="#equation-ephotcomcs" title="Permalink to this equation">#</a></span>\[E_{\rm photcom} = \gamma_{\rm com}(1-\beta_{\rm com})E_{\rm phot}\]</div>
+<p>After the
+collision (see Figure 9.3), the scattered photon and the recoiling
+electron still must have a total momentum of 0 and the same total
+energy as before the collision. The only way for this to happen at any
+angle <span class="math notranslate nohighlight">\(\xi\)</span> for the two scattered particles to have the same size
+momentum as they did before the collision.</p>
+<p>So after the collision, the energy of the scattered photon is still
+the same as in Equation <a class="reference internal" href="#equation-ephotcomcs">(117)</a>. It is just going out at an
+angle <span class="math notranslate nohighlight">\(\xi\)</span> with respect to the x axis. The 4-momentum of this scattered
+photon is</p>
+<div class="math notranslate nohighlight" id="equation-p4gcomaftcs">
+<span class="eqno">(118)<a class="headerlink" href="#equation-p4gcomaftcs" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm photcom~AFTER} =
+\begin{bmatrix}
+i\frac{E_{\rm photcom}}{c}\\
+\frac{E_{\rm photcom}}{c}\cos{\xi}\\
+\frac{E_{\rm photcom}}{c}\sin{\xi}\\
+0
+\end{bmatrix}\end{split}\]</div>
+<p>This is the same photon that is scattered at an angle <span class="math notranslate nohighlight">\(\theta\)</span>
+and has energy <span class="math notranslate nohighlight">\(E_{\rm phot}\)</span> in the laboratory reference frame.
+The 4-momentum for this same photon in the laboratory frame after
+the scattering is</p>
+<div class="math notranslate nohighlight" id="equation-p4glabaftcs">
+<span class="eqno">(119)<a class="headerlink" href="#equation-p4glabaftcs" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm phot~AFTER} =
+\begin{bmatrix}
+i\frac{E_{\rm photlab}}{c}\\
+\frac{E_{\rm photlab}}{c}\cos{\theta}\\
+\frac{E_{\rm photlab}}{c}\sin{\theta}\\
+0
+\end{bmatrix}\end{split}\]</div>
+<p>As you might suspect, the way to connect these two four vectors is
+through a Lorentz transformation!</p>
+<div class="math notranslate nohighlight" id="equation-p4lorentzcs">
+<span class="eqno">(120)<a class="headerlink" href="#equation-p4lorentzcs" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
+i\frac{E_{\rm photcom}}{c}\\
+\frac{E_{\rm photcom}}{c}\cos{\xi}\\
+\frac{E_{\rm photcom}}{c}\sin{\xi}\\
+0
+\end{bmatrix}
+=
+\begin{bmatrix}
+\gamma_{\rm com} &amp; -i\beta_{\rm com}\gamma_{\rm com} &amp; 0 &amp; 0\\
+i\beta_{\rm com}\gamma_{\rm com} &amp; \gamma_{\rm com} &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1 
+\end{bmatrix}
+\begin{bmatrix}
+i\frac{E_{\rm photlab}}{c}\\
+\frac{E_{\rm photlab}}{c}\cos{\theta}\\
+\frac{E_{\rm photlab}}{c}\sin{\theta}\\
+0
+\end{bmatrix}\end{split}\]</div>
+<p>Multiplyting out the time component yields</p>
+<div class="math notranslate nohighlight" id="equation-cstime">
+<span class="eqno">(121)<a class="headerlink" href="#equation-cstime" title="Permalink to this equation">#</a></span>\[E_{\rm photcom} = \gamma_{\rm com}
+E_{\rm photlab}(1-\beta_{\rm com}\cos{\theta}) =
+\gamma_{\rm com}(1-\beta_{\rm com})E_{\rm phot}\]</div>
+<p>where the rightmost term is the energy of the photon
+before the collision, in the lab frame.</p>
+<p>The factors of <span class="math notranslate nohighlight">\(\gamma_{\rm com}\)</span> cancel, and we can substitute
+in Equation <a class="reference internal" href="#equation-betcomcs">(116)</a> for <span class="math notranslate nohighlight">\(\beta_{\rm com}\)</span> to get
+Multiplyting out the time component yields</p>
+<div class="math notranslate nohighlight" id="equation-cstime1">
+<span class="eqno">(122)<a class="headerlink" href="#equation-cstime1" title="Permalink to this equation">#</a></span>\[E_{\rm photlab}\left(1-
+\frac{E_{\rm phot}}{E_{\rm phot} + E_0}\cos{\theta}\right) =
+\left(1- \frac{E_{\rm phot}}{E_{\rm phot} + E_0}\right)E_{\rm phot}\]</div>
+<p>Find a common denominator to get rid of the ones:</p>
+<div class="math notranslate nohighlight" id="equation-cstime2">
+<span class="eqno">(123)<a class="headerlink" href="#equation-cstime2" title="Permalink to this equation">#</a></span>\[E_{\rm photlab}\left(
+\frac{E_0+E_{\rm phot}(1-\cos{\theta})}{E_{\rm phot} + E_0}\right)
+=
+\left(\frac{E_0}{E_{\rm phot} + E_0}\right)E_{\rm phot}\]</div>
+<p>Cancel the denominator:</p>
+<div class="math notranslate nohighlight" id="equation-cstime3">
+<span class="eqno">(124)<a class="headerlink" href="#equation-cstime3" title="Permalink to this equation">#</a></span>\[E_{\rm photlab}\left(
+E_0+E_{\rm phot}(1-\cos{\theta})\right)
+=
+E_0E_{\rm phot}\]</div>
+<p>This equation is usually written in a final form by dividing
+both sides by <span class="math notranslate nohighlight">\(E_0E_{\rm phot}E_{\rm photlab}\)</span> to get</p>
+<div class="math notranslate nohighlight" id="equation-cseeq">
+<span class="eqno">(125)<a class="headerlink" href="#equation-cseeq" title="Permalink to this equation">#</a></span>\[\frac{1}{E_{\rm photlab} = \frac{1}{E_{\rm phot}}
++ \frac{1}{E_0} (1-\cos{\theta})\right)\]</div>
+<p>Why would you want to write it like this?  Well, if you, like Compton,
+did an experiment where you varied <span class="math notranslate nohighlight">\(\theta\)</span> by placing your detector
+(which measures <span class="math notranslate nohighlight">\(E_{\rm photlab}\)</span>) at different angles, then you could
+make a plot where your horizontal axis is <span class="math notranslate nohighlight">\((1-\cos{\theta})\)</span> and your
+vertical axis is <span class="math notranslate nohighlight">\(1/E_{\rm photlab}\)</span>, then you would expect to see
+a straight line relationship, where the y-intercept is not differnt
+from the known original value of <span class="math notranslate nohighlight">\(1/E_{\rm phot}\)</span>.  In which case
+you could interpret the slope of the line as giving you an estimate
+of <span class="math notranslate nohighlight">\(1/E_0\)</span>, which would mean that the reciprocal of the slope would
+be an estimate of the rest energy of the electron!</p>
+<p>Equation <a class="reference internal" href="#equation-cseeq">(125)</a>, which was derived assuming that the photon acts
+like a particle with momentum given by <span class="math notranslate nohighlight">\(p=E/c\)</span>, demanding that
+physical momentum and total energy be conserved in any particular
+reference frame and using the Lorentz transformation to move
+between two different inertial reference frames, predicts this
+simple linear relationship between measured energy of the
+scattered photon (reciprocal) and the angle of the scattering
+(expressed as <span class="math notranslate nohighlight">\(1-\cos{\theta}\)</span>).  We just need a linear plot
+to carry out the test!</p>
+<p>Unfortunately, Arthur Compton’s Nobel Prize-winning 1923 paper does
+not actually include such a plot, but he does include the original
+spectra he recorded that show the energy shift for eight different
+values of <span class="math notranslate nohighlight">\(\theta\)</span>.  From these graphs, it is possible to measure
+<span class="math notranslate nohighlight">\(E_{\rm photlab}\)</span> and construct the graph we need to test the
+hypothesis posed by Equation <a class="reference internal" href="#equation-cseeq">(125)</a>.  Such a graph for four of
+the measurements reported in 1923 is shown in Figure 9.4.</p>
+<p>Note the excellent agreement between experiment and the predictions
+of Equation <a class="reference internal" href="#equation-cseeq">(125)</a>! Check the y-intercept.
+The best fit slope in Figure 9.4 is
+XXX, which means the best estimate of the rest mass of
+the electron from this experiment is YYY
+This is within ZZ <span class="math notranslate nohighlight">\(\sigma\)</span> of the current accepted value,
+<span class="math notranslate nohighlight">\(0.511\)</span> MeV.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>572.3687693509997 17.499716653017845
+</pre></div>
+</div>
+<img alt="_images/939dc91abf33f2a9ca47507767a8dae956d48de124117ef653ebfb356f7e27a7.png" src="_images/939dc91abf33f2a9ca47507767a8dae956d48de124117ef653ebfb356f7e27a7.png" />
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Figure 9.4 – Graph constructed from measurements reported
+in Compton’s 1923 paper.</p>
+</div>
+</section>
 </section>
 </section>
 
@@ -768,7 +993,11 @@ of source or receiver is equivalent and indistinguishable.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-center-of-momentum-frame">The Center of Momentum Frame</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photons-and-the-doppler-shift">Photons and the Doppler Shift</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compton-scattering">Compton Scattering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compton-scattering">Compton Scattering</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experimental-background">Experimental Background</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#special-relativistic-model">Special Relativistic Model</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

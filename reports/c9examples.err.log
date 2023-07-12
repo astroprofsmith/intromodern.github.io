@@ -17,24 +17,31 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-E0 = 938
-KE = np.arange(0,1.0e5,1.0e3
-beta = np.sqrt(KE/(KE+2.0*E0))
-gam = 1.0/np.sqrt(1-beta**2)
-Elab = 2.0*E0+KE
-pi = np.sqrt(KE**2+2.0*E0*KE)
-Ecom = gam*(Elab-beta*pi)
-plt.figure(figsize=(9,5))
-plt.plot(KE,Ecom,'b-')
-plt.xlabel('Kinetic Energy of Incident Particle (MeV)')
-plt.ylabel('Total Energy in COM Frame')
+x = np.array([0.00727916669899,0.291343510515,1.00907060776,1.72012215409])
+y = np.array([0.000143505126673,0.000682172607672,0.00198582395962,0.00341847052919])+0.057
+z = np.polyfit(x, y, 2)
+f = np.poly1d(z)
+x_new = np.linspace(x[0], x[-1], 50)
+y_new = f(x_new)
+
+plt.figure(figsize=(8,8))
+plt.plot(x,y,'bs',label="Original Data")
+plt.plot(new_x,new_y,"k:",label="Linear Fit")
+plt.xlabel(r"1-$\cos{\theta}$")
+plt.ylabel("1/E scattered (1/keV)")
+plt.title("Testing Compton Scattering Hypothesis")
 plt.show()
 ------------------
 
-[0;36m  Cell [0;32mIn[2], line 2[0;36m[0m
-[0;31m    KE = np.arange(0,1.0e5,1.0e3[0m
-[0m                  ^[0m
-[0;31mSyntaxError[0m[0;31m:[0m '(' was never closed
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[5], line 10[0m
+[1;32m      8[0m plt[38;5;241m.[39mfigure(figsize[38;5;241m=[39m([38;5;241m8[39m,[38;5;241m8[39m))
+[1;32m      9[0m plt[38;5;241m.[39mplot(x,y,[38;5;124m'[39m[38;5;124mbs[39m[38;5;124m'[39m,label[38;5;241m=[39m[38;5;124m"[39m[38;5;124mOriginal Data[39m[38;5;124m"[39m)
+[0;32m---> 10[0m plt[38;5;241m.[39mplot([43mnew_x[49m,new_y,[38;5;124m"[39m[38;5;124mk:[39m[38;5;124m"[39m,label[38;5;241m=[39m[38;5;124m"[39m[38;5;124mLinear Fit[39m[38;5;124m"[39m)
+[1;32m     11[0m plt[38;5;241m.[39mxlabel([38;5;124mr[39m[38;5;124m"[39m[38;5;124m1-$[39m[38;5;124m\[39m[38;5;124mcos[39m[38;5;124m{[39m[38;5;124m\[39m[38;5;124mtheta}$[39m[38;5;124m"[39m)
+[1;32m     12[0m plt[38;5;241m.[39mylabel([38;5;124m"[39m[38;5;124m1/E scattered (1/keV)[39m[38;5;124m"[39m)
 
-SyntaxError: '(' was never closed (4267270883.py, line 2)
+[0;31mNameError[0m: name 'new_x' is not defined
+NameError: name 'new_x' is not defined
 
