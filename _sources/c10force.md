@@ -186,12 +186,21 @@ and if we compare the forms of $K_0$ in Equations {eq}`fourforce`
 and {eq}`M4forcefin`, we see that
 ```{math}
 :label: Kpower
-K_0 = i\gamma(\vec{F}\cdot\vec{\beta}) = i\gamma\frac{dE}{dt}
-= i\gamma\frac{d}{dt}(\gamma m_0 c^2)
+K_0 = i\gamma(\vec{F}\cdot\vec{\beta}) = i\frac{\gamma}{c}\frac{dE}{dt}
+= i\gamma\frac{d}{dt}(\gamma m_0 c)
 ```
 so $\vec{F}\cdot\vec{\beta} = d(\gamma m_0 c)/dt$, as you might
 expect, and the time component of the Minkowski force is telling
 us the power being delivered to the object experiencing the force.
+
+```{note}
+It's interesting to note that although $\vec{F}\cdot\vec{v}$ is
+power, and has dimensions of energy per time, $\vec{F}\cdot\vec{\beta}$
+has dimensions of force, and yet it is **telling** us the power,
+because all you need to do is multiply $K_0$ by $c/\gamma$ and you
+get the power.
+```
+
 
 
 ### Example 7.1
