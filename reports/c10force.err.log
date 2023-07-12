@@ -1,0 +1,66 @@
+Traceback (most recent call last):
+  File "/Users/dsmith4/anaconda3/lib/python3.10/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/Users/dsmith4/anaconda3/lib/python3.10/site-packages/nbclient/client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/Users/dsmith4/anaconda3/lib/python3.10/site-packages/nbclient/util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/Users/dsmith4/anaconda3/lib/python3.10/site-packages/nbclient/util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "/Users/dsmith4/anaconda3/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/Users/dsmith4/anaconda3/lib/python3.10/site-packages/nbclient/client.py", line 663, in async_execute
+    await self.async_execute_cell(
+  File "/Users/dsmith4/anaconda3/lib/python3.10/site-packages/nbclient/client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/Users/dsmith4/anaconda3/lib/python3.10/site-packages/nbclient/client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+Foverm = 9.81
+c = 2.995e8
+v0b = 2.5e8
+v0 = 0.0
+
+tmax = 300000000
+dt = 10000.0
+t = 0.0
+nn = int(tmax/dt)
+tarr = np.zeros((nn,1))
+varr0 = np.zeros((nn,1))
+varr1 = np.zeros((nn,1))
+varr0[0] = v0
+varr1[0] = v1
+i = 0
+
+while i<nn-1:
+  gamma = 1.0/np.sqrt(1.0-varr0[i]**2/c**2)
+  a = Foverm/gamma**3
+  varr0[i+1] = varr0[i]+a*dt
+  gamma = 1.0/np.sqrt(1.0-varr1[i]**2/c**2)
+  a = Foverm/gamma**3
+  varr1[i+1] = varr1[i]+a*dt
+  tarr[i+1] = tarr[i]+dt
+  i=i+1
+
+plt.figure(figsize=(14,6))
+plt.plot(tarr,varr0/c)
+plt.plot(tarr,varr1/c)
+plt.plot([tarr[0],tarr[-1]],[1.0,1.0],'r:')
+plt.xlabel('Time')
+plt.ylabel('Beta')
+plt.show()
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[2], line 14[0m
+[1;32m     12[0m varr1 [38;5;241m=[39m np[38;5;241m.[39mzeros((nn,[38;5;241m1[39m))
+[1;32m     13[0m varr0[[38;5;241m0[39m] [38;5;241m=[39m v0
+[0;32m---> 14[0m varr1[[38;5;241m0[39m] [38;5;241m=[39m [43mv1[49m
+[1;32m     15[0m i [38;5;241m=[39m [38;5;241m0[39m
+[1;32m     17[0m [38;5;28;01mwhile[39;00m i[38;5;241m<[39mnn[38;5;241m-[39m[38;5;241m1[39m:
+
+[0;31mNameError[0m: name 'v1' is not defined
+NameError: name 'v1' is not defined
+

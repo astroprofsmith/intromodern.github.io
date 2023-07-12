@@ -608,10 +608,18 @@ i\frac{E_{\rm photcom}}{c}\\
 0
 \end{bmatrix}
 ```
-This is the same photon that is scattered at an angle $\theta$ 
-and has energy $E_{\rm phot}$ in the laboratory reference frame.
-The 4-momentum for this same photon in the laboratory frame after
-the scattering is
+```{margin}
+I am using $E_{\rm phot}$ for the original energy of the incoming
+photon in the lab reference frame before the collision.  $E_{\rm
+photlab}$ is the energy of the outgoing photon after the collision in
+the lab reference frame.  $E_{\rm photcom}$ is the energy of the
+photon after the collision in the COM reference frame.
+```
+
+This is the same photon that is scattered at an angle $\theta$ and has
+energy $E_{\rm photlab}$ in the laboratory reference frame (after the
+collision).  The 4-momentum for this same photon in the laboratory
+frame after the scattering is
 ```{math}
 :label: p4glabaftcs
 [p_4]_{\rm phot~AFTER} =
@@ -659,7 +667,6 @@ before the collision, in the lab frame.
 
 The factors of $\gamma_{\rm com}$ cancel, and we can substitute
 in Equation {eq}`betcomcs` for $\beta_{\rm com}$ to get
-Multiplyting out the time component yields
 ```{math}
 :label: cstime1
 E_{\rm photlab}\left(1-
@@ -686,19 +693,22 @@ This equation is usually written in a final form by dividing
 both sides by $E_0E_{\rm phot}E_{\rm photlab}$ to get
 ```{math}
 :label: csEeq
-\frac{1}{E_{\rm photlab} = \frac{1}{E_{\rm phot}}
-+ \frac{1}{E_0} (1-\cos{\theta})\right)
+\frac{1}{E_{\rm photlab}} = \frac{1}{E_{\rm phot}}
++ \frac{1}{E_0} (1-\cos{\theta})
 ```
-Why would you want to write it like this?  Well, if you, like Compton,
-did an experiment where you varied $\theta$ by placing your detector
-(which measures $E_{\rm photlab}$) at different angles, then you could
-make a plot where your horizontal axis is $(1-\cos{\theta})$ and your
-vertical axis is $1/E_{\rm photlab}$, then you would expect to see
-a straight line relationship, where the y-intercept is not differnt
-from the known original value of $1/E_{\rm phot}$.  In which case
-you could interpret the slope of the line as giving you an estimate
-of $1/E_0$, which would mean that the reciprocal of the slope would
-be an estimate of the rest energy of the electron!
+Why would you want to write it like this?  Well, first of all it gets
+each energy by itself instead of having three different products of
+two energies, so it's simpler in that regard.  More importantly,
+though, if you, like Compton, did an experiment where you varied
+$\theta$ by placing your detector (which measures $E_{\rm photlab}$)
+at different angles, then you could make a plot where your horizontal
+axis is $(1-\cos{\theta})$ and your vertical axis is $1/E_{\rm
+photlab}$, then you would expect to see a straight line relationship,
+where the y-intercept is not differnt from the known original value of
+$1/E_{\rm phot}$.  In which case you could interpret the slope of the
+line as giving you an estimate of $1/E_0$, which would mean that the
+reciprocal of the slope would be an estimate of the rest energy of the
+electron!
 
 Equation {eq}`csEeq`, which was derived assuming that the photon acts
 like a particle with momentum given by $p=E/c$, demanding that
@@ -718,15 +728,13 @@ $E_{\rm photlab}$ and construct the graph we need to test the
 hypothesis posed by Equation {eq}`csEeq`.  Such a graph for four of
 the measurements reported in 1923 is shown in Figure 9.4.
 
-Note the excellent agreement between experiment and the predictions
-of Equation {eq}`csEeq`! One over the y-intercept is within one
-$\sigma$ of the known 17.5 keV value for the incoming photons in
-the lab frame.  The best fit slope in Figure 9.4 is
-$(1.90\pm0.04)\times10^{-3}$ 1/keV, which means the best
-estimate of the rest mass of
-the electron from this experiment is $526\pm10$ keV.
-This is within 1.4 $\sigma$ of the current accepted value,
-511 keV.
+Note the excellent agreement between experiment and the predictions of
+Equation {eq}`csEeq`! One over the y-intercept is within one $\sigma$
+of the known 17.5 keV value for the incoming photons in the lab frame.
+The best fit slope in Figure 9.4 is $(1.90\pm0.04)\times10^{-3}$
+1/keV, which means the best estimate of the rest mass of the electron
+from this experiment is $526\pm10$ keV.  This is within 1.4 $\sigma$
+of the current accepted best value, 511 keV.
 
 
 ```{code-cell}
