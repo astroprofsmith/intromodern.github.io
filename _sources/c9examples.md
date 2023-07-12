@@ -719,24 +719,48 @@ hypothesis posed by Equation {eq}`csEeq`.  Such a graph for four of
 the measurements reported in 1923 is shown in Figure 9.4.
 
 Note the excellent agreement between experiment and the predictions
-of Equation {eq}`csEeq`! Check the y-intercept.
-The best fit slope in Figure 9.4 is
-XXX, which means the best estimate of the rest mass of
-the electron from this experiment is YYY
-This is within ZZ $\sigma$ of the current accepted value,
-$0.511$ MeV.
+of Equation {eq}`csEeq`! One over the y-intercept is within one
+$\sigma$ of the known 17.5 keV value for the incoming photons in
+the lab frame.  The best fit slope in Figure 9.4 is
+$(1.90\pm0.04)\times10^{-3}$ 1/keV, which means the best
+estimate of the rest mass of
+the electron from this experiment is $526\pm10$ keV.
+This is within 1.4 $\sigma$ of the current accepted value,
+511 keV.
 
 
 ```{code-cell}
 :tags: ["remove-input"]
 x = np.array([0.00727916669899,0.291343510515,1.00907060776,1.72012215409])
 y = np.array([0.000143505126673,0.000682172607672,0.00198582395962,0.00341847052919])+0.057
-z = np.polyfit(x, y, 2)
-f = np.poly1d(z)
-x_new = np.linspace(x[0], x[-1], 50)
-y_new = f(x_new)
 
-print(1/z[1],1/z[2])
+tol = 0.01
+diff = tol+1
+newb = 0
+
+sigmax = np.ones(np.shape(x))
+sigmay = np.ones(np.shape(y))
+
+while (diff>tol):
+    sigma2 = [np.sqrt(q**2+(newb*r)**2) for q,r in zip(sigmay,sigmax)]
+    oldb = newb
+    alpha = np.sum([a/b**2 for a, b in zip(y, sigma2)])
+    beta = np.sum([1/b**2 for b in sigma2])
+    g1 = [a/b**2 for a, b in zip(x, sigma2)]
+    gamma = np.sum(g1)
+    delta = np.sum([a*b for a, b in zip(g1, y)])
+    epsilon = np.sum([a**2/b**2 for a, b in zip(x, sigma2)])
+
+    xi = gamma**2-beta*epsilon
+    newb = (gamma*alpha-beta*delta)/xi
+    diff = np.abs(newb-oldb)
+
+b = newb
+a = (gamma*delta-epsilon*alpha)/xi    
+sb = np.sqrt(-beta/xi)
+sa = np.sqrt(-epsilon/xi)
+x_new = np.arange(0,2,.25)
+y_new = b*x_new+a
 
 plt.figure(figsize=(8,8))
 plt.plot(x,y,'bs',label="Original Data")
@@ -747,8 +771,25 @@ plt.title("Testing Compton Scattering Hypothesis")
 plt.legend()
 plt.show()
 
+slp = b
+icpt = a
+E0=1/slp
+Eg = 1/icpt
+eslp = 3.51e-5
+eicpt = 3.51e-5
+eE0 = eslp*E0**2
+eEg = eicpt*Eg**2
+print("The best-fit slope is ({0:3.2f} +- {1:3.2f})x10^-3 1/keV".format(slp*1000,eslp*1000))
+print("The best-fit y-intercept is ({0:4.3f} +- {1:4.3f})x10^-2 1/keV".format(icpt*100,eicpt*100))
+print("The estimate of E0 is ({0:3.0f} +- {1:2.0f}) keV".format(E0,eE0))
+print("The estimate of Egam is ({0:4.2f} +- {1:3.2f}) keV".format(Eg,eEg))
+
+
 ```
 ```{note}
 Figure 9.4 -- Graph constructed from measurements reported
-in Compton's 1923 paper.
+in Compton's 1923 paper.  He measuredt the wavelength of 17.5 keV
+X-rays scatteredfrom graphite. Notice the agreement with the
+predictions of Equation {eq}`csEeq`. The slope can be interpreted
+as 1/(rest energy of an electron).
 ```
