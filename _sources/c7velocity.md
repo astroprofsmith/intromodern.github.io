@@ -574,3 +574,73 @@ the original magnitude of $\beta$.  Note that the horizontal component
 switches direction, as you expect.  All components of $\beta'$ head
 toward one as the relative speed goes to one, in either direction.
 ```
+
+
+## Problems
+
+1) Janet is taking a joy ride on a rocket, traveling with $\beta =
+0.72$ with respect to the Earth, when an alien space craft overtakes
+her and leaves her in its cosmic dust trail.  She measures its speed
+as $\beta=0.82$.  How fast is this alien space craft traveling with
+respect to the Earth?
+
+2) A muon is traveling in the $x$ direction in the lab at a speed $\beta
+0.66$. In its rest frame, it decides to decay by ejecting an electron
+in the y direction with a $\beta = 0.42$. What is the speed and direction
+of motion of the electron as seen by an observer in the lab.
+
+3) A space ship leaves the Earth, traveling at a speed $\beta =
+0.866$. A few minutes later, a second space ship is launched that
+travels at $\beta = 0.711$ (both speeds relative to the Earth). Find
+the speed of the second ship with respect to the first if:
+
+a) the second is launched in the same direction as the first
+
+b) the second is launched in the opposite direction of the first.
+
+4) A laser beam is sent from the earth towards the moon. An observer
+in a space ship traveling from the moon to the Earth at a speed $\beta
+= 0.866$ sees the photons in the beam. What speed does the observer on
+board the space ship measure for these laser photons?
+
+5) Two synchonized clocks are very slowly separated until they are
+$4\times10^7$ m apart.  The pilot of a jet plane synchronizes their
+atomic clock with the first clock, and then flies at 300 m/s toward
+the second.  As they pass the second clock will their clock be ahead
+or behind, and by how much?
+
+6) A photon is traveling at an angle of 30 degrees with respect to the
+$x$ direction as seen by an observer. A second observer, traveling
+with $\beta = 0.866$ in the $+x$ direction, also measures the velocity
+of this photon. Use the Lorentz transformation to calculate the value
+that the second observer get for this measurement.  Check that the
+four-beta still has a square of $-1$.  What is the angle with respect
+to the $x$ axis according to the second observer?  Does the answer
+make sense? Why?
+
+7) Show that for particles traveling very near the speed of light
+```{math}
+:label: gamnearc
+\gamma \approx 0.707 \sqrt{\frac{c}{c-v}}
+```
+Use this result to find $\gamma$ for an electron that is traveling
+at a speed of 0.1 m/s less than the speed of light.
+
+8) A particle, moving at a speed $v$ with respect to the lab,
+experiences a very quick acceleration and acquires an infinitesimal
+increment in speed $dv$. In the frame of reference moving with this
+particle at that moment (moving with speed $v$ with respect to the
+lab) the increase in the speed is $dv_0$.
+
+
+Use the velocity addition formula Equation {eq}`veladd1` (with appropriate
+approximations for small changes in velocity) to show that
+```{math}
+dv_0 = \frac{dv}{1-\beta^2}
+```
+
+A particle is started from rest, and given very many such small
+accelerations. The acceleration that the particle experiences in the
+rest frame is constant, so $dv_0$ has some constant value. Show that the
+speed $v$, for this particle as measured by an observer in the lab will
+never exceed $c$, even for an infinite number of such accelerations.
