@@ -335,7 +335,7 @@ Find the physical angle that the displacement given in example 4.1
 makes with respect to the $x$ axis. Determine the angle as measured by
 the primed observer.
 
-The angle that tlie unprimed observer makes is:
+The angle that the unprimed observer makes is:
 $$\tan{\theta} =\frac{dy}{dx} = \frac{1.00~{\rm m}}{-0.250~{\rm m}} = -4.00
 \rightarrow \theta = -76.0^\circ$$
 The angle is in the 4th quadrant.  
@@ -407,3 +407,130 @@ that it hasn't changed.  You could write the code to set up and
 multiply matrices, or you could write the four equations out
 separately.  Which method you use would be irrelevant to the output.
 ```
+
+## Problems
+
+1. A star is 25.O light years away from the earth. If a space craft
+were to travel with $\beta = 0.998$ with respect to the earth, how long
+would it take the space craft to reach the star as measured by an
+observer:
+
+a) on the earth
+
+b) Set up a displacement four vector and use the Lorentz
+Transformation to find the time as measured by an observer aboard the
+space craft.
+
+2. In this problem, you will find two more elements of the Lorentz
+transformation matrix. In Equation {eq}`lormat3`, there are still 6
+unknown elements.  To get two more, consider this setup: the primed
+observer finds that she is in the rest frame of a pair of events. She
+measures a time interval $dt_0$ between the events. A second observer,
+moving with speed $-\beta_R$ with respect to the primed observer
+watches the same two events and measures a physical displacement $dx$
+and a time interval $dt$.
+
+a) write down the elements of the Lorentz transformation that converts
+the values measured by the primed observer and to those measured by
+the unprimed observer using the form of the Lorentz transformation
+given by Equation {eq}`lormat3`.
+
+
+b) Multiply out the elements of this matrix equation and show how
+$dt_O$ (time measured in the rest frame of the events) is related to
+$dx$ and $dt$.
+
+c) knowing that the size of the two 4-vectors must be the same, find
+values for $L_{11}$ and $L_{01}$.
+
+5) An arbitrary 4-vector $v^\alpha$ has components: $v^0$, $v^1$, $v^2$,
+and $v^3$.
+
+a) Write this 4-vector in column vector notation.
+
+b) If this 4-vector is operated on by a Lorentz transformation of
+relative speed $\beta_R$ in the $+x$ direction, find the components of
+the new 4-vector using Equations {eq}`eqlort` and {eq}`lormat`.
+
+c) Show that the size of the two 4-vectors are the same.
+
+6) An observer in the rest frame of two events measures a time
+interval of $1.00~\mu$s. A second observer, watching the same
+two events measures a time interval of $1.50~\mu$s.
+
+a) what is the relative speed of the two observers?
+
+b) write down the elements of the Lorentz transformation that
+transforms the components of the 4-vectors between these two
+observers.
+
+c) How for did the second observer see the events displace?
+
+7) A scalar quantity in relativity is one whose value does not change
+ when Lorentz Transformation Introduction to Special Relativity the
+ Lorentz transformation is applied to it.
+
+a) Show that the size of the displacement 4-vector is a scalar
+quantity.
+
+b) Show that the time interval measured in the rest frame of two
+events, $dt_O$, is a scalar quantity.
+
+8) Two observers are watching two events taking place are traveling at
+relative speed $\beta_R = 0.9950$. The first observer manages to
+measure a time interval of $6.00$ ns, but does not measure the
+displacement $dx$. The second observer manages to measure a
+displacement of $4.00$ m in the $-x$ direction between the two
+events. Find the value of the displacement $dx$ that the first
+observer did not measure.
+
+
+9) The 'unit matrix' or 'identity matrix' has the number 1 along the
+diagonal elements and has value of O for all of the off diagonal
+elements. In general, if a matrix has an inverse, then:
+```{math}
+:label: unitmat
+M^{-1} M = {\rm unit~matrix}
+```
+Show that for the Lorentz transformation matrix
+```{math}
+:label: Lunitmat
+{\cal L}_x^{-1}(\beta_R){\cal L}_x(\beta_R) =
+\begin{bmatrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{bmatrix}
+```
+
+
+10) When a new theory is proposed, in the region where the old theory
+worked, the new theory must reduce to the same form as the old. This
+requirement for new theories is called the **correspondence
+principle**, first articulated by Niels Bohr. The Lorentz
+transformation is supposed to work for all relative motion problems,
+whether the relative speed is large or small. For slow moving objects,
+Newton found that the time measured by all observers is the same.
+
+$$dt' = dt$$
+
+He also found that if two observers moving at a speed $v_R$ with respect
+to each other watch an object move, the two measured displacements are
+reiated as:
+
+$$dx'= dx- v_Rdt$$
+
+provided the relative speed of the primed observer in the same direction as
+the object moves.
+
+Show that if $\beta_R\ll 1$ (slow moving), the Lorentz transfor-mation
+equation for the displacement 4-vectors as written in Equations
+{eq}`eqlort` and {eq}`lormat` gives the same predictions as Newton found
+for slow moving objects.
+
+*Hint: To do this you first must rewrite the Lorentz transformation
+matrix for very very small $\beta_R$. Then find the values of $dx'$
+and $dt'$ in terms the unprimed values of $dx$ and $dt$. Again, making
+sure that $\beta_R$ is very small compared to 1, show that Newton's
+and Lorentz's predictions are not different.*

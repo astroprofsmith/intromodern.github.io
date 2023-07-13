@@ -781,7 +781,42 @@ physics of the rocket and the train are exactly the same, because
 the rules of time are the same.
 
 
-## Summary
+## Problems
+
+1. An experimenter measures the following physical changes between two
+events $dx = 1.00$ m, $dy = 0.300$ m, $dz = -0.100$ m, and $dt = 6.00$ ns.
+Write down the displacement 4-vector for these events. Find the size
+of this displacement 4-vector.
 
 
+2. A beain of a certain type of elementary particle travels at a speed
+of $2.85\times 10^8$ m/s with respect to the lab reference frame.  The
+average life time of the particle is measured to be $2.50 \times
+10^{-6}$ s in the lab.  Draw the space-time diagram of the two events
+(creation and decay of the particle) as seen by an observer at rest
+with respect to the lab. Draw the space-time diagram of the two events
+as seen by an observer that is at rest with respect to the elementary
+particle. What is the particle's average life time in the rest frame
+of the particle?
 
+3. An observer measures the displacement 4-vector between two events
+to be:
+
+$$[dR_4] =
+\begin{bmatrix}
+i 3.00~{\rm cm}\\
+0.0~{\rm cm}\\
+2.0~{\rm cm}\\
+0.0~{\rm cm}
+\end{bmatrix}$$
+Is this observer in the rest frame of the events?
+Why? Find the time interval measured by this observer. How fast is the
+object, described by this displacement 4-vector, traveling? In what
+direction is it traveling?
+
+4. When working with equations of relativity theory, physicists
+routinely set the speedof light $c = 1$ (with no units!) as a matter of
+convenience. Find the value and units of a time interval of $1.00$
+seconds in this system of units. In this set of units, what is the
+speed of sound in air, the speed of the earth in its orbit about the
+sun and the speed of a neutrino?

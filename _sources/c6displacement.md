@@ -1014,4 +1014,132 @@ of the ladder entering the front of the garage are spacelike separated,
 and therefore nature makes no requirements as to what order they will
 occur in.  All four events will happen, but not necessarily in the same
 order, so it is no paradox: the fact is that the ladder can fit inside
-the garage in one frame and not in another.  
+the garage in one frame and not in another.
+
+## Problems
+
+1) A beam of negative pions is produced in the lab, traveIing at
+$\beta = 0.9980$.
+
+a) What fraction of the original beam hits a target 200 meters away?
+
+b) Show that this fraction is independent of which reference frame is
+used to do the calculation.
+
+2. A beam of sigma plus particles is produced at the exit of a
+particle accelerator. The number of sigma particles left in the beam
+as a function of distance away from the particle accelerator is shown in
+Table {numref}`sigma`:
+
+```{list-table} Sigma Beam
+:header-rows: 1
+:name: sigma
+
+* - Number of Sigmas
+  - Distance from Accelerator (cm)
+* - 257
+  - 5
+* - 175
+  - 10
+* - 130
+  - 15
+* - 100
+  - 20
+* - 87
+  - 25
+* - 65
+  - 30
+* - 52
+  - 35
+```
+Determine the speed of the sigma particles produced by the accelerator.
+
+3. The nearest star to us is 4.600 light years away. A space ship
+traveling with $\beta=.9980$ goes from Earth to this star.
+
+a) How long does an observer on the earth measure the time for this trip?
+
+b) How long does an observer on the space ship measure the time for this trip?
+
+c) What distance does the observer on board the space ship measure the
+distance between the Earth and the star?
+
+d) From the results of b) and c), what speed does the observer on the
+space ship calculate that the space ship is traveling?
+
+
+4. Suppose that you are in the 'rest frame' of a photon. (Not
+possible, of course, but let's try to imagine.)  Also suppose that in
+the rest frame of the photon, it has a half life for decay to some
+unknown particle called $\tau$.
+
+a) write down the displacement 4-vector for a time interval of one half-life.
+
+b) Use the Lorentz transformation to transform the displacement
+4-vector for this decaying photon to a lab frame, that sees the photon
+traveling by at the speed of light ($\beta_R = 1$).
+
+c) Determine the half-life of the photon as seen by an observer in the
+lab.
+
+d) Is the photon stable? Why?
+
+5) How fast must positive pion be traveling if it is to displace 20 m
+in the average life time of the pion? In the rest frame of the positive
+pion, the average life time of the particle = $2.6 \times 10^{-8}$ s.
+
+
+6) A friend of yours has a really hot car, it can travel at a speed of
+$2.5 \times 10^8$ m/s. As this friend zips by you, you measure that
+the car is 5.00 m long and 1.57 m high. The measuring process took you
+1.00 s.
+
+a) What are the proper dimensions of the car, those that measured when
+the car is at rest with respect to the person doing the measurements?
+
+b) How long did your friend think it took you to do the measurement?
+Which is to say, how long did your measurements take when measured
+by the friend?  The friend agrees that you measured a time interval of
+one second -- the question is what time interval does the friend
+measure?
+
+7) A stick of length $\ell_0$, laying in the $x,y$ plane, makes an
+angle $\theta$ with respect to the $x$-axis in the rest frame of the
+stick. A second observer, moving with relative velocity $\beta_R$ in
+the $+x$ direction observes this same stick.
+
+a) What length does the second observer measure for the length of the
+stick? 
+
+b) What angle does the second observer measure between the $x$-axis
+and the stick?
+
+9) A beacon light on a certain planet flashes once per microsecond as
+measured by clocks on that planet. In the frame of reference of a
+passing armada of Martians, the light moves 400 m between successive
+flashes.
+
+a) In what direction do the Martians see the flashes
+displacing?
+
+a) What is the speed of the armada relative to the planet?
+
+b) What is the time between flashes as measured by the passing
+Martians. Note: be sure to set this up as a Lorentz transformation.
+
+```{warning}
+Don't over think this.  Simplify it to the terms used in this chapter.
+Don't use $y$ or $z$ and don't worry about light travel time between
+the planet and the armada.
+```
+
+
+10* In a certain reference frame, two events occur at the same place,
+but not at the same time.
+
+a) Show that if event 1 precedes event 2 in this rest frame of the
+events, it precedes event 2 in all frames of reference: the temporal
+order of the events is invariant.
+
+b) Comment briefly on the relationship of this result and the idea of
+cause and effect.

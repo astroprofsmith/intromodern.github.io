@@ -367,9 +367,10 @@ and time intervals for the measurement of the propagation of the wave
 front of a light wave that are the same for each of the two observers
 (moving with respect to each other) that remains constant. This
 statement can be written as a conservation law. The sum:
-\begin{equation}
+```{math}
+:label: pyth
 (dx^\prime)^2 + (dy^\prime)^2 + (dz^\prime)^2 - (c dt^\prime)^2 
-\end{equation}(eqn:interv)
+```
 must remain constant. This conservation law is quite different from
 what Newton and company thought was 'conserved' in the measurement of
 the motion of an thing. In the Newtonian world, the value of $dt$
@@ -386,3 +387,45 @@ model.
 Armed with these postulates, concepts, and principles, we are
 ready to begin characterizing the universe of space and time,
 and to discover the surprises waiting therein...
+
+## Problems
+
+1. Alice and Bob are trying to cross a river in a canoe.  The river is
+20 m wide.  The velocity of the water is to the left with a speed of
+$v=5$ m/s.  What average velocity should they try to achieve with
+their canoe if they want to reach a point directly across from their
+starting point in 60 s?  Take $\hat{x}$ to point right and $\hat{y}$ to point
+across the river.  How is this problem relevant to the topics of this
+chapter?
+
+2. At time $t=0$, two reference frames (call one red and the other
+blue) have their origins at the same location.  However, the blue one
+is moving relative to the red one with a velocity of $\vec{v} =
+(1~{\rm m/s})\hat{x} + (2~{\rm m/s))\hat{y} - (0.5~{\rm m/s})\hat{z}$.
+If an observer in the red frame measures an event to occur at $t=2$ s
+in the location $\vec{r} = (0.5~{\rm m})\hat{x} - (4~{\rm m))\hat{y} +
+(3~{\rm m})\hat{z}$, approximately what will an observer in the blue
+frame measure as the time and space coordinates for this event?
+
+3. Do both observers get the same answer for Equation {eq}`pyth`
+for the case described in problem 2?  Take the second event to be
+the origin.
+
+4. When you look up at night and see Jupiter, you are seeing a Jupiter
+from the past.  Roughly how long ago did the light that goes into your
+eye leave Jupiter?  When you look at the stars, roughly how old are
+they?  If you look at the Andromeda Galaxy, how old is it?
+
+5. How fast is your speed due to the Earth spinning?  How fast is your
+speed due to the Earth going around the Sun?  How fast is your speed
+due to the Sun going around the Galaxy?  How fast is your speed
+due to the Galaxy moving toward the Great Attractor?  How fast is
+your speed relative to the Cosmic Microwave Background Radiation?
+The last two you can just look up, but the first two you should be
+able to calculate from distance traveled divided by duration of time,
+although you can look those up, if you don't happen to know them.
+
+6. How many ways can you think of to measure the length of a tabletop?
+Confirm that none of them require you to "just know" what is happening
+at a location that is not right where you are.
+

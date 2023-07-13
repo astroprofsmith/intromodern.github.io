@@ -674,3 +674,14 @@ and magenta events, which you can see from the trails is smaller than
 the spatial displacement between cyan and blue in the original frame
 of reference.  Lengths contract.  We will work out examples of length
 contraction more thoroughly in the next chapter.
+
+```{note}
+It might be useful to look at [this interactive
+version](https://alexonscience.com/projects/spacetimeglobe/) of Figure
+5.4 -- it lets you add your own events and see how they shift around
+under Lorentz transformations.
+```
+
+## Problems
+
+Need to think of some...
