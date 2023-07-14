@@ -476,6 +476,67 @@ light to slightly more than the speed of light.  As the saying goes...
 
 **The speed of light. It's not only a good idea, it's the law!**
 
+## Example of Using the Definitions
+
+Example 5.4
+
+An electron (rest energy = 0.511 MeV) moving in the $x$-direction has
+a kinetic energy of 1.000 MeV (1 eV = $1.602 \times 10^{-19}$ joules)
+Find the total energy, the physical momentum, the momentum 4-vector
+and the speed of this electron.
+
+The kinetic energy is almost twice the rest energy, so
+$\gamma\approx3$, and I will have to do this problein using
+reLativistic formulae. The total energy is the sum of the kinetic and
+rest energy, so $E_{\rm tot} = 1.511$ MeV. To find
+the momentum, you use Equation {eq}`pfrome1` to get
+```{math}
+(cp)^2 = (1.511~{\rm MeV})^2 - (0.511~{\rm MeV})^2 = 2.022~{\rm MeV}^2
+```
+Take the square root and divide by $c$ to get
+```{math}
+\vec{p} = 1.422~\frac{\rm MeV}{c}\hat{x}
+```
+And yes, MeV/$c$ is a perfectly good unit for momentum, and
+very useful for 
+elementary particles. If you *really* wanted to convert this to the
+dump truck units (SI) for momentum, kg m/s, 
+use the conversion factor
+```{math}
+:label: eVunit
+1~{\rm eV}/c = 5.340 \times 10^{-28}~{\rm kg m/s}
+```
+The momentum 4-vector now can be
+written (using Equation {eq}`p4fullE`) as:
+```{math}
+[p_4] =
+\begin{bmatrix}
+i1.511~{\rm MeV}/c\\
+1.422~{\rm MeV}/c\\
+0.0\\
+0.0
+\end{bmatrix}
+```
+There are a couple ways you could get the speed.  The easiest way
+would be to use Equation {eq}`gamE` to get $\gamma$ and then
+solve for $\beta$.
+```{math}
+\gamma = 1 + \frac{KE}{E_0} = 1 + \frac{1.00}{.511} = 2.957
+```
+Then use the definition of $\gamma$ to get
+```{math}
+\beta = \sqrt{1-\frac{1}{\gamma^2}} = 0.941
+```
+If you really want that in SI units, that would be $2.82\times10^8$ m/s.
+The other way to do it would be to go from the four vector.
+We have $p_x = 1.422\times10^6$ eV/c, which by the conversion ({eq}`eVunit`)
+above is $7.593\times10^{-22}$ kg m/s.  This momentum is $\gamma m_0 v_x$,
+so we divide by $\gamma = 2.957$ to get $2.568\times10^{-22}$ kg m/s.
+Divide by the mass of the electron ($9.109\times 10^{-31}$ kg) to get
+$2.82\times10^8$ m/s, as before.  If you forget that momentum has a
+$\gamma$ built into it, you would get a speed almost three times faster
+than light speed.
+
 ## Conservation Laws and the Momentum Four-Vector
 
 If an interaction happens that is isolated from its surroundings, the
@@ -528,7 +589,7 @@ the same.
 
 ## Example of Momentum Conservation
 
-Example 8.4: A neutral pion (rest energy $E_0=135$ MeV) decays into
+Example 8.5: A neutral pion (rest energy $E_0=135$ MeV) decays into
 two photons. Show that in the rest frame of the pion, the two photons
 move in opposite directions. Find the energy of these two photons.
 
@@ -580,3 +641,97 @@ momenta and their energies must be proportional (by Equation
 {eq}`eqcp1`), so the energy must be split evenly between them.  Each
 photon has an energy of 67.5 MeV, and therefore a momentum of 67.5
 MeV/c, but each in an opposite direction to the other.
+
+## Problems
+
+
+1) Find the physical momentum of a 100 MeV proton, a 100 MeV positive
+pion and a 100 MeV electron. (the units should be in MeV/c).
+
+
+2) Make a plot of the kinetic energy of an electron as a function of
+$\beta$ for $\beta = 0 to 0.999$ (or some maximum number just slightly
+less than one). On the same graph, plot the classical value of the
+kinetic energy of this electron ($KE = 1/2 mv^2= 1/2 Eo
+\beta^2$). Describe the difference between these two graphs. What does
+this graph predict about the chances of an electron to travel the
+speed of light?
+
+3) A negative pion is traveling with $\beta = 0.9900$ in the $+x$
+direction heading straight towards a proton that is traveling with
+$\beta = 0.5720$ in the $-x$ direction. Write down the elements of the
+momentum 4-vector for this system.
+
+4) Find the speed and momentum of a negative pion that has kinetic
+energy 300 MeV.
+
+5) Calculate the elements of the momentum 4-vector for a 2.00 eV
+photon.  What kind of light is a 2 eV photon?
+
+6) A proton is moving with a speed of $\beta = 0.99882$. Calculate the
+momentum and kinetic energy of this particle.
+
+7) A 2.00 eV photon is traveling in the $+x$ direction as seen by
+observer 1.  Observer 2,traveling with $\beta_R= -.8800$ relative to
+observer 1 also observes this 2.00 eV photon. Use the Lorentz
+transformation to determine the elements of the 4-momentum measured by
+the second observer.
+
+8) In the lab reference frame, a certain particle has total energy
+$E_{\rm tot} = 3.2 \times 10^{-10}$ J and momentum $p = 9.4 \times
+10^{-19}$ kg m/s. Find the speed and rest mass of this particle.
+
+9) An observer in the lab watches a neutral $K^0$ (rest energy 497.7 MeV) decay into a positive and negative pion.  The kaon is traveling with $\beta = 0.8666$ before it decays.  We write this decay as
+```{math}
+:label: kaondecay
+K^0 \rightarrow \pi^+ + \pi^-
+```
+```{warning}
+In this context, the zero in $K^0$ means a neutral particle, not the
+time component number of a contravariant four vector!
+```
+
+a) Calculate the components of the momentum 4-vector of the kaon as
+measured by the observer in the lab.
+
+b) Use the Lorentz transformation to find the components of the
+momentum 4-vector of the kaon in the rest frame of the kaon (hint: the
+rest frame is moving with $\beta_R= +0.8666$).
+
+c) If in the rest frame of the kaon after the decay the negative pion
+is traveling in the $+x$ direction, write down the momentum 4 vector of
+the pair of pions.
+
+d) From the momentum conservation laws, find the kinetic energy and
+the physical momentum of each of the pions as seen by an observer in
+the rest frame of the kaon.
+
+e) Write down the momentum 4-vector for each of the pions produced in
+the decay as seen by an observer in the rest frame of the kaons.
+
+f) Use the inverse Lorentz transformation to transform the momentum 4-
+vector of each of the pions as measured in the rest frame of the kaons
+to the momentum 4-vectors as measured in the laboratory reference
+frame.
+
+g) Show that the sum of the two 4-vectors you calculated in f) is the
+same as the result in a). This would mean that the 4-momentum is
+conserved in the lab frame!
+
+10) A photon is a particle that has zero rest energy. Suppose that
+$10^{30}$ photons, each with total energy 0.500 MeV, are bouncing
+around in a perfectly reflecting container. Assume that other than the
+photons, the inside of the container is empty. These photons are
+moving in random directions, so the total physical momentum of the
+container is zero, because on average the photon's momenta cancel
+out.
+
+a) What is the total energy of the inside of the container?
+
+b) What is the rest energy of the inside of the container? Convert
+this number to rest mass. (hint: it is *not* zero)
+
+c) Where did this mass come from?
+
+d) At what speed would you have to move the container for the total
+energy inside to increase by 1 joule?

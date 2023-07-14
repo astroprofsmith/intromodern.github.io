@@ -204,7 +204,7 @@ get the power.
 
 
 
-### Example 7.1
+### Example 10.1
 
 Calculate the Minkowski force exerted on an electron traveling
 vertically upward near the surface of the earth with $\beta = 0.866$.
@@ -463,6 +463,44 @@ started out from rest.  However, in practical terms, maintaining even
 such a modest thrust for years without fair is hard to do without
 running out of fuel.  But that's another topic for another day.
 
+
+The time component of Equation {eq}`newton2x` shows yet another reason
+that it is impossible to get a particle of non-zero rest energy to
+travel at the speed of light. Recalling that the time component of the
+force is related to the energy required to change the velocity in time
+interval $dt$ (Equation {eq}`Kpower`), we can rewrite Equation
+{eq}`newton2x` as
+```{math}
+:label: newnewton
+m_0\frac{dv_x}{dt}\gamma^4
+\begin{bmatrix}
+i\frac{v_x}{c}\\
+1
+\end{bmatrix}
+=
+\gamma
+\begin{bmatrix}
+i\frac{1}{c}\frac{dE}{dt}\\
+F_x
+\end{bmatrix}
+```
+The change in energy $dE$ associated with a velocity change
+$dv_x$ can be found by examining the time component:
+```{math}
+:label: dEdv
+\frac{\gamma^4}{c}m_0v_x\frac{dv_x}{dt} = \frac{\gamma}{c}\frac{dE}{dt}
+```
+or
+```{math}
+:label: dE
+dE = \gamma^3 m_0 v_x dv_x
+```
+The rest mass is constant, but as $v_x$ gets close to $c$,
+$\gamma\rightarrow\infty$, so the $dE$ that would need to be
+provided to keep providing a $dv$ would go to infinity.  Once
+again, it would take an infinite amount of energy to actually
+get to $c$.
+
 The general case of applying the relativistic Newton's law to a
 particle having laboratory accelerations and velocities in all three
 directions, as well as the force having all three components is very
@@ -471,3 +509,47 @@ velocity in them. In general, the force and the acceleration will not
 be in the same direction, something that does not happen in classical
 physics.
 
+**From here on is obviously not finished**
+
+### Example 10.2
+
+An electron, traveling in the *x direction with p = 0.8666, is subjected to an
+electric field that exerts a force (as measured in the laboratory reference frame) of I.OOOx10-'3 Newtons in the +x direction.
+a) Calcydate the acceleration of the object if dump truck physics could be used to model this situation
+b) Calculate the acceleration of the object using a relativistically correct modet.
+c) CaLcutatethe energy required to increase the speed by 1000 mis.
+solution
+a) UsingNewton'slaw.
+= I.OOOXl'O3N-t= l.098xl0n"! 9.l09xl0-3'kg si
+This is rea(ly an awesome acceleration. In 10-'4 seconds, the electron sjioydd gain 10a m/sec in ve1ocity.
+b) Equation 7.25 is used to find the valid acceleration:
+are,g,,,,, = -1!j-K-= -1 l.098xlOl7'- =l.372xl0'm= y3/71, 8 3- s-
+The acceleration is down by afactor of 8, but it still is awesome
+c) Tlie energy required to increase the speed by 1000 m/sec (an increase in speedofonLy10 parts per million) is
+dE= 8 * 9.l09xl0-3'kg*0.8666* 3.000xl0,8m* l.000xl03m7 dE =1.893X10- '8Jovdes
+
+
+
+## Problems
+
+An electron, with electrical charge qe = l.602xl 0-'9 Couloumbs, is travel- ing at speed p = .9999980 in the horizontal +x direction with respect to arx observer in the laboratory that is located near the surface of the eartJi. At time t = 0, the electron enters an electric field of f = ].000xl 06Nt/Cou- lomb also pointing n the +x direction. The classical model for ca)cuLating theforce exerted on a cliarged object by an electric field is Fe = qE
+1) Calculate the Minkowski force that the particle thinks is exerted on it at time t = 0. (the 4-force in the rest frame of the particle). Note: the gravita- tional force is very very small compared to the electric force.
+2) Calculate the acceleration that the particle thinks is experiences at time t = 0.
+3) Use the Lorentz transformation to find the components of the
+Minkowski force that is measured by the experimenter in the Jab at time t = 0.
+4) Calculate the acceleration measured by the observer in the lab at time t = 0.
+5) Calculate the time rate of change of momentum that the observer in the lab measures for this electron at time t = 0.
+6) Calculate the energy needed to increase the speed of the electron to l = 0.9999990
+7) Calculate the x-component of the force measured by the observer in the lab. Does this result surprise you? Why or why not?
+now, suppose that this electron, traveling in the +% direction (horizontal), at time t = Oenters an electric field that is pointing in the +z direction (verticaily up) instead of point in the +x direction.
+8) Calculate the Minkowski force exerted on this electron as measured in the laboratory reference frame.
+9) Calculate the acceleration of the electron as measured by observer in the laboratory reference frame.
+10) Show that in this case, the acceleration of the eIectron and the force applied to the electron do not point in the same direction.
+
+11) An observer sees a particle of mass m. moving with velocity a that has
+a force r" exerted on it. Show that a second observer, moving with speed v in the + x direction with respect to the first observer, measures the work done to be:
+work done =
+(7 a a)-vF
+lVux cl
+'
+12) A particle, starting from rest, travels for a time t (in the lab reference frame). The acceleration at any time, as measured in the rest frame of the particle, is 9.8 m/s2. How long does it take before the observer in the Jab reference frame sees the particle traveling C/2?

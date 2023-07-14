@@ -363,13 +363,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-center-of-momentum-frame">The Center of Momentum Frame</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-center-of-momentum-frame">The Center of Momentum Frame</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-9-1">Example 9.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-9-2">Example 9.2</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photons-and-the-doppler-shift">Photons and the Doppler Shift</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compton-scattering">Compton Scattering</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experimental-background">Experimental Background</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#special-relativistic-model">Special Relativistic Model</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
 </ul>
             </nav>
         </div>
@@ -410,7 +415,7 @@ Take the <span class="math notranslate nohighlight">\(x\)</span> axis to be para
 incident particle.  Then we can write the four-momentum of the
 incident particle as</p>
 <div class="math notranslate nohighlight" id="equation-p4inc">
-<span class="eqno">(102)<a class="headerlink" href="#equation-p4inc" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_i =
+<span class="eqno">(104)<a class="headerlink" href="#equation-p4inc" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_i =
 \begin{bmatrix}
 i(E_{0i} + KE_i)/c\\
 p_i\\
@@ -419,7 +424,7 @@ p_i\\
 \end{bmatrix}\end{split}\]</div>
 <p>and the four-momentum of the target particle is</p>
 <div class="math notranslate nohighlight" id="equation-p4tar">
-<span class="eqno">(103)<a class="headerlink" href="#equation-p4tar" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_t =
+<span class="eqno">(105)<a class="headerlink" href="#equation-p4tar" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_t =
 \begin{bmatrix}
 iE_{0t}/c\\
 0\\
@@ -430,7 +435,7 @@ iE_{0t}/c\\
 in the laboratory reference frame is (writing the incident momentum in
 terms of the KE using Equation <a class="reference internal" href="c8momentum.html#equation-pfrome">(96)</a>):</p>
 <div class="math notranslate nohighlight" id="equation-p4tot9">
-<span class="eqno">(104)<a class="headerlink" href="#equation-p4tot9" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm lab} =
+<span class="eqno">(106)<a class="headerlink" href="#equation-p4tot9" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm lab} =
 \begin{bmatrix}
 i\frac{1}{c}(E_{0i} + KE_i + E_{0t})\\
 \frac{1}{c}\sqrt{KE_i^2 + 2 E_{0i}KE_i}\\
@@ -455,7 +460,7 @@ total physical momentum in this case is 0. This reference frame is
 known as the zero-momentum or center-of-momentum (com) reference
 frame. The 4-momentum for this frame is:</p>
 <div class="math notranslate nohighlight" id="equation-p4com">
-<span class="eqno">(105)<a class="headerlink" href="#equation-p4com" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm com} =
+<span class="eqno">(107)<a class="headerlink" href="#equation-p4com" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm com} =
 \begin{bmatrix}
 iE_{\rm com}/c\\
 0\\
@@ -486,10 +491,10 @@ particles is 0.</p>
 4-momentum in the com frame can be found using the Lorentz
 transformation:</p>
 <div class="math notranslate nohighlight" id="equation-p4comlort0">
-<span class="eqno">(106)<a class="headerlink" href="#equation-p4comlort0" title="Permalink to this equation">#</a></span>\[[p_4]_{\rm com} = {\cal L}_x (\beta_{\rm com})[p_4]_{\rm lab}\]</div>
-<p>Plugging in Equation <a class="reference internal" href="#equation-p4tot9">(104)</a> (and ignoring <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span>) we get</p>
+<span class="eqno">(108)<a class="headerlink" href="#equation-p4comlort0" title="Permalink to this equation">#</a></span>\[[p_4]_{\rm com} = {\cal L}_x (\beta_{\rm com})[p_4]_{\rm lab}\]</div>
+<p>Plugging in Equation <a class="reference internal" href="#equation-p4tot9">(106)</a> (and ignoring <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span>) we get</p>
 <div class="math notranslate nohighlight" id="equation-p4comlort1">
-<span class="eqno">(107)<a class="headerlink" href="#equation-p4comlort1" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm com} =
+<span class="eqno">(109)<a class="headerlink" href="#equation-p4comlort1" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm com} =
 \begin{bmatrix}
 \gamma_{\rm com} &amp; -i\beta_{\rm com}\gamma_{\rm com} \\
 i\beta_{\rm com}\gamma_{\rm com} &amp; \gamma_{\rm com} \\
@@ -500,7 +505,7 @@ p_i\\
 \end{bmatrix}\end{split}\]</div>
 <p>Matrix multiplication yields:</p>
 <div class="math notranslate nohighlight" id="equation-p4com2">
-<span class="eqno">(108)<a class="headerlink" href="#equation-p4com2" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
+<span class="eqno">(110)<a class="headerlink" href="#equation-p4com2" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
 iE_{\rm com}/c\\
 0
 \end{bmatrix}
@@ -510,16 +515,16 @@ iE_{\rm com}/c\\
 i(E_{\rm lab}/c-\beta_{\rm com}p_i)\\
 p_i-\beta_{\rm com}E_{\rm lab}/c\\
 \end{bmatrix}\end{split}\]</div>
-<p>The second row of Equation <a class="reference internal" href="#equation-p4com2">(108)</a> tells how to find the relative
+<p>The second row of Equation <a class="reference internal" href="#equation-p4com2">(110)</a> tells how to find the relative
 speed of the com reference frame if you know the total energy and momentum in
 the lab reference frame.  The two terms must cancel, if the total momentum
 is to be zero, and that can only happen if</p>
 <div class="math notranslate nohighlight" id="equation-betacom">
-<span class="eqno">(109)<a class="headerlink" href="#equation-betacom" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(111)<a class="headerlink" href="#equation-betacom" title="Permalink to this equation">#</a></span>\[\boxed{
 \beta_{\rm com} = \frac{cp_i}{E_{\rm lab}} =
 \frac{\sqrt{KE_i^2 + 2 E_{0i}KE_i}}{E_{0i} + KE_i + E_{0t}}}\]</div>
 <p>There really isn’t any further simplification one can do to
-Equation <a class="reference internal" href="#equation-betacom">(109)</a>.  Every quantity on the right would be
+Equation <a class="reference internal" href="#equation-betacom">(111)</a>.  Every quantity on the right would be
 known as inputs for a given experiment, so you could calculate
 the necessary speed of the com for any target particle being
 hit by any incident particle with any kinetic energy you choose.</p>
@@ -534,24 +539,24 @@ role, and the com is going right along with the incident particle.</p>
 such that <span class="math notranslate nohighlight">\(E_{0i}=E_{0t}\equiv E_0\)</span>, then we can do one further
 simplification – pull out a <span class="math notranslate nohighlight">\(\sqrt{KE_i}\)</span> in the numerator:</p>
 <div class="math notranslate nohighlight" id="equation-betacom2same">
-<span class="eqno">(110)<a class="headerlink" href="#equation-betacom2same" title="Permalink to this equation">#</a></span>\[\beta_{\rm com} = \sqrt{KE_i}
+<span class="eqno">(112)<a class="headerlink" href="#equation-betacom2same" title="Permalink to this equation">#</a></span>\[\beta_{\rm com} = \sqrt{KE_i}
 \frac{\sqrt{KE_i + 2 E_0}}{KE_i + 2E_0}
 =  \sqrt{\frac{KE_i}{KE_i + 2E_0}}
 = \left(1+\frac{2E_0}{KE_i}\right)^{-1/2}\]</div>
 <p>In this case you can see, again, that as <span class="math notranslate nohighlight">\(KE_i\)</span> gets large,
 <span class="math notranslate nohighlight">\(\beta_{\rm com}\rightarrow 1\)</span>, but it’s easier to see.</p>
-<p>The first row of Equation <a class="reference internal" href="#equation-p4com2">(108)</a>, on the other hand,
+<p>The first row of Equation <a class="reference internal" href="#equation-p4com2">(110)</a>, on the other hand,
 tells us the total energy available in the com frame:</p>
 <div class="math notranslate nohighlight" id="equation-etotcom">
-<span class="eqno">(111)<a class="headerlink" href="#equation-etotcom" title="Permalink to this equation">#</a></span>\[E_{\rm com} = \gamma_{\rm com}(E_{\rm lab} - \beta_{\rm com} c p_i)\]</div>
+<span class="eqno">(113)<a class="headerlink" href="#equation-etotcom" title="Permalink to this equation">#</a></span>\[E_{\rm com} = \gamma_{\rm com}(E_{\rm lab} - \beta_{\rm com} c p_i)\]</div>
 <p>The fact that we are subtracting something from <span class="math notranslate nohighlight">\(E_{\rm lab}\)</span> on the
-right side of Equation <a class="reference internal" href="#equation-etotcom">(111)</a> makes it look like the amount of
+right side of Equation <a class="reference internal" href="#equation-etotcom">(113)</a> makes it look like the amount of
 energy in the com frame is less than the amount of energy in the lab
 frame, but you have to be cautious with such generalizations, because
 <span class="math notranslate nohighlight">\(\gamma_{\rm com}\)</span> is also getting larger as <span class="math notranslate nohighlight">\(p_i\)</span> increases, so it’s
 not so trivial to see which effect will dominate.</p>
 <p>However, Figure 9.1 shows how much energy is available in the COM
-frame, according to Equation <a class="reference internal" href="#equation-etotcom">(111)</a> (after subtracting off the
+frame, according to Equation <a class="reference internal" href="#equation-etotcom">(113)</a> (after subtracting off the
 rest energies of the original two particles) as a function of how much
 kinetic energy the incident particle has.  You can see that the amount
 of available energy is significantly less than the amount of KE put in
@@ -573,7 +578,114 @@ COM frame to make particles than in the lab frame, if you
 put all the KE into accelerating one particle at the stationary
 target.</p>
 </div>
-<p>Need to add Examples 1 and 2.</p>
+<section id="example-9-1">
+<h3>Example 9.1<a class="headerlink" href="#example-9-1" title="Permalink to this heading">#</a></h3>
+<p>A proton with kinetic energy 300.00 MeV strikes a stationary
+proton. Find the speed of the center-of-momentum frame and the total
+energy in the center-of-momentumframe. Is it possible for this
+scattering process to produce tvvo pions?</p>
+<p>Tofind the speed of the center-of-momentum, we use Equation <a class="reference internal" href="#equation-betacom">(111)</a>.
+The total energy in the laboratoiy frame is</p>
+<div class="math notranslate nohighlight">
+\[E_{\rm labtot} = 938.26~{\rm MeV}+ 300.00~{\rm MeV}+ 938.26~{\rm MeV}
+= 2176.52~{\rm MeV}\]</div>
+<p>The incident proton has all of the momentum in the lab reference frame, so</p>
+<div class="math notranslate nohighlight">
+\[cp_i =\sqrt{2(938.26~{\rm MeV})(300~{\rm MeV}) + (300~{\rm MeV})^2}
+\rightarrow p_i = 808.06~{\rm MeV}/c\]</div>
+<p>The momentum 4-vector for the system in the laboratory frame is:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}[p_4]_{\rm lab} =
+\begin{bmatrix}
+i 2176.52~{\rm MeV}/c\\
+808.06~{\rm MeV}/c\\
+0.0\\
+0.0
+\end{bmatrix}\end{split}\]</div>
+<p>The speed of the com frame is found using Equation <a class="reference internal" href="#equation-betacom">(111)</a>:</p>
+<div class="math notranslate nohighlight">
+\[\beta_{\rm com} = \frac{808.26}{2176.52} = 0.37135\]</div>
+<p>To find the energy available to make new particles, we use Equation
+<a class="reference internal" href="#equation-etotcom">(113)</a>.  First, find <span class="math notranslate nohighlight">\(\gamma_{\rm com}\)</span> from <span class="math notranslate nohighlight">\(\beta_{\rm com}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\gamma_{\rm com} = \frac{1}{\sqrt{1-\beta_{\rm com}^2}} = 1.0770\]</div>
+<p>Then plug into Equation <a class="reference internal" href="#equation-etotcom">(113)</a>:</p>
+<div class="math notranslate nohighlight">
+\[E_{\rm com} = 1.0770\left((2176.52~{\rm MeV}) - 0.37135(808.26~{\rm MeV})\right)
+= 2020.85~{\rm MeV}\]</div>
+<p>The rest energy of the charged pions is 139.6 MeV and the neutral pion
+has restenergy 135.0 MeV. It would seem that you could make a lot of
+pions.  However, charge and baryon number must also be conserved. In
+the lab, we started with two baryons, so some of this energy must go
+into making two more baryons. The baryon with the lowest rest energy
+is the proton, so if we make two protons, there is 2020.85 MeV-
+1876.52 MeV = 144.33 MeV left over. This energy could go into the
+kinetic energy of the two protons (the collision would then just be
+called elastic scattering), or it could be used to make 1 neutral
+pion. The two protons and the neutral pion would share the leftover
+9.3 MeV of energy as kinetic energy. This energy would be distributed
+in such a way that the total physical momentuin of the three particles
+would be zero (in the COM frame, of course.  In the lab, the total
+momentum of the three particles would be the same as the original
+momentum of the incident proton).</p>
+</section>
+<section id="example-9-2">
+<h3>Example 9.2<a class="headerlink" href="#example-9-2" title="Permalink to this heading">#</a></h3>
+<p>The first strange particles to be produced were the <span class="math notranslate nohighlight">\(\Lambda^0\)</span> and
+the <span class="math notranslate nohighlight">\(K^0\)</span> They were produced by colliding a high energy (large kinetic
+energy) negative pion with a stationary proton in a bubble
+chamber. What is the minimum kinetic energy that the pion must have if
+the interaction is to produce these two strange particles?</p>
+<p>In this case, we work backwards from knowing what the
+the minimum energy in the center-of-moinentum
+fraine would be. It must be at least the sum of the rest energies of the two
+particles to be produced.</p>
+<div class="math notranslate nohighlight">
+\[E_{\rm commin} = E_{0\Lambda} + E_{0K} =
+1115.7~{\rm MeV} + 497.7~{\rm MeV} = 1613.4~{\rm MeV}\]</div>
+<p>Transforming the momentum 4-vector in the com frame back
+into the lab frame gives</p>
+<div class="math notranslate nohighlight" id="equation-backtolab">
+<span class="eqno">(114)<a class="headerlink" href="#equation-backtolab" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
+i\frac{E_{\rm tot}}{c}\\
+p_x\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+\gamma_{\rm com} &amp; i\beta_{\rm com}\gamma_{\rm com} \\
+-i\beta_{\rm com}\gamma_{\rm com} &amp; \gamma_{\rm com} 
+\end{bmatrix}
+\begin{bmatrix}
+i\frac{E_{\rm commin}}{c}\\
+0.0
+\end{bmatrix}\end{split}\]</div>
+<p>We can use Equation <a class="reference internal" href="c8momentum.html#equation-pfrome">(96)</a> to write <span class="math notranslate nohighlight">\(p_x\)</span> as
+<span class="math notranslate nohighlight">\(\sqrt{E_{0\pi}KE_\pi + KE_\pi^2}\)</span> and the total
+energy is <span class="math notranslate nohighlight">\(E_{0\pi} + E_{0p} + KE_\pi\)</span>.  That covers
+the left side of Equation <a class="reference internal" href="#equation-backtolab">(114)</a> and the only
+unknown there is the KE of the pion.  On the right side,
+we multiply out the matrix to get</p>
+<div class="math notranslate nohighlight" id="equation-backtolab2">
+<span class="eqno">(115)<a class="headerlink" href="#equation-backtolab2" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
+i\frac{E_{0p}+E_{0\pi}+KE_\pi}{c}\\
+\frac{1}{c}\sqrt{E_{0\pi}KE_\pi + KE_\pi^2}\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+\gamma_{\rm com} i\frac{E_{\rm commin}}{c}\\
+\beta_{\rm com}\gamma_{\rm com}\frac{E_{\rm commin}}{c}
+\end{bmatrix}\end{split}\]</div>
+<p>If you include the definition of <span class="math notranslate nohighlight">\(\gamma_{\rm com}\)</span>, that’s
+three equations and three unknowns (<span class="math notranslate nohighlight">\(KE_\pi\)</span>, <span class="math notranslate nohighlight">\(\beta_{\rm com}\)</span>,
+and <span class="math notranslate nohighlight">\(\gamma_{\rm com}\)</span>), so we can solve for an answer!</p>
+<div class="math notranslate nohighlight">
+\[E_{0p} + E_{0\pi} + KE_\pi = \gamma_{\rm com}E_{\rm commin}\]</div>
+<div class="math notranslate nohighlight">
+\[E_{0\pi}KE_\pi + KE_\pi^2 = \beta_{\rm com}^2\gamma_{\rm com}^2E_{\rm commin}^2\]</div>
+<p>and of course</p>
+<div class="math notranslate nohighlight">
+\[\gamma_{\rm com} = \frac{1}{\sqrt{1-\beta_{\rm com}^2}}\]</div>
+</section>
 </section>
 <section id="photons-and-the-doppler-shift">
 <h2>Photons and the Doppler Shift<a class="headerlink" href="#photons-and-the-doppler-shift" title="Permalink to this heading">#</a></h2>
@@ -583,7 +695,7 @@ of the photon is the same for both inertial observers, but the energy
 changes. The momentum 4-vector for a photon as seen by the first
 observer is</p>
 <div class="math notranslate nohighlight" id="equation-p4phot">
-<span class="eqno">(112)<a class="headerlink" href="#equation-p4phot" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_1 =
+<span class="eqno">(116)<a class="headerlink" href="#equation-p4phot" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_1 =
 \begin{bmatrix}
 iE_1/c\\
 E_1/c\\
@@ -607,7 +719,7 @@ with respect to the first inertial observer, watching this same photon,
 would measure a momentum 4-vector given by (again ignoring <span class="math notranslate nohighlight">\(y\)</span> and
 <span class="math notranslate nohighlight">\(z\)</span>):</p>
 <div class="math notranslate nohighlight" id="equation-p4photlort">
-<span class="eqno">(113)<a class="headerlink" href="#equation-p4photlort" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_2 =
+<span class="eqno">(117)<a class="headerlink" href="#equation-p4photlort" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_2 =
 \begin{bmatrix}
 iE_2/c\\
 E_2/c
@@ -629,7 +741,7 @@ E_1/c-\beta_RE_1/c
 \end{bmatrix}\end{split}\]</div>
 <p>So</p>
 <div class="math notranslate nohighlight" id="equation-p4phot2">
-<span class="eqno">(114)<a class="headerlink" href="#equation-p4phot2" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_2 = 
+<span class="eqno">(118)<a class="headerlink" href="#equation-p4phot2" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_2 = 
 \begin{bmatrix}
 iE_2/c\\
 E_2/c
@@ -649,7 +761,7 @@ i\\
 <p>The part in brackets is clearly the same, so <span class="math notranslate nohighlight">\(E_2=\gamma_R(1-\beta_R)E_1\)</span>.
 Plug in the definition of <span class="math notranslate nohighlight">\(\gamma_R\)</span> to get</p>
 <div class="math notranslate nohighlight" id="equation-edopp">
-<span class="eqno">(115)<a class="headerlink" href="#equation-edopp" title="Permalink to this equation">#</a></span>\[E_2 = E_1 \frac{1-\beta_R}{\sqrt{1-\beta_R^2}}
+<span class="eqno">(119)<a class="headerlink" href="#equation-edopp" title="Permalink to this equation">#</a></span>\[E_2 = E_1 \frac{1-\beta_R}{\sqrt{1-\beta_R^2}}
 =
  E_1 \frac{1-\beta_R}{\sqrt{(1-\beta_R)(1+\beta_R)}}
 = E_1\sqrt{\frac{1-\beta_R}{1+\beta_R}}\]</div>
@@ -657,7 +769,7 @@ Plug in the definition of <span class="math notranslate nohighlight">\(\gamma_R\
 \[\boxed{
 E_2 =  E_1\sqrt{\frac{1-\beta_R}{1+\beta_R}}
 }\]</div>
-<p>Since <span class="math notranslate nohighlight">\(\beta_R\leq 1\)</span>, the numerator in Equation <a class="reference internal" href="#equation-edopp">(115)</a> will
+<p>Since <span class="math notranslate nohighlight">\(\beta_R\leq 1\)</span>, the numerator in Equation <a class="reference internal" href="#equation-edopp">(119)</a> will
 always be less than the denominator, so as long as the second observer
 is moving to the right (receding from the source of the light),
 she will measure a smaller energy than the first observer would.
@@ -672,17 +784,17 @@ energy.  However, for a massive object like a ball or a proton, that
 energy is associated with speed.  For a massless particle like a photon,
 the speed does not change – it always moves at <span class="math notranslate nohighlight">\(c\)</span>.  The energy in that
 case is associated with the frequency (or equivalently, the wavelenth)
-of the light.  So, for light, we often write Equation <a class="reference internal" href="#equation-edopp">(115)</a> in
+of the light.  So, for light, we often write Equation <a class="reference internal" href="#equation-edopp">(119)</a> in
 terms of frequency (<span class="math notranslate nohighlight">\(f\)</span>) or wavelength (<span class="math notranslate nohighlight">\(\lambda\)</span>):</p>
 <div class="math notranslate nohighlight" id="equation-fdopp">
-<span class="eqno">(116)<a class="headerlink" href="#equation-fdopp" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(120)<a class="headerlink" href="#equation-fdopp" title="Permalink to this equation">#</a></span>\[\boxed{
 f_2 = f_1\sqrt{\frac{1-\beta_R}{1+\beta_R}}}\]</div>
 <p>and</p>
 <div class="math notranslate nohighlight" id="equation-ldopp">
-<span class="eqno">(117)<a class="headerlink" href="#equation-ldopp" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(121)<a class="headerlink" href="#equation-ldopp" title="Permalink to this equation">#</a></span>\[\boxed{
 \lambda_2 = \lambda_1\sqrt{\frac{1+\beta_R}{1-\beta_R}}}\]</div>
 <p>Since <span class="math notranslate nohighlight">\(\lambda = c/f\)</span>, these two equations are reciprocals.</p>
-<p>Since Equation <a class="reference internal" href="#equation-fdopp">(116)</a> says the photons will be shifted toward
+<p>Since Equation <a class="reference internal" href="#equation-fdopp">(120)</a> says the photons will be shifted toward
 smaller frequencies if the relative velocity of the source and
 observer is positive (receding), and the smallest frequencies of
 visible light are red, we refer to this kind of change as a “redshift”,
@@ -777,7 +889,7 @@ the relativistic theory. For this work, Arthur Compton was awarded the
 <p>In the laboratory frame (Figure 9.2), the momentum 4-vector for the
 system is</p>
 <div class="math notranslate nohighlight" id="equation-p4totcs">
-<span class="eqno">(118)<a class="headerlink" href="#equation-p4totcs" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm lab} =
+<span class="eqno">(122)<a class="headerlink" href="#equation-p4totcs" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm lab} =
 \begin{bmatrix}
 i\frac{1}{c}(E_{\rm phot} + E_{0})\\
 \frac{E_{\rm phot}}{c}\\
@@ -789,16 +901,16 @@ is the momentum of the photon.</p>
 <p>I am <strong>not</strong> going to ignore <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> for this problem, because
 we will need to consider the motion of the particles in the <span class="math notranslate nohighlight">\(y\)</span>
 direction.</p>
-<p>We then use Equation <a class="reference internal" href="#equation-betacom">(109)</a> to find the speed of the
+<p>We then use Equation <a class="reference internal" href="#equation-betacom">(111)</a> to find the speed of the
 center of momentum frame <span class="math notranslate nohighlight">\(\beta_{\rm com}\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-betcomcs">
-<span class="eqno">(119)<a class="headerlink" href="#equation-betcomcs" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(123)<a class="headerlink" href="#equation-betcomcs" title="Permalink to this equation">#</a></span>\[\boxed{
 \beta_{\rm com} = \frac{E_{\rm phot}}{E_{\rm phot} + E_0}}\]</div>
 <p>Now, we can use the results from the Doppler shift (Equation
-<a class="reference internal" href="#equation-edopp">(115)</a>) to find the energy of the photon before the collision in
+<a class="reference internal" href="#equation-edopp">(119)</a>) to find the energy of the photon before the collision in
 the com reference frame.</p>
 <div class="math notranslate nohighlight" id="equation-ephotcomcs">
-<span class="eqno">(120)<a class="headerlink" href="#equation-ephotcomcs" title="Permalink to this equation">#</a></span>\[E_{\rm photcom} = \gamma_{\rm com}(1-\beta_{\rm com})E_{\rm phot}\]</div>
+<span class="eqno">(124)<a class="headerlink" href="#equation-ephotcomcs" title="Permalink to this equation">#</a></span>\[E_{\rm photcom} = \gamma_{\rm com}(1-\beta_{\rm com})E_{\rm phot}\]</div>
 <p>After the
 collision (see Figure 9.3), the scattered photon and the recoiling
 electron still must have a total momentum of 0 and the same total
@@ -806,11 +918,11 @@ energy as before the collision. The only way for this to happen at any
 angle <span class="math notranslate nohighlight">\(\xi\)</span> for the two scattered particles to have the same size
 momentum as they did before the collision.</p>
 <p>So after the collision, the energy of the scattered photon is still
-the same as in Equation <a class="reference internal" href="#equation-ephotcomcs">(120)</a>. It is just going out at an
+the same as in Equation <a class="reference internal" href="#equation-ephotcomcs">(124)</a>. It is just going out at an
 angle <span class="math notranslate nohighlight">\(\xi\)</span> with respect to the x axis. The 4-momentum of this scattered
 photon is</p>
 <div class="math notranslate nohighlight" id="equation-p4gcomaftcs">
-<span class="eqno">(121)<a class="headerlink" href="#equation-p4gcomaftcs" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm photcom~AFTER} =
+<span class="eqno">(125)<a class="headerlink" href="#equation-p4gcomaftcs" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm photcom~AFTER} =
 \begin{bmatrix}
 i\frac{E_{\rm photcom}}{c}\\
 \frac{E_{\rm photcom}}{c}\cos{\xi}\\
@@ -830,7 +942,7 @@ energy <span class="math notranslate nohighlight">\(E_{\rm photlab}\)</span> in 
 collision).  The 4-momentum for this same photon in the laboratory
 frame after the scattering is</p>
 <div class="math notranslate nohighlight" id="equation-p4glabaftcs">
-<span class="eqno">(122)<a class="headerlink" href="#equation-p4glabaftcs" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm phot~AFTER} =
+<span class="eqno">(126)<a class="headerlink" href="#equation-p4glabaftcs" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm phot~AFTER} =
 \begin{bmatrix}
 i\frac{E_{\rm photlab}}{c}\\
 \frac{E_{\rm photlab}}{c}\cos{\theta}\\
@@ -840,7 +952,7 @@ i\frac{E_{\rm photlab}}{c}\\
 <p>As you might suspect, the way to connect these two four vectors is
 through a Lorentz transformation!</p>
 <div class="math notranslate nohighlight" id="equation-p4lorentzcs">
-<span class="eqno">(123)<a class="headerlink" href="#equation-p4lorentzcs" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
+<span class="eqno">(127)<a class="headerlink" href="#equation-p4lorentzcs" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
 i\frac{E_{\rm photcom}}{c}\\
 \frac{E_{\rm photcom}}{c}\cos{\xi}\\
 \frac{E_{\rm photcom}}{c}\sin{\xi}\\
@@ -861,33 +973,33 @@ i\frac{E_{\rm photlab}}{c}\\
 \end{bmatrix}\end{split}\]</div>
 <p>Multiplyting out the time component yields</p>
 <div class="math notranslate nohighlight" id="equation-cstime">
-<span class="eqno">(124)<a class="headerlink" href="#equation-cstime" title="Permalink to this equation">#</a></span>\[E_{\rm photcom} = \gamma_{\rm com}
+<span class="eqno">(128)<a class="headerlink" href="#equation-cstime" title="Permalink to this equation">#</a></span>\[E_{\rm photcom} = \gamma_{\rm com}
 E_{\rm photlab}(1-\beta_{\rm com}\cos{\theta}) =
 \gamma_{\rm com}(1-\beta_{\rm com})E_{\rm phot}\]</div>
 <p>where the rightmost term is the energy of the photon
 before the collision, in the lab frame.</p>
 <p>The factors of <span class="math notranslate nohighlight">\(\gamma_{\rm com}\)</span> cancel, and we can substitute
-in Equation <a class="reference internal" href="#equation-betcomcs">(119)</a> for <span class="math notranslate nohighlight">\(\beta_{\rm com}\)</span> to get</p>
+in Equation <a class="reference internal" href="#equation-betcomcs">(123)</a> for <span class="math notranslate nohighlight">\(\beta_{\rm com}\)</span> to get</p>
 <div class="math notranslate nohighlight" id="equation-cstime1">
-<span class="eqno">(125)<a class="headerlink" href="#equation-cstime1" title="Permalink to this equation">#</a></span>\[E_{\rm photlab}\left(1-
+<span class="eqno">(129)<a class="headerlink" href="#equation-cstime1" title="Permalink to this equation">#</a></span>\[E_{\rm photlab}\left(1-
 \frac{E_{\rm phot}}{E_{\rm phot} + E_0}\cos{\theta}\right) =
 \left(1- \frac{E_{\rm phot}}{E_{\rm phot} + E_0}\right)E_{\rm phot}\]</div>
 <p>Find a common denominator to get rid of the ones:</p>
 <div class="math notranslate nohighlight" id="equation-cstime2">
-<span class="eqno">(126)<a class="headerlink" href="#equation-cstime2" title="Permalink to this equation">#</a></span>\[E_{\rm photlab}\left(
+<span class="eqno">(130)<a class="headerlink" href="#equation-cstime2" title="Permalink to this equation">#</a></span>\[E_{\rm photlab}\left(
 \frac{E_0+E_{\rm phot}(1-\cos{\theta})}{E_{\rm phot} + E_0}\right)
 =
 \left(\frac{E_0}{E_{\rm phot} + E_0}\right)E_{\rm phot}\]</div>
 <p>Cancel the denominator:</p>
 <div class="math notranslate nohighlight" id="equation-cstime3">
-<span class="eqno">(127)<a class="headerlink" href="#equation-cstime3" title="Permalink to this equation">#</a></span>\[E_{\rm photlab}\left(
+<span class="eqno">(131)<a class="headerlink" href="#equation-cstime3" title="Permalink to this equation">#</a></span>\[E_{\rm photlab}\left(
 E_0+E_{\rm phot}(1-\cos{\theta})\right)
 =
 E_0E_{\rm phot}\]</div>
 <p>This equation is usually written in a final form by dividing
 both sides by <span class="math notranslate nohighlight">\(E_0E_{\rm phot}E_{\rm photlab}\)</span> to get</p>
 <div class="math notranslate nohighlight" id="equation-cseeq">
-<span class="eqno">(128)<a class="headerlink" href="#equation-cseeq" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(132)<a class="headerlink" href="#equation-cseeq" title="Permalink to this equation">#</a></span>\[\boxed{
 \frac{1}{E_{\rm photlab}} = \frac{1}{E_{\rm phot}}
 + \frac{1}{E_0} (1-\cos{\theta})}\]</div>
 <p>Why would you want to write it like this?  Well, first of all it gets
@@ -903,7 +1015,7 @@ where the y-intercept is not differnt from the known original value of
 line as giving you an estimate of <span class="math notranslate nohighlight">\(1/E_0\)</span>, which would mean that the
 reciprocal of the slope would be an estimate of the rest energy of the
 electron!</p>
-<p>Equation <a class="reference internal" href="#equation-cseeq">(128)</a>, which was derived assuming that the photon acts
+<p>Equation <a class="reference internal" href="#equation-cseeq">(132)</a>, which was derived assuming that the photon acts
 like a particle with momentum given by <span class="math notranslate nohighlight">\(p=E/c\)</span>, demanding that
 physical momentum and total energy be conserved in any particular
 reference frame and using the Lorentz transformation to move
@@ -917,10 +1029,10 @@ not actually include such a plot, but he does include the original
 spectra he recorded that show the energy shift for eight different
 values of <span class="math notranslate nohighlight">\(\theta\)</span>.  From these graphs, it is possible to measure
 <span class="math notranslate nohighlight">\(E_{\rm photlab}\)</span> and construct the graph we need to test the
-hypothesis posed by Equation <a class="reference internal" href="#equation-cseeq">(128)</a>.  Such a graph for four of
+hypothesis posed by Equation <a class="reference internal" href="#equation-cseeq">(132)</a>.  Such a graph for four of
 the measurements reported in 1923 is shown in Figure 9.4.</p>
 <p>Note the excellent agreement between experiment and the predictions of
-Equation <a class="reference internal" href="#equation-cseeq">(128)</a>! One over the y-intercept is within one <span class="math notranslate nohighlight">\(\sigma\)</span>
+Equation <a class="reference internal" href="#equation-cseeq">(132)</a>! One over the y-intercept is within one <span class="math notranslate nohighlight">\(\sigma\)</span>
 of the known 17.5 keV value for the incoming photons in the lab frame.
 The best fit slope in Figure 9.4 is <span class="math notranslate nohighlight">\((1.90\pm0.04)\times10^{-3}\)</span>
 1/keV, which means the best estimate of the rest mass of the electron
@@ -942,10 +1054,96 @@ The estimate of Egam is (17.51 +- 0.01) keV
 <p>Figure 9.4 – Graph constructed from measurements reported
 in Compton’s 1923 paper.  He measuredt the wavelength of 17.5 keV
 X-rays scatteredfrom graphite. Notice the agreement with the
-predictions of Equation <a class="reference internal" href="#equation-cseeq">(128)</a>. The slope can be interpreted
+predictions of Equation <a class="reference internal" href="#equation-cseeq">(132)</a>. The slope can be interpreted
 as 1/(rest energy of an electron).</p>
 </div>
 </section>
+</section>
+<section id="problems">
+<h2>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>A 500.0 MeV proton collides with a stationary neutron.</p></li>
+</ol>
+<p>a) Determine the speed of the center-of-momentum frame for this system.</p>
+<p>b) Determine the total energy in the center-of-momentum frame.</p>
+<ol class="arabic simple" start="2">
+<li><p>Find the laboratory threshold energy for this scattering reaction
+(when the proton is the incident particle hitting the stationary neutron):</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[p^+ + n^0 \rightarrow n^0 + n^0 + \pi^+\]</div>
+<ol class="arabic simple" start="3">
+<li><p>A 200 MeV anti-proton interacts with a stationary neutron in the
+lab and produces two pions</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\bar{p}^- + n^0 \rightarrow \pi^- + \pi^0\]</div>
+<p>The negative pion is seen traveling in the
+<span class="math notranslate nohighlight">\(x\)</span> direction. Find the momentum and kinetic energy of the two pions in
+the laboratory frame after the collision.</p>
+<ol class="arabic simple" start="4">
+<li><p>A 210 MeV proton collides with a stationary proton in the lab to
+produce two protons (elastic scattering). One of the scattered protons
+is detected at a laboratory angle of 30.0 degrees. What is the kinetic
+energy of this proton?</p></li>
+<li><p>A 2.190 eV photon is observed in the laboratory reference frame.</p></li>
+</ol>
+<p>a) Calculate the momentum, wavelength and frequency of this photon as
+seen by an observer in the lab.</p>
+<p>b) A second observer, traveling with <span class="math notranslate nohighlight">\(\beta= 0.8660\)</span> observes this
+same photon. Calculate the wavelength and momentum measured by this
+observer.</p>
+<ol class="arabic simple" start="6">
+<li><p>Find the speed of a galaxy with respect to the Earth if the
+wavelength for the hydrogen spectraI line measured with the telescope
+is 610 nm but the wavelength measured from hydrogen at rest with
+respect to the Earth is 410 nm.</p></li>
+<li><p>A space ship is traveling towards the earth with a speed of <span class="math notranslate nohighlight">\(\beta=O.992\)</span>.
+It is transmitting data to the Earth at a frequency of 95.0 MHz. At
+what frequency should the receivers on earth be tuned to receive this
+signal?</p></li>
+<li><p>The radar sender aboard a police car parked on the edge of the road
+sends out photons of wavelength 12.000 cm. The photons are reflected
+from a car moving at 80 miles per hour. What frequency does the person
+in the speeding car measure for these radar photons? What wavelength
+does the police car measure for the radar photons reflected off the
+speeding car?</p></li>
+<li><p>X-rays of wavelength 1.40 Angstroms are scattered from a block of
+carbon.</p></li>
+</ol>
+<p>a) Find the momentum of these X-ray photons</p>
+<p>b) Find the wavelength of the X-rays that are scattered at an angle of
+75 degrees with respect to the incident beam line.</p>
+<p>c) Find the fractional loss of energy for this scattered photon.</p>
+<ol class="arabic simple" start="10">
+<li><p>A beam of O.66 MeV photons is scattered from an aluminum
+target. Calculate the energy of the photons that are scattered at an
+angle of 175 degrees with respect to the original beam line.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Figure 9.5 – Guilford College student Alison Duncan reproduced
+Compton’s experiment in 2005.  She used a pulse height analyzer
+to measure the energy of a photon beam from a Cs-137 source,
+after the photons had been scattered off an aluminum target.
+The graph follows Figure 9.4 with the same axes.</p>
+</div>
+<ol class="arabic simple" start="11">
+<li><p>Figure 9.5 shows some results of a scattering experiment performed
+by Alison Duncan during the spring semester of 2005 as part of her
+first year Jab. She collimated a beam of photons from a Cs-l37
+radioactive source and aimed the beam at an aluminum target. She then
+used a NaI detector to measure the energy of the photons that were
+scattered at various angles with respect to the initial beam line. She
+plot shows the reciprocal of the measured energy plotted as a function
+of <span class="math notranslate nohighlight">\((1-\cos{\theta})\)</span> where <span class="math notranslate nohighlight">\(\theta\)</span> is the scattering angle of the
+photons.</p></li>
+</ol>
+<p>a) Are her data consistent with Compton’s model of photon-electron
+scattering?</p>
+<p>b) Calculate the rest energy of the particle off of which the photons
+scattered (with uncertainty, of course). Does this value make sense to
+you? Why?</p>
 </section>
 </section>
 
@@ -1016,13 +1214,18 @@ as 1/(rest energy of an electron).</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-center-of-momentum-frame">The Center of Momentum Frame</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-center-of-momentum-frame">The Center of Momentum Frame</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-9-1">Example 9.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-9-2">Example 9.2</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photons-and-the-doppler-shift">Photons and the Doppler Shift</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compton-scattering">Compton Scattering</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experimental-background">Experimental Background</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#special-relativistic-model">Special Relativistic Model</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
 </ul>
   </nav></div>
 

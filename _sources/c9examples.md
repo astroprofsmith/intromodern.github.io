@@ -262,7 +262,131 @@ put all the KE into accelerating one particle at the stationary
 target.
 ```
 
-Need to add Examples 1 and 2.
+### Example 9.1
+
+A proton with kinetic energy 300.00 MeV strikes a stationary
+proton. Find the speed of the center-of-momentum frame and the total
+energy in the center-of-momentumframe. Is it possible for this
+scattering process to produce tvvo pions?
+
+Tofind the speed of the center-of-momentum, we use Equation {eq}`betacom`.
+The total energy in the laboratoiy frame is
+```{math}
+E_{\rm labtot} = 938.26~{\rm MeV}+ 300.00~{\rm MeV}+ 938.26~{\rm MeV}
+= 2176.52~{\rm MeV}
+```
+The incident proton has all of the momentum in the lab reference frame, so
+```{math}
+cp_i =\sqrt{2(938.26~{\rm MeV})(300~{\rm MeV}) + (300~{\rm MeV})^2}
+\rightarrow p_i = 808.06~{\rm MeV}/c
+```
+The momentum 4-vector for the system in the laboratory frame is:
+```{math}
+[p_4]_{\rm lab} =
+\begin{bmatrix}
+i 2176.52~{\rm MeV}/c\\
+808.06~{\rm MeV}/c\\
+0.0\\
+0.0
+\end{bmatrix}
+```
+The speed of the com frame is found using Equation {eq}`betacom`:
+```{math}
+\beta_{\rm com} = \frac{808.26}{2176.52} = 0.37135
+```
+To find the energy available to make new particles, we use Equation
+{eq}`Etotcom`.  First, find $\gamma_{\rm com}$ from $\beta_{\rm com}$:
+```{math}
+\gamma_{\rm com} = \frac{1}{\sqrt{1-\beta_{\rm com}^2}} = 1.0770
+```
+Then plug into Equation {eq}`Etotcom`:
+```{math}
+E_{\rm com} = 1.0770\left((2176.52~{\rm MeV}) - 0.37135(808.26~{\rm MeV})\right)
+= 2020.85~{\rm MeV}
+```
+
+The rest energy of the charged pions is 139.6 MeV and the neutral pion
+has restenergy 135.0 MeV. It would seem that you could make a lot of
+pions.  However, charge and baryon number must also be conserved. In
+the lab, we started with two baryons, so some of this energy must go
+into making two more baryons. The baryon with the lowest rest energy
+is the proton, so if we make two protons, there is 2020.85 MeV-
+1876.52 MeV = 144.33 MeV left over. This energy could go into the
+kinetic energy of the two protons (the collision would then just be
+called elastic scattering), or it could be used to make 1 neutral
+pion. The two protons and the neutral pion would share the leftover
+9.3 MeV of energy as kinetic energy. This energy would be distributed
+in such a way that the total physical momentuin of the three particles
+would be zero (in the COM frame, of course.  In the lab, the total
+momentum of the three particles would be the same as the original
+momentum of the incident proton).
+
+### Example 9.2
+
+The first strange particles to be produced were the $\Lambda^0$ and
+the $K^0$ They were produced by colliding a high energy (large kinetic
+energy) negative pion with a stationary proton in a bubble
+chamber. What is the minimum kinetic energy that the pion must have if
+the interaction is to produce these two strange particles?
+
+In this case, we work backwards from knowing what the 
+the minimum energy in the center-of-moinentum
+fraine would be. It must be at least the sum of the rest energies of the two
+particles to be produced.
+```{math}
+E_{\rm commin} = E_{0\Lambda} + E_{0K} =
+1115.7~{\rm MeV} + 497.7~{\rm MeV} = 1613.4~{\rm MeV}
+```
+Transforming the momentum 4-vector in the com frame back
+into the lab frame gives
+```{math}
+:label: backtolab
+\begin{bmatrix}
+i\frac{E_{\rm tot}}{c}\\
+p_x\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+\gamma_{\rm com} & i\beta_{\rm com}\gamma_{\rm com} \\
+-i\beta_{\rm com}\gamma_{\rm com} & \gamma_{\rm com} 
+\end{bmatrix}
+\begin{bmatrix}
+i\frac{E_{\rm commin}}{c}\\
+0.0
+\end{bmatrix}
+```
+We can use Equation {eq}`pfrome` to write $p_x$ as
+$\sqrt{E_{0\pi}KE_\pi + KE_\pi^2}$ and the total
+energy is $E_{0\pi} + E_{0p} + KE_\pi$.  That covers
+the left side of Equation {eq}`backtolab` and the only
+unknown there is the KE of the pion.  On the right side,
+we multiply out the matrix to get
+```{math}
+:label: backtolab2
+\begin{bmatrix}
+i\frac{E_{0p}+E_{0\pi}+KE_\pi}{c}\\
+\frac{1}{c}\sqrt{E_{0\pi}KE_\pi + KE_\pi^2}\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+\gamma_{\rm com} i\frac{E_{\rm commin}}{c}\\
+\beta_{\rm com}\gamma_{\rm com}\frac{E_{\rm commin}}{c}
+\end{bmatrix}
+```
+If you include the definition of $\gamma_{\rm com}$, that's
+three equations and three unknowns ($KE_\pi$, $\beta_{\rm com}$,
+and $\gamma_{\rm com}$), so we can solve for an answer!
+
+```{math}
+E_{0p} + E_{0\pi} + KE_\pi = \gamma_{\rm com}E_{\rm commin}
+```
+```{math}
+E_{0\pi}KE_\pi + KE_\pi^2 = \beta_{\rm com}^2\gamma_{\rm com}^2E_{\rm commin}^2
+```
+and of course
+```{math}
+\gamma_{\rm com} = \frac{1}{\sqrt{1-\beta_{\rm com}^2}}
+```
 
 ## Photons and the Doppler Shift
 
@@ -810,3 +934,97 @@ X-rays scatteredfrom graphite. Notice the agreement with the
 predictions of Equation {eq}`csEeq`. The slope can be interpreted
 as 1/(rest energy of an electron).
 ```
+
+
+## Problems
+
+1) A 500.0 MeV proton collides with a stationary neutron.
+
+a) Determine the speed of the center-of-momentum frame for this system.
+
+b) Determine the total energy in the center-of-momentum frame.
+
+2) Find the laboratory threshold energy for this scattering reaction
+(when the proton is the incident particle hitting the stationary neutron):
+```{math}
+p^+ + n^0 \rightarrow n^0 + n^0 + \pi^+
+```
+
+3) A 200 MeV anti-proton interacts with a stationary neutron in the
+lab and produces two pions
+```{math}
+\bar{p}^- + n^0 \rightarrow \pi^- + \pi^0
+```
+The negative pion is seen traveling in the
+$x$ direction. Find the momentum and kinetic energy of the two pions in
+the laboratory frame after the collision.
+
+4) A 210 MeV proton collides with a stationary proton in the lab to
+produce two protons (elastic scattering). One of the scattered protons
+is detected at a laboratory angle of 30.0 degrees. What is the kinetic
+energy of this proton?
+
+5) A 2.190 eV photon is observed in the laboratory reference frame.
+
+a) Calculate the momentum, wavelength and frequency of this photon as
+seen by an observer in the lab.
+
+b) A second observer, traveling with $\beta= 0.8660$ observes this
+same photon. Calculate the wavelength and momentum measured by this
+observer.
+
+6) Find the speed of a galaxy with respect to the Earth if the
+wavelength for the hydrogen spectraI line measured with the telescope
+is 610 nm but the wavelength measured from hydrogen at rest with
+respect to the Earth is 410 nm.
+
+7) A space ship is traveling towards the earth with a speed of $\beta=O.992$.
+It is transmitting data to the Earth at a frequency of 95.0 MHz. At
+what frequency should the receivers on earth be tuned to receive this
+signal?
+
+8) The radar sender aboard a police car parked on the edge of the road
+sends out photons of wavelength 12.000 cm. The photons are reflected
+from a car moving at 80 miles per hour. What frequency does the person
+in the speeding car measure for these radar photons? What wavelength
+does the police car measure for the radar photons reflected off the
+speeding car?
+
+9) X-rays of wavelength 1.40 Angstroms are scattered from a block of
+carbon.
+
+a) Find the momentum of these X-ray photons
+
+b) Find the wavelength of the X-rays that are scattered at an angle of
+75 degrees with respect to the incident beam line.
+
+c) Find the fractional loss of energy for this scattered photon.
+
+10) A beam of O.66 MeV photons is scattered from an aluminum
+target. Calculate the energy of the photons that are scattered at an
+angle of 175 degrees with respect to the original beam line.
+
+```{note}
+Figure 9.5 -- Guilford College student Alison Duncan reproduced
+Compton's experiment in 2005.  She used a pulse height analyzer
+to measure the energy of a photon beam from a Cs-137 source,
+after the photons had been scattered off an aluminum target.
+The graph follows Figure 9.4 with the same axes.
+```
+
+11) Figure 9.5 shows some results of a scattering experiment performed
+by Alison Duncan during the spring semester of 2005 as part of her
+first year Jab. She collimated a beam of photons from a Cs-l37
+radioactive source and aimed the beam at an aluminum target. She then
+used a NaI detector to measure the energy of the photons that were
+scattered at various angles with respect to the initial beam line. She
+plot shows the reciprocal of the measured energy plotted as a function
+of $(1-\cos{\theta})$ where $\theta$ is the scattering angle of the
+photons.
+
+a) Are her data consistent with Compton's model of photon-electron
+scattering?
+
+b) Calculate the rest energy of the particle off of which the photons
+scattered (with uncertainty, of course). Does this value make sense to
+you? Why?

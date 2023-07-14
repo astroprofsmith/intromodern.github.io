@@ -368,8 +368,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-transforming-momentum">Example of Transforming Momentum</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-and-energy">Momentum and Energy</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rest-energy">The Rest Energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-using-the-definitions">Example of Using the Definitions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-laws-and-the-momentum-four-vector">Conservation Laws and the Momentum Four-Vector</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-momentum-conservation">Example of Momentum Conservation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
 </ul>
             </nav>
         </div>
@@ -765,6 +767,58 @@ to us, to make the transition from slightly less than the speed of
 light to slightly more than the speed of light.  As the saying goes…</p>
 <p><strong>The speed of light. It’s not only a good idea, it’s the law!</strong></p>
 </section>
+<section id="example-of-using-the-definitions">
+<h2>Example of Using the Definitions<a class="headerlink" href="#example-of-using-the-definitions" title="Permalink to this heading">#</a></h2>
+<p>Example 5.4</p>
+<p>An electron (rest energy = 0.511 MeV) moving in the <span class="math notranslate nohighlight">\(x\)</span>-direction has
+a kinetic energy of 1.000 MeV (1 eV = <span class="math notranslate nohighlight">\(1.602 \times 10^{-19}\)</span> joules)
+Find the total energy, the physical momentum, the momentum 4-vector
+and the speed of this electron.</p>
+<p>The kinetic energy is almost twice the rest energy, so
+<span class="math notranslate nohighlight">\(\gamma\approx3\)</span>, and I will have to do this problein using
+reLativistic formulae. The total energy is the sum of the kinetic and
+rest energy, so <span class="math notranslate nohighlight">\(E_{\rm tot} = 1.511\)</span> MeV. To find
+the momentum, you use Equation <a class="reference internal" href="#equation-pfrome1">(95)</a> to get</p>
+<div class="math notranslate nohighlight">
+\[(cp)^2 = (1.511~{\rm MeV})^2 - (0.511~{\rm MeV})^2 = 2.022~{\rm MeV}^2\]</div>
+<p>Take the square root and divide by <span class="math notranslate nohighlight">\(c\)</span> to get</p>
+<div class="math notranslate nohighlight">
+\[\vec{p} = 1.422~\frac{\rm MeV}{c}\hat{x}\]</div>
+<p>And yes, MeV/<span class="math notranslate nohighlight">\(c\)</span> is a perfectly good unit for momentum, and
+very useful for
+elementary particles. If you <em>really</em> wanted to convert this to the
+dump truck units (SI) for momentum, kg m/s,
+use the conversion factor</p>
+<div class="math notranslate nohighlight" id="equation-evunit">
+<span class="eqno">(100)<a class="headerlink" href="#equation-evunit" title="Permalink to this equation">#</a></span>\[1~{\rm eV}/c = 5.340 \times 10^{-28}~{\rm kg m/s}\]</div>
+<p>The momentum 4-vector now can be
+written (using Equation <a class="reference internal" href="#equation-p4fulle">(98)</a>) as:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}[p_4] =
+\begin{bmatrix}
+i1.511~{\rm MeV}/c\\
+1.422~{\rm MeV}/c\\
+0.0\\
+0.0
+\end{bmatrix}\end{split}\]</div>
+<p>There are a couple ways you could get the speed.  The easiest way
+would be to use Equation <a class="reference internal" href="#equation-game">(99)</a> to get <span class="math notranslate nohighlight">\(\gamma\)</span> and then
+solve for <span class="math notranslate nohighlight">\(\beta\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\gamma = 1 + \frac{KE}{E_0} = 1 + \frac{1.00}{.511} = 2.957\]</div>
+<p>Then use the definition of <span class="math notranslate nohighlight">\(\gamma\)</span> to get</p>
+<div class="math notranslate nohighlight">
+\[\beta = \sqrt{1-\frac{1}{\gamma^2}} = 0.941\]</div>
+<p>If you really want that in SI units, that would be <span class="math notranslate nohighlight">\(2.82\times10^8\)</span> m/s.
+The other way to do it would be to go from the four vector.
+We have <span class="math notranslate nohighlight">\(p_x = 1.422\times10^6\)</span> eV/c, which by the conversion (<a class="reference internal" href="#equation-evunit">(100)</a>)
+above is <span class="math notranslate nohighlight">\(7.593\times10^{-22}\)</span> kg m/s.  This momentum is <span class="math notranslate nohighlight">\(\gamma m_0 v_x\)</span>,
+so we divide by <span class="math notranslate nohighlight">\(\gamma = 2.957\)</span> to get <span class="math notranslate nohighlight">\(2.568\times10^{-22}\)</span> kg m/s.
+Divide by the mass of the electron (<span class="math notranslate nohighlight">\(9.109\times 10^{-31}\)</span> kg) to get
+<span class="math notranslate nohighlight">\(2.82\times10^8\)</span> m/s, as before.  If you forget that momentum has a
+<span class="math notranslate nohighlight">\(\gamma\)</span> built into it, you would get a speed almost three times faster
+than light speed.</p>
+</section>
 <section id="conservation-laws-and-the-momentum-four-vector">
 <h2>Conservation Laws and the Momentum Four-Vector<a class="headerlink" href="#conservation-laws-and-the-momentum-four-vector" title="Permalink to this heading">#</a></h2>
 <p>If an interaction happens that is isolated from its surroundings, the
@@ -813,12 +867,12 @@ the same.</p>
 </section>
 <section id="example-of-momentum-conservation">
 <h2>Example of Momentum Conservation<a class="headerlink" href="#example-of-momentum-conservation" title="Permalink to this heading">#</a></h2>
-<p>Example 8.4: A neutral pion (rest energy <span class="math notranslate nohighlight">\(E_0=135\)</span> MeV) decays into
+<p>Example 8.5: A neutral pion (rest energy <span class="math notranslate nohighlight">\(E_0=135\)</span> MeV) decays into
 two photons. Show that in the rest frame of the pion, the two photons
 move in opposite directions. Find the energy of these two photons.</p>
 <p>In the rest frame of the pion, the momentum 4-vector for the pion is:</p>
 <div class="math notranslate nohighlight" id="equation-p4pi">
-<span class="eqno">(100)<a class="headerlink" href="#equation-p4pi" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm before} =
+<span class="eqno">(101)<a class="headerlink" href="#equation-p4pi" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm before} =
 \begin{bmatrix}
 i135~{\rm MeV}/c\\
 0.0\\
@@ -830,7 +884,7 @@ The <span class="math notranslate nohighlight">\(x\)</span>-direction is defined
 takes. The second photon travels in some unknown direction. The observer in
 the rest frame of the pion measures a momentum 4-vector of the two photons as:</p>
 <div class="math notranslate nohighlight" id="equation-p42pho">
-<span class="eqno">(101)<a class="headerlink" href="#equation-p42pho" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm after} =
+<span class="eqno">(102)<a class="headerlink" href="#equation-p42pho" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm after} =
 \begin{bmatrix}
 i(E_1+E_2)/c\\
 p_{x1}+p_{x2}\\
@@ -859,6 +913,81 @@ momenta and their energies must be proportional (by Equation
 <a class="reference internal" href="#equation-eqcp1">(89)</a>), so the energy must be split evenly between them.  Each
 photon has an energy of 67.5 MeV, and therefore a momentum of 67.5
 MeV/c, but each in an opposite direction to the other.</p>
+</section>
+<section id="problems">
+<h2>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Find the physical momentum of a 100 MeV proton, a 100 MeV positive
+pion and a 100 MeV electron. (the units should be in MeV/c).</p></li>
+<li><p>Make a plot of the kinetic energy of an electron as a function of
+<span class="math notranslate nohighlight">\(\beta\)</span> for <span class="math notranslate nohighlight">\(\beta = 0 to 0.999\)</span> (or some maximum number just slightly
+less than one). On the same graph, plot the classical value of the
+kinetic energy of this electron (<span class="math notranslate nohighlight">\(KE = 1/2 mv^2= 1/2 Eo
+\beta^2\)</span>). Describe the difference between these two graphs. What does
+this graph predict about the chances of an electron to travel the
+speed of light?</p></li>
+<li><p>A negative pion is traveling with <span class="math notranslate nohighlight">\(\beta = 0.9900\)</span> in the <span class="math notranslate nohighlight">\(+x\)</span>
+direction heading straight towards a proton that is traveling with
+<span class="math notranslate nohighlight">\(\beta = 0.5720\)</span> in the <span class="math notranslate nohighlight">\(-x\)</span> direction. Write down the elements of the
+momentum 4-vector for this system.</p></li>
+<li><p>Find the speed and momentum of a negative pion that has kinetic
+energy 300 MeV.</p></li>
+<li><p>Calculate the elements of the momentum 4-vector for a 2.00 eV
+photon.  What kind of light is a 2 eV photon?</p></li>
+<li><p>A proton is moving with a speed of <span class="math notranslate nohighlight">\(\beta = 0.99882\)</span>. Calculate the
+momentum and kinetic energy of this particle.</p></li>
+<li><p>A 2.00 eV photon is traveling in the <span class="math notranslate nohighlight">\(+x\)</span> direction as seen by
+observer 1.  Observer 2,traveling with <span class="math notranslate nohighlight">\(\beta_R= -.8800\)</span> relative to
+observer 1 also observes this 2.00 eV photon. Use the Lorentz
+transformation to determine the elements of the 4-momentum measured by
+the second observer.</p></li>
+<li><p>In the lab reference frame, a certain particle has total energy
+<span class="math notranslate nohighlight">\(E_{\rm tot} = 3.2 \times 10^{-10}\)</span> J and momentum <span class="math notranslate nohighlight">\(p = 9.4 \times
+10^{-19}\)</span> kg m/s. Find the speed and rest mass of this particle.</p></li>
+<li><p>An observer in the lab watches a neutral <span class="math notranslate nohighlight">\(K^0\)</span> (rest energy 497.7 MeV) decay into a positive and negative pion.  The kaon is traveling with <span class="math notranslate nohighlight">\(\beta = 0.8666\)</span> before it decays.  We write this decay as</p></li>
+</ol>
+<div class="math notranslate nohighlight" id="equation-kaondecay">
+<span class="eqno">(103)<a class="headerlink" href="#equation-kaondecay" title="Permalink to this equation">#</a></span>\[K^0 \rightarrow \pi^+ + \pi^-\]</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>In this context, the zero in <span class="math notranslate nohighlight">\(K^0\)</span> means a neutral particle, not the
+time component number of a contravariant four vector!</p>
+</div>
+<p>a) Calculate the components of the momentum 4-vector of the kaon as
+measured by the observer in the lab.</p>
+<p>b) Use the Lorentz transformation to find the components of the
+momentum 4-vector of the kaon in the rest frame of the kaon (hint: the
+rest frame is moving with <span class="math notranslate nohighlight">\(\beta_R= +0.8666\)</span>).</p>
+<p>c) If in the rest frame of the kaon after the decay the negative pion
+is traveling in the <span class="math notranslate nohighlight">\(+x\)</span> direction, write down the momentum 4 vector of
+the pair of pions.</p>
+<p>d) From the momentum conservation laws, find the kinetic energy and
+the physical momentum of each of the pions as seen by an observer in
+the rest frame of the kaon.</p>
+<p>e) Write down the momentum 4-vector for each of the pions produced in
+the decay as seen by an observer in the rest frame of the kaons.</p>
+<p>f) Use the inverse Lorentz transformation to transform the momentum 4-
+vector of each of the pions as measured in the rest frame of the kaons
+to the momentum 4-vectors as measured in the laboratory reference
+frame.</p>
+<p>g) Show that the sum of the two 4-vectors you calculated in f) is the
+same as the result in a). This would mean that the 4-momentum is
+conserved in the lab frame!</p>
+<ol class="arabic simple" start="10">
+<li><p>A photon is a particle that has zero rest energy. Suppose that
+<span class="math notranslate nohighlight">\(10^{30}\)</span> photons, each with total energy 0.500 MeV, are bouncing
+around in a perfectly reflecting container. Assume that other than the
+photons, the inside of the container is empty. These photons are
+moving in random directions, so the total physical momentum of the
+container is zero, because on average the photon’s momenta cancel
+out.</p></li>
+</ol>
+<p>a) What is the total energy of the inside of the container?</p>
+<p>b) What is the rest energy of the inside of the container? Convert
+this number to rest mass. (hint: it is <em>not</em> zero)</p>
+<p>c) Where did this mass come from?</p>
+<p>d) At what speed would you have to move the container for the total
+energy inside to increase by 1 joule?</p>
 </section>
 </section>
 
@@ -934,8 +1063,10 @@ MeV/c, but each in an opposite direction to the other.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-transforming-momentum">Example of Transforming Momentum</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-and-energy">Momentum and Energy</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rest-energy">The Rest Energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-using-the-definitions">Example of Using the Definitions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-laws-and-the-momentum-four-vector">Conservation Laws and the Momentum Four-Vector</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-momentum-conservation">Example of Momentum Conservation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
 </ul>
   </nav></div>
 
