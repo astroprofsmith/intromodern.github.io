@@ -401,9 +401,9 @@ chapter?
 2. At time $t=0$, two reference frames (call one red and the other
 blue) have their origins at the same location.  However, the blue one
 is moving relative to the red one with a velocity of $\vec{v} =
-(1~{\rm m/s})\hat{x} + (2~{\rm m/s))\hat{y} - (0.5~{\rm m/s})\hat{z}$.
+(1~{\rm m/s})\hat{x} + (2~{\rm m/s})\hat{y} - (0.5~{\rm m/s})\hat{z}$.
 If an observer in the red frame measures an event to occur at $t=2$ s
-in the location $\vec{r} = (0.5~{\rm m})\hat{x} - (4~{\rm m))\hat{y} +
+in the location $\vec{r} = (0.5~{\rm m})\hat{x} - (4~{\rm m})\hat{y} +
 (3~{\rm m})\hat{z}$, approximately what will an observer in the blue
 frame measure as the time and space coordinates for this event?
 
