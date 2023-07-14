@@ -1004,6 +1004,8 @@ c) Find the fractional loss of energy for this scattered photon.
 target. Calculate the energy of the photons that are scattered at an
 angle of 175 degrees with respect to the original beam line.
 
+**Need to add a figure of Duncan's Data**
+
 ```{note}
 Figure 9.5 -- Guilford College student Alison Duncan reproduced
 Compton's experiment in 2005.  She used a pulse height analyzer
