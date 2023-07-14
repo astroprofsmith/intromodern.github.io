@@ -509,47 +509,134 @@ velocity in them. In general, the force and the acceleration will not
 be in the same direction, something that does not happen in classical
 physics.
 
-**From here on is obviously not finished**
-
 ### Example 10.2
 
-An electron, traveling in the *x direction with p = 0.8666, is subjected to an
-electric field that exerts a force (as measured in the laboratory reference frame) of I.OOOx10-'3 Newtons in the +x direction.
-a) Calcydate the acceleration of the object if dump truck physics could be used to model this situation
-b) Calculate the acceleration of the object using a relativistically correct modet.
-c) CaLcutatethe energy required to increase the speed by 1000 mis.
-solution
-a) UsingNewton'slaw.
-= I.OOOXl'O3N-t= l.098xl0n"! 9.l09xl0-3'kg si
-This is rea(ly an awesome acceleration. In 10-'4 seconds, the electron sjioydd gain 10a m/sec in ve1ocity.
-b) Equation 7.25 is used to find the valid acceleration:
-are,g,,,,, = -1!j-K-= -1 l.098xlOl7'- =l.372xl0'm= y3/71, 8 3- s-
-The acceleration is down by afactor of 8, but it still is awesome
-c) Tlie energy required to increase the speed by 1000 m/sec (an increase in speedofonLy10 parts per million) is
-dE= 8 * 9.l09xl0-3'kg*0.8666* 3.000xl0,8m* l.000xl03m7 dE =1.893X10- '8Jovdes
+An electron, traveling in the $+x$ direction with $\beta = 0.8666$, is
+subjected to an electric field that exerts a force (as measured in the
+laboratory reference frame) of $1.OOO\times10^{-13}$ newtons in the
+$+x$ direction.
 
+a) Calculate the acceleration of the object if dump truck physics
+could be used to model this situation.
+
+b) Calculate the acceleration of the object using a relativistically correct model.
+
+c) Calculate the energy required to increase the speed by 1000 m/s.
+
+*Solution:*
+
+a) Using Newton's Second Law:
+```{math}
+a_{\rm Newt} = \frac{F_x}{m_0} = \frac{1.000\times10^{-13}{\rm N}}{9.109\times10^{-31}~{\rm kg}} = 1.098\times10^{17}~{\rm m/s}^2
+```
+
+This is really an awesome acceleration. In $10^{-14}$ seconds, itself
+an unimaginably small time interval, the electron would gain $10^3$
+m/s in ve1ocity.
+
+b) Equation {eq}`relacc` is used to find the valid acceleration.  With $\beta=0.8666$,
+$\gamma = 2$, so $\gamma^3=8$.  The Newtonian model is eight times too fast.
+```{math}
+a_{\rm Einst} = \frac{F_x}{\gamma^3m_0} = \frac{1}{8}1.098\times10^{17}~{\rm m/s}^2
+= 1.372\times10^{16}~{\rm m/s}^2
+```
+The acceleration is down by afactor of 8, but it still is incomprehensibly fast.
+
+c) The energy required to increase the speed by 1000 m/sec (an
+increase in speed of only 10 parts per million) is found with Equation {eq}`dE`:
+```{math}
+dE= \gamma^3m_0v_xdv_x = 8 * 9.109\times10^{-31}~{\rm kg}*0.8666* 3.000\times10^8~{\rm m/s}* 1.000\times10^3~{\rm m/s}
+```
+```{math}
+dE =1.893\times10^{-18}~{\rm joules}.
+```
+This might look like a small number.  In eV, it's about 12.  That's almost enough
+to rip an electron off a hydrogen atom.  It's an ultraviolet photon.  An electron
+going at 0.8666 would have a KE of 511 keV, so 12 eV would be 20 parts per million.
+So you're putting in a larger fraction of energy than you are getting out in terms
+of a percentage speed increase.  This is a specific case of the general pattern that
+the closer you get to the speed of light, the more energy it costs to get less speed.
 
 
 ## Problems
 
-An electron, with electrical charge qe = l.602xl 0-'9 Couloumbs, is travel- ing at speed p = .9999980 in the horizontal +x direction with respect to arx observer in the laboratory that is located near the surface of the eartJi. At time t = 0, the electron enters an electric field of f = ].000xl 06Nt/Cou- lomb also pointing n the +x direction. The classical model for ca)cuLating theforce exerted on a cliarged object by an electric field is Fe = qE
-1) Calculate the Minkowski force that the particle thinks is exerted on it at time t = 0. (the 4-force in the rest frame of the particle). Note: the gravita- tional force is very very small compared to the electric force.
-2) Calculate the acceleration that the particle thinks is experiences at time t = 0.
-3) Use the Lorentz transformation to find the components of the
-Minkowski force that is measured by the experimenter in the Jab at time t = 0.
-4) Calculate the acceleration measured by the observer in the lab at time t = 0.
-5) Calculate the time rate of change of momentum that the observer in the lab measures for this electron at time t = 0.
-6) Calculate the energy needed to increase the speed of the electron to l = 0.9999990
-7) Calculate the x-component of the force measured by the observer in the lab. Does this result surprise you? Why or why not?
-now, suppose that this electron, traveling in the +% direction (horizontal), at time t = Oenters an electric field that is pointing in the +z direction (verticaily up) instead of point in the +x direction.
-8) Calculate the Minkowski force exerted on this electron as measured in the laboratory reference frame.
-9) Calculate the acceleration of the electron as measured by observer in the laboratory reference frame.
-10) Show that in this case, the acceleration of the eIectron and the force applied to the electron do not point in the same direction.
+1) An electron, with electrical charge $q_e = 1.602\times10^{-19}$
+couloumbs, is traveling at speed $\beta = .9999980$ in the horizontal
+$+x$ direction with respect to an observer in a laboratory that is
+located near the surface of the earth.  At time $t = 0$ in the lab
+frame, the electron enters an electric field of $E = 1.000\times10^6$
+N/C also pointing in the $+x$ direction.  The classical model for
+ca)culating theforce exerted on a charged object by an electric field
+is $F_e = qE$.
 
-11) An observer sees a particle of mass m. moving with velocity a that has
-a force r" exerted on it. Show that a second observer, moving with speed v in the + x direction with respect to the first observer, measures the work done to be:
-work done =
-(7 a a)-vF
-lVux cl
-'
-12) A particle, starting from rest, travels for a time t (in the lab reference frame). The acceleration at any time, as measured in the rest frame of the particle, is 9.8 m/s2. How long does it take before the observer in the Jab reference frame sees the particle traveling C/2?
+a) Calculate the Minkowski force that the particle experiences in its
+own rest frame at $t=0$.  The clocks in its rest frame are
+synchronized with those in the lab at $t=0$, but of course will
+diverge later.  *Note: the gravitational force is very very small
+compared to the electric force; you can ignore it for this problem.*
+
+
+b) Calculate the acceleration that the particle experiences at time $t = 0$.
+
+
+c) Use the Lorentz transformation to find the components of the
+Minkowski force that is measured by the experimenter in the lab at
+time $t = 0$.
+
+d) Calculate the acceleration measured by the observer in the lab at time $t = 0$.
+
+
+e) Calculate the time rate of change of momentum that the observer in
+the lab measures for this electron at time $t = 0$. *Get this from the
+Minkowski force.*
+
+
+f) Calculate the energy needed to increase the speed of the electron
+to $\beta = 0.9999990$.
+
+g) Calculate the $x$-component of the force measured by the observer in
+the lab. Does this result surprise you? Why or why not?
+
+Now, suppose that this electron, traveling in the $+x$ direction
+(horizontal), at time $t = O$ enters an electric field that is pointing
+in the $+z$ direction (verticaily up) instead of pointing in the $+x$
+direction.  *As we will see in the next chapter, if the $E$ field is
+perpendicular to the relative velocity vector, the field will be different
+in the rest frame of the electron, so don't use that frame for the next three
+questions.*
+
+h) Calculate the Minkowski force exerted on this electron as measured
+in the laboratory reference frame.
+
+i) Calculate the acceleration of the electron as measured by observer
+in the laboratory reference frame.
+
+j) Show that in this case, the acceleration of the eIectron and the
+force applied to the electron do not point in the same direction.
+
+2) An observer sees a particle of mass $m_0$ moving with velocity $\vec{u}$ that
+has a force $\vec{F}$ exerted on it. Show that a second observer, moving with
+speed $v$ in the $+x$ direction with respect to the first observer,
+measures the power delivered to the particle to be:
+```{math}
+P = \frac{dE}{dt} = \frac{(\vec{F}\cdot\vec{u}) - vF_x}{1-\frac{vu_x}{c^2}}
+```
+
+3) A particle, starting from rest, travels for a time interval $\Delta
+t$ (in the lab reference frame). The acceleration at any time, as
+measured in the instantaneous rest frame of the particle, is 9.8
+m/s2. How long must $\Delta t$ be before the observer in the lab
+reference frame sees the particle traveling at $c/2$?  This is very
+similar to the analysis that produced Figure 10.1.
+
+```{note}
+An accelerating particle cannot technically have a "rest" frame,
+because no matter what frame you choose, the particle's velocity will
+never remain zero.  We can, however, talk about a frame at which a
+particle is *instantaneously* at rest, and imagine performing an
+infinite sequence of Lorentz transformations to "keep up" with the
+particle, so that at any given moment, we can define a frame in which,
+at least for that moment, the particle is approximately at rest.
+You just have to remember that the approximation is only valid *at*
+a particular moment.
+```

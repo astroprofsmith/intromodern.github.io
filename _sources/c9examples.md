@@ -903,7 +903,7 @@ sa = np.sqrt(-epsilon/xi)
 x_new = np.arange(0,2,.25)
 y_new = b*x_new+a
 
-plt.figure(figsize=(8,8))
+plt.figure(figsize=(8,7))
 plt.plot(x,y,'bs',label="Original Data")
 plt.plot(x_new,y_new,"k:",label="Linear Fit")
 plt.xlabel(r"1-$\cos{\theta}$")
@@ -1000,12 +1000,67 @@ b) Find the wavelength of the X-rays that are scattered at an angle of
 
 c) Find the fractional loss of energy for this scattered photon.
 
-10) A beam of O.66 MeV photons is scattered from an aluminum
+10) A beam of 0.66 MeV photons is scattered from an aluminum
 target. Calculate the energy of the photons that are scattered at an
 angle of 175 degrees with respect to the original beam line.
 
-**Need to add a figure of Duncan's Data**
+```{code-cell}
+:tags: ["remove-input"]
+x = np.array([0.124649657678,0.287401145777,0.500798018091,0.743924626861,1.0030501261,1.42778258788])
+y = np.array([1.82861597118,2.11914520336,2.51767621869,2.98512420428,3.52077974806,4.34735560142])
 
+tol = 0.01
+diff = tol+1
+newb = 0
+
+sigmax = np.ones(np.shape(x))
+sigmay = np.ones(np.shape(y))
+
+while (diff>tol):
+    sigma2 = [np.sqrt(q**2+(newb*r)**2) for q,r in zip(sigmay,sigmax)]
+    oldb = newb
+    alpha = np.sum([a/b**2 for a, b in zip(y, sigma2)])
+    beta = np.sum([1/b**2 for b in sigma2])
+    g1 = [a/b**2 for a, b in zip(x, sigma2)]
+    gamma = np.sum(g1)
+    delta = np.sum([a*b for a, b in zip(g1, y)])
+    epsilon = np.sum([a**2/b**2 for a, b in zip(x, sigma2)])
+
+    xi = gamma**2-beta*epsilon
+    newb = (gamma*alpha-beta*delta)/xi
+    diff = np.abs(newb-oldb)
+
+b = newb
+a = (gamma*delta-epsilon*alpha)/xi    
+sb = np.sqrt(-beta/xi)
+sa = np.sqrt(-epsilon/xi)
+x_new = np.arange(0,2,.25)
+y_new = b*x_new+a
+
+plt.figure(figsize=(8,7))
+plt.plot(x,y,'m^',label="Duncan Original Data")
+plt.plot(x_new,y_new,"k:",label="Linear Fit")
+plt.xlabel(r"1-$\cos{\theta}$")
+plt.ylabel("1/E scattered (1/MeV)")
+plt.title("Testing Compton Scattering Hypothesis")
+plt.axis([0.0,1.6,1.6,4.5])
+plt.legend()
+plt.show()
+
+slp = b
+icpt = a
+E0=1/slp
+Eg = 1/icpt
+eslp = 0.01209
+eicpt = 0.009785
+eE0 = eslp*E0**2
+eEg = eicpt*Eg**2
+print("The best-fit slope is ({0:4.3f} +- {1:4.3f}) 1/MeV".format(slp,eslp))
+print("The best-fit y-intercept is ({0:4.3f} +- {1:4.3f}) 1/MeV".format(icpt,eicpt))
+print("The estimate of E0 is ({0:4.0f} +- {1:1.0f}) keV".format(E0*1000,eE0*1000))
+print("The estimate of Egam is ({0:4.0f} +- {1:1.0f}) keV".format(Eg*1000,eEg*1000))
+
+```
 ```{note}
 Figure 9.5 -- Guilford College student Alison Duncan reproduced
 Compton's experiment in 2005.  She used a pulse height analyzer
@@ -1025,8 +1080,8 @@ of $(1-\cos{\theta})$ where $\theta$ is the scattering angle of the
 photons.
 
 a) Are her data consistent with Compton's model of photon-electron
-scattering?
+scattering?  Give evidence.
 
-b) Calculate the rest energy of the particle off of which the photons
-scattered (with uncertainty, of course). Does this value make sense to
-you? Why?
+b) Which number reported from the fit estimates the rest energy of the
+particle off of which the photons scattered?  Does this value make
+sense to you? Why?
