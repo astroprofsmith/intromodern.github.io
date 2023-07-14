@@ -16,7 +16,7 @@ kernelspec:
 :tags: ["remove-cell"]
 
 from IPython import display
-
+from myst_nb import glue
 ```
 
 # Chapter 1:  Roots of Relativity
@@ -98,15 +98,21 @@ results, a relatively simple and rather clever model was developed
 that agreed with the experimental results.
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 # Insert VPython simulation of a Michaelson Interferometer
 # Allow user to rotate system, relative to ether
 # Have radio button to include/remove ether
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRinterferometer"
-display.IFrame(src=url1,width=880,height=700)
+test = display.IFrame(src=url1,width=800,height=700)
+glue("interfig",test, display=False)
+
 ```
-```{note}
-Figure 1.1 -- Animation of a simplified schematic of a Michaelson
+
+```{glue:figure} interfig
+:figwidth: 800px
+:name: michelfig
+
+Animation of a simplified schematic of a Michaelson
 interferometer.  A laser, represented by the red cylinder to the left,
 shines a beam to the right.  The light is split by a diagonal
 half-silvered mirror.  Half the beam continues to the right, while
@@ -119,11 +125,12 @@ is the sum of the two beams.  The animation begins in a world with no
 ether.  If you click on the checkbox below the animation, you can turn
 on an ether, and the slider will rotate the direction of the relative
 motion between the ether and the apparatus.  Waves going with the
-ether are stretched out, while waves heading upstrem are squished.  By
+ether are stretched out, while waves heading upstream are squished.  By
 rotating the direction, you can see that the outgoing beam varies
 dramatically based on the angle.  No such dependence was ever
 observed.
 ```
+
 
 
 ## Example of Binary Star Systems
@@ -160,16 +167,14 @@ than other light.
 :name: srlc
 ```
 
-```{image} images/nonSR_LC.png
+```{figure} images/nonSR_LC.png
 :alt: lightcurve_noSR
 :class: bg-primary mb-1
 :width: 700px
 :align: center
 :name: nonsrlc
-```
 
-```{note}
-Figure 1.2: Simulation of a simplified binary star system light curve.
+Simulation of a simplified binary star system light curve.
 One star is three times as bright as the other.  This light curve
 shows two cycles of the stars' orbit as seen from Earth, 100 light
 years away.  The deeper eclipse is when the brighter star's light is

@@ -781,7 +781,7 @@ We can be very casual when we talk about length contraction.
 Sometimes we talk about how long a passing object "looks", or we might
 discuss what an observer "sees".  What we **mean** is what an observer
 in an inertial reference frame **measures** the length to be.  What an
-observer would actually *see* (with their actual eyes) as an object
+observer would actually *see* (with their actual eyes), as an object
 zips by near the speed of light, would also depend on the light travel
 time to the observer from the object, how far the object moves in that
 time, and also the three-dimensionality of the object -- its depth
