@@ -408,6 +408,11 @@ multiply matrices, or you could write the four equations out
 separately.  Which method you use would be irrelevant to the output.
 ```
 
+## Rapidity and Hyperbolic Rotation
+
+Need to add a section about $\xi$ and $\cosh{\xi}$ and all that.
+
+
 ## Problems
 
 1. A star is 25.O light years away from the earth. If a space craft
