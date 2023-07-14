@@ -776,6 +776,27 @@ which you are measuring the length of the object in a particular
 reference frame, you will always find that it is shorter the faster
 the object is moving.  See Chapter 5 for more examples.
 
+```{warning}
+We can be very casual when we talk about length contraction.
+Sometimes we talk about how long a passing object "looks", or we might
+discuss what an observer "sees".  What we **mean** is what an observer
+in an inertial reference frame **measures** the length to be.  What an
+observer would actually *see* (with their actual eyes) as an object
+zips by near the speed of light, would also depend on the light travel
+time to the observer from the object, how far the object moves in that
+time, and also the three-dimensionality of the object -- its depth
+away from the observer.  A full treatment of these complications is
+beyond the scope of this book, but I will mention that it is possible
+to see the side of an object while the face is still toward you,
+because the front has essentially gotten out of the way of light
+coming from the back of the side.  For dump trucks, the near corner
+would block that light, but for a fast-moving object, you could
+actually see around the corner, and it would look like the object was
+rotating.  See, e.g. Freund's *Special Relativity for Beginners* or
+Skinner's *Relativity for Scientists and Engineers* for a more
+detailed treatment of this topic.
+```
+
 ## Muon decay revisited
 
 
