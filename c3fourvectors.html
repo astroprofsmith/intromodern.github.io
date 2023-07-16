@@ -170,6 +170,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="c9examples.html">Chapter 9: Examples of Relativity in Action</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c10force.html">Chapter 10: Relativistic Force and Acceleration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c11electric.html">Chapter 11: The Electromagnetic Tensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c12dynamic.html">Chapter 12: Relativistic Electrodynamics</a></li>
 </ul>
 
     </div>
@@ -499,8 +500,8 @@ contravariant version of a four vector should be written as a column,
 as in Equation 6, only without the <span class="math notranslate nohighlight">\(i\)</span>.  The standard notion is to use
 a superscript greek letter to refer to the components, where the Greek
 letter could stand for 0, 1, 2, or 3.  So</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ccc12846-ff2f-4ab3-a65d-3d9f13c62890">
-<span class="eqno">(7)<a class="headerlink" href="#equation-ccc12846-ff2f-4ab3-a65d-3d9f13c62890" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-dd24fefb-1629-4811-b53c-ef9fc39aa818">
+<span class="eqno">(7)<a class="headerlink" href="#equation-dd24fefb-1629-4811-b53c-ef9fc39aa818" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dx^\alpha =
 \begin{bmatrix}
 cdt\\
@@ -557,6 +558,25 @@ result.  This is called “Einstein summation notation” or just
 apply SR to Electromagnetism in Chapter 11.  I mention it here to stress
 that using the <span class="math notranslate nohighlight">\(i\)</span> is not the <strong>only</strong> way to keep track of the minus
 sign.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For the purposes of this class, there are only three things you need
+to remember about Einstein notation:</p>
+<ol class="arabic simple">
+<li><p>Greek letters represent the numbers 0 through 3.</p></li>
+<li><p>If there is the same Greek letter above and below,
+that represents a sum over the four possibilities, like a
+dummy integration variable.  Letters that do not repeat
+must stay in the same place on both sides of the equals.</p></li>
+<li><p>If you raise or lower the index, you multiply the time
+component by <span class="math notranslate nohighlight">\(-1\)</span>.</p></li>
+</ol>
+<p>If you are consistent with these three rules, you will get the
+same answers as carrying around the factor of <span class="math notranslate nohighlight">\(i\)</span>.  For most of this
+book, we will use the <span class="math notranslate nohighlight">\(i\)</span> notation, but when we get to the final
+two chapters about electromagnetism, the Einstein notation is
+much easier to work with, so it will come back then.</p>
+</div>
 <p>Once you have the concept of a four-vector, mathematically, it is
 useful to also have a method of displaying them, graphically.  Such a
 graph is called a “spacetime diagram”.  I will give a brief
@@ -704,8 +724,8 @@ this sequence of events?  (Note: this is not realistic.)</p>
 observers in the reference frame shown in Figure 3.3 could measure the displacement
 and time duration between these events (and we can read them off the graph,
 albiet with no units), and then put them into the four-vector format:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7f477fd9-535d-4c91-8758-4926198f97b6">
-<span class="eqno">(8)<a class="headerlink" href="#equation-7f477fd9-535d-4c91-8758-4926198f97b6" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-213f301f-3bca-43f2-8a9a-5f8ad7328b6c">
+<span class="eqno">(8)<a class="headerlink" href="#equation-213f301f-3bca-43f2-8a9a-5f8ad7328b6c" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4] =
 \begin{bmatrix}
 icdt\\
@@ -771,8 +791,8 @@ in the same place.</p>
 </div>
 <p>We can therefore write a displacement four vector in the reference
 frame at rest with respect to the Earth:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9d66ffe5-38d1-4fb9-a242-515598148945">
-<span class="eqno">(9)<a class="headerlink" href="#equation-9d66ffe5-38d1-4fb9-a242-515598148945" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-0bcd9b74-13d3-4259-9f67-eb2d586345ab">
+<span class="eqno">(9)<a class="headerlink" href="#equation-0bcd9b74-13d3-4259-9f67-eb2d586345ab" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_\oplus =
 \begin{bmatrix}
 icdt_\oplus\\
@@ -796,8 +816,8 @@ aboard the space craft will measure some time interval, <span class="math notran
 between the time he sees the earth outside of his window and sees
 alpha centauri outside the window. The observer aboard the space craft
 measures a displacement 4-vector:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-49629d16-86f9-42da-8258-508fa6f71a86">
-<span class="eqno">(10)<a class="headerlink" href="#equation-49629d16-86f9-42da-8258-508fa6f71a86" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-d9b1fdf4-d84a-4262-a361-26cbc23d22cd">
+<span class="eqno">(10)<a class="headerlink" href="#equation-d9b1fdf4-d84a-4262-a361-26cbc23d22cd" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm rocket} =
 \begin{bmatrix}
 icdt_{\rm rocket}\\
@@ -814,13 +834,13 @@ nothing to do with the first observer being physically <strong>on</strong> the E
 the <span class="math notranslate nohighlight">\(dt_\oplus\)</span> is measured by the infinite lattice of clocks at
 rest with respect to the Earth.</p>
 <p>The sizes of the two four vectors are:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ee282d3b-569a-41d5-98bb-132e9f1c4875">
-<span class="eqno">(11)<a class="headerlink" href="#equation-ee282d3b-569a-41d5-98bb-132e9f1c4875" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e63bac32-092d-412b-bad9-48f998cb91f2">
+<span class="eqno">(11)<a class="headerlink" href="#equation-e63bac32-092d-412b-bad9-48f998cb91f2" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dx_\oplus^2 - (cdt_\oplus)^2 = -(cdt_{\rm rocket})^2
 \end{equation}\]</div>
 <p>Solve for <span class="math notranslate nohighlight">\(dt_{\rm rocket}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b8c70bab-4ba3-4d27-8511-b78c74d92409">
-<span class="eqno">(12)<a class="headerlink" href="#equation-b8c70bab-4ba3-4d27-8511-b78c74d92409" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e5497b34-8f02-42a2-a36e-4e214349138a">
+<span class="eqno">(12)<a class="headerlink" href="#equation-e5497b34-8f02-42a2-a36e-4e214349138a" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dt_{\rm rocket} = dt_\oplus\sqrt{1-\left(\frac{dx_\oplus}{cdt_\oplus}\right)^2}
 = dt_\oplus \sqrt{1-\beta^2}
 \end{equation}\]</div>
@@ -988,8 +1008,8 @@ the right.  The reference frame at rest with respect to the ground
 is the unprimed frame on the left.  The red dot is the emission of
 the light and the blue dot is the detection of the light.  The
 displacement four vector in the train frame would be:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-51439f44-d8fb-4129-914c-9ac9575132de">
-<span class="eqno">(16)<a class="headerlink" href="#equation-51439f44-d8fb-4129-914c-9ac9575132de" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-d8d23267-de92-4fc0-ad41-061a477c2af5">
+<span class="eqno">(16)<a class="headerlink" href="#equation-d8d23267-de92-4fc0-ad41-061a477c2af5" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm train} =
 \begin{bmatrix}
 icdt_0\\
@@ -999,8 +1019,8 @@ icdt_0\\
 \end{bmatrix}
 \end{equation}\]</div>
 <p>while the displacement four vector from the ground’s reference frame is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-adbb7adf-342b-44e9-9e42-7e80179cbf7b">
-<span class="eqno">(17)<a class="headerlink" href="#equation-adbb7adf-342b-44e9-9e42-7e80179cbf7b" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-530c722c-062f-4111-926f-e672e12228e5">
+<span class="eqno">(17)<a class="headerlink" href="#equation-530c722c-062f-4111-926f-e672e12228e5" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm ground} =
 \begin{bmatrix}
 icdt\\

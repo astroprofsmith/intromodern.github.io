@@ -192,6 +192,27 @@ apply SR to Electromagnetism in Chapter 11.  I mention it here to stress
 that using the $i$ is not the **only** way to keep track of the minus
 sign.
 
+```{note}
+For the purposes of this class, there are only three things you need
+to remember about Einstein notation:
+
+1) Greek letters represent the numbers 0 through 3.
+
+2) If there is the same Greek letter above and below,
+that represents a sum over the four possibilities, like a
+dummy integration variable.  Letters that do not repeat
+must stay in the same place on both sides of the equals.
+
+3) If you raise or lower the index, you multiply the time
+component by $-1$.
+
+If you are consistent with these three rules, you will get the
+same answers as carrying around the factor of $i$.  For most of this
+book, we will use the $i$ notation, but when we get to the final
+two chapters about electromagnetism, the Einstein notation is
+much easier to work with, so it will come back then.
+```
+
 Once you have the concept of a four-vector, mathematically, it is
 useful to also have a method of displaying them, graphically.  Such a
 graph is called a "spacetime diagram".  I will give a brief
