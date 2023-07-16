@@ -61,6 +61,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c12dynamic';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -377,8 +379,112 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="chapter-12-relativistic-electrodynamics">
 <h1>Chapter 12: Relativistic Electrodynamics<a class="headerlink" href="#chapter-12-relativistic-electrodynamics" title="Permalink to this heading">#</a></h1>
+<p>Now that we have an expression for the electromagnetic
+field tensor, which treats <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> as
+different parts of a single object, and we know how that
+tensor transforms under Lorentz transformations, we can
+start to see how the rest of electrodynamics plays out
+within an SR context.  We will start with examining
+charge and current.</p>
 <section id="charge-current-four-vector-and-continuity">
 <h2>Charge/Current Four Vector and Continuity<a class="headerlink" href="#charge-current-four-vector-and-continuity" title="Permalink to this heading">#</a></h2>
+<p>We spent much of the first ten chapters figuring out how to
+cast the three-vectors of Classical Mechanics into four-vector
+form.  We cn play the same game with the vectors of Classical
+Electrodynamics.  One of the most important is the current
+density <span class="math notranslate nohighlight">\(\vec{J}\)</span>, which describes how much charge flows
+through a given area in a given amount of time.  The
+dimensions are therefore charge per area per time, or current
+per area, which is a kind of density.  Mathematically, we
+write this as</p>
+<div class="math notranslate nohighlight" id="equation-currdenj">
+<span class="eqno">(180)<a class="headerlink" href="#equation-currdenj" title="Permalink to this equation">#</a></span>\[\vec{J} = \rho \vec{v}\]</div>
+<p>which is a volume charge density (charge/volume) multiplied by a
+velocity (length/time).  One factor of length cancels out,
+leaving charge per area per time, as required.</p>
+<p>Knowing what we know now, we can recognize that the lengths between
+these moving charges has been contracted along the direction of
+motion, so we can go ahead and write this in terms of what the density
+would be in a reference frame where the charges are at rest:</p>
+<div class="math notranslate nohighlight" id="equation-currdenj0">
+<span class="eqno">(181)<a class="headerlink" href="#equation-currdenj0" title="Permalink to this equation">#</a></span>\[\vec{J} = \gamma \rho_0 \vec{v}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\gamma =1/\sqrt{1-v^2/c^2}\)</span>, of course.  Although the density
+is charge over volume, only the dimension along the direction of
+motion gets contracted, so the density only changes by one factor of
+<span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
+<p>This vector field can make up the spacial part of the current density
+four-vector, but what do we do with the time part?  Well, we have
+a scalar <span class="math notranslate nohighlight">\(\rho_0\)</span> times <span class="math notranslate nohighlight">\(\gamma \vec{v}\)</span>, and <span class="math notranslate nohighlight">\(\gamma \vec{v}\)</span> is
+the spatial part of the four-velocity.  Maybe we can make the
+four-current by multiplying <span class="math notranslate nohighlight">\([v_4]\)</span> by <span class="math notranslate nohighlight">\(\rho_0\)</span>?  And indeed we can:</p>
+<div class="math notranslate nohighlight" id="equation-fourcurr">
+<span class="eqno">(182)<a class="headerlink" href="#equation-fourcurr" title="Permalink to this equation">#</a></span>\[\begin{split}\boxed{
+[J_4] =
+\rho_0 \gamma 
+\begin{bmatrix}
+ic\\
+v_x\\
+v_y\\
+v_z
+\end{bmatrix}
+}\end{split}\]</div>
+<p>And its size is therefore <span class="math notranslate nohighlight">\(\rho_0^2[v_4]^2 = -\rho_0^2c^2\)</span>.  which is
+certainly Lorentz invarient.  Since we know a four-vector times a
+scalar is a four-vector, this must be <em>a</em> four-vector, but how do we
+know it’s <em>the</em> four vector that we want?  Two reasons: it slots very
+smoothly into Maxwell’s Equations, which we will explore in the next section.
+But first, we will see that it gives a nice way to express charge conservation
+in the form of the “continuity equation”, which says that the rate at which
+charge is flowing into or out of a location is equal and opposite to the rate at
+which the amount of charge at that location is changing.</p>
+<p>In classical notation, we would say</p>
+<div class="math notranslate nohighlight" id="equation-conteqclass">
+<span class="eqno">(183)<a class="headerlink" href="#equation-conteqclass" title="Permalink to this equation">#</a></span>\[\vec{\nabla}\cdot\vec{J} = \frac{\partial \rho v_x}{\partial x}+ \frac{\partial \rho v_y}{\partial y}+ \frac{\partial \rho v_z}{\partial z} = -\frac{\partial \rho}{\partial t}\]</div>
+<p>If we move the right side over the to left and multiply top and bottom by <span class="math notranslate nohighlight">\(c\)</span>,
+it should start to suggest something:</p>
+<div class="math notranslate nohighlight" id="equation-movetimeover">
+<span class="eqno">(184)<a class="headerlink" href="#equation-movetimeover" title="Permalink to this equation">#</a></span>\[\frac{\partial (\gamma \rho_0 c)}{\partial (ct)}+\frac{\partial \gamma \rho_0 v_x}{\partial x}+ \frac{\partial \gamma \rho_0 v_y}{\partial y}+ \frac{\partial \gamma \rho_0 v_z}{\partial z} = 0\]</div>
+<p>You will note that each successive term being differentiated is indeed one of the
+terms of our current four-vector.  Furthermore, each successive derivative is being
+done with respect to successive variables of the four-displacement!  So this suggests
+a kind of dot product, which we could write this way:</p>
+<div class="math notranslate nohighlight" id="equation-fourdivergence1">
+<span class="eqno">(185)<a class="headerlink" href="#equation-fourdivergence1" title="Permalink to this equation">#</a></span>\[\begin{split}\left(\frac{\partial}{\partial (ct)},\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)
+\begin{bmatrix}
+\gamma \rho_0 c\\
+\gamma \rho_0 v_x\\
+\gamma \rho_0 v_y\\
+\gamma \rho_0 v_z
+\end{bmatrix}
+= 0\end{split}\]</div>
+<p>If we define a <strong>four-divergence</strong> as the row vector above and write it as</p>
+<div class="math notranslate nohighlight" id="equation-fourdivdef">
+<span class="eqno">(186)<a class="headerlink" href="#equation-fourdivdef" title="Permalink to this equation">#</a></span>\[\partial_\alpha = \frac{\partial}{\partial x^\alpha} = \left(\frac{\partial}{\partial (ct)},\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)\]</div>
+<p>then the continuity equation can be written as simply as</p>
+<div class="math notranslate nohighlight" id="equation-continuitysr">
+<span class="eqno">(187)<a class="headerlink" href="#equation-continuitysr" title="Permalink to this equation">#</a></span>\[\boxed{
+\partial_\alpha J^\alpha = 0
+}\]</div>
+<p>Here you can see how the Einstein notation starts to save you a lot of writing.  Equations
+<a class="reference internal" href="#equation-continuitysr">(187)</a> and <a class="reference internal" href="#equation-movetimeover">(184)</a> are the exact same equation, with the same
+information content, but Equation <a class="reference internal" href="#equation-continuitysr">(187)</a> requires <em>so</em> much less writing,
+it’s much more popular than other methods.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You will note that the four-gradient <span class="math notranslate nohighlight">\(\partial_\alpha\)</span> is written in covariant
+form, but it is using the contravariant components for the derivatives, so it
+is written with the subscript, but when you write it out in terms of components,
+the terms in the denominator get the superscript.  But there’s no minus sign
+in this case, because the components are the contravariant form.</p>
+</div>
+<p>So, this four vector makes intuitive sense (charge time velocity gives
+current), it maintains charge conservation through the continuity
+equation, and it sets us up to write Maxwell’s Equations in a more
+compact form, too (you’ll recall Maxwell’s Equations depend on the
+charge and current densities on the right side and the <span class="math notranslate nohighlight">\(\vec{E}\)</span> and
+<span class="math notranslate nohighlight">\(\vec{B}\)</span> fields on the left – see the next section of this chapter).
+We therefore use this as the current four-vector <span class="math notranslate nohighlight">\(J^\alpha\)</span>, or
+sometimes the “charge-current four-vector”.</p>
 </section>
 <section id="maxwell-s-equations-as-four-vectors">
 <h2>Maxwell’s Equations as Four Vectors<a class="headerlink" href="#maxwell-s-equations-as-four-vectors" title="Permalink to this heading">#</a></h2>

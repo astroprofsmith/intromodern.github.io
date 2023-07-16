@@ -148,13 +148,13 @@ Relativity" after all.  The name of that paper was "On the Electrodynamics
 of Moving Bodies".
 ```
 
-In Frame B, lengths along the direction of relative motion will be
-contracted.  When we talk about a charge density $\lambda$, we are
-talking about a certain number of charges *per* *length*.  So the
-charge densities in the wire will change, and since these sets of
-charges have different velocities, relative to $\vec{v}_R$, they will
-contract by different amounts.  Given our formula for length
-contraction, we know
+In Frame B, illustrated in {numref}`frameBfig`, lengths along the
+direction of relative motion will be contracted.  When we talk about a
+charge density $\lambda$, we are talking about a certain number of
+charges *per* *length*.  So the charge densities in the wire will
+change, and since these sets of charges have different velocities,
+relative to $\vec{v}_R$, they will contract by different amounts.
+Given our formula for length contraction, we know
 ```{math}
 :label: lambdapm
 \lambda_\pm =\pm\frac{dq}{dz} =
@@ -168,6 +168,19 @@ be electrically neutral.
 \lambda_{\rm totB} = \lambda_+-\lambda_- = \lambda_0(\gamma_+-\gamma_-)
 ```
 
+```{figure} images/frameBfig.png
+:alt: frameBpicture
+:class: bg-primary mb-1
+:width: 800px
+:align: center
+:name: frameBfig
+
+Schematic of a reference frame in which the single charge is at rest
+and the wire is moving to the right with a speed $u$.  In this frame,
+because the positive and negative charges are moving at different speeds,
+the distances between those charges will be contracted by different
+amounts.
+```
 
 To be more specific, instead of talking about just one $\lambda$, we
 must now talk about a $\lambda_+$ and a $\lambda_-$, since they will
@@ -194,7 +207,7 @@ We need a Frame C, in which the positive charges in the wire are at
 rest.  In Frame C, the charge density of the positive charges will be
 $\lambda_0$ (we don't actually need to know what the charge density of
 the negative charges in Frame C is -- we just need an anchor point
-with which to compare the others.  If the positive charges are at rest
+with which to compare the others).  If the positive charges are at rest
 in Frame C, that means that Frame A is moving with speed $v$ with
 respect to Frame C!  The original speed of the charges in Frame A was
 $v$.  So this means that $\lambda = \gamma\lambda_0$, where
@@ -272,6 +285,18 @@ This is the exact same force that, classically, we would have said was a
 *magnetic* force!  We had the same equation back at the start of the
 chapter, as Equation {eq}`Fclassic`!
 
+```{note}
+You will note that nothing in this analysis requires that any of the
+speeds, $u$ or $v$ or $v_\pm$, be close to the speed of light.  In
+fact, you may remember from Intro E&M that even a current as large as
+1 A in a copper wire only requires an average drift speed of something
+like $10^{-4}$ m/s.  And yet the moving charge *will* be deflected,
+even at small speeds, and so if you want to model that force without
+introducing magnetism, you must use SR, even with tiny speeds.  In
+mechanics, you generally need to move at speeds near $c$ to observe
+the relativistic effects, but for E&M, you need SR at *any* speed.
+```
+
 So which is it?  Magnetic or Electric?  The answer is both and
 neither!  We are heading toward an understanding that there is just
 one "thing" that we currently call an electromagnetic field, and
@@ -282,7 +307,7 @@ magnetism was discovered, we probably wouldn't even have a word for
 electric field into another reference frame.  Just like we now talk
 about "spacetime", and the space and time parts get mixed up when you
 change frames, and just like how $x$ and $y$ get mixed up when you
-rotate your coordinates around the $z$ axis, it seems that $vec{E}$
+rotate your coordinates around the $z$ axis, it seems that $\vec{E}$
 and $\vec{B}$ get mixed up when you switch reference frames, too.
 
 But we can't just make a four vector out of them!  They have six
