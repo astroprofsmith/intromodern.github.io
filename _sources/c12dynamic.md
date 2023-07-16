@@ -30,7 +30,137 @@ different parts of a single object, and we know how that
 tensor transforms under Lorentz transformations, we can
 start to see how the rest of electrodynamics plays out
 within an SR context.  We will start with examining
-charge and current.
+how you represent the Minkowski Force for a charge
+moving with velocity $\vec{u}$ in a region where
+there are both $\vec{E}$ and $\vec{B}$ fields.
+
+## The Lorentz Force
+
+You learned in introductory E&M that a charge
+moving with velocity $\vec{u}$ in a region where
+there are both $\vec{E}$ and $\vec{B}$ fields experiences
+a force given by
+```{math}
+:label: lorforce
+\vec{F} = q\vec{E} + q\vec{u}\times\vec{B}
+```
+Given what we now know about how $\vec{E}$ and
+$\vec{B}$ are parts of a larger tensor, how does
+that affect the way we conceptualize this force?
+
+We start with our definition of the Minkowski Force
+from Equation {eq}`M4forcefin`:
+```{math}
+:label: M4forceEM
+K^\alpha = 
+\begin{bmatrix}
+\frac{\gamma}{c} (\vec{F}\cdot\vec{u})\\
+\gamma \vec{F}
+\end{bmatrix}
+```
+and if we plug in Equation {eq}`lorforce`, we get
+```{math}
+:label: M4EM
+K^\alpha = 
+\begin{bmatrix}
+\frac{\gamma}{c}q (\vec{E}\cdot\vec{u})\\
+\gamma q (\vec{E} + \vec{u}\times\vec{B})
+\end{bmatrix}
+```
+Note that $\vec{B}$ has disappeared from the time component because
+the cross product of $\vec{u}\times\vec{B}$ always must be orthogonal
+to $\vec{u}$, so if you take the dot product of $\vec{u}\cdot(\vec{u}
+\times\vec{B})$, you will always get zero.
+
+If we write out all four components of Equation {eq}`M4EM`, we get
+```{math}
+:label: M4EMall4
+\begin{bmatrix}
+K^0\\
+K^1\\
+K^2\\
+K^2
+\end{bmatrix}
+=
+\gamma q
+\begin{bmatrix}
+(E_xu_x + E_yu_y + E_zu_z)/c\\
+E_x +u_yB_z - u_zB_y\\
+E_y +u_zB_x - u_xB_z\\
+E_z +u_xB_y - u_yB_x
+\end{bmatrix}
+```
+
+Let's examine these terms carefully, and compare them to the EM field
+tensor (Equation no number yet).  Note that the time component is just
+what you would get if you multiplied across the top row of the EM tensor
+and down the velocity four vector (the time component of $u^\alpha$ is
+eliminated by the zero on the diagonal of the tensor).  That suggests
+this equation might include the product of the EM tensor with the
+four-velocity.
+
+What happens if you multiply across the second row of the EM tensor
+and down the four velocity?  The $c$ will cancel when multiplying $-E_x/c$
+by $\gamma c$, then the $u_x$ will be eliminated by the zeros along the
+diagonal.  That leaves $B_z$ times $u_y$ and $-B_y$ times $u_z$, which
+is exactly what we see in Equation {eq}`M4EMall4`!  You can check the
+other two components, but this is nothing more or less than writing:
+```{math}
+:label: fullLorF
+\boxed{
+K^\alpha = qu_\beta F^{\alpha\beta}
+}
+```
+
+The Einstein notation needs a bit of unpacking, here.  The fact that
+$\beta$ appears twice, once up and once down, means that we are
+summing over all the possible values of $\beta$, which is the index
+for the column in the EM tensor.  The $\alpha$ index refers to the
+row.  You can tell this because you have the contravariant version of
+$K^\alpha$, which means it will be a column vector, and the $\alpha$
+counts which row each component is in.  If $\alpha$ is the row on the
+left side of the equation, it must also be the row on the right side.
+So $F^{13}$ is the second row, fourth column ($-B_y$).
+
+If we work out the matrix multiplication, the first row of this matrix
+equation would look like
+```{math}
+:label: LFrow0
+K^0 = q(u_0F^{00} + u_1F^{01} + u_2F^{02} + u_3F^{03})
+= q\gamma (0.0 + u_xE_x + u_yE_y + u_zE_z)
+```
+which matches Equation {eq}`M4EMall4`, and the second row is
+```{math}
+:label: LFrow1
+K^1 = q(u_0F^{10} + u_1F^{11} + u_2F^{12} + u_3F^{13})=
+q\gamma ((-c)(-E_x/c) + 0.0 + u_yB_z - u_zB_y)
+```
+and so on.  Note, however, that we have lowered the index $\beta$.
+When you lower the index, you also make the time component negative.
+Hence the $-c$ in Equation {eq}`LFrow1`.  The first column of the EM
+tensor ($F^{\alpha 0}$) has negative signs on all the $E$ components,
+so you need the $\gamma c$ component of the four-velocity to be
+negative, which makes the final answer positive, as it needs to be for
+Equation {eq}`M4EMall4`.
+
+```{warning}
+You have to watch the greek letters carefully in Einstein notation.
+If you just looked at Equation {eq}`fullLorF` and thought "oh,
+that's a row vector times a matrix, I'll multiply across the row
+vector and down the columns of the matrix," you would get the wrong
+answer.  Even though the $u$ is first, you are still multiplying
+each term in $u$ by the terms across each row (counting the columns
+with $\beta$) in $F$, because you have to write it out like Equations
+{eq}`LFrow0` and {eq}`LFrow1` to see which terms are really multiplying
+which other terms.
+```
+
+The notation of SR therefore gives us a way to write the electric and
+magnetic forces on a particle as a *single* Minkowski force, that is
+the result of interactions between a moving charge and a single
+electromagnetic field tensor.  There is no need to conceptualize
+electric and magnetic fields and forces as separate entities -- they
+are aspects of a single phenomenon.
 
 ## Charge/Current Four Vector and Continuity
 
@@ -158,5 +288,4 @@ four-vector".
 
 ## Maxwell's Equations as Four Vectors
 
-## EM Forces
 

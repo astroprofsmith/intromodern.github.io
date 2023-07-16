@@ -363,9 +363,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-lorentz-force">The Lorentz Force</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#charge-current-four-vector-and-continuity">Charge/Current Four Vector and Continuity</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-s-equations-as-four-vectors">Maxwell’s Equations as Four Vectors</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#em-forces">EM Forces</a></li>
 </ul>
             </nav>
         </div>
@@ -385,7 +385,116 @@ different parts of a single object, and we know how that
 tensor transforms under Lorentz transformations, we can
 start to see how the rest of electrodynamics plays out
 within an SR context.  We will start with examining
-charge and current.</p>
+how you represent the Minkowski Force for a charge
+moving with velocity <span class="math notranslate nohighlight">\(\vec{u}\)</span> in a region where
+there are both <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> fields.</p>
+<section id="the-lorentz-force">
+<h2>The Lorentz Force<a class="headerlink" href="#the-lorentz-force" title="Permalink to this heading">#</a></h2>
+<p>You learned in introductory E&amp;M that a charge
+moving with velocity <span class="math notranslate nohighlight">\(\vec{u}\)</span> in a region where
+there are both <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> fields experiences
+a force given by</p>
+<div class="math notranslate nohighlight" id="equation-lorforce">
+<span class="eqno">(180)<a class="headerlink" href="#equation-lorforce" title="Permalink to this equation">#</a></span>\[\vec{F} = q\vec{E} + q\vec{u}\times\vec{B}\]</div>
+<p>Given what we now know about how <span class="math notranslate nohighlight">\(\vec{E}\)</span> and
+<span class="math notranslate nohighlight">\(\vec{B}\)</span> are parts of a larger tensor, how does
+that affect the way we conceptualize this force?</p>
+<p>We start with our definition of the Minkowski Force
+from Equation <a class="reference internal" href="c10force.html#equation-m4forcefin">(149)</a>:</p>
+<div class="math notranslate nohighlight" id="equation-m4forceem">
+<span class="eqno">(181)<a class="headerlink" href="#equation-m4forceem" title="Permalink to this equation">#</a></span>\[\begin{split}K^\alpha = 
+\begin{bmatrix}
+\frac{\gamma}{c} (\vec{F}\cdot\vec{u})\\
+\gamma \vec{F}
+\end{bmatrix}\end{split}\]</div>
+<p>and if we plug in Equation <a class="reference internal" href="#equation-lorforce">(180)</a>, we get</p>
+<div class="math notranslate nohighlight" id="equation-m4em">
+<span class="eqno">(182)<a class="headerlink" href="#equation-m4em" title="Permalink to this equation">#</a></span>\[\begin{split}K^\alpha = 
+\begin{bmatrix}
+\frac{\gamma}{c}q (\vec{E}\cdot\vec{u})\\
+\gamma q (\vec{E} + \vec{u}\times\vec{B})
+\end{bmatrix}\end{split}\]</div>
+<p>Note that <span class="math notranslate nohighlight">\(\vec{B}\)</span> has disappeared from the time component because
+the cross product of <span class="math notranslate nohighlight">\(\vec{u}\times\vec{B}\)</span> always must be orthogonal
+to <span class="math notranslate nohighlight">\(\vec{u}\)</span>, so if you take the dot product of <span class="math notranslate nohighlight">\(\vec{u}\cdot(\vec{u}
+\times\vec{B})\)</span>, you will always get zero.</p>
+<p>If we write out all four components of Equation <a class="reference internal" href="#equation-m4em">(182)</a>, we get</p>
+<div class="math notranslate nohighlight" id="equation-m4emall4">
+<span class="eqno">(183)<a class="headerlink" href="#equation-m4emall4" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
+K^0\\
+K^1\\
+K^2\\
+K^2
+\end{bmatrix}
+=
+\gamma q
+\begin{bmatrix}
+(E_xu_x + E_yu_y + E_zu_z)/c\\
+E_x +u_yB_z - u_zB_y\\
+E_y +u_zB_x - u_xB_z\\
+E_z +u_xB_y - u_yB_x
+\end{bmatrix}\end{split}\]</div>
+<p>Let’s examine these terms carefully, and compare them to the EM field
+tensor (Equation no number yet).  Note that the time component is just
+what you would get if you multiplied across the top row of the EM tensor
+and down the velocity four vector (the time component of <span class="math notranslate nohighlight">\(u^\alpha\)</span> is
+eliminated by the zero on the diagonal of the tensor).  That suggests
+this equation might include the product of the EM tensor with the
+four-velocity.</p>
+<p>What happens if you multiply across the second row of the EM tensor
+and down the four velocity?  The <span class="math notranslate nohighlight">\(c\)</span> will cancel when multiplying <span class="math notranslate nohighlight">\(-E_x/c\)</span>
+by <span class="math notranslate nohighlight">\(\gamma c\)</span>, then the <span class="math notranslate nohighlight">\(u_x\)</span> will be eliminated by the zeros along the
+diagonal.  That leaves <span class="math notranslate nohighlight">\(B_z\)</span> times <span class="math notranslate nohighlight">\(u_y\)</span> and <span class="math notranslate nohighlight">\(-B_y\)</span> times <span class="math notranslate nohighlight">\(u_z\)</span>, which
+is exactly what we see in Equation <a class="reference internal" href="#equation-m4emall4">(183)</a>!  You can check the
+other two components, but this is nothing more or less than writing:</p>
+<div class="math notranslate nohighlight" id="equation-fulllorf">
+<span class="eqno">(184)<a class="headerlink" href="#equation-fulllorf" title="Permalink to this equation">#</a></span>\[\boxed{
+K^\alpha = qu_\beta F^{\alpha\beta}
+}\]</div>
+<p>The Einstein notation needs a bit of unpacking, here.  The fact that
+<span class="math notranslate nohighlight">\(\beta\)</span> appears twice, once up and once down, means that we are
+summing over all the possible values of <span class="math notranslate nohighlight">\(\beta\)</span>, which is the index
+for the column in the EM tensor.  The <span class="math notranslate nohighlight">\(\alpha\)</span> index refers to the
+row.  You can tell this because you have the contravariant version of
+<span class="math notranslate nohighlight">\(K^\alpha\)</span>, which means it will be a column vector, and the <span class="math notranslate nohighlight">\(\alpha\)</span>
+counts which row each component is in.  If <span class="math notranslate nohighlight">\(\alpha\)</span> is the row on the
+left side of the equation, it must also be the row on the right side.
+So <span class="math notranslate nohighlight">\(F^{13}\)</span> is the second row, fourth column (<span class="math notranslate nohighlight">\(-B_y\)</span>).</p>
+<p>If we work out the matrix multiplication, the first row of this matrix
+equation would look like</p>
+<div class="math notranslate nohighlight" id="equation-lfrow0">
+<span class="eqno">(185)<a class="headerlink" href="#equation-lfrow0" title="Permalink to this equation">#</a></span>\[K^0 = q(u_0F^{00} + u_1F^{01} + u_2F^{02} + u_3F^{03})
+= q\gamma (0.0 + u_xE_x + u_yE_y + u_zE_z)\]</div>
+<p>which matches Equation <a class="reference internal" href="#equation-m4emall4">(183)</a>, and the second row is</p>
+<div class="math notranslate nohighlight" id="equation-lfrow1">
+<span class="eqno">(186)<a class="headerlink" href="#equation-lfrow1" title="Permalink to this equation">#</a></span>\[K^1 = q(u_0F^{10} + u_1F^{11} + u_2F^{12} + u_3F^{13})=
+q\gamma ((-c)(-E_x/c) + 0.0 + u_yB_z - u_zB_y)\]</div>
+<p>and so on.  Note, however, that we have lowered the index <span class="math notranslate nohighlight">\(\beta\)</span>.
+When you lower the index, you also make the time component negative.
+Hence the <span class="math notranslate nohighlight">\(-c\)</span> in Equation <a class="reference internal" href="#equation-lfrow1">(186)</a>.  The first column of the EM
+tensor (<span class="math notranslate nohighlight">\(F^{\alpha 0}\)</span>) has negative signs on all the <span class="math notranslate nohighlight">\(E\)</span> components,
+so you need the <span class="math notranslate nohighlight">\(\gamma c\)</span> component of the four-velocity to be
+negative, which makes the final answer positive, as it needs to be for
+Equation <a class="reference internal" href="#equation-m4emall4">(183)</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You have to watch the greek letters carefully in Einstein notation.
+If you just looked at Equation <a class="reference internal" href="#equation-fulllorf">(184)</a> and thought “oh,
+that’s a row vector times a matrix, I’ll multiply across the row
+vector and down the columns of the matrix,” you would get the wrong
+answer.  Even though the <span class="math notranslate nohighlight">\(u\)</span> is first, you are still multiplying
+each term in <span class="math notranslate nohighlight">\(u\)</span> by the terms across each row (counting the columns
+with <span class="math notranslate nohighlight">\(\beta\)</span>) in <span class="math notranslate nohighlight">\(F\)</span>, because you have to write it out like Equations
+<a class="reference internal" href="#equation-lfrow0">(185)</a> and <a class="reference internal" href="#equation-lfrow1">(186)</a> to see which terms are really multiplying
+which other terms.</p>
+</div>
+<p>The notation of SR therefore gives us a way to write the electric and
+magnetic forces on a particle as a <em>single</em> Minkowski force, that is
+the result of interactions between a moving charge and a single
+electromagnetic field tensor.  There is no need to conceptualize
+electric and magnetic fields and forces as separate entities – they
+are aspects of a single phenomenon.</p>
+</section>
 <section id="charge-current-four-vector-and-continuity">
 <h2>Charge/Current Four Vector and Continuity<a class="headerlink" href="#charge-current-four-vector-and-continuity" title="Permalink to this heading">#</a></h2>
 <p>We spent much of the first ten chapters figuring out how to cast the
@@ -397,7 +506,7 @@ of time.  The dimensions are therefore charge per area per time, or
 current per area, which is a kind of density.  Mathematically, we
 write this as</p>
 <div class="math notranslate nohighlight" id="equation-currdenj">
-<span class="eqno">(180)<a class="headerlink" href="#equation-currdenj" title="Permalink to this equation">#</a></span>\[\vec{J} = \rho \vec{v}\]</div>
+<span class="eqno">(187)<a class="headerlink" href="#equation-currdenj" title="Permalink to this equation">#</a></span>\[\vec{J} = \rho \vec{v}\]</div>
 <p>which is a volume charge density (charge/volume) multiplied by a
 velocity (length/time).  One factor of length cancels out,
 leaving charge per area per time, as required.</p>
@@ -406,7 +515,7 @@ these moving charges has been contracted along the direction of
 motion, so we can go ahead and write this in terms of what the density
 would be in a reference frame where the charges are at rest:</p>
 <div class="math notranslate nohighlight" id="equation-currdenj0">
-<span class="eqno">(181)<a class="headerlink" href="#equation-currdenj0" title="Permalink to this equation">#</a></span>\[\vec{J} = \gamma \rho_0 \vec{v}\]</div>
+<span class="eqno">(188)<a class="headerlink" href="#equation-currdenj0" title="Permalink to this equation">#</a></span>\[\vec{J} = \gamma \rho_0 \vec{v}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\gamma =1/\sqrt{1-v^2/c^2}\)</span>, of course.  Although the density
 is charge over volume, only the dimension along the direction of
 motion gets contracted, so the density only changes by one factor of
@@ -417,7 +526,7 @@ a scalar <span class="math notranslate nohighlight">\(\rho_0\)</span> times <spa
 the spatial part of the four-velocity.  Maybe we can make the
 four-current by multiplying <span class="math notranslate nohighlight">\([v_4]\)</span> by <span class="math notranslate nohighlight">\(\rho_0\)</span>?  And indeed we can:</p>
 <div class="math notranslate nohighlight" id="equation-fourcurr">
-<span class="eqno">(182)<a class="headerlink" href="#equation-fourcurr" title="Permalink to this equation">#</a></span>\[\begin{split}\boxed{
+<span class="eqno">(189)<a class="headerlink" href="#equation-fourcurr" title="Permalink to this equation">#</a></span>\[\begin{split}\boxed{
 [J_4] =
 \rho_0 \gamma 
 \begin{bmatrix}
@@ -439,17 +548,17 @@ location is equal and opposite to the rate at which the amount of
 charge at that location is changing.</p>
 <p>In classical notation, we would say</p>
 <div class="math notranslate nohighlight" id="equation-conteqclass">
-<span class="eqno">(183)<a class="headerlink" href="#equation-conteqclass" title="Permalink to this equation">#</a></span>\[\vec{\nabla}\cdot\vec{J} = \frac{\partial \rho v_x}{\partial x}+ \frac{\partial \rho v_y}{\partial y}+ \frac{\partial \rho v_z}{\partial z} = -\frac{\partial \rho}{\partial t}\]</div>
+<span class="eqno">(190)<a class="headerlink" href="#equation-conteqclass" title="Permalink to this equation">#</a></span>\[\vec{\nabla}\cdot\vec{J} = \frac{\partial \rho v_x}{\partial x}+ \frac{\partial \rho v_y}{\partial y}+ \frac{\partial \rho v_z}{\partial z} = -\frac{\partial \rho}{\partial t}\]</div>
 <p>If we move the right side over the to left and multiply top and bottom by <span class="math notranslate nohighlight">\(c\)</span>,
 it should start to suggest something:</p>
 <div class="math notranslate nohighlight" id="equation-movetimeover">
-<span class="eqno">(184)<a class="headerlink" href="#equation-movetimeover" title="Permalink to this equation">#</a></span>\[\frac{\partial (\gamma \rho_0 c)}{\partial (ct)}+\frac{\partial \gamma \rho_0 v_x}{\partial x}+ \frac{\partial \gamma \rho_0 v_y}{\partial y}+ \frac{\partial \gamma \rho_0 v_z}{\partial z} = 0\]</div>
+<span class="eqno">(191)<a class="headerlink" href="#equation-movetimeover" title="Permalink to this equation">#</a></span>\[\frac{\partial (\gamma \rho_0 c)}{\partial (ct)}+\frac{\partial \gamma \rho_0 v_x}{\partial x}+ \frac{\partial \gamma \rho_0 v_y}{\partial y}+ \frac{\partial \gamma \rho_0 v_z}{\partial z} = 0\]</div>
 <p>You will note that each successive term being differentiated is indeed one of the
 terms of our current four-vector.  Furthermore, each successive derivative is being
 done with respect to successive variables of the four-displacement!  So this suggests
 a kind of dot product, which we could write this way:</p>
 <div class="math notranslate nohighlight" id="equation-fourdivergence1">
-<span class="eqno">(185)<a class="headerlink" href="#equation-fourdivergence1" title="Permalink to this equation">#</a></span>\[\begin{split}\left(\frac{\partial}{\partial (ct)},\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)
+<span class="eqno">(192)<a class="headerlink" href="#equation-fourdivergence1" title="Permalink to this equation">#</a></span>\[\begin{split}\left(\frac{\partial}{\partial (ct)},\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)
 \begin{bmatrix}
 \gamma \rho_0 c\\
 \gamma \rho_0 v_x\\
@@ -459,15 +568,15 @@ a kind of dot product, which we could write this way:</p>
 = 0\end{split}\]</div>
 <p>If we define a <strong>four-divergence</strong> as the row vector above and write it as</p>
 <div class="math notranslate nohighlight" id="equation-fourdivdef">
-<span class="eqno">(186)<a class="headerlink" href="#equation-fourdivdef" title="Permalink to this equation">#</a></span>\[\partial_\alpha = \frac{\partial}{\partial x^\alpha} = \left(\frac{\partial}{\partial (ct)},\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)\]</div>
+<span class="eqno">(193)<a class="headerlink" href="#equation-fourdivdef" title="Permalink to this equation">#</a></span>\[\partial_\alpha = \frac{\partial}{\partial x^\alpha} = \left(\frac{\partial}{\partial (ct)},\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)\]</div>
 <p>then the continuity equation can be written as simply as</p>
 <div class="math notranslate nohighlight" id="equation-continuitysr">
-<span class="eqno">(187)<a class="headerlink" href="#equation-continuitysr" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(194)<a class="headerlink" href="#equation-continuitysr" title="Permalink to this equation">#</a></span>\[\boxed{
 \partial_\alpha J^\alpha = 0
 }\]</div>
 <p>Here you can see how the Einstein notation starts to save you a lot of writing.  Equations
-<a class="reference internal" href="#equation-continuitysr">(187)</a> and <a class="reference internal" href="#equation-movetimeover">(184)</a> are the exact same equation, with the same
-information content, but Equation <a class="reference internal" href="#equation-continuitysr">(187)</a> requires <em>so</em> much less writing,
+<a class="reference internal" href="#equation-continuitysr">(194)</a> and <a class="reference internal" href="#equation-movetimeover">(191)</a> are the exact same equation, with the same
+information content, but Equation <a class="reference internal" href="#equation-continuitysr">(194)</a> requires <em>so</em> much less writing,
 it’s much more popular than other methods.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -491,9 +600,6 @@ four-vector”.</p>
 </section>
 <section id="maxwell-s-equations-as-four-vectors">
 <h2>Maxwell’s Equations as Four Vectors<a class="headerlink" href="#maxwell-s-equations-as-four-vectors" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="em-forces">
-<h2>EM Forces<a class="headerlink" href="#em-forces" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -555,9 +661,9 @@ four-vector”.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-lorentz-force">The Lorentz Force</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#charge-current-four-vector-and-continuity">Charge/Current Four Vector and Continuity</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-s-equations-as-four-vectors">Maxwell’s Equations as Four Vectors</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#em-forces">EM Forces</a></li>
 </ul>
   </nav></div>
 
