@@ -303,7 +303,7 @@ component has a minus sign, up to and including the extreme case of
 the proper interval $-c^2dt_0^2$.  A negative interval is therefore
 more like a time displacement than it is like a space displacement, so
 such intervals are called "timelike".  As you might probably guess at
-this point, intervals where $dx'>cdt'$ have positive intervals and are
+this point, displacements where $dx'>cdt'$ have positive intervals and are
 therefore called "spacelike".
 
 As you will see as this chapter develops, it is useful to group
@@ -682,6 +682,202 @@ version](https://alexonscience.com/projects/spacetimeglobe/) of Figure
 under Lorentz transformations.
 ```
 
+## Hyperbolic Rotation and Rapidity
+
+It might, when you move the slider in Figure 5.3, remind you of
+rotation.  Certainly there is rotation going on -- the axes are
+swinging around the origin.  But it's also clearly not the kind of
+rotation you're used to.  When we usually rotate the $x$ and $y$
+coordinate axes around the $z$ axis, the two arrows move together.
+However, in Figure 5.3, the arrows are moving symmetrically in
+opposite directions.  In the familiar kind of rotations, you can keep
+swinging the axes around and around and around, increasing the angle
+as far as you like.  However, in a spacetime diagram, there is an
+asymptotic limit to how far the axis will swing -- they will both move
+toward a slope of 1.
+
+This is still a rotation, but it's called a hyperbolic rotation.  You
+can even mathematically make it look like a rotation.  Recall that when
+we rotated the coordinate axes around the $z$ axis, we determined how
+that would affect a vector by multiplying the vector by a matrix:
+```{math}
+:label: normalrot
+\begin{pmatrix}
+v_x'\\
+v_y'\\
+v_z'
+\end{pmatrix}
+=
+\begin{pmatrix}
+\cos{\theta}&-\sin{\theta}&0\\
+\sin{\theta}&\cos{\theta}&0\\
+0&0&1
+\end{pmatrix}
+\begin{pmatrix}
+v_x\\
+v_y\\
+v_z
+\end{pmatrix}
+```
+When you multiply that out, you
+get
+```{math}
+:label: rotang
+\begin{pmatrix}
+v_x'\\
+v_y'\\
+v_z'
+\end{pmatrix}
+=
+\begin{pmatrix}
+v_x\cos{\theta}-v_y\sin{\theta}\\
+v_x\sin{\theta}+v_y\cos{\theta}\\
+v_z
+\end{pmatrix}
+```
+Note that the $x$ and $y$ components of the vector get "mixed up" when you
+rotate the coordinate system.  By rotation, you are turning part of $x$ into $y$
+and vice versa.
+
+The periodic nature of the sinusoidal functions corresponds to the angle
+being able to go around and around and around.  To have the angle approach
+an asmptote, as in a spacetime diagram, we need the hyperbolic trig functions,
+$\tanh$, $\sinh$, and $\cosh$.  In a normal $x-y$ plane, if you had a vector
+in that plane, the angle the vector would make with the $x$ axis would be
+$\tan{\theta} = v_y/v_x$, opposite over adjacent.  However, for spacetime,
+it's the hyperbolic tangent: $\tanh{\phi} = dx/cdt = v/c = \beta$.  Note
+that we put $x$ over $y$ to get $\beta$.
+
+There's a trig identity that says 
+```{math}
+:label: tanh
+\tanh^2{\phi} = 1 - \frac{1}{\cosh^2{\phi}} = \beta^2
+```
+But we already know that $\beta^2 = 1 - 1/\gamma^2$, from the definition
+of $\gamma$, so $\cosh{\phi} = \gamma$!
+
+Finally, we know $\cosh^2+\sinh^2 = 1$, so if $\cosh{\phi} = \gamma$, then
+$\sinh^2{\phi} = 1-\cosh^2{\phi}$
+```{math}
+:label: sinh
+\sinh^2{\phi} = 1-\gamma^2 = 1-\frac{1}{1-\beta^2} = \frac{\beta^2}{1-\beta^2}
+= \beta^2\gamma^2
+```
+So $\sinh{\phi} = \beta\gamma$.  But these are just the elements of the Lorentz
+transformation matrix!  This means we can write the Lorentz matrix as
+```{math}
+:label: lortrapid
+{\cal L}_x(\phi) =
+\begin{bmatrix}
+\cosh{\phi} & -\sinh{\phi} & 0& 0\\
+-\sinh{\phi} & \cosh{\phi} & 0& 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{bmatrix}
+```
+If you compare Equation {eq}`lortrapid` and {eq}`normalrot`, you can see that
+except for the hyperbolic part, and an extra minus sign, they look very similar.
+This means, in a very real but very odd sense, changing speeds actually rotates
+space and time into each other, in much the same way that rotating axes rotates
+$x$ and $y$ into each other.
+
+The letter $\phi$ in these equations is called the "rapidity", and it depends on
+$\beta$ as
+```{math}
+:label: rapidity
+\phi = \ln{\left(\sqrt{\frac{1+\beta}{1-\beta}}\right)}
+```
+However, despite
+the trig functions, don't get confused and think that $\phi$ is an angle in the
+regular sense of how you think of that term.  In Equation {eq}`normalrot`, the letter
+$\theta$ corresponds to the angle through which we rotate the axes of the diagram.
+However, in the case of Equation {eq}`lortrapid`, if $v\rightarrow c$, then
+the axis will pinch to an angle of $45^\circ$, while $\phi\rightarrow\infty$
+(the $1-\beta$ in the denominator of Equation {eq}`rapidity` goes to zero).
+
+
+Why might you want to do this?  Two reasons.  First of all, it's kind
+of neat to think about a "boost" (the name of the operation of
+changing speed into a new reference frame) as a kind of rotation between
+space and time.  Secondly, should you need to apply two Lorentz
+transformations in a row, you may recall there are trig identities
+that let you write the product of trig functions as a trig function of
+the sum of the angles.  In this case, you can work out that two
+successive Lorentz transformations, if you write them like Equation
+{eq}`lortrapid`, work out to a single Lorentz transformation using the
+sum of the rapidities of the two original transformations: ${\cal
+L}_x(\phi_1) {\cal L}_x(\phi_2) = {\cal L}_x(\phi_1+\phi_2)$.  This
+could save a lot of number crunching.
+
 ## Problems
 
-Need to think of some...
+1) According to observers in a reference frame at rest with respect to
+both the Earth and a star 3.25 LY away, an astronaut on a spaceship
+near the star eats breakfast at 7 am, while their spouse on Earth
+eats lunch at five hours later.  How fast would an observer in a rocket
+need to travel, and in what direction, to conclude that the spouse ate
+lunch before the astronaut ate breakfast?
+
+2) George Gamov, in his delightful but dated book, *Mr. Tompkins in
+Wonderland*, posits a world where the speed of light is only a few
+km/hr, and all these odd effects of relativity are commonplace for
+people in that world.  *Need to look in the book and recreate his
+argument about the murder observed from the train*
+
+3) Show that even when you tilt the axes as in Figure 5.3, the properties
+of the Lorentz transformation are such that the new axes are still orthogonal,
+even though they are clearly not perpendicular in the figure.
+
+4) The following questions are with regard to Figure 5.4
+
+a) Can you find relative speeds for which each of the events below the
+red dots happen before the cyan event?
+
+b) Can you find a speed at which any of the events above the red dots
+happen before the cyan event?
+
+c) At $\beta_R=+0.67$, which of the dots lies on the vertical axis
+above the cyan dot?  That is, where was this dot originally when
+$\beta_R=0$?
+
+d) At $\beta_R=+0.67$ consider the duration of time between the cyan
+event and the event from part c).  Is this time interval longer or
+shorter than the duration of time (as measured when $\beta_R=0$)
+between the cyan event and the orange event?  Does this make sense?
+
+4) Use the definition of rapidity $\phi(\beta)$ (Equation {eq}`rapidity`)
+to prove that $\sinh{\phi} = \gamma$.
+
+5) This one could end up being rather annoying, so probably best to just
+do it for the time component.  Show that two successive boosts, when you
+use rapidity and the hyperbolic trig functions, are the same as a single
+boost with the sum of the rapidities.  In other words, show that
+```{math}
+{\cal L}_x(\phi_2){\cal L}_x(\phi_1) = {\cal L}_x(\phi_1+\phi_2)
+```
+
+6) Note that in considering two successive boosts, you can't just
+conclude that the final speed $\beta_{1+2}$ will be the sum of the two
+individual boosts ($\beta_{1+2}\neq\beta_1+\beta_2$ -- if you doubt
+this, consider the case where $\beta_1=\beta_2=0.75$.  Do you see how
+adding those together would be a problem?).  However, you can just add
+rapidities, because they can go as high as you like.  Start with
+$\phi_{1+2} = \phi_1+\phi_2$ and plug in Equation {eq}`rapidity` to
+get a formula for $\beta_{1+2}$ as a function of $\beta_1$ and
+$\beta_2$.  You will see this formula again in Chapter 7.
+
+7) An event is at $(ct,x)=(1~{\rm m},2~{\rm m})$ in some reference
+frame.  Is the displacement from the origin to this event timelike,
+lightlike, or spacelike?  How fast would another reference frame have
+to travel relative to this one to observe this event on the horizontal
+axis?  Perform a Lorentz transformation at this value for $\beta_R$
+and verify that this is so.
+
+8) Consider the case where a bolt of lightning creates a peal of thunder.
+You are 5 km away from this event.  Write down displacement four vectors for
+the events of your seeing the lighting and your hearing the thunder,
+relative to the event of their creation.  Find their intervals and determine
+if they are timelike, lightlike, or spacelike.  With appropriate scaling,
+you can use Figure 5.2 to represent these situations.  Do your classifications
+make intuitive sense, and how do they compare with the light cones from
+the original event?

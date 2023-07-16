@@ -170,6 +170,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="c9examples.html">Chapter 9: Examples of Relativity in Action</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c10force.html">Chapter 10: Relativistic Force and Acceleration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c11electric.html">Chapter 11: The Electromagnetic Tensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c12dynamic.html">Chapter 12: Relativistic Electrodynamics</a></li>
 </ul>
 
     </div>
@@ -486,12 +487,11 @@ measured by recording when certain clocks pass each other, and when
 the clocks are gathered up again later, the number of rulers traveled
 divided by the durations on the relevant clocks would reveal the
 relative velocity, which we will designate as <span class="math notranslate nohighlight">\(v_R\)</span>.  For special
-relativity, we require that <span class="math notranslate nohighlight">\(v_R\)</span> be constant.  Figure 2.1 shows an
-animated representation of two reference frames in relative motion,
-although you have to imagine the lattice of rulers and clocks
+relativity, we require that <span class="math notranslate nohighlight">\(v_R\)</span> be constant.  <a class="reference internal" href="#relmotionfig"><span class="std std-numref">Fig. 3</span></a>
+shows an animated representation of two reference frames in relative
+motion, although you have to imagine the lattice of rulers and clocks
 extending off to infinity.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
+<figure class="align-default" id="relmotionfig" style="width: 800px">
 <div class="output text_html">
         <iframe
             width="800"
@@ -501,17 +501,15 @@ extending off to infinity.</p>
             allowfullscreen
             
         ></iframe>
-        </div></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Figure 2.1 – Animation of two reference frames in relative motion.
+        </div><figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Animation of two reference frames in relative motion.
 The spheres represent clocks, and the rods represent rulers.  The viewer
 must imagine that the lattice continues on indefinitely an all directions.
 The camera is at rest with respect to the reference frame colored red,
 while the blue frame is in constant relative motion.  The animation will
-loop, to represent more clocks and rods coming in from the side.</p>
-</div>
+loop, to represent more clocks and rods coming in from the side.</span><a class="headerlink" href="#relmotionfig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Ultimately, we are interested in how objects in the universe move and
 interact with each other.  To study this motion, we need to make
 measurements of location and duration, which needs to happen within a
@@ -571,8 +569,17 @@ either moving one’s self to the other side of the object, or sending a
 light beam to the other side and back.  Many misunderstandings and
 confusions in special relativity arise from people assuming they just
 know what is going on at another location, without allowing for the
-time it would take to get from one location to another.</p>
-<a class="bg-primary mb-1 reference internal image-reference" href="_images/fande.jpg" id="fande"><img alt="frankearnest" class="bg-primary mb-1 align-center" id="fande" src="_images/fande.jpg" style="width: 700px;" /></a>
+time it would take to get from one location to another.  <a class="reference internal" href="#fande"><span class="std std-numref">Fig. 4</span></a>
+displays in a humorous way the very real principle that you always
+make observations where you are, and that your location is always at
+rest in your own reference frame.</p>
+<figure class="align-center" id="fande">
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/fande.jpg"><img alt="frankearnest" class="bg-primary mb-1" src="_images/fande.jpg" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Frank and Earnest cartoon from Sunday, July 8, 2023.  Image copyright
+Bob Thaves.</span><a class="headerlink" href="#fande" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Most of special relativity is about comparing measurements according
 to two different reference frames that are in motion relative to each
 other.  <em>Special</em> relativity demands the assumption that the relative
@@ -642,13 +649,13 @@ statement into mathematical terms so that quantitative predictions can
 be made. Consider a point source emitting light waves in three
 dimension. An observer would see the light waves traveling out in the
 shape of a sphere whose radius is dependent of time (as seen in
-Figure 2.2). As the light is emitted, in some very small
+<a class="reference internal" href="#expanding"><span class="std std-numref">Fig. 5</span></a>). As the light is emitted, in some very small
 time interval <span class="math notranslate nohighlight">\(dt\)</span>, the wave front makes a spherical shape of radius
 <span class="math notranslate nohighlight">\(r = c dt\)</span>. The 3-dimensional equation for a spherical shape centered
 at the origin is:</p>
 <div class="math notranslate nohighlight" id="equation-eqsph">
 <span class="eqno">(1)<a class="headerlink" href="#equation-eqsph" title="Permalink to this equation">#</a></span>\[x^2+y^2+z^2= r^2\]</div>
-<p>Using the distances represented by the arrows in Figure 2.2, equation <a class="reference internal" href="#equation-eqsph">(1)</a> becomes:</p>
+<p>Using the distances represented by the arrows in <a class="reference internal" href="#expanding"><span class="std std-numref">Fig. 5</span></a>, equation <a class="reference internal" href="#equation-eqsph">(1)</a> becomes:</p>
 <div class="math notranslate nohighlight" id="equation-eqsph2">
 <span class="eqno">(2)<a class="headerlink" href="#equation-eqsph2" title="Permalink to this equation">#</a></span>\[(dx)^2+(dy)^2+(dz)^2 = (cdt)^2,\]</div>
 <p>where <span class="math notranslate nohighlight">\(dx\)</span>, <span class="math notranslate nohighlight">\(dy\)</span>, and <span class="math notranslate nohighlight">\(dz\)</span> are how much the observer measured the wave
@@ -662,8 +669,7 @@ observer finds the source of the light flash to be at rest).  If this
 second observer were to observe the same set of events (the wave front
 of the light propagating away from the point source), what should she
 see?</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
+<figure class="align-default" id="expanding" style="width: 800px">
 <div class="output text_html">
         <iframe
             width="800"
@@ -673,16 +679,14 @@ see?</p>
             allowfullscreen
             
         ></iframe>
-        </div></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Figure 2.2 – Animation of an expanding sphere of photons from an
+        </div><figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Animation of an expanding sphere of photons from an
 initial flash.  The radius of the sphere, with length <span class="math notranslate nohighlight">\(ct\)</span>
 is shown as a black arrow, with the cartesian components indicated
 by red arrows.  The animation will rotate to display the three-dimensional
-nature of the diagram.</p>
-</div>
+nature of the diagram.</span><a class="headerlink" href="#expanding" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Common sense says that the wave front should not longer seem to be
 spherical, but should appear to be oblate (a squashed
 sphere). However, what Michelson found was that this spherical wave
@@ -698,8 +702,8 @@ also sees a spherical wave, but this time the observer measures:</p>
 second observer measured the wave front to propagate in time
 <span class="math notranslate nohighlight">\(dt^\prime\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> (not <span class="math notranslate nohighlight">\(c^\prime\)</span>!) is the speed of light.</p>
 <p>Equations <a class="reference internal" href="#equation-eqsph2">(2)</a> and <a class="reference internal" href="#equation-eqsphp">(3)</a> can be combined to be:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-db44acc7-57d7-4480-ae6e-5ef99470cf67">
-<span class="eqno">(4)<a class="headerlink" href="#equation-db44acc7-57d7-4480-ae6e-5ef99470cf67" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-7cd95a30-6f9b-4de6-bdaf-63c8981b035a">
+<span class="eqno">(4)<a class="headerlink" href="#equation-7cd95a30-6f9b-4de6-bdaf-63c8981b035a" title="Permalink to this equation">#</a></span>\[\begin{equation}
 (dx)^2+(dy)^2+(dz)^2 - (cdt)^2 = (dx^\prime)^2 + (dy^\prime)^2 + (dz^\prime)^2 - (c dt^\prime)^2
 \end{equation}\]</div>
 <p>It appears that there is a sum of squares of measured displacements

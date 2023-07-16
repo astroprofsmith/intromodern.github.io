@@ -16,6 +16,7 @@ kernelspec:
 :tags: ["remove-cell"]
 
 from IPython import display
+from myst_nb import glue
 
 ```
 
@@ -129,20 +130,24 @@ measured by recording when certain clocks pass each other, and when
 the clocks are gathered up again later, the number of rulers traveled
 divided by the durations on the relevant clocks would reveal the
 relative velocity, which we will designate as $v_R$.  For special
-relativity, we require that $v_R$ be constant.  Figure 2.1 shows an
-animated representation of two reference frames in relative motion,
-although you have to imagine the lattice of rulers and clocks
+relativity, we require that $v_R$ be constant.  {numref}`relmotionfig`
+shows an animated representation of two reference frames in relative
+motion, although you have to imagine the lattice of rulers and clocks
 extending off to infinity.
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 # Insert animation of expanding sphere of light.  Show radial
 # arrow and overlay x, y, z, and ct
 url = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRrefframes"
-display.IFrame(src=url,width=800,height=800)
+relfram = display.IFrame(src=url,width=800,height=800)
+glue("relfig",relfram,display=False)
 ```
-```{note}
-Figure 2.1 -- Animation of two reference frames in relative motion.
+```{glue:figure} relfig
+:figwidth: 800px
+:name: relmotionfig
+
+Animation of two reference frames in relative motion.
 The spheres represent clocks, and the rods represent rulers.  The viewer
 must imagine that the lattice continues on indefinitely an all directions.
 The camera is at rest with respect to the reference frame colored red,
@@ -213,15 +218,21 @@ either moving one's self to the other side of the object, or sending a
 light beam to the other side and back.  Many misunderstandings and
 confusions in special relativity arise from people assuming they just
 know what is going on at another location, without allowing for the
-time it would take to get from one location to another.
+time it would take to get from one location to another.  {numref}`fande`
+displays in a humorous way the very real principle that you always
+make observations where you are, and that your location is always at
+rest in your own reference frame.
 
 
-```{image} images/fande.jpg
+```{figure} images/fande.jpg
 :alt: frankearnest
 :class: bg-primary mb-1
 :width: 700px
 :align: center
 :name: fande
+
+Frank and Earnest cartoon from Sunday, July 8, 2023.  Image copyright
+Bob Thaves.
 ```
 
 Most of special relativity is about comparing measurements according
@@ -298,7 +309,7 @@ statement into mathematical terms so that quantitative predictions can
 be made. Consider a point source emitting light waves in three
 dimension. An observer would see the light waves traveling out in the
 shape of a sphere whose radius is dependent of time (as seen in
-Figure 2.2). As the light is emitted, in some very small
+{numref}`expanding`). As the light is emitted, in some very small
 time interval $dt$, the wave front makes a spherical shape of radius
 $r = c dt$. The 3-dimensional equation for a spherical shape centered
 at the origin is:
@@ -307,7 +318,7 @@ at the origin is:
 :label: eqsph
 x^2+y^2+z^2= r^2
 ```
-Using the distances represented by the arrows in Figure 2.2, equation {eq}`eqsph` becomes:
+Using the distances represented by the arrows in {numref}`expanding`, equation {eq}`eqsph` becomes:
 ```{math}
 :label: eqsph2
 (dx)^2+(dy)^2+(dz)^2 = (cdt)^2,
@@ -326,14 +337,18 @@ of the light propagating away from the point source), what should she
 see?
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 # Insert animation of expanding sphere of light.  Show radial
 # arrow and overlay x, y, z, and ct
 url = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRExpandSphere"
-display.IFrame(src=url,width=800,height=600)
+bigsphere = display.IFrame(src=url,width=800,height=600)
+glue("spherefig",bigsphere,display=False)
 ```
-```{note}
-Figure 2.2 -- Animation of an expanding sphere of photons from an
+```{glue:figure} spherefig
+:figwidth: 800px
+:name: expanding
+
+Animation of an expanding sphere of photons from an
 initial flash.  The radius of the sphere, with length $ct$
 is shown as a black arrow, with the cartesian components indicated
 by red arrows.  The animation will rotate to display the three-dimensional

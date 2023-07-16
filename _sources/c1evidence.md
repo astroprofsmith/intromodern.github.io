@@ -55,15 +55,15 @@ reference that is moving at $3.0 \times 10^4$ m/s with respect to the
 speed of the ether. If the beam of light is heading towards the sun,
 it is moving in a frame of reference that is at respect to the ether.
 
-Michelson designed an interferometer (schematically shown in Figure
-1.1) that used partially silvered mirrors to split a beam of light
-into two legs that were at right angles to each other. By careful
-examination of the interference of the light after it traveled along
-the two beam lines and was recombined by the partially silvered
-mirrors, he could measure a difference in speed of light in the two
-arms of about 300 m/s, much smaller than the orbital speed of the
-earth about the sun. The interferometer was floated on a pot of
-mercury and allowed to rotate slowly. During a rotation of 360
+Michelson designed an interferometer (schematically shown in
+{numref}`michelfig`) that used partially silvered mirrors to split a
+beam of light into two legs that were at right angles to each
+other. By careful examination of the interference of the light after
+it traveled along the two beam lines and was recombined by the
+partially silvered mirrors, he could measure a difference in speed of
+light in the two arms of about 300 m/s, much smaller than the orbital
+speed of the earth about the sun. The interferometer was floated on a
+pot of mercury and allowed to rotate slowly. During a rotation of 360
 degrees, at one time one of the legs would be pointing in the
 direction of motion of the earth (moving with respect to the ether)
 and the other at rest with respect to the ether. A quarter of a turn
@@ -149,7 +149,8 @@ the years of travel between the stars and the Earth, the faster light
 would catch up to the slower light, perhaps even overtaking it.  The
 observations of the moments in the orbit, such as one star passing in
 front of the other, would arrive at the Earth at completely distorted
-times.
+times.  A simulation of such a distortion is shown in
+{numref}`nonsrlc`.
 
 Of course, no such distortion has ever been observed.  Eclipses arrive
 like clockwork.  Arrival times of the eclipses' beginnings and endings
