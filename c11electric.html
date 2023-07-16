@@ -61,6 +61,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c11electric';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -364,6 +366,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#magnetic-force-as-a-relativistic-effect">Magnetic Force as a Relativistic Effect</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reminder-of-classical-situation">Reminder of Classical Situation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-relativistic-model">The Relativistic Model</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-the-fields-transform">How the Fields Transform</a></li>
@@ -404,14 +407,195 @@ this eBook, I only plan to introduce the subject, not explore all the
 implications.</p>
 <section id="magnetic-force-as-a-relativistic-effect">
 <h2>Magnetic Force as a Relativistic Effect<a class="headerlink" href="#magnetic-force-as-a-relativistic-effect" title="Permalink to this heading">#</a></h2>
+<section id="reminder-of-classical-situation">
+<h3>Reminder of Classical Situation<a class="headerlink" href="#reminder-of-classical-situation" title="Permalink to this heading">#</a></h3>
+<figure class="align-center" id="classicfig">
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/classicIBF.png"><img alt="classicalEMBforce" class="bg-primary mb-1" src="_images/classicIBF.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Schematic of the classical understanding of the force on a charge
+moving antiparallel to a current-carrying wire.  A description of
+all the pieces of this figure is in the text.</span><a class="headerlink" href="#classicfig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Before we dive into tackling how relativity implies we must rethink
 E&amp;M, let’s first walk through a classical understanding of a simple
 problem.  Then we will recast that problem through a relativistic lens
 and see how it invites a different understanding of the phenomenon.
 We will start with the force on an electric charge moving parallel to
-a current-carrying wire.</p>
-<section id="reminder-of-classical-situation">
-<h3>Reminder of Classical Situation<a class="headerlink" href="#reminder-of-classical-situation" title="Permalink to this heading">#</a></h3>
+a current-carrying wire.  The situation is shown in <a class="reference internal" href="#classicfig"><span class="std std-numref">Fig. 6</span></a>
+as a schematic.  A wire carries a current <span class="math notranslate nohighlight">\(I\)</span> to the right.  Meanwhile
+a charge <span class="math notranslate nohighlight">\(q\)</span> is moving to the right with a velocity <span class="math notranslate nohighlight">\(\vec{u}\)</span> at a
+distance <span class="math notranslate nohighlight">\(r\)</span> from the center of the wire.  We observe, empirically, that
+the charge experiences an upward force (toward the wire) with a
+magnitude of</p>
+<div class="math notranslate nohighlight" id="equation-fclassic">
+<span class="eqno">(166)<a class="headerlink" href="#equation-fclassic" title="Permalink to this equation">#</a></span>\[\vec{F} = -\hat{r} \frac{qu\mu_0 I}{2\pi r}\]</div>
+<p>and this force remains perpendicular to the motion of the particle,
+no matter how we rotate the system around the wire.</p>
+<p>We therefore invent a field we  call <span class="math notranslate nohighlight">\(\vec{B}\)</span> and we say there’s
+a magnetic force <span class="math notranslate nohighlight">\(\vec{F}_m = q\vec{u}\times\vec{B}\)</span>.  To make that
+force line up with the observed force, we say the field <span class="math notranslate nohighlight">\(\vec{B}\)</span>
+points tangent to a circle around the wire and has a magnitude of
+<span class="math notranslate nohighlight">\(\mu_0 I/2\pi r\)</span>.</p>
+</section>
+<section id="the-relativistic-model">
+<h3>The Relativistic Model<a class="headerlink" href="#the-relativistic-model" title="Permalink to this heading">#</a></h3>
+<p>As with most relativity problems, this one comes down to setting up
+the situation in different reference frames and then switching between
+them with Lorentz transformations.  There are three frames we will
+need to compare, because there are two different kinds of motion (the
+current and the charge), and we need to compare them both to a common
+reference frame.  Or to put it another way, we have the initial frame
+in which the charge has a velocity <span class="math notranslate nohighlight">\(\vec{u}\)</span>, we have the rest frame
+of the charge, and then we will need the rest frame of the <em>current</em>,
+as well.</p>
+<p>Let us begin with the “lab frame”, which I will call “Frame A”, which
+corresponds to the situation described in the previous section.  There
+is a current <span class="math notranslate nohighlight">\(I\)</span> to the right, but I am going to break this down into
+two parts: a positive current going right and a negative current going
+left.  Each current comprises half the charge density, but they are
+equal and opposite densities, so the total charge density is zero, but
+the total current is <span class="math notranslate nohighlight">\(I\)</span> to the right.  This way of conceptualizing the
+setup is shown in <a class="reference internal" href="#frameafig"><span class="std std-numref">Fig. 7</span></a>, with the positive current in
+red and the negative current in blue.</p>
+<figure class="align-center" id="frameafig">
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/frameAfig.png"><img alt="frameApicture" class="bg-primary mb-1" src="_images/frameAfig.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Schematic of a particular way of visualizing the current <span class="math notranslate nohighlight">\(I\)</span> in a
+reference frame where the total charge density of the wire is zero.
+We define the current as <span class="math notranslate nohighlight">\(2\lambda v\)</span>, but there is a <span class="math notranslate nohighlight">\(+\lambda\)</span> moving
+to the right (red) and a <span class="math notranslate nohighlight">\(-\lambda\)</span> moving to the left (blue).  The sum
+of the two <span class="math notranslate nohighlight">\(\lambda\)</span> is zero, but since the <span class="math notranslate nohighlight">\(v\)</span> values are also opposite,
+<span class="math notranslate nohighlight">\(\lambda v\)</span> adds up instead of cancelling.</span><a class="headerlink" href="#frameafig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>We then need to transform into a frame moving with <span class="math notranslate nohighlight">\(v_R=u\)</span> to the
+right.  In this frame, which I will call Frame B, the charge <span class="math notranslate nohighlight">\(+q\)</span> is
+at rest.  According to the classic magnetic force model (Equation
+<a class="reference internal" href="#equation-fclassic">(166)</a>), the magnetic force on the charge should be zero.  It
+is not moving, so it cannot experience a magnetic force.  However,
+since an observer in Frame A observes the charge being attracted to
+the wire, an observer in Frame B must also observe the charge being
+attracted to the wire.  But how, if there is no force?  No <em>magnetic</em>
+force!  There could be a <em>different</em> force.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is actually the exact sort of dilemma that led Einstein to develop
+SR in the first place.  How could you have a magnetic force in one
+reference frame, and an electric force in another reference frame?
+Shouldn’t the laws of Physics be the same in all reference frames?
+His 1905 paper that introduced SR to the world was not called “Special
+Relativity” after all.  The name of that paper was “On the Electrodynamics
+of Moving Bodies”.</p>
+</div>
+<p>In Frame B, lengths along the direction of relative motion will be
+contracted.  When we talk about a charge density <span class="math notranslate nohighlight">\(\lambda\)</span>, we are
+talking about a certain number of charges <em>per</em> <em>length</em>.  So the
+charge densities in the wire will change, and since these sets of
+charges have different velocities, relative to <span class="math notranslate nohighlight">\(\vec{v}_R\)</span>, they will
+contract by different amounts.  Given our formula for length
+contraction, we know</p>
+<div class="math notranslate nohighlight" id="equation-lambdapm">
+<span class="eqno">(167)<a class="headerlink" href="#equation-lambdapm" title="Permalink to this equation">#</a></span>\[\lambda_\pm =\pm\frac{dq}{dz} =
+\pm\gamma_\pm\frac{dq}{dz_0} = \pm\gamma_\pm\lambda_0\]</div>
+<p>In this frame, the two charge densities will <strong>not</strong>
+cancel out, since they will no longer be equal.  The wire will <strong>not</strong>
+be electrically neutral.</p>
+<div class="math notranslate nohighlight" id="equation-labdatot">
+<span class="eqno">(168)<a class="headerlink" href="#equation-labdatot" title="Permalink to this equation">#</a></span>\[\lambda_{\rm totB} = \lambda_+-\lambda_- = \lambda_0(\gamma_+-\gamma_-)\]</div>
+<p>To be more specific, instead of talking about just one <span class="math notranslate nohighlight">\(\lambda\)</span>, we
+must now talk about a <span class="math notranslate nohighlight">\(\lambda_+\)</span> and a <span class="math notranslate nohighlight">\(\lambda_-\)</span>, since they will
+be different.  (Note that <span class="math notranslate nohighlight">\(\lambda_\pm\)</span> is explicitly defined in Frame
+B).  To know how much they are contracted, we have to know their
+speeds.  We have a formula for that:</p>
+<div class="math notranslate nohighlight" id="equation-vplusminus">
+<span class="eqno">(169)<a class="headerlink" href="#equation-vplusminus" title="Permalink to this equation">#</a></span>\[v_\pm = \frac{v\mp u}{1\mp uv}\]</div>
+<p>where <span class="math notranslate nohighlight">\(v\)</span> (the speed of the current) and <span class="math notranslate nohighlight">\(u\)</span> (the relative velocity
+between A and B) are measured in Frame A.  On the other hand,</p>
+<div class="math notranslate nohighlight" id="equation-gammapm">
+<span class="eqno">(170)<a class="headerlink" href="#equation-gammapm" title="Permalink to this equation">#</a></span>\[\gamma_\pm = \frac{1}{\sqrt{1-v_{\pm}^2/c^2}}\]</div>
+<p>where <span class="math notranslate nohighlight">\(v_\pm\)</span> is measured in Frame B.</p>
+<p>But what are <span class="math notranslate nohighlight">\(v_\pm\)</span> measured with respect <em>to</em>?  These velocities
+represent the velocities of the charges in the wire, the <span class="math notranslate nohighlight">\(+\)</span> and <span class="math notranslate nohighlight">\(-\)</span>
+charges separately, but velocity relative to what?</p>
+<p>We need a Frame C, in which the positive charges in the wire are at
+rest.  In Frame C, the charge density of the positive charges will be
+<span class="math notranslate nohighlight">\(\lambda_0\)</span> (we don’t actually need to know what the charge density of
+the negative charges in Frame C is – we just need an anchor point
+with which to compare the others.  If the positive charges are at rest
+in Frame C, that means that Frame A is moving with speed <span class="math notranslate nohighlight">\(v\)</span> with
+respect to Frame C!  The original speed of the charges in Frame A was
+<span class="math notranslate nohighlight">\(v\)</span>.  So this means that <span class="math notranslate nohighlight">\(\lambda = \gamma\lambda_0\)</span>, where
+<span class="math notranslate nohighlight">\(\gamma=1/\sqrt{1-v^2/c^2}\)</span>.</p>
+<p>We now have all the pieces we need to pull it all together.  To make
+the math easier to write, I will take <span class="math notranslate nohighlight">\(c=1\)</span> for a while, and then put
+the <span class="math notranslate nohighlight">\(c\)</span> back later.  From comparing Frames A and C, we know <span class="math notranslate nohighlight">\(\lambda =
+\gamma\lambda_0\)</span>, where <span class="math notranslate nohighlight">\(\gamma = 1/\sqrt{1-v^2}\)</span>.  From comparing Frames
+B and C, we know <span class="math notranslate nohighlight">\(\lambda_\pm = \pm\gamma_\pm\lambda_0\)</span>, where <span class="math notranslate nohighlight">\(\gamma_\pm
+= 1/\sqrt{1-v_\pm^2}\)</span>.  We also know that <span class="math notranslate nohighlight">\(v_\pm = (v\mp u)/(1\mp vu)\)</span>.
+If we plug in the velocity formula for <span class="math notranslate nohighlight">\(v_\pm\)</span>, we get</p>
+<div class="math notranslate nohighlight" id="equation-gampmuv">
+<span class="eqno">(171)<a class="headerlink" href="#equation-gampmuv" title="Permalink to this equation">#</a></span>\[\gamma_\pm = \frac{1}{\sqrt{1-\left(\frac{v\mp u}{1\mp uv}\right)^2}}\]</div>
+<p>find a common denominator and flip it upside down to get</p>
+<div class="math notranslate nohighlight" id="equation-gampmflip">
+<span class="eqno">(172)<a class="headerlink" href="#equation-gampmflip" title="Permalink to this equation">#</a></span>\[\gamma_\pm = \sqrt{\frac{(1\mp uv)^2}{(1\mp vu)^2 - (v\mp u)^2}}\]</div>
+<p>Expand out the squared terms in the denominator</p>
+<div class="math notranslate nohighlight" id="equation-gampmexpand">
+<span class="eqno">(173)<a class="headerlink" href="#equation-gampmexpand" title="Permalink to this equation">#</a></span>\[\gamma_\pm = \frac{1\mp uv}{\sqrt{(1\mp 2vu+v^2u^2 - v^2\pm 2vu-u^2)}}\]</div>
+<p>Note the factors of <span class="math notranslate nohighlight">\(2vu\)</span> will cancel, as whatever sign they have, the
+other will be opposite.  That will leave <span class="math notranslate nohighlight">\(1+v^2u^2-v^2-u^2\)</span> in the
+denominator, but that’s just the same as <span class="math notranslate nohighlight">\((1-v^2)(1-u^2)\)</span>
+and <span class="math notranslate nohighlight">\(1/\sqrt{1-v^2}\)</span> is just <span class="math notranslate nohighlight">\(\gamma\)</span>!  So this becomes</p>
+<div class="math notranslate nohighlight" id="equation-gampmcollapse">
+<span class="eqno">(174)<a class="headerlink" href="#equation-gampmcollapse" title="Permalink to this equation">#</a></span>\[\gamma_\pm = \gamma\frac{1\mp uv}{\sqrt{(1-u^2)}}\]</div>
+<p>Now we have equations for <span class="math notranslate nohighlight">\(\gamma_\pm\)</span>, we can figure out the total
+charge density in Frame B:</p>
+<div class="math notranslate nohighlight" id="equation-lamtotb">
+<span class="eqno">(175)<a class="headerlink" href="#equation-lamtotb" title="Permalink to this equation">#</a></span>\[\lambda_{\rm totB} = \lambda_++\lambda_- = \lambda_0(\gamma_+-\gamma_-)=
+\gamma\lambda_0\left[\frac{1-vu}{\sqrt{1-u^2}}-\frac{1+vu}{\sqrt{1-u^2}}\right] =
+\lambda\left[\frac{-2vu}{\sqrt{1-u^2}}\right]\]</div>
+<p>Note that the total density in Frame B is negative!  There are some
+important pieces in this equation we can pull out.  Notice the
+<span class="math notranslate nohighlight">\(2\lambda v\)</span>.  This is what we would call <span class="math notranslate nohighlight">\(I\)</span> in the original Frame A.
+Furthermore <span class="math notranslate nohighlight">\(1/\sqrt{1-u^2}\)</span> is just the <span class="math notranslate nohighlight">\(\gamma_R\)</span> for the
+transformation between Frames A and B.</p>
+<p>We know that a line charge density in Frame B will have an <em>electric</em>
+field given by</p>
+<div class="math notranslate nohighlight" id="equation-eline">
+<span class="eqno">(176)<a class="headerlink" href="#equation-eline" title="Permalink to this equation">#</a></span>\[\vec{E} = \hat{r}\frac{\lambda_{\rm totB}}{2\pi \epsilon_0 r}\]</div>
+<p>But we have an equation for <span class="math notranslate nohighlight">\(\lambda_{\rm totB}\)</span>, it’s Equation <a class="reference internal" href="#equation-lamtotb">(175)</a>!</p>
+<div class="math notranslate nohighlight" id="equation-elinelam">
+<span class="eqno">(177)<a class="headerlink" href="#equation-elinelam" title="Permalink to this equation">#</a></span>\[\vec{E} = \hat{r}\frac{-Iu}{2\pi \epsilon_0 rc^2}\gamma_R\]</div>
+<p>where I put the <span class="math notranslate nohighlight">\(c\)</span> back in, now.  Since <span class="math notranslate nohighlight">\(\vec{F}_e = q\vec{E}\)</span>, and using
+<span class="math notranslate nohighlight">\(c^2=1/\mu_0\epsilon_0\)</span>, we can
+write this as</p>
+<div class="math notranslate nohighlight" id="equation-eforceb">
+<span class="eqno">(178)<a class="headerlink" href="#equation-eforceb" title="Permalink to this equation">#</a></span>\[\vec{F}_E = q\vec{E} = -\hat{r}\frac{qu\mu_0I}{2\pi r}\gamma_R\]</div>
+<p>for the <em>electric</em> force experienced in Frame B.  If we want to switch
+back into Frame A, we use the formula we found for the Minkowski force
+(Equation <a class="reference internal" href="c10force.html#equation-m4forcefin">(149)</a>) and drop the <span class="math notranslate nohighlight">\(\gamma_R\)</span> to get</p>
+<div class="math notranslate nohighlight" id="equation-efofrb">
+<span class="eqno">(179)<a class="headerlink" href="#equation-efofrb" title="Permalink to this equation">#</a></span>\[\vec{F}_{EA} = \vec{F}_{EB}/\gamma_R = -\hat{r}\frac{qu\mu_0I}{2\pi r}\]</div>
+<p>This is the exact same force that, classically, we would have said was a
+<em>magnetic</em> force!  We had the same equation back at the start of the
+chapter, as Equation <a class="reference internal" href="#equation-fclassic">(166)</a>!</p>
+<p>So which is it?  Magnetic or Electric?  The answer is both and
+neither!  We are heading toward an understanding that there is just
+one “thing” that we currently call an electromagnetic field, and
+whether we <em>name</em> it “electric” or “magnetic” depends on which
+reference frame you’re observing in.  If SR had been developed before
+magnetism was discovered, we probably wouldn’t even have a word for
+“magnetic field” – there would just be result of transforming an
+electric field into another reference frame.  Just like we now talk
+about “spacetime”, and the space and time parts get mixed up when you
+change frames, and just like how <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> get mixed up when you
+rotate your coordinates around the <span class="math notranslate nohighlight">\(z\)</span> axis, it seems that <span class="math notranslate nohighlight">\(vec{E}\)</span>
+and <span class="math notranslate nohighlight">\(\vec{B}\)</span> get mixed up when you switch reference frames, too.</p>
+<p>But we can’t just make a four vector out of them!  They have six
+components, not four.  To understand how to fold <span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(B\)</span> into the
+SR formalism, we must first figure out how they transform when you
+switch frames.  Then we can see if and how the Lorentz transformation
+is relevant to them.</p>
 </section>
 </section>
 <section id="how-the-fields-transform">
@@ -491,6 +675,7 @@ a current-carrying wire.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#magnetic-force-as-a-relativistic-effect">Magnetic Force as a Relativistic Effect</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reminder-of-classical-situation">Reminder of Classical Situation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-relativistic-model">The Relativistic Model</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-the-fields-transform">How the Fields Transform</a></li>
