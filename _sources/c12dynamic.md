@@ -93,24 +93,26 @@ E_z +u_xB_y - u_yB_x
 
 Let's examine these terms carefully, and compare them to the EM field
 tensor (Equation no number yet).  Note that the time component is just
-what you would get if you multiplied across the top row of the EM tensor
-and down the velocity four vector (the time component of $u^\alpha$ is
-eliminated by the zero on the diagonal of the tensor).  That suggests
-this equation might include the product of the EM tensor with the
-four-velocity.
+what you would get if you multiplied each term across the top row of
+the EM tensor with the corresponding term of the velocity four vector
+(the time component of $u^\alpha$ is eliminated by the zero on the
+diagonal of the tensor).  That suggests this equation might include
+the product of the EM tensor with the four-velocity.
 
-What happens if you multiply across the second row of the EM tensor
-and down the four velocity?  The $c$ will cancel when multiplying $-E_x/c$
-by $\gamma c$, then the $u_x$ will be eliminated by the zeros along the
-diagonal.  That leaves $B_z$ times $u_y$ and $-B_y$ times $u_z$, which
-is exactly what we see in Equation {eq}`M4EMall4`!  You can check the
-other two components, but this is nothing more or less than writing:
+What happens if you multiply the terms across the second row of the EM
+tensor with the corresponding terms of the four velocity?  The $c$
+will cancel when multiplying $-E_x/c$ by $\gamma c$, then the $u_x$
+will be eliminated by the zeros along the diagonal.  That leaves $B_z$
+times $u_y$ and $-B_y$ times $u_z$, which is exactly what we see in
+Equation {eq}`M4EMall4`!  You can check the other two components, but
+this is nothing more or less than writing:
 ```{math}
 :label: fullLorF
 \boxed{
 K^\alpha = qu_\beta F^{\alpha\beta}
 }
 ```
+Amazing that all those terms can be packed into such a small equation!
 
 The Einstein notation needs a bit of unpacking, here.  The fact that
 $\beta$ appears twice, once up and once down, means that we are
@@ -135,13 +137,15 @@ which matches Equation {eq}`M4EMall4`, and the second row is
 K^1 = q(u_0F^{10} + u_1F^{11} + u_2F^{12} + u_3F^{13})=
 q\gamma ((-c)(-E_x/c) + 0.0 + u_yB_z - u_zB_y)
 ```
-and so on.  Note, however, that we have lowered the index $\beta$.
-When you lower the index, you also make the time component negative.
-Hence the $-c$ in Equation {eq}`LFrow1`.  The first column of the EM
-tensor ($F^{\alpha 0}$) has negative signs on all the $E$ components,
-so you need the $\gamma c$ component of the four-velocity to be
-negative, which makes the final answer positive, as it needs to be for
-Equation {eq}`M4EMall4`.
+and so on.  Note, however, that we have lowered the index $\beta$ in
+the four velocity.  When you lower the index, you also make the time
+component negative.  Hence the $-c$ in Equation {eq}`LFrow1`.  The
+first column of the EM tensor ($F^{\alpha 0}$) has negative signs on
+all the $E$ components, so you need the $\gamma c$ component of the
+four-velocity to be negative, which makes the final answer positive,
+as it needs to be for Equation {eq}`M4EMall4`.  If you use it
+consistently, Einstein notation will always get you the right answer,
+but you have to be careful about using it right.
 
 ```{warning}
 You have to watch the greek letters carefully in Einstein notation.
@@ -194,17 +198,18 @@ motion gets contracted, so the density only changes by one factor of
 $\gamma$.
 
 This vector field can make up the spacial part of the current density
-four-vector, but what do we do with the time part?  Well, we have
-a scalar $\rho_0$ times $\gamma \vec{v}$, and $\gamma \vec{v}$ is
-the spatial part of the four-velocity.  Maybe we can make the
-four-current by multiplying $[v_4]$ by $\rho_0$?  And indeed we can:
+four-vector, but what do we do with the time part?  Well, we have a
+scalar $\rho_0$ times $\gamma \vec{v}$, and $\gamma \vec{v}$ is the
+spatial part of the four-velocity.  Maybe we can make the four-current
+by multiplying the four-velocity $v^\alpha$ by $\rho_0$?  And indeed
+we can:
 ```{math}
 :label: fourcurr
 \boxed{
-[J_4] =
+J^\alpha =
 \rho_0 \gamma 
 \begin{bmatrix}
-ic\\
+c\\
 v_x\\
 v_y\\
 v_z
@@ -288,4 +293,165 @@ four-vector".
 
 ## Maxwell's Equations as Four Vectors
 
+We have combined $\rho$ and $\vec{J}$ into a single four-vector.
+We have also combined $\vec{E}$ and $\vec{B}$ into a single tensor.
+Does this mean we can combine the four Maxwell's Equations into a
+single equation, too?  Well, almost.  In this section, I will show you
+how you can write them as two (shorter) equations.  To collapse them
+down to a single equation requires learning about the four-vector form
+of the potential, and that is slightly beyond the scope of this book.
+See more advanced texts like Griffiths that continue to four-potentials,
+Gauge transformations, and the D'Alembert Equation.
+
+For now, let's remind ourselves of the four classic Maxwell's Equations:
+```{math}
+:label: gauss
+\vec{\nabla}\cdot\vec{E} = \frac{\rho}{\epsilon_0}
+```
+```{math}
+:label: nogaussB
+\vec{\nabla}\cdot\vec{B} = 0
+```
+```{math}
+:label: faraday
+\vec{\nabla}\times\vec{B} + \frac{\partial \vec{E}}{\partial t} = 0
+```
+```{math}
+:label: ampere
+\vec{\nabla}\times\vec{E} - \mu_0\epsilon_0 \frac{\partial \vec{B}}{\partial t} = \mu_0\vec{J}
+```
+Now, I have already introduced the four-divergence in the continuity
+equation ({eq}`fourdivdef`).  What happens if we take the four-divergence
+of the EM field tensor?  Using Equation no number yet, that works out to
+```{math}
+:label: div4EM
+\partial_\nu F^{\mu\nu} = \left(\frac{\partial}{\partial (ct)},\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)
+\begin{pmatrix}
+0 & E_x/c & E_y/c & E_z/c\\
+-E_x/c & 0 & B_z & -B_y\\
+-E_y/c & -B_z & 0 & B_x\\
+-E_z/c & B_y & -B_z & 0
+\end{pmatrix}
+```
+
+Let's start with the first row.  The zero in the upper left corner of
+the EM tensor kills the time derivative.  For the rest, we have the
+successive derivatives of each component of $\vec{E}$ with respect to
+each successive space dimension.  That's a three-divergence.  So that
+first row works out to $\vec{\nabla}\cdot\vec{E}/c$.  But Equation
+{eq}`gauss` tells us what the divergence of $\vec{E}$ is!  It's
+$\rho/\epsilon_0$!  So we get
+```{math}
+:label: zerothterm1
+\partial_\nu F^{0\nu} = \vec{\nabla} \cdot \vec{E}/c = \frac{\rho}{c\epsilon_0}
+```
+But $\rho$ is just the zeroth term of the four-current divided by $c$!
+So this becomes
+```{math}
+:label: zerothterm2
+\partial_\nu F^{0\nu} = \frac{J^0}{c^2\epsilon_0}
+```
+and you should also remember that $c^2=1/\mu_0\epsilon_0$, so if we take
+on the idea that
+```{math}
+:label: SRmaxwell1
+\partial_\nu F^{\mu\nu} = \mu_0 J^\mu
+```
+We have shown that the time component of this equation is none other than
+Gauss's Law (Equation {eq}`gauss`)!
+```{margin}
+Note that $\mu_0$ is the magnetic
+permeability of free space, and do not confuse it with the $\mu$ we are using
+to indicate the four-vector components!
+```
+
+What about the other components?  Lets look at $\mu=1$:
+```{math}
+:label: div4EM_1
+\partial_\nu F^{1\nu} = \frac{\partial}{\partial (ct)} F_{10}
++  \frac{\partial}{\partial x} F_{11}
++  \frac{\partial}{\partial y} F_{12}
++  \frac{\partial}{\partial z} F_{13}
+= -\frac{1}{c^2}\frac{\partial E_x}{\partial t} + 0.0 +
+\frac{\partial B_z}{\partial y} - \frac{\partial B_y}{\partial z} 
+```
+
+The first term is just the $x$ component of $-\mu_0\epsilon_0
+\frac{\partial \vec{E}}{\partial t}$, while the last two terms are
+just the $x$ component of the curl of $\vec{B}$.  The $x$ component of
+$\mu_0J^\nu$ is just $\mu_0 J_x$ (the $x$ component of the current
+density), so all of this is just the $x$ component of Ampere's Law,
+Equation {eq}`ampere`!  You can verify that doing this for the third
+and fourth rows will get you the other two components of Ampere's Law,
+so the four-divergence of the EM field tensor is no more and no less
+than Gauss's Law and Ampere's Law, together, and by writing Equation
+{eq}`SRmaxwell1`, we have collapsed those two of Maxwell's Equations
+down into one.
+
+What about the other two?  Our first clue is that both Equation
+{eq}`nogaussB` and Equation {eq}`faraday` are equal to zero.  So our
+final equation will also be equal to zero.  The second clue is that if
+you compare the left sides of Equations {eq}`nogaussB` and
+{eq}`faraday` to {eq}`gauss` and {eq}`ampere`, you can see that they
+look the same, just swapping $\vec{E}$ and $\vec{B}$ around.  At the
+end of Chapter 11, we constructed *two* versions of the EM tensor, one
+of which had the $E$ and $B$ components switched.  So, if we bring
+back the dual tensor $G^{\mu\nu}$ at this point (Equation no number
+yet, either), and take its four-divergence, we will see that
+```{math}
+:label: dual4div
+\boxed{
+\partial_\nu G^{\mu\nu}=0
+}
+```
+will give us the other two Maxwell's Equations.
+
+Again, let's start with the time component: the first row.  The
+zero in position $G^{00}$ will kill the time derivative, and then
+we have $\vec{\nabla}\cdot\vec{B}$ from the other three components,
+just like we got the divergence of $\vec{E}$ before.  We know that
+$\vec{B}$ does not have a divergence, so setting this to zero will
+take care of Equation {eq}`nogaussB`.
+
+For the spatial components, we take $\mu=1$ as an example, again,
+and we get the same result as Equation {eq}`div4EM_1`, just with
+$E$ and $B$ swapped:
+```{math}
+:label: div4dual_1
+\partial_\nu G^{1\nu} = \frac{\partial}{\partial (ct)} G_{10}
++  \frac{\partial}{\partial x} G_{11}
++  \frac{\partial}{\partial y} G_{12}
++  \frac{\partial}{\partial z} G_{13}
+= -\frac{1}{c}\frac{\partial B_x}{\partial t} + 0.0 -
+\frac{\partial E_z}{c\partial y} + \frac{\partial E_y}{c\partial z} 
+```
+when you include the $y$ and $z$ components, this becomes
+```{math}
+:label: spacedual
+-\frac{1}{c}\frac{\partial\vec{B}}{\partial t} +\frac{1}{c}\vec{\nabla}\times\vec{E}
+```
+set this to zero and multiply through by $c$ to get Faraday's Law,
+Equation {eq}`faraday`.
+
+So Equations {eq}`SRmaxwell1` and {eq}`dual4div` represent all four
+of Maxwell's Equations in only two compact versions.  While this could
+arguably be described as simply a notational trick, since these two
+equations are really representing the same eight separate equations
+that the traditional format writes in four (the two divergence equations
+are just one equation each, while the two curl equations are three
+component equations each).  There is still something aesthetically
+pleasing about seeing so much of nature, the entirety of what we
+call electromagnetic phenomena, collapsed into two equations (and
+eventually into one).
+
+Aside from aesthetics, why might we want to do this?  The main reason
+is that we know four-vectors obey the rules of special relativity.  By
+expressing the laws of electricity and magnetism in these terms, we
+know that they are already consistent with SR.  We don't need to make
+major modifications to accomodate relativity, as we did with newtonian
+mechanics.  There is nothing equivalent to the speed of light limit
+that pops up in relativistic E&M that wasn't there in classical E&M.
+Maxwell's Equations automatically incorporate the insights of SR.
+What changes when you understand this is the way you envision the
+world, not the way the world itself works.
 
