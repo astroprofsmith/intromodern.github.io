@@ -34,14 +34,13 @@ charge and current.
 
 ## Charge/Current Four Vector and Continuity
 
-We spent much of the first ten chapters figuring out how to
-cast the three-vectors of Classical Mechanics into four-vector
-form.  We cn play the same game with the vectors of Classical
-Electrodynamics.  One of the most important is the current
-density $\vec{J}$, which describes how much charge flows
-through a given area in a given amount of time.  The
-dimensions are therefore charge per area per time, or current
-per area, which is a kind of density.  Mathematically, we
+We spent much of the first ten chapters figuring out how to cast the
+three-vectors of Classical Mechanics into four-vector form.  We cn
+play the same game with the vectors of Classical Electrodynamics.  One
+of the most important is the current density $\vec{J}$, which
+describes how much charge flows through a given area in a given amount
+of time.  The dimensions are therefore charge per area per time, or
+current per area, which is a kind of density.  Mathematically, we
 write this as
 ```{math}
 :label: currdenJ
@@ -87,11 +86,12 @@ And its size is therefore $\rho_0^2[v_4]^2 = -\rho_0^2c^2$.  which is
 certainly Lorentz invarient.  Since we know a four-vector times a
 scalar is a four-vector, this must be *a* four-vector, but how do we
 know it's *the* four vector that we want?  Two reasons: it slots very
-smoothly into Maxwell's Equations, which we will explore in the next section.
-But first, we will see that it gives a nice way to express charge conservation
-in the form of the "continuity equation", which says that the rate at which
-charge is flowing into or out of a location is equal and opposite to the rate at
-which the amount of charge at that location is changing.
+smoothly into Maxwell's Equations, which we will explore in the next
+section.  But first, we will see that it gives a nice way to express
+charge conservation in the form of the "continuity equation", which
+says that the rate at which charge is flowing into or out of a
+location is equal and opposite to the rate at which the amount of
+charge at that location is changing.
 
 In classical notation, we would say
 ```{math}
@@ -137,21 +137,24 @@ information content, but Equation {eq}`continuitySR` requires *so* much less wri
 it's much more popular than other methods.
 
 ```{note}
-You will note that the four-gradient $\partial_\alpha$ is written in covariant
-form, but it is using the contravariant components for the derivatives, so it
-is written with the subscript, but when you write it out in terms of components,
-the terms in the denominator get the superscript.  But there's no minus sign
-in this case, because the components are the contravariant form.
+You will note that the four-gradient $\partial_\alpha$ is written in
+covariant form, but it is using the contravariant components for the
+derivatives, so it is written with the subscript, but when you write
+it out in terms of components, the terms in the denominator get the
+superscript.  But there's no minus sign in this case, because the
+components are the contravariant form.
 ```
 
 So, this four vector makes intuitive sense (charge time velocity gives
-current), it maintains charge conservation through the continuity
-equation, and it sets us up to write Maxwell's Equations in a more
-compact form, too (you'll recall Maxwell's Equations depend on the
-charge and current densities on the right side and the $\vec{E}$ and
-$\vec{B}$ fields on the left -- see the next section of this chapter).
-We therefore use this as the current four-vector $J^\alpha$, or
-sometimes the "charge-current four-vector".
+current), it has the properties of a four-vector (because it's a
+scalar $\rho_0$ times a four vector $v^\alpha$), it maintains charge
+conservation through the continuity equation, and it sets us up to
+write Maxwell's Equations in a more compact form, too (you'll recall
+Maxwell's Equations depend on the charge and current densities on the
+right side and the $\vec{E}$ and $\vec{B}$ fields on the left -- see
+the next section of this chapter).  We therefore use this as the
+current four-vector $J^\alpha$, or sometimes the "charge-current
+four-vector".
 
 ## Maxwell's Equations as Four Vectors
 
