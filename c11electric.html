@@ -370,7 +370,10 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-the-fields-transform">How the Fields Transform</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-electromagnetic-field-tensor">The Electromagnetic Field Tensor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
 </ul>
             </nav>
         </div>
@@ -796,8 +799,13 @@ the original <span class="math notranslate nohighlight">\(E_y\)</span>, so we ca
 <span class="eqno">(193)<a class="headerlink" href="#equation-bprimez" title="Permalink to this equation">#</a></span>\[\boxed{
 B'_z = \gamma_R B_z - \gamma_R \frac{v_R}{c^2}E_y
 }\]</div>
-<p>To make sure you have understood the logic, here, you should rotate the
-capacitor and work out the last two components yourself.  You should get</p>
+<p>To make sure you have understood the logic, here, you should rotate
+the capacitor and work out the last two components yourself.  If you
+rotate the capacitor so that the plates lie parallel to the <span class="math notranslate nohighlight">\(xy\)</span>
+plane, then you’ll get <span class="math notranslate nohighlight">\(E_z\)</span>, and the motion of the capacitor in <span class="math notranslate nohighlight">\(x\)</span>
+will make a magnetic field in the <span class="math notranslate nohighlight">\(+B_y\)</span> direction.  Once you convince
+yourself of that, the rest of the math is exactly the same, just
+substituting <span class="math notranslate nohighlight">\(E_z\)</span> for <span class="math notranslate nohighlight">\(E_y\)</span> and <span class="math notranslate nohighlight">\(+B_y\)</span> for <span class="math notranslate nohighlight">\(-B_z\)</span>.  You should get</p>
 <div class="math notranslate nohighlight" id="equation-eprimez">
 <span class="eqno">(194)<a class="headerlink" href="#equation-eprimez" title="Permalink to this equation">#</a></span>\[\boxed{
 E'_z = \gamma_R E_z  + \gamma_Rv_RB_y
@@ -813,8 +821,305 @@ frame.  Now what do we <em>do</em> with them, and how does this relate to the
 Lorentz transformation we have used for such a change up to this
 point?</p>
 </section>
+<section id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this heading">#</a></h2>
+<p>Let’s think through a possible experiment that one could (in principle)
+do that would reveal why <span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(B\)</span> have to transform like this.  A full
+solution of this problem is beyond the scope of this course, but we can
+work through the problem at a conceptual level.</p>
+<p>You will have learned that a charged particle like an electron in the
+presence of a magnetic field will move in a circle perpendicular
+to the field.  The faster it goes, the wider the circle, and the stronger
+the field, the smaller the circle.  Consider a cart that is carrying an
+apparatus, like a solenoid or a Helmholtz coil, that can make a vertical
+magentic field.  An electron travels horizontally into the field region,
+and will start flying in a horizontal circle.  There is no electric field
+in this reference frame.  All seems well (ignoring gravity, of course).</p>
+<p>However, what if we start pushing the cart at a <em>very</em> slow speed
+(nm/s, if you like.  Really slow.) along the ground.  If you didn’t
+know relativity, you would think, there’s no reason for the electron
+to change its motion.  The field is uniform, the electron just keeps
+going in a circle – what the cart does has nothing to do with it.  So
+you would expect the cart to just move slowly along until it moves out
+from under the electron, at which point the electron is outside the
+field, and it will shoot off into space.</p>
+<p>However, now consider this situation from the reference frame where
+the cart is at rest.  According to our postulates, if the cart moves
+out from under the electron in the lab frame, the electron would have
+to drift off the cart in the cart frame.  However, in the cart frame,
+nothing is moving – it’s exactly the same as the original lab frame
+when the cart was at rest.  So there is absolutely no reason why the
+electron would start drifting off the cart at all, let alone why
+should the electron pick that direction to drift?  If nothing is
+moving in this frame, there is no reason for the electron to move in
+any particular direction.</p>
+<p>What is the resolution of this paradox?  Now that you know how the
+<span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(B\)</span> fields transform, you will understand that when you switch
+reference frames from the frame where the cart is at rest (vertical <span class="math notranslate nohighlight">\(\vec{B}
+= B_y\hat{y}\)</span>,
+<span class="math notranslate nohighlight">\(E=0\)</span>) to a frame where the cart is moving, there will be a field in
+the <span class="math notranslate nohighlight">\(z\)</span> direction in the new frame (<span class="math notranslate nohighlight">\(E'_z = \gamma_Rv_RBy\)</span>), in addition
+to the altered value of <span class="math notranslate nohighlight">\(B\)</span> (<span class="math notranslate nohighlight">\(B'_y = \gamma_R B_y\)</span>).  Although
+solving the equations of motion under these primed fields is beyond
+the scope of this book, the solution is a shape much like the path
+of a point on the wheel of a bike – the electron will keep up with
+the cart in the frame where the cart is moving.  It not fall off the
+edge of the cart in either frame.</p>
+<p>You can’t resolve this paradox without relativity, and the speeds
+involved are obviously nowhere even close to the speed of light.</p>
+</section>
 <section id="the-electromagnetic-field-tensor">
 <h2>The Electromagnetic Field Tensor<a class="headerlink" href="#the-electromagnetic-field-tensor" title="Permalink to this heading">#</a></h2>
+<p>For the rest of this book up to this point, when we wanted to see
+what would happen to some quantity when measured in a reference
+frame in relative motion, we cast the quantity in question as a
+four-vector and performed a Lorentz transformation.  We can’t do that,
+here, because <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> together have six components,
+which don’t easily fit into a four-vector.  We need some way to
+deal with these fields, and we need to <em>use</em> the Lorentz transformation,
+because the success of all those four vectors shows us that the Lorentz
+matrix is indeed the correct way to switch reference frames.</p>
+<p>Before we start working toward a solution, let me copy all the relevant
+equations here so we have them in one place:</p>
+<div class="math notranslate nohighlight">
+\[E'_x = E_x\hspace{3cm}B'_x = B_x\]</div>
+<div class="math notranslate nohighlight">
+\[E'_y = \gamma_R E_y  - \gamma_Rv_RB_z\hspace{3cm}
+B'_y = \gamma_R B_y + \gamma_R \frac{v_R}{c^2}E_z\]</div>
+<div class="math notranslate nohighlight">
+\[E'_z = \gamma_R E_z  + \gamma_Rv_RB_y\hspace{3cm}
+B'_z = \gamma_R B_z - \gamma_R \frac{v_R}{c^2}E_y\]</div>
+<p>and recall that the Lorentz matrix can be written as</p>
+<div class="math notranslate nohighlight" id="equation-lormate">
+<span class="eqno">(196)<a class="headerlink" href="#equation-lormate" title="Permalink to this equation">#</a></span>\[\begin{split}\Lambda^\alpha_\beta =
+\begin{pmatrix}
+\gamma_R &amp; -\gamma_R\beta_R &amp; 0 &amp; 0\\
+-\gamma_R\beta_R &amp; \gamma_R &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{pmatrix}\end{split}\]</div>
+<p>Note now I have switched to using Einstein notation and have left out
+the complex number <span class="math notranslate nohighlight">\(i\)</span>.  The letter <span class="math notranslate nohighlight">\(\alpha\)</span> refers to the row number
+of the matrix, and the <span class="math notranslate nohighlight">\(\beta\)</span> refers to the column number (0 through
+3, of course).   So <span class="math notranslate nohighlight">\(\Lambda^0_1 = -\gamma_R\beta_R\)</span>
+(first row, second column).</p>
+<p>At this point, many books jump to the answer and show that it works.
+While there is nothing formally wrong with that, it’s not very
+emotionally satisfying.  I’d like to give you some kind of intuition
+as to why you might want to make that jump, rather than just tall you
+the answer.  In no way is what I am about to do any kind of
+<em>derivation</em>; what I want to do is give you a kind of guide to get you
+to the answer, not a proof.</p>
+<p>We have six numbers (two vectors) and a <span class="math notranslate nohighlight">\(4\times 4\)</span> matrix that we
+think must be involved with the transfer somehow.  If there were a
+simple way to put each three vector into a four-vector, you might
+think that maybe the thing to do would be to perform <em>two</em> Lorentz
+transformations: one for <span class="math notranslate nohighlight">\(E\)</span> and one for <span class="math notranslate nohighlight">\(B\)</span>.  However, we need to
+make the dimensions match up.  You can’t multiply a <span class="math notranslate nohighlight">\(4\times 4\)</span> matrix
+by a three-row column.</p>
+<p>If it were as simple as performing two Lorentz transformations, you
+would write that as</p>
+<div class="math notranslate nohighlight" id="equation-twolormat">
+<span class="eqno">(197)<a class="headerlink" href="#equation-twolormat" title="Permalink to this equation">#</a></span>\[\Lambda^\alpha_\beta\Lambda^\mu_\nu\]</div>
+<p>where the <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\mu\)</span> refer to the rows and the <span class="math notranslate nohighlight">\(\beta\)</span>
+and <span class="math notranslate nohighlight">\(\nu\)</span> refer to the columns.</p>
+<p>This short equation represents multiplying two <span class="math notranslate nohighlight">\(4\times 4\)</span> matrices
+together.  That’s going across each row and down each column 16 times,
+and what you end up with is another <span class="math notranslate nohighlight">\(4\times 4\)</span> matrix.  But that gives
+a clue.  Maybe what we need to do is fit the six field components into
+a <span class="math notranslate nohighlight">\(4\times 4\)</span> matrix somehow.  If we could do that, then we could
+multiply these two Lorentz matrices by that field matrix, and the
+result would be <em>another</em> <span class="math notranslate nohighlight">\(4\times 4\)</span> matrix, which we could interpret
+as the values of the same matrix, just in the new relative reference frame.
+Mathematically, that would be</p>
+<div class="math notranslate nohighlight" id="equation-twotransforms">
+<span class="eqno">(198)<a class="headerlink" href="#equation-twotransforms" title="Permalink to this equation">#</a></span>\[F'^{\alpha\mu} = \Lambda^\alpha_\beta\Lambda^\mu_\nu F^{\beta\nu}\]</div>
+<p>The Einstein notation means that this equation is really representing
+sixteen equations, one for each term in the <span class="math notranslate nohighlight">\(4\times 4\)</span> matrix that
+results from all these multiplications.  There’s a double sum over
+<span class="math notranslate nohighlight">\(\beta\)</span> and <span class="math notranslate nohighlight">\(\nu\)</span>, leaving single values for <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\mu\)</span>
+unchanged from the right side to the left.  So a single one of these
+sixteen terms would look like</p>
+<div class="math notranslate nohighlight" id="equation-oneofsixteen">
+<span class="eqno">(199)<a class="headerlink" href="#equation-oneofsixteen" title="Permalink to this equation">#</a></span>\[\begin{split}F'^{01} =
+\Lambda^0_0\Lambda^1_0 F^{00} +
+\Lambda^0_0\Lambda^1_1 F^{01} +
+\Lambda^0_0\Lambda^1_2 F^{02} +
+\Lambda^0_0\Lambda^1_3 F^{03} +\\
+\Lambda^0_1\Lambda^1_0 F^{10} +
+\Lambda^0_1\Lambda^1_1 F^{11} +
+\Lambda^0_1\Lambda^1_2 F^{12} +
+\Lambda^0_1\Lambda^1_3 F^{13} +\\
+\Lambda^0_2\Lambda^1_0 F^{20} +
+\Lambda^0_2\Lambda^1_1 F^{21} +
+\Lambda^0_2\Lambda^1_2 F^{22} +
+\Lambda^0_2\Lambda^1_3 F^{23} +\\
+\Lambda^0_3\Lambda^1_0 F^{30} +
+\Lambda^0_3\Lambda^1_1 F^{31} +
+\Lambda^0_3\Lambda^1_2 F^{32} +
+\Lambda^0_3\Lambda^1_3 F^{33}\end{split}\]</div>
+<p>You have to think about Einstein notation like writing a computer
+program: once you assign <span class="math notranslate nohighlight">\(\alpha\)</span> a particular value, like
+<span class="math notranslate nohighlight">\(0\)</span>, then that value has to go in everywhere that there’s an <span class="math notranslate nohighlight">\(\alpha\)</span>.
+So you can see in Equation <a class="reference internal" href="#equation-oneofsixteen">(199)</a> that there’s a <span class="math notranslate nohighlight">\(1\)</span>
+in the <span class="math notranslate nohighlight">\(\mu\)</span> location, so everywhere in the huge sum where there
+would be a <span class="math notranslate nohighlight">\(\mu\)</span>, there’s a <span class="math notranslate nohighlight">\(1\)</span> in each of those locations (the
+superscript on the second <span class="math notranslate nohighlight">\(\Lambda\)</span>).  The lower index on the
+second <span class="math notranslate nohighlight">\(\Lambda\)</span> is always the second number in the superscript
+on the <span class="math notranslate nohighlight">\(F\)</span>, because those positions both have a <span class="math notranslate nohighlight">\(\nu\)</span> in Equation
+<a class="reference internal" href="#equation-twotransforms">(198)</a>.</p>
+<p>Now, this looks like a huge mess, but luckily for us, most of
+the numbers in the <span class="math notranslate nohighlight">\(\Lambda\)</span> matrix (Equation <a class="reference internal" href="#equation-lormate">(196)</a> are
+zero!  All the examples of <span class="math notranslate nohighlight">\(\Lambda\)</span> elements in the specific
+case of Equation <a class="reference internal" href="#equation-oneofsixteen">(199)</a> are either in the first
+or second row.  And the last two columns are both zeros!
+If we plug in for the elements of <span class="math notranslate nohighlight">\(\Lambda\)</span>, we get</p>
+<div class="math notranslate nohighlight" id="equation-killzeros">
+<span class="eqno">(200)<a class="headerlink" href="#equation-killzeros" title="Permalink to this equation">#</a></span>\[F'^{01} =
+-\gamma_R^2\beta_R F^{00} +
+\gamma_R^2 F^{01} +
+\beta_R^2\gamma_R^2 F^{10} 
+-\gamma_R^2\beta_R F^{11} \]</div>
+<p>Now, this looks a bit simpler.  The next clue is the fact that
+there’s a <span class="math notranslate nohighlight">\(\gamma_R^2 + \gamma_R^2\beta_R^2\)</span> in there.  If it
+were just <span class="math notranslate nohighlight">\(\gamma_R^2 - \gamma_R^2\beta_R^2\)</span>, that would just be
+<em>ONE</em>!!!  So, what if (crazy thought), what if <span class="math notranslate nohighlight">\(F^{01}=-F^{10}\)</span>?
+Then the factors would disappear, and we’d just have <span class="math notranslate nohighlight">\(F^{01}\)</span>
+in there.</p>
+<div class="math notranslate nohighlight" id="equation-antisym">
+<span class="eqno">(201)<a class="headerlink" href="#equation-antisym" title="Permalink to this equation">#</a></span>\[F'^{01} = F^{01}
+-\gamma_R^2\beta_R (F^{00} + F^{11} )\]</div>
+<p>Now, we know that <span class="math notranslate nohighlight">\(E'_x=E_x\)</span>, so this is starting to look like that.
+What do with the last part, though?  Well, if <span class="math notranslate nohighlight">\(F^{01}=-F^{10}\)</span>, that
+suggests that <span class="math notranslate nohighlight">\(F^{00}=0\)</span>, as that’s an example of something that is
+equal to negative itself.  If the diagonal elements are all zero, and
+the matrix as a whole is anti-symmetric, then our specific example of
+Equation <a class="reference internal" href="#equation-oneofsixteen">(199)</a> has just turned into <span class="math notranslate nohighlight">\(E'_x = E_x\)</span>!  Not
+only that, but if the matrix is indeed anti-symmetric, then instead of
+sixteen elements, you can discount the diagonal (because those four
+are all zeros), which leaves twelve, and if half of them are equal and
+opposite to the other half, we actually only have (drumroll) SIX!!!
+We are trying to find a way to use six components of <span class="math notranslate nohighlight">\(\vec{E}\)</span> and
+<span class="math notranslate nohighlight">\(\vec{B}\)</span>, and we already showed that one of them could well be <span class="math notranslate nohighlight">\(E_x\)</span>,
+which suggests that the other five could well be the other five
+components of <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span>.</p>
+<p>So let’s go back to Equation <a class="reference internal" href="#equation-oneofsixteen">(199)</a> and rewrite it
+to allow for an anti-symmetric matrix:</p>
+<div class="math notranslate nohighlight" id="equation-oneofsixteenanti">
+<span class="eqno">(202)<a class="headerlink" href="#equation-oneofsixteenanti" title="Permalink to this equation">#</a></span>\[\begin{split}F'^{\alpha\mu} =
+(\Lambda^\alpha_0\Lambda^\mu_1 -\Lambda^\alpha_1\Lambda^\mu_0) F^{01}+
+(\Lambda^\alpha_0\Lambda^\mu_2 -\Lambda^\alpha_2\Lambda^\mu_0) F^{02} +\\
+(\Lambda^\alpha_0\Lambda^\mu_3 -\Lambda^\alpha_3\Lambda^\mu_0) F^{03} +
+(\Lambda^\alpha_1\Lambda^\mu_2 -\Lambda^\alpha_2\Lambda^\mu_1) F^{12} +\\
+(\Lambda^\alpha_1\Lambda^\mu_3 -\Lambda^\alpha_3\Lambda^\mu_1) F^{13} +
+(\Lambda^\alpha_2\Lambda^\mu_3 -\Lambda^\alpha_3\Lambda^\mu_2) F^{23} \end{split}\]</div>
+<p>Let’s look at another example.  What about first row, third column?
+If <span class="math notranslate nohighlight">\(F^{01}\)</span> might be <span class="math notranslate nohighlight">\(E_x\)</span>, maybe <span class="math notranslate nohighlight">\(F^{02}\)</span> is <span class="math notranslate nohighlight">\(E_y\)</span>, and we know what
+that is supposed to be.  So let’s look at <span class="math notranslate nohighlight">\(F'^{02}\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-oneofsixteen02">
+<span class="eqno">(203)<a class="headerlink" href="#equation-oneofsixteen02" title="Permalink to this equation">#</a></span>\[\begin{split}F'^{02} =
+(\Lambda^0_0\Lambda^2_1 -\Lambda^0_1\Lambda^2_0) F^{01}+
+(\Lambda^0_0\Lambda^2_2 -\Lambda^0_2\Lambda^2_0) F^{02} +\\
+(\Lambda^0_0\Lambda^2_3 -\Lambda^0_3\Lambda^2_0) F^{03} +
+(\Lambda^0_1\Lambda^2_2 -\Lambda^0_2\Lambda^2_1) F^{12} +\\
+(\Lambda^0_1\Lambda^2_3 -\Lambda^0_3\Lambda^2_1) F^{13} +
+(\Lambda^0_2\Lambda^2_3 -\Lambda^0_3\Lambda^2_2) F^{23} \end{split}\]</div>
+<p>Now let’s plug in the values of the Lorentz matrices.  Anything
+with a 2 or 3 will be zero, unless it’s a 22 or 33, in which case
+it’s 1.</p>
+<div class="math notranslate nohighlight" id="equation-oneofsixteen02b">
+<span class="eqno">(204)<a class="headerlink" href="#equation-oneofsixteen02b" title="Permalink to this equation">#</a></span>\[\begin{split}F'^{02} =
+(\gamma_R \times 0 + \beta_R \gamma_R \times 0) F^{01}+
+(\gamma_R \times 1 - 0 \times 0) F^{02} +\\
+(1 \times 0 - 0 \times 0) F^{03} +
+(-\gamma_R\beta_R\times 1 - 0 \times 0) F^{12} +\\
+(-\gamma_R\beta_R\times 0 - 0\times 0) F^{13} +
+(0\times 0 - 0\times 1) F^{23} \end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-oneofsixteen02c">
+<span class="eqno">(205)<a class="headerlink" href="#equation-oneofsixteen02c" title="Permalink to this equation">#</a></span>\[F'^{02} = \gamma_R F^{02} -\gamma_R\beta_R F^{12}\]</div>
+<p>If you compare this result with Equation <a class="reference internal" href="#equation-eprimey">(191)</a>, that suggests
+I can make this work if <span class="math notranslate nohighlight">\(F^{02}\)</span> is <span class="math notranslate nohighlight">\(E_y/c\)</span> and <span class="math notranslate nohighlight">\(F^{12} = B_z\)</span>.  I
+need to divide <span class="math notranslate nohighlight">\(E_y\)</span> by <span class="math notranslate nohighlight">\(c\)</span> so that I can multiply the whole equation
+through by <span class="math notranslate nohighlight">\(c\)</span> and turn the <span class="math notranslate nohighlight">\(\beta_R\)</span> into a <span class="math notranslate nohighlight">\(v_R\)</span> to match Equation
+<a class="reference internal" href="#equation-eprimey">(191)</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>But wait, you might say, you said <span class="math notranslate nohighlight">\(F^{01}\)</span> was just <span class="math notranslate nohighlight">\(E_x\)</span>!  What’s up
+with this divide by <span class="math notranslate nohighlight">\(c\)</span> thing?  Well, note that if I can say <span class="math notranslate nohighlight">\(E'_x=E_x\)</span>,
+I can also say <span class="math notranslate nohighlight">\(E'_x/c=E_x/c\)</span>.  That’s just as good.  Also, I need all
+the elements of <span class="math notranslate nohighlight">\(F^{\alpha\mu}\)</span> to have the same dimensions, and to
+get <span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(B\)</span> to have the same dimensions, I need to multiply <span class="math notranslate nohighlight">\(B\)</span> times
+a speed or divide <span class="math notranslate nohighlight">\(E\)</span> by a speed.  In principle, you could do it
+either way, but most people use <span class="math notranslate nohighlight">\(E/c\)</span> rather than <span class="math notranslate nohighlight">\(cB\)</span>.</p>
+</div>
+<p>You can go through all four remaining elements of <span class="math notranslate nohighlight">\(F^{\alpha\mu}\)</span> and
+figure out that one way of writing <span class="math notranslate nohighlight">\(F\)</span> that will satisfy Equation
+<a class="reference internal" href="#equation-twotransforms">(198)</a> is:</p>
+<div class="math notranslate nohighlight" id="equation-emtensorfin">
+<span class="eqno">(206)<a class="headerlink" href="#equation-emtensorfin" title="Permalink to this equation">#</a></span>\[\begin{split}F^{\alpha\mu} =
+\begin{pmatrix}
+0 &amp; E_x/c &amp; E_y/c &amp; E_z/c\\
+-E_x/c &amp; 0 &amp; B_y &amp; -B_z\\
+-E_y/c &amp; -B_y &amp; 0 &amp; B_x\\
+-E_z/c &amp; B_z &amp; -B_x &amp; 0
+\end{pmatrix}\end{split}\]</div>
+<p><strong>Need to check the B components</strong></p>
+<p>You can (and should) check that you will reproduce the the other four
+of the six transform equations summarized at the top of this section
+if you plug this matrix into Equation <a class="reference internal" href="#equation-twotransforms">(198)</a>.  This object
+is called “the electromagnetic field tensor”, and it combines both
+<span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> into a single object, much like how <span class="math notranslate nohighlight">\(d\vec{x}\)</span>
+combines <span class="math notranslate nohighlight">\(dx\)</span>, <span class="math notranslate nohighlight">\(dy\)</span>, and <span class="math notranslate nohighlight">\(dz\)</span> into a single object.</p>
+<p>Now, I pulled a fast one on you.  When I hit Equation <a class="reference internal" href="#equation-antisym">(201)</a>, I
+said “well, gosh, we want <span class="math notranslate nohighlight">\(E_x\)</span> to stay the same, so this might be <span class="math notranslate nohighlight">\(E_x\)</span>!”.
+But if you were paying attention, you might have noticed that the entire
+sequence of logic following that point could flow just as well if we started
+from <span class="math notranslate nohighlight">\(B'_x=B_x\)</span> instead of going to <span class="math notranslate nohighlight">\(E_x\)</span> first!  If you start with <span class="math notranslate nohighlight">\(B_x\)</span>,
+you would construct the following matrix:</p>
+<div class="math notranslate nohighlight" id="equation-dualtensorfin">
+<span class="eqno">(207)<a class="headerlink" href="#equation-dualtensorfin" title="Permalink to this equation">#</a></span>\[\begin{split}G^{\alpha\mu} =
+\begin{pmatrix}
+0 &amp; B_x &amp; E_y/c &amp; E_z/c\\
+-B_x/c &amp; 0 &amp; B_y &amp; -E_z/c\\
+-B_y/c &amp; -E_y/c &amp; 0 &amp; E_x/c\\
+-B_z/c &amp; E_z/c &amp; -E_x/c &amp; 0
+\end{pmatrix}\end{split}\]</div>
+<p>This is called the “dual tensor”, and it works <em>just as well</em> as the “regular”
+EM field tensor.  It’s purely a matter of convention that we tend to use
+the <span class="math notranslate nohighlight">\(F\)</span> rather than the <span class="math notranslate nohighlight">\(G\)</span>.  They both transform the same way when you switch
+reference frames.  You will see both of these again in the next chapter.</p>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<p>You have seen in this chapter that it is possible to think of
+magnetism as simply a manifestation of how space and time distort when
+you switch into different reference frames.  Since all magnetic fields
+are a mechanism of keeping track of <em>moving</em> charges, just as electric
+fields are a way of keeping track of charges’ locations, motion is an
+intrinsic part of what we think of as magnetism, and therefore
+relativity theory is critically important to understand what’s going
+on.</p>
+<p>Furthermore, we made no assumptions whatsoever about how big the
+speeds involved are.  For mechanics, you don’t need to worry about
+relativity, but with E&amp;M, there is no such restriction.  The
+effects of Lorentz transformations show up at any speeds.</p>
+<p>This in turn suggests that what we call “electric” fields and what we
+call “magnetic” fields are not independent, separate concepts.  By
+switching reference frames, they get “mixed up”, just like space and
+time do when you change reference frames.  The components of what we
+call <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> are just whatever numbers fall into the
+appropriate slots of <span class="math notranslate nohighlight">\(F^{\alpha\mu}\)</span> or <span class="math notranslate nohighlight">\(G^{\alpha\mu}\)</span>.  Nature does
+not make a distinction between the two – it’s our own interpretation
+of the application.  There is only one thing that is better called
+“elecromagnetic field tensor”, much like there is only one thing that
+we call “spacetime”.  The perception that these are separate things
+are an artefact of the limits of human senses, and it took the hard
+work and genius of people like Einstein, Lorentz, Minkowski, and
+others to climb outside those limitations and perceive how the
+universe works on its own.</p>
+</section>
+<section id="problems">
+<h2>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -891,7 +1196,10 @@ point?</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-the-fields-transform">How the Fields Transform</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-electromagnetic-field-tensor">The Electromagnetic Field Tensor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
 </ul>
   </nav></div>
 

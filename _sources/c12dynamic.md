@@ -455,3 +455,6 @@ Maxwell's Equations automatically incorporate the insights of SR.
 What changes when you understand this is the way you envision the
 world, not the way the world itself works.
 
+## Summary?
+
+## Problems

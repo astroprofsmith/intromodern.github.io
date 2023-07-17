@@ -533,8 +533,13 @@ the original $E_y$, so we can plug in the formulae for the fields to get
 B'_z = \gamma_R B_z - \gamma_R \frac{v_R}{c^2}E_y
 }
 ```
-To make sure you have understood the logic, here, you should rotate the
-capacitor and work out the last two components yourself.  You should get
+To make sure you have understood the logic, here, you should rotate
+the capacitor and work out the last two components yourself.  If you
+rotate the capacitor so that the plates lie parallel to the $xy$
+plane, then you'll get $E_z$, and the motion of the capacitor in $x$
+will make a magnetic field in the $+B_y$ direction.  Once you convince
+yourself of that, the rest of the math is exactly the same, just
+substituting $E_z$ for $E_y$ and $+B_y$ for $-B_z$.  You should get
 ```{math}
 :label: Eprimez
 \boxed{
@@ -555,5 +560,352 @@ frame.  Now what do we *do* with them, and how does this relate to the
 Lorentz transformation we have used for such a change up to this
 point?
 
+## Example
+
+Let's think through a possible experiment that one could (in principle)
+do that would reveal why $E$ and $B$ have to transform like this.  A full
+solution of this problem is beyond the scope of this course, but we can
+work through the problem at a conceptual level.
+
+You will have learned that a charged particle like an electron in the
+presence of a magnetic field will move in a circle perpendicular
+to the field.  The faster it goes, the wider the circle, and the stronger
+the field, the smaller the circle.  Consider a cart that is carrying an
+apparatus, like a solenoid or a Helmholtz coil, that can make a vertical
+magentic field.  An electron travels horizontally into the field region,
+and will start flying in a horizontal circle.  There is no electric field
+in this reference frame.  All seems well (ignoring gravity, of course).
+
+However, what if we start pushing the cart at a *very* slow speed
+(nm/s, if you like.  Really slow.) along the ground.  If you didn't
+know relativity, you would think, there's no reason for the electron
+to change its motion.  The field is uniform, the electron just keeps
+going in a circle -- what the cart does has nothing to do with it.  So
+you would expect the cart to just move slowly along until it moves out
+from under the electron, at which point the electron is outside the
+field, and it will shoot off into space.
+
+However, now consider this situation from the reference frame where
+the cart is at rest.  According to our postulates, if the cart moves
+out from under the electron in the lab frame, the electron would have
+to drift off the cart in the cart frame.  However, in the cart frame,
+nothing is moving -- it's exactly the same as the original lab frame
+when the cart was at rest.  So there is absolutely no reason why the
+electron would start drifting off the cart at all, let alone why
+should the electron pick that direction to drift?  If nothing is
+moving in this frame, there is no reason for the electron to move in
+any particular direction.
+
+What is the resolution of this paradox?  Now that you know how the
+$E$ and $B$ fields transform, you will understand that when you switch
+reference frames from the frame where the cart is at rest (vertical $\vec{B}
+= B_y\hat{y}$,
+$E=0$) to a frame where the cart is moving, there will be a field in
+the $z$ direction in the new frame ($E'_z = \gamma_Rv_RBy$), in addition
+to the altered value of $B$ ($B'_y = \gamma_R B_y$).  Although
+solving the equations of motion under these primed fields is beyond
+the scope of this book, the solution is a shape much like the path
+of a point on the wheel of a bike -- the electron will keep up with
+the cart in the frame where the cart is moving.  It not fall off the
+edge of the cart in either frame.
+
+You can't resolve this paradox without relativity, and the speeds
+involved are obviously nowhere even close to the speed of light.
+
 ## The Electromagnetic Field Tensor
 
+For the rest of this book up to this point, when we wanted to see
+what would happen to some quantity when measured in a reference
+frame in relative motion, we cast the quantity in question as a
+four-vector and performed a Lorentz transformation.  We can't do that,
+here, because $\vec{E}$ and $\vec{B}$ together have six components,
+which don't easily fit into a four-vector.  We need some way to
+deal with these fields, and we need to *use* the Lorentz transformation,
+because the success of all those four vectors shows us that the Lorentz
+matrix is indeed the correct way to switch reference frames.
+
+Before we start working toward a solution, let me copy all the relevant
+equations here so we have them in one place:
+
+
+```{math}
+E'_x = E_x\hspace{3cm}B'_x = B_x
+```
+
+```{math}
+E'_y = \gamma_R E_y  - \gamma_Rv_RB_z\hspace{3cm}
+B'_y = \gamma_R B_y + \gamma_R \frac{v_R}{c^2}E_z
+```
+```{math}
+E'_z = \gamma_R E_z  + \gamma_Rv_RB_y\hspace{3cm}
+B'_z = \gamma_R B_z - \gamma_R \frac{v_R}{c^2}E_y
+```
+and recall that the Lorentz matrix can be written as
+```{math}
+:label: lormatE
+\Lambda^\alpha_\beta =
+\begin{pmatrix}
+\gamma_R & -\gamma_R\beta_R & 0 & 0\\
+-\gamma_R\beta_R & \gamma_R & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix}
+```
+Note now I have switched to using Einstein notation and have left out
+the complex number $i$.  The letter $\alpha$ refers to the row number
+of the matrix, and the $\beta$ refers to the column number (0 through
+3, of course).   So $\Lambda^0_1 = -\gamma_R\beta_R$
+(first row, second column).
+
+
+At this point, many books jump to the answer and show that it works.
+While there is nothing formally wrong with that, it's not very
+emotionally satisfying.  I'd like to give you some kind of intuition
+as to why you might want to make that jump, rather than just tall you
+the answer.  In no way is what I am about to do any kind of
+*derivation*; what I want to do is give you a kind of guide to get you
+to the answer, not a proof.
+
+We have six numbers (two vectors) and a $4\times 4$ matrix that we
+think must be involved with the transfer somehow.  If there were a
+simple way to put each three vector into a four-vector, you might
+think that maybe the thing to do would be to perform *two* Lorentz
+transformations: one for $E$ and one for $B$.  However, we need to
+make the dimensions match up.  You can't multiply a $4\times 4$ matrix
+by a three-row column.
+
+If it were as simple as performing two Lorentz transformations, you
+would write that as
+```{math}
+:label: twolormat
+\Lambda^\alpha_\beta\Lambda^\mu_\nu
+```
+where the $\alpha$ and $\mu$ refer to the rows and the $\beta$
+and $\nu$ refer to the columns.
+
+This short equation represents multiplying two $4\times 4$ matrices
+together.  That's going across each row and down each column 16 times,
+and what you end up with is another $4\times 4$ matrix.  But that gives
+a clue.  Maybe what we need to do is fit the six field components into
+a $4\times 4$ matrix somehow.  If we could do that, then we could
+multiply these two Lorentz matrices by that field matrix, and the
+result would be *another* $4\times 4$ matrix, which we could interpret
+as the values of the same matrix, just in the new relative reference frame.
+Mathematically, that would be
+```{math}
+:label: twotransforms
+F'^{\alpha\mu} = \Lambda^\alpha_\beta\Lambda^\mu_\nu F^{\beta\nu}
+```
+The Einstein notation means that this equation is really representing
+sixteen equations, one for each term in the $4\times 4$ matrix that
+results from all these multiplications.  There's a double sum over
+$\beta$ and $\nu$, leaving single values for $\alpha$ and $\mu$
+unchanged from the right side to the left.  So a single one of these
+sixteen terms would look like
+```{math}
+:label: oneofsixteen
+F'^{01} =
+\Lambda^0_0\Lambda^1_0 F^{00} +
+\Lambda^0_0\Lambda^1_1 F^{01} +
+\Lambda^0_0\Lambda^1_2 F^{02} +
+\Lambda^0_0\Lambda^1_3 F^{03} +\\
+\Lambda^0_1\Lambda^1_0 F^{10} +
+\Lambda^0_1\Lambda^1_1 F^{11} +
+\Lambda^0_1\Lambda^1_2 F^{12} +
+\Lambda^0_1\Lambda^1_3 F^{13} +\\
+\Lambda^0_2\Lambda^1_0 F^{20} +
+\Lambda^0_2\Lambda^1_1 F^{21} +
+\Lambda^0_2\Lambda^1_2 F^{22} +
+\Lambda^0_2\Lambda^1_3 F^{23} +\\
+\Lambda^0_3\Lambda^1_0 F^{30} +
+\Lambda^0_3\Lambda^1_1 F^{31} +
+\Lambda^0_3\Lambda^1_2 F^{32} +
+\Lambda^0_3\Lambda^1_3 F^{33}
+```
+You have to think about Einstein notation like writing a computer
+program: once you assign $\alpha$ a particular value, like
+$0$, then that value has to go in everywhere that there's an $\alpha$.
+So you can see in Equation {eq}`oneofsixteen` that there's a $1$
+in the $\mu$ location, so everywhere in the huge sum where there
+would be a $\mu$, there's a $1$ in each of those locations (the
+superscript on the second $\Lambda$).  The lower index on the
+second $\Lambda$ is always the second number in the superscript
+on the $F$, because those positions both have a $\nu$ in Equation
+{eq}`twotransforms`.
+
+Now, this looks like a huge mess, but luckily for us, most of
+the numbers in the $\Lambda$ matrix (Equation {eq}`lormatE` are
+zero!  All the examples of $\Lambda$ elements in the specific
+case of Equation {eq}`oneofsixteen` are either in the first
+or second row.  And the last two columns are both zeros!
+If we plug in for the elements of $\Lambda$, we get
+```{math}
+:label: killzeros
+F'^{01} =
+-\gamma_R^2\beta_R F^{00} +
+\gamma_R^2 F^{01} +
+\beta_R^2\gamma_R^2 F^{10} 
+-\gamma_R^2\beta_R F^{11} 
+```
+Now, this looks a bit simpler.  The next clue is the fact that
+there's a $\gamma_R^2 + \gamma_R^2\beta_R^2$ in there.  If it
+were just $\gamma_R^2 - \gamma_R^2\beta_R^2$, that would just be
+*ONE*!!!  So, what if (crazy thought), what if $F^{01}=-F^{10}$?
+Then the factors would disappear, and we'd just have $F^{01}$
+in there.
+```{math}
+:label: antisym
+F'^{01} = F^{01}
+-\gamma_R^2\beta_R (F^{00} + F^{11} )
+```
+Now, we know that $E'_x=E_x$, so this is starting to look like that.
+What do with the last part, though?  Well, if $F^{01}=-F^{10}$, that
+suggests that $F^{00}=0$, as that's an example of something that is
+equal to negative itself.  If the diagonal elements are all zero, and
+the matrix as a whole is anti-symmetric, then our specific example of
+Equation {eq}`oneofsixteen` has just turned into $E'_x = E_x$!  Not
+only that, but if the matrix is indeed anti-symmetric, then instead of
+sixteen elements, you can discount the diagonal (because those four
+are all zeros), which leaves twelve, and if half of them are equal and
+opposite to the other half, we actually only have (drumroll) SIX!!!
+We are trying to find a way to use six components of $\vec{E}$ and
+$\vec{B}$, and we already showed that one of them could well be $E_x$,
+which suggests that the other five could well be the other five
+components of $\vec{E}$ and $\vec{B}$.
+
+So let's go back to Equation {eq}`oneofsixteen` and rewrite it
+to allow for an anti-symmetric matrix:
+```{math}
+:label: oneofsixteenanti
+F'^{\alpha\mu} =
+(\Lambda^\alpha_0\Lambda^\mu_1 -\Lambda^\alpha_1\Lambda^\mu_0) F^{01}+
+(\Lambda^\alpha_0\Lambda^\mu_2 -\Lambda^\alpha_2\Lambda^\mu_0) F^{02} +\\
+(\Lambda^\alpha_0\Lambda^\mu_3 -\Lambda^\alpha_3\Lambda^\mu_0) F^{03} +
+(\Lambda^\alpha_1\Lambda^\mu_2 -\Lambda^\alpha_2\Lambda^\mu_1) F^{12} +\\
+(\Lambda^\alpha_1\Lambda^\mu_3 -\Lambda^\alpha_3\Lambda^\mu_1) F^{13} +
+(\Lambda^\alpha_2\Lambda^\mu_3 -\Lambda^\alpha_3\Lambda^\mu_2) F^{23} 
+```
+Let's look at another example.  What about first row, third column?
+If $F^{01}$ might be $E_x$, maybe $F^{02}$ is $E_y$, and we know what
+that is supposed to be.  So let's look at $F'^{02}$:
+```{math}
+:label: oneofsixteen02
+F'^{02} =
+(\Lambda^0_0\Lambda^2_1 -\Lambda^0_1\Lambda^2_0) F^{01}+
+(\Lambda^0_0\Lambda^2_2 -\Lambda^0_2\Lambda^2_0) F^{02} +\\
+(\Lambda^0_0\Lambda^2_3 -\Lambda^0_3\Lambda^2_0) F^{03} +
+(\Lambda^0_1\Lambda^2_2 -\Lambda^0_2\Lambda^2_1) F^{12} +\\
+(\Lambda^0_1\Lambda^2_3 -\Lambda^0_3\Lambda^2_1) F^{13} +
+(\Lambda^0_2\Lambda^2_3 -\Lambda^0_3\Lambda^2_2) F^{23} 
+```
+Now let's plug in the values of the Lorentz matrices.  Anything
+with a 2 or 3 will be zero, unless it's a 22 or 33, in which case
+it's 1.
+
+```{math}
+:label: oneofsixteen02b
+F'^{02} =
+(\gamma_R \times 0 + \beta_R \gamma_R \times 0) F^{01}+
+(\gamma_R \times 1 - 0 \times 0) F^{02} +\\
+(1 \times 0 - 0 \times 0) F^{03} +
+(-\gamma_R\beta_R\times 1 - 0 \times 0) F^{12} +\\
+(-\gamma_R\beta_R\times 0 - 0\times 0) F^{13} +
+(0\times 0 - 0\times 1) F^{23} 
+```
+```{math}
+:label: oneofsixteen02c
+F'^{02} = \gamma_R F^{02} -\gamma_R\beta_R F^{12}
+```
+
+If you compare this result with Equation {eq}`Eprimey`, that suggests
+I can make this work if $F^{02}$ is $E_y/c$ and $F^{12} = B_z$.  I
+need to divide $E_y$ by $c$ so that I can multiply the whole equation
+through by $c$ and turn the $\beta_R$ into a $v_R$ to match Equation
+{eq}`Eprimey`.
+
+```{note}
+But wait, you might say, you said $F^{01}$ was just $E_x$!  What's up
+with this divide by $c$ thing?  Well, note that if I can say $E'_x=E_x$,
+I can also say $E'_x/c=E_x/c$.  That's just as good.  Also, I need all
+the elements of $F^{\alpha\mu}$ to have the same dimensions, and to
+get $E$ and $B$ to have the same dimensions, I need to multiply $B$ times
+a speed or divide $E$ by a speed.  In principle, you could do it
+either way, but most people use $E/c$ rather than $cB$.
+```
+
+You can go through all four remaining elements of $F^{\alpha\mu}$ and
+figure out that one way of writing $F$ that will satisfy Equation
+{eq}`twotransforms` is:
+```{math}
+:label: EMtensorfin
+F^{\alpha\mu} =
+\begin{pmatrix}
+0 & E_x/c & E_y/c & E_z/c\\
+-E_x/c & 0 & B_y & -B_z\\
+-E_y/c & -B_y & 0 & B_x\\
+-E_z/c & B_z & -B_x & 0
+\end{pmatrix}
+```
+**Need to check the B components**
+
+You can (and should) check that you will reproduce the the other four
+of the six transform equations summarized at the top of this section
+if you plug this matrix into Equation {eq}`twotransforms`.  This object
+is called "the electromagnetic field tensor", and it combines both
+$\vec{E}$ and $\vec{B}$ into a single object, much like how $d\vec{x}$
+combines $dx$, $dy$, and $dz$ into a single object.
+
+Now, I pulled a fast one on you.  When I hit Equation {eq}`antisym`, I
+said "well, gosh, we want $E_x$ to stay the same, so this might be $E_x$!".
+But if you were paying attention, you might have noticed that the entire
+sequence of logic following that point could flow just as well if we started
+from $B'_x=B_x$ instead of going to $E_x$ first!  If you start with $B_x$,
+you would construct the following matrix:
+
+```{math}
+:label: Dualtensorfin
+G^{\alpha\mu} =
+\begin{pmatrix}
+0 & B_x & E_y/c & E_z/c\\
+-B_x/c & 0 & B_y & -E_z/c\\
+-B_y/c & -E_y/c & 0 & E_x/c\\
+-B_z/c & E_z/c & -E_x/c & 0
+\end{pmatrix}
+```
+This is called the "dual tensor", and it works *just as well* as the "regular"
+EM field tensor.  It's purely a matter of convention that we tend to use
+the $F$ rather than the $G$.  They both transform the same way when you switch
+reference frames.  You will see both of these again in the next chapter.
+
+## Summary
+
+You have seen in this chapter that it is possible to think of
+magnetism as simply a manifestation of how space and time distort when
+you switch into different reference frames.  Since all magnetic fields
+are a mechanism of keeping track of *moving* charges, just as electric
+fields are a way of keeping track of charges' locations, motion is an
+intrinsic part of what we think of as magnetism, and therefore
+relativity theory is critically important to understand what's going
+on.
+
+Furthermore, we made no assumptions whatsoever about how big the
+speeds involved are.  For mechanics, you don't need to worry about
+relativity, but with E&M, there is no such restriction.  The
+effects of Lorentz transformations show up at any speeds.
+
+This in turn suggests that what we call "electric" fields and what we
+call "magnetic" fields are not independent, separate concepts.  By
+switching reference frames, they get "mixed up", just like space and
+time do when you change reference frames.  The components of what we
+call $\vec{E}$ and $\vec{B}$ are just whatever numbers fall into the
+appropriate slots of $F^{\alpha\mu}$ or $G^{\alpha\mu}$.  Nature does
+not make a distinction between the two -- it's our own interpretation
+of the application.  There is only one thing that is better called
+"elecromagnetic field tensor", much like there is only one thing that
+we call "spacetime".  The perception that these are separate things
+are an artefact of the limits of human senses, and it took the hard
+work and genius of people like Einstein, Lorentz, Minkowski, and
+others to climb outside those limitations and perceive how the
+universe works on its own.
+
+## Problems
