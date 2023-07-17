@@ -622,6 +622,196 @@ is relevant to them.</p>
 </section>
 <section id="how-the-fields-transform">
 <h2>How the Fields Transform<a class="headerlink" href="#how-the-fields-transform" title="Permalink to this heading">#</a></h2>
+<p>The goal for this section is to develop a model for how electric and
+magnetic fields will change when we switch to another frame of
+reference, moving with a velocity <span class="math notranslate nohighlight">\(\beta_R\)</span> along the <span class="math notranslate nohighlight">\(x\)</span> axis.  Once
+we have that set of transformations, we can connect them to the
+Lorentz transformations we already know, and thereby construct an
+equation that will let us predict how <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> will
+change.  This will bring electric and magnetic fields into the SR
+formalism.</p>
+<p>The most important concept to remember going into this analysis is
+that fields are not independently existing entities.  Fields are
+a way of keeping track of where the charges are.  You can’t have a
+field just existing, by itself, with no charges.  If you have a
+field <em>here</em>, there must be charges <em>somewhere</em> that are causing
+that field.  If you can figure out what happens to the charges,
+you can figure out how the fields will change.</p>
+<p>The second thing you need to remember is that all the rules for
+figuring out fields, like calculating the flux through a Gaussian
+surface and connecting that to the charge inside, or calculating the
+line integral of an Amperian loop and connecting that to the current
+flowing through the loop – all those rules still work in any
+reference frame.  Remember the first postulate: the laws of physics
+will be the same in any reference frame.</p>
+<p>With this in mind, we can start constructing rules for how to get the
+fields in a relatively moving reference frame, if we know the
+situation in different reference frame.  Let’s start with the simplest
+situation: a uniform electric field in the <span class="math notranslate nohighlight">\(x\)</span> direction.  What kind
+of charge distribution will give us a uniform <span class="math notranslate nohighlight">\(\vec{E}\)</span> in the <span class="math notranslate nohighlight">\(x\)</span>
+direction?  Well, set up a parallel plate capacitor such that the
+plates are parallel to the <span class="math notranslate nohighlight">\(yz\)</span> plane, and you will get a roughly
+uniform field between the plates, perpendicular to them, which is
+indeed the <span class="math notranslate nohighlight">\(x\)</span> direction.  The magnitude of the field is the charge
+density on the plates divided by <span class="math notranslate nohighlight">\(\epsilon_0\)</span>.</p>
+<p>How will this situation change if we switch into a passing reference
+frame?  Well, any time interval would dilate, but this is a static
+situation, so there are no relevant time intervals.  Any length along
+the direction of the relative velocity will contract, so the distance
+between the plates will get smaller, but the value of the field does
+not depend on the distance between the plates.  The density of charge
+on the plates will not change, so the field will not change.  Therefore</p>
+<div class="math notranslate nohighlight" id="equation-extrans">
+<span class="eqno">(180)<a class="headerlink" href="#equation-extrans" title="Permalink to this equation">#</a></span>\[\boxed{
+E'_x = E_x
+}\]</div>
+<p>How about a uniform magnetic field?  The way to get a uniform magnetic
+field is to have a current-carrying solenoid.  Then you will get a
+nearly uniform field inside the coil with a value of <span class="math notranslate nohighlight">\(\mu_0 n I\)</span>,
+pointed along the axis of the solenoid, where <span class="math notranslate nohighlight">\(n\)</span> is the number of
+coils per length.  Orient the solenoid so that the axis of the coil
+is along the <span class="math notranslate nohighlight">\(x\)</span> axis.  Now when we switch to a passing reference frame,
+the length along the axis of the coil will contract!  So the number
+of coils per length will increase: <span class="math notranslate nohighlight">\(n' = \gamma n\)</span>.  So you might think
+the magnetic field will increase.  But wait!  This situation is not
+static!  There is a current moving, and current is <span class="math notranslate nohighlight">\(dq/dt\)</span>, so there
+is also a relevant time interval, which will dilate by the same factor
+<span class="math notranslate nohighlight">\(\gamma\)</span>!  So the current will go down by the same factor that the
+coil density goes up, the two factors of <span class="math notranslate nohighlight">\(\gamma\)</span> will cancel each
+other out, and the magnetic field will remain unchanged:</p>
+<div class="math notranslate nohighlight" id="equation-bxtrans">
+<span class="eqno">(181)<a class="headerlink" href="#equation-bxtrans" title="Permalink to this equation">#</a></span>\[\boxed{
+B'_x = B_x
+}\]</div>
+<p>Now things get a little more complicated.  If we want to get the <span class="math notranslate nohighlight">\(E\)</span>
+field components in the perpendicular directions, we can keep the same
+parallel plate capacitor, but we have to rotate it so that the <span class="math notranslate nohighlight">\(E\)</span>
+field now points, say, up along the <span class="math notranslate nohighlight">\(y\)</span> axis.  The plates of the
+capacitor are now parallel to the <span class="math notranslate nohighlight">\(xz\)</span> plane.  When we switch into
+another reference frame, the dimension that contracts is along one
+dimension of the plates, so the charge density will increase: <span class="math notranslate nohighlight">\(\sigma'
+= \gamma \sigma\)</span>.  This means the magnitude of <span class="math notranslate nohighlight">\(E_y\)</span> will also
+increase to <span class="math notranslate nohighlight">\(\gamma E_y\)</span>.</p>
+<p>But wait!  In this new primed reference frame, the plates will be
+moving in the <span class="math notranslate nohighlight">\(-x\)</span> direction!  That means in this reference frame,
+there will be a current that wasn’t there in the unprimed frame, and
+that means there will be a <span class="math notranslate nohighlight">\(B\)</span> field in this reference frame that
+wasn’t there in the unprimed frame!  If you draw a square Amperian
+loop with side <span class="math notranslate nohighlight">\(L\)</span>, lying in the <span class="math notranslate nohighlight">\(yz\)</span> plane, and place it so that one
+side of it runs along the <span class="math notranslate nohighlight">\(z\)</span> axis and the opposite side is outside
+the capacitor, then there will be a current of <span class="math notranslate nohighlight">\(\sigma' v_R L\)</span> that
+runs through that square.  The loop integral around that square will
+be <span class="math notranslate nohighlight">\(B_z L\)</span>, so there will be a magentic field of <span class="math notranslate nohighlight">\(\mu_0 \sigma' v_R\)</span>
+in the <span class="math notranslate nohighlight">\(-z\)</span> direction.  We can write this in terms of the original
+unprimed variables by putting in a <span class="math notranslate nohighlight">\(\gamma\)</span>: <span class="math notranslate nohighlight">\(B'_z = -\mu_0 \gamma
+\sigma v_R\)</span>.</p>
+<p>This means we really picked a special case when we first chose our
+rotated capacitor at rest – we chose the only frame where <span class="math notranslate nohighlight">\(B_z = 0\)</span>.
+To get a general rule for how <span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(B\)</span> transform, we should have
+chosen a frame in which the capacitor was already moving, and then
+transformed into a frame where the capacitor is moving at a different
+speed.  Then we will have a general rule for how <span class="math notranslate nohighlight">\(E_y\)</span> and <span class="math notranslate nohighlight">\(B_z\)</span>
+transform.  So let’s consider the primed frame we just derived as the
+unprimed frame, and transfer to a different primed frame.  Let <span class="math notranslate nohighlight">\(v_R\)</span>
+be the relative velocity between these two frames, and say the
+unprimed frame is moving with a velocity <span class="math notranslate nohighlight">\(u\)</span>, relative to the frame
+where the capacitor is at rest (which means there is a Lorentz factor
+of <span class="math notranslate nohighlight">\(\gamma_u=1/\sqrt{1-u^2/c^2}\)</span> between the unprimed frame and the
+rest frame).  In that case, the fields in the unprimed frame will be</p>
+<div class="math notranslate nohighlight" id="equation-eyunp">
+<span class="eqno">(182)<a class="headerlink" href="#equation-eyunp" title="Permalink to this equation">#</a></span>\[\vec{E} = \gamma_u \sigma_0 /\epsilon_0\hat{y}\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight" id="equation-bzunp">
+<span class="eqno">(183)<a class="headerlink" href="#equation-bzunp" title="Permalink to this equation">#</a></span>\[\vec{B} = \mu_0 \gamma_u \sigma_0 u \hat{z}\]</div>
+<p>We now want to switch into a reference frame that is moving at <span class="math notranslate nohighlight">\(v_R\)</span>
+relative to this new unprimed frame.  We will also need to relate
+the primed reference frame back to the rest frame, so note that</p>
+<div class="math notranslate nohighlight" id="equation-vprimeto0">
+<span class="eqno">(184)<a class="headerlink" href="#equation-vprimeto0" title="Permalink to this equation">#</a></span>\[v' = \frac{v_R+u}{1+v_Ru/c^2}\]</div>
+<p>is the speed of the primed frame relative to the rest frame, and
+we will need a <span class="math notranslate nohighlight">\(\gamma' = 1/\sqrt{1-v'^2/c^2}\)</span>.  This means that
+the charge density on the plates will be <span class="math notranslate nohighlight">\(\sigma' = \gamma'\sigma_0\)</span>
+in the new primed frame.  If we were an observer living in this
+new primed frame, we would say there was an electric field of
+<span class="math notranslate nohighlight">\(\vec{E}' = \hat{y}\sigma'/\epsilon_0\)</span> and a magnetic field of
+<span class="math notranslate nohighlight">\(\vec{B}' = -\hat{z}\mu_0 \sigma' v'\)</span>.  Our goal is to write
+these field equations, as defined in the primed frame, in terms
+of the quantities an observer in the unprimed frame would measure.</p>
+<p>Let’s look at the electric field first.  We know that the charge
+density in the unprimed frame is <span class="math notranslate nohighlight">\(\sigma = \gamma_u \sigma_0\)</span>.  And we
+know <span class="math notranslate nohighlight">\(\sigma' = \gamma' \sigma_0\)</span>.  Therefore, <span class="math notranslate nohighlight">\(\sigma' = \sigma
+\gamma'/\gamma_u\)</span>.  We can (with some effort) simplify that ratio of
+Lorentz factors (I am going to use <span class="math notranslate nohighlight">\(c=1\)</span> and then put the <span class="math notranslate nohighlight">\(c\)</span> back at
+the end):</p>
+<div class="math notranslate nohighlight" id="equation-lorfacrat1">
+<span class="eqno">(185)<a class="headerlink" href="#equation-lorfacrat1" title="Permalink to this equation">#</a></span>\[\frac{\gamma'}{\gamma_u} = \sqrt{\frac{1-u^2}{1-v'^2}}
+= \sqrt{\frac{1-u^2}{1-\left(\frac{v_R+u}{1+v_Ru}\right)^2}}
+= \sqrt{\frac{(1-u^2)(1+v_Ru)^2}{(1+v_Ru)^2-(v_R+u)^2}}\]</div>
+<p>Expand the denominator and take the square root of the square in the numerator:</p>
+<div class="math notranslate nohighlight" id="equation-lorfacrat2">
+<span class="eqno">(186)<a class="headerlink" href="#equation-lorfacrat2" title="Permalink to this equation">#</a></span>\[\frac{\gamma'}{\gamma_u} 
+= (1+v_Ru)\sqrt{\frac{1-u^2}{1+2v_Ru+v_R^2u^2-v_R^2-2v_Ru-u^2}}\]</div>
+<p>Cancel out the common factors in the denominator:</p>
+<div class="math notranslate nohighlight" id="equation-lorfacrat3">
+<span class="eqno">(187)<a class="headerlink" href="#equation-lorfacrat3" title="Permalink to this equation">#</a></span>\[\frac{\gamma'}{\gamma_u} 
+= (1+v_Ru)\sqrt{\frac{1-u^2}{1+v_R^2u^2-v_R^2-u^2}}\]</div>
+<p>The four terms in the denominator are just <span class="math notranslate nohighlight">\((1-v_R^2)(1-u^2)\)</span>, and the
+factor of <span class="math notranslate nohighlight">\((1-u^2)\)</span> will cancel!  That leaves (putting the <span class="math notranslate nohighlight">\(c\)</span>s back)</p>
+<div class="math notranslate nohighlight" id="equation-lorfacrat">
+<span class="eqno">(188)<a class="headerlink" href="#equation-lorfacrat" title="Permalink to this equation">#</a></span>\[\frac{\gamma'}{\gamma_u} 
+= \frac{1+v_Ru/c^2}{\sqrt{1-v_R^2/c^2}} = \gamma_R(1+v_Ru/c^2)\]</div>
+<p>This means we can write our primed electric field as</p>
+<div class="math notranslate nohighlight" id="equation-eprimey1">
+<span class="eqno">(189)<a class="headerlink" href="#equation-eprimey1" title="Permalink to this equation">#</a></span>\[E'_y = \frac{\sigma}{\epsilon_0}  \gamma_R(1+v_Ru/c^2)\]</div>
+<p>but <span class="math notranslate nohighlight">\(1/c^2=\mu_0\epsilon_0\)</span>, so if we multiply through the parentheses, we get</p>
+<div class="math notranslate nohighlight" id="equation-eprimey2">
+<span class="eqno">(190)<a class="headerlink" href="#equation-eprimey2" title="Permalink to this equation">#</a></span>\[E'_y = \gamma_R \frac{\sigma}{\epsilon_0}  + \gamma_Rv_R\mu_0 \sigma u\]</div>
+<p>But those equations contain the formulae for <span class="math notranslate nohighlight">\(E_y\)</span> and <span class="math notranslate nohighlight">\(B_z\)</span> in the unprimed frame!
+So we end up with</p>
+<div class="math notranslate nohighlight" id="equation-eprimey">
+<span class="eqno">(191)<a class="headerlink" href="#equation-eprimey" title="Permalink to this equation">#</a></span>\[\boxed{
+E'_y = \gamma_R E_y  - \gamma_Rv_RB_z
+}\]</div>
+<p>So, much like we talked about with rotations, the electric and
+magnetic fields are getting mixed up when you switch reference
+frames. Also similar to the force on a charge moving next to a
+current, what looks like <span class="math notranslate nohighlight">\(E\)</span> in one frame has <span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(B\)</span> mixed
+together in another frame.</p>
+<p>We can follow a similar process with <span class="math notranslate nohighlight">\(B'_z\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[B'_z = -\mu_0 \sigma' v' = -\mu_0 \sigma 
+\frac{\gamma'}{\gamma_u} \frac{v_R+u}{1+v_Ru/c^2}
+=  -\mu_0 \sigma 
+\gamma_R(1+v_Ru/c^2) \frac{v_R+u}{1+v_Ru/c^2}\]</div>
+<p>using Equation <a class="reference internal" href="#equation-lorfacrat">(188)</a> to get rid of the ratios of gammas.
+There is a common factor in both numerator and denominator that will
+cancel!</p>
+<div class="math notranslate nohighlight" id="equation-bprimez1">
+<span class="eqno">(192)<a class="headerlink" href="#equation-bprimez1" title="Permalink to this equation">#</a></span>\[B'_z =  -\mu_0 \sigma v_R
+\gamma_R - \mu_0\sigma\gamma_R u \]</div>
+<p>The second term is just the original <span class="math notranslate nohighlight">\(B_z\)</span> times a <span class="math notranslate nohighlight">\(\gamma_R\)</span> factor,
+and the first term depends on <span class="math notranslate nohighlight">\(\sigma\)</span>, which we know is proportional to
+the original <span class="math notranslate nohighlight">\(E_y\)</span>, so we can plug in the formulae for the fields to get</p>
+<div class="math notranslate nohighlight" id="equation-bprimez">
+<span class="eqno">(193)<a class="headerlink" href="#equation-bprimez" title="Permalink to this equation">#</a></span>\[\boxed{
+B'_z = \gamma_R B_z - \gamma_R \frac{v_R}{c^2}E_y
+}\]</div>
+<p>To make sure you have understood the logic, here, you should rotate the
+capacitor and work out the last two components yourself.  You should get</p>
+<div class="math notranslate nohighlight" id="equation-eprimez">
+<span class="eqno">(194)<a class="headerlink" href="#equation-eprimez" title="Permalink to this equation">#</a></span>\[\boxed{
+E'_z = \gamma_R E_z  + \gamma_Rv_RB_y
+}\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight" id="equation-bprimey">
+<span class="eqno">(195)<a class="headerlink" href="#equation-bprimey" title="Permalink to this equation">#</a></span>\[\boxed{
+B'_y = \gamma_R B_y + \gamma_R \frac{v_R}{c^2}E_z
+}\]</div>
+<p>All right, that tells us how all three components of <span class="math notranslate nohighlight">\(\vec{E}\)</span> and
+<span class="math notranslate nohighlight">\(\vec{B}\)</span> will change when you switch to a relatively moving reference
+frame.  Now what do we <em>do</em> with them, and how does this relate to the
+Lorentz transformation we have used for such a change up to this
+point?</p>
 </section>
 <section id="the-electromagnetic-field-tensor">
 <h2>The Electromagnetic Field Tensor<a class="headerlink" href="#the-electromagnetic-field-tensor" title="Permalink to this heading">#</a></h2>

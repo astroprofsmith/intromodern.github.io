@@ -319,5 +319,241 @@ is relevant to them.
 
 ## How the Fields Transform
 
+The goal for this section is to develop a model for how electric and
+magnetic fields will change when we switch to another frame of
+reference, moving with a velocity $\beta_R$ along the $x$ axis.  Once
+we have that set of transformations, we can connect them to the
+Lorentz transformations we already know, and thereby construct an
+equation that will let us predict how $\vec{E}$ and $\vec{B}$ will
+change.  This will bring electric and magnetic fields into the SR
+formalism.
+
+The most important concept to remember going into this analysis is
+that fields are not independently existing entities.  Fields are
+a way of keeping track of where the charges are.  You can't have a
+field just existing, by itself, with no charges.  If you have a
+field *here*, there must be charges *somewhere* that are causing
+that field.  If you can figure out what happens to the charges,
+you can figure out how the fields will change.
+
+The second thing you need to remember is that all the rules for
+figuring out fields, like calculating the flux through a Gaussian
+surface and connecting that to the charge inside, or calculating the
+line integral of an Amperian loop and connecting that to the current
+flowing through the loop -- all those rules still work in any
+reference frame.  Remember the first postulate: the laws of physics
+will be the same in any reference frame.
+
+With this in mind, we can start constructing rules for how to get the
+fields in a relatively moving reference frame, if we know the
+situation in different reference frame.  Let's start with the simplest
+situation: a uniform electric field in the $x$ direction.  What kind
+of charge distribution will give us a uniform $\vec{E}$ in the $x$
+direction?  Well, set up a parallel plate capacitor such that the
+plates are parallel to the $yz$ plane, and you will get a roughly
+uniform field between the plates, perpendicular to them, which is
+indeed the $x$ direction.  The magnitude of the field is the charge
+density on the plates divided by $\epsilon_0$.
+
+How will this situation change if we switch into a passing reference
+frame?  Well, any time interval would dilate, but this is a static
+situation, so there are no relevant time intervals.  Any length along
+the direction of the relative velocity will contract, so the distance
+between the plates will get smaller, but the value of the field does
+not depend on the distance between the plates.  The density of charge
+on the plates will not change, so the field will not change.  Therefore
+```{math}
+:label: Extrans
+\boxed{
+E'_x = E_x
+}
+```
+
+How about a uniform magnetic field?  The way to get a uniform magnetic
+field is to have a current-carrying solenoid.  Then you will get a
+nearly uniform field inside the coil with a value of $\mu_0 n I$,
+pointed along the axis of the solenoid, where $n$ is the number of
+coils per length.  Orient the solenoid so that the axis of the coil
+is along the $x$ axis.  Now when we switch to a passing reference frame,
+the length along the axis of the coil will contract!  So the number
+of coils per length will increase: $n' = \gamma n$.  So you might think
+the magnetic field will increase.  But wait!  This situation is not
+static!  There is a current moving, and current is $dq/dt$, so there
+is also a relevant time interval, which will dilate by the same factor
+$\gamma$!  So the current will go down by the same factor that the
+coil density goes up, the two factors of $\gamma$ will cancel each
+other out, and the magnetic field will remain unchanged:
+```{math}
+:label: Bxtrans
+\boxed{
+B'_x = B_x
+}
+```
+
+Now things get a little more complicated.  If we want to get the $E$
+field components in the perpendicular directions, we can keep the same
+parallel plate capacitor, but we have to rotate it so that the $E$
+field now points, say, up along the $y$ axis.  The plates of the
+capacitor are now parallel to the $xz$ plane.  When we switch into
+another reference frame, the dimension that contracts is along one
+dimension of the plates, so the charge density will increase: $\sigma'
+= \gamma \sigma$.  This means the magnitude of $E_y$ will also
+increase to $\gamma E_y$.
+
+But wait!  In this new primed reference frame, the plates will be
+moving in the $-x$ direction!  That means in this reference frame,
+there will be a current that wasn't there in the unprimed frame, and
+that means there will be a $B$ field in this reference frame that
+wasn't there in the unprimed frame!  If you draw a square Amperian
+loop with side $L$, lying in the $yz$ plane, and place it so that one
+side of it runs along the $z$ axis and the opposite side is outside
+the capacitor, then there will be a current of $\sigma' v_R L$ that
+runs through that square.  The loop integral around that square will
+be $B_z L$, so there will be a magentic field of $\mu_0 \sigma' v_R$
+in the $-z$ direction.  We can write this in terms of the original
+unprimed variables by putting in a $\gamma$: $B'_z = -\mu_0 \gamma
+\sigma v_R$.
+
+This means we really picked a special case when we first chose our
+rotated capacitor at rest -- we chose the only frame where $B_z = 0$.
+To get a general rule for how $E$ and $B$ transform, we should have
+chosen a frame in which the capacitor was already moving, and then
+transformed into a frame where the capacitor is moving at a different
+speed.  Then we will have a general rule for how $E_y$ and $B_z$
+transform.  So let's consider the primed frame we just derived as the
+unprimed frame, and transfer to a different primed frame.  Let $v_R$
+be the relative velocity between these two frames, and say the
+unprimed frame is moving with a velocity $u$, relative to the frame
+where the capacitor is at rest (which means there is a Lorentz factor
+of $\gamma_u=1/\sqrt{1-u^2/c^2}$ between the unprimed frame and the
+rest frame).  In that case, the fields in the unprimed frame will be
+```{math}
+:label: Eyunp
+\vec{E} = \gamma_u \sigma_0 /\epsilon_0\hat{y}
+```
+and
+```{math}
+:label: Bzunp
+\vec{B} = \mu_0 \gamma_u \sigma_0 u \hat{z}
+```
+
+We now want to switch into a reference frame that is moving at $v_R$
+relative to this new unprimed frame.  We will also need to relate
+the primed reference frame back to the rest frame, so note that
+```{math}
+:label: vprimeto0
+v' = \frac{v_R+u}{1+v_Ru/c^2}
+```
+is the speed of the primed frame relative to the rest frame, and
+we will need a $\gamma' = 1/\sqrt{1-v'^2/c^2}$.  This means that
+the charge density on the plates will be $\sigma' = \gamma'\sigma_0$
+in the new primed frame.  If we were an observer living in this
+new primed frame, we would say there was an electric field of
+$\vec{E}' = \hat{y}\sigma'/\epsilon_0$ and a magnetic field of
+$\vec{B}' = -\hat{z}\mu_0 \sigma' v'$.  Our goal is to write
+these field equations, as defined in the primed frame, in terms
+of the quantities an observer in the unprimed frame would measure.
+
+Let's look at the electric field first.  We know that the charge
+density in the unprimed frame is $\sigma = \gamma_u \sigma_0$.  And we
+know $\sigma' = \gamma' \sigma_0$.  Therefore, $\sigma' = \sigma
+\gamma'/\gamma_u$.  We can (with some effort) simplify that ratio of
+Lorentz factors (I am going to use $c=1$ and then put the $c$ back at
+the end):
+```{math}
+:label: lorfacrat1
+\frac{\gamma'}{\gamma_u} = \sqrt{\frac{1-u^2}{1-v'^2}}
+= \sqrt{\frac{1-u^2}{1-\left(\frac{v_R+u}{1+v_Ru}\right)^2}}
+= \sqrt{\frac{(1-u^2)(1+v_Ru)^2}{(1+v_Ru)^2-(v_R+u)^2}}
+```
+Expand the denominator and take the square root of the square in the numerator:
+```{math}
+:label: lorfacrat2
+\frac{\gamma'}{\gamma_u} 
+= (1+v_Ru)\sqrt{\frac{1-u^2}{1+2v_Ru+v_R^2u^2-v_R^2-2v_Ru-u^2}}
+```
+Cancel out the common factors in the denominator:
+```{math}
+:label: lorfacrat3
+\frac{\gamma'}{\gamma_u} 
+= (1+v_Ru)\sqrt{\frac{1-u^2}{1+v_R^2u^2-v_R^2-u^2}}
+```
+The four terms in the denominator are just $(1-v_R^2)(1-u^2)$, and the
+factor of $(1-u^2)$ will cancel!  That leaves (putting the $c$s back)
+```{math}
+:label: lorfacrat
+\frac{\gamma'}{\gamma_u} 
+= \frac{1+v_Ru/c^2}{\sqrt{1-v_R^2/c^2}} = \gamma_R(1+v_Ru/c^2)
+```
+This means we can write our primed electric field as
+```{math}
+:label: Eprimey1
+E'_y = \frac{\sigma}{\epsilon_0}  \gamma_R(1+v_Ru/c^2)
+```
+but $1/c^2=\mu_0\epsilon_0$, so if we multiply through the parentheses, we get
+```{math}
+:label: Eprimey2
+E'_y = \gamma_R \frac{\sigma}{\epsilon_0}  + \gamma_Rv_R\mu_0 \sigma u
+```
+But those equations contain the formulae for $E_y$ and $B_z$ in the unprimed frame!
+So we end up with
+```{math}
+:label: Eprimey
+\boxed{
+E'_y = \gamma_R E_y  - \gamma_Rv_RB_z
+}
+```
+So, much like we talked about with rotations, the electric and
+magnetic fields are getting mixed up when you switch reference
+frames. Also similar to the force on a charge moving next to a
+current, what looks like $E$ in one frame has $E$ and $B$ mixed
+together in another frame.
+
+We can follow a similar process with $B'_z$:
+```{math}
+B'_z = -\mu_0 \sigma' v' = -\mu_0 \sigma 
+\frac{\gamma'}{\gamma_u} \frac{v_R+u}{1+v_Ru/c^2}
+=  -\mu_0 \sigma 
+\gamma_R(1+v_Ru/c^2) \frac{v_R+u}{1+v_Ru/c^2}
+```
+using Equation {eq}`lorfacrat` to get rid of the ratios of gammas.
+There is a common factor in both numerator and denominator that will
+cancel!
+```{math}
+:label: Bprimez1
+B'_z =  -\mu_0 \sigma v_R
+\gamma_R - \mu_0\sigma\gamma_R u 
+```
+The second term is just the original $B_z$ times a $\gamma_R$ factor,
+and the first term depends on $\sigma$, which we know is proportional to
+the original $E_y$, so we can plug in the formulae for the fields to get
+```{math}
+:label: Bprimez
+\boxed{
+B'_z = \gamma_R B_z - \gamma_R \frac{v_R}{c^2}E_y
+}
+```
+To make sure you have understood the logic, here, you should rotate the
+capacitor and work out the last two components yourself.  You should get
+```{math}
+:label: Eprimez
+\boxed{
+E'_z = \gamma_R E_z  + \gamma_Rv_RB_y
+}
+```
+and
+```{math}
+:label: Bprimey
+\boxed{
+B'_y = \gamma_R B_y + \gamma_R \frac{v_R}{c^2}E_z
+}
+```
+
+All right, that tells us how all three components of $\vec{E}$ and
+$\vec{B}$ will change when you switch to a relatively moving reference
+frame.  Now what do we *do* with them, and how does this relate to the
+Lorentz transformation we have used for such a change up to this
+point?
+
 ## The Electromagnetic Field Tensor
 
