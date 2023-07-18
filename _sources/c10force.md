@@ -18,6 +18,7 @@ kernelspec:
 from IPython import display
 import numpy as np
 import matplotlib.pyplot as plt
+from myst_nb import glue
 
 ```
 
@@ -410,7 +411,7 @@ fast the object is moving to begin with.  Even under a constant force,
 it will never move faster than the universal speed limit.
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 Foverm = 9.81
 c = 2.995e8
 v0b = 0.8*c
@@ -438,17 +439,21 @@ while i<nn-1:
   i=i+1
 
 tarr = tarr/3.15e7
-plt.figure(figsize=(14,6))
+fig = plt.figure(figsize=(14,6))
 plt.plot(tarr,varr0/c,'b-',label='Start from 0.0')
 plt.plot(tarr,varr1/c,'m-',label='Start from 0.8')
 plt.plot([tarr[0],tarr[-1]],[1.0,1.0],'r:')
 plt.xlabel('Time (years)')
 plt.ylabel('Beta')
 plt.legend()
-plt.show()
+glue("accgfig", fig, display=False)
 ```
-```{note}
-Figure 10.1 -- A graph of $\beta$ as a function of time (in years) in
+
+```{glue:figure} accgfig
+:figwidth: 800px
+:name: constaccfig
+
+A graph of $\beta$ as a function of time (in years) in
 the lab frame for an object of mass 1 kg, experiencing a constant
 force of $9.81$ N in the $x$ direction.  The blue line shows the
 object starting from rest, while the magneta line shows the object
@@ -456,12 +461,13 @@ starting from $\beta=0.8$.  In neither case does the speed increase
 beyond 1, which is indicated by the red horizontal dotted line.
 ```
 
-Figure 10.1 also shows that if you could push an object with a force
-equal to its weight on the surface of the Earth, within a few years,
-the speed of that object would approach the speed of light, even if it
-started out from rest.  However, in practical terms, maintaining even
-such a modest thrust for years without fair is hard to do without
-running out of fuel.  But that's another topic for another day.
+{numref}`constaccfig` also shows that if you could push an object with
+a force equal to its weight on the surface of the Earth, within a few
+years, the speed of that object would approach the speed of light,
+even if it started out from rest.  However, in practical terms,
+maintaining even such a modest thrust for years without fair is hard
+to do without running out of fuel.  But that's another topic for
+another day.
 
 
 The time component of Equation {eq}`newton2x` shows yet another reason
@@ -513,7 +519,7 @@ physics.
 
 An electron, traveling in the $+x$ direction with $\beta = 0.8666$, is
 subjected to an electric field that exerts a force (as measured in the
-laboratory reference frame) of $1.OOO\times10^{-13}$ newtons in the
+laboratory reference frame) of $1.000\times10^{-13}$ newtons in the
 $+x$ direction.
 
 a) Calculate the acceleration of the object if dump truck physics
@@ -627,9 +633,9 @@ t$ (in the lab reference frame). The acceleration at any time, as
 measured in the instantaneous rest frame of the particle, is 9.8
 m/s2. How long must $\Delta t$ be before the observer in the lab
 reference frame sees the particle traveling at $c/2$?  This is very
-similar to the analysis that produced Figure 10.1.
+similar to the analysis that produced {numref}`constaccfig`.
 
-```{note}
+```{warning}
 An accelerating particle cannot technically have a "rest" frame,
 because no matter what frame you choose, the particle's velocity will
 never remain zero.  We can, however, talk about a frame at which a

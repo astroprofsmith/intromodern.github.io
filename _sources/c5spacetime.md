@@ -250,7 +250,7 @@ light, the distance traveled would be duration times speed, so
 :label: cdxp5
 dx' = c\frac{t_1+t_2}{2}
 ```
-These numbers are also displayed in Figure 5.2 (without the primes),
+These numbers are also displayed in {numref}`figinterval` (without the primes),
 using units where $c=1$, for simplicity.
 The numbers in the diagram have been calculated from $t_1$ and $t_2$,
 not measured directly from the graph.
@@ -327,19 +327,21 @@ the same, as they all equal zero, and they all have to equal zero in
 all reference frames, although of course the time and space components
 can change individually.
 
-For example, consider all the possible events that are lightlike displaced
-from the red dot.  These are all events that lie along diagonal lines
-that cross at the red dot and make $45^\circ$ angles with the horizontal
-(if $dx'=cdt'$, then the slope is 1 and it makes a $45^\circ$ angle).
-If the red dot sends out light, that light will go up and away from the
-red dot at a $45^\circ$ angle.  Any event that sends light to the red
-dot must lie below the red dot at a $45^\circ$ angle.  All the lightlike
-intervals that connect to the red dot therefore make an $\times$ across
-this diagram.  However, this set of events is actually referred to as a
-"light cone".  Why a cone?  Because if we do include the $y$ dimension as
-pointing into the computer screen, then the $\times$ can be rotated around
-the vertical axis, and instead of an $\times$, we get a cone.  Click the
-button on Figure 5.2 to see the light cones associated with the red dot.
+For example, consider all the possible events that are lightlike
+displaced from the red dot.  These are all events that lie along
+diagonal lines that cross at the red dot and make $45^\circ$ angles
+with the horizontal (if $dx'=cdt'$, then the slope is 1 and it makes a
+$45^\circ$ angle).  If the red dot sends out light, that light will go
+up and away from the red dot at a $45^\circ$ angle.  Any event that
+sends light to the red dot must lie below the red dot at a $45^\circ$
+angle.  All the lightlike intervals that connect to the red dot
+therefore make an $\times$ across this diagram.  However, this set of
+events is actually referred to as a "light cone".  Why a cone?
+Because if we do include the $y$ dimension as pointing into the
+computer screen, then the $\times$ can be rotated around the vertical
+axis, and instead of an $\times$, we get a cone.  Click the button on
+{numref}`figinterval` to see the light cones associated with the red
+dot.
 
 Of course, it's only a cone if we include two space dimensions, $x$
 and $y$.  If we could include $z$, the light would be travelling in a
@@ -349,7 +351,7 @@ sphere as a cone, and the term "light cone" has stuck.
 
 ```{warning}
 We will always talk about the "light cones" associated with any event,
-but please remember that it's really a sphere in 3D space.
+but please remember that it's really an expanding sphere in 3D space.
 ```
 
 If any real thing wanted to get from the red dot to a point on the
@@ -421,9 +423,9 @@ I stress that this axis is only tilted in the original, unprimed,
 frame.  If I were to redraw the spacetime diagram in the primed frame,
 the axes would be horizontal and vertical, as normal.  The set of
 events in the unprimed frame that will be vertical in the primed frame
-make up a tilted line in the unprimed frame.  Figure 5.4 shows a case
-where the axes are impllicitly redrawn every time the reference frame
-is shifted, while Figure 5.3 is keeping the same original axes while
+make up a tilted line in the unprimed frame.  {numref}`fig16events` shows a case
+where the axes are implicitly redrawn every time the reference frame
+is shifted, while {numref}`figaxestilt` is keeping the same original axes while
 showing which events would be on the horizontal and vertical axes, if
 you were to redraw them.
 ```

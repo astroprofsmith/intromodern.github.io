@@ -18,6 +18,7 @@ kernelspec:
 from IPython import display
 import numpy as np
 import matplotlib.pyplot as plt
+from myst_nb import glue
 
 ```
 
@@ -225,35 +226,41 @@ frame, but you have to be cautious with such generalizations, because
 $\gamma_{\rm com}$ is also getting larger as $p_i$ increases, so it's
 not so trivial to see which effect will dominate.
 
-However, Figure 9.1 shows how much energy is available in the COM
-frame, according to Equation {eq}`Etotcom` (after subtracting off the
-rest energies of the original two particles) as a function of how much
-kinetic energy the incident particle has.  You can see that the amount
-of available energy is significantly less than the amount of KE put in
-(the black dotted line represent equality).  It appears that some of
-the energy in the lab frame goes into moving the center of momentum of
-the system.
+However, {numref}`energyfig` shows how much energy is available in the
+COM frame, according to Equation {eq}`Etotcom` (after subtracting off
+the rest energies of the original two particles) as a function of how
+much kinetic energy the incident particle has.  You can see that the
+amount of available energy is significantly less than the amount of KE
+put in (the black dotted line represent equality).  It appears that
+some of the energy in the lab frame goes into moving the center of
+momentum of the system.
+
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 E0 = 938
-KE = np.arange(0,100,1)*1000.0
+KE = np.arange(0,10000,1)
 beta = np.sqrt(KE/(KE+2.0*E0))
 gam = 1.0/np.sqrt(1-beta**2)
 Elab = 2.0*E0+KE
 pi = np.sqrt(KE**2+2.0*E0*KE)
 Ecom = gam*(Elab-beta*pi)
-plt.figure(figsize=(9,5))
+fig = plt.figure(figsize=(9,5))
 plt.plot(KE,Ecom-2.0*E0,'b-',label='E in COM')
 plt.plot(KE,KE,'k:',label = 'Eout = Ein')
 plt.xlabel('Kinetic Energy of Incident Particle (MeV)')
 plt.ylabel('Available Energy in COM Frame (MeV)')
-plt.axis([0,1.0e5,0,1.25e4])
+plt.axis([0,1.0e4,0,3e3])
 plt.legend()
-plt.show()
+glue("ecomfig", fig, display=False)
+
 ```
-```{note}
-Figure 9.1 -- Graph of energy available in the COM frame
+
+```{glue:figure} ecomfig
+:figwidth: 800px
+:name: energyfig
+
+Graph of energy available in the COM frame
 (after subtracting the rest energy of the two particles involved)
 as a function of the KE of the incident particle in the lab
 frame.  There is significantly less energy available in the
@@ -552,18 +559,19 @@ impossible that a particle with no mass (zero rest energy) could have
 momentum.
 
 Compton shot 17.5 keV X-ray photons at a carbon target as
-schematically shown in Figure 9.2. If the relativistic model were not
-wrong, the photons would interact with the valence electrons (those
-that are not tightly bound to the nucleus, typically 11 eV binding
-energy) in the atom.  According to relativity, the interaction should
-be similar to that of billiard balls colliding. The valence electron
-would get scattered at some angle $\phi$ and the scattered photon would be
-emitted at some other angle $\theta$ as schematically shown in
-Figure 9.3.
+schematically shown on the left side of {numref}`cslabfig`. If the
+relativistic model were not wrong, the photons would interact with the
+valence electrons (those that are not tightly bound to the nucleus,
+typically 11 eV binding energy) in the atom.  According to relativity,
+the interaction should be similar to that of billiard balls
+colliding. The valence electron would get scattered at some angle
+$\phi$ and the scattered photon would be emitted at some other angle
+$\theta$ as schematically shown on the right side of
+{numref}`cslabfig`.
 
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
 fig.suptitle('Photon Collides with an Electron: Lab Frame')
 ax1.arrow(0,0,2,0,head_width=0.1)
@@ -601,10 +609,16 @@ ax2.plot([1.5],[0.7],'ro')
 ax2.plot([1.0,2.0],[1.0,1.0],'k:')
 
 ax2.set_title('After Collision')
-plt.show()
+
+glue("comptonlabfig", fig, display=False)
+
 ```
-```{note}
-Figure 9.2 -- Schematic diagram of a photon scattering off of an
+
+```{glue:figure} comptonlabfig
+:figwidth: 800px
+:name: cslabfig
+
+Schematic diagram of a photon scattering off of an
 electron within the frame of reference of the laboratory.  The left
 side shows the situation before the collision, while the right side
 shows the scattering after the collision.  Note that these are **NOT**
@@ -619,8 +633,64 @@ the electron after the collision is equal to the momentum of the
 photon before the collision.
 ```
 
+The energy and momenta of the scattered particles would be determined
+by momentum and energy conservation. Compton worked out the theory for
+the scattering and did the experiment. He measured the energy of the
+scattered photons as a function of angle $\theta$. The theory and
+experiment were in beautiful agreement, giving a clear confirmation of
+the relativistic theory. For this work, Arthur Compton was awarded the
+1927 Nobel Prize in physics.
+
+### Special Relativistic Model
+
+
+In the laboratory frame ({numref}`cslabfig`), the momentum 4-vector for the
+system is
+```{math}
+:label: p4totcs
+[p_4]_{\rm lab} =
+\begin{bmatrix}
+i\frac{1}{c}(E_{\rm phot} + E_{0})\\
+\frac{E_{\rm phot}}{c}\\
+0\\
+0
+\end{bmatrix}
+```
+where $E_0$ is the rest energy of the electron and $E_{\rm phot}/c$
+is the momentum of the photon.
+
+I am **not** going to ignore $y$ and $z$ for this problem, because
+we will need to consider the motion of the particles in the $y$
+direction.
+
+We then use Equation {eq}`betacom` to find the speed of the
+center of momentum frame $\beta_{\rm com}$:
+```{math}
+:label: betcomcs
+\boxed{
+\beta_{\rm com} = \frac{E_{\rm phot}}{E_{\rm phot} + E_0}}
+```
+If we switch into this frame (left side of {numref}`cscomfig`),
+the two particles will both be heading toward each other.  Not
+at the same *speed*, of course (the photon is still moving at
+the speed of light), but with the same *momentum*.
+
+Now, we can use the results from the Doppler shift (Equation
+{eq}`Edopp`) to find the energy of the photon before the collision in
+the com reference frame.
+```{math}
+:label: ephotcomcs
+E_{\rm photcom} = \gamma_{\rm com}(1-\beta_{\rm com})E_{\rm phot}
+```
+After the collision in the COM frame (see the right side of
+{numref}`cscomfig`), the scattered photon and the recoiling electron
+still must have a total momentum of 0 and the same total energy as
+before the collision. The only way for this to happen at any angle
+$\xi$ for the two scattered particles to have the same size momentum
+as they did before the collision.
+
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
 fig.suptitle('Photon Collides with an Electron: Center of Momentum Frame')
 ax1.arrow(0,0,2,0,head_width=0.1)
@@ -658,10 +728,15 @@ ax2.plot([.7],[0.5],'ro')
 ax2.plot([0.2,2.0],[1.0,1.0],'k:')
 
 ax2.set_title('After Collision')
-plt.show()
+glue("comptoncomfig", fig, display=False)
+
 ```
-```{note}
-Figure 9.3 -- Schematic diagram of a photon scattering off of an
+
+```{glue:figure} comptoncomfig
+:figwidth: 800px
+:name: cscomfig
+
+Schematic diagram of a photon scattering off of an
 electron within the center of momentum frame of reference. The left
 side shows the situation before the collision, while the right side
 shows the scattering after the collision.  Note that these are **NOT**
@@ -673,58 +748,6 @@ equal and opposite momentum, but the angle of their motion has
 changed completely. The photon now makes an angle of $\xi$
 with the horizontal axis.
 ```
-
-The energy and momenta of the scattered particles would be determined
-by momentum and energy conservation. Compton worked out the theory for
-the scattering and did the experiment. He measured the energy of the
-scattered photons as a function of angle $\theta$. The theory and
-experiment were in beautiful agreement, giving a clear confirmation of
-the relativistic theory. For this work, Arthur Compton was awarded the
-1927 Nobel Prize in physics.
-
-### Special Relativistic Model
-
-
-In the laboratory frame (Figure 9.2), the momentum 4-vector for the
-system is
-```{math}
-:label: p4totcs
-[p_4]_{\rm lab} =
-\begin{bmatrix}
-i\frac{1}{c}(E_{\rm phot} + E_{0})\\
-\frac{E_{\rm phot}}{c}\\
-0\\
-0
-\end{bmatrix}
-```
-where $E_0$ is the rest energy of the electron and $E_{\rm phot}/c$
-is the momentum of the photon.
-
-I am **not** going to ignore $y$ and $z$ for this problem, because
-we will need to consider the motion of the particles in the $y$
-direction.
-
-We then use Equation {eq}`betacom` to find the speed of the
-center of momentum frame $\beta_{\rm com}$:
-```{math}
-:label: betcomcs
-\boxed{
-\beta_{\rm com} = \frac{E_{\rm phot}}{E_{\rm phot} + E_0}}
-```
-
-Now, we can use the results from the Doppler shift (Equation
-{eq}`Edopp`) to find the energy of the photon before the collision in
-the com reference frame.
-```{math}
-:label: ephotcomcs
-E_{\rm photcom} = \gamma_{\rm com}(1-\beta_{\rm com})E_{\rm phot}
-```
-After the
-collision (see Figure 9.3), the scattered photon and the recoiling
-electron still must have a total momentum of 0 and the same total
-energy as before the collision. The only way for this to happen at any
-angle $\xi$ for the two scattered particles to have the same size
-momentum as they did before the collision.
 
 So after the collision, the energy of the scattered photon is still
 the same as in Equation {eq}`ephotcomcs`. It is just going out at an
@@ -821,8 +844,8 @@ E_0+E_{\rm phot}(1-\cos{\theta})\right)
 =
 E_0E_{\rm phot}
 ```
-This equation is usually written in a final form by dividing
-both sides by $E_0E_{\rm phot}E_{\rm photlab}$ to get
+This equation is usually written in a final form by dividing both
+sides by the triple product $E_0E_{\rm phot}E_{\rm photlab}$ to get
 ```{math}
 :label: csEeq
 \boxed{
@@ -859,19 +882,19 @@ spectra he recorded that show the energy shift for eight different
 values of $\theta$.  From these graphs, it is possible to measure
 $E_{\rm photlab}$ and construct the graph we need to test the
 hypothesis posed by Equation {eq}`csEeq`.  Such a graph for four of
-the measurements reported in 1923 is shown in Figure 9.4.
+the measurements reported in 1923 is shown in {numref}`csresultsfig`.
 
 Note the excellent agreement between experiment and the predictions of
 Equation {eq}`csEeq`! One over the y-intercept is within one $\sigma$
 of the known 17.5 keV value for the incoming photons in the lab frame.
-The best fit slope in Figure 9.4 is $(1.90\pm0.04)\times10^{-3}$
+The best fit slope in {numref}`csresultsfig` is $(1.90\pm0.04)\times10^{-3}$
 1/keV, which means the best estimate of the rest mass of the electron
 from this experiment is $526\pm10$ keV.  This is within 1.4 $\sigma$
 of the current accepted best value, 511 keV.
 
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 x = np.array([0.00727916669899,0.291343510515,1.00907060776,1.72012215409])
 y = np.array([0.000143505126673,0.000682172607672,0.00198582395962,0.00341847052919])+0.057
 
@@ -903,14 +926,13 @@ sa = np.sqrt(-epsilon/xi)
 x_new = np.arange(0,2,.25)
 y_new = b*x_new+a
 
-plt.figure(figsize=(8,7))
+fig = plt.figure(figsize=(8,7))
 plt.plot(x,y,'bs',label="Original Data")
 plt.plot(x_new,y_new,"k:",label="Linear Fit")
 plt.xlabel(r"1-$\cos{\theta}$")
 plt.ylabel("1/E scattered (1/keV)")
 plt.title("Testing Compton Scattering Hypothesis")
 plt.legend()
-plt.show()
 
 slp = b
 icpt = a
@@ -924,12 +946,15 @@ print("The best-fit slope is ({0:3.2f} +- {1:3.2f})x10^-3 1/keV".format(slp*1000
 print("The best-fit y-intercept is ({0:4.3f} +- {1:4.3f})x10^-2 1/keV".format(icpt*100,eicpt*100))
 print("The estimate of E0 is ({0:3.0f} +- {1:2.0f}) keV".format(E0,eE0))
 print("The estimate of Egam is ({0:4.2f} +- {1:3.2f}) keV".format(Eg,eEg))
-
-
+glue("compresfig", fig, display=False)
 ```
-```{note}
-Figure 9.4 -- Graph constructed from measurements reported
-in Compton's 1923 paper.  He measuredt the wavelength of 17.5 keV
+
+```{glue:figure} compresfig
+:figwidth: 800px
+:name: csresultsfig
+
+Graph constructed from measurements reported
+in Compton's 1923 paper.  He measured the wavelength of 17.5 keV
 X-rays scatteredfrom graphite. Notice the agreement with the
 predictions of Equation {eq}`csEeq`. The slope can be interpreted
 as 1/(rest energy of an electron).
@@ -1005,7 +1030,7 @@ target. Calculate the energy of the photons that are scattered at an
 angle of 175 degrees with respect to the original beam line.
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 x = np.array([0.124649657678,0.287401145777,0.500798018091,0.743924626861,1.0030501261,1.42778258788])
 y = np.array([1.82861597118,2.11914520336,2.51767621869,2.98512420428,3.52077974806,4.34735560142])
 
@@ -1037,7 +1062,7 @@ sa = np.sqrt(-epsilon/xi)
 x_new = np.arange(0,2,.25)
 y_new = b*x_new+a
 
-plt.figure(figsize=(8,7))
+fig = plt.figure(figsize=(8,7))
 plt.plot(x,y,'m^',label="Duncan Original Data")
 plt.plot(x_new,y_new,"k:",label="Linear Fit")
 plt.xlabel(r"1-$\cos{\theta}$")
@@ -1059,19 +1084,23 @@ print("The best-fit slope is ({0:4.3f} +- {1:4.3f}) 1/MeV".format(slp,eslp))
 print("The best-fit y-intercept is ({0:4.3f} +- {1:4.3f}) 1/MeV".format(icpt,eicpt))
 print("The estimate of E0 is ({0:4.0f} +- {1:1.0f}) keV".format(E0*1000,eE0*1000))
 print("The estimate of Egam is ({0:4.0f} +- {1:1.0f}) keV".format(Eg*1000,eEg*1000))
-
+glue("guilfordfig", fig, display=False)
 ```
-```{note}
-Figure 9.5 -- Guilford College student Alison Duncan reproduced
+
+```{glue:figure} guilfordfig
+:figwidth: 800px
+:name: duncanfig
+
+Guilford College student Alison Duncan reproduced
 Compton's experiment in 2005.  She used a pulse height analyzer
 to measure the energy of a photon beam from a Cs-137 source,
 after the photons had been scattered off an aluminum target.
-The graph follows Figure 9.4 with the same axes.
+The graph uses the same axes as {numref}`csresultsfig`.
 ```
 
-11) Figure 9.5 shows some results of a scattering experiment performed
-by Alison Duncan during the spring semester of 2005 as part of her
-first year Jab. She collimated a beam of photons from a Cs-l37
+11) {numref}`duncanfig` shows some results of a scattering experiment
+performed by Alison Duncan during the spring semester of 2005 as part
+of her first year Jab. She collimated a beam of photons from a Cs-l37
 radioactive source and aimed the beam at an aluminum target. She then
 used a NaI detector to measure the energy of the photons that were
 scattered at various angles with respect to the initial beam line. She

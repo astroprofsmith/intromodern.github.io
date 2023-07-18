@@ -18,6 +18,7 @@ kernelspec:
 from IPython import display
 import numpy as np
 import matplotlib.pyplot as plt
+from myst_nb import glue
 
 ```
 
@@ -262,9 +263,9 @@ the components of these two 4-vectors related?
 
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 # 3D plot of a spacetime diagram with x, ct, and y
-plt.figure(figsize=(5,5))
+fig=plt.figure(figsize=(5,5))
 plt.arrow(0,0,1,0,head_width=0.1)
 plt.arrow(0,0,0,1,head_width=0.1)
 
@@ -287,10 +288,15 @@ ax.text(-0.35, .5, "A'")
 ax.text(-.55, .7, "ct'")
 ax.text(.7, -0.5, "x'")
 ax.text(1.0,1.0,"beta_4")
-plt.show()
+glue("betafig", fig, display=False)
+
 ```
-```{note}
-Figure 7.1 -- A beta four vector represented in a spacetime diagram
+
+```{glue:figure} betafig
+:figwidth: 800px
+:name: stbeta4fig
+
+A beta four vector represented in a spacetime diagram
 for a reference frame $A$.  A second reference frame $A'$ is moving
 to the right, relative to the first.  In this case, the time component
 of the beta four vector represented by the diagonal arrow is 1.0
@@ -310,14 +316,15 @@ $\beta_R\ll 1$, the prediction we get should reduce to
 $\beta'=\beta-\beta_R$, which is what Galileo would expect it to be.
 
 ```{warning}
-In the diagram shown in Figure 7.1, the relative velocity refers
+In the diagram shown in {numref}`stbeta4fig`, the relative velocity refers
 to the reference frames.  The right-pointing arrow means that
 the **ground** is moving right, relative to the train.  This means
 from the ground's point of view, the train is travelling **left**,
 which is in the **opposite** direction of the ball's velocity.
 The initial set up I described above had the ball thrown in the
 **same** direction as the train's velocity.  To get that situation,
-mathematically, just flip the direction of $v_R$ in Figure 7.1.
+mathematically, just flip the direction of $v_R$ in {numref}`stbeta4fig`.
+
 I will leave it this way because the default for a Lorentz transformation
 is to have $+v_R$ point to the right.  The minus case will be included
 later.
@@ -401,7 +408,7 @@ This formula also takes into account what happens if the relative velocity
 goes the other way: simply change the minus signs to plus signs.  Sometimes
 you will see the formula written with $\mp$ symbols, but that's not strictly
 necessary, as long as you remember to set up the problem with the reference
-frames as indicated in Figure 7.1.
+frames as indicated in {numref}`stbeta4fig`.
 
 Finally, note that this formula allows us to avoid the problem of
 going faster than light if the speeds get large.  Consider the inverse
@@ -525,18 +532,19 @@ get rid of the trig functions):
 +  \left(\frac{\beta\sin{\theta}}{\gamma_R(1 - \beta_R\beta\cos{\theta})}\right)^2
 ```
 This equation is a bit harder to get any intuition out of, but note
-that at slow speeds, as $\beta_R\rightarrow 0$ and $\gamma_R\rightarrow 1$,
-the denominators all go to 1.  The numerators are just what Newton would
-expect, as explained above.  So the correspondance principle is satisfied.
-To try to get some more intuition about the implications of this equation,
-a graph is more helpful than an equation.  Figure 7.2 shows a graph of
-$\beta'$ as a function of $\gamma_R$ for an arbitrary choice of unprimed
-values of $\beta=0.866$ and $\theta=\pi/4$.
+that at slow speeds, as $\beta_R\rightarrow 0$ and
+$\gamma_R\rightarrow 1$, the denominators all go to 1.  The numerators
+are just what Newton would expect, as explained above.  So the
+correspondance principle is satisfied.  To try to get some more
+intuition about the implications of this equation, a graph is more
+helpful than an equation.  {numref}`figoffaxis` shows a graph of
+$\beta'$ as a function of $\gamma_R$ for an arbitrary choice of
+unprimed values of $\beta=0.866$ and $\theta=\pi/4$.
 
 
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 betar = np.arange(-0.95,1.0,0.01)
 gamr = 1/np.sqrt(1-betar**2)
 th = np.pi/4
@@ -546,7 +554,7 @@ bpx = (beta*np.cos(th)-betar)/denom
 bpy = beta*np.sin(th)/gamr/denom
 bp = np.sqrt(bpx**2+bpy**2)
 bpnosr = np.sqrt((beta*np.cos(th)-betar)**2+(beta*np.sin(th))**2)
-plt.figure(figsize=(9,5))
+fig=plt.figure(figsize=(9,5))
 plt.plot(betar,bp,'m-',label='Total Magnitude')
 plt.plot(betar,bpx,'b-',label='Horizontal Component')
 plt.plot(betar,bpy,'r-',label='Vertical Component')
@@ -557,10 +565,16 @@ plt.plot([beta,beta],[-1,1],'k:')
 plt.xlabel('Relative velocity between frames')
 plt.ylabel('Speed of object in primed frame')
 plt.legend()
-plt.show()
+glue("offaxfig", fig, display=False)
+
 ```
-```{note}
-Figure 7.2 -- Values for the off-axis beta velocity in the primed
+
+```{glue:figure} offaxfig
+:figwidth: 800px
+:name: figoffaxis
+
+
+Values for the off-axis beta velocity in the primed
 frame, for an unprimed $\beta=0.866$ at $\pi/4$ above the $x$ axis.
 The blue line shows the horizontal component of $\beta'$ while the red
 line shows the vertical component.  The magneta line is the total

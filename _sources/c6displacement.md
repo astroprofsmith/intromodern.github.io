@@ -18,6 +18,7 @@ kernelspec:
 from IPython import display
 import numpy as np
 import matplotlib.pyplot as plt
+from myst_nb import glue
 
 ```
 
@@ -72,16 +73,16 @@ events.
 ## A Summary of The Story So Far
 
 Before diving into the analysis, a quick summary of what we have
-established so far.  Figure 6.1 reproduces Figure 4.1, showing two
-events in spacetime diagram with a displacement four vector between
-them.
+established so far.  {numref}`dejavu` reproduces
+{numref}`stwithvecfig`, showing two events in spacetime diagram with a
+displacement four vector between them.
 
 
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 # 3D plot of a spacetime diagram with x, ct, and y
-plt.figure(figsize=(5,5))
+fig = plt.figure(figsize=(5,5))
 plt.arrow(0,0,1,0,head_width=0.1)
 plt.arrow(0,0,0,1,head_width=0.1)
 
@@ -106,10 +107,16 @@ ax.text(-0.35, .5, "S'")
 ax.text(-.55, .7, "ct'")
 ax.text(.7, -0.5, "x'")
 ax.text(1.0,1.0,"dx_4")
-plt.show()
+glue("copyfig", fig, display=False)
+
 ```
-```{note}
-Figure 6.1 -- Two events in a spacetime diagram with a displacement
+
+```{glue:figure} copyfig
+:figwidth: 800px
+:name: dejavu
+
+
+Two events in a spacetime diagram with a displacement
 four vector between them.
 ```
 
@@ -142,10 +149,10 @@ dz'
 
 Now, as an example, let us consider the displacement 4-vector as
 measured by two different observers. For simplicitly, we assume the
-two events as measured by the unprimed observer (shown in Figure 6.1)
-have real displacements $dy$ and $dz$ equal O. We can therefore ignore
-the last two components and write the displacement 4-vector in the
-unprimed coordinate system as:
+two events as measured by the unprimed observer (shown in
+{numref}`dejavu`) have real displacements $dy$ and $dz$ equal O. We
+can therefore ignore the last two components and write the
+displacement 4-vector in the unprimed coordinate system as:
 ```{math}
 :label: equnprime
 [dx_4] =
@@ -336,18 +343,18 @@ trucks to work this problem.
 
 
 There are two reference frames of interest, and they are graphed in
-Figure 6.2. Let the unprimed reference (on the right) frame be the
-rest frame of the decay (where the observer is traveling at the same
-speed at the muons, and the Earth is racing toward the particle). Let
-the $+x$ direction be "down" (towards the center of the Earth). The
-second observer (the primed observer) is at rest with respect to the
-Earth and the muon is moving quickly. The relative speed of the two
-reference frames $\beta_R =-$speed of muon. (The sign of the relative
-speed is negative since the apparent motion of the Earth is up toward
-the muon).
+{numref}`muonfigatm`. Let the unprimed reference (on the right) frame
+be the rest frame of the decay (where the observer is traveling at the
+same speed at the muons, and the Earth is racing toward the
+particle). Let the $+x$ direction be "down" (towards the center of the
+Earth). The second observer (the primed observer) is at rest with
+respect to the Earth and the muon is moving quickly. The relative
+speed of the two reference frames $\beta_R =-$speed of muon. (The sign
+of the relative speed is negative since the apparent motion of the
+Earth is up toward the muon).
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 dx=4.2
 cdt = 5.6
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
@@ -400,11 +407,15 @@ gam = 1/np.sqrt(1-beta**2)
 cdtp = cdt/gam
 ax2.plot([3],[0.5],'ro')
 ax2.plot([3],[0.5+cdtp],'bo')
+glue("mufig", fig, display=False)
 
-plt.show()
 ```
-```{note}
-Figure 6.2 -- Two spacetime diagrams to represent the creation of a
+
+```{glue:figure} mufig
+:figwidth: 800px
+:name: muonfigatm
+
+Two spacetime diagrams to represent the creation of a
 muon in the upper atmosphere (red dot) and its subsequent decay at
 the Earth's surface (blue dot).  The unprimed frame (right diagram)
 is at rest with respect to the muon, while the primed frame (left
@@ -551,18 +562,19 @@ method would be to choose a reference frame in which the the object is
 moving at a known velocity $v_R$.  When the front edge passes the
 observer creates a flash of light.  That is the first event. When the
 back edge passes the observer, a second flash is created. A spacetime
-diagram for this process is shown in Figure 6.3, where the worldline
-of the observer (at rest) is a red vertical line.  The worldline of
-the front of the object is represented as a blue tilted line, and the
-worldline of the back of the obejct is a green tilted line.  The slope
-of these lines is $1/\beta$, where $\beta$ is the speed of the object.
-The first event is where the green line crosses the red line, and the
-second event is where the blue line crosses the red line.
+diagram for this process is shown in {numref}`obsrest`, where the
+worldline of the observer (at rest) is a red vertical line.  The
+worldline of the front of the object is represented as a blue tilted
+line, and the worldline of the back of the obejct is a green tilted
+line.  The slope of these lines is $1/\beta$, where $\beta$ is the
+speed of the object.  The first event is where the green line crosses
+the red line, and the second event is where the blue line crosses the
+red line.
 
 
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 # ST plot of object passing observer
 xrest = np.zeros((3,1))+0.3
 yrest = np.arange(3)*1.7/3.0
@@ -571,7 +583,7 @@ xfront = np.arange(0,.5,.1)
 yfront = 0.75-xfront/beta
 xback = np.arange(0,1.0,.2)
 yback = 1.45-xback/beta
-plt.figure(figsize=(5,5))
+fig = plt.figure(figsize=(5,5))
 plt.arrow(0,0,1,0,head_width=0.1)
 plt.arrow(0,0,0,1,head_width=0.1)
 
@@ -595,10 +607,15 @@ ax.text(1.1, -0.25, "v_R")
 ax.text(-0.35, .5, "S_r")
 ax.text(-.55, .7, "ct_r")
 ax.text(.7, -0.5, "x_r")
-plt.show()
+glue("obsrestfig", fig, display=False)
+
 ```
-```{note}
-Figure 6.3 -- A spacetime diagram that shows an object passing by
+
+```{glue:figure} obsrestfig
+:figwidth: 800px
+:name: obsrest
+
+A spacetime diagram that shows an object passing by
 an observer at rest.  The red line is the world line of the observer.
 The green line and the blue lines are the front and back of the object,
 respectively.  The object is moving to the left, at some speed $v_R$.
@@ -640,7 +657,7 @@ of the object at rest.
 
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 # ST plot of object passing observer
 def lm(b,ct,x):
     g = 1/np.sqrt(1-b**2)
@@ -659,7 +676,7 @@ yrest,xrest = lm(-beta,yrest,xrest)
 yfront,xfront = lm(-beta,yfront,xfront)
 yback,xback = lm(-beta,yback,xback)
 
-plt.figure(figsize=(5,5))
+fig = plt.figure(figsize=(5,5))
 plt.arrow(0,0,1,0,head_width=0.1)
 plt.arrow(0,0,0,1,head_width=0.1)
 
@@ -683,16 +700,21 @@ ax.text(1.1, -0.25, "v_R")
 ax.text(-0.35, .5, "S_m")
 ax.text(-.55, .7, "ct_m")
 ax.text(.7, -0.5, "x_m")
-plt.show()
+glue("objrestfig", fig, display=False)
+
 ```
-```{note}
-Figure 6.4 -- A spacetime diagram that shows an observer passing by
+
+```{glue:figure} objrestfig
+:figwidth: 800px
+:name: objrest
+
+A spacetime diagram that shows an observer passing by
 an object at rest.  The red line is the world line of the observer.
 The green line and the blue lines are the front and back of the object,
 respectively.  The observer is moving to the right, at some speed $v_R$.
 Note that the lines in this diagram have been **calculated** by
-performing Lorentz transformations on points in the lines shown in Figure
-6.3 -- they have not been simply redrawn.
+performing Lorentz transformations on points in the lines shown in
+{numref}`obsrest` -- they have not been simply redrawn.
 ```
 
 When we write the four vector in this reference frame, it looks like
@@ -710,7 +732,8 @@ a Lorentz transformation:
 :label: lmobj
 [dx_4]_m = {\cal L}_x(\beta_R)[dx_4]_r
 ```
-based on the diagram in Figure 6.4.
+based on the diagram in {numref}`objrest`.
+
 ```{math}
 :label: lmobj2
 \begin{bmatrix}
@@ -862,19 +885,19 @@ the front door.  If Frank closes his door before or at the same time
 as Betty, then the ladder can reasonably be said to be **in** the
 garage.
 
-We now have four events we can plot on a ST diagram:  the front of
-the ladder enters the front of the garage, the back of the ladder
-enters the front of the garage (and Frank closes the door), the
-front of the ladder arrives at the back of the garage (and Betty
-opens the door), and finally, the back of the ladder reaches the back
-of the garage.  We will look at the borderline case, where Frank
-closes his door the instant Betty opens hers.  The spacetime diagram
-is shown in Figure 6.5, with four different color worldlines
-representing the front and back of the ladder and the garage.
-Our four events are the points where these four lines cross.
+We now have four events we can plot on a ST diagram: the front of the
+ladder enters the front of the garage, the back of the ladder enters
+the front of the garage (and Frank closes the door), the front of the
+ladder arrives at the back of the garage (and Betty opens the door),
+and finally, the back of the ladder reaches the back of the garage.
+We will look at the borderline case, where Frank closes his door the
+instant Betty opens hers.  The spacetime diagram is shown in
+{numref}`laddermov`, with four different color worldlines representing
+the front and back of the ladder and the garage.  Our four events are
+the points where these four lines cross.
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 # ST plot of ladder going through garage
 
 xfgar = np.zeros(4)+0.3
@@ -890,7 +913,7 @@ yflad = xflad/beta
 xblad = np.arange(-2,4,.5)
 yblad = xblad/beta+gam/beta
 
-plt.figure(figsize=(3.5,6))
+fig=plt.figure(figsize=(3.5,6))
 plt.arrow(0,0,1,0,head_width=0.1)
 plt.arrow(0,0,0,1,head_width=0.1)
 
@@ -915,10 +938,15 @@ ax.text(1.1, -0.25, "v_R")
 ax.text(-0.35, .5, "S'")
 ax.text(-.55, .7, "ct'")
 ax.text(.7, -0.5, "x'")
-plt.show()
+glue("ladderfig", fig, display=False)
+
 ```
-```{note}
-Figure 6.5 -- A spacetime diagram showing a moving ladder
+
+```{glue:figure} ladderfig
+:figwidth: 800px
+:name: laddermov
+
+A spacetime diagram showing a moving ladder
 passing through a garage at rest.  The green line is the
 front of the garage while the blue line is the back of the garage.
 The red line is the front of the ladder, while the cyan line
@@ -935,19 +963,19 @@ garage.  The red line crosses the blue line at the same time as the
 cyan line crosses the green line.  For that brief instant, the ladder
 was in the garage.  These four events give us at least four
 displacement four vectors, each of which defines one side of the
-parallelogram depicted by the crossing lines.  Figure 6.6 shows
-what happens when you apply the Lorentz transformation to
-these events, to shift them into the rest frame of the ladder.
+parallelogram depicted by the crossing lines.  {numref}`garagemov`
+shows what happens when you apply the Lorentz transformation to these
+events, to shift them into the rest frame of the ladder.
 
-In figure 6.6, the red and cyan lines have become vertical, confirming
-that the ladder is indeed at rest, while the green and blue lines tilt
-to the left.  The green and blue lines are closer together than they
-were (1 m in this frame) while the cyan and red lines are further
-apart (4 m long ladder at rest).
+In {numref}`garagemov`, the red and cyan lines have become vertical,
+confirming that the ladder is indeed at rest, while the green and blue
+lines tilt to the left.  The green and blue lines are closer together
+than they were (1 m in this frame) while the cyan and red lines are
+further apart (4 m long ladder at rest).
 
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 # ST plot of object passing observer
 def lm(b,ct,x):
     g = 1/np.sqrt(1-b**2)
@@ -974,7 +1002,7 @@ xblad = np.arange(-2,4,.5)
 yblad = xblad/beta+gam/beta
 (yblad,xblad) = lm(beta,yblad,xblad)
 
-plt.figure(figsize=(6,6))
+fig= plt.figure(figsize=(6,6))
 plt.arrow(-4,0,1,0,head_width=0.1)
 plt.arrow(-4,0,0,1,head_width=0.1)
 
@@ -999,13 +1027,18 @@ ax.text(-2.9, -0.25, "v_R")
 ax.text(-4.35, .5, "S")
 ax.text(-4.55, .7, "ct")
 ax.text(-3.3, -0.6, "x")
-plt.show()
+glue("garagefig", fig, display=False)
+
 ```
-```{note}
-Figure 6.6 -- A spacetime diagram showing a stationary ladder
+
+```{glue:figure} garagefig
+:figwidth: 800px
+:name: garagemov
+
+A spacetime diagram showing a stationary ladder
 with a garage passing around it.  The axes have been shifted four
 meters to the left to avoid crowding.  The colors of the worldlines
-and the four events are the same as in Figure 6.5, but note that
+and the four events are the same as in {numref}`laddermov`, but note that
 these worldlines have been calculated via a Lorentz transformation.
 ```
 

@@ -94,7 +94,7 @@ E_z +u_xB_y - u_yB_x
 ```
 
 Let's examine these terms carefully, and compare them to the EM field
-tensor (Equation no number yet).  Note that the time component is just
+tensor (Equation {eq}`EMtensorfin`).  Note that the time component is just
 what you would get if you multiplied each term across the top row of
 the EM tensor with the corresponding term of the velocity four vector
 (the time component of $u^\alpha$ is eliminated by the zero on the
@@ -322,9 +322,11 @@ For now, let's remind ourselves of the four classic Maxwell's Equations:
 :label: ampere
 \vec{\nabla}\times\vec{E} - \mu_0\epsilon_0 \frac{\partial \vec{B}}{\partial t} = \mu_0\vec{J}
 ```
+
 Now, I have already introduced the four-divergence in the continuity
-equation ({eq}`fourdivdef`).  What happens if we take the four-divergence
-of the EM field tensor?  Using Equation no number yet, that works out to
+equation (Equation {eq}`fourdivdef`).  What happens if we take the
+four-divergence of the EM field tensor?  Using Equation
+{eq}`EMtensorfin`, that works out to
 ```{math}
 :label: div4EM
 \partial_\nu F^{\mu\nu} = \left(\frac{\partial}{\partial (ct)},\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)
@@ -336,8 +338,14 @@ of the EM field tensor?  Using Equation no number yet, that works out to
 \end{pmatrix}
 ```
 
-Let's start with the first row.  The zero in the upper left corner of
-the EM tensor kills the time derivative.  For the rest, we have the
+Let's start with the first row.
+```{math}
+:label: divrow0
+\partial_\nu F^{0\nu} = \partial_0 F^{00} + \partial_1 F^{01}
++ \partial_2 F^{02} + \partial_3 F^{03}
+```
+The zero in the upper left corner of the EM tensor ($F^{00}$) kills
+the time derivative ($\partial_0$).  For the rest, we have the
 successive derivatives of each component of $\vec{E}$ with respect to
 each successive space dimension.  That's a three-divergence.  So that
 first row works out to $\vec{\nabla}\cdot\vec{E}/c$.  But Equation
@@ -370,10 +378,10 @@ to indicate the four-vector components!
 What about the other components?  Lets look at $\mu=1$:
 ```{math}
 :label: div4EM_1
-\partial_\nu F^{1\nu} = \frac{\partial}{\partial (ct)} F_{10}
-+  \frac{\partial}{\partial x} F_{11}
-+  \frac{\partial}{\partial y} F_{12}
-+  \frac{\partial}{\partial z} F_{13}
+\partial_\nu F^{1\nu} = \frac{\partial}{\partial (ct)} F^{10}
++  \frac{\partial}{\partial x} F^{11}
++  \frac{\partial}{\partial y} F^{12}
++  \frac{\partial}{\partial z} F^{13}
 = -\frac{1}{c^2}\frac{\partial E_x}{\partial t} + 0.0 +
 \frac{\partial B_z}{\partial y} - \frac{\partial B_y}{\partial z} 
 ```
@@ -398,8 +406,8 @@ you compare the left sides of Equations {eq}`nogaussB` and
 look the same, just swapping $\vec{E}$ and $\vec{B}$ around.  At the
 end of Chapter 11, we constructed *two* versions of the EM tensor, one
 of which had the $E$ and $B$ components switched.  So, if we bring
-back the dual tensor $G^{\mu\nu}$ at this point (Equation no number
-yet, either), and take its four-divergence, we will see that
+back the dual tensor $G^{\mu\nu}$ at this point (Equation
+{eq}`Dualtensorfin`), and take its four-divergence, we will see that
 ```{math}
 :label: dual4div
 \boxed{
@@ -420,10 +428,10 @@ and we get the same result as Equation {eq}`div4EM_1`, just with
 $E$ and $B$ swapped:
 ```{math}
 :label: div4dual_1
-\partial_\nu G^{1\nu} = \frac{\partial}{\partial (ct)} G_{10}
-+  \frac{\partial}{\partial x} G_{11}
-+  \frac{\partial}{\partial y} G_{12}
-+  \frac{\partial}{\partial z} G_{13}
+\partial_\nu G^{1\nu} = \frac{\partial}{\partial (ct)} G^{10}
++  \frac{\partial}{\partial x} G^{11}
++  \frac{\partial}{\partial y} G^{12}
++  \frac{\partial}{\partial z} G^{13}
 = -\frac{1}{c}\frac{\partial B_x}{\partial t} + 0.0 -
 \frac{\partial E_z}{c\partial y} + \frac{\partial E_y}{c\partial z} 
 ```
