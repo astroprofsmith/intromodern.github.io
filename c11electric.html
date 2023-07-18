@@ -385,8 +385,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <p><strong>Need more figures. Particularly interactive ones.</strong></p>
-<section class="tex2jax_ignore mathjax_ignore" id="chapter-11-the-electromagnetic-tensor">
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-11-the-electromagnetic-tensor">
 <h1>Chapter 11: The Electromagnetic Tensor<a class="headerlink" href="#chapter-11-the-electromagnetic-tensor" title="Permalink to this heading">#</a></h1>
 <p>Many introductory relativity textbooks stop with dynamics, but I think
 it’s important to include some of the implications of realtivity
@@ -708,7 +707,33 @@ runs through that square.  The loop integral around that square will
 be <span class="math notranslate nohighlight">\(B_z L\)</span>, so there will be a magentic field of <span class="math notranslate nohighlight">\(\mu_0 \sigma' v_R\)</span>
 in the <span class="math notranslate nohighlight">\(-z\)</span> direction.  We can write this in terms of the original
 unprimed variables by putting in a <span class="math notranslate nohighlight">\(\gamma\)</span>: <span class="math notranslate nohighlight">\(B'_z = -\mu_0 \gamma
-\sigma v_R\)</span>.</p>
+\sigma v_R\)</span>.  An interactive animation of this situation is shown
+in <a class="reference internal" href="#slideplatefig"><span class="std std-numref">Fig. 9</span></a>, where you can change the relative
+velocity of the frames and see how the fields change.</p>
+<figure class="align-default" id="slideplatefig" style="width: 800px">
+<div class="output text_html">
+        <iframe
+            width="800"
+            height="700"
+            src="https://glowscript.org/#/user/dasmith/folder/Public/program/SRcapacitorframeshift"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div><figcaption>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Animation of how the charges and fields are affected by changing into
+a different reference frame.  The orange dots represent charges spread
+over a plate of a parallel plate capacitor (the opposite plate is not
+shown).  The slider allows you to change the relative velocity between
+the reference frames.  The magenta arrow shows the velocity of the
+plate in that frame.  The animation cheats, though, by not showing the
+plate in motion (it would be frustrating to have to chase after it).
+The dots will compress due to length contraction.  The cyan arrows
+show the electric field, while the white arrows show the magnetic field.
+The red-green-blue arrows at the center show the x-y-z cartesian axes,
+in that order.</span><a class="headerlink" href="#slideplatefig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>This means we really picked a special case when we first chose our
 rotated capacitor at rest – we chose the only frame where <span class="math notranslate nohighlight">\(B_z = 0\)</span>.
 To get a general rule for how <span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(B\)</span> transform, we should have
@@ -800,30 +825,6 @@ the original <span class="math notranslate nohighlight">\(E_y\)</span>, so we ca
 <span class="eqno">(193)<a class="headerlink" href="#equation-bprimez" title="Permalink to this equation">#</a></span>\[\boxed{
 B'_z = \gamma_R B_z - \gamma_R \frac{v_R}{c^2}E_y
 }\]</div>
-<figure class="align-default" id="slideplatefig" style="width: 800px">
-<div class="output text_html">
-        <iframe
-            width="800"
-            height="700"
-            src="https://glowscript.org/#/user/dasmith/folder/Public/program/SRcapacitorframeshift"
-            frameborder="0"
-            allowfullscreen
-            
-        ></iframe>
-        </div><figcaption>
-<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Animation of how the charges and fields are affected by changing into
-a different reference frame.  The orange dots represent charges spread
-over a plate of a parallel plate capacitor (the opposite plate is not
-shown).  The slider allows you to change the relative velocity between
-the reference frames.  The magenta arrow shows the velocity of the
-plate in that frame.  The animation cheats, though, by not showing the
-plate in motion (it would be frustrating to have to chase after it).
-The dots will compress due to length contraction.  The cyan arrows
-show the electric field, while the white arrows show the magnetic field.
-The red-green-blue arrows at the center show the x-y-z cartesian axes,
-in that order.</span><a class="headerlink" href="#slideplatefig" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
 <p>To make sure you have understood the logic, here, you should rotate
 the capacitor and work out the last two components yourself.  If you
 rotate the capacitor so that the plates lie parallel to the <span class="math notranslate nohighlight">\(xy\)</span>
@@ -931,7 +932,7 @@ of the matrix, and the <span class="math notranslate nohighlight">\(\beta\)</spa
 <p>At this point, many books jump to the answer and show that it works.
 While there is nothing formally wrong with that, it’s not very
 emotionally satisfying.  I’d like to give you some kind of intuition
-as to why you might want to make that jump, rather than just tall you
+as to why you might want to make that jump, rather than just tell you
 the answer.  In no way is what I am about to do any kind of
 <em>derivation</em>; what I want to do is give you a kind of guide to get you
 to the answer, not a proof.</p>
@@ -994,7 +995,7 @@ second <span class="math notranslate nohighlight">\(\Lambda\)</span> is always t
 on the <span class="math notranslate nohighlight">\(F\)</span>, because those positions both have a <span class="math notranslate nohighlight">\(\nu\)</span> in Equation
 <a class="reference internal" href="#equation-twotransforms">(198)</a>.</p>
 <p>Now, this looks like a huge mess, but luckily for us, most of
-the numbers in the <span class="math notranslate nohighlight">\(\Lambda\)</span> matrix (Equation <a class="reference internal" href="#equation-lormate">(196)</a> are
+the numbers in the <span class="math notranslate nohighlight">\(\Lambda\)</span> matrix (Equation <a class="reference internal" href="#equation-lormate">(196)</a>) are
 zero!  All the examples of <span class="math notranslate nohighlight">\(\Lambda\)</span> elements in the specific
 case of Equation <a class="reference internal" href="#equation-oneofsixteen">(199)</a> are either in the first
 or second row.  And the last two columns are both zeros!
@@ -1005,12 +1006,12 @@ If we plug in for the elements of <span class="math notranslate nohighlight">\(\
 \gamma_R^2 F^{01} +
 \beta_R^2\gamma_R^2 F^{10} 
 -\gamma_R^2\beta_R F^{11} \]</div>
-<p>Now, this looks a bit simpler.  The next clue is the fact that
-there’s a <span class="math notranslate nohighlight">\(\gamma_R^2 + \gamma_R^2\beta_R^2\)</span> in there.  If it
-were just <span class="math notranslate nohighlight">\(\gamma_R^2 - \gamma_R^2\beta_R^2\)</span>, that would just be
-<em>ONE</em>!!!  So, what if (crazy thought), what if <span class="math notranslate nohighlight">\(F^{01}=-F^{10}\)</span>?
-Then the factors would disappear, and we’d just have <span class="math notranslate nohighlight">\(F^{01}\)</span>
-in there.</p>
+<p>Now, this looks a bit simpler.  The next clue is the fact that there’s
+a <span class="math notranslate nohighlight">\(\gamma_R^2 + \gamma_R^2\beta_R^2\)</span> in there.  If it were just
+<span class="math notranslate nohighlight">\(\gamma_R^2 - \gamma_R^2\beta_R^2\)</span>, that would just be <em>ONE</em>!!!  So,
+what if (crazy thought), what if <span class="math notranslate nohighlight">\(F^{01}=-F^{10}\)</span>?  Then the <span class="math notranslate nohighlight">\(\gamma\)</span>
+and <span class="math notranslate nohighlight">\(\beta\)</span> factors would disappear, and we’d just have <span class="math notranslate nohighlight">\(F^{01}\)</span> in
+there.</p>
 <div class="math notranslate nohighlight" id="equation-antisym">
 <span class="eqno">(201)<a class="headerlink" href="#equation-antisym" title="Permalink to this equation">#</a></span>\[F'^{01} = F^{01}
 -\gamma_R^2\beta_R (F^{00} + F^{11} )\]</div>
@@ -1023,11 +1024,12 @@ Equation <a class="reference internal" href="#equation-oneofsixteen">(199)</a> h
 only that, but if the matrix is indeed anti-symmetric, then instead of
 sixteen elements, you can discount the diagonal (because those four
 are all zeros), which leaves twelve, and if half of them are equal and
-opposite to the other half, we actually only have (drumroll) SIX!!!
-We are trying to find a way to use six components of <span class="math notranslate nohighlight">\(\vec{E}\)</span> and
-<span class="math notranslate nohighlight">\(\vec{B}\)</span>, and we already showed that one of them could well be <span class="math notranslate nohighlight">\(E_x\)</span>,
-which suggests that the other five could well be the other five
-components of <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span>.</p>
+opposite to the other half, we actually only have (drumroll) SIX!!!</p>
+<p>We are trying to find a way to use six components of <span class="math notranslate nohighlight">\(\vec{E}\)</span> and
+<span class="math notranslate nohighlight">\(\vec{B}\)</span>, and we already showed that one of the elements of
+<span class="math notranslate nohighlight">\(F^{\alpha\mu}\)</span> could well be <span class="math notranslate nohighlight">\(E_x\)</span>, which suggests that the other
+five remaining components of <span class="math notranslate nohighlight">\(F^{\alpha\mu}\)</span> could well be the other
+five components of <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span>.</p>
 <p>So let’s go back to Equation <a class="reference internal" href="#equation-oneofsixteen">(199)</a> and rewrite it
 to allow for an anti-symmetric matrix:</p>
 <div class="math notranslate nohighlight" id="equation-oneofsixteenanti">
@@ -1084,11 +1086,10 @@ figure out that one way of writing <span class="math notranslate nohighlight">\(
 <span class="eqno">(206)<a class="headerlink" href="#equation-emtensorfin" title="Permalink to this equation">#</a></span>\[\begin{split}F^{\alpha\mu} =
 \begin{pmatrix}
 0 &amp; E_x/c &amp; E_y/c &amp; E_z/c\\
--E_x/c &amp; 0 &amp; B_y &amp; -B_z\\
--E_y/c &amp; -B_y &amp; 0 &amp; B_x\\
--E_z/c &amp; B_z &amp; -B_x &amp; 0
+-E_x/c &amp; 0 &amp; B_z &amp; -B_y\\
+-E_y/c &amp; -B_z &amp; 0 &amp; B_x\\
+-E_z/c &amp; B_y &amp; -B_x &amp; 0
 \end{pmatrix}\end{split}\]</div>
-<p><strong>Need to check the B components</strong></p>
 <p>You can (and should) check that you will reproduce the the other four
 of the six transform equations summarized at the top of this section
 if you plug this matrix into Equation <a class="reference internal" href="#equation-twotransforms">(198)</a>.  This object
@@ -1104,10 +1105,10 @@ you would construct the following matrix:</p>
 <div class="math notranslate nohighlight" id="equation-dualtensorfin">
 <span class="eqno">(207)<a class="headerlink" href="#equation-dualtensorfin" title="Permalink to this equation">#</a></span>\[\begin{split}G^{\alpha\mu} =
 \begin{pmatrix}
-0 &amp; B_x &amp; E_y/c &amp; E_z/c\\
--B_x/c &amp; 0 &amp; B_y &amp; -E_z/c\\
--B_y/c &amp; -E_y/c &amp; 0 &amp; E_x/c\\
--B_z/c &amp; E_z/c &amp; -E_x/c &amp; 0
+0 &amp; B_x &amp; B_y &amp; B_z\\
+-B_x &amp; 0 &amp; -E_z/c &amp; E_y/c\\
+-B_y &amp; E_z/c &amp; 0 &amp; -E_x/c\\
+-B_z &amp; -E_y/c &amp; E_x/c &amp; 0
 \end{pmatrix}\end{split}\]</div>
 <p>This is called the “dual tensor”, and it works <em>just as well</em> as the “regular”
 EM field tensor.  It’s purely a matter of convention that we tend to use

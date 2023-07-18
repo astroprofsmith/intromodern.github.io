@@ -22,8 +22,6 @@ from myst_nb import glue
 
 ```
 
-**Need more figures. Particularly interactive ones.**
-
 # Chapter 11: The Electromagnetic Tensor
 
 Many introductory relativity textbooks stop with dynamics, but I think
@@ -414,7 +412,38 @@ runs through that square.  The loop integral around that square will
 be $B_z L$, so there will be a magentic field of $\mu_0 \sigma' v_R$
 in the $-z$ direction.  We can write this in terms of the original
 unprimed variables by putting in a $\gamma$: $B'_z = -\mu_0 \gamma
-\sigma v_R$.
+\sigma v_R$.  An interactive animation of this situation is shown
+in {numref}`slideplatefig`, where you can change the relative
+velocity of the frames and see how the fields change.
+
+
+```{code-cell}
+:tags: ["remove-cell"]
+# Insert VPython simulation of a moving capacitor plate
+#
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRcapacitorframeshift"
+bshft = display.IFrame(src=url1,width=800,height=700)
+glue("slideplate",bshft, display=False)
+
+```
+
+```{glue:figure} slideplate
+:figwidth: 800px
+:name: slideplatefig
+
+Animation of how the charges and fields are affected by changing into
+a different reference frame.  The orange dots represent charges spread
+over a plate of a parallel plate capacitor (the opposite plate is not
+shown).  The slider allows you to change the relative velocity between
+the reference frames.  The magenta arrow shows the velocity of the
+plate in that frame.  The animation cheats, though, by not showing the
+plate in motion (it would be frustrating to have to chase after it).
+The dots will compress due to length contraction.  The cyan arrows
+show the electric field, while the white arrows show the magnetic field.
+The red-green-blue arrows at the center show the x-y-z cartesian axes,
+in that order.
+
+```
 
 This means we really picked a special case when we first chose our
 rotated capacitor at rest -- we chose the only frame where $B_z = 0$.
@@ -536,33 +565,6 @@ B'_z = \gamma_R B_z - \gamma_R \frac{v_R}{c^2}E_y
 }
 ```
 
-```{code-cell}
-:tags: ["remove-cell"]
-# Insert VPython simulation of a moving capacitor plate
-#
-url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRcapacitorframeshift"
-bshft = display.IFrame(src=url1,width=800,height=700)
-glue("slideplate",bshft, display=False)
-
-```
-
-```{glue:figure} slideplate
-:figwidth: 800px
-:name: slideplatefig
-
-Animation of how the charges and fields are affected by changing into
-a different reference frame.  The orange dots represent charges spread
-over a plate of a parallel plate capacitor (the opposite plate is not
-shown).  The slider allows you to change the relative velocity between
-the reference frames.  The magenta arrow shows the velocity of the
-plate in that frame.  The animation cheats, though, by not showing the
-plate in motion (it would be frustrating to have to chase after it).
-The dots will compress due to length contraction.  The cyan arrows
-show the electric field, while the white arrows show the magnetic field.
-The red-green-blue arrows at the center show the x-y-z cartesian axes,
-in that order.
-
-```
 
 To make sure you have understood the logic, here, you should rotate
 the capacitor and work out the last two components yourself.  If you
@@ -692,7 +694,7 @@ of the matrix, and the $\beta$ refers to the column number (0 through
 At this point, many books jump to the answer and show that it works.
 While there is nothing formally wrong with that, it's not very
 emotionally satisfying.  I'd like to give you some kind of intuition
-as to why you might want to make that jump, rather than just tall you
+as to why you might want to make that jump, rather than just tell you
 the answer.  In no way is what I am about to do any kind of
 *derivation*; what I want to do is give you a kind of guide to get you
 to the answer, not a proof.
@@ -765,7 +767,7 @@ on the $F$, because those positions both have a $\nu$ in Equation
 {eq}`twotransforms`.
 
 Now, this looks like a huge mess, but luckily for us, most of
-the numbers in the $\Lambda$ matrix (Equation {eq}`lormatE` are
+the numbers in the $\Lambda$ matrix (Equation {eq}`lormatE`) are
 zero!  All the examples of $\Lambda$ elements in the specific
 case of Equation {eq}`oneofsixteen` are either in the first
 or second row.  And the last two columns are both zeros!
@@ -778,12 +780,13 @@ F'^{01} =
 \beta_R^2\gamma_R^2 F^{10} 
 -\gamma_R^2\beta_R F^{11} 
 ```
-Now, this looks a bit simpler.  The next clue is the fact that
-there's a $\gamma_R^2 + \gamma_R^2\beta_R^2$ in there.  If it
-were just $\gamma_R^2 - \gamma_R^2\beta_R^2$, that would just be
-*ONE*!!!  So, what if (crazy thought), what if $F^{01}=-F^{10}$?
-Then the factors would disappear, and we'd just have $F^{01}$
-in there.
+Now, this looks a bit simpler.  The next clue is the fact that there's
+a $\gamma_R^2 + \gamma_R^2\beta_R^2$ in there.  If it were just
+$\gamma_R^2 - \gamma_R^2\beta_R^2$, that would just be *ONE*!!!  So,
+what if (crazy thought), what if $F^{01}=-F^{10}$?  Then the $\gamma$
+and $\beta$ factors would disappear, and we'd just have $F^{01}$ in
+there.
+
 ```{math}
 :label: antisym
 F'^{01} = F^{01}
@@ -799,10 +802,12 @@ only that, but if the matrix is indeed anti-symmetric, then instead of
 sixteen elements, you can discount the diagonal (because those four
 are all zeros), which leaves twelve, and if half of them are equal and
 opposite to the other half, we actually only have (drumroll) SIX!!!
+
 We are trying to find a way to use six components of $\vec{E}$ and
-$\vec{B}$, and we already showed that one of them could well be $E_x$,
-which suggests that the other five could well be the other five
-components of $\vec{E}$ and $\vec{B}$.
+$\vec{B}$, and we already showed that one of the elements of
+$F^{\alpha\mu}$ could well be $E_x$, which suggests that the other
+five remaining components of $F^{\alpha\mu}$ could well be the other
+five components of $\vec{E}$ and $\vec{B}$.
 
 So let's go back to Equation {eq}`oneofsixteen` and rewrite it
 to allow for an anti-symmetric matrix:
@@ -872,12 +877,11 @@ figure out that one way of writing $F$ that will satisfy Equation
 F^{\alpha\mu} =
 \begin{pmatrix}
 0 & E_x/c & E_y/c & E_z/c\\
--E_x/c & 0 & B_y & -B_z\\
--E_y/c & -B_y & 0 & B_x\\
--E_z/c & B_z & -B_x & 0
+-E_x/c & 0 & B_z & -B_y\\
+-E_y/c & -B_z & 0 & B_x\\
+-E_z/c & B_y & -B_x & 0
 \end{pmatrix}
 ```
-**Need to check the B components**
 
 You can (and should) check that you will reproduce the the other four
 of the six transform equations summarized at the top of this section
@@ -897,10 +901,10 @@ you would construct the following matrix:
 :label: Dualtensorfin
 G^{\alpha\mu} =
 \begin{pmatrix}
-0 & B_x & E_y/c & E_z/c\\
--B_x/c & 0 & B_y & -E_z/c\\
--B_y/c & -E_y/c & 0 & E_x/c\\
--B_z/c & E_z/c & -E_x/c & 0
+0 & B_x & B_y & B_z\\
+-B_x & 0 & -E_z/c & E_y/c\\
+-B_y & E_z/c & 0 & -E_x/c\\
+-B_z & -E_y/c & E_x/c & 0
 \end{pmatrix}
 ```
 This is called the "dual tensor", and it works *just as well* as the "regular"
