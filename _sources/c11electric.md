@@ -22,6 +22,8 @@ from myst_nb import glue
 
 ```
 
+**Need more figures. Particularly interactive ones.**
+
 # Chapter 11: The Electromagnetic Tensor
 
 Many introductory relativity textbooks stop with dynamics, but I think
@@ -533,6 +535,35 @@ the original $E_y$, so we can plug in the formulae for the fields to get
 B'_z = \gamma_R B_z - \gamma_R \frac{v_R}{c^2}E_y
 }
 ```
+
+```{code-cell}
+:tags: ["remove-cell"]
+# Insert VPython simulation of a moving capacitor plate
+#
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRcapacitorframeshift"
+bshft = display.IFrame(src=url1,width=800,height=700)
+glue("slideplate",bshft, display=False)
+
+```
+
+```{glue:figure} slideplate
+:figwidth: 800px
+:name: slideplatefig
+
+Animation of how the charges and fields are affected by changing into
+a different reference frame.  The orange dots represent charges spread
+over a plate of a parallel plate capacitor (the opposite plate is not
+shown).  The slider allows you to change the relative velocity between
+the reference frames.  The magenta arrow shows the velocity of the
+plate in that frame.  The animation cheats, though, by not showing the
+plate in motion (it would be frustrating to have to chase after it).
+The dots will compress due to length contraction.  The cyan arrows
+show the electric field, while the white arrows show the magnetic field.
+The red-green-blue arrows at the center show the x-y-z cartesian axes,
+in that order.
+
+```
+
 To make sure you have understood the logic, here, you should rotate
 the capacitor and work out the last two components yourself.  If you
 rotate the capacitor so that the plates lie parallel to the $xy$

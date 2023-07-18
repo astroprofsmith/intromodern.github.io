@@ -22,6 +22,8 @@ from myst_nb import glue
 
 ```
 
+** Are there any figures I can make for this stuff?**
+
 # Chapter 12: Relativistic Electrodynamics
 
 Now that we have an expression for the electromagnetic
