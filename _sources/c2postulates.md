@@ -433,11 +433,11 @@ they?  If you look at the Andromeda Galaxy, how old is it?
 
 5. How fast is your speed due to the Earth spinning?  How fast is your
 speed due to the Earth going around the Sun?  How fast is your speed
-due to the Sun going around the Galaxy?  How fast is your speed
-due to the Galaxy moving toward the Great Attractor?  How fast is
-your speed relative to the Cosmic Microwave Background Radiation?
-The last two you can just look up, but the first two you should be
-able to calculate from distance traveled divided by duration of time,
+due to the Sun going around the Galaxy?  How fast is your speed due to
+the Galaxy moving toward the Great Attractor?  How fast is your speed
+relative to the Cosmic Microwave Background Radiation?  The last two
+you can just look up, but the first two you should be able to
+calculate from di stance traveled divided by duration of time,
 although you can look those up, if you don't happen to know them.
 
 6. How many ways can you think of to measure the length of a tabletop?

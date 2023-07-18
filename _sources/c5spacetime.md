@@ -18,6 +18,7 @@ kernelspec:
 from IPython import display
 import numpy as np
 import matplotlib.pyplot as plt
+from myst_nb import glue
 
 ```
 
@@ -30,20 +31,21 @@ and time by applying these tools to the spacetime diagram.
 
 ## Summary so Far
 
-So far in our journey through Special Relativity, we have been considering
-the relative displacement in spacetime of two events, as measured in two
-different inertial frames of reference that are in relative motion with
-some constant velocity $v_R$ (or $\beta_R$).  We draw these events on a
-spacetime diagram, such as in Figure 5.1 -- the left side shows two events
-at rest in a reference frame S, while the right side shows where those same
-two events would land in a frame S' which is moving to the right at speed
-$v_R$ relative to S.  Since S' is moving right, the events will be measured
-as moving to the left, separated by some displacement $dx'$ and some time
-interval $dt'$ (which is different from the time interval $dt_0$ in the rest
-frame).
+So far in our journey through Special Relativity, we have been
+considering the relative displacement in spacetime of two events, as
+measured in two different inertial frames of reference that are in
+relative motion with some constant velocity $v_R$ (or $\beta_R$).  We
+draw these events on a spacetime diagram, such as in
+{numref}`fig2events` -- the left side shows two events at rest in a
+reference frame S, while the right side shows where those same two
+events would land in a frame S' which is moving to the right at speed
+$v_R$ relative to S.  Since S' is moving right, the events will be
+measured as moving to the left, separated by some displacement $dx'$
+and some time interval $dt'$ (which is different from the time
+interval $dt_0$ in the rest frame).
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 dx=4.2
 cdt = 5.6
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
@@ -96,11 +98,15 @@ gam = 1/np.sqrt(1-beta**2)
 cdtp = cdt/gam
 ax1.plot([3],[0.5],'ro')
 ax1.plot([3],[0.5+cdtp],'bo')
+glue("twoevents", fig, display=False)
 
-plt.show()
 ```
-```{note}
-Figure 5.1 -- Two events at rest in an unprimed frame and in a primed frame
+
+```{glue:figure} twoevents
+:figwidth: 800px
+:name: fig2events
+
+Two events at rest in an unprimed frame and in a primed frame
 moving to the right (which means the events displace to the left) with a speed
 of $\beta_R = 0.75$.
 ```
@@ -142,10 +148,10 @@ observer can never "just know" what is going on somewhere else.  Since
 in many frames of reference two events are separated by some spatial
 displacement $dx$, it is worth considering just how the observer is to
 know that this displacement is indeed $dx$ and not some other number.
-In the primed frame shown in Figure 5.1, an observer cannot move from
-the red dot to the blue dot -- such an observer would not in fact be
-**in** the primed frame.  Such an observer would be at rest with
-respect to the unprimed frame, and the blue dot would be at the
+In the primed frame shown in {numref}`fig2events`, an observer cannot
+move from the red dot to the blue dot -- such an observer would not in
+fact be **in** the primed frame.  Such an observer would be at rest
+with respect to the unprimed frame, and the blue dot would be at the
 observer's location.  If the observer is at the location of the red
 dot in the primed frame they cannot be at the location of the blue
 dot.
@@ -168,8 +174,8 @@ the blue dot (at the exact moment represented by the location of the
 blue dot on the $cdt'$ axis), and returns to the location of the
 observer at some later time.
 
-Such a setup is illustrated in Figure 5.2.  The worldline of the
-(stationary) observer is a vertical red line.  The red dot is
+Such a setup is illustrated in {numref}`figinterval`.  The worldline
+of the (stationary) observer is a vertical red line.  The red dot is
 stationary along this line, while the blue dot is off to the side.
 Orange lines represent the worldlines of the light that the observer
 must send and receive if they are to get information about the blue
@@ -184,10 +190,16 @@ time.
 :tags: ["remove-input"]
 # A VPython tool to show types of intervals
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRintervals"
-display.IFrame(src=url1,width=880,height=700)
+geroch = display.IFrame(src=url1,width=880,height=700)
+glue("intervalfig",geroch, display=False)
+
 ```
-```{note}
-Figure 5.2 -- Interactive spacetime diagram.  The red line represents
+
+```{glue:figure} intervalfig
+:figwidth: 800px
+:name: figinterval
+
+Interactive spacetime diagram.  The red line represents
 the worldline of a stationary observer.  The blue dot represents some
 event $p$ on that worldline.  The green dot represents some other event
 $q$ that most definitely does not reside on the worldline with $p$.
@@ -209,23 +221,24 @@ Given such a setup, the observer can define two time intervals, which
 we will call $t_1$ and $t_2$.  The first is the time from the red dot
 until the light returns, and the second is the time from the moment
 the light is sent out until the time of the red dot.  These time
-intervals are represented in Figure 5.2 by a white and a magenta
-arrow, respectively.  The value of $t_1$ is positive if the red dot
-happens before the light returns, and the value of $t_2$ is positive
-if the light is sent out before the red dot.  These two values, $t_1$
-and $t_2$, are printed out on the diagram, and you can see by moving
-the slider that if you shift the order of the red and blue events,
-either $t_1$ or $t_2$ (but not both!) will switch to negative.
+intervals are represented in {numref}`figinterval` by a white and a
+magenta arrow, respectively.  The value of $t_1$ is positive if the
+red dot happens before the light returns, and the value of $t_2$ is
+positive if the light is sent out before the red dot.  These two
+values, $t_1$ and $t_2$, are printed out on the diagram, and you can
+see by moving the slider that if you shift the order of the red and
+blue events, either $t_1$ or $t_2$ (but not both!) will switch to
+negative.
 
-Given these two numbers and our knowledge about the speed of light,
-we can help our observer calculate values for $dx'$ and $cdt'$,
-without ever going over to the blue dot!  If the red and blue dots
-are simultaneous, then $dt'=0$, and $t_1$ must equal $t_2$ (this is
-the initial setup for Figure 5.3, and you can see the symmetry yourself).
-The later the blue dot shifts, the larger $dt'$ should get, and the
-earlier the blue dot shifts, the more negative $dt'$ should get.
-Therefore, our observer can conclude
-that the temporal displacement between the red and blue dots is
+Given these two numbers and our knowledge about the speed of light, we
+can help our observer calculate values for $dx'$ and $cdt'$, without
+ever going over to the blue dot!  If the red and blue dots are
+simultaneous, then $dt'=0$, and $t_1$ must equal $t_2$ (this is the
+initial setup for {numref}`figinterval`, and you can see the symmetry
+yourself).  The later the blue dot shifts, the larger $dt'$ should
+get, and the earlier the blue dot shifts, the more negative $dt'$
+should get.  Therefore, our observer can conclude that the temporal
+displacement between the red and blue dots is
 ```{math}
 :label: cdtp5
 dt' = \frac{t_1-t_2}{2}
@@ -370,9 +383,9 @@ Each point on either axis is itself an event, with a coordinate of
 $x=0$ or $t=0$.  So an axis on a spacetime diagram is the set of
 events that has one of the two coordinates be zero.  The origin, of
 course, is the event where both coordinates are zero.  One of the
-principles described in Chapter 2 is that all events in spacetime
-have to be observed in all frames.  Switching reference frames can't
-just make something not happen.
+principles described in Chapter 2 is that all events in spacetime have
+to be observed in all frames.  Switching reference frames can't just
+make something not happen.
 
 Therefore, we can ask how the coordinates of the set of events that
 make up the axes of the unprimed frame change when we shift into the
@@ -397,21 +410,22 @@ the new frame.
 Therefore, if I want to draw the set of events on the unprimed frame
 that will be the vertical axis in a primed frame, I will draw a tilted
 axis with a slope of $1/\beta_R$.  My speed is distance over time, but
-the spacetime diagram puts time on the vertical axis, so "rise over run"
-implies a slope of one over speed.  The faster the relative speed of
-the primed frame, the more tilted the new axis line will be, up to a
-speed (and therefore slope) of 1, since I can't go faster than light.
+the spacetime diagram puts time on the vertical axis, so "rise over
+run" implies a slope of one over speed.  The faster the relative speed
+of the primed frame, the more tilted the new axis line will be, up to
+a speed (and therefore slope) of 1, since I can't go faster than
+light.
 
 ```{warning}
 I stress that this axis is only tilted in the original, unprimed,
 frame.  If I were to redraw the spacetime diagram in the primed frame,
-the axes would be horizontal and vertical, as normal.  The set of events
-in the unprimed frame that will be vertical in the primed frame make
-up a tilted line in the unprimed frame.  Figure 5.4 shows a case where
-the axes are impllicitly redrawn every time the reference frame is
-shifted, while Figure 5.3 is keeping the same original axes while showing
-which events would be on the horizontal and vertical axes, if you were
-to redraw them.
+the axes would be horizontal and vertical, as normal.  The set of
+events in the unprimed frame that will be vertical in the primed frame
+make up a tilted line in the unprimed frame.  Figure 5.4 shows a case
+where the axes are impllicitly redrawn every time the reference frame
+is shifted, while Figure 5.3 is keeping the same original axes while
+showing which events would be on the horizontal and vertical axes, if
+you were to redraw them.
 ```
 
 We can show this intuitive prediction mathematically by performing
@@ -455,22 +469,28 @@ the origin with a slope of $\beta_R$.  The primed horizontal axis
 will be an upward tilting line that shift to a steeper slope as you
 increase $\beta_R$, up to 1, since that is as fast as you can go.
 
-The results of these two equations are depicted graphically in Figure 5.3.
-You can shift the slider below the figure to change $\beta_R$.  The yellow
-arrows that represent which events will be on the axes in the primed
-frame will tilt as you change the relative speed.  Again, the actual
-unprimed axes remain unchanged -- the tilted axes are telling you which
-events will end up on the perpendicular axes in the primed frame, if
-you were to redraw them.
+The results of these two equations are depicted graphically in
+{numref}`figaxestilt`.  You can shift the slider below the figure to
+change $\beta_R$.  The yellow arrows that represent which events will
+be on the axes in the primed frame will tilt as you change the
+relative speed.  Again, the actual unprimed axes remain unchanged --
+the tilted axes are telling you which events will end up on the
+perpendicular axes in the primed frame, if you were to redraw them.
 
 ```{code-cell}
 :tags: ["remove-input"]
 # Interactive spacetime diagram to allow the user to tilt the axes
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRlorentzaxes"
-display.IFrame(src=url1,width=880,height=650)
+tilting = display.IFrame(src=url1,width=880,height=650)
+glue("tilttheaxes",tilting, display=False)
+
 ```
-```{note}
-Figure 5.3 -- A spacetime diagram where the events that lie on the
+
+```{glue:figure} tilttheaxes
+:figwidth: 800px
+:name: figaxestilt
+
+A spacetime diagram where the events that lie on the
 axes are indicated with yellow arrows.  A slider below the diagram
 allows you to change the relative speed of a primed reference frame,
 and the arrows will tilt to indicate which events will end up on the
@@ -488,15 +508,15 @@ space the events that you pass by will be, and therefore your worldline
 (which is by definition the vertical axis in the primed frame) will
 tilt further and further.
 
-Consider the event represented by the blue dot in Figure 5.3: as the
-diagram is first drawn, with the observer at rest in the unprimed
-frame, the event is to the right of the vertical axis.  As you move
-the slider to the right and the axis tilts, you can choose a speed
-such that the yellow arrow lies on the blue dot.  This represents
-walking just fast enough that you get from the origin to the location
-of the blue dot just as it happens.  If you walk faster, you will pass
-the blue dot before it happens, and the event will happen to the left
-of the axis in the primed frame.
+Consider the event represented by the blue dot in
+{numref}`figaxestilt`: as the diagram is first drawn, with the
+observer at rest in the unprimed frame, the event is to the right of
+the vertical axis.  As you move the slider to the right and the axis
+tilts, you can choose a speed such that the yellow arrow lies on the
+blue dot.  This represents walking just fast enough that you get from
+the origin to the location of the blue dot just as it happens.  If you
+walk faster, you will pass the blue dot before it happens, and the
+event will happen to the left of the axis in the primed frame.
 
 It is therefore possible, by altering the relative speed, to choose a
 reference frame in which the blue dot event is either left, right, or
@@ -512,14 +532,14 @@ separated.
 
 This hopefully seems rather intuitive.  You have overtaken or reached
 events many times in your life, so hopefully it is not hard to imagine
-the implications of shifting the vertical axis as shown in Figure 5.3.
-However, it is much harder to imagine how the red dot interacts with
-the horizontal axis.  The mathematical description is almost identical
-to the case of the blue dot, only rotated $90^\circ$.  I will repeat
-what I said above, in only slightly different words: through a careful
-choice of reference frame, an event to the right can be before, after,
-or at the same time as an event to the left, if the two are spacelike
-separated.
+the implications of shifting the vertical axis as shown in
+{numref}`figaxestilt`.  However, it is much harder to imagine how the
+red dot interacts with the horizontal axis.  The mathematical
+description is almost identical to the case of the blue dot, only
+rotated $90^\circ$.  I will repeat what I said above, in only slightly
+different words: through a careful choice of reference frame, an event
+to the right can be before, after, or at the same time as an event to
+the left, if the two are spacelike separated.
 
 Play with the slider and convince yourself that this is accurate.  By
 changing the relative speed, you can put the red dot above the
@@ -549,15 +569,15 @@ you are in.
 
 To sum up what we have learned about spacetime from exploring how
 these diagrams change under Lorentz transformations, I have created
-one more interactive diagram, shown in Figure 5.4.  This diagram
+one more interactive diagram, shown in  {numref}`fig16events`.  This diagram
 also has a slider that lets you change the relative speed of a primed
 reference frame, but every time you change it, the program redraws the
 diagram with the new axes.
 
 ```{warning}
-The axes in Figure 5.4 are always labeled $x$ and $ct$, even though
-as soon as you change $\beta_R$ away from zero, they strictly should
-change to $x'$ and $ct'$.
+The axes in {numref}`fig16events` are always labeled $x$ and $ct$,
+even though as soon as you change $\beta_R$ away from zero, they
+strictly should change to $x'$ and $ct'$.
 ```
 
 On this diagram are shown sixteen spheres to represent a set of events.
@@ -571,10 +591,17 @@ the same time.
 :tags: ["remove-input"]
 # Spacetime diagram to show how event shift under transformation
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRstgrid"
-display.IFrame(src=url1,width=880,height=650)
+strch = display.IFrame(src=url1,width=880,height=650)
+
+glue("stretchevents",strch, display=False)
+
 ```
-```{note}
-Figure 5.4 -- Interactive spacetime diagram that shows 16 events.  The
+
+```{glue:figure} stretchevents
+:figwidth: 800px
+:name: fig16events
+
+Interactive spacetime diagram that shows 16 events.  The
 default is to have the events in a grid.  You can think of this as
 four objects at rest, separated by some distance along the $x$ axis,
 with four events along each vertical worldline.  There is a slider to
@@ -588,12 +615,13 @@ how they shift are discussed in the text.
 
 As you change the relative speed of the primed frame, these sixteen
 events will shift around according to the Lorentz transformation.
-This is the opposite operation to pinching the axes in Figure 5.3 --
-here, the points between the axes are being stretched.  Play with
-sliding the marker back and forth and see how the events move.  You
-could imagine this as the "pinched" axes in Figure 5.3 being streched
-back to perpendicular, and therefore all the events between them being
-pulled outward, too, as if they were on a rubber sheet.
+This is the opposite operation to pinching the axes in
+{numref}`figaxestilt` -- here, the points between the axes are being
+stretched.  Play with sliding the marker back and forth and see how
+the events move.  You could imagine this as the "pinched" axes in
+{numref}`figaxestilt` being streched back to perpendicular, and
+therefore all the events between them being pulled outward, too, as if
+they were on a rubber sheet.
 
 ```{note}
 It is useful
@@ -601,24 +629,23 @@ to start thinking about space and time as being able to be stretched
 and squeezed, as this is an important feature of General Relativity.
 ```
 
-I have marked several spheres with color, and made three of them
-leave trails behind, to draw your attention to them
-and gain particular insights.  The cyan sphere marks the
-origin, and note that it does not move.  If all the components
-of a four vector are zero, the Lorentz transformation will not
-change them.  You can use the cyan sphere as an anchor by which
-you can compare the locations of the others.
+I have marked several spheres with color, and made three of them leave
+trails behind, to draw your attention to them and gain particular
+insights.  The cyan sphere marks the origin, and note that it does not
+move.  If all the components of a four vector are zero, the Lorentz
+transformation will not change them.  You can use the cyan sphere as
+an anchor by which you can compare the locations of the others.
 
 The orange event on the time axis will move left or right (since it is
 timelike separated from the origin) as well as up, leaving a
 bowl-shaped trail behind.  This is Time Dilation.  The shortest
-possible time interval will be measured in the frame where the
-two events (cyan and orange) are at rest.  If you zoom in on the orange
-sphere, you will see that the trail gets flatter and flatter, the
-more you zoom in.  This is a representation that for small $\beta_R$,
-the Lorentz factor gets close to one, in which case $dt'\approx dt_0$.
-If the intervals are equal, the trail would be flat, and the closer
-you zoom in, the flatter it gets.
+possible time interval will be measured in the frame where the two
+events (cyan and orange) are at rest.  If you zoom in on the orange
+sphere, you will see that the trail gets flatter and flatter, the more
+you zoom in.  This is a representation that for small $\beta_R$, the
+Lorentz factor gets close to one, in which case $dt'\approx dt_0$.  If
+the intervals are equal, the trail would be flat, and the closer you
+zoom in, the flatter it gets.
 
 The red spheres are all lightlike separated from the origin, and you
 can see that when you move the slider, they **stay** along the
@@ -677,24 +704,24 @@ contraction more thoroughly in the next chapter.
 
 ```{note}
 It might be useful to look at [this interactive
-version](https://alexonscience.com/projects/spacetimeglobe/) of Figure
-5.4 -- it lets you add your own events and see how they shift around
-under Lorentz transformations.
+version](https://alexonscience.com/projects/spacetimeglobe/) of
+{numref}`fig16events` -- it lets you add your own events and see how
+they shift around under Lorentz transformations.
 ```
 
 ## Hyperbolic Rotation and Rapidity
 
-It might, when you move the slider in Figure 5.3, remind you of
-rotation.  Certainly there is rotation going on -- the axes are
+It might, when you move the slider in {numref}`figaxestilt`, remind
+you of rotation.  Certainly there is rotation going on -- the axes are
 swinging around the origin.  But it's also clearly not the kind of
 rotation you're used to.  When we usually rotate the $x$ and $y$
 coordinate axes around the $z$ axis, the two arrows move together.
-However, in Figure 5.3, the arrows are moving symmetrically in
-opposite directions.  In the familiar kind of rotations, you can keep
-swinging the axes around and around and around, increasing the angle
-as far as you like.  However, in a spacetime diagram, there is an
-asymptotic limit to how far the axis will swing -- they will both move
-toward a slope of 1.
+However, in {numref}`figaxestilt` , the arrows are moving
+symmetrically in opposite directions.  In the familiar kind of
+rotations, you can keep swinging the axes around and around and
+around, increasing the angle as far as you like.  However, in a
+spacetime diagram, there is an asymptotic limit to how far the axis
+will swing -- they will both move toward a slope of 1.
 
 This is still a rotation, but it's called a hyperbolic rotation.  You
 can even mathematically make it look like a rotation.  Recall that when
@@ -824,11 +851,12 @@ km/hr, and all these odd effects of relativity are commonplace for
 people in that world.  *Need to look in the book and recreate his
 argument about the murder observed from the train*
 
-3) Show that even when you tilt the axes as in Figure 5.3, the properties
-of the Lorentz transformation are such that the new axes are still orthogonal,
-even though they are clearly not perpendicular in the figure.
+3) Show that even when you tilt the axes as in {numref}`figaxestilt`,
+the properties of the Lorentz transformation are such that the new
+axes are still orthogonal, even though they are clearly not
+perpendicular in the figure.
 
-4) The following questions are with regard to Figure 5.4
+4) The following questions are with regard to {numref}`fig16events`: 
 
 a) Can you find relative speeds for which each of the events below the
 red dots happen before the cyan event?
@@ -873,11 +901,12 @@ to travel relative to this one to observe this event on the horizontal
 axis?  Perform a Lorentz transformation at this value for $\beta_R$
 and verify that this is so.
 
-8) Consider the case where a bolt of lightning creates a peal of thunder.
-You are 5 km away from this event.  Write down displacement four vectors for
-the events of your seeing the lighting and your hearing the thunder,
-relative to the event of their creation.  Find their intervals and determine
-if they are timelike, lightlike, or spacelike.  With appropriate scaling,
-you can use Figure 5.2 to represent these situations.  Do your classifications
-make intuitive sense, and how do they compare with the light cones from
-the original event?
+8) Consider the case where a bolt of lightning creates a peal of
+thunder.  You are 5 km away from this event.  Write down displacement
+four vectors for the events of your seeing the lighting and your
+hearing the thunder, relative to the event of their creation.  Find
+their intervals and determine if they are timelike, lightlike, or
+spacelike.  With appropriate scaling, you can use
+{numref}`figinterval` to represent these situations.  Do your
+classifications make intuitive sense, and how do they compare with the
+light cones from the original event?

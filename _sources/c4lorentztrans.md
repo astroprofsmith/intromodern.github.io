@@ -18,6 +18,7 @@ kernelspec:
 from IPython import display
 import numpy as np
 import matplotlib.pyplot as plt
+from myst_nb import glue
 
 ```
 
@@ -42,17 +43,18 @@ a second frame moving at a constant velocity relative to the first.
 This method works for **any** four-vector, but we will define it
 using the displacement four-vector, as that is easy to visualize.
 
-We start by recreating Figure 3.2 as Figure 4.1 -- to make sure
-you are applying the transformation properly, it is useful to always
-start by recreating this diagram and making sure that you are assigning
-the correct numbers to the elements, as defined in this diagram.
+We start by recreating {numref}`yerbasicST` as {numref}`stwithvecfig`
+-- to make sure you are applying the transformation properly, it is
+useful to always start by recreating this diagram and making sure that
+you are assigning the correct numbers to the elements, as defined in
+this diagram.
 
 
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 # 3D plot of a spacetime diagram with x, ct, and y
-plt.figure(figsize=(5,5))
+stwithvec = plt.figure(figsize=(5,5))
 plt.arrow(0,0,1,0,head_width=0.1)
 plt.arrow(0,0,0,1,head_width=0.1)
 
@@ -77,10 +79,14 @@ ax.text(-0.35, .5, "S'")
 ax.text(-.55, .7, "ct'")
 ax.text(.7, -0.5, "x'")
 ax.text(1.0,1.0,"dx_4")
-plt.show()
+glue("stfigwithvec", stwithvec, display=False)
 ```
-```{note}
-Figure 4.1 -- The spacetime diagram that defines a Lorentz transformation.
+
+```{glue:figure} stfigwithvec
+:figwidth: 800px
+:name: stwithvecfig
+
+The spacetime diagram that defines a Lorentz transformation.
 There are two events, indicated by red and blue dots, and we define a
 displacement four vector between them (indicated by an arrow).  These
 components are defined in the reference frame $S$, and we want to know
@@ -407,11 +413,6 @@ that it hasn't changed.  You could write the code to set up and
 multiply matrices, or you could write the four equations out
 separately.  Which method you use would be irrelevant to the output.
 ```
-
-## Rapidity and Hyperbolic Rotation
-
-Need to add a section about $\xi$ and $\cosh{\xi}$ and all that.
-
 
 ## Problems
 

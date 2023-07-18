@@ -18,6 +18,7 @@ kernelspec:
 from IPython import display
 import numpy as np
 import matplotlib.pyplot as plt
+from myst_nb import glue
 
 ```
 
@@ -37,19 +38,24 @@ spacial displacement vector is $d\vec{r} = (dx,dy,dz)$, and its
 magnitude is $dx^2+dy^2+dz^2$, perhaps it would make sense to have
 a four-dimensional vector $dx_4 = (cdt,dx,dy,dz)$, except that
 if we were to square each term and add them up, we would get
-$+c^2dt^2$, not minus.  We need a way to remember to include that
-minus sign.
+$+c^2dt^2$, not minus.
 
-There are two ways of keeping track of the minus sign.  One is simpler
-for the beginner, and the other makes the more complicated material
-later easier to manage.  The simpler way is to introduce complex
-numbers as a bookkeeping trick.  If $i^2 = -1$, then we can write
-the time component of the vector as $icdt$, and its square will be
-$-c^2dt^2$.  This method ensures that the minus sign always goes in
-the right place.  There is nothing physical or mysterious about the
-$i$; it is no more and no less than a handy way to keep track of where
-to put the minus sign.  It always shows up in the time component of the
-four-vector, and it never shows up in the space components.
+We need a way to remember to include that minus sign.  There are two
+ways of keeping track of it.  One is simpler for the beginner, and the
+other makes the more complicated material later easier to manage.
+First, we look at using the imaginary number $i^2=-1$ to keep track of
+the minus sign, and then we will look at the Einstein notation method.
+
+### Using Imaginary Numbers
+
+The simpler way is to introduce complex numbers as a bookkeeping
+trick.  If $i^2 = -1$, then we can write the time component of the
+vector as $icdt$, and its square will be $-c^2dt^2$.  This method
+ensures that the minus sign always goes in the right place.  There is
+nothing physical or mysterious about the $i$; it is no more and no
+less than a handy way to keep track of where to put the minus sign.
+It always shows up in the time component of the four-vector, and it
+never shows up in the space components.
 
 ```{warning}
 If you ever see a time component without an $i$, or find an $i$ in
@@ -133,22 +139,43 @@ The size of any four vector is the same in any inertial reference
 frame, and to convert a four vector from one frame to another,
 there is a specific procedure one must follow (see Chapter 4).
 
-The second way involves being aware of a distinction between covariant
-and contravariant four-vectors.  The mathematical details are not
-necessary at this stage (see Appendix?), but suffice to say that the
-contravariant version of a four vector should be written as a column,
-as in Equation 6, only without the $i$.  The standard notion is to use
-a superscript greek letter to refer to the components, where the Greek
-letter could stand for 0, 1, 2, or 3.  So
-\begin{equation}
+### Einstein Notation
+
+Using $i$ starts out simpler, and gets you a long way, but eventually,
+it gets cumbersome, carting that $i$ around, and there are more
+advanced equations that are easier to deal with another way.  The
+second way saves you a lot of writing, makes it easier to keep track
+of which components are being multiplies together, and is the one used
+exclusively in General Relativity.  I will introduce it here, but then
+use the $i$ until we get to electriciy and magnetism (E&M) in Chapter
+11.
+
+The second way, called Einstein notation, involves being aware of a
+distinction between **covariant** and **contravariant** four-vectors.
+The mathematical details are not necessary at this stage (see
+Appendix?), but suffice to say that the **contravariant** version of a
+four vector should be written as a column, as in Equation 6, only
+without the $i$.  The standard notion is to use a superscript greek
+letter to refer to the components, where the Greek letter could stand
+for 0, 1, 2, or 3.  So
+```{math}
+:label: contravar
 dx^\alpha =
+\begin{bmatrix}
+dx^0\\
+dx^1\\
+dx^2\\
+dx^3
+\end{bmatrix}
+=
 \begin{bmatrix}
 cdt\\
 dx\\
 dy\\
 dz
 \end{bmatrix}
-\end{equation}
+```
+
 ```{warning}
 The superscript here does NOT mean "raised to the power of".  In this
 notation, $dy$ would be written $dx^2$, but the 2 does not mean squared,
@@ -156,30 +183,15 @@ it means the third component of the contravariant four-vector.  If
 people are using this notation, you have to be aware from the context
 whether they mean a contravariant component or an exponent.
 ```
-There is also a covariant version of the four-vector, which is written
-as a row with a subscript Greek letter, but also includes the minus sign: 
-$dx_\alpha = [-cdt,dx,dy,dz]$.  For the four vectors we are considering,
-$dx_0 =-dx^0$, but $dx_1=dx^1$ and so forth.  So if you multiply the
-two together, according to the rules of multiplying matrices,
-$$dx_\alpha dx^\alpha = dx_0dx^0 + dx_1dx^1+dx_2dx^2+dx_3dx^3$$
-$$dx_\alpha dx^\alpha = -dx^0dx^0 + dx^1dx^1+dx^2dx^2+dx^3dx^3$$
-$$dx_\alpha dx^\alpha = -c^2dt^2 + dx^2+dy^2+dz^2$$
-where in that last equation, the 2 does mean squared.
 
-```{margin}
-The reason those relations work (like $dx_0=-dx^0$) is because $dx_\mu$
-can be written as $g_{\mu\nu}dx^\nu$, where $g_{\mu\nu}$ is a 4x4
-matrix called "the metric".  All the off-diagonals of $g_{\mu\nu}$
-are zero, and the diagonals are $-1,1,1,1$.  So if you follow the
-Einstein notation, $g_{\mu\nu}dx^\nu$ is a row with $(-dx^0,dx^1,
-dx^2,dx^3)$.  The metric hold the information about the characteristics
-of space -- since all the values here are just $\pm 1$, we say we
-are in "flat spacetime".  If the values deviate from 1, we say the
-space is curved.  This becomes the foundation of General Relativity.
-Many people currently working in the field are skipping the $i$ method
-altogether and going right to this notation from the beginning,
-because it is absolutely
-necessary in GR, but I am going to stick with $i$ until Chapter 11.
+There is also a **covariant** version of the four-vector, which is written
+as a row with a subscript Greek letter, but also includes the minus sign: 
+```{math}
+:label: covariant
+dx_\alpha =
+\begin{bmatrix}
+-cdt&dx&dy&dz
+\end{bmatrix}
 ```
 
 In this notation, whenever there is a Greek letter that appears twice,
@@ -188,9 +200,102 @@ row and down the column and add them up".  It plays the same role as a
 dummy variable in integration, and therefore does not appear in the
 result.  This is called "Einstein summation notation" or just
 "Einstein notation", and it won't come up again in this book until we
-apply SR to Electromagnetism in Chapter 11.  I mention it here to stress
-that using the $i$ is not the **only** way to keep track of the minus
-sign.
+apply SR to Electromagnetism in Chapter 11.
+
+
+For the four vectors we are considering, $dx_0 =-dx^0$, but
+$dx_1=dx^1$, $dx_2=dx^2$, and $dx_3=dx^3$.  So if you multiply the two
+together, according to the Einstein summation rule $$dx_\alpha
+dx^\alpha = dx_0dx^0 + dx_1dx^1+dx_2dx^2+dx_3dx^3$$ $$dx_\alpha
+dx^\alpha = -dx^0dx^0 + dx^1dx^1+dx^2dx^2+dx^3dx^3$$ $$dx_\alpha
+dx^\alpha = -c^2dt^2 + dx^2+dy^2+dz^2$$ where in that last equation,
+the 2 does mean squared.
+
+The reason those relations work (like $dx_0=-dx^0$) is because
+$dx_\mu$ can be written as $g_{\mu\nu}dx^\nu$, where $g_{\mu\nu}$ is a
+4x4 matrix called "the metric".  The metric holds the information
+about the characteristics of the space and coordinate system you are
+working in.  For special relativity, all the off-diagonals of
+$g_{\mu\nu}$ are zero, and the diagonals are $-1,1,1,1$.  Since all
+the values here are just $\pm 1$, we say we are in "flat spacetime".
+If the values deviate from 1, we say the space is curved.  As a
+matrix, the metric for flat spacetime looks like:
+```{math}
+:label: themetric
+g_{\mu\nu} =
+\begin{bmatrix}
+-1&0&0&0\\
+0&1&0&0\\
+0&0&1&0\\
+0&0&0&1
+\end{bmatrix}
+```
+
+So if you follow the Einstein notation, $g_{\mu\nu}dx^\nu$ is a row
+with $(-dx^0,dx^1, dx^2,dx^3)$:
+```{math}
+:label: lowerindex
+g_{\mu\nu}dx^\nu = g_{\mu 0}dx^0 +
+g_{\mu 1}dx^1 +
+g_{\mu 2}dx^2 +
+g_{\mu 3}dx^3
+```
+You can get any component of $dx_\mu$ you like by plugging in either
+0, 1, 2, or 3 for $\mu$.  So if you want $dx_0$, you put in 0
+everywhere a $\mu$ appears in Equation {eq}`lowerindex`, and only the
+first term of the sum survives, but with a minus sign, because
+$g_{00}=-1$.  The others are all zero.
+```{math}
+:label: lowerindex0
+g_{0\nu}dx^\nu = g_{00}dx^0 +
+g_{01}dx^1 +
+g_{02}dx^2 +
+g_{03}dx^3
+```
+That leaves
+you with $dx_0 = -dx^0$.
+
+The metric doesn't have to look like this.  The metric for spacetime
+around a spherically symmetric massive object, for example (called
+"the Schwarzschild Metric") looks like this:
+```{math}
+:label: spheremetric
+g_{\mu\nu} =
+\begin{bmatrix}
+-\left(1-\frac{r_s}{r}\right)&0&0&0\\
+0&\left(1-r_s/r\right)^{-1}&0&0\\
+0&0&r^2&0\\
+0&0&0&r^2\sin^2{\theta}
+\end{bmatrix}
+```
+The term $r_s$ depends on the mass of the object, so if you set
+the mass to zero, then the first two diagonal terms reduce to $\pm 1$,
+and the space is flat (the last two diagonal terms are
+how you write flat space in spherical coordinates).  Spacetime with
+nothing in it is flat.  Furthermore, if $r\gg r_s$, that means you
+are considering space very far from the massive object, and the
+first two diagonal terms *also* approach $\pm 1$, so the spacetime
+is approximately flat far from any object (where spacetime is basically
+empty).  That hopefully makes sense.
+
+However, where it gets weird is as $r$ approaches $r_s$, the terms
+deviate from $\pm 1$, indicating curved spacetime.  If $r=r_s$, you
+can see that the second diagonal term blows up, because there's a zero
+in the denominator.  This is the event horizon of a black hole.
+
+As you might guess from the last example, the metric becomes the
+foundation of General Relativity -- the most important equation in GR
+is called "Einstein's Equation", and it tells you how the metric
+changes in the presence of mass, energy, and even pressure, and the
+shape of the metric tells you what gravity will be like in that area.
+The Schwartzschild Metric is the solution to Einstein's Equation under
+the condition of a point mass at the origin.
+
+Many people currently working in the field are skipping the $i$ method
+altogether and going right to this notation from the beginning,
+because it is absolutely necessary in GR, but I am going to stick with
+$i$ until Chapter 11. I mention it here to stress that using the $i$
+is not the **only** way to keep track of the minus sign.
 
 ```{note}
 For the purposes of this class, there are only three things you need
@@ -219,36 +324,18 @@ graph is called a "spacetime diagram".  I will give a brief
 introduction to them here, and then we will explore their properties
 in much more depth in Chapter 5.
 
-%The number of Greek letters you need to specify a particular
-%component is called the "rank".  A four vector only needs one number,
-%so it is a first-rank object.  First-rank, but four-dimensional, because
-%there are four choices for that one number.  A second rank object could
-%be written as a matrix, like
-%\begin{equation}
-%g_{\alpha\beta} =
-%\begin{bmatrix}
-%-1 & 0 & 0 &0\\
-%0 & 1 & 0 & 0\\
-%0 & 0 & 1 & 0\\
-%0 & 0 & 0 & 1
-%\end{bmatrix}
-%\end{equation}
-%In this case, if you saw $g_{\alpha\beta}dx^\beta$, the repetition
-%of beta would mean multiply across the columns of $g$ and down the
-%rows of $dx$, but the $\alpha$ would stay the same, so you would get
-%$$dx_\alpha = g_{\alpha\beta}dx^\beta = [-cdt,dx,dy,dz]$$
-
 ## Spacetime Diagrams
 
 Superficially, a spacetime diagram hardly seems worthy of its own
 distinct name: the convention is to use the vertical axis to represent
-time measurements (clock readings), and the horizontal axis to represent
-one of the spatial dimensions (ruler readings).  Traditionally, we choose
-to call this space axis $x$.  These are usually all the dimensions we
-have on a two-dimensional display like a computer screen, although we
-can cheat a little by adding a second spatial dimension in projection,
-coming out of the screen.  A three-dimensional representation of such a
-spacetime diagram is shown in Figure 3.1, along with some common features.
+time measurements (clock readings), and the horizontal axis to
+represent one of the spatial dimensions (ruler readings).
+Traditionally, we choose to call this space axis $x$.  These are
+usually all the dimensions we have on a two-dimensional display like a
+computer screen, although we can cheat a little by adding a second
+spatial dimension in projection, coming out of the screen.  A
+three-dimensional representation of such a spacetime diagram is shown
+in {numref}`spacetimefig`, along with some common features.
 
 It is also traditional to multiply the time axis by $c$, using $ct$ as
 the dimension, rather than just $t$.  This has two benefits: first,
@@ -265,10 +352,14 @@ components of the displacement four-vector.
 :tags: ["remove-input"]
 # 3D plot of a spacetime diagram with x, ct, and y
 url='https://glowscript.org/#/user/dasmith/folder/Public/program/SRspacetimediag'
-display.IFrame(src=url,width=800,height=600)
+stfig = display.IFrame(src=url,width=800,height=600)
+glue("stdiagfig",stfig, display=False)
 ```
-```{note}
-Figure 3.1 -- Three-dimensional spacetime diagram, which you can
+```{glue:figure} stdiagfig
+:figwidth: 800px
+:name: spacetimefig
+
+Three-dimensional spacetime diagram, which you can
 rotate to observe from different angles.  Events are represented as
 two spheres: orange and purple.  The displacement four vector between
 them is black.  The components of this four vector are also drawn
@@ -280,18 +371,6 @@ in the lower left corner.  This is the standard way to draw a 2D
 spacetime diagram.  The $y$ axis would then be diagonal in projection.
 There is nowhere to put a $z$ axis on the computer screen.
 ```
-
-Much of special relativity amounts to comparing a set of observations
-in one reference frame to that of a second reference frame moving
-relative to the first.  By convention, we usually define the $x$ axis
-to point along the direction of the relative motion, so that the
-second frame is moving to the right.  This is the default assumption,
-although it is certainly not **necessary**.  If you must choose $x$
-to lie in a different direction than the relative velocity, that
-will make the math more complicated, so always make sure to draw
-a picture before you start doing math, to make sure the equations
-actually match the setup.  Figure 3.2 shows the standard way to
-represent two spacetime diagrams in relative motion.
 
 Events, being infinitesimal in duration and extent, are represented on
 the spacetime diagram as dots.  A collection of events that represent
@@ -308,20 +387,33 @@ vertical line.  The lowest slope the worldline of a real object can
 have is 1, since that would imply $1/\beta=1$ or $v=c$, the fastest a
 real object can move.
 
-We'll explore the implications of these properties more in the next chapter.
-For now, it is sufficient to note that we can define a displacement
-four-vector between two dots on a spacetime diagram, and that the
-components of this four vector represent horizontal and vertical sides
-of that triangle.  Be aware, however, that although this looks exactly
-like a triangle, that pesky minus sign is still there, which means the
-"size" of the hypoteneuse is not constrained to be positive, as it would
-with a normal triangle!  If the sides are equal, the length is zero, not
+We'll explore the implications of these properties more in the next
+chapter.  For now, it is sufficient to note that we can define a
+displacement four-vector between two dots on a spacetime diagram, and
+that the components of this four vector represent horizontal and
+vertical sides of that triangle.  Be aware, however, that although
+this looks exactly like a triangle, that pesky minus sign is still
+there, which means the "size" of the hypoteneuse is not constrained to
+be positive, as it would with a normal triangle!  If the sides are
+both equal to $dx$ ($cdt=dx$, or $dx/dt=c$), the "length" is zero, not
 $dx\sqrt{2}$.
 
+Much of special relativity amounts to comparing a set of observations
+in one reference frame to that of a second reference frame moving
+relative to the first.  By convention, we usually define the $x$ axis
+to point along the direction of the relative motion, so that the
+second frame is moving to the right.  This is the default assumption,
+although it is certainly not **necessary**.  If you must choose $x$ to
+lie in a different direction than the relative velocity, that will
+make the math more complicated, so always make sure to draw a picture
+before you start doing math, to make sure the equations actually match
+the setup.  {numref}`yerbasicST` shows the standard way to represent
+two spacetime diagrams in relative motion.
+
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 # 3D plot of a spacetime diagram with x, ct, and y
-plt.figure(figsize=(5,5))
+stfig = plt.figure(figsize=(5,5))
 plt.arrow(0,0,1,0,head_width=0.1)
 plt.arrow(0,0,0,1,head_width=0.1)
 
@@ -340,10 +432,15 @@ ax.text(1.1, -0.25, "v_R")
 ax.text(-0.35, .5, "S'")
 ax.text(-.55, .7, "ct'")
 ax.text(.7, -0.5, "x'")
-plt.show()
+
+glue("basicSTfig", stfig, display=False)
 ```
-```{note}
-Figure 3.2 -- Spacetime diagram of two reference frames in relative
+
+```{glue:figure} basicSTfig
+:figwidth: 800px
+:name: yerbasicST
+
+Spacetime diagram of two reference frames in relative
 motion.  The primed frame S' (drawn to the left and down a little,
 although of course both reference frames are infinite in extent, and
 the origins may or may not coincide at a particular moment in time) is
@@ -371,12 +468,12 @@ some time and place, it decays into a muon. I know that something
 happens because the track of bubbles changes direction. The muon moves
 on for a while and then decays into an electron. Again, I know this
 happens because the bubble track changes direction. The two events are
-the change in direction of the tracks as shown in Figure 3.3.  Note
+the change in direction of the tracks as shown in {numref}`muonfig`.  Note
 that the figure on the left is a diagram of what happens in space, while
 the figure on the right is a spacetime diagram!
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 p = np.array([[0,0,0],
 [1,1,5],
 [2,1.5,7],
@@ -399,10 +496,14 @@ ax2.set_title('Spacetime Diagram')
 ax2.set_xlabel('x')
 ax2.set_ylabel('ct')
 
-plt.show()
+glue("muontrajfig", fig, display=False)
 ```
-```{note}
-Figure 3.3 -- Two diagrams to display the motion of particles.  On the left,
+
+```{glue:figure} muontrajfig
+:figwidth: 800px
+:name: muonfig
+
+Two diagrams to display the motion of particles.  On the left,
 we have a plot of $y$ vs. $x$, which shows the trajectories of the particles.
 A pion enters from the lower left going up and to the right, turns into a
 muon and goes stright to the right, and then turns into an electron that goes
@@ -415,11 +516,13 @@ Can you describe how this velocity component changes throughout
 this sequence of events?  (Note: this is not realistic.)
 ```
 
-If we consider the two events of the creation and disappearence of the muon,
-observers in the reference frame shown in Figure 3.3 could measure the displacement
-and time duration between these events (and we can read them off the graph,
-albiet with no units), and then put them into the four-vector format:
-\begin{equation}
+If we consider the two events of the creation and disappearence of the
+muon, observers in the reference frame shown in {numref}`muonfig`
+could measure the displacement and time duration between these events
+(and we can read them off the graph, albiet with no units), and then
+put them into the four-vector format:
+```{math}
+:label: exdx4
 [dx_4] =
 \begin{bmatrix}
 icdt\\
@@ -434,16 +537,17 @@ i2\\
 0.5\\
 0
 \end{bmatrix}
-\end{equation}
+```
 I put zero as the $z$ displacement although technically we simply have no information
 about whether there was any displacement in the $z$ direction.
 
 ### Space ship
 
 Often in SR problems, it is important to make a graph showing the
-events under consideration, and to indicate the relative motion of
-the reference frames, as in Figure 3.2.  This will help you visualize
-what's happening and ensure that you set up your equations properly.
+events under consideration, and to indicate the relative motion of the
+reference frames, as in {numref}`yerbasicST`.  This will help you
+visualize what's happening and ensure that you set up your equations
+properly.
 
 Consider a space ship that leaves the Earth and travels 4.2 LY to the
 star Alpha Centauri at a constant speed of $\beta=0.75$.  For this
@@ -453,7 +557,7 @@ rest with respect to the earth. The two events will be the departure
 from earth and the arrival at alpha centauri. The relative speed
 between these two observers is just the speed of the space ship in the
 direction of Alpha Centauri. The events can be diagrammed as shown in
-Figure 3.3.
+{numref}`shipfig`.
 
 An observer that is at rest with respect to the earth will measure
 (evenually -- once all the rulers and clocks are returned and
@@ -469,7 +573,7 @@ rocket}} = \frac{4.2~{\rm LY}}{0.75c} \rightarrow cdt_\oplus =
 
 
 ```{code-cell}
-:tags: ["remove-input"]
+:tags: ["remove-cell"]
 dx=4.2
 cdt = 5.6
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
@@ -523,10 +627,15 @@ cdtp = cdt/gam
 ax2.plot([3],[0.5],'ro')
 ax2.plot([3],[0.5+cdtp],'bo')
 
-plt.show()
+glue("spaceshipfig", fig, display=False)
 ```
-```{note}
-Figure 3.4 -- Spacetime diagrams of two events in two different
+
+```{glue:figure} spaceshipfig
+:figwidth: 800px
+:name: shipfig
+
+
+Spacetime diagrams of two events in two different
 reference frames in relative motion.  The left diagram represents the
 reference frame at rest with respect to the Earth.  In this reference
 frame, the rocket leaves at the red dot on the lower left, travels 4.3
@@ -766,14 +875,16 @@ a property of time itself, not a description of gears winding down or
 some other feature of a particular kind of clock.
 ```
 
-You can also express this example through the formalism of the displacement
-four vectors.  In the reference frame of the train, the events of the
-light being emitted and then being detected are in the same place, so
-in the context of Figure 3.3, the train frame is the primed frame on
-the right.  The reference frame at rest with respect to the ground
-is the unprimed frame on the left.  The red dot is the emission of
-the light and the blue dot is the detection of the light.  The
-displacement four vector in the train frame would be:
+You can also express this example through the formalism of the
+displacement four vectors, and in fact, {numref}`shipfig` will serve
+just as well to represent this situation.  In the reference frame of
+the train, the events of the light being emitted and then being
+detected are in the same place, so in the context of
+{numref}`shipfig`, the train frame is the primed frame on the right.
+The reference frame at rest with respect to the ground is the unprimed
+frame on the left.  The red dot is the emission of the light and the
+blue dot is the detection of the light.  The displacement four vector
+in the train frame would be:
 \begin{equation}
 [dx_4]_{\rm train} =
 \begin{bmatrix}

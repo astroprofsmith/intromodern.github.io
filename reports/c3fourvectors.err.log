@@ -17,26 +17,37 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-p = [[0,0,0],
-[1,1,1],
-[2,1,2],
-[3,0,3]]
-fig, (ax1, ax2) = plt.subplots(1, 2)
-fig.suptitle('Creation and Destruction of a Muon')
-ax1.plot(p[:,0], p[:,1], 'k:')
-ax2.plot(p[1:2,0], p[1:2,1], 'r-')
-plt.show()
+# 3D plot of a spacetime diagram with x, ct, and y
+plt.figure(figsize=(5,5))
+plt.arrow(0,0,1,0,head_width=0.1)
+plt.arrow(0,0,0,1,head_width=0.1)
+
+plt.arrow(-0.5,-0.5,1,0,head_width=0.1)
+plt.arrow(-0.5,-0.5,0,1,head_width=0.1)
+
+plt.arrow(0.2,-0.25,0.75,0,head_width=0.05)
+ax = plt.gca()
+ax.get_xaxis().set_visible(False)
+ax.get_yaxis().set_visible(False)
+plt.axis([-1,2,-2,2])
+ax.text(0.15, 1, "S")
+ax.text(-0.05, 1.2, "ct")
+ax.text(1.2, 0, "x")
+ax.text(1.1, -0.25, "v_R")
+ax.text(-0.35, .5, "S'")
+ax.text(-.55, .7, "ct'")
+ax.text(.7, -0.5, "x'")
+
+glue("basicSTfig", fig, display=False)
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m
-[0;31mTypeError[0m                                 Traceback (most recent call last)
-Cell [0;32mIn[4], line 7[0m
-[1;32m      5[0m fig, (ax1, ax2) [38;5;241m=[39m plt[38;5;241m.[39msubplots([38;5;241m1[39m, [38;5;241m2[39m)
-[1;32m      6[0m fig[38;5;241m.[39msuptitle([38;5;124m'[39m[38;5;124mCreation and Destruction of a Muon[39m[38;5;124m'[39m)
-[0;32m----> 7[0m ax1[38;5;241m.[39mplot([43mp[49m[43m[[49m[43m:[49m[43m,[49m[38;5;241;43m0[39;49m[43m][49m, p[:,[38;5;241m1[39m], [38;5;124m'[39m[38;5;124mk:[39m[38;5;124m'[39m)
-[1;32m      8[0m ax2[38;5;241m.[39mplot(p[[38;5;241m1[39m:[38;5;241m2[39m,[38;5;241m0[39m], p[[38;5;241m1[39m:[38;5;241m2[39m,[38;5;241m1[39m], [38;5;124m'[39m[38;5;124mr-[39m[38;5;124m'[39m)
-[1;32m      9[0m plt[38;5;241m.[39mshow()
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[3], line 22[0m
+[1;32m     19[0m ax[38;5;241m.[39mtext([38;5;241m-[39m[38;5;241m.55[39m, [38;5;241m.7[39m, [38;5;124m"[39m[38;5;124mct[39m[38;5;124m'[39m[38;5;124m"[39m)
+[1;32m     20[0m ax[38;5;241m.[39mtext([38;5;241m.7[39m, [38;5;241m-[39m[38;5;241m0.5[39m, [38;5;124m"[39m[38;5;124mx[39m[38;5;124m'[39m[38;5;124m"[39m)
+[0;32m---> 22[0m glue([38;5;124m"[39m[38;5;124mbasicSTfig[39m[38;5;124m"[39m, [43mfig[49m, display[38;5;241m=[39m[38;5;28;01mFalse[39;00m)
 
-[0;31mTypeError[0m: list indices must be integers or slices, not tuple
-TypeError: list indices must be integers or slices, not tuple
+[0;31mNameError[0m: name 'fig' is not defined
+NameError: name 'fig' is not defined
 
