@@ -26,15 +26,16 @@ from myst_nb import glue
 
 # Chapter 12: Relativistic Electrodynamics
 
-Now that we have an expression for the electromagnetic
-field tensor, which treats $\vec{E}$ and $\vec{B}$ as
-different parts of a single object, and we know how that
-tensor transforms under Lorentz transformations, we can
-start to see how the rest of electrodynamics plays out
-within an SR context.  We will start with examining
-how you represent the Minkowski Force for a charge
-moving with velocity $\vec{u}$ in a region where
-there are both $\vec{E}$ and $\vec{B}$ fields.
+Now that we have an expression for the electromagnetic field tensor,
+which treats $\vec{E}$ and $\vec{B}$ as different parts of a single
+object, and we know how that tensor transforms under Lorentz
+transformations, we can start to see how the rest of electrodynamics
+plays out within an SR context.  This chapter is almost entirely just
+showing how you can write classical electrodynamical models to show
+that they are intrinsically consistent with the rules of special
+relativity already.  We will start with examining how you represent
+the Minkowski Force for a charge moving with velocity $\vec{u}$ in a
+region where there are both $\vec{E}$ and $\vec{B}$ fields.
 
 ## The Lorentz Force
 
@@ -365,7 +366,9 @@ and you should also remember that $c^2=1/\mu_0\epsilon_0$, so if we take
 on the idea that
 ```{math}
 :label: SRmaxwell1
+\boxed{
 \partial_\nu F^{\mu\nu} = \mu_0 J^\mu
+}
 ```
 We have shown that the time component of this equation is none other than
 Gauss's Law (Equation {eq}`gauss`)!
