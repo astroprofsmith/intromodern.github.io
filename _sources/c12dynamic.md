@@ -471,3 +471,18 @@ world, not the way the world itself works.
 ## Summary?
 
 ## Problems
+
+(rough ideas)
+
+1) What is Minkowski force on a moving charge near a current-carrying
+wire?  Use a Lorentz transformation to convert this four vector into
+the rest frame of the charge.  Compare with derivation in last chapter
+that didn't use Lorentz transofrmations and four-vectors.
+
+2) another four-foce problem?  Maybe a computer model?
+
+3) Some kind of continuity equation problem?
+
+4) Show the other components work for Maxwell's Equations.
+
+

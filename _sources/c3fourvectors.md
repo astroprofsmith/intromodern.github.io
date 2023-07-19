@@ -213,13 +213,21 @@ the 2 does mean squared.
 
 The reason those relations work (like $dx_0=-dx^0$) is because
 $dx_\mu$ can be written as $g_{\mu\nu}dx^\nu$, where $g_{\mu\nu}$ is a
-4x4 matrix called "the metric".  The metric holds the information
-about the characteristics of the space and coordinate system you are
-working in.  For special relativity, all the off-diagonals of
-$g_{\mu\nu}$ are zero, and the diagonals are $-1,1,1,1$.  Since all
-the values here are just $\pm 1$, we say we are in "flat spacetime".
-If the values deviate from 1, we say the space is curved.  As a
-matrix, the metric for flat spacetime looks like:
+4x4 matrix called "the metric".  An object like the metric has rows
+and columns, so you need two Greek letters: the first counts the rows
+0 through 3, while the second counts the columns 0 through 3, which
+gives you sixteen elements.  So $g_{32}$ is the fourth row, third
+column of the matrix.  This is just like in programming, if you had a
+two-dimensional array called $g$, then g[3,2] would be the fourth row,
+third column of that array.
+
+The metric holds the information about the characteristics of the
+space and coordinate system you are working in.  For special
+relativity, all the off-diagonals of $g_{\mu\nu}$ are zero, and the
+diagonals are $-1,1,1,1$.  Since all the values here are just $\pm 1$,
+we say we are in "flat spacetime".  If the values deviate from 1, we
+say the space is curved.  As a matrix, the metric for flat spacetime
+looks like:
 ```{math}
 :label: themetric
 g_{\mu\nu} =
