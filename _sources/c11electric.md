@@ -390,6 +390,35 @@ B'_x = B_x
 }
 ```
 
+```{code-cell}
+:tags: ["remove-cell"]
+# Insert VPython simulation of a moving solenoid
+#
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRsolenoidSR"
+solshft = display.IFrame(src=url1,width=800,height=700)
+glue("slidecyl",solshft, display=False)
+
+```
+
+```{glue:figure} slidecyl
+:figwidth: 800px
+:name: slidecylfig
+
+Animation of how the current and $B$ field of a solenoid are affected
+by changing into a different reference frame.  The red dots represent
+charges moving around a cylindrical solenoid.  One row of them is
+turned white purely to help you see how fast they are gong around.
+The blue arrows show representative $B$ field vectors inside the
+solenoid.  The slider allows you to change the relative velocity
+between the reference frames.  The magenta arrow shows the velocity of
+the cylinder in that frame.  The animation cheats, though, by not
+showing the plate in motion (it would be frustrating to have to chase
+after it).  The circles will compress due to length contraction, but
+the rate of rotation (the current) will slow due to time dilation.
+These effects cancel, leaving the $B$ field unchanged.
+
+```
+
 Now things get a little more complicated.  If we want to get the $E$
 field components in the perpendicular directions, we can keep the same
 parallel plate capacitor, but we have to rotate it so that the $E$
@@ -434,14 +463,12 @@ glue("slideplate",bshft, display=False)
 Animation of how the charges and fields are affected by changing into
 a different reference frame.  The orange dots represent charges spread
 over a plate of a parallel plate capacitor (the opposite plate is not
-shown).  The slider allows you to change the relative velocity between
-the reference frames.  The magenta arrow shows the velocity of the
-plate in that frame.  The animation cheats, though, by not showing the
-plate in motion (it would be frustrating to have to chase after it).
-The dots will compress due to length contraction.  The cyan arrows
-show the electric field, while the white arrows show the magnetic field.
-The red-green-blue arrows at the center show the x-y-z cartesian axes,
-in that order.
+shown).  The slider and the magenta arrow are the same as in
+{numref}`slidecylfig`.  Also as in {numref}`slidecylfig`, the actual
+motion of the plate along $x$ is not shown.  The dots will compress
+due to length contraction.  The cyan arrows show the electric field,
+while the white arrows show the magnetic field.  The red-green-blue
+arrows at the center show the x-y-z cartesian axes, in that order.
 
 ```
 
