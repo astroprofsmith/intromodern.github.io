@@ -419,8 +419,8 @@ very large speeds, but we now know that nothing can move faster than
 <span class="math notranslate nohighlight">\(c\)</span>, the speed limit of the universe.  Equation <a class="reference internal" href="#equation-newton2nd">(144)</a> has
 no built in speed limit.</p>
 <p>To fix these problems, we need to cast Equation <a class="reference internal" href="#equation-newton2nd">(144)</a> in
-4vector form.  Then we can predict the acceleration of objects near the
-speed of light and characterize their motion.</p>
+four-vector form.  Then we can predict the acceleration of objects
+near the speed of light and characterize their motion.</p>
 </section>
 <section id="newton-s-second-law-with-four-vectors">
 <h2>Newton’s Second Law with Four Vectors<a class="headerlink" href="#newton-s-second-law-with-four-vectors" title="Permalink to this heading">#</a></h2>
@@ -432,7 +432,7 @@ we write</p>
 <span class="eqno">(145)<a class="headerlink" href="#equation-minkforce" title="Permalink to this equation">#</a></span>\[[K_4] = \frac{d}{dt_0}[p_4]\]</div>
 <p>The four force is the derivative (with respect to the proper time, a
 scalar) of the four momentum.  Since <span class="math notranslate nohighlight">\([p_4]\)</span> is a proper 4- vector and
-<span class="math notranslate nohighlight">\(dt_O\)</span> is a scalar, then <span class="math notranslate nohighlight">\([K4]\)</span> is also a proper 4-vector. The letter
+<span class="math notranslate nohighlight">\(dt_0\)</span> is a scalar, then <span class="math notranslate nohighlight">\([K4]\)</span> is also a proper 4-vector. The letter
 K is in the 4-force to make it easier to distinguish between it and
 the vector force used by Newton. This form of the force is often
 called the Minkowski Force in honor of H. Minkowski who introduced the
@@ -472,12 +472,22 @@ i \frac{\gamma}{c} dE/dt\\
 \end{bmatrix}
 =
 \begin{bmatrix}
-K_0\\
+K^0\\
 \gamma \vec{F}
 \end{bmatrix}\end{split}\]</div>
 <p>The three spatial terms of the Minkowski force are the
 components of the Newtonian force, multiplied by a factor
 of <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that the <span class="math notranslate nohighlight">\(\gamma\)</span> in Equation <a class="reference internal" href="#equation-m4force">(147)</a> comes from
+changing the <span class="math notranslate nohighlight">\(dt_0\)</span> into <span class="math notranslate nohighlight">\(dt\)</span>.  There is a second factor of <span class="math notranslate nohighlight">\(\gamma\)</span>
+hidden inside the definition of <span class="math notranslate nohighlight">\(\vec{p}\)</span>.  We did <strong>NOT</strong> just
+pull that <span class="math notranslate nohighlight">\(\gamma\)</span> from inside <span class="math notranslate nohighlight">\(\vec{p}\)</span> to the outside!  The
+factor of <span class="math notranslate nohighlight">\(\gamma\)</span> inside <span class="math notranslate nohighlight">\(\vec{p}\)</span> came from converting <span class="math notranslate nohighlight">\(dt_0\)</span>
+into <span class="math notranslate nohighlight">\(dt\)</span> for the <em>velocity</em>, but there is a <em>second</em> derivative
+in the force, and therefore two factors of <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
+</div>
 <p>The time component needs a little more careful attention to interpret
 it properly.  Clearly, it will be related to the rate of change of the
 energy of the object experiencing the force.  This rate of change is
@@ -485,7 +495,8 @@ called the power delivered to the object.  How is this related to the
 force?  In Newtonian terms, the work done on an object by a force as
 the object displaces by some amount <span class="math notranslate nohighlight">\(d\vec{x}\)</span> is given by <span class="math notranslate nohighlight">\(dW =
 \vec{F}\cdot d\vec{x}\)</span>.  The power is therefore <span class="math notranslate nohighlight">\(P = dW/dt =
-\vec{F}\cdot \vec{v}\)</span>.  Let us therefore see what happens when we take
+\vec{F}\cdot \vec{v}\)</span> (if the force is constant!).</p>
+<p>Let us therefore see what happens when we take
 the dot product of the four velocity with the four force:</p>
 <div class="math notranslate nohighlight" id="equation-v4dotf41">
 <span class="eqno">(148)<a class="headerlink" href="#equation-v4dotf41" title="Permalink to this equation">#</a></span>\[[v_4]\cdot[K_4] = [v_4]\cdot \frac{d(m_0[v_4])}{dt_0}\]</div>
@@ -500,14 +511,14 @@ which is also a constant in time.  So</p>
 <p>The result of the four dimensional dot product must therefore be
 zero, so let’s write it out in terms of components:</p>
 <div class="math notranslate nohighlight" id="equation-v4dotf4comp">
-<span class="eqno">(151)<a class="headerlink" href="#equation-v4dotf4comp" title="Permalink to this equation">#</a></span>\[[v_4]\cdot[K_4] = \gamma^2(v_xF_x + v_yF_y +v_zF_z) + i\gamma c K_0 = 0\]</div>
+<span class="eqno">(151)<a class="headerlink" href="#equation-v4dotf4comp" title="Permalink to this equation">#</a></span>\[[v_4]\cdot[K_4] = \gamma^2(v_xF_x + v_yF_y +v_zF_z) + i\gamma c K^0 = 0\]</div>
 <p>Therefore</p>
 <div class="math notranslate nohighlight" id="equation-findingk0">
-<span class="eqno">(152)<a class="headerlink" href="#equation-findingk0" title="Permalink to this equation">#</a></span>\[\gamma^2(\vec{v}\cdot\vec{F}) = -i\gamma c K_0\]</div>
+<span class="eqno">(152)<a class="headerlink" href="#equation-findingk0" title="Permalink to this equation">#</a></span>\[\gamma^2(\vec{v}\cdot\vec{F}) = -i\gamma c K^0\]</div>
 <p>and</p>
 <div class="math notranslate nohighlight" id="equation-ktime">
 <span class="eqno">(153)<a class="headerlink" href="#equation-ktime" title="Permalink to this equation">#</a></span>\[\boxed{
-K_0 = i\gamma(\vec{F}\cdot\vec{\beta})
+K^0 = i\gamma(\vec{F}\cdot\vec{\beta})
 }\]</div>
 <p>So the Minkowski force becomes</p>
 <div class="math notranslate nohighlight" id="equation-m4forcefin">
@@ -519,10 +530,10 @@ i\gamma (\vec{F}\cdot\vec{\beta})\\
 \end{bmatrix}}\end{split}\]</div>
 <p>Again, we know from Newtonian mechanics that the rate of
 change of the energy of an object is <span class="math notranslate nohighlight">\(\vec{F}\cdot\vec{v}\)</span>,
-and if we compare the forms of <span class="math notranslate nohighlight">\(K_0\)</span> in Equations <a class="reference internal" href="#equation-fourforce">(146)</a>
+and if we compare the forms of <span class="math notranslate nohighlight">\(K^0\)</span> in Equations <a class="reference internal" href="#equation-fourforce">(146)</a>
 and <a class="reference internal" href="#equation-m4forcefin">(154)</a>, we see that</p>
 <div class="math notranslate nohighlight" id="equation-kpower">
-<span class="eqno">(155)<a class="headerlink" href="#equation-kpower" title="Permalink to this equation">#</a></span>\[K_0 = i\gamma(\vec{F}\cdot\vec{\beta}) = i\frac{\gamma}{c}\frac{dE}{dt}
+<span class="eqno">(155)<a class="headerlink" href="#equation-kpower" title="Permalink to this equation">#</a></span>\[K^0 = i\gamma(\vec{F}\cdot\vec{\beta}) = i\frac{\gamma}{c}\frac{dE}{dt}
 = i\gamma\frac{d}{dt}(\gamma m_0 c)\]</div>
 <p>so <span class="math notranslate nohighlight">\(\vec{F}\cdot\vec{\beta} = d(\gamma m_0 c)/dt\)</span>, as you might
 expect, and the time component of the Minkowski force is telling
@@ -532,7 +543,7 @@ us the power being delivered to the object experiencing the force.</p>
 <p>It’s interesting to note that although <span class="math notranslate nohighlight">\(\vec{F}\cdot\vec{v}\)</span> is
 power, and has dimensions of energy per time, <span class="math notranslate nohighlight">\(\vec{F}\cdot\vec{\beta}\)</span>
 has dimensions of force, and yet it is <strong>telling</strong> us the power,
-because all you need to do is multiply <span class="math notranslate nohighlight">\(K_0\)</span> by <span class="math notranslate nohighlight">\(c/\gamma\)</span> and you
+because all you need to do is multiply <span class="math notranslate nohighlight">\(K^0\)</span> by <span class="math notranslate nohighlight">\(c/\gamma\)</span> and you
 get the power.</p>
 </div>
 <section id="example-10-1">
@@ -559,7 +570,7 @@ value of <span class="math notranslate nohighlight">\(\gamma\)</span> when <span
 zero, but <span class="math notranslate nohighlight">\(K_z = \gamma m g\)</span>, or <span class="math notranslate nohighlight">\(-1.78\times10^{-29}~{\rm N}\)</span>.  Since
 the motion is in the <span class="math notranslate nohighlight">\(+\hat{z}\)</span> direction, the time component becomes:</p>
 <div class="math notranslate nohighlight" id="equation-fgtime">
-<span class="eqno">(157)<a class="headerlink" href="#equation-fgtime" title="Permalink to this equation">#</a></span>\[K_0 = i\gamma F_g(-\hat{z}) \cdot (\beta \hat{z}) =
+<span class="eqno">(157)<a class="headerlink" href="#equation-fgtime" title="Permalink to this equation">#</a></span>\[K^0 = i\gamma F_g(-\hat{z}) \cdot (\beta \hat{z}) =
 -i (2.00 \times 8.93\times10^{-30}~{\rm N} \times 0.866) =
 - i 1.54\times10^{-29}~{\rm N}\]</div>
 <p>Combining these results gives the Minkowski force:</p>
@@ -574,9 +585,9 @@ the motion is in the <span class="math notranslate nohighlight">\(+\hat{z}\)</sp
 <p>Remember that the actual force experienced by the electron will be
 <span class="math notranslate nohighlight">\(K_3/\gamma\)</span>, or half the number given in Equation <a class="reference internal" href="#equation-fgmink">(158)</a>,
 because <span class="math notranslate nohighlight">\(\gamma=2\)</span> at this speed.  The time component still has units
-of newtons, because <span class="math notranslate nohighlight">\(K_0\)</span> has a factor of <span class="math notranslate nohighlight">\(1/c\)</span> in it.  If you want
+of newtons, because <span class="math notranslate nohighlight">\(K^0\)</span> has a factor of <span class="math notranslate nohighlight">\(1/c\)</span> in it.  If you want
 to know the power delivered to the electron, you have to take the
-<span class="math notranslate nohighlight">\(K_0\)</span> term as given in Equation <a class="reference internal" href="#equation-fgmink">(158)</a> (without the <span class="math notranslate nohighlight">\(i\)</span>, of
+<span class="math notranslate nohighlight">\(K^0\)</span> term as given in Equation <a class="reference internal" href="#equation-fgmink">(158)</a> (without the <span class="math notranslate nohighlight">\(i\)</span>, of
 course) and multiply it by <span class="math notranslate nohighlight">\(c/\gamma\)</span>.  This would imply the electron
 is losing energy at a rate of <span class="math notranslate nohighlight">\(2.31\times10^{-21}\)</span> watts.</p>
 </section>
@@ -726,7 +737,7 @@ beyond 1, which is indicated by the red horizontal dotted line.</span><a class="
 a force equal to its weight on the surface of the Earth, within a few
 years, the speed of that object would approach the speed of light,
 even if it started out from rest.  However, in practical terms,
-maintaining even such a modest thrust for years without fair is hard
+maintaining even such a modest thrust for years without fail is hard
 to do without running out of fuel.  But that’s another topic for
 another day.</p>
 <p>The time component of Equation <a class="reference internal" href="#equation-newton2x">(166)</a> shows yet another reason
@@ -755,10 +766,9 @@ F_x
 <div class="math notranslate nohighlight" id="equation-de">
 <span class="eqno">(170)<a class="headerlink" href="#equation-de" title="Permalink to this equation">#</a></span>\[dE = \gamma^3 m_0 v_x dv_x\]</div>
 <p>The rest mass is constant, but as <span class="math notranslate nohighlight">\(v_x\)</span> gets close to <span class="math notranslate nohighlight">\(c\)</span>,
-<span class="math notranslate nohighlight">\(\gamma\rightarrow\infty\)</span>, so the <span class="math notranslate nohighlight">\(dE\)</span> that would need to be
-provided to keep providing a <span class="math notranslate nohighlight">\(dv\)</span> would go to infinity.  Once
-again, it would take an infinite amount of energy to actually
-get to <span class="math notranslate nohighlight">\(c\)</span>.</p>
+<span class="math notranslate nohighlight">\(\gamma\rightarrow\infty\)</span>, so the <span class="math notranslate nohighlight">\(dE\)</span> that would need to be provided
+to keep providing a finite <span class="math notranslate nohighlight">\(dv\)</span> would go to infinity.  Once again, it
+would take an infinite amount of energy to actually get to <span class="math notranslate nohighlight">\(c\)</span>.</p>
 <p>The general case of applying the relativistic Newton’s law to a
 particle having laboratory accelerations and velocities in all three
 directions, as well as the force having all three components is very
@@ -795,12 +805,14 @@ increase in speed of only 10 parts per million) is found with Equation <a class=
 \[dE= \gamma^3m_0v_xdv_x = 8 * 9.109\times10^{-31}~{\rm kg}*0.8666* 3.000\times10^8~{\rm m/s}* 1.000\times10^3~{\rm m/s}\]</div>
 <div class="math notranslate nohighlight">
 \[dE =1.893\times10^{-18}~{\rm joules}.\]</div>
-<p>This might look like a small number.  In eV, it’s about 12.  That’s almost enough
-to rip an electron off a hydrogen atom.  It’s an ultraviolet photon.  An electron
-going at 0.8666 would have a KE of 511 keV, so 12 eV would be 20 parts per million.
-So you’re putting in a larger fraction of energy than you are getting out in terms
-of a percentage speed increase.  This is a specific case of the general pattern that
-the closer you get to the speed of light, the more energy it costs to get less speed.</p>
+<p>This might look like a small number.  In eV, it’s about 12.  That’s
+almost enough to rip an electron off a hydrogen atom.  It’s an
+ultraviolet photon.  An electron going at 0.8666 would have a KE of
+511 keV, so 12 eV would be 20 parts per million.  So you’re putting in
+a larger fraction of energy than you are getting out in terms of a
+percentage speed increase.  This is a specific case of the general
+pattern that the closer you get to the speed of light, the more energy
+it costs to get less speed.</p>
 </section>
 </section>
 <section id="problems">

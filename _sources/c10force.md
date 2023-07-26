@@ -62,8 +62,8 @@ $c$, the speed limit of the universe.  Equation {eq}`Newton2nd` has
 no built in speed limit.
 
 To fix these problems, we need to cast Equation {eq}`Newton2nd` in
-4vector form.  Then we can predict the acceleration of objects near the
-speed of light and characterize their motion.
+four-vector form.  Then we can predict the acceleration of objects
+near the speed of light and characterize their motion.
 
 ## Newton's Second Law with Four Vectors
 
@@ -77,7 +77,7 @@ we write
 ```
 The four force is the derivative (with respect to the proper time, a
 scalar) of the four momentum.  Since $[p_4]$ is a proper 4- vector and
-$dt_O$ is a scalar, then $[K4]$ is also a proper 4-vector. The letter
+$dt_0$ is a scalar, then $[K4]$ is also a proper 4-vector. The letter
 K is in the 4-force to make it easier to distinguish between it and
 the vector force used by Newton. This form of the force is often
 called the Minkowski Force in honor of H. Minkowski who introduced the
@@ -121,13 +121,23 @@ i \frac{\gamma}{c} dE/dt\\
 \end{bmatrix}
 =
 \begin{bmatrix}
-K_0\\
+K^0\\
 \gamma \vec{F}
 \end{bmatrix}
 ```
 The three spatial terms of the Minkowski force are the
 components of the Newtonian force, multiplied by a factor
 of $\gamma$.
+
+```{note}
+Note that the $\gamma$ in Equation {eq}`M4force` comes from
+changing the $dt_0$ into $dt$.  There is a second factor of $\gamma$
+hidden inside the definition of $\vec{p}$.  We did **NOT** just
+pull that $\gamma$ from inside $\vec{p}$ to the outside!  The
+factor of $\gamma$ inside $\vec{p}$ came from converting $dt_0$
+into $dt$ for the *velocity*, but there is a *second* derivative
+in the force, and therefore two factors of $\gamma$.
+```
 
 The time component needs a little more careful attention to interpret
 it properly.  Clearly, it will be related to the rate of change of the
@@ -136,7 +146,9 @@ called the power delivered to the object.  How is this related to the
 force?  In Newtonian terms, the work done on an object by a force as
 the object displaces by some amount $d\vec{x}$ is given by $dW =
 \vec{F}\cdot d\vec{x}$.  The power is therefore $P = dW/dt =
-\vec{F}\cdot \vec{v}$.  Let us therefore see what happens when we take
+\vec{F}\cdot \vec{v}$ (if the force is constant!).
+
+Let us therefore see what happens when we take
 the dot product of the four velocity with the four force:
 ```{math}
 :label: v4dotF41
@@ -158,18 +170,18 @@ The result of the four dimensional dot product must therefore be
 zero, so let's write it out in terms of components:
 ```{math}
 :label: v4dotF4comp
-[v_4]\cdot[K_4] = \gamma^2(v_xF_x + v_yF_y +v_zF_z) + i\gamma c K_0 = 0
+[v_4]\cdot[K_4] = \gamma^2(v_xF_x + v_yF_y +v_zF_z) + i\gamma c K^0 = 0
 ```
 Therefore
 ```{math}
 :label: findingK0
-\gamma^2(\vec{v}\cdot\vec{F}) = -i\gamma c K_0
+\gamma^2(\vec{v}\cdot\vec{F}) = -i\gamma c K^0
 ```
 and
 ```{math}
 :label: Ktime
 \boxed{
-K_0 = i\gamma(\vec{F}\cdot\vec{\beta})
+K^0 = i\gamma(\vec{F}\cdot\vec{\beta})
 }
 ```
 So the Minkowski force becomes
@@ -184,11 +196,11 @@ i\gamma (\vec{F}\cdot\vec{\beta})\\
 ```
 Again, we know from Newtonian mechanics that the rate of
 change of the energy of an object is $\vec{F}\cdot\vec{v}$,
-and if we compare the forms of $K_0$ in Equations {eq}`fourforce`
+and if we compare the forms of $K^0$ in Equations {eq}`fourforce`
 and {eq}`M4forcefin`, we see that
 ```{math}
 :label: Kpower
-K_0 = i\gamma(\vec{F}\cdot\vec{\beta}) = i\frac{\gamma}{c}\frac{dE}{dt}
+K^0 = i\gamma(\vec{F}\cdot\vec{\beta}) = i\frac{\gamma}{c}\frac{dE}{dt}
 = i\gamma\frac{d}{dt}(\gamma m_0 c)
 ```
 so $\vec{F}\cdot\vec{\beta} = d(\gamma m_0 c)/dt$, as you might
@@ -199,7 +211,7 @@ us the power being delivered to the object experiencing the force.
 It's interesting to note that although $\vec{F}\cdot\vec{v}$ is
 power, and has dimensions of energy per time, $\vec{F}\cdot\vec{\beta}$
 has dimensions of force, and yet it is **telling** us the power,
-because all you need to do is multiply $K_0$ by $c/\gamma$ and you
+because all you need to do is multiply $K^0$ by $c/\gamma$ and you
 get the power.
 ```
 
@@ -232,7 +244,7 @@ zero, but $K_z = \gamma m g$, or $-1.78\times10^{-29}~{\rm N}$.  Since
 the motion is in the $+\hat{z}$ direction, the time component becomes:
 ```{math}
 :label: Fgtime
-K_0 = i\gamma F_g(-\hat{z}) \cdot (\beta \hat{z}) =
+K^0 = i\gamma F_g(-\hat{z}) \cdot (\beta \hat{z}) =
 -i (2.00 \times 8.93\times10^{-30}~{\rm N} \times 0.866) =
 - i 1.54\times10^{-29}~{\rm N}
 ```
@@ -250,9 +262,9 @@ Combining these results gives the Minkowski force:
 Remember that the actual force experienced by the electron will be
 $K_3/\gamma$, or half the number given in Equation {eq}`Fgmink`,
 because $\gamma=2$ at this speed.  The time component still has units
-of newtons, because $K_0$ has a factor of $1/c$ in it.  If you want
+of newtons, because $K^0$ has a factor of $1/c$ in it.  If you want
 to know the power delivered to the electron, you have to take the
-$K_0$ term as given in Equation {eq}`Fgmink` (without the $i$, of
+$K^0$ term as given in Equation {eq}`Fgmink` (without the $i$, of
 course) and multiply it by $c/\gamma$.  This would imply the electron
 is losing energy at a rate of $2.31\times10^{-21}$ watts.
 
@@ -465,7 +477,7 @@ beyond 1, which is indicated by the red horizontal dotted line.
 a force equal to its weight on the surface of the Earth, within a few
 years, the speed of that object would approach the speed of light,
 even if it started out from rest.  However, in practical terms,
-maintaining even such a modest thrust for years without fair is hard
+maintaining even such a modest thrust for years without fail is hard
 to do without running out of fuel.  But that's another topic for
 another day.
 
@@ -502,10 +514,9 @@ or
 dE = \gamma^3 m_0 v_x dv_x
 ```
 The rest mass is constant, but as $v_x$ gets close to $c$,
-$\gamma\rightarrow\infty$, so the $dE$ that would need to be
-provided to keep providing a $dv$ would go to infinity.  Once
-again, it would take an infinite amount of energy to actually
-get to $c$.
+$\gamma\rightarrow\infty$, so the $dE$ that would need to be provided
+to keep providing a finite $dv$ would go to infinity.  Once again, it
+would take an infinite amount of energy to actually get to $c$.
 
 The general case of applying the relativistic Newton's law to a
 particle having laboratory accelerations and velocities in all three
@@ -556,12 +567,14 @@ dE= \gamma^3m_0v_xdv_x = 8 * 9.109\times10^{-31}~{\rm kg}*0.8666* 3.000\times10^
 ```{math}
 dE =1.893\times10^{-18}~{\rm joules}.
 ```
-This might look like a small number.  In eV, it's about 12.  That's almost enough
-to rip an electron off a hydrogen atom.  It's an ultraviolet photon.  An electron
-going at 0.8666 would have a KE of 511 keV, so 12 eV would be 20 parts per million.
-So you're putting in a larger fraction of energy than you are getting out in terms
-of a percentage speed increase.  This is a specific case of the general pattern that
-the closer you get to the speed of light, the more energy it costs to get less speed.
+This might look like a small number.  In eV, it's about 12.  That's
+almost enough to rip an electron off a hydrogen atom.  It's an
+ultraviolet photon.  An electron going at 0.8666 would have a KE of
+511 keV, so 12 eV would be 20 parts per million.  So you're putting in
+a larger fraction of energy than you are getting out in terms of a
+percentage speed increase.  This is a specific case of the general
+pattern that the closer you get to the speed of light, the more energy
+it costs to get less speed.
 
 
 ## Problems
