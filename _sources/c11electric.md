@@ -971,3 +971,26 @@ others to climb outside those limitations and perceive how the
 universe works on its own.
 
 ## Problems
+
+1) Consider a long line of charge lying at rest along the $x$-axis.
+Say that a little piece of it $dx$ has a charge $q=\lambda dx$, where
+$\lambda$ is the linear charge density.  The electric field in the
+$yz$ plane of a piece of line charge at the origin would be
+```{math}
+:label: lineE
+d\vec{E} = \frac{dx \lambda}{4\pi\epsilon_0(y^2+z^2)^{3/2}}(y\cos{\theta}\hat{y}
+-z\sin{\theta}\hat{z})
+```
+(note the full electric field would be an integral over the whole line,
+but you don't have to do that for this problem.)  The angle $\theta$
+increases counter-clockwise from the $y$ axis around the $yz$ plane.
+
+a) Write out the EM field tensor for this situation.
+
+b) Carry out a double-Lorentz transformation (EQuation
+{eq}`oneofsixteenanti`) on this tensor to derive the fields from this
+piece of charge in a frame that is moving with a velocity $\beta
+\hat{x}$ relative to the rest frame.
+
+c) Compare your answer with the Biot-Savart Law.
+

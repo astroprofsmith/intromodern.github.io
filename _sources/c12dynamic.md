@@ -474,15 +474,38 @@ world, not the way the world itself works.
 
 (rough ideas)
 
-1) What is Minkowski force on a moving charge near a current-carrying
+1) What is the Minkowski force on a moving charge near a current-carrying
 wire?  Use a Lorentz transformation to convert this four vector into
 the rest frame of the charge.  Compare with derivation in last chapter
 that didn't use Lorentz transofrmations and four-vectors.
 
-2) another four-foce problem?  Maybe a computer model?
+2) The plane-wave solution to Maxwell's Equations is a travelling E-M wave
+that would take the following form:
+```{math}
+\vec{E}(x,t) = E_0 \cos{(kx-\omega t)}\hat{y}
+```
+```{math}
+\vec{B}(x,t) = \frac{E_0}{c} \cos{(kx-\omega t)}\hat{z}
+```
+The intensity of the light wave is proportional to $E_0^2$, and the frequency
+is $\omega/2\pi$. The speed is $c=\omega/k$.
 
-3) Some kind of continuity equation problem?
+a) Write out the EM field tensor for this situation.
 
-4) Show the other components work for Maxwell's Equations.
+b) Carry out the double Lorentz transformation to express this solution in a
+reference frame moving at a relative speed of $\beta$ in the $x$ direction.
+Find $E$, $k$, $\omega$, and $c$ in the new frame.
+
+c) Verify that $c'=c$ and that the wavelength and frequency change according
+to the Doppler formula.
+
+d) What happens to the ligtht intensity?
+
+
+3) another four-foce problem?  Maybe a computer model?
+
+4) Some kind of continuity equation problem?
+
+5) Show the other components work for Maxwell's Equations.
 
 
