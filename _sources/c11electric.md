@@ -107,10 +107,11 @@ corresponds to the situation described in the previous section.  There
 is a current $I$ to the right, but I am going to break this down into
 two parts: a positive current going right and a negative current going
 left.  Each current comprises half the charge density, but they are
-equal and opposite densities, so the total charge density is zero, but
-the total current is $I$ to the right.  This way of conceptualizing the
-setup is shown in {numref}`frameAfig`, with the positive current in
-red and the negative current in blue.
+equal and opposite densities, so the total charge density is zero
+(which is to say the wire is electrically neutral), but the total
+current is $I$ to the right.  This way of conceptualizing the setup is
+shown in {numref}`frameAfig`, with the positive current in red and the
+negative current in blue.
 
 ```{figure} images/frameAfig.png
 :alt: frameApicture
@@ -139,13 +140,15 @@ attracted to the wire.  But how, if there is no force?  No *magnetic*
 force!  There could be a *different* force.
 
 ```{note}
-This is actually the exact sort of dilemma that led Einstein to develop
-SR in the first place.  How could you have a magnetic force in one
-reference frame, and an electric force in another reference frame?
+This is actually the exact sort of dilemma that led Einstein to
+develop SR in the first place.  How could you have a magnetic force in
+one reference frame, and an electric force in another reference frame?
 Shouldn't the laws of Physics be the same in all reference frames?
-His 1905 paper that introduced SR to the world was not called "Special
-Relativity" after all.  The name of that paper was "On the Electrodynamics
-of Moving Bodies".
+Einstein was troubled by the idea that two different models were
+needed to describe the same phenomenon, purely dependent on your
+choice of reference frame.  His 1905 paper that introduced SR to the
+world was not called "Special Relativity" after all.  The name of that
+paper was "On the Electrodynamics of Moving Bodies".
 ```
 
 In Frame B, illustrated in {numref}`frameBfig`, lengths along the
@@ -648,29 +651,60 @@ field, and it will shoot off into space.
 However, now consider this situation from the reference frame where
 the cart is at rest.  According to our postulates, if the cart moves
 out from under the electron in the lab frame, the electron would have
-to drift off the cart in the cart frame.  However, in the cart frame,
-nothing is moving -- it's exactly the same as the original lab frame
-when the cart was at rest.  So there is absolutely no reason why the
-electron would start drifting off the cart at all, let alone why
-should the electron pick that direction to drift?  If nothing is
-moving in this frame, there is no reason for the electron to move in
-any particular direction.
+to drift off the cart (in the opposite direction) in the cart frame.
+However, in the cart frame, nothing is moving -- it's exactly the same
+as the original lab frame when the cart was at rest.  So there is
+absolutely no reason why the electron would start drifting off the
+cart at all, let alone why should the electron pick that direction to
+drift?  If nothing is moving in this frame, there is no reason for the
+electron to move in any particular direction except around in its
+circle.
 
-What is the resolution of this paradox?  Now that you know how the
-$E$ and $B$ fields transform, you will understand that when you switch
-reference frames from the frame where the cart is at rest (vertical $\vec{B}
-= B_y\hat{y}$,
-$E=0$) to a frame where the cart is moving, there will be a field in
-the $z$ direction in the new frame ($E'_z = \gamma_Rv_RBy$), in addition
-to the altered value of $B$ ($B'_y = \gamma_R B_y$).  Although
-solving the equations of motion under these primed fields is beyond
-the scope of this book, the solution is a shape much like the path
-of a point on the wheel of a bike -- the electron will keep up with
-the cart in the frame where the cart is moving.  It not fall off the
-edge of the cart in either frame.
+What is the resolution of this paradox?  Now that you know how the $E$
+and $B$ fields transform, you will understand that when you switch
+reference frames from the frame where the cart is at rest (vertical
+$\vec{B} = B_y\hat{y}$, $E=0$) to a frame where the cart is moving,
+there will be an *electric* field in the $z$ direction in the new
+frame ($E'_z = \gamma_Rv_RBy$), in addition to the altered value of
+$B$ ($B'_y = \gamma_R B_y$).  Although solving the equations of motion
+under these primed fields is beyond the scope of this book, the
+solution is a shape much like the path of a point on the wheel of a
+bike -- the center of the circular motion will move in the $+x$
+direction at the speed of the cart.  This trajectory is shown in
+{numref}`circularpathfig`.  The electron will not fall off the edge of
+the cart in either frame: either it moves in a circle, or it moves
+in a circle where the center drifts to the right at the same
+speed as the cart.
 
 You can't resolve this paradox without relativity, and the speeds
 involved are obviously nowhere even close to the speed of light.
+
+
+
+```{code-cell}
+:tags: ["remove-cell"]
+v = .03
+om = .1
+th = np.arange(0,6*np.pi,.01)
+x = np.cos(th)+ th/om*v
+y = np.sin(th)
+fig = plt.figure(figsize=(9,5))
+plt.plot(x,y,'k-')
+plt.xlabel('Position in Direction of Cart Motion')
+plt.ylabel('Position Perpendicular to Cart Motion')
+glue("ecircfig", fig, display=False)
+
+```
+
+```{glue:figure} ecircfig
+:figwidth: 800px
+:name: circularpathfig
+
+Plot of electron trajectory in frame with moving cart.  The center
+of the circle drifts right with the same speed as the cart.  If you
+were to transform this shape back into a frame moving at $+v$, the
+trajectory would be a circle, and the cart would be at rest.
+```
 
 ## The Electromagnetic Field Tensor
 
@@ -714,8 +748,10 @@ and recall that the Lorentz matrix can be written as
 Note now I have switched to using Einstein notation and have left out
 the complex number $i$.  The letter $\alpha$ refers to the row number
 of the matrix, and the $\beta$ refers to the column number (0 through
-3, of course).   So $\Lambda^0_1 = -\gamma_R\beta_R$
-(first row, second column).
+3, of course).  So $\Lambda^0_1 = -\gamma_R\beta_R$ (first row, second
+column).  Of course, this is also the same number as $\Lambda^1_0$ --
+with the complex number notation, these numbers had opposite sign, to
+account for the $i^2$, but that is not necessary in this notation.
 
 
 At this point, many books jump to the answer and show that it works.
@@ -893,7 +929,9 @@ I can also say $E'_x/c=E_x/c$.  That's just as good.  Also, I need all
 the elements of $F^{\alpha\mu}$ to have the same dimensions, and to
 get $E$ and $B$ to have the same dimensions, I need to multiply $B$ times
 a speed or divide $E$ by a speed.  In principle, you could do it
-either way, but most people use $E/c$ rather than $cB$.
+either way, but most people use $E/c$ rather than $cB$.  Of course, if
+you use units where $c=1$, then the question of where to put the $c$
+becomes irrelevant.
 ```
 
 You can go through all four remaining elements of $F^{\alpha\mu}$ and
@@ -987,10 +1025,39 @@ increases counter-clockwise from the $y$ axis around the $yz$ plane.
 
 a) Write out the EM field tensor for this situation.
 
-b) Carry out a double-Lorentz transformation (EQuation
+b) Carry out a double-Lorentz transformation (Equation
 {eq}`oneofsixteenanti`) on this tensor to derive the fields from this
 piece of charge in a frame that is moving with a velocity $\beta
 \hat{x}$ relative to the rest frame.
 
 c) Compare your answer with the Biot-Savart Law.
 
+
+2) Show that the dual tensor $G^{\mu\nu}$ yields the same
+transformation rules (e.g. Equation {eq}`Eprimey` or {eq}`Bprimez`) as
+the field tensor $F^{\mu\nu}$.
+
+3) Verify that rotating the capacitor as described in the text will
+indeed produce Equations {eq}`Eprimez` and {eq}`Bprimey`.
+
+4) Verify that $\Lambda^\mu_\nu dx^\nu$ (without the $i$) leads to the
+same transformation equations as ${\cal L}_x(\beta_R)[dx_4]$ did with
+the $i$.
+
+5) A velocity filter is a setup that creates crossed $\vec{E}$ and $\vec{B}$
+fields such that a charged particle moving with the right velocity
+$\vec{v} = v\hat{x}$ experiences no net force and will continue moving in
+a straight line.  Assume $\vec{E}$ is in the $\hat{y}$ direction and
+$\vec{B}$ is in the $\hat{z}$ direction.  Particles that have any other
+velocity will experience a transverse force and will therefore be pushed
+out of the beam.
+
+a) What relationship between $E$ and $B$ will result in $\vec{F} =
+q\vec{E} + q\vec{v}\times\vec{B} = 0$? (you can guess this from dimensional
+analysis, but it's easy enough to solve).
+
+b) Derive the fields in the rest frame of a particle that has this
+velocity and show that the force on the particle in this frame is
+still zero.
+
+6) Check the two special cases in Griffiths.

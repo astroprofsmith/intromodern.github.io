@@ -236,6 +236,14 @@ In classical notation, we would say
 :label: conteqclass
 \vec{\nabla}\cdot\vec{J} = \frac{\partial \rho v_x}{\partial x}+ \frac{\partial \rho v_y}{\partial y}+ \frac{\partial \rho v_z}{\partial z} = -\frac{\partial \rho}{\partial t}
 ```
+The right side is the rate of change of the charge density at a particular
+location, and the left side is the divergence of the vector field.  So if
+the amount of charge is decreasing, $\partial \rho/\partial t <0$ and the
+divergence is positive, which means the current is flowing outward.  If the
+current is flowing inward, then the divergence is negative, and the time
+derivative is positive, which means the amount of charge at that location
+is increasing, which makes sense.
+
 If we move the right side over the to left and multiply top and bottom by $c$,
 it should start to suggest something:
 ```{math}
@@ -378,9 +386,17 @@ permeability of free space, and do not confuse it with the $\mu$ we are using
 to indicate the four-vector components!
 ```
 
-What about the other components?  Lets look at $\mu=1$:
+What about the space components?  Lets look at $\mu=1$:
 ```{math}
 :label: div4EM_1
+\partial_\nu F^{1\nu} = \frac{\partial}{\partial x^0} F^{10}
++  \frac{\partial}{\partial x^1} F^{11}
++  \frac{\partial}{\partial x^2} F^{12}
++  \frac{\partial}{\partial x^3} F^{13}
+```
+
+```{math}
+:label: div4EM_2
 \partial_\nu F^{1\nu} = \frac{\partial}{\partial (ct)} F^{10}
 +  \frac{\partial}{\partial x} F^{11}
 +  \frac{\partial}{\partial y} F^{12}
@@ -502,7 +518,12 @@ to the Doppler formula.
 d) What happens to the ligtht intensity?
 
 
-3) another four-foce problem?  Maybe a computer model?
+3) Write a Python program to apply the momentum principle and
+iteratively update the velocity and position of a particle with rest
+mass $m_0 = 0.5$, that starts at the origin, moving with initial
+velocity $\vec{\beta}=0.001\hat{x}$, when $\vec{E} = 10.0~\hat{y}$ and
+$\vec{B}=10.0~\hat{z}$ (using units with $c=1$).  Verify that the
+trajectory looks like {numref}`circularpathfig`.
 
 4) Some kind of continuity equation problem?
 

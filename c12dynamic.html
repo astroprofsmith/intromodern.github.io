@@ -558,6 +558,13 @@ charge at that location is changing.</p>
 <p>In classical notation, we would say</p>
 <div class="math notranslate nohighlight" id="equation-conteqclass">
 <span class="eqno">(224)<a class="headerlink" href="#equation-conteqclass" title="Permalink to this equation">#</a></span>\[\vec{\nabla}\cdot\vec{J} = \frac{\partial \rho v_x}{\partial x}+ \frac{\partial \rho v_y}{\partial y}+ \frac{\partial \rho v_z}{\partial z} = -\frac{\partial \rho}{\partial t}\]</div>
+<p>The right side is the rate of change of the charge density at a particular
+location, and the left side is the divergence of the vector field.  So if
+the amount of charge is decreasing, <span class="math notranslate nohighlight">\(\partial \rho/\partial t &lt;0\)</span> and the
+divergence is positive, which means the current is flowing outward.  If the
+current is flowing inward, then the divergence is negative, and the time
+derivative is positive, which means the amount of charge at that location
+is increasing, which makes sense.</p>
 <p>If we move the right side over the to left and multiply top and bottom by <span class="math notranslate nohighlight">\(c\)</span>,
 it should start to suggest something:</p>
 <div class="math notranslate nohighlight" id="equation-movetimeover">
@@ -670,9 +677,14 @@ Gauss’s Law (Equation <a class="reference internal" href="#equation-gauss">(22
 permeability of free space, and do not confuse it with the <span class="math notranslate nohighlight">\(\mu\)</span> we are using
 to indicate the four-vector components!</p>
 </aside>
-<p>What about the other components?  Lets look at <span class="math notranslate nohighlight">\(\mu=1\)</span>:</p>
+<p>What about the space components?  Lets look at <span class="math notranslate nohighlight">\(\mu=1\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-div4em-1">
-<span class="eqno">(238)<a class="headerlink" href="#equation-div4em-1" title="Permalink to this equation">#</a></span>\[\partial_\nu F^{1\nu} = \frac{\partial}{\partial (ct)} F^{10}
+<span class="eqno">(238)<a class="headerlink" href="#equation-div4em-1" title="Permalink to this equation">#</a></span>\[\partial_\nu F^{1\nu} = \frac{\partial}{\partial x^0} F^{10}
++  \frac{\partial}{\partial x^1} F^{11}
++  \frac{\partial}{\partial x^2} F^{12}
++  \frac{\partial}{\partial x^3} F^{13}\]</div>
+<div class="math notranslate nohighlight" id="equation-div4em-2">
+<span class="eqno">(239)<a class="headerlink" href="#equation-div4em-2" title="Permalink to this equation">#</a></span>\[\partial_\nu F^{1\nu} = \frac{\partial}{\partial (ct)} F^{10}
 +  \frac{\partial}{\partial x} F^{11}
 +  \frac{\partial}{\partial y} F^{12}
 +  \frac{\partial}{\partial z} F^{13}
@@ -700,7 +712,7 @@ of which had the <span class="math notranslate nohighlight">\(E\)</span> and <sp
 back the dual tensor <span class="math notranslate nohighlight">\(G^{\mu\nu}\)</span> at this point (Equation
 <a class="reference internal" href="c11electric.html#equation-dualtensorfin">(212)</a>), and take its four-divergence, we will see that</p>
 <div class="math notranslate nohighlight" id="equation-dual4div">
-<span class="eqno">(239)<a class="headerlink" href="#equation-dual4div" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(240)<a class="headerlink" href="#equation-dual4div" title="Permalink to this equation">#</a></span>\[\boxed{
 \partial_\nu G^{\mu\nu}=0
 }\]</div>
 <p>will give us the other two Maxwell’s Equations.</p>
@@ -714,7 +726,7 @@ take care of Equation <a class="reference internal" href="#equation-nogaussb">(2
 and we get the same result as Equation <a class="reference internal" href="#equation-div4em-1">(238)</a>, just with
 <span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(B\)</span> swapped:</p>
 <div class="math notranslate nohighlight" id="equation-div4dual-1">
-<span class="eqno">(240)<a class="headerlink" href="#equation-div4dual-1" title="Permalink to this equation">#</a></span>\[\partial_\nu G^{1\nu} = \frac{\partial}{\partial (ct)} G^{10}
+<span class="eqno">(241)<a class="headerlink" href="#equation-div4dual-1" title="Permalink to this equation">#</a></span>\[\partial_\nu G^{1\nu} = \frac{\partial}{\partial (ct)} G^{10}
 +  \frac{\partial}{\partial x} G^{11}
 +  \frac{\partial}{\partial y} G^{12}
 +  \frac{\partial}{\partial z} G^{13}
@@ -722,10 +734,10 @@ and we get the same result as Equation <a class="reference internal" href="#equa
 \frac{\partial E_z}{c\partial y} + \frac{\partial E_y}{c\partial z} \]</div>
 <p>when you include the <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> components, this becomes</p>
 <div class="math notranslate nohighlight" id="equation-spacedual">
-<span class="eqno">(241)<a class="headerlink" href="#equation-spacedual" title="Permalink to this equation">#</a></span>\[-\frac{1}{c}\frac{\partial\vec{B}}{\partial t} +\frac{1}{c}\vec{\nabla}\times\vec{E}\]</div>
+<span class="eqno">(242)<a class="headerlink" href="#equation-spacedual" title="Permalink to this equation">#</a></span>\[-\frac{1}{c}\frac{\partial\vec{B}}{\partial t} +\frac{1}{c}\vec{\nabla}\times\vec{E}\]</div>
 <p>set this to zero and multiply through by <span class="math notranslate nohighlight">\(c\)</span> to get Faraday’s Law,
 Equation <a class="reference internal" href="#equation-faraday">(231)</a>.</p>
-<p>So Equations <a class="reference internal" href="#equation-srmaxwell1">(237)</a> and <a class="reference internal" href="#equation-dual4div">(239)</a> represent all four
+<p>So Equations <a class="reference internal" href="#equation-srmaxwell1">(237)</a> and <a class="reference internal" href="#equation-dual4div">(240)</a> represent all four
 of Maxwell’s Equations in only two compact versions.  While this could
 arguably be described as simply a notational trick, since these two
 equations are really representing the same eight separate equations
@@ -774,7 +786,12 @@ Find <span class="math notranslate nohighlight">\(E\)</span>, <span class="math 
 to the Doppler formula.</p>
 <p>d) What happens to the ligtht intensity?</p>
 <ol class="arabic simple" start="3">
-<li><p>another four-foce problem?  Maybe a computer model?</p></li>
+<li><p>Write a Python program to apply the momentum principle and
+iteratively update the velocity and position of a particle with rest
+mass <span class="math notranslate nohighlight">\(m_0 = 0.5\)</span>, that starts at the origin, moving with initial
+velocity <span class="math notranslate nohighlight">\(\vec{\beta}=0.001\hat{x}\)</span>, when <span class="math notranslate nohighlight">\(\vec{E} = 10.0~\hat{y}\)</span> and
+<span class="math notranslate nohighlight">\(\vec{B}=10.0~\hat{z}\)</span> (using units with <span class="math notranslate nohighlight">\(c=1\)</span>).  Verify that the
+trajectory looks like <a class="reference internal" href="c11electric.html#circularpathfig"><span class="std std-numref">Fig. 34</span></a>.</p></li>
 <li><p>Some kind of continuity equation problem?</p></li>
 <li><p>Show the other components work for Maxwell’s Equations.</p></li>
 </ol>

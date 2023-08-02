@@ -659,3 +659,17 @@ at least for that moment, the particle is approximately at rest.
 You just have to remember that the approximation is only valid *at*
 a particular moment.
 ```
+
+4) Consider a fast-pitch baseball with an initial velocity of
+$\vec{v} = 50~{\rm m/s}~\hat{x}$, where $\hat{x}$ points toward
+home plate and $\hat{z}$ points up.  Take the rest mass of a
+baseball to be $m_0=0.1$ kg.
+
+a) Write the (initial) Minkowski force four-vector for this baseball.
+
+b) Write a python program to model the trajectory of this baseball
+(ignore interactions with the air) using the diplacement, momentum,
+and velocity four-vectors, and verify that you do indeed get a
+parabola.
+
+c) Increase speed -- is this useful?  Try it myself.
