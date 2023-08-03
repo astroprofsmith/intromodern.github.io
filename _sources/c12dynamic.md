@@ -151,12 +151,13 @@ $z$ components of the Lorentz force yourself.
 Note that the index $\beta$ for the four velocity in Equation
 {eq}`fullLorF` is a subscript.  When you lower the index, you also
 make the time component negative.  Hence the $-c$ in Equation
-{eq}`LFrow1`.  The first column of the EM tensor ($F^{\alpha 0}$) has
-negative signs on all the $E$ components, so you need the $\gamma c$
-component of the four-velocity to be negative, which makes the final
-answer positive, as it needs to be for Equation {eq}`M4EMall4`.  If
-you use it consistently, Einstein notation will always get you the
-right answer, but you have to be careful about using it right.
+{eq}`LFrow1`.  The first column of the EM tensor ($F^{\alpha 0}$, see
+Equation {eq}`EMtensorfin`) has negative signs on all the $E$ components, so you
+need the $\gamma c$ component of the four-velocity to be negative,
+which makes the final answer positive, as it needs to be for Equation
+{eq}`M4EMall4`.  If you use it consistently, Einstein notation will
+always get you the right answer, but you have to be careful about
+using it right.
 
 ```{warning}
 You have to watch the greek letters carefully in Einstein notation.

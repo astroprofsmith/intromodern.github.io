@@ -939,6 +939,7 @@ figure out that one way of writing $F$ that will satisfy Equation
 {eq}`twotransforms` is:
 ```{math}
 :label: EMtensorfin
+\boxed{
 F^{\alpha\mu} =
 \begin{pmatrix}
 0 & E_x/c & E_y/c & E_z/c\\
@@ -946,6 +947,7 @@ F^{\alpha\mu} =
 -E_y/c & -B_z & 0 & B_x\\
 -E_z/c & B_y & -B_x & 0
 \end{pmatrix}
+}
 ```
 
 You can (and should) check that you will reproduce the the other four
@@ -964,6 +966,7 @@ you would construct the following matrix:
 
 ```{math}
 :label: Dualtensorfin
+\boxed{
 G^{\alpha\mu} =
 \begin{pmatrix}
 0 & B_x & B_y & B_z\\
@@ -971,6 +974,7 @@ G^{\alpha\mu} =
 -B_y & E_z/c & 0 & -E_x/c\\
 -B_z & -E_y/c & E_x/c & 0
 \end{pmatrix}
+}
 ```
 This is called the "dual tensor", and it works *just as well* as the "regular"
 EM field tensor.  It's purely a matter of convention that we tend to use
