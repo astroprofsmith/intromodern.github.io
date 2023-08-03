@@ -140,15 +140,23 @@ which matches Equation {eq}`M4EMall4`, and the second row is
 K^1 = q(u_0F^{10} + u_1F^{11} + u_2F^{12} + u_3F^{13})=
 q\gamma ((-c)(-E_x/c) + 0.0 + u_yB_z - u_zB_y)
 ```
-and so on.  Note, however, that we have lowered the index $\beta$ in
-the four velocity.  When you lower the index, you also make the time
-component negative.  Hence the $-c$ in Equation {eq}`LFrow1`.  The
-first column of the EM tensor ($F^{\alpha 0}$) has negative signs on
-all the $E$ components, so you need the $\gamma c$ component of the
-four-velocity to be negative, which makes the final answer positive,
-as it needs to be for Equation {eq}`M4EMall4`.  If you use it
-consistently, Einstein notation will always get you the right answer,
-but you have to be careful about using it right.
+```{math}
+:label: LFrow1b
+K^1 = q\gamma (\vec{E} + \vec{u}\times\vec{B})\cdot\hat{x}
+```
+which is the $x$ component of the Lorentz Force! (times $\gamma$)
+You can work out $K^2$ and $K^3$ and show they are the $y$ and
+$z$ components of the Lorentz force yourself.
+
+Note that the index $\beta$ in the four velocity is a subscript.  When
+you lower the index, you also make the time component negative.  Hence
+the $-c$ in Equation {eq}`LFrow1`.  The first column of the EM tensor
+($F^{\alpha 0}$) has negative signs on all the $E$ components, so you
+need the $\gamma c$ component of the four-velocity to be negative,
+which makes the final answer positive, as it needs to be for Equation
+{eq}`M4EMall4`.  If you use it consistently, Einstein notation will
+always get you the right answer, but you have to be careful about
+using it right.
 
 ```{warning}
 You have to watch the greek letters carefully in Einstein notation.
