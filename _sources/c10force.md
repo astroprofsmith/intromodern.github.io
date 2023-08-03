@@ -410,17 +410,19 @@ front to find that
 \boxed{
 \frac{dv}{dt} = \frac{1}{\gamma^3}\frac{F_x}{m_0}}
 ```
+
 The corrspondance principle check is satisfied because for
 $\gamma\approx 1$, this is just $a=F/m$, as Newton would expect.
 However, as $v\rightarrow c$, $\gamma \rightarrow \infty$, which means
 the acceleration is going to plummet to zero as the speed gets close
 to $c$, regardless of the fact that the force has not changed.  Yet,
-again, the universe conspires to make sure that nothing can go
-faster than $c$.  The closer you get to $c$, the harder it is to
-get any further acceleration.  This limit is displayed in Figure 10.1 --
-two initial speeds are shown to indicate that it doesn't matter how
-fast the object is moving to begin with.  Even under a constant force,
-it will never move faster than the universal speed limit.
+again, the universe conspires to make sure that nothing can go faster
+than $c$.  The closer you get to $c$, the harder it is to get any
+further acceleration.  This limit is displayed in
+{numref}`constaccfig` -- two initial speeds are shown to indicate that
+it doesn't matter how fast the object is moving to begin with.  Even
+under a constant force, it will never move faster than the universal
+speed limit.
 
 ```{code-cell}
 :tags: ["remove-cell"]
