@@ -521,10 +521,14 @@ to keep providing a finite $dv$ would go to infinity.  Once again, it
 would take an infinite amount of energy to actually get to $c$.
 
 Another way of looking at it is that if you keep providing a constant
-energy $dE$ for each "kick", as $v_x\rightarrow c$, $\gamma \rightarrow
-\infty$, while $m_0$ is a constant, so $dv_x$ has to go to zero to
-balance the $\gamma$ and keep $dE$ constant.  The same energy input
-causes a smaller and smaller change in velocity.
+energy $dE$ for each "kick" (time step $dt$), as $v_x\rightarrow c$,
+$\gamma \rightarrow \infty$, while $m_0$ is a constant, so $dv_x$ has
+to go to zero to balance the $\gamma$ and keep $dE$ constant.  The
+same energy input causes a smaller and smaller change in velocity.
+As long as $v_x\ll c$, then $\gamma\approx 1$ and then the same
+$dE$ will cause the same $dv_x$ each time.  This is what your newtonian
+intuition would expect.  However, as $v_x\rightarrow c$, that
+intuition is no longer accurate.
 
 The general case of applying the relativistic Newton's law to a
 particle having laboratory accelerations and velocities in all three
