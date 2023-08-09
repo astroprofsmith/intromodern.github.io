@@ -502,7 +502,7 @@ world, not the way the world itself works.
 1) What is the Minkowski force on a moving charge near a current-carrying
 wire?  Use a Lorentz transformation to convert this four vector into
 the rest frame of the charge.  Compare with derivation in last chapter
-that didn't use Lorentz transofrmations and four-vectors.
+that didn't use Lorentz transformations and four-vectors.
 
 2) The plane-wave solution to Maxwell's Equations is a travelling E-M wave
 that would take the following form:
@@ -524,7 +524,7 @@ Find $E$, $k$, $\omega$, and $c$ in the new frame.
 c) Verify that $c'=c$ and that the wavelength and frequency change according
 to the Doppler formula.
 
-d) What happens to the ligtht intensity?
+d) What happens to the light intensity?
 
 
 3) Write a Python program to apply the momentum principle and
@@ -534,7 +534,7 @@ velocity $\vec{\beta}=0.001\hat{x}$, when $\vec{E} = 10.0~\hat{y}$ and
 $\vec{B}=10.0~\hat{z}$ (using units with $c=1$).  Verify that the
 trajectory looks like {numref}`circularpathfig`.
 
-4) Some kind of continuity equation problem?
+4) Derive $\partial_\mu J^\mu = 0$ from $\partial_\mu F^{\mu\nu} = \mu_0 J^\mu$.
 
 5) Show the other components work for Maxwell's Equations.
 

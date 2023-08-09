@@ -1064,4 +1064,10 @@ b) Derive the fields in the rest frame of a particle that has this
 velocity and show that the force on the particle in this frame is
 still zero.
 
-6) Check the two special cases in Griffiths.
+6) Show that if $\vec{B}=0$ in the original frame, then in the
+transformed frame $\vec{B}' = -(\vec{v}\times\vec{E})/c^2$ and if
+$\vec{E}=0$ in the original frame, then $\vec{E}' =
+\vec{v}\times\vec{B}$.  Compare the last equation to the Lorentz
+force.
+
+7) What is $F^{\mu\nu}G_{\mu\nu}$?
