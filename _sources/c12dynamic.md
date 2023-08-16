@@ -334,11 +334,11 @@ For now, let's remind ourselves of the four classic Maxwell's Equations:
 ```
 ```{math}
 :label: faraday
-\vec{\nabla}\times\vec{B} + \frac{\partial \vec{E}}{\partial t} = 0
+\vec{\nabla}\times\vec{E} + \frac{\partial \vec{B}}{\partial t} = 0
 ```
 ```{math}
 :label: ampere
-\vec{\nabla}\times\vec{E} - \mu_0\epsilon_0 \frac{\partial \vec{B}}{\partial t} = \mu_0\vec{J}
+\vec{\nabla}\times\vec{B} - \mu_0\epsilon_0 \frac{\partial \vec{E}}{\partial t} = \mu_0\vec{J}
 ```
 
 Now, I have already introduced the four-divergence in the continuity

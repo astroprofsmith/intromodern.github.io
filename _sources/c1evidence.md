@@ -38,7 +38,7 @@ does work this way.
 ## Experimental Foundation
 
 Before the 1900s, a popular theory about the propagation of light
-waves was that they traveled in some medium called the 'ether'. The
+waves was that they traveled in some medium called the "ether". The
 'ether' plays the analogous role that the air plays in the propagation
 of sound. The physical properties of the air determine the speed of
 the sound waves. In the case of the 'ether', it supported a speed of
