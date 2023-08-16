@@ -292,7 +292,7 @@ information content, but Equation {eq}`continuitySR` requires *so* much less wri
 it's much more popular than other methods.
 
 ```{note}
-You will note that the four-gradient $\partial_\alpha$ is written in
+You will note that the four-divergence $\partial_\alpha$ is written in
 covariant form, but it is using the contravariant components for the
 derivatives, so it is written with the subscript, but when you write
 it out in terms of components, the terms in the denominator get the
