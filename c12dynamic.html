@@ -724,10 +724,11 @@ back the dual tensor <span class="math notranslate nohighlight">\(G^{\mu\nu}\)</
 <p>will give us the other two Maxwell’s Equations.</p>
 <p>Again, let’s start with the time component: the first row.  The
 zero in position <span class="math notranslate nohighlight">\(G^{00}\)</span> will kill the time derivative, and then
-we have <span class="math notranslate nohighlight">\(\vec{\nabla}\cdot\vec{B}\)</span> from the other three components,
+we have <span class="math notranslate nohighlight">\(-\vec{\nabla}\cdot\vec{B}\)</span> from the other three components,
 just like we got the divergence of <span class="math notranslate nohighlight">\(\vec{E}\)</span> before.  We know that
 <span class="math notranslate nohighlight">\(\vec{B}\)</span> does not have a divergence, so setting this to zero will
-take care of Equation <a class="reference internal" href="#equation-nogaussb">(231)</a>.</p>
+take care of Equation <a class="reference internal" href="#equation-nogaussb">(231)</a>.  We can multiply through
+by the minus sign to get rid of that.</p>
 <p>For the spatial components, we take <span class="math notranslate nohighlight">\(\mu=1\)</span> as an example, again,
 and we get the same result as Equation <a class="reference internal" href="#equation-div4em-1">(239)</a>, just with
 <span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(B\)</span> swapped:</p>
@@ -736,11 +737,11 @@ and we get the same result as Equation <a class="reference internal" href="#equa
 +  \frac{\partial}{\partial x} G^{11}
 +  \frac{\partial}{\partial y} G^{12}
 +  \frac{\partial}{\partial z} G^{13}
-= -\frac{1}{c}\frac{\partial B_x}{\partial t} + 0.0 -
+= \frac{1}{c}\frac{\partial B_x}{\partial t} + 0.0 -
 \frac{\partial E_z}{c\partial y} + \frac{\partial E_y}{c\partial z} \]</div>
 <p>when you include the <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> components, this becomes</p>
 <div class="math notranslate nohighlight" id="equation-spacedual">
-<span class="eqno">(243)<a class="headerlink" href="#equation-spacedual" title="Permalink to this equation">#</a></span>\[-\frac{1}{c}\frac{\partial\vec{B}}{\partial t} +\frac{1}{c}\vec{\nabla}\times\vec{E}\]</div>
+<span class="eqno">(243)<a class="headerlink" href="#equation-spacedual" title="Permalink to this equation">#</a></span>\[\frac{1}{c}\frac{\partial\vec{B}}{\partial t} +\frac{1}{c}\vec{\nabla}\times\vec{E}\]</div>
 <p>set this to zero and multiply through by <span class="math notranslate nohighlight">\(c\)</span> to get Faraday’s Law,
 Equation <a class="reference internal" href="#equation-faraday">(232)</a>.</p>
 <p>So Equations <a class="reference internal" href="#equation-srmaxwell1">(238)</a> and <a class="reference internal" href="#equation-dual4div">(241)</a> represent all four

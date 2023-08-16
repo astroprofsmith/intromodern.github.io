@@ -446,10 +446,11 @@ will give us the other two Maxwell's Equations.
 
 Again, let's start with the time component: the first row.  The
 zero in position $G^{00}$ will kill the time derivative, and then
-we have $\vec{\nabla}\cdot\vec{B}$ from the other three components,
+we have $-\vec{\nabla}\cdot\vec{B}$ from the other three components,
 just like we got the divergence of $\vec{E}$ before.  We know that
 $\vec{B}$ does not have a divergence, so setting this to zero will
-take care of Equation {eq}`nogaussB`.
+take care of Equation {eq}`nogaussB`.  We can multiply through
+by the minus sign to get rid of that.
 
 For the spatial components, we take $\mu=1$ as an example, again,
 and we get the same result as Equation {eq}`div4EM_1`, just with
@@ -460,13 +461,13 @@ $E$ and $B$ swapped:
 +  \frac{\partial}{\partial x} G^{11}
 +  \frac{\partial}{\partial y} G^{12}
 +  \frac{\partial}{\partial z} G^{13}
-= -\frac{1}{c}\frac{\partial B_x}{\partial t} + 0.0 -
+= \frac{1}{c}\frac{\partial B_x}{\partial t} + 0.0 -
 \frac{\partial E_z}{c\partial y} + \frac{\partial E_y}{c\partial z} 
 ```
 when you include the $y$ and $z$ components, this becomes
 ```{math}
 :label: spacedual
--\frac{1}{c}\frac{\partial\vec{B}}{\partial t} +\frac{1}{c}\vec{\nabla}\times\vec{E}
+\frac{1}{c}\frac{\partial\vec{B}}{\partial t} +\frac{1}{c}\vec{\nabla}\times\vec{E}
 ```
 set this to zero and multiply through by $c$ to get Faraday's Law,
 Equation {eq}`faraday`.
