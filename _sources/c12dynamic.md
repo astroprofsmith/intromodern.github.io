@@ -461,15 +461,15 @@ $E$ and $B$ swapped:
 +  \frac{\partial}{\partial x} G^{11}
 +  \frac{\partial}{\partial y} G^{12}
 +  \frac{\partial}{\partial z} G^{13}
-= \frac{1}{c}\frac{\partial B_x}{\partial t} + 0.0 -
+= -\frac{1}{c}\frac{\partial B_x}{\partial t} + 0.0 -
 \frac{\partial E_z}{c\partial y} + \frac{\partial E_y}{c\partial z} 
 ```
 when you include the $y$ and $z$ components, this becomes
 ```{math}
 :label: spacedual
-\frac{1}{c}\frac{\partial\vec{B}}{\partial t} +\frac{1}{c}\vec{\nabla}\times\vec{E}
+-\frac{1}{c}\frac{\partial\vec{B}}{\partial t} -\frac{1}{c}\vec{\nabla}\times\vec{E}
 ```
-set this to zero and multiply through by $c$ to get Faraday's Law,
+set this to zero and multiply through by $-c$ to get Faraday's Law,
 Equation {eq}`faraday`.
 
 So Equations {eq}`SRmaxwell1` and {eq}`dual4div` represent all four
