@@ -97,11 +97,12 @@ parallel to $\vec{v}_R$.
 
 
 The 4-vector components are determined by the two events shown as
-colored dots in Figure 4.1. Since we have the choice of which is the
-x-axis, we will always pick the relative velocity of the two observers
-to lie along the $x$-axis, to make the math simpler. Putting the
-diagram of Figure 4.1 into 4-vector notation, we need a tool that
-will take us from $[dx_4]$ to $[dx_4]^\prime$, like so:
+colored dots in {numref}`stwithvecfig`. Since we have the choice of
+which is the x-axis, we will always pick the relative velocity of the
+two observers to lie along the $x$-axis, to make the math
+simpler. Putting the diagram of {numref}`stwithvecfig` into 4-vector
+notation, we need a tool that will take us from $[dx_4]$ to
+$[dx_4]^\prime$, like so:
 ```{math}
 :label: eqlort
 [dx_4]^\prime = {\cal L}_x(\beta_R)[dx_4]
@@ -243,12 +244,12 @@ i\beta_R\gamma_R & L_{11} & L_{12} & L_{13}\\
 
 The number of unknowns in the Lorentz transformation matrix has
 decreased from 16 to 6. The rest can be found using similar tricks.
-For example, you could set up the events in Figure 4.1 such that the
-primed observer was in the rest frame of the events and work out the
-values for the rest of the unknowns. When all such tricks are
-exhausted, the Lorentz transformation between two frames of reference
-(Fig 4.1) that have a relative speed of $\beta_R$ in the positive x
-direction is given by the matrix:
+For example, you could set up the events in {numref}`stwithvecfig`
+such that the primed observer was in the rest frame of the events and
+work out the values for the rest of the unknowns. When all such tricks
+are exhausted, the Lorentz transformation between two frames of
+reference ({numref}`stwithvecfig`) that have a relative speed of
+$\beta_R$ in the positive x direction is given by the matrix:
 ```{math}
 :label: lormat
 \boxed{
@@ -261,12 +262,12 @@ i\beta_R\gamma_R & \gamma_R & 0 & 0\\
 \end{bmatrix}
 }
 ```
-The subscript $x$ is to remind us that the relative velocity is
-in the $x$ direction.  If that were not the case, the matrix
-would look a lot more complicated!  Note that this formulation
-is based on the diagram in Figure 4.1 -- if the velocity were in
-the opposite direction, the $\beta_R$ would become $-\beta_R$,
-the **inverse Lorentz transformation**.
+The subscript $x$ is to remind us that the relative velocity is in the
+$x$ direction.  If that were not the case, the matrix would look a lot
+more complicated!  Note that this formulation is based on the diagram
+in {numref}`stwithvecfig` -- if the velocity were in the opposite
+direction, the $\beta_R$ would become $-\beta_R$, the **inverse
+Lorentz transformation**.
 
 ## Examples of Lorentz Transformations
 
@@ -416,16 +417,12 @@ separately.  Which method you use would be irrelevant to the output.
 
 ## Problems
 
-1. A star is 25.O light years away from the earth. If a space craft
-were to travel with $\beta = 0.998$ with respect to the earth, how long
-would it take the space craft to reach the star as measured by an
-observer:
-
-a) on the earth
-
-b) Set up a displacement four vector and use the Lorentz
-Transformation to find the time as measured by an observer aboard the
-space craft.
+1. A star is $25.O$ light years away from the earth. If a space craft
+were to travel with $\beta = 0.998$ with respect to the earth, how
+long would it take the space craft to reach the star as measured by an
+observer on the Earth?  Set up a displacement four vector and use the
+Lorentz Transformation to find the time as measured by an observer
+aboard the space craft.
 
 2. In this problem, you will find two more elements of the Lorentz
 transformation matrix. In Equation {eq}`lormat3`, there are still 6
@@ -443,13 +440,13 @@ given by Equation {eq}`lormat3`.
 
 
 b) Multiply out the elements of this matrix equation and show how
-$dt_O$ (time measured in the rest frame of the events) is related to
+$dt_0$ (time measured in the rest frame of the events) is related to
 $dx$ and $dt$.
 
 c) knowing that the size of the two 4-vectors must be the same, find
 values for $L_{11}$ and $L_{01}$.
 
-5) An arbitrary 4-vector $v^\alpha$ has components: $v^0$, $v^1$, $v^2$,
+3) An arbitrary 4-vector $v^\alpha$ has components: $v^0$, $v^1$, $v^2$,
 and $v^3$.
 
 a) Write this 4-vector in column vector notation.
@@ -460,7 +457,7 @@ the new 4-vector using Equations {eq}`eqlort` and {eq}`lormat`.
 
 c) Show that the size of the two 4-vectors are the same.
 
-6) An observer in the rest frame of two events measures a time
+4) An observer in the rest frame of two events measures a time
 interval of $1.00~\mu$s. A second observer, watching the same
 two events measures a time interval of $1.50~\mu$s.
 
@@ -472,17 +469,17 @@ observers.
 
 c) How for did the second observer see the events displace?
 
-7) A scalar quantity in relativity is one whose value does not change
+5) A scalar quantity in relativity is one whose value does not change
  when Lorentz Transformation Introduction to Special Relativity the
  Lorentz transformation is applied to it.
 
-a) Show that the size of the displacement 4-vector is a scalar
+6) Show that the size of the displacement 4-vector is a scalar
 quantity.
 
 b) Show that the time interval measured in the rest frame of two
-events, $dt_O$, is a scalar quantity.
+events, $dt_0$, is a scalar quantity.
 
-8) Two observers are watching two events taking place are traveling at
+7) Two observers are watching two events taking place are traveling at
 relative speed $\beta_R = 0.9950$. The first observer manages to
 measure a time interval of $6.00$ ns, but does not measure the
 displacement $dx$. The second observer manages to measure a
@@ -491,7 +488,7 @@ events. Find the value of the displacement $dx$ that the first
 observer did not measure.
 
 
-9) The 'unit matrix' or 'identity matrix' has the number 1 along the
+8) The 'unit matrix' or 'identity matrix' has the number 1 along the
 diagonal elements and has value of O for all of the off diagonal
 elements. In general, if a matrix has an inverse, then:
 ```{math}
@@ -511,7 +508,7 @@ Show that for the Lorentz transformation matrix
 ```
 
 
-10) When a new theory is proposed, in the region where the old theory
+9) When a new theory is proposed, in the region where the old theory
 worked, the new theory must reduce to the same form as the old. This
 requirement for new theories is called the **correspondence
 principle**, first articulated by Niels Bohr. The Lorentz
@@ -530,9 +527,9 @@ $$dx'= dx- v_Rdt$$
 provided the relative speed of the primed observer in the same direction as
 the object moves.
 
-Show that if $\beta_R\ll 1$ (slow moving), the Lorentz transfor-mation
-equation for the displacement 4-vectors as written in Equations
-{eq}`eqlort` and {eq}`lormat` gives the same predictions as Newton found
+Show that if $\beta_R\ll 1$ (slow moving), the Lorentz transformation
+equation for the displacement 4-vectors as written in 
+{numref}`eqlort` and {numref}`lormat` gives the same predictions as Newton found
 for slow moving objects.
 
 *Hint: To do this you first must rewrite the Lorentz transformation
