@@ -97,7 +97,7 @@ i3.00~{\rm m}\\
 \end{bmatrix}
 \end{equation*}
 The size of this displacement 4 vector is:
-$$(1.20^2+2.00^2)~{\rm m}^2 = -3.56~{\rm m}^2$$
+$$(1.20^2+2.00^2-3.00^2)~{\rm m}^2 = -3.56~{\rm m}^2$$
 ```
 
 The "size" of this four-dimensional object would then be $$[dx_4]^2 =
