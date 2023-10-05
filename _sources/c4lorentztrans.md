@@ -417,7 +417,7 @@ separately.  Which method you use would be irrelevant to the output.
 
 ## Problems
 
-1. A star is $25.O$ light years away from the earth. If a space craft
+1. A star is $25.0$ light years away from the earth. If a space craft
 were to travel with $\beta = 0.998$ with respect to the earth, how
 long would it take the space craft to reach the star as measured by an
 observer on the Earth?  Set up a displacement four vector and use the
