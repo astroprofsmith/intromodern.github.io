@@ -126,7 +126,10 @@ L_{30} & L_{31} & L_{32} & L_{33}
 \end{bmatrix}
 ```
 The problem then is to figure out what the 16 numbers in ${\cal L}$
-are that will achieve our goal.
+are that will achieve our goal.  Note this is not quite the same thing as
+Einstein notation -- in later chapters we'll see how the sub and superscript
+notation works for the Lorentz matrix, but here I'm just using $\alpha$
+and $\beta$ as ways of counting rows and columns.
 
 ```{warning} 
 Note that the $\beta$ used as the index counter of the matrices has
