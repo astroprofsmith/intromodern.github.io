@@ -489,7 +489,7 @@ observer did not measure.
 
 
 8) The 'unit matrix' or 'identity matrix' has the number 1 along the
-diagonal elements and has value of O for all of the off diagonal
+diagonal elements and has value of $0$ for all of the off diagonal
 elements. In general, if a matrix has an inverse, then:
 ```{math}
 :label: unitmat
@@ -529,7 +529,7 @@ the object moves.
 
 Show that if $\beta_R\ll 1$ (slow moving), the Lorentz transformation
 equation for the displacement 4-vectors as written in 
-{numref}`eqlort` and {numref}`lormat` gives the same predictions as Newton found
+{eq}`eqlort` and {eq}`lormat` gives the same predictions as Newton found
 for slow moving objects.
 
 *Hint: To do this you first must rewrite the Lorentz transformation
