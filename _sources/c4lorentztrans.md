@@ -346,13 +346,13 @@ makes with respect to the $x$ axis. Determine the angle as measured by
 the primed observer.
 
 The angle that the unprimed observer makes is:
-$$\tan{\theta} =\frac{dy}{dx} = \frac{1.00~{\rm m}}{-0.250~{\rm m}} = -4.00
-\rightarrow \theta = -76.0^\circ$$
+$$\tan{\theta} =\frac{dy}{dx} = \frac{-0.250~{\rm m}}{1.00~{\rm m}} = -0.25
+\rightarrow \theta = -14.0^\circ$$
 The angle is in the 4th quadrant.  
 This makes sense since dy is negative and dx is positive.
 
 The second observer moving with respect to the first measures an angle:
-$$\tan{\theta^\prime} =\frac{dy'}{dx'} = \frac{-0.351~{\rm m}}{-0.250~{\rm m}} = 1.40
+$$\tan{\theta^\prime} =\frac{dy'}{dx'} = \frac{-0.250~{\rm m}}{-0.351~{\rm m}} = 0.712
 \rightarrow \theta^\prime = 234.0^\circ$$
 This angle is in the third quadrant as both $dx'$ and $dy'$ are negative.
 Essentially, the second observer is overtaking the first, so the
