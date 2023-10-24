@@ -1039,10 +1039,10 @@ that we put <span class="math notranslate nohighlight">\(x\)</span> over <span c
 <span class="eqno">(41)<a class="headerlink" href="#equation-tanh" title="Permalink to this equation">#</a></span>\[\tanh^2{\phi} = 1 - \frac{1}{\cosh^2{\phi}} = \beta^2\]</div>
 <p>But we already know that <span class="math notranslate nohighlight">\(\beta^2 = 1 - 1/\gamma^2\)</span>, from the definition
 of <span class="math notranslate nohighlight">\(\gamma\)</span>, so <span class="math notranslate nohighlight">\(\cosh{\phi} = \gamma\)</span>!</p>
-<p>Finally, we know <span class="math notranslate nohighlight">\(\cosh^2+\sinh^2 = 1\)</span>, so if <span class="math notranslate nohighlight">\(\cosh{\phi} = \gamma\)</span>, then
-<span class="math notranslate nohighlight">\(\sinh^2{\phi} = 1-\cosh^2{\phi}\)</span></p>
+<p>Finally, we know <span class="math notranslate nohighlight">\(\cosh^2-\sinh^2 = 1\)</span>, so if <span class="math notranslate nohighlight">\(\cosh{\phi} = \gamma\)</span>, then
+<span class="math notranslate nohighlight">\(\sinh^2{\phi} = \cosh^2{\phi}-1\)</span></p>
 <div class="math notranslate nohighlight" id="equation-sinh">
-<span class="eqno">(42)<a class="headerlink" href="#equation-sinh" title="Permalink to this equation">#</a></span>\[\sinh^2{\phi} = 1-\gamma^2 = 1-\frac{1}{1-\beta^2} = \frac{\beta^2}{1-\beta^2}
+<span class="eqno">(42)<a class="headerlink" href="#equation-sinh" title="Permalink to this equation">#</a></span>\[\sinh^2{\phi} = \gamma^2-1 = \frac{1}{1-\beta^2}-1 = \frac{\beta^2}{1-\beta^2}
 = \beta^2\gamma^2\]</div>
 <p>So <span class="math notranslate nohighlight">\(\sinh{\phi} = \beta\gamma\)</span>.  But these are just the elements of the Lorentz
 transformation matrix!  This means we can write the Lorentz matrix as</p>
@@ -1115,8 +1115,8 @@ event and the event from part c).  Is this time interval longer or
 shorter than the duration of time (as measured when <span class="math notranslate nohighlight">\(\beta_R=0\)</span>)
 between the cyan event and the orange event?  Does this make sense?</p>
 <ol class="arabic simple" start="4">
-<li><p>Use the definition of rapidity <span class="math notranslate nohighlight">\(\phi(\beta)\)</span> (Equation <a class="reference internal" href="#equation-rapidity">(44)</a>)
-to prove that <span class="math notranslate nohighlight">\(\sinh{\phi} = \gamma\)</span>.</p></li>
+<li><p>Derive the definition of rapidity <span class="math notranslate nohighlight">\(\phi(\beta)\)</span> (Equation <a class="reference internal" href="#equation-rapidity">(44)</a>)
+from <span class="math notranslate nohighlight">\(\tanh{\phi} = \beta\)</span>.</p></li>
 <li><p>This one could end up being rather annoying, so probably best to just
 do it for the time component.  Show that two successive boosts, when you
 use rapidity and the hyperbolic trig functions, are the same as a single

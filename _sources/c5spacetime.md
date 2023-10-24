@@ -785,11 +785,11 @@ There's a trig identity that says
 But we already know that $\beta^2 = 1 - 1/\gamma^2$, from the definition
 of $\gamma$, so $\cosh{\phi} = \gamma$!
 
-Finally, we know $\cosh^2+\sinh^2 = 1$, so if $\cosh{\phi} = \gamma$, then
-$\sinh^2{\phi} = 1-\cosh^2{\phi}$
+Finally, we know $\cosh^2-\sinh^2 = 1$, so if $\cosh{\phi} = \gamma$, then
+$\sinh^2{\phi} = \cosh^2{\phi}-1$
 ```{math}
 :label: sinh
-\sinh^2{\phi} = 1-\gamma^2 = 1-\frac{1}{1-\beta^2} = \frac{\beta^2}{1-\beta^2}
+\sinh^2{\phi} = \gamma^2-1 = \frac{1}{1-\beta^2}-1 = \frac{\beta^2}{1-\beta^2}
 = \beta^2\gamma^2
 ```
 So $\sinh{\phi} = \beta\gamma$.  But these are just the elements of the Lorentz
@@ -875,8 +875,8 @@ event and the event from part c).  Is this time interval longer or
 shorter than the duration of time (as measured when $\beta_R=0$)
 between the cyan event and the orange event?  Does this make sense?
 
-4) Use the definition of rapidity $\phi(\beta)$ (Equation {eq}`rapidity`)
-to prove that $\sinh{\phi} = \gamma$.
+4) Derive the definition of rapidity $\phi(\beta)$ (Equation {eq}`rapidity`)
+from $\tanh{\phi} = \beta$.
 
 5) This one could end up being rather annoying, so probably best to just
 do it for the time component.  Show that two successive boosts, when you
