@@ -798,14 +798,14 @@ transformation matrix!  This means we can write the Lorentz matrix as
 :label: lortrapid
 {\cal L}_x(\phi) =
 \begin{bmatrix}
-\cosh{\phi} & -\sinh{\phi} & 0& 0\\
--\sinh{\phi} & \cosh{\phi} & 0& 0\\
+\cosh{\phi} & -i\sinh{\phi} & 0& 0\\
+i\sinh{\phi} & \cosh{\phi} & 0& 0\\
 0 & 0 & 1 & 0\\
 0 & 0 & 0 & 1
 \end{bmatrix}
 ```
 If you compare Equation {eq}`lortrapid` and {eq}`normalrot`, you can see that
-except for the hyperbolic part, and an extra minus sign, they look very similar.
+except for the hyperbolic part, and the $i$, they look very similar.
 This means, in a very real but very odd sense, changing speeds actually rotates
 space and time into each other, in much the same way that rotating axes rotates
 $x$ and $y$ into each other.
