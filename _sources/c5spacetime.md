@@ -800,7 +800,8 @@ Finally, since $\cosh{\phi} = \gamma$ and
 $\sinh^2{\phi} = \cosh^2{\phi}-1$, then
 ```{math}
 :label: sinh
-\sinh^2{\phi} = \gamma^2-1 = \frac{1}{1-\beta^2}-1 = \frac{\beta^2}{1-\beta^2}
+\sinh^2{\phi} = \gamma^2-1 = \frac{1}{1-\beta^2}-1 = \frac{1-(1-\beta^2)}{1-\beta^2}
+= \frac{\beta^2}{1-\beta^2}
 = \beta^2\gamma^2
 ```
 So $\sinh{\phi} = \beta\gamma$.  But these are just the elements of the Lorentz
