@@ -1034,9 +1034,20 @@ in that plane, the angle the vector would make with the <span class="math notran
 <span class="math notranslate nohighlight">\(\tan{\theta} = v_y/v_x\)</span>, opposite over adjacent.  However, for spacetime,
 it’s the hyperbolic tangent: <span class="math notranslate nohighlight">\(\tanh{\phi} = dx/cdt = v/c = \beta\)</span>.  Note
 that we put <span class="math notranslate nohighlight">\(x\)</span> over <span class="math notranslate nohighlight">\(y\)</span> to get <span class="math notranslate nohighlight">\(\beta\)</span>.</p>
-<p>There’s a trig identity that says</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>You can write the hyperbolic trigonometry functions in terms of exponentials.
+Instead of <span class="math notranslate nohighlight">\(e^{i\theta} = \cos{\theta} + i\sin{\theta}\)</span>, you get
+<span class="math notranslate nohighlight">\(e^\theta = \cosh{\theta} + \sinh{\theta}\)</span>.  So this means
+<span class="math notranslate nohighlight">\(e^\theta + e^{-\theta}=2\cosh{\theta}\)</span> and <span class="math notranslate nohighlight">\( e^\theta - e^{-\theta} = 2\sinh{\theta}\)</span>.
+Once you have those relations, you can square each one and subtract
+them to find <span class="math notranslate nohighlight">\(\cosh^2-\sinh^2 = 1\)</span>.</p>
+</aside>
+<p>There’s a trig identity that says <span class="math notranslate nohighlight">\(\cosh^2-\sinh^2 = 1\)</span> (see margin note to
+the right).  Since <span class="math notranslate nohighlight">\(\tanh = \sinh/\cosh\)</span>, we can square both sides and substitute
+for <span class="math notranslate nohighlight">\(\sinh^2 = \cosh^2-1\)</span> to get</p>
 <div class="math notranslate nohighlight" id="equation-tanh">
-<span class="eqno">(41)<a class="headerlink" href="#equation-tanh" title="Permalink to this equation">#</a></span>\[\tanh^2{\phi} = 1 - \frac{1}{\cosh^2{\phi}} = \beta^2\]</div>
+<span class="eqno">(41)<a class="headerlink" href="#equation-tanh" title="Permalink to this equation">#</a></span>\[\tanh^2{\phi} = \frac{\cosh^2{\phi} -1}{\cosh^2{\phi}} = 1 - \frac{1}{\cosh^2{\phi}} = \beta^2\]</div>
 <p>But we already know that <span class="math notranslate nohighlight">\(\beta^2 = 1 - 1/\gamma^2\)</span>, from the definition
 of <span class="math notranslate nohighlight">\(\gamma\)</span>, so <span class="math notranslate nohighlight">\(\cosh{\phi} = \gamma\)</span>!</p>
 <p>Finally, we know <span class="math notranslate nohighlight">\(\cosh^2-\sinh^2 = 1\)</span>, so if <span class="math notranslate nohighlight">\(\cosh{\phi} = \gamma\)</span>, then

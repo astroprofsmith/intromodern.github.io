@@ -777,10 +777,21 @@ $\tan{\theta} = v_y/v_x$, opposite over adjacent.  However, for spacetime,
 it's the hyperbolic tangent: $\tanh{\phi} = dx/cdt = v/c = \beta$.  Note
 that we put $x$ over $y$ to get $\beta$.
 
-There's a trig identity that says 
+```{margin}
+You can write the hyperbolic trigonometry functions in terms of exponentials.
+Instead of $e^{i\theta} = \cos{\theta} + i\sin{\theta}$, you get
+$e^\theta = \cosh{\theta} + \sinh{\theta}$.  So this means
+$e^\theta + e^{-\theta}=2\cosh{\theta}$ and $ e^\theta - e^{-\theta} = 2\sinh{\theta}$.
+Once you have those relations, you can square each one and subtract
+them to find $\cosh^2-\sinh^2 = 1$.
+```
+
+There's a trig identity that says $\cosh^2-\sinh^2 = 1$ (see margin note to
+the right).  Since $\tanh = \sinh/\cosh$, we can square both sides and substitute
+for $\sinh^2 = \cosh^2-1$ to get
 ```{math}
 :label: tanh
-\tanh^2{\phi} = 1 - \frac{1}{\cosh^2{\phi}} = \beta^2
+\tanh^2{\phi} = \frac{\cosh^2{\phi} -1}{\cosh^2{\phi}} = 1 - \frac{1}{\cosh^2{\phi}} = \beta^2
 ```
 But we already know that $\beta^2 = 1 - 1/\gamma^2$, from the definition
 of $\gamma$, so $\cosh{\phi} = \gamma$!
