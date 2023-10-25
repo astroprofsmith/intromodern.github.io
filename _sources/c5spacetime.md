@@ -818,7 +818,8 @@ i\sinh{\phi} & \cosh{\phi} & 0& 0\\
 \end{bmatrix}
 ```
 If you compare Equation {eq}`lortrapid` and {eq}`normalrot`, you can see that
-except for the hyperbolic part, and the $i$, they look very similar.
+except for the hyperbolic part, and the $i$, they look very similar (and in Einstein
+notation, you leave out the $i$, as well).
 This means, in a very real but very odd sense, changing speeds actually rotates
 space and time into each other, in much the same way that rotating axes rotates
 $x$ and $y$ into each other.
