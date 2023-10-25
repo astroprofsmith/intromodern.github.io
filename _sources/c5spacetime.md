@@ -804,7 +804,8 @@ $\sinh^2{\phi} = \cosh^2{\phi}-1$, then
 = \frac{\beta^2}{1-\beta^2}
 = \beta^2\gamma^2
 ```
-So $\sinh{\phi} = \beta\gamma$.  But these are just the elements of the Lorentz
+So $\sinh{\phi} = \beta\gamma$ and $\cosh{\phi} = \gamma$.
+But $\gamma$ and $\beta\gamma$ are just the elements of the Lorentz
 transformation matrix!  This means we can write the Lorentz matrix as
 ```{math}
 :label: lortrapid
