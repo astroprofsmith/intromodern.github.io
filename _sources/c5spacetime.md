@@ -796,8 +796,8 @@ for $\sinh^2 = \cosh^2-1$ to get
 But we already know that $\beta^2 = 1 - 1/\gamma^2$, from the definition
 of $\gamma$, so $\cosh{\phi} = \gamma$!
 
-Finally, we know $\cosh^2-\sinh^2 = 1$, so if $\cosh{\phi} = \gamma$, then
-$\sinh^2{\phi} = \cosh^2{\phi}-1$
+Finally, since $\cosh{\phi} = \gamma$ and
+$\sinh^2{\phi} = \cosh^2{\phi}-1$, then
 ```{math}
 :label: sinh
 \sinh^2{\phi} = \gamma^2-1 = \frac{1}{1-\beta^2}-1 = \frac{\beta^2}{1-\beta^2}
