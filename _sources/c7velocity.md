@@ -161,8 +161,14 @@ that were moving very fast with respect to him, he probably would have
 noticed that the factor of $\gamma$ would have to be accounted for in
 the definition of the physical velocity of the object.
 
-
-
+Accounted for is perhaps an ambiguous phrase.  The velocity of
+an object that moves between two events in a particular reference
+frame is going to be $d\vec{r}/dt$, without the gamma.  However,
+for the four-velocity to be a proper four-vector, the gamma needs
+to be there.  This means when you are using velocity four-vectors,
+you can't just look at the space terms as being equal to the
+velocity, you have to divide by $\gamma$ to get $v$.  This is a
+side effect of how we define velocity.  
 
 If the 4-velocity is a proper 4-vector, then the 4-velocity must obey
 the demand of the Michelson-Morley experiment that its size must be a
