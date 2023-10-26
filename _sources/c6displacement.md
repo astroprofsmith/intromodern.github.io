@@ -800,7 +800,7 @@ reference frame, you will always find that it is shorter the faster
 the object is moving.  See Chapter 5 for more examples.
 
 ```{warning}
-We can be very casual when we talk about length contraction.
+We are sometimes very casual when we talk about length contraction.
 Sometimes we talk about how long a passing object "looks", or we might
 discuss what an observer "sees".  What we **mean** is what an observer
 in an inertial reference frame **measures** the length to be.  What an
