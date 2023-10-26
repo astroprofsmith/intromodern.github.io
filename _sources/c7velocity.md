@@ -232,43 +232,39 @@ also a Lorentz scalar, as the size of a four vector must be.
 
 The universality of the speed of light poses a very difficult
 interpretive problem that we are now in a position to start to
-address.  If a person is on a train and throws a ball toward
-the front of the train, all observers on the train will agree
-that the ball has a certain velocity.  Let's call it $+v_b$.
-To an observer on the ground, let's say Galileo, who is
-being passed the train at this moment, the ball must
-be moving faster than the train (since it is catching up
-to the forward wall of the car), and if the train is going
-$+v_t$, Galileo would say the ball is going $v_b+v_t$.  The
-motion of the train gives the ball a boost, according to
-Galileo's frame of reference on the ground.
+address.  If a person is on a train and throws a ball toward the front
+of the train, all observers on the train will agree that the ball has
+a certain velocity.  Let's call it $+v_b$.  To an observer on the
+ground, let's say Galileo, who is being passed the train at this
+moment, the ball must be moving faster than the train (since it is
+catching up to the forward wall of the car), and if the train is going
+$+v_t$, Galileo would say the ball is going $v_b+v_t$.  The motion of
+the train gives the ball a boost, according to Galileo's frame of
+reference on the ground.
 
-However, if we bring Einstein into it, we can ask, "what
-happens if the ball and the train are going at three-quarters
-the speed of light?"  Then, according to Galileo, the ball
-would be moving at $1.5c$, which Einstein says is impossible.
-To take it even further to an extreme, what if the person
-on the train flashes a laser pointer toward the front of the
-train.  The people on the train would certainly measure the
-photons in the laser beam to be moving at the speed of light,
-but Galileo would expect to measure the light moving at
-$c+v_t$, which both Einstein's theory and the Michaelson-Morely
-experiment say is impossible.
+However, if we bring Einstein into it, we can ask, "what happens if
+the ball is going at three-quarters of the speed of light with respect
+to the train, and the train is going at three-quarters the speed of
+light with respect to the ground?"  Then, according to Galileo, the
+ball would be moving at $1.5c$, which Einstein says is impossible.  To
+take it even further to an extreme, what if the person on the train
+flashes a laser pointer toward the front of the train.  The people on
+the train would certainly measure the photons in the laser beam to be
+moving at the speed of light, but Galileo would expect to measure the
+light moving at $c+v_t$, which both Einstein's theory and the
+Michaelson-Morely experiment say is impossible.
 
-How do we resolve this dilemma???  By Lorentz-transforming
-the velocity four vector, we can determine how someone like
-Galileo would measure velocities in a reference frame in
-relative motion, compared with someone on the train.  So,
-we set up the problem...
+How do we resolve this dilemma???  By Lorentz-transforming the
+velocity four vector, we can determine how someone like Galileo would
+measure velocities in a reference frame in relative motion, compared
+with someone on the train.  So, we set up the problem...
 
 An observer at rest with respect to a reference frame (call it A)
 measures the components of the four velocity of an object that is
-moving with respect to her.  A second observer, moving with speed
-$\beta_R$ in the $+x$ direction with respect to the first observer,
+moving with respect to her.  A second observer, B, moving with speed
+$\beta_R$ in the $+x$ direction with respect to the observer A,
 also measures the components of the 4-velocity for the object. How are
 the components of these two 4-vectors related?
-
-
 
 ```{code-cell}
 :tags: ["remove-cell"]
@@ -304,18 +300,19 @@ glue("betafig", fig, display=False)
 :figwidth: 800px
 :name: stbeta4fig
 
-A beta four vector represented in a spacetime diagram
-for a reference frame $A$.  A second reference frame $A'$ is moving
-to the right, relative to the first.  In this case, the time component
-of the beta four vector represented by the diagonal arrow is 1.0
-and the space component is 0.7, so the actual speed being represented
-here is $\beta = 0.7/1.0 = 0.7$, or seven tenths the speed of light.
+A beta four vector represented in a spacetime diagram for a reference
+frame $A$.  A second reference frame $A'$ is moving to the right,
+relative to the first, with a speed $v_R$.  In this case, the time
+component of the beta four vector represented by the diagonal arrow is
+1.0 and the space component is 0.7, so the actual speed being
+represented here is $\beta = 0.7/1.0 = 0.7$, or seven tenths the speed
+of light.
 ```
 
 To figure this out, let us first diagram this situation.  It's not
-strictly necessary, but helps make sure we use the right minus sign.
+strictly necessary, but helps make sure we use the correct minus sign.
 The spacetime diagrams that define a Lorentz transformation are shown
-in Figure 7.1.  In this case, depending on how $\beta_R$ compares with
+in {numref}`stbeta4fig`.  In this case, depending on how $\beta_R$ compares with
 $\beta$, we would expect $\beta^\prime$ to be less than $\beta$,
 perhaps even going negative.  In particular, if $\beta_R=\beta$, our
 theory had better predict that $\beta^\prime=0$, or something is
