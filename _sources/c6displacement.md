@@ -1040,6 +1040,7 @@ with a garage passing around it.  The axes have been shifted four
 meters to the left to avoid crowding.  The colors of the worldlines
 and the four events are the same as in {numref}`laddermov`, but note that
 these worldlines have been calculated via a Lorentz transformation.
+You must imagine the red and cyan lines extending indefinitely up and down.
 ```
 
 Reading up the vertical axis, our four events as seen in this frame
@@ -1188,7 +1189,7 @@ the planet and the armada.
 ```
 
 
-10* In a certain reference frame, two events occur at the same place,
+10. In a certain reference frame, two events occur at the same place,
 but not at the same time.
 
 a) Show that if event 1 precedes event 2 in this rest frame of the
