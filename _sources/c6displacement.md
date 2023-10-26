@@ -551,7 +551,7 @@ is absolutely critical for understanding how length contraction works.
 One of the most common confusions around length contraction arises
 when people just assume they know the length of an object (remember
 in Chapter 2 we talked about the importance of not assuming you just
-know something going on elsewhere)y.  It's important to specify **how**
+know something going on elsewhere).  It's important to specify **how**
 you are measuring length, so you can be clear on how that process
 changes when you shift into another reference frame: the importance
 of operational definitions!
@@ -793,7 +793,7 @@ a thing.
 
 It is important to be clear on your definition of length.  The
 component $dx$ is not always the length of the object.  For example,
-in the "r" frame, the $x$ component of the four vector is zero -- this
+in the "m" frame, the $x$ component of the four vector is zero -- this
 is not the length of the object.  But if you define your operation by
 which you are measuring the length of the object in a particular
 reference frame, you will always find that it is shorter the faster
