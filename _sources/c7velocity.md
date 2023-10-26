@@ -225,9 +225,7 @@ Note that the size of the beta four vector that you get if you square
 and add the terms is $-1$, which is just what you would expect if you
 took the square of the four velocity and divided by $c^2$.  The constant
 $-1$ is of course also invarient across reference frames, and therefore
-also a Lorentz scalar, as the size of a four vector must be.  In a sense,
-this is like defining a unit vector with a length of 1, only we are
-defining it to be 1 in the time direction.
+also a Lorentz scalar, as the size of a four vector must be.
 
 
 ## Addition of Velocities
