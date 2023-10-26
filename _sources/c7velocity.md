@@ -261,7 +261,7 @@ with someone on the train.  So, we set up the problem...
 
 An observer at rest with respect to a reference frame (call it A)
 measures the components of the four velocity of an object that is
-moving with respect to her.  A second observer, B, moving with speed
+moving with respect to her.  A second observer, A', moving with speed
 $\beta_R$ in the $+x$ direction with respect to the observer A,
 also measures the components of the 4-velocity for the object. How are
 the components of these two 4-vectors related?
@@ -312,12 +312,12 @@ of light.
 To figure this out, let us first diagram this situation.  It's not
 strictly necessary, but helps make sure we use the correct minus sign.
 The spacetime diagrams that define a Lorentz transformation are shown
-in {numref}`stbeta4fig`.  In this case, depending on how $\beta_R$ compares with
-$\beta$, we would expect $\beta^\prime$ to be less than $\beta$,
-perhaps even going negative.  In particular, if $\beta_R=\beta$, our
-theory had better predict that $\beta^\prime=0$, or something is
-seriously wrong.  The correspondance principle demands that when
-$\beta_R\ll 1$, the prediction we get should reduce to
+in {numref}`stbeta4fig`.  In this case, depending on how $\beta_R$
+compares with $\beta$, we would expect $\beta^\prime$ to be less than
+$\beta$, perhaps even going negative.  In particular, if
+$\beta_R=\beta$, our theory had better predict that $\beta^\prime=0$,
+or something is seriously wrong.  The correspondance principle demands
+that when $\beta_R\ll 1$, the prediction we get should reduce to
 $\beta'=\beta-\beta_R$, which is what Galileo would expect it to be.
 
 ```{warning}
@@ -383,9 +383,9 @@ i(1-\beta\beta_R)\\
 \end{bmatrix}
 ```
 Again, remember that $\beta$ is the velocity of the object as measured
-in the original frame ($\gamma = 1/\sqrt{1-\beta^2}$), $\beta_R$ is
+in the original frame A ($\gamma = 1/\sqrt{1-\beta^2}$), $\beta_R$ is
 the relative velocity of the two frames ($\gamma_R = 1/\sqrt{1-\beta_R^2}$),
-and $\beta^\prime$ is the velocity of the object in the primed frame
+and $\beta^\prime$ is the velocity of the object in the primed frame A'
 ($\gamma^\prime = 1/\sqrt{1-\beta^{'2}}$).  It gets tricky to keep all
 the different $\beta$ and $\gamma$ factors straight, but if you maintain
 a consistent notation, it's easier to hold the connections in your head.
@@ -403,8 +403,8 @@ although it is quite different from what Newton or Galileo would have
 expected, it does meet all the conditions we laid out before we
 started.  This formula does give us a $\beta'<\beta$, if
 $\beta_R=\beta$ we do get zero, and if $\beta_R>\beta$ the velocity
-goes negative (the relative velocity is faster, so the object is going
-backwards in the primed frame).  Furthermore, it also satisfies the
+goes negative (the relative velocity is faster, so the object is
+being overtaken in the primed frame).  Furthermore, it also satisfies the
 correspondence principle, because if $\beta_R\ll 1$, then the
 denominator is basically not different from one, and therefore Galileo
 would insist his answer was not wrong.
@@ -431,7 +431,7 @@ is also $1\mp\beta_R$!  This means that $\beta'=1$, which is another
 way of saying that anything going at the speed of light in one frame
 will be found to be going at the speed of light in **any** other frame!
 The speed of light is the same in all inertial frames, as consistent
-with the first postulate at the Michaelson-Morely experiment.
+with the first postulate and the Michaelson-Morely experiment.
 
 ## Exmple of Off-Axis Motion
 
