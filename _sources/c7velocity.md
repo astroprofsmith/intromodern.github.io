@@ -99,7 +99,10 @@ frame, after all).  This would be the velocity as Isaac Newton would
 have understood the term.
 
 However, we can use the time-dilation formula from Equation {eq}`timedilation`
-to convert $dt_0$ to $dt$.  Equation {eq}`eq4v0` then can be
+to convert $dt_0$ to $dt$.  We take $\beta$ to be the relative speed of
+this reference frame to the frame in which the two events are at rest.
+Then we define $\gamma$ the usual way.
+Equation {eq}`eq4v0` then can be
 written as:
 ```{math}
 :label: eq4vgam
@@ -124,19 +127,6 @@ v_z
 }
 $$
 
-
-According to the correspondence principle, the theory we call special
-relativity has to reduce to Newton's mechanics when $\beta\ll 1$. As
-$\beta$ approaches 0, $\gamma$ approaches 1. Notice that the three
-space terms of the 4-velocity are just the components of the physical
-velocity as Newton would know it. The time component is just the speed
-of light. At this point, the 4-velocity meets the requirements of the
-correspondence principle. If Newton had been able to observe things
-that were moving very fast with respect to him, he probably would have
-noticed that the factor of $\gamma$ would have to be accounted for in
-the definition of the physical velocity of the object.
-
-
 ```{warning}
 From here on, there are going to be several, perhaps even many,
 different instances of the factor $\gamma$.  In all cases, $\gamma =
@@ -159,6 +149,20 @@ velocities could have a useful $\gamma$ associated with it.  From here
 on, you **must** pay attention to **which** $\beta$ speed goes with
 which $\gamma$!
 ```
+
+According to the correspondence principle, the theory we call special
+relativity has to reduce to Newton's mechanics when $\beta\ll 1$. As
+$\beta$ approaches 0, $\gamma$ approaches 1. Notice that the three
+space terms of the 4-velocity are just the components of the physical
+velocity as Newton would know it. The time component is just the speed
+of light. At this point, the 4-velocity meets the requirements of the
+correspondence principle. If Newton had been able to observe things
+that were moving very fast with respect to him, he probably would have
+noticed that the factor of $\gamma$ would have to be accounted for in
+the definition of the physical velocity of the object.
+
+
+
 
 If the 4-velocity is a proper 4-vector, then the 4-velocity must obey
 the demand of the Michelson-Morley experiment that its size must be a
