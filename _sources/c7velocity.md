@@ -175,7 +175,7 @@ the demand of the Michelson-Morley experiment that its size must be a
 scalar. The size of the 4-velocity is:
 ```{math}
 :label: sizev4a
-[v_4]^2 = -\gamma^2c^2 + \gamma^2v_x^2+\gamma^2v_y^2\gamma^2v_z^2
+[v_4]^2 = -\gamma^2c^2 + \gamma^2v_x^2+\gamma^2v_y^2+\gamma^2v_z^2
 ```
 factor out the gamma and use $v^2=v_x^2+v_y^2+v_z^2$:
 ```{math}
