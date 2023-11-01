@@ -125,7 +125,7 @@ scalar.
 
 The components of the momentum 4-vector transform from those
 measured by one inertial observer to those measured by a second
-inertial observer moving with respec to the first with $\beta_R$
+inertial observer moving with respect to the first with $\beta_R$
 in the $+x$ direction in the same manner as any other 4-vector:
 ```{math}
 :label: p4lort
@@ -250,7 +250,7 @@ on the right using a Taylor expansion about $\beta = 0$ gives:
 \beta^2 + \frac{3}{8} \beta^4  + \frac{15}{48} \beta^6 + ...
 ```
 If we assume that $\beta$ is small enough that we can ignore
-all the higher order powers, then $\gamma \approx \beta^2/2$
+all the higher order powers, then $\gamma \approx 1+ \beta^2/2$
 and $\gamma m_0 c^2$ becomes approximately
 ```{math}
 :label: totalEexp
