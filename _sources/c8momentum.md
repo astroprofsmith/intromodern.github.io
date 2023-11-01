@@ -157,7 +157,7 @@ v_y\\
 v_z
 \end{bmatrix}
 ```
-or
+factor out a $c$ and compare with the primed variables:
 ```{math}
 :label: p4p
 [p_4]' =
