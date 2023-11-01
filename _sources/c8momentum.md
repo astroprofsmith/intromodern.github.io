@@ -128,7 +128,7 @@ measured by one inertial observer to those measured by a second
 inertial observer moving with respect to the first with $\beta_R$
 in the $+x$ direction in the same manner as any other 4-vector:
 ```{math}
-:label: p4lort
+:label: p4lortsetup
 [p_4]' = {\cal L}_x(\beta_R)[p_4]
 =
 \begin{bmatrix}
@@ -143,6 +143,11 @@ m_0\gamma v_x\\
 m_0\gamma v_y\\
 m_0\gamma v_z
 \end{bmatrix}
+```
+Carry out the matrix multiplication to get
+```{math}
+:label: p4lort
+[p_4]'
 =
 \gamma_Rm_0\gamma
 \begin{bmatrix}
