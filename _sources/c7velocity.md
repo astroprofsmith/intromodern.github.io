@@ -184,10 +184,11 @@ factor out the gamma and use $v^2=v_x^2+v_y^2+v_z^2$:
 ```
 $$\boxed{[v_4]^2 = -c^2}$$
 
-Once again, the size of a 4-vector is a negative number. The experimental
-evidence is that the speed of light has the same value for all inertial
-observers, the size of the 4-velocity is a scalar quantity. The 4-velocity
-meets the requirements set forth by the Michelson-Morley experiment.
+Once again, the size of a 4-vector is a negative number. The
+experimental evidence is that the speed of light has the same value
+for all inertial observers, so the size of the 4-velocity is therefore
+a scalar quantity. The 4-velocity meets the requirements set forth by
+the Michelson-Morley experiment.
 
 When objects are traveling near the speed of light, a convenient quantity
 to define is a unitless 4-velocity known as the 4-beta. This saves
@@ -433,7 +434,7 @@ will be found to be going at the speed of light in **any** other frame!
 The speed of light is the same in all inertial frames, as consistent
 with the first postulate and the Michaelson-Morely experiment.
 
-## Exmple of Off-Axis Motion
+## Example of Off-Axis Motion
 
 Suppose that a particle istraveling with a velocity of $\beta$ at an
 angle $\theta$ with respect to the $x$ axis of the unprimed frame.

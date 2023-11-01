@@ -110,7 +110,7 @@ product of the 4-vector with itself:
 [p_4]^2 = m_0^2\gamma^2(-c^2+v_x^2+v_y^2+v_z^2)
 = -m_0^2\gamma^2(1-v^2/c^2) = -m_0^2c^2
 ```
-Since $m_0$ is an invariant and so is $c$, the length of the
+Since $m_0$ is an invariant and so is $c$, the size of the
 momentum 4-vector is a Lorentz invariant. Once again, it's
 negative.
 
