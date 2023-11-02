@@ -192,7 +192,7 @@ velocity addition formula again!
 ## Example of Transforming Momentum
 
 Example 8.2: Suppose that two observers in different reference frames
-were measuring the momentum of the particle in Example 5.1 above.  Say
+were measuring the momentum of the particle in Example 8.1 above.  Say
 the primed observer is moving with $\beta_R=0.866$ in the $+x$
 direction with respect to the unprimed observer.  The unprimed
 observer would measure a momentum 4-vector of:
@@ -484,7 +484,7 @@ light to slightly more than the speed of light.  As the saying goes...
 
 ## Example of Using the Definitions
 
-Example 5.4
+Example 8.4
 
 An electron (rest energy = 0.511 MeV) moving in the $x$-direction has
 a kinetic energy of 1.000 MeV (1 eV = $1.602 \times 10^{-19}$ joules)
@@ -493,7 +493,7 @@ and the speed of this electron.
 
 The kinetic energy is almost twice the rest energy, so
 $\gamma\approx3$, and I will have to do this problein using
-reLativistic formulae. The total energy is the sum of the kinetic and
+relativistic formulae. The total energy is the sum of the kinetic and
 rest energy, so $E_{\rm tot} = 1.511$ MeV. To find
 the momentum, you use Equation {eq}`pfrome1` to get
 ```{math}
