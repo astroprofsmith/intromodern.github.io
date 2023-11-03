@@ -492,7 +492,7 @@ Find the total energy, the physical momentum, the momentum 4-vector
 and the speed of this electron.
 
 The kinetic energy is almost twice the rest energy, so
-$\gamma\approx3$, and I will have to do this problein using
+$\gamma\approx3$, and I will have to do this problem using
 relativistic formulae. The total energy is the sum of the kinetic and
 rest energy, so $E_{\rm tot} = 1.511$ MeV. To find
 the momentum, you use Equation {eq}`pfrome1` to get
