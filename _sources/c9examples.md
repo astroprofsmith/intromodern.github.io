@@ -424,7 +424,13 @@ Expand the square on the left side:
 (E_{0p} + E_{0\pi})^2 + 2(E_{0p} + E_{0\pi})KE_\pi + KE_\pi^2 =
  E_{0\pi}KE_\pi + KE_\pi^2 +E_{\rm commin}^2
 ```
-The square term cancels!
+The square term cancels!  Then it's simple to solve for $KE_\pi$:
+```{math}
+:label: 92eq7
+KE_\pi(2(E_{0p} + E_{0\pi})- E_{0\pi}) =
+-(E_{0p} + E_{0\pi})^2
+ +E_{\rm commin}^2
+```
 
 
 ## Photons and the Doppler Shift
