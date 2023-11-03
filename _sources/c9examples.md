@@ -396,7 +396,7 @@ and of course
 ```{math}
 :label: 92eqgam
 \gamma_{\rm com} = \frac{1}{\sqrt{1-\beta_{\rm com}^2}}\rightarrow
-\beta_{com}^2 = 1-\frac{1}{\gamma_{com}^2}
+\beta_{\rm com}^2 = 1-\frac{1}{\gamma_{\rm com}^2}
 ```
 Remember what we are looking for is $KE_\pi$, and we know
 $E_{commin}$ and the rest energies.  From here on, it's
@@ -404,7 +404,18 @@ basically algebra.  Put Equation {eq}`92eqgam` into Equation
 {eq}`92eq2` to get
 ```{math}
 :label: 92eq3
-E_{0\pi}KE_\pi + KE_\pi^2 =(\gamma_{com}^2-1)E_{\rm commin}^2
+E_{0\pi}KE_\pi + KE_\pi^2 =(\gamma_{\rm com}^2-1)E_{\rm commin}^2
+```
+solve for $\gamma_{\rm com}^2$ to get
+```{math}
+:label: 92eq4
+\gamma_{\rm com}^2E_{\rm commin}^2 = E_{0\pi}KE_\pi + KE_\pi^2 +E_{\rm commin}^2
+```
+Square Equation {eq}`92eq1` and plug in Equation {eq}`92eq4` to get
+```{math}
+:label: 92eq5
+(E_{0p} + E_{0\pi} + KE_\pi)^2 = \gamma_{\rm com}^2E_{\rm commin}^2 =
+ E_{0\pi}KE_\pi + KE_\pi^2 +E_{\rm commin}^2
 ```
 
 
