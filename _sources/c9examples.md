@@ -436,6 +436,16 @@ Divide through to get
 :label: 92kepi
 KE_\pi = \frac{E_{\rm commin}^2 - (E_{0p} + E_{0\pi})^2}{2E_{0p} + E_{0\pi}}
 ```
+We can plug in numbers to this equation and get
+```{code-cell}
+E0p = 938.28
+E0pi = 139.570 
+Ecommin = 1613.4
+KEpi = (Ecommin**2-(E0p+E0pi)**2)/(2*E0p+E0pi)
+print("Minimum KE of pion: {:5.2f} MeV".format(KEpi))
+
+```
+
 
 ## Photons and the Doppler Shift
 
