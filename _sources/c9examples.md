@@ -406,7 +406,7 @@ basically algebra.  Put Equation {eq}`92eqgam` into Equation
 :label: 92eq3
 E_{0\pi}KE_\pi + KE_\pi^2 =(\gamma_{\rm com}^2-1)E_{\rm commin}^2
 ```
-solve for $\gamma_{\rm com}^2$ to get
+solve for $\gamma_{\rm com}^2E_{\rm commin}^2$ to get
 ```{math}
 :label: 92eq4
 \gamma_{\rm com}^2E_{\rm commin}^2 = E_{0\pi}KE_\pi + KE_\pi^2 +E_{\rm commin}^2
@@ -417,6 +417,14 @@ Square Equation {eq}`92eq1` and plug in Equation {eq}`92eq4` to get
 (E_{0p} + E_{0\pi} + KE_\pi)^2 = \gamma_{\rm com}^2E_{\rm commin}^2 =
  E_{0\pi}KE_\pi + KE_\pi^2 +E_{\rm commin}^2
 ```
+Looks like a mess, but terms are going to cancel.
+Expand the square on the left side:
+```{math}
+:label: 92eq6
+(E_{0p} + E_{0\pi})^2 + 2(E_{0p} + E_{0\pi})KE_\pi + KE_\pi^2 =
+ E_{0\pi}KE_\pi + KE_\pi^2 +E_{\rm commin}^2
+```
+The square term cancels!
 
 
 ## Photons and the Doppler Shift

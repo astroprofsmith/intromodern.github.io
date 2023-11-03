@@ -409,21 +409,21 @@ moving with velocity <span class="math notranslate nohighlight">\(\vec{u}\)</spa
 there are both <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> fields experiences
 a force given by</p>
 <div class="math notranslate nohighlight" id="equation-lorforce">
-<span class="eqno">(221)<a class="headerlink" href="#equation-lorforce" title="Permalink to this equation">#</a></span>\[\vec{F} = q\vec{E} + q\vec{u}\times\vec{B}\]</div>
+<span class="eqno">(222)<a class="headerlink" href="#equation-lorforce" title="Permalink to this equation">#</a></span>\[\vec{F} = q\vec{E} + q\vec{u}\times\vec{B}\]</div>
 <p>Given what we now know about how <span class="math notranslate nohighlight">\(\vec{E}\)</span> and
 <span class="math notranslate nohighlight">\(\vec{B}\)</span> are parts of a larger tensor, how does
 that affect the way we conceptualize this force?</p>
 <p>We start with our definition of the Minkowski Force
-from Equation <a class="reference internal" href="c10force.html#equation-m4forcefin">(161)</a>:</p>
+from Equation <a class="reference internal" href="c10force.html#equation-m4forcefin">(162)</a>:</p>
 <div class="math notranslate nohighlight" id="equation-m4forceem">
-<span class="eqno">(222)<a class="headerlink" href="#equation-m4forceem" title="Permalink to this equation">#</a></span>\[\begin{split}K^\alpha = 
+<span class="eqno">(223)<a class="headerlink" href="#equation-m4forceem" title="Permalink to this equation">#</a></span>\[\begin{split}K^\alpha = 
 \begin{bmatrix}
 \frac{\gamma}{c} (\vec{F}\cdot\vec{u})\\
 \gamma \vec{F}
 \end{bmatrix}\end{split}\]</div>
-<p>and if we plug in Equation <a class="reference internal" href="#equation-lorforce">(221)</a>, we get</p>
+<p>and if we plug in Equation <a class="reference internal" href="#equation-lorforce">(222)</a>, we get</p>
 <div class="math notranslate nohighlight" id="equation-m4em">
-<span class="eqno">(223)<a class="headerlink" href="#equation-m4em" title="Permalink to this equation">#</a></span>\[\begin{split}K^\alpha = 
+<span class="eqno">(224)<a class="headerlink" href="#equation-m4em" title="Permalink to this equation">#</a></span>\[\begin{split}K^\alpha = 
 \begin{bmatrix}
 \frac{\gamma}{c}q (\vec{E}\cdot\vec{u})\\
 \gamma q (\vec{E} + \vec{u}\times\vec{B})
@@ -432,9 +432,9 @@ from Equation <a class="reference internal" href="c10force.html#equation-m4force
 the cross product of <span class="math notranslate nohighlight">\(\vec{u}\times\vec{B}\)</span> always must be orthogonal
 to <span class="math notranslate nohighlight">\(\vec{u}\)</span>, so if you take the dot product of <span class="math notranslate nohighlight">\(\vec{u}\cdot(\vec{u}
 \times\vec{B})\)</span>, you will always get zero.</p>
-<p>If we write out all four components of Equation <a class="reference internal" href="#equation-m4em">(223)</a>, we get</p>
+<p>If we write out all four components of Equation <a class="reference internal" href="#equation-m4em">(224)</a>, we get</p>
 <div class="math notranslate nohighlight" id="equation-m4emall4">
-<span class="eqno">(224)<a class="headerlink" href="#equation-m4emall4" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
+<span class="eqno">(225)<a class="headerlink" href="#equation-m4emall4" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
 K^0\\
 K^1\\
 K^2\\
@@ -449,7 +449,7 @@ E_y +u_zB_x - u_xB_z\\
 E_z +u_xB_y - u_yB_x
 \end{bmatrix}\end{split}\]</div>
 <p>Let’s examine these terms carefully, and compare them to the EM field
-tensor (Equation <a class="reference internal" href="c11electric.html#equation-emtensorfin">(218)</a>).  Note that the time component is just
+tensor (Equation <a class="reference internal" href="c11electric.html#equation-emtensorfin">(219)</a>).  Note that the time component is just
 what you would get if you multiplied each term across the top row of
 the EM tensor with the corresponding term of the velocity four vector
 (the time component of <span class="math notranslate nohighlight">\(u^\alpha\)</span> is eliminated by the zero on the
@@ -460,10 +460,10 @@ tensor with the corresponding terms of the four velocity?  The <span class="math
 will cancel when multiplying <span class="math notranslate nohighlight">\(-E_x/c\)</span> by <span class="math notranslate nohighlight">\(\gamma c\)</span>, then the <span class="math notranslate nohighlight">\(u_x\)</span>
 will be eliminated by the zeros along the diagonal.  That leaves <span class="math notranslate nohighlight">\(B_z\)</span>
 times <span class="math notranslate nohighlight">\(u_y\)</span> and <span class="math notranslate nohighlight">\(-B_y\)</span> times <span class="math notranslate nohighlight">\(u_z\)</span>, which is exactly what we see in
-Equation <a class="reference internal" href="#equation-m4emall4">(224)</a>!  You can check the other two components, but
+Equation <a class="reference internal" href="#equation-m4emall4">(225)</a>!  You can check the other two components, but
 this is nothing more or less than writing:</p>
 <div class="math notranslate nohighlight" id="equation-fulllorf">
-<span class="eqno">(225)<a class="headerlink" href="#equation-fulllorf" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(226)<a class="headerlink" href="#equation-fulllorf" title="Permalink to this equation">#</a></span>\[\boxed{
 K^\alpha = qu_\beta F^{\alpha\beta}
 }\]</div>
 <p>Amazing that all those terms can be packed into such a small equation!</p>
@@ -479,37 +479,37 @@ So <span class="math notranslate nohighlight">\(F^{13}\)</span> is the second ro
 <p>If we work out the matrix multiplication, the first row of this matrix
 equation would look like</p>
 <div class="math notranslate nohighlight" id="equation-lfrow0">
-<span class="eqno">(226)<a class="headerlink" href="#equation-lfrow0" title="Permalink to this equation">#</a></span>\[K^0 = q(u_0F^{00} + u_1F^{01} + u_2F^{02} + u_3F^{03})
+<span class="eqno">(227)<a class="headerlink" href="#equation-lfrow0" title="Permalink to this equation">#</a></span>\[K^0 = q(u_0F^{00} + u_1F^{01} + u_2F^{02} + u_3F^{03})
 = q\gamma (0.0 + u_xE_x + u_yE_y + u_zE_z)\]</div>
-<p>which matches Equation <a class="reference internal" href="#equation-m4emall4">(224)</a>, and the second row is</p>
+<p>which matches Equation <a class="reference internal" href="#equation-m4emall4">(225)</a>, and the second row is</p>
 <div class="math notranslate nohighlight" id="equation-lfrow1">
-<span class="eqno">(227)<a class="headerlink" href="#equation-lfrow1" title="Permalink to this equation">#</a></span>\[K^1 = q(u_0F^{10} + u_1F^{11} + u_2F^{12} + u_3F^{13})=
+<span class="eqno">(228)<a class="headerlink" href="#equation-lfrow1" title="Permalink to this equation">#</a></span>\[K^1 = q(u_0F^{10} + u_1F^{11} + u_2F^{12} + u_3F^{13})=
 q\gamma ((-c)(-E_x/c) + 0.0 + u_yB_z - u_zB_y)\]</div>
 <div class="math notranslate nohighlight" id="equation-lfrow1b">
-<span class="eqno">(228)<a class="headerlink" href="#equation-lfrow1b" title="Permalink to this equation">#</a></span>\[K^1 = \gamma q(\vec{E} + \vec{u}\times\vec{B})\cdot\hat{x}\]</div>
+<span class="eqno">(229)<a class="headerlink" href="#equation-lfrow1b" title="Permalink to this equation">#</a></span>\[K^1 = \gamma q(\vec{E} + \vec{u}\times\vec{B})\cdot\hat{x}\]</div>
 <p>which is the <span class="math notranslate nohighlight">\(x\)</span> component of the Lorentz Force! (times <span class="math notranslate nohighlight">\(\gamma\)</span>)
 You can work out <span class="math notranslate nohighlight">\(K^2\)</span> and <span class="math notranslate nohighlight">\(K^3\)</span> and show they are the <span class="math notranslate nohighlight">\(y\)</span> and
 <span class="math notranslate nohighlight">\(z\)</span> components of the Lorentz force yourself.</p>
 <p>Note that the index <span class="math notranslate nohighlight">\(\beta\)</span> for the four velocity in Equation
-<a class="reference internal" href="#equation-fulllorf">(225)</a> is a subscript.  When you lower the index, you also
+<a class="reference internal" href="#equation-fulllorf">(226)</a> is a subscript.  When you lower the index, you also
 make the time component negative.  Hence the <span class="math notranslate nohighlight">\(-c\)</span> in Equation
-<a class="reference internal" href="#equation-lfrow1">(227)</a>.  The first column of the EM tensor (<span class="math notranslate nohighlight">\(F^{\alpha 0}\)</span>, see
-Equation <a class="reference internal" href="c11electric.html#equation-emtensorfin">(218)</a>) has negative signs on all the <span class="math notranslate nohighlight">\(E\)</span> components, so you
+<a class="reference internal" href="#equation-lfrow1">(228)</a>.  The first column of the EM tensor (<span class="math notranslate nohighlight">\(F^{\alpha 0}\)</span>, see
+Equation <a class="reference internal" href="c11electric.html#equation-emtensorfin">(219)</a>) has negative signs on all the <span class="math notranslate nohighlight">\(E\)</span> components, so you
 need the <span class="math notranslate nohighlight">\(\gamma c\)</span> component of the four-velocity to be negative,
 which makes the final answer positive, as it needs to be for Equation
-<a class="reference internal" href="#equation-m4emall4">(224)</a>.  If you use it consistently, Einstein notation will
+<a class="reference internal" href="#equation-m4emall4">(225)</a>.  If you use it consistently, Einstein notation will
 always get you the right answer, but you have to be careful about
 using it right.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>You have to watch the greek letters carefully in Einstein notation.
-If you just looked at Equation <a class="reference internal" href="#equation-fulllorf">(225)</a> and thought “oh,
+If you just looked at Equation <a class="reference internal" href="#equation-fulllorf">(226)</a> and thought “oh,
 that’s a row vector times a matrix, I’ll multiply across the row
 vector and down the columns of the matrix,” you would get the wrong
 answer.  Even though the <span class="math notranslate nohighlight">\(u\)</span> is first, you are still multiplying
 each term in <span class="math notranslate nohighlight">\(u\)</span> by the terms across each row (counting the columns
 with <span class="math notranslate nohighlight">\(\beta\)</span>) in <span class="math notranslate nohighlight">\(F\)</span>, because you have to write it out like Equations
-<a class="reference internal" href="#equation-lfrow0">(226)</a> and <a class="reference internal" href="#equation-lfrow1">(227)</a> to see which terms are really multiplying
+<a class="reference internal" href="#equation-lfrow0">(227)</a> and <a class="reference internal" href="#equation-lfrow1">(228)</a> to see which terms are really multiplying
 which other terms.</p>
 </div>
 <p>The notation of SR therefore gives us a way to write the electric and
@@ -530,7 +530,7 @@ of time.  The dimensions are therefore charge per area per time, or
 current per area, which is a kind of density.  Mathematically, we
 write this as</p>
 <div class="math notranslate nohighlight" id="equation-currdenj">
-<span class="eqno">(229)<a class="headerlink" href="#equation-currdenj" title="Permalink to this equation">#</a></span>\[\vec{J} = \rho \vec{v}\]</div>
+<span class="eqno">(230)<a class="headerlink" href="#equation-currdenj" title="Permalink to this equation">#</a></span>\[\vec{J} = \rho \vec{v}\]</div>
 <p>which is a volume charge density (charge/volume) multiplied by a
 velocity (length/time).  One factor of length cancels out,
 leaving charge per area per time, as required.</p>
@@ -539,7 +539,7 @@ these moving charges has been contracted along the direction of
 motion, so we can go ahead and write this in terms of what the density
 would be in a reference frame where the charges are at rest:</p>
 <div class="math notranslate nohighlight" id="equation-currdenj0">
-<span class="eqno">(230)<a class="headerlink" href="#equation-currdenj0" title="Permalink to this equation">#</a></span>\[\vec{J} = \gamma \rho_0 \vec{v}\]</div>
+<span class="eqno">(231)<a class="headerlink" href="#equation-currdenj0" title="Permalink to this equation">#</a></span>\[\vec{J} = \gamma \rho_0 \vec{v}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\gamma =1/\sqrt{1-v^2/c^2}\)</span>, of course.  Although the density
 is charge over volume, only the dimension along the direction of
 motion gets contracted, so the density only changes by one factor of
@@ -551,7 +551,7 @@ spatial part of the four-velocity.  Maybe we can make the four-current
 by multiplying the four-velocity <span class="math notranslate nohighlight">\(v^\alpha\)</span> by <span class="math notranslate nohighlight">\(\rho_0\)</span>?  And indeed
 we can:</p>
 <div class="math notranslate nohighlight" id="equation-fourcurr">
-<span class="eqno">(231)<a class="headerlink" href="#equation-fourcurr" title="Permalink to this equation">#</a></span>\[\begin{split}\boxed{
+<span class="eqno">(232)<a class="headerlink" href="#equation-fourcurr" title="Permalink to this equation">#</a></span>\[\begin{split}\boxed{
 J^\alpha =
 \rho_0 \gamma 
 \begin{bmatrix}
@@ -573,7 +573,7 @@ location is equal and opposite to the rate at which the amount of
 charge at that location is changing.</p>
 <p>In classical notation, we would say</p>
 <div class="math notranslate nohighlight" id="equation-conteqclass">
-<span class="eqno">(232)<a class="headerlink" href="#equation-conteqclass" title="Permalink to this equation">#</a></span>\[\vec{\nabla}\cdot\vec{J} = \frac{\partial \rho v_x}{\partial x}+ \frac{\partial \rho v_y}{\partial y}+ \frac{\partial \rho v_z}{\partial z} = -\frac{\partial \rho}{\partial t}\]</div>
+<span class="eqno">(233)<a class="headerlink" href="#equation-conteqclass" title="Permalink to this equation">#</a></span>\[\vec{\nabla}\cdot\vec{J} = \frac{\partial \rho v_x}{\partial x}+ \frac{\partial \rho v_y}{\partial y}+ \frac{\partial \rho v_z}{\partial z} = -\frac{\partial \rho}{\partial t}\]</div>
 <p>The right side is the rate of change of the charge density at a particular
 location, and the left side is the divergence of the vector field.  So if
 the amount of charge is decreasing, <span class="math notranslate nohighlight">\(\partial \rho/\partial t &lt;0\)</span> and the
@@ -584,13 +584,13 @@ is increasing, which makes sense.</p>
 <p>If we move the right side over the to left and multiply top and bottom by <span class="math notranslate nohighlight">\(c\)</span>,
 it should start to suggest something:</p>
 <div class="math notranslate nohighlight" id="equation-movetimeover">
-<span class="eqno">(233)<a class="headerlink" href="#equation-movetimeover" title="Permalink to this equation">#</a></span>\[\frac{\partial (\gamma \rho_0 c)}{\partial (ct)}+\frac{\partial \gamma \rho_0 v_x}{\partial x}+ \frac{\partial \gamma \rho_0 v_y}{\partial y}+ \frac{\partial \gamma \rho_0 v_z}{\partial z} = 0\]</div>
+<span class="eqno">(234)<a class="headerlink" href="#equation-movetimeover" title="Permalink to this equation">#</a></span>\[\frac{\partial (\gamma \rho_0 c)}{\partial (ct)}+\frac{\partial \gamma \rho_0 v_x}{\partial x}+ \frac{\partial \gamma \rho_0 v_y}{\partial y}+ \frac{\partial \gamma \rho_0 v_z}{\partial z} = 0\]</div>
 <p>You will note that each successive term being differentiated is indeed one of the
 terms of our current four-vector.  Furthermore, each successive derivative is being
 done with respect to successive variables of the four-displacement!  So this suggests
 a kind of dot product, which we could write this way:</p>
 <div class="math notranslate nohighlight" id="equation-fourdivergence1">
-<span class="eqno">(234)<a class="headerlink" href="#equation-fourdivergence1" title="Permalink to this equation">#</a></span>\[\begin{split}\left(\frac{\partial}{\partial (ct)},\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)
+<span class="eqno">(235)<a class="headerlink" href="#equation-fourdivergence1" title="Permalink to this equation">#</a></span>\[\begin{split}\left(\frac{\partial}{\partial (ct)},\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)
 \begin{bmatrix}
 \gamma \rho_0 c\\
 \gamma \rho_0 v_x\\
@@ -600,15 +600,15 @@ a kind of dot product, which we could write this way:</p>
 = 0\end{split}\]</div>
 <p>If we define a <strong>four-divergence</strong> as the row vector above and write it as</p>
 <div class="math notranslate nohighlight" id="equation-fourdivdef">
-<span class="eqno">(235)<a class="headerlink" href="#equation-fourdivdef" title="Permalink to this equation">#</a></span>\[\partial_\alpha = \frac{\partial}{\partial x^\alpha} = \left(\frac{\partial}{\partial (ct)},\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)\]</div>
+<span class="eqno">(236)<a class="headerlink" href="#equation-fourdivdef" title="Permalink to this equation">#</a></span>\[\partial_\alpha = \frac{\partial}{\partial x^\alpha} = \left(\frac{\partial}{\partial (ct)},\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)\]</div>
 <p>then the continuity equation can be written as simply as</p>
 <div class="math notranslate nohighlight" id="equation-continuitysr">
-<span class="eqno">(236)<a class="headerlink" href="#equation-continuitysr" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(237)<a class="headerlink" href="#equation-continuitysr" title="Permalink to this equation">#</a></span>\[\boxed{
 \partial_\alpha J^\alpha = 0
 }\]</div>
 <p>Here you can see how the Einstein notation starts to save you a lot of writing.  Equations
-<a class="reference internal" href="#equation-continuitysr">(236)</a> and <a class="reference internal" href="#equation-movetimeover">(233)</a> are the exact same equation, with the same
-information content, but Equation <a class="reference internal" href="#equation-continuitysr">(236)</a> requires <em>so</em> much less writing,
+<a class="reference internal" href="#equation-continuitysr">(237)</a> and <a class="reference internal" href="#equation-movetimeover">(234)</a> are the exact same equation, with the same
+information content, but Equation <a class="reference internal" href="#equation-continuitysr">(237)</a> requires <em>so</em> much less writing,
 it’s much more popular than other methods.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -643,19 +643,19 @@ See more advanced texts like Griffiths that continue to four-potentials,
 Gauge transformations, and the D’Alembert Equation.</p>
 <p>For now, let’s remind ourselves of the four classic Maxwell’s Equations:</p>
 <div class="math notranslate nohighlight" id="equation-gauss">
-<span class="eqno">(237)<a class="headerlink" href="#equation-gauss" title="Permalink to this equation">#</a></span>\[\vec{\nabla}\cdot\vec{E} = \frac{\rho}{\epsilon_0}\]</div>
+<span class="eqno">(238)<a class="headerlink" href="#equation-gauss" title="Permalink to this equation">#</a></span>\[\vec{\nabla}\cdot\vec{E} = \frac{\rho}{\epsilon_0}\]</div>
 <div class="math notranslate nohighlight" id="equation-nogaussb">
-<span class="eqno">(238)<a class="headerlink" href="#equation-nogaussb" title="Permalink to this equation">#</a></span>\[\vec{\nabla}\cdot\vec{B} = 0\]</div>
+<span class="eqno">(239)<a class="headerlink" href="#equation-nogaussb" title="Permalink to this equation">#</a></span>\[\vec{\nabla}\cdot\vec{B} = 0\]</div>
 <div class="math notranslate nohighlight" id="equation-faraday">
-<span class="eqno">(239)<a class="headerlink" href="#equation-faraday" title="Permalink to this equation">#</a></span>\[\vec{\nabla}\times\vec{E} + \frac{\partial \vec{B}}{\partial t} = 0\]</div>
+<span class="eqno">(240)<a class="headerlink" href="#equation-faraday" title="Permalink to this equation">#</a></span>\[\vec{\nabla}\times\vec{E} + \frac{\partial \vec{B}}{\partial t} = 0\]</div>
 <div class="math notranslate nohighlight" id="equation-ampere">
-<span class="eqno">(240)<a class="headerlink" href="#equation-ampere" title="Permalink to this equation">#</a></span>\[\vec{\nabla}\times\vec{B} - \mu_0\epsilon_0 \frac{\partial \vec{E}}{\partial t} = \mu_0\vec{J}\]</div>
+<span class="eqno">(241)<a class="headerlink" href="#equation-ampere" title="Permalink to this equation">#</a></span>\[\vec{\nabla}\times\vec{B} - \mu_0\epsilon_0 \frac{\partial \vec{E}}{\partial t} = \mu_0\vec{J}\]</div>
 <p>Now, I have already introduced the four-divergence in the continuity
-equation (Equation <a class="reference internal" href="#equation-fourdivdef">(235)</a>).  What happens if we take the
+equation (Equation <a class="reference internal" href="#equation-fourdivdef">(236)</a>).  What happens if we take the
 four-divergence of the EM field tensor?  Using Equation
-<a class="reference internal" href="c11electric.html#equation-emtensorfin">(218)</a>, that works out to</p>
+<a class="reference internal" href="c11electric.html#equation-emtensorfin">(219)</a>, that works out to</p>
 <div class="math notranslate nohighlight" id="equation-div4em">
-<span class="eqno">(241)<a class="headerlink" href="#equation-div4em" title="Permalink to this equation">#</a></span>\[\begin{split}\partial_\nu F^{\mu\nu} = \left(\frac{\partial}{\partial (ct)},\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)
+<span class="eqno">(242)<a class="headerlink" href="#equation-div4em" title="Permalink to this equation">#</a></span>\[\begin{split}\partial_\nu F^{\mu\nu} = \left(\frac{\partial}{\partial (ct)},\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)
 \begin{pmatrix}
 0 &amp; E_x/c &amp; E_y/c &amp; E_z/c\\
 -E_x/c &amp; 0 &amp; B_z &amp; -B_y\\
@@ -664,29 +664,29 @@ four-divergence of the EM field tensor?  Using Equation
 \end{pmatrix}\end{split}\]</div>
 <p>Let’s start with the first row.</p>
 <div class="math notranslate nohighlight" id="equation-divrow0">
-<span class="eqno">(242)<a class="headerlink" href="#equation-divrow0" title="Permalink to this equation">#</a></span>\[\partial_\nu F^{0\nu} = \partial_0 F^{00} + \partial_1 F^{01}
+<span class="eqno">(243)<a class="headerlink" href="#equation-divrow0" title="Permalink to this equation">#</a></span>\[\partial_\nu F^{0\nu} = \partial_0 F^{00} + \partial_1 F^{01}
 + \partial_2 F^{02} + \partial_3 F^{03}\]</div>
 <p>The zero in the upper left corner of the EM tensor (<span class="math notranslate nohighlight">\(F^{00}\)</span>) kills
 the time derivative (<span class="math notranslate nohighlight">\(\partial_0\)</span>).  For the rest, we have the
 successive derivatives of each component of <span class="math notranslate nohighlight">\(\vec{E}\)</span> with respect to
 each successive space dimension.  That’s a three-divergence.  So that
 first row works out to <span class="math notranslate nohighlight">\(\vec{\nabla}\cdot\vec{E}/c\)</span>.  But Equation
-<a class="reference internal" href="#equation-gauss">(237)</a> tells us what the divergence of <span class="math notranslate nohighlight">\(\vec{E}\)</span> is!  It’s
+<a class="reference internal" href="#equation-gauss">(238)</a> tells us what the divergence of <span class="math notranslate nohighlight">\(\vec{E}\)</span> is!  It’s
 <span class="math notranslate nohighlight">\(\rho/\epsilon_0\)</span>!  So we get</p>
 <div class="math notranslate nohighlight" id="equation-zerothterm1">
-<span class="eqno">(243)<a class="headerlink" href="#equation-zerothterm1" title="Permalink to this equation">#</a></span>\[\partial_\nu F^{0\nu} = \vec{\nabla} \cdot \vec{E}/c = \frac{\rho}{c\epsilon_0}\]</div>
+<span class="eqno">(244)<a class="headerlink" href="#equation-zerothterm1" title="Permalink to this equation">#</a></span>\[\partial_\nu F^{0\nu} = \vec{\nabla} \cdot \vec{E}/c = \frac{\rho}{c\epsilon_0}\]</div>
 <p>But <span class="math notranslate nohighlight">\(\rho\)</span> is just the zeroth term of the four-current divided by <span class="math notranslate nohighlight">\(c\)</span>!
 So this becomes</p>
 <div class="math notranslate nohighlight" id="equation-zerothterm2">
-<span class="eqno">(244)<a class="headerlink" href="#equation-zerothterm2" title="Permalink to this equation">#</a></span>\[\partial_\nu F^{0\nu} = \frac{J^0}{c^2\epsilon_0}\]</div>
+<span class="eqno">(245)<a class="headerlink" href="#equation-zerothterm2" title="Permalink to this equation">#</a></span>\[\partial_\nu F^{0\nu} = \frac{J^0}{c^2\epsilon_0}\]</div>
 <p>and you should also remember that <span class="math notranslate nohighlight">\(c^2=1/\mu_0\epsilon_0\)</span>, so if we take
 on the idea that</p>
 <div class="math notranslate nohighlight" id="equation-srmaxwell1">
-<span class="eqno">(245)<a class="headerlink" href="#equation-srmaxwell1" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(246)<a class="headerlink" href="#equation-srmaxwell1" title="Permalink to this equation">#</a></span>\[\boxed{
 \partial_\nu F^{\mu\nu} = \mu_0 J^\mu
 }\]</div>
 <p>We have shown that the time component of this equation is none other than
-Gauss’s Law (Equation <a class="reference internal" href="#equation-gauss">(237)</a>)!</p>
+Gauss’s Law (Equation <a class="reference internal" href="#equation-gauss">(238)</a>)!</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>Note that <span class="math notranslate nohighlight">\(\mu_0\)</span> is the magnetic
@@ -695,12 +695,12 @@ to indicate the four-vector components!</p>
 </aside>
 <p>What about the space components?  Lets look at <span class="math notranslate nohighlight">\(\mu=1\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-div4em-1">
-<span class="eqno">(246)<a class="headerlink" href="#equation-div4em-1" title="Permalink to this equation">#</a></span>\[\partial_\nu F^{1\nu} = \frac{\partial}{\partial x^0} F^{10}
+<span class="eqno">(247)<a class="headerlink" href="#equation-div4em-1" title="Permalink to this equation">#</a></span>\[\partial_\nu F^{1\nu} = \frac{\partial}{\partial x^0} F^{10}
 +  \frac{\partial}{\partial x^1} F^{11}
 +  \frac{\partial}{\partial x^2} F^{12}
 +  \frac{\partial}{\partial x^3} F^{13}\]</div>
 <div class="math notranslate nohighlight" id="equation-div4em-2">
-<span class="eqno">(247)<a class="headerlink" href="#equation-div4em-2" title="Permalink to this equation">#</a></span>\[\partial_\nu F^{1\nu} = \frac{\partial}{\partial (ct)} F^{10}
+<span class="eqno">(248)<a class="headerlink" href="#equation-div4em-2" title="Permalink to this equation">#</a></span>\[\partial_\nu F^{1\nu} = \frac{\partial}{\partial (ct)} F^{10}
 +  \frac{\partial}{\partial x} F^{11}
 +  \frac{\partial}{\partial y} F^{12}
 +  \frac{\partial}{\partial z} F^{13}
@@ -711,24 +711,24 @@ to indicate the four-vector components!</p>
 just the <span class="math notranslate nohighlight">\(x\)</span> component of the curl of <span class="math notranslate nohighlight">\(\vec{B}\)</span>.  The <span class="math notranslate nohighlight">\(x\)</span> component of
 <span class="math notranslate nohighlight">\(\mu_0J^\nu\)</span> is just <span class="math notranslate nohighlight">\(\mu_0 J_x\)</span> (the <span class="math notranslate nohighlight">\(x\)</span> component of the current
 density), so all of this is just the <span class="math notranslate nohighlight">\(x\)</span> component of Ampere’s Law,
-Equation <a class="reference internal" href="#equation-ampere">(240)</a>!  You can verify that doing this for the third
+Equation <a class="reference internal" href="#equation-ampere">(241)</a>!  You can verify that doing this for the third
 and fourth rows will get you the other two components of Ampere’s Law,
 so the four-divergence of the EM field tensor is no more and no less
 than Gauss’s Law and Ampere’s Law, together, and by writing Equation
-<a class="reference internal" href="#equation-srmaxwell1">(245)</a>, we have collapsed those two of Maxwell’s Equations
+<a class="reference internal" href="#equation-srmaxwell1">(246)</a>, we have collapsed those two of Maxwell’s Equations
 down into one.</p>
 <p>What about the other two?  Our first clue is that both Equation
-<a class="reference internal" href="#equation-nogaussb">(238)</a> and Equation <a class="reference internal" href="#equation-faraday">(239)</a> are equal to zero.  So our
+<a class="reference internal" href="#equation-nogaussb">(239)</a> and Equation <a class="reference internal" href="#equation-faraday">(240)</a> are equal to zero.  So our
 final equation will also be equal to zero.  The second clue is that if
-you compare the left sides of Equations <a class="reference internal" href="#equation-nogaussb">(238)</a> and
-<a class="reference internal" href="#equation-faraday">(239)</a> to <a class="reference internal" href="#equation-gauss">(237)</a> and <a class="reference internal" href="#equation-ampere">(240)</a>, you can see that they
+you compare the left sides of Equations <a class="reference internal" href="#equation-nogaussb">(239)</a> and
+<a class="reference internal" href="#equation-faraday">(240)</a> to <a class="reference internal" href="#equation-gauss">(238)</a> and <a class="reference internal" href="#equation-ampere">(241)</a>, you can see that they
 look the same, just swapping <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> around.  At the
 end of Chapter 11, we constructed <em>two</em> versions of the EM tensor, one
 of which had the <span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(B\)</span> components switched.  So, if we bring
 back the dual tensor <span class="math notranslate nohighlight">\(G^{\mu\nu}\)</span> at this point (Equation
-<a class="reference internal" href="c11electric.html#equation-dualtensorfin">(219)</a>), and take its four-divergence, we will see that</p>
+<a class="reference internal" href="c11electric.html#equation-dualtensorfin">(220)</a>), and take its four-divergence, we will see that</p>
 <div class="math notranslate nohighlight" id="equation-dual4div">
-<span class="eqno">(248)<a class="headerlink" href="#equation-dual4div" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(249)<a class="headerlink" href="#equation-dual4div" title="Permalink to this equation">#</a></span>\[\boxed{
 \partial_\nu G^{\mu\nu}=0
 }\]</div>
 <p>will give us the other two Maxwell’s Equations.</p>
@@ -737,13 +737,13 @@ zero in position <span class="math notranslate nohighlight">\(G^{00}\)</span> wi
 we have <span class="math notranslate nohighlight">\(-\vec{\nabla}\cdot\vec{B}\)</span> from the other three components,
 just like we got the divergence of <span class="math notranslate nohighlight">\(\vec{E}\)</span> before.  We know that
 <span class="math notranslate nohighlight">\(\vec{B}\)</span> does not have a divergence, so setting this to zero will
-take care of Equation <a class="reference internal" href="#equation-nogaussb">(238)</a>.  We can multiply through
+take care of Equation <a class="reference internal" href="#equation-nogaussb">(239)</a>.  We can multiply through
 by the minus sign to get rid of that.</p>
 <p>For the spatial components, we take <span class="math notranslate nohighlight">\(\mu=1\)</span> as an example, again,
-and we get the same result as Equation <a class="reference internal" href="#equation-div4em-1">(246)</a>, just with
+and we get the same result as Equation <a class="reference internal" href="#equation-div4em-1">(247)</a>, just with
 <span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(B\)</span> swapped:</p>
 <div class="math notranslate nohighlight" id="equation-div4dual-1">
-<span class="eqno">(249)<a class="headerlink" href="#equation-div4dual-1" title="Permalink to this equation">#</a></span>\[\partial_\nu G^{1\nu} = \frac{\partial}{\partial (ct)} G^{10}
+<span class="eqno">(250)<a class="headerlink" href="#equation-div4dual-1" title="Permalink to this equation">#</a></span>\[\partial_\nu G^{1\nu} = \frac{\partial}{\partial (ct)} G^{10}
 +  \frac{\partial}{\partial x} G^{11}
 +  \frac{\partial}{\partial y} G^{12}
 +  \frac{\partial}{\partial z} G^{13}
@@ -751,10 +751,10 @@ and we get the same result as Equation <a class="reference internal" href="#equa
 \frac{\partial E_z}{c\partial y} + \frac{\partial E_y}{c\partial z} \]</div>
 <p>when you include the <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> components, this becomes</p>
 <div class="math notranslate nohighlight" id="equation-spacedual">
-<span class="eqno">(250)<a class="headerlink" href="#equation-spacedual" title="Permalink to this equation">#</a></span>\[-\frac{1}{c}\frac{\partial\vec{B}}{\partial t} -\frac{1}{c}\vec{\nabla}\times\vec{E}\]</div>
+<span class="eqno">(251)<a class="headerlink" href="#equation-spacedual" title="Permalink to this equation">#</a></span>\[-\frac{1}{c}\frac{\partial\vec{B}}{\partial t} -\frac{1}{c}\vec{\nabla}\times\vec{E}\]</div>
 <p>set this to zero and multiply through by <span class="math notranslate nohighlight">\(-c\)</span> to get Faraday’s Law,
-Equation <a class="reference internal" href="#equation-faraday">(239)</a>.</p>
-<p>So Equations <a class="reference internal" href="#equation-srmaxwell1">(245)</a> and <a class="reference internal" href="#equation-dual4div">(248)</a> represent all four
+Equation <a class="reference internal" href="#equation-faraday">(240)</a>.</p>
+<p>So Equations <a class="reference internal" href="#equation-srmaxwell1">(246)</a> and <a class="reference internal" href="#equation-dual4div">(249)</a> represent all four
 of Maxwell’s Equations in only two compact versions.  While this could
 arguably be described as simply a notational trick, since these two
 equations are really representing the same eight separate equations
