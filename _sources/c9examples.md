@@ -338,7 +338,7 @@ the interaction is to produce these two strange particles?
 
 In this case, we work backwards from knowing what the 
 the minimum energy in the center-of-momentum
-fraine would be. It must be at least the sum of the rest energies of the two
+frame would be. It must be at least the sum of the rest energies of the two
 particles to be produced.
 ```{math}
 E_{\rm commin} = E_{0\Lambda} + E_{0K} =
@@ -385,15 +385,27 @@ three equations and three unknowns ($KE_\pi$, $\beta_{\rm com}$,
 and $\gamma_{\rm com}$), so we can solve for an answer!
 
 ```{math}
+:label: 92eq1
 E_{0p} + E_{0\pi} + KE_\pi = \gamma_{\rm com}E_{\rm commin}
 ```
 ```{math}
+:label: 92eq2
 E_{0\pi}KE_\pi + KE_\pi^2 = \beta_{\rm com}^2\gamma_{\rm com}^2E_{\rm commin}^2
 ```
 and of course
 ```{math}
+:label: 92eqgam
 \gamma_{\rm com} = \frac{1}{\sqrt{1-\beta_{\rm com}^2}}
 ```
+Remember what we are looking for is $KE_\pi$, and we know
+$E_{commin}$ and the rest energies.  From here on, it's
+basically algebra.  Put Equation {eq}`92eqgam` into Equation
+{eq}`92eq2` to get
+```{math}
+:label: 92eq3
+E_{0\pi}KE_\pi + KE_\pi^2 = \frac{\beta_{\rm com}^2}{1-\beta_{com}^2}E_{\rm commin}^2
+```
+
 
 ## Photons and the Doppler Shift
 
