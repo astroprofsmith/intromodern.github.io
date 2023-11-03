@@ -443,9 +443,22 @@ E0pi = 139.570
 Ecommin = 1613.4
 KEpi = (Ecommin**2-(E0p+E0pi)**2)/(2*E0p+E0pi)
 print("Minimum KE of pion: {:5.2f} MeV".format(KEpi))
-
 ```
 
+So in the lab, we have 715 MeV of kinetic energy with the pion, plus the
+rest energy of the pion (140 MeV) and the rest energy of the proton
+(938 MeV), for a total of 1793 MeV of energy.  Assuming we did the
+math correctly, that must correspond to 1613 MeV of energy in the
+center of momentum frame, which would be enough to make the two
+particles.  So we would need more energy in the lab than you might
+think, to ensure we had enough energy in the center of momentum
+frame.  If an event (like the creation of two new particles) is to
+happen in one frame, then it must happen in all frames.  Specifically,
+if there is not enough energy in the CoM frame for the particles to
+be created, then they cannot be created in ANY frame.  So in the
+lab, the pion must have 715 MeV of kinetic energy to ensure there is
+enough energy in the CoM frame, even though it is more than enough
+energy in the lab frame.
 
 ## Photons and the Doppler Shift
 
