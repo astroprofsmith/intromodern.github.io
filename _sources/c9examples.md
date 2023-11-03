@@ -1136,21 +1136,9 @@ plt.title("Testing Compton Scattering Hypothesis")
 plt.axis([0.0,1.6,1.6,4.5])
 plt.legend()
 plt.show()
-
-slp = b
-icpt = a
-E0=1/slp
-Eg = 1/icpt
-eslp = 0.01209
-eicpt = 0.009785
-eE0 = eslp*E0**2
-eEg = eicpt*Eg**2
-print("The best-fit slope is ({0:4.3f} +- {1:4.3f}) 1/MeV".format(slp,eslp))
-print("The best-fit y-intercept is ({0:4.3f} +- {1:4.3f}) 1/MeV".format(icpt,eicpt))
-print("The estimate of E0 is ({0:4.0f} +- {1:1.0f}) keV".format(E0*1000,eE0*1000))
-print("The estimate of Egam is ({0:4.0f} +- {1:1.0f}) keV".format(Eg*1000,eEg*1000))
 glue("guilfordfig", fig, display=False)
 ```
+
 
 ```{glue:figure} guilfordfig
 :figwidth: 800px
@@ -1172,6 +1160,22 @@ scattered at various angles with respect to the initial beam line. She
 plot shows the reciprocal of the measured energy plotted as a function
 of $(1-\cos{\theta})$ where $\theta$ is the scattering angle of the
 photons.
+
+```{code-cell}
+slp = b
+icpt = a
+E0=1/slp
+Eg = 1/icpt
+eslp = 0.01209
+eicpt = 0.009785
+eE0 = eslp*E0**2
+eEg = eicpt*Eg**2
+print("The best-fit slope is ({0:4.3f} +- {1:4.3f}) 1/MeV".format(slp,eslp))
+print("The best-fit y-intercept is ({0:4.3f} +- {1:4.3f}) 1/MeV".format(icpt,eicpt))
+print("The estimate of E0 is ({0:4.0f} +- {1:1.0f}) keV".format(E0*1000,eE0*1000))
+print("The estimate of Egam is ({0:4.0f} +- {1:1.0f}) keV".format(Eg*1000,eEg*1000))
+
+```
 
 a) Are her data consistent with Compton's model of photon-electron
 scattering?  Give evidence.

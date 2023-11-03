@@ -1197,6 +1197,32 @@ plot shows the reciprocal of the measured energy plotted as a function
 of <span class="math notranslate nohighlight">\((1-\cos{\theta})\)</span> where <span class="math notranslate nohighlight">\(\theta\)</span> is the scattering angle of the
 photons.</p></li>
 </ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">slp</span> <span class="o">=</span> <span class="n">b</span>
+<span class="n">icpt</span> <span class="o">=</span> <span class="n">a</span>
+<span class="n">E0</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="n">slp</span>
+<span class="n">Eg</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">icpt</span>
+<span class="n">eslp</span> <span class="o">=</span> <span class="mf">0.01209</span>
+<span class="n">eicpt</span> <span class="o">=</span> <span class="mf">0.009785</span>
+<span class="n">eE0</span> <span class="o">=</span> <span class="n">eslp</span><span class="o">*</span><span class="n">E0</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">eEg</span> <span class="o">=</span> <span class="n">eicpt</span><span class="o">*</span><span class="n">Eg</span><span class="o">**</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The best-fit slope is (</span><span class="si">{0:4.3f}</span><span class="s2"> +- </span><span class="si">{1:4.3f}</span><span class="s2">) 1/MeV&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">slp</span><span class="p">,</span><span class="n">eslp</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The best-fit y-intercept is (</span><span class="si">{0:4.3f}</span><span class="s2"> +- </span><span class="si">{1:4.3f}</span><span class="s2">) 1/MeV&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">icpt</span><span class="p">,</span><span class="n">eicpt</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The estimate of E0 is (</span><span class="si">{0:4.0f}</span><span class="s2"> +- </span><span class="si">{1:1.0f}</span><span class="s2">) keV&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">E0</span><span class="o">*</span><span class="mi">1000</span><span class="p">,</span><span class="n">eE0</span><span class="o">*</span><span class="mi">1000</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The estimate of Egam is (</span><span class="si">{0:4.0f}</span><span class="s2"> +- </span><span class="si">{1:1.0f}</span><span class="s2">) keV&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Eg</span><span class="o">*</span><span class="mi">1000</span><span class="p">,</span><span class="n">eEg</span><span class="o">*</span><span class="mi">1000</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The best-fit slope is (1.943 +- 0.012) 1/MeV
+The best-fit y-intercept is (1.563 +- 0.010) 1/MeV
+The estimate of E0 is ( 515 +- 3) keV
+The estimate of Egam is ( 640 +- 4) keV
+</pre></div>
+</div>
+</div>
+</div>
 <p>a) Are her data consistent with Compton’s model of photon-electron
 scattering?  Give evidence.</p>
 <p>b) Which number reported from the fit estimates the rest energy of the
