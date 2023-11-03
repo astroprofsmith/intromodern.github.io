@@ -337,7 +337,7 @@ chamber. What is the minimum kinetic energy that the pion must have if
 the interaction is to produce these two strange particles?
 
 In this case, we work backwards from knowing what the 
-the minimum energy in the center-of-moinentum
+the minimum energy in the center-of-momentum
 fraine would be. It must be at least the sum of the rest energies of the two
 particles to be produced.
 ```{math}
