@@ -424,7 +424,7 @@ Expand the square on the left side:
 (E_{0p} + E_{0\pi})^2 + 2(E_{0p} + E_{0\pi})KE_\pi + KE_\pi^2 =
  E_{0\pi}KE_\pi + KE_\pi^2 +E_{\rm commin}^2
 ```
-The square term cancels!  Then it's simple to solve for $KE_\pi$:
+The $KE_\pi$ square term cancels!  Then it's simple to solve for $KE_\pi$:
 ```{math}
 :label: 92eq7
 KE_\pi(2(E_{0p} + E_{0\pi})- E_{0\pi}) =
@@ -1165,7 +1165,7 @@ The graph uses the same axes as {numref}`csresultsfig`.
 
 11) {numref}`duncanfig` shows some results of a scattering experiment
 performed by Alison Duncan during the spring semester of 2005 as part
-of her first year Jab. She collimated a beam of photons from a Cs-l37
+of her first year lab. She collimated a beam of photons from a Cs-l37
 radioactive source and aimed the beam at an aluminum target. She then
 used a NaI detector to measure the energy of the photons that were
 scattered at various angles with respect to the initial beam line. She
