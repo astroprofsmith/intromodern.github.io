@@ -431,7 +431,11 @@ KE_\pi(2(E_{0p} + E_{0\pi})- E_{0\pi}) =
 -(E_{0p} + E_{0\pi})^2
  +E_{\rm commin}^2
 ```
-
+Divide through to get
+```{math}
+:label: 92kepi
+KE_\pi = \frac{E_{\rm commin}^2 - (E_{0p} + E_{0\pi})^2}{2E_{0p} + E_{0\pi}}
+```
 
 ## Photons and the Doppler Shift
 
