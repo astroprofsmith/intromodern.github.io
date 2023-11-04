@@ -273,8 +273,8 @@ target.
 
 A proton with kinetic energy 300.00 MeV strikes a stationary
 proton. Find the speed of the center-of-momentum frame and the total
-energy in the center-of-momentumframe. Is it possible for this
-scattering process to produce tvvo pions?
+energy in the center-of-momentum frame. Is it possible for this
+scattering process to produce two pions?
 
 Tofind the speed of the center-of-momentum, we use Equation {eq}`betacom`.
 The total energy in the laboratoiy frame is
