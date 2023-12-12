@@ -373,9 +373,9 @@ i\frac{dc}{dt}\\
 \frac{dv_z}{dt}
 \end{bmatrix}
 ```
-Taking the derivative of $\gamma$ works like this:
+Taking the derivative of $\gamma$ was given in Equation {eq}`dgamma`:
 ```{math}
-:label: dgamma
+:label: dgamma2
 d\gamma = d\left((1-\beta^2)^{-1/2}\right) = -\frac{1}{2}\left(1-\beta^2\right)^{-3/2}(-2\beta)d\beta = \gamma^3\beta d\beta
 ```
 This is a complicated relationship that depends on the three components
