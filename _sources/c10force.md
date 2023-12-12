@@ -63,7 +63,46 @@ no built in speed limit.
 
 To fix these problems, we need to cast Equation {eq}`Newton2nd` in
 four-vector form.  Then we can predict the acceleration of objects
-near the speed of light and characterize their motion.
+near the speed of light and characterize their motion.  But before
+we dive into the four-vector analysis, there is an interesting observation
+to be made about how the structure of the Lorentz factor itself is tied
+deeply into the mechanics of energy and motion.
+
+## Dynamics from the Lorentz Factor
+
+We originally derived the Lorentz factor as a way to keep the speed of
+light constant in all relatively moving reference frames, leading to
+an interpretation of the factor as a ratio of the time interval
+between two events in the same location to the time interval between
+those same two events in a relatively moving reference frame (aka time
+dilation).
+
+As we expanded our understanding of the process of characterizing
+space, time, and motion as observed in reference frames in relative
+motion, the same Lorentz factor showed up over and over again in different
+contexts.  The Lorentz transformation matrix required $\gamma$s in
+four of its terms, we saw that as time intervals stretched by $\gamma$,
+space intervals shrunk by $\gamma$.  The factor $\gamma$, containing
+as it does the terms $\beta$ is clearly closely linked to space, time,
+and motion therein.
+
+It is therefore no surprise that it can shed insight into momentum
+and energy, as these concepts are linked to motion through the concept
+of (rest) mass.  Let us begin with the Lorentz factor and explore how
+it can lead to connections between space, time, energy, and momentum.
+Start with writing the Lorentz factor this way, assuming $c=1$ to make our
+lives easier:
+```{math}
+:label: gamma1
+\gamma = (1-\frac{\vec{v}\cdot\vec{v})^{-1/2}
+```
+Take the differential to get
+```{math}
+:label: dgamma
+d\gamma = -\frac{1}{2}(1-\frac{\vec{v}\cdot\vec{v})^{-3/2}(-2)(\vec{v}\cdot d\vec{v})
+```
+
+
 
 ## Newton's Second Law with Four Vectors
 
