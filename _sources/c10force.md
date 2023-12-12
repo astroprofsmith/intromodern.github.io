@@ -94,12 +94,12 @@ Start with writing the Lorentz factor this way, assuming $c=1$ to make our
 lives easier:
 ```{math}
 :label: gamma1
-\gamma = (1-\frac{\vec{v}\cdot\vec{v})^{-1/2}
+\gamma = (1-\vec{v}\cdot\vec{v})^{-1/2}
 ```
 Take the differential to get
 ```{math}
 :label: dgamma
-d\gamma = -\frac{1}{2}(1-\frac{\vec{v}\cdot\vec{v})^{-3/2}(-2)(\vec{v}\cdot d\vec{v})
+d\gamma = -\frac{1}{2}(1-\vec{v}\cdot\vec{v})^{-3/2}(-2)(\vec{v}\cdot d\vec{v})
 ```
 
 
