@@ -94,12 +94,12 @@ Start with writing the Lorentz factor this way, assuming $c=1$ to make our
 lives easier:
 ```{math}
 :label: gamma1
-\gamma = (1-\vec{v}\cdot\vec{v})^{-1/2}
+\gamma = (1-\frac{\vec{v}\cdot\vec{v})^{-1/2}
 ```
-Take the differential to get
+Square both sides and move the right side to the left:
 ```{math}
-:label: dgamma
-d\gamma = -\frac{1}{2}(1-\vec{v}\cdot\vec{v})^{-3/2}(-2)(\vec{v}\cdot d\vec{v})
+:label: gamma2
+\gamma^2 - \gamma^2 \vec{v}\cdot\vec{v} = 1
 ```
 
 
@@ -373,9 +373,9 @@ i\frac{dc}{dt}\\
 \frac{dv_z}{dt}
 \end{bmatrix}
 ```
-Taking the derivative of $\gamma$ was given in Equation {eq}`dgamma`:
+Taking the derivative of $\gamma$ works like this:
 ```{math}
-:label: dgamma2
+:label: dgamma
 d\gamma = d\left((1-\beta^2)^{-1/2}\right) = -\frac{1}{2}\left(1-\beta^2\right)^{-3/2}(-2\beta)d\beta = \gamma^3\beta d\beta
 ```
 This is a complicated relationship that depends on the three components
