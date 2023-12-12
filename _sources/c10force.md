@@ -94,14 +94,18 @@ Start with writing the Lorentz factor this way, assuming $c=1$ to make our
 lives easier:
 ```{math}
 :label: gamma1
-\gamma = (1-\frac{\vec{v}\cdot\vec{v})^{-1/2}
+\gamma = (1-\vec{v}\cdot\vec{v})^{-1/2}
 ```
 Square both sides and move the right side to the left:
 ```{math}
 :label: gamma2
 \gamma^2 - \gamma^2 \vec{v}\cdot\vec{v} = 1
 ```
-
+Take the differential:
+```{math}
+:label: diffgam
+2\gamma d\gama - 2\gamma \vec{v}\cdot d(\gamma\vec{v}) = 1
+```
 
 
 ## Newton's Second Law with Four Vectors
