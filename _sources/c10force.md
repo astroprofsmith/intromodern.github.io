@@ -101,10 +101,10 @@ Square both sides and move the right side to the left:
 :label: gamma2
 \gamma^2 - \gamma^2 \vec{v}\cdot\vec{v} = 1
 ```
-Take the differential:
+Take the differential, treating $\gamma \vec{v}$ as a single entity:
 ```{math}
 :label: diffgam
-2\gamma d\gama - 2\gamma \vec{v}\cdot d(\gamma\vec{v}) = 1
+2\gamma d\gamma - 2(\gamma \vec{v})\cdot d(\gamma\vec{v}) = 0
 ```
 
 
