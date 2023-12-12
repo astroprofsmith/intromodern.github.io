@@ -106,7 +106,25 @@ Take the differential, treating $\gamma \vec{v}$ as a single entity:
 :label: diffgam
 2\gamma d\gamma - 2(\gamma \vec{v})\cdot d(\gamma\vec{v}) = 0
 ```
-
+Divide out the $2\gamma$ and multiply through by rest mass $m_0$:
+```{math}
+:label: bringmin
+m_0 d\gamma - (m_0 \vec{v})\cdot d(\gamma\vec{v}) = 0
+```
+Move the second term to the right and move the scalar inside the
+differential, while putting the $c$ back in:
+```{math}
+:label: gettingclose
+d(m_0 c^2 \gamma) =  \vec{v}\cdot d(\gamma m_0 \vec{v})
+```
+We can identify the left side as $dE$ and the right side as having $\vec{p} = \gamma m_0 \vec{v}$,
+so this is none other than
+```{math}
+:label: workKE
+dE = \vec{v} \cdot d\vec{p} = d\vec{r} \cdot \frac{d\vec{p}}{dt} = \vec{F} \cdot d\vec{r}.
+```
+So the work-kinetic energy theorem could be said to be contained right inside
+the Lorentz factor from the beginning!
 
 ## Newton's Second Law with Four Vectors
 
