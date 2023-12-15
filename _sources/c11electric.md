@@ -179,7 +179,7 @@ be electrically neutral.
 :name: frameBfig
 
 Schematic of a reference frame in which the single charge is at rest
-and the wire is moving to the right with a speed $u$.  In this frame,
+and the wire is moving to the left with a speed $u$.  In this frame,
 because the positive and negative charges are moving at different speeds,
 the distances between those charges will be contracted by different
 amounts.
@@ -410,12 +410,12 @@ glue("slidecyl",solshft, display=False)
 Animation of how the current and $B$ field of a solenoid are affected
 by changing into a different reference frame.  The red dots represent
 charges moving around a cylindrical solenoid.  One row of them is
-turned white purely to help you see how fast they are gong around.
+turned white purely to help you see how fast they are going around.
 The blue arrows show representative $B$ field vectors inside the
 solenoid.  The slider allows you to change the relative velocity
 between the reference frames.  The magenta arrow shows the velocity of
 the cylinder in that frame.  The animation cheats, though, by not
-showing the plate in motion (it would be frustrating to have to chase
+showing the cylinder in motion (it would be frustrating to have to chase
 after it).  The circles will compress due to length contraction, but
 the rate of rotation (the current) will slow due to time dilation.
 These effects cancel, leaving the $B$ field unchanged.
