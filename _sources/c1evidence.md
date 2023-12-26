@@ -23,17 +23,50 @@ from myst_nb import glue
 
 Before we dive into the set of predictions and interpretations that
 make up what we call "Special Relativity" (or SR), it's important to
-lay some groundwork and establish some definitions for what we will be
+lay some groundwork and establish the definitions for what we will be
 talking about.  Much of SR will twist and challenge what you thought
 you knew about space and time, so it is important to define our terms
 carefully and precisely, or else it can get very confusing as to what
-we are actually talking about.  In this chapter, we will describe the
-rules by which the game of SR is played, and describe some of the
-reasons why those rules have been accepted.  It's important to know,
-right from the beginning, that the predictions of relativity, in both
-the general and specific forms, have passed every single test to which
-they have been subjected.  As far as we can tell, the universe really
-does work this way.
+we are actually talking about.  In the first two chapters, we will
+describe the rules by which the game of SR is played, and describe
+some of the reasons why those rules have been accepted.  It's
+important to know, right from the beginning, that the predictions of
+relativity, in both the general and specific forms, have passed every
+single test to which they have been subjected.  As far as we can tell,
+the universe really does work this way.
+
+After a few notes about the electronic format of this book, the rest
+of this chapter will present the experimental evidence that convinced
+the scientific world to take Einstein's proposals seriously.  Chapter
+two will lay out the remarkably few premises that are needed to
+develop all the challenging interpretations of space, time, and motion
+that we think of as "relativity".
+
+## A Few Notes about this eBook
+
+This electronic book is an adaptation and expansion by Don Smith of a
+printed text written by Rex Adelberger before he passed.  By casting
+the book in this electronic format, it is possible to create animated
+and interactive graphical representations of concepts that were only
+static images in the original text.  These interactive graphs have
+been produced using the VPython library on the WebVPython web site.
+As with all VPython visualizations, you can zoom, pan, and rotate the
+animation however you like, using the tools of your particular
+device's interface (be it a smartphone, tablet, or trackpad).
+Interactive elements such as buttons and sliders are explained in
+the caption for each such figure.  Most static graphs are created
+by Python code embedded in the book, rather than imported as images
+created by separate analysis software.
+
+This book is aimed at an audience of students that have completed at
+least a year of introductory Physics and are comfortable with the
+mathematics of calculus as well as vector and matrix manipulation.  I
+will assume the reader is familiar with the relationships between
+displacement, velocity, acceleration, momentum, and force, as defined
+in classical Physics, as well as the classical properties of electric
+and magnetic fields.  The Pythagorean Theorem is ubiquitous, although
+the reader will see that it works a little differently when time is
+incorporated as a fourth dimension.
 
 ## Experimental Foundation
 
