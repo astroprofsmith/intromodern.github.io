@@ -818,7 +818,37 @@ ground, the train is moving, the mirror will be a distance $vdt/2$
 along the track when the light hits it, and $vdt$ further along when
 the light returns.  In the ground's reference frame, the light must
 therefore follow a triangular path, if it is to bounce off the mirror
-and return to the detector.
+and return to the detector.  An interactive animation of this situation is
+shown in {numref}`trainclockfig`.  Run the simulation a few times for
+different train speeds before continuing, to make sure you are correctly
+visualizing the situation.
+
+```{code-cell}
+:tags: ["remove-cell"]
+# Insert VPython simulation of a Michaelson Interferometer
+# Allow user to rotate system, relative to ether
+# Have radio button to include/remove ether
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRtrainclock"
+test = display.IFrame(src=url1,width=800,height=700)
+glue("tclockfig",test, display=False)
+
+```
+
+```{glue:figure} tclockfig
+:figwidth: 800px
+:name: trainclockfig
+
+Animation of a laser clock on a train.  Use the slider to set the speed
+of the train and then hit the space bar to run the animation.  The
+white ball represents the pulse of light from the laser.  It will travel
+from the floor of the train, reflect off the ceiling, and return to the
+floor.  The readout to the lower left shows the time elapsed while the
+laser is moving.  The calculations use $c=1$, so this is also the distance
+the laser beam travels.  Try it first with $\beta=0$ and see the ball go
+straight up and down.  The height of the train is 6, in these units, so
+you should see the time of flight as 12.  Try increasing $\beta$ and run
+it again, to see how the time and distance increase.
+```
 
 This is the essence of time dilation: if the light is to travel a
 longer path (the hypoteneuse of a triangle will be longer than the

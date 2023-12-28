@@ -181,6 +181,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="c10force.html">Chapter 10: Relativistic Force and Acceleration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c11electric.html">Chapter 11: The Electromagnetic Tensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c12dynamic.html">Chapter 12: Relativistic Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c13introGR.html">Chapter 13: Concepts of General Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c14applGR.html">Chapter 14: Some Applications of General Relativity</a></li>
 </ul>
 
     </div>
@@ -405,7 +407,7 @@ considering the relative displacement in spacetime of two events, as
 measured in two different inertial frames of reference that are in
 relative motion with some constant velocity <span class="math notranslate nohighlight">\(v_R\)</span> (or <span class="math notranslate nohighlight">\(\beta_R\)</span>).  We
 draw these events on a spacetime diagram, such as in
-<a class="reference internal" href="#fig2events"><span class="std std-numref">Fig. 11</span></a> – the left side shows two events at rest in a
+<a class="reference internal" href="#fig2events"><span class="std std-numref">Fig. 12</span></a> – the left side shows two events at rest in a
 reference frame S, while the right side shows where those same two
 events would land in a frame S’ which is moving to the right at speed
 <span class="math notranslate nohighlight">\(v_R\)</span> relative to S.  Since S’ is moving right, the events will be
@@ -415,7 +417,7 @@ interval <span class="math notranslate nohighlight">\(dt_0\)</span> in the rest 
 <figure class="align-default" id="fig2events" style="width: 800px">
 <img alt="_images/a3c289315d6e866253fbc08a1c0afbeb1ef6592b58a9f975d32dba07b2fcd1e0.png" src="_images/a3c289315d6e866253fbc08a1c0afbeb1ef6592b58a9f975d32dba07b2fcd1e0.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Two events at rest in an unprimed frame and in a primed frame
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Two events at rest in an unprimed frame and in a primed frame
 moving to the right (which means the events displace to the left) with a speed
 of <span class="math notranslate nohighlight">\(\beta_R = 0.75\)</span>.</span><a class="headerlink" href="#fig2events" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -451,7 +453,7 @@ observer can never “just know” what is going on somewhere else.  Since
 in many frames of reference two events are separated by some spatial
 displacement <span class="math notranslate nohighlight">\(dx\)</span>, it is worth considering just how the observer is to
 know that this displacement is indeed <span class="math notranslate nohighlight">\(dx\)</span> and not some other number.
-In the primed frame shown in <a class="reference internal" href="#fig2events"><span class="std std-numref">Fig. 11</span></a>, an observer cannot
+In the primed frame shown in <a class="reference internal" href="#fig2events"><span class="std std-numref">Fig. 12</span></a>, an observer cannot
 move from the red dot to the blue dot – such an observer would not in
 fact be <strong>in</strong> the primed frame.  Such an observer would be at rest
 with respect to the unprimed frame, and the blue dot would be at the
@@ -474,7 +476,7 @@ it reflects off a strategically placed mirror at the same location as
 the blue dot (at the exact moment represented by the location of the
 blue dot on the <span class="math notranslate nohighlight">\(cdt'\)</span> axis), and returns to the location of the
 observer at some later time.</p>
-<p>Such a setup is illustrated in <a class="reference internal" href="#figinterval"><span class="std std-numref">Fig. 12</span></a>.  The worldline
+<p>Such a setup is illustrated in <a class="reference internal" href="#figinterval"><span class="std std-numref">Fig. 13</span></a>.  The worldline
 of the (stationary) observer is a vertical red line.  The red dot is
 stationary along this line, while the blue dot is off to the side.
 Orange lines represent the worldlines of the light that the observer
@@ -496,7 +498,7 @@ time.</p>
             
         ></iframe>
         </div><figcaption>
-<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Interactive spacetime diagram.  The red line represents
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Interactive spacetime diagram.  The red line represents
 the worldline of a stationary observer.  The blue dot represents some
 event <span class="math notranslate nohighlight">\(p\)</span> on that worldline.  The green dot represents some other event
 <span class="math notranslate nohighlight">\(q\)</span> that most definitely does not reside on the worldline with <span class="math notranslate nohighlight">\(p\)</span>.
@@ -518,7 +520,7 @@ and off.</span><a class="headerlink" href="#figinterval" title="Permalink to thi
 we will call <span class="math notranslate nohighlight">\(t_1\)</span> and <span class="math notranslate nohighlight">\(t_2\)</span>.  The first is the time from the red dot
 until the light returns, and the second is the time from the moment
 the light is sent out until the time of the red dot.  These time
-intervals are represented in <a class="reference internal" href="#figinterval"><span class="std std-numref">Fig. 12</span></a> by a white and a
+intervals are represented in <a class="reference internal" href="#figinterval"><span class="std std-numref">Fig. 13</span></a> by a white and a
 magenta arrow, respectively.  The value of <span class="math notranslate nohighlight">\(t_1\)</span> is positive if the
 red dot happens before the light returns, and the value of <span class="math notranslate nohighlight">\(t_2\)</span> is
 positive if the light is sent out before the red dot.  These two
@@ -530,7 +532,7 @@ negative.</p>
 can help our observer calculate values for <span class="math notranslate nohighlight">\(dx'\)</span> and <span class="math notranslate nohighlight">\(cdt'\)</span>, without
 ever going over to the blue dot!  If the red and blue dots are
 simultaneous, then <span class="math notranslate nohighlight">\(dt'=0\)</span>, and <span class="math notranslate nohighlight">\(t_1\)</span> must equal <span class="math notranslate nohighlight">\(t_2\)</span> (this is the
-initial setup for <a class="reference internal" href="#figinterval"><span class="std std-numref">Fig. 12</span></a>, and you can see the symmetry
+initial setup for <a class="reference internal" href="#figinterval"><span class="std std-numref">Fig. 13</span></a>, and you can see the symmetry
 yourself).  The later the blue dot shifts, the larger <span class="math notranslate nohighlight">\(dt'\)</span> should
 get, and the earlier the blue dot shifts, the more negative <span class="math notranslate nohighlight">\(dt'\)</span>
 should get.  Therefore, our observer can conclude that the temporal
@@ -541,7 +543,7 @@ displacement between the red and blue dots is</p>
 light, the distance traveled would be duration times speed, so</p>
 <div class="math notranslate nohighlight" id="equation-cdxp5">
 <span class="eqno">(37)<a class="headerlink" href="#equation-cdxp5" title="Permalink to this equation">#</a></span>\[dx' = c\frac{t_1+t_2}{2}\]</div>
-<p>These numbers are also displayed in <a class="reference internal" href="#figinterval"><span class="std std-numref">Fig. 12</span></a> (without the primes),
+<p>These numbers are also displayed in <a class="reference internal" href="#figinterval"><span class="std std-numref">Fig. 13</span></a> (without the primes),
 using units where <span class="math notranslate nohighlight">\(c=1\)</span>, for simplicity.
 The numbers in the diagram have been calculated from <span class="math notranslate nohighlight">\(t_1\)</span> and <span class="math notranslate nohighlight">\(t_2\)</span>,
 not measured directly from the graph.</p>
@@ -632,7 +634,7 @@ events is actually referred to as a “light cone”.  Why a cone?
 Because if we do include the <span class="math notranslate nohighlight">\(y\)</span> dimension as pointing into the
 computer screen, then the <span class="math notranslate nohighlight">\(\times\)</span> can be rotated around the vertical
 axis, and instead of an <span class="math notranslate nohighlight">\(\times\)</span>, we get a cone.  Click the button on
-<a class="reference internal" href="#figinterval"><span class="std std-numref">Fig. 12</span></a> to see the light cones associated with the red
+<a class="reference internal" href="#figinterval"><span class="std std-numref">Fig. 13</span></a> to see the light cones associated with the red
 dot.</p>
 <p>Of course, it’s only a cone if we include two space dimensions, <span class="math notranslate nohighlight">\(x\)</span>
 and <span class="math notranslate nohighlight">\(y\)</span>.  If we could include <span class="math notranslate nohighlight">\(z\)</span>, the light would be travelling in a
@@ -708,9 +710,9 @@ light.</p>
 frame.  If I were to redraw the spacetime diagram in the primed frame,
 the axes would be horizontal and vertical, as normal.  The set of
 events in the unprimed frame that will be vertical in the primed frame
-make up a tilted line in the unprimed frame.  <a class="reference internal" href="#fig16events"><span class="std std-numref">Fig. 14</span></a> shows a case
+make up a tilted line in the unprimed frame.  <a class="reference internal" href="#fig16events"><span class="std std-numref">Fig. 15</span></a> shows a case
 where the axes are implicitly redrawn every time the reference frame
-is shifted, while <a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 13</span></a> is keeping the same original axes while
+is shifted, while <a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 14</span></a> is keeping the same original axes while
 showing which events would be on the horizontal and vertical axes, if
 you were to redraw them.</p>
 </div>
@@ -752,7 +754,7 @@ the origin with a slope of <span class="math notranslate nohighlight">\(\beta_R\
 will be an upward tilting line that shift to a steeper slope as you
 increase <span class="math notranslate nohighlight">\(\beta_R\)</span>, up to 1, since that is as fast as you can go.</p>
 <p>The results of these two equations are depicted graphically in
-<a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 13</span></a>.  You can shift the slider below the figure to
+<a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 14</span></a>.  You can shift the slider below the figure to
 change <span class="math notranslate nohighlight">\(\beta_R\)</span>.  The yellow arrows that represent which events will
 be on the axes in the primed frame will tilt as you change the
 relative speed.  Again, the actual unprimed axes remain unchanged –
@@ -771,7 +773,7 @@ perpendicular axes in the primed frame, if you were to redraw them.</p>
             
         ></iframe>
         </div><figcaption>
-<p><span class="caption-number">Fig. 13 </span><span class="caption-text">A spacetime diagram where the events that lie on the
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">A spacetime diagram where the events that lie on the
 axes are indicated with yellow arrows.  A slider below the diagram
 allows you to change the relative speed of a primed reference frame,
 and the arrows will tilt to indicate which events will end up on the
@@ -790,7 +792,7 @@ space the events that you pass by will be, and therefore your worldline
 (which is by definition the vertical axis in the primed frame) will
 tilt further and further.</p>
 <p>Consider the event represented by the blue dot in
-<a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 13</span></a>: as the diagram is first drawn, with the
+<a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 14</span></a>: as the diagram is first drawn, with the
 observer at rest in the unprimed frame, the event is to the right of
 the vertical axis.  As you move the slider to the right and the axis
 tilts, you can choose a speed such that the yellow arrow lies on the
@@ -812,7 +814,7 @@ separated.</p>
 <p>This hopefully seems rather intuitive.  You have overtaken or reached
 events many times in your life, so hopefully it is not hard to imagine
 the implications of shifting the vertical axis as shown in
-<a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 13</span></a>.  However, it is much harder to imagine how the
+<a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 14</span></a>.  However, it is much harder to imagine how the
 red dot interacts with the horizontal axis.  The mathematical
 description is almost identical to the case of the blue dot, only
 rotated <span class="math notranslate nohighlight">\(90^\circ\)</span>.  I will repeat what I said above, in only slightly
@@ -846,13 +848,13 @@ you are in.</p>
 <h2>Conclusions from Sets of Events<a class="headerlink" href="#conclusions-from-sets-of-events" title="Permalink to this heading">#</a></h2>
 <p>To sum up what we have learned about spacetime from exploring how
 these diagrams change under Lorentz transformations, I have created
-one more interactive diagram, shown in  <a class="reference internal" href="#fig16events"><span class="std std-numref">Fig. 14</span></a>.  This diagram
+one more interactive diagram, shown in  <a class="reference internal" href="#fig16events"><span class="std std-numref">Fig. 15</span></a>.  This diagram
 also has a slider that lets you change the relative speed of a primed
 reference frame, but every time you change it, the program redraws the
 diagram with the new axes.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>The axes in <a class="reference internal" href="#fig16events"><span class="std std-numref">Fig. 14</span></a> are always labeled <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(ct\)</span>,
+<p>The axes in <a class="reference internal" href="#fig16events"><span class="std std-numref">Fig. 15</span></a> are always labeled <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(ct\)</span>,
 even though as soon as you change <span class="math notranslate nohighlight">\(\beta_R\)</span> away from zero, they
 strictly should change to <span class="math notranslate nohighlight">\(x'\)</span> and <span class="math notranslate nohighlight">\(ct'\)</span>.</p>
 </div>
@@ -875,7 +877,7 @@ the same time.</p>
             
         ></iframe>
         </div><figcaption>
-<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Interactive spacetime diagram that shows 16 events.  The
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Interactive spacetime diagram that shows 16 events.  The
 default is to have the events in a grid.  You can think of this as
 four objects at rest, separated by some distance along the <span class="math notranslate nohighlight">\(x\)</span> axis,
 with four events along each vertical worldline.  There is a slider to
@@ -890,10 +892,10 @@ how they shift are discussed in the text.</span><a class="headerlink" href="#fig
 <p>As you change the relative speed of the primed frame, these sixteen
 events will shift around according to the Lorentz transformation.
 This is the opposite operation to pinching the axes in
-<a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 13</span></a> – here, the points between the axes are being
+<a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 14</span></a> – here, the points between the axes are being
 stretched.  Play with sliding the marker back and forth and see how
 the events move.  You could imagine this as the “pinched” axes in
-<a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 13</span></a> being streched back to perpendicular, and
+<a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 14</span></a> being streched back to perpendicular, and
 therefore all the events between them being pulled outward, too, as if
 they were on a rubber sheet.</p>
 <div class="admonition note">
@@ -971,18 +973,18 @@ contraction more thoroughly in the next chapter.</p>
 <p class="admonition-title">Note</p>
 <p>It might be useful to look at <a class="reference external" href="https://alexonscience.com/projects/spacetimeglobe/">this interactive
 version</a> of
-<a class="reference internal" href="#fig16events"><span class="std std-numref">Fig. 14</span></a> – it lets you add your own events and see how
+<a class="reference internal" href="#fig16events"><span class="std std-numref">Fig. 15</span></a> – it lets you add your own events and see how
 they shift around under Lorentz transformations.</p>
 </div>
 </section>
 <section id="hyperbolic-rotation-and-rapidity">
 <h2>Hyperbolic Rotation and Rapidity<a class="headerlink" href="#hyperbolic-rotation-and-rapidity" title="Permalink to this heading">#</a></h2>
-<p>It might, when you move the slider in <a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 13</span></a>, remind
+<p>It might, when you move the slider in <a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 14</span></a>, remind
 you of rotation.  Certainly there is rotation going on – the axes are
 swinging around the origin.  But it’s also clearly not the kind of
 rotation you’re used to.  When we usually rotate the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>
 coordinate axes around the <span class="math notranslate nohighlight">\(z\)</span> axis, the two arrows move together.
-However, in <a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 13</span></a> , the arrows are moving
+However, in <a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 14</span></a> , the arrows are moving
 symmetrically in opposite directions.  In the familiar kind of
 rotations, you can keep swinging the axes around and around and
 around, increasing the angle as far as you like.  However, in a
@@ -1111,11 +1113,11 @@ Wonderland</em>, posits a world where the speed of light is only a few
 km/hr, and all these odd effects of relativity are commonplace for
 people in that world.  <em>Need to look in the book and recreate his
 argument about the murder observed from the train</em></p></li>
-<li><p>Show that even when you tilt the axes as in <a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 13</span></a>,
+<li><p>Show that even when you tilt the axes as in <a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 14</span></a>,
 the properties of the Lorentz transformation are such that the new
 axes are still orthogonal, even though they are clearly not
 perpendicular in the figure.</p></li>
-<li><p>The following questions are with regard to <a class="reference internal" href="#fig16events"><span class="std std-numref">Fig. 14</span></a>:</p></li>
+<li><p>The following questions are with regard to <a class="reference internal" href="#fig16events"><span class="std std-numref">Fig. 15</span></a>:</p></li>
 </ol>
 <p>a) Can you find relative speeds for which each of the events below the
 red dots happen before the cyan event?</p>
@@ -1160,7 +1162,7 @@ four vectors for the events of your seeing the lighting and your
 hearing the thunder, relative to the event of their creation.  Find
 their intervals and determine if they are timelike, lightlike, or
 spacelike.  With appropriate scaling, you can use
-<a class="reference internal" href="#figinterval"><span class="std std-numref">Fig. 12</span></a> to represent these situations.  Do your
+<a class="reference internal" href="#figinterval"><span class="std std-numref">Fig. 13</span></a> to represent these situations.  Do your
 classifications make intuitive sense, and how do they compare with the
 light cones from the original event?</p></li>
 </ol>

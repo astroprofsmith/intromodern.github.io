@@ -181,6 +181,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="c10force.html">Chapter 10: Relativistic Force and Acceleration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c11electric.html">Chapter 11: The Electromagnetic Tensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c12dynamic.html">Chapter 12: Relativistic Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c13introGR.html">Chapter 13: Concepts of General Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c14applGR.html">Chapter 14: Some Applications of General Relativity</a></li>
 </ul>
 
     </div>
@@ -412,7 +414,7 @@ in one inertial reference frame to the components as measured in
 a second frame moving at a constant velocity relative to the first.
 This method works for <strong>any</strong> four-vector, but we will define it
 using the displacement four-vector, as that is easy to visualize.</p>
-<p>We start by recreating <a class="reference internal" href="c3fourvectors.html#yerbasicst"><span class="std std-numref">Fig. 7</span></a> as <a class="reference internal" href="#stwithvecfig"><span class="std std-numref">Fig. 10</span></a>
+<p>We start by recreating <a class="reference internal" href="c3fourvectors.html#yerbasicst"><span class="std std-numref">Fig. 7</span></a> as <a class="reference internal" href="#stwithvecfig"><span class="std std-numref">Fig. 11</span></a>
 – to make sure you are applying the transformation properly, it is
 useful to always start by recreating this diagram and making sure that
 you are assigning the correct numbers to the elements, as defined in
@@ -420,7 +422,7 @@ this diagram.</p>
 <figure class="align-default" id="stwithvecfig" style="width: 800px">
 <img alt="_images/2ed33ab054c8f86a87ee3651a7b9613b7e604a7f05104d57ea22de877e7525de.png" src="_images/2ed33ab054c8f86a87ee3651a7b9613b7e604a7f05104d57ea22de877e7525de.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 10 </span><span class="caption-text">The spacetime diagram that defines a Lorentz transformation.
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">The spacetime diagram that defines a Lorentz transformation.
 There are two events, indicated by red and blue dots, and we define a
 displacement four vector between them (indicated by an arrow).  These
 components are defined in the reference frame <span class="math notranslate nohighlight">\(S\)</span>, and we want to know
@@ -430,10 +432,10 @@ parallel to <span class="math notranslate nohighlight">\(\vec{v}_R\)</span>.</sp
 </figcaption>
 </figure>
 <p>The 4-vector components are determined by the two events shown as
-colored dots in <a class="reference internal" href="#stwithvecfig"><span class="std std-numref">Fig. 10</span></a>. Since we have the choice of
+colored dots in <a class="reference internal" href="#stwithvecfig"><span class="std std-numref">Fig. 11</span></a>. Since we have the choice of
 which is the x-axis, we will always pick the relative velocity of the
 two observers to lie along the <span class="math notranslate nohighlight">\(x\)</span>-axis, to make the math
-simpler. Putting the diagram of <a class="reference internal" href="#stwithvecfig"><span class="std std-numref">Fig. 10</span></a> into 4-vector
+simpler. Putting the diagram of <a class="reference internal" href="#stwithvecfig"><span class="std std-numref">Fig. 11</span></a> into 4-vector
 notation, we need a tool that will take us from <span class="math notranslate nohighlight">\([dx_4]\)</span> to
 <span class="math notranslate nohighlight">\([dx_4]^\prime\)</span>, like so:</p>
 <div class="math notranslate nohighlight" id="equation-eqlort">
@@ -567,11 +569,11 @@ i\beta_R\gamma_R &amp; L_{11} &amp; L_{12} &amp; L_{13}\\
 \end{bmatrix}\end{split}\]</div>
 <p>The number of unknowns in the Lorentz transformation matrix has
 decreased from 16 to 6. The rest can be found using similar tricks.
-For example, you could set up the events in <a class="reference internal" href="#stwithvecfig"><span class="std std-numref">Fig. 10</span></a>
+For example, you could set up the events in <a class="reference internal" href="#stwithvecfig"><span class="std std-numref">Fig. 11</span></a>
 such that the primed observer was in the rest frame of the events and
 work out the values for the rest of the unknowns. When all such tricks
 are exhausted, the Lorentz transformation between two frames of
-reference (<a class="reference internal" href="#stwithvecfig"><span class="std std-numref">Fig. 10</span></a>) that have a relative speed of
+reference (<a class="reference internal" href="#stwithvecfig"><span class="std std-numref">Fig. 11</span></a>) that have a relative speed of
 <span class="math notranslate nohighlight">\(\beta_R\)</span> in the positive x direction is given by the matrix:</p>
 <div class="math notranslate nohighlight" id="equation-lormat">
 <span class="eqno">(29)<a class="headerlink" href="#equation-lormat" title="Permalink to this equation">#</a></span>\[\begin{split}\boxed{
@@ -586,7 +588,7 @@ i\beta_R\gamma_R &amp; \gamma_R &amp; 0 &amp; 0\\
 <p>The subscript <span class="math notranslate nohighlight">\(x\)</span> is to remind us that the relative velocity is in the
 <span class="math notranslate nohighlight">\(x\)</span> direction.  If that were not the case, the matrix would look a lot
 more complicated!  Note that this formulation is based on the diagram
-in <a class="reference internal" href="#stwithvecfig"><span class="std std-numref">Fig. 10</span></a> – if the velocity were in the opposite
+in <a class="reference internal" href="#stwithvecfig"><span class="std std-numref">Fig. 11</span></a> – if the velocity were in the opposite
 direction, the <span class="math notranslate nohighlight">\(\beta_R\)</span> would become <span class="math notranslate nohighlight">\(-\beta_R\)</span>, the <strong>inverse
 Lorentz transformation</strong>.</p>
 </section>

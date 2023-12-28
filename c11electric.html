@@ -181,6 +181,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="c10force.html">Chapter 10: Relativistic Force and Acceleration</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 11: The Electromagnetic Tensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c12dynamic.html">Chapter 12: Relativistic Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c13introGR.html">Chapter 13: Concepts of General Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c14applGR.html">Chapter 14: Some Applications of General Relativity</a></li>
 </ul>
 
     </div>
@@ -425,7 +427,7 @@ implications.</p>
 <figure class="align-center" id="classicfig">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/classicIBF.png"><img alt="classicalEMBforce" class="bg-primary mb-1" src="_images/classicIBF.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 29 </span><span class="caption-text">Schematic of the classical understanding of the force on a charge
+<p><span class="caption-number">Fig. 30 </span><span class="caption-text">Schematic of the classical understanding of the force on a charge
 moving antiparallel to a current-carrying wire.  A description of
 all the pieces of this figure is in the text.</span><a class="headerlink" href="#classicfig" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -435,7 +437,7 @@ E&amp;M, let’s first walk through a classical understanding of a simple
 problem.  Then we will recast that problem through a relativistic lens
 and see how it invites a different understanding of the phenomenon.
 We will start with the force on an electric charge moving parallel to
-a current-carrying wire.  The situation is shown in <a class="reference internal" href="#classicfig"><span class="std std-numref">Fig. 29</span></a>
+a current-carrying wire.  The situation is shown in <a class="reference internal" href="#classicfig"><span class="std std-numref">Fig. 30</span></a>
 as a schematic.  A wire carries a current <span class="math notranslate nohighlight">\(I\)</span> to the right.  Meanwhile
 a charge <span class="math notranslate nohighlight">\(q\)</span> is moving to the right with a velocity <span class="math notranslate nohighlight">\(\vec{u}\)</span> at a
 distance <span class="math notranslate nohighlight">\(r\)</span> from the center of the wire.  We observe, empirically, that
@@ -470,12 +472,12 @@ left.  Each current comprises half the charge density, but they are
 equal and opposite densities, so the total charge density is zero
 (which is to say the wire is electrically neutral), but the total
 current is <span class="math notranslate nohighlight">\(I\)</span> to the right.  This way of conceptualizing the setup is
-shown in <a class="reference internal" href="#frameafig"><span class="std std-numref">Fig. 30</span></a>, with the positive current in red and the
+shown in <a class="reference internal" href="#frameafig"><span class="std std-numref">Fig. 31</span></a>, with the positive current in red and the
 negative current in blue.</p>
 <figure class="align-center" id="frameafig">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/frameAfig.png"><img alt="frameApicture" class="bg-primary mb-1" src="_images/frameAfig.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 30 </span><span class="caption-text">Schematic of a particular way of visualizing the current <span class="math notranslate nohighlight">\(I\)</span> in a
+<p><span class="caption-number">Fig. 31 </span><span class="caption-text">Schematic of a particular way of visualizing the current <span class="math notranslate nohighlight">\(I\)</span> in a
 reference frame where the total charge density of the wire is zero.
 We define the current as <span class="math notranslate nohighlight">\(2\lambda v\)</span>, but there is a <span class="math notranslate nohighlight">\(+\lambda\)</span> moving
 to the right (red) and a <span class="math notranslate nohighlight">\(-\lambda\)</span> moving to the left (blue).  The sum
@@ -504,7 +506,7 @@ choice of reference frame.  His 1905 paper that introduced SR to the
 world was not called “Special Relativity” after all.  The name of that
 paper was “On the Electrodynamics of Moving Bodies”.</p>
 </div>
-<p>In Frame B, illustrated in <a class="reference internal" href="#framebfig"><span class="std std-numref">Fig. 31</span></a>, lengths along the
+<p>In Frame B, illustrated in <a class="reference internal" href="#framebfig"><span class="std std-numref">Fig. 32</span></a>, lengths along the
 direction of relative motion will be contracted.  When we talk about a
 charge density <span class="math notranslate nohighlight">\(\lambda\)</span>, we are talking about a certain number of
 charges <em>per</em> <em>length</em>.  So the charge densities in the wire will
@@ -522,7 +524,7 @@ be electrically neutral.</p>
 <figure class="align-center" id="framebfig">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/frameBfig.png"><img alt="frameBpicture" class="bg-primary mb-1" src="_images/frameBfig.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 31 </span><span class="caption-text">Schematic of a reference frame in which the single charge is at rest
+<p><span class="caption-number">Fig. 32 </span><span class="caption-text">Schematic of a reference frame in which the single charge is at rest
 and the wire is moving to the left with a speed <span class="math notranslate nohighlight">\(u\)</span>.  In this frame,
 because the positive and negative charges are moving at different speeds,
 the distances between those charges will be contracted by different
@@ -710,7 +712,7 @@ B'_x = B_x
             
         ></iframe>
         </div><figcaption>
-<p><span class="caption-number">Fig. 32 </span><span class="caption-text">Animation of how the current and <span class="math notranslate nohighlight">\(B\)</span> field of a solenoid are affected
+<p><span class="caption-number">Fig. 33 </span><span class="caption-text">Animation of how the current and <span class="math notranslate nohighlight">\(B\)</span> field of a solenoid are affected
 by changing into a different reference frame.  The red dots represent
 charges moving around a cylindrical solenoid.  One row of them is
 turned white purely to help you see how fast they are going around.
@@ -746,7 +748,7 @@ be <span class="math notranslate nohighlight">\(B_z L\)</span>, so there will be
 in the <span class="math notranslate nohighlight">\(-z\)</span> direction.  We can write this in terms of the original
 unprimed variables by putting in a <span class="math notranslate nohighlight">\(\gamma\)</span>: <span class="math notranslate nohighlight">\(B'_z = -\mu_0 \gamma
 \sigma v_R\)</span>.  An interactive animation of this situation is shown
-in <a class="reference internal" href="#slideplatefig"><span class="std std-numref">Fig. 33</span></a>, where you can change the relative
+in <a class="reference internal" href="#slideplatefig"><span class="std std-numref">Fig. 34</span></a>, where you can change the relative
 velocity of the frames and see how the fields change.</p>
 <figure class="align-default" id="slideplatefig" style="width: 800px">
 <div class="output text_html">
@@ -759,11 +761,11 @@ velocity of the frames and see how the fields change.</p>
             
         ></iframe>
         </div><figcaption>
-<p><span class="caption-number">Fig. 33 </span><span class="caption-text">Animation of how the charges and fields are affected by changing into
+<p><span class="caption-number">Fig. 34 </span><span class="caption-text">Animation of how the charges and fields are affected by changing into
 a different reference frame.  The orange dots represent charges spread
 over a plate of a parallel plate capacitor (the opposite plate is not
 shown).  The slider and the magenta arrow are the same as in
-<a class="reference internal" href="#slidecylfig"><span class="std std-numref">Fig. 32</span></a>.  Also as in <a class="reference internal" href="#slidecylfig"><span class="std std-numref">Fig. 32</span></a>, the actual
+<a class="reference internal" href="#slidecylfig"><span class="std std-numref">Fig. 33</span></a>.  Also as in <a class="reference internal" href="#slidecylfig"><span class="std std-numref">Fig. 33</span></a>, the actual
 motion of the plate along <span class="math notranslate nohighlight">\(x\)</span> is not shown.  The dots will compress
 due to length contraction.  The cyan arrows show the electric field,
 while the white arrows show the magnetic field.  The red-green-blue
@@ -927,7 +929,7 @@ under these primed fields is beyond the scope of this book, the
 solution is a shape much like the path of a point on the wheel of a
 bike – the center of the circular motion will move in the <span class="math notranslate nohighlight">\(+x\)</span>
 direction at the speed of the cart.  This trajectory is shown in
-<a class="reference internal" href="#circularpathfig"><span class="std std-numref">Fig. 34</span></a>.  The electron will not fall off the edge of
+<a class="reference internal" href="#circularpathfig"><span class="std std-numref">Fig. 35</span></a>.  The electron will not fall off the edge of
 the cart in either frame: either it moves in a circle, or it moves
 in a circle where the center drifts to the right at the same
 speed as the cart.</p>
@@ -936,7 +938,7 @@ involved are obviously nowhere even close to the speed of light.</p>
 <figure class="align-default" id="circularpathfig" style="width: 800px">
 <img alt="_images/80586f2165228d681d5a9d52cd8d70f39fd24c83619072b6f427229549a22379.png" src="_images/80586f2165228d681d5a9d52cd8d70f39fd24c83619072b6f427229549a22379.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 34 </span><span class="caption-text">Plot of electron trajectory in frame with moving cart.  The center
+<p><span class="caption-number">Fig. 35 </span><span class="caption-text">Plot of electron trajectory in frame with moving cart.  The center
 of the circle drifts right with the same speed as the cart.  If you
 were to transform this shape back into a frame moving at <span class="math notranslate nohighlight">\(+v\)</span>, the
 trajectory would be a circle, and the cart would be at rest.</span><a class="headerlink" href="#circularpathfig" title="Permalink to this image">#</a></p>

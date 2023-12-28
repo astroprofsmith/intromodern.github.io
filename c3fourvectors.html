@@ -181,6 +181,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="c10force.html">Chapter 10: Relativistic Force and Acceleration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c11electric.html">Chapter 11: The Electromagnetic Tensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c12dynamic.html">Chapter 12: Relativistic Electrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c13introGR.html">Chapter 13: Concepts of General Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c14applGR.html">Chapter 14: Some Applications of General Relativity</a></li>
 </ul>
 
     </div>
@@ -885,8 +887,8 @@ in the same place.</span><a class="headerlink" href="#shipfig" title="Permalink 
 </figure>
 <p>We can therefore write a displacement four vector in the reference
 frame at rest with respect to the Earth:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-798d0aeb-fe81-4cf1-bc23-4d7d98a34726">
-<span class="eqno">(14)<a class="headerlink" href="#equation-798d0aeb-fe81-4cf1-bc23-4d7d98a34726" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b5f3f716-51af-4d09-8ddf-13c9d7f0dbd9">
+<span class="eqno">(14)<a class="headerlink" href="#equation-b5f3f716-51af-4d09-8ddf-13c9d7f0dbd9" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_\oplus =
 \begin{bmatrix}
 icdt_\oplus\\
@@ -910,8 +912,8 @@ aboard the space craft will measure some time interval, <span class="math notran
 between the time he sees the earth outside of his window and sees
 alpha centauri outside the window. The observer aboard the space craft
 measures a displacement 4-vector:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8da2a3d8-ae40-47a3-839c-f4a554253336">
-<span class="eqno">(15)<a class="headerlink" href="#equation-8da2a3d8-ae40-47a3-839c-f4a554253336" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5d1289e4-cbfa-40ab-9624-d25fd59b123b">
+<span class="eqno">(15)<a class="headerlink" href="#equation-5d1289e4-cbfa-40ab-9624-d25fd59b123b" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm rocket} =
 \begin{bmatrix}
 icdt_{\rm rocket}\\
@@ -928,13 +930,13 @@ nothing to do with the first observer being physically <strong>on</strong> the E
 the <span class="math notranslate nohighlight">\(dt_\oplus\)</span> is measured by the infinite lattice of clocks at
 rest with respect to the Earth.</p>
 <p>The sizes of the two four vectors are:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-416f707a-f07a-45fe-884c-71ade570ed14">
-<span class="eqno">(16)<a class="headerlink" href="#equation-416f707a-f07a-45fe-884c-71ade570ed14" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-a3d455a2-4433-4d26-937f-ff2abdefb420">
+<span class="eqno">(16)<a class="headerlink" href="#equation-a3d455a2-4433-4d26-937f-ff2abdefb420" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dx_\oplus^2 - (cdt_\oplus)^2 = -(cdt_{\rm rocket})^2
 \end{equation}\]</div>
 <p>Solve for <span class="math notranslate nohighlight">\(dt_{\rm rocket}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-00dbb11d-02f1-4e56-91e4-78e8d4aed248">
-<span class="eqno">(17)<a class="headerlink" href="#equation-00dbb11d-02f1-4e56-91e4-78e8d4aed248" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-6eb06888-6269-4f6a-bc69-b86757a69278">
+<span class="eqno">(17)<a class="headerlink" href="#equation-6eb06888-6269-4f6a-bc69-b86757a69278" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dt_{\rm rocket} = dt_\oplus\sqrt{1-\left(\frac{dx_\oplus}{cdt_\oplus}\right)^2}
 = dt_\oplus \sqrt{1-\beta^2}
 \end{equation}\]</div>
@@ -1039,7 +1041,33 @@ ground, the train is moving, the mirror will be a distance <span class="math not
 along the track when the light hits it, and <span class="math notranslate nohighlight">\(vdt\)</span> further along when
 the light returns.  In the ground’s reference frame, the light must
 therefore follow a triangular path, if it is to bounce off the mirror
-and return to the detector.</p>
+and return to the detector.  An interactive animation of this situation is
+shown in <a class="reference internal" href="#trainclockfig"><span class="std std-numref">Fig. 10</span></a>.  Run the simulation a few times for
+different train speeds before continuing, to make sure you are correctly
+visualizing the situation.</p>
+<figure class="align-default" id="trainclockfig" style="width: 800px">
+<div class="output text_html">
+        <iframe
+            width="800"
+            height="700"
+            src="https://glowscript.org/#/user/dasmith/folder/Public/program/SRtrainclock"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div><figcaption>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Animation of a laser clock on a train.  Use the slider to set the speed
+of the train and then hit the space bar to run the animation.  The
+white ball represents the pulse of light from the laser.  It will travel
+from the floor of the train, reflect off the ceiling, and return to the
+floor.  The readout to the lower left shows the time elapsed while the
+laser is moving.  The calculations use <span class="math notranslate nohighlight">\(c=1\)</span>, so this is also the distance
+the laser beam travels.  Try it first with <span class="math notranslate nohighlight">\(\beta=0\)</span> and see the ball go
+straight up and down.  The height of the train is 6, in these units, so
+you should see the time of flight as 12.  Try increasing <span class="math notranslate nohighlight">\(\beta\)</span> and run
+it again, to see how the time and distance increase.</span><a class="headerlink" href="#trainclockfig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>This is the essence of time dilation: if the light is to travel a
 longer path (the hypoteneuse of a triangle will be longer than the
 vertical side) at the same speed, it must take more time to do so.
@@ -1104,8 +1132,8 @@ The reference frame at rest with respect to the ground is the unprimed
 frame on the left.  The red dot is the emission of the light and the
 blue dot is the detection of the light.  The displacement four vector
 in the train frame would be:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6e70e5fd-8992-401a-b434-1e9f68efb8bc">
-<span class="eqno">(21)<a class="headerlink" href="#equation-6e70e5fd-8992-401a-b434-1e9f68efb8bc" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-2ce8a1b8-296e-468d-bffd-d1381a6df32d">
+<span class="eqno">(21)<a class="headerlink" href="#equation-2ce8a1b8-296e-468d-bffd-d1381a6df32d" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm train} =
 \begin{bmatrix}
 icdt_0\\
@@ -1115,8 +1143,8 @@ icdt_0\\
 \end{bmatrix}
 \end{equation}\]</div>
 <p>while the displacement four vector from the ground’s reference frame is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-42c07a9c-0557-4492-a881-6d289eed9aa6">
-<span class="eqno">(22)<a class="headerlink" href="#equation-42c07a9c-0557-4492-a881-6d289eed9aa6" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-913437ab-1c0c-4b89-92e3-27f6b354d44a">
+<span class="eqno">(22)<a class="headerlink" href="#equation-913437ab-1c0c-4b89-92e3-27f6b354d44a" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm ground} =
 \begin{bmatrix}
 icdt\\
