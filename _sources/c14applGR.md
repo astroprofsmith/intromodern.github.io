@@ -1,0 +1,35 @@
+---
+jupytext:
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+    format_version: 0.13
+    jupytext_version: 1.11.5
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+---
+
+```{code-cell}
+:tags: ["remove-cell"]
+
+from IPython import display
+import numpy as np
+import matplotlib.pyplot as plt
+from myst_nb import glue
+
+```
+
+# Chapter 14: Some Applications of General Relativity
+
+## Acceleration While Standing Still?
+
+(The Veritasium Video)
+
+## Black Holes
+
+## The Big Bang
+
+## Gravitational Lensing
