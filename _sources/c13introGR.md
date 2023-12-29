@@ -55,7 +55,7 @@ ax.text(0.8, -0.5, "x")
 y1 = -0.1
 y2 = 1.1
 w1 = 2*np.pi/(y2-y1)
-w2 = 2*w1
+w2 = 1.5*w1
 y = np.linspace(y1,y2,100)
 x = 0.2+0.3*np.sin(w1*(y-y1))+0.22*np.sin(w2*(y-y1))
 plt.plot(x,y,'b-')
