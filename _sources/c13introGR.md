@@ -43,7 +43,7 @@ plt.arrow(-0.5,-0.5,0,1,head_width=0.1)
 
 plt.plot([0.2],[-0.1],'ko')
 plt.plot([0.2],[1.1],'ko')
-plt.plot([0.2,0.2],[-0.1,1.1],'r.')
+plt.plot([0.2,0.2],[-0.1,1.1],'r-')
 
 ax = plt.gca()
 ax.get_xaxis().set_visible(False)
@@ -57,7 +57,7 @@ y2 = 1.1
 w1 = 2*np.pi/(y2-y1)
 w2 = 2*w1
 y = np.linspace(y1,y2,100)
-x = 0.1*np.sin(w1*(y-y1))+0.2*np.sin(w2*(y-y1))
+x = 0.2+0.3*np.sin(w1*(y-y1))+0.2*np.sin(w2*(y-y1))
 plt.plot(x,y,'b.')
 
 
