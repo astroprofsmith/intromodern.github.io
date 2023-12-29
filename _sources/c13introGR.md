@@ -79,6 +79,28 @@ same place in time for the second event.
 
 ## A Rotating Reference Frame
 
+```{code-cell}
+:tags: ["remove-cell"]
+# 3D spacetime diagram of circular motion
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRspacetimecircle"
+test = display.IFrame(src=url1,width=800,height=700)
+glue("stcircfig",test, display=False)
+
+```
+
+```{glue:figure} stcircfig
+:figwidth: 800px
+:name: circularSTfig
+
+3D spacetime diagram of an object moving in a circle in the xy plane.
+The worldline of the object is shown as a black curve.  The object starts
+at the orange event and ends at the purple event.  Both events are in the
+same place, but the purple event is later than the orange event.  Rotate
+the diagram to see projections of the worldline onto the different planes.
+In particular, rotate the diagram to look straight down the $ct$ axis to
+see the circular path in space.
+```
+
 ## The Equivalence Principle
 
 ## The Pound-Rebkha Experiment

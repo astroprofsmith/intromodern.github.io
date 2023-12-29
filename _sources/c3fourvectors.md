@@ -825,9 +825,7 @@ visualizing the situation.
 
 ```{code-cell}
 :tags: ["remove-cell"]
-# Insert VPython simulation of a Michaelson Interferometer
-# Allow user to rotate system, relative to ether
-# Have radio button to include/remove ether
+# Interactive simulation of the laser clock on a train example
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRtrainclock"
 test = display.IFrame(src=url1,width=800,height=700)
 glue("tclockfig",test, display=False)
