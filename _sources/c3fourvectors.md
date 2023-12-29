@@ -947,7 +947,7 @@ Since the size of these four-vectors must be the same, that means
 $$-c^2dt_0^2 = -c^2dt^2+v^2dt^2,$$ which is exactly the same as Equation
 {eq}`eqdxlaser`, which means that, again, $\boxed{dt = \gamma dt_0}$.
 
-Despite what seem to be complete different contexts, the underlying
+Despite what seem to be completely different contexts, the underlying
 physics of the rocket and the train are exactly the same, because
 the rules of time are the same.
 
