@@ -140,9 +140,17 @@ line shows the path of a moving object that returns to the
 same place in time for the second event.
 ```
 
+In SR, there is no question of returning to the same location
+as the first event.  This would not be possible, as to turn
+around and come back would require changing the relative velocity,
+and SR only considers unchanging relative velocities.  In this
+new context, there is an asymmetry between the moving clock and
+the stationary clock, because only the moving clock *changes*
+its motion.  The only way to describe these occurances from the
+perspective of the blue clock would be to allow for accelerating
+reference frames.
 
-
-## A Rotating Reference Frame
+## Accelerating Reference Frames
 
 ```{code-cell}
 :tags: ["remove-cell"]
