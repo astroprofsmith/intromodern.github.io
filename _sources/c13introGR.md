@@ -51,7 +51,7 @@ faster than $c$!
 
 From what we learned about SR, we can consider the displacement
 four-vector between the two events, and it would have a size given
-by $-\Delta t_0$, the proper time between these two events, as measured
+by $-\Delta t_0^2$, the proper time between these two events, as measured
 by the red clock.  However, it is not at all clear that the blue clock
 will measure the same time interval.  Consider each worldline to be
 made up of infinitely many, infinitely small four-diplacements between
@@ -72,8 +72,30 @@ Factor out the $dt$ to make it easier to understand:
 ```{math}
 :label: intint
 \Delta S = \int_{\rm path} cdt\sqrt(1-\frac{dx^2}{c^2dt^2}} = \int_{\rm path}
-cdt\sqrt(1-\frac{v^2}{c^2}}
+cdt\sqrt{1-\frac{v^2}{c^2}}
 ```
+What we have here is a path integral of some function, call it $f$,
+that depends on the speed of the clock at each moment along the path:
+$f = \sqrt{1-v^2/c^2}$.  For the red path, $v=0$, so $f=1$ and the
+integral is trivially just the proper time.  However, along the blue
+path $0\geq v^2<1$, so $0<f\leq 1$, which means the result of this
+integral (which is the time interval elapsed on the blue clock, as we
+are integrating over $dt$) is always going to be less than or equal to
+the proper time.
+
+No matter what path the blue clock takes, it will always measure less
+time than the stationary (red) clock.  In this context, we can accurately
+say that moving clocks run slow, because we are comparing two clocks
+within the same reference frame.  When we first encountered time dilation,
+we were considering the elapsed time between two events as measured by
+infinite lattices of synchronized clocks, one set in motion relative to the
+other set.  In this context, within a single reference frame, we can say
+that a clock at rest with respect to two events will measure the LONGEST
+time interval between those two events, as compared with any other clock
+that follows a different path between the events.  This sounds like it
+contradicts the previous formulation of time dilation, but you have to
+consider carefully what is being compared.
+
 
 ```{code-cell}
 :tags: ["remove-cell"]
@@ -117,6 +139,8 @@ line is the worldline of an object at rest, while the blue
 line shows the path of a moving object that returns to the
 same place in time for the second event.
 ```
+
+
 
 ## A Rotating Reference Frame
 

@@ -421,7 +421,7 @@ possible trajectory: no doubling back along the time axis or moving
 faster than <span class="math notranslate nohighlight">\(c\)</span>!</p>
 <p>From what we learned about SR, we can consider the displacement
 four-vector between the two events, and it would have a size given
-by <span class="math notranslate nohighlight">\(-\Delta t_0\)</span>, the proper time between these two events, as measured
+by <span class="math notranslate nohighlight">\(-\Delta t_0^2\)</span>, the proper time between these two events, as measured
 by the red clock.  However, it is not at all clear that the blue clock
 will measure the same time interval.  Consider each worldline to be
 made up of infinitely many, infinitely small four-diplacements between
@@ -438,7 +438,27 @@ of all the <span class="math notranslate nohighlight">\(ds\)</span> intervals fo
 <p>Factor out the <span class="math notranslate nohighlight">\(dt\)</span> to make it easier to understand:</p>
 <div class="math notranslate nohighlight" id="equation-intint">
 <span class="eqno">(261)<a class="headerlink" href="#equation-intint" title="Permalink to this equation">#</a></span>\[\Delta S = \int_{\rm path} cdt\sqrt(1-\frac{dx^2}{c^2dt^2}} = \int_{\rm path}
-cdt\sqrt(1-\frac{v^2}{c^2}}\]</div>
+cdt\sqrt{1-\frac{v^2}{c^2}}\]</div>
+<p>What we have here is a path integral of some function, call it <span class="math notranslate nohighlight">\(f\)</span>,
+that depends on the speed of the clock at each moment along the path:
+<span class="math notranslate nohighlight">\(f = \sqrt{1-v^2/c^2}\)</span>.  For the red path, <span class="math notranslate nohighlight">\(v=0\)</span>, so <span class="math notranslate nohighlight">\(f=1\)</span> and the
+integral is trivially just the proper time.  However, along the blue
+path <span class="math notranslate nohighlight">\(0\geq v^2&lt;1\)</span>, so <span class="math notranslate nohighlight">\(0&lt;f\leq 1\)</span>, which means the result of this
+integral (which is the time interval elapsed on the blue clock, as we
+are integrating over <span class="math notranslate nohighlight">\(dt\)</span>) is always going to be less than or equal to
+the proper time.</p>
+<p>No matter what path the blue clock takes, it will always measure less
+time than the stationary (red) clock.  In this context, we can accurately
+say that moving clocks run slow, because we are comparing two clocks
+within the same reference frame.  When we first encountered time dilation,
+we were considering the elapsed time between two events as measured by
+infinite lattices of synchronized clocks, one set in motion relative to the
+other set.  In this context, within a single reference frame, we can say
+that a clock at rest with respect to two events will measure the LONGEST
+time interval between those two events, as compared with any other clock
+that follows a different path between the events.  This sounds like it
+contradicts the previous formulation of time dilation, but you have to
+consider carefully what is being compared.</p>
 <figure class="align-default" id="twopaths" style="width: 800px">
 <img alt="_images/72125c73f03c4f6511c3d66177e581205cb3564b2f7085e156024a4665cf44d2.png" src="_images/72125c73f03c4f6511c3d66177e581205cb3564b2f7085e156024a4665cf44d2.png" />
 <figcaption>
