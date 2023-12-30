@@ -71,7 +71,7 @@ of all the $ds$ intervals for each of the steps.
 Factor out the $dt$ to make it easier to understand:
 ```{math}
 :label: intint
-\Delta S = \int_{\rm path} cdt\sqrt(1-\frac{dx^2}{c^2dt^2}} = \int_{\rm path}
+\Delta S = \int_{\rm path} cdt\sqrt{1-\frac{dx^2}{c^2dt^2}} = \int_{\rm path}
 cdt\sqrt{1-\frac{v^2}{c^2}}
 ```
 What we have here is a path integral of some function, call it $f$,
@@ -81,7 +81,11 @@ integral is trivially just the proper time.  However, along the blue
 path $0\geq v^2<1$, so $0<f\leq 1$, which means the result of this
 integral (which is the time interval elapsed on the blue clock, as we
 are integrating over $dt$) is always going to be less than or equal to
-the proper time.
+the proper time.  In particular, for the twin paradox, if the blue path
+were to involve traveling to some other star and back to the Earth,
+the clock on the spaceship (the blue clock) would measure less time
+than the clock on the Earth.  This is the same result we derived before
+by only considering a one-way trip at constant speed.
 
 No matter what path the blue clock takes, it will always measure less
 time than the stationary (red) clock.  In this context, we can accurately
