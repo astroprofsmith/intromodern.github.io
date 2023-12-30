@@ -396,13 +396,49 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="chapter-13-concepts-of-general-relativity">
 <h1>Chapter 13: Concepts of General Relativity<a class="headerlink" href="#chapter-13-concepts-of-general-relativity" title="Permalink to this heading">#</a></h1>
-<p>Although a full treatment of General Relativity is far beyond the
+<p>Although a full treatment of General Relativity (GR) is far beyond the
 scope of this book, I would like to leave you with some hints at
 the major concepts you must grapple with, if you extend the theory
 beyond the special case of reference frames moving with constant
 relative velocities.</p>
 <section id="the-twin-paradox-revisited">
 <h2>The Twin Paradox Revisited<a class="headerlink" href="#the-twin-paradox-revisited" title="Permalink to this heading">#</a></h2>
+<p>To begin our overview of GR, let us return to our old friend, the twin
+paradox, and consider the following situation: we have two events in
+the same location in space, one event later than the other in time.
+We have two individual clocks that have been syncronized, and they are
+both at the same location as the two events.  At the instant of the
+first event, one of the clocks begins moving away.  You could consider
+this to be the first event, if you like.  The other clock remains
+stationary.  At some later time, the clock returns to the location of
+the stationary clock.  This return marks the second event.  This
+situation is shown in <a class="reference internal" href="#twopaths"><span class="std std-numref">Fig. 36</span></a>, where the red line represents
+the worldline of the stationary clock and the blue curve represents
+a possible path that the moving clock might take.  For our purposes,
+the exact path the moving clock takes is unimportant, only that it
+goes away and comes back.  It must also, of course, be a physically
+possible trajectory: no doubling back along the time axis or moving
+faster than <span class="math notranslate nohighlight">\(c\)</span>!</p>
+<p>From what we learned about SR, we can consider the displacement
+four-vector between the two events, and it would have a size given
+by <span class="math notranslate nohighlight">\(-\Delta t_0\)</span>, the proper time between these two events, as measured
+by the red clock.  However, it is not at all clear that the blue clock
+will measure the same time interval.  Consider each worldline to be
+made up of infinitely many, infinitely small four-diplacements between
+events that are infinitesimally far apart along the colored lines.
+Each step along the worldline would have its own four-displacement,
+which would have its own size <span class="math notranslate nohighlight">\(-ds^2=-c^2dt^2+dx^2\)</span>.  For the purposes
+of this analysis, I am going to multiply through by <span class="math notranslate nohighlight">\(-1\)</span> and use
+<span class="math notranslate nohighlight">\(ds = \sqrt{c^2dt^2-dx^2}\)</span>.  It’s not strictly necessary, but it makes
+the argument easier to follow.</p>
+<p>The total interval along each worldline would then be the integral
+of all the <span class="math notranslate nohighlight">\(ds\)</span> intervals for each of the steps.</p>
+<div class="math notranslate nohighlight" id="equation-intint">
+<span class="eqno">(261)<a class="headerlink" href="#equation-intint" title="Permalink to this equation">#</a></span>\[\Delta S = \int_{\rm path} ds = \int_{\rm path} \sqrt{c^2dt^2-dx^2}\]</div>
+<p>Factor out the <span class="math notranslate nohighlight">\(dt\)</span> to make it easier to understand:</p>
+<div class="math notranslate nohighlight" id="equation-intint">
+<span class="eqno">(261)<a class="headerlink" href="#equation-intint" title="Permalink to this equation">#</a></span>\[\Delta S = \int_{\rm path} cdt\sqrt(1-\frac{dx^2}{c^2dt^2}} = \int_{\rm path}
+cdt\sqrt(1-\frac{v^2}{c^2}}\]</div>
 <figure class="align-default" id="twopaths" style="width: 800px">
 <img alt="_images/72125c73f03c4f6511c3d66177e581205cb3564b2f7085e156024a4665cf44d2.png" src="_images/72125c73f03c4f6511c3d66177e581205cb3564b2f7085e156024a4665cf44d2.png" />
 <figcaption>

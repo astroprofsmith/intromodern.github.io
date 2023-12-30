@@ -24,7 +24,7 @@ from myst_nb import glue
 
 # Chapter 13: Concepts of General Relativity
 
-Although a full treatment of General Relativity is far beyond the
+Although a full treatment of General Relativity (GR) is far beyond the
 scope of this book, I would like to leave you with some hints at
 the major concepts you must grapple with, if you extend the theory
 beyond the special case of reference frames moving with constant
@@ -32,7 +32,48 @@ relative velocities.
 
 ## The Twin Paradox Revisited
 
+To begin our overview of GR, let us return to our old friend, the twin
+paradox, and consider the following situation: we have two events in
+the same location in space, one event later than the other in time.
+We have two individual clocks that have been syncronized, and they are
+both at the same location as the two events.  At the instant of the
+first event, one of the clocks begins moving away.  You could consider
+this to be the first event, if you like.  The other clock remains
+stationary.  At some later time, the clock returns to the location of
+the stationary clock.  This return marks the second event.  This
+situation is shown in {numref}`twopaths`, where the red line represents
+the worldline of the stationary clock and the blue curve represents
+a possible path that the moving clock might take.  For our purposes,
+the exact path the moving clock takes is unimportant, only that it
+goes away and comes back.  It must also, of course, be a physically
+possible trajectory: no doubling back along the time axis or moving
+faster than $c$!
 
+From what we learned about SR, we can consider the displacement
+four-vector between the two events, and it would have a size given
+by $-\Delta t_0$, the proper time between these two events, as measured
+by the red clock.  However, it is not at all clear that the blue clock
+will measure the same time interval.  Consider each worldline to be
+made up of infinitely many, infinitely small four-diplacements between
+events that are infinitesimally far apart along the colored lines.
+Each step along the worldline would have its own four-displacement,
+which would have its own size $-ds^2=-c^2dt^2+dx^2$.  For the purposes
+of this analysis, I am going to multiply through by $-1$ and use
+$ds = \sqrt{c^2dt^2-dx^2}$.  It's not strictly necessary, but it makes
+the argument easier to follow.
+
+The total interval along each worldline would then be the integral
+of all the $ds$ intervals for each of the steps.
+```{math}
+:label: intint
+\Delta S = \int_{\rm path} ds = \int_{\rm path} \sqrt{c^2dt^2-dx^2}
+```
+Factor out the $dt$ to make it easier to understand:
+```{math}
+:label: intint
+\Delta S = \int_{\rm path} cdt\sqrt(1-\frac{dx^2}{c^2dt^2}} = \int_{\rm path}
+cdt\sqrt(1-\frac{v^2}{c^2}}
+```
 
 ```{code-cell}
 :tags: ["remove-cell"]
