@@ -67,8 +67,9 @@ The dotted line leads to a nearby star that Galileo was using as a
 reference, but back extrapolation shows that this "star" was actually,
 unbeknownst to anyone at the time, the planet Neptune!
 ```
-
 ```
+
+Tried similar techniques...
 
 ```{figure} images/vulcan.jpg
 :alt: vulcan1846
