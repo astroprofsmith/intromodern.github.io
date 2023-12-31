@@ -188,3 +188,4 @@ see the circular path in space.
 
 ## Metrics
 
+## Geodesics

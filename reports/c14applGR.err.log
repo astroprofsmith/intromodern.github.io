@@ -1,0 +1,73 @@
+Traceback (most recent call last):
+  File "/Users/dsmith4/anaconda3/lib/python3.11/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/Users/dsmith4/anaconda3/lib/python3.11/site-packages/nbclient/client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dsmith4/anaconda3/lib/python3.11/site-packages/nbclient/util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dsmith4/anaconda3/lib/python3.11/site-packages/nbclient/util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dsmith4/anaconda3/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/dsmith4/anaconda3/lib/python3.11/site-packages/nbclient/client.py", line 663, in async_execute
+    await self.async_execute_cell(
+  File "/Users/dsmith4/anaconda3/lib/python3.11/site-packages/nbclient/client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/Users/dsmith4/anaconda3/lib/python3.11/site-packages/nbclient/client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# Newton vs. Einstein: angular deflection in passing point mass
+def simp(yy,dx):
+  w = np.zeros(np.shape(yy))
+  w[0] = 1
+  w[1::2] = 4
+  w[2::2] = 2
+  w[-1] = 1
+  return(np.matmul(w,yy)*dx/3)
+def einstein(x,m,r):
+  return(m*r*(4*x*x+r*r)/(x*x+r*r)**2.5)
+def newton(x,m,r):
+  return(m*r/(x*x+r*r)**1.5)
+nn = 1.0e7
+zmax = 30
+dz = zmax/nn
+z = np.linspace(0,zmax,int(nn))
+mass = 1.0
+radius = 1.0
+
+ez = einstein(z,mass,radius)
+nz = newton(z,mass,radius)
+
+edef = simp(ez,dz)*2.0
+ndef = simp(nz,dz)*2.0
+
+print('Newton says: {}'.format(ndef))
+print('Einstein says: {}'.format(edef))
+
+plt.figure(figsize=(14,8))
+plt.plot(z[z<5],nz[z<5],'r-',label='Newton')
+plt.plot(z[z<5],ez[z<5],'b-',label='Einstein')
+plt.title('Contribution to deflection')
+plt.xlabel('Distance from closest approach')
+plt.ylabel('Angular deflection')
+plt.legend()
+plt.show()
+
+glue("angdeffig", fig, display=False)
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[2], line 38[0m
+[1;32m     35[0m plt[38;5;241m.[39mlegend()
+[1;32m     36[0m plt[38;5;241m.[39mshow()
+[0;32m---> 38[0m glue([38;5;124m"[39m[38;5;124mangdeffig[39m[38;5;124m"[39m, fig, display[38;5;241m=[39m[38;5;28;01mFalse[39;00m)
+
+[0;31mNameError[0m: name 'fig' is not defined
+NameError: name 'fig' is not defined
+
