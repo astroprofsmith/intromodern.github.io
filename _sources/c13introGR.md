@@ -156,6 +156,13 @@ reference frames.
 
 ## Accelerating Reference Frames
 
+First, the braking and accelerating car vs. the rotating car.
+
+Then work up to the merry go round.  Use Gamow's argument about
+length contraction at the rim to argue that accelerating spacetime
+must be curved.  This ties the idea of acceleration and curved
+spacetime together.
+
 ```{code-cell}
 :tags: ["remove-cell"]
 # 3D spacetime diagram of circular motion
@@ -179,6 +186,105 @@ see the circular path in space.
 ```
 
 ## The Equivalence Principle
+
+Consider a rocket ship in deep space, far from any source of gravity.
+If that rocket were moving at a constant speed, everything in the
+rocket would drift around inside, because in the reference frame
+moving with the rocket, everything would be moving together, and would
+therefore be the same as if the rocket were not moving at all.  This
+insight was first expressed by Galileo, although he talked about
+sailing ships, rather than rockets.  It is only through the rocking of
+the waves, he pointed out, the *deviations* from constant speed, that
+we can tell the ship is moving.  On our rocket, a laser affixed to one
+wall would shoot a horizontal beam straight across to the other side,
+regardless of the rocket speed, because the photons depart the wall
+with the same upward momentum as the rocket.  Whether that upward
+velocity is zero or not, as long as it is constant, the result will be
+the same.
+
+However, if the rocket is accelerating, the objects in the rocket will
+tend to "fall" to the floor.  To an observer outside the rocket,
+watching the rocket accelerate on by, the objects are measured to be
+moving at a constant velocity, while the floor is accelerating up to
+meet them.  Until they actually touch the floor, they are just
+drifting through deep space, unaware that anything else is happening.
+From inside the rocket, though, the objects seem to be moving down to
+the floor.  If the rocket is accelerating up at 9.8 m/s/s, it will
+seem to anyone in the rocket that everything inside is experiencing a
+downward force exactly equivalent to the gravity on Earth.
+
+This insight, that free-falling objects are no different from objects
+floating in deep space, was once described by Einstein as his happiest
+thought.  The story goes that he was strolling through town and
+saw painters working on a clock tower.  It occurred to him that if
+one of the painters were to fall, the painter would effectively feel
+no gravity until he hit the ground (not so happy for the painter).
+In the SR part of this book, we insisted on only dealing with reference
+frames moving at constant speed, which we considered to be "inertial
+reference frames".  However, a reference frame in gravitational free
+fall is *also* an inertial frame, because it is no different from
+a reference frame that is not moving in the absence of gravity.
+
+There is a deep mystery in introductory Physics that is often glossed
+over, and perhaps not even mentioned.  Gravity is introduced through
+Newton's Law of Universal Gravitation, that any two masses in the
+universe attract each other in proportion to the product of their
+masses and inversely proportional to the square of the distance
+between them, or
+```{math}
+:name: newUgrav
+\vec{F} = -\frac{GMm}{r^2}\hat{r}.
+```
+Teachers have also by this point probably introduced Newton's
+famous second law, often expressed that the total force on a system is
+proportional to the rate of change of the velocity of a system,
+with the constant of proportionality being called the mass, or
+```{math}
+:name: new2law
+\vec{F} = m\vec{a}.
+```
+For a falling object near the Earth's surface, these two forces are
+equated and the $m$ term cancels out, indicating that the acceleration
+of any object near the surface of the Earth is the same, and we use
+$GM/R^2$ with values for the mass and radius of the Earth to get
+$g\equiv GM/R^2 = 9.8$ m/s/s.  The velocity of any object falling
+near the Earth's surface will change by 9.8 m/s every second, regardless
+of that object's mass.
+
+Buried in the chain of logic was a big assumption, so big and obvious
+that most students don't even notice, and often are confused when it
+is actually pointed out to them: there is nothing in that description
+that demands that the two times $m$ is used, they must be referring to
+the same thing.  The $m$ in {numref}`newUgrav` is defined in terms of
+how strongly masses pull on each other through gravity.  The $m$ in
+{numref}`new2law` is defined in terms of how much an objects velocity
+changes when you push on it.  There's nothing in those two definitions
+that says those two *have* to be the same thing!  It's a huge
+assumption and a complete mathematical slight of hand trick to define
+them with the same letter $m$ in the first place.
+
+Say something about experimental tests.
+
+Einstein's theory of General Relativity insists that they are indeed
+the same thing, and provides a reason why that might be the case.
+If what we call gravity is indeed a kind of illusion caused by being
+in a curved spacetime, then falling objects aren't really falling,
+but rather just drifting through spacetime as they normally would,
+until the ground, or the floor of the rocket, comes up from below and
+hits them.  Everything falls at the same rate because everything
+is drifting together through a curved spacetime.  GR suggests that
+you will never be able to do any experiment to be able to tell
+the difference between these two situations (standing on the Earth
+vs. standing on the floor of an accelerating rocket), because they
+are equivalent.
+
+This insight is so important, that this "Equivalence Principle"
+occupies a similar place in the foundation of GR that the two
+postulates of SR do for that theory.  Within the formulation of GR,
+what we consider to be a force that we call Gravity is really an
+illusion of objects trying to move through curved spacetime, just like
+the balloon and the fuzzy dice aren't really being pushed by invisible
+forces in the accelerating car.
 
 ## The Pound-Rebkha Experiment
 

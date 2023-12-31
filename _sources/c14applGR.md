@@ -110,6 +110,24 @@ than Mercury.  See [Library of Congress](https://www.loc.gov/resource/g3180.ct00
 ```
 ## Gravitational Lensing
 
+If objects, including photons, really follow the paths through
+spacetime that maximize the elapsed time, then their paths through
+curved space would not be what we would consider to be straight lines.
+Airline pilots presumably follow the shortest possible flight paths,
+to conserve fuel, but if you drew a flight path from New York City to
+Los Angeles on a flat map, the line would "curve up" perhaps even into
+Canada, rather than going "straight" across Missouri.  This is because
+the Earth is, of course, not flat, and the shortest distance on a
+sphere is a great circle.  Draw the same flight path on a globe, and
+it will look straight when you look directly down on it.  One of the
+best ways we have to determine if we are in a curved spacetime is to
+observe the trajectories of photons and see if they curve, as explained
+in the previous chapter on the Equivalence Principle.
+
+
+
+
+
 
 
 
@@ -203,6 +221,10 @@ Transactions of the Royal Society 220A: 291–333)
 ## Acceleration While Standing Still?
 
 (The Veritasium Video)
+
+https://www.youtube.com/watch?v=XRr1kaXKBsU
+
+Not sure this is worth including.  Maybe.  It's about 10 minutes in.
 
 ## Black Holes
 
