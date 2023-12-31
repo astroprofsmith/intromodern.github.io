@@ -150,8 +150,8 @@ plt.title('Contribution to deflection')
 plt.xlabel('Distance from closest approach')
 plt.ylabel('Angular deflection')
 plt.legend()
-plt.text(2,1,'Newton total: {:4.2f}'.format(ndef))
-plt.text(4,1,'Einstein total: {:4.2f}'.format(edef))
+plt.text(2,1,'Newton total: {:4.2f}'.format(ndef),fontsize=12)
+plt.text(4,1,'Einstein total: {:4.2f}'.format(edef),fontsize=12)
 
 glue("angdeffig", fig, display=False)
 
