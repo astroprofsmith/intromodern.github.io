@@ -181,15 +181,17 @@ at every point. *NOTE*  Need to check units of deflection.
 :align: center
 :name: Edd19
 
-Dyson and Eddington's published report of star image deflection during the 1919
-solar eclipse.  The angular distance from the Sun is printed along the horizontal
-axis, but note that the distance increases to the left.  The angular radius of the
-Sun is about 25$^\prime$, so that is the smallest possible number to the right.
-The y-axis shows the total amount of deflection, decreasing for increasing
-distance from the Sun.  The derker solid line is the best-fit linear relationship, while the
-lighter solid line above it is the prediction from GR.  The prediction from
-Newtonian physics is shown by the dotted line below, a factor of two less
-than what Einstein predicted, and clearly inconsistent with the measured results.
+Dyson and Eddington's published report of star image deflection during
+the 1919 solar eclipse.  The angular distance from the Sun is printed
+along the horizontal axis, but note that the distance increases to the
+left.  The angular radius of the Sun is about 25$^\prime$, so that is
+the smallest possible number to the right.  The y-axis shows the total
+amount of deflection, decreasing for increasing distance from the Sun.
+The lighter solid line is the best-fit linear relationship, while the
+darker solid line in the middle is the prediction from GR.  The
+prediction from Newtonian physics is shown by the dotted line below, a
+factor of two less than what Einstein predicted, and clearly
+inconsistent with the measured results.
 ```
 
 
