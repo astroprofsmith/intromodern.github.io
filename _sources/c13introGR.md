@@ -232,7 +232,7 @@ universe attract each other in proportion to the product of their
 masses and inversely proportional to the square of the distance
 between them, or
 ```{math}
-:name: newUgrav
+:label: newUgrav
 \vec{F} = -\frac{GMm}{r^2}\hat{r}.
 ```
 Teachers have also by this point probably introduced Newton's
@@ -240,7 +240,7 @@ famous second law, often expressed that the total force on a system is
 proportional to the rate of change of the velocity of a system,
 with the constant of proportionality being called the mass, or
 ```{math}
-:name: new2law
+:label: new2law
 \vec{F} = m\vec{a}.
 ```
 For a falling object near the Earth's surface, these two forces are
