@@ -150,11 +150,10 @@ plt.title('Contribution to deflection')
 plt.xlabel('Distance from Star ($R_\odot$)')
 plt.ylabel('Angular deflection')
 plt.legend()
-plt.text(1.5,1,'Newton total: {:4.2f}'.format(ndef),fontsize=18)
-plt.text(3.5,1,'Einstein total: {:4.2f}'.format(edef),fontsize=18)
+plt.text(2.5,1,'Newton total: {:4.2f}'.format(ndef),fontsize=18)
+plt.text(4.5,1,'Einstein total: {:4.2f}'.format(edef),fontsize=18)
 
 glue("angdeffig", fig, display=False)
-
 ```
 
 ```{glue:figure} angdeffig
@@ -171,8 +170,34 @@ half of the trajectory, show the total amount of angular deflection.
 These answers are shown superimposed on the graph.  Note that the GR
 calculation yields exactly double the Newtonian calculation for the
 total deflection, although the blue curve is not twice the red curve
-at every point.
+at every point. *NOTE*  Need to check units of deflection.
 ```
+
+
+```{figure} images/Eddington.png
+:alt: edd1919
+:class: bg-primary mb-1
+:width: 700px
+:align: center
+:name: Edd19
+
+Dyson and Eddington's published report of star image deflection during the 1919
+solar eclipse.  The angular distance from the Sun is printed along the horizontal
+axis, but note that the distance increases to the left.  The angular radius of the
+Sun is about 25$^\prime$, so that is the smallest possible number to the right.
+The y-axis shows the total amount of deflection, decreasing for increasing
+distance from the Sun.  The derker solid line is the best-fit linear relationship, while the
+lighter solid line above it is the prediction from GR.  The prediction from
+Newtonian physics is shown by the dotted line below, a factor of two less
+than what Einstein predicted, and clearly inconsistent with the measured results.
+```
+
+
+(Dyson, F. W.; Eddington, A. S., Davidson C. (1920). "A determination
+of the deflection of light by the Sun's gravitational field, from
+observations made at the total eclipse of 29 May 1919". Philosophical
+Transactions of the Royal Society 220A: 291–333)
+
 
 ## Acceleration While Standing Still?
 
