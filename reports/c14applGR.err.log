@@ -22,32 +22,32 @@ Traceback (most recent call last):
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
 # Newton vs. Einstein: angular deflection in passing point mass
-def simp(yy,dx):
-  w = np.zeros(np.shape(yy))
-  w[0] = 1
-  w[1::2] = 4
-  w[2::2] = 2
-  w[-1] = 1
-  return(np.matmul(w,yy)*dx/3)
+#def simp(yy,dx):
+#  w = np.zeros(np.shape(yy))
+#  w[0] = 1
+#  w[1::2] = 4
+#  w[2::2] = 2
+#  w[-1] = 1
+#  return(np.matmul(w,yy)*dx/3)
   
-def einstein(x,m,r):
-  return(m*r*(4*x*x+r*r)/(x*x+r*r)**2.5)
+#def einstein(x,m,r):
+#  return(m*r*(4*x*x+r*r)/(x*x+r*r)**2.5)
   
-def newton(x,m,r):
-  return(m*r/(x*x+r*r)**1.5)
+#def newton(x,m,r):
+#  return(m*r/(x*x+r*r)**1.5)
   
 nn = 1.0e7
 zmax = 30
 dz = zmax/nn
-z = np.linspace(0,zmax,int(nn))
+#z = np.linspace(0,zmax,int(nn))
 mass = 1.0
 radius = 1.0
 
-ez = einstein(z,mass,radius)
-nz = newton(z,mass,radius)
+#ez = einstein(z,mass,radius)
+#nz = newton(z,mass,radius)
 
-edef = simp(ez,dz)*2.0
-ndef = simp(nz,dz)*2.0
+#edef = simp(ez,dz)*2.0
+#ndef = simp(nz,dz)*2.0
 
 plt.figure(figsize=(14,8))
 #plt.plot(z[z<5],nz[z<5],'r-',label='Newton')
