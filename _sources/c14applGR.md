@@ -143,7 +143,7 @@ radius = 1.0
 #edef = simp(ez,dz)*2.0
 #ndef = simp(nz,dz)*2.0
 
-plt.figure(figsize=(14,8))
+fig = plt.figure(figsize=(14,8))
 #plt.plot(z[z<5],nz[z<5],'r-',label='Newton')
 #plt.plot(z[z<5],ez[z<5],'b-',label='Einstein')
 #plt.title('Contribution to deflection')
