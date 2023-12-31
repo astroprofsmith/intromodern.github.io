@@ -255,13 +255,13 @@ Buried in the chain of logic was a big assumption, so big and obvious
 that most students don't even notice, and often are confused when it
 is actually pointed out to them: there is nothing in that description
 that demands that the two times $m$ is used, they must be referring to
-the same thing.  The $m$ in {eq}`newUgrav` is defined in terms of
-how strongly masses pull on each other through gravity.  The $m$ in
-{eq}`new2law` is defined in terms of how much an objects velocity
-changes when you push on it.  There's nothing in those two definitions
-that says those two *have* to be the same thing!  It's a huge
-assumption and a complete mathematical slight of hand trick to define
-them with the same letter $m$ in the first place.
+the same thing.  The $m$ in Equation {eq}`newUgrav` is defined in
+terms of how strongly masses pull on each other through gravity.  The
+$m$ in Equation {eq}`new2law` is defined in terms of how much an
+objects velocity changes when you push on it.  There's nothing in
+those two definitions that says those two *have* to be the same thing!
+It's a huge assumption and a complete mathematical slight of hand
+trick to define them with the same letter $m$ in the first place.
 
 Say something about experimental tests.
 
