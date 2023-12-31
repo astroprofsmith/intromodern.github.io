@@ -55,6 +55,16 @@ with discovering Neptune in 1846, he is actually not the first person to
 *observe* the planet.  That honor goes to none other than Galileo
 Galilei, who in 1612 was tracking the movement of the moons of Jupiter.
 
+{numref}`neptune` shows a scan from Galileo's observing notebook,
+which he sketched on the night of 27 Dec 1612.  It shows Jupiter
+in the middle, with three moons to the right and a single moon to
+the left.  He also included a background star, above and to the
+left, or so he thought.  If you take a planetarium application
+and set the date to 27 Dec 1612, you can scan through the night
+to discover exactly when the moons line up with Galileo's drawing,
+and you will see that the nearby "star" is actually Neptune!
+
+
 ```{figure} images/Galileo.png
 :alt: galileoneptune
 :class: bg-primary mb-1
@@ -68,15 +78,7 @@ reference, but back extrapolation shows that this "star" was actually,
 unbeknownst to anyone at the time, the planet Neptune!
 ```
 
-{numref}`neptune` shows a scan from Galileo's observing notebook,
-which he sketched on the night of 27 Dec 1612.  It shows Jupiter
-in the middle, with three moons to the right and a single moon to
-the left.  He also included a background star, above and to the
-left, or so he thought.  If you take a planetarium application
-and set the date to 27 Dec 1612, you can scan through the night
-to discover exactly when the moons line up with Galileo's drawing,
-and you will see that the nearby "star" is actually Neptune!
-```
+
 
 By the mid-19th century, it was becoming clear that Mercury did not
 orbit strictly as Newtonian gravity said it should, either.  If you
