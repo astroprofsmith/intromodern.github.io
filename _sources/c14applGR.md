@@ -116,43 +116,42 @@ than Mercury.  See [Library of Congress](https://www.loc.gov/resource/g3180.ct00
 ```{code-cell}
 :tags: ["remove-cell"]
 # Newton vs. Einstein: angular deflection in passing point mass
-#def simp(yy,dx):
-#  w = np.zeros(np.shape(yy))
-#  w[0] = 1
-#  w[1::2] = 4
-#  w[2::2] = 2
-#  w[-1] = 1
-#  return(np.matmul(w,yy)*dx/3)
+def simp(yy,dx):
+  w = np.zeros(np.shape(yy))
+  w[0] = 1
+  w[1::2] = 4
+  w[2::2] = 2
+  w[-1] = 1
+  return(np.matmul(w,yy)*dx/3)
   
-#def einstein(x,m,r):
-#  return(m*r*(4*x*x+r*r)/(x*x+r*r)**2.5)
+def einstein(x,m,r):
+  return(m*r*(4*x*x+r*r)/(x*x+r*r)**2.5)
   
-#def newton(x,m,r):
-#  return(m*r/(x*x+r*r)**1.5)
+def newton(x,m,r):
+  return(m*r/(x*x+r*r)**1.5)
   
 nn = 1.0e7
 zmax = 30
 dz = zmax/nn
-#z = np.linspace(0,zmax,int(nn))
+z = np.linspace(0,zmax,int(nn))
 mass = 1.0
 radius = 1.0
 
-#ez = einstein(z,mass,radius)
-#nz = newton(z,mass,radius)
+ez = einstein(z,mass,radius)
+nz = newton(z,mass,radius)
 
-#edef = simp(ez,dz)*2.0
-#ndef = simp(nz,dz)*2.0
+edef = simp(ez,dz)*2.0
+ndef = simp(nz,dz)*2.0
 
 fig = plt.figure(figsize=(14,8))
-#plt.plot(z[z<5],nz[z<5],'r-',label='Newton')
-#plt.plot(z[z<5],ez[z<5],'b-',label='Einstein')
-#plt.title('Contribution to deflection')
-#plt.xlabel('Distance from closest approach')
-#plt.ylabel('Angular deflection')
-#plt.legend()
-#plt.text(2,1,'Newton total: {:4.2f}'.format(ndef))
-#plt.text(4,1,'Einstein total: {:4.2f}'.format(edef))
-plt.plot([1.1],[1.1],'b.')
+plt.plot(z[z<5],nz[z<5],'r-',label='Newton')
+plt.plot(z[z<5],ez[z<5],'b-',label='Einstein')
+plt.title('Contribution to deflection')
+plt.xlabel('Distance from closest approach')
+plt.ylabel('Angular deflection')
+plt.legend()
+plt.text(2,1,'Newton total: {:4.2f}'.format(ndef))
+plt.text(4,1,'Einstein total: {:4.2f}'.format(edef))
 
 glue("angdeffig", fig, display=False)
 
