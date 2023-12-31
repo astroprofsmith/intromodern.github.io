@@ -144,10 +144,10 @@ edef = simp(ez,dz)*2.0
 ndef = simp(nz,dz)*2.0
 
 fig = plt.figure(figsize=(14,8))
-plt.plot(z[z<5],nz[z<5],'r-',label='Newton')
-plt.plot(z[z<5],ez[z<5],'b-',label='Einstein')
+plt.plot(z[z<5]+1,nz[z<5],'r-',label='Newton')
+plt.plot(z[z<5]+1,ez[z<5],'b-',label='Einstein')
 plt.title('Contribution to deflection')
-plt.xlabel('Distance from closest approach')
+plt.xlabel('Distance from Star ($R_\odot$)')
 plt.ylabel('Angular deflection')
 plt.legend()
 plt.text(1.5,1,'Newton total: {:4.2f}'.format(ndef),fontsize=18)
@@ -163,8 +163,8 @@ glue("angdeffig", fig, display=False)
 
 
 Calculation of angular deflection of each step for a photon passing by
-an object of mass 1 M$_\odot$.  Only the receding half of the
-trajectory from the point of closest approach ($1 R_\odot$) is shown.
+an object of mass $1~M_\odot$.  Only the receding half of the
+trajectory from the point of closest approach ($1~R_\odot$) is shown.
 The approaching trajectory, not shown, is symmetric.  The curves, when
 numerically integrated and then doubled to account for the approaching
 half of the trajectory, show the total amount of angular deflection.
