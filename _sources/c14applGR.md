@@ -144,14 +144,15 @@ edef = simp(ez,dz)*2.0
 ndef = simp(nz,dz)*2.0
 
 plt.figure(figsize=(14,8))
-plt.plot(z[z<5],nz[z<5],'r-',label='Newton')
-plt.plot(z[z<5],ez[z<5],'b-',label='Einstein')
-plt.title('Contribution to deflection')
-plt.xlabel('Distance from closest approach')
-plt.ylabel('Angular deflection')
-plt.legend()
-plt.text(2,1,'Newton total: {}'.format(ndef))
-plt.text(4,1,'Einstein total: {}'.format(edef))
+#plt.plot(z[z<5],nz[z<5],'r-',label='Newton')
+#plt.plot(z[z<5],ez[z<5],'b-',label='Einstein')
+#plt.title('Contribution to deflection')
+#plt.xlabel('Distance from closest approach')
+#plt.ylabel('Angular deflection')
+#plt.legend()
+#plt.text(2,1,'Newton total: {:4.2f}'.format(ndef))
+#plt.text(4,1,'Einstein total: {:4.2f}'.format(edef))
+plt.plot([1.1],[1.1],'b.')
 
 glue("angdeffig", fig, display=False)
 
