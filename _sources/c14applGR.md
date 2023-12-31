@@ -123,10 +123,13 @@ def simp(yy,dx):
   w[2::2] = 2
   w[-1] = 1
   return(np.matmul(w,yy)*dx/3)
+  
 def einstein(x,m,r):
   return(m*r*(4*x*x+r*r)/(x*x+r*r)**2.5)
+  
 def newton(x,m,r):
   return(m*r/(x*x+r*r)**1.5)
+  
 nn = 1.0e7
 zmax = 30
 dz = zmax/nn

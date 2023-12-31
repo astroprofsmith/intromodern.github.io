@@ -29,10 +29,13 @@ def simp(yy,dx):
   w[2::2] = 2
   w[-1] = 1
   return(np.matmul(w,yy)*dx/3)
+  
 def einstein(x,m,r):
   return(m*r*(4*x*x+r*r)/(x*x+r*r)**2.5)
+  
 def newton(x,m,r):
   return(m*r/(x*x+r*r)**1.5)
+  
 nn = 1.0e7
 zmax = 30
 dz = zmax/nn
@@ -61,10 +64,10 @@ glue("angdeffig", fig, display=False)
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mNameError[0m                                 Traceback (most recent call last)
-Cell [0;32mIn[2], line 36[0m
-[1;32m     33[0m plt[38;5;241m.[39mtext([38;5;241m2[39m,[38;5;241m1[39m,[38;5;124m'[39m[38;5;124mNewton total: [39m[38;5;132;01m{}[39;00m[38;5;124m'[39m[38;5;241m.[39mformat(ndef))
-[1;32m     34[0m plt[38;5;241m.[39mtext([38;5;241m4[39m,[38;5;241m1[39m,[38;5;124m'[39m[38;5;124mEinstein total: [39m[38;5;132;01m{}[39;00m[38;5;124m'[39m[38;5;241m.[39mformat(edef))
-[0;32m---> 36[0m glue([38;5;124m"[39m[38;5;124mangdeffig[39m[38;5;124m"[39m, fig, display[38;5;241m=[39m[38;5;28;01mFalse[39;00m)
+Cell [0;32mIn[2], line 39[0m
+[1;32m     36[0m plt[38;5;241m.[39mtext([38;5;241m2[39m,[38;5;241m1[39m,[38;5;124m'[39m[38;5;124mNewton total: [39m[38;5;132;01m{}[39;00m[38;5;124m'[39m[38;5;241m.[39mformat(ndef))
+[1;32m     37[0m plt[38;5;241m.[39mtext([38;5;241m4[39m,[38;5;241m1[39m,[38;5;124m'[39m[38;5;124mEinstein total: [39m[38;5;132;01m{}[39;00m[38;5;124m'[39m[38;5;241m.[39mformat(edef))
+[0;32m---> 39[0m glue([38;5;124m"[39m[38;5;124mangdeffig[39m[38;5;124m"[39m, fig, display[38;5;241m=[39m[38;5;28;01mFalse[39;00m)
 
 [0;31mNameError[0m: name 'fig' is not defined
 NameError: name 'fig' is not defined
