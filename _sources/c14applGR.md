@@ -149,7 +149,6 @@ plt.ylabel('Angular deflection')
 plt.legend()
 plt.text(2,1,'Newton total: {}'.format(ndef))
 plt.text(4,1,'Einstein total: {}'.format(edef))
-plt.show()
 
 glue("angdeffig", fig, display=False)
 
