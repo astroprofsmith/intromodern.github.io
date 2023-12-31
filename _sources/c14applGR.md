@@ -69,7 +69,22 @@ unbeknownst to anyone at the time, the planet Neptune!
 ```
 ```
 
-Tried similar techniques...
+By the mid-19th century, it was becoming clear that Mercury did not
+orbit strictly as Newtonian gravity said it should, either.  If you
+ignore the other planets and just consider the force from the Sun
+(being the largest and closest body to Mercury, this is not unreasonable),
+Newtonian gravity would predict that Mercury should travel in an
+elliptical orbit.  However, Mercury moves as if its ellipse is drifting
+around the Sun: when Mercury returns to the point of its ellipse
+that is closest to the Sun, that point is not in the same place it
+was at the previous orbit.  This is not a large effect -- the shift
+is only 43 seconds of arc every century -- but that was enough to be
+measured.  Scientists at the time thought that since the prediction
+of Neptune was so successful, perhaps there was another planet inside
+Mercury's orbit that was not being accounted for in the calculations.
+This hypothetical planet was dubbed Vulcan, and for over 50 years,
+astronomers tried to find it.  {numref}`vulcan` shows the orbit of
+Vulcan, as factual as all the other orbits.
 
 ```{figure} images/vulcan.jpg
 :alt: vulcan1846
@@ -82,6 +97,7 @@ Solar System map produced for education in 1846.  The
 planet Vulcan is shown as orbiting closer to the Sun
 than Mercury.  See [Library of Congress](https://www.loc.gov/resource/g3180.ct003790) for more details.
 ```
+## Gravitational Lensing
 
 ## Acceleration While Standing Still?
 
@@ -91,4 +107,3 @@ than Mercury.  See [Library of Congress](https://www.loc.gov/resource/g3180.ct00
 
 ## The Big Bang
 
-## Gravitational Lensing
