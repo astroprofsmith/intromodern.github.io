@@ -150,8 +150,8 @@ plt.title('Contribution to deflection')
 plt.xlabel('Distance from closest approach')
 plt.ylabel('Angular deflection')
 plt.legend()
-plt.text(2,1,'Newton total: {:4.2f}'.format(ndef),fontsize=12)
-plt.text(4,1,'Einstein total: {:4.2f}'.format(edef),fontsize=12)
+plt.text(1.5,1,'Newton total: {:4.2f}'.format(ndef),fontsize=18)
+plt.text(3.5,1,'Einstein total: {:4.2f}'.format(edef),fontsize=18)
 
 glue("angdeffig", fig, display=False)
 
@@ -162,8 +162,16 @@ glue("angdeffig", fig, display=False)
 :name: angdef
 
 
-Calculation of angular deflection of each step for a photon passing
-by an object of mass 1 M$_\odot$.
+Calculation of angular deflection of each step for a photon passing by
+an object of mass 1 M$_\odot$.  Only the receding half of the
+trajectory from the point of closest approach ($1 R_\odot$) is shown.
+The approaching trajectory, not shown, is symmetric.  The curves, when
+numerically integrated and then doubled to account for the approaching
+half of the trajectory, show the total amount of angular deflection.
+These answers are shown superimposed on the graph.  Note that the GR
+calculation yields exactly double the Newtonian calculation for the
+total deflection, although the blue curve is not twice the red curve
+at every point.
 ```
 
 ## Acceleration While Standing Still?
