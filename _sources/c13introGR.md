@@ -70,7 +70,7 @@ of all the $ds$ intervals for each of the steps.
 ```
 Factor out the $dt$ to make it easier to understand:
 ```{math}
-:label: intint
+:label: intint2
 \Delta S = \int_{\rm path} cdt\sqrt{1-\frac{dx^2}{c^2dt^2}} = \int_{\rm path}
 cdt\sqrt{1-\frac{v^2}{c^2}}
 ```
