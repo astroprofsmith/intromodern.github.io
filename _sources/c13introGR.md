@@ -496,10 +496,22 @@ contents of the box had mass.
 The same result applies to a box sitting on the ground in Earth's
 gravity.  The photons travelling upward will lose energy according to
 Equation {eq}`gravred`, such that on average they will have a
-fractional energy loss of $gy/c^2$ relative to the ones hitting the
+energy loss of $-Egy/c^2$ relative to the ones hitting the
 bottom of the box.  There's no change in the horizontal directions, so
 I only need to consider the photons going up and down -- sideways
 motion will average out to zero.
+
+Consider a patch of the bottom and top sides of the box with area
+$A$.  In a time $dt$, a certain number of photons will hit that
+patch: the density of the photons in the box $n$ times the volume
+$Acdt$.  Each of the photons that hits a side of the box will
+impart an impulse of twice its momentum so the total impulse
+delivered to the box will be the difference between the bottom and
+the top: $nAcdt\times Egy/c^2$. Divide through by $dt$ to turn
+impulse into force.  Then note that if you take $A$ to be the
+total area of the top and bottom of the box, then $nAy$ is just
+$N$, the total number of photons in the box.  This leaves the
+total force on the bottom of the box to be $-NEg/c$.
 
 ## Einstein's Equation
 
