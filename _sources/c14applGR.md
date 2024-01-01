@@ -340,8 +340,11 @@ ydir = 1.0 - (1.5/2.4)*(xdir+0.9)
 plt.plot(xdir,ydir,'m:')
 
 ybent = np.ones(np.shape(xdir))
+plt.plot(xdir,ybent,'c:')
 ybent[xdir>0.0] = 1.0 - xdir[xdir>0.0]
 plt.plot(xdir,ybent,'c-')
+ybent = 1.0 - xdir
+plt.plot(xdir,ybent,'c:')
 
 ax = plt.gca()
 ax.get_xaxis().set_visible(False)
