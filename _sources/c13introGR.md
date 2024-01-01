@@ -156,12 +156,47 @@ reference frames.
 
 ## Accelerating Reference Frames
 
-First, the braking and accelerating car vs. the rotating car.
+Imagine you are driving along in a car at a constant velocity.
+Everything in the car would behave according to Newton's laws.
+Objects sitting on the dashboard would remain at rest (from your
+point of view -- an observer sitting on the side of the road
+would see the objects moving at the same velocity as the car),
+and if you threw a ball into the back seat, you would see it
+move in a nice parabola.  If you had a helium balloon, it would
+float upward to the length of its string.  The fuzzy dice hang
+straight down from the rear view mirror.  All is calm.
 
-Then work up to the merry go round.  Use Gamow's argument about
-length contraction at the rim to argue that accelerating spacetime
-must be curved.  This ties the idea of acceleration and curved
-spacetime together.
+Then suddenly the driver slams on the brakes.  The objects in the car
+fly forward.  You feel thrown forward against the strap of your safety
+belt.  The fuzzy dice swing forward toward the windshield.  From your
+point of view, thinking in terms of Newton's laws, a mysterious force
+has just appeared that gives all the objects in the car an additional
+forward velocity.  What happens to the helium balloon?  Take a moment
+to think about that and make a prediction.  After you have decided, go
+to watch [this video](https://www.youtube.com/watch?v=y8mzDvpKzfY) to
+see what the balloon actually does.
+
+From the side of the road, there is no mysterious force.  All objects
+continue moving forward, as their velocity would demand, but the car
+slows down, as does therefore the safety strap, which pushes backwards
+against you and slows you down to match the car.  The balloon is
+lighter than air, so while the air in the car slides forward along
+with you and the fuzzy dice, that pushes the lighter balloon toward
+the back of the car.
+
+If the driver had, instead of braking, turned the wheel hard to
+the left, so that the car began moving in a circle, everything
+in the car would behave as if there were a mysterious force pushing
+to the right.  You would lean right, the fuzzy dice would dangle to
+the right, and the balloon would lean to the left.  Although a person
+on the side of the road would say everything in the car was trying
+to go in a straight line, but the car was pushing to the left,
+within the reference frame of the car, everything would be acting
+as if a force to the right had suddenly appeared.
+
+Let's consider that circular trajectory in the context of {numref}`twopaths`.
+What can we say about a clock that moves on a circular path through
+spacetime?  Such a path is represented in {numref}`circularSTfig`.
 
 ```{code-cell}
 :tags: ["remove-cell"]
@@ -258,7 +293,7 @@ that demands that the two times $m$ is used, they must be referring to
 the same thing.  The $m$ in Equation {eq}`newUgrav` is defined in
 terms of how strongly masses pull on each other through gravity.  The
 $m$ in Equation {eq}`new2law` is defined in terms of how much an
-objects velocity changes when you push on it.  There's nothing in
+object's velocity changes when you push on it.  There's nothing in
 those two definitions that says those two *have* to be the same thing!
 It's a huge assumption and a complete mathematical slight of hand
 trick to define them with the same letter $m$ in the first place.
@@ -277,6 +312,27 @@ you will never be able to do any experiment to be able to tell
 the difference between these two situations (standing on the Earth
 vs. standing on the floor of an accelerating rocket), because they
 are equivalent.
+
+Consider again the accelerating car.  However, now imagine the car is
+parked.  Everything in the car will behave according to Newton's laws:
+the dice will hang down, the safety strap will not press against you,
+and the balloon will rise straight up to the top of its string.  If,
+now, the Incredible Hulk were to grab the back of the car and lift it
+up, such that the car were tilted at a large angle, consider what
+would happen inside the car: the dice would shift forward, you would
+feel pushed against the safety belt, and the balloon would tilt back
+toward the back of the car.  An observer outside would say everything
+is simply staying oriented to gravity's "down", but inside the car, it
+would seem like a mysterious force was pushing foward, *exactly* as if
+the driver had slammed on the brakes.  In fact, if the two kinds of
+mass are truly equivalent, there is absolutely no difference between
+braking the car and tilting the car.  In one case, we would say a
+mysterious "fictional" force was adding a horizontal compontent to the
+total force on objects in the car, and in the other case, we would say
+that the force of gravity was rotating, so that it gained a horizontal
+component that wasn't there before.  In both cases, the total force
+vector, from the point of view of everything inside the car, would
+swing from vertically down to diagonally forward.
 
 This insight is so important, that this "Equivalence Principle"
 occupies a similar place in the foundation of GR that the two
