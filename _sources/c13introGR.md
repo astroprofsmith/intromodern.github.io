@@ -435,7 +435,7 @@ To try to put this into quantitative form, let us consider the
 energy of a photon, proportional to its frequency: $E=hf$.  If
 this energy has an equivalent inertia to $E/c^2$, then we would
 expect the energy of the photon to drop by $dE = -Eg(dy)/c^2$ as it moves
-a height $y$ up from the Earth's surface.  Divide both sides by
+a height $dy$ up from the Earth's surface.  Divide both sides by
 $hf$ to get
 ```{math}
 :label: gravred
@@ -480,6 +480,26 @@ losing only one relative second over a 15 million year time interval!
 
 
 ## The Weight of a Box of Photons
+
+This gravitational redshift leads to an interesting thought
+experiment.  Back in Chapter 8, the last problem asked you to consider
+a box of photons and whether those photons might have an inertia
+equivalent to some amount of mass.  Hopefully you figured out that the
+inertia came from reflecting the photons off the inside walls of the
+box.  If you wanted to move the box, say to the right, then the
+photons bouncing off the left (approaching) wall must pick up
+energy/momentum, and the photons bouncing off the right (receding)
+wall must lose energy/momentum.  By conservation of momentum, you
+will measure a force resisting your pushing the box, as if the
+contents of the box had mass.
+
+The same result applies to a box sitting on the ground in Earth's
+gravity.  The photons travelling upward will lose energy according to
+Equation {eq}`gravred`, such that on average they will have a
+fractional energy loss of $gy/c^2$ relative to the ones hitting the
+bottom of the box.  There's no change in the horizontal directions, so
+I only need to consider the photons going up and down -- sideways
+motion will average out to zero.
 
 ## Einstein's Equation
 
