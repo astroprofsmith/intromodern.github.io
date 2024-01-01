@@ -333,7 +333,7 @@ fig = plt.figure(figsize=(14,8))
 
 plt.plot([-0.9],[1.0],'ro')
 plt.plot([1.5],[-0.5],'bo')
-plt.plot([0.0],[0.4],'ko')
+plt.plot([0.0],[0.0],'ko')
 
 xdir = np.linspace(-0.9,1.5,100)
 ydir = 1.0 - (1.5/2.4)*(xdir+0.9)
@@ -348,10 +348,11 @@ plt.plot(xdir,ybent,'c:')
 
 plt.plot([-0.9],ybent[0],'co')
 
-plt.plot([0.0,0.0],[0.4,1.0],'k:')
+plt.plot([0.0,0.0],[0.0,1.0],'k:')
+plt.plot([-0.9,1.5],[0.0,0.0],'k:')
 
-plt.text(-0.1,0.7,'b',fontsize=18)
-plt.text(0.18,0.9,r'$\alpha$',fontsize=18)
+plt.text(-0.1,0.4,'b',fontsize=18)
+plt.text(0.2,0.7,r'$\alpha$',fontsize=18)
 
 ax = plt.gca()
 ax.get_xaxis().set_visible(False)
