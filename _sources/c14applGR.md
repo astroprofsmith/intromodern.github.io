@@ -91,10 +91,10 @@ of its ellipse that is closest to the Sun, the perihelion, that point
 is not in the same place it was at the previous orbit.  The measured
 drift of the perihelion is about 566$^{\prime\prime}$ per century.
 Mercury takes about three months to complete one orbit, so in a single
-orbit, the location of one perihelion only differs by 566$^{\prime\prime}$
-about one and a half arcseconds from the previous one.  That is a
-tiny change (one arcsecond being 1/3600th of a degree, or about a
-tenth the width of a sheet of paper held at arm's length.
+orbit, the location of one perihelion only differs by about one and a
+half arcseconds from the previous one.  That is a tiny change (one
+arcsecond being 1/3600th of a degree, or about a tenth the width of a
+sheet of paper held at arm's length).
 
 Some of this shift could be explained by the effects of the other
 planets, dominated by Jupiter, tugging on Mercury from other
