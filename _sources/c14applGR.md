@@ -346,6 +346,10 @@ plt.plot(xdir,ybent,'c-')
 ybent = 1.0 - xdir
 plt.plot(xdir,ybent,'c:')
 
+plt.plot([-0.9],ybent[0],'co')
+
+plt.plot([0.0,0.0],[0.0,1.0],'k:')
+
 ax = plt.gca()
 ax.get_xaxis().set_visible(False)
 ax.get_yaxis().set_visible(False)
