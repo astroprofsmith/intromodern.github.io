@@ -361,7 +361,7 @@ plt.text(-0.1,0.1,'b',fontsize=18)
 plt.text(0.2,0.85,r'$\alpha$',fontsize=18)
 plt.text(-0.25,1.05,r'$\alpha$',fontsize=18)
 plt.text(0.75,-0.3,r'$\theta$',fontsize=18)
-plt.text(1.1,-0.45,r'$\beta$',fontsize=18)
+plt.text(1.15,-0.45,r'$\beta$',fontsize=18)
 plt.text(0.7,-0.7,'LO',fontsize=18)
 plt.text(-0.4,-0.7,'SL',fontsize=18)
 
