@@ -393,14 +393,16 @@ the image of the source is shifted by an angle $\theta-\beta$.
 We split the vertical height of the right side into two pieces
 and use the small angle approximation to add them in terms
 of the triangles involved: $\theta (SL+LO) = \alpha SL + \beta (SL+LO)$.
-We are interested in $\theta-\beta$, the amount that the image
-shifts from the original source on the sky, so that's
+We can also note that in the small angle approximation, we can
+relate $\theta-\beta$ to $\alpha$, because they both share the
+same side of their triangles on the left side of the image:
+$\alpha SL = (\theta-\beta)(SL+LO)$.  
 ```{math}
 :label: imshift
-\theta-\beta = \frac{\alpha SL + \beta (SL+LO)}{SL+LO} - \beta
-= \alpha \frac{SL}{SL+LO}
+\beta = \theta - \alpha SL
 ```
-
+To go any further, we need to know the deflection angle as a
+function of $b$.
 
 
 ```{code-cell}
