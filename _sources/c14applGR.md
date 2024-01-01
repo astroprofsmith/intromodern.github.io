@@ -246,8 +246,10 @@ an image.  The bending is greatest near the center and least far from
 the object, which is the opposite of a glass optical lens.  To make
 a glass lens behave like a gravitational lens, its curvature would
 have to be greatest near the center, much like the base of a stemmed
-wine glass.  Fig X shows a couple of examples of glass lenses that
-were constructed deliberately to behave like gravitational lenses.
+wine glass.  {numref}`glasslens` shows an example of a glass lens that
+was constructed deliberately to behave like a gravitational lens.  The
+glass in the photograph was about 45 cm in diameter, and the curved
+middle extended roughly 10 cm toward the viewer.
 
 ```{figure} images/glasslens.jpg
 :alt: glasslens
