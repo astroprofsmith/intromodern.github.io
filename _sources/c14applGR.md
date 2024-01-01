@@ -336,7 +336,7 @@ plt.plot([1.5],[-0.5],'bo')
 plt.plot([0.0],[0.0],'ko')
 
 xdir = np.linspace(-0.9,1.5,100)
-ydir = 1.6 - (2.1/2.4)*(xdir-0.9)
+ydir = 1.6 - (2.1/2.4)*(xdir+0.9)
 plt.plot(xdir,ydir,'m:')
 
 ax = plt.gca()
