@@ -319,8 +319,14 @@ source is far away to the left, a distance SL from the lens.  The
 observer is on the right, a distance LO from the lens.  The distance
 from the source to the observer is SO=SL+LO.  The light path reaches a
 closest distance to the lens of $b$, and then is deflected through an
-angle $\alpha$.  The angles in {numref}`thingravlens` are greatly
-exaggerated so they can be seen by eye.
+angle $\alpha$.  The angles $\beta$ and $\theta$ are measured with
+respect to the baseline that connects the observer to the lens:
+$\beta$ is the angular position of the original source (the magenta
+dotted line), and $\theta$ is the angular position of the shifted
+image (the cyan solid line) where the light rays appear to be coming
+from.  The angles in {numref}`thingravlens` are greatly exaggerated so
+they can be seen by eye.  In real life, all these angles are very
+small, so we use the small angle approximation for all of them.
 
 
 
@@ -370,7 +376,17 @@ glue("thinlensfig", fig, display=False)
 :name: thingravlens
 
 
-The thin gravitational lens diagram.
+The thin gravitational lens diagram.  The lens is the black dot
+at the bottom center.  The source is the red dot to the left, and
+the observer is the blue dot to the right.  The cyan line shows
+the path that photons take to actually reach from the source to the
+observer, deflected through an angle $\alpha$ from their original
+trajectory.  Photons that started out along the magenta
+dotted line would have reached the observer if the lens weren't there,
+but in this case would be deflected far below the observer (this
+deflection is not shown).  With the lens, the photons appear to the
+observer to be coming from the location of the cyan dot, and therefore
+the image of the source is shifted by an angle $\theta-\beta$.
 ```
 
 
