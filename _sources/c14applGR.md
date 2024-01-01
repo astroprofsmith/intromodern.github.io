@@ -331,24 +331,15 @@ exaggerated so they can be seen by eye.
 
 fig = plt.figure(figsize=(14,8))
 
-plt.plot([0.2],[-0.1],'ko')
-plt.plot([0.2],[1.1],'ko')
-plt.plot([0.2,0.2],[-0.1,1.1],'r-')
+plt.plot([-0.6],[2.1],'ro')
+plt.plot([2.0],[-0.5],'bo')
+plt.plot([0.0],[0.0],'ko')
+
 
 ax = plt.gca()
 ax.get_xaxis().set_visible(False)
 ax.get_yaxis().set_visible(False)
 plt.axis([-1,2,-1,2])
-ax.text(-0.55, 0.8, "ct")
-ax.text(0.8, -0.5, "x")
-
-y1 = -0.1
-y2 = 1.1
-w1 = 2*np.pi/(y2-y1)
-w2 = 1.5*w1
-y = np.linspace(y1,y2,100)
-x = 0.2+0.3*np.sin(w1*(y-y1))+0.22*np.sin(w2*(y-y1))
-plt.plot(x,y,'b-')
 
 glue("thinlensfig", fig, display=False)
 ```
