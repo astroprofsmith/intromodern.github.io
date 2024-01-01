@@ -249,6 +249,23 @@ have to be greatest near the center, much like the base of a stemmed
 wine glass.  Fig X shows a couple of examples of glass lenses that
 were constructed deliberately to behave like gravitational lenses.
 
+```{figure} images/glasslens.png
+:alt: glasslens
+:class: bg-primary mb-1
+:width: 700px
+:align: center
+:name: glasslens
+
+A glass lens distorts the view of a rope light, suspended horizontally
+behind it.  The lens is shaped like that of the base of a wine glass,
+curving forward at the center from a flat edge, with the stem in the
+middle shaved off.  The flat rope light appears curved above the center
+of the lens, and a second image of the light appears below the center,
+just as a point gravitational lens would create two images of a
+background star, if you considered the lensing to be happening along
+a vertical plane slice through the middle of this picture.
+```
+
 In 1919, multiple expeditions from the Royal Society of London set out
 to South America and Africa to wait along the path of the Moon's
 shadow and image the sky during the eclipse.  Frank Dyson and Arthur
