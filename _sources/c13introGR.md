@@ -194,9 +194,19 @@ to go in a straight line, but the car was pushing to the left,
 within the reference frame of the car, everything would be acting
 as if a force to the right had suddenly appeared.
 
-Let's consider that circular trajectory in the context of {numref}`twopaths`.
-What can we say about a clock that moves on a circular path through
-spacetime?  Such a path is represented in {numref}`circularSTfig`.
+Let's consider that circular trajectory in the context of
+{numref}`twopaths`.  What can we say about a clock that moves on a
+circular path through spacetime?  Such a path is represented in
+{numref}`circularSTfig`.  To get from the orange event to the purple
+event, a clock at rest would just follow a vertical line, but the
+black curve represents a clock that moves around in a circle.  Based
+on the analysis of the previous section, such a clock would have to
+measure a shorter time interval than the clock at rest (if the system
+were sitting on a merry-go-round, we could consider the clock at rest
+to be at the center axis of the rotating disc -- such a clock would be
+synchronized with the lattice of clocks making up the reference frame
+at rest with the orange and purple events, even if the clock at the
+center did not pass through those two events).
 
 ```{code-cell}
 :tags: ["remove-cell"]
@@ -219,6 +229,47 @@ the diagram to see projections of the worldline onto the different planes.
 In particular, rotate the diagram to look straight down the $ct$ axis to
 see the circular path in space.
 ```
+
+Within the reference frame of the purple and orange events (the clock
+at rest), for a given constant angular velocity $\omega$, the larger
+the radius of the circle, the faster the clock will have to move to
+complete the circle (according to $v=\omega r$) and therefore the
+larger the discrepency in the time intervals, according to Equation
+{eq}`intint2`.  A clock further out on the merry-go-round will be
+moving faster and therefore measure a shorter time interval than a
+clock closer to the center.  Furthermore, we also know that lengths
+contract at faster speeds, so if a person at the edge of the
+merry-go-round were to lay down meter sticks to measure the
+circumference of the circle, they would need more meter sticks than
+they would have expected without relativity.  The radius of the
+circle, being perpendicular to the motion, is not affected, so $2\pi
+r$ is now less than the actual circumference, according to the
+(contracted) meter sticks.
+
+The circumference being equal to $2\pi r$ is proven within a flat (or
+Euclidian) space.  If space is curved, that equation no longer holds.
+Consider the circle formed by a latitude line near the South Pole:
+because the Earth is curved, the measured radius of the Earth along
+the surface is going to be longer than the radius of the circle you
+would get by slicing a flat circle along the latitude line.  Therefore,
+the circumference of the latitude circle will be shorter than $2\pi r$,
+because the Earth is curved.  Due to the length contraction of the
+meter sticks, our scientist on the merry-go-round would also conclude
+that she is in a curved space, as the geometry is not behaving according
+to the rules of flat space.
+
+The effects on time and geometry are tightly linked to the
+acceleration of the reference frame of the merry-go-round.  The larger
+the radius, the larger the acceleration needs to be ($a=\omega^2 r$)
+to maintain the circular path.  To someone on the merry-go-round,
+there would seem to be a mysterious outward (centrifugal) force,
+and to move toward the center would be to move "up" against this
+force, and to move away from the center would be to move "down"
+with this force.  The further down they go, the larger the effects
+of time dilation and length contraction would get.  They would
+conclude their spacetime was deviating more and more from Euclidean
+flatness.  The same chain of logic holds for the acceleration
+due to gravity, because the forces are equivalent.
 
 ## The Equivalence Principle
 
