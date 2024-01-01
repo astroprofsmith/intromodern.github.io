@@ -249,7 +249,7 @@ have to be greatest near the center, much like the base of a stemmed
 wine glass.  Fig X shows a couple of examples of glass lenses that
 were constructed deliberately to behave like gravitational lenses.
 
-```{figure} images/glasslens.png
+```{figure} images/glasslens.jpg
 :alt: glasslens
 :class: bg-primary mb-1
 :width: 700px
