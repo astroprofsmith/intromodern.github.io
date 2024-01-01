@@ -489,29 +489,39 @@ inertia came from reflecting the photons off the inside walls of the
 box.  If you wanted to move the box, say to the right, then the
 photons bouncing off the left (approaching) wall must pick up
 energy/momentum, and the photons bouncing off the right (receding)
-wall must lose energy/momentum.  By conservation of momentum, you
-will measure a force resisting your pushing the box, as if the
-contents of the box had mass.
+wall must lose energy/momentum.  By conservation of momentum, you will
+measure a force resisting your pushing the box, as if the contents of
+the box had mass.
 
 The same result applies to a box sitting on the ground in Earth's
 gravity.  The photons travelling upward will lose energy according to
 Equation {eq}`gravred`, such that on average they will have a
 energy loss of $-Egy/c^2$ relative to the ones hitting the
-bottom of the box.  There's no change in the horizontal directions, so
+bottom of the box, and therefore a momentum difference of
+$-Egy/c^3$.  There's no change in the horizontal directions, so
 I only need to consider the photons going up and down -- sideways
 motion will average out to zero.
 
-Consider a patch of the bottom and top sides of the box with area
-$A$.  In a time $dt$, a certain number of photons will hit that
-patch: the density of the photons in the box $n$ times the volume
-$Acdt$.  Each of the photons that hits a side of the box will
-impart an impulse of twice its momentum so the total impulse
-delivered to the box will be the difference between the bottom and
-the top: $nAcdt\times Egy/c^2$. Divide through by $dt$ to turn
-impulse into force.  Then note that if you take $A$ to be the
-total area of the top and bottom of the box, then $nAy$ is just
-$N$, the total number of photons in the box.  This leaves the
-total force on the bottom of the box to be $-NEg/c$.
+Consider a patch of the bottom and top sides of the box with area $A$.
+In a time $dt$, a certain number of photons will hit that patch: the
+density of the photons in the box $n$ times the volume $Acdt$.  Each
+of the photons that hits a side of the box will impart an impulse of
+twice its momentum so the total impulse delivered to the box will be
+the difference between the bottom and the top: $nAcdt\times
+Egy/c^3$. (There is a factor of two from the reflection that cancels
+out when you consider that the photons are not traveling *stright* up
+and down.  Integrate over all possible angles to get a factor of 1/2.)
+Divide through by $dt$ to turn impulse into force.  Then note that if
+you take $A$ to be the total area of the top and bottom of the box,
+then $nAy$ is just $N$, the total number of photons in the box.
+
+This leaves the total force on the bottom of the box to be $-NEg/c^2$,
+which is just what you expect if each photon has an equivalent mass of
+$E/c^2$: the total mass of the photons would be $m=NE/c^2$, so the
+total force pushing down on the floor below the box would be $mg$.
+However, this is not from applying a gravitational force, in the sense
+of $mg=GMm/R^2$, but from considering the gravitational redshift of
+photons moving upwards in the curved space around the Earth's mass.
 
 ## Einstein's Equation
 
