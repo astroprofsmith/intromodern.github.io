@@ -360,13 +360,13 @@ plt.plot([-0.9,1.5],[-0.5,-0.5],'k:')
 plt.text(-0.1,0.1,'b',fontsize=18)
 plt.text(0.2,0.85,r'$\alpha$',fontsize=18)
 plt.text(-0.25,1.05,r'$\alpha$',fontsize=18)
-plt.text(0.8,-0.3,r'$\theta$',fontsize=18)
+plt.text(0.75,-0.3,r'$\theta$',fontsize=18)
 plt.text(1.2,-0.45,r'$\beta$',fontsize=18)
 plt.text(0.7,-0.7,'LO',fontsize=18)
 plt.text(-0.4,-0.7,'SL',fontsize=18)
 
 plt.arrow(0.8,-0.5,0.1,0.55,head_width=0.03)
-plt.arrow(1.25,-0.5,0.05,0.1,head_width=0.03)
+plt.arrow(1.2,-0.5,0.05,0.1,head_width=0.03)
 
 
 ax = plt.gca()
