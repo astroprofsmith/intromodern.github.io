@@ -283,6 +283,85 @@ Newton himself, so shortly after the two countries were at war,
 enthralled the world and catapulted Einstein into the international
 spotlight, making him the pop culture figure he remains today.
 
+```{figure} images/Eddington.png
+:alt: edd1919
+:class: bg-primary mb-1
+:width: 700px
+:align: center
+:name: Edd19
+
+Dyson and Eddington's published report of star image deflection during
+the 1919 solar eclipse.  (Dyson, F. W.; Eddington, A. S., Davidson
+C. (1920). "A determination of the deflection of light by the Sun's
+gravitational field, from observations made at the total eclipse of 29
+May 1919". Philosophical Transactions of the Royal Society 220A:
+291–333) The angular distance from the Sun is printed along the
+horizontal axis, but note that the distance increases to the left.
+The y-axis shows the total amount of deflection, decreasing for
+increasing distance from the Sun.  The lighter solid line is the
+best-fit linear relationship, while the darker solid line in the
+middle is the prediction from GR.  The prediction from Newtonian
+physics is shown by the dotted line below, a factor of two less than
+what Einstein predicted, and clearly inconsistent with the measured
+results.
+```
+
+How can we understand this deflection in more depth?  The easiest
+approximation is to use the thin lens approximation.  With the
+distances between the observer, the lens, and the source being
+literally astronomical, we can assume that the bending happens within
+a space along the path that is insignificantly short compared with the
+other distances in the problem.  The light travels in straight lines
+far from the lensing object, and then bends as it passes through a
+plane at the lens location.  This scenario is presented in
+{numref}`thingravlens`, as viewed from a location to the side.  The
+source is far away to the left, a distance SL from the lens.  The
+observer is on the right, a distance LO from the lens.  The distance
+from the source to the observer is SO=SL+LO.  The light path reaches a
+closest distance to the lens of $b$, and then is deflected through an
+angle $\alpha$.  The angles in {numref}`thingravlens` are greatly
+exaggerated so they can be seen by eye.
+
+
+
+
+```{code-cell}
+:tags: ["remove-cell"]
+# The thin lens diagram
+
+fig = plt.figure(figsize=(14,8))
+
+plt.plot([0.2],[-0.1],'ko')
+plt.plot([0.2],[1.1],'ko')
+plt.plot([0.2,0.2],[-0.1,1.1],'r-')
+
+ax = plt.gca()
+ax.get_xaxis().set_visible(False)
+ax.get_yaxis().set_visible(False)
+plt.axis([-1,2,-1,2])
+ax.text(-0.55, 0.8, "ct")
+ax.text(0.8, -0.5, "x")
+
+y1 = -0.1
+y2 = 1.1
+w1 = 2*np.pi/(y2-y1)
+w2 = 1.5*w1
+y = np.linspace(y1,y2,100)
+x = 0.2+0.3*np.sin(w1*(y-y1))+0.22*np.sin(w2*(y-y1))
+plt.plot(x,y,'b-')
+
+glue("thinlensfig", fig, display=False)
+```
+```{glue:figure} thinlensfig
+:figwidth: 800px
+:name: thingravlens
+
+
+The thin gravitational lens diagram.
+```
+
+
+
 ```{code-cell}
 :tags: ["remove-cell"]
 # Newton vs. Einstein: angular deflection in passing point mass
@@ -325,7 +404,6 @@ plt.text(4.5,1,'Einstein total: {:4.2f}'.format(edef),fontsize=18)
 
 glue("angdeffig", fig, display=False)
 ```
-
 ```{glue:figure} angdeffig
 :figwidth: 800px
 :name: angdef
@@ -342,32 +420,6 @@ calculation yields exactly double the Newtonian calculation for the
 total deflection, although the blue curve is not twice the red curve
 at every point. *NOTE*  Need to check units of deflection.
 ```
-
-
-```{figure} images/Eddington.png
-:alt: edd1919
-:class: bg-primary mb-1
-:width: 700px
-:align: center
-:name: Edd19
-
-Dyson and Eddington's published report of star image deflection during
-the 1919 solar eclipse.  (Dyson, F. W.; Eddington, A. S., Davidson
-C. (1920). "A determination of the deflection of light by the Sun's
-gravitational field, from observations made at the total eclipse of 29
-May 1919". Philosophical Transactions of the Royal Society 220A:
-291–333) The angular distance from the Sun is printed along the
-horizontal axis, but note that the distance increases to the left.
-The y-axis shows the total amount of deflection, decreasing for
-increasing distance from the Sun.  The lighter solid line is the
-best-fit linear relationship, while the darker solid line in the
-middle is the prediction from GR.  The prediction from Newtonian
-physics is shown by the dotted line below, a factor of two less than
-what Einstein predicted, and clearly inconsistent with the measured
-results.
-```
-
-
 
 
 
