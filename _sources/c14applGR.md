@@ -365,8 +365,8 @@ plt.text(1.2,-0.45,r'$\beta$',fontsize=18)
 plt.text(0.7,-0.7,'LO',fontsize=18)
 plt.text(-0.4,-0.7,'SL',fontsize=18)
 
-plt.arrow(0.8,-0.5,0.1,0.5,head_width=0.01)
-plt.arrow(1.2,-0.5,0.1,0.1,head_width=0.01)
+plt.arrow(0.8,-0.5,0.1,0.55,head_width=0.03)
+plt.arrow(1.25,-0.5,0.05,0.1,head_width=0.03)
 
 
 ax = plt.gca()
