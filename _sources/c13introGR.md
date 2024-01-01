@@ -521,7 +521,7 @@ $E/c^2$: the total mass of the photons would be $m=NE/c^2$, so the
 total force pushing down on the floor below the box would be $mg$.
 However, this is not from applying a gravitational force, in the sense
 of $mg=GMm/R^2$, but from considering the gravitational redshift of
-photons moving upwards in the curved space around the Earth's mass.
+photons moving upwards in the curved spacetime around the Earth's mass.
 
 ## Einstein's Equation
 
