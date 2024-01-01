@@ -352,9 +352,13 @@ at every point. *NOTE*  Need to check units of deflection.
 :name: Edd19
 
 Dyson and Eddington's published report of star image deflection during
-the 1919 solar eclipse.  The angular distance from the Sun is printed
-along the horizontal axis, but note that the distance increases to the
-left.  The y-axis shows the total amount of deflection, decreasing for
+the 1919 solar eclipse.  (Dyson, F. W.; Eddington, A. S., Davidson
+C. (1920). "A determination of the deflection of light by the Sun's
+gravitational field, from observations made at the total eclipse of 29
+May 1919". Philosophical Transactions of the Royal Society 220A:
+291–333) The angular distance from the Sun is printed along the
+horizontal axis, but note that the distance increases to the left.
+The y-axis shows the total amount of deflection, decreasing for
 increasing distance from the Sun.  The lighter solid line is the
 best-fit linear relationship, while the darker solid line in the
 middle is the prediction from GR.  The prediction from Newtonian
@@ -364,10 +368,7 @@ results.
 ```
 
 
-(Dyson, F. W.; Eddington, A. S., Davidson C. (1920). "A determination
-of the deflection of light by the Sun's gravitational field, from
-observations made at the total eclipse of 29 May 1919". Philosophical
-Transactions of the Royal Society 220A: 291–333)
+
 
 
 ## Acceleration While Standing Still?
