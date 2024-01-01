@@ -331,8 +331,8 @@ exaggerated so they can be seen by eye.
 
 fig = plt.figure(figsize=(14,8))
 
-plt.plot([-0.6],[2.1],'ro')
-plt.plot([2.0],[-0.5],'bo')
+plt.plot([-0.9],[1.6],'ro')
+plt.plot([1.5],[-0.5],'bo')
 plt.plot([0.0],[0.0],'ko')
 
 
