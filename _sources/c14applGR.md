@@ -359,6 +359,7 @@ plt.plot([-0.9,1.5],[-0.5,-0.5],'k:')
 
 plt.text(-0.1,0.1,'b',fontsize=18)
 plt.text(0.2,0.85,r'$\alpha$',fontsize=18)
+plt.text(-0.2,1.2,r'$\alpha$',fontsize=18)
 plt.text(0.8,-0.3,r'$\theta$',fontsize=18)
 plt.text(1.2,-0.45,r'$\beta$',fontsize=18)
 plt.text(0.7,-0.7,'LO',fontsize=18)
@@ -388,6 +389,10 @@ deflection is not shown).  With the lens, the photons appear to the
 observer to be coming from the location of the cyan dot, and therefore
 the image of the source is shifted by an angle $\theta-\beta$.
 ```
+
+We split the vertical height of the right side into two pieces
+and use the small angle approximation to add them in terms
+of the triangles involved: $\theta (SL+LO) = \alpha SL + \beta (SL+LO)$
 
 
 
