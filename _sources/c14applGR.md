@@ -83,19 +83,31 @@ unbeknownst to anyone at the time, the planet Neptune!
 By the mid-19th century, it was becoming clear that Mercury did not
 orbit strictly as Newtonian gravity said it should, either.  If you
 ignore the other planets and just consider the force from the Sun
-(being the largest and closest body to Mercury, this is not unreasonable),
-Newtonian gravity would predict that Mercury should travel in an
-elliptical orbit.  However, Mercury moves as if its ellipse is drifting
-around the Sun: when Mercury returns to the point of its ellipse
-that is closest to the Sun, that point is not in the same place it
-was at the previous orbit.  This is not a large effect -- the shift
-is only 43 seconds of arc every century -- but that was enough to be
-measured.  Scientists at the time thought that since the prediction
-of Neptune was so successful, perhaps there was another planet inside
-Mercury's orbit that was not being accounted for in the calculations.
-This hypothetical planet was dubbed Vulcan, and for over 50 years,
-astronomers tried to find it.  {numref}`vulcan` shows the orbit of
-Vulcan, as factual as all the other orbits.
+(being the largest and closest body to Mercury, this is not
+unreasonable), Newtonian gravity would predict that Mercury should
+travel in an elliptical orbit.  However, Mercury moves as if its
+ellipse is drifting around the Sun: when Mercury returns to the point
+of its ellipse that is closest to the Sun, the perihelion, that point
+is not in the same place it was at the previous orbit.  The measured
+drift of the perihelion is about 566$^\prime^\prime$ per century.
+Mercury takes about three months to complete one orbit, so in a single
+orbit, the location of one perihelion only differs by 566$^\prime^\prime$
+about one and a half arcseconds from the previous one.  That is a
+tiny change (one arcsecond being 1/3600th of a degree, or about a
+tenth the width of a sheet of paper held at arm's length.
+
+Some of this shift could be explained by the effects of the other
+planets, dominated by Jupiter, tugging on Mercury from other
+directions.  Careful calculations (before electronic computers!) added
+up to a prediction of 523$^\prime^\prime$ per century.  This is not a
+large discrepancy -- the difference is only 43 seconds of arc every
+century -- but that was enough to be measured.  Scientists at the time
+thought that since the prediction of Neptune was so successful,
+perhaps there was another planet inside Mercury's orbit that was not
+being accounted for in the calculations.  This hypothetical planet was
+dubbed Vulcan, and for over 50 years, astronomers tried to find it.
+{numref}`vulcan` shows the orbit of Vulcan, as factual as all the
+other orbits.
 
 ```{figure} images/vulcan.jpg
 :alt: vulcan1846
