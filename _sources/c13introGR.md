@@ -237,14 +237,18 @@ complete the circle (according to $v=\omega r$) and therefore the
 larger the discrepency in the time intervals, according to Equation
 {eq}`intint2`.  A clock further out on the merry-go-round will be
 moving faster and therefore measure a shorter time interval than a
-clock closer to the center.  Furthermore, we also know that lengths
-contract at faster speeds, so if a person at the edge of the
-merry-go-round were to lay down meter sticks to measure the
-circumference of the circle, they would need more meter sticks than
-they would have expected without relativity.  The radius of the
-circle, being perpendicular to the motion, is not affected, so $2\pi
-r$ is now less than the actual circumference, according to the
-(contracted) meter sticks.
+clock closer to the center.  This would be very confusing to a person
+*on* the merry-go-round, as to that person, neither clock would be
+moving.  The person on the merry go round would have to conclude that
+the stronger the centrifugal force, the slower the clocks run.
+
+Furthermore, we also know that lengths contract at faster speeds, so
+if a person at the edge of the merry-go-round were to lay down meter
+sticks to measure the circumference of the circle, they would need
+more meter sticks than they would have expected without relativity.
+The radius of the circle, being perpendicular to the motion, is not
+affected, so $2\pi r$ is now less than the actual circumference,
+according to the (contracted) meter sticks.
 
 The circumference being equal to $2\pi r$ is proven within a flat (or
 Euclidian) space.  If space is curved, that equation no longer holds.
@@ -256,20 +260,21 @@ the circumference of the latitude circle will be shorter than $2\pi r$,
 because the Earth is curved.  Due to the length contraction of the
 meter sticks, our scientist on the merry-go-round would also conclude
 that she is in a curved space, as the geometry is not behaving according
-to the rules of flat space.
+to the rules of flat space, and the stronger the centrifugal force,
+the more curvature she measures.
 
 The effects on time and geometry are tightly linked to the
 acceleration of the reference frame of the merry-go-round.  The larger
 the radius, the larger the acceleration needs to be ($a=\omega^2 r$)
 to maintain the circular path.  To someone on the merry-go-round,
-there would seem to be a mysterious outward (centrifugal) force,
-and to move toward the center would be to move "up" against this
-force, and to move away from the center would be to move "down"
-with this force.  The further down they go, the larger the effects
-of time dilation and length contraction would get.  They would
-conclude their spacetime was deviating more and more from Euclidean
-flatness.  The same chain of logic holds for the acceleration
-due to gravity, because the forces are equivalent.
+there would seem to be a mysterious outward (centrifugal) force, and
+to move toward the center would be to move "up" against this force,
+and to move away from the center would be to move "down" with this
+force.  The further down they go, the larger the effects of time
+dilation and length contraction would get.  They would conclude their
+spacetime was deviating more and more from Euclidean flatness.  The
+same chain of logic holds for the acceleration due to gravity, because
+the forces are equivalent.
 
 ## The Equivalence Principle
 
@@ -383,9 +388,9 @@ total force on objects in the car, and in the other case, we would say
 that the force of gravity was rotating, so that it gained a horizontal
 component that wasn't there before.  In both cases, the total force
 vector, from the point of view of everything inside the car, would
-swing from vertically down to diagonally forward.
+swing from vertically down to diagonally down and forward.
 
-This insight is so important, that this "Equivalence Principle"
+This insight is so important that this "Equivalence Principle"
 occupies a similar place in the foundation of GR that the two
 postulates of SR do for that theory.  Within the formulation of GR,
 what we consider to be a force that we call Gravity is really an
@@ -394,6 +399,85 @@ the balloon and the fuzzy dice aren't really being pushed by invisible
 forces in the accelerating car.
 
 ## The Pound-Rebkha Experiment
+
+If the Equivalence Principle is valid, than *any* situation where the
+acceleration of a reference frame changes should have equivelent
+inertial effects and gravitational effects.  There should not be any
+way to distinguish between them.  In particular, consider the
+merry-go-round described in the previous section.  The further out you
+go along the radius of the rotation, the more acceleration you would
+experience, and the slower your clocks would be running, compared with
+a clock at the axis.  The centrifugal force is therefore equivalent to
+gravity, with "out" being "down" and "in" being "up".  Therefore, a
+clock that is further "down" in gravity (closer to the Earth) should
+run more slowly than a clock that is further "up" (away from the
+Earth).  
+
+The frequency of a photon is a perfectly good clock -- it oscillates
+in time and therefore can mark off the nanoseconds as well as any
+other clock.  If we shine light upward from the surface of the Earth,
+its frequency should decrease as it goes upward, because the higher
+clock will perceive it as coming from a lower clock that is running
+more slowly, as per the arguments in the first few sections.  This
+"gravitational redshift" can also be understood in terms of energy: if
+you throw a ball upward, it loses energy as it climbs.  The ball's
+energy manifests in its speed.  The rising ball slows down.  A photon
+cannot slow down -- it loses energy by shifting to a lower frequency.
+This is yet another counter-intuitive way that a massless particle
+acts in ways that we previously only associated with mass.  We can't
+calculate the potential energy of the interaction of the Earth and a
+photon in the same way that we would the interaction of the Earth and
+the ball: $mgh$ makes no sense for the photon.  However, we have
+learned the photon has momentum despite having no mass, so perhaps it
+is not so surprising that it can lose energy in climbing upward, too.
+
+To try to put this into quantitative form, let us consider the
+energy of a photon, proportional to its frequency: $E=hf$.  If
+this energy has an equivalent inertia to $E/c^2$, then we would
+expect the energy of the photon to drop by $dE = -Eg(dy)/c^2$ as it moves
+a height $y$ up from the Earth's surface.  Divide both sides by
+$hf$ to get
+```{math}
+:label: gravred
+\frac{df}{f} = \frac{g}{c^2}dy.
+```
+For reasonable distances ($\sim 10$ m) near the surface of the Earth,
+this consititutes a fractional frequency shift of $\sim 10^{-15}$.
+This is a very, very tiny change, and very difficult to measure.
+
+In 1960, Robert Pound and his student Glen Rebkha at Harvard
+set out to measure this tiny shift.  They positioned a source
+of X-rays (X-rays with a well-known frequency) at the bottom of
+of a tower, and a detector at the top of the tower, 21 m above.
+It would be impossible to measure a fractional shift of one part
+in a thousand trillion directly, so they positioned a filter in
+front of the detector.  The filter would only allow X-rays through
+if they matched the original frequency of the emitted X-rays from
+the source.
+
+They set the filter on a vibrating frame.  By controlling how the
+filter oscillated up and down, they could cycle through many relative
+speeds between the filter and the source of X-rays.  From the
+reference frame of the filter, the X-rays would be Doppler-shifted.
+When the filter was moving upward, the Doppler shift would be a
+redshift, and when the filter was moving downward the Doppler shift
+would be a blue shift.  At just the right downward speed, the Doppler
+blueshift would cancel out the gravitational redshift and allow the
+X-rays through to the detector.
+
+Such a short description makes it sound easy, but only because the
+gory details are beyond the scope of this book.  Pound and Rebkha
+performed many runs over years, refining their measurements and paying
+careful attention to sources of error.  See, for example, [the
+Wikipedia
+page](https://en.wikipedia.org/wiki/Pound%E2%80%93Rebka_experiment)
+about the experiment.  Their first ten-day run reported a
+gravitational redshift of $-(2.56\pm0.25)\times10^{-15}$, a 10\%
+uncertainty which they were able to eventually refine down to 1\%.
+Think about that!  Such a small difference is equivalent to two clocks
+losing only one relative second over a 15 million year time interval!
+
+
 
 ## The Weight of a Box of Photons
 
