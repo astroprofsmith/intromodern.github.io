@@ -398,6 +398,7 @@ shifts from the original source on the sky, so that's
 ```{math}
 :label: imshift
 \theta-\beta = \frac{\alpha SL + \beta (SL+LO)}{SL+LO} - \beta
+= \alpha \frac{SL}{SL+LO}
 ```
 
 
