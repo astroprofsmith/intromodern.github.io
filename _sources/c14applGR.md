@@ -365,6 +365,10 @@ plt.text(1.2,-0.45,r'$\beta$',fontsize=18)
 plt.text(0.7,-0.7,'LO',fontsize=18)
 plt.text(-0.4,-0.7,'SL',fontsize=18)
 
+plt.arrow(0.8,0.0,0.1,0.4,head_width=0.1)
+plt.arrow(1.2,0.0,0.1,0.2,head_width=0.1)
+
+
 ax = plt.gca()
 ax.get_xaxis().set_visible(False)
 ax.get_yaxis().set_visible(False)
@@ -399,7 +403,7 @@ same side of their triangles on the left side of the image:
 $\alpha SL = (\theta-\beta)(SL+LO)$.  
 ```{math}
 :label: imshift
-\beta = \theta - \alpha SL
+\beta = \theta - \alpha \frac{SL}{SL+LO}
 ```
 To go any further, we need to know the deflection angle as a
 function of $b$.
