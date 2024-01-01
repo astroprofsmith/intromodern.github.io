@@ -339,8 +339,8 @@ xdir = np.linspace(-0.9,1.5,100)
 ydir = 1.0 - (1.5/2.4)*(xdir+0.9)
 plt.plot(xdir,ydir,'m:')
 
-ybent = np.ones(np.shape(xdir))*1.6
-ybent[xdir>0.0] = 1.0 - (1.0/3.0)*xdir[xdir>0.0]
+ybent = np.ones(np.shape(xdir))
+ybent[xdir>0.0] = 1.0 - xdir[xdir>0.0]
 plt.plot(xdir,ybent,'c-')
 
 ax = plt.gca()
