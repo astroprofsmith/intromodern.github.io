@@ -405,69 +405,30 @@ $\alpha SL = (\theta-\beta)(SL+LO)$.
 :label: imshift
 \beta = \theta - \alpha \frac{SL}{SL+LO}
 ```
-To go any further, we need to know the deflection angle as a
-function of $b$.
 
-
-```{code-cell}
-:tags: ["remove-cell"]
-# Newton vs. Einstein: angular deflection in passing point mass
-def simp(yy,dx):
-  w = np.zeros(np.shape(yy))
-  w[0] = 1
-  w[1::2] = 4
-  w[2::2] = 2
-  w[-1] = 1
-  return(np.matmul(w,yy)*dx/3)
-  
-def einstein(x,m,r):
-  return(m*r*(4*x*x+r*r)/(x*x+r*r)**2.5)
-  
-def newton(x,m,r):
-  return(m*r/(x*x+r*r)**1.5)
-  
-nn = 1.0e7
-zmax = 30
-dz = zmax/nn
-z = np.linspace(0,zmax,int(nn))
-mass = 1.0
-radius = 1.0
-
-ez = einstein(z,mass,radius)
-nz = newton(z,mass,radius)
-
-edef = simp(ez,dz)*2.0
-ndef = simp(nz,dz)*2.0
-
-fig = plt.figure(figsize=(14,8))
-plt.plot(z[z<5]+1,nz[z<5],'r-',label='Newton')
-plt.plot(z[z<5]+1,ez[z<5],'b-',label='Einstein')
-plt.title('Contribution to deflection')
-plt.xlabel('Distance from Star ($R_\odot$)')
-plt.ylabel('Angular deflection')
-plt.legend()
-plt.text(2.5,1,'Newton total: {:4.2f}'.format(ndef),fontsize=18)
-plt.text(4.5,1,'Einstein total: {:4.2f}'.format(edef),fontsize=18)
-
-glue("angdeffig", fig, display=False)
+To go any further, we need to know the deflection angle as a function
+of $b$ and $M$.  There are many different ways of doing this.  For
+example, Schutz (1990) uses the four-vector momentum of a photon in
+the Schwatzschild metric to calculated an equation for the orbital
+angle as a function of radius, and then integrates from the initial
+angle to the final angle.  Others (e.g. Wikipedia) use scattering
+theory.  You can figure out the gradient of the potential as a
+function of $r$ and integrate along the path to figure out the total
+transverse deflection.  It's also possible to take a Fermat's
+Principle approach and use calculus of variations to derive a path
+that maximizes the total elapsed time.  In all cases, GR predicts
+a total deflection angle of
+```{math}
+:label: GRdeflect
+\alpha = \frac{4GM}{c^2b}
 ```
-```{glue:figure} angdeffig
-:figwidth: 800px
-:name: angdef
-
-
-Calculation of angular deflection of each step for a photon passing by
-an object of mass $1~M_\odot$.  Only the receding half of the
-trajectory from the point of closest approach ($1~R_\odot$) is shown.
-The approaching trajectory, not shown, is symmetric.  The curves, when
-numerically integrated and then doubled to account for the approaching
-half of the trajectory, show the total amount of angular deflection.
-These answers are shown superimposed on the graph.  Note that the GR
-calculation yields exactly double the Newtonian calculation for the
-total deflection, although the blue curve is not twice the red curve
-at every point. *NOTE*  Need to check units of deflection.
+Again using the triangles in {numref}`thingravlens`, in the small
+angle approximation, $b=\theta LO$, so we can rewrite Equation {eq}`imshift`
+as
+```{math}
+:label: lenseq
+\beta = \theta - \frac{4GM}{c^2\theta}\frac{SL\times LO}{SL+LO}
 ```
-
 
 
 ## Acceleration While Standing Still?

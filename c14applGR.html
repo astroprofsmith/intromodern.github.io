@@ -689,23 +689,25 @@ same side of their triangles on the left side of the image:
 <span class="math notranslate nohighlight">\(\alpha SL = (\theta-\beta)(SL+LO)\)</span>.</p>
 <div class="math notranslate nohighlight" id="equation-imshift">
 <span class="eqno">(265)<a class="headerlink" href="#equation-imshift" title="Permalink to this equation">#</a></span>\[\beta = \theta - \alpha \frac{SL}{SL+LO}\]</div>
-<p>To go any further, we need to know the deflection angle as a
-function of <span class="math notranslate nohighlight">\(b\)</span>.</p>
-<figure class="align-default" id="angdef" style="width: 800px">
-<img alt="_images/f5519a7192d003864e97dda54a2b26d0530aaff045a2dc28ff09d9e2c1e04807.png" src="_images/f5519a7192d003864e97dda54a2b26d0530aaff045a2dc28ff09d9e2c1e04807.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 43 </span><span class="caption-text">Calculation of angular deflection of each step for a photon passing by
-an object of mass <span class="math notranslate nohighlight">\(1~M_\odot\)</span>.  Only the receding half of the
-trajectory from the point of closest approach (<span class="math notranslate nohighlight">\(1~R_\odot\)</span>) is shown.
-The approaching trajectory, not shown, is symmetric.  The curves, when
-numerically integrated and then doubled to account for the approaching
-half of the trajectory, show the total amount of angular deflection.
-These answers are shown superimposed on the graph.  Note that the GR
-calculation yields exactly double the Newtonian calculation for the
-total deflection, although the blue curve is not twice the red curve
-at every point. <em>NOTE</em>  Need to check units of deflection.</span><a class="headerlink" href="#angdef" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
+<p>To go any further, we need to know the deflection angle as a function
+of <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(M\)</span>.  There are many different ways of doing this.  For
+example, Schutz (1990) uses the four-vector momentum of a photon in
+the Schwatzschild metric to calculated an equation for the orbital
+angle as a function of radius, and then integrates from the initial
+angle to the final angle.  Others (e.g. Wikipedia) use scattering
+theory.  You can figure out the gradient of the potential as a
+function of <span class="math notranslate nohighlight">\(r\)</span> and integrate along the path to figure out the total
+transverse deflection.  It’s also possible to take a Fermat’s
+Principle approach and use calculus of variations to derive a path
+that maximizes the total elapsed time.  In all cases, GR predicts
+a total deflection angle of</p>
+<div class="math notranslate nohighlight" id="equation-grdeflect">
+<span class="eqno">(266)<a class="headerlink" href="#equation-grdeflect" title="Permalink to this equation">#</a></span>\[\alpha = \frac{4GM}{c^2b}\]</div>
+<p>Again using the triangles in <a class="reference internal" href="#thingravlens"><span class="std std-numref">Fig. 42</span></a>, in the small
+angle approximation, <span class="math notranslate nohighlight">\(b=\theta LO\)</span>, so we can rewrite Equation <a class="reference internal" href="#equation-imshift">(265)</a>
+as</p>
+<div class="math notranslate nohighlight" id="equation-lenseq">
+<span class="eqno">(267)<a class="headerlink" href="#equation-lenseq" title="Permalink to this equation">#</a></span>\[\beta = \theta - \frac{4GM}{c^2\theta}\frac{SL\times LO}{SL+LO}\]</div>
 </section>
 <section id="acceleration-while-standing-still">
 <h2>Acceleration While Standing Still?<a class="headerlink" href="#acceleration-while-standing-still" title="Permalink to this heading">#</a></h2>
