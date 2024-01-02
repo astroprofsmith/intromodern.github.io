@@ -451,11 +451,12 @@ This is a quadratic equation, so there must be two solutions:
 \theta = \frac{1}{2}\left(\beta \pm \sqrt{\beta^2 + 4\theta_E^2}\right)
 ```
 It is this equation, using the $+$ solution, that leads to the solid
-dark line in {numref}`Edd19`.  The line in {numref}`Edd19` is straight
-because the x-axis tick marks are not evenly spaced, but you can plug
-in values for $\beta$ and verify that this equation runs from about
-$0.9^{\prime\prime}$ at $30^\prime$ down to $0.3^{\prime\prime}$ at
-$90^\prime$, consistent with the dark line in the figure.
+dark line in {numref}`Edd19`, using $\theta-\beta$ for the $y$ axis.
+The line in {numref}`Edd19` is straight because the x-axis tick marks
+are not evenly spaced, but you can plug in values for $\beta$ and
+verify that this equation runs from about $0.9^{\prime\prime}$ at
+$30^\prime$ down to $0.3^{\prime\prime}$ at $90^\prime$, consistent
+with the dark line in the figure.
 
 What are we to make of the second solution?  The diagram in
 {numref}`thingravlens` only shows one solution, so what happened to
