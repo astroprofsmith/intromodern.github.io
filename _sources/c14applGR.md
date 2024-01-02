@@ -476,11 +476,26 @@ directions around the lens, at an angle of $\theta_E$.  Such a perfect
 alignment is very rare, but there are a lot of galaxies in the
 universe, and occasionally two of them do line up with us, and then we
 do, in fact, observe such a ring of light, called an Einstein Ring, as
-shown in Fig X.  For the Sun, lensing a distant star, the Einstein
-ring would be about $40^{\prime\prime}$ in radius, which is much
-smaller than the actual radius of the Sun, so we would never see it.
-Real, observed, Einstein Rings occur when two galaxies are lined up
-along a line of sight.
+shown in {numref}`hubblenses`.  For the Sun, lensing a distant star,
+the Einstein ring would be about $40^{\prime\prime}$ in radius, which
+is much smaller than the actual radius of the Sun, so we would never
+see it.  Real, observed, Einstein Rings occur when two galaxies are
+lined up along a line of sight.
+
+```{figure} images/lensing.jpg
+:alt: hubblenses
+:class: bg-primary mb-1
+:width: 700px
+:align: center
+:name: hubblenses
+
+Examples of gravitational lenses observed by the Hubble Space Telescope.
+Many are complete, or near complete, Einstein Rings (the lower right,
+in particular).  The third image in the top row shows a nice example of
+two images, one on either side of the lens, while several of the others
+show more than two images, indicative of asymmetries in the lensing
+mass distribution.
+```
 
 This analysis is only of the simplest possible case, where the lens is
 small and spherically symmetric.  Non-symmetric lenses lead to more
