@@ -409,15 +409,15 @@ $\alpha SL = (\theta-\beta)(SL+LO)$.
 To go any further, we need to know the deflection angle as a function
 of $b$ and $M$.  There are many different ways of doing this.  For
 example, Schutz (1990) uses the four-vector momentum of a photon in
-the Schwatzschild metric to calculated an equation for the orbital
+the Schwatzschild metric to calculate an equation for the orbital
 angle as a function of radius, and then integrates from the initial
-angle to the final angle.  Others (e.g. Wikipedia) use scattering
-theory.  You can figure out the gradient of the potential as a
-function of $r$ and integrate along the path to figure out the total
-transverse deflection.  It's also possible to take a Fermat's
-Principle approach and use calculus of variations to derive a path
-that maximizes the total elapsed time.  In all cases, GR predicts
-a total deflection angle of
+angle to the final angle to show the deviation from $\pi$ (a straight
+line).  Others (e.g. Wikipedia) use scattering theory.  You can figure
+out the gradient of the potential as a function of $r$ and integrate
+along the path to figure out the total transverse deflection.  It's
+also possible to take a Fermat's Principle approach and use calculus
+of variations to derive a path that maximizes the total elapsed time.
+In all cases, GR predicts a total deflection angle of
 ```{math}
 :label: GRdeflect
 \alpha = \frac{4GM}{c^2b}
@@ -427,9 +427,18 @@ angle approximation, $b=\theta LO$, so we can rewrite Equation {eq}`imshift`
 as
 ```{math}
 :label: lenseq
-\beta = \theta - \frac{4GM}{c^2\theta}\frac{SL\times LO}{SL+LO}
+\beta = \theta - \frac{4GM}{c^2\theta}\frac{SL}{LO(SL+LO)}
 ```
-
+It is convenient to define a special angle as
+```{math}
+:label: EinRad
+\theta_E^2 \equiv \frac{4GM}{c^2}\frac{SL}{LO(SL+LO)}
+```
+so that the lensing equation can be written as
+```{math}
+:label: lenseqE
+\beta = \theta - \frac{\theta_E^2}{\theta} \rightarrow \theta^2-\beta\theta-\theta_E^2
+```
 
 ## Acceleration While Standing Still?
 

@@ -692,22 +692,28 @@ same side of their triangles on the left side of the image:
 <p>To go any further, we need to know the deflection angle as a function
 of <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(M\)</span>.  There are many different ways of doing this.  For
 example, Schutz (1990) uses the four-vector momentum of a photon in
-the Schwatzschild metric to calculated an equation for the orbital
+the Schwatzschild metric to calculate an equation for the orbital
 angle as a function of radius, and then integrates from the initial
-angle to the final angle.  Others (e.g. Wikipedia) use scattering
-theory.  You can figure out the gradient of the potential as a
-function of <span class="math notranslate nohighlight">\(r\)</span> and integrate along the path to figure out the total
-transverse deflection.  It’s also possible to take a Fermat’s
-Principle approach and use calculus of variations to derive a path
-that maximizes the total elapsed time.  In all cases, GR predicts
-a total deflection angle of</p>
+angle to the final angle to show the deviation from <span class="math notranslate nohighlight">\(\pi\)</span> (a straight
+line).  Others (e.g. Wikipedia) use scattering theory.  You can figure
+out the gradient of the potential as a function of <span class="math notranslate nohighlight">\(r\)</span> and integrate
+along the path to figure out the total transverse deflection.  It’s
+also possible to take a Fermat’s Principle approach and use calculus
+of variations to derive a path that maximizes the total elapsed time.
+In all cases, GR predicts a total deflection angle of</p>
 <div class="math notranslate nohighlight" id="equation-grdeflect">
 <span class="eqno">(266)<a class="headerlink" href="#equation-grdeflect" title="Permalink to this equation">#</a></span>\[\alpha = \frac{4GM}{c^2b}\]</div>
 <p>Again using the triangles in <a class="reference internal" href="#thingravlens"><span class="std std-numref">Fig. 42</span></a>, in the small
 angle approximation, <span class="math notranslate nohighlight">\(b=\theta LO\)</span>, so we can rewrite Equation <a class="reference internal" href="#equation-imshift">(265)</a>
 as</p>
 <div class="math notranslate nohighlight" id="equation-lenseq">
-<span class="eqno">(267)<a class="headerlink" href="#equation-lenseq" title="Permalink to this equation">#</a></span>\[\beta = \theta - \frac{4GM}{c^2\theta}\frac{SL\times LO}{SL+LO}\]</div>
+<span class="eqno">(267)<a class="headerlink" href="#equation-lenseq" title="Permalink to this equation">#</a></span>\[\beta = \theta - \frac{4GM}{c^2\theta}\frac{SL}{LO(SL+LO)}\]</div>
+<p>It is convenient to define a special angle as</p>
+<div class="math notranslate nohighlight" id="equation-einrad">
+<span class="eqno">(268)<a class="headerlink" href="#equation-einrad" title="Permalink to this equation">#</a></span>\[\theta_E^2 \equiv \frac{4GM}{c^2}\frac{SL}{LO(SL+LO)}\]</div>
+<p>so that the lensing equation can be written as</p>
+<div class="math notranslate nohighlight" id="equation-lenseqe">
+<span class="eqno">(269)<a class="headerlink" href="#equation-lenseqe" title="Permalink to this equation">#</a></span>\[\beta = \theta - \frac{\theta_E^2}{\theta} \rightarrow \theta^2-\beta\theta-\theta_E^2\]</div>
 </section>
 <section id="acceleration-while-standing-still">
 <h2>Acceleration While Standing Still?<a class="headerlink" href="#acceleration-while-standing-still" title="Permalink to this heading">#</a></h2>
