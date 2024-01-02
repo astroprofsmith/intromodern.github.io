@@ -422,6 +422,12 @@ In all cases, GR predicts a total deflection angle of
 :label: GRdeflect
 \alpha = \frac{4GM}{c^2b}
 ```
+For light just grazing the surface of the Sun, we can plug in
+$b=1~R_\odot$ and $M=1~M_\odot$ to get $\alpha = 8.5\times10^{-6}$ radians,
+which is $1.75^{\prime\prime}$.
+
+
+Given this deflection angle, we can move forward on the lens equation.
 Again using the triangles in {numref}`thingravlens`, in the small
 angle approximation, $b=\theta LO$, so we can rewrite Equation {eq}`imshift`
 as
@@ -444,6 +450,27 @@ This is a quadratic equation, so there must be two solutions:
 :label: lensQsol
 \theta = \frac{1}{2}\left(\beta \pm \sqrt{\beta^2 + 4\theta_E^2}\right)
 ```
+The diagram in {numref}`thingravlens` only shows one solution, so
+what happened to the other?  It is also possible for light rays
+passing below the lens to be bent up to reach the observer, so a
+more complete version of {numref}`thingravlens` would also include
+a second path below the lens that bends up.  This second solution can
+also be seen in the photograph in {numref}`glasslens` as the ring of
+light below the center of the glass.
+
+A solution of particular intrest is when the source, lens, and
+observer all lie on a single line.  Then $\beta = 0$ and $\theta =
+\pm\theta_E$.  In fact, it's not just two $\pm$ solutions in this
+case -- if the three are perfectly lines up, then there is no preferred
+direction that defines any particular plane in which to draw a
+diagram like {numref}`thingravlens` -- the light will bend from *all*
+directions passing around the lens.  In such a case of perfect alignment,
+the light from the source will seem to be coming from all directions
+around the lens, at an angle of $\theta_E$.  Such a perfect alignment
+is very rare, but there are a lot of galaxies in the universe,
+and occasionally two of them do line up with us, and then we do, in
+fact, observe such a ring of light, called an Einstein Ring, as
+shown in Fig X.
 
 ## Acceleration While Standing Still?
 
