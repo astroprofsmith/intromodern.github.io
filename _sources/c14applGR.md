@@ -461,7 +461,7 @@ light below the center of the glass.
 A solution of particular intrest is when the source, lens, and
 observer all lie on a single line.  Then $\beta = 0$ and $\theta =
 \pm\theta_E$.  In fact, it's not just two $\pm$ solutions in this
-case -- if the three are perfectly lines up, then there is no preferred
+case -- if the three are perfectly lined up, then there is no preferred
 direction that defines any particular plane in which to draw a
 diagram like {numref}`thingravlens` -- the light will bend from *all*
 directions passing around the lens.  In such a case of perfect alignment,
