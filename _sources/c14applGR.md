@@ -437,7 +437,12 @@ It is convenient to define a special angle as
 so that the lensing equation can be written as
 ```{math}
 :label: lenseqE
-\beta = \theta - \frac{\theta_E^2}{\theta} \rightarrow \theta^2-\beta\theta-\theta_E^2
+\beta = \theta - \frac{\theta_E^2}{\theta} \rightarrow \theta^2-\beta\theta-\theta_E^2=0
+```
+This is a quadratic equation, so there must be two solutions:
+```{math}
+:label: lensQsol
+\theta = \frac{1}{2}\left(\beta \pm \sqrt{\beta^2 + 4\theta_E^2}\right)
 ```
 
 ## Acceleration While Standing Still?
