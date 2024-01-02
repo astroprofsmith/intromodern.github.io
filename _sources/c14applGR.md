@@ -450,13 +450,16 @@ This is a quadratic equation, so there must be two solutions:
 :label: lensQsol
 \theta = \frac{1}{2}\left(\beta \pm \sqrt{\beta^2 + 4\theta_E^2}\right)
 ```
+It is this equation that leads to the solid dark line in {numref}`Edd19`.
 The diagram in {numref}`thingravlens` only shows one solution, so
 what happened to the other?  It is also possible for light rays
 passing below the lens to be bent up to reach the observer, so a
 more complete version of {numref}`thingravlens` would also include
 a second path below the lens that bends up.  This second solution can
 also be seen in the photograph in {numref}`glasslens` as the ring of
-light below the center of the glass.
+light below the center of the glass.  For stars lensed by the Sun,
+the second solution is blocked by the disc of the Sun, and therefore
+does not play a role in {numref}`Edd19`.
 
 A solution of particular intrest is when the source, lens, and
 observer all lie on a single line.  Then $\beta = 0$ and $\theta =
