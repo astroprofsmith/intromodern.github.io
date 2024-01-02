@@ -450,16 +450,19 @@ This is a quadratic equation, so there must be two solutions:
 :label: lensQsol
 \theta = \frac{1}{2}\left(\beta \pm \sqrt{\beta^2 + 4\theta_E^2}\right)
 ```
-It is this equation that leads to the solid dark line in {numref}`Edd19`.
-The diagram in {numref}`thingravlens` only shows one solution, so
-what happened to the other?  It is also possible for light rays
-passing below the lens to be bent up to reach the observer, so a
-more complete version of {numref}`thingravlens` would also include
-a second path below the lens that bends up.  This second solution can
-also be seen in the photograph in {numref}`glasslens` as the ring of
-light below the center of the glass.  For stars lensed by the Sun,
-the second solution is blocked by the disc of the Sun, and therefore
-does not play a role in {numref}`Edd19`.
+It is this equation, using the $+$ solution, that leads to the solid
+dark line in {numref}`Edd19`.
+
+What are we to make of the second solution?  The diagram in
+{numref}`thingravlens` only shows one solution, so what happened to
+the other?  It is also possible for light rays passing below the lens
+to be bent up to reach the observer, so a more complete version of
+{numref}`thingravlens` would also include a second path below the lens
+that bends up.  This second solution can also be seen in the
+photograph in {numref}`glasslens` as the ring of light below the
+center of the glass.  For stars lensed by the Sun, the second solution
+is blocked by the disc of the Sun, and therefore does not play a role
+in {numref}`Edd19`.
 
 A solution of particular intrest is when the source, lens, and
 observer all lie on a single line.  Then $\beta = 0$ and $\theta =
@@ -478,6 +481,22 @@ ring would be about $40^{\prime\prime}$ in radius, which is much
 smaller than the actual radius of the Sun, so we would never see it.
 Real, observed, Einstein Rings occur when two galaxies are lined up
 along a line of sight.
+
+This analysis is only of the simplest possible case, where the lens is
+small and spherically symmetric.  Non-symmetric lenses lead to more
+than two images, and diffuse lenses can lead to warped, distorted
+images rather than multiple copies (this phenomenon is called Weak
+Lensing).  If the angles involved are so small that the multiple
+copies cannot be resolved, it's still possible that the light from the
+source will be brighter than it would be if it weren't lensed, as
+light from both copies will still reach the observer.  For example, if
+a black hole were to pass in front of a star, that star would
+temporarily appear brighter, as light that would normally miss the
+Earth is bent to add to the total light reaching us.  This brightening
+is called Microlensing.  Although a full treatment of gravitational
+lensing and all its variations is outside the scope of this book, it
+has proven a very useful phenomenon for studying the distribution of
+mass in the universe.
 
 ## Acceleration While Standing Still?
 
