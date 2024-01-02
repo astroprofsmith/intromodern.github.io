@@ -460,17 +460,21 @@ light below the center of the glass.
 
 A solution of particular intrest is when the source, lens, and
 observer all lie on a single line.  Then $\beta = 0$ and $\theta =
-\pm\theta_E$.  In fact, it's not just two $\pm$ solutions in this
-case -- if the three are perfectly lined up, then there is no preferred
-direction that defines any particular plane in which to draw a
-diagram like {numref}`thingravlens` -- the light will bend from *all*
-directions passing around the lens.  In such a case of perfect alignment,
-the light from the source will seem to be coming from all directions
-around the lens, at an angle of $\theta_E$.  Such a perfect alignment
-is very rare, but there are a lot of galaxies in the universe,
-and occasionally two of them do line up with us, and then we do, in
-fact, observe such a ring of light, called an Einstein Ring, as
-shown in Fig X.
+\pm\theta_E$.  In fact, it's not just two $\pm$ solutions in this case
+-- if the three are perfectly lined up, then there is no preferred
+direction that defines any particular plane in which to draw a diagram
+like {numref}`thingravlens` -- the light will bend from *all*
+directions passing around the lens.  In such a case of perfect
+alignment, the light from the source will seem to be coming from all
+directions around the lens, at an angle of $\theta_E$.  Such a perfect
+alignment is very rare, but there are a lot of galaxies in the
+universe, and occasionally two of them do line up with us, and then we
+do, in fact, observe such a ring of light, called an Einstein Ring, as
+shown in Fig X.  For the Sun, lensing a distant star, the Einstein
+ring would be about $40^{\prime\prime}$ in radius, which is much
+smaller than the actual radius of the Sun, so we would never see it.
+Real, observed, Einstein Rings occur when two galaxies are lined up
+along a line of sight.
 
 ## Acceleration While Standing Still?
 
