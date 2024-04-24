@@ -274,7 +274,7 @@ A good example of a system that has two clear events is the creation
 and decay of an unstable subatomic particle such as a neutron,
 lambda, pion or muon. The first event that is detected is the creation
 of the particle. At some later time (and perhaps displacement), the
-particle decays into sciething else. In the case of a muon, it decays
+particle decays into something else. In the case of a muon, it decays
 into three particles: an electron, a mu-neutrino and an
 electron-neutrino:
 ```{math}

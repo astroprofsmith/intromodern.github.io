@@ -346,11 +346,14 @@ Find the physical angle that the displacement given in example 4.1
 makes with respect to the $x$ axis. Determine the angle as measured by
 the primed observer.
 
-The angle that the unprimed observer makes is:
+In Example 4.1, there is a displacement four-vector with $dx=1.00$ m and
+$dy=-0.250$ m.  Trigonometry tells us that the tangent of the angle
+with the $x$ axis is the height over the base, $dy/dx$.  Therefore,
+the angle that the unprimed observer makes is:
 $$\tan{\theta} =\frac{dy}{dx} = \frac{-0.250~{\rm m}}{1.00~{\rm m}} = -0.25
 \rightarrow \theta = -14.0^\circ$$
 The angle is in the 4th quadrant.  
-This makes sense since dy is negative and dx is positive.
+This makes sense since $dy$ is negative and $dx$ is positive.
 
 The second observer moving with respect to the first measures an angle:
 $$\tan{\theta^\prime} =\frac{dy'}{dx'} = \frac{-0.250~{\rm m}}{-0.351~{\rm m}} = 0.712

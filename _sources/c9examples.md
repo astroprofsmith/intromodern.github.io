@@ -277,7 +277,7 @@ energy in the center-of-momentum frame. Is it possible for this
 scattering process to produce two pions?
 
 Tofind the speed of the center-of-momentum, we use Equation {eq}`betacom`.
-The total energy in the laboratoiy frame is
+The total energy in the laboratory frame is
 ```{math}
 E_{\rm labtot} = 938.26~{\rm MeV}+ 300.00~{\rm MeV}+ 938.26~{\rm MeV}
 = 2176.52~{\rm MeV}
@@ -925,7 +925,7 @@ $\theta$ by placing your detector (which measures $E_{\rm photlab}$)
 at different angles, then you could make a plot where your horizontal
 axis is $(1-\cos{\theta})$ and your vertical axis is $1/E_{\rm
 photlab}$, then you would expect to see a straight line relationship,
-where the y-intercept is not differnt from the known original value of
+where the y-intercept is not different from the known original value of
 $1/E_{\rm phot}$.  In which case you could interpret the slope of the
 line as giving you an estimate of $1/E_0$, which would mean that the
 reciprocal of the slope would be an estimate of the rest energy of the
