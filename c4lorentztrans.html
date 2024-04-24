@@ -510,10 +510,11 @@ We use the dimensional independence of <span class="math notranslate nohighlight
 row of Equation <a class="reference internal" href="#equation-eqlort">(23)</a>, we get <div class="math notranslate nohighlight">
 \[dy^\prime = L_{20}icdt+L_{21}dx
 +L_{22}dy + L_{32}dz.\]</div>
-
-The only way this equality can hold for all displacement four vectors
-is if <span class="math notranslate nohighlight">\(L_{22}=1\)</span> and the other elements are zero.  The same logic hold
-for the fourth row, so we know the matrix must look like</p>
+ The only way this equality can hold for
+<strong>all</strong> displacement four vectors (which is to say for <strong>any</strong> values
+of <span class="math notranslate nohighlight">\(dt\)</span>, <span class="math notranslate nohighlight">\(dx\)</span>, <span class="math notranslate nohighlight">\(dy\)</span>, <strong>and</strong> <span class="math notranslate nohighlight">\(dz\)</span>) is if <span class="math notranslate nohighlight">\(L_{22}=1\)</span> and the other
+elements are zero.  The same logic can be applied to the fourth row to
+deduce <span class="math notranslate nohighlight">\(L_{33}=1\)</span>, so we know the matrix must look like</p>
 <div class="math notranslate nohighlight" id="equation-lormat2">
 <span class="eqno">(26)<a class="headerlink" href="#equation-lormat2" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L} = 
 \begin{bmatrix}
@@ -611,14 +612,14 @@ i3.00~{\rm m}\\
 of the 4-displaceinent does this second observer measure?</p>
 <p>To solve this problem, you use the form of the Lorentz transformation
 in equation <a class="reference internal" href="#equation-lormat">(29)</a>, plugging in the numbers.  We know that
-<span class="math notranslate nohighlight">\(\beta_R = v_R/c = 1.31/3.00 = 0.438\)</span>, and therefore <span class="math notranslate nohighlight">\(\gamma_R=1.11\)</span>.
-Multiply the two to get <span class="math notranslate nohighlight">\(\beta_R\gamma_R=0.486\)</span>.</p>
+<span class="math notranslate nohighlight">\(\beta_R = v_R/c = 1.31/3.00 = 0.4367\)</span>, and therefore <span class="math notranslate nohighlight">\(\gamma_R=1.1116\)</span>.
+Multiply the two to get <span class="math notranslate nohighlight">\(\beta_R\gamma_R=0.4854\)</span>.</p>
 <p>Now, we are ready to find the elements of <span class="math notranslate nohighlight">\([dR_4]'\)</span></p>
 <div class="math notranslate nohighlight" id="equation-ex41">
 <span class="eqno">(31)<a class="headerlink" href="#equation-ex41" title="Permalink to this equation">#</a></span>\[\begin{split}[dR_4]' = {\cal L}_x(\beta_R)[dR_4] = 
 \begin{bmatrix}
-1.11 &amp; -i0.486 &amp; 0 &amp; 0\\
-i0.486 &amp; 1.11 &amp; 0 &amp; 0\\
+1.1116 &amp; -i0.4854 &amp; 0 &amp; 0\\
+i0.4854 &amp; 1.1116 &amp; 0 &amp; 0\\
 0 &amp; 0 &amp; 1 &amp; 0\\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{bmatrix}
@@ -632,26 +633,26 @@ i3.00~{\rm m}\\
 <div class="math notranslate nohighlight">
 \[\begin{split}[dR_4]' =
 \begin{bmatrix}
-1.11(i3.00~{\rm m})-i0.486(1.00~{\rm m})+0+0\\
--0.486(3.00~{\rm m})+1.11(1.00~{\rm m})+0+0\\
+1.1116(i3.00~{\rm m})-i0.4854(1.00~{\rm m})+0+0\\
+-0.4854(3.00~{\rm m})+1.1116(1.00~{\rm m})+0+0\\
 0+0+-0.250~{\rm m}+0\\
 0+0+0+0.00~{\rm m}
 \end{bmatrix}
 =
 \begin{bmatrix}
-i2.79~{\rm m}\\
--0.351~{\rm m}\\
--0.250~{\rm m}\\
-0.00~{\rm m}
+i2.8493~{\rm m}\\
+-0.3446~{\rm m}\\
+-0.2500~{\rm m}\\
+0.0000~{\rm m}
 \end{bmatrix}\end{split}\]</div>
 <p>As a check, you can note that the size of the two four-vectors is the
 same:
 <div class="math notranslate nohighlight">
-\[[dR_4]^2 = (-3.00^2+1.00^2+(-0.250)^2+0.0^2)~{\rm m}^2 = -8.009~{\rm m}^2\]</div>
+\[[dR_4]^2 = (-3.00^2+1.00^2+(-0.250)^2+0.0^2)~{\rm m}^2 = -7.9375~{\rm m}^2\]</div>
 
 and
 <div class="math notranslate nohighlight">
-\[[dR_4]'^2 = (-2.79^2+(-0.351)^2+(-0.250)^2+0.00^2)~{\rm m}^2 = -8.009~{\rm m}^2\]</div>
+\[[dR_4]'^2 = (-2.85^2+(-0.34)^2+(-0.250)^2+0.00^2)~{\rm m}^2 = -7.9375~{\rm m}^2\]</div>
 
 Note which minus signs are squared (and therefore go away) and which
 ones are not.  Also note that all components have units of length.</p>

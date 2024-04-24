@@ -182,10 +182,11 @@ $z$ for all vectors are unaffected in all circumstances at all times.  Be cautio
 
 This means that $dy^\prime = dy$.  However, if we write out the third
 row of Equation {eq}`eqlort`, we get $$dy^\prime = L_{20}icdt+L_{21}dx
-+L_{22}dy + L_{32}dz.$$
-The only way this equality can hold for all displacement four vectors
-is if $L_{22}=1$ and the other elements are zero.  The same logic hold
-for the fourth row, so we know the matrix must look like
++L_{22}dy + L_{32}dz.$$ The only way this equality can hold for
+**all** displacement four vectors (which is to say for **any** values
+of $dt$, $dx$, $dy$, **and** $dz$) is if $L_{22}=1$ and the other
+elements are zero.  The same logic can be applied to the fourth row to
+deduce $L_{33}=1$, so we know the matrix must look like
 ```{math}
 :label: lormat2
 {\cal L} = 
@@ -294,16 +295,16 @@ of the 4-displaceinent does this second observer measure?
 
 To solve this problem, you use the form of the Lorentz transformation
 in equation {eq}`lormat`, plugging in the numbers.  We know that
-$\beta_R = v_R/c = 1.31/3.00 = 0.438$, and therefore $\gamma_R=1.11$.
-Multiply the two to get $\beta_R\gamma_R=0.486$.
+$\beta_R = v_R/c = 1.31/3.00 = 0.4367$, and therefore $\gamma_R=1.1116$.
+Multiply the two to get $\beta_R\gamma_R=0.4854$.
 
 Now, we are ready to find the elements of $[dR_4]'$
 ```{math}
 :label: ex41
 [dR_4]' = {\cal L}_x(\beta_R)[dR_4] = 
 \begin{bmatrix}
-1.11 & -i0.486 & 0 & 0\\
-i0.486 & 1.11 & 0 & 0\\
+1.1116 & -i0.4854 & 0 & 0\\
+i0.4854 & 1.1116 & 0 & 0\\
 0 & 0 & 1 & 0\\
 0 & 0 & 0 & 1
 \end{bmatrix}
@@ -318,24 +319,24 @@ multiplying out the matrix gives
 ```{math}
 [dR_4]' =
 \begin{bmatrix}
-1.11(i3.00~{\rm m})-i0.486(1.00~{\rm m})+0+0\\
--0.486(3.00~{\rm m})+1.11(1.00~{\rm m})+0+0\\
+1.1116(i3.00~{\rm m})-i0.4854(1.00~{\rm m})+0+0\\
+-0.4854(3.00~{\rm m})+1.1116(1.00~{\rm m})+0+0\\
 0+0+-0.250~{\rm m}+0\\
 0+0+0+0.00~{\rm m}
 \end{bmatrix}
 =
 \begin{bmatrix}
-i2.79~{\rm m}\\
--0.351~{\rm m}\\
--0.250~{\rm m}\\
-0.00~{\rm m}
+i2.8493~{\rm m}\\
+-0.3446~{\rm m}\\
+-0.2500~{\rm m}\\
+0.0000~{\rm m}
 \end{bmatrix}
 ```
 As a check, you can note that the size of the two four-vectors is the
 same:
-$$[dR_4]^2 = (-3.00^2+1.00^2+(-0.250)^2+0.0^2)~{\rm m}^2 = -8.009~{\rm m}^2$$
+$$[dR_4]^2 = (-3.00^2+1.00^2+(-0.250)^2+0.0^2)~{\rm m}^2 = -7.9375~{\rm m}^2$$
 and
-$$[dR_4]'^2 = (-2.79^2+(-0.351)^2+(-0.250)^2+0.00^2)~{\rm m}^2 = -8.009~{\rm m}^2$$
+$$[dR_4]'^2 = (-2.85^2+(-0.34)^2+(-0.250)^2+0.00^2)~{\rm m}^2 = -7.9375~{\rm m}^2$$
 Note which minus signs are squared (and therefore go away) and which
 ones are not.  Also note that all components have units of length.
 
