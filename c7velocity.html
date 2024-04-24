@@ -394,6 +394,29 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="chapter-7-the-velocity-four-vector">
 <h1>Chapter 7: The Velocity Four-Vector<a class="headerlink" href="#chapter-7-the-velocity-four-vector" title="Permalink to this heading">#</a></h1>
+<p>Once we have carefully defined what we mean by position and
+displacement, as measured in a particular reference frame,
+we can turn our attention to the question of motion.  Specifically,
+we can carefully define velocity as the rate of change of
+displacement: how much the displacement is changing in a given
+time interval.</p>
+<p>However, since we have shown that time intervals are themselves
+dependent on the choice of reference frame, we must also be very
+careful that we are clear and precise about <strong>which</strong> time interval
+we are considering, when speaking of velocity.  It should already
+be obvious to any reader that two objects in relative motion will
+have different velocities depending on the reference frame of
+an observer, but the role of time dilation and length contraction
+when the speeds in question approach that of light is anything but
+obvious.</p>
+<p>A careful treatment of velocity will also enable us to address the
+question of how velocities change when considered from different
+reference frames in relative motion, and therefore enable us to
+calculate how velocities will add.  If you are in a rocketship
+travelling at <strong>almost</strong> the speed of light, and you throw a ball
+forward, will that ball not exceed the speed of light limit?
+How can a careful treatment of velocity help us understand such
+apparent contradictions?</p>
 <section id="background">
 <h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
 <p>In the slow moving world of dump trucks and physics professors, the
@@ -410,11 +433,12 @@ measures this same object moving with velocity:</p>
 to Einstein, it would have never occured to anyone to question whether
 <span class="math notranslate nohighlight">\(dt\)</span> might be different for different observers.</p>
 <p>In Equation <a class="reference internal" href="#equation-oldvel">(72)</a>, the derivative can be understood in two
-ways. It is operator that transforms the displacement vector, that can
-be a function of time, into the velocity vector (that also can be a
-function of time). A second way of understanding the derivative is
-that it is a ratio of two elements, a very very small vector change in
-the displacement divided by a very very small change in scalar time.</p>
+ways. First, it is an operator that transforms the displacement
+vector, that can be a function of time, into the velocity vector (that
+also can be a function of time). A second way of understanding the
+derivative is that it is a ratio of two elements, a very very small
+vector change in the displacement divided by a very very small change
+in scalar time.</p>
 <p>Physical velocity is a vector because the displacement, <span class="math notranslate nohighlight">\(d\vec{R}\)</span> is a
 3-vector and <span class="math notranslate nohighlight">\(dt\)</span> is a scalar. A vector divided by a scalar is a vector.</p>
 </section>
@@ -433,7 +457,7 @@ defined in Chapter 2.  However, the <strong>proper</strong> time interval, <span
 4-velocity is a proper 4-vector because the displacement 4-vector is a
 proper 4-vector and <span class="math notranslate nohighlight">\(1/dt_0\)</span> is a Lorentz scalar. A Lorentz scalar times a
 proper 4-vector is a proper 4-vector.</p>
-<p>Wtien you multiply a vector by a scalar, what really happens is that
+<p>When you multiply a vector by a scalar, what really happens is that
 you multiply each of the components of the vector by that scalar
 quantity. Putting in the components of the displacement 4-vector into
 equation <a class="reference internal" href="#equation-eq4vdef">(74)</a> and multiplying each by <span class="math notranslate nohighlight">\(1/dt_0\)</span> gives:</p>
@@ -624,7 +648,7 @@ in <a class="reference internal" href="#stbeta4fig"><span class="std std-numref"
 compares with <span class="math notranslate nohighlight">\(\beta\)</span>, we would expect <span class="math notranslate nohighlight">\(\beta^\prime\)</span> to be less than
 <span class="math notranslate nohighlight">\(\beta\)</span>, perhaps even going negative.  In particular, if
 <span class="math notranslate nohighlight">\(\beta_R=\beta\)</span>, our theory had better predict that <span class="math notranslate nohighlight">\(\beta^\prime=0\)</span>,
-or something is seriously wrong.  The correspondance principle demands
+or something is seriously wrong.  The correspondence principle demands
 that when <span class="math notranslate nohighlight">\(\beta_R\ll 1\)</span>, the prediction we get should reduce to
 <span class="math notranslate nohighlight">\(\beta'=\beta-\beta_R\)</span>, which is what Galileo would expect it to be.</p>
 <div class="admonition warning">
@@ -731,11 +755,12 @@ with the first postulate and the Michaelson-Morely experiment.</p>
 </section>
 <section id="example-of-off-axis-motion">
 <h2>Example of Off-Axis Motion<a class="headerlink" href="#example-of-off-axis-motion" title="Permalink to this heading">#</a></h2>
-<p>Suppose that a particle istraveling with a velocity of <span class="math notranslate nohighlight">\(\beta\)</span> at an
+<p>Suppose that a particle is traveling with a velocity of <span class="math notranslate nohighlight">\(\beta\)</span> at an
 angle <span class="math notranslate nohighlight">\(\theta\)</span> with respect to the <span class="math notranslate nohighlight">\(x\)</span> axis of the unprimed frame.
 The 4-beta measured by an observer in the unprimed frame now has more
 than two non-zero terms in it. The <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> components are found by
-applying trigonometry:</p>
+applying trigonometry (which is to say, if the hypoteneuse is <span class="math notranslate nohighlight">\(\gamma\beta\)</span>,
+then <span class="math notranslate nohighlight">\(x=\gamma\beta\cos{\theta}\)</span> and <span class="math notranslate nohighlight">\(y = \gamma\beta\sin{\theta}\)</span>):</p>
 <div class="math notranslate nohighlight" id="equation-b4offax">
 <span class="eqno">(84)<a class="headerlink" href="#equation-b4offax" title="Permalink to this equation">#</a></span>\[\begin{split}[\beta_4] =
 \begin{bmatrix}
@@ -806,7 +831,7 @@ first two spatial components in the primed frame:</p>
 <p>If Newton had tried to solve this problem, he would have deduced that
 the <span class="math notranslate nohighlight">\(x\)</span> component of <span class="math notranslate nohighlight">\(\beta\)</span> would be reduced by <span class="math notranslate nohighlight">\(\beta_R\)</span>, and
 the <span class="math notranslate nohighlight">\(y\)</span> component would be unchanged.  If you let <span class="math notranslate nohighlight">\(\gamma_R\rightarrow 1\)</span>,
-Equation <a class="reference internal" href="#equation-tanthp">(87)</a> reduces to this result, so the correspondance
+Equation <a class="reference internal" href="#equation-tanthp">(87)</a> reduces to this result, so the correspondence
 principle is satisfied, but if <span class="math notranslate nohighlight">\(\gamma_R\)</span> is bigger than 1, then
 the angle will be reduced relative to Newton’s prediction.</p>
 <p>If you wanted to know the value of <span class="math notranslate nohighlight">\(\beta'\)</span>, you would need to
@@ -823,7 +848,7 @@ get rid of the trig functions):</p>
 that at slow speeds, as <span class="math notranslate nohighlight">\(\beta_R\rightarrow 0\)</span> and
 <span class="math notranslate nohighlight">\(\gamma_R\rightarrow 1\)</span>, the denominators all go to 1.  The numerators
 are just what Newton would expect, as explained above.  So the
-correspondance principle is satisfied.  To try to get some more
+correspondence principle is satisfied.  To try to get some more
 intuition about the implications of this equation, a graph is more
 helpful than an equation.  <a class="reference internal" href="#figoffaxis"><span class="std std-numref">Fig. 23</span></a> shows a graph of
 <span class="math notranslate nohighlight">\(\beta'\)</span> as a function of <span class="math notranslate nohighlight">\(\gamma_R\)</span> for an arbitrary choice of

@@ -141,7 +141,7 @@ scalar) of the four momentum.  Since $[p_4]$ is a proper 4- vector and
 $dt_0$ is a scalar, then $[K4]$ is also a proper 4-vector. The letter
 K is in the 4-force to make it easier to distinguish between it and
 the vector force used by Newton. This form of the force is often
-called the Minkowski Force in honor of H. Minkowski who introduced the
+called the Minkowski Force in honor of H. Minkowski, who introduced the
 4-vector notation in the early 1900s.
 
 Using the definition of the momentum 4-vector in terms of the
@@ -298,7 +298,7 @@ gravity on the electron is therefore:
 Always good to remember that for $\beta=0.866$, $\gamma=2$
 ```
 Since the force is pointing only in the $-\hat{z}$ direction, the
-$F_x$ and $F_y$ comonents are zero. Using Equation {eq}`M4forcefin` we
+$F_x$ and $F_y$ components are zero. Using Equation {eq}`M4forcefin` we
 now can find the spatial components of $[K_4]$ by calculating the
 value of $\gamma$ when $\beta=0.866$.  $K_x$ and $K_y$ are therefore
 zero, but $K_z = \gamma m g$, or $-1.78\times10^{-29}~{\rm N}$.  Since
@@ -423,7 +423,7 @@ observer in the lab.  This is very new to us at this point: that the
 acceleration in $x$ should depend on both the velocity and
 acceleration in $y$ and $z$.  We are used to the spatial dimensions
 being independent of each other.  That is apparently no longer the
-case.  Of course, the correspondance principle still applies, and you
+case.  Of course, the correspondence principle still applies, and you
 can see that if $\beta\rightarrow 0$, the first terms all drop out,
 $\gamma\rightarrow 1$ and we get back acceleration is the derivative
 of the velocity, with independent dimensions, just as we expect in
@@ -472,7 +472,7 @@ front to find that
 \frac{dv}{dt} = \frac{1}{\gamma^3}\frac{F_x}{m_0}}
 ```
 
-The corrspondance principle check is satisfied because for
+The correspondence principle check is satisfied because for
 $\gamma\approx 1$, this is just $a=F/m$, as Newton would expect.
 However, as $v\rightarrow c$, $\gamma \rightarrow \infty$, which means
 the acceleration is going to plummet to zero as the speed gets close
@@ -624,7 +624,7 @@ a_{\rm Newt} = \frac{F_x}{m_0} = \frac{1.000\times10^{-13}{\rm N}}{9.109\times10
 
 This is really an awesome acceleration. In $10^{-14}$ seconds, itself
 an unimaginably small time interval, the electron would gain $10^3$
-m/s in ve1ocity.
+m/s in velocity.
 
 b) Equation {eq}`relacc` is used to find the valid acceleration.  With $\beta=0.8666$,
 $\gamma = 2$, so $\gamma^3=8$.  The Newtonian model is eight times too fast.

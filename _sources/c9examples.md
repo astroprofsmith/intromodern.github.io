@@ -46,7 +46,7 @@ energy to do interesting things, the probability of interactions
 occuring are smaller.
 
 In the simplest case, there is one incident particle (with a rest
-energy of $E_{oi}$, but moving with a momentum $p_i$ and a kinetic
+energy of $E_{0i}$, but moving with a momentum $p_i$ and a kinetic
 energy of $KE_i$) and one target particle (at rest, with a rest energy
 of $E_{0t}$) that interact in a particular place at a particular time.
 Take the $x$ axis to be parallel to the momentum vector of the

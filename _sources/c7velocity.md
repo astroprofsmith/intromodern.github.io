@@ -24,6 +24,32 @@ from myst_nb import glue
 
 # Chapter 7: The Velocity Four-Vector
 
+Once we have carefully defined what we mean by position and
+displacement, as measured in a particular reference frame,
+we can turn our attention to the question of motion.  Specifically,
+we can carefully define velocity as the rate of change of
+displacement: how much the displacement is changing in a given
+time interval.
+
+However, since we have shown that time intervals are themselves
+dependent on the choice of reference frame, we must also be very
+careful that we are clear and precise about **which** time interval
+we are considering, when speaking of velocity.  It should already
+be obvious to any reader that two objects in relative motion will
+have different velocities depending on the reference frame of
+an observer, but the role of time dilation and length contraction
+when the speeds in question approach that of light is anything but
+obvious.
+
+A careful treatment of velocity will also enable us to address the
+question of how velocities change when considered from different
+reference frames in relative motion, and therefore enable us to
+calculate how velocities will add.  If you are in a rocketship
+travelling at **almost** the speed of light, and you throw a ball
+forward, will that ball not exceed the speed of light limit?
+How can a careful treatment of velocity help us understand such
+apparent contradictions?
+
 
 ## Background
 
@@ -47,11 +73,12 @@ to Einstein, it would have never occured to anyone to question whether
 $dt$ might be different for different observers.
 
 In Equation {eq}`oldvel`, the derivative can be understood in two
-ways. It is operator that transforms the displacement vector, that can
-be a function of time, into the velocity vector (that also can be a
-function of time). A second way of understanding the derivative is
-that it is a ratio of two elements, a very very small vector change in
-the displacement divided by a very very small change in scalar time.
+ways. First, it is an operator that transforms the displacement
+vector, that can be a function of time, into the velocity vector (that
+also can be a function of time). A second way of understanding the
+derivative is that it is a ratio of two elements, a very very small
+vector change in the displacement divided by a very very small change
+in scalar time.
 
 Physical velocity is a vector because the displacement, $d\vec{R}$ is a
 3-vector and $dt$ is a scalar. A vector divided by a scalar is a vector.
@@ -74,7 +101,7 @@ $dt_0$ is a scalar, $1/dt_0$ is also a scalar.  The
 proper 4-vector and $1/dt_0$ is a Lorentz scalar. A Lorentz scalar times a
 proper 4-vector is a proper 4-vector.
 
-Wtien you multiply a vector by a scalar, what really happens is that
+When you multiply a vector by a scalar, what really happens is that
 you multiply each of the components of the vector by that scalar
 quantity. Putting in the components of the displacement 4-vector into
 equation {eq}`eq4vdef` and multiplying each by $1/dt_0$ gives:
@@ -317,7 +344,7 @@ in {numref}`stbeta4fig`.  In this case, depending on how $\beta_R$
 compares with $\beta$, we would expect $\beta^\prime$ to be less than
 $\beta$, perhaps even going negative.  In particular, if
 $\beta_R=\beta$, our theory had better predict that $\beta^\prime=0$,
-or something is seriously wrong.  The correspondance principle demands
+or something is seriously wrong.  The correspondence principle demands
 that when $\beta_R\ll 1$, the prediction we get should reduce to
 $\beta'=\beta-\beta_R$, which is what Galileo would expect it to be.
 
@@ -436,11 +463,12 @@ with the first postulate and the Michaelson-Morely experiment.
 
 ## Example of Off-Axis Motion
 
-Suppose that a particle istraveling with a velocity of $\beta$ at an
+Suppose that a particle is traveling with a velocity of $\beta$ at an
 angle $\theta$ with respect to the $x$ axis of the unprimed frame.
 The 4-beta measured by an observer in the unprimed frame now has more
 than two non-zero terms in it. The $x$ and $y$ components are found by
-applying trigonometry:
+applying trigonometry (which is to say, if the hypoteneuse is $\gamma\beta$,
+then $x=\gamma\beta\cos{\theta}$ and $y = \gamma\beta\sin{\theta}$):
 ```{math}
 :label: b4offax
 [\beta_4] =
@@ -521,7 +549,7 @@ first two spatial components in the primed frame:
 If Newton had tried to solve this problem, he would have deduced that
 the $x$ component of $\beta$ would be reduced by $\beta_R$, and
 the $y$ component would be unchanged.  If you let $\gamma_R\rightarrow 1$,
-Equation {eq}`tanthp` reduces to this result, so the correspondance
+Equation {eq}`tanthp` reduces to this result, so the correspondence
 principle is satisfied, but if $\gamma_R$ is bigger than 1, then
 the angle will be reduced relative to Newton's prediction.
 
@@ -541,7 +569,7 @@ This equation is a bit harder to get any intuition out of, but note
 that at slow speeds, as $\beta_R\rightarrow 0$ and
 $\gamma_R\rightarrow 1$, the denominators all go to 1.  The numerators
 are just what Newton would expect, as explained above.  So the
-correspondance principle is satisfied.  To try to get some more
+correspondence principle is satisfied.  To try to get some more
 intuition about the implications of this equation, a graph is more
 helpful than an equation.  {numref}`figoffaxis` shows a graph of
 $\beta'$ as a function of $\gamma_R$ for an arbitrary choice of
