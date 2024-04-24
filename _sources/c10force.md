@@ -531,7 +531,7 @@ glue("accgfig", fig, display=False)
 A graph of $\beta$ as a function of time (in years) in
 the lab frame for an object of mass 1 kg, experiencing a constant
 force of $9.81$ N in the $x$ direction.  The blue line shows the
-object starting from rest, while the magneta line shows the object
+object starting from rest, while the magenta line shows the object
 starting from $\beta=0.8$.  In neither case does the speed increase
 beyond 1, which is indicated by the red horizontal dotted line.
 ```

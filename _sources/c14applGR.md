@@ -120,6 +120,10 @@ Solar System map produced for education in 1846.  The
 planet Vulcan is shown as orbiting closer to the Sun
 than Mercury.  See [Library of Congress](https://www.loc.gov/resource/g3180.ct003790) for more details.
 ```
+
+Need to add material to explain why Mercury precesses.
+
+
 ## Gravitational Lensing
 
 If objects, including photons, really follow the paths through

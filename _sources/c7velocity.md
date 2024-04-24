@@ -583,7 +583,7 @@ glue("offaxfig", fig, display=False)
 Values for the off-axis beta velocity in the primed
 frame, for an unprimed $\beta=0.866$ at $\pi/4$ above the $x$ axis.
 The blue line shows the horizontal component of $\beta'$ while the red
-line shows the vertical component.  The magneta line is the total
+line shows the vertical component.  The magenta line is the total
 magnitude of $\beta'$.  A dotted green line shows the answer that
 Newtonian physics predicts for the magnitude of $\beta'$.  Note that
 the two theories agree near $\beta_R=0$, as the correspondence

@@ -694,7 +694,7 @@ distance driven by the car during those ten seconds as part of the
 length of the car, which is not the way we usually would think of the
 length of the car.
 
-Instead, we must consider the magneta event, which is simultaneous in
+Instead, we must consider the magenta event, which is simultaneous in
 **this** reference frame with the cyan event.  Since it was at the end
 of the object in the original frame, it must also be at the end of the
 object in this frame, so in **this** frame, we would consider the
@@ -770,7 +770,7 @@ and vice versa.
 
 The periodic nature of the sinusoidal functions corresponds to the angle
 being able to go around and around and around.  To have the angle approach
-an asmptote, as in a spacetime diagram, we need the hyperbolic trig functions,
+an asymptote, as in a spacetime diagram, we need the hyperbolic trig functions,
 $\tanh$, $\sinh$, and $\cosh$.  In a normal $x-y$ plane, if you had a vector
 in that plane, the angle the vector would make with the $x$ axis would be
 $\tan{\theta} = v_y/v_x$, opposite over adjacent.  However, for spacetime,
