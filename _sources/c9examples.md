@@ -998,7 +998,10 @@ plt.xlabel(r"1-$\cos{\theta}$")
 plt.ylabel("1/E scattered (1/keV)")
 plt.title("Testing Compton Scattering Hypothesis")
 plt.legend()
-
+glue("compresfig", fig, display=False)
+```
+```{code-cell}
+# Linear fit results from Compton 1923
 slp = b
 icpt = a
 E0=1/slp
@@ -1011,7 +1014,6 @@ print("The best-fit slope is ({0:3.2f} +- {1:3.2f})x10^-3 1/keV".format(slp*1000
 print("The best-fit y-intercept is ({0:4.3f} +- {1:4.3f})x10^-2 1/keV".format(icpt*100,eicpt*100))
 print("The estimate of E0 is ({0:3.0f} +- {1:2.0f}) keV".format(E0,eE0))
 print("The estimate of Egam is ({0:4.2f} +- {1:3.2f}) keV".format(Eg,eEg))
-glue("compresfig", fig, display=False)
 ```
 
 ```{glue:figure} compresfig
@@ -1156,7 +1158,7 @@ performed by Alison Duncan during the spring semester of 2005 as part
 of her first year lab. She collimated a beam of photons from a Cs-l37
 radioactive source and aimed the beam at an aluminum target. She then
 used a NaI detector to measure the energy of the photons that were
-scattered at various angles with respect to the initial beam line. She
+scattered at various angles with respect to the initial beam line. Her
 plot shows the reciprocal of the measured energy plotted as a function
 of $(1-\cos{\theta})$ where $\theta$ is the scattering angle of the
 photons.

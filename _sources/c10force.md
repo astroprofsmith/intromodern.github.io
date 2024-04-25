@@ -533,7 +533,7 @@ the lab frame for an object of mass 1 kg, experiencing a constant
 force of $9.81$ N in the $x$ direction.  The blue line shows the
 object starting from rest, while the magenta line shows the object
 starting from $\beta=0.8$.  In neither case does the speed increase
-beyond 1, which is indicated by the red horizontal dotted line.
+beyond $\beta=1$, which is indicated by the red horizontal dotted line.
 ```
 
 {numref}`constaccfig` also shows that if you could push an object with
@@ -660,8 +660,8 @@ $+x$ direction with respect to an observer in a laboratory that is
 located near the surface of the earth.  At time $t = 0$ in the lab
 frame, the electron enters an electric field of $E = 1.000\times10^6$
 N/C also pointing in the $+x$ direction.  The classical model for
-ca)culating theforce exerted on a charged object by an electric field
-is $F_e = qE$.
+calculating theforce exerted on a charged object by an electric field
+is $\vec{F}_e = q\vec{E}$.
 
 a) Calculate the Minkowski force that the particle experiences in its
 own rest frame at $t=0$.  The clocks in its rest frame are
@@ -692,8 +692,8 @@ g) Calculate the $x$-component of the force measured by the observer in
 the lab. Does this result surprise you? Why or why not?
 
 Now, suppose that this electron, traveling in the $+x$ direction
-(horizontal), at time $t = O$ enters an electric field that is pointing
-in the $+z$ direction (verticaily up) instead of pointing in the $+x$
+(horizontal), at time $t = 0$ enters an electric field that is pointing
+in the $+z$ direction (vertically up) instead of pointing in the $+x$
 direction.  *As we will see in the next chapter, if the $E$ field is
 perpendicular to the relative velocity vector, the field will be different
 in the rest frame of the electron, so don't use that frame for the next three
@@ -719,7 +719,7 @@ P = \frac{dE}{dt} = \frac{(\vec{F}\cdot\vec{u}) - vF_x}{1-\frac{vu_x}{c^2}}
 3) A particle, starting from rest, travels for a time interval $\Delta
 t$ (in the lab reference frame). The acceleration at any time, as
 measured in the instantaneous rest frame of the particle, is 9.8
-m/s2. How long must $\Delta t$ be before the observer in the lab
+m/s$^2$. How long must $\Delta t$ be before the observer in the lab
 reference frame sees the particle traveling at $c/2$?  This is very
 similar to the analysis that produced {numref}`constaccfig`.
 
