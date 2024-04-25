@@ -93,8 +93,8 @@ drift of the perihelion is about 566$^{\prime\prime}$ per century.
 Mercury takes about three months to complete one orbit, so in a single
 orbit, the location of one perihelion only differs by about one and a
 half arcseconds from the previous one.  That is a tiny change (one
-arcsecond being 1/3600th of a degree, or about a tenth the width of a
-sheet of paper held at arm's length).
+arcsecond being 1/3600th of a degree, or about a tenth the thickness
+of a sheet of paper held at arm's length).
 
 Some of this shift could be explained by the effects of the other
 planets, dominated by Jupiter, tugging on Mercury from other
@@ -151,9 +151,10 @@ the wall.  To observers both inside and outside the rocket, the
 photons will seem to fly in straight lines across the rocket.  Even if
 the rocket is moving at a constant (non-zero) velocity, the photons
 leaving the laser pointer will gain the same upwards momentum and
-therefore will keep up with the rocket, traveling horizontally to
-those inside the rocket, and along a straight diagonal line to those
-outside.
+therefore will keep up with the rocket.  Observers inside the rocket
+will find the photons travel horizontally, and observers floating
+outside as the rocket passes by will find that the photons travel in
+a diagonal line.
 
 However, if the rocket accelerates, the photons in flight will not
 pick up the additional velocity gained by the rocket, and will therefore
@@ -164,18 +165,17 @@ that they hit the wall below the mark.  To an observer inside the rocket,
 the photon beam will appear to fall downward, just as a fired bullet
 would, to strike the wall below the mark.
 
-How far would the photons fall?  At $c$, it would take the photons ten
-nanoseconds to cross a 3 m room in the rocket.  At an acceleration of
-10 m/s/s, the photons would fall $5\times10^{-16}$ m in ten
-nanosecond.  This is on the order of the size of subatomic particle,
-like a proton.  That's not an easily measurable amount, in real life.
-However, if it were, the Equivalence Principle demands that light moving
-across a 3 m room on the surface of the Earth should also fall by
-$5\times10^{-16}$ m.  If not, we could determine whether or not we
-are actually sitting on the Earth's surface by measuring whether or
-not a horizontal beam of photons falls while travelling across the room.
-If it hits the mark, we are on the Earth.  If it hits below the mark,
-we are in an accelerating rocket.
+How far would the photons fall?  At a speed of $c$, it would take the
+photons ten nanoseconds to cross a 3 m room in the rocket.  At an
+acceleration of 10 m/s/s, the photons would fall $5\times10^{-16}$ m
+in ten nanosecond.  This is on the order of the size of subatomic
+particle, like an electron.  The Equivalence Principle demands
+that light moving across a 3 m room on the surface of the Earth should
+also fall by $5\times10^{-16}$ m.  If not, we could determine whether
+or not we are actually sitting on the Earth's surface by measuring
+whether or not a horizontal beam of photons falls while travelling
+across the room.  If it hits the mark, we are on the Earth.  If it
+hits below the mark, we are in an accelerating rocket.
 
 The Equivalence Principle says no such experiment can distinguish the
 two situations, so the photons near the Earth must also fall down.  If
@@ -184,15 +184,17 @@ near the Earth must be curved.
 
 In practice, the Earth is just not massive enough to provide strong
 enough spacetime curvature to measure the falling of a beam of
-photons.  If we want to see whether light is deflected by gravity,
-we need to consider much, much more massive objects, like stars, or
-even better, entire galaxies.  If we consider the trajectories of
-photons traversing the vast distances of interstellar or intergalactic
-space, we can ask whether those trajectories are distorted away from
-straight lines by the gravity of massive objects.  If mass distorts the
-spacetime around itself, one would expect a photon path near a massive
-object to bend, and not continue straight as one would expect the path
-in flat spacetime to do.
+photons.  It is not technically possible to measure whether a beam of
+photons has shifted $10^{-16}$ m while crossing a room.  If we want to
+see whether light is deflected by gravity, we need to consider much,
+much more massive objects, like stars, or even better, entire
+galaxies.  If we consider the trajectories of photons traversing the
+vast distances of interstellar or intergalactic space, we can ask
+whether those trajectories are distorted away from straight lines by
+the gravity of massive objects.  If mass distorts the spacetime around
+itself, one would expect a photon path near a massive object to bend,
+and not continue straight as one would expect the path in flat
+spacetime to do.
 
 In 1915, when Einstein was developing GR, he had one ready-made
 real-world phenomenon that he could explain: the precession of the
@@ -238,6 +240,19 @@ as they approach the Sun and then speed up again as they receed,
 increasing the deflection to twice what a Newtonian deflection
 would predict.
 
+```{note}
+Although the details are outside the scope of this book, it is
+worth noting that the factor of two difference between the Newtonian
+and the GR prediction for the bending of light is not simply the
+result of multiplying the deflection at each step by two.  It's not
+that Newton just didn't know to stick a "2" in the equation.  The
+total (integrated) deflection works out to be twice as big, but
+the GR deflection is bigger than twice as the photon falls into
+and climbs out of the gravity of the Sun, while being the same
+at the point of closest approach.  The total average deflection
+is twice.
+```
+
 This slowing down of time near the massive object causes the
 trajectory of the light wave to shift, much like the slowing down of
 light in glass or water causes the trajectory of light to shift in
@@ -262,14 +277,14 @@ middle extended roughly 10 cm toward the viewer.
 :align: center
 :name: glasslens
 
-A glass lens distorts the view of a rope light, suspended horizontally
+A glass lens distorts the view of a rope light suspended horizontally
 behind it.  The lens is shaped like that of the base of a wine glass,
 curving forward at the center from a flat edge, with the stem in the
 middle shaved off.  The flat rope light appears curved above the center
 of the lens, and a second image of the light appears below the center,
 just as a point gravitational lens would create two images of a
 background star, if you considered the lensing to be happening along
-a vertical plane slice through the middle of this picture.
+a vertical plane sliced through the middle of this picture.
 ```
 
 In 1919, multiple expeditions from the Royal Society of London set out
@@ -447,7 +462,12 @@ It is convenient to define a special angle as
 so that the lensing equation can be written as
 ```{math}
 :label: lenseqE
-\beta = \theta - \frac{\theta_E^2}{\theta} \rightarrow \theta^2-\beta\theta-\theta_E^2=0
+\beta = \theta - \frac{\theta_E^2}{\theta}
+```
+We can multiply through by $\theta$ to get
+```{math}
+:label: quadlens
+\theta^2-\beta\theta-\theta_E^2=0
 ```
 This is a quadratic equation, so there must be two solutions:
 ```{math}
@@ -465,13 +485,14 @@ with the dark line in the figure.
 What are we to make of the second solution?  The diagram in
 {numref}`thingravlens` only shows one solution, so what happened to
 the other?  It is also possible for light rays passing below the lens
-to be bent up to reach the observer, so a more complete version of
-{numref}`thingravlens` would also include a second path below the lens
-that bends up.  This second solution can also be seen in the
-photograph in {numref}`glasslens` as the ring of light below the
-center of the glass.  For stars lensed by the Sun, the second solution
-is blocked by the disc of the Sun, and therefore does not play a role
-in {numref}`Edd19`.
+to be bent *up* to reach the observer (reflect the figure around the
+horizontal axis), so a more complete version of {numref}`thingravlens`
+would also include a second path below the lens that bends up.  This
+second solution can also be seen in the photograph in
+{numref}`glasslens` as the ring of light below the center of the
+glass.  For stars lensed by the Sun, the second solution is blocked by
+the disc of the Sun (the minus sign makes the angle smaller), and
+therefore does not play a role in {numref}`Edd19`.
 
 A solution of particular intrest is when the source, lens, and
 observer all lie on a single line.  Then $\beta = 0$ and $\theta =
@@ -529,6 +550,8 @@ mass in the universe.
 https://www.youtube.com/watch?v=XRr1kaXKBsU
 
 Not sure this is worth including.  Maybe.  It's about 10 minutes in.
+Might want to just include this in the equivalence principle part of
+chapter 13.
 
 ## Black Holes
 

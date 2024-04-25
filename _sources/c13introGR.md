@@ -78,7 +78,7 @@ What we have here is a path integral of some function, call it $f$,
 that depends on the speed of the clock at each moment along the path:
 $f = \sqrt{1-v^2/c^2}$.  For the red path, $v=0$, so $f=1$ and the
 integral is trivially just the proper time.  However, along the blue
-path $0\geq v^2<1$, so $0<f\leq 1$, which means the result of this
+path $0\leq v^2<1$, so $0<f\leq 1$, which means the result of this
 integral (which is the time interval elapsed on the blue clock, as we
 are integrating over $dt$) is always going to be less than or equal to
 the proper time.  In particular, for the twin paradox, if the blue path
@@ -88,14 +88,18 @@ than the clock on the Earth.  This is the same result we derived before
 by only considering a one-way trip at constant speed.
 
 No matter what path the blue clock takes, it will always measure less
-time than the stationary (red) clock.  In this context, we can accurately
-say that moving clocks run slow, because we are comparing two clocks
-within the same reference frame.  When we first encountered time dilation,
-we were considering the elapsed time between two events as measured by
-infinite lattices of synchronized clocks, one set in motion relative to the
-other set.  In this context, within a single reference frame, we can say
-that a clock at rest with respect to two events will measure the LONGEST
-time interval between those two events, as compared with any other clock
+time than the stationary (red) clock.  In this context, we can
+accurately say that moving clocks run slow, because we are comparing
+two clocks within the same reference frame.  When we first encountered
+time dilation, we were considering the elapsed time between two events
+as measured by infinite lattices of synchronized clocks, one set being
+in motion relative to the other set.  Back then, we said that the
+set of clocks at rest with respect to the two events would measure the
+shorter time interval.
+
+In this context, within a single reference frame, we can say that a
+clock at rest with respect to two events will measure the LONGEST time
+interval between those two events, as compared with any other clock
 that follows a different path between the events.  This sounds like it
 contradicts the previous formulation of time dilation, but you have to
 consider carefully what is being compared.
@@ -144,13 +148,27 @@ line shows the path of a moving object that returns to the
 same place in time for the second event.
 ```
 
-In SR, there is no question of returning to the same location
-as the first event.  This would not be possible, as to turn
-around and come back would require changing the relative velocity,
-and SR only considers unchanging relative velocities.  In this
-new context, there is an asymmetry between the moving clock and
-the stationary clock, because only the moving clock *changes*
-its motion.  The only way to describe these occurances from the
+In the first formulation, we were not comparing the time
+elapsed on two individual clocks.  We were comparing two
+time intervals that were derived from collecting the clock
+readings on an infinite set of clocks, and then comparing
+the differences between the readings on the clocks closest
+to the events.  In the reference frame in motion relative to
+the events, that meant two different clocks, which we assumed
+were synchronized and running at the same rate.  In this new
+context, we are considering a single clock that moved away
+and came back to the original location.
+
+In SR, there is no question of returning to the same location as the
+first event.  This would not be possible, as to turn around and come
+back would require changing the relative velocity, and SR only
+considers unchanging relative velocities.  In this new context, there
+is now an asymmetry between the moving clock and the stationary clock,
+because only the moving clock *changes* its motion.  In the SR
+context, we could say that either reference frame could be considered
+moving or at rest (although only one reference frame would observe the
+two events at the same location), but in this context, there is no
+such symmetry.  The only way to describe these occurances from the
 perspective of the blue clock would be to allow for accelerating
 reference frames.
 
@@ -184,29 +202,32 @@ lighter than air, so while the air in the car slides forward along
 with you and the fuzzy dice, that pushes the lighter balloon toward
 the back of the car.
 
-If the driver had, instead of braking, turned the wheel hard to
-the left, so that the car began moving in a circle, everything
-in the car would behave as if there were a mysterious force pushing
-to the right.  You would lean right, the fuzzy dice would dangle to
-the right, and the balloon would lean to the left.  Although a person
-on the side of the road would say everything in the car was trying
-to go in a straight line, but the car was pushing to the left,
-within the reference frame of the car, everything would be acting
-as if a force to the right had suddenly appeared.
+If the driver had, instead of braking, turned the wheel hard to the
+left, so that the car began moving in a circle, everything in the car
+would behave as if there were a mysterious force pushing to the right.
+You would lean right, the fuzzy dice would dangle to the right, and
+the balloon would lean to the left.  A person standing on the side of
+the road would say everything in the car was trying to go in a
+straight line, but the car was pushing it all to the left.  Within the
+(accelerating) reference frame of the car, where no such leftward
+force is evident, everything would be acting as if a force to the
+right had suddenly appeared.
 
 Let's consider that circular trajectory in the context of
-{numref}`twopaths`.  What can we say about a clock that moves on a
-circular path through spacetime?  Such a path is represented in
-{numref}`circularSTfig`.  To get from the orange event to the purple
-event, a clock at rest would just follow a vertical line, but the
-black curve represents a clock that moves around in a circle.  Based
-on the analysis of the previous section, such a clock would have to
-measure a shorter time interval than the clock at rest (if the system
-were sitting on a merry-go-round, we could consider the clock at rest
-to be at the center axis of the rotating disc -- such a clock would be
-synchronized with the lattice of clocks making up the reference frame
-at rest with the orange and purple events, even if the clock at the
-center did not pass through those two events).
+{numref}`twopaths`.  What if the blue path were to represent a clock
+moving in a circle and returning to its original location?  What can
+we say about a clock that moves on a circular path through spacetime?
+Such a path is represented in {numref}`circularSTfig`.  To get from
+the orange event to the purple event, a clock at rest would just
+follow a vertical line, but the black curve represents a clock that
+moves around in a circle.  Based on the analysis of the previous
+section, such a clock would have to measure a shorter time interval
+than the clock at rest (if the system were sitting on a
+merry-go-round, we could consider the clock at rest to be at the
+center axis of the rotating disc -- such a clock would be synchronized
+with the lattice of clocks making up the reference frame at rest with
+the orange and purple events, even if the clock at the center did not
+pass through those two events).
 
 ```{code-cell}
 :tags: ["remove-cell"]
@@ -250,18 +271,18 @@ The radius of the circle, being perpendicular to the motion, is not
 affected, so $2\pi r$ is now less than the actual circumference,
 according to the (contracted) meter sticks.
 
-The circumference being equal to $2\pi r$ is proven within a flat (or
-Euclidian) space.  If space is curved, that equation no longer holds.
-Consider the circle formed by a latitude line near the South Pole:
-because the Earth is curved, the measured radius of the Earth along
-the surface is going to be longer than the radius of the circle you
-would get by slicing a flat circle along the latitude line.  Therefore,
-the circumference of the latitude circle will be shorter than $2\pi r$,
-because the Earth is curved.  Due to the length contraction of the
-meter sticks, our scientist on the merry-go-round would also conclude
-that she is in a curved space, as the geometry is not behaving according
-to the rules of flat space, and the stronger the centrifugal force,
-the more curvature she measures.
+The circumference being equal to $2\pi r$ is proven within a flat
+(also called Euclidian) space.  If space is curved, that equation no
+longer holds.  Consider the circle formed by a latitude line near the
+South Pole: because the surface of the Earth is curved, the measured
+radius of the Earth along the surface is going to be longer than the
+radius of the circle you would get by slicing a flat circle along the
+latitude line.  Therefore, the circumference of the latitude circle
+will be shorter than $2\pi r$, because the Earth is curved.  Due to
+the length contraction of the meter sticks, our scientist on the
+merry-go-round would also conclude that she is in a curved space, as
+the geometry is not behaving according to the rules of flat space, and
+the stronger the centrifugal force, the more curvature she measures.
 
 The effects on time and geometry are tightly linked to the
 acceleration of the reference frame of the merry-go-round.  The larger
@@ -306,15 +327,17 @@ downward force exactly equivalent to the gravity on Earth.
 
 This insight, that free-falling objects are no different from objects
 floating in deep space, was once described by Einstein as his happiest
-thought.  The story goes that he was strolling through town and
-saw painters working on a clock tower.  It occurred to him that if
-one of the painters were to fall, the painter would effectively feel
-no gravity until he hit the ground (not so happy for the painter).
-In the SR part of this book, we insisted on only dealing with reference
-frames moving at constant speed, which we considered to be "inertial
-reference frames".  However, a reference frame in gravitational free
-fall is *also* an inertial frame, because it is no different from
-a reference frame that is not moving in the absence of gravity.
+thought.  The story goes that a painter in his town accidentally fell
+off the clock tower.  The painter, who luckily survived, reported that
+he was just fine until he hit the ground.  It occurred to Einstein
+that during the fall, the painter was effectively feeling no gravity.
+Only when he hit the ground could he tell that he was being
+accelerated downward.  In the SR part of this book, we insisted on
+only dealing with reference frames moving at constant speed, which we
+considered to be "inertial reference frames".  However, a reference
+frame in gravitational free fall is *also* an inertial frame, because
+it is no different from a reference frame that is not moving in the
+absence of gravity.
 
 There is a deep mystery in introductory Physics that is often glossed
 over, and perhaps not even mentioned.  Gravity is introduced through
@@ -353,8 +376,6 @@ object's velocity changes when you push on it.  There's nothing in
 those two definitions that says those two *have* to be the same thing!
 It's a huge assumption and a complete mathematical slight of hand
 trick to define them with the same letter $m$ in the first place.
-
-Say something about experimental tests.
 
 Einstein's theory of General Relativity insists that they are indeed
 the same thing, and provides a reason why that might be the case.
@@ -416,20 +437,21 @@ Earth).
 The frequency of a photon is a perfectly good clock -- it oscillates
 in time and therefore can mark off the nanoseconds as well as any
 other clock.  If we shine light upward from the surface of the Earth,
-its frequency should decrease as it goes upward, because the higher
-clock will perceive it as coming from a lower clock that is running
-more slowly, as per the arguments in the first few sections.  This
-"gravitational redshift" can also be understood in terms of energy: if
-you throw a ball upward, it loses energy as it climbs.  The ball's
-energy manifests in its speed.  The rising ball slows down.  A photon
-cannot slow down -- it loses energy by shifting to a lower frequency.
-This is yet another counter-intuitive way that a massless particle
-acts in ways that we previously only associated with mass.  We can't
-calculate the potential energy of the interaction of the Earth and a
-photon in the same way that we would the interaction of the Earth and
-the ball: $mgh$ makes no sense for the photon.  However, we have
-learned the photon has momentum despite having no mass, so perhaps it
-is not so surprising that it can lose energy in climbing upward, too.
+its frequency should decrease as it goes upward.  If we detect the
+photon at a higher altitude, we will perceive it as a lower altitude
+clock that is running more slowly, as per the arguments in the first
+few sections.  This "gravitational redshift" can also be understood in
+terms of energy: if you throw a ball upward, it loses energy as it
+climbs.  The ball's energy manifests in its speed.  The rising ball
+slows down.  A photon cannot slow down -- it loses energy by shifting
+to a lower frequency.  This is yet another counter-intuitive way that
+a massless particle acts in ways that we previously only associated
+with mass.  We can't calculate the potential energy of the interaction
+of the Earth and a photon in the same way that we would the
+interaction of the Earth and the ball: $mgh$ makes no sense for the
+photon.  However, we have learned the photon has momentum despite
+having no mass, so perhaps it is not so surprising that it can lose
+energy in climbing upward, too.
 
 To try to put this into quantitative form, let us consider the
 energy of a photon, proportional to its frequency: $E=hf$.  If
@@ -460,7 +482,7 @@ filter oscillated up and down, they could cycle through many relative
 speeds between the filter and the source of X-rays.  From the
 reference frame of the filter, the X-rays would be Doppler-shifted.
 When the filter was moving upward, the Doppler shift would be a
-redshift, and when the filter was moving downward the Doppler shift
+redshift, and when the filter was moving downward, the Doppler shift
 would be a blue shift.  At just the right downward speed, the Doppler
 blueshift would cancel out the gravitational redshift and allow the
 X-rays through to the detector.
@@ -509,7 +531,7 @@ of the photons that hits a side of the box will impart an impulse of
 twice its momentum so the total impulse delivered to the box will be
 the difference between the bottom and the top: $nAcdt\times
 Egy/c^3$. (There is a factor of two from the reflection that cancels
-out when you consider that the photons are not traveling *stright* up
+out when you consider that the photons are not traveling *straight* up
 and down.  Integrate over all possible angles to get a factor of 1/2.)
 Divide through by $dt$ to turn impulse into force.  Then note that if
 you take $A$ to be the total area of the top and bottom of the box,
