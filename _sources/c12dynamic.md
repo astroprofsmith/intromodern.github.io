@@ -197,9 +197,10 @@ velocity (length/time).  One factor of length cancels out,
 leaving charge per area per time, as required.
 
 Knowing what we know now, we can recognize that the lengths between
-these moving charges has been contracted along the direction of
-motion, so we can go ahead and write this in terms of what the density
-would be in a reference frame where the charges are at rest:
+these moving charges have been contracted along the direction of
+motion, so we can go ahead and write $\vec{J}$ in terms of $\rho_0$:
+what the charge density would be in a reference frame where the
+charges are at rest:
 ```{math}
 :label: currdenJ0
 \vec{J} = \gamma \rho_0 \vec{v}
@@ -254,7 +255,8 @@ derivative is positive, which means the amount of charge at that location
 is increasing, which makes sense.
 
 If we move the right side over the to left and multiply top and bottom by $c$,
-it should start to suggest something:
+it should start to suggest something, particularly if we multiply the whole
+thing through by $\gamma$:
 ```{math}
 :label: movetimeover
 \frac{\partial (\gamma \rho_0 c)}{\partial (ct)}+\frac{\partial \gamma \rho_0 v_x}{\partial x}+ \frac{\partial \gamma \rho_0 v_y}{\partial y}+ \frac{\partial \gamma \rho_0 v_z}{\partial z} = 0
@@ -493,8 +495,6 @@ that pops up in relativistic E&M that wasn't there in classical E&M.
 Maxwell's Equations automatically incorporate the insights of SR.
 What changes when you understand this is the way you envision the
 world, not the way the world itself works.
-
-## Summary?
 
 ## Problems
 
