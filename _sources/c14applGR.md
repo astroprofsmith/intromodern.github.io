@@ -543,16 +543,6 @@ lensing and all its variations is outside the scope of this book, it
 has proven a very useful phenomenon for studying the distribution of
 mass in the universe.
 
-## Acceleration While Standing Still?
-
-(The Veritasium Video)
-
-https://www.youtube.com/watch?v=XRr1kaXKBsU
-
-Not sure this is worth including.  Maybe.  It's about 10 minutes in.
-Might want to just include this in the equivalence principle part of
-chapter 13.
-
 ## Black Holes
 
 ## The Big Bang

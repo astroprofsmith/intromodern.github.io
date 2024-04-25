@@ -414,10 +414,26 @@ swing from vertically down to diagonally down and forward.
 This insight is so important that this "Equivalence Principle"
 occupies a similar place in the foundation of GR that the two
 postulates of SR do for that theory.  Within the formulation of GR,
-what we consider to be a force that we call Gravity is really an
-illusion of objects trying to move through curved spacetime, just like
-the balloon and the fuzzy dice aren't really being pushed by invisible
-forces in the accelerating car.
+what we would normally (in Newtonian mechanics) consider to be a force
+that we call "Gravity" is instead interpreted as an illusion of
+objects trying to move through curved spacetime, just like we infer
+forces to explain the motion of the balloon and the fuzzy dice in the
+accelerating car.
+
+In this sense, gravity is not really a force, but it gives the
+impression of causing acceleration because objects in free-fall are
+drifting through curved spacetime.  If you are sitting calmly in a
+chair on the ground, you would think you are not accelerating.
+However, relative to a falling inertial frame, like a painter falling
+off a clock tower, you would be measured to be accelerating upward.
+Therefore you feel the chair pushing up against you.  That is what is
+pushing you upward, stopping you from joining in the freefall that the
+curved space around you would demand.  You don't *feel* the gravity --
+you *feel* the chair.  If someone were to pull the chair out from
+under you, you would be like the falling painter.  Until you hit the
+ground, you would feel no gravity.  As long as you are sitting in the
+chair, it's just as if you were in that accelerating rocket, pushing
+up against you.  The situations are equivalent.
 
 ## The Pound-Rebkha Experiment
 
@@ -550,3 +566,5 @@ photons moving upwards in the curved spacetime around the Earth's mass.
 ## Metrics
 
 ## Geodesics
+
+Forces cause deviations from geodesics?
