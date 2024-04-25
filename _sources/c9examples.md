@@ -949,13 +949,6 @@ $E_{\rm photlab}$ and construct the graph we need to test the
 hypothesis posed by Equation {eq}`csEeq`.  Such a graph for four of
 the measurements reported in 1923 is shown in {numref}`csresultsfig`.
 
-Note the excellent agreement between experiment and the predictions of
-Equation {eq}`csEeq`! One over the y-intercept is within one $\sigma$
-of the known 17.5 keV value for the incoming photons in the lab frame.
-The best fit slope in {numref}`csresultsfig` is $(1.90\pm0.04)\times10^{-3}$
-1/keV, which means the best estimate of the rest mass of the electron
-from this experiment is $526\pm10$ keV.  This is within 1.4 $\sigma$
-of the current accepted best value, 511 keV.
 
 
 ```{code-cell}
@@ -1000,6 +993,9 @@ plt.title("Testing Compton Scattering Hypothesis")
 plt.legend()
 glue("compresfig", fig, display=False)
 ```
+
+The best linear fit parameters are calculated in the code that makes the graph,
+and displayed here:
 ```{code-cell}
 # Linear fit results from Compton 1923
 slp = b
@@ -1015,6 +1011,15 @@ print("The best-fit y-intercept is ({0:4.3f} +- {1:4.3f})x10^-2 1/keV".format(ic
 print("The estimate of E0 is ({0:3.0f} +- {1:2.0f}) keV".format(E0,eE0))
 print("The estimate of Egam is ({0:4.2f} +- {1:3.2f}) keV".format(Eg,eEg))
 ```
+
+Note the excellent agreement between experiment and the predictions of
+Equation {eq}`csEeq`! One over the y-intercept is $17.51\pm0.01$ keV,
+which is within one $\sigma$ of the known 17.5 keV value for the
+incoming photons in the lab frame.  The best fit slope in
+{numref}`csresultsfig` is $(1.90\pm0.04)\times10^{-3}$ 1/keV, which
+means the best estimate of the rest mass of the electron from this
+experiment is $526\pm10$ keV.  This is within 1.4 $\sigma$ of the
+current accepted best value, 511 keV.
 
 ```{glue:figure} compresfig
 :figwidth: 800px
