@@ -121,7 +121,28 @@ planet Vulcan is shown as orbiting closer to the Sun
 than Mercury.  See [Library of Congress](https://www.loc.gov/resource/g3180.ct003790) for more details.
 ```
 
-Need to add material to explain why Mercury precesses.
+How does GR help us understand this result?  First of all, if
+the Sun were the only body exerting a force on Mercury, and if
+Newton's Gravitational Law were completely accurate, the
+orbit would be 100\% determined by that $1/r^2$ law.  Solutions of
+that equation must be functions that are called "conic sections."
+They must be either closed elliptical orbit trajectories or open fly-by
+paths that swing around once and never come back.
+
+Need a conic section figure here with VPython.
+
+Without delving too deep into the details, the correspondence principle
+says that in the limit of weak gravity, the trajectories of objects
+under the influence of an object like the Sun will follow paths as
+predicted by Newton's Gravitational Law.  It is only near the Sun, where
+the gravity gets (a little) stronger, that deviations from $1/r^2$ could
+be measured.  In so far as the gravity at the location of Mercury is no
+longer consistent with Newtonian $1/r^2$, to that degree Mercury deviates
+from a purely elliptical orbit (after accounting for the extra tug from
+Jupiter).  A careful calculation of the orbit one would expect in a curved
+spacetime caused by the known mass of the sun would exactly explain the
+deviations from the closed ellipse without resorting to hypothesizing an
+extra planet.  The search for Vulcan was abandoned.
 
 
 ## Gravitational Lensing
@@ -545,8 +566,8 @@ mass in the universe.
 
 ## The Big Bang
 
-Friedman-Waler metric?  Friedman equations?  Expansion of the universe?
-Hubble diagram.  Acceleration of expansion.
+Friedman-Robertson-Walker metric?  Friedman equations?  Expansion of
+the universe?  Hubble diagram.  Acceleration of expansion.
 
 
 ## Black Holes
