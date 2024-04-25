@@ -543,7 +543,16 @@ lensing and all its variations is outside the scope of this book, it
 has proven a very useful phenomenon for studying the distribution of
 mass in the universe.
 
+## The Big Bang
+
+Friedman-Waler metric?  Friedman equations?  Expansion of the universe?
+Hubble diagram.  Acceleration of expansion.
+
+
 ## Black Holes
 
-## The Big Bang
+Schwarzschild metric?  Event horizon.  EHT images of M87 and Sgr A*?
+LIGO and the merger of BHs?  That would be a nice way to tie back to
+Chapter 1.
+
 
