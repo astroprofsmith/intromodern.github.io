@@ -131,6 +131,33 @@ paths that swing around once and never come back.
 
 Need a conic section figure here with VPython.
 
+
+
+```{code-cell}
+:tags: ["remove-cell"]
+# Insert VPython simulation of conic sections
+# Allow user to rotate system, for better view
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRconic"
+test = display.IFrame(src=url1,width=800,height=700)
+glue("conicfig",test, display=False)
+
+```
+
+```{glue:figure} conicfig
+:figwidth: 800px
+:name: consecfig
+
+Illustration of the paths in a $1/r^2$ centrally pointing
+force field.  The shapes formed where the planes cross the cones are the
+possible trajectories.  Rotate the image to get a better view.   The
+red plane makes a parabolic (unbound) trajectory, while the green and
+blue planes make circular and elliptical orbits, respectively.  The
+precession of the orbit of Mercury is interpreted in GR as an effect
+of the shape of spacetime around the Sun causing gravity to deviate
+from the Newtonian $1/r^2$ shape, and therefore causing Mercury's
+orbit to deviate from the simple conic section.
+```
+
 Without delving too deep into the details, the correspondence principle
 says that in the limit of weak gravity, the trajectories of objects
 under the influence of an object like the Sun will follow paths as
