@@ -579,7 +579,7 @@ write this sum of squares as the inner product of two four-vectors:
 ds^2 = dx_\mu dx^\mu = g_{\mu\nu}dx^\nu dx^\mu
 ```
 where $g_{\mu\nu}$ is the metric of the spacetime.  For flat spacetime,
-the metric is simply given by {numref}`themetric`, which I repeat here:
+the metric is simply given by Equation {eq}`themetric`, which I repeat here:
 ```{math}
 :label: flatmetric
 g_{\mu\nu} =
