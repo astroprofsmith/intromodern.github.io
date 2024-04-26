@@ -561,9 +561,52 @@ However, this is not from applying a gravitational force, in the sense
 of $mg=GMm/R^2$, but from considering the gravitational redshift of
 photons moving upwards in the curved spacetime around the Earth's mass.
 
-## Einstein's Equation
-
 ## Metrics
+
+If we are to follow a curved path through space time, or a path
+through curved spacetime, we need to be able to write down the interval
+between two events with an infinitesimal four-displacement.  A path
+length is an integral over many tiny steps, and if we are to actually
+calculate it, we need to be able to know how two nearby events in spacetime
+are related to each other.
+
+In flat space, one would simply say the distance between two points
+is given by the Pythagorean theorem: $ds^2 = dx^2+dy^2+dz^2$.  If we
+extend that concept to spacetime, we get $ds^2 = -c^2ct^2+dx^2+dy^2+dz^2$.
+As explained in Chapter 2, we can use the concept of the metric to
+write this sum of squares as the inner product of two four-vectors:
+```{math}
+ds^2 = dx_\mu dx^\mu = g_{\mu\nu}dx^\nu dx^\mu
+```
+where $g_{\mu\nu}$ is the metric of the spacetime.  For flat spacetime,
+the metric is simply given by {numref}`themetric`, which I repeat here:
+```{math}
+:label: flatmetric
+g_{\mu\nu} =
+\begin{bmatrix}
+-1&0&0&0\\
+0&1&0&0\\
+0&0&1&0\\
+0&0&0&1
+\end{bmatrix}
+```
+In principle, if spacetime were curved, these numbers would not all be $\pm1$ or
+zero.  For example, if you were using spherical coordinates in three-dimensional
+space, you could use $dx_j = [dr~d\theta d\phi]$ and then the $3\times 3$ metric
+would be
+```{math}
+:label: 3spheremetric
+g_{jk} =
+\begin{bmatrix}
+1&0&0\\
+0&r\cos{\theta}&0\\
+0&0&r\cos{\theta}\sin{\phi}
+\end{bmatrix}
+```
+The fact that these numbers are not always one tells us that a sphere is not
+flat.
+
+## Einstein's Equation
 
 ## Geodesics
 

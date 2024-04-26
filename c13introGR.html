@@ -381,8 +381,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-equivalence-principle">The Equivalence Principle</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-pound-rebkha-experiment">The Pound-Rebkha Experiment</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-weight-of-a-box-of-photons">The Weight of a Box of Photons</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einstein-s-equation">Einstein’s Equation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metrics">Metrics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einstein-s-equation">Einstein’s Equation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geodesics">Geodesics</a></li>
 </ul>
             </nav>
@@ -855,11 +855,47 @@ However, this is not from applying a gravitational force, in the sense
 of <span class="math notranslate nohighlight">\(mg=GMm/R^2\)</span>, but from considering the gravitational redshift of
 photons moving upwards in the curved spacetime around the Earth’s mass.</p>
 </section>
-<section id="einstein-s-equation">
-<h2>Einstein’s Equation<a class="headerlink" href="#einstein-s-equation" title="Permalink to this heading">#</a></h2>
-</section>
 <section id="metrics">
 <h2>Metrics<a class="headerlink" href="#metrics" title="Permalink to this heading">#</a></h2>
+<p>If we are to follow a curved path through space time, or a path
+through curved spacetime, we need to be able to write down the interval
+between two events with an infinitesimal four-displacement.  A path
+length is an integral over many tiny steps, and if we are to actually
+calculate it, we need to be able to know how two nearby events in spacetime
+are related to each other.</p>
+<p>In flat space, one would simply say the distance between two points
+is given by the Pythagorean theorem: <span class="math notranslate nohighlight">\(ds^2 = dx^2+dy^2+dz^2\)</span>.  If we
+extend that concept to spacetime, we get <span class="math notranslate nohighlight">\(ds^2 = -c^2ct^2+dx^2+dy^2+dz^2\)</span>.
+As explained in Chapter 2, we can use the concept of the metric to
+write this sum of squares as the inner product of two four-vectors:</p>
+<div class="math notranslate nohighlight">
+\[ds^2 = dx_\mu dx^\mu = g_{\mu\nu}dx^\nu dx^\mu\]</div>
+<p>where <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> is the metric of the spacetime.  For flat spacetime,
+the metric is simply given by <code class="xref std std-numref docutils literal notranslate"><span class="pre">themetric</span></code>, which I repeat here:</p>
+<div class="math notranslate nohighlight" id="equation-flatmetric">
+<span class="eqno">(266)<a class="headerlink" href="#equation-flatmetric" title="Permalink to this equation">#</a></span>\[\begin{split}g_{\mu\nu} =
+\begin{bmatrix}
+-1&amp;0&amp;0&amp;0\\
+0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;1&amp;0\\
+0&amp;0&amp;0&amp;1
+\end{bmatrix}\end{split}\]</div>
+<p>In principle, if spacetime were curved, these numbers would not all be <span class="math notranslate nohighlight">\(\pm1\)</span> or
+zero.  For example, if you were using spherical coordinates in three-dimensional
+space, you could use <span class="math notranslate nohighlight">\(dx_j = [dr~d\theta d\phi]\)</span> and then the <span class="math notranslate nohighlight">\(3\times 3\)</span> metric
+would be</p>
+<div class="math notranslate nohighlight" id="equation-3spheremetric">
+<span class="eqno">(267)<a class="headerlink" href="#equation-3spheremetric" title="Permalink to this equation">#</a></span>\[\begin{split}g_{jk} =
+\begin{bmatrix}
+1&amp;0&amp;0\\
+0&amp;r\cos{\theta}&amp;0\\
+0&amp;0&amp;r\cos{\theta}\sin{\phi}
+\end{bmatrix}\end{split}\]</div>
+<p>The fact that these numbers are not always one tells us that a sphere is not
+flat.</p>
+</section>
+<section id="einstein-s-equation">
+<h2>Einstein’s Equation<a class="headerlink" href="#einstein-s-equation" title="Permalink to this heading">#</a></h2>
 </section>
 <section id="geodesics">
 <h2>Geodesics<a class="headerlink" href="#geodesics" title="Permalink to this heading">#</a></h2>
@@ -935,8 +971,8 @@ photons moving upwards in the curved spacetime around the Earth’s mass.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-equivalence-principle">The Equivalence Principle</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-pound-rebkha-experiment">The Pound-Rebkha Experiment</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-weight-of-a-box-of-photons">The Weight of a Box of Photons</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einstein-s-equation">Einstein’s Equation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metrics">Metrics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einstein-s-equation">Einstein’s Equation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geodesics">Geodesics</a></li>
 </ul>
   </nav></div>
