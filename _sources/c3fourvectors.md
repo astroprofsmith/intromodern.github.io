@@ -248,6 +248,7 @@ g_{\mu\nu}dx^\nu = g_{\mu 0}dx^0 +
 g_{\mu 1}dx^1 +
 g_{\mu 2}dx^2 +
 g_{\mu 3}dx^3
+= dx_\mu
 ```
 You can get any component of $dx_\mu$ you like by plugging in either
 0, 1, 2, or 3 for $\mu$.  So if you want $dx_0$, you put in 0
@@ -256,6 +257,7 @@ first term of the sum survives, but with a minus sign, because
 $g_{00}=-1$.  The others are all zero.
 ```{math}
 :label: lowerindex0
+dx_0 = 
 g_{0\nu}dx^\nu = g_{00}dx^0 +
 g_{01}dx^1 +
 g_{02}dx^2 +
@@ -307,7 +309,7 @@ $i$ until Chapter 11. I mention it here to stress that using the $i$
 is not the **only** way to keep track of the minus sign.
 
 ```{note}
-For the purposes of this class, there are only three things you need
+For the purposes of this book, there are only three things you need
 to remember about Einstein notation:
 
 1) Greek letters represent the numbers 0 through 3.
