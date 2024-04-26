@@ -561,6 +561,42 @@ However, this is not from applying a gravitational force, in the sense
 of $mg=GMm/R^2$, but from considering the gravitational redshift of
 photons moving upwards in the curved spacetime around the Earth's mass.
 
+## Einstein's Equation
+
+Within the context of General Relativity, the Equivalence Principle
+becomes not only understandable, but inevitable.  Instead of a mysterious
+coincidence, that gravitational mass and inertial mass just happen to
+be not different from each other, gravity itself is reconceptualized
+as an inertial effect of curved spacetime, and therefore the masses
+must be the same.
+
+If gravity is just an inertial effect of the curvature of spacetime,
+and the correspondence principle demands that GR reduces to Newtonian
+physics in the limit of small masses and large distances, then there
+must be a link between the presence of mass and the curvature of spacetime.
+Newton's Law of Gravitation describes how objects with mass exert forces
+on each other across space.  It suggests no mechanism for how this might
+occur, and it is helpless against the challenge of the speed of light
+limit to the universe -- how can the Earth pull on the Sun from where it
+is *now*, rather than where it was eight minutes ago, the time it takes
+light to travel from the Earth to the Sun?  This question would have never
+occured to Newton, but once Relativity demands a universal speed limit,
+the question must be answered.
+
+Einstein's General Relativity provides a new set of equations that replace
+Newton's gravity with a formalism that shows how the presence of mass
+(and indeed energy as well) is linked to the curvature of spacetime, which
+in turn manifests as apparent forces that we call gravity.  As John
+Wheeler once said, Einstein's Equation means that "matter tells spacetime
+how to curve, and the curvature of spacetime tells matter how to move."
+
+An actual derivation of Einstein's Equation is beyond the scope of this
+introduction.  Suffice to say that it involves writing down the distribution
+of matter and energy in space as a $4\times 4$ tensor, and then linking
+that tensor to spatial and temporal rates of change of spacetime.  The form
+such a solution takes is the *metric* of the spacetime that we associate
+with a particular kind of distribution of matter and energy.
+
 ## Metrics
 
 If we are to follow a curved path through space time, or a path
@@ -606,7 +642,6 @@ g_{jk} =
 The fact that these numbers are not always one tells us that a sphere is not
 flat.
 
-## Einstein's Equation
 
 ## Geodesics
 
