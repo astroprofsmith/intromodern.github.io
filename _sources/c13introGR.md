@@ -592,15 +592,15 @@ g_{\mu\nu} =
 ```
 In principle, if spacetime were curved, these numbers would not all be $\pm1$ or
 zero.  For example, if you were using spherical coordinates in three-dimensional
-space, you could use $dx_j = [dr~d\theta d\phi]$ and then the $3\times 3$ metric
+space, you could use $dx_j = [dr~rd\theta~rd\phi]$ and then the $3\times 3$ metric
 would be
 ```{math}
 :label: 3spheremetric
 g_{jk} =
 \begin{bmatrix}
 1&0&0\\
-0&r\cos{\theta}&0\\
-0&0&r\cos{\theta}\sin{\phi}
+0&1&0\\
+0&0&\sin{\theta}
 \end{bmatrix}
 ```
 The fact that these numbers are not always one tells us that a sphere is not
