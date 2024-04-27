@@ -224,10 +224,11 @@ of the vector as an operator.  The row vector multiplies *onto* the
 column vector.  If you think of row-column multiplication as a dot
 product, which projects one vector onto the direction of another, the
 row vector $[0~1~0~0]$ is like $\hat{x}\cdot$.  If you operated this
-onto a (contravariant) vector, you would get the x-component as a
-result.  Therefore, if you changed the coordinate system in some way,
-$\hat{x}\cdot$ would change the same way.  It would change *with* the
-coordinates, not against them.
+onto a (contravariant) vector $\vec{v}$, you would get the x-component
+of $\vec{v}$ as a result: $\hat{x}\cdot\vec{v}=v_x$.  Therefore, if
+you changed the coordinate system in some way, $\hat{x}\cdot$ would
+change the same way.  It would change *with* the coordinates, not
+against them.
 
 In the context of relativity theory, the differences between co and
 contra are subtle (a minus sign in the zeroth component is the only
