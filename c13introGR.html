@@ -884,9 +884,26 @@ how to curve, and the curvature of spacetime tells matter how to move.”</p>
 <p>An actual derivation of Einstein’s Equation is beyond the scope of this
 introduction.  Suffice to say that it involves writing down the distribution
 of matter and energy in space as a <span class="math notranslate nohighlight">\(4\times 4\)</span> tensor, and then linking
-that tensor to spatial and temporal rates of change of spacetime.  The form
-such a solution takes is the <em>metric</em> of the spacetime that we associate
-with a particular kind of distribution of matter and energy.</p>
+that tensor to spatial and temporal rates of change of spacetime.  It is not
+inappropriate to compare Einstein’s equation to Poisson’s Equation in
+Newtonian Gravity:</p>
+<div class="math notranslate nohighlight" id="equation-poisson">
+<span class="eqno">(266)<a class="headerlink" href="#equation-poisson" title="Permalink to this equation">#</a></span>\[\nabla^2\Phi = 4\pi G \rho\]</div>
+<p>which says the curvature of the gravitational potential is proportional
+to the amount of mass in a given location.  There is an identical equation
+linking the curvature of the electric potential to the amount of charge
+in a given location.  In both cases, the force connected to the material
+(gravity to mass, electric force to charge) is the slope of the potential
+curve.  Einstein’s equation therefore is saying that the curvature of
+spacetime is directly linked to the curvature of the gravitational potential,
+and that helps us see how a force could be connected to the curvature of
+spacetime.</p>
+<p>So Einstein’s equation links the curvature of spacetime to the matter
+and energy that are in a given location.  To solve it, you specify
+some distribution of matter and energy, and ask what kind of spacetime
+curvature is consistent with the equation.  The form such a solution
+takes is the <em>metric</em> of the spacetime that we associate with a
+particular kind of distribution of matter and energy.</p>
 </section>
 <section id="metrics">
 <h2>Metrics<a class="headerlink" href="#metrics" title="Permalink to this heading">#</a></h2>
@@ -906,7 +923,7 @@ write this sum of squares as the inner product of two four-vectors:</p>
 <p>where <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> is the metric of the spacetime.  For flat spacetime,
 the metric is simply given by Equation <a class="reference internal" href="c3fourvectors.html#equation-themetric">(9)</a>, which I repeat here:</p>
 <div class="math notranslate nohighlight" id="equation-flatmetric">
-<span class="eqno">(266)<a class="headerlink" href="#equation-flatmetric" title="Permalink to this equation">#</a></span>\[\begin{split}g_{\mu\nu} =
+<span class="eqno">(267)<a class="headerlink" href="#equation-flatmetric" title="Permalink to this equation">#</a></span>\[\begin{split}g_{\mu\nu} =
 \begin{bmatrix}
 -1&amp;0&amp;0&amp;0\\
 0&amp;1&amp;0&amp;0\\
@@ -915,17 +932,23 @@ the metric is simply given by Equation <a class="reference internal" href="c3fou
 \end{bmatrix}\end{split}\]</div>
 <p>In principle, if spacetime were curved, these numbers would not all be <span class="math notranslate nohighlight">\(\pm1\)</span> or
 zero.  For example, if you were using spherical coordinates in three-dimensional
-space, you could use <span class="math notranslate nohighlight">\(dx_j = [dr~rd\theta~rd\phi]\)</span> and then the <span class="math notranslate nohighlight">\(3\times 3\)</span> metric
+space, you could use <span class="math notranslate nohighlight">\(dx_j = [dr~d\theta~d\phi]\)</span> and then the <span class="math notranslate nohighlight">\(3\times 3\)</span> metric
 would be</p>
 <div class="math notranslate nohighlight" id="equation-3spheremetric">
-<span class="eqno">(267)<a class="headerlink" href="#equation-3spheremetric" title="Permalink to this equation">#</a></span>\[\begin{split}g_{jk} =
+<span class="eqno">(268)<a class="headerlink" href="#equation-3spheremetric" title="Permalink to this equation">#</a></span>\[\begin{split}g_{jk} =
 \begin{bmatrix}
 1&amp;0&amp;0\\
-0&amp;1&amp;0\\
-0&amp;0&amp;\sin{\theta}
+0&amp;r&amp;0\\
+0&amp;0&amp;r\sin{\theta}
 \end{bmatrix}\end{split}\]</div>
-<p>The fact that these numbers are not always one tells us that a sphere is not
-flat.</p>
+<p>The fact that the numbers on the diagonal are not always one tells us
+that a sphere is not flat.</p>
+<p>The metric contains all the information we might need to know about
+the distribution of matter/energy in a given volume of spacetime,
+because the shape of the metric is determined by the distribution of
+matter/energy according to Einstein’s equation.  In the same way that
+the electric field tell you where the sources of electricity are, the
+metric tells you where the sources of gravity are.</p>
 </section>
 <section id="geodesics">
 <h2>Geodesics<a class="headerlink" href="#geodesics" title="Permalink to this heading">#</a></h2>

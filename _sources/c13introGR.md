@@ -593,9 +593,29 @@ how to curve, and the curvature of spacetime tells matter how to move."
 An actual derivation of Einstein's Equation is beyond the scope of this
 introduction.  Suffice to say that it involves writing down the distribution
 of matter and energy in space as a $4\times 4$ tensor, and then linking
-that tensor to spatial and temporal rates of change of spacetime.  The form
-such a solution takes is the *metric* of the spacetime that we associate
-with a particular kind of distribution of matter and energy.
+that tensor to spatial and temporal rates of change of spacetime.  It is not
+inappropriate to compare Einstein's equation to Poisson's Equation in
+Newtonian Gravity:
+```{math}
+:label: poisson
+\nabla^2\Phi = 4\pi G \rho
+```
+which says the curvature of the gravitational potential is proportional
+to the amount of mass in a given location.  There is an identical equation
+linking the curvature of the electric potential to the amount of charge
+in a given location.  In both cases, the force connected to the material
+(gravity to mass, electric force to charge) is the slope of the potential
+curve.  Einstein's equation therefore is saying that the curvature of
+spacetime is directly linked to the curvature of the gravitational potential,
+and that helps us see how a force could be connected to the curvature of
+spacetime.
+
+So Einstein's equation links the curvature of spacetime to the matter
+and energy that are in a given location.  To solve it, you specify
+some distribution of matter and energy, and ask what kind of spacetime
+curvature is consistent with the equation.  The form such a solution
+takes is the *metric* of the spacetime that we associate with a
+particular kind of distribution of matter and energy.
 
 ## Metrics
 
@@ -628,19 +648,27 @@ g_{\mu\nu} =
 ```
 In principle, if spacetime were curved, these numbers would not all be $\pm1$ or
 zero.  For example, if you were using spherical coordinates in three-dimensional
-space, you could use $dx_j = [dr~rd\theta~rd\phi]$ and then the $3\times 3$ metric
+space, you could use $dx_j = [dr~d\theta~d\phi]$ and then the $3\times 3$ metric
 would be
 ```{math}
 :label: 3spheremetric
 g_{jk} =
 \begin{bmatrix}
 1&0&0\\
-0&1&0\\
-0&0&\sin{\theta}
+0&r&0\\
+0&0&r\sin{\theta}
 \end{bmatrix}
 ```
-The fact that these numbers are not always one tells us that a sphere is not
-flat.
+The fact that the numbers on the diagonal are not always one tells us
+that a sphere is not flat.
+
+The metric contains all the information we might need to know about
+the distribution of matter/energy in a given volume of spacetime,
+because the shape of the metric is determined by the distribution of
+matter/energy according to Einstein's equation.  In the same way that
+the electric field tell you where the sources of electricity are, the
+metric tells you where the sources of gravity are.
+
 
 
 ## Geodesics
