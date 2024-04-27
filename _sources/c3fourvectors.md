@@ -216,19 +216,28 @@ considering a displacement vector, say, and you changed all the units
 from miles to kilometers (the km is smaller than the mile), the
 components of the vector would get bigger (you need 1.6 km for each
 mile).  It would change in the opposite way.  Of if you rotate the
-coordinate axis, that's the same as rotating a vector the other
+coordinate axes, that's the same as rotating a vector the other
 direction.
 
-The covariance is harder to visualize, but it has to do with
-the... (need to look up Schultz again here).  In the context of
-relativity theory, the differences between co and contra are less
-pronounced -- they become more important when the coordinates are not
-orthogonal, for example.  For regular three-vectors, there's no
-difference at all.  This makes it hard to illustrate, as in all the
-simple cases, there is no difference between the two.  For the
-purposes of this book, it is sufficient to treat contravariant four
-vectors as columns and covariant four vectors as rows (with a negative
-zeroth component).
+The covariance is harder to visualize, but it has to do with thinking
+of the vector as an operator.  The row vector multiplies *onto* the
+column vector.  If you think of row-column multiplication as a dot
+product, which projects one vector onto the direction of another, the
+row vector $[0~1~0~0]$ is like $\hat{x}\cdot.  If you operated this
+onto a (contravariant) vector, you would get the x-component as a
+result.  Therefore, if you changed the coordinate system in some way,
+$\hat{x}\cdot$ would change the same way.  It would change *with* the
+coordinates, not against them.
+
+In the context of relativity theory, the differences between co and
+contra are subtle (a minus sign in the zeroth component is the only
+obvious difference).  The differences become more important when the
+coordinates are not orthogonal, for example.  For regular
+three-vectors, there's no difference at all.  This makes it hard to
+illustrate, as in all the simple cases, there is no difference between
+the two.  For the purposes of this book, it is sufficient to treat
+contravariant four vectors as columns and covariant four vectors as
+rows (with a negative zeroth component).
 ```
 
 For the four vectors we are considering, $dx_0 =-dx^0$, but
