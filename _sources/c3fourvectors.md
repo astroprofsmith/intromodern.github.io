@@ -223,7 +223,7 @@ The covariance is harder to visualize, but it has to do with thinking
 of the vector as an operator.  The row vector multiplies *onto* the
 column vector.  If you think of row-column multiplication as a dot
 product, which projects one vector onto the direction of another, the
-row vector $[0~1~0~0]$ is like $\hat{x}\cdot.  If you operated this
+row vector $[0~1~0~0]$ is like $\hat{x}\cdot$.  If you operated this
 onto a (contravariant) vector, you would get the x-component as a
 result.  Therefore, if you changed the coordinate system in some way,
 $\hat{x}\cdot$ would change the same way.  It would change *with* the
@@ -358,11 +358,11 @@ must stay in the same place on both sides of the equals.
 3) If you raise or lower the index, you multiply the time
 component by $-1$.
 
-If you are consistent with these three rules, you will get the
-same answers as carrying around the factor of $i$.  For most of this
-book, we will use the $i$ notation, but when we get to the final
-two chapters about electromagnetism, the Einstein notation is
-much easier to work with, so it will come back then.
+If you are consistent with these three rules, you will get the same
+answers as carrying around the factor of $i$.  For most of this book,
+we will use the $i$ notation, but when we get to the final chapters
+about electromagnetism and General Relativity, the Einstein notation
+is much easier to work with, so it will come back then.
 ```
 
 Once you have the concept of a four-vector, mathematically, it is
