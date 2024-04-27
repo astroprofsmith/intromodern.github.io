@@ -153,12 +153,11 @@ use the $i$ until we get to electriciy and magnetism (E&M) in Chapter
 
 The second way, called Einstein notation, involves being aware of a
 distinction between **covariant** and **contravariant** four-vectors.
-The mathematical details are not necessary at this stage (see
-Appendix?), but suffice to say that the **contravariant** version of a
-four vector should be written as a column, as in Equation 6, only
-without the $i$.  The standard notion is to use a superscript greek
-letter to refer to the components, where the Greek letter could stand
-for 0, 1, 2, or 3.  So
+The mathematical details are not necessary at this stage, but suffice
+to say that the **contravariant** version of a four vector should be
+written as a column, as in Equation 6, only without the $i$.  The
+standard notion is to use a superscript greek letter to refer to the
+components, where the Greek letter could stand for 0, 1, 2, or 3.  So
 ```{math}
 :label: contravar
 dx^\alpha =
@@ -203,6 +202,30 @@ result.  This is called "Einstein summation notation" or just
 "Einstein notation", and it won't come up again in this book until we
 apply SR to Electromagnetism in Chapter 11.
 
+```{note}
+Covariant vs. Contravariant
+
+As with many entities in the mathematics used by Physics, the
+definitions of covariant and contravariant have to do with how the
+objects behave under coordinate transformations.  In this case, the
+"co-" and the "contra-" prefixes have to do with whether the object in
+question (be it a four-vector or a tensor) changes *with* the
+coordinates when you change them (co), or changes in the *opposite*
+way (contra).  The contra way is easiest to understand.  If you were
+considering a displacement vector, say, and you changed all the units
+from miles to kilometers (the km is smaller than the mile), the
+components of the vector would get bigger (you need 1.6 km for each
+mile).  It would change in the opposite way.  The covariance is harder
+to visualize, but it has to do with the... (need to look up Schultz
+again here).  In the context of relativity theory, the differences
+between co and contra are less pronounced -- they become more important
+when the coordinates are not orthogonal, for example.  For regular
+three-vectors, there's no difference at all.  This makes it hard to
+illustrate, as in all the simple cases, there is no difference between
+the two.  For the purposes of this book, it is sufficient to
+treat contravariant four vectors as columns and covariant four
+vectors as rows (with a negative zeroth component).  
+```
 
 For the four vectors we are considering, $dx_0 =-dx^0$, but
 $dx_1=dx^1$, $dx_2=dx^2$, and $dx_3=dx^3$.  So if you multiply the two
