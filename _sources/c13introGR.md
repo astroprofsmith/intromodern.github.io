@@ -660,16 +660,16 @@ g_{jk} =
 \end{bmatrix}
 ```
 The fact that the numbers on the diagonal are not always one tells us
-that a sphere is not flat.
+that a sphere is not flat.  
 
 The metric contains all the information we might need to know about
 the distribution of matter/energy in a given volume of spacetime,
 because the shape of the metric is determined by the distribution of
 matter/energy according to Einstein's equation.  In the same way that
 the electric field tell you where the sources of electricity are, the
-metric tells you where the sources of gravity are.
-
-
+metric tells you where the sources of gravity are.  There is more
+about the metric in Chapter 3, and we will return to a few special
+metrics of interest in Chapter 14.
 
 ## Geodesics
 

@@ -753,6 +753,10 @@ column).  Of course, this is also the same number as $\Lambda^1_0$ --
 with the complex number notation, these numbers had opposite sign, to
 account for the $i^2$, but that is not necessary in this notation.
 
+```{note}
+At this point, you may wish to go back to Chapter 3 and re-read the
+section on Einstein notation.
+```
 
 At this point, many books jump to the answer and show that it works.
 While there is nothing formally wrong with that, it's not very

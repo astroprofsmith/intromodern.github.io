@@ -235,10 +235,10 @@ contra are subtle (a minus sign in the zeroth component is the only
 obvious difference).  The differences become more important when the
 coordinates are not orthogonal, for example.  For regular
 three-vectors, there's no difference at all.  This makes it hard to
-illustrate, as in all the simple cases, there is no difference between
-the two.  For the purposes of this book, it is sufficient to treat
-contravariant four vectors as columns and covariant four vectors as
-rows (with a negative zeroth component).
+illustrate, as in all the simple cases, there is no obvious difference
+between the two.  For the purposes of this book, it is sufficient to
+treat contravariant four vectors as columns and covariant four vectors
+as rows (with a negative zeroth component).
 ```
 
 For the four vectors we are considering, $dx_0 =-dx^0$, but
