@@ -607,3 +607,29 @@ LIGO and the merger of BHs?  That would be a nice way to tie back to
 Chapter 1.
 
 
+## Problems
+
+1. One way to think about a black hole is when all of an object's mass
+fits inside its event horizon.  This means that for a given mass, a
+black hole is the absolute smallest configuration that mass can take.
+To develop an intuition about this, calculate the Schwarzschild Radius
+for the following masses: you, the Earth, the Sun, the black hole at
+the center of our galaxy (four million times the mass of the Sun),
+and the black hole at the center of M87 (nine billion times the
+mass of the Sun).
+
+2.  What is the Einstein Radius for a black hole moving in front of a
+distant star?  Take the mass of the star to be about the same as the
+Sun, and that the distance from the observer to the lens is about the
+same as the distance from the lens to the source, about 1000 LY.
+Compare with typical telescope resolutions to see why this is called
+microlensing.
+
+3.  Verify the solid line prediction in {numref}`Edd19` from Eq. {eq}`lensQsol`.
+That is, put Eq. {eq}`lensQsol` in terms of the quantities on the axes of
+{numref}`Edd19` and verify that it would, indeed, generate the solid line in
+the figure.  You will have to figure out how the figure manipulates the scale
+of the horizontal axis.
+
+4. Get age of the U as $2/3H_0$?
+ 

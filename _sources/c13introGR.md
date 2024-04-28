@@ -697,12 +697,15 @@ al.](https://www.aanda.org/articles/aa/abs/2020/11/aa38937-20/aa38937-20.html)
 in 2020.
 
 3. GPS satellites provide accurate locations to receivers on the Earth
-by broadcasting a time signal.  The time intervals from multiple satellites,
-combined with the speed of light, pinpoint the receiver's position.
-The satellites are roughly $2.02\times10^6$ m above the Earth's surface,
-circling the Earth twice a day.  From this information, estimate how much
-faster the GPS clocks are than our phone clocks here on the ground, and
-how much slower they are from the time dilation due to their speed.  These
-effects must be compensated for, if the GPS system is to provide accurate
-locations.
+by broadcasting a time signal.  The time intervals from multiple
+satellites, combined with the speed of light, pinpoint the receiver's
+position.  The satellites are roughly $2.02\times10^6$ m above the
+Earth's surface, circling the Earth twice a day.  From this
+information, estimate how much faster the GPS clocks are than our
+phone clocks here on the ground, and how much slower they are from the
+time dilation due to their speed.  Express your answer in units of
+microseconds per day.  These effects must be compensated for, if the
+GPS system is to provide accurate locations.
 
+4.  Calculate the ds integral for a given path.  Need to work on this.
+See example in Ford.
