@@ -629,7 +629,7 @@ are related to each other.
 In flat space, one would simply say the distance between two points
 is given by the Pythagorean theorem: $ds^2 = dx^2+dy^2+dz^2$.  If we
 extend that concept to spacetime, we get $ds^2 = -c^2ct^2+dx^2+dy^2+dz^2$.
-As explained in Chapter 2, we can use the concept of the metric to
+As explained in Chapter 3, we can use the concept of the metric to
 write this sum of squares as the inner product of two four-vectors:
 ```{math}
 ds^2 = dx_\mu dx^\mu = g_{\mu\nu}dx^\nu dx^\mu
@@ -674,3 +674,15 @@ metrics of interest in Chapter 14.
 ## Geodesics
 
 Forces cause deviations from geodesics?
+
+## Problems
+
+1. Project GREAT.  In 2005 Tom Van Baak carried out a home experiment in
+General Relativity.  He carefully synchronized six precise computer clocks
+and then took three of them on vacation with his family, 1340 m higher on
+Mount Rainier.  They spent two days (48 h) at this higher elevation and
+then returned home.  How much time difference would you expect there to
+be between the two sets of clocks upon their return?  Which clocks would
+be ahead?  Once you have made your prediction, you can read their
+report [here](http://www.leapsecond.com/great2005/).
+
