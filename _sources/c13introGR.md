@@ -686,3 +686,23 @@ be between the two sets of clocks upon their return?  Which clocks would
 be ahead?  Once you have made your prediction, you can read their
 report [here](http://www.leapsecond.com/great2005/).
 
+2. One of Einstein's original predictions from GR was that light
+leaving the Sun should be redshifted.  It turns out this is much
+harder to measure than you might think, not least because the solar
+"surface" is in motion.  Based on your reading here, how much would
+you expect the wavelength of a photon from the Sun to change by the
+time it reaches the Earth?  The best measurement (so far) of this
+effect was reported by [Hernandez et
+al.](https://www.aanda.org/articles/aa/abs/2020/11/aa38937-20/aa38937-20.html)
+in 2020.
+
+3. GPS satellites provide accurate locations to receivers on the Earth
+by broadcasting a time signal.  The time intervals from multiple satellites,
+combined with the speed of light, pinpoint the receiver's position.
+The satellites are roughly $2.02\times10^6$ m above the Earth's surface,
+circling the Earth twice a day.  From this information, estimate how much
+faster the GPS clocks are than our phone clocks here on the ground, and
+how much slower they are from the time dilation due to their speed.  These
+effects must be compensated for, if the GPS system is to provide accurate
+locations.
+
