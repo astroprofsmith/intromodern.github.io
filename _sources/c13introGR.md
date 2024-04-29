@@ -845,7 +845,13 @@ first:
 \frac{d\Delta t_0}{da} = \frac{d}{da}\left[T - \frac{(aT)^2T}{8c^2}+\frac{aT(g+a)T^2}{4c^2}
 -\frac{a(g+a)T^3}{6c^2}\right]
 ```
-
+```{math}
+:label: dtdaout
+\frac{d\Delta t_0}{da} = \frac{d}{da}\left[T - \frac{a^2T^3}{8c^2}
++\frac{agT^3}{12c^2}
++\frac{a^2T^3}{12c^2}
+\right]
+```
 
 
 Now, if $T$ were going to be bigger than this (which would have to be
