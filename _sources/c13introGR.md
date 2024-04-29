@@ -812,9 +812,9 @@ So the path integral becomes
 Multiply everything out to get
 ```{math}
 :label: parapropout
-\Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}+\frac{2v_0at}{2c^2}-
+\Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}-\frac{2v_0at}{2c^2}-
 \frac{a^2t^2}{2c^2}+\frac{gv_0t}{c^2}
--\frac{gat^2}{2c^2}\right]
++\frac{gat^2}{2c^2}\right]
 ```
 Regroup by like powers of $t$:
 ```{math}
