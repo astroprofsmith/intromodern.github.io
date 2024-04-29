@@ -858,6 +858,23 @@ first:
 +\frac{gT^3}{12c^2}
 +\frac{aT^3}{6c^2}=0
 ```
+```{math}
+:label: solvefora
+-3a+g+2a=0\rightarrow a=g
+```
+So of all the possible parabolic paths between $A$ and $B$, the one
+with $a=g$ will maximize the proper time elapsed between $A$ and $B$.
+
+It remains to be shown that the parabolic path has a larger proper time
+than the straight line path.  For this, we return to Eq. {eq}`parapropresult`
+and plug in $a=g$ to see what the proper time is along the parabola:
+```{math}
+:label: proptimepara
+\Delta t_0 = T - \frac{g^2T^3}{8c^2}+\frac{g^2T^3}{2c^2}
+-\frac{g^2T^3}{3c^2}
+```
+
+
 
 Now, if $T$ were going to be bigger than this (which would have to be
 the case if the straight line path really maximized the proper time),
