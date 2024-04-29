@@ -1066,24 +1066,29 @@ that a parabola gives the largest possible proper time interval of <em>all</em>
 functions <span class="math notranslate nohighlight">\(x(t)\)</span> that go through <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, I <em>can</em> show that a parabola
 yields a bigger proper time interval than just sitting still.</p>
 <p>For a baseball sitting still, both <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(v\)</span> are zero, so the integral
-is just <span class="math notranslate nohighlight">\(T\)</span>.  For a parabolic path with an acceleration <span class="math notranslate nohighlight">\(a\)</span>, the path
-would have to be <span class="math notranslate nohighlight">\(x(t) = v_0t + 1/2 at^2\)</span>, and therefore <span class="math notranslate nohighlight">\(v(t) = v_0+at\)</span>.
+is just <span class="math notranslate nohighlight">\(T\)</span>.  For a parabolic path with an acceleration <span class="math notranslate nohighlight">\(-a\)</span>, the path
+would have to be <span class="math notranslate nohighlight">\(x(t) = v_0t - 1/2 at^2\)</span>, and therefore <span class="math notranslate nohighlight">\(v(t) = v_0-at\)</span>.
 So the path integral becomes</p>
 <div class="math notranslate nohighlight" id="equation-paraprop">
-<span class="eqno">(13.13)<a class="headerlink" href="#equation-paraprop" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{(v_0+at)^2}{2c^2}+\frac{g}{c^2}(v_0t+at^2/2)\right]\]</div>
+<span class="eqno">(13.13)<a class="headerlink" href="#equation-paraprop" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{(v_0-at)^2}{2c^2}+\frac{g}{c^2}(v_0t-at^2/2)\right]\]</div>
 <p>Multiply everything out to get</p>
 <div class="math notranslate nohighlight" id="equation-parapropout">
-<span class="eqno">(13.14)<a class="headerlink" href="#equation-parapropout" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}-\frac{2v_0at}{2c^2}-
+<span class="eqno">(13.14)<a class="headerlink" href="#equation-parapropout" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}+\frac{2v_0at}{2c^2}-
 \frac{a^2t^2}{2c^2}+\frac{gv_0t}{c^2}
-+\frac{gat^2}{2c^2}\right]\]</div>
+-\frac{gat^2}{2c^2}\right]\]</div>
 <p>Regroup by like powers of <span class="math notranslate nohighlight">\(t\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-parapropregroup">
-<span class="eqno">(13.15)<a class="headerlink" href="#equation-parapropregroup" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}+\frac{v_0(g-a)t}{c^2}+
+<span class="eqno">(13.15)<a class="headerlink" href="#equation-parapropregroup" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}+\frac{v_0(g+a)t}{c^2}+
 \frac{a(g-a)t^2}{2c^2}\right]\]</div>
 <p>and integrate:</p>
 <div class="math notranslate nohighlight" id="equation-parapropreresult">
 <span class="eqno">(13.16)<a class="headerlink" href="#equation-parapropreresult" title="Permalink to this equation">#</a></span>\[\Delta t_0 = T - \frac{v_0^2T}{2c^2}+\frac{v_0(g-a)T^2}{2c^2}
 +\frac{a(g-a)T^3}{6c^2}\]</div>
+<p>Now, if <span class="math notranslate nohighlight">\(T\)</span> is going to be bigger than this, then the negative
+term would have to be bigger than the two postive terms.  That
+would mean</p>
+<div class="math notranslate nohighlight" id="equation-negcheck">
+<span class="eqno">(13.17)<a class="headerlink" href="#equation-negcheck" title="Permalink to this equation">#</a></span>\[v_0^2&gt;v_0(g-a)T + \frac{1}{3}a(g-a)T^2\]</div>
 </section>
 <section id="problems">
 <h2><span class="section-number">13.9. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>

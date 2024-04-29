@@ -802,24 +802,24 @@ functions $x(t)$ that go through $A$ and $B$, I *can* show that a parabola
 yields a bigger proper time interval than just sitting still.
 
 For a baseball sitting still, both $x$ and $v$ are zero, so the integral
-is just $T$.  For a parabolic path with an acceleration $a$, the path
-would have to be $x(t) = v_0t + 1/2 at^2$, and therefore $v(t) = v_0+at$.
+is just $T$.  For a parabolic path with an acceleration $-a$, the path
+would have to be $x(t) = v_0t - 1/2 at^2$, and therefore $v(t) = v_0-at$.
 So the path integral becomes
 ```{math}
 :label: paraprop
-\Delta t_0 = \int_0^T dt\left[1-\frac{(v_0+at)^2}{2c^2}+\frac{g}{c^2}(v_0t+at^2/2)\right]
+\Delta t_0 = \int_0^T dt\left[1-\frac{(v_0-at)^2}{2c^2}+\frac{g}{c^2}(v_0t-at^2/2)\right]
 ```
 Multiply everything out to get
 ```{math}
 :label: parapropout
-\Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}-\frac{2v_0at}{2c^2}-
+\Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}+\frac{2v_0at}{2c^2}-
 \frac{a^2t^2}{2c^2}+\frac{gv_0t}{c^2}
-+\frac{gat^2}{2c^2}\right]
+-\frac{gat^2}{2c^2}\right]
 ```
 Regroup by like powers of $t$:
 ```{math}
 :label: parapropregroup
-\Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}+\frac{v_0(g-a)t}{c^2}+
+\Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}+\frac{v_0(g+a)t}{c^2}+
 \frac{a(g-a)t^2}{2c^2}\right]
 ```
 and integrate:
@@ -827,6 +827,13 @@ and integrate:
 :label: parapropreresult
 \Delta t_0 = T - \frac{v_0^2T}{2c^2}+\frac{v_0(g-a)T^2}{2c^2}
 +\frac{a(g-a)T^3}{6c^2}
+```
+Now, if $T$ is going to be bigger than this, then the negative
+term would have to be bigger than the two postive terms.  That
+would mean
+```{math}
+:label: negcheck
+v_0^2>v_0(g-a)T + \frac{1}{3}a(g-a)T^2
 ```
 
 ## Problems
