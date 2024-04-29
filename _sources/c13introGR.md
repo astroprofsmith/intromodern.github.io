@@ -874,7 +874,7 @@ and plug in $a=g$ to see what the proper time is along the parabola:
 -\frac{g^2T^3}{3c^2}
 ```
 ```{math}
-:label: proptimepara
+:label: proptimecomp
 \Delta t_0 = T + \frac{g^2T^3}{24c^2}
 ```
 Since the term on the right is always positive, this proper time will
