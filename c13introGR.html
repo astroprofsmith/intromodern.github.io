@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'c13introGR';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="14. Chapter 14: Some Applications of General Relativity" href="c14applGR.html" />
+    <link rel="next" title="14. Some Applications of General Relativity" href="c14applGR.html" />
     <link rel="prev" title="12. Relativistic Electrodynamics" href="c12dynamic.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -183,7 +183,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="c11electric.html">11. The Electromagnetic Tensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c12dynamic.html">12. Relativistic Electrodynamics</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">13. Concepts of General Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="c14applGR.html">14. Chapter 14: Some Applications of General Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c14applGR.html">14. Some Applications of General Relativity</a></li>
 </ul>
 
     </div>
@@ -1009,6 +1009,32 @@ straight line trajectory.  In a flat spacetime, objects experiencing
 no net force will either remain at rest or move at a constant
 velocity.  For an object’s path through spacetime to deviate from a
 geodesic, a force must be exerted on it.</p>
+<p>In practice, to figure out the geodesic between two events in a curved
+spacetime requires maximizing the proper time over all possible paths
+between the two events.  In calculus, we learn how to maximize a
+function over a variable: take the derivative and set it to zero.
+However, how to differentiate a <em>path</em> is more complicated, and
+requires a branch of mathematics called The Calculus of Variations,
+which is beyond the scope of this book.  However, we can use some
+approximations and work through one simple example to show how this
+sort of approach can work.</p>
+<p>Let’s consider an object like a baseball, moving through the curved
+spacetime near the surface of the Earth.  We want to find the geodesic
+path between two events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, where both <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are at the
+same location in space, but <span class="math notranslate nohighlight">\(B\)</span> is at a later time than <span class="math notranslate nohighlight">\(A\)</span> (the
+spacetime diagram in <a class="reference internal" href="#twopaths"><span class="std std-numref">Fig. 13.1</span></a> applies here, too, with <span class="math notranslate nohighlight">\(A\)</span>
+being the lower dot and <span class="math notranslate nohighlight">\(B\)</span> being the upper dot.  Take the horizontal
+axis to represent the height, <span class="math notranslate nohighlight">\(x\)</span>).  We know from classical
+introductory mechanics that the ball will follow a parabolic
+trajectory such that <span class="math notranslate nohighlight">\(x(t) = x_A + v(t_A)t-1/2 g t^2\)</span>.  At <span class="math notranslate nohighlight">\(t=0\)</span>, the
+ball is at a height <span class="math notranslate nohighlight">\(x_A\)</span>, and if the ball is to return to <span class="math notranslate nohighlight">\(x_A\)</span> at
+the time of event <span class="math notranslate nohighlight">\(B\)</span>, it has to be given the right initial velocity.
+Too slow, and it will return before event <span class="math notranslate nohighlight">\(B\)</span>, but too fast, and it
+will not be back yet by the time event <span class="math notranslate nohighlight">\(B\)</span> happens.</p>
+<p>We therefore know that the geodesic should be a parabola in space.
+Can we understand this result within the formalism of relativity?  We
+need to modify Eq. <a class="reference internal" href="#equation-intint">(13.1)</a> to include the curvature effects near
+the surface of the Earth, using Eq. <a class="reference internal" href="#equation-gravred">(13.5)</a>.</p>
 </section>
 <section id="problems">
 <h2><span class="section-number">13.9. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
@@ -1090,7 +1116,7 @@ See example in Ford.</p></li>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">14. </span>Chapter 14: Some Applications of General Relativity</p>
+        <p class="prev-next-title"><span class="section-number">14. </span>Some Applications of General Relativity</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

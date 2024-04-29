@@ -732,6 +732,36 @@ no net force will either remain at rest or move at a constant
 velocity.  For an object's path through spacetime to deviate from a
 geodesic, a force must be exerted on it.
 
+In practice, to figure out the geodesic between two events in a curved
+spacetime requires maximizing the proper time over all possible paths
+between the two events.  In calculus, we learn how to maximize a
+function over a variable: take the derivative and set it to zero.
+However, how to differentiate a *path* is more complicated, and
+requires a branch of mathematics called The Calculus of Variations,
+which is beyond the scope of this book.  However, we can use some
+approximations and work through one simple example to show how this
+sort of approach can work.
+
+Let's consider an object like a baseball, moving through the curved
+spacetime near the surface of the Earth.  We want to find the geodesic
+path between two events $A$ and $B$, where both $A$ and $B$ are at the
+same location in space, but $B$ is at a later time than $A$ (the
+spacetime diagram in {numref}`twopaths` applies here, too, with $A$
+being the lower dot and $B$ being the upper dot.  Take the horizontal
+axis to represent the height, $x$).  We know from classical
+introductory mechanics that the ball will follow a parabolic
+trajectory such that $x(t) = x_A + v(t_A)t-1/2 g t^2$.  At $t=0$, the
+ball is at a height $x_A$, and if the ball is to return to $x_A$ at
+the time of event $B$, it has to be given the right initial velocity.
+Too slow, and it will return before event $B$, but too fast, and it
+will not be back yet by the time event $B$ happens.
+
+We therefore know that the geodesic should be a parabola in space.
+Can we understand this result within the formalism of relativity?  We
+need to modify Eq. {eq}`intint` to include the curvature effects near
+the surface of the Earth, using Eq. {eq}`gravred`.  
+
+
 ## Problems
 
 1. Project GREAT.  In 2005 Tom Van Baak carried out a home experiment in

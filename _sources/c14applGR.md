@@ -22,7 +22,7 @@ from myst_nb import glue
 
 ```
 
-# Chapter 14: Some Applications of General Relativity
+# Some Applications of General Relativity
 
 ## Mercury's Orbit
 
