@@ -820,7 +820,7 @@ Regroup by like powers of $t$:
 ```{math}
 :label: parapropregroup
 \Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}+\frac{v_0(g+a)t}{c^2}-
-\frac{a(g-a)t^2}{2c^2}\right]
+\frac{a(g+a)t^2}{2c^2}\right]
 ```
 and integrate:
 ```{math}
@@ -836,6 +836,12 @@ terms.  That would mean
 ```{math}
 :label: negcheck
 v_0^2>v_0(g+a)T - \frac{1}{3}a(g+a)T^2
+```
+But we also know from the path equation that for the ball to come back
+down in time ($x(T)=0$), $v_0 = aT/2$.  Plug that in and get
+```{math}
+:label: negcheck2
+\frac{a^2T^2}{4}>\frac{aT^2}{2}(g+a) - \frac{1}{3}a(g+a)T^2 = \frac{aT^2}{6}(g+a)
 ```
 
 ## Problems
