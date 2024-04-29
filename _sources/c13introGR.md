@@ -759,7 +759,38 @@ will not be back yet by the time event $B$ happens.
 We therefore know that the geodesic should be a parabola in space.
 Can we understand this result within the formalism of relativity?  We
 need to modify Eq. {eq}`intint` to include the curvature effects near
-the surface of the Earth, using Eq. {eq}`gravred`.  
+the surface of the Earth, using Eq. {eq}`gravred`.  If the object
+increases in altitude by $dx$, going from $x=0$ to $x=dx$,
+the clocks will all run slower by $gx/c^2$, going from $dt$ to
+$dt(1+gz/c^2)$.  As explained in the merry-go-round example, above,
+rulers will also shrink as you go up, so the length of an interval
+$dx$ will also grow, and by the same factor.  So the metric for
+this situation becomes (approximately):
+```{math}
+:label: gmetric
+g_{\mu\nu} =
+\begin{bmatrix}
+-(1+gx/c^2)&0&0&0\\
+0&(1+gx/c^2)&0&0\\
+0&0&1&0\\
+0&0&0&1
+\end{bmatrix}
+```
+In so far as $g$ is small but not zero, the spacetime is curved away
+from flatness.  Note that for the Earth, $g/c^2$ is about $10^{-16}$
+1/m, a very small number.  If we multiply out $ds^2 = g_{\mu\nu}dx^\mu dx^\nu$,
+we get a new version of Eq. {eq}`intint`:
+```{math}
+:label: curveds
+ds^2 = -c^2dt^2\left[1+\frac{gx}{c^2}\right]^2+dx^2\left[1+\frac{gx}{c^2}\right]^2
+```
+take the square root and factor out the common factors to set up the
+integral over the path to get the proper time $\Delta t_0$:
+```{math}
+:label: curvepropt
+\Delta t_0 = \int_{\rm path} cdt\sqrt{1-\frac{dx^2}{c^2dt^2}}\left[1+\frac{gx}{c^2}\right] = \int_{\rm path}
+cdt\sqrt{1-\frac{v^2}{c^2}}\left[1+\frac{gx}{c^2}\right]
+```
 
 
 ## Problems
