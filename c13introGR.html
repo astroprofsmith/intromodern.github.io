@@ -1046,7 +1046,7 @@ rulers will also shrink as you go up, so the length of an interval
 <p>take the square root and factor out the common factors to set up the
 integral over the path to get the proper time <span class="math notranslate nohighlight">\(\Delta t_0\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-curvepropt">
-<span class="eqno">(13.10)<a class="headerlink" href="#equation-curvepropt" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_{\rm path} cdt\sqrt{1-\frac{dx^2}{c^2dt^2}}\left[1+\frac{gx}{c^2}\right] = \int_0^T
+<span class="eqno">(13.10)<a class="headerlink" href="#equation-curvepropt" title="Permalink to this equation">#</a></span>\[c\Delta t_0 = \int_{\rm path} cdt\sqrt{1-\frac{dx^2}{c^2dt^2}}\left[1+\frac{gx}{c^2}\right] = \int_0^T
 cdt\sqrt{1-\frac{v^2}{c^2}}\left[1+\frac{gx}{c^2}\right]\]</div>
 <p>as long as <span class="math notranslate nohighlight">\(x(t=0)=x(t=T)=0\)</span>.  In so far as <span class="math notranslate nohighlight">\(g\)</span> is small but not zero,
 the spacetime is curved away from flatness.  Note that for the Earth,
@@ -1054,10 +1054,14 @@ the spacetime is curved away from flatness.  Note that for the Earth,
 <p>Next we make the approximation that no baseball is going to anywhere near
 the speed of light, so <span class="math notranslate nohighlight">\(v\ll c\)</span> and we can remove the square root.</p>
 <div class="math notranslate nohighlight" id="equation-curveprop2">
-<span class="eqno">(13.11)<a class="headerlink" href="#equation-curveprop2" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^Tcdt\left[1-\frac{v^2}{2c^2}\right]\left[1+\frac{gx}{c^2}\right]\]</div>
+<span class="eqno">(13.11)<a class="headerlink" href="#equation-curveprop2" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{v^2}{2c^2}\right]\left[1+\frac{gx}{c^2}\right]\]</div>
 <p>Next we drop second order terms:</p>
 <div class="math notranslate nohighlight" id="equation-curveprop3">
-<span class="eqno">(13.12)<a class="headerlink" href="#equation-curveprop3" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^Tcdt\left[1-\frac{v^2}{2c^2}+\frac{gx}{c^2}\right]\]</div>
+<span class="eqno">(13.12)<a class="headerlink" href="#equation-curveprop3" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{v^2}{2c^2}+\frac{gx}{c^2}\right]\]</div>
+<p>This is technically as far as we can go without the Calculus of Variations.
+To solve this integral, we would need some function of <span class="math notranslate nohighlight">\(x(t)\)</span>, which would
+define the path.  Then we could take <span class="math notranslate nohighlight">\(v=dx/dt\)</span> to be able to get the
+second term into a functional form we could integrate.</p>
 </section>
 <section id="problems">
 <h2><span class="section-number">13.9. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>

@@ -775,7 +775,7 @@ take the square root and factor out the common factors to set up the
 integral over the path to get the proper time $\Delta t_0$:
 ```{math}
 :label: curvepropt
-\Delta t_0 = \int_{\rm path} cdt\sqrt{1-\frac{dx^2}{c^2dt^2}}\left[1+\frac{gx}{c^2}\right] = \int_0^T
+c\Delta t_0 = \int_{\rm path} cdt\sqrt{1-\frac{dx^2}{c^2dt^2}}\left[1+\frac{gx}{c^2}\right] = \int_0^T
 cdt\sqrt{1-\frac{v^2}{c^2}}\left[1+\frac{gx}{c^2}\right]
 ```
 as long as $x(t=0)=x(t=T)=0$.  In so far as $g$ is small but not zero,
@@ -786,13 +786,17 @@ Next we make the approximation that no baseball is going to anywhere near
 the speed of light, so $v\ll c$ and we can remove the square root.
 ```{math}
 :label: curveprop2
-\Delta t_0 = \int_0^Tcdt\left[1-\frac{v^2}{2c^2}\right]\left[1+\frac{gx}{c^2}\right]
+\Delta t_0 = \int_0^T dt\left[1-\frac{v^2}{2c^2}\right]\left[1+\frac{gx}{c^2}\right]
 ```
 Next we drop second order terms:
 ```{math}
 :label: curveprop3
-\Delta t_0 = \int_0^Tcdt\left[1-\frac{v^2}{2c^2}+\frac{gx}{c^2}\right]
+\Delta t_0 = \int_0^T dt\left[1-\frac{v^2}{2c^2}+\frac{gx}{c^2}\right]
 ```
+This is technically as far as we can go without the Calculus of Variations.
+To solve this integral, we would need some function of $x(t)$, which would
+define the path.  Then we could take $v=dx/dt$ to be able to get the
+second term into a functional form we could integrate.
 
 ## Problems
 
