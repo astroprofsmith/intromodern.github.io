@@ -824,7 +824,7 @@ Regroup by like powers of $t$:
 ```
 and integrate:
 ```{math}
-:label: parapropreresult
+:label: parapropresult
 \Delta t_0 = T - \frac{v_0^2T}{2c^2}+\frac{v_0(g+a)T^2}{2c^2}
 -\frac{a(g+a)T^3}{6c^2}
 ```
@@ -841,7 +841,11 @@ and set to zero:
 ```{math}
 :label: dtda
 \frac{d\Delta t_0}{da} = \frac{v_0T^2}{2c^2}
--\frac{gT^3}{6c^2}-\frac{gaT^3}{3c^2}=0
+-\frac{gT^3}{6c^2}-\frac{aT^3}{3c^2}=0
+```
+```{math}
+:label: solvefora
+3v_0T^2 = gT^3+2aT^3 \rightarrow a = \frac{3v_0-gT}{2T}
 ```
 
 
