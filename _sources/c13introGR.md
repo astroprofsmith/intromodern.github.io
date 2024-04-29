@@ -829,6 +829,23 @@ and integrate:
 -\frac{a(g+a)T^3}{6c^2}
 ```
 
+At this point, we can use simple calculus to ask what value of $a$
+will maximize $\Delta t_0$?  In other words, of all the possible
+parabolas that go through $A$ and $B$, which value of $a$ will
+maximize the proper time?  That doesn't prove anything about all
+possible paths of *any* shape, but it's the best we can do without
+Calculus of Variations.
+
+We need to differentiate Eq. {eq}`parapropresult` with respect to $a$
+and set to zero:
+```{math}
+:label: dtda
+\frac{d\Delta t_0}{da} = \frac{v_0T^2}{2c^2}
+-\frac{gT^3}{6c^2}-\frac{gaT^3}{3c^2}=0
+```
+
+
+
 Now, if $T$ were going to be bigger than this (which would have to be
 the case if the straight line path really maximized the proper time),
 then the negative term would have to be bigger than the two postive
@@ -843,6 +860,12 @@ down in time ($x(T)=0$), $v_0 = aT/2$.  Plug that in and get
 :label: negcheck2
 \frac{a^2T^2}{4}>\frac{aT^2}{2}(g+a) - \frac{1}{3}a(g+a)T^2 = \frac{aT^2}{6}(g+a)
 ```
+```{math}
+:label: negcheck3
+\frac{a}{2}>\frac{a+g}{3}
+```
+Here we can cheat a little bit because we know $a=g$, so this is really
+$g>2g/3$, which can never happen.
 
 ## Problems
 
