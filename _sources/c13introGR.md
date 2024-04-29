@@ -764,22 +764,9 @@ increases in altitude by $dx$, going from $x=0$ to $x=dx$,
 the clocks will all run slower by $gx/c^2$, going from $dt$ to
 $dt(1+gz/c^2)$.  As explained in the merry-go-round example, above,
 rulers will also shrink as you go up, so the length of an interval
-$dx$ will also grow, and by the same factor.  So the metric for
-this situation becomes (approximately):
-```{math}
-:label: gmetric
-g_{\mu\nu} =
-\begin{bmatrix}
--(1+gx/c^2)&0&0&0\\
-0&(1+gx/c^2)&0&0\\
-0&0&1&0\\
-0&0&0&1
-\end{bmatrix}
-```
-In so far as $g$ is small but not zero, the spacetime is curved away
-from flatness.  Note that for the Earth, $g/c^2$ is about $10^{-16}$
-1/m, a very small number.  If we multiply out $ds^2 = g_{\mu\nu}dx^\mu dx^\nu$,
-we get a new version of Eq. {eq}`intint`:
+$dx$ will also grow, and by the same factor.
+
+If we multiply out $ds^2$, we get a new version of Eq. {eq}`intint`:
 ```{math}
 :label: curveds
 ds^2 = -c^2dt^2\left[1+\frac{gx}{c^2}\right]^2+dx^2\left[1+\frac{gx}{c^2}\right]^2
@@ -788,10 +775,24 @@ take the square root and factor out the common factors to set up the
 integral over the path to get the proper time $\Delta t_0$:
 ```{math}
 :label: curvepropt
-\Delta t_0 = \int_{\rm path} cdt\sqrt{1-\frac{dx^2}{c^2dt^2}}\left[1+\frac{gx}{c^2}\right] = \int_{\rm path}
+\Delta t_0 = \int_{\rm path} cdt\sqrt{1-\frac{dx^2}{c^2dt^2}}\left[1+\frac{gx}{c^2}\right] = \int_0^T
 cdt\sqrt{1-\frac{v^2}{c^2}}\left[1+\frac{gx}{c^2}\right]
 ```
+as long as $x(t=0)=x(t=T)=0$.  In so far as $g$ is small but not zero,
+the spacetime is curved away from flatness.  Note that for the Earth,
+$g/c^2$ is about $10^{-16}$ 1/m, a very small number.
 
+Next we make the approximation that no baseball is going to anywhere near
+the speed of light, so $v\ll c$ and we can remove the square root.
+```{math}
+:label: curveprop2
+\Delta t_0 = \int_0^Tcdt\left[1-\frac{v^2}{2c^2}\right]\left[1+\frac{gx}{c^2}\right]
+```
+Next we drop second order terms:
+```{math}
+:label: curveprop3
+\Delta t_0 = \int_0^Tcdt\left[1-\frac{v^2}{2c^2}+\frac{gx}{c^2}\right]
+```
 
 ## Problems
 

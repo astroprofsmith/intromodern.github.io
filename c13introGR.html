@@ -1039,27 +1039,25 @@ increases in altitude by <span class="math notranslate nohighlight">\(dx\)</span
 the clocks will all run slower by <span class="math notranslate nohighlight">\(gx/c^2\)</span>, going from <span class="math notranslate nohighlight">\(dt\)</span> to
 <span class="math notranslate nohighlight">\(dt(1+gz/c^2)\)</span>.  As explained in the merry-go-round example, above,
 rulers will also shrink as you go up, so the length of an interval
-<span class="math notranslate nohighlight">\(dx\)</span> will also grow, and by the same factor.  So the metric for
-this situation becomes (approximately):</p>
-<div class="math notranslate nohighlight" id="equation-gmetric">
-<span class="eqno">(13.9)<a class="headerlink" href="#equation-gmetric" title="Permalink to this equation">#</a></span>\[\begin{split}g_{\mu\nu} =
-\begin{bmatrix}
--(1+gx/c^2)&amp;0&amp;0&amp;0\\
-0&amp;(1+gx/c^2)&amp;0&amp;0\\
-0&amp;0&amp;1&amp;0\\
-0&amp;0&amp;0&amp;1
-\end{bmatrix}\end{split}\]</div>
-<p>In so far as <span class="math notranslate nohighlight">\(g\)</span> is small but not zero, the spacetime is curved away
-from flatness.  Note that for the Earth, <span class="math notranslate nohighlight">\(g/c^2\)</span> is about <span class="math notranslate nohighlight">\(10^{-16}\)</span>
-1/m, a very small number.  If we multiply out <span class="math notranslate nohighlight">\(ds^2 = g_{\mu\nu}dx^\mu dx^\nu\)</span>,
-we get a new version of Eq. <a class="reference internal" href="#equation-intint">(13.1)</a>:</p>
+<span class="math notranslate nohighlight">\(dx\)</span> will also grow, and by the same factor.</p>
+<p>If we multiply out <span class="math notranslate nohighlight">\(ds^2\)</span>, we get a new version of Eq. <a class="reference internal" href="#equation-intint">(13.1)</a>:</p>
 <div class="math notranslate nohighlight" id="equation-curveds">
-<span class="eqno">(13.10)<a class="headerlink" href="#equation-curveds" title="Permalink to this equation">#</a></span>\[ds^2 = -c^2dt^2\left[1+\frac{gx}{c^2}\right]^2+dx^2\left[1+\frac{gx}{c^2}\right]^2\]</div>
+<span class="eqno">(13.9)<a class="headerlink" href="#equation-curveds" title="Permalink to this equation">#</a></span>\[ds^2 = -c^2dt^2\left[1+\frac{gx}{c^2}\right]^2+dx^2\left[1+\frac{gx}{c^2}\right]^2\]</div>
 <p>take the square root and factor out the common factors to set up the
 integral over the path to get the proper time <span class="math notranslate nohighlight">\(\Delta t_0\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-curvepropt">
-<span class="eqno">(13.11)<a class="headerlink" href="#equation-curvepropt" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_{\rm path} cdt\sqrt{1-\frac{dx^2}{c^2dt^2}}\left[1+\frac{gx}{c^2}\right] = \int_{\rm path}
+<span class="eqno">(13.10)<a class="headerlink" href="#equation-curvepropt" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_{\rm path} cdt\sqrt{1-\frac{dx^2}{c^2dt^2}}\left[1+\frac{gx}{c^2}\right] = \int_0^T
 cdt\sqrt{1-\frac{v^2}{c^2}}\left[1+\frac{gx}{c^2}\right]\]</div>
+<p>as long as <span class="math notranslate nohighlight">\(x(t=0)=x(t=T)=0\)</span>.  In so far as <span class="math notranslate nohighlight">\(g\)</span> is small but not zero,
+the spacetime is curved away from flatness.  Note that for the Earth,
+<span class="math notranslate nohighlight">\(g/c^2\)</span> is about <span class="math notranslate nohighlight">\(10^{-16}\)</span> 1/m, a very small number.</p>
+<p>Next we make the approximation that no baseball is going to anywhere near
+the speed of light, so <span class="math notranslate nohighlight">\(v\ll c\)</span> and we can remove the square root.</p>
+<div class="math notranslate nohighlight" id="equation-curveprop2">
+<span class="eqno">(13.11)<a class="headerlink" href="#equation-curveprop2" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^Tcdt\left[1-\frac{v^2}{2c^2}\right]\left[1+\frac{gx}{c^2}\right]\]</div>
+<p>Next we drop second order terms:</p>
+<div class="math notranslate nohighlight" id="equation-curveprop3">
+<span class="eqno">(13.12)<a class="headerlink" href="#equation-curveprop3" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^Tcdt\left[1-\frac{v^2}{2c^2}+\frac{gx}{c^2}\right]\]</div>
 </section>
 <section id="problems">
 <h2><span class="section-number">13.9. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
