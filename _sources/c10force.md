@@ -22,7 +22,7 @@ from myst_nb import glue
 
 ```
 
-# Chapter 10: Relativistic Force and Acceleration
+# Relativistic Force and Acceleration
 
 ## Background
 

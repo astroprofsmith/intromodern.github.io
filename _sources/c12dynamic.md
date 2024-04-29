@@ -22,9 +22,7 @@ from myst_nb import glue
 
 ```
 
-** Are there any figures I can make for this stuff?**
-
-# Chapter 12: Relativistic Electrodynamics
+# Relativistic Electrodynamics
 
 Now that we have an expression for the electromagnetic field tensor,
 which treats $\vec{E}$ and $\vec{B}$ as different parts of a single

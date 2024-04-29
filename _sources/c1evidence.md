@@ -19,7 +19,7 @@ from IPython import display
 from myst_nb import glue
 ```
 
-# Chapter 1:  Roots of Relativity
+# Roots of Relativity
 
 Before we dive into the set of predictions and interpretations that
 make up what we call "Special Relativity" (or SR), it's important to

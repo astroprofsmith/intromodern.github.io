@@ -22,7 +22,7 @@ from myst_nb import glue
 
 ```
 
-# Chapter 8: The Momentum Four-Vector
+# The Momentum Four-Vector
 
 You have been introduced to the displacement 4-vector, the Lorentz
 transformation and to the velocity 4-vector. These quantities can be

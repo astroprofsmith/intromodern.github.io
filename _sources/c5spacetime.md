@@ -22,7 +22,7 @@ from myst_nb import glue
 
 ```
 
-# Chapter 5: Properties of Spacetime Diagrams
+# Properties of Spacetime Diagrams
 
 Now that we have the tools of the displacement four vector, the
 spacetime diagram, and the Lorentz transformation, it is worth taking

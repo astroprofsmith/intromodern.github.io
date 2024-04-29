@@ -22,7 +22,7 @@ from myst_nb import glue
 
 ```
 
-# Chapter 4: Lorentz Transformations
+# Lorentz Transformations
 
 We have already seen that requiring the size of a four-vector
 to be invariant across reference frames leads to interesting

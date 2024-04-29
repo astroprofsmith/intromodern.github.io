@@ -22,7 +22,7 @@ from myst_nb import glue
 
 ```
 
-# Chapter 7: The Velocity Four-Vector
+# The Velocity Four-Vector
 
 Once we have carefully defined what we mean by position and
 displacement, as measured in a particular reference frame,

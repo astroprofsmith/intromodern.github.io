@@ -22,7 +22,7 @@ from myst_nb import glue
 
 ```
 
-# Chapter 11: The Electromagnetic Tensor
+# The Electromagnetic Tensor
 
 Many introductory relativity textbooks stop with dynamics, but I think
 it's important to include some of the implications of realtivity

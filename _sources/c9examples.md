@@ -22,7 +22,7 @@ from myst_nb import glue
 
 ```
 
-# Chapter 9: Examples of Relativity in Action
+# Examples of Relativity in Action
 
 In this chapter we will explore how to use the energy-momentum four
 vector to understand three example situations.  First, in the

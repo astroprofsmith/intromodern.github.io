@@ -22,7 +22,7 @@ from myst_nb import glue
 
 ```
 
-# Chapter 6: The Displacement Four Vector
+# The Displacement Four Vector
 
 In this chapter, we will take a deep dive into the properties of
 the displacement four vector, using all the tools developed in the

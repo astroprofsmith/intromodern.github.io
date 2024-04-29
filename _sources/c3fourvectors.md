@@ -22,7 +22,7 @@ from myst_nb import glue
 
 ```
 
-# Chapter 3: Four Vectors
+# Four Vectors
 
 ## Time as a Dimension
 

@@ -20,7 +20,7 @@ from myst_nb import glue
 
 ```
 
-# Chapter 2:  Postulates of Relativity
+# Postulates of Relativity
 
 ## Two Postulates of Relativity
 

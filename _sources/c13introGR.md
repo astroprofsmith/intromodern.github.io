@@ -22,7 +22,7 @@ from myst_nb import glue
 
 ```
 
-# Chapter 13: Concepts of General Relativity
+# Concepts of General Relativity
 
 Although a full treatment of General Relativity (GR) is far beyond the
 scope of this book, I would like to leave you with some hints at
@@ -411,6 +411,8 @@ component that wasn't there before.  In both cases, the total force
 vector, from the point of view of everything inside the car, would
 swing from vertically down to diagonally down and forward.
 
+<video src="_static/Equivalence.m4v"></video>
+
 This insight is so important that this "Equivalence Principle"
 occupies a similar place in the foundation of GR that the two
 postulates of SR do for that theory.  Within the formulation of GR,
@@ -673,7 +675,9 @@ metrics of interest in Chapter 14.
 
 ## Geodesics
 
-Forces cause deviations from geodesics?
+How can we understand this perplexing fact that a reference frame locked to
+a painter in constantly accelerating free fall is also an inertial reference
+frame?
 
 ## Problems
 
