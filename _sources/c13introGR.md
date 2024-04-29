@@ -415,16 +415,16 @@ There is a very simple demonstration one can perform that illustrates
 how an object in free fall near the Earth's surface is equivalent to
 the object floating in deep space.  If a bottle of water near the
 Earth has a hole in the side, gravity will pull the water downward,
-but the bottom of the bottle will push back against the water, and
-the water will squirt out the side.  If the bottle were floating far
-away from gravity, there would be no reason for the water to squirt
-out the hole, and it would simply stay in the bottle.  Therefore, if
-the Equivalence Principle is valid, water should stay inside of a
-bottle in free fall near the Earth.  In the short video included
-here, a bottle of water is suspended from the ceiling, generating
-a stream out a hole in its side.  At about five seconds in, the string
-holding the bottle is cut.  You will note that the stream disappears
-and both the top of the stream and the bottle itself fall at the same
+but the bottom of the bottle will push back against the water, and the
+water will squirt out the side.  If the bottle were floating far away
+from gravity, there would be no reason for the water to squirt out the
+hole, and it would simply stay in the bottle.  Therefore, if the
+Equivalence Principle is valid, water should stay inside of a bottle
+in free fall near the Earth.  In the short video included here, a
+bottle of water is suspended from the ceiling, generating a stream out
+a hole in its side.  At about five seconds in, the string holding the
+bottle is cut.  You will note that the water stops streaming and both
+the top of the existing stream and the bottle itself fall at the same
 rate thereafter.
 
 <video controls src="_static/EquivV.m4v"></video>
