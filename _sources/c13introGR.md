@@ -411,7 +411,7 @@ component that wasn't there before.  In both cases, the total force
 vector, from the point of view of everything inside the car, would
 swing from vertically down to diagonally down and forward.
 
-<video src="_static/Equivalence.m4v"></video>
+<video controls src="_static/Equiv2.mov"></video>
 
 This insight is so important that this "Equivalence Principle"
 occupies a similar place in the foundation of GR that the two
