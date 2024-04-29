@@ -796,7 +796,19 @@ Next we drop second order terms:
 This is technically as far as we can go without the Calculus of Variations.
 To solve this integral, we would need some function of $x(t)$, which would
 define the path.  Then we could take $v=dx/dt$ to be able to get the
-second term into a functional form we could integrate.
+second term into a functional form we could integrate.  While I can't prove
+that a parabola gives the largest possible proper time interval of *all*
+functions $x(t)$ that go through $A$ and $B$, I *can* show that a parabola
+yields a bigger proper time interval than just sitting still.
+
+For a baseball sitting still, both $x$ and $v$ are zero, so the integral
+is just $T$.  For a parabolic path with an acceleration $a$, the path
+would have to be $x(t) = v_0t - 1/2 at^2$, and therefore $v(t) = v_0-at$.
+So the path integral becomes
+```{math}
+:label: paraprop
+\Delta t_0 = \int_0^T dt\left[1-\frac{(v_0-at)^2}{2c^2}+\frac{g}{c^2}(v_0t-at^2/2)\right]
+```
 
 ## Problems
 
