@@ -736,11 +736,11 @@ In practice, to figure out the geodesic between two events in a curved
 spacetime requires maximizing the proper time over all possible paths
 between the two events.  In calculus, we learn how to maximize a
 function over a variable: take the derivative and set it to zero.
-However, how to differentiate a *path* is more complicated, and
-requires a branch of mathematics called The Calculus of Variations,
-which is beyond the scope of this book.  However, we can use some
-approximations and work through one simple example to show how this
-sort of approach can work.
+However, how to differentiate with respect to a *path* is more
+complicated, and requires a branch of mathematics called The Calculus
+of Variations, which is beyond the scope of this book.  However, we
+can use some approximations and work through one simple example to
+show how this sort of approach can work.
 
 Let's consider an object like a baseball, moving through the curved
 spacetime near the surface of the Earth.  We want to find the geodesic
@@ -886,28 +886,31 @@ line path.  I have not proved that the parabolic path maximizes the
 proper time out of *all* the possible paths between $A$ and $B$,
 but it is certainly a larger time than sitting still.
 
-In other words, if no forces are acting on the ball, it will follow a
-parabolic path between $A$ and $B$, simply by moving along a geodesic.
-If you want the ball to travel a different path, say not moving at
-all, you will have to exert a force on it.  For example, if the ball
-is lying on the ground, the force from the ground will push upward and
-keep the ball from falling down.  The geodesic path therefore
-represents the natural trajectory through spacetime, in the absence of
-forces.  All objects following geodesics will be in an inertial frame
-of reference, and will appear within a reference frame moving with
-them to be experiencing no net forces.  That reference frame is
-therefore inertial.  The reference frame that is not in free-fall near
-the Earth (for example, the reference frame at rest with respect to
-the ground) is not inertial, in this sense, because we need to invent
-a force to explain why everything seems to accelerate downward when
-released, and we call that force gravity.  Much like if we were in a
-rotating reference frame, we would need to invent a centrifugal force
-to explain why everything moved away from the axis of rotation.
-However, in a flat spacetime, the geodesic is a straight line at
-constant velocity, which is why up until this chapter, when
-considering inertial reference frames, we insisted on the special case
-of constant relative velocities, thereby distinguishing *special*
-relativity from *general* relativity.
+In other words (accepting provisionally that a parabola does indeed
+maximize $\Delta t_0$ out of all possible paths), if no forces are
+acting on the ball, it will follow a parabolic path between $A$ and
+$B$, simply by moving along a geodesic.  If you want the ball to
+travel a different path, say not moving at all, you will have to exert
+a force on it.  For example, if the ball is lying on the ground, the
+force from the ground will push upward and keep the ball from falling
+down.  The geodesic path therefore represents the natural trajectory
+through spacetime, in the absence of forces.  All objects following
+geodesics will be in an inertial frame of reference, and will appear
+within a reference frame moving with them to be experiencing no net
+forces.  That reference frame is therefore inertial.
+
+The reference frame that is not in free-fall near the Earth (for
+example, the reference frame at rest with respect to the ground) is
+not inertial, in this sense, because we need to invent a force to
+explain why everything seems to accelerate downward when released, and
+we call that force gravity.  Much like if we were in a rotating
+reference frame, we would need to invent a centrifugal force to
+explain why everything moved away from the axis of rotation.  However,
+in a flat spacetime, the geodesic is a straight line at constant
+velocity, which is why up until this chapter, when considering
+inertial reference frames, we insisted on the special case of constant
+relative velocities, thereby distinguishing *special* relativity from
+*general* relativity.
 
 ## Summary
 
