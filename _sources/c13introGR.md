@@ -427,7 +427,9 @@ bottle is cut.  You will note that the water stops streaming and both
 the top of the existing stream and the bottle itself fall at the same
 rate thereafter.
 
+<center>
 <video controls src="_static/EquivV.m4v"></video>
+</center>
 
 This insight is so important that this "Equivalence Principle"
 occupies a similar place in the foundation of GR that the two
