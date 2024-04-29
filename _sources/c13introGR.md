@@ -856,8 +856,7 @@ first:
 :label: dtda1
 \frac{d\Delta t_0}{da} = - \frac{aT^3}{4c^2}
 +\frac{gT^3}{12c^2}
-+\frac{aT^3}{6c^2}
-\right]=0
++\frac{aT^3}{6c^2}=0
 ```
 
 Now, if $T$ were going to be bigger than this (which would have to be
