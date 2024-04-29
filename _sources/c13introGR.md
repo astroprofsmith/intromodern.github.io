@@ -837,15 +837,13 @@ possible paths of *any* shape, but it's the best we can do without
 Calculus of Variations.
 
 We need to differentiate Eq. {eq}`parapropresult` with respect to $a$
-and set to zero:
+and set to zero.  But we also know from the path equation that for the
+ball to come back down in time ($x(T)=0$), $v_0 = aT/2$.  Plug that in
+first:
 ```{math}
 :label: dtda
-\frac{d\Delta t_0}{da} = \frac{v_0T^2}{2c^2}
--\frac{gT^3}{6c^2}-\frac{aT^3}{3c^2}=0
-```
-```{math}
-:label: solvefora
-3v_0T^2 = gT^3+2aT^3 \rightarrow a = \frac{3v_0-gT}{2T}
+\frac{d\Delta t_0}{da} = \frac{d}{da}\left[T - \frac{(aT)^2T}{8c^2}+\frac{aT(g+a)T^2}{4c^2}
+-\frac{a(g+a)T^3}{6c^2}\right]
 ```
 
 
@@ -858,8 +856,7 @@ terms.  That would mean
 :label: negcheck
 v_0^2>v_0(g+a)T - \frac{1}{3}a(g+a)T^2
 ```
-But we also know from the path equation that for the ball to come back
-down in time ($x(T)=0$), $v_0 = aT/2$.  Plug that in and get
+and get
 ```{math}
 :label: negcheck2
 \frac{a^2T^2}{4}>\frac{aT^2}{2}(g+a) - \frac{1}{3}a(g+a)T^2 = \frac{aT^2}{6}(g+a)
