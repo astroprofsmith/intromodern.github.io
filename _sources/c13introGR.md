@@ -819,21 +819,23 @@ Multiply everything out to get
 Regroup by like powers of $t$:
 ```{math}
 :label: parapropregroup
-\Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}+\frac{v_0(g+a)t}{c^2}+
+\Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}+\frac{v_0(g+a)t}{c^2}-
 \frac{a(g-a)t^2}{2c^2}\right]
 ```
 and integrate:
 ```{math}
 :label: parapropreresult
-\Delta t_0 = T - \frac{v_0^2T}{2c^2}+\frac{v_0(g-a)T^2}{2c^2}
-+\frac{a(g-a)T^3}{6c^2}
+\Delta t_0 = T - \frac{v_0^2T}{2c^2}+\frac{v_0(g+a)T^2}{2c^2}
+-\frac{a(g+a)T^3}{6c^2}
 ```
-Now, if $T$ is going to be bigger than this, then the negative
-term would have to be bigger than the two postive terms.  That
-would mean
+
+Now, if $T$ were going to be bigger than this (which would have to be
+the case if the straight line path really maximized the proper time),
+then the negative term would have to be bigger than the two postive
+terms.  That would mean
 ```{math}
 :label: negcheck
-v_0^2>v_0(g-a)T + \frac{1}{3}a(g-a)T^2
+v_0^2>v_0(g+a)T - \frac{1}{3}a(g+a)T^2
 ```
 
 ## Problems
