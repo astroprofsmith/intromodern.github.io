@@ -809,6 +809,13 @@ So the path integral becomes
 :label: paraprop
 \Delta t_0 = \int_0^T dt\left[1-\frac{(v_0-at)^2}{2c^2}+\frac{g}{c^2}(v_0t-at^2/2)\right]
 ```
+Multiply everything out to get
+```{math}
+:label: parapropout
+\Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}-\frac{2v_0at}{2c^2}+
+\frac{at^2}{2c^2}+\frac{gv_0t}{c^2}
+-\frac{gat^2}{2c^2}\right]
+```
 
 ## Problems
 
