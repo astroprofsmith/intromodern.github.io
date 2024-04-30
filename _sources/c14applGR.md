@@ -572,18 +572,19 @@ the source in representative directions.  It is imporant to recognize
 that an infinite number of rays *really* leave the source, but only
 twenty are shown, to keep the illustration from getting too crowded.
 You should therefore imagine many rays existing between any two rays
-shown here.  The rays are bent by the angle $\alpha$, depending on
-how close they get to the lens.  If the ray actually intersects with
-the lens, it is blocked and removed from the diagram.  If the bent ray
-hits the Earth, the arrow turns red, and a magenta arrow shows the back
-extrapolation to the location of the associated image.  Two images
-are displayed as magneta spheres at the locations given by Eq. {eq}`lensQsol`.
-Note that they don't point *exactly* at the spheres due to the fact
-that the equations use the small angle approximation, but the angles in
-the illustration are exaggerated so you can see them.  You can change the
-relative position of the source with the slider below the illustration,
-to see how the lensing changes for different configurations of source,
-lens, and observer. 
+shown here.  The rays are bent by the angle $\alpha$, depending on how
+close they get to the lens.  If the ray actually intersects with the
+lens, it is blocked and removed from the diagram.  If the bent ray
+hits the Earth, the arrow turns red, and a magenta arrow shows the
+back extrapolation to the location of the associated image.  Two
+images are displayed as magneta spheres at the locations given by
+Eq. {eq}`lensQsol`.  Note that they don't point *exactly* at the
+spheres due to the fact that the equations use the small angle
+approximation, but the angles in the illustration are exaggerated so
+you can see them (also the size of the Earth is greatly exaggerated).
+You can change the relative position of the source with the slider
+below the illustration, to see how the lensing changes for different
+configurations of source, lens, and observer.
 ```
 
 {numref}`lensanimate` provides an interactive animated version of
@@ -595,8 +596,9 @@ they get to the lens, according to Eq. {eq}`GRdeflect`.  When one of
 the representative rays lines up with the Earth, it turns red, and a
 back-extrapolated arrow indicates why the image is seen where it is.
 Note that the arrow and the sphere don't always exactly line up
-because the math uses the small angle approximation, but the
-illustration exaggerates the angles so that the viewer can see them.
+because the math uses the small angle approximation, and the size of
+the Earth is vastly enhanced, but the illustration exaggerates the
+angles so that the viewer can see them.
 
 As you move the slider back and forth, you can see how the images
 shift relative to the original source location.  As the source moves
@@ -662,9 +664,6 @@ is called Microlensing.  Although a full treatment of gravitational
 lensing and all its variations is outside the scope of this book, it
 has proven a very useful phenomenon for studying the distribution of
 mass in the universe.
-
-Note to self: write VPython code to show lensing with slider to
-change impact parameter?
 
 ## The Big Bang
 
