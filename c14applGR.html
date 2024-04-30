@@ -810,6 +810,39 @@ second solution can also be seen in the photograph in
 glass.  For stars lensed by the Sun, the second solution is blocked by
 the disc of the Sun (the minus sign makes the angle smaller), and
 therefore does not play a role in <a class="reference internal" href="#edd19"><span class="std std-numref">Fig. 14.5</span></a>.</p>
+<figure class="align-default" id="lensanimate" style="width: 800px">
+<div class="output text_html">
+        <iframe
+            width="800"
+            height="700"
+            src="https://glowscript.org/#/user/dasmith/folder/Public/program/SRgravlensbend"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div><figcaption>
+<p><span class="caption-number">Fig. 14.7 </span><span class="caption-text">Interactive illustration of simple gravitational lensing with a point
+(spherically symmetric) lens.  The source is on the left, in cyan, the
+lens is in the middle, in yellow, and the Earth is on the right, in
+blue.  Twenty rays of light are drawn as white arrows eminating from
+the source in representative directions.  It is imporant to recognize
+that an infinite number of rays <em>really</em> leave the source, but only
+twenty are shown, to keep the illustration from getting too crowded.
+You should therefore imagine many rays existing between any two rays
+shown here.  The rays are bent by the angle <span class="math notranslate nohighlight">\(\alpha\)</span>, depending on
+how close they get to the lens.  If the ray actually intersects with
+the lens, it is blocked and removed from the diagram.  If the bent ray
+hits the Earth, the arrow turns red, and a magenta arrow shows the back
+extrapolation to the location of the associated image.  Two images
+are displayed as magneta spheres at the locations given by Eq. <a class="reference internal" href="#equation-lensqsol">(14.7)</a>.
+Note that they don’t point <em>exactly</em> at the spheres due to the fact
+that the equations use the small angle approximation, but the angles in
+the illustration are exaggerated so you can see them.  You can change the
+relative position of the source with the slider below the illustration,
+to see how the lensing changes for different configurations of source,
+lens, and observer.</span><a class="headerlink" href="#lensanimate" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>A solution of particular intrest is when the source, lens, and
 observer all lie on a single line.  Then <span class="math notranslate nohighlight">\(\beta = 0\)</span> and <span class="math notranslate nohighlight">\(\theta =
 \pm\theta_E\)</span>.  In fact, it’s not just two <span class="math notranslate nohighlight">\(\pm\)</span> solutions in this case
@@ -822,7 +855,7 @@ directions around the lens, at an angle of <span class="math notranslate nohighl
 alignment is very rare, but there are a lot of galaxies in the
 universe, and occasionally two of them do line up with us, and then we
 do, in fact, observe such a ring of light, called an Einstein Ring, as
-shown in <a class="reference internal" href="#hubblenses"><span class="std std-numref">Fig. 14.7</span></a>.  For the Sun, lensing a distant star,
+shown in <a class="reference internal" href="#hubblenses"><span class="std std-numref">Fig. 14.8</span></a>.  For the Sun, lensing a distant star,
 the Einstein ring would be about <span class="math notranslate nohighlight">\(40^{\prime\prime}\)</span> in radius, which
 is much smaller than the actual radius of the Sun, so we would never
 see it.  Real, observed, Einstein Rings occur when two galaxies are
@@ -830,7 +863,7 @@ lined up along a line of sight.</p>
 <figure class="align-center" id="hubblenses">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/lensing.jpg"><img alt="hubblenses" class="bg-primary mb-1" src="_images/lensing.jpg" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 14.7 </span><span class="caption-text">Examples of gravitational lenses observed by the Hubble Space Telescope.
+<p><span class="caption-number">Fig. 14.8 </span><span class="caption-text">Examples of gravitational lenses observed by the Hubble Space Telescope.
 Many are complete, or near complete, Einstein Rings (the lower right,
 in particular).  The third image in the top row shows a nice example of
 two images, one on either side of the lens, while several of the others
@@ -853,6 +886,8 @@ is called Microlensing.  Although a full treatment of gravitational
 lensing and all its variations is outside the scope of this book, it
 has proven a very useful phenomenon for studying the distribution of
 mass in the universe.</p>
+<p>Note to self: write VPython code to show lensing with slider to
+change impact parameter?</p>
 </section>
 <section id="the-big-bang">
 <h2><span class="section-number">14.3. </span>The Big Bang<a class="headerlink" href="#the-big-bang" title="Permalink to this heading">#</a></h2>

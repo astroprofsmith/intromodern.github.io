@@ -550,6 +550,44 @@ glass.  For stars lensed by the Sun, the second solution is blocked by
 the disc of the Sun (the minus sign makes the angle smaller), and
 therefore does not play a role in {numref}`Edd19`.
 
+```{code-cell}
+:tags: ["remove-cell"]
+# Insert VPython simulation of simple lensing
+# Allow user to change impact parameter
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRgravlensbend"
+test = display.IFrame(src=url1,width=800,height=700)
+glue("lensanimfig",test, display=False)
+
+```
+
+```{glue:figure} lensanimfig
+:figwidth: 800px
+:name: lensanimate
+
+Interactive illustration of simple gravitational lensing with a point
+(spherically symmetric) lens.  The source is on the left, in cyan, the
+lens is in the middle, in yellow, and the Earth is on the right, in
+blue.  Twenty rays of light are drawn as white arrows eminating from
+the source in representative directions.  It is imporant to recognize
+that an infinite number of rays *really* leave the source, but only
+twenty are shown, to keep the illustration from getting too crowded.
+You should therefore imagine many rays existing between any two rays
+shown here.  The rays are bent by the angle $\alpha$, depending on
+how close they get to the lens.  If the ray actually intersects with
+the lens, it is blocked and removed from the diagram.  If the bent ray
+hits the Earth, the arrow turns red, and a magenta arrow shows the back
+extrapolation to the location of the associated image.  Two images
+are displayed as magneta spheres at the locations given by Eq. {eq}`lensQsol`.
+Note that they don't point *exactly* at the spheres due to the fact
+that the equations use the small angle approximation, but the angles in
+the illustration are exaggerated so you can see them.  You can change the
+relative position of the source with the slider below the illustration,
+to see how the lensing changes for different configurations of source,
+lens, and observer.
+```
+
+
+
 A solution of particular intrest is when the source, lens, and
 observer all lie on a single line.  Then $\beta = 0$ and $\theta =
 \pm\theta_E$.  In fact, it's not just two $\pm$ solutions in this case
@@ -598,6 +636,9 @@ is called Microlensing.  Although a full treatment of gravitational
 lensing and all its variations is outside the scope of this book, it
 has proven a very useful phenomenon for studying the distribution of
 mass in the universe.
+
+Note to self: write VPython code to show lensing with slider to
+change impact parameter?
 
 ## The Big Bang
 
