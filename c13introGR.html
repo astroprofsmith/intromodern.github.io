@@ -937,7 +937,7 @@ particular kind of distribution of matter and energy.</p>
 </section>
 <section id="metrics">
 <h2><span class="section-number">13.7. </span>Metrics<a class="headerlink" href="#metrics" title="Permalink to this heading">#</a></h2>
-<p>If we are to follow a curved path through space time, or a path
+<p>If we are to follow a curved path through spacetime, or a path
 through curved spacetime, we need to be able to write down the interval
 between two events with an infinitesimal four-displacement.  A path
 length is an integral over many tiny steps, and if we are to actually
@@ -1040,7 +1040,7 @@ need to modify Eq. <a class="reference internal" href="#equation-intint">(13.1)<
 the surface of the Earth, using Eq. <a class="reference internal" href="#equation-gravred">(13.5)</a>.  If the object
 increases in altitude by <span class="math notranslate nohighlight">\(dx\)</span>, going from <span class="math notranslate nohighlight">\(x=0\)</span> to <span class="math notranslate nohighlight">\(x=dx\)</span>,
 the clocks will all run slower by <span class="math notranslate nohighlight">\(gx/c^2\)</span>, going from <span class="math notranslate nohighlight">\(dt\)</span> to
-<span class="math notranslate nohighlight">\(dt(1+gz/c^2)\)</span>.  As explained in the merry-go-round example, above,
+<span class="math notranslate nohighlight">\(dt(1+gx/c^2)\)</span>.  As explained in the merry-go-round example, above,
 rulers will also shrink as you go up, so the length of an interval
 <span class="math notranslate nohighlight">\(dx\)</span> will also grow, and by the same factor.</p>
 <p>If we multiply out <span class="math notranslate nohighlight">\(ds^2\)</span>, we get a new version of Eq. <a class="reference internal" href="#equation-intint">(13.1)</a>:</p>
@@ -1054,11 +1054,12 @@ cdt\sqrt{1-\frac{v^2}{c^2}}\left[1+\frac{gx}{c^2}\right]\]</div>
 <p>as long as <span class="math notranslate nohighlight">\(x(t=0)=x(t=T)=0\)</span>.  In so far as <span class="math notranslate nohighlight">\(g\)</span> is small but not zero,
 the spacetime is curved away from flatness.  Note that for the Earth,
 <span class="math notranslate nohighlight">\(g/c^2\)</span> is about <span class="math notranslate nohighlight">\(10^{-16}\)</span> 1/m, a very small number.</p>
-<p>Next we make the approximation that no baseball is going to anywhere near
-the speed of light, so <span class="math notranslate nohighlight">\(v\ll c\)</span> and we can remove the square root.</p>
+<p>Next we make the approximation that no baseball is going to go anywhere near
+the speed of light, so <span class="math notranslate nohighlight">\(v\ll c\)</span> and we can replace the square root with
+a linear approximation:</p>
 <div class="math notranslate nohighlight" id="equation-curveprop2">
 <span class="eqno">(13.11)<a class="headerlink" href="#equation-curveprop2" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{v^2}{2c^2}\right]\left[1+\frac{gx}{c^2}\right]\]</div>
-<p>Next we drop second order terms:</p>
+<p>Next we multiply the two binomials and drop second order terms:</p>
 <div class="math notranslate nohighlight" id="equation-curveprop3">
 <span class="eqno">(13.12)<a class="headerlink" href="#equation-curveprop3" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{v^2}{2c^2}+\frac{gx}{c^2}\right]\]</div>
 <p>This is technically as far as we can go without the Calculus of Variations.
@@ -1198,7 +1199,8 @@ report <a class="reference external" href="http://www.leapsecond.com/great2005/"
 <li><p>One of Einstein’s original predictions from GR was that light
 leaving the Sun should be redshifted.  It turns out this is much
 harder to measure than you might think, not least because the solar
-“surface” is in motion.  Based on your reading here, how much would
+“surface” is in motion, so the light is Doppler shifted as well as
+gravitationally shifted.  Based on your reading here, how much would
 you expect the wavelength of a photon from the Sun to change by the
 time it reaches the Earth?  The best measurement (so far) of this
 effect was reported by <a class="reference external" href="https://www.aanda.org/articles/aa/abs/2020/11/aa38937-20/aa38937-20.html">Hernandez et

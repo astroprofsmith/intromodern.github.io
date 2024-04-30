@@ -649,7 +649,7 @@ particular kind of distribution of matter and energy.
 
 ## Metrics
 
-If we are to follow a curved path through space time, or a path
+If we are to follow a curved path through spacetime, or a path
 through curved spacetime, we need to be able to write down the interval
 between two events with an infinitesimal four-displacement.  A path
 length is an integral over many tiny steps, and if we are to actually
@@ -764,7 +764,7 @@ need to modify Eq. {eq}`intint` to include the curvature effects near
 the surface of the Earth, using Eq. {eq}`gravred`.  If the object
 increases in altitude by $dx$, going from $x=0$ to $x=dx$,
 the clocks will all run slower by $gx/c^2$, going from $dt$ to
-$dt(1+gz/c^2)$.  As explained in the merry-go-round example, above,
+$dt(1+gx/c^2)$.  As explained in the merry-go-round example, above,
 rulers will also shrink as you go up, so the length of an interval
 $dx$ will also grow, and by the same factor.
 
@@ -784,13 +784,14 @@ as long as $x(t=0)=x(t=T)=0$.  In so far as $g$ is small but not zero,
 the spacetime is curved away from flatness.  Note that for the Earth,
 $g/c^2$ is about $10^{-16}$ 1/m, a very small number.
 
-Next we make the approximation that no baseball is going to anywhere near
-the speed of light, so $v\ll c$ and we can remove the square root.
+Next we make the approximation that no baseball is going to go anywhere near
+the speed of light, so $v\ll c$ and we can replace the square root with
+a linear approximation:
 ```{math}
 :label: curveprop2
 \Delta t_0 = \int_0^T dt\left[1-\frac{v^2}{2c^2}\right]\left[1+\frac{gx}{c^2}\right]
 ```
-Next we drop second order terms:
+Next we multiply the two binomials and drop second order terms:
 ```{math}
 :label: curveprop3
 \Delta t_0 = \int_0^T dt\left[1-\frac{v^2}{2c^2}+\frac{gx}{c^2}\right]
@@ -961,7 +962,8 @@ report [here](http://www.leapsecond.com/great2005/).
 2. One of Einstein's original predictions from GR was that light
 leaving the Sun should be redshifted.  It turns out this is much
 harder to measure than you might think, not least because the solar
-"surface" is in motion.  Based on your reading here, how much would
+"surface" is in motion, so the light is Doppler shifted as well as
+gravitationally shifted.  Based on your reading here, how much would
 you expect the wavelength of a photon from the Sun to change by the
 time it reaches the Earth?  The best measurement (so far) of this
 effect was reported by [Hernandez et
