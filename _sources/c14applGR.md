@@ -690,11 +690,11 @@ and the black hole at the center of M87 (nine billion times the
 mass of the Sun).
 
 2.  What is the Einstein Radius for a black hole moving in front of a
-distant star?  Take the mass of the star to be about the same as the
-Sun, and that the distance from the observer to the lens is about the
-same as the distance from the lens to the source, about 1000 LY.
-Compare with typical telescope resolutions to see why this is called
-microlensing.
+distant star?  Take the mass of the black hole (the lens) to be about
+ten times the mass of the Sun, and that the distance from the observer
+to the lens is about the same as the distance from the lens to the
+source, about 1000 LY.  Compare with typical telescope resolutions to
+see why this is called microlensing.
 
 3.  Verify the solid line prediction in {numref}`Edd19` from Eq. {eq}`lensQsol`.
 That is, put Eq. {eq}`lensQsol` in terms of the quantities on the axes of
