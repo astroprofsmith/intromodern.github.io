@@ -72,14 +72,15 @@ and you will see that the nearby "star" is actually Neptune!
 :align: center
 :name: neptune
 
-Above is a sketch from Galileo's observing notebook on the night of 27 Dec 1612.
-The dotted line leads to a nearby star that Galileo was using as a
-reference, but back extrapolation shows that this "star" was actually,
-unbeknownst to anyone at the time, the planet Neptune!  Below is a
-screen grab from a planetarium program set to just before midnight on
-that night.  You can see the moons we now call the Galilean moons,
-labelled left to right: Ganymede, Io, Europa, and Callisto.  Off to
-the left, and slightly above, right where Galileo drew a dot, is Neptune.
+Above is a sketch from Galileo's observing notebook on the night of 27
+Dec 1612.  The dotted line leads to a nearby star that Galileo was
+using as a reference, but back extrapolation shows that this "star"
+was actually, unbeknownst to anyone at the time, the planet Neptune!
+Below is a screen grab from the planetarium program Stellarium set to
+just before midnight on that night.  You can see the moons we now call
+the Galilean moons, labelled left to right: Ganymede, Io, Europa, and
+Callisto.  Off to the left, and slightly above, right where Galileo
+drew a dot, is Neptune.
 ```
 
 
