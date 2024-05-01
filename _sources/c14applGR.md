@@ -673,6 +673,39 @@ the universe?  Hubble diagram.  Acceleration of expansion.
 
 ## Black Holes
 
+Again, the topic of black holes could feasibly fill a whole book all
+by itself.  My goal here, as with the Big Bang section, is to show
+you how understanding the basics of Relativity Theory help you understand
+what a black hole is, and what it is not.  Let's start with the
+most common misunderstanding, which is often taught in introductory
+courses in the context of Newton's gravity: a black hole is described
+as being an object for which the escape velocity reaches the speed of
+light.  Therefore, it is said, not even light can escape from the
+black hole.  The first suggestion of a "Dark Star", made independently
+by John Michell and Pierre-Simon Laplace in the 1700s, was based on
+this logic.
+
+The idea goes: take a two-object gravitationally-interacting system,
+like, say, you and the Earth.  If we give you some kinetic energy by
+launching you in the air, you will move away from the Earth.  As your
+separation from Earth increases, the potential energy associated with
+the gravitational interaction will increase, and your kinetic energy
+will decrease by the same amount, because the energy is conserved:
+```{math}
+:label: convsofE
+\Delta E = 0 = \Delta KE + \Delta PE =
+\frac{1}{2}mv_f^2-\frac{1}{2}mv_i^2-\frac{GMm}{r_f}+\frac{GMm}{r_i}
+```
+where the subscripts $i$ and $f$ refer to initial and final, respectively.
+When $v_f\rightarrow 0$, $r_f$ will reach a maximum.
+```{math}
+:label: maxheight
+\frac{1}{r_f}=\frac{1}{r_i}-\frac{1}{2GM}v_i^2
+```
+
+
+
+
 Schwarzschild metric?  Event horizon.  EHT images of M87 and Sgr A*?
 LIGO and the merger of BHs?  That would be a nice way to tie back to
 Chapter 1.
