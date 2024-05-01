@@ -864,7 +864,11 @@ all the longitude lines converge there and the latitude line
 collapses to zero.  You could put the pole anywhere on the Earth you
 like, mathematically speaking.
 
+Add a paragraph about the coordinate system where the light cones
+tilt.
 
+Summary about black holes: where space curves so much that light
+cones all point inward.  No way out.  Who suggested this first?
 
 
 
