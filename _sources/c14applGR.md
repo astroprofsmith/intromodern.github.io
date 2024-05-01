@@ -703,6 +703,23 @@ When $v_f\rightarrow 0$, $r_f$ will reach a maximum.
 \frac{1}{r_f}=\frac{1}{r_i}-\frac{1}{2GM}v_i^2\rightarrow
 r_f = \frac{2GMr_i}{2GM-r_iv_i^2}
 ```
+The bigger $v_i$ gets, the smaller the denominator will become, and
+the larger $r_f$ will be.  If $v_i^2=2GM/r_i$, the denominator will be
+zero, and the final separation will grow arbitrarily large.  If $v_i$
+is larger than that, the final kinetic energy will never reach zero,
+even if you get infinitely far away from the Earth.  The speed of
+$v=\sqrt{2GM/R}$ is therefore called the "escape velocity" of an
+object with mass $M$ and radius $R$.  Anything launched from the
+surface of such an object with a speed of that large (or larger) will
+never stop and fall back down (so "what goes up must come down" is not
+true, if it is going fast enough).  For the Earth, the escape
+velocity from its surface works out to be about 10,000 m/s, or
+around 22,000 mph.
+
+Given Eq. {eq}'maxheight`, though, one could ask what kind of
+object might imply an escape velocity at least as big as the speed
+of light $c$?  Plug in $c$ for $v_i$ and find that if an object has
+$
 
 
 
