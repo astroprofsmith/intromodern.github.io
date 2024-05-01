@@ -716,7 +716,7 @@ true, if it is going fast enough).  For the Earth, the escape
 velocity from its surface works out to be about 10,000 m/s, or
 around 22,000 mph.
 
-Given Eq. {eq}'maxheight`, though, one could ask what kind of object
+Given Equation {eq}`maxheight`, though, one could ask what kind of object
 might imply an escape velocity at least as big as the speed of light
 $c$?  Plug in $c$ for $v_i$ and find that if an object has $M/R\geq
 c^2/2G$, then the escape velocity will be at least the speed of light.
