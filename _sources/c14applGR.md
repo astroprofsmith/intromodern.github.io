@@ -755,7 +755,7 @@ from the mass and the angles $\theta$ and $\phi$ (that basically
 correspond to latitude and longitude, respectively):
 ```{math}
 :label: ssmetric
-ds^2 = -\left(1-\frac{2GM}{r}\right)dt^2 + \left(1-\frac{2GM}{r}\right)^-1 dr^2
+ds^2 = -\left(1-\frac{2GM}{r}\right)c^2dt^2 + \left(1-\frac{2GM}{r}\right)^-1 dr^2
 + r^2d\Omega^2
 ```
 where $d\Omega^2 = d\theta^2 + \sin{\theta}d\phi$.  Note that for $M=0$
@@ -766,6 +766,24 @@ no gravity.  It is perhaps trivial to note that in the absence of mass,
 there is no gravity, but it is reassuring to see that emerge naturally
 from the metric.
 
+To delve deeper into understanding the implications of this metric,
+consider trajectories that are purely radial.  If a particle were to
+be moving purely inward or outward, then the angles of its position
+would not change, and $d\Omega=0$.  If we further consider the particles
+to be photons, we know from Chapter 5 that light follows trajectories
+in spacetime that have a zero interval ("lightlike").  We can therefore
+plug $ds=0$ and $d\Omega=0$ into Eq. {eq}`ssmetric`:
+```{math}
+:label: nullpath
+0 = -\left(1-\frac{2GM}{r}\right)c^2dt^2 + \left(1-\frac{2GM}{r}\right)^-1 dr^2
+```
+In the context of a spacetime diagram, the slope of a worldline would be
+$cdt/dr$, and we can solve for that:
+```{math}
+:label: slopewl
+\left(1-\frac{2GM}{r}\right)
+\frac{c^2dt^2}{dr^2} =  \left(1-\frac{2GM}{r}\right)
+```
 
 Schwarzschild metric?  Event horizon.  EHT images of M87 and Sgr A*?
 LIGO and the merger of BHs?  That would be a nice way to tie back to
