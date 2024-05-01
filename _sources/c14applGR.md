@@ -700,7 +700,8 @@ where the subscripts $i$ and $f$ refer to initial and final, respectively.
 When $v_f\rightarrow 0$, $r_f$ will reach a maximum.
 ```{math}
 :label: maxheight
-\frac{1}{r_f}=\frac{1}{r_i}-\frac{1}{2GM}v_i^2
+\frac{1}{r_f}=\frac{1}{r_i}-\frac{1}{2GM}v_i^2\rightarrow
+r_f = \frac{2GMr_i}{2GM-r_iv_i^2}
 ```
 
 
