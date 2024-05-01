@@ -743,7 +743,28 @@ horizon remains the same, $2GM/c^2$, but the definition of the event
 horizon as well as reason for its existence are very different within
 the GR paradigm as compared to the Newtonian one.
 
-
+To start understanding the idea of a black hole, we return to the
+basic GR idea of gravity as a curvature of spacetime, determined by
+the configuration of mass in the region.  The simplest configuration
+is that of a point mass $M$ in otherwise empty space.  The metric that
+solves Einstein's equation for this configuration was first derived by
+Karl Schwartzschild, before his untimely death in the trenches of
+World War I.  Because this configuration is spherically symmetric, the
+spatial coordinates are expressed in terms of the radial distance $r$
+from the mass and the angles $\theta$ and $\phi$ (that basically
+correspond to latitude and longitude, respectively):
+```{math}
+:label: ssmetric
+ds^2 = -\left(1-\frac{2GM}{r}\right)dt^2 + \left(1-\frac{2GM}{r}\right)^-1 dr^2
++ r^2d\Omega^2
+```
+where $d\Omega^2 = d\theta^2 + \sin{\theta}d\phi$.  Note that for $M=0$
+as well as for $r\rightarrow\infty$, this metric returns to the simple
+metric for flat space we started with back in Chapter 3.  In other words,
+if you consider locations far from the mass, space is flat and there is
+no gravity.  It is perhaps trivial to note that in the absence of mass,
+there is no gravity, but it is reassuring to see that emerge naturally
+from the metric.
 
 
 Schwarzschild metric?  Event horizon.  EHT images of M87 and Sgr A*?
