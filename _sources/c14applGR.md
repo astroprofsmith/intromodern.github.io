@@ -781,7 +781,7 @@ In the context of a spacetime diagram, the slope of a worldline would be
 $cdt/dr$, and we can solve for that:
 ```{math}
 :label: slopewl
-\frac{cdt}{dr} =  \left|1-\frac{2GM}{r}\right|^{-1}
+\frac{cdt}{dr} =  \pm \left|1-\frac{2GM}{r}\right|^{-1}
 ```
 Note that for large $r$, far from the mass, the right side of this
 equation goes to 1, which is the result we would expect from special
@@ -798,6 +798,9 @@ $M$ and shining a light back at a friend far away, that friend would
 observe the light arriving later and later, more and more redshifted
 (and therefore conclude that the falling person's clocks were running
 slower and slower), as the person fell closer and closer to the mass.
+This situation is illustrated through the interactive diagram shown in
+{numref}`ehanimate`.  Move the slider to change the initial radius of
+the spark that produces the photons.
 
 When the radius reaches $2GM/c^2$, the slope approaches infinity: a
 vertical line.  At this point, light emitted from this location will
@@ -819,16 +822,47 @@ extreme at this point that no event inside this radius can ever send
 information to any events at larger radii, even if the larger radius
 was only one centimeter outside the horizon.
 
-Needs an interactive graph here.
+```{code-cell}
+:tags: ["remove-cell"]
+# Insert VPython simulation of simple lensing
+# Allow user to change impact parameter
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRschwartzschild"
+test = display.IFrame(src=url1,width=800,height=700)
+glue("eventhorizonanimfig",test, display=False)
 
-I should stress that the fact that the slope blows up at the
+```
+
+```{glue:figure} eventhorizonanimfig
+:figwidth: 800px
+:name: ehanimate
+
+Interactive spacetime diagram with lightlike, radial worldlines in a
+spacetime described by the Schwartzschild metric.  The initial event
+is represented by a red sphere.  The center mass is considered to be
+at $x=0$, the location of the upward pointing white arrow.  Move the
+slider to consider initial events closer to the central mass.  Yellow
+curves represent the worldlines of outbound and inbound photons, and
+therefore the edges of a light cone emerging from the red event.
+Outbound photons approach a straight line at a $45^\circ$ angle, as
+expected by SR.  However, the slope of the line increases as the
+original event approaches the event horizon.  In the limit as the
+original event reaches the event horizon, the light cone collapses
+to a vertical line.  No physical object at the red event could ever
+travel, influence, or communicate with anything to the right of the
+outbound yellow line.
+```
+
+I should stress that the fact that the inbound slope blows up at the
 Schwartzschild radius is completely an effect of the choice of
-coordinate systems.  Someone actually falling into a black hole would
-not experience anything special *at* that radius, independent of the
-general effects of curved space.  Much like you can walk across the
-south pole, regardless of the fact that all those longitude lines
-converge there and the latitude line collapses to zero.  You could put
-the pole anywhere on the Earth you like, mathematically speaking.
+coordinate systems.  The naive interpretation of {numref}`ehanimate`
+would be that nothing could ever cross the event horizon *toward* a
+black hole, either, and that is not the case.  Someone actually
+falling into a black hole would not experience anything special *at*
+that radius, independent of the general effects of curved space.  Much
+like you can walk across the south pole, regardless of the fact that
+all those longitude lines converge there and the latitude line
+collapses to zero.  You could put the pole anywhere on the Earth you
+like, mathematically speaking.
 
 
 

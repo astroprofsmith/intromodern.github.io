@@ -1013,7 +1013,7 @@ plug <span class="math notranslate nohighlight">\(ds=0\)</span> and <span class=
 <p>In the context of a spacetime diagram, the slope of a worldline would be
 <span class="math notranslate nohighlight">\(cdt/dr\)</span>, and we can solve for that:</p>
 <div class="math notranslate nohighlight" id="equation-slopewl">
-<span class="eqno">(14.12)<a class="headerlink" href="#equation-slopewl" title="Permalink to this equation">#</a></span>\[\frac{cdt}{dr} =  \left|1-\frac{2GM}{r}\right|^{-1}\]</div>
+<span class="eqno">(14.12)<a class="headerlink" href="#equation-slopewl" title="Permalink to this equation">#</a></span>\[\frac{cdt}{dr} =  \pm \left|1-\frac{2GM}{r}\right|^{-1}\]</div>
 <p>Note that for large <span class="math notranslate nohighlight">\(r\)</span>, far from the mass, the right side of this
 equation goes to 1, which is the result we would expect from special
 relativity: that worldlines all photons are lines at a <span class="math notranslate nohighlight">\(45^\circ\)</span>
@@ -1028,7 +1028,10 @@ observer at a very large <span class="math notranslate nohighlight">\(r\)</span>
 <span class="math notranslate nohighlight">\(M\)</span> and shining a light back at a friend far away, that friend would
 observe the light arriving later and later, more and more redshifted
 (and therefore conclude that the falling person’s clocks were running
-slower and slower), as the person fell closer and closer to the mass.</p>
+slower and slower), as the person fell closer and closer to the mass.
+This situation is illustrated through the interactive diagram shown in
+<a class="reference internal" href="#ehanimate"><span class="std std-numref">Fig. 14.9</span></a>.  Move the slider to change the initial radius of
+the spark that produces the photons.</p>
 <p>When the radius reaches <span class="math notranslate nohighlight">\(2GM/c^2\)</span>, the slope approaches infinity: a
 vertical line.  At this point, light emitted from this location will
 <em>never</em> reach an observer far away.  It won’t even reach an observer
@@ -1048,15 +1051,44 @@ horizon.  The real reason is that the curvature of space becomes so
 extreme at this point that no event inside this radius can ever send
 information to any events at larger radii, even if the larger radius
 was only one centimeter outside the horizon.</p>
-<p>Needs an interactive graph here.</p>
-<p>I should stress that the fact that the slope blows up at the
+<figure class="align-default" id="ehanimate" style="width: 800px">
+<div class="output text_html">
+        <iframe
+            width="800"
+            height="700"
+            src="https://glowscript.org/#/user/dasmith/folder/Public/program/SRschwartzschild"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div><figcaption>
+<p><span class="caption-number">Fig. 14.9 </span><span class="caption-text">Interactive spacetime diagram with lightlike, radial worldlines in a
+spacetime described by the Schwartzschild metric.  The initial event
+is represented by a red sphere.  The center mass is considered to be
+at <span class="math notranslate nohighlight">\(x=0\)</span>, the location of the upward pointing white arrow.  Move the
+slider to consider initial events closer to the central mass.  Yellow
+curves represent the worldlines of outbound and inbound photons, and
+therefore the edges of a light cone emerging from the red event.
+Outbound photons approach a straight line at a <span class="math notranslate nohighlight">\(45^\circ\)</span> angle, as
+expected by SR.  However, the slope of the line increases as the
+original event approaches the event horizon.  In the limit as the
+original event reaches the event horizon, the light cone collapses
+to a vertical line.  No physical object at the red event could ever
+travel, influence, or communicate with anything to the right of the
+outbound yellow line.</span><a class="headerlink" href="#ehanimate" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>I should stress that the fact that the inbound slope blows up at the
 Schwartzschild radius is completely an effect of the choice of
-coordinate systems.  Someone actually falling into a black hole would
-not experience anything special <em>at</em> that radius, independent of the
-general effects of curved space.  Much like you can walk across the
-south pole, regardless of the fact that all those longitude lines
-converge there and the latitude line collapses to zero.  You could put
-the pole anywhere on the Earth you like, mathematically speaking.</p>
+coordinate systems.  The naive interpretation of <a class="reference internal" href="#ehanimate"><span class="std std-numref">Fig. 14.9</span></a>
+would be that nothing could ever cross the event horizon <em>toward</em> a
+black hole, either, and that is not the case.  Someone actually
+falling into a black hole would not experience anything special <em>at</em>
+that radius, independent of the general effects of curved space.  Much
+like you can walk across the south pole, regardless of the fact that
+all those longitude lines converge there and the latitude line
+collapses to zero.  You could put the pole anywhere on the Earth you
+like, mathematically speaking.</p>
 </section>
 <section id="problems">
 <h2><span class="section-number">14.5. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
