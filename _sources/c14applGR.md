@@ -860,7 +860,7 @@ black hole, either, and that is not the case.  Someone actually
 falling into a black hole would not experience anything special *at*
 that radius, independent of the general effects of curved space.  Much
 like you can walk across the south pole, regardless of the fact that
-all those longitude lines converge there and the latitude line
+all the longitude lines converge there and the latitude line
 collapses to zero.  You could put the pole anywhere on the Earth you
 like, mathematically speaking.
 
