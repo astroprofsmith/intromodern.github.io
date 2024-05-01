@@ -716,10 +716,32 @@ true, if it is going fast enough).  For the Earth, the escape
 velocity from its surface works out to be about 10,000 m/s, or
 around 22,000 mph.
 
-Given Eq. {eq}'maxheight`, though, one could ask what kind of
-object might imply an escape velocity at least as big as the speed
-of light $c$?  Plug in $c$ for $v_i$ and find that if an object has
-$
+Given Eq. {eq}'maxheight`, though, one could ask what kind of object
+might imply an escape velocity at least as big as the speed of light
+$c$?  Plug in $c$ for $v_i$ and find that if an object has $M/R\geq
+c^2/2G$, then the escape velocity will be at least the speed of light.
+Usually this is expressed for a given mass $M$ in terms of the radius
+$R=2GM/c^2$, which is called the radius of the event horizon, the
+surface that nothing within can ever cross to the outside, not even
+light.
+
+This definition used to bother me terribly, as a student, before I
+learned about Relativity.  The escape velocity is defined in terms
+of how fast you need to go to get infinitely far away.  For any
+speed slower than this, you will eventually stop and fall back down
+again.  "Why, then," I wondered, "would it be impossible for someone
+to be just inside an event horizon and throw a baseball to someone
+else just outside the event horizon?  The ball doesn't need to go
+to infinity; it just needs to go a few meters.  It wouldn't have
+to go anywhere near as fast as the speed of light."
+
+General Relativity answers this question with a very different
+conceptualization of what is going on in the presence of gravity,
+and therefore presents a very different understanding of what it
+means to be a black hole.  As we will see, the radius of the event
+horizon remains the same, $2GM/c^2$, but the definition of the event
+horizon as well as reason for its existence are very different within
+the GR paradigm as compared to the Newtonian one.
 
 
 
