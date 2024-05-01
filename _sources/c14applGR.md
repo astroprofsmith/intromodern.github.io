@@ -781,12 +781,58 @@ In the context of a spacetime diagram, the slope of a worldline would be
 $cdt/dr$, and we can solve for that:
 ```{math}
 :label: slopewl
-\frac{cdt}{dr} =  \left(1-\frac{2GM}{r}\right)^{-1}
+\frac{cdt}{dr} =  \left|1-\frac{2GM}{r}\right|^{-1}
 ```
+Note that for large $r$, far from the mass, the right side of this
+equation goes to 1, which is the result we would expect from special
+relativity: that worldlines all photons are lines at a $45^\circ$
+angle, which define lightcones (as described in Chapter 5).  However,
+if we consider light cones from events at smaller and smaller $r$, the
+slope gets larger and larger: the light cone "pinches" shut.  Note
+that a photon travelling *along* the light cone will travel a
+worldline that asymptotically approaches a $45^\circ$ angle, the
+further away it gets.  However, this means that the smaller $r$ is for
+the point at which such a photon starts, the later it will reach an
+observer at a very large $r$.  If someone were falling toward the mass
+$M$ and shining a light back at a friend far away, that friend would
+observe the light arriving later and later, more and more redshifted
+(and therefore conclude that the falling person's clocks were running
+slower and slower), as the person fell closer and closer to the mass.
 
-Schwarzschild metric?  Event horizon.  EHT images of M87 and Sgr A*?
-LIGO and the merger of BHs?  That would be a nice way to tie back to
-Chapter 1.
+When the radius reaches $2GM/c^2$, the slope approaches infinity: a
+vertical line.  At this point, light emitted from this location will
+*never* reach an observer far away.  It won't even reach an observer
+at *slightly* larger values of $r$.  Remember that the events inside a
+light cone represent the entire future of the event at the point of
+the cone: all the events that the point event could possibly ever
+influence or send information to.  If the cone contracts to a vertical
+line, then any object at this radius ($2GM/c^2$) could never rise to a
+larger $r$, because it would have to move faster than light to do so.
+Because any events outside this pinched cone are forever out of reach,
+this boundary is called an "event horizon".  This is the resolution to
+the question that bothered me: it happens that the radius of this
+point of no return (called the Schwartzschild Radius) is also the
+value of the radius for which the classical escape velocity goes to
+the speed of light, but that is not the actual reason for the event
+horizon.  The real reason is that the curvature of space becomes so
+extreme at this point that no event inside this radius can ever send
+information to any events at larger radii, even if the larger radius
+was only one centimeter outside the horizon.
+
+Needs an interactive graph here.
+
+I should stress that the fact that the slope blows up at the
+Schwartzschild radius is completely an effect of the choice of
+coordinate systems.  Someone actually falling into a black hole would
+not experience anything special *at* that radius, independent of the
+general effects of curved space.  Much like you can walk across the
+south pole, regardless of the fact that all those longitude lines
+converge there and the latitude line collapses to zero.  You could put
+the pole anywhere on the Earth you like, mathematically speaking.
+
+
+
+
 
 
 ## Problems
