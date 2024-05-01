@@ -827,7 +827,7 @@ was only one centimeter outside the horizon.
 # Insert VPython simulation of simple lensing
 # Allow user to change impact parameter
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRschwartzschild"
-test = display.IFrame(src=url1,width=800,height=700)
+test = display.IFrame(src=url1,width=800,height=600)
 glue("eventhorizonanimfig",test, display=False)
 
 ```
