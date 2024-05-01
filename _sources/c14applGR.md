@@ -775,14 +775,13 @@ in spacetime that have a zero interval ("lightlike").  We can therefore
 plug $ds=0$ and $d\Omega=0$ into Eq. {eq}`ssmetric`:
 ```{math}
 :label: nullpath
-0 = -\left(1-\frac{2GM}{r}\right)c^2dt^2 + \left(1-\frac{2GM}{r}\right)^-1 dr^2
+0 = -\left(1-\frac{2GM}{r}\right)c^2dt^2 + \left(1-\frac{2GM}{r}\right)^{-1} dr^2
 ```
 In the context of a spacetime diagram, the slope of a worldline would be
 $cdt/dr$, and we can solve for that:
 ```{math}
 :label: slopewl
-\left(1-\frac{2GM}{r}\right)
-\frac{c^2dt^2}{dr^2} =  \left(1-\frac{2GM}{r}\right)
+\frac{cdt}{dr} =  \left(1-\frac{2GM}{r}\right)^{-1}
 ```
 
 Schwarzschild metric?  Event horizon.  EHT images of M87 and Sgr A*?
