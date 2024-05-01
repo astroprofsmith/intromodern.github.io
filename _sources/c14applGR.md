@@ -755,7 +755,7 @@ from the mass and the angles $\theta$ and $\phi$ (that basically
 correspond to latitude and longitude, respectively):
 ```{math}
 :label: ssmetric
-ds^2 = -\left(1-\frac{2GM}{r}\right)c^2dt^2 + \left(1-\frac{2GM}{r}\right)^-1 dr^2
+ds^2 = -\left(1-\frac{2GM}{r}\right)c^2dt^2 + \left(1-\frac{2GM}{r}\right)^{-1} dr^2
 + r^2d\Omega^2
 ```
 where $d\Omega^2 = d\theta^2 + \sin{\theta}d\phi$.  Note that for $M=0$
