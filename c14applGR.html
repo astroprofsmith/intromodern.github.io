@@ -378,8 +378,8 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mercury-s-orbit">14.1. Mercury’s Orbit</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitational-lensing">14.2. Gravitational Lensing</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-big-bang">14.3. The Big Bang</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#black-holes">14.4. Black Holes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#black-holes">14.3. Black Holes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-big-bang">14.4. The Big Bang</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">14.5. Problems</a></li>
 </ul>
             </nav>
@@ -913,24 +913,19 @@ lensing and all its variations is outside the scope of this book, it
 has proven a very useful phenomenon for studying the distribution of
 mass in the universe.</p>
 </section>
-<section id="the-big-bang">
-<h2><span class="section-number">14.3. </span>The Big Bang<a class="headerlink" href="#the-big-bang" title="Permalink to this heading">#</a></h2>
-<p>Friedman-Robertson-Walker metric?  Friedman equations?  Expansion of
-the universe?  Hubble diagram.  Acceleration of expansion.</p>
-</section>
 <section id="black-holes">
-<h2><span class="section-number">14.4. </span>Black Holes<a class="headerlink" href="#black-holes" title="Permalink to this heading">#</a></h2>
-<p>Again, the topic of black holes could feasibly fill a whole book all
-by itself.  My goal here, as with the Big Bang section, is to show
-you how understanding the basics of Relativity Theory help you understand
-what a black hole is, and what it is not.  Let’s start with the
-most common misunderstanding, which is often taught in introductory
-courses in the context of Newton’s gravity: a black hole is described
-as being an object for which the escape velocity reaches the speed of
-light.  Therefore, it is said, not even light can escape from the
-black hole.  The first suggestion of a “Dark Star”, made independently
-by John Michell and Pierre-Simon Laplace in the 1700s, was based on
-this logic.</p>
+<h2><span class="section-number">14.3. </span>Black Holes<a class="headerlink" href="#black-holes" title="Permalink to this heading">#</a></h2>
+<p>The topic of black holes could feasibly fill a whole book all by
+itself.  My goal in this section is to show you how understanding the
+basics of Relativity Theory help you understand what a black hole is,
+and what it is not.  Let’s start with the most common
+misunderstanding, which is often taught in introductory courses in the
+context of Newton’s gravity: a black hole is described as being an
+object for which the escape velocity reaches the speed of light.
+Therefore, it is said, not even light can escape from the black hole.
+The first suggestion of a “Dark Star”, made independently by John
+Michell and Pierre-Simon Laplace in the 1700s, was based on this
+logic.</p>
 <p>The idea goes: take a two-object gravitationally-interacting system,
 like, say, you and the Earth.  If we give you some kinetic energy by
 launching you in the air, you will move away from the Earth.  As your
@@ -1010,11 +1005,11 @@ to be photons, we know from Chapter 5 that light follows trajectories
 in spacetime that have a zero interval (“lightlike”).  We can therefore
 plug <span class="math notranslate nohighlight">\(ds=0\)</span> and <span class="math notranslate nohighlight">\(d\Omega=0\)</span> into Eq. <a class="reference internal" href="#equation-ssmetric">(14.10)</a>:</p>
 <div class="math notranslate nohighlight" id="equation-nullpath">
-<span class="eqno">(14.11)<a class="headerlink" href="#equation-nullpath" title="Permalink to this equation">#</a></span>\[0 = -\left(1-\frac{2GM}{r}\right)c^2dt^2 + \left(1-\frac{2GM}{r}\right)^{-1} dr^2\]</div>
+<span class="eqno">(14.11)<a class="headerlink" href="#equation-nullpath" title="Permalink to this equation">#</a></span>\[0 = -\left(1-\frac{2GM}{c^2r}\right)c^2dt^2 + \left(1-\frac{2GM}{c^2r}\right)^{-1} dr^2\]</div>
 <p>In the context of a spacetime diagram, the slope of a worldline would be
 <span class="math notranslate nohighlight">\(cdt/dr\)</span>, and we can solve for that:</p>
 <div class="math notranslate nohighlight" id="equation-slopewl">
-<span class="eqno">(14.12)<a class="headerlink" href="#equation-slopewl" title="Permalink to this equation">#</a></span>\[\frac{cdt}{dr} =  \pm \left|1-\frac{2GM}{r}\right|^{-1}\]</div>
+<span class="eqno">(14.12)<a class="headerlink" href="#equation-slopewl" title="Permalink to this equation">#</a></span>\[\frac{cdt}{dr} =  \pm \left|1-\frac{2GM}{c^2r}\right|^{-1}\]</div>
 <p>Note that for large <span class="math notranslate nohighlight">\(r\)</span>, far from the mass, the right side of this
 equation goes to 1, which is the result we would expect from special
 relativity: that worldlines all photons are lines at a <span class="math notranslate nohighlight">\(45^\circ\)</span>
@@ -1050,12 +1045,12 @@ spacetime around such a dense object would “close up” around the star,
 cutting it off from the outside universe.</p>
 <p>This is the resolution to the question that bothered me: it happens
 that the radius of this point of no return (called the Schwartzschild
-Radius) is also the value of the radius for which the classical escape
-velocity goes to the speed of light, but that is not the actual reason
-for the event horizon.  The real reason is that the curvature of space
-becomes so extreme at this point that no event inside this radius can
-ever send information to any events at larger radii, even if the
-larger radius was only one centimeter outside the horizon.</p>
+Radius, <span class="math notranslate nohighlight">\(R_S\)</span>) is also the value of the radius for which the classical
+escape velocity goes to the speed of light, but that is not the actual
+reason for the event horizon.  The real reason is that the curvature
+of space becomes so extreme at this point that no event inside this
+radius can ever send information to any events at larger radii, even
+if the larger radius was only one centimeter outside the horizon.</p>
 <figure class="align-default" id="ehanimate" style="width: 800px">
 <div class="output text_html">
         <iframe
@@ -1093,11 +1088,24 @@ that radius, independent of the general effects of curved space.  Much
 like you can walk across the south pole, regardless of the fact that
 all the longitude lines converge there and the latitude line collapses
 to zero.  You could put the pole anywhere on the Earth you like,
-mathematically speaking.  The non-physical nature of the coordinate
-blow-up at the Schwarzschild Radius does not affect the conclusions
-about the properties of the <em>outbound</em> photons, though.</p>
-<p>Add a paragraph about the coordinate system where the light cones
-tilt.</p>
+mathematically speaking.  In this case, you can switch coordinates to
+a different set of variables, where the null geodesic does not blow up
+at <span class="math notranslate nohighlight">\(R_S\)</span>.  In that variable system the light cone does not so much
+pinch as tilt left.  The outbound side still goes vertical at <span class="math notranslate nohighlight">\(R_S\)</span>,
+but the inbound side does not.  The conclusion remains the same: the
+futures of all events along the event horizon lie inside that horizon.
+It is not possible for a real object to return to larger radii once it
+has crossed that line.</p>
+<p>Note that the event horizon is not an actual object or surface in
+space.  It is a mathematical definition of a location – a particular
+value of <span class="math notranslate nohighlight">\(r\)</span>.  For any real black hole, there would be no-thing <em>at</em>
+the event horizon to mark its presence.  For a large enough mass, like
+a supermassive black hole, the value of <span class="math notranslate nohighlight">\(R_S\)</span> would be large enough
+that the event horizon could be quite far from the center, where the
+gravity was still relatively weak (to a human).  An astronaut
+travelling near a supermassive black hole would have the real danger
+of crossing the event horizon without realizing it, and then never
+again being able to return to the world outside.</p>
 <p>If one takes seriously the model of gravity implied by the General
 Relativity paradigm, that gravity is an effect of the curvature
 of spacetime in the presence of mass, and that objects (including
@@ -1172,6 +1180,11 @@ elliptical galaxy M87.  Image from the 2024 update by Akiyama et al.</span><a cl
 </figcaption>
 </figure>
 </section>
+<section id="the-big-bang">
+<h2><span class="section-number">14.4. </span>The Big Bang<a class="headerlink" href="#the-big-bang" title="Permalink to this heading">#</a></h2>
+<p>Friedman-Robertson-Walker metric?  Friedman equations?  Expansion of
+the universe?  Hubble diagram.  Acceleration of expansion.</p>
+</section>
 <section id="problems">
 <h2><span class="section-number">14.5. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
@@ -1181,7 +1194,7 @@ black hole is the absolute smallest configuration that mass can take.
 To develop an intuition about this, calculate the Schwarzschild Radius
 for the following masses: you, the Earth, the Sun, the black hole at
 the center of our galaxy (four million times the mass of the Sun),
-and the black hole at the center of M87 (nine billion times the
+and the black hole at the center of M87 (seven billion times the
 mass of the Sun).</p></li>
 <li><p>What is the Einstein Radius for a black hole moving in front of a
 distant star?  Take the mass of the black hole (the lens) to be about
@@ -1258,8 +1271,8 @@ four million solar masses on the central mass.</p></li>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mercury-s-orbit">14.1. Mercury’s Orbit</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitational-lensing">14.2. Gravitational Lensing</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-big-bang">14.3. The Big Bang</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#black-holes">14.4. Black Holes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#black-holes">14.3. Black Holes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-big-bang">14.4. The Big Bang</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">14.5. Problems</a></li>
 </ul>
   </nav></div>

@@ -665,25 +665,19 @@ lensing and all its variations is outside the scope of this book, it
 has proven a very useful phenomenon for studying the distribution of
 mass in the universe.
 
-## The Big Bang
-
-Friedman-Robertson-Walker metric?  Friedman equations?  Expansion of
-the universe?  Hubble diagram.  Acceleration of expansion.
-
-
 ## Black Holes
 
-Again, the topic of black holes could feasibly fill a whole book all
-by itself.  My goal here, as with the Big Bang section, is to show
-you how understanding the basics of Relativity Theory help you understand
-what a black hole is, and what it is not.  Let's start with the
-most common misunderstanding, which is often taught in introductory
-courses in the context of Newton's gravity: a black hole is described
-as being an object for which the escape velocity reaches the speed of
-light.  Therefore, it is said, not even light can escape from the
-black hole.  The first suggestion of a "Dark Star", made independently
-by John Michell and Pierre-Simon Laplace in the 1700s, was based on
-this logic.
+The topic of black holes could feasibly fill a whole book all by
+itself.  My goal in this section is to show you how understanding the
+basics of Relativity Theory help you understand what a black hole is,
+and what it is not.  Let's start with the most common
+misunderstanding, which is often taught in introductory courses in the
+context of Newton's gravity: a black hole is described as being an
+object for which the escape velocity reaches the speed of light.
+Therefore, it is said, not even light can escape from the black hole.
+The first suggestion of a "Dark Star", made independently by John
+Michell and Pierre-Simon Laplace in the 1700s, was based on this
+logic.
 
 The idea goes: take a two-object gravitationally-interacting system,
 like, say, you and the Earth.  If we give you some kinetic energy by
@@ -776,13 +770,13 @@ in spacetime that have a zero interval ("lightlike").  We can therefore
 plug $ds=0$ and $d\Omega=0$ into Eq. {eq}`ssmetric`:
 ```{math}
 :label: nullpath
-0 = -\left(1-\frac{2GM}{r}\right)c^2dt^2 + \left(1-\frac{2GM}{r}\right)^{-1} dr^2
+0 = -\left(1-\frac{2GM}{c^2r}\right)c^2dt^2 + \left(1-\frac{2GM}{c^2r}\right)^{-1} dr^2
 ```
 In the context of a spacetime diagram, the slope of a worldline would be
 $cdt/dr$, and we can solve for that:
 ```{math}
 :label: slopewl
-\frac{cdt}{dr} =  \pm \left|1-\frac{2GM}{r}\right|^{-1}
+\frac{cdt}{dr} =  \pm \left|1-\frac{2GM}{c^2r}\right|^{-1}
 ```
 Note that for large $r$, far from the mass, the right side of this
 equation goes to 1, which is the result we would expect from special
@@ -821,12 +815,12 @@ cutting it off from the outside universe.
 
 This is the resolution to the question that bothered me: it happens
 that the radius of this point of no return (called the Schwartzschild
-Radius) is also the value of the radius for which the classical escape
-velocity goes to the speed of light, but that is not the actual reason
-for the event horizon.  The real reason is that the curvature of space
-becomes so extreme at this point that no event inside this radius can
-ever send information to any events at larger radii, even if the
-larger radius was only one centimeter outside the horizon.
+Radius, $R_S$) is also the value of the radius for which the classical
+escape velocity goes to the speed of light, but that is not the actual
+reason for the event horizon.  The real reason is that the curvature
+of space becomes so extreme at this point that no event inside this
+radius can ever send information to any events at larger radii, even
+if the larger radius was only one centimeter outside the horizon.
 
 
 ```{code-cell}
@@ -869,12 +863,25 @@ that radius, independent of the general effects of curved space.  Much
 like you can walk across the south pole, regardless of the fact that
 all the longitude lines converge there and the latitude line collapses
 to zero.  You could put the pole anywhere on the Earth you like,
-mathematically speaking.  The non-physical nature of the coordinate
-blow-up at the Schwarzschild Radius does not affect the conclusions
-about the properties of the *outbound* photons, though.
+mathematically speaking.  In this case, you can switch coordinates to
+a different set of variables, where the null geodesic does not blow up
+at $R_S$.  In that variable system the light cone does not so much
+pinch as tilt left.  The outbound side still goes vertical at $R_S$,
+but the inbound side does not.  The conclusion remains the same: the
+futures of all events along the event horizon lie inside that horizon.
+It is not possible for a real object to return to larger radii once it
+has crossed that line.
 
-Add a paragraph about the coordinate system where the light cones
-tilt.
+Note that the event horizon is not an actual object or surface in
+space.  It is a mathematical definition of a location -- a particular
+value of $r$.  For any real black hole, there would be no-thing *at*
+the event horizon to mark its presence.  For a large enough mass, like
+a supermassive black hole, the value of $R_S$ would be large enough
+that the event horizon could be quite far from the center, where the
+gravity was still relatively weak (to a human).  An astronaut
+travelling near a supermassive black hole would have the real danger
+of crossing the event horizon without realizing it, and then never
+again being able to return to the world outside.
 
 If one takes seriously the model of gravity implied by the General
 Relativity paradigm, that gravity is an effect of the curvature
@@ -962,6 +969,10 @@ Event Horizon Telescope image of the black hole at the center of
 elliptical galaxy M87.  Image from the 2024 update by Akiyama et al.
 ```
 
+## The Big Bang
+
+Friedman-Robertson-Walker metric?  Friedman equations?  Expansion of
+the universe?  Hubble diagram.  Acceleration of expansion.
 
 
 
@@ -974,7 +985,7 @@ black hole is the absolute smallest configuration that mass can take.
 To develop an intuition about this, calculate the Schwarzschild Radius
 for the following masses: you, the Earth, the Sun, the black hole at
 the center of our galaxy (four million times the mass of the Sun),
-and the black hole at the center of M87 (nine billion times the
+and the black hole at the center of M87 (seven billion times the
 mass of the Sun).
 
 2.  What is the Einstein Radius for a black hole moving in front of a
