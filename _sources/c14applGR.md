@@ -919,14 +919,31 @@ so little volume, it is unimaginable that they are not black holes.
 Almost all galaxies seem to have massive objects at their centers; in
 some cases as much as ten billion times the mass of the Sun.  Our own
 Milky Way has an object of four million solar masses at its core.  The
-video below, created by Andrea Gehz and her team, shows fifteen years
-of observations of stars near the center of the Milky Way.  There is
-clearly a strong source of gravity at the location of the star symbol,
-and if you measure the width of the star that approaches closest to
-the core, that central mass must be contained in a volume comparable
-to the size of the solar system.
+video below, created by [Andrea Gehz and her
+team](https://www.astro.ucla.edu/~ghezgroup/gc_edit/Latest/animations.html),
+shows eighteen years of observations of stars near the center of the
+Milky Way.  There is clearly a strong source of gravity at the
+location of the star symbol, and if you measure the width of the orbit
+that approaches closest to the core (SO-16), that central mass must be
+contained in a volume comparable to the size of the solar system.
+Four million Suns in a volume that here only has a single one!
 
 <center><video controls src="_static/gehz.mp4"></video></center>
+
+Finally, the most dramatic evidence for black holes comes from the
+Event Horizon Telescope project.  In 2018, they released the image
+shown in {numref}`m87eht`.
+
+```{figure} images/2018m87.png
+:alt: 2018m87ehtimage
+:class: bg-primary mb-1
+:width: 400px
+:align: center
+:name: ehtm87
+
+Event Horizon Telescope image of the black hole at the center of
+elliptical galaxy M87.
+```
 
 
 
@@ -958,7 +975,7 @@ of the horizontal axis.
 
 4. Get age of the U as $2/3H_0$?
 
-5.  Measure the major axis of the orbit of the star marked SO1 in the
+5.  Measure the major axis of the orbit of the star marked SO-2 in the
 Andrea Gehz video and use Kepler's Third Law to put a lower limit of
 four million solar masses on the central mass.
  
