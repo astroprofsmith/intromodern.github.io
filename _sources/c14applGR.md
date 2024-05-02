@@ -978,6 +978,23 @@ elliptical galaxy M87.  Image from the 2024 update by Akiyama et al.
 
 ## The Big Bang
 
+To close out this chapter, and indeed this entire book, we widen our
+attention to take in the entire universe.  The universe has space and
+time, and it contains matter and energy, so presumably GR has
+something to say about the structure of the spacetime of the entire
+universe?  The application of the principles of GR to the scale of the
+universe (initially by Lemaitre, 1927) led to the development of a
+narrative that is known as "the Big Bang Theory."  In its simplest
+form, the Big Bang Theory can be summarized as "the Universe was in
+the past very dense and very hot, and it has been expanding and
+cooling ever since."  As with black holes, many books could be and
+have been written about the Big Bang Theory.  My goal in this section
+is focused on helping you see how the theory arises from GR, and how
+that understanding helps you avoid common misconceptions about the
+theory that often arise in the popular understanding.  This section is
+in no way a comprehensive presentation of all aspects and implications
+of the Big Bang Theory.
+
 Friedman-Robertson-Walker metric?  Friedman equations?  Expansion of
 the universe?  Hubble diagram.  Acceleration of expansion.
 
