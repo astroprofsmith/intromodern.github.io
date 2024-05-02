@@ -904,7 +904,7 @@ holes are all on the lower right.
 ```{figure} images/NarayanADAF.png
 :alt: adafmodel
 :class: bg-primary mb-1
-:width: 700px
+:width: 400px
 :align: center
 :name: adafeventhorizon
 
