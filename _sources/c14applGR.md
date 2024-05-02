@@ -809,7 +809,9 @@ larger $r$, because it would have to move faster than light to do so.
 Because any events outside this pinched cone are forever out of reach,
 this boundary was first called an "event horizon" by David Finkelstein
 in 1958 (the term "black hole" would not come into use until the
-mid-1960s), although Arthur Eddington realized in 1926 that the
+mid-1960s -- the term "frozen star" was also batted around, because
+from the outside, anything inside would seem frozen in time at the
+event horizon), although Arthur Eddington realized in 1926 that the
 spacetime around such a dense object would "close up" around the star,
 cutting it off from the outside universe.
 
@@ -821,6 +823,13 @@ reason for the event horizon.  The real reason is that the curvature
 of space becomes so extreme at this point that no event inside this
 radius can ever send information to any events at larger radii, even
 if the larger radius was only one centimeter outside the horizon.
+
+It is also interesting to note that the curvature of the null geodesic
+on the inbound path means that to someone falling into the black hole,
+all the light from larger radii will arrive blueshifted and sped up.
+To that person, if they were looking backwards as they fell in, the
+entire future history of the universe would play out as they
+approached the event horizon.
 
 
 ```{code-cell}
@@ -867,7 +876,8 @@ mathematically speaking.  In this case, you can switch coordinates to
 a different set of variables, where the null geodesic does not blow up
 at $R_S$.  In that variable system the light cone does not so much
 pinch as tilt left.  The outbound side still goes vertical at $R_S$,
-but the inbound side does not.  The conclusion remains the same: the
+but the inbound side does not (see GR texts such as Carroll, 2004, or
+Schutz, 1985, for more details).  The conclusion remains the same: the
 futures of all events along the event horizon lie inside that horizon.
 It is not possible for a real object to return to larger radii once it
 has crossed that line.
