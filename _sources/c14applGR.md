@@ -927,9 +927,11 @@ the core, that central mass must be contained in a volume comparable
 to the size of the solar system.
 
 
-<center>
-<video controls src="_static/gehz.mov></video>
-</center>
+<iframe width="400" height="300"
+    src="https://www.youtube.com/watch?v=A2jcVusR54E">
+</iframe>
+
+
 
 
 
