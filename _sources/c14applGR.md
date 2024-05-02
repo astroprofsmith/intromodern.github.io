@@ -932,7 +932,24 @@ Four million Suns in a volume that here only has a single one!
 
 Finally, the most dramatic evidence for black holes comes from the
 Event Horizon Telescope project.  In 2018, they released the image
-shown in {numref}`ehtm87`.
+shown in {numref}`ehtm87`.  They combined data from radio telescopes
+all over the world to turn the entire planet Earth into one big
+telescope.  With careful analysis, they were able to create this
+image.  The scale of 40 microarcseconds is marked on the figure.  A
+microarcsecond is an almost unimaginably small angle -- one thousandth
+of one sixtieth of one sixtieth of a single degree.  The size of a
+baseball on the Moon, as viewed from Earth.  From analyzing this
+image, they report a mass for the black hole of seven billion solar
+masses, completely consistent with the mass estimate derived from the
+motion of gas around it (similar to the Gehz video, above).  For a
+seven billion solar mass object, the Schwarzschild Radius is about
+twenty billion km, or 120 times the distance from the Earth to the Sun
+-- the black hole itself is about as big as our whole solar system!
+At the 54 million light year distance to M87, the black hole diameter
+would span about 16 $\mu$as, which is a little less than half of the
+40 $\mu$as bar shown in {numref}`ehtm87`, very similar in size to the
+dark shadow region in the image.  The existence of black holes is
+getting harder and harder to discount.
 
 ```{figure} images/2018m87.png
 :alt: 2018m87ehtimage
