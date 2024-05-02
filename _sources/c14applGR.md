@@ -928,7 +928,7 @@ to the size of the solar system.
 
 
 <center>
-<video controls src="_static/gehz.m4v></video>
+<video controls src="_static/gehz.mov></video>
 </center>
 
 
