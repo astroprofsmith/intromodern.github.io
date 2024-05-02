@@ -959,7 +959,7 @@ getting harder and harder to discount.
 :name: ehtm87
 
 Event Horizon Telescope image of the black hole at the center of
-elliptical galaxy M87.
+elliptical galaxy M87.  Image from the 2024 update by Akiyama et al.
 ```
 
 
