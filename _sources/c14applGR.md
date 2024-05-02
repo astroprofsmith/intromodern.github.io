@@ -982,7 +982,7 @@ To close out this chapter, and indeed this entire book, we widen our
 attention to take in the entire universe.  The universe has space and
 time, and it contains matter and energy, so presumably GR has
 something to say about the structure of the spacetime of the entire
-universe?  The application of the principles of GR to the scale of the
+universe.  The application of the principles of GR to the scale of the
 universe (initially by Lemaitre, 1927) led to the development of a
 narrative that is known as "the Big Bang Theory."  In its simplest
 form, the Big Bang Theory can be summarized as "the Universe was in
@@ -995,10 +995,13 @@ theory that often arise in the popular understanding.  This section is
 in no way a comprehensive presentation of all aspects and implications
 of the Big Bang Theory.
 
-Friedman-Robertson-Walker metric?  Friedman equations?  Expansion of
-the universe?  Hubble diagram.  Acceleration of expansion.
+Homogeneous and isotropic.
 
+3-D analogy.  Co-moving coordinates.
 
+Expansion of U as changing scale factor.
+
+Hubble Law and intepretation of redshift.
 
 
 ## Problems
