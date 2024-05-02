@@ -901,7 +901,7 @@ the light energy), while the vertical axis shows the minimum observed
 luminosity.  The neutron stars are all on the upper left and the black
 holes are all on the lower right.
 
-```{figure} images/ADAF_eh.png
+```{figure} images/Narayan_ADAF.png
 :alt: adafmodel
 :class: bg-primary mb-1
 :width: 700px
