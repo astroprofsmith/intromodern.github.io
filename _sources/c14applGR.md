@@ -926,11 +926,7 @@ and if you measure the width of the star that approaches closest to
 the core, that central mass must be contained in a volume comparable
 to the size of the solar system.
 
-
-<iframe width="400" height="300"
-    src="https://www.youtube.com/watch?v=A2jcVusR54E">
-</iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A2jcVusR54E?si=Vkh7-5uAv45wUTQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
