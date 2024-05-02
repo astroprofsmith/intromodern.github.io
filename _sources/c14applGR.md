@@ -748,17 +748,18 @@ basic GR idea of gravity as a curvature of spacetime, determined by
 the configuration of mass in the region.  The simplest configuration
 is that of a point mass $M$ in otherwise empty space.  The metric that
 solves Einstein's equation for this configuration was first derived by
-Karl Schwartzschild, before his untimely death in the trenches of
-World War I.  Because this configuration is spherically symmetric, the
-spatial coordinates are expressed in terms of the radial distance $r$
-from the mass and the angles $\theta$ and $\phi$ (that basically
-correspond to latitude and longitude, respectively):
+Karl Schwartzschild in 1915 while on the Russian front of World War I,
+just a year before his untimely death from disease at only 42 years
+old.  Because this configuration is spherically symmetric, the spatial
+coordinates are expressed in terms of the radial distance $r$ from the
+mass and the angles $\theta$ and $\phi$ (that basically correspond to
+latitude and longitude, respectively):
 ```{math}
 :label: ssmetric
 ds^2 = -\left(1-\frac{2GM}{r}\right)c^2dt^2 + \left(1-\frac{2GM}{r}\right)^{-1} dr^2
 + r^2d\Omega^2
 ```
-where $d\Omega^2 = d\theta^2 + \sin{\theta}d\phi$.  Note that for $M=0$
+where $d\Omega^2 = d\theta^2 + \sin^2{\theta}d\phi^2$.  Note that for $M=0$
 as well as for $r\rightarrow\infty$, this metric returns to the simple
 metric for flat space we started with back in Chapter 3.  In other words,
 if you consider locations far from the mass, space is flat and there is
@@ -812,15 +813,21 @@ influence or send information to.  If the cone contracts to a vertical
 line, then any object at this radius ($2GM/c^2$) could never rise to a
 larger $r$, because it would have to move faster than light to do so.
 Because any events outside this pinched cone are forever out of reach,
-this boundary is called an "event horizon".  This is the resolution to
-the question that bothered me: it happens that the radius of this
-point of no return (called the Schwartzschild Radius) is also the
-value of the radius for which the classical escape velocity goes to
-the speed of light, but that is not the actual reason for the event
-horizon.  The real reason is that the curvature of space becomes so
-extreme at this point that no event inside this radius can ever send
-information to any events at larger radii, even if the larger radius
-was only one centimeter outside the horizon.
+this boundary was first called an "event horizon" by David Finkelstein
+in 1958 (the term "black hole" would not come into use until the
+mid-1960s), although Arthur Eddington realized in 1926 that the
+spacetime around such a dense object would "close up" around the star,
+cutting it off from the outside universe.
+
+This is the resolution to the question that bothered me: it happens
+that the radius of this point of no return (called the Schwartzschild
+Radius) is also the value of the radius for which the classical escape
+velocity goes to the speed of light, but that is not the actual reason
+for the event horizon.  The real reason is that the curvature of space
+becomes so extreme at this point that no event inside this radius can
+ever send information to any events at larger radii, even if the
+larger radius was only one centimeter outside the horizon.
+
 
 ```{code-cell}
 :tags: ["remove-cell"]
@@ -860,15 +867,69 @@ black hole, either, and that is not the case.  Someone actually
 falling into a black hole would not experience anything special *at*
 that radius, independent of the general effects of curved space.  Much
 like you can walk across the south pole, regardless of the fact that
-all the longitude lines converge there and the latitude line
-collapses to zero.  You could put the pole anywhere on the Earth you
-like, mathematically speaking.
+all the longitude lines converge there and the latitude line collapses
+to zero.  You could put the pole anywhere on the Earth you like,
+mathematically speaking.  The non-physical nature of the coordinate
+blow-up at the Schwarzschild Radius does not affect the conclusions
+about the properties of the *outbound* photons, though.
 
 Add a paragraph about the coordinate system where the light cones
 tilt.
 
-Summary about black holes: where space curves so much that light
-cones all point inward.  No way out.  Who suggested this first?
+If one takes seriously the model of gravity implied by the General
+Relativity paradigm, that gravity is an effect of the curvature
+of spacetime in the presence of mass, and that objects (including
+photons) travel along geodesics, one is forced to conclude that it
+is possible for enough mass to be crushed into a small enough volume
+that the spacetime curvature becomes so intense that all possible
+worldlines from events near the mass are trapped inside a particular
+volume, and cannot reach the outside universe.  This is what is meant
+by a black hole.  Not a hole punched through space like a hole in
+a piece of paper, but an object dense enough to have an event horizon.
+
+The evidence supporting the reality of black holes with event horizons
+continues to mount.  The first suggestion of measured event horizons
+came from Narayan, Garcia, and McClintock in 1997, who measured the
+faint X-ray emission coming from slowly accreting compact object
+binary systems.  They found that the systems known to be neutron stars
+were all significantly brighter than the systems suspected to be black
+holes, which is just what you expect if the accreting material is
+disappearing behind an event horizon. {numref}`adafeventhorizon` shows
+their measurements.  The horizontal axis shows peak luminosity, which
+is a proxy for mass (since the gravitational energy is the source of
+the light energy), while the vertical axis shows the minimum observed
+luminosity.  The neutron stars are all on the upper left and the black
+holes are all on the lower right.
+
+```{figure} images/ADAF_eh.png
+:alt: adafmodel
+:class: bg-primary mb-1
+:width: 700px
+:align: center
+:name: adafeventhorizon
+
+Possible evidence of event horizons.  Material that falls onto a neutron
+star heats up the star and causes it to be brighter, while material that
+falls into a black hole disappears forever.  Image from
+Narayan, Garcia, & McClintock (1997).
+```
+
+There are many known objects in the universe that have so much mass in
+so little volume, it is unimaginable that they are not black holes.
+Almost all galaxies seem to have massive objects at their centers; in
+some cases as much as ten billion times the mass of the Sun.  Our own
+Milky Way has an object of four million solar masses at its core.  The
+video below, created by Andrea Gehz and her team, shows fifteen years
+of observations of stars near the center of the Milky Way.  There is
+clearly a strong source of gravity at the location of the star symbol,
+and if you measure the width of the star that approaches closest to
+the core, that central mass must be contained in a volume comparable
+to the size of the solar system.
+
+
+<center>
+<video controls src="_static/gehz.m4v></video>
+</center>
 
 
 
@@ -898,4 +959,8 @@ the figure.  You will have to figure out how the figure manipulates the scale
 of the horizontal axis.
 
 4. Get age of the U as $2/3H_0$?
+
+5.  Measure the major axis of the orbit of the star marked SO1 in the
+Andrea Gehz video and use Kepler's Third Law to put a lower limit of
+four million solar masses on the central mass.
  
