@@ -932,12 +932,12 @@ Four million Suns in a volume that here only has a single one!
 
 Finally, the most dramatic evidence for black holes comes from the
 Event Horizon Telescope project.  In 2018, they released the image
-shown in {numref}`m87eht`.
+shown in {numref}`ehtm87`.
 
 ```{figure} images/2018m87.png
 :alt: 2018m87ehtimage
 :class: bg-primary mb-1
-:width: 400px
+:width: 600px
 :align: center
 :name: ehtm87
 
