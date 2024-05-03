@@ -1127,13 +1127,13 @@ We can therefore write the whole Robertson-Walker metric in the
 following way:
 ```{math}
 :label: rwmetricfull
--ds^2 = -c^2dt^2 + a\left[\frac{dR^2}{1-kR^2} + R^2d\theta^2 + R^2\sin^2{\theta}d\phi^2\right]
+-ds^2 = -c^2dt^2 + a\left[\frac{dr^2}{1-kR^2} + r^2d\theta^2 + r^2\sin^2{\theta}d\phi^2\right]
 ```
-as long as we use Eq. {eq}`chi` as a way to define $R$.  Again,
+as long as we use Eq. {eq}`chi` as a way to define $r$.  Again,
 remember if $k=0$, this is just flat spacetime with the space part
 written in spherical coordinates.  If $k$ is not zero, this is a
 difficult equation to understand, but if we drop back down to two
-dimensions, then $dR=0$.  If we consider the $k=1$ case, the space
+dimensions, then $dr=0$.  If we consider the $k=1$ case, the space
 part of this reduces to simply the surface of a sphere with radius
 $a\sin{\chi}$, where $a$ is the part that has the dimensions of
 length.  This suggests that $a$ is setting the scale for the size
@@ -1177,7 +1177,26 @@ time, and infer that at some time in the past, everything in their
 basketball universe must have been in the same place, but that place
 no longer exists in the time when they are making their measurements.
 
-[Need an animation of expanding basketball and ants]
+
+```{code-cell}
+:tags: ["remove-cell"]
+# Insert VPython simulation of expanding basketball
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRcomoving"
+test = display.IFrame(src=url1,width=800,height=700)
+glue("comovingfig",test, display=False)
+
+```
+
+```{glue:figure} comovingfig
+:figwidth: 800px
+:name: comovingsphere
+
+Animation of expanding 2D closed universe.  A red and and a blue ant
+sit on an inflating basketball.  The white arrows represent comoving
+coordinates that do not change as the ball inflates.  The ants are
+always 3 comoving coordinates away from each other, while the
+physical distance between them increases.
+```
 
 This is the mindset you need to be in when discussing the Big Bang
 Theory.  This theory envisions the universe as an expanding space
