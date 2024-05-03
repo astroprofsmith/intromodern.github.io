@@ -995,6 +995,65 @@ theory that often arise in the popular understanding.  This section is
 in no way a comprehensive presentation of all aspects and implications
 of the Big Bang Theory.
 
+The first step in applying GR to the whole universe is to try to
+characterize what kind of universe we live in, and this will lead
+us to a metric.  It is a bit of a challenge, because the universe
+is so big, and even then, we don't know how much bigger it is than
+we can see.  It's quite possible, perhaps even likely, that we can
+only see a small part of it.  However, combining what we can see
+with some philosophical principles, we can state that on the largest
+scales, the universe looks homogeneous and isotropic.  That means
+than any point in the universe looks more or less like any other
+point in the universe, and any direction in the universe looks
+more or less like any other direction in the universe.
+
+It must be stressed that these descriptors apply to the universe on
+the largest possible scales.  Obviously, where you sit, down is very
+different from up, and most likely 100 miles below you is very
+different from 100 miles above you.  These scales are far too small
+for what we're talking about.  We mean the universe on scales of
+billions of light years.  If you averaged everything in the universe
+into boxes a billion light years on a side, we see no evidence that
+any box would be significantly different than any other box.
+{numref}`sdss` shows a graph of the locations of galaxies near to us,
+measured by the [Sloan Digital Sky Survey](https://www.sdss.org/).
+Each blue dot is a single galaxy.  This plot is a slice through the
+entire survey and contains thirty four thousand out of the one hundred
+thousand galaxies in the whole survey.  Note that there are extreme
+selection biases present in this image: the empty triangles at the top
+and bottom are due to the Milky Way blocking the view.  Presumably the
+galaxies there would be similarly distributed, but we can't see them.
+Also, there are more galaxies on the left side simply because more
+space was surveyed on that side.
+
+```{figure} images/sdssslice.png
+:alt: SDSSsurveyslice
+:class: bg-primary mb-1
+:width: 600px
+:align: center
+:name: sdssslice
+
+A slice through the SDSS galaxy catalog containing 34,000 galaxies
+out to a distance of about 700 million light years.  Each blue dot is
+a galaxy.  The Earth is at the center of the graph.  
+```
+
+
+```{figure} images/sdssside.png
+:alt: SDSSsurveysideview
+:class: bg-primary mb-1
+:width: 600px
+:align: center
+:name: sdssside
+
+Side view of the full SDSS galaxy catalog of 100 thousand galaxies.
+Note that there is more coverage of the left side, which is why the
+slice graph looks like the left side has more galaxies.
+```
+
+
+
+
 Homogeneous and isotropic.
 
 3-D analogy.  Co-moving coordinates.
