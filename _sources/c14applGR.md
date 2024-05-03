@@ -1091,6 +1091,38 @@ their proper time back to that moment, and therefore all points in
 space that have the same cosmological time would define a kind of 3D
 hyperplane surface.
 
+Secondly, note that the last two terms are simply the distance
+elements in spherical coordinates along angular displacements.  If
+$k=0$, the whole spatial part of the metric simply becomes the
+pythagorean theorem in three dimensions, written in spherical
+coordinates.  We therefore say that the $k=0$ case is for flat
+spacetime.  A derivation of how to get the $1-kr^2$ is beyond the
+scope of this book, but suffice to say that $k$ is a constant that
+comes from our insistance on homogenaity.  If space is everywhere the
+same, then $k$ must be everywhere the same.  Traditionally, the
+distance coordinate is scaled so that $k$ is either $+1$, $-1$, or
+zero.
+
+```{note}
+If $k$ were, for example, two.  Then we could just divide all the
+values of $r$ by two, and $k$ would become $1$ for those values
+of $r$.  So we just say that we make $r$ whatever it has to be to
+make $k=\pm 1$.  If $k=0$, then no rescaling is necessary, anyway.
+```
+
+The next step is to introduce a new, dimensionless, coordinate $\chi$
+such that $d\chi$ replaces $dr$.  We let
+```{math}
+:label: dchi
+d\chi = \frac{dr}{\sqrt{1-kr^2}}
+```
+which can be integrated for the three possible cases of $k$:
+```{math}
+:label: chi
+r = \cases{        \sin{\chi}       & k=+1 \cr
+                 \chi & k=0 \cr
+                    \sinh{\chi}       & k=-1}
+```
 
 
 Expansion of U as changing scale factor.
