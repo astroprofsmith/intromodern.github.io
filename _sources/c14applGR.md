@@ -1163,18 +1163,21 @@ two-dimensional sphere in three-dimensional space. An increasing $a$
 would be like inflating a basketball.  The most important insight here
 is that such a change would make all the physical distances between
 all sets of two points on the surface of the sphere to get larger,
-while the co-moving coordinates didn't change.  If two ants were
-sitting on the inflating basketball, each ant would see the other
-moving away from it, while each ant could measure itself to be
-remaining still.  If the ants were to try to ask each other where the
-center of the universe is, they would not be able to comprehend the
-answer.  The surface of a basketball has not center, and the center of
-the growing basketball is away in the third dimension, which the
-two-dimensional ants cannot comprehend or measure.  They could
-extrapolate their expansion back in time, and infer that at some time
-in the past, everything in their basketball universe must have been in
-the same place, but that place no longer exists in the time when they
-are making their measurements.
+while the co-moving coordinates wouldn't change.
+
+If two ants were sitting on the inflating basketball, each ant would
+see the other moving away from it, while each ant could measure itself
+to be remaining still.  If the ants were to try to ask each other
+where the center of the universe is, they would not be able to
+comprehend the answer.  The *surface* of a basketball has no center,
+and the center of the growing basketball *volume* is away from the
+ants into the third dimension, which the two-dimensional ants cannot
+comprehend or measure.  They could extrapolate their expansion back in
+time, and infer that at some time in the past, everything in their
+basketball universe must have been in the same place, but that place
+no longer exists in the time when they are making their measurements.
+
+[Need an animation of expanding basketball and ants]
 
 Hubble Law and intepretation of redshift.
 
