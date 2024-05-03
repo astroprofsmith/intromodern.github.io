@@ -1127,7 +1127,7 @@ We can therefore write the whole Robertson-Walker metric in the
 following way:
 ```{math}
 :label: rwmetricfull
--ds^2 = -c^2dt^2 + a\left[\frac{dR^2}{1-kR^2} + R^2d\theta^2 + R^2\sin^2{\theta}d\phi^2
+-ds^2 = -c^2dt^2 + a\left[\frac{dR^2}{1-kR^2} + R^2d\theta^2 + R^2\sin^2{\theta}d\phi^2\right]
 ```
 as long as
 ```{math}
