@@ -1179,7 +1179,36 @@ no longer exists in the time when they are making their measurements.
 
 [Need an animation of expanding basketball and ants]
 
-Hubble Law and intepretation of redshift.
+This is the mindset you need to be in when discussing the Big Bang
+Theory.  This theory envisions the universe as an expanding space
+because the scale factor of the universe is expanding.  As we look out
+into the universe, we observe all the other galaxies moving away from
+from us.  The further away they are, the faster they are moving.  If
+they are actually moving through space, that would be a remarkable
+coincidence; that we happened to be at the spot that everything else
+was fleeing.  This would violate our assumption of homogenaeity.  But
+in the Big Bang mindset, the other galaxies are like ants on an
+inflating basketball -- space is expanding and carrying everything
+along with it.  Distant galaxies look like they are moving faster
+because there is more space between us and them to grow.  Presumably
+we could be in any galaxy, and we would observe the same thing.  In
+this way, we get homogenaeity back again.
+
+This cannot be stressed strongly enough: the Big Bang is not
+suggesting that the universe is expanding *into* anything.  Space
+itself is getting bigger.  There is no edge you could go to and look
+out into the nothingness where the universe hasn't been yet.  There is
+no center in space where the explosion took place that would now just
+be a big empty void because everything has flown away from it.  If it
+makes sense to talk about a center of the universe at all, that center
+would be back in time, not in any location now.  Alternately, you
+could pick any point in space you like, and trace it back to $t=0$,
+and that point would be at the center.  So you, yourself, can
+legitimately be said to be at the center of the universe.  However,
+it's not a useful claim to make.
+
+
+Hubble Law and intepretation of redshift (co-moving coordinates).
 
 
 ## Problems
