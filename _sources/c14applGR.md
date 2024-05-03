@@ -1015,7 +1015,7 @@ for what we're talking about.  We mean the universe on scales of
 billions of light years.  If you averaged everything in the universe
 into boxes a billion light years on a side, we see no evidence that
 any box would be significantly different than any other box.
-{numref}`sdss` shows a graph of the locations of galaxies near to us,
+{numref}`sdssslice` shows a graph of the locations of galaxies near to us,
 measured by the [Sloan Digital Sky Survey](https://www.sdss.org/).
 Each blue dot is a single galaxy.  This plot is a slice through the
 entire survey and contains thirty four thousand out of the one hundred
@@ -1023,8 +1023,20 @@ thousand galaxies in the whole survey.  Note that there are extreme
 selection biases present in this image: the empty triangles at the top
 and bottom are due to the Milky Way blocking the view.  Presumably the
 galaxies there would be similarly distributed, but we can't see them.
+
 Also, there are more galaxies on the left side simply because more
-space was surveyed on that side.
+space was surveyed on that side.  {numref}`sdssside` shows the full
+catalog of 100,000 galaxies, turned on the side.  You can see that
+the left side has far more coverage than the right, so the slice has
+more galaxies in it on that side.  This is an artefact of coverage
+not an intrinsic anisotropy in the universe.
+
+Note that there are clusters of galaxies as well as voids between them
+that have characteristic distance scales of tens of millions of light
+years.  There does not, however, seem to be any evidence for
+structures larger than that.  On the billions of light years scale,
+the universe seems to be the same everywhere (homogeneous) and in
+every direction (isotropic).
 
 ```{figure} images/sdssslice.png
 :alt: SDSSsurveyslice
