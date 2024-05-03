@@ -1036,7 +1036,11 @@ that have characteristic distance scales of tens of millions of light
 years.  There does not, however, seem to be any evidence for
 structures larger than that.  On the billions of light years scale,
 the universe seems to be the same everywhere (homogeneous) and in
-every direction (isotropic).
+every direction (isotropic).  Further note that even 700 million light
+years is not even 10% of the distance across the whole visible
+universe.  The clumping we see around us into clusters, galaxies,
+stars, and people, is a purely local phenomenon, and we want to write
+a description of the universe on the *largest* scales.
 
 ```{figure} images/sdssslice.png
 :alt: SDSSsurveyslice
@@ -1063,12 +1067,30 @@ Note that there is more coverage of the left side, which is why the
 slice graph looks like the left side has more galaxies.
 ```
 
+If the universe is everywhere homogeneous and isotropic, a metric that
+will describe such a universe must be the same everywhere.  It can't
+depend on the position or the angular coordinates.  We must assume
+from our perception of the universe that it exists in three space
+dimensions and a time dimension, but we make no restrictions in
+advance on whether those dimensions are curved or flat.  To meet
+these conditions, we need to use what's called a Robertson-Walker
+metric:
+```{math}
+:label: rwmetric
+-ds^2 = -c^2dt^2 + \frac{dr^2}{1-kr^2} + r^2d\Omega^2
+```
 
+This needs a bit of unpacking as to what this means.  First of all
+what kind of time are we talking about here?  This $t$ could be
+considered a cosmological time: the proper time for any individual
+(static) galaxy from its own perspective.  In this cosmological
+treatment, we assume that galaxies are basically fixed in space; that
+any drift motion they may have is small.  Therefore, if the universe
+had an origin at some moment in time, all points in space could trace
+their proper time back to that moment, and therefore all points in
+space that have the same cosmological time would define a kind of 3D
+hyperplane surface.
 
-
-Homogeneous and isotropic.
-
-3-D analogy.  Co-moving coordinates.
 
 Expansion of U as changing scale factor.
 
