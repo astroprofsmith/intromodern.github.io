@@ -1136,6 +1136,12 @@ R = \cases{        R=\sin{\chi}       & k=+1 \cr
                  R=\chi & k=0 \cr
                     R=\sinh{\chi}       & k=-1}
 ```
+Again, remember if $k=0$, this is just flat spacetime with the space
+part written in spherical coordinates.  If $k$ is not zero, this is a
+difficult equation to understand, but if we drop back down to two
+dimensions, then $dR=0$ and the space part of this reduces to simply
+the surface of a sphere.
+
 
 Expansion of U as changing scale factor.
 
