@@ -1176,7 +1176,8 @@ comprehend or measure.  They could extrapolate their expansion back in
 time, and infer that at some time in the past, everything in their
 basketball universe must have been in the same place, but that place
 no longer exists in the time when they are making their measurements.
-
+An animation of this basketball universe is shown in
+{numref}`comovingsphere`.
 
 ```{code-cell}
 :tags: ["remove-cell"]
