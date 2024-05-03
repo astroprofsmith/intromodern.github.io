@@ -1129,18 +1129,34 @@ following way:
 :label: rwmetricfull
 -ds^2 = -c^2dt^2 + a\left[\frac{dR^2}{1-kR^2} + R^2d\theta^2 + R^2\sin^2{\theta}d\phi^2\right]
 ```
-as long as
-```{math}
-:label: casesforchi
-R = \cases{        R=\sin{\chi}       & k=+1 \cr
-                 R=\chi & k=0 \cr
-                    R=\sinh{\chi}       & k=-1}
-```
-Again, remember if $k=0$, this is just flat spacetime with the space
-part written in spherical coordinates.  If $k$ is not zero, this is a
+as long as we use Eq. {eq}`chi` as a way to define $R$.  Again,
+remember if $k=0$, this is just flat spacetime with the space part
+written in spherical coordinates.  If $k$ is not zero, this is a
 difficult equation to understand, but if we drop back down to two
-dimensions, then $dR=0$ and the space part of this reduces to simply
-the surface of a sphere.
+dimensions, then $dR=0$.  If we consider the $k=1$ case, the space
+part of this reduces to simply the surface of a sphere with radius
+$a\sin{\chi}$, where $a$ is the part that has the dimensions of
+length.  This suggests that $a$ is setting the scale for the size
+of the sphere.  If we change $a$ with time, none of the other
+spatial variables ($\chi$, $\theta$, or $\phi$) will change --
+the sphere will change size, but the latitude and longitude of
+any location on the sphere will not.  These unchanging variables
+are therefore called "co-moving" coordinates.  They move along
+with the sphere as it gets bigger or smaller.
+
+Moving back up to three dimensions again, this suggests that the
+geometry we are considering is analogous to a three-dimensional
+surface of a four-dimensional sphere.  The factor $a$ sets the scale,
+and could be considered as a radius extending into the fourth
+dimension (which we can't visualize or measure directly, of course).
+If $k=1$, we say this space is closed, which means it really is the
+surface of a four-sphere, and if you could travel indefinitely in one
+direction, you would come back to where you started.  If $k=0$, then
+the space is simply flat, Euclidean, with no overal curvature at all.
+A $k=-1$ space curves outward, much like a saddle, or a pringles
+potato chip.  Triangles in an analogous two-dimensional space have
+interior angles that add up to less than $180^\circ$.
+
 
 
 Expansion of U as changing scale factor.
