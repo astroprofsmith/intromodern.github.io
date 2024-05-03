@@ -1077,7 +1077,7 @@ these conditions, we need to use what's called a Robertson-Walker
 metric:
 ```{math}
 :label: rwmetric
--ds^2 = -c^2dt^2 + \frac{dr^2}{1-kr^2} + r^2d\Omega^2
+-ds^2 = -c^2dt^2 + \frac{dr^2}{1-kr^2} + r^2d\theta^2 + r^2\sin^2{\theta}d\phi^2
 ```
 
 This needs a bit of unpacking as to what this means.  First of all
@@ -1090,6 +1090,7 @@ had an origin at some moment in time, all points in space could trace
 their proper time back to that moment, and therefore all points in
 space that have the same cosmological time would define a kind of 3D
 hyperplane surface.
+
 
 
 Expansion of U as changing scale factor.
