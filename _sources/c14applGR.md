@@ -1157,9 +1157,24 @@ A $k=-1$ space curves outward, much like a saddle, or a pringles
 potato chip.  Triangles in an analogous two-dimensional space have
 interior angles that add up to less than $180^\circ$.
 
-
-
-Expansion of U as changing scale factor.
+If the scale factor $a$ were to change with time, so that $a(t)$ is
+some function of time, that would be like changing the radius of a
+two-dimensional sphere in three-dimensional space. An increasing $a$
+would be like inflating a basketball.  The most important insight here
+is that such a change would make all the physical distances between
+all sets of two points on the surface of the sphere to get larger,
+while the co-moving coordinates didn't change.  If two ants were
+sitting on the inflating basketball, each ant would see the other
+moving away from it, while each ant could measure itself to be
+remaining still.  If the ants were to try to ask each other where the
+center of the universe is, they would not be able to comprehend the
+answer.  The surface of a basketball has not center, and the center of
+the growing basketball is away in the third dimension, which the
+two-dimensional ants cannot comprehend or measure.  They could
+extrapolate their expansion back in time, and infer that at some time
+in the past, everything in their basketball universe must have been in
+the same place, but that place no longer exists in the time when they
+are making their measurements.
 
 Hubble Law and intepretation of redshift.
 
