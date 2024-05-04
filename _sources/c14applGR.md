@@ -1040,7 +1040,7 @@ the universe seems to be the same everywhere (homogeneous) and in
 every direction (isotropic).  Further note that even 700 million light
 years is not even 10% of the distance across the whole visible
 universe.  The clumping we see around us into clusters, galaxies,
-stars, and people, is a purely local phenomenon, and we want to write
+stars, and people is a purely local phenomenon, and we want to write
 a description of the universe on the *largest* scales.
 
 ```{figure} images/sdssslice.png
@@ -1105,8 +1105,8 @@ distance coordinate is scaled so that $k$ is either $+1$, $-1$, or
 zero.
 
 ```{note}
-If $k$ were, for example, two.  Then we could just divide all the
-values of $r$ by two, and $k$ would become $1$ for those values
+If $k$ were, for example, two, then we could just divide all the
+values of $r$ by two, and $k$ would become $1$ for those new values
 of $r$.  So we just say that we make $r$ whatever it has to be to
 make $k=\pm 1$.  If $k=0$, then no rescaling is necessary, anyway.
 ```
@@ -1130,20 +1130,21 @@ following way:
 :label: rwmetricfull
 -ds^2 = -c^2dt^2 + a\left[\frac{dr^2}{1-kR^2} + r^2d\theta^2 + r^2\sin^2{\theta}d\phi^2\right]
 ```
-as long as we use Eq. {eq}`chi` as a way to define $r$.  Again,
-remember if $k=0$, this is just flat spacetime with the space part
-written in spherical coordinates.  If $k$ is not zero, this is a
-difficult equation to understand, but if we drop back down to two
-dimensions, then $dr=0$.  If we consider the $k=1$ case, the space
-part of this reduces to simply the surface of a sphere with radius
-$a\sin{\chi}$, where $a$ is the part that has the dimensions of
-length.  This suggests that $a$ is setting the scale for the size
-of the sphere.  If we change $a$ with time, none of the other
-spatial variables ($\chi$, $\theta$, or $\phi$) will change --
-the sphere will change size, but the latitude and longitude of
-any location on the sphere will not.  These unchanging variables
-are therefore called "co-moving" coordinates.  They move along
-with the sphere as it gets bigger or smaller.
+as long as we use Eq. {eq}`chi` as a way to define a dimensionless
+$r$.  Again, remember if $k=0$, this is just flat spacetime with the
+space part written in spherical coordinates.
+
+If $k$ is not zero, this is a difficult equation to understand, but if
+we drop back down to two dimensions, then $dr=0$.  If we consider the
+$k=1$ case, the space part of this reduces to simply the surface of a
+sphere with radius $a\sin{\chi}$, where $a$ is the part that has the
+dimensions of length.  This suggests that $a$ is setting the scale for
+the size of the sphere.  If we change $a$ with time, none of the other
+spatial variables ($\chi$, $\theta$, or $\phi$) will change -- the
+sphere will change size, but the latitude and longitude of any
+location on the sphere will not.  These unchanging variables are
+therefore called "co-moving" coordinates.  They move along with the
+sphere as it gets bigger or smaller.
 
 Moving back up to three dimensions again, this suggests that the
 geometry we are considering is analogous to a three-dimensional
@@ -1217,7 +1218,8 @@ inflating basketball -- space is expanding and carrying everything
 along with it.  Distant galaxies look like they are moving faster
 because there is more space between us and them to grow.  Presumably
 we could be in any galaxy, and we would observe the same thing.  In
-this way, we get homogenaeity back again.
+this way, homogenaeity emerges naturally out of the conceptualization.
+We don't need to conclude that we happen to be at a special spot.
 
 This cannot be stressed strongly enough: the Big Bang is not
 suggesting that the universe is expanding *into* anything.  Space
@@ -1228,9 +1230,20 @@ be a big empty void because everything has flown away from it.  If it
 makes sense to talk about a center of the universe at all, that center
 would be back in time, not in any location now.  Alternately, you
 could pick any point in space you like, and trace it back to $t=0$,
-and that point would be at the center.  So you, yourself, can
-legitimately be said to be at the center of the universe.  However,
-it's not a useful claim to make.
+and that point would be at the center.
+
+Or, more accurately, if you pick any two points in space a finite
+physical distance apart, the physical distance between those points
+goes to zero at $t=0$, no matter how far apart they are now. So all
+the points in the entire observable universe would have been
+arbitrarily close together at arbitrarily small values of $t$.  It is
+for this reason that people sometimes describe the universe as
+emerging from a point (Lemaitre called it a "cosmic egg"), but this is
+misleading our imagination, because we imagine an egg or a point as
+having edges.  The space described by the metric is still infinite;
+it's just that our entire *observable* universe (14 billion light
+years in every direction from us) would be infinitesimally small for
+infinitesimally small values of $t$.
 
 Now let's consider what happens to a photon traveling across a
 universe described by this metric and reaching us.  If it is coming
@@ -1288,8 +1301,21 @@ If the scale factor of the universe has changed as a function of time,
 say for example, it has steadily increased, then because photons
 travel at the speed of light, you would expect light that was emitted
 longer ago and therefore further away to be redshifted more and more,
-the further it has traveled across the universe.[Need explanation of
-Hubble law here and presentation of actual Hubble diagram.]
+the further it has traveled across the universe.  It is useful to
+define the fractional rate of change of the scale factor:
+```{math}
+:label: hubbleparam
+H(t) = \frac{da/dt}{a}
+```
+which is given the name *Hubble Parameter*.  The value of $H$ now is
+called $H_0$, the Hubble Constant, but it's important to note that the
+Hubble parameter has clearly not been constant over the history of the
+universe.  If $H$ had *always* been $H_0$, then $da/dt=H_0a$ would
+imply an exponentially increasing scale factor, and the growth of the
+scale factor is clearly more complex than that.
+
+[Need explanation of Hubble law here and presentation of actual Hubble
+diagram.]
 
 ```{figure} images/schaefergrb.png
 :alt: GRBhubblediagram
@@ -1299,10 +1325,10 @@ Hubble law here and presentation of actual Hubble diagram.]
 :name: grbhubb
 
 Hubble Diagram constructed from gamma-ray burst light curves, plotting
-distance modulus (the distance in logrithmic units) vs. redshift.
-Note that this relationship does not look linear because the logrithm flattens
-the slope for large distances.  
-Image from Schaefer, B. (2007).  
+distance modulus (the distance in logarithmic units) vs. redshift.
+Note that this relationship does not look linear because the logarithm
+flattens the slope for large distances.  Image from Schaefer,
+B. (2007).
 ```
 
 The Big Bang Theory in its entirety extrapolates this currently
