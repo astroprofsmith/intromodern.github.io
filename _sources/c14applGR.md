@@ -1347,8 +1347,27 @@ the right.
 :label: hubblegeneral
 \int_{a_{\rm emit}}^1\frac{cda}{a^2H} = -\int_D^0\frac{dR}{\sqrt{1-kR^2}}
 ```
-This may look terribly messy,  but it does impose a relationship between
-$H$, $a$, $D$, and $k$.
+This may look terribly messy, but it does impose a relationship
+between $H$, $a$, $D$, and $k$.  And since $a$ is related to the shift
+in wavelength, $z$, then there is a direct link between $D$ and $z$.
+
+To get that link into a form that can be graphed and compared with
+data, you need to make more assumptions about the nature of the
+universe we live in.  Remember that Einstein's Equation links the
+curvature of spacetime (the metric) to the distribution of
+matter/energy in the space.  So much of science of the Big Bang Theory
+is making measurements of things like wavelength shift and distance
+and comparing what we actually measure to the shape of Equation
+{eq}`hubblegeneral` to constrain what parameters like $k$ might
+actually be in the actual universe we live in.  One such effort is
+shown in {numref}`grbhub`, which plots the distance to a number of
+cosmic explosions called gamma-ray bursts (GRBs) as a function of
+their redshift.  And note that they are all, indeed, redshifts.  The
+solid line is a match to an equation like Eq. {eq}`hubblegeneral` for
+the values of certain parameters (listed as $\Omega_M$ and $w$ here --
+their exact meaning is beyond the scope of this book.  Suffice to say
+that they constrain $k$ by making assumptions about the character of
+matter and energy in the universe.).
 
 
 ```{figure} images/schaefergrb.png
@@ -1364,6 +1383,32 @@ Note that this relationship does not look linear because the logarithm
 flattens the slope for large distances.  Image from Schaefer,
 B. (2007).
 ```
+
+We can turn Eq. {eq}`hubblegeneral` into something a little bit more
+intuitive under certain simplifying assumptions.  If we assume that
+we are in a flat universe, so that $k=0$, and if we assume that
+we are not looking *too* far back in time, so that $z\ll 1$, then
+we can also assume that $\dot{a}=H_0$ and 
+$H=\dot{a}/a \approx H_0/a$. If we plug $H_0/a$ into Eq. {eq}`hubblegeneral`,
+then one factor of $a$ will cancel out of the denominator,
+leaving us with
+```{math}
+:label: hubbleflat
+\frac{c}{H_0}\int_{a_{\rm emit}}^{a_{\rm now}}\frac{da}{a} = \int_0^D dR
+```
+```{math}
+:label: hubbleeuc
+\frac{c}{H_0}\left[\ln{a_{\rm now}}-\ln{a_{\rm emit}\right] =
+= \frac{c}{H_0}\ln{\frac{a_{\rm now}}{a_{\rm emit}} = D
+```
+The fraction in the log is just $1+z$, and we can use a Taylor
+for small $z$ to get $\ln{(1+z)}\approx 1+z$, which leaves us
+with
+```{math}
+:label: hubblesmall
+\frac{c}{H_0}(1+z) = D
+```
+
 
 The Big Bang Theory in its entirety extrapolates this currently
 observed expansion back into the distant past and explores the

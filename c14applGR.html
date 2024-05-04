@@ -1506,8 +1506,26 @@ define as 1) on the left and from the physical distance <span class="math notran
 the right.</p>
 <div class="math notranslate nohighlight" id="equation-hubblegeneral">
 <span class="eqno">(14.22)<a class="headerlink" href="#equation-hubblegeneral" title="Permalink to this equation">#</a></span>\[\int_{a_{\rm emit}}^1\frac{cda}{a^2H} = -\int_D^0\frac{dR}{\sqrt{1-kR^2}}\]</div>
-<p>This may look terribly messy,  but it does impose a relationship between
-<span class="math notranslate nohighlight">\(H\)</span>, <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(D\)</span>, and <span class="math notranslate nohighlight">\(k\)</span>.</p>
+<p>This may look terribly messy, but it does impose a relationship
+between <span class="math notranslate nohighlight">\(H\)</span>, <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(D\)</span>, and <span class="math notranslate nohighlight">\(k\)</span>.  And since <span class="math notranslate nohighlight">\(a\)</span> is related to the shift
+in wavelength, <span class="math notranslate nohighlight">\(z\)</span>, then there is a direct link between <span class="math notranslate nohighlight">\(D\)</span> and <span class="math notranslate nohighlight">\(z\)</span>.</p>
+<p>To get that link into a form that can be graphed and compared with
+data, you need to make more assumptions about the nature of the
+universe we live in.  Remember that Einstein’s Equation links the
+curvature of spacetime (the metric) to the distribution of
+matter/energy in the space.  So much of science of the Big Bang Theory
+is making measurements of things like wavelength shift and distance
+and comparing what we actually measure to the shape of Equation
+<a class="reference internal" href="#equation-hubblegeneral">(14.22)</a> to constrain what parameters like <span class="math notranslate nohighlight">\(k\)</span> might
+actually be in the actual universe we live in.  One such effort is
+shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">grbhub</span></code>, which plots the distance to a number of
+cosmic explosions called gamma-ray bursts (GRBs) as a function of
+their redshift.  And note that they are all, indeed, redshifts.  The
+solid line is a match to an equation like Eq. <a class="reference internal" href="#equation-hubblegeneral">(14.22)</a> for
+the values of certain parameters (listed as <span class="math notranslate nohighlight">\(\Omega_M\)</span> and <span class="math notranslate nohighlight">\(w\)</span> here –
+their exact meaning is beyond the scope of this book.  Suffice to say
+that they constrain <span class="math notranslate nohighlight">\(k\)</span> by making assumptions about the character of
+matter and energy in the universe.).</p>
 <figure class="align-center" id="grbhubb">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/schaefergrb.png"><img alt="GRBhubblediagram" class="bg-primary mb-1" src="_images/schaefergrb.png" style="width: 600px;" /></a>
 <figcaption>
@@ -1518,6 +1536,24 @@ flattens the slope for large distances.  Image from Schaefer,
 B. (2007).</span><a class="headerlink" href="#grbhubb" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<p>We can turn Eq. <a class="reference internal" href="#equation-hubblegeneral">(14.22)</a> into something a little bit more
+intuitive under certain simplifying assumptions.  If we assume that
+we are in a flat universe, so that <span class="math notranslate nohighlight">\(k=0\)</span>, and if we assume that
+we are not looking <em>too</em> far back in time, so that <span class="math notranslate nohighlight">\(z\ll 1\)</span>, then
+we can also assume that <span class="math notranslate nohighlight">\(\dot{a}=H_0\)</span> and
+<span class="math notranslate nohighlight">\(H=\dot{a}/a \approx H_0/a\)</span>. If we plug <span class="math notranslate nohighlight">\(H_0/a\)</span> into Eq. <a class="reference internal" href="#equation-hubblegeneral">(14.22)</a>,
+then one factor of <span class="math notranslate nohighlight">\(a\)</span> will cancel out of the denominator,
+leaving us with</p>
+<div class="math notranslate nohighlight" id="equation-hubbleflat">
+<span class="eqno">(14.23)<a class="headerlink" href="#equation-hubbleflat" title="Permalink to this equation">#</a></span>\[\frac{c}{H_0}\int_{a_{\rm emit}}^{a_{\rm now}}\frac{da}{a} = \int_0^D dR\]</div>
+<div class="math notranslate nohighlight" id="equation-hubbleeuc">
+<span class="eqno">(14.24)<a class="headerlink" href="#equation-hubbleeuc" title="Permalink to this equation">#</a></span>\[\frac{c}{H_0}\left[\ln{a_{\rm now}}-\ln{a_{\rm emit}\right] =
+= \frac{c}{H_0}\ln{\frac{a_{\rm now}}{a_{\rm emit}} = D\]</div>
+<p>The fraction in the log is just <span class="math notranslate nohighlight">\(1+z\)</span>, and we can use a Taylor
+for small <span class="math notranslate nohighlight">\(z\)</span> to get <span class="math notranslate nohighlight">\(\ln{(1+z)}\approx 1+z\)</span>, which leaves us
+with</p>
+<div class="math notranslate nohighlight" id="equation-hubblesmall">
+<span class="eqno">(14.25)<a class="headerlink" href="#equation-hubblesmall" title="Permalink to this equation">#</a></span>\[\frac{c}{H_0}(1+z) = D\]</div>
 <p>The Big Bang Theory in its entirety extrapolates this currently
 observed expansion back into the distant past and explores the
 implication of all the physical distances being much smaller back
