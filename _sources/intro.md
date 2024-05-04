@@ -24,6 +24,16 @@ and magnetic fields.  The Pythagorean Theorem is ubiquitous, although
 the reader will see that it works a little differently when time is
 incorporated as a fourth dimension.
 
+**Acknowledgements:**
+
+I would like to thank colleagues A. Titus and J. Heafner for reading
+early drafts and giving feedback.  Thanks to my students in the Fall
+2023 semester for their careful reading: they spotted typos and let me
+know which sections were not as clear as they could be.  Thank you
+most of all to Kembra Howdeshell, who put up with my disappearing into
+the computer to add just another section before dinner.
+
+
 
 ```{tableofcontents}
 ```

@@ -1379,9 +1379,8 @@ matter and energy in the universe.).
 
 Hubble Diagram constructed from gamma-ray burst light curves, plotting
 distance modulus (the distance in logarithmic units) vs. redshift.
-Note that this relationship does not look linear because the logarithm
-flattens the slope for large distances.  Image from Schaefer,
-B. (2007).
+The standard Big Bang Theory prediction is shown as a solid line.
+Image from Schaefer, B. (2007).
 ```
 
 We can turn Eq. {eq}`hubblegeneral` into something a little bit more
