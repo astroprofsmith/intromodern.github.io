@@ -1399,7 +1399,7 @@ leaving us with
 ```{math}
 :label: hubbleeuc
 \frac{c}{H_0}\left[\ln{a_{\rm now}}-\ln{a_{\rm emit}}\right] =
-= \frac{c}{H_0}\ln{\frac{a_{\rm now}}{a_{\rm emit}} = D
+= \frac{c}{H_0}\ln{\frac{a_{\rm now}}{a_{\rm emit}}} = D
 ```
 The fraction in the log is just $1+z$, and we can use a Taylor
 for small $z$ to get $\ln{(1+z)}\approx 1+z$, which leaves us
