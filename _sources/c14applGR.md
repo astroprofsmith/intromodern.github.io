@@ -1245,9 +1245,9 @@ now to the wavelength then, the ratio might not be one, if the
 scale factor of the universe has changed while the photon was travelling.
 ```{math}
 :label: redshift
-\frac{\lambda_{\rm then}}{\lambda_{\rm now}}
-= \frac{a(t_{\rm then})(\chi_b-\chi_f)}{a(t_{\rm now})(\chi_b-\chi_f)}
-=  \frac{a(t_{\rm then})}{a(t_{\rm now})}
+\frac{\lambda_{\rm now}}{\lambda_{\rm then}}
+= \frac{a(t_{\rm now})(\chi_b-\chi_f)}{a(t_{\rm then})(\chi_b-\chi_f)}
+=  \frac{a(t_{\rm now})}{a(t_{\rm then})}
 ```
 The comoving coordinates cancel because they don't change.  The ratio
 of the two wavelengths tells you how much the scale factor of the
@@ -1256,7 +1256,7 @@ universe has changed since the photon was emitted.
 ```{note}
 Usually this ratio is expressed in terms of the fractional *change* of
 the wavelength $(\lambda_{\rm now}-\lambda_{\rm then})/\lambda_{\rm
-then}$, or $\Delta \lamda/\lambda$, using $\lambda$ for the emitted
+then}$, or $\Delta \lambda/\lambda$, using $\lambda$ for the emitted
 wavelength.  This ratio is defined as $z$, the **cosmological
 redshift** (it is a *red*shift if $z>0$, which it usually is, when
 measured in our actual universe).  If you write $1+z$, you can express
