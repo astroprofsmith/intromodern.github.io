@@ -24,6 +24,27 @@ from myst_nb import glue
 
 # Some Applications of General Relativity
 
+In this chapter, I show four examples of how applying the principles
+and concepts of General Relativity, as laid out in the last chapter,
+lead to astonishing (but very real) observations in our universe.  I
+start close to home with variations in Mercury's Orbit that Newtonian
+Physics could not explain.  This was known in Einstein's time, and the
+fact that his theory could explain the deviation, as small as it is,
+buoyed his confidence in the utility of his theory.
+
+GR further predicts the bending of light by gravity, the first
+prediction that was observationally tested after the 1915 publication
+of the theory.  Getting into the mindset of GR also helps one
+understand what is meant by the concept of a black hole and the
+current best theory of the origin and evolution of the Universe,
+colloquially and somewhat misleadingly known as The Big Bang Theory.
+Although none of the treatments in this chapter could be considered
+comprehensive, they should give the reader a solid foundation on which
+to understand further reading on these topics, and hopefully avoid the
+common mistakes that popularized versions of the theories often lead
+to, when people try to understand them in a more intuitive Newtonian
+paradigm.
+
 ## Mercury's Orbit
 
 General Relativity demands a complete reconceptualization of how
