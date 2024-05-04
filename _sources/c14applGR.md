@@ -1249,10 +1249,65 @@ scale factor of the universe has changed while the photon was travelling.
 = \frac{a(t_{\rm then})(\chi_b-\chi_f)}{a(t_{\rm now})(\chi_b-\chi_f)}
 =  \frac{a(t_{\rm then})}{a(t_{\rm now})}
 ```
-The comoving coordinates cancel because they don't change.
+The comoving coordinates cancel because they don't change.  The ratio
+of the two wavelengths tells you how much the scale factor of the
+universe has changed since the photon was emitted.
+
+```{note}
+
+Usually this ratio is expressed in terms of the fractional *change* of
+the wavelength $(\lambda_{\rm now}-\lambda_{\rm then})/\lambda_{\rm
+then}$, or $\Delta \lamdba/\lambda$, using $\lambda$ for the emitted
+wavelength.  This ratio is defined as $z$, the **cosmological
+redshift** (it is a *red*shift if $z>0$, which it usually is, when
+measured in our actual universe).  If you write $1+z$, you can express
+the $1$ as $\lambda_{\rm then}/\lambda_{\rm then}$, and then the
+$\lambda_{\rm then}$ cancels out of the numerator, leaving you with
+just the ratios of the wavelengths.  So you often see both terms in
+cosmology: $z=\Delta \lambda/\lambda$, the fractional change in
+wavelength, or $1+z=\lambda_{\rm now}/\lambda_{\rm then}$.
+```
+
+It is important to note the interpretation of this shift in wavelength.
+So far in this book you have encountered two other mechanisism by which
+a photon would shift to a different wavelength: there's the Doppler
+shift (the result of relative motion between the observer and the emitter)
+and the gravitational shift (the result of the photon moving toward
+or away from a source of gravity).  This third shift is interpreted as
+the wavelength getting longer if the space through which it moves is
+getting bigger due to the change in the scale factor.  Even today,
+the redshifts from distant galaxies are often presented to the public
+in terms of a Doppler shift (the light is redshifted because those
+galaxies are moving away from us).  But this is not the way that GR is
+asking us to conceptualize this redshift, and it further reinforces the
+misconception that the expansion of the universe is stuff moving
+through space rather than space itself expanding.  Note particularly
+that if you interpret a cosmological redshift as a Doppler shift, via
+Equation {eq}`Ldopp`, then you have a problem if you solve for speed:
+```{math}
+:label: z1dopp
+1+z = \sqrt{\frac{1+\beta_R}{1-\beta_R}}}
+```
+```{math}
+:label: z1dopp
+(1+z)^2(1-\beta_R) = 1+\beta_R
+```
+```{math}
+:label: z2dopp
+(1+z)^2-(1+z)^2\beta_R = 1+\beta_R
+```
+```{math}
+:label: z3dopp
+(1+z)^2-1=[(1+z)^2+1]\beta_R \rightarrow \beta_R = \frac{(1+z)^2-1}{(1+z)^2+1}
+```
 
 
-Hubble Law and intepretation of redshift (co-moving coordinates).
+
+If the scale factor of the universe has changed as a function of time,
+say for example, it has steadily increased, then because photons
+travel at the speed of light, you would expect light that was emitted
+longer ago and therefore further away to be redshifted more and more,
+the further it has traveled across the universe.
 
 
 ## Problems
