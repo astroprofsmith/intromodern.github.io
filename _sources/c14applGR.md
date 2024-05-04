@@ -1254,10 +1254,9 @@ of the two wavelengths tells you how much the scale factor of the
 universe has changed since the photon was emitted.
 
 ```{note}
-
 Usually this ratio is expressed in terms of the fractional *change* of
 the wavelength $(\lambda_{\rm now}-\lambda_{\rm then})/\lambda_{\rm
-then}$, or $\Delta \lamdba/\lambda$, using $\lambda$ for the emitted
+then}$, or $\Delta \lamda/\lambda$, using $\lambda$ for the emitted
 wavelength.  This ratio is defined as $z$, the **cosmological
 redshift** (it is a *red*shift if $z>0$, which it usually is, when
 measured in our actual universe).  If you write $1+z$, you can express
@@ -1265,7 +1264,8 @@ the $1$ as $\lambda_{\rm then}/\lambda_{\rm then}$, and then the
 $\lambda_{\rm then}$ cancels out of the numerator, leaving you with
 just the ratios of the wavelengths.  So you often see both terms in
 cosmology: $z=\Delta \lambda/\lambda$, the fractional change in
-wavelength, or $1+z=\lambda_{\rm now}/\lambda_{\rm then}$.
+wavelength, or $1+z=\lambda_{\rm now}/\lambda_{\rm then}$, the ratio
+of the two wavelengths.
 ```
 
 It is important to note the interpretation of this shift in wavelength.
@@ -1281,34 +1281,31 @@ in terms of a Doppler shift (the light is redshifted because those
 galaxies are moving away from us).  But this is not the way that GR is
 asking us to conceptualize this redshift, and it further reinforces the
 misconception that the expansion of the universe is stuff moving
-through space rather than space itself expanding.  Note particularly
-that if you interpret a cosmological redshift as a Doppler shift, via
-Equation {eq}`Ldopp`, then you have a problem if you solve for speed:
-```{math}
-:label: z1dopp
-1+z = \sqrt{\frac{1+\beta_R}{1-\beta_R}}}
-```
-```{math}
-:label: z2dopp
-(1+z)^2(1-\beta_R) = 1+\beta_R
-```
-```{math}
-:label: z3dopp
-(1+z)^2-(1+z)^2\beta_R = 1+\beta_R
-```
-```{math}
-:label: z4dopp
-(1+z)^2-1=[(1+z)^2+1]\beta_R \rightarrow \beta_R = \frac{(1+z)^2-1}{(1+z)^2+1}
-```
-
-
+through space rather than space itself expanding.  
 
 If the scale factor of the universe has changed as a function of time,
 say for example, it has steadily increased, then because photons
 travel at the speed of light, you would expect light that was emitted
 longer ago and therefore further away to be redshifted more and more,
-the further it has traveled across the universe.
+the further it has traveled across the universe.[Need explanation of
+Hubble law here and presentation of actual Hubble diagram.]
 
+The Big Bang Theory in its entirety extrapolates this currently
+observed expansion back into the distant past and explores the
+implication of all the physical distances being much smaller back
+then.  The further back in time you consider, the denser and hotter
+the universe was.  Using the tools of GR, you can model the density
+and temperature of the universe, and predict what will be happening at
+any particular epoch of the universe's history.  A full description of
+the Big Bang Theory and all its implications is well beyond the scope
+of this book.  My goal in this section has been to show you how to use
+GR to interpret the Hubble Diagram as an increase in the scale factor,
+leading to an expansion of physical space, not "stuff flying through
+space".  It is misleading to call the Big Bang an explosion, as an
+explosion is exactly stuff flying through space.  With this
+understanding, you can go on to read a book about the Big Bang and
+have a solid foundation on which to understand the rest of the theory
+and the story it narrates about our universe.
 
 ## Problems
 
