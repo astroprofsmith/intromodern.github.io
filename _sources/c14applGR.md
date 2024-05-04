@@ -1398,15 +1398,52 @@ leaving us with
 ```
 ```{math}
 :label: hubbleeuc
-\frac{c}{H_0}\left[\ln{a_{\rm now}}-\ln{a_{\rm emit}}\right] =
+\frac{c}{H_0}\left[\ln{a_{\rm now}}-\ln{a_{\rm emit}}\right] 
 = \frac{c}{H_0}\ln{\frac{a_{\rm now}}{a_{\rm emit}}} = D
 ```
 The fraction in the log is just $1+z$, and we can use a Taylor
-for small $z$ to get $\ln{(1+z)}\approx 1+z$, which leaves us
+for small $z$ to get $\ln{(1+z)}\approx z$, which leaves us
 with
 ```{math}
 :label: hubblesmall
-\frac{c}{H_0}(1+z) = D
+\frac{cz}{H_0} = D \rightarrow H_0D=cz
+```
+and if we use Eq. {eq}`Ldopp` for small $z$ then we get $z\approx\beta$
+and therefore
+```{math}
+:label: hubblelaw
+H_0D=v
+```
+which is the famous Hubble Law, that the velocity of receding galaxies
+is linear with their distance, and the slope of the line is the Hubble
+Constant.  This is where Hubble started in the 1920s, as shown in
+{numref}`originalhubblefig`.  Of course, for redshifts of one or
+greater, the linear relationship cannot be expected to hold, and you
+have to use more complex relationships.  In 1998, two independent
+groups studied deviations from this law and determined to everyone's
+astonishment that the expansion of the universe is accelerating.
+Their result is shown in {numref}`riess98`.  Everyone expected that
+the presence of matter in the universe would be slowing the expansion
+down.  Something is overwhelming that effect and causing the increase
+of $a$ to be getting even faster.
+
+
+
+```{figure} images/schaefergrb.png
+:alt: riess98hubblediagram
+:class: bg-primary mb-1
+:width: 600px
+:align: center
+:name: riess98fig
+
+Compilation of two groups' measurements of the Hubble Diagram out
+to $z=1$.  Distance is shown on the vertical axis and redshift
+on the horizontal.  Deviations from a linear relationship are shown
+in the bottom panel.  At the furthest distances, the galaxies are
+dimmer than expected, implying they are further away than expected,
+implying that the universe has expanded more than a constant expansion
+rate would predict: the expansion of the universe is speeding up!
+
 ```
 
 
