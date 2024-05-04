@@ -1493,7 +1493,7 @@ rate would predict: the expansion of the universe is speeding up!
 
 The Big Bang Theory in its entirety extrapolates this currently
 observed expansion back into the distant past and explores the
-implication of all the physical distances being much smaller back
+implications of all the physical distances being much smaller back
 then.  The further back in time you consider, the denser and hotter
 the universe was.  Using the tools of GR, you can model the density
 and temperature of the universe, and predict what will be happening at
@@ -1526,15 +1526,25 @@ to the lens is about the same as the distance from the lens to the
 source, about 1000 LY.  Compare with typical telescope resolutions to
 see why this is called microlensing.
 
-3.  Verify the solid line prediction in {numref}`Edd19` from Eq. {eq}`lensQsol`.
-That is, put Eq. {eq}`lensQsol` in terms of the quantities on the axes of
-{numref}`Edd19` and verify that it would, indeed, generate the solid line in
-the figure.  You will have to figure out how the figure manipulates the scale
-of the horizontal axis.
+3.  Verify the solid line prediction in {numref}`Edd19` from
+Eq. {eq}`lensQsol`.  That is, put Eq. {eq}`lensQsol` in terms of the
+quantities on the axes of {numref}`Edd19` and verify that it would,
+indeed, generate the solid line in the figure.  You will have to
+figure out how the figure manipulates the scale of the horizontal
+axis.
 
-4. Get age of the U as $2/3H_0$?
+4.  If you are travelling at about 70 mph, it is fair to guess that
+you would have been 70 miles away about an hour ago (the rate of
+change of the distance divided by the distance), unless you changed
+your speed dramatically.  You can use a similar ratio to estimate the
+lifetime of the Sun, given its luminosity and available energy.
+Current best estimates of $H_0$ (the rate of change of $a$ divided by
+$a$) seem to be around 70 km/s/Mpc.  Use this number to estimate the
+Hubble Time in billions of years, which is not equal to the age of the
+universe, but does give you a rough scaling for how old the universe
+has to be.
 
-5.  Measure the major axis of the orbit of the star marked SO-2 in the
+5. Measure the major axis of the orbit of the star marked SO-2 in the
 Andrea Gehz video and use Kepler's Third Law to put a lower limit of
 four million solar masses on the central mass.
  
