@@ -1323,7 +1323,7 @@ toward us from some distant location, then the angular displacement
 terms drop out, leaving us with
 ```{math}
 :label: photonmetric
-0 =  -c^2dt^2 + a^2\left[\frac{dr^2}{1-kR^2}\rightarrow cdt = -\frac{adR}{\sqrt{1-kR^2}}
+0 =  -c^2dt^2 + a^2\left[\frac{dr^2}{1-kR^2}\right]\rightarrow cdt = -\frac{adR}{\sqrt{1-kR^2}}
 ```
 I take $dR>0$, so the minus sign indicates that photons are travelling
 inward toward the origin, which is where we are.
@@ -1339,7 +1339,16 @@ Then I can use the definition of the Hubble parameter (Equation
 :label: scalefaceqH
 \frac{cda}{a^2H} = -\frac{dR}{\sqrt{1-kR^2}}
 ```
-
+To apply this to a photon travelling across the universe, we would
+need to integrate from $a_{\rm emit}$ to $a_{\rm now}$ (which we
+define as 1) on the left and from the physical distance $D$ to zero on
+the right.
+```{math}
+:label: hubblegeneral
+\int_{a_{\rm emit}}^1\frac{cda}{a^2H} = -\int_D^0\frac{dR}{\sqrt{1-kR^2}}
+```
+This may look terribly messy,  but it does impose a relationship between
+$H$, $a$, $D$, and $k$.
 
 
 ```{figure} images/schaefergrb.png

@@ -1490,7 +1490,7 @@ For a photon, <span class="math notranslate nohighlight">\(ds=0\)</span>, and if
 toward us from some distant location, then the angular displacement
 terms drop out, leaving us with</p>
 <div class="math notranslate nohighlight" id="equation-photonmetric">
-<span class="eqno">(14.19)<a class="headerlink" href="#equation-photonmetric" title="Permalink to this equation">#</a></span>\[0 =  -c^2dt^2 + a^2\left[\frac{dr^2}{1-kR^2}\rightarrow cdt = -\frac{adR}{\sqrt{1-kR^2}}\]</div>
+<span class="eqno">(14.19)<a class="headerlink" href="#equation-photonmetric" title="Permalink to this equation">#</a></span>\[0 =  -c^2dt^2 + a^2\left[\frac{dr^2}{1-kR^2}\right]\rightarrow cdt = -\frac{adR}{\sqrt{1-kR^2}}\]</div>
 <p>I take <span class="math notranslate nohighlight">\(dR&gt;0\)</span>, so the minus sign indicates that photons are travelling
 inward toward the origin, which is where we are.
 I can use <span class="math notranslate nohighlight">\(\dot{a}=da/dt\)</span> to replace <span class="math notranslate nohighlight">\(t\)</span> as a variable with <span class="math notranslate nohighlight">\(a\)</span>:</p>
@@ -1500,6 +1500,14 @@ I can use <span class="math notranslate nohighlight">\(\dot{a}=da/dt\)</span> to
 <a class="reference internal" href="#equation-hubbleparam">(14.18)</a>) to include <span class="math notranslate nohighlight">\(H\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-scalefaceqh">
 <span class="eqno">(14.21)<a class="headerlink" href="#equation-scalefaceqh" title="Permalink to this equation">#</a></span>\[\frac{cda}{a^2H} = -\frac{dR}{\sqrt{1-kR^2}}\]</div>
+<p>To apply this to a photon travelling across the universe, we would
+need to integrate from <span class="math notranslate nohighlight">\(a_{\rm emit}\)</span> to <span class="math notranslate nohighlight">\(a_{\rm now}\)</span> (which we
+define as 1) on the left and from the physical distance <span class="math notranslate nohighlight">\(D\)</span> to zero on
+the right.</p>
+<div class="math notranslate nohighlight" id="equation-hubblegeneral">
+<span class="eqno">(14.22)<a class="headerlink" href="#equation-hubblegeneral" title="Permalink to this equation">#</a></span>\[\int_{a_{\rm emit}}^1\frac{cda}{a^2H} = -\int_D^0\frac{dR}{\sqrt{1-kR^2}}\]</div>
+<p>This may look terribly messy,  but it does impose a relationship between
+<span class="math notranslate nohighlight">\(H\)</span>, <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(D\)</span>, and <span class="math notranslate nohighlight">\(k\)</span>.</p>
 <figure class="align-center" id="grbhubb">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/schaefergrb.png"><img alt="GRBhubblediagram" class="bg-primary mb-1" src="_images/schaefergrb.png" style="width: 600px;" /></a>
 <figcaption>
