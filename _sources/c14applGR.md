@@ -1360,7 +1360,7 @@ is making measurements of things like wavelength shift and distance
 and comparing what we actually measure to the shape of Equation
 {eq}`hubblegeneral` to constrain what parameters like $k$ might
 actually be in the actual universe we live in.  One such effort is
-shown in {numref}`grbhub`, which plots the distance to a number of
+shown in {numref}`grbhubb`, which plots the distance to a number of
 cosmic explosions called gamma-ray bursts (GRBs) as a function of
 their redshift.  And note that they are all, indeed, redshifts.  The
 solid line is a match to an equation like Eq. {eq}`hubblegeneral` for
@@ -1398,7 +1398,7 @@ leaving us with
 ```
 ```{math}
 :label: hubbleeuc
-\frac{c}{H_0}\left[\ln{a_{\rm now}}-\ln{a_{\rm emit}\right] =
+\frac{c}{H_0}\left[\ln{a_{\rm now}}-\ln{a_{\rm emit}}\right] =
 = \frac{c}{H_0}\ln{\frac{a_{\rm now}}{a_{\rm emit}} = D
 ```
 The fraction in the log is just $1+z$, and we can use a Taylor
