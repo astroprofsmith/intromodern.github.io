@@ -1128,7 +1128,7 @@ We can therefore write the whole Robertson-Walker metric in the
 following way:
 ```{math}
 :label: rwmetricfull
--ds^2 = -c^2dt^2 + a\left[\frac{dr^2}{1-kR^2} + r^2d\theta^2 + r^2\sin^2{\theta}d\phi^2\right]
+-ds^2 = -c^2dt^2 + a^2\left[\frac{dr^2}{1-kR^2} + r^2d\theta^2 + r^2\sin^2{\theta}d\phi^2\right]
 ```
 as long as we use Eq. {eq}`chi` as a way to define a dimensionless
 $r$.  Again, remember if $k=0$, this is just flat spacetime with the
@@ -1282,6 +1282,23 @@ wavelength, or $1+z=\lambda_{\rm now}/\lambda_{\rm then}$, the ratio
 of the two wavelengths.
 ```
 
+If the scale factor of the universe has changed as a function of time,
+say for example, it has steadily increased, then because photons
+travel at the speed of light, you would expect light that was emitted
+longer ago and therefore further away to be redshifted more and more,
+the further it has traveled across the universe.  It is useful to
+define the fractional rate of change of the scale factor:
+```{math}
+:label: hubbleparam
+H(t) = \frac{da/dt}{a}=\frac{da/a}{dt}
+```
+which is given the name *Hubble Parameter*.  The value of $H$ now is
+called $H_0$, the Hubble Constant, but it's important to note that the
+Hubble parameter has clearly not been constant over the history of the
+universe.  If $H$ had *always* been $H_0$, then $da/dt=H_0a$ would
+imply an exponentially increasing scale factor, and the growth of the
+scale factor is clearly more complex than that.
+
 It is important to note the interpretation of this shift in wavelength.
 So far in this book you have encountered two other mechanisisms by which
 a photon would shift to a different wavelength: there's the Doppler
@@ -1297,25 +1314,33 @@ asking us to conceptualize this redshift, and it further reinforces the
 misconception that the expansion of the universe is stuff moving
 through space rather than space itself expanding.  
 
-If the scale factor of the universe has changed as a function of time,
-say for example, it has steadily increased, then because photons
-travel at the speed of light, you would expect light that was emitted
-longer ago and therefore further away to be redshifted more and more,
-the further it has traveled across the universe.  It is useful to
-define the fractional rate of change of the scale factor:
+This metric, while still completely general for an isotropic
+and homogeneous three-dimensional universe, does put constraints
+on how the scale factor, distance, and time can be related.
+As we did with black holes, let's consider the worldline of a photon.
+For a photon, $ds=0$, and if we consider photons travelling straight
+toward us from some distant location, then the angular displacement
+terms drop out, leaving us with
 ```{math}
-:label: hubbleparam
-H(t) = \frac{da/dt}{a}
+:label: photonmetric
+0 =  -c^2dt^2 + a^2\left[\frac{dr^2}{1-kR^2}\rightarrow cdt = -\frac{adR}{\sqrt{1-kR^2}}
 ```
-which is given the name *Hubble Parameter*.  The value of $H$ now is
-called $H_0$, the Hubble Constant, but it's important to note that the
-Hubble parameter has clearly not been constant over the history of the
-universe.  If $H$ had *always* been $H_0$, then $da/dt=H_0a$ would
-imply an exponentially increasing scale factor, and the growth of the
-scale factor is clearly more complex than that.
+I take $dR>0$, so the minus sign indicates that photons are travelling
+inward toward the origin, which is where we are.
+I can use $\dot{a}=da/dt$ to replace $t$ as a variable with $a$:
 
-[Need explanation of Hubble law here and presentation of actual Hubble
-diagram.]
+```{math}
+:label: scalefaceq
+\frac{cda}{a\dot{a}} = -\frac{dR}{\sqrt{1-kR^2}}
+```
+Then I can use the definition of the Hubble parameter (Equation
+{eq}`hubbleparam`) to include $H$:
+```{math}
+:label: scalefaceqH
+\frac{cda}{a^2H} = -\frac{dR}{\sqrt{1-kR^2}}
+```
+
+
 
 ```{figure} images/schaefergrb.png
 :alt: GRBhubblediagram

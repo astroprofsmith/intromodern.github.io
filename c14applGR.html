@@ -1314,7 +1314,7 @@ such that <span class="math notranslate nohighlight">\(d\chi\)</span> replaces <
 <p>We can therefore write the whole Robertson-Walker metric in the
 following way:</p>
 <div class="math notranslate nohighlight" id="equation-rwmetricfull">
-<span class="eqno">(14.16)<a class="headerlink" href="#equation-rwmetricfull" title="Permalink to this equation">#</a></span>\[-ds^2 = -c^2dt^2 + a\left[\frac{dr^2}{1-kR^2} + r^2d\theta^2 + r^2\sin^2{\theta}d\phi^2\right]\]</div>
+<span class="eqno">(14.16)<a class="headerlink" href="#equation-rwmetricfull" title="Permalink to this equation">#</a></span>\[-ds^2 = -c^2dt^2 + a^2\left[\frac{dr^2}{1-kR^2} + r^2d\theta^2 + r^2\sin^2{\theta}d\phi^2\right]\]</div>
 <p>as long as we use Eq. <a class="reference internal" href="#equation-chi">(14.15)</a> as a way to define a dimensionless
 <span class="math notranslate nohighlight">\(r\)</span>.  Again, remember if <span class="math notranslate nohighlight">\(k=0\)</span>, this is just flat spacetime with the
 space part written in spherical coordinates.</p>
@@ -1454,6 +1454,20 @@ cosmology: <span class="math notranslate nohighlight">\(z=\Delta \lambda/\lambda
 wavelength, or <span class="math notranslate nohighlight">\(1+z=\lambda_{\rm now}/\lambda_{\rm then}\)</span>, the ratio
 of the two wavelengths.</p>
 </div>
+<p>If the scale factor of the universe has changed as a function of time,
+say for example, it has steadily increased, then because photons
+travel at the speed of light, you would expect light that was emitted
+longer ago and therefore further away to be redshifted more and more,
+the further it has traveled across the universe.  It is useful to
+define the fractional rate of change of the scale factor:</p>
+<div class="math notranslate nohighlight" id="equation-hubbleparam">
+<span class="eqno">(14.18)<a class="headerlink" href="#equation-hubbleparam" title="Permalink to this equation">#</a></span>\[H(t) = \frac{da/dt}{a}=\frac{da/a}{dt}\]</div>
+<p>which is given the name <em>Hubble Parameter</em>.  The value of <span class="math notranslate nohighlight">\(H\)</span> now is
+called <span class="math notranslate nohighlight">\(H_0\)</span>, the Hubble Constant, but it’s important to note that the
+Hubble parameter has clearly not been constant over the history of the
+universe.  If <span class="math notranslate nohighlight">\(H\)</span> had <em>always</em> been <span class="math notranslate nohighlight">\(H_0\)</span>, then <span class="math notranslate nohighlight">\(da/dt=H_0a\)</span> would
+imply an exponentially increasing scale factor, and the growth of the
+scale factor is clearly more complex than that.</p>
 <p>It is important to note the interpretation of this shift in wavelength.
 So far in this book you have encountered two other mechanisisms by which
 a photon would shift to a different wavelength: there’s the Doppler
@@ -1468,22 +1482,24 @@ galaxies are moving away from us).  But this is not the way that GR is
 asking us to conceptualize this redshift, and it further reinforces the
 misconception that the expansion of the universe is stuff moving
 through space rather than space itself expanding.</p>
-<p>If the scale factor of the universe has changed as a function of time,
-say for example, it has steadily increased, then because photons
-travel at the speed of light, you would expect light that was emitted
-longer ago and therefore further away to be redshifted more and more,
-the further it has traveled across the universe.  It is useful to
-define the fractional rate of change of the scale factor:</p>
-<div class="math notranslate nohighlight" id="equation-hubbleparam">
-<span class="eqno">(14.18)<a class="headerlink" href="#equation-hubbleparam" title="Permalink to this equation">#</a></span>\[H(t) = \frac{da/dt}{a}\]</div>
-<p>which is given the name <em>Hubble Parameter</em>.  The value of <span class="math notranslate nohighlight">\(H\)</span> now is
-called <span class="math notranslate nohighlight">\(H_0\)</span>, the Hubble Constant, but it’s important to note that the
-Hubble parameter has clearly not been constant over the history of the
-universe.  If <span class="math notranslate nohighlight">\(H\)</span> had <em>always</em> been <span class="math notranslate nohighlight">\(H_0\)</span>, then <span class="math notranslate nohighlight">\(da/dt=H_0a\)</span> would
-imply an exponentially increasing scale factor, and the growth of the
-scale factor is clearly more complex than that.</p>
-<p>[Need explanation of Hubble law here and presentation of actual Hubble
-diagram.]</p>
+<p>This metric, while still completely general for an isotropic
+and homogeneous three-dimensional universe, does put constraints
+on how the scale factor, distance, and time can be related.
+As we did with black holes, let’s consider the worldline of a photon.
+For a photon, <span class="math notranslate nohighlight">\(ds=0\)</span>, and if we consider photons travelling straight
+toward us from some distant location, then the angular displacement
+terms drop out, leaving us with</p>
+<div class="math notranslate nohighlight" id="equation-photonmetric">
+<span class="eqno">(14.19)<a class="headerlink" href="#equation-photonmetric" title="Permalink to this equation">#</a></span>\[0 =  -c^2dt^2 + a^2\left[\frac{dr^2}{1-kR^2}\rightarrow cdt = -\frac{adR}{\sqrt{1-kR^2}}\]</div>
+<p>I take <span class="math notranslate nohighlight">\(dR&gt;0\)</span>, so the minus sign indicates that photons are travelling
+inward toward the origin, which is where we are.
+I can use <span class="math notranslate nohighlight">\(\dot{a}=da/dt\)</span> to replace <span class="math notranslate nohighlight">\(t\)</span> as a variable with <span class="math notranslate nohighlight">\(a\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-scalefaceq">
+<span class="eqno">(14.20)<a class="headerlink" href="#equation-scalefaceq" title="Permalink to this equation">#</a></span>\[\frac{cda}{a\dot{a}} = -\frac{dR}{\sqrt{1-kR^2}}\]</div>
+<p>Then I can use the definition of the Hubble parameter (Equation
+<a class="reference internal" href="#equation-hubbleparam">(14.18)</a>) to include <span class="math notranslate nohighlight">\(H\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-scalefaceqh">
+<span class="eqno">(14.21)<a class="headerlink" href="#equation-scalefaceqh" title="Permalink to this equation">#</a></span>\[\frac{cda}{a^2H} = -\frac{dR}{\sqrt{1-kR^2}}\]</div>
 <figure class="align-center" id="grbhubb">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/schaefergrb.png"><img alt="GRBhubblediagram" class="bg-primary mb-1" src="_images/schaefergrb.png" style="width: 600px;" /></a>
 <figcaption>
