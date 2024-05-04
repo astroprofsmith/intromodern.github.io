@@ -1289,15 +1289,15 @@ Equation {eq}`Ldopp`, then you have a problem if you solve for speed:
 1+z = \sqrt{\frac{1+\beta_R}{1-\beta_R}}}
 ```
 ```{math}
-:label: z1dopp
+:label: z2dopp
 (1+z)^2(1-\beta_R) = 1+\beta_R
 ```
 ```{math}
-:label: z2dopp
+:label: z3dopp
 (1+z)^2-(1+z)^2\beta_R = 1+\beta_R
 ```
 ```{math}
-:label: z3dopp
+:label: z4dopp
 (1+z)^2-1=[(1+z)^2+1]\beta_R \rightarrow \beta_R = \frac{(1+z)^2-1}{(1+z)^2+1}
 ```
 
