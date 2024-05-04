@@ -676,12 +676,13 @@ The first suggestion of a "Dark Star", made independently by John
 Michell and Pierre-Simon Laplace in the 1700s, was based on this
 logic.
 
-The idea goes: take a two-object gravitationally-interacting system,
-like, say, you and the Earth.  If we give you some kinetic energy by
-launching you in the air, you will move away from the Earth.  As your
-separation from Earth increases, the potential energy associated with
-the gravitational interaction will increase, and your kinetic energy
-will decrease by the same amount, because the energy is conserved:
+The (misleading) idea goes: take a two-object
+gravitationally-interacting system, like, say, you and the Earth.  If
+we give you some kinetic energy by launching you in the air, you will
+move away from the Earth.  As your separation from Earth increases,
+the potential energy associated with the gravitational interaction
+will increase, and your kinetic energy will decrease by the same
+amount, because the energy is conserved:
 ```{math}
 :label: convsofE
 \Delta E = 0 = \Delta KE + \Delta PE =
@@ -1269,7 +1270,7 @@ of the two wavelengths.
 ```
 
 It is important to note the interpretation of this shift in wavelength.
-So far in this book you have encountered two other mechanisism by which
+So far in this book you have encountered two other mechanisisms by which
 a photon would shift to a different wavelength: there's the Doppler
 shift (the result of relative motion between the observer and the emitter)
 and the gravitational shift (the result of the photon moving toward
@@ -1290,6 +1291,20 @@ longer ago and therefore further away to be redshifted more and more,
 the further it has traveled across the universe.[Need explanation of
 Hubble law here and presentation of actual Hubble diagram.]
 
+```{figure} images/schaefergrb.png
+:alt: GRBhubblediagram
+:class: bg-primary mb-1
+:width: 600px
+:align: center
+:name: grbhubb
+
+Hubble Diagram constructed from gamma-ray burst light curves, plotting
+distance modulus (the distance in logrithmic units) vs. redshift.
+Note that this relationship does not look linear because the logrithm flattens
+the slope for large distances.  
+Image from Schaefer, B. (2007).  
+```
+
 The Big Bang Theory in its entirety extrapolates this currently
 observed expansion back into the distant past and explores the
 implication of all the physical distances being much smaller back
@@ -1302,10 +1317,10 @@ of this book.  My goal in this section has been to show you how to use
 GR to interpret the Hubble Diagram as an increase in the scale factor,
 leading to an expansion of physical space, not "stuff flying through
 space".  It is misleading to call the Big Bang an explosion, as an
-explosion is exactly stuff flying through space.  With this
-understanding, you can go on to read a book about the Big Bang and
-have a solid foundation on which to understand the rest of the theory
-and the story it narrates about our universe.
+explosion is exactly stuff flying through space.  With your knowledge
+of GR, you can go on to read a book about the Big Bang and have a
+solid foundation on which to understand the rest of the theory and the
+story it narrates about our universe.
 
 ## Problems
 
