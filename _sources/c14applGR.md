@@ -1380,15 +1380,21 @@ matter/energy in the space.  Therefore much of science of the Big Bang
 Theory is making measurements of things like wavelength shift and
 distance and comparing what we actually measure to the shape of
 Equation {eq}`hubblegeneral` to constrain what parameters like $k$
-might actually be in the actual universe we live in.  One such effort
-is shown in {numref}`grbhubb`, which plots the distance to a number of
-cosmic explosions called gamma-ray bursts (GRBs) as a function of
-their redshift.  And note that they are all, indeed, redshifts.  The
-solid line is a match to an equation like Eq. {eq}`hubblegeneral` for
-the values of certain parameters (listed as $\Omega_M$ and $w$ here --
-their exact meaning is beyond the scope of this book.  Suffice to say
-that they constrain $k$ by making assumptions about the character of
-matter and energy in the universe.).
+might actually be in the actual universe we live in.
+
+One such effort is shown in {numref}`grbhubb`, which plots the
+distance to a number of cosmic explosions called gamma-ray bursts
+(GRBs) as a function of their redshift.  And note that they are all,
+indeed, redshifts.  The solid line is a match to an equation like
+Eq. {eq}`hubblegeneral` for the values of certain parameters (listed
+as $\Omega_M$ and $w$ here -- their exact meaning is beyond the scope
+of this book.  Suffice to say that they constrain $k$ by making
+assumptions about the character of matter and energy in the
+universe.).  To try to give you a bit of a sense of scale, the
+furthest galaxies in the Sloan Digital Sky Survey plot shown in
+{numref}`sdssslice` have a redshift of $z\sim 0.05$.  The furthest
+GRBs here happened when the universe was less than one-tenth its
+current size.
 
 
 ```{figure} images/schaefergrb.png
