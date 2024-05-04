@@ -1355,12 +1355,12 @@ To get that link into a form that can be graphed and compared with
 data, you need to make more assumptions about the nature of the
 universe we live in.  Remember that Einstein's Equation links the
 curvature of spacetime (the metric) to the distribution of
-matter/energy in the space.  So much of science of the Big Bang Theory
-is making measurements of things like wavelength shift and distance
-and comparing what we actually measure to the shape of Equation
-{eq}`hubblegeneral` to constrain what parameters like $k$ might
-actually be in the actual universe we live in.  One such effort is
-shown in {numref}`grbhubb`, which plots the distance to a number of
+matter/energy in the space.  Therefore much of science of the Big Bang
+Theory is making measurements of things like wavelength shift and
+distance and comparing what we actually measure to the shape of
+Equation {eq}`hubblegeneral` to constrain what parameters like $k$
+might actually be in the actual universe we live in.  One such effort
+is shown in {numref}`grbhubb`, which plots the distance to a number of
 cosmic explosions called gamma-ray bursts (GRBs) as a function of
 their redshift.  And note that they are all, indeed, redshifts.  The
 solid line is a match to an equation like Eq. {eq}`hubblegeneral` for
@@ -1385,13 +1385,12 @@ B. (2007).
 ```
 
 We can turn Eq. {eq}`hubblegeneral` into something a little bit more
-intuitive under certain simplifying assumptions.  If we assume that
-we are in a flat universe, so that $k=0$, and if we assume that
-we are not looking *too* far back in time, so that $z\ll 1$, then
-we can also assume that $\dot{a}=H_0$ and 
-$H=\dot{a}/a \approx H_0/a$. If we plug $H_0/a$ into Eq. {eq}`hubblegeneral`,
-then one factor of $a$ will cancel out of the denominator,
-leaving us with
+intuitive under certain simplifying assumptions.  If we assume that we
+are in a flat universe, so that $k=0$, and if we assume that we are
+not looking *too* far back in time, so that $z\ll 1$, then we can also
+assume that $\dot{a}=H_0$ and $H=\dot{a}/a \approx H_0/a$. If we plug
+$H_0/a$ into Eq. {eq}`hubblegeneral`, then one factor of $a$ will
+cancel out of the denominator, leaving us with
 ```{math}
 :label: hubbleflat
 \frac{c}{H_0}\int_{a_{\rm emit}}^{a_{\rm now}}\frac{da}{a} = \int_0^D dR
@@ -1401,23 +1400,23 @@ leaving us with
 \frac{c}{H_0}\left[\ln{a_{\rm now}}-\ln{a_{\rm emit}}\right] 
 = \frac{c}{H_0}\ln{\frac{a_{\rm now}}{a_{\rm emit}}} = D
 ```
-The fraction in the log is just $1+z$, and we can use a Taylor
+The fraction in the log is just $1+z$, and we can use a Taylor expansion
 for small $z$ to get $\ln{(1+z)}\approx z$, which leaves us
 with
 ```{math}
 :label: hubblesmall
 \frac{cz}{H_0} = D \rightarrow H_0D=cz
 ```
-and if we use Eq. {eq}`Ldopp` for small $z$ then we get $z\approx\beta$
-and therefore
+and if we use Eq. {eq}`Ldopp` as the Doppler shift interpretation for
+small $z$ then we get $z\approx\beta$ and therefore
 ```{math}
 :label: hubblelaw
-H_0D=v
+\boxed{H_0D=v}
 ```
 which is the famous Hubble Law, that the velocity of receding galaxies
 is linear with their distance, and the slope of the line is the Hubble
 Constant.  This is where Hubble started in the 1920s, as shown in
-{numref}`originalhubblefig`.  Of course, for redshifts of one or
+{numref}`edwinfig`.  Of course, for redshifts of one or
 greater, the linear relationship cannot be expected to hold, and you
 have to use more complex relationships.  In 1998, two independent
 groups studied deviations from this law and determined to everyone's
@@ -1461,7 +1460,7 @@ in the bottom panel.  At the furthest distances, the galaxies are
 dimmer than expected, implying they are further away than expected,
 implying that the universe has expanded more than a constant expansion
 rate would predict: the expansion of the universe is speeding up!
-(Image from A. Riess 1998)[chk]
+(Image available in many sources, e.g. A. Riess 2000, PASP.)
 
 ```
 
