@@ -1422,14 +1422,32 @@ greater, the linear relationship cannot be expected to hold, and you
 have to use more complex relationships.  In 1998, two independent
 groups studied deviations from this law and determined to everyone's
 astonishment that the expansion of the universe is accelerating.
-Their result is shown in {numref}`riess98`.  Everyone expected that
+Their result is shown in {numref}`riess98fig`.  Everyone expected that
 the presence of matter in the universe would be slowing the expansion
 down.  Something is overwhelming that effect and causing the increase
 of $a$ to be getting even faster.
 
+```{figure} images/hubblediag.jpg
+:alt: originalhubblediagram
+:class: bg-primary mb-1
+:width: 600px
+:align: center
+:name: edwinfig
 
+Edwin Hubble's original 1929 diagram of recession speed vs. distance
+for a collection of nearby galaxies.  Note the y-axis units should be
+km/s, not km.  Almost all the galaxies are receding (the few
+blueshifts are some of the closest galaxies to us, including
+Andromeda, which will collide with the Milky Way eventually.  Although
+the slope of this curve is extremely wrong compared to modern
+measurements, the general trend of increasing recessional speed with
+increasing distance is clear, and led to the acceptance of the Big
+Bang Theory as the dominant paradigm for understanding the origin and
+evolution of our universe.  See R. Kirshner's 2003 PNAS article for a
+fascinating exploration of the creation of this diagram.
+```
 
-```{figure} images/schaefergrb.png
+```{figure} images/Riess98.png
 :alt: riess98hubblediagram
 :class: bg-primary mb-1
 :width: 600px
@@ -1443,6 +1461,7 @@ in the bottom panel.  At the furthest distances, the galaxies are
 dimmer than expected, implying they are further away than expected,
 implying that the universe has expanded more than a constant expansion
 rate would predict: the expansion of the universe is speeding up!
+(Image from A. Riess 1998)[chk]
 
 ```
 
