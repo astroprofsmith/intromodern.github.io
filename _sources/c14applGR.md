@@ -1231,6 +1231,26 @@ and that point would be at the center.  So you, yourself, can
 legitimately be said to be at the center of the universe.  However,
 it's not a useful claim to make.
 
+Now let's consider what happens to a photon traveling across a
+universe described by this metric and reaching us.  If it is coming
+directly to us, then only the radial coordinate is changing.  We
+can ignore the $d\theta$ and $d\phi$ parts.  The radial distance between
+the front and the back of one wavelength of this photon would be
+$\lambda=ad\chi=a(\chi_b-\chi_f)$.  The values of $\chi$ would not change
+as the photon traveled, because those are comoving coordinates,
+but if the scale factor changed, we might expect the observed wavelength
+of the photon now to be different from the wavelength the photon had
+when it was emitted far away.  If we take the ratio of the wavelength
+now to the wavelength then, the ratio might not be one, if the
+scale factor of the universe has changed while the photon was travelling.
+```{math}
+:label: redshift
+\frac{\lambda_{\rm then}}{\lambda_{\rm now}}
+= \frac{a(t_{\rm then})(\chi_b-\chi_f)}{a(t_{\rm now})(\chi_b-\chi_f)}
+=  \frac{a(t_{\rm then})}{a(t_{\rm now})}
+```
+The comoving coordinates cancel because they don't change.
+
 
 Hubble Law and intepretation of redshift (co-moving coordinates).
 
