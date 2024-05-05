@@ -1422,8 +1422,8 @@ assumptions about the character of matter and energy in the
 universe.).  To try to give you a bit of a sense of scale, the
 furthest galaxies in the Sloan Digital Sky Survey plot shown in
 {numref}`sdssslice` have a redshift of $z\sim 0.05$.  The furthest
-GRBs here happened when the universe was less than one-tenth its
-current size.
+GRBs here happened when the universe was less than 15% of its current
+size.
 
 
 ```{figure} images/schaefergrb.png
