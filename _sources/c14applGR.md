@@ -672,11 +672,14 @@ and you should ignore them.
 Such a perfect alignment is very rare, but there are a lot of galaxies
 in the universe, and occasionally two of them do line up with us, and
 then we do, in fact, observe such a ring of light, called an Einstein
-Ring, as shown in {numref}`hubblenses`.  For the Sun, lensing a
-distant star, the Einstein ring would be about $40^{\prime\prime}$ in
-radius, which is much smaller than the actual radius of the Sun, so we
-would never see it.  Real, observed, Einstein Rings occur when two
-galaxies are lined up along a line of sight.
+Ring, as shown in {numref}`hubblenses`.  By moving the source in
+{numref}`ringanimate` around, you should be able to find
+configurations where the images in the simulations look like several
+of these real pictures!  For the Sun, lensing a distant star, the
+Einstein ring would be about $40^{\prime\prime}$ in radius, which is
+much smaller than the actual radius of the Sun, so we would never see
+it.  Real, observed, Einstein Rings occur when two galaxies are lined
+up along a line of sight.
 
 ```{figure} images/lensing.jpg
 :alt: hubblenses
