@@ -636,12 +636,38 @@ directions passing around the lens.  In such a case of perfect
 alignment, the light from the source will seem to be coming from all
 directions around the lens, at an angle of $\theta_E$.
 
-If you line the source up with the lens in {numref}`lensanimate` by
-setting the source y value to zero, you can see the magenta spheres
-equally spaced above and below the source.  Note that the back
-extrapolation rays don't appear in the graphic for this case, because
-the rays that would bend that much when the source y value is zero are
-not among the 20 representive rays included in the graphic.
+This situation can be simulated in {numref}`ringanimate`.  This
+animation is essentially the same as {numref}`lensanimate`, but from
+the point of view of the Earth.  In this case, the source is not
+treated as a point, but as a small circle of points, each of which is
+lensed independently.  You can move the source around horizontally and
+vertically by pressing keys on the keyboard.  If you line the source
+up with the lens, you will see the magneta images of the source distort
+into a full circle.
+
+```{code-cell}
+:tags: ["remove-cell"]
+# Insert VPython simulation of Einstein Ring
+# Allow user to change impact parameter
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRgravmap"
+test = display.IFrame(src=url1,width=800,height=700)
+glue("ringanimfig",test, display=False)
+
+```
+
+```{glue:figure} ringanimfig
+:figwidth: 800px
+:name: ringanimate
+
+Interactive illustration of gravitational lensing with a point
+lens, but an extended (circular) source.  The cyan shape is the
+source, located behind the yellow lens.  The two magenta shapes
+are representations of the images formed by the lensing.  Hit
+the "w","a","x", and "d" keys to move the source around.  If you
+can line up the source with the lens, you will get an Einstein Ring.
+If you see straight magenta lines, those are computation artifacts,
+and you should ignore them.
+```
 
 Such a perfect alignment is very rare, but there are a lot of galaxies
 in the universe, and occasionally two of them do line up with us, and

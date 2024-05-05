@@ -888,16 +888,39 @@ like <a class="reference internal" href="#thingravlens"><span class="std std-num
 directions passing around the lens.  In such a case of perfect
 alignment, the light from the source will seem to be coming from all
 directions around the lens, at an angle of <span class="math notranslate nohighlight">\(\theta_E\)</span>.</p>
-<p>If you line the source up with the lens in <a class="reference internal" href="#lensanimate"><span class="std std-numref">Fig. 14.7</span></a> by
-setting the source y value to zero, you can see the magenta spheres
-equally spaced above and below the source.  Note that the back
-extrapolation rays don’t appear in the graphic for this case, because
-the rays that would bend that much when the source y value is zero are
-not among the 20 representive rays included in the graphic.</p>
+<p>This situation can be simulated in <a class="reference internal" href="#ringanimate"><span class="std std-numref">Fig. 14.8</span></a>.  This
+animation is essentially the same as <a class="reference internal" href="#lensanimate"><span class="std std-numref">Fig. 14.7</span></a>, but from
+the point of view of the Earth.  In this case, the source is not
+treated as a point, but as a small circle of points, each of which is
+lensed independently.  You can move the source around horizontally and
+vertically by pressing keys on the keyboard.  If you line the source
+up with the lens, you will see the magneta images of the source distort
+into a full circle.</p>
+<figure class="align-default" id="ringanimate" style="width: 800px">
+<div class="output text_html">
+        <iframe
+            width="800"
+            height="700"
+            src="https://glowscript.org/#/user/dasmith/folder/Public/program/SRgravmap"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div><figcaption>
+<p><span class="caption-number">Fig. 14.8 </span><span class="caption-text">Interactive illustration of gravitational lensing with a point
+lens, but an extended (circular) source.  The cyan shape is the
+source, located behind the yellow lens.  The two magenta shapes
+are representations of the images formed by the lensing.  Hit
+the “w”,”a”,”x”, and “d” keys to move the source around.  If you
+can line up the source with the lens, you will get an Einstein Ring.
+If you see straight magenta lines, those are computation artifacts,
+and you should ignore them.</span><a class="headerlink" href="#ringanimate" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Such a perfect alignment is very rare, but there are a lot of galaxies
 in the universe, and occasionally two of them do line up with us, and
 then we do, in fact, observe such a ring of light, called an Einstein
-Ring, as shown in <a class="reference internal" href="#hubblenses"><span class="std std-numref">Fig. 14.8</span></a>.  For the Sun, lensing a
+Ring, as shown in <a class="reference internal" href="#hubblenses"><span class="std std-numref">Fig. 14.9</span></a>.  For the Sun, lensing a
 distant star, the Einstein ring would be about <span class="math notranslate nohighlight">\(40^{\prime\prime}\)</span> in
 radius, which is much smaller than the actual radius of the Sun, so we
 would never see it.  Real, observed, Einstein Rings occur when two
@@ -905,7 +928,7 @@ galaxies are lined up along a line of sight.</p>
 <figure class="align-center" id="hubblenses">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/lensing.jpg"><img alt="hubblenses" class="bg-primary mb-1" src="_images/lensing.jpg" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 14.8 </span><span class="caption-text">Examples of gravitational lenses observed by the Hubble Space Telescope.
+<p><span class="caption-number">Fig. 14.9 </span><span class="caption-text">Examples of gravitational lenses observed by the Hubble Space Telescope.
 Many are complete, or near complete, Einstein Rings (the lower right,
 in particular).  The third image in the top row shows a nice example of
 two images, one on either side of the lens, while several of the others
@@ -1043,7 +1066,7 @@ observe the light arriving later and later, more and more redshifted
 (and therefore conclude that the falling person’s clocks were running
 slower and slower), as the person fell closer and closer to the mass.
 This situation is illustrated through the interactive diagram shown in
-<a class="reference internal" href="#ehanimate"><span class="std std-numref">Fig. 14.9</span></a>.  Move the slider to change the initial radius of
+<a class="reference internal" href="#ehanimate"><span class="std std-numref">Fig. 14.10</span></a>.  Move the slider to change the initial radius of
 the spark that produces the photons.</p>
 <p>When the radius reaches <span class="math notranslate nohighlight">\(2GM/c^2\)</span>, the slope approaches infinity: a
 vertical line.  At this point, light emitted from this location will
@@ -1087,7 +1110,7 @@ approached the event horizon.</p>
             
         ></iframe>
         </div><figcaption>
-<p><span class="caption-number">Fig. 14.9 </span><span class="caption-text">Interactive spacetime diagram with lightlike, radial worldlines in a
+<p><span class="caption-number">Fig. 14.10 </span><span class="caption-text">Interactive spacetime diagram with lightlike, radial worldlines in a
 spacetime described by the Schwartzschild metric.  The initial event
 is represented by a red sphere.  The center mass is considered to be
 at <span class="math notranslate nohighlight">\(x=0\)</span>, the location of the upward pointing white arrow.  Move the
@@ -1105,7 +1128,7 @@ outbound yellow line.</span><a class="headerlink" href="#ehanimate" title="Perma
 </figure>
 <p>I should stress that the fact that the inbound slope blows up at the
 Schwartzschild radius is completely an effect of the choice of
-coordinate systems.  The naive interpretation of <a class="reference internal" href="#ehanimate"><span class="std std-numref">Fig. 14.9</span></a>
+coordinate systems.  The naive interpretation of <a class="reference internal" href="#ehanimate"><span class="std std-numref">Fig. 14.10</span></a>
 would be that nothing could ever cross the event horizon <em>toward</em> a
 black hole, either, and that is not the case.  Someone actually
 falling into a black hole would not experience anything special <em>at</em>
@@ -1149,7 +1172,7 @@ faint X-ray emission coming from slowly accreting compact object
 binary systems.  They found that the systems known to be neutron stars
 were all significantly brighter than the systems suspected to be black
 holes, which is just what you expect if the accreting material is
-disappearing behind an event horizon. <a class="reference internal" href="#adafeventhorizon"><span class="std std-numref">Fig. 14.10</span></a> shows
+disappearing behind an event horizon. <a class="reference internal" href="#adafeventhorizon"><span class="std std-numref">Fig. 14.11</span></a> shows
 their measurements.  The horizontal axis shows peak luminosity, which
 is a proxy for mass (since the gravitational energy is the source of
 the light energy), while the vertical axis shows the minimum observed
@@ -1158,7 +1181,7 @@ holes are all on the lower right.</p>
 <figure class="align-center" id="adafeventhorizon">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/NarayanADAF.png"><img alt="adafmodel" class="bg-primary mb-1" src="_images/NarayanADAF.png" style="width: 400px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 14.10 </span><span class="caption-text">Possible evidence of event horizons.  Material that falls onto a neutron
+<p><span class="caption-number">Fig. 14.11 </span><span class="caption-text">Possible evidence of event horizons.  Material that falls onto a neutron
 star heats up the star and causes it to be brighter, while material that
 falls into a black hole disappears forever.  Image from
 Narayan, Garcia, &amp; McClintock (1997).</span><a class="headerlink" href="#adafeventhorizon" title="Permalink to this image">#</a></p>
@@ -1180,7 +1203,7 @@ Four million Suns in a volume that here only has a single one!</p>
 <center><video controls src="_static/gehz.mp4"></video></center>
 <p>Finally, the most dramatic evidence for black holes comes from the
 Event Horizon Telescope project.  In 2018, they released the image
-shown in <a class="reference internal" href="#ehtm87"><span class="std std-numref">Fig. 14.11</span></a>.  They combined data from radio telescopes
+shown in <a class="reference internal" href="#ehtm87"><span class="std std-numref">Fig. 14.12</span></a>.  They combined data from radio telescopes
 all over the world to turn the entire planet Earth into one big
 telescope.  With careful analysis, they were able to create this
 image.  The scale of 40 microarcseconds is marked on the figure.  A
@@ -1195,13 +1218,13 @@ twenty billion km, or 120 times the distance from the Earth to the Sun
 – the black hole itself is about as big as our whole solar system!
 At the 54 million light year distance to M87, the black hole diameter
 would span about 16 <span class="math notranslate nohighlight">\(\mu\)</span>as, which is a little less than half of the
-40 <span class="math notranslate nohighlight">\(\mu\)</span>as bar shown in <a class="reference internal" href="#ehtm87"><span class="std std-numref">Fig. 14.11</span></a>, very similar in size to the
+40 <span class="math notranslate nohighlight">\(\mu\)</span>as bar shown in <a class="reference internal" href="#ehtm87"><span class="std std-numref">Fig. 14.12</span></a>, very similar in size to the
 dark shadow region in the image.  The existence of black holes is
 getting harder and harder to discount.</p>
 <figure class="align-center" id="ehtm87">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/2018m87.png"><img alt="2018m87ehtimage" class="bg-primary mb-1" src="_images/2018m87.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 14.11 </span><span class="caption-text">Event Horizon Telescope image of the black hole at the center of
+<p><span class="caption-number">Fig. 14.12 </span><span class="caption-text">Event Horizon Telescope image of the black hole at the center of
 elliptical galaxy M87.  Image from the 2024 update by Akiyama et al.</span><a class="headerlink" href="#ehtm87" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
@@ -1243,7 +1266,7 @@ for what we’re talking about.  We mean the universe on scales of
 billions of light years.  If you averaged everything in the universe
 into boxes a billion light years on a side, we see no evidence that
 any box would be significantly different than any other box.
-<a class="reference internal" href="#sdssslice"><span class="std std-numref">Fig. 14.12</span></a> shows a graph of the locations of galaxies near to us,
+<a class="reference internal" href="#sdssslice"><span class="std std-numref">Fig. 14.13</span></a> shows a graph of the locations of galaxies near to us,
 measured by the <a class="reference external" href="https://www.sdss.org/">Sloan Digital Sky Survey</a>.
 Each blue dot is a single galaxy.  This plot is a slice through the
 entire survey and contains thirty four thousand out of the one hundred
@@ -1252,7 +1275,7 @@ selection biases present in this image: the empty triangles at the top
 and bottom are due to the Milky Way blocking the view.  Presumably the
 galaxies there would be similarly distributed, but we can’t see them.</p>
 <p>Also, there are more galaxies on the left side simply because more
-space was surveyed on that side.  <a class="reference internal" href="#sdssside"><span class="std std-numref">Fig. 14.13</span></a> shows the full
+space was surveyed on that side.  <a class="reference internal" href="#sdssside"><span class="std std-numref">Fig. 14.14</span></a> shows the full
 catalog of 100,000 galaxies, turned on the side.  You can see that
 the left side has far more coverage than the right, so the slice has
 more galaxies in it on that side.  This is an artefact of coverage
@@ -1270,7 +1293,7 @@ a description of the universe on the <em>largest</em> scales.</p>
 <figure class="align-center" id="sdssslice">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/sdssslice.png"><img alt="SDSSsurveyslice" class="bg-primary mb-1" src="_images/sdssslice.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 14.12 </span><span class="caption-text">A slice through the SDSS galaxy catalog containing 34,000 galaxies
+<p><span class="caption-number">Fig. 14.13 </span><span class="caption-text">A slice through the SDSS galaxy catalog containing 34,000 galaxies
 out to a distance of about 700 million light years.  Each blue dot is
 a galaxy.  The Earth is at the center of the graph.</span><a class="headerlink" href="#sdssslice" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -1278,7 +1301,7 @@ a galaxy.  The Earth is at the center of the graph.</span><a class="headerlink" 
 <figure class="align-center" id="sdssside">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/sdssside.png"><img alt="SDSSsurveysideview" class="bg-primary mb-1" src="_images/sdssside.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 14.13 </span><span class="caption-text">Side view of the full SDSS galaxy catalog of 100 thousand galaxies.
+<p><span class="caption-number">Fig. 14.14 </span><span class="caption-text">Side view of the full SDSS galaxy catalog of 100 thousand galaxies.
 Note that there is more coverage of the left side, which is why the
 slice graph looks like the left side has more galaxies.</span><a class="headerlink" href="#sdssside" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -1379,7 +1402,7 @@ time, and infer that at some time in the past, everything in their
 basketball universe must have been in the same place, but that place
 no longer exists in the time when they are making their measurements.
 An animation of this basketball universe is shown in
-<a class="reference internal" href="#comovingsphere"><span class="std std-numref">Fig. 14.14</span></a>.</p>
+<a class="reference internal" href="#comovingsphere"><span class="std std-numref">Fig. 14.15</span></a>.</p>
 <figure class="align-default" id="comovingsphere" style="width: 800px">
 <div class="output text_html">
         <iframe
@@ -1391,7 +1414,7 @@ An animation of this basketball universe is shown in
             
         ></iframe>
         </div><figcaption>
-<p><span class="caption-number">Fig. 14.14 </span><span class="caption-text">Animation of expanding 2D closed universe.  A red ant and a blue ant
+<p><span class="caption-number">Fig. 14.15 </span><span class="caption-text">Animation of expanding 2D closed universe.  A red ant and a blue ant
 sit on an inflating basketball.  The white arrows represent comoving
 coordinates that do not change as the ball inflates.  The ants are
 always 3 comoving coordinates away from each other, while the
@@ -1537,7 +1560,7 @@ Theory is making measurements of things like wavelength shift and
 distance and comparing what we actually measure to the shape of
 Equation <a class="reference internal" href="#equation-hubblegeneral">(14.22)</a> to constrain what parameters like <span class="math notranslate nohighlight">\(k\)</span>
 might actually be in the actual universe we live in.</p>
-<p>One such effort is shown in <a class="reference internal" href="#grbhubb"><span class="std std-numref">Fig. 14.15</span></a>, which plots the
+<p>One such effort is shown in <a class="reference internal" href="#grbhubb"><span class="std std-numref">Fig. 14.16</span></a>, which plots the
 distance to a number of cosmic explosions called gamma-ray bursts
 (GRBs) as a function of their redshift.  And note that they are all,
 indeed, redshifts.  The solid line is a match to an equation like
@@ -1547,13 +1570,13 @@ of this book.  Suffice to say that they constrain <span class="math notranslate 
 assumptions about the character of matter and energy in the
 universe.).  To try to give you a bit of a sense of scale, the
 furthest galaxies in the Sloan Digital Sky Survey plot shown in
-<a class="reference internal" href="#sdssslice"><span class="std std-numref">Fig. 14.12</span></a> have a redshift of <span class="math notranslate nohighlight">\(z\sim 0.05\)</span>.  The furthest
+<a class="reference internal" href="#sdssslice"><span class="std std-numref">Fig. 14.13</span></a> have a redshift of <span class="math notranslate nohighlight">\(z\sim 0.05\)</span>.  The furthest
 GRBs here happened when the universe was less than one-tenth its
 current size.</p>
 <figure class="align-center" id="grbhubb">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/schaefergrb.png"><img alt="GRBhubblediagram" class="bg-primary mb-1" src="_images/schaefergrb.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 14.15 </span><span class="caption-text">Hubble Diagram constructed from gamma-ray burst light curves, plotting
+<p><span class="caption-number">Fig. 14.16 </span><span class="caption-text">Hubble Diagram constructed from gamma-ray burst light curves, plotting
 distance modulus (the distance in logarithmic units) vs. redshift.
 The standard Big Bang Theory prediction is shown as a solid line.
 Image from Schaefer, B. (2007).</span><a class="headerlink" href="#grbhubb" title="Permalink to this image">#</a></p>
@@ -1583,19 +1606,19 @@ small <span class="math notranslate nohighlight">\(z\)</span> then we get <span 
 <p>which is the famous Hubble Law, that the velocity of receding galaxies
 is linear with their distance, and the slope of the line is the Hubble
 Constant.  This is where Hubble started in the 1920s, as shown in
-<a class="reference internal" href="#edwinfig"><span class="std std-numref">Fig. 14.16</span></a>.  Of course, for redshifts of one or
+<a class="reference internal" href="#edwinfig"><span class="std std-numref">Fig. 14.17</span></a>.  Of course, for redshifts of one or
 greater, the linear relationship cannot be expected to hold, and you
 have to use more complex relationships.  In 1998, two independent
 groups studied deviations from this law and determined to everyone’s
 astonishment that the expansion of the universe is accelerating.
-Their result is shown in <a class="reference internal" href="#riess98fig"><span class="std std-numref">Fig. 14.17</span></a>.  Everyone expected that
+Their result is shown in <a class="reference internal" href="#riess98fig"><span class="std std-numref">Fig. 14.18</span></a>.  Everyone expected that
 the presence of matter in the universe would be slowing the expansion
 down.  Something is overwhelming that effect and causing the increase
 of <span class="math notranslate nohighlight">\(a\)</span> to be getting even faster.</p>
 <figure class="align-center" id="edwinfig">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/hubblediag.jpg"><img alt="originalhubblediagram" class="bg-primary mb-1" src="_images/hubblediag.jpg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 14.16 </span><span class="caption-text">Edwin Hubble’s original 1929 diagram of recession speed vs. distance
+<p><span class="caption-number">Fig. 14.17 </span><span class="caption-text">Edwin Hubble’s original 1929 diagram of recession speed vs. distance
 for a collection of nearby galaxies.  Note the y-axis units should be
 km/s, not km.  Almost all the galaxies are receding (the few
 blueshifts are some of the closest galaxies to us, including
@@ -1611,7 +1634,7 @@ fascinating exploration of the creation of this diagram.</span><a class="headerl
 <figure class="align-center" id="riess98fig">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/Riess98.png"><img alt="riess98hubblediagram" class="bg-primary mb-1" src="_images/Riess98.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 14.17 </span><span class="caption-text">Compilation of two groups’ measurements of the Hubble Diagram out
+<p><span class="caption-number">Fig. 14.18 </span><span class="caption-text">Compilation of two groups’ measurements of the Hubble Diagram out
 to <span class="math notranslate nohighlight">\(z=1\)</span>.  Distance is shown on the vertical axis and redshift
 on the horizontal.  Deviations from a linear relationship are shown
 in the bottom panel.  At the furthest distances, the galaxies are
