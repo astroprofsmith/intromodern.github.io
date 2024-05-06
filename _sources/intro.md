@@ -26,7 +26,7 @@ incorporated as a fourth dimension.
 
 There have been many books written on Relativity Theory since Albert
 Einstein first proposed it in 1905.  You could go right to the source
-and read {cite}`Einstein52`.  However, our hope is that this synthesis
+and read {cite}`Einstein10`.  However, our hope is that this synthesis
 of different ways of explaining the concepts and presenting the ideas
 with the interactive visualizations will help the reader become
 proficient with the tools and concepts more easily.
