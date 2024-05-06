@@ -368,18 +368,21 @@ a vertical plane sliced through the middle of this picture.
 
 In 1919, multiple expeditions from the Royal Society of London set out
 to South America and Africa to wait along the path of the Moon's
-shadow and image the sky during the eclipse.  Frank Dyson and Arthur
-Eddington led these expeditions, and when they returned, they
-published their measured shifts in the stars' positions.  The graph
-from their 1920 report is shown in {numref}`Edd19`.  Stars nearer to
-the Sun are clearly deflected more, and although the uncertainties are
-fairly large, they clearly rule out the Newtonian prediction and are
+shadow and image the sky during the eclipse (the exciting story of
+these expeditions is told in such books as
+{cite}`Gates19,Kennefick19`).  Frank Dyson and Arthur Eddington led
+these expeditions, and when they returned, they published their
+measured shifts in the stars' positions.  The graph from their 1920
+report is shown in {numref}`Edd19`.  Stars nearer to the Sun are
+clearly deflected more, and although the uncertainties are fairly
+large, they clearly rule out the Newtonian prediction and are
 consistent with the Einsteinian calculations.  This confirmation of a
 German scientist's predictions by English observers, overthrowing the
 long-established theories of that premeire English scientist, Isaac
 Newton himself, so shortly after the two countries were at war,
 enthralled the world and catapulted Einstein into the international
 spotlight, making him the pop culture figure he remains today.
+
 
 ```{figure} images/Eddington.png
 :alt: edd1919
