@@ -183,7 +183,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="c11electric.html">11. The Electromagnetic Tensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c12dynamic.html">12. Relativistic Electrodynamics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c13introGR.html">13. Concepts of General Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="c14applGR.html">14. Chapter 14: Some Applications of General Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c14applGR.html">14. Some Applications of General Relativity</a></li>
 </ul>
 
     </div>
@@ -402,7 +402,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="four-vectors">
-<h1><span class="section-number">3. </span>Four Vectors<a class="headerlink" href="#four-vectors" title="Permalink to this heading">#</a></h1>
+<span id="ch4vec"></span><h1><span class="section-number">3. </span>Four Vectors<a class="headerlink" href="#four-vectors" title="Permalink to this heading">#</a></h1>
 <section id="time-as-a-dimension">
 <h2><span class="section-number">3.1. </span>Time as a Dimension<a class="headerlink" href="#time-as-a-dimension" title="Permalink to this heading">#</a></h2>
 <p>At the end of the last chapter, we argued that if the speed of light
@@ -519,7 +519,7 @@ frame, and to convert a four vector from one frame to another,
 there is a specific procedure one must follow (see Chapter 4).</p>
 </section>
 <section id="einstein-notation">
-<h3><span class="section-number">3.1.2. </span>Einstein Notation<a class="headerlink" href="#einstein-notation" title="Permalink to this heading">#</a></h3>
+<span id="seceinnot"></span><h3><span class="section-number">3.1.2. </span>Einstein Notation<a class="headerlink" href="#einstein-notation" title="Permalink to this heading">#</a></h3>
 <p>Using <span class="math notranslate nohighlight">\(i\)</span> starts out simpler, and gets you a long way, but eventually,
 it gets cumbersome, carting that <span class="math notranslate nohighlight">\(i\)</span> around, and there are more
 advanced equations that are easier to deal with another way.  The
@@ -928,8 +928,8 @@ in the same place.</span><a class="headerlink" href="#shipfig" title="Permalink 
 </figure>
 <p>We can therefore write a displacement four vector in the reference
 frame at rest with respect to the Earth:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9c53c4fe-674f-4418-8489-60274c64c18e">
-<span class="eqno">(3.9)<a class="headerlink" href="#equation-9c53c4fe-674f-4418-8489-60274c64c18e" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-69048f60-f881-4850-92bd-999398d22a31">
+<span class="eqno">(3.9)<a class="headerlink" href="#equation-69048f60-f881-4850-92bd-999398d22a31" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_\oplus =
 \begin{bmatrix}
 icdt_\oplus\\
@@ -953,8 +953,8 @@ aboard the space craft will measure some time interval, <span class="math notran
 between the time he sees the earth outside of his window and sees
 alpha centauri outside the window. The observer aboard the space craft
 measures a displacement 4-vector:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-43bd417f-f8e9-4429-a9b2-4412e564366a">
-<span class="eqno">(3.10)<a class="headerlink" href="#equation-43bd417f-f8e9-4429-a9b2-4412e564366a" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-7f8b7827-9be2-40d6-9cbf-f31382f8144e">
+<span class="eqno">(3.10)<a class="headerlink" href="#equation-7f8b7827-9be2-40d6-9cbf-f31382f8144e" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm rocket} =
 \begin{bmatrix}
 icdt_{\rm rocket}\\
@@ -971,13 +971,13 @@ nothing to do with the first observer being physically <strong>on</strong> the E
 the <span class="math notranslate nohighlight">\(dt_\oplus\)</span> is measured by the infinite lattice of clocks at
 rest with respect to the Earth.</p>
 <p>The sizes of the two four vectors are:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e2b70aa7-5f56-440d-a660-2d8c19d1f9bf">
-<span class="eqno">(3.11)<a class="headerlink" href="#equation-e2b70aa7-5f56-440d-a660-2d8c19d1f9bf" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-11adcd08-5671-4f52-8443-5d45f802f4f6">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-11adcd08-5671-4f52-8443-5d45f802f4f6" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dx_\oplus^2 - (cdt_\oplus)^2 = -(cdt_{\rm rocket})^2
 \end{equation}\]</div>
 <p>Solve for <span class="math notranslate nohighlight">\(dt_{\rm rocket}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-20e151bc-c9af-4897-9671-eb65b4faac47">
-<span class="eqno">(3.12)<a class="headerlink" href="#equation-20e151bc-c9af-4897-9671-eb65b4faac47" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-02f81160-3ab6-46f8-a796-10c39f9254a0">
+<span class="eqno">(3.12)<a class="headerlink" href="#equation-02f81160-3ab6-46f8-a796-10c39f9254a0" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dt_{\rm rocket} = dt_\oplus\sqrt{1-\left(\frac{dx_\oplus}{cdt_\oplus}\right)^2}
 = dt_\oplus \sqrt{1-\beta^2}
 \end{equation}\]</div>
@@ -1174,8 +1174,8 @@ The reference frame at rest with respect to the ground is the unprimed
 frame on the left.  The red dot is the emission of the light and the
 blue dot is the detection of the light.  The displacement four vector
 in the train frame would be:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8774302f-2037-46f2-a3d9-1e0ef6883bcf">
-<span class="eqno">(3.16)<a class="headerlink" href="#equation-8774302f-2037-46f2-a3d9-1e0ef6883bcf" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-479332e0-770f-44c2-92c2-d3eee3b21187">
+<span class="eqno">(3.16)<a class="headerlink" href="#equation-479332e0-770f-44c2-92c2-d3eee3b21187" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm train} =
 \begin{bmatrix}
 icdt_0\\
@@ -1185,8 +1185,8 @@ icdt_0\\
 \end{bmatrix}
 \end{equation}\]</div>
 <p>while the displacement four vector from the ground’s reference frame is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f1c8028c-f52c-471c-be9b-f48d5e68656c">
-<span class="eqno">(3.17)<a class="headerlink" href="#equation-f1c8028c-f52c-471c-be9b-f48d5e68656c" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-97406e3c-abdb-4f33-9299-c0f7aa18ad1d">
+<span class="eqno">(3.17)<a class="headerlink" href="#equation-97406e3c-abdb-4f33-9299-c0f7aa18ad1d" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm ground} =
 \begin{bmatrix}
 icdt\\

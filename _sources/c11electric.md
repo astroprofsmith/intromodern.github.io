@@ -754,8 +754,8 @@ with the complex number notation, these numbers had opposite sign, to
 account for the $i^2$, but that is not necessary in this notation.
 
 ```{note}
-At this point, you may wish to go back to Chapter 3 and re-read the
-section on Einstein notation.
+At this point, you may wish to go back to [Chapter 3](ch4vec) and re-read the
+[section on Einstein notation](secEinNot).
 ```
 
 At this point, many books jump to the answer and show that it works.

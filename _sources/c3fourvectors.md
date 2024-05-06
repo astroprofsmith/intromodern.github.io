@@ -22,6 +22,7 @@ from myst_nb import glue
 
 ```
 
+(ch4vec)=
 # Four Vectors
 
 ## Time as a Dimension
@@ -140,6 +141,7 @@ The size of any four vector is the same in any inertial reference
 frame, and to convert a four vector from one frame to another,
 there is a specific procedure one must follow (see Chapter 4).
 
+(secEinNot)=
 ### Einstein Notation
 
 Using $i$ starts out simpler, and gets you a long way, but eventually,
