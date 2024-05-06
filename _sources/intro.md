@@ -12,7 +12,7 @@ device's interface (be it a smartphone, tablet, or trackpad).
 Interactive elements such as buttons and sliders are explained in
 the caption for each such figure.  Most static graphs are created
 by Python code embedded in the book, rather than imported as images
-created by separate analysis software.
+created by separate analysis software.  
 
 This book is aimed at an audience of students that have completed at
 least a year of introductory Physics and are comfortable with the
@@ -23,6 +23,13 @@ in classical Physics, as well as the classical properties of electric
 and magnetic fields.  The Pythagorean Theorem is ubiquitous, although
 the reader will see that it works a little differently when time is
 incorporated as a fourth dimension.
+
+There have been many books written on Relativity Theory since Albert
+Einstein first proposed it in 1905.  You could go right to the source
+and read {cite}`Einstein52`.  However, our hope is that this synthesis
+of different ways of explaining the concepts and presenting the ideas
+with the interactive visualizations will help the reader become
+proficient with the tools and concepts more easily.
 
 **Acknowledgements:**
 
