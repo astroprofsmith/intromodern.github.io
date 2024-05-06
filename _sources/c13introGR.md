@@ -26,10 +26,19 @@ from myst_nb import glue
 # Concepts of General Relativity
 
 Although a full treatment of General Relativity (GR) is far beyond the
-scope of this book, I would like to leave you with some hints at
-the major concepts you must grapple with, if you extend the theory
-beyond the special case of reference frames moving with constant
-relative velocities.
+scope of this book, I would like to leave you with some hints at the
+major concepts you must grapple with, if you extend the theory beyond
+the special case of reference frames moving with constant relative
+velocities.  To help you get in the mindset the GR requires, and to
+help you realize how you need to challenge many assumptions that you
+previously thought were obvious, I cannot recommend highly enough the
+classic popularization {cite}`Edd20`, which despite its age remains an
+insightful and illuminating presentation.  The first chapter, in
+particular, is a three-way dialogue in the style of Galileo between
+three people representing three different ways of thinking about the
+world.  By having them criticize each others' positions, Eddington
+helps the reader understand assumptions about time and space that she
+would have otherwise taken for granted.
 
 (secGRTwin)=
 ## The Twin Paradox Revisited
@@ -150,16 +159,15 @@ line shows the path of a moving object that returns to the
 same place in time for the second event.
 ```
 
-In the first formulation, we were not comparing the time
-elapsed on two individual clocks.  We were comparing two
-time intervals that were derived from collecting the clock
-readings on an infinite set of clocks, and then comparing
-the differences between the readings on the clocks closest
-to the events.  In the reference frame in motion relative to
-the events, that meant two different clocks, which we assumed
-were synchronized and running at the same rate.  In this new
-context, we are considering a single clock that moved away
-and came back to the original location.
+In the first formulation, we were not comparing the time elapsed on
+two individual clocks.  We were comparing two time intervals that were
+derived from collecting the clock readings on an infinite set of
+clocks, and then comparing the differences between the readings on the
+clocks closest to the events.  In the reference frame in motion
+relative to the events, that meant two different clocks, which we
+assumed were synchronized and running at the same rate.  In this new
+context, we are considering a single clock that moved away and came
+back to the original location.
 
 In SR, there is no question of returning to the same location as the
 first event.  This would not be possible, as to turn around and come
