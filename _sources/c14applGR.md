@@ -959,15 +959,16 @@ The evidence supporting the reality of black holes with event horizons
 continues to mount.  The first suggestion of measured event horizons
 came from Narayan, Garcia, and McClintock in 1997, who measured the
 faint X-ray emission coming from slowly accreting compact object
-binary systems.  They found that the systems known to be neutron stars
-were all significantly brighter than the systems suspected to be black
-holes, which is just what you expect if the accreting material is
-disappearing behind an event horizon. {numref}`adafeventhorizon` shows
-their measurements.  The horizontal axis shows peak luminosity, which
-is a proxy for mass (since the gravitational energy is the source of
-the light energy), while the vertical axis shows the minimum observed
-luminosity.  The neutron stars are all on the upper left and the black
-holes are all on the lower right.
+binary systems {cite}`Narayan97`.  They found that the systems known
+to be neutron stars were all significantly brighter than the systems
+suspected to be black holes, which is just what you expect if the
+accreting material is disappearing behind an event
+horizon. {numref}`adafeventhorizon` shows their measurements.  The
+horizontal axis shows peak luminosity, which is a proxy for mass
+(since the gravitational energy is the source of the light energy),
+while the vertical axis shows the minimum observed luminosity.  The
+neutron stars are all on the upper left and the black holes are all on
+the lower right.
 
 ```{figure} images/NarayanADAF.png
 :alt: adafmodel
@@ -978,8 +979,7 @@ holes are all on the lower right.
 
 Possible evidence of event horizons.  Material that falls onto a neutron
 star heats up the star and causes it to be brighter, while material that
-falls into a black hole disappears forever.  Image from
-Narayan, Garcia, & McClintock (1997).
+falls into a black hole disappears forever.  Image from {cite}`Narayan97`.
 ```
 
 There are many known objects in the universe that have so much mass in
@@ -1440,7 +1440,7 @@ size.
 Hubble Diagram constructed from gamma-ray burst light curves, plotting
 distance modulus (the distance in logarithmic units) vs. redshift.
 The standard Big Bang Theory prediction is shown as a solid line.
-Image from Schaefer, B. (2007).
+Image from {cite}`Schaefer07`.
 ```
 
 We can turn Eq. {eq}`hubblegeneral` into something a little bit more
@@ -1501,7 +1501,7 @@ the slope of this curve is extremely wrong compared to modern
 measurements, the general trend of increasing recessional speed with
 increasing distance is clear, and led to the acceptance of the Big
 Bang Theory as the dominant paradigm for understanding the origin and
-evolution of our universe.  See R. Kirshner's 2003 PNAS article for a
+evolution of our universe.  See {cite}`Kirshner04` for a
 fascinating exploration of the creation of this diagram.
 ```
 
@@ -1519,7 +1519,7 @@ in the bottom panel.  At the furthest distances, the galaxies are
 dimmer than expected, implying they are further away than expected,
 implying that the universe has expanded more than a constant expansion
 rate would predict: the expansion of the universe is speeding up!
-(Image available in many sources, e.g. A. Riess 2000, PASP.)  The
+(Image available in many sources, e.g. {cite}`Riess00`)  The
 full story of the discovery of the acceleration can be read in, e.g.
 {cite}`Livio00,Kirshner02`.
 
