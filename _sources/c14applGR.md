@@ -722,7 +722,7 @@ object for which the escape velocity reaches the speed of light.
 Therefore, it is said, not even light can escape from the black hole.
 The first suggestion of a "Dark Star", made independently by John
 Michell and Pierre-Simon Laplace in the 1700s, was based on this
-logic.
+logic.  The history is laid out well in {cite}`Thorne94`.
 
 The (misleading) idea goes: take a two-object
 gravitationally-interacting system, like, say, you and the Earth.  If
