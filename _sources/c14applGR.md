@@ -1042,12 +1042,13 @@ narrative that is known as "the Big Bang Theory."  In its simplest
 form, the Big Bang Theory can be summarized as "the Universe was in
 the past very dense and very hot, and it has been expanding and
 cooling ever since."  As with black holes, many books could be and
-have been written about the Big Bang Theory.  My goal in this section
-is focused on helping you see how the theory arises from GR, and how
-that understanding helps you avoid common misconceptions about the
-theory that often arise in the popular understanding.  This section is
-in no way a comprehensive presentation of all aspects and implications
-of the Big Bang Theory.
+have been written about the Big Bang Theory (some for a general
+audience, such as {cite}`Silk80`, others highly technical such as
+{cite}`Peebles93`).  My goal in this section is focused on helping you
+see how the theory arises from GR, and how that understanding helps
+you avoid common misconceptions about the theory that often arise in
+the popular understanding.  This section is in no way a comprehensive
+presentation of all aspects and implications of the Big Bang Theory.
 
 The first step in applying GR to the whole universe is to try to
 characterize what kind of universe we live in, and this will lead
