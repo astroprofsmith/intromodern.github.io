@@ -1518,7 +1518,9 @@ in the bottom panel.  At the furthest distances, the galaxies are
 dimmer than expected, implying they are further away than expected,
 implying that the universe has expanded more than a constant expansion
 rate would predict: the expansion of the universe is speeding up!
-(Image available in many sources, e.g. A. Riess 2000, PASP.)
+(Image available in many sources, e.g. A. Riess 2000, PASP.)  The
+full story of the discovery of the acceleration can be read in, e.g.
+{cite}`Livio00,Kirshner02`.
 
 ```
 
