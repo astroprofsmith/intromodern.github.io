@@ -271,7 +271,8 @@ sticks to measure the circumference of the circle, they would need
 more meter sticks than they would have expected without relativity.
 The radius of the circle, being perpendicular to the motion, is not
 affected, so $2\pi r$ is now less than the actual circumference,
-according to the (contracted) meter sticks.
+according to the (contracted) meter sticks.  See {cite}`Gamow99` for
+a nice illustration of this.
 
 The circumference being equal to $2\pi r$ is proven within a flat
 (also called Euclidian) space.  If space is curved, that equation no
