@@ -219,17 +219,17 @@ and off.
 ```
 
 Given such a setup, the observer can define two time intervals, which
-we will call $t_1$ and $t_2$.  The first is the time from the red dot
-until the light returns, and the second is the time from the moment
-the light is sent out until the time of the red dot.  These time
-intervals are represented in {numref}`figinterval` by a white and a
-magenta arrow, respectively.  The value of $t_1$ is positive if the
-red dot happens before the light returns, and the value of $t_2$ is
-positive if the light is sent out before the red dot.  These two
-values, $t_1$ and $t_2$, are printed out on the diagram, and you can
-see by moving the slider that if you shift the order of the red and
-blue events, either $t_1$ or $t_2$ (but not both!) will switch to
-negative.
+we will call $t_1$ and $t_2$, following {cite}`Geroch81`.  The first
+is the time from the red dot until the light returns, and the second
+is the time from the moment the light is sent out until the time of
+the red dot.  These time intervals are represented in
+{numref}`figinterval` by a white and a magenta arrow, respectively.
+The value of $t_1$ is positive if the red dot happens before the light
+returns, and the value of $t_2$ is positive if the light is sent out
+before the red dot.  These two values, $t_1$ and $t_2$, are printed
+out on the diagram, and you can see by moving the slider that if you
+shift the order of the red and blue events, either $t_1$ or $t_2$ (but
+not both!) will switch to negative.
 
 Given these two numbers and our knowledge about the speed of light, we
 can help our observer calculate values for $dx'$ and $cdt'$, without
