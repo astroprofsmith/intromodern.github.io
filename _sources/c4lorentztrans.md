@@ -22,6 +22,7 @@ from myst_nb import glue
 
 ```
 
+(chLTrans)=
 # Lorentz Transformations
 
 We have already seen that requiring the size of a four-vector
@@ -199,12 +200,12 @@ L_{10} & L_{11} & L_{12} & L_{13}\\
 ```
 That takes care of half the numbers in one go!
 
-To get the next set, we have to look at a particular case.
-Consider the examples at the end of Chapter 3.  They all
-involved switching from a reference frame where two events
-were at rest into a reference frame in which there would have
-to be motion for something to get from one event to the other.
-We know therefore that the original four displacement is
+To get the next set, we have to look at a particular case.  Consider
+the examples at the end of [Chapter 3](ch4vec).  They all involved
+switching from a reference frame where two events were at rest into a
+reference frame in which there would have to be motion for something
+to get from one event to the other.  We know therefore that the
+original four displacement is
 ```{math}
 :label: eqrestdx4
 [dx_4] =

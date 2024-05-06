@@ -22,6 +22,7 @@ from myst_nb import glue
 
 ```
 
+(chGRcon)=
 # Concepts of General Relativity
 
 Although a full treatment of General Relativity (GR) is far beyond the
@@ -30,6 +31,7 @@ the major concepts you must grapple with, if you extend the theory
 beyond the special case of reference frames moving with constant
 relative velocities.
 
+(secGRTwin)=
 ## The Twin Paradox Revisited
 
 To begin our overview of GR, let us return to our old friend, the twin
@@ -220,9 +222,9 @@ we say about a clock that moves on a circular path through spacetime?
 Such a path is represented in {numref}`circularSTfig`.  To get from
 the orange event to the purple event, a clock at rest would just
 follow a vertical line, but the black curve represents a clock that
-moves around in a circle.  Based on the analysis of the previous
-section, such a clock would have to measure a shorter time interval
-than the clock at rest (if the system were sitting on a
+moves around in a circle.  Based on the analysis of [the previous
+section](secGRTwin), such a clock would have to measure a shorter time
+interval than the clock at rest (if the system were sitting on a
 merry-go-round, we could consider the clock at rest to be at the
 center axis of the rotating disc -- such a clock would be synchronized
 with the lattice of clocks making up the reference frame at rest with
@@ -550,12 +552,12 @@ losing only one relative second over a 15 million year time interval!
 ## The Weight of a Box of Photons
 
 This gravitational redshift leads to an interesting thought
-experiment.  Back in Chapter 8, the last problem asked you to consider
-a box of photons and whether those photons might have an inertia
-equivalent to some amount of mass.  Hopefully you figured out that the
-inertia came from reflecting the photons off the inside walls of the
-box.  If you wanted to move the box, say to the right, then the
-photons bouncing off the left (approaching) wall must pick up
+experiment.  Back in [Chapter 8](sec4momProbs), the last problem asked
+you to consider a box of photons and whether those photons might have
+an inertia equivalent to some amount of mass.  Hopefully you figured
+out that the inertia came from reflecting the photons off the inside
+walls of the box.  If you wanted to move the box, say to the right,
+then the photons bouncing off the left (approaching) wall must pick up
 energy/momentum, and the photons bouncing off the right (receding)
 wall must lose energy/momentum.  By conservation of momentum, you will
 measure a force resisting your pushing the box, as if the contents of
@@ -659,7 +661,7 @@ are related to each other.
 In flat space, one would simply say the distance between two points
 is given by the Pythagorean theorem: $ds^2 = dx^2+dy^2+dz^2$.  If we
 extend that concept to spacetime, we get $ds^2 = -c^2ct^2+dx^2+dy^2+dz^2$.
-As explained in Chapter 3, we can use the concept of the metric to
+As explained in [Chapter 3](ch4vec), we can use the concept of the metric to
 write this sum of squares as the inner product of two four-vectors:
 ```{math}
 ds^2 = dx_\mu dx^\mu = g_{\mu\nu}dx^\nu dx^\mu
@@ -698,8 +700,8 @@ because the shape of the metric is determined by the distribution of
 matter/energy according to Einstein's equation.  In the same way that
 the electric field tell you where the sources of electricity are, the
 metric tells you where the sources of gravity are.  There is more
-about the metric in Chapter 3, and we will return to a few special
-metrics of interest in Chapter 14.
+about the metric in [Chapter 3](ch4vec), and we will return to a few special
+metrics of interest in [Chapter 14](chGRapp).
 
 ## Geodesics
 
@@ -707,13 +709,13 @@ How can we understand this perplexing fact that a reference frame
 locked to a painter in constantly accelerating free fall is also an
 inertial reference frame?  We need to widen out our definition of what
 kind of relative motion still allows a reference frame to be inertial.
-In Chapter 2, we insisted that reference frames move at constant
-relative velocities.  In flat spacetime, such a reference frame is
-definitely inertial.  But in curved spacetime, that special case is
-no longer applicable.  If you were falling near the Earth, but you
-*wanted* to move in a straight line at a constant velocity, you woud
-need to find a way to exert forces on yourself.  Otherwise, you would
-fall at an ever-increasing speed (until you hit the ground).
+In [Chapter 2](chSRpost), we insisted that reference frames move at
+constant relative velocities.  In flat spacetime, such a reference
+frame is definitely inertial.  But in curved spacetime, that special
+case is no longer applicable.  If you were falling near the Earth, but
+you *wanted* to move in a straight line at a constant velocity, you
+woud need to find a way to exert forces on yourself.  Otherwise, you
+would fall at an ever-increasing speed (until you hit the ground).
 
 In Newtonian Physics, we say that an object experiencing no net force
 will maintain a constant velocity.  We need to modify that statement
@@ -727,12 +729,12 @@ has no mass, and can therefore never experience a force, and will
 always follow a geodesic path.  In fact, we can often determine what
 the geodesic is, and therefore whether the space around us is flat or
 curved, by studying the paths that photons take.  As illustrated in
-{numref}`twopaths`, and explained in Section 1, in a flat spacetime,
-the path that maximizes the proper time between two points is a
-straight line trajectory.  In a flat spacetime, objects experiencing
-no net force will either remain at rest or move at a constant
-velocity.  For an object's path through spacetime to deviate from a
-geodesic, a force must be exerted on it.
+{numref}`twopaths`, and explained in [the first section](secGRTwin),
+in a flat spacetime, the path that maximizes the proper time between
+two points is a straight line trajectory.  In a flat spacetime,
+objects experiencing no net force will either remain at rest or move
+at a constant velocity.  For an object's path through spacetime to
+deviate from a geodesic, a force must be exerted on it.
 
 In practice, to figure out the geodesic between two events in a curved
 spacetime requires maximizing the proper time over all possible paths
@@ -940,12 +942,13 @@ close to massive objects will lose energy and be redshifted.
 
 Despite the conceptual challenges, GR has so far passed every test to
 which it has been subjected.  This chapter has already mentioned the
-Pound-Rebkha experiment, and the next chapter will explore the precession
-of Mercury and the existence of gravitational lensing.  In addition to
-these observational tests, theorists exploring the implications of the
-theory have led to some of the most exciting ideas in the Universe,
-such as Black Holes and the Big Bang Theory itself.  We will explore
-some of these in the next and final chapter.
+Pound-Rebkha experiment, and [the next chapter](chGRapp) will explore
+the precession of Mercury and the existence of gravitational lensing.
+In addition to these observational tests, theorists exploring the
+implications of the theory have led to some of the most exciting ideas
+in the Universe, such as Black Holes and the Big Bang Theory itself.
+We will explore some of these in [the next and final
+chapter](chGRapp).
 
 
 ## Problems

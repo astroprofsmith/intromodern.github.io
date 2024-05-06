@@ -22,6 +22,7 @@ from myst_nb import glue
 
 ```
 
+(ch4vel)=
 # The Velocity Four-Vector
 
 Once we have carefully defined what we mean by position and
@@ -89,17 +90,18 @@ We cannot define a four velocity by simply taking the displacement
 four vector $[dx_4]$ and dividing by $dt$, because $dt$ is not, in
 fact, a scalar.  It changes under a Lorentz transformation, and
 therefore $[dx_4]/dt$ will not have the properties of a four vector as
-defined in Chapter 2.  However, the **proper** time interval, $dt_0$,
-**is** a scalar!  So we can define a four velocity as
+defined in [Chapter 2](chSRpost).  However, the **proper** time
+interval, $dt_0$, **is** a scalar!  So we can define a four velocity
+as
 ```{math}
 :label: eq4vdef
 [v_4] = \frac{[dx_4]}{dt_0}
 ```
-where $dt_0$ is the Lorentz scalar as described in Chapter 6. Since
-$dt_0$ is a scalar, $1/dt_0$ is also a scalar.  The
+where $dt_0$ is the Lorentz scalar as described in [Chapter
+6](ch4disp). Since $dt_0$ is a scalar, $1/dt_0$ is also a scalar.  The
 4-velocity is a proper 4-vector because the displacement 4-vector is a
-proper 4-vector and $1/dt_0$ is a Lorentz scalar. A Lorentz scalar times a
-proper 4-vector is a proper 4-vector.
+proper 4-vector and $1/dt_0$ is a Lorentz scalar. A Lorentz scalar
+times a proper 4-vector is a proper 4-vector.
 
 When you multiply a vector by a scalar, what really happens is that
 you multiply each of the components of the vector by that scalar

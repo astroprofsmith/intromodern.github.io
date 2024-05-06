@@ -22,6 +22,7 @@ from myst_nb import glue
 
 ```
 
+(chEMdyn)=
 # Relativistic Electrodynamics
 
 Now that we have an expression for the electromagnetic field tensor,
@@ -232,12 +233,12 @@ And its size is therefore $\rho_0^2[v_4]^2 = -\rho_0^2c^2$.  which is
 certainly Lorentz invarient.  Since we know a four-vector times a
 scalar is a four-vector, this must be *a* four-vector, but how do we
 know it's *the* four vector that we want?  Two reasons: it slots very
-smoothly into Maxwell's Equations, which we will explore in the next
-section.  But first, we will see that it gives a nice way to express
-charge conservation in the form of the "continuity equation", which
-says that the rate at which charge is flowing into or out of a
-location is equal and opposite to the rate at which the amount of
-charge at that location is changing.
+smoothly into Maxwell's Equations, which we will explore in [the next
+section](secMaxwell).  But first, we will see that it gives a nice way
+to express charge conservation in the form of the "continuity
+equation", which says that the rate at which charge is flowing into or
+out of a location is equal and opposite to the rate at which the
+amount of charge at that location is changing.
 
 In classical notation, we would say
 ```{math}
@@ -307,10 +308,11 @@ conservation through the continuity equation, and it sets us up to
 write Maxwell's Equations in a more compact form, too (you'll recall
 Maxwell's Equations depend on the charge and current densities on the
 right side and the $\vec{E}$ and $\vec{B}$ fields on the left -- see
-the next section of this chapter).  We therefore use this as the
-current four-vector $J^\alpha$, or sometimes the "charge-current
-four-vector".
+[the next section](secMaxwell) of this chapter).  We therefore use
+this as the current four-vector $J^\alpha$, or sometimes the
+"charge-current four-vector".
 
+(secMaxwell)=
 ## Maxwell's Equations as Four Vectors
 
 We have combined $\rho$ and $\vec{J}$ into a single four-vector.
@@ -432,7 +434,7 @@ final equation will also be equal to zero.  The second clue is that if
 you compare the left sides of Equations {eq}`nogaussB` and
 {eq}`faraday` to {eq}`gauss` and {eq}`ampere`, you can see that they
 look the same, just swapping $\vec{E}$ and $\vec{B}$ around.  At the
-end of Chapter 11, we constructed *two* versions of the EM tensor, one
+end of [Chapter 11](secEMten), we constructed *two* versions of the EM tensor, one
 of which had the $E$ and $B$ components switched.  So, if we bring
 back the dual tensor $G^{\mu\nu}$ at this point (Equation
 {eq}`Dualtensorfin`), and take its four-divergence, we will see that
@@ -498,10 +500,11 @@ world, not the way the world itself works.
 
 (rough ideas)
 
-1) What is the Minkowski force on a moving charge near a current-carrying
-wire?  Use a Lorentz transformation to convert this four vector into
-the rest frame of the charge.  Compare with derivation in last chapter
-that didn't use Lorentz transformations and four-vectors.
+1) What is the Minkowski force on a moving charge near a
+current-carrying wire?  Use a Lorentz transformation to convert this
+four vector into the rest frame of the charge.  Compare with the
+derivation in [the last chapter](chEMten) that didn't use Lorentz
+transformations and four-vectors.
 
 2) The plane-wave solution to Maxwell's Equations is a travelling E-M wave
 that would take the following form:

@@ -22,6 +22,7 @@ from myst_nb import glue
 
 ```
 
+(chSRexam)=
 # Examples of Relativity in Action
 
 In this chapter we will explore how to use the energy-momentum four
@@ -460,6 +461,7 @@ lab, the pion must have 715 MeV of kinetic energy to ensure there is
 enough energy in the CoM frame, even though it is more than enough
 energy in the lab frame.
 
+(secDoppler)=
 ## Photons and the Doppler Shift
 
 
@@ -600,11 +602,12 @@ in wavelength).
 ```{warning}
 It doesn't make sense to ask whether the source or the receiver is
 "really" moving, because all motion is relative.  For a sound wave,
-the medium it moves through provides a context in which it might
-make sense to say one or the other is "really" moving (relative to the
-medium), but in Chapter 1 we showed that the Michaelson Morely experiment
-disproves the hypothesis that light has a medium.  So any motion
-of source or receiver is equivalent and indistinguishable.
+the medium it moves through provides a context in which it might make
+sense to say one or the other is "really" moving (relative to the
+medium), but in [Chapter 1](chSRev) we showed that the Michaelson
+Morely experiment disproves the hypothesis that light has a medium.
+So any motion of source or receiver is equivalent and
+indistinguishable.
 ```
 
 

@@ -19,6 +19,7 @@ from IPython import display
 from myst_nb import glue
 ```
 
+(chSRroots)=
 # Roots of Relativity
 
 Before we dive into the set of predictions and interpretations that
@@ -37,9 +38,9 @@ the universe really does work this way.
 
 The rest of this chapter will present the experimental evidence that
 convinced the scientific world to take Einstein's proposals seriously.
-Chapter two will lay out the remarkably few premises that are needed
-to develop all the challenging interpretations of space, time, and
-motion that we think of as "relativity".
+[Chapter two](chSRpost) will lay out the remarkably few premises that
+are needed to develop all the challenging interpretations of space,
+time, and motion that we think of as "relativity".
 
 ## Experimental Foundation
 

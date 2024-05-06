@@ -22,6 +22,7 @@ from myst_nb import glue
 
 ```
 
+(chEMten)=
 # The Electromagnetic Tensor
 
 Many introductory relativity textbooks stop with dynamics, but I think
@@ -29,9 +30,9 @@ it's important to include some of the implications of realtivity
 theory for the understanding of electricity and magnetism.  There are
 two reasons why it's important to see how SR affects E&M: first, for
 mechanics, the effects of relativity are completely negligible in our
-world of physics professors and dump trucks.  The weird effects only show
-up at speeds near the speed of light, and for most day-to-day processes
-you can blissfully ignore them.
+world of physics professors and dump trucks.  The weird effects only
+show up at speeds near the speed of light, and for most day-to-day
+processes you can blissfully ignore them.
 
 Within the context of electricity, however, relativistic effects
 occur, and are important, at *any* speed.  Even for the literal
@@ -50,6 +51,7 @@ implications.
 
 ## Magnetic Force as a Relativistic Effect
 
+(subsecClass)=
 ### Reminder of Classical Situation
 
 ```{figure} images/classicIBF.png
@@ -103,15 +105,15 @@ of the charge, and then we will need the rest frame of the *current*,
 as well.
 
 Let us begin with the "lab frame", which I will call "Frame A", which
-corresponds to the situation described in the previous section.  There
-is a current $I$ to the right, but I am going to break this down into
-two parts: a positive current going right and a negative current going
-left.  Each current comprises half the charge density, but they are
-equal and opposite densities, so the total charge density is zero
-(which is to say the wire is electrically neutral), but the total
-current is $I$ to the right.  This way of conceptualizing the setup is
-shown in {numref}`frameAfig`, with the positive current in red and the
-negative current in blue.
+corresponds to the situation described in [the previous
+section](subsecClass).  There is a current $I$ to the right, but I am
+going to break this down into two parts: a positive current going
+right and a negative current going left.  Each current comprises half
+the charge density, but they are equal and opposite densities, so the
+total charge density is zero (which is to say the wire is electrically
+neutral), but the total current is $I$ to the right.  This way of
+conceptualizing the setup is shown in {numref}`frameAfig`, with the
+positive current in red and the negative current in blue.
 
 ```{figure} images/frameAfig.png
 :alt: frameApicture
@@ -706,6 +708,7 @@ were to transform this shape back into a frame moving at $+v$, the
 trajectory would be a circle, and the cart would be at rest.
 ```
 
+(secEMten)=
 ## The Electromagnetic Field Tensor
 
 For the rest of this book up to this point, when we wanted to see
@@ -980,10 +983,11 @@ G^{\alpha\mu} =
 \end{pmatrix}
 }
 ```
-This is called the "dual tensor", and it works *just as well* as the "regular"
-EM field tensor.  It's purely a matter of convention that we tend to use
-the $F$ rather than the $G$.  They both transform the same way when you switch
-reference frames.  You will see both of these again in the next chapter.
+This is called the "dual tensor", and it works *just as well* as the
+"regular" EM field tensor.  It's purely a matter of convention that we
+tend to use the $F$ rather than the $G$.  They both transform the same
+way when you switch reference frames.  You will see both of these
+again in [the next chapter](chEMdyn).
 
 ## Summary
 

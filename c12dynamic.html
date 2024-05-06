@@ -183,7 +183,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="c11electric.html">11. The Electromagnetic Tensor</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">12. Relativistic Electrodynamics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c13introGR.html">13. Concepts of General Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="c14applGR.html">14. Chapter 14: Some Applications of General Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c14applGR.html">14. Some Applications of General Relativity</a></li>
 </ul>
 
     </div>
@@ -393,7 +393,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="relativistic-electrodynamics">
-<h1><span class="section-number">12. </span>Relativistic Electrodynamics<a class="headerlink" href="#relativistic-electrodynamics" title="Permalink to this heading">#</a></h1>
+<span id="chemdyn"></span><h1><span class="section-number">12. </span>Relativistic Electrodynamics<a class="headerlink" href="#relativistic-electrodynamics" title="Permalink to this heading">#</a></h1>
 <p>Now that we have an expression for the electromagnetic field tensor,
 which treats <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> as different parts of a single
 object, and we know how that tensor transforms under Lorentz
@@ -568,12 +568,12 @@ v_z
 certainly Lorentz invarient.  Since we know a four-vector times a
 scalar is a four-vector, this must be <em>a</em> four-vector, but how do we
 know it’s <em>the</em> four vector that we want?  Two reasons: it slots very
-smoothly into Maxwell’s Equations, which we will explore in the next
-section.  But first, we will see that it gives a nice way to express
-charge conservation in the form of the “continuity equation”, which
-says that the rate at which charge is flowing into or out of a
-location is equal and opposite to the rate at which the amount of
-charge at that location is changing.</p>
+smoothly into Maxwell’s Equations, which we will explore in <a class="reference internal" href="#secmaxwell"><span class="std std-ref">the next
+section</span></a>.  But first, we will see that it gives a nice way
+to express charge conservation in the form of the “continuity
+equation”, which says that the rate at which charge is flowing into or
+out of a location is equal and opposite to the rate at which the
+amount of charge at that location is changing.</p>
 <p>In classical notation, we would say</p>
 <div class="math notranslate nohighlight" id="equation-conteqclass">
 <span class="eqno">(12.12)<a class="headerlink" href="#equation-conteqclass" title="Permalink to this equation">#</a></span>\[\vec{\nabla}\cdot\vec{J} = \frac{\partial \rho v_x}{\partial x}+ \frac{\partial \rho v_y}{\partial y}+ \frac{\partial \rho v_z}{\partial z} = -\frac{\partial \rho}{\partial t}\]</div>
@@ -630,12 +630,12 @@ conservation through the continuity equation, and it sets us up to
 write Maxwell’s Equations in a more compact form, too (you’ll recall
 Maxwell’s Equations depend on the charge and current densities on the
 right side and the <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> fields on the left – see
-the next section of this chapter).  We therefore use this as the
-current four-vector <span class="math notranslate nohighlight">\(J^\alpha\)</span>, or sometimes the “charge-current
-four-vector”.</p>
+<a class="reference internal" href="#secmaxwell"><span class="std std-ref">the next section</span></a> of this chapter).  We therefore use
+this as the current four-vector <span class="math notranslate nohighlight">\(J^\alpha\)</span>, or sometimes the
+“charge-current four-vector”.</p>
 </section>
 <section id="maxwell-s-equations-as-four-vectors">
-<h2><span class="section-number">12.3. </span>Maxwell’s Equations as Four Vectors<a class="headerlink" href="#maxwell-s-equations-as-four-vectors" title="Permalink to this heading">#</a></h2>
+<span id="secmaxwell"></span><h2><span class="section-number">12.3. </span>Maxwell’s Equations as Four Vectors<a class="headerlink" href="#maxwell-s-equations-as-four-vectors" title="Permalink to this heading">#</a></h2>
 <p>We have combined <span class="math notranslate nohighlight">\(\rho\)</span> and <span class="math notranslate nohighlight">\(\vec{J}\)</span> into a single four-vector.
 We have also combined <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> into a single tensor.
 Does this mean we can combine the four Maxwell’s Equations into a
@@ -727,7 +727,7 @@ final equation will also be equal to zero.  The second clue is that if
 you compare the left sides of Equations <a class="reference internal" href="#equation-nogaussb">(12.18)</a> and
 <a class="reference internal" href="#equation-faraday">(12.19)</a> to <a class="reference internal" href="#equation-gauss">(12.17)</a> and <a class="reference internal" href="#equation-ampere">(12.20)</a>, you can see that they
 look the same, just swapping <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> around.  At the
-end of Chapter 11, we constructed <em>two</em> versions of the EM tensor, one
+end of <a class="reference internal" href="c11electric.html#secemten"><span class="std std-ref">Chapter 11</span></a>, we constructed <em>two</em> versions of the EM tensor, one
 of which had the <span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(B\)</span> components switched.  So, if we bring
 back the dual tensor <span class="math notranslate nohighlight">\(G^{\mu\nu}\)</span> at this point (Equation
 <a class="reference internal" href="c11electric.html#equation-dualtensorfin">(11.42)</a>), and take its four-divergence, we will see that</p>
@@ -783,10 +783,11 @@ world, not the way the world itself works.</p>
 <h2><span class="section-number">12.4. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
 <p>(rough ideas)</p>
 <ol class="arabic simple">
-<li><p>What is the Minkowski force on a moving charge near a current-carrying
-wire?  Use a Lorentz transformation to convert this four vector into
-the rest frame of the charge.  Compare with derivation in last chapter
-that didn’t use Lorentz transformations and four-vectors.</p></li>
+<li><p>What is the Minkowski force on a moving charge near a
+current-carrying wire?  Use a Lorentz transformation to convert this
+four vector into the rest frame of the charge.  Compare with the
+derivation in <a class="reference internal" href="c11electric.html#chemten"><span class="std std-ref">the last chapter</span></a> that didn’t use Lorentz
+transformations and four-vectors.</p></li>
 <li><p>The plane-wave solution to Maxwell’s Equations is a travelling E-M wave
 that would take the following form:</p></li>
 </ol>

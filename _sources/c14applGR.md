@@ -22,15 +22,17 @@ from myst_nb import glue
 
 ```
 
+(chGRapp)=
 # Some Applications of General Relativity
 
 In this chapter, I show four examples of how applying the principles
-and concepts of General Relativity, as laid out in the last chapter,
-lead to astonishing (but very real) observations in our universe.  I
-start close to home with variations in Mercury's Orbit that Newtonian
-Physics could not explain.  This was known in Einstein's time, and the
-fact that his theory could explain the deviation, as small as it is,
-buoyed his confidence in the utility of his theory.
+and concepts of General Relativity, as laid out in [the last
+chapter](chGRcon), lead to astonishing (but very real) observations in
+our universe.  I start close to home with variations in Mercury's
+Orbit that Newtonian Physics could not explain.  This was known in
+Einstein's time, and the fact that his theory could explain the
+deviation, as small as it is, buoyed his confidence in the utility of
+his theory.
 
 GR further predicts the bending of light by gravity, the first
 prediction that was observationally tested after the 1915 publication
@@ -216,22 +218,22 @@ it will look straight when you look directly down on it.  One of the
 best ways we have to determine if we are in a curved spacetime is to
 observe the trajectories of photons and see if they curve.
 
-In the previous chapter, we discussed how objects in an accelerating
-rocket ship will seem to those inside the ship to be falling to the
-floor, while to those outside, it is the floor that is rushing up to
-catch the objects.  Let us examine how that argument applies to
-photons.  Consider first a stationary rocket, or equivalently, one
-moving at constant velocity.  Imagine our astronauts have mounted a
-laser pointer on one wall of the rocket.  It fires photons directly
-across the room at the opposing wall, and we can mark where they hit
-the wall.  To observers both inside and outside the rocket, the
-photons will seem to fly in straight lines across the rocket.  Even if
-the rocket is moving at a constant (non-zero) velocity, the photons
-leaving the laser pointer will gain the same upwards momentum and
-therefore will keep up with the rocket.  Observers inside the rocket
-will find the photons travel horizontally, and observers floating
-outside as the rocket passes by will find that the photons travel in
-a diagonal line.
+In [the previous chapter](chGRcon), we discussed how objects in an
+accelerating rocket ship will seem to those inside the ship to be
+falling to the floor, while to those outside, it is the floor that is
+rushing up to catch the objects.  Let us examine how that argument
+applies to photons.  Consider first a stationary rocket, or
+equivalently, one moving at constant velocity.  Imagine our astronauts
+have mounted a laser pointer on one wall of the rocket.  It fires
+photons directly across the room at the opposing wall, and we can mark
+where they hit the wall.  To observers both inside and outside the
+rocket, the photons will seem to fly in straight lines across the
+rocket.  Even if the rocket is moving at a constant (non-zero)
+velocity, the photons leaving the laser pointer will gain the same
+upwards momentum and therefore will keep up with the rocket.
+Observers inside the rocket will find the photons travel horizontally,
+and observers floating outside as the rocket passes by will find that
+the photons travel in a diagonal line.
 
 However, if the rocket accelerates, the photons in flight will not
 pick up the additional velocity gained by the rocket, and will therefore
@@ -801,21 +803,22 @@ latitude and longitude, respectively):
 ds^2 = -\left(1-\frac{2GM}{r}\right)c^2dt^2 + \left(1-\frac{2GM}{r}\right)^{-1} dr^2
 + r^2d\Omega^2
 ```
-where $d\Omega^2 = d\theta^2 + \sin^2{\theta}d\phi^2$.  Note that for $M=0$
-as well as for $r\rightarrow\infty$, this metric returns to the simple
-metric for flat space we started with back in Chapter 3.  In other words,
-if you consider locations far from the mass, space is flat and there is
-no gravity.  It is perhaps trivial to note that in the absence of mass,
-there is no gravity, but it is reassuring to see that emerge naturally
-from the metric.
+where $d\Omega^2 = d\theta^2 + \sin^2{\theta}d\phi^2$.  Note that for
+$M=0$ as well as for $r\rightarrow\infty$, this metric returns to the
+simple metric for flat space we started with back in [Chapter
+3](ch4vec).  In other words, if you consider locations far from the
+mass, space is flat and there is no gravity.  It is perhaps trivial to
+note that in the absence of mass, there is no gravity, but it is
+reassuring to see that emerge naturally from the metric.
 
 To delve deeper into understanding the implications of this metric,
 consider trajectories that are purely radial.  If a particle were to
 be moving purely inward or outward, then the angles of its position
-would not change, and $d\Omega=0$.  If we further consider the particles
-to be photons, we know from Chapter 5 that light follows trajectories
-in spacetime that have a zero interval ("lightlike").  We can therefore
-plug $ds=0$ and $d\Omega=0$ into Eq. {eq}`ssmetric`:
+would not change, and $d\Omega=0$.  If we further consider the
+particles to be photons, we know from [Chapter 5](chSTdiag) that light
+follows trajectories in spacetime that have a zero interval
+("lightlike").  We can therefore plug $ds=0$ and $d\Omega=0$ into
+Eq. {eq}`ssmetric`:
 ```{math}
 :label: nullpath
 0 = -\left(1-\frac{2GM}{c^2r}\right)c^2dt^2 + \left(1-\frac{2GM}{c^2r}\right)^{-1} dr^2
@@ -829,21 +832,21 @@ $cdt/dr$, and we can solve for that:
 Note that for large $r$, far from the mass, the right side of this
 equation goes to 1, which is the result we would expect from special
 relativity: that worldlines all photons are lines at a $45^\circ$
-angle, which define lightcones (as described in Chapter 5).  However,
-if we consider light cones from events at smaller and smaller $r$, the
-slope gets larger and larger: the light cone "pinches" shut.  Note
-that a photon travelling *along* the light cone will travel a
-worldline that asymptotically approaches a $45^\circ$ angle, the
-further away it gets.  However, this means that the smaller $r$ is for
-the point at which such a photon starts, the later it will reach an
-observer at a very large $r$.  If someone were falling toward the mass
-$M$ and shining a light back at a friend far away, that friend would
-observe the light arriving later and later, more and more redshifted
-(and therefore conclude that the falling person's clocks were running
-slower and slower), as the person fell closer and closer to the mass.
-This situation is illustrated through the interactive diagram shown in
-{numref}`ehanimate`.  Move the slider to change the initial radius of
-the spark that produces the photons.
+angle, which define lightcones (as described in [Chapter
+5](chSTdiag)).  However, if we consider light cones from events at
+smaller and smaller $r$, the slope gets larger and larger: the light
+cone "pinches" shut.  Note that a photon travelling *along* the light
+cone will travel a worldline that asymptotically approaches a
+$45^\circ$ angle, the further away it gets.  However, this means that
+the smaller $r$ is for the point at which such a photon starts, the
+later it will reach an observer at a very large $r$.  If someone were
+falling toward the mass $M$ and shining a light back at a friend far
+away, that friend would observe the light arriving later and later,
+more and more redshifted (and therefore conclude that the falling
+person's clocks were running slower and slower), as the person fell
+closer and closer to the mass.  This situation is illustrated through
+the interactive diagram shown in {numref}`ehanimate`.  Move the slider
+to change the initial radius of the spark that produces the photons.
 
 When the radius reaches $2GM/c^2$, the slope approaches infinity: a
 vertical line.  At this point, light emitted from this location will

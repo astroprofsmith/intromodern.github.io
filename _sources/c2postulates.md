@@ -20,6 +20,7 @@ from myst_nb import glue
 
 ```
 
+(chSRpost)=
 # Postulates of Relativity
 
 ## Two Postulates of Relativity
@@ -61,7 +62,8 @@ but someone on the ground would perceive them as moving at hundreds of
 meters per second.  This seems obvious.  The premise that light from a
 flashlight on an airplane would be measured as having the same speed
 on the plane as from the ground seems absurd.  However, as explained
-in Chapter 1, this is what actually does happen in nature.
+in [Chapter 1](chSRroots), this is what actually does happen in
+nature.
 
 ## Inertial Reference Frames and Events
 

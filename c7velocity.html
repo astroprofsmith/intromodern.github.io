@@ -183,7 +183,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="c11electric.html">11. The Electromagnetic Tensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c12dynamic.html">12. Relativistic Electrodynamics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c13introGR.html">13. Concepts of General Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="c14applGR.html">14. Chapter 14: Some Applications of General Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c14applGR.html">14. Some Applications of General Relativity</a></li>
 </ul>
 
     </div>
@@ -394,7 +394,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="the-velocity-four-vector">
-<h1><span class="section-number">7. </span>The Velocity Four-Vector<a class="headerlink" href="#the-velocity-four-vector" title="Permalink to this heading">#</a></h1>
+<span id="ch4vel"></span><h1><span class="section-number">7. </span>The Velocity Four-Vector<a class="headerlink" href="#the-velocity-four-vector" title="Permalink to this heading">#</a></h1>
 <p>Once we have carefully defined what we mean by position and
 displacement, as measured in a particular reference frame,
 we can turn our attention to the question of motion.  Specifically,
@@ -449,15 +449,16 @@ in scalar time.</p>
 four vector <span class="math notranslate nohighlight">\([dx_4]\)</span> and dividing by <span class="math notranslate nohighlight">\(dt\)</span>, because <span class="math notranslate nohighlight">\(dt\)</span> is not, in
 fact, a scalar.  It changes under a Lorentz transformation, and
 therefore <span class="math notranslate nohighlight">\([dx_4]/dt\)</span> will not have the properties of a four vector as
-defined in Chapter 2.  However, the <strong>proper</strong> time interval, <span class="math notranslate nohighlight">\(dt_0\)</span>,
-<strong>is</strong> a scalar!  So we can define a four velocity as</p>
+defined in <a class="reference internal" href="c2postulates.html#chsrpost"><span class="std std-ref">Chapter 2</span></a>.  However, the <strong>proper</strong> time
+interval, <span class="math notranslate nohighlight">\(dt_0\)</span>, <strong>is</strong> a scalar!  So we can define a four velocity
+as</p>
 <div class="math notranslate nohighlight" id="equation-eq4vdef">
 <span class="eqno">(7.3)<a class="headerlink" href="#equation-eq4vdef" title="Permalink to this equation">#</a></span>\[[v_4] = \frac{[dx_4]}{dt_0}\]</div>
-<p>where <span class="math notranslate nohighlight">\(dt_0\)</span> is the Lorentz scalar as described in Chapter 6. Since
-<span class="math notranslate nohighlight">\(dt_0\)</span> is a scalar, <span class="math notranslate nohighlight">\(1/dt_0\)</span> is also a scalar.  The
+<p>where <span class="math notranslate nohighlight">\(dt_0\)</span> is the Lorentz scalar as described in <a class="reference internal" href="c6displacement.html#ch4disp"><span class="std std-ref">Chapter
+6</span></a>. Since <span class="math notranslate nohighlight">\(dt_0\)</span> is a scalar, <span class="math notranslate nohighlight">\(1/dt_0\)</span> is also a scalar.  The
 4-velocity is a proper 4-vector because the displacement 4-vector is a
-proper 4-vector and <span class="math notranslate nohighlight">\(1/dt_0\)</span> is a Lorentz scalar. A Lorentz scalar times a
-proper 4-vector is a proper 4-vector.</p>
+proper 4-vector and <span class="math notranslate nohighlight">\(1/dt_0\)</span> is a Lorentz scalar. A Lorentz scalar
+times a proper 4-vector is a proper 4-vector.</p>
 <p>When you multiply a vector by a scalar, what really happens is that
 you multiply each of the components of the vector by that scalar
 quantity. Putting in the components of the displacement 4-vector into

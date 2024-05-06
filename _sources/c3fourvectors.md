@@ -27,19 +27,19 @@ from myst_nb import glue
 
 ## Time as a Dimension
 
-At the end of the last chapter, we argued that if the speed of light
-was to be invariant -- to be measured the same in any reference frame
--- then the quantity $$dx^2 + dy^2 + dz^2 - c^2dt^2$$ must also be
-invariant across reference frames.  This formulation looks a lot like
-a kind of 4 dimensional Pythagorean theorem, except for the minus sign
-in the last term.  If it were not for that minus sign, we could well
-imagine we were looking at the magnitude of a four-dimensional
-displacment vector, just adding time as a new component.  If a
-spacial displacement vector is $d\vec{r} = (dx,dy,dz)$, and its
-magnitude is $dx^2+dy^2+dz^2$, perhaps it would make sense to have
-a four-dimensional vector $dx_4 = (cdt,dx,dy,dz)$, except that
-if we were to square each term and add them up, we would get
-$+c^2dt^2$, not minus.
+At the end of [the last chapter](chSRpost), we argued that if the
+speed of light was to be invariant -- to be measured the same in any
+reference frame -- then the quantity $$dx^2 + dy^2 + dz^2 - c^2dt^2$$
+must also be invariant across reference frames.  This formulation
+looks a lot like a kind of 4 dimensional Pythagorean theorem, except
+for the minus sign in the last term.  If it were not for that minus
+sign, we could well imagine we were looking at the magnitude of a
+four-dimensional displacment vector, just adding time as a new
+component.  If a spacial displacement vector is $d\vec{r} =
+(dx,dy,dz)$, and its magnitude is $dx^2+dy^2+dz^2$, perhaps it would
+make sense to have a four-dimensional vector $dx_4 = (cdt,dx,dy,dz)$,
+except that if we were to square each term and add them up, we would
+get $+c^2dt^2$, not minus.
 
 We need a way to remember to include that minus sign.  There are two
 ways of keeping track of it.  One is simpler for the beginner, and the
@@ -134,12 +134,12 @@ on, but if time is in space four, then you have space dimensions
 a computer.
 ```
 
-In general, a four vector is an object with four components,
-one of which gets a minus sign when you square the components,
-and the other three have the properties of normal three vectors.
-The size of any four vector is the same in any inertial reference
-frame, and to convert a four vector from one frame to another,
-there is a specific procedure one must follow (see Chapter 4).
+In general, a four vector is an object with four components, one of
+which gets a minus sign when you square the components, and the other
+three have the properties of normal three vectors.  The size of any
+four vector is the same in any inertial reference frame, and to
+convert a four vector from one frame to another, there is a specific
+procedure one must follow (see [Chapter 4](chLTrans)).
 
 (secEinNot)=
 ### Einstein Notation
@@ -150,8 +150,8 @@ advanced equations that are easier to deal with another way.  The
 second way saves you a lot of writing, makes it easier to keep track
 of which components are being multiplies together, and is the one used
 exclusively in General Relativity.  I will introduce it here, but then
-use the $i$ until we get to electriciy and magnetism (E&M) in Chapter
-11.
+use the $i$ until we get to electriciy and magnetism (E&M) in [Chapter
+11](chEMten).
 
 The second way, called Einstein notation, involves being aware of a
 distinction between **covariant** and **contravariant** four-vectors.
@@ -202,7 +202,7 @@ row and down the column and add them up".  It plays the same role as a
 dummy variable in integration, and therefore does not appear in the
 result.  This is called "Einstein summation notation" or just
 "Einstein notation", and it won't come up again in this book until we
-apply SR to Electromagnetism in Chapter 11.
+apply SR to Electromagnetism in [Chapter 11](chEMten).
 
 ```{note}
 Covariant vs. Contravariant
@@ -344,8 +344,8 @@ the condition of a point mass at the origin.
 Many people currently working in the field are skipping the $i$ method
 altogether and going right to this notation from the beginning,
 because it is absolutely necessary in GR, but I am going to stick with
-$i$ until Chapter 11. I mention it here to stress that using the $i$
-is not the **only** way to keep track of the minus sign.
+$i$ until [Chapter 11](chEMten). I mention it here to stress that
+using the $i$ is not the **only** way to keep track of the minus sign.
 
 ```{note}
 For the purposes of this book, there are only three things you need
@@ -372,7 +372,7 @@ Once you have the concept of a four-vector, mathematically, it is
 useful to also have a method of displaying them, graphically.  Such a
 graph is called a "spacetime diagram".  I will give a brief
 introduction to them here, and then we will explore their properties
-in much more depth in Chapter 5.
+in much more depth in [Chapter 5](chSTdiag).
 
 ## Spacetime Diagrams
 

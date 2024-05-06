@@ -22,6 +22,7 @@ from myst_nb import glue
 
 ```
 
+(chSTdiag)=
 # Properties of Spacetime Diagrams
 
 Now that we have the tools of the displacement four vector, the
@@ -385,9 +386,9 @@ Each point on either axis is itself an event, with a coordinate of
 $x=0$ or $t=0$.  So an axis on a spacetime diagram is the set of
 events that has one of the two coordinates be zero.  The origin, of
 course, is the event where both coordinates are zero.  One of the
-principles described in Chapter 2 is that all events in spacetime have
-to be observed in all frames.  Switching reference frames can't just
-make something not happen.
+principles described in [Chapter 2](chSRpost) is that all events in
+spacetime have to be observed in all frames.  Switching reference
+frames can't just make something not happen.
 
 Therefore, we can ask how the coordinates of the set of events that
 make up the axes of the unprimed frame change when we shift into the
@@ -702,7 +703,7 @@ object in this frame, so in **this** frame, we would consider the
 and magenta events, which you can see from the trails is smaller than
 the spatial displacement between cyan and blue in the original frame
 of reference.  Lengths contract.  We will work out examples of length
-contraction more thoroughly in the next chapter.
+contraction more thoroughly in [the next chapter](ch4disp).
 
 ```{note}
 It might be useful to look at [this interactive
@@ -908,7 +909,7 @@ adding those together would be a problem?).  However, you can just add
 rapidities, because they can go as high as you like.  Start with
 $\phi_{1+2} = \phi_1+\phi_2$ and plug in Equation {eq}`rapidity` to
 get a formula for $\beta_{1+2}$ as a function of $\beta_1$ and
-$\beta_2$.  You will see this formula again in Chapter 7.
+$\beta_2$.  You will see this formula again in [Chapter 7](ch4vel)).
 
 7) An event is at $(ct,x)=(1~{\rm m},2~{\rm m})$ in some reference
 frame.  Is the displacement from the origin to this event timelike,

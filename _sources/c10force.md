@@ -692,12 +692,12 @@ g) Calculate the $x$-component of the force measured by the observer in
 the lab. Does this result surprise you? Why or why not?
 
 Now, suppose that this electron, traveling in the $+x$ direction
-(horizontal), at time $t = 0$ enters an electric field that is pointing
-in the $+z$ direction (vertically up) instead of pointing in the $+x$
-direction.  *As we will see in the next chapter, if the $E$ field is
-perpendicular to the relative velocity vector, the field will be different
-in the rest frame of the electron, so don't use that frame for the next three
-questions.*
+(horizontal), at time $t = 0$ enters an electric field that is
+pointing in the $+z$ direction (vertically up) instead of pointing in
+the $+x$ direction.  *As we will see in [the next chapter](chEMten),
+if the $E$ field is perpendicular to the relative velocity vector, the
+field will be different in the rest frame of the electron, so don't
+use that frame for the next three questions.*
 
 h) Calculate the Minkowski force exerted on this electron as measured
 in the laboratory reference frame.

@@ -22,6 +22,7 @@ from myst_nb import glue
 
 ```
 
+(ch4mom)=
 # The Momentum Four-Vector
 
 You have been introduced to the displacement 4-vector, the Lorentz
@@ -462,10 +463,11 @@ $p=E/c$.  Particles with energy but no mass **still have momentum**!!!
 
 ```{note}
 You can also see this in Equation {eq}`pfrome2`: if the rest energy
-goes to zero, $p\rightarrow KE/c$.  For a photon, the KE is $hf$, Planck's
-constant times the frequency, so the momentum of a photon is $hf/c$,
-or $h/\lambda$, where $\lambda$ is the wavelength.  See also the
-treatment in the section of Chapter 9 on the Doppler Shift.
+goes to zero, $p\rightarrow KE/c$.  For a photon, the KE is $hf$,
+Planck's constant times the frequency, so the momentum of a photon is
+$hf/c$, or $h/\lambda$, where $\lambda$ is the wavelength.  See also
+the treatment in the section of [Chapter 9](chSRexam) on the [Doppler
+Shift](secDoppler).
 ```
 
 On the other hand, for a particle with $E_0 \neq 0$ to travel **at**
@@ -636,10 +638,11 @@ This shows that the photons, whichever direction they go, must go opposite
 to each other.
 
 ```{note}
-The ease with which we can set things to zero and cancel them makes this
-particular frame of reference, in which the momentum was and remains
-zero, particularly useful.  It is referred to as the **center of momentum
-frame**, and we will use it in a detailed example in the next chapter.
+The ease with which we can set things to zero and cancel them makes
+this particular frame of reference, in which the momentum was and
+remains zero, particularly useful.  It is referred to as the **center
+of momentum frame**, and we will use it in a detailed example in [the
+next chapter](chSRexam).
 ```
 
 We can examine the energy of the two photons by looking at the time
@@ -651,6 +654,7 @@ momenta and their energies must be proportional (by Equation
 photon has an energy of 67.5 MeV, and therefore a momentum of 67.5
 MeV/c, but each in an opposite direction to the other.
 
+(sec4momProbs)=
 ## Problems
 
 

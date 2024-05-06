@@ -22,6 +22,7 @@ from myst_nb import glue
 
 ```
 
+(ch4disp)=
 # The Displacement Four Vector
 
 In this chapter, we will take a deep dive into the properties of
@@ -534,8 +535,9 @@ length also must depend on the relative speed of the reference frame
 in which it is measured. The length must get shorter, or contract,
 when the relative speed between the two observers increases.  This is
 called **Length Contraction**, and we will explore this effect in
-greater detail in the next section.
+greater detail in [the next section](secLenCon).
 
+(secLenCon)=
 ## Length Contraction
 
 
@@ -546,15 +548,15 @@ Lorentz transformation to get between the two reference frames and
 see what happens to a length measurement.
 
 ```{warning}
-This first step of converting a length measurement into two events
-is absolutely critical for understanding how length contraction works.
+This first step of converting a length measurement into two events is
+absolutely critical for understanding how length contraction works.
 One of the most common confusions around length contraction arises
-when people just assume they know the length of an object (remember
-in Chapter 2 we talked about the importance of not assuming you just
-know something going on elsewhere).  It's important to specify **how**
-you are measuring length, so you can be clear on how that process
-changes when you shift into another reference frame: the importance
-of operational definitions!
+when people just assume they know the length of an object (remember in
+[Chapter 2](chSRpost) we talked about the importance of not assuming
+you just know something going on elsewhere).  It's important to
+specify **how** you are measuring length, so you can be clear on how
+that process changes when you shift into another reference frame: the
+importance of operational definitions!
 ```
 
 To create two events while measuring the length of an object, one
@@ -797,7 +799,7 @@ in the "m" frame, the $x$ component of the four vector is zero -- this
 is not the length of the object.  But if you define your operation by
 which you are measuring the length of the object in a particular
 reference frame, you will always find that it is shorter the faster
-the object is moving.  See Chapter 5 for more examples.
+the object is moving.  See [Chapter 5](chSTdiag) for more examples.
 
 ```{warning}
 We are sometimes very casual when we talk about length contraction.
