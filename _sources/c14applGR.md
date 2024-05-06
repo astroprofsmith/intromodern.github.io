@@ -389,19 +389,15 @@ spotlight, making him the pop culture figure he remains today.
 :name: Edd19
 
 Dyson and Eddington's published report of star image deflection during
-the 1919 solar eclipse.  (Dyson, F. W.; Eddington, A. S., Davidson
-C. (1920). "A determination of the deflection of light by the Sun's
-gravitational field, from observations made at the total eclipse of 29
-May 1919". Philosophical Transactions of the Royal Society 220A:
-291–333) The angular distance from the Sun is printed along the
-horizontal axis, but note that the distance increases to the left.
-The y-axis shows the total amount of deflection, decreasing for
-increasing distance from the Sun.  The lighter solid line is the
-best-fit linear relationship, while the darker solid line in the
-middle is the prediction from GR.  The prediction from Newtonian
-physics is shown by the dotted line below, a factor of two less than
-what Einstein predicted, and clearly inconsistent with the measured
-results.
+the 1919 solar eclipse {cite}`Dyson20`.  The angular distance from the
+Sun is printed along the horizontal axis, but note that the distance
+increases to the left.  The y-axis shows the total amount of
+deflection, decreasing for increasing distance from the Sun.  The
+lighter solid line is the best-fit linear relationship, while the
+darker solid line in the middle is the prediction from GR.  The
+prediction from Newtonian physics is shown by the dotted line below, a
+factor of two less than what Einstein predicted, and clearly
+inconsistent with the measured results.
 ```
 
 How can we understand this deflection in more depth?  The easiest
