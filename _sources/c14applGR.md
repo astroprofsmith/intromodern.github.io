@@ -793,10 +793,10 @@ is that of a point mass $M$ in otherwise empty space.  The metric that
 solves Einstein's equation for this configuration was first derived by
 Karl Schwartzschild in 1915 while on the Russian front of World War I,
 just a year before his untimely death from disease at only 42 years
-old.  Because this configuration is spherically symmetric, the spatial
-coordinates are expressed in terms of the radial distance $r$ from the
-mass and the angles $\theta$ and $\phi$ (that basically correspond to
-latitude and longitude, respectively):
+old ({cite}`Shapiro83`).  Because this configuration is spherically
+symmetric, the spatial coordinates are expressed in terms of the
+radial distance $r$ from the mass and the angles $\theta$ and $\phi$
+(that basically correspond to latitude and longitude, respectively):
 ```{math}
 :label: ssmetric
 ds^2 = -\left(1-\frac{2GM}{r}\right)c^2dt^2 + \left(1-\frac{2GM}{r}\right)^{-1} dr^2
@@ -1291,12 +1291,12 @@ goes to zero at $t=0$, no matter how far apart they are now. So all
 the points in the entire observable universe would have been
 arbitrarily close together at arbitrarily small values of $t$.  It is
 for this reason that people sometimes describe the universe as
-emerging from a point (Lemaitre called it a "cosmic egg"), but this is
-misleading our imagination, because we imagine an egg or a point as
-having edges.  The space described by the metric is still infinite;
-it's just that our entire *observable* universe (14 billion light
-years in every direction from us) would be infinitesimally small for
-infinitesimally small values of $t$.
+emerging from a point (Lemaitre called it a "Primeval Atom",
+{cite}`Farrell05`), but this is misleading our imagination, because we
+imagine an egg or a point as having edges.  The space described by the
+metric is still infinite; it's just that our entire *observable*
+universe (14 billion light years in every direction from us) would be
+infinitesimally small for infinitesimally small values of $t$.
 
 Now let's consider what happens to a photon traveling across a
 universe described by this metric and reaching us.  If it is coming
