@@ -869,7 +869,7 @@ visualizing the situation.
 :tags: ["remove-cell"]
 # Interactive simulation of the laser clock on a train example
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRtrainclock"
-test = display.IFrame(src=url1,width=800,height=700)
+test = display.IFrame(src=url1,width=800,height=650)
 glue("tclockfig",test, display=False)
 
 ```
