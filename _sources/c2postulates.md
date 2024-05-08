@@ -142,7 +142,7 @@ extending off to infinity.
 # Insert animation of expanding sphere of light.  Show radial
 # arrow and overlay x, y, z, and ct
 url = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRrefframes"
-relfram = display.IFrame(src=url,width=800,height=800)
+relfram = display.IFrame(src=url,width=800,height=850)
 glue("relfig",relfram,display=False)
 ```
 ```{glue:figure} relfig
