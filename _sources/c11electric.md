@@ -400,7 +400,7 @@ B'_x = B_x
 # Insert VPython simulation of a moving solenoid
 #
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRsolenoidSR"
-solshft = display.IFrame(src=url1,width=800,height=700)
+solshft = display.IFrame(src=url1,width=800,height=670)
 glue("slidecyl",solshft, display=False)
 
 ```
@@ -456,7 +456,7 @@ velocity of the frames and see how the fields change.
 # Insert VPython simulation of a moving capacitor plate
 #
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRcapacitorframeshift"
-bshft = display.IFrame(src=url1,width=800,height=700)
+bshft = display.IFrame(src=url1,width=800,height=670)
 glue("slideplate",bshft, display=False)
 
 ```
