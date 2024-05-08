@@ -191,7 +191,7 @@ time.
 :tags: ["remove-input"]
 # A VPython tool to show types of intervals
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRintervals"
-geroch = display.IFrame(src=url1,width=880,height=700)
+geroch = display.IFrame(src=url1,width=800,height=700)
 glue("intervalfig",geroch, display=False)
 
 ```
@@ -484,7 +484,7 @@ perpendicular axes in the primed frame, if you were to redraw them.
 :tags: ["remove-input"]
 # Interactive spacetime diagram to allow the user to tilt the axes
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRlorentzaxes"
-tilting = display.IFrame(src=url1,width=880,height=650)
+tilting = display.IFrame(src=url1,width=800,height=650)
 glue("tilttheaxes",tilting, display=False)
 
 ```
@@ -594,7 +594,7 @@ the same time.
 :tags: ["remove-input"]
 # Spacetime diagram to show how event shift under transformation
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRstgrid"
-strch = display.IFrame(src=url1,width=880,height=650)
+strch = display.IFrame(src=url1,width=800,height=650)
 
 glue("stretchevents",strch, display=False)
 
