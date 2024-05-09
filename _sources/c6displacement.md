@@ -286,14 +286,13 @@ The experimentally measured half-life (the time for half of a large
 sample to decay) is $2.20~\mu$s as determined by an observer in the
 rest frame of the decay.
 
-Consider this situation: D.H. Frish and J.H. Smith ("Measurement of
-the Relativistic Time-dilation using Mu-mesons", Am. J. Phys., 32, 342
-(1963)) report on an experiment they did ineasuring the flux of muons
-at the 6,300 foot summit of Mt. Washington (in New Hampshire) and at
-sea level in Cambridge Mass. At the top of Mt Washington, they
-measured the muon flux to be 568 muons/hour: When they used an
-identical apparatus down at sea levet in the lab at Harvard, they
-measured a flux of 412 muons/hour.
+Consider this situation: D.H. Frisch and J.H. Smith report on an
+experiment they did ineasuring the flux of muons at the 6,300 foot
+summit of Mt. Washington (in New Hampshire) and at sea level in
+Cambridge Mass. At the top of Mt Washington, they measured the muon
+flux to be 568 muons/hour: When they used an identical apparatus down
+at sea levet in the lab at Harvard, they measured a flux of 412
+muons/hour {cite}`Frisch63`.
 
 The muons are produced when cosmic rays hit to upper limits of the
 atmosphere, A good assumption is that the rate of production of mesons
