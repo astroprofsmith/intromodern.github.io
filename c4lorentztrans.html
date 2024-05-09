@@ -600,26 +600,30 @@ Lorentz transformation</strong>.</p>
 <h2><span class="section-number">4.3. </span>Examples of Lorentz Transformations<a class="headerlink" href="#examples-of-lorentz-transformations" title="Permalink to this heading">#</a></h2>
 <section id="transform-a-displacement-four-vector">
 <h3><span class="section-number">4.3.1. </span>Transform a Displacement Four-vector<a class="headerlink" href="#transform-a-displacement-four-vector" title="Permalink to this heading">#</a></h3>
-<p>An observer measures the 4-displacement between two events:</p>
-<div class="math notranslate nohighlight" id="equation-eqdx41">
-<span class="eqno">(4.8)<a class="headerlink" href="#equation-eqdx41" title="Permalink to this equation">#</a></span>\[\begin{split}[dR_4] =
+<font color=blue>
+An observer measures the 4-displacement between two events:
+```{math}
+:label: eqdx41
+[dR_4] =
 \begin{bmatrix}
 i3.00~{\rm m}\\
 1.00~{\rm m}\\
 -0.250~{\rm m}\\
 0.00~{\rm m}
-\end{bmatrix}\end{split}\]</div>
-<p>A second observer, traveling with speed <span class="math notranslate nohighlight">\(1.31\times10^8\)</span>~m/s in the
-<span class="math notranslate nohighlight">\(x\)</span> direction with respect to the first observer measures the
+\end{bmatrix}
+```
+A second observer, traveling with speed $1.31\times10^8$~m/s in the
+$x$ direction with respect to the first observer measures the
 4-displacement for these same two events. What values of the elements
-of the 4-displaceinent does this second observer measure?</p>
+of the 4-displaceinent does this second observer measure?
+</font>
 <p>To solve this problem, you use the form of the Lorentz transformation
 in equation <a class="reference internal" href="#equation-lormat">(4.7)</a>, plugging in the numbers.  We know that
 <span class="math notranslate nohighlight">\(\beta_R = v_R/c = 1.31/3.00 = 0.4367\)</span>, and therefore <span class="math notranslate nohighlight">\(\gamma_R=1.1116\)</span>.
 Multiply the two to get <span class="math notranslate nohighlight">\(\beta_R\gamma_R=0.4854\)</span>.</p>
 <p>Now, we are ready to find the elements of <span class="math notranslate nohighlight">\([dR_4]'\)</span></p>
 <div class="math notranslate nohighlight" id="equation-ex41">
-<span class="eqno">(4.9)<a class="headerlink" href="#equation-ex41" title="Permalink to this equation">#</a></span>\[\begin{split}[dR_4]' = {\cal L}_x(\beta_R)[dR_4] = 
+<span class="eqno">(4.8)<a class="headerlink" href="#equation-ex41" title="Permalink to this equation">#</a></span>\[\begin{split}[dR_4]' = {\cal L}_x(\beta_R)[dR_4] = 
 \begin{bmatrix}
 1.1116 &amp; -i0.4854 &amp; 0 &amp; 0\\
 i0.4854 &amp; 1.1116 &amp; 0 &amp; 0\\
@@ -685,7 +689,7 @@ relative speed shown to the right of the slider.</span><a class="headerlink" hre
 on any four-vector you might like to contemplate from another inertial reference
 frame.  <a class="reference internal" href="#figltrans"><span class="std std-numref">Fig. 4.2</span></a> illustrates this process.  A displacement vector</p>
 <div class="math notranslate nohighlight" id="equation-eqdx42">
-<span class="eqno">(4.10)<a class="headerlink" href="#equation-eqdx42" title="Permalink to this equation">#</a></span>\[\begin{split}[dR_4] =
+<span class="eqno">(4.9)<a class="headerlink" href="#equation-eqdx42" title="Permalink to this equation">#</a></span>\[\begin{split}[dR_4] =
 \begin{bmatrix}
 i0.6~{\rm m}\\
 0.3~{\rm m}\\
@@ -699,13 +703,26 @@ the four-position of each sphere and then recalculate the
 four-displacement between the red and blue events.  You should verify
 yourself in a few cases that the numbers are being calculated
 correctly.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Programming a Lorentz Transformation</p>
+<p>It would be a very good idea for you to write your own code that
+takes a <span class="math notranslate nohighlight">\(\beta_R\)</span> and a four vector and returns the transformed
+four vector.  You could also write it to return the size of the
+four vector before and after the transformation, so you could verify
+that it hasn’t changed.  You could write the code to set up and
+multiply matrices, or you could write the four equations out
+separately.  Which method you use would be irrelevant to the output.</p>
+</div>
 </section>
 <section id="angles-in-space">
 <h3><span class="section-number">4.3.3. </span>Angles in Space<a class="headerlink" href="#angles-in-space" title="Permalink to this heading">#</a></h3>
-<p>Find the physical angle that the displacement given in example 4.1
-makes with respect to the <span class="math notranslate nohighlight">\(x\)</span> axis. Determine the angle as measured by
-the primed observer.</p>
-<p>In Example 4.1, there is a displacement four-vector with <span class="math notranslate nohighlight">\(dx=1.00\)</span> m and
+<font color=blue>
+Find the physical angle that the displacement given in Example 4.3.1
+makes with respect to the $x$ axis. Determine the angle as measured by
+the primed observer.
+</font>
+<p>In Example 4.3.1, there is a displacement four-vector with <span class="math notranslate nohighlight">\(dx=1.00\)</span> m and
 <span class="math notranslate nohighlight">\(dy=-0.250\)</span> m.  Trigonometry tells us that the tangent of the angle
 with the <span class="math notranslate nohighlight">\(x\)</span> axis is the height over the base, <span class="math notranslate nohighlight">\(dy/dx\)</span>.  Therefore,
 the angle that the unprimed observer makes is:
@@ -726,18 +743,20 @@ horizontal displacement flips around and points the other way.</p>
 </section>
 <section id="using-an-inverse-lorentz-transformation">
 <h3><span class="section-number">4.3.4. </span>Using an Inverse Lorentz Transformation<a class="headerlink" href="#using-an-inverse-lorentz-transformation" title="Permalink to this heading">#</a></h3>
-<p>The primed observer in example 4.1 believes that the unprimed observer
-is moving with speed <span class="math notranslate nohighlight">\(v_R = 1.3\times10^8\)</span> m/s in the <span class="math notranslate nohighlight">\(-x\)</span> direction
-with respect to him. Show that this is a reasonable assumption by
-finding the elements of the inverse Lorentz transformation that
-transform the coinponents she measured for <span class="math notranslate nohighlight">\([dR4]'\)</span> into those
-measured by the observer in the unprimed reference frame.  In
-other words, imagine you didn’t know <span class="math notranslate nohighlight">\(\beta_R\)</span> and find it from
-the given four vectors.</p>
-<p>Going back to the transformation in example 4.1, but setting it
+<font color=blue>
+The primed observer in example 4.3.1 believes that the unprimed
+observer is moving with speed $v_R = 1.3\times10^8$ m/s in the $-x$
+direction with respect to him. Show that this is a reasonable
+assumption by finding the elements of the inverse Lorentz
+transformation that transform the coinponents she measured for
+$[dR4]'$ into those measured by the observer in the unprimed reference
+frame.  In other words, imagine you didn't know $\beta_R$ and find it
+from the given four vectors.
+</font>
+<p>Going back to the transformation in example 4.3.1, but setting it
 up as an inverse transformation, we get:</p>
 <div class="math notranslate nohighlight" id="equation-eqinvlort">
-<span class="eqno">(4.11)<a class="headerlink" href="#equation-eqinvlort" title="Permalink to this equation">#</a></span>\[[dx_4] = {\cal L}_x(-\beta_R)[dx_4]'\]</div>
+<span class="eqno">(4.10)<a class="headerlink" href="#equation-eqinvlort" title="Permalink to this equation">#</a></span>\[[dx_4] = {\cal L}_x(-\beta_R)[dx_4]'\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{bmatrix}
 i3.00~{\rm m}\\
@@ -769,17 +788,6 @@ first two components and then take their ratio, you get
 The factors of <span class="math notranslate nohighlight">\(\gamma_R\)</span> cancel, and then you can sove for <span class="math notranslate nohighlight">\(\beta_R\)</span>
 to get <span class="math notranslate nohighlight">\(\beta_R = 0.44\)</span> which means <span class="math notranslate nohighlight">\(v_R = 1.3\times10^8\)</span> m/s,
 as expected.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Programming a Lorentz Transformation</p>
-<p>It would be a very good idea for you to write your own code that
-takes a <span class="math notranslate nohighlight">\(\beta_R\)</span> and a four vector and returns the transformed
-four vector.  You could also write it to return the size of the
-four vector before and after the transformation, so you could verify
-that it hasn’t changed.  You could write the code to set up and
-multiply matrices, or you could write the four equations out
-separately.  Which method you use would be irrelevant to the output.</p>
-</div>
 </section>
 </section>
 <section id="problems">
@@ -850,10 +858,10 @@ diagonal elements and has value of <span class="math notranslate nohighlight">\(
 elements. In general, if a matrix has an inverse, then:</p></li>
 </ol>
 <div class="math notranslate nohighlight" id="equation-unitmat">
-<span class="eqno">(4.12)<a class="headerlink" href="#equation-unitmat" title="Permalink to this equation">#</a></span>\[M^{-1} M = {\rm unit~matrix}\]</div>
+<span class="eqno">(4.11)<a class="headerlink" href="#equation-unitmat" title="Permalink to this equation">#</a></span>\[M^{-1} M = {\rm unit~matrix}\]</div>
 <p>Show that for the Lorentz transformation matrix</p>
 <div class="math notranslate nohighlight" id="equation-lunitmat">
-<span class="eqno">(4.13)<a class="headerlink" href="#equation-lunitmat" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L}_x^{-1}(\beta_R){\cal L}_x(\beta_R) =
+<span class="eqno">(4.12)<a class="headerlink" href="#equation-lunitmat" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L}_x^{-1}(\beta_R){\cal L}_x(\beta_R) =
 \begin{bmatrix}
 1 &amp; 0 &amp; 0 &amp; 0\\
 0 &amp; 1 &amp; 0 &amp; 0\\

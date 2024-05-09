@@ -278,6 +278,7 @@ Lorentz transformation**.
 
 ### Transform a Displacement Four-vector
 
+<font color=blue>
 An observer measures the 4-displacement between two events:
 ```{math}
 :label: eqdx41
@@ -293,6 +294,7 @@ A second observer, traveling with speed $1.31\times10^8$~m/s in the
 $x$ direction with respect to the first observer measures the
 4-displacement for these same two events. What values of the elements
 of the 4-displaceinent does this second observer measure?
+</font>
 
 To solve this problem, you use the form of the Lorentz transformation
 in equation {eq}`lormat`, plugging in the numbers.  We know that
@@ -384,14 +386,28 @@ four-displacement between the red and blue events.  You should verify
 yourself in a few cases that the numbers are being calculated
 correctly.
 
+```{note}
+Programming a Lorentz Transformation
+
+It would be a very good idea for you to write your own code that
+takes a $\beta_R$ and a four vector and returns the transformed
+four vector.  You could also write it to return the size of the
+four vector before and after the transformation, so you could verify
+that it hasn't changed.  You could write the code to set up and
+multiply matrices, or you could write the four equations out
+separately.  Which method you use would be irrelevant to the output.
+```
+
 
 ### Angles in Space
 
-Find the physical angle that the displacement given in example 4.1
+<font color=blue>
+Find the physical angle that the displacement given in Example 4.3.1
 makes with respect to the $x$ axis. Determine the angle as measured by
 the primed observer.
+</font>
 
-In Example 4.1, there is a displacement four-vector with $dx=1.00$ m and
+In Example 4.3.1, there is a displacement four-vector with $dx=1.00$ m and
 $dy=-0.250$ m.  Trigonometry tells us that the tangent of the angle
 with the $x$ axis is the height over the base, $dy/dx$.  Therefore,
 the angle that the unprimed observer makes is:
@@ -409,16 +425,18 @@ horizontal displacement flips around and points the other way.
 
 ### Using an Inverse Lorentz Transformation
 
-The primed observer in example 4.1 believes that the unprimed observer
-is moving with speed $v_R = 1.3\times10^8$ m/s in the $-x$ direction
-with respect to him. Show that this is a reasonable assumption by
-finding the elements of the inverse Lorentz transformation that
-transform the coinponents she measured for $[dR4]'$ into those
-measured by the observer in the unprimed reference frame.  In
-other words, imagine you didn't know $\beta_R$ and find it from
-the given four vectors.
+<font color=blue>
+The primed observer in example 4.3.1 believes that the unprimed
+observer is moving with speed $v_R = 1.3\times10^8$ m/s in the $-x$
+direction with respect to him. Show that this is a reasonable
+assumption by finding the elements of the inverse Lorentz
+transformation that transform the coinponents she measured for
+$[dR4]'$ into those measured by the observer in the unprimed reference
+frame.  In other words, imagine you didn't know $\beta_R$ and find it
+from the given four vectors.
+</font>
 
-Going back to the transformation in example 4.1, but setting it
+Going back to the transformation in example 4.3.1, but setting it
 up as an inverse transformation, we get:
 ```{math}
 :label: eqinvlort
@@ -455,17 +473,7 @@ The factors of $\gamma_R$ cancel, and then you can sove for $\beta_R$
 to get $\beta_R = 0.44$ which means $v_R = 1.3\times10^8$ m/s,
 as expected.
 
-```{note}
-Programming a Lorentz Transformation
 
-It would be a very good idea for you to write your own code that
-takes a $\beta_R$ and a four vector and returns the transformed
-four vector.  You could also write it to return the size of the
-four vector before and after the transformation, so you could verify
-that it hasn't changed.  You could write the code to set up and
-multiply matrices, or you could write the four equations out
-separately.  Which method you use would be irrelevant to the output.
-```
 
 ## Problems
 
