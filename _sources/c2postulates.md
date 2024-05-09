@@ -65,9 +65,11 @@ on the plane as from the ground seems absurd.  However, as explained
 in [Chapter 1](chSRroots), this is what actually does happen in
 nature.
 
+
+(secClocks)=
 ## Clocks and Rulers
 
-The theory of Relativity starts with considering motion, which involves
+The Theory of Relativity starts with considering motion, which involves
 changes in location and time.  If we're going to compare the predictions
 of the theory with actual reality, we're going to need to make careful,
 quantitative measurements of what actually happens.  This means we need
@@ -134,16 +136,16 @@ with numbered markings.  Each mark would be a ruler reading, and the
 difference between two marks would be a distance.  If you include the
 direction of the distance, then it's called a displacement.  (If I
 walk two miles, I have walked a distance of two miles, but if it's two
-miles to the East, that's a displacement.  If I walk in a circle, I
-will have a zero total displacement, but I have walked a non-zero
-distance.)
+miles to the East, that's a displacement.  If I walk in a circle and
+return to where I started, I will have a zero total displacement, but
+I have walked a non-zero distance.)
 
 Armed with (often idealized) clocks and rulers, we can define a method
 of identifying where and when something occurs in space and time by
 using clock and ruler readings.  With the concepts of duration and
 displacement, we can relate the space and time locations of two
 different occurances to each other.  Once we have that, we can start
-asking how those relationships might different from different
+asking how those relationships might be different from different
 perspectives.  But first, we need to be more specific about what the
 word "perspective" means -- we need to define an inertial reference
 frame.
@@ -241,16 +243,16 @@ Ultimately, we are interested in how objects in the universe move and
 interact with each other.  To study this motion, we need to make
 measurements of location and duration, which needs to happen within a
 chosen reference frame.  Measurements recorded in different reference
-frame will be compared, but they should never be mixed together.  A
-displacement measure in one reference frame divided by a duration
-measured in another reference frame would not represent a real
-velocity.  An object could be at rest (velocity of zero) in one
+frames can and will be compared, but they should never be mixed
+together.  A displacement measured in one reference frame divided by a
+duration measured in another reference frame would not represent a
+real velocity.  An object could be at rest (velocity of zero) in one
 reference frame, but to observers recording in a second reference
 frame, moving at a relative velocity to the first, the object would be
 recorded in different places at different times.  In other words, to
 the observers at rest with respect to the second reference frame, the
-object and the lattice of rulers and clocks with it would be moving,
-not their own lattice of rulers and clocks.
+object (and the lattice of rulers and clocks linked to it) would be
+moving, not their own lattice of rulers and clocks.
 
 Another important assumption we must make about the reference frames
 we consider in special relativity is that they be "inertial frames".
@@ -263,16 +265,23 @@ this rotating lattice of rulers and clocks, objects could be observed
 to move in complicated, changing patterns, without any observable
 forces causing the changes in motion (so we make up fictitious forces
 and call them names like "centrifugal" to make Newton's laws keep
-working).  The rules of special relativity only work in inertial
-reference frames.  Usually, but not always, this means reference
-frames that have constant velocity, including zero.
+working).
+
+The rules of Special Relativity (SR) only work in inertial reference
+frames.  Usually, but not always, this means reference frames that
+have constant velocity, including zero.  To deal with accelerating
+reference frames, which may or may not be inertial, you must turn to
+the General Theory of Relativity (GR).  The GR is mostly outside the
+scope of this book, although [Chapter 13](chGRcon) and [Chapter
+14](chGRapp) introduce the main ideas and explore some of the most
+famous implications.
 
 ## Important Correlaries to the Postulates
 
 Nothing physical can travel faster than $c$.  We will see why in later
 chapters of this book, but it's important to be aware of that from the
 beginning.  Once you demand that a speed be the same in all reference
-frames, as the first postulate does, the universe will conspire to
+frames, as the second postulate does, the universe will conspire to
 make sure nothing moves faster than that.  It's important to note that
 we call this speed "the speed of light", but that's because light,
 having no inertial mass, moves at the fastest speed possible.  Light
@@ -320,13 +329,15 @@ to two different reference frames that are in motion relative to each
 other.  *Special* relativity demands the assumption that the relative
 velocity between the frames is constant (a "special" case).  If the
 motion of the reference frames is not constant, the theory must be
-modified to a more general form, which makes it General Relativity.
+modified to a more general form, which makes it General Relativity
+(see [Chapter 13](chGRcon)).
 
-Once you have two different reference frames, it is important to state
-three characteristics that might seem self-evident, but they have
+So, we are comparing two different inertial reference frames.  Before
+we go any further, it is important to state three characteristics of
+these reference frames that might seem self-evident, but they have
 important implications that are worth articulating explicitly.  First,
 imagine each frame of reference has a set of observers associated with
-it, or acting within it.  Each set of observers has to agree that the
+it, or acting within it.  Both sets of observers have to agree that the
 same events happened.  Switching reference frames does not change what
 actually happens.  People in different reference frames may well
 disagree on when and where events happen, but they should not disagree
@@ -335,15 +346,16 @@ on *whether* the events happen.
 Second, each set of observers must agree on what the results of
 measurements are.  Not only must there be agreement within the set of
 observers within a particular reference frame, but each set of
-observers must agree on what measurements are made in another
-reference frame.  Those measurements might well contradict each other,
-but all observers should agree on what they are.  For example, if a
-set of observers in reference frame 1 agree that a room is 12 m
-across, a set of observers in reference frame 2 should not be able to
-truthfully assert that the first set of observers actually measured
-the room to be 11 m across.  The second set of observers could
-feasibly measure the room to be 11 m across, themselves, but they
-should agree that the first set of observers measured 12 m.
+observers must agree on what measurements are made by the other set of
+observers in the other reference frame.  Those measurements might well
+contradict each other, but all observers should agree on what they
+are.  For example, if a set of observers in reference frame 1 agree
+that a room is 12 m across, a set of observers in reference frame 2
+should not be able to truthfully assert that the first set of
+observers actually measured the room to be 11 m across.  The second
+set of observers could feasibly measure the room to be 11 m across,
+themselves, but they should agree that the first set of observers
+measured 12 m.
 
 All sets of observers should agree that causes come before effects.
 We will find that switching reference frames will change many aspects
@@ -351,10 +363,11 @@ of space and time that you are used to thinking of as universal.
 However, causes must still come before effects.  This is, as some have
 suggested, a kind of definition of time.  As the old saying goes,
 “Time... is what keeps everything from happening at once.”
-(R. Cummings, "The Girl in the Golden Atom", 1919).  See also [this
-Science Asylum YouTube
+{cite}`Cummings23` See also [this Science Asylum YouTube
 video](https://www.youtube.com/watch?v=7HBKEDyFTv8).  Not an
-**operational** definition, mind you, but a useful description.
+**operational** definition, mind you (the operational definition is
+described with the clocks in [Section 2.2](secClocks), but a useful
+description.
 
 Finally, it is important to articulate a principle that **every**
 prediction SR makes, every formula we derive, should not contradict
