@@ -107,9 +107,11 @@ dx^2 + dy^2 + dz^2 - c^2dt^2.$$ We need a better word than "size", but
 "magnitude" is not a good choice, because we are so used to how
 magnitudes work with three-dimensional vectors.  The magnitude of a
 three-vector is always positive (unless all three of its components
-are zero), but $[dx_4]^2$ could be positive, negative, or zero!
-For a displacement four-vector, we call the size the "interval", but
-there isn't a better word than "size" for other four vectors.
+are zero), but $[dx_4]^2$ could be positive, negative, or zero!  For a
+displacement four-vector, we call the size the "interval" (which isn't
+the greatest choice, either, because we already use "time interval"
+for the difference between two clock readings), but there isn't a
+better word than "size" for other four vectors.
 
 What a person measures when light propagates is a set of four things:
 the three components of the physical displacement and the time
@@ -197,12 +199,13 @@ dx_\alpha =
 ```
 
 In this notation, whenever there is a Greek letter that appears twice,
-once up and once down, that is a shorthand for "multiply across the
-row and down the column and add them up".  It plays the same role as a
-dummy variable in integration, and therefore does not appear in the
-result.  This is called "Einstein summation notation" or just
-"Einstein notation", and it won't come up again in this book until we
-apply SR to Electromagnetism in [Chapter 11](chEMten).
+once up and once down, that is a shorthand for "multiply each set of
+components with the same number zero through three and add them up"
+(See Eq. {eq}`eqSumm`) It plays the same role as a dummy variable in
+integration, and therefore does not appear in the result.  This is
+called "Einstein summation notation" or just "Einstein notation", and
+it won't come up again in this book until we apply SR to
+Electromagnetism in [Chapter 11](chEMten).
 
 ```{note}
 Covariant vs. Contravariant
@@ -245,8 +248,12 @@ as rows (with a negative zeroth component).
 
 For the four vectors we are considering, $dx_0 =-dx^0$, but
 $dx_1=dx^1$, $dx_2=dx^2$, and $dx_3=dx^3$.  So if you multiply the two
-together, according to the Einstein summation rule $$dx_\alpha
-dx^\alpha = dx_0dx^0 + dx_1dx^1+dx_2dx^2+dx_3dx^3$$ $$dx_\alpha
+together, according to the Einstein summation rule
+```{math}
+:label: eqSumm
+dx_\alpha dx^\alpha = dx_0dx^0 + dx_1dx^1+dx_2dx^2+dx_3dx^3
+```
+$$dx_\alpha
 dx^\alpha = -dx^0dx^0 + dx^1dx^1+dx^2dx^2+dx^3dx^3$$ $$dx_\alpha
 dx^\alpha = -c^2dt^2 + dx^2+dy^2+dz^2$$ where in that last equation,
 the 2 does mean squared.
