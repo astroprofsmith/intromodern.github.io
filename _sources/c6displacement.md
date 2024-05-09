@@ -444,7 +444,7 @@ ic 1.0\times10^{-6}~{\rm s}\\
 ```
 The time as measured by the observer in the rest frame is correctly
 given by the analysis in Equation {eq}`muonduration` as this observer
-does not notice that the muon moves with respect to him.
+does not observe that the muon moves with respect to him.
 
 ```{math}
 :label: dx4earth
@@ -890,8 +890,8 @@ ladder enters the front of the garage, the back of the ladder enters
 the front of the garage (and Frank closes the door), the front of the
 ladder arrives at the back of the garage (and Betty opens the door),
 and finally, the back of the ladder reaches the back of the garage.
-We will look at the borderline case, where Frank closes his door the
-instant Betty opens hers.  The spacetime diagram is shown in
+We will look at the borderline case, where Frank closes his door at
+the same instant Betty opens hers.  The spacetime diagram is shown in
 {numref}`laddermov`, with four different color worldlines representing
 the front and back of the ladder and the garage.  Our four events are
 the points where these four lines cross.

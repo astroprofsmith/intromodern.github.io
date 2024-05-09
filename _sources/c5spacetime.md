@@ -825,13 +825,20 @@ see that except for the hyperbolic part, and the $i$, they look very
 similar (and in Einstein notation, you leave out the $i$, as well).
 This means, in a very real but very odd sense, changing speeds
 actually rotates space and time into each other, in much the same way
-that rotating axes rotates $x$ and $y$ into each other.  Four-vectors
-maintain the same "size" in this rotation, but how much of it is space
-and how much of it is time will change.  We'll come back to this again
-in [Chapter 7](ch4vel), when we explore the four-velocity.  The
-overall size of the velocity stays the same (the speed of light), but
-if you change your relative speed of your reference frame, you rotate
-how much of that velocity is through space, and how much through time.
+that rotating axes rotates $x$ and $y$ into each other.
+
+Four-vectors maintain the same "size" in this rotation, but how much
+of it is space and how much of it is time will change.  If you hold
+out your arm, your arm will extend through space both horizontally and
+vertically.  If you rotate your arm at the shoulder, your arm will
+stay the same length, but how much is vertical and how much is
+horizontal will change.  And yet we don't think about horizontal and
+vertical as being that different from each other -- you might even
+feel odd talking about a horizontal and vertical part of your arm.
+But if you perform a Lorentz transformation, how much a four
+dislacement extends through time and how much through space will shift
+accordingly.  Changing relative speed is like rotating through
+spacetime.
 
 The letter $\phi$ in these equations is called the "rapidity", and it depends on
 $\beta$ as
@@ -839,13 +846,14 @@ $\beta$ as
 :label: rapidity
 \phi = \ln{\left(\sqrt{\frac{1+\beta}{1-\beta}}\right)}
 ```
-However, despite
-the trig functions, don't get confused and think that $\phi$ is an angle in the
-regular sense of how you think of that term.  In Equation {eq}`normalrot`, the letter
-$\theta$ corresponds to the angle through which we rotate the axes of the diagram.
-However, in the case of Equation {eq}`lortrapid`, if $v\rightarrow c$, then
-the axis will pinch to an angle of $45^\circ$, while $\phi\rightarrow\infty$
-(the $1-\beta$ in the denominator of Equation {eq}`rapidity` goes to zero).
+However, despite the trig functions, don't get confused and think that
+$\phi$ is an angle in the regular sense of how you think of that term.
+In Equation {eq}`normalrot`, the letter $\theta$ corresponds to the
+angle through which we rotate the axes of the diagram.  However, in
+the case of Equation {eq}`lortrapid`, if $v\rightarrow c$, then the
+axis will pinch to an angle of $45^\circ$, while
+$\phi\rightarrow\infty$ (the $1-\beta$ in the denominator of Equation
+{eq}`rapidity` goes to zero).
 
 
 Why might you want to do this?  Two reasons.  First of all, it's kind
