@@ -382,20 +382,20 @@ principle.
 
 ## Model to describe the experimental results.
 
-One interpretation of Michelson's experimental results is to say that
-observers in any inertial reference frame will measure that light
-travels at the same speed.   This is quite in contrast to how sound
-moves through the air. If I am moving towards the source, the sound
-seems to be traveling faster than when I am moving away from the
-source of the sound.   If an inertial observer measures the speed of
-the photons that come from a flashlight that she holds in her hand,
-she would get the value $c = 3.0 \times 10^8$ m/s. If a second
-observer, moving at a speed of $2.8 \times 10^8$ runs away from (or
-towards) the flash light would also measure the speed of the photons
-emitted by that same flashlight to be $c$, precisely the same value as
-the other observer. This is intuitatively absurd, but it agrees with
-the experiments, so it is a 'not wrong' model for the propagation of
-light.
+One interpretation of Michelson's experimental results (See [Chapter
+1](chSRroots)) is to say that observers in any inertial reference
+frame will measure that light travels at the same speed.  This is
+quite in contrast to how sound moves through the air. If I am moving
+towards the source, the sound seems to be traveling faster than when I
+am moving away from the source of the sound.  If an inertial observer
+measures the speed of the photons that come from a flashlight that she
+holds in her hand, she would get the value $c = 3.0 \times 10^8$
+m/s. If a second observer, moving at a speed of $2.8 \times 10^8$ runs
+away from (or towards) the flashlight would also measure the speed of
+the photons emitted by that same flashlight to be $c$, precisely the
+same value as the other observer. This is intuitatively absurd, but it
+agrees with the experiments, so it is a 'not wrong' model for the
+propagation of light.
 
 The next step in developing the model is to transform this literary
 statement into mathematical terms so that quantitative predictions can
@@ -449,20 +449,26 @@ nature of the diagram.
 ```
 
 Common sense says that the wave front should not longer seem to be
-spherical, but should appear to be oblate (a squashed
-sphere). However, what Michelson found was that this spherical wave
+spherical, but should appear to be oblate (a squashed sphere).  The
+light moving toward the observer should be travelling faster, and the
+light moving away should be travelling more slowly, so the expanding
+light should not be able to maintain its spherical shape.  If it were
+an expanding sound wave, like from someone clapping their hands once,
+that is indeed what we would observe.
+
+However, what Michelson found was that this spherical wave
 had to look the same to this observer as it appeared to the first
 observer. Otherwise, the second observer would measure a different
 velocity for the light wave. What the observer in the primed reference
 frame measures is a spherical wave that propagates outward at the same
-speed as shown in Equation {eq}`eqsph`!. The second (primed) observer
+speed as shown in Equation {eq}`eqsph`. The second (primed) observer
 also sees a spherical wave, but this time the observer measures:
 ```{math}
 :label: eqsphp
 (dx^\prime)^2 + (dy^\prime)^2 + (dz^\prime)^2 = (c dt^\prime)^2
 ```
 where $dx^\prime$, $dy^\prime$, and $dz^\prime$ are how much the
-second observer measured the wave front to propagate in time
+second observer measured the wave front to propagate in time interval 
 $dt^\prime$, and $c$ (not $c^\prime$!) is the speed of light.
 
 Equations {eq}`eqsph2` and {eq}`eqsphp` can be combined to be:
@@ -480,12 +486,12 @@ statement can be written as a conservation law. The sum:
 (dx^\prime)^2 + (dy^\prime)^2 + (dz^\prime)^2 - (c dt^\prime)^2 
 ```
 must remain constant. This conservation law is quite different from
-what Newton and company thought was 'conserved' in the measurement of
-the motion of an thing. In the Newtonian world, the value of $dt$
-would be the same for both observers, implying a $c^\prime \neq c$,
-not this strange looking sum. But, if this model agrees with the
-experiments, it is not wrong; even if it disagrees with Newton's
-model.
+what Newton and his contemporaries would have thought was 'conserved'
+in the measurement of the motion of an thing. In the Newtonian world,
+the value of $dt$ would be the same for both observers, implying a
+$c^\prime \neq c$, not this strange looking sum. But, if this model
+agrees with the experiments, it is not wrong; even if it disagrees
+with Newton's model.
 
 
 
