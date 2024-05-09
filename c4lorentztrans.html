@@ -381,9 +381,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-the-problem">4.1. Setting Up the Problem</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determining-the-elements">4.2. Determining the Elements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-lorentz-transformations">4.3. Examples of Lorentz Transformations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-1-transform-a-displacement-four-vector">4.3.1. Example 4.1: Transform a Displacement Four-vector</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-2-angles-in-space">4.3.2. Example 4.2: Angles in Space</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-3-using-an-inverse-lorentz-transformation">4.3.3. Example 4.3: Using an Inverse Lorentz Transformation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transform-a-displacement-four-vector">4.3.1. Transform a Displacement Four-vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graphical-lorentz-transform">4.3.2. Graphical Lorentz Transform</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#angles-in-space">4.3.3. Angles in Space</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-an-inverse-lorentz-transformation">4.3.4. Using an Inverse Lorentz Transformation</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">4.4. Problems</a></li>
@@ -597,8 +598,8 @@ Lorentz transformation</strong>.</p>
 </section>
 <section id="examples-of-lorentz-transformations">
 <h2><span class="section-number">4.3. </span>Examples of Lorentz Transformations<a class="headerlink" href="#examples-of-lorentz-transformations" title="Permalink to this heading">#</a></h2>
-<section id="example-4-1-transform-a-displacement-four-vector">
-<h3><span class="section-number">4.3.1. </span>Example 4.1: Transform a Displacement Four-vector<a class="headerlink" href="#example-4-1-transform-a-displacement-four-vector" title="Permalink to this heading">#</a></h3>
+<section id="transform-a-displacement-four-vector">
+<h3><span class="section-number">4.3.1. </span>Transform a Displacement Four-vector<a class="headerlink" href="#transform-a-displacement-four-vector" title="Permalink to this heading">#</a></h3>
 <p>An observer measures the 4-displacement between two events:</p>
 <div class="math notranslate nohighlight" id="equation-eqdx41">
 <span class="eqno">(4.8)<a class="headerlink" href="#equation-eqdx41" title="Permalink to this equation">#</a></span>\[\begin{split}[dR_4] =
@@ -659,8 +660,48 @@ and
 Note which minus signs are squared (and therefore go away) and which
 ones are not.  Also note that all components have units of length.</p>
 </section>
-<section id="example-4-2-angles-in-space">
-<h3><span class="section-number">4.3.2. </span>Example 4.2: Angles in Space<a class="headerlink" href="#example-4-2-angles-in-space" title="Permalink to this heading">#</a></h3>
+<section id="graphical-lorentz-transform">
+<h3><span class="section-number">4.3.2. </span>Graphical Lorentz Transform<a class="headerlink" href="#graphical-lorentz-transform" title="Permalink to this heading">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+</div>
+<figure class="align-default" id="figltrans" style="width: 800px">
+<div class="output text_html">
+        <iframe
+            width="700"
+            height="650"
+            src="https://glowscript.org/#/user/dasmith/folder/Public/program/SRTLorentTrans"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div><figcaption>
+<p><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Interactive spacetime diagram.  A displacement four vector is shown as a white
+arrow, the space component is green, and the time component is magenta.  Moving
+the slider will transform this four vector into a reference frame moving at a
+relative speed shown to the right of the slider.</span><a class="headerlink" href="#figltrans" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>It is possible, even easy, to program a computer to perform a Lorentz transformation
+on any four-vector you might like to contemplate from another inertial reference
+frame.  <a class="reference internal" href="#figltrans"><span class="std std-numref">Fig. 4.2</span></a> illustrates this process.  A displacement vector</p>
+<div class="math notranslate nohighlight" id="equation-eqdx42">
+<span class="eqno">(4.10)<a class="headerlink" href="#equation-eqdx42" title="Permalink to this equation">#</a></span>\[\begin{split}[dR_4] =
+\begin{bmatrix}
+i0.6~{\rm m}\\
+0.3~{\rm m}\\
+\end{bmatrix}\end{split}\]</div>
+<p>is shown as a white arrow when <span class="math notranslate nohighlight">\(\beta_R=0.0\)</span>.  There is a red sphere
+at <span class="math notranslate nohighlight">\([dR_4]_{red} = [i0.1~{\rm m},0.3~{\rm m}]\)</span> and a blue sphere at
+<span class="math notranslate nohighlight">\([dR_4]_{blue} = [i0.4~{\rm m},0.9~{\rm m}]\)</span>.  The displacement
+four-vector shows the displacement from red to blue.  If you move the
+slider to a different <span class="math notranslate nohighlight">\(\beta_R\)</span>, the computer will Lorentz Transform
+the four-position of each sphere and then recalculate the
+four-displacement between the red and blue events.  You should verify
+yourself in a few cases that the numbers are being calculated
+correctly.</p>
+</section>
+<section id="angles-in-space">
+<h3><span class="section-number">4.3.3. </span>Angles in Space<a class="headerlink" href="#angles-in-space" title="Permalink to this heading">#</a></h3>
 <p>Find the physical angle that the displacement given in example 4.1
 makes with respect to the <span class="math notranslate nohighlight">\(x\)</span> axis. Determine the angle as measured by
 the primed observer.</p>
@@ -683,8 +724,8 @@ This angle is in the third quadrant as both <span class="math notranslate nohigh
 Essentially, the second observer is overtaking the first, so the
 horizontal displacement flips around and points the other way.</p>
 </section>
-<section id="example-4-3-using-an-inverse-lorentz-transformation">
-<h3><span class="section-number">4.3.3. </span>Example 4.3: Using an Inverse Lorentz Transformation<a class="headerlink" href="#example-4-3-using-an-inverse-lorentz-transformation" title="Permalink to this heading">#</a></h3>
+<section id="using-an-inverse-lorentz-transformation">
+<h3><span class="section-number">4.3.4. </span>Using an Inverse Lorentz Transformation<a class="headerlink" href="#using-an-inverse-lorentz-transformation" title="Permalink to this heading">#</a></h3>
 <p>The primed observer in example 4.1 believes that the unprimed observer
 is moving with speed <span class="math notranslate nohighlight">\(v_R = 1.3\times10^8\)</span> m/s in the <span class="math notranslate nohighlight">\(-x\)</span> direction
 with respect to him. Show that this is a reasonable assumption by
@@ -696,7 +737,7 @@ the given four vectors.</p>
 <p>Going back to the transformation in example 4.1, but setting it
 up as an inverse transformation, we get:</p>
 <div class="math notranslate nohighlight" id="equation-eqinvlort">
-<span class="eqno">(4.10)<a class="headerlink" href="#equation-eqinvlort" title="Permalink to this equation">#</a></span>\[[dx_4] = {\cal L}_x(-\beta_R)[dx_4]'\]</div>
+<span class="eqno">(4.11)<a class="headerlink" href="#equation-eqinvlort" title="Permalink to this equation">#</a></span>\[[dx_4] = {\cal L}_x(-\beta_R)[dx_4]'\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{bmatrix}
 i3.00~{\rm m}\\
@@ -809,10 +850,10 @@ diagonal elements and has value of <span class="math notranslate nohighlight">\(
 elements. In general, if a matrix has an inverse, then:</p></li>
 </ol>
 <div class="math notranslate nohighlight" id="equation-unitmat">
-<span class="eqno">(4.11)<a class="headerlink" href="#equation-unitmat" title="Permalink to this equation">#</a></span>\[M^{-1} M = {\rm unit~matrix}\]</div>
+<span class="eqno">(4.12)<a class="headerlink" href="#equation-unitmat" title="Permalink to this equation">#</a></span>\[M^{-1} M = {\rm unit~matrix}\]</div>
 <p>Show that for the Lorentz transformation matrix</p>
 <div class="math notranslate nohighlight" id="equation-lunitmat">
-<span class="eqno">(4.12)<a class="headerlink" href="#equation-lunitmat" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L}_x^{-1}(\beta_R){\cal L}_x(\beta_R) =
+<span class="eqno">(4.13)<a class="headerlink" href="#equation-lunitmat" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L}_x^{-1}(\beta_R){\cal L}_x(\beta_R) =
 \begin{bmatrix}
 1 &amp; 0 &amp; 0 &amp; 0\\
 0 &amp; 1 &amp; 0 &amp; 0\\
@@ -915,9 +956,10 @@ and Lorentz’s predictions are not different.</em></p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-the-problem">4.1. Setting Up the Problem</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determining-the-elements">4.2. Determining the Elements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-lorentz-transformations">4.3. Examples of Lorentz Transformations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-1-transform-a-displacement-four-vector">4.3.1. Example 4.1: Transform a Displacement Four-vector</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-2-angles-in-space">4.3.2. Example 4.2: Angles in Space</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-3-using-an-inverse-lorentz-transformation">4.3.3. Example 4.3: Using an Inverse Lorentz Transformation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transform-a-displacement-four-vector">4.3.1. Transform a Displacement Four-vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graphical-lorentz-transform">4.3.2. Graphical Lorentz Transform</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#angles-in-space">4.3.3. Angles in Space</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-an-inverse-lorentz-transformation">4.3.4. Using an Inverse Lorentz Transformation</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">4.4. Problems</a></li>

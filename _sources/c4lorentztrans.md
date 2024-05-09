@@ -276,7 +276,7 @@ Lorentz transformation**.
 
 ## Examples of Lorentz Transformations
 
-### Example 4.1: Transform a Displacement Four-vector
+### Transform a Displacement Four-vector
 
 An observer measures the 4-displacement between two events:
 ```{math}
@@ -341,7 +341,51 @@ $$[dR_4]'^2 = (-2.85^2+(-0.34)^2+(-0.250)^2+0.00^2)~{\rm m}^2 = -7.9375~{\rm m}^
 Note which minus signs are squared (and therefore go away) and which
 ones are not.  Also note that all components have units of length.
 
-### Example 4.2: Angles in Space
+### Graphical Lorentz Transform
+
+```{code-cell}
+:tags: ["remove-input"]
+# A VPython tool to show Lorentz transformations
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRTLorentTrans"
+geroch = display.IFrame(src=url1,width=700,height=650)
+glue("LTgeneralfig",geroch, display=False)
+
+```
+
+```{glue:figure} LTgeneralfig
+:figwidth: 800px
+:name: figLTrans
+
+Interactive spacetime diagram.  A displacement four vector is shown as a white
+arrow, the space component is green, and the time component is magenta.  Moving
+the slider will transform this four vector into a reference frame moving at a
+relative speed shown to the right of the slider.
+
+```
+
+It is possible, even easy, to program a computer to perform a Lorentz transformation
+on any four-vector you might like to contemplate from another inertial reference
+frame.  {numref}`figLTrans` illustrates this process.  A displacement vector
+```{math}
+:label: eqdx42
+[dR_4] =
+\begin{bmatrix}
+i0.6~{\rm m}\\
+0.3~{\rm m}\\
+\end{bmatrix}
+```
+is shown as a white arrow when $\beta_R=0.0$.  There is a red sphere
+at $[dR_4]_{red} = [i0.1~{\rm m},0.3~{\rm m}]$ and a blue sphere at
+$[dR_4]_{blue} = [i0.4~{\rm m},0.9~{\rm m}]$.  The displacement
+four-vector shows the displacement from red to blue.  If you move the
+slider to a different $\beta_R$, the computer will Lorentz Transform
+the four-position of each sphere and then recalculate the
+four-displacement between the red and blue events.  You should verify
+yourself in a few cases that the numbers are being calculated
+correctly.
+
+
+### Angles in Space
 
 Find the physical angle that the displacement given in example 4.1
 makes with respect to the $x$ axis. Determine the angle as measured by
@@ -363,7 +407,7 @@ This angle is in the third quadrant as both $dx'$ and $dy'$ are negative.
 Essentially, the second observer is overtaking the first, so the
 horizontal displacement flips around and points the other way.
 
-### Example 4.3: Using an Inverse Lorentz Transformation
+### Using an Inverse Lorentz Transformation
 
 The primed observer in example 4.1 believes that the unprimed observer
 is moving with speed $v_R = 1.3\times10^8$ m/s in the $-x$ direction
