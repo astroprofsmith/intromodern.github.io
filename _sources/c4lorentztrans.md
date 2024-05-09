@@ -349,7 +349,7 @@ ones are not.  Also note that all components have units of length.
 :tags: ["remove-input"]
 # A VPython tool to show Lorentz transformations
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRLorentTrans"
-geroch = display.IFrame(src=url1,width=700,height=650)
+geroch = display.IFrame(src=url1,width=750,height=650)
 glue("LTgeneralfig",geroch, display=False)
 
 ```
@@ -401,11 +401,9 @@ separately.  Which method you use would be irrelevant to the output.
 
 ### Angles in Space
 
-<font color=blue>
 Find the physical angle that the displacement given in Example 4.3.1
 makes with respect to the $x$ axis. Determine the angle as measured by
 the primed observer.
-</font>
 
 In Example 4.3.1, there is a displacement four-vector with $dx=1.00$ m and
 $dy=-0.250$ m.  Trigonometry tells us that the tangent of the angle
@@ -425,7 +423,6 @@ horizontal displacement flips around and points the other way.
 
 ### Using an Inverse Lorentz Transformation
 
-<font color=blue>
 The primed observer in example 4.3.1 believes that the unprimed
 observer is moving with speed $v_R = 1.3\times10^8$ m/s in the $-x$
 direction with respect to him. Show that this is a reasonable
@@ -434,7 +431,6 @@ transformation that transform the coinponents she measured for
 $[dR4]'$ into those measured by the observer in the unprimed reference
 frame.  In other words, imagine you didn't know $\beta_R$ and find it
 from the given four vectors.
-</font>
 
 Going back to the transformation in example 4.3.1, but setting it
 up as an inverse transformation, we get:
