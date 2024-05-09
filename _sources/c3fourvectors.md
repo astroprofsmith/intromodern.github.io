@@ -253,10 +253,13 @@ together, according to the Einstein summation rule
 :label: eqSumm
 dx_\alpha dx^\alpha = dx_0dx^0 + dx_1dx^1+dx_2dx^2+dx_3dx^3
 ```
-$$dx_\alpha
-dx^\alpha = -dx^0dx^0 + dx^1dx^1+dx^2dx^2+dx^3dx^3$$ $$dx_\alpha
-dx^\alpha = -c^2dt^2 + dx^2+dy^2+dz^2$$ where in that last equation,
-the 2 does mean squared.
+```{math}
+dx_\alpha dx^\alpha = -dx^0dx^0 + dx^1dx^1+dx^2dx^2+dx^3dx^3
+```
+```{math}
+dx_\alpha dx^\alpha = -c^2dt^2 + dx^2+dy^2+dz^2
+```
+where in that last equation, the 2 does mean squared.
 
 The reason those relations work (like $dx_0=-dx^0$) is because
 $dx_\mu$ can be written as $g_{\mu\nu}dx^\nu$, where $g_{\mu\nu}$ is a
@@ -333,7 +336,7 @@ nothing in it is flat.  Furthermore, if $r\gg r_s$, that means you
 are considering space very far from the massive object, and the
 first two diagonal terms *also* approach $\pm 1$, so the spacetime
 is approximately flat far from any object (where spacetime is basically
-empty).  That hopefully makes sense.
+empty).  This will be explored more in [Chapter 14](chGRapp).
 
 However, where it gets weird is as $r$ approaches $r_s$, the terms
 deviate from $\pm 1$, indicating curved spacetime.  If $r=r_s$, you
