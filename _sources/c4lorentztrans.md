@@ -346,7 +346,7 @@ ones are not.  Also note that all components have units of length.
 ```{code-cell}
 :tags: ["remove-input"]
 # A VPython tool to show Lorentz transformations
-url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRTLorentTrans"
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRLorentTrans"
 geroch = display.IFrame(src=url1,width=700,height=650)
 glue("LTgeneralfig",geroch, display=False)
 
