@@ -65,6 +65,89 @@ on the plane as from the ground seems absurd.  However, as explained
 in [Chapter 1](chSRroots), this is what actually does happen in
 nature.
 
+## Clocks and Rulers
+
+The theory of Relativity starts with considering motion, which involves
+changes in location and time.  If we're going to compare the predictions
+of the theory with actual reality, we're going to need to make careful,
+quantitative measurements of what actually happens.  This means we need
+to be clear on what we are actually talking about when we throw words
+around like space and time (or spacetime).  To measure time and space,
+we need clocks and rulers.
+
+What makes a clock?  Think of everything you have ever heard of being
+used as a clock.  Your list might include the water clock, the
+hourglass, the sundial, the pendulum (grandfather) clock, a analog
+clock face, and an atomic clock.  Before you read any further, try to
+determine what they all have in common that makes them work as clocks.
+The answer is that they all involve repeating patterns in space.  Each
+drop of water is roughly the same as every other drop.  The hands of
+the clock return to the same positions.  The pendulum repeats its
+swing.  In so far as the pattern repeats *precisely*, it's a "good"
+clock.  If there are deviations from the pattern (the pendulum slows
+down due to friction), that makes the clock less good.  Anything that
+is a spatially repeating system can be considered a clock, and in
+fact, this is how we *define* time in the first place: when the clock
+returns to the exact same configuration, so that everything about it
+is exactly the way it was before, the one thing that is different is
+the thing that we call "time".
+
+Once you have a clock, the pattern of its repetition defines a cycle,
+and we can split that cycle up into convenient segments and assign a
+number to each one.  As the clock goes through its cycle, the numbers
+change, and any particular number is called a "clock reading".  The
+difference between any two clock readings is called a "time interval"
+or a "duration".
+
+It's important to keep these two concepts distinct, as often in casual
+language both "clock reading" and "duration" get referred to as
+"time", but they could feasibly mean very different things.  "The bus
+will come at 8:26 am" refers to a clock reading, but "the bus is
+running 17 minutes late" refers to a time interval.  We often write
+intervals with the Greek letter delta ($\Delta$), where the delta
+indicates a *difference*.  This change is *always* understood to be
+the later value minus the earlier value, so for example, a time
+interval would be the difference between two clock readings: $\Delta t
+= t_2 - t_1$.  Sometimes this can be confusing, because if the first
+clock reading happens to be zero, then the time interval happens to be
+numerically the same as the second clock reading.  The bus will come
+at a time interval of eight hours and twenty-six minutes after
+midnight.  This property of zero makes for convenient shortcuts, but
+also blurs the defintions of these two distinct concepts.
+
+Rulers are kind of the clocks of space.  In practice, a ruler is
+something that has a fixed length in space.  In so far as the length
+is not fixed, it's not a good ruler.  A rubber band does not make a
+good ruler.  However, even a steel bar will flex under stress, or
+change its length when the temperature changes.  The only way we can
+know if a ruler is still good is to compare it with some other ruler.
+If there is reliable consistency, we can trust the ruler.  Of course,
+if *all* the rulers are changing together, we would have no way of
+knowing.  Sometimes, the best way we have to make a ruler is to take
+advantage of the constancy of the speed of light (postulate two) and
+use a clock along with a pulse of light to define a distance.  This
+is, in fact, the official international way to define a meter: the
+distance light moves in $1/299792458$ of a second.
+
+Much like with clocks, once you have a ruler, you can subdivide it
+with numbered markings.  Each mark would be a ruler reading, and the
+difference between two marks would be a distance.  If you include the
+direction of the distance, then it's called a displacement.  (If I
+walk two miles, I have walked a distance of two miles, but if it's two
+miles to the East, that's a displacement.  If I walk in a circle, I
+will have a zero total displacement, but I have walked a non-zero
+distance.)
+
+Armed with (often idealized) clocks and rulers, we can define a method
+of identifying where and when something occurs in space and time by
+using clock and ruler readings.  With the concepts of duration and
+displacement, we can relate the space and time locations of two
+different occurances to each other.  Once we have that, we can start
+asking how those relationships might different from different
+perspectives.  But first, we need to be more specific about what the
+word "perspective" means -- we need to define an inertial reference
+frame.
+
 ## Inertial Reference Frames and Events
 
 The term "inertial reference frame" has come up several times already.
@@ -73,24 +156,19 @@ means.  In essence, a "reference frame" refers to a single set of
 space and time coordinates.  Pick an origin in space and time, and
 then clock readings mark locations along a time axis, and ruler
 readings mark locations along spacial axes, which usually are the
-standard cartesian x, y, and z.  Four numbers can therefore define a
+standard cartesian $x$, $y$, and $z$.  Four numbers can therefore define a
 moment location in space at a moment in time, relative to the chosen
 origin.
 
-The difference between two ruler readings along an axis is
-called a displacement (if the two points in question are not along the
-same axis, we must use the Pythagorean Theorem to find the amount of
-displacement along the diagonal, or we can express the total
-displacement as a vector with a displaceent along each axis).  The
-difference between two clock readings is called a time interval or a
-duration.  If you consider smaller and smaller durations and
-displacements, the region described by these numbers will shrink to be
-a mathematical point in space and an instantaneous moment in time.
-This is sometimes represented as a finger snap or a lightning flash,
-although in reality neither of those actions are infinitesimal in
-extent.  An infinitesimal chunk of space and time is called an
-"event".  The total collection of all events is considered to be
-"reality".
+Once we have multiple sets of four numbers, we can define
+displacements and durations.  If you consider smaller and smaller
+durations and displacements, the region described by these numbers
+will shrink to be a mathematical point in space and an instantaneous
+moment in time.  This is sometimes represented as a finger snap or a
+lightning flash, although in reality neither of those actions are
+infinitesimal in extent.  An infinitesimal chunk of space and time is
+called an "event".  The total collection of all events is considered
+to be "reality".
 
 If reality is the collection of all events that happen throughout
 space and time, the question that concerns us in this course on
