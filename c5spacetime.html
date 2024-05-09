@@ -689,23 +689,24 @@ axis, and then we will see what the math for the Lorentz
 transformation tells us.</p>
 <p>The vertical axis is all the events that occur at <span class="math notranslate nohighlight">\(x=0\)</span>.  A vertical
 worldline represents an object at rest.  Let’s say I am an observer at
-rest at the origin, so my worldline is the vertical axis.  If I switch
-into a primed reference frame moving to the right at <span class="math notranslate nohighlight">\(v_R\)</span>, each
-successive event will shift further to the left, as I pass further and
+rest at the origin, so my worldline is the vertical axis.  If I
+consider the perspective of my friend Dave, who is in a primed
+reference frame moving to the right at <span class="math notranslate nohighlight">\(v_R\)</span>, each successive event on
+my worldline will shift further to his left, as Dave moves further and
 futher to the right.  So the original axis will tilt left in the
-primed frame.  Furthermore, as I walk to the right, successive events
-that were previously to my right will now move right next to me.  If I
-draw my worldline on the original spacetime diagram, it will be a
+primed frame.  Furthermore, as Dave walks to the right, successive
+events that are to my right will now be right next to Dave.  If I were
+to draw Dave’s worldline on my spacetime diagram, it would be a
 rightward tilting line, and so this line will be the vertical axis in
-the new frame.</p>
+Dave’s primed frame.</p>
 <p>Therefore, if I want to draw the set of events on the unprimed frame
 that will be the vertical axis in a primed frame, I will draw a tilted
-axis with a slope of <span class="math notranslate nohighlight">\(1/\beta_R\)</span>.  My speed is distance over time, but
-the spacetime diagram puts time on the vertical axis, so “rise over
-run” implies a slope of one over speed.  The faster the relative speed
-of the primed frame, the more tilted the new axis line will be, up to
-a speed (and therefore slope) of 1, since I can’t go faster than
-light.</p>
+axis with a slope of <span class="math notranslate nohighlight">\(1/\beta_R\)</span>.  Dave’s (relative) speed is distance
+over time, but the spacetime diagram puts time on the vertical axis,
+so “rise over run” implies a slope of one over speed.  The faster the
+relative speed of the primed frame, the more tilted the new axis line
+will be, up to a speed (and therefore slope) of 1, since Dave can’t go
+faster than light.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>I stress that this axis is only tilted in the original, unprimed,
@@ -950,8 +951,9 @@ object at rest.  Then the magenta sphere and the blue sphere are in
 the same place, and are separated from the cyan sphere by the same
 spatial distance.  However, the cyan and blue events are simultaneous,
 so we define the length of the object by the locations in space of
-these events.  The magenta event is the same distance away, and therefore
-also measures the length of the object.</p>
+these events.  The magenta event is the same distance away from the
+cyan event as the blue event, and therefore its location on the
+horizontal also measures the length of the object.</p>
 <p>If you increase the relative speed <span class="math notranslate nohighlight">\(\beta_R\)</span> to about <span class="math notranslate nohighlight">\(0.67\)</span>, you will
 see that although the blue event is much further away, it also happens
 much earlier than the cyan event.  The spatial displacement between
@@ -1071,12 +1073,18 @@ i\sinh{\phi} &amp; \cosh{\phi} &amp; 0&amp; 0\\
 0 &amp; 0 &amp; 1 &amp; 0\\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{bmatrix}\end{split}\]</div>
-<p>If you compare Equation <a class="reference internal" href="#equation-lortrapid">(5.9)</a> and <a class="reference internal" href="#equation-normalrot">(5.5)</a>, you can see that
-except for the hyperbolic part, and the <span class="math notranslate nohighlight">\(i\)</span>, they look very similar (and in Einstein
-notation, you leave out the <span class="math notranslate nohighlight">\(i\)</span>, as well).
-This means, in a very real but very odd sense, changing speeds actually rotates
-space and time into each other, in much the same way that rotating axes rotates
-<span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> into each other.</p>
+<p>If you compare Equation <a class="reference internal" href="#equation-lortrapid">(5.9)</a> and <a class="reference internal" href="#equation-normalrot">(5.5)</a>, you can
+see that except for the hyperbolic part, and the <span class="math notranslate nohighlight">\(i\)</span>, they look very
+similar (and in Einstein notation, you leave out the <span class="math notranslate nohighlight">\(i\)</span>, as well).
+This means, in a very real but very odd sense, changing speeds
+actually rotates space and time into each other, in much the same way
+that rotating axes rotates <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> into each other.  Four-vectors
+maintain the same “size” in this rotation, but how much of it is space
+and how much of it is time will change.  We’ll come back to this again
+in <a class="reference internal" href="c7velocity.html#ch4vel"><span class="std std-ref">Chapter 7</span></a>, when we explore the four-velocity.  The
+overall size of the velocity stays the same (the speed of light), but
+if you change your relative speed of your reference frame, you rotate
+how much of that velocity is through space, and how much through time.</p>
 <p>The letter <span class="math notranslate nohighlight">\(\phi\)</span> in these equations is called the “rapidity”, and it depends on
 <span class="math notranslate nohighlight">\(\beta\)</span> as</p>
 <div class="math notranslate nohighlight" id="equation-rapidity">
@@ -1099,7 +1107,8 @@ successive Lorentz transformations, if you write them like Equation
 <a class="reference internal" href="#equation-lortrapid">(5.9)</a>, work out to a single Lorentz transformation using the
 sum of the rapidities of the two original transformations: <span class="math notranslate nohighlight">\({\cal
 L}_x(\phi_1) {\cal L}_x(\phi_2) = {\cal L}_x(\phi_1+\phi_2)\)</span>.  This
-could save a lot of number crunching.</p>
+could save a lot of number crunching, as the Lorentz matrices do NOT
+add this simply if you use <span class="math notranslate nohighlight">\(\beta\)</span> and <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
 </section>
 <section id="problems">
 <h2><span class="section-number">5.7. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>

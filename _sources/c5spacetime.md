@@ -400,24 +400,25 @@ transformation tells us.
 
 The vertical axis is all the events that occur at $x=0$.  A vertical
 worldline represents an object at rest.  Let's say I am an observer at
-rest at the origin, so my worldline is the vertical axis.  If I switch
-into a primed reference frame moving to the right at $v_R$, each
-successive event will shift further to the left, as I pass further and
+rest at the origin, so my worldline is the vertical axis.  If I
+consider the perspective of my friend Dave, who is in a primed
+reference frame moving to the right at $v_R$, each successive event on
+my worldline will shift further to his left, as Dave moves further and
 futher to the right.  So the original axis will tilt left in the
-primed frame.  Furthermore, as I walk to the right, successive events
-that were previously to my right will now move right next to me.  If I
-draw my worldline on the original spacetime diagram, it will be a
+primed frame.  Furthermore, as Dave walks to the right, successive
+events that are to my right will now be right next to Dave.  If I were
+to draw Dave's worldline on my spacetime diagram, it would be a
 rightward tilting line, and so this line will be the vertical axis in
-the new frame.
+Dave's primed frame.
 
 Therefore, if I want to draw the set of events on the unprimed frame
 that will be the vertical axis in a primed frame, I will draw a tilted
-axis with a slope of $1/\beta_R$.  My speed is distance over time, but
-the spacetime diagram puts time on the vertical axis, so "rise over
-run" implies a slope of one over speed.  The faster the relative speed
-of the primed frame, the more tilted the new axis line will be, up to
-a speed (and therefore slope) of 1, since I can't go faster than
-light.
+axis with a slope of $1/\beta_R$.  Dave's (relative) speed is distance
+over time, but the spacetime diagram puts time on the vertical axis,
+so "rise over run" implies a slope of one over speed.  The faster the
+relative speed of the primed frame, the more tilted the new axis line
+will be, up to a speed (and therefore slope) of 1, since Dave can't go
+faster than light.
 
 ```{warning}
 I stress that this axis is only tilted in the original, unprimed,
@@ -681,8 +682,9 @@ object at rest.  Then the magenta sphere and the blue sphere are in
 the same place, and are separated from the cyan sphere by the same
 spatial distance.  However, the cyan and blue events are simultaneous,
 so we define the length of the object by the locations in space of
-these events.  The magenta event is the same distance away, and therefore
-also measures the length of the object.
+these events.  The magenta event is the same distance away from the
+cyan event as the blue event, and therefore its location on the
+horizontal also measures the length of the object.
 
 If you increase the relative speed $\beta_R$ to about $0.67$, you will
 see that although the blue event is much further away, it also happens
@@ -818,12 +820,18 @@ i\sinh{\phi} & \cosh{\phi} & 0& 0\\
 0 & 0 & 0 & 1
 \end{bmatrix}
 ```
-If you compare Equation {eq}`lortrapid` and {eq}`normalrot`, you can see that
-except for the hyperbolic part, and the $i$, they look very similar (and in Einstein
-notation, you leave out the $i$, as well).
-This means, in a very real but very odd sense, changing speeds actually rotates
-space and time into each other, in much the same way that rotating axes rotates
-$x$ and $y$ into each other.
+If you compare Equation {eq}`lortrapid` and {eq}`normalrot`, you can
+see that except for the hyperbolic part, and the $i$, they look very
+similar (and in Einstein notation, you leave out the $i$, as well).
+This means, in a very real but very odd sense, changing speeds
+actually rotates space and time into each other, in much the same way
+that rotating axes rotates $x$ and $y$ into each other.  Four-vectors
+maintain the same "size" in this rotation, but how much of it is space
+and how much of it is time will change.  We'll come back to this again
+in [Chapter 7](ch4vel), when we explore the four-velocity.  The
+overall size of the velocity stays the same (the speed of light), but
+if you change your relative speed of your reference frame, you rotate
+how much of that velocity is through space, and how much through time.
 
 The letter $\phi$ in these equations is called the "rapidity", and it depends on
 $\beta$ as
@@ -851,7 +859,9 @@ successive Lorentz transformations, if you write them like Equation
 {eq}`lortrapid`, work out to a single Lorentz transformation using the
 sum of the rapidities of the two original transformations: ${\cal
 L}_x(\phi_1) {\cal L}_x(\phi_2) = {\cal L}_x(\phi_1+\phi_2)$.  This
-could save a lot of number crunching.
+could save a lot of number crunching, as the Lorentz matrices do NOT
+add this simply if you use $\beta$ and $\gamma$.
+
 
 ## Problems
 
