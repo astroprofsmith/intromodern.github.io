@@ -328,20 +328,18 @@ g_{\mu\nu} =
 0&0&0&r^2\sin^2{\theta}
 \end{bmatrix}
 ```
-The term $r_s$ depends on the mass of the object, so if you set
-the mass to zero, then the first two diagonal terms reduce to $\pm 1$,
-and the space is flat (the last two diagonal terms are
-how you write flat space in spherical coordinates).  Spacetime with
-nothing in it is flat.  Furthermore, if $r\gg r_s$, that means you
-are considering space very far from the massive object, and the
-first two diagonal terms *also* approach $\pm 1$, so the spacetime
-is approximately flat far from any object (where spacetime is basically
-empty).  This will be explored more in [Chapter 14](chGRapp).
-
-However, where it gets weird is as $r$ approaches $r_s$, the terms
-deviate from $\pm 1$, indicating curved spacetime.  If $r=r_s$, you
-can see that the second diagonal term blows up, because there's a zero
-in the denominator.  This is the event horizon of a black hole.
+The term $r_s$ depends on the mass of the object, so if you set the
+mass to zero, then the first two diagonal terms reduce to $\pm 1$, and
+the space is flat (the last two diagonal terms are how you write flat
+space in spherical coordinates).  Spacetime with nothing in it is
+flat.  Furthermore, if $r\gg r_s$, that means you are considering
+space very far from the massive object, and the first two diagonal
+terms *also* approach $\pm 1$, so the spacetime is approximately flat
+far from any object (where spacetime is basically empty).  However,
+where it gets weird is as $r$ approaches $r_s$, the terms deviate from
+$\pm 1$, indicating curved spacetime.  If $r=r_s$, you can see that
+the second diagonal term blows up, because there's a zero in the
+denominator.  This is the event horizon of a black hole.
 
 As you might guess from the last example, the metric becomes the
 foundation of General Relativity -- the most important equation in GR
@@ -349,7 +347,8 @@ is called "Einstein's Equation", and it tells you how the metric
 changes in the presence of mass, energy, and even pressure, and the
 shape of the metric tells you what gravity will be like in that area.
 The Schwartzschild Metric is the solution to Einstein's Equation under
-the condition of a point mass at the origin.
+the condition of a point mass at the origin.  This will be explored
+more in [Chapter 14](chGRapp).
 
 Many people currently working in the field are skipping the $i$ method
 altogether and going right to this notation from the beginning,
@@ -403,10 +402,16 @@ this turns the dimensions of the axis from time into space, which
 allows it to have the same scale as the horizontal axis.  This makes
 it possible to compare lengths on both axes, which otherwise would
 have different dimensions and therefore be incomparable (which is
-bigger, one second or one meter?).  Second, the displacement four vector
-has a time component of $cdt$, so having the $c$ included in the axis
-means that distances on the diagram can accurately represent the
-components of the displacement four-vector.
+bigger, one second or one meter?).  Second, the displacement four
+vector has a time component of $cdt$, so having the $c$ included in
+the axis means that distances on the diagram can accurately represent
+the components of the displacement four-vector.
+
+Experts in the field avoid the whole issue by using units where $c=1$.
+Then you can leave out the $c$ altogether, since multiplying anything
+by 1 leaves it unchanged (and it saves writing to leave it out).  I
+will leave the $c$ in most of the time, as its absence tends to
+confuse the beginner.
 
 ```{code-cell}
 :tags: ["remove-input"]
@@ -449,14 +454,14 @@ real object can move.
 
 We'll explore the implications of these properties more in the next
 chapter.  For now, it is sufficient to note that we can define a
-displacement four-vector between two dots on a spacetime diagram, and
-that the components of this four vector represent horizontal and
-vertical sides of that triangle.  Be aware, however, that although
-this looks exactly like a triangle, that pesky minus sign is still
-there, which means the "size" of the hypoteneuse is not constrained to
-be positive, as it would with a normal triangle!  If the sides are
-both equal to $dx$ ($cdt=dx$, or $dx/dt=c$), the "length" is zero, not
-$dx\sqrt{2}$.
+displacement four-vector between two dots on a spacetime diagram
+(shown in {numref}`spacetimefig`), and that the components of this
+four vector represent horizontal and vertical sides of that triangle.
+Be aware, however, that although this looks exactly like a triangle,
+that pesky minus sign is still there, which means the "size" of the
+hypoteneuse is not constrained to be positive, as it would with a
+normal triangle!  If the sides are both equal to $dx$ ($cdt=dx$, or
+$dx/dt=c$), the "length" is zero, not $dx\sqrt{2}$.
 
 Much of special relativity amounts to comparing a set of observations
 in one reference frame to that of a second reference frame moving
@@ -468,7 +473,9 @@ lie in a different direction than the relative velocity, that will
 make the math more complicated, so always make sure to draw a picture
 before you start doing math, to make sure the equations actually match
 the setup.  {numref}`yerbasicST` shows the standard way to represent
-two spacetime diagrams in relative motion.
+two spacetime diagrams in relative motion.  All the equations we will
+develop take this diagram as the starting point and the definition of
+the variables involved.
 
 ```{code-cell}
 :tags: ["remove-cell"]
@@ -522,15 +529,16 @@ displacement 4-vector as shown in Equation {eq}`eqdx4`.
 
 ### Muon Decay
 
-For example, consider the following interesting happening. A pion is
-traveling along in a bubble chamber, leaving a track of bubbles. At
-some time and place, it decays into a muon. I know that something
-happens because the track of bubbles changes direction. The muon moves
-on for a while and then decays into an electron. Again, I know this
-happens because the bubble track changes direction. The two events are
-the change in direction of the tracks as shown in {numref}`muonfig`.  Note
-that the figure on the left is a diagram of what happens in space, while
-the figure on the right is a spacetime diagram!
+For example, consider the following sequence of events: I am watching
+a pion travel along in a bubble chamber, leaving a track of
+bubbles. At some time and place, it decays into a muon. I know that
+something happens at that moment because the track of bubbles changes
+direction. The muon moves on for a while and then decays into an
+electron. Again, I know this happens because the bubble track changes
+direction. The two events are the change in direction of the tracks as
+shown in {numref}`muonfig`.  Note that the figure on the left is a
+diagram of what happens in space, while the figure on the right is a
+spacetime diagram!
 
 ```{code-cell}
 :tags: ["remove-cell"]
@@ -619,14 +627,14 @@ between these two observers is just the speed of the space ship in the
 direction of Alpha Centauri. The events can be diagrammed as shown in
 {numref}`shipfig`.
 
-An observer that is at rest with respect to the earth will measure
+An observer that is at rest with respect to the Earth will measure
 (evenually -- once all the rulers and clocks are returned and
 collated) a physical displacement in the $x$-direction of the distance
-between earth and Alpha Centauri: 4.2 light years. There will be no
+between the Earth and Alpha Centauri: 4.2 light years. There will be no
 physical displacement in the $y$ or $z$ directions. There will be some
-time interval $dt_\oplus$ that the earth based observer will measure
+time interval $dt_\oplus$ that the Earth-based observer will measure
 for the trip. Since we know the velocity that the space is traveling
-with respect to the earth, the time it takes to get to the star in the
+with respect to the Earth, the time it takes to get to the star in the
 Earth's reference frame is $$dt_\oplus = \frac{dx_\oplus}{v_{\rm
 rocket}} = \frac{4.2~{\rm LY}}{0.75c} \rightarrow cdt_\oplus =
 5.6~{\rm LY}$$ Note that $cdt_\oplus$ has units of length.

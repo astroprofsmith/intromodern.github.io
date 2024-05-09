@@ -140,6 +140,30 @@ miles to the East, that's a displacement.  If I walk in a circle and
 return to where I started, I will have a zero total displacement, but
 I have walked a non-zero distance.)
 
+The most important implication of these definitions that you should
+understand is that these *are* the definitions of space and time.
+Time is not some abstract thing that is "out there", independent of
+the clock measurement.  It *is* the clock measurement.  This is one of
+the biggest mental leaps that relativity demands.  Secondly, this
+definition makes a clock like an odometer for time.  There is no
+reason to expect different clocks that are doing different things to
+*necessarily* measure the same time intervals.  Two clocks that travel
+different paths between the same two events might well measure
+different time intervals between those two events, much like two cars
+that drive different routes between two cities might well show
+different changes on their odometers.  A table does not have a
+property called "length", independent of how you measure it.  You will
+see in later chapters that different procedures for measuring length
+will generate different results, without any of them necessarily being
+"wrong".  In most cases, the discrepencies aren't noticiable unless
+there are speeds involved that are near the speed of light.  This is
+why we fall into the trap of thinking that the quantities like
+"length" or "time interval" have some inherently existing value, which
+we just happen to be measuring.  If you can make the mental jump that
+the measurements define the quantities; that the quantities don't
+exist out there independent of the measurements, that will help you
+understand some of the implications later that seem like paradoxes.
+
 Armed with (often idealized) clocks and rulers, we can define a method
 of identifying where and when something occurs in space and time by
 using clock and ruler readings.  With the concepts of duration and

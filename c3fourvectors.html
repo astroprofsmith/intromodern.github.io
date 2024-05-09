@@ -678,26 +678,26 @@ around a spherically symmetric massive object, for example (called
 0&amp;0&amp;r^2&amp;0\\
 0&amp;0&amp;0&amp;r^2\sin^2{\theta}
 \end{bmatrix}\end{split}\]</div>
-<p>The term <span class="math notranslate nohighlight">\(r_s\)</span> depends on the mass of the object, so if you set
-the mass to zero, then the first two diagonal terms reduce to <span class="math notranslate nohighlight">\(\pm 1\)</span>,
-and the space is flat (the last two diagonal terms are
-how you write flat space in spherical coordinates).  Spacetime with
-nothing in it is flat.  Furthermore, if <span class="math notranslate nohighlight">\(r\gg r_s\)</span>, that means you
-are considering space very far from the massive object, and the
-first two diagonal terms <em>also</em> approach <span class="math notranslate nohighlight">\(\pm 1\)</span>, so the spacetime
-is approximately flat far from any object (where spacetime is basically
-empty).  This will be explored more in <a class="reference internal" href="c14applGR.html#chgrapp"><span class="std std-ref">Chapter 14</span></a>.</p>
-<p>However, where it gets weird is as <span class="math notranslate nohighlight">\(r\)</span> approaches <span class="math notranslate nohighlight">\(r_s\)</span>, the terms
-deviate from <span class="math notranslate nohighlight">\(\pm 1\)</span>, indicating curved spacetime.  If <span class="math notranslate nohighlight">\(r=r_s\)</span>, you
-can see that the second diagonal term blows up, because there’s a zero
-in the denominator.  This is the event horizon of a black hole.</p>
+<p>The term <span class="math notranslate nohighlight">\(r_s\)</span> depends on the mass of the object, so if you set the
+mass to zero, then the first two diagonal terms reduce to <span class="math notranslate nohighlight">\(\pm 1\)</span>, and
+the space is flat (the last two diagonal terms are how you write flat
+space in spherical coordinates).  Spacetime with nothing in it is
+flat.  Furthermore, if <span class="math notranslate nohighlight">\(r\gg r_s\)</span>, that means you are considering
+space very far from the massive object, and the first two diagonal
+terms <em>also</em> approach <span class="math notranslate nohighlight">\(\pm 1\)</span>, so the spacetime is approximately flat
+far from any object (where spacetime is basically empty).  However,
+where it gets weird is as <span class="math notranslate nohighlight">\(r\)</span> approaches <span class="math notranslate nohighlight">\(r_s\)</span>, the terms deviate from
+<span class="math notranslate nohighlight">\(\pm 1\)</span>, indicating curved spacetime.  If <span class="math notranslate nohighlight">\(r=r_s\)</span>, you can see that
+the second diagonal term blows up, because there’s a zero in the
+denominator.  This is the event horizon of a black hole.</p>
 <p>As you might guess from the last example, the metric becomes the
 foundation of General Relativity – the most important equation in GR
 is called “Einstein’s Equation”, and it tells you how the metric
 changes in the presence of mass, energy, and even pressure, and the
 shape of the metric tells you what gravity will be like in that area.
 The Schwartzschild Metric is the solution to Einstein’s Equation under
-the condition of a point mass at the origin.</p>
+the condition of a point mass at the origin.  This will be explored
+more in <a class="reference internal" href="c14applGR.html#chgrapp"><span class="std std-ref">Chapter 14</span></a>.</p>
 <p>Many people currently working in the field are skipping the <span class="math notranslate nohighlight">\(i\)</span> method
 altogether and going right to this notation from the beginning,
 because it is absolutely necessary in GR, but I am going to stick with
@@ -747,10 +747,15 @@ this turns the dimensions of the axis from time into space, which
 allows it to have the same scale as the horizontal axis.  This makes
 it possible to compare lengths on both axes, which otherwise would
 have different dimensions and therefore be incomparable (which is
-bigger, one second or one meter?).  Second, the displacement four vector
-has a time component of <span class="math notranslate nohighlight">\(cdt\)</span>, so having the <span class="math notranslate nohighlight">\(c\)</span> included in the axis
-means that distances on the diagram can accurately represent the
-components of the displacement four-vector.</p>
+bigger, one second or one meter?).  Second, the displacement four
+vector has a time component of <span class="math notranslate nohighlight">\(cdt\)</span>, so having the <span class="math notranslate nohighlight">\(c\)</span> included in
+the axis means that distances on the diagram can accurately represent
+the components of the displacement four-vector.</p>
+<p>Experts in the field avoid the whole issue by using units where <span class="math notranslate nohighlight">\(c=1\)</span>.
+Then you can leave out the <span class="math notranslate nohighlight">\(c\)</span> altogether, since multiplying anything
+by 1 leaves it unchanged (and it saves writing to leave it out).  I
+will leave the <span class="math notranslate nohighlight">\(c\)</span> in most of the time, as its absence tends to
+confuse the beginner.</p>
 <div class="cell tag_remove-input docutils container">
 </div>
 <figure class="align-default" id="spacetimefig" style="width: 800px">
@@ -793,14 +798,14 @@ have is 1, since that would imply <span class="math notranslate nohighlight">\(1
 real object can move.</p>
 <p>We’ll explore the implications of these properties more in the next
 chapter.  For now, it is sufficient to note that we can define a
-displacement four-vector between two dots on a spacetime diagram, and
-that the components of this four vector represent horizontal and
-vertical sides of that triangle.  Be aware, however, that although
-this looks exactly like a triangle, that pesky minus sign is still
-there, which means the “size” of the hypoteneuse is not constrained to
-be positive, as it would with a normal triangle!  If the sides are
-both equal to <span class="math notranslate nohighlight">\(dx\)</span> (<span class="math notranslate nohighlight">\(cdt=dx\)</span>, or <span class="math notranslate nohighlight">\(dx/dt=c\)</span>), the “length” is zero, not
-<span class="math notranslate nohighlight">\(dx\sqrt{2}\)</span>.</p>
+displacement four-vector between two dots on a spacetime diagram
+(shown in <a class="reference internal" href="#spacetimefig"><span class="std std-numref">Fig. 3.1</span></a>), and that the components of this
+four vector represent horizontal and vertical sides of that triangle.
+Be aware, however, that although this looks exactly like a triangle,
+that pesky minus sign is still there, which means the “size” of the
+hypoteneuse is not constrained to be positive, as it would with a
+normal triangle!  If the sides are both equal to <span class="math notranslate nohighlight">\(dx\)</span> (<span class="math notranslate nohighlight">\(cdt=dx\)</span>, or
+<span class="math notranslate nohighlight">\(dx/dt=c\)</span>), the “length” is zero, not <span class="math notranslate nohighlight">\(dx\sqrt{2}\)</span>.</p>
 <p>Much of special relativity amounts to comparing a set of observations
 in one reference frame to that of a second reference frame moving
 relative to the first.  By convention, we usually define the <span class="math notranslate nohighlight">\(x\)</span> axis
@@ -811,7 +816,9 @@ lie in a different direction than the relative velocity, that will
 make the math more complicated, so always make sure to draw a picture
 before you start doing math, to make sure the equations actually match
 the setup.  <a class="reference internal" href="#yerbasicst"><span class="std std-numref">Fig. 3.2</span></a> shows the standard way to represent
-two spacetime diagrams in relative motion.</p>
+two spacetime diagrams in relative motion.  All the equations we will
+develop take this diagram as the starting point and the definition of
+the variables involved.</p>
 <figure class="align-default" id="yerbasicst" style="width: 800px">
 <img alt="_images/3b364438442bd3d8e5c617076cc9ca5090d8f9f5b48d9e0d14a2f50674308940.png" src="_images/3b364438442bd3d8e5c617076cc9ca5090d8f9f5b48d9e0d14a2f50674308940.png" />
 <figcaption>
@@ -836,15 +843,16 @@ between the two events and converts them into the components of the
 displacement 4-vector as shown in Equation <a class="reference internal" href="#equation-eqdx4">(3.1)</a>.</p>
 <section id="muon-decay">
 <h3><span class="section-number">3.3.1. </span>Muon Decay<a class="headerlink" href="#muon-decay" title="Permalink to this heading">#</a></h3>
-<p>For example, consider the following interesting happening. A pion is
-traveling along in a bubble chamber, leaving a track of bubbles. At
-some time and place, it decays into a muon. I know that something
-happens because the track of bubbles changes direction. The muon moves
-on for a while and then decays into an electron. Again, I know this
-happens because the bubble track changes direction. The two events are
-the change in direction of the tracks as shown in <a class="reference internal" href="#muonfig"><span class="std std-numref">Fig. 3.3</span></a>.  Note
-that the figure on the left is a diagram of what happens in space, while
-the figure on the right is a spacetime diagram!</p>
+<p>For example, consider the following sequence of events: I am watching
+a pion travel along in a bubble chamber, leaving a track of
+bubbles. At some time and place, it decays into a muon. I know that
+something happens at that moment because the track of bubbles changes
+direction. The muon moves on for a while and then decays into an
+electron. Again, I know this happens because the bubble track changes
+direction. The two events are the change in direction of the tracks as
+shown in <a class="reference internal" href="#muonfig"><span class="std std-numref">Fig. 3.3</span></a>.  Note that the figure on the left is a
+diagram of what happens in space, while the figure on the right is a
+spacetime diagram!</p>
 <figure class="align-default" id="muonfig" style="width: 800px">
 <img alt="_images/538b4421b5af9122464200d66b0898194e3209b9c22184361808ad8218d254e5.png" src="_images/538b4421b5af9122464200d66b0898194e3209b9c22184361808ad8218d254e5.png" />
 <figcaption>
@@ -900,14 +908,14 @@ from earth and the arrival at alpha centauri. The relative speed
 between these two observers is just the speed of the space ship in the
 direction of Alpha Centauri. The events can be diagrammed as shown in
 <a class="reference internal" href="#shipfig"><span class="std std-numref">Fig. 3.4</span></a>.</p>
-<p>An observer that is at rest with respect to the earth will measure
+<p>An observer that is at rest with respect to the Earth will measure
 (evenually – once all the rulers and clocks are returned and
 collated) a physical displacement in the <span class="math notranslate nohighlight">\(x\)</span>-direction of the distance
-between earth and Alpha Centauri: 4.2 light years. There will be no
+between the Earth and Alpha Centauri: 4.2 light years. There will be no
 physical displacement in the <span class="math notranslate nohighlight">\(y\)</span> or <span class="math notranslate nohighlight">\(z\)</span> directions. There will be some
-time interval <span class="math notranslate nohighlight">\(dt_\oplus\)</span> that the earth based observer will measure
+time interval <span class="math notranslate nohighlight">\(dt_\oplus\)</span> that the Earth-based observer will measure
 for the trip. Since we know the velocity that the space is traveling
-with respect to the earth, the time it takes to get to the star in the
+with respect to the Earth, the time it takes to get to the star in the
 Earth’s reference frame is <div class="math notranslate nohighlight">
 \[dt_\oplus = \frac{dx_\oplus}{v_{\rm
 rocket}} = \frac{4.2~{\rm LY}}{0.75c} \rightarrow cdt_\oplus =
@@ -929,8 +937,8 @@ in the same place.</span><a class="headerlink" href="#shipfig" title="Permalink 
 </figure>
 <p>We can therefore write a displacement four vector in the reference
 frame at rest with respect to the Earth:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f44ebb46-335b-4c4b-851f-bef7cf558242">
-<span class="eqno">(3.10)<a class="headerlink" href="#equation-f44ebb46-335b-4c4b-851f-bef7cf558242" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-16c0231f-7fb2-43c0-9b62-0c22b721f4ff">
+<span class="eqno">(3.10)<a class="headerlink" href="#equation-16c0231f-7fb2-43c0-9b62-0c22b721f4ff" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_\oplus =
 \begin{bmatrix}
 icdt_\oplus\\
@@ -954,8 +962,8 @@ aboard the space craft will measure some time interval, <span class="math notran
 between the time he sees the earth outside of his window and sees
 alpha centauri outside the window. The observer aboard the space craft
 measures a displacement 4-vector:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a3ebf2b2-074d-45b5-a94d-bcce47e0ff54">
-<span class="eqno">(3.11)<a class="headerlink" href="#equation-a3ebf2b2-074d-45b5-a94d-bcce47e0ff54" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-7330d554-89d2-409a-8014-0330e3cf5d2c">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-7330d554-89d2-409a-8014-0330e3cf5d2c" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm rocket} =
 \begin{bmatrix}
 icdt_{\rm rocket}\\
@@ -972,13 +980,13 @@ nothing to do with the first observer being physically <strong>on</strong> the E
 the <span class="math notranslate nohighlight">\(dt_\oplus\)</span> is measured by the infinite lattice of clocks at
 rest with respect to the Earth.</p>
 <p>The sizes of the two four vectors are:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5a7f5169-d7cb-4f9d-a555-99d85160a5d4">
-<span class="eqno">(3.12)<a class="headerlink" href="#equation-5a7f5169-d7cb-4f9d-a555-99d85160a5d4" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-0cca135a-db4c-47c6-9c95-227a23b71f30">
+<span class="eqno">(3.12)<a class="headerlink" href="#equation-0cca135a-db4c-47c6-9c95-227a23b71f30" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dx_\oplus^2 - (cdt_\oplus)^2 = -(cdt_{\rm rocket})^2
 \end{equation}\]</div>
 <p>Solve for <span class="math notranslate nohighlight">\(dt_{\rm rocket}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-07c1c735-ce50-4941-b3dd-076b5c4e97db">
-<span class="eqno">(3.13)<a class="headerlink" href="#equation-07c1c735-ce50-4941-b3dd-076b5c4e97db" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c09bade5-396d-48c2-be56-a1ea0efcedb3">
+<span class="eqno">(3.13)<a class="headerlink" href="#equation-c09bade5-396d-48c2-be56-a1ea0efcedb3" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dt_{\rm rocket} = dt_\oplus\sqrt{1-\left(\frac{dx_\oplus}{cdt_\oplus}\right)^2}
 = dt_\oplus \sqrt{1-\beta^2}
 \end{equation}\]</div>
@@ -1175,8 +1183,8 @@ The reference frame at rest with respect to the ground is the unprimed
 frame on the left.  The red dot is the emission of the light and the
 blue dot is the detection of the light.  The displacement four vector
 in the train frame would be:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-29173c8c-4b28-453f-9c46-9d333a7d9794">
-<span class="eqno">(3.17)<a class="headerlink" href="#equation-29173c8c-4b28-453f-9c46-9d333a7d9794" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-f2844538-a5b5-47d4-bbf2-0b992dc7d15e">
+<span class="eqno">(3.17)<a class="headerlink" href="#equation-f2844538-a5b5-47d4-bbf2-0b992dc7d15e" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm train} =
 \begin{bmatrix}
 icdt_0\\
@@ -1186,8 +1194,8 @@ icdt_0\\
 \end{bmatrix}
 \end{equation}\]</div>
 <p>while the displacement four vector from the ground’s reference frame is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cf3bdfb0-a629-459c-a7e8-c86d2c9b5785">
-<span class="eqno">(3.18)<a class="headerlink" href="#equation-cf3bdfb0-a629-459c-a7e8-c86d2c9b5785" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-34cb4f5c-0d26-4c01-a193-6074732fcd20">
+<span class="eqno">(3.18)<a class="headerlink" href="#equation-34cb4f5c-0d26-4c01-a193-6074732fcd20" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm ground} =
 \begin{bmatrix}
 icdt\\
