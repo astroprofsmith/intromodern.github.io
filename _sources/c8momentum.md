@@ -30,8 +30,8 @@ transformation and to the velocity 4-vector. These quantities can be
 used to locate objects and determine their motion. Borrowing an idea
 introduced by Newton to predict the behavior of dynamical systems, we
 introduce the momentum 4-vector. The 4-velocity is a proper 4-vector
-in that its compo- nents in two different reference frames are related
-by the Lorentz transfor- mation, and its size is a Lorentz scalar as
+in that its components in two different reference frames are related
+by the Lorentz transformation, and its size is a Lorentz scalar as
 demanded by the Michelson- Morley experiment.
 
 
@@ -266,14 +266,17 @@ and $\gamma m_0 c^2$ becomes approximately
 \gamma m_0 c^2 \approx \left(1+\frac{1}{2}\beta^2\right) m_0 c^2
 = m_0c^2 + \frac{1}{2}m_0 v^2
 ```
-The last term on the right is recognizable as Newton's definition
-of the kinetic energy of the particle. The dimensions of all the terms
-in Equation {eq}`totalEexp` are energy.  As the velocity becomes exactly
-equal to 0, the term on the right (and all the terms in the expansion,
-of course) disappear, but there still is a term left in this 'energy'
-equation.  The term $m_0 c^2$ can therefore be interpreted as an energy
-associated with the particle when it is at rest.  This is of course the
-rest energy of the particle, giving rise to that most famous of equations,
+The last term on the right is recognizable as definition of the
+kinetic energy of the particle, according to Newtonian mechanics. The
+dimensions of all the terms in Equation {eq}`totalEexp` are energy.
+As the velocity becomes exactly equal to 0, the term on the right (and
+all the terms in the expansion, of course) disappear, but there still
+is a term left in this 'energy' equation.
+
+The term $m_0 c^2$ can therefore be interpreted as an energy
+associated with the particle when it is at rest.  This we therefore
+dub the rest energy of the particle, giving rise to that most famous
+of equations,
 ```{math}
 :label: emc2
 \boxed{
@@ -293,14 +296,15 @@ than light.  It would take an infinite amount of energy.
 
 
 ```{note}
-How did Newton miss the rest energy of a particle? The rest energy of
-a person with a (rest) mass of 100 kg is $E =100~{\rm
-kg}(3\times10^8~{\rm m/s})^2 = 9\times10^{18}$ joules.  This is an
-unbelievably large number.  The total yearly electrical demand of the
-entire US is on the order of $10^{19}$ joules (according to the
+
+How did people for centuries not notice the rest energy of a particle?
+The rest energy of a person with a (rest) mass of 100 kg is $E
+=100~{\rm kg}(3\times10^8~{\rm m/s})^2 = 9\times10^{18}$ joules.  This
+is an unbelievably large number.  The total yearly electrical demand
+of the entire US is on the order of $10^{19}$ joules (according to the
 [EIA](https://www.eia.gov/electricity/annual/html/epa_01_02.html)).
-This is about the same order of magnitude!!!  Two reasons Newton
-didn't notice this massive amount of energy.  Most importantly, only a
+This is about the same order of magnitude!!!  Two reasons nobody
+noticed this massive amount of energy.  Most importantly, only a
 change in energy is connected with anything happening.  Energy that
 doesn't change has no measurable implications, so you would never know
 it was there.  Secondly, a 100 kg person does not just vanish, in
@@ -313,18 +317,18 @@ changed.  I even hear people today talk about a "Law of Conservation
 of Mass," even though there is no such law.  Mass can and does change,
 freeing up that rest energy to be associate with motion.  This energy
 is the cause of making the Sun shine, nuclear power plants, or nuclear
-bombs.  Mass is most definitely not conserved, but Isaac Newton had no
-idea.
+bombs.  Mass is most definitely not conserved.
+
 ```
 
-If the total energy $\gamma m_0 c^2$ is just the rest energy when the
-particle is not moving,
-the fact that it increases with the particle's speed ($\gamma$ gets bigger
-than one) suggests that the remaining energy above and beyond the rest
-energy would be the kinetic energy.  This conclusion is supported by
-the fact that when $\gamma$ is small but not zero, $\gamma m_0 c^2$ is
-approximately the rest energy plus the classical kinetic energy.
-The $1/2 mv^2$ rule for kinetic energy that we all learned in introductory
+If the total energy $\gamma m_0 c^2$ reduces to just the rest energy
+when the particle is not moving, the fact that it increases with the
+particle's speed ($\gamma$ gets bigger than one) suggests that the
+remaining energy above and beyond the rest energy would be the kinetic
+energy.  This conclusion is supported by the fact that when $\gamma$
+is small but not zero, $\gamma m_0 c^2$ is approximately the rest
+energy plus the classical kinetic energy (Eq. {eq}`totalEexp`).  The
+$1/2 mv^2$ rule for kinetic energy that we all learned in introductory
 physics is therefore only an approximation.  A full equation would be
 ```{math}
 :label: etotal
@@ -414,7 +418,7 @@ E_{\rm tot} = \gamma E_0 = E_0 + KE \rightarrow \boxed{\gamma = 1 + \frac{KE}{E_
 ```
 This suggests an easy test for deciding if you have to use the
 relativistic formulae to describe the motion of an object.  If you
-know the KE and the $E_0$, use Equation {eq}`gamE` to get $\gamma$.
+know the $KE$ and the $E_0$, use Equation {eq}`gamE` to get $\gamma$.
 If this number is significantly greater than one, then you need to use
 the relativistic equations, but if it's very close to one, you can get
 away with using Newtonian mechanics.
@@ -488,8 +492,6 @@ light to slightly more than the speed of light.  As the saying goes...
 **The speed of light. It's not only a good idea, it's the law!**
 
 ## Example of Using the Definitions
-
-Example 8.4
 
 An electron (rest energy = 0.511 MeV) moving in the $x$-direction has
 a kinetic energy of 1.000 MeV (1 eV = $1.602 \times 10^{-19}$ joules)
@@ -583,24 +585,23 @@ reference frames is the size of the momentum 4-vector, as it is a
 Lorentz invariant.
 
 We therefore try to use the words consistently: to be "conserved" is
-to remain constant within a particular reference frame, during a
-time interval, but to be "invariant" is to be the same in different
-reference frames moving with respect to each other.  Shifting from
-one reference frame to another is not a process that conserves energy.
-An object at rest in one frame will have only its rest energy,
-but in another frame it will have rest and kinetic energy.  Shifting
-between these frames does **not** do work upon the object.  If I
-change my walking speed relative to you, your speed changes relative
-to me, but I have not exerted a force on you to change your speed.
-The kinds of analysis that depend on conservation of energy or the
-work-energy theorem are meant to be carried out in a single frame
-of reference.  If you switch to another reference frame, you must
-recalculate the energy number somehow -- it will not in general be
-the same.
+to remain constant within a particular reference frame, during a time
+interval, but to be "invariant" is to be the same in different
+reference frames moving with respect to each other.  Shifting from one
+reference frame to another is not a process that conserves energy.  An
+object at rest in one frame will have only its rest energy, but in
+another frame it will have rest and kinetic energy.  Shifting between
+these frames does **not** do work upon the object.  If I change my
+walking speed relative to you, your speed changes relative to me, but
+I have not exerted a force on you to change your speed.  The kinds of
+analysis that depend on conservation of energy or the work-energy
+theorem are meant to be carried out in a single frame of reference.
+If you switch to another reference frame, you must recalculate the
+energy number from scratch -- it will not in general be the same.
 
 ## Example of Momentum Conservation
 
-Example 8.5: A neutral pion (rest energy $E_0=135$ MeV) decays into
+A neutral pion (rest energy $E_0=135$ MeV) decays into
 two photons. Show that in the rest frame of the pion, the two photons
 move in opposite directions. Find the energy of these two photons.
 

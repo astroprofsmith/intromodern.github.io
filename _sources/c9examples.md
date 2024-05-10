@@ -619,12 +619,11 @@ indistinguishable.
 ### Experimental Background
 
 
-Photon-electron scattering, called Compton scattering [A.H. Compton,
-Phys. Rev. 21, p. 715 (1923), and Phys. Rev., 22, p. 409 (1923)], was
-proposed by Arthur Compton as a way of finding out if the relativistic
-model of a photon having a momentum $p=E/c$ was valid. It seemed
-impossible that a particle with no mass (zero rest energy) could have
-momentum.
+Photon-electron scattering, called Compton scattering
+{cite}`Compton23`, was proposed by Arthur Compton as a way of finding
+out if the relativistic model of a photon having a momentum $p=E/c$
+was valid. It seemed impossible that a particle with no mass (zero
+rest energy) could have momentum.
 
 Compton shot 17.5 keV X-ray photons at a carbon target as
 schematically shown on the left side of {numref}`cslabfig`. If the

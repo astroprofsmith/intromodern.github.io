@@ -278,7 +278,6 @@ Lorentz transformation**.
 
 ### Transform a Displacement Four-vector
 
-<font color=blue>
 An observer measures the 4-displacement between two events:
 ```{math}
 :label: eqdx41
@@ -294,7 +293,7 @@ A second observer, traveling with speed $1.31\times10^8$~m/s in the
 $x$ direction with respect to the first observer measures the
 4-displacement for these same two events. What values of the elements
 of the 4-displaceinent does this second observer measure?
-</font>
+
 
 To solve this problem, you use the form of the Lorentz transformation
 in equation {eq}`lormat`, plugging in the numbers.  We know that

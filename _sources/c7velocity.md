@@ -454,14 +454,20 @@ you get 1.5 in the numerator, but you get 1.5625 in the denominator,
 so $\beta'=0.96$.  That's faster than $\beta$, which you expect, but
 not bigger than one.
 
-Most importantly, note what happens if $\beta=1$: the numerator
-becomes $1\mp\beta_R$, because $\beta=1$, but in the denominator, the
-product of $\beta\beta_R$ becomes just $\beta_R$, so the denominator
-is also $1\mp\beta_R$!  This means that $\beta'=1$, which is another
-way of saying that anything going at the speed of light in one frame
-will be found to be going at the speed of light in **any** other frame!
-The speed of light is the same in all inertial frames, as consistent
-with the first postulate and the Michaelson-Morely experiment.
+Most importantly, note what happens if $\beta=1$.  For example,
+someone on a train shines a laser toward the front of the train -- how
+fast would someone on the ground measure the light to be moving?
+Surely not the speed of light *plus* the speed of the train, as
+Galileo would expect?  In Eq. {eq}`veladd1`, the numerator becomes
+$1\mp\beta_R$, because $\beta=1$, but in the denominator, the product
+of $\beta\beta_R$ becomes just $\beta_R$, so the denominator is also
+$1\mp\beta_R$!  This means that $\beta'=1$, which is another way of
+saying that anything going at the speed of light in one frame will be
+found to be going at the speed of light in **any** other frame!  The
+person with the laser on the train *and* the person on the ground will
+*both* measure the light as having the same speed.  The speed of light
+is the same in all inertial frames, as consistent with the first
+postulate and the Michaelson-Morely experiment.
 
 ## Example of Off-Axis Motion
 
