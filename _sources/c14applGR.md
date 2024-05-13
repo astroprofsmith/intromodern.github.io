@@ -928,7 +928,8 @@ at $R_S$.  In that variable system the light cone does not so much
 pinch as tilt left.  The outbound side still goes vertical at $R_S$,
 but the inbound side does not (see GR texts such as {cite}`Carroll04`
 or {cite}`Schutz85` for more details.  {cite}`Lucid15` also has a very
-clear explanation with useful figures.).  The conclusion remains the
+clear explanation with useful figures.  Finally, {cite}`Carroll22`
+explains this for the layperson as well.).  The conclusion remains the
 same: the futures of all events along the event horizon lie inside
 that horizon.  It is not possible for a real object to return to
 larger radii once it has crossed that line.
