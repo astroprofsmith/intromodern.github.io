@@ -476,7 +476,7 @@ long as you are sitting in the chair, it's just as if you were in that
 accelerating rocket, pushing up against you.  The situations are
 equivalent.
 
-{note}```
+```{note}
 
 One of the weirder implications of the equivalence principle is that
 $E=mc^2$ really runs both directions.  Energy has a gravitational

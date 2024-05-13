@@ -381,12 +381,13 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-twin-paradox-revisited">13.1. The Twin Paradox Revisited</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accelerating-reference-frames">13.2. Accelerating Reference Frames</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-equivalence-principle">13.3. The Equivalence Principle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-weight-of-a-box-of-photons">13.4. The Weight of a Box of Photons</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einstein-s-equation">13.5. Einstein’s Equation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metrics">13.6. Metrics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geodesics">13.7. Geodesics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">13.8. Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">13.9. Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-pound-rebkha-experiment">13.4. The Pound-Rebkha Experiment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-weight-of-a-box-of-photons">13.5. The Weight of a Box of Photons</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einstein-s-equation">13.6. Einstein’s Equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metrics">13.7. Metrics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geodesics">13.8. Geodesics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">13.9. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">13.10. Problems</a></li>
 </ul>
             </nav>
         </div>
@@ -779,7 +780,8 @@ painter.  Until you hit the ground, you would feel no gravity.  As
 long as you are sitting in the chair, it’s just as if you were in that
 accelerating rocket, pushing up against you.  The situations are
 equivalent.</p>
-<p>{note}```</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>One of the weirder implications of the equivalence principle is that
 <span class="math notranslate nohighlight">\(E=mc^2\)</span> really runs both directions.  Energy has a gravitational
 effect, despite not really existing in space.  Consider, for example,
@@ -797,10 +799,11 @@ their own.  A cup of hot water loses thermal energy as it cools off,
 and therefore would have less mass and less gravity at lower
 temperature (although the mass loss due to steam rising off the water
 would be much greater).</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-## The Pound-Rebkha Experiment
-
-If the Equivalence Principle is valid, than *any* situation where the
+</div>
+</section>
+<section id="the-pound-rebkha-experiment">
+<h2><span class="section-number">13.4. </span>The Pound-Rebkha Experiment<a class="headerlink" href="#the-pound-rebkha-experiment" title="Permalink to this heading">#</a></h2>
+<p>If the Equivalence Principle is valid, than <em>any</em> situation where the
 acceleration of a reference frame changes should have equivelent
 inertial effects and gravitational effects.  There should not be any
 way to distinguish between them.  In particular, consider the
@@ -808,41 +811,36 @@ merry-go-round described in the previous section.  The further out you
 go along the radius of the rotation, the more acceleration you would
 experience, and the slower your clocks would be running, compared with
 a clock at the axis.  The centrifugal force is therefore equivalent to
-gravity, with &quot;out&quot; being &quot;down&quot; and &quot;in&quot; being &quot;up&quot;.  Therefore, a
-clock that is further &quot;down&quot; in gravity (closer to the Earth) should
-run more slowly than a clock that is further &quot;up&quot; (away from the
-Earth).  
-
-The frequency of a photon is a perfectly good clock -- it oscillates
+gravity, with “out” being “down” and “in” being “up”.  Therefore, a
+clock that is further “down” in gravity (closer to the Earth) should
+run more slowly than a clock that is further “up” (away from the
+Earth).</p>
+<p>The frequency of a photon is a perfectly good clock – it oscillates
 in time and therefore can mark off the nanoseconds as well as any
 other clock.  If we shine light upward from the surface of the Earth,
 its frequency should decrease as it goes upward.  If we detect the
 photon at a higher altitude, we will perceive it as a lower altitude
 clock that is running more slowly, as per the arguments in the first
-few sections.  This &quot;gravitational redshift&quot; can also be understood in
+few sections.  This “gravitational redshift” can also be understood in
 terms of energy: if you throw a ball upward, it loses energy as it
-climbs.  The ball&#39;s energy manifests in its speed.  The rising ball
-slows down.  A photon cannot slow down -- it loses energy by shifting
+climbs.  The ball’s energy manifests in its speed.  The rising ball
+slows down.  A photon cannot slow down – it loses energy by shifting
 to a lower frequency.  This is yet another counter-intuitive way that
 a massless particle acts in ways that we previously only associated
-with mass.  We can&#39;t calculate the potential energy of the interaction
+with mass.  We can’t calculate the potential energy of the interaction
 of the Earth and a photon in the same way that we would the
-interaction of the Earth and the ball: $mgh$ makes no sense for the
+interaction of the Earth and the ball: <span class="math notranslate nohighlight">\(mgh\)</span> makes no sense for the
 photon.  However, we have learned the photon has momentum despite
 having no mass, so perhaps it is not so surprising that it can lose
-energy in climbing upward, too.
-
-To try to put this into quantitative form, let us consider the
-energy of a photon, proportional to its frequency: $E=hf$.  If
-this energy has an equivalent inertia to $E/c^2$, then we would
-expect the energy of the photon to drop by $dE = -Eg(dy)/c^2$ as it moves
-a height $dy$ up from the Earth&#39;s surface.  Divide both sides by
-$hf$ to get
-```{math}
-:label: gravred
-\frac{df}{f} = \frac{g}{c^2}dy.
-</pre></div>
-</div>
+energy in climbing upward, too.</p>
+<p>To try to put this into quantitative form, let us consider the
+energy of a photon, proportional to its frequency: <span class="math notranslate nohighlight">\(E=hf\)</span>.  If
+this energy has an equivalent inertia to <span class="math notranslate nohighlight">\(E/c^2\)</span>, then we would
+expect the energy of the photon to drop by <span class="math notranslate nohighlight">\(dE = -Eg(dy)/c^2\)</span> as it moves
+a height <span class="math notranslate nohighlight">\(dy\)</span> up from the Earth’s surface.  Divide both sides by
+<span class="math notranslate nohighlight">\(hf\)</span> to get</p>
+<div class="math notranslate nohighlight" id="equation-gravred">
+<span class="eqno">(13.5)<a class="headerlink" href="#equation-gravred" title="Permalink to this equation">#</a></span>\[\frac{df}{f} = \frac{g}{c^2}dy.\]</div>
 <p>For reasonable distances (<span class="math notranslate nohighlight">\(\sim 10\)</span> m) near the surface of the Earth,
 this consititutes a fractional frequency shift of <span class="math notranslate nohighlight">\(\sim 10^{-15}\)</span>.
 This is a very, very tiny change, and very difficult to measure.</p>
@@ -877,7 +875,7 @@ Think about that!  Such a small difference is equivalent to two clocks
 losing only one relative second over a 15 million year time interval!</p>
 </section>
 <section id="the-weight-of-a-box-of-photons">
-<h2><span class="section-number">13.4. </span>The Weight of a Box of Photons<a class="headerlink" href="#the-weight-of-a-box-of-photons" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">13.5. </span>The Weight of a Box of Photons<a class="headerlink" href="#the-weight-of-a-box-of-photons" title="Permalink to this heading">#</a></h2>
 <p>This gravitational redshift leads to an interesting thought
 experiment.  Back in <a class="reference internal" href="c8momentum.html#sec4momprobs"><span class="std std-ref">Chapter 8</span></a>, the last problem asked
 you to consider a box of photons and whether those photons might have
@@ -891,7 +889,7 @@ measure a force resisting your pushing the box, as if the contents of
 the box had mass.</p>
 <p>The same result applies to a box sitting on the ground in Earth’s
 gravity.  The photons travelling upward will lose energy according to
-Equation <code class="xref eq docutils literal notranslate"><span class="pre">gravred</span></code>, such that on average they will have a
+Equation <a class="reference internal" href="#equation-gravred">(13.5)</a>, such that on average they will have a
 energy loss of <span class="math notranslate nohighlight">\(-Egy/c^2\)</span> relative to the ones hitting the
 bottom of the box, and therefore a momentum difference of
 <span class="math notranslate nohighlight">\(-Egy/c^3\)</span>.  There’s no change in the horizontal directions, so
@@ -918,7 +916,7 @@ of <span class="math notranslate nohighlight">\(mg=GMm/R^2\)</span>, but from co
 photons moving upwards in the curved spacetime around the Earth’s mass.</p>
 </section>
 <section id="einstein-s-equation">
-<h2><span class="section-number">13.5. </span>Einstein’s Equation<a class="headerlink" href="#einstein-s-equation" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">13.6. </span>Einstein’s Equation<a class="headerlink" href="#einstein-s-equation" title="Permalink to this heading">#</a></h2>
 <p>Within the context of General Relativity, the Equivalence Principle
 becomes not only understandable, but inevitable.  Instead of a mysterious
 coincidence, that gravitational mass and inertial mass just happen to
@@ -950,7 +948,7 @@ that tensor to spatial and temporal rates of change of spacetime.  It is not
 inappropriate to compare Einstein’s equation to Poisson’s Equation in
 Newtonian Gravity:</p>
 <div class="math notranslate nohighlight" id="equation-poisson">
-<span class="eqno">(13.5)<a class="headerlink" href="#equation-poisson" title="Permalink to this equation">#</a></span>\[\nabla^2\Phi = 4\pi G \rho\]</div>
+<span class="eqno">(13.6)<a class="headerlink" href="#equation-poisson" title="Permalink to this equation">#</a></span>\[\nabla^2\Phi = 4\pi G \rho\]</div>
 <p>which says the curvature of the gravitational potential is proportional
 to the amount of mass in a given location.  There is an identical equation
 linking the curvature of the electric potential to the amount of charge
@@ -968,7 +966,7 @@ takes is the <em>metric</em> of the spacetime that we associate with a
 particular kind of distribution of matter and energy.</p>
 </section>
 <section id="metrics">
-<h2><span class="section-number">13.6. </span>Metrics<a class="headerlink" href="#metrics" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">13.7. </span>Metrics<a class="headerlink" href="#metrics" title="Permalink to this heading">#</a></h2>
 <p>If we are to follow a curved path through spacetime, or a path
 through curved spacetime, we need to be able to write down the interval
 between two events with an infinitesimal four-displacement.  A path
@@ -985,7 +983,7 @@ write this sum of squares as the inner product of two four-vectors:</p>
 <p>where <span class="math notranslate nohighlight">\(g_{\mu\nu}\)</span> is the metric of the spacetime.  For flat spacetime,
 the metric is simply given by Equation <a class="reference internal" href="c3fourvectors.html#equation-themetric">(3.5)</a>, which I repeat here:</p>
 <div class="math notranslate nohighlight" id="equation-flatmetric">
-<span class="eqno">(13.6)<a class="headerlink" href="#equation-flatmetric" title="Permalink to this equation">#</a></span>\[\begin{split}g_{\mu\nu} =
+<span class="eqno">(13.7)<a class="headerlink" href="#equation-flatmetric" title="Permalink to this equation">#</a></span>\[\begin{split}g_{\mu\nu} =
 \begin{bmatrix}
 -1&amp;0&amp;0&amp;0\\
 0&amp;1&amp;0&amp;0\\
@@ -997,7 +995,7 @@ zero.  For example, if you were using spherical coordinates in three-dimensional
 space, you could use <span class="math notranslate nohighlight">\(dx_j = [dr~d\theta~d\phi]\)</span> and then the <span class="math notranslate nohighlight">\(3\times 3\)</span> metric
 would be</p>
 <div class="math notranslate nohighlight" id="equation-3spheremetric">
-<span class="eqno">(13.7)<a class="headerlink" href="#equation-3spheremetric" title="Permalink to this equation">#</a></span>\[\begin{split}g_{jk} =
+<span class="eqno">(13.8)<a class="headerlink" href="#equation-3spheremetric" title="Permalink to this equation">#</a></span>\[\begin{split}g_{jk} =
 \begin{bmatrix}
 1&amp;0&amp;0\\
 0&amp;r&amp;0\\
@@ -1015,7 +1013,7 @@ about the metric in <a class="reference internal" href="c3fourvectors.html#ch4ve
 metrics of interest in <a class="reference internal" href="c14applGR.html#chgrapp"><span class="std std-ref">Chapter 14</span></a>.</p>
 </section>
 <section id="geodesics">
-<h2><span class="section-number">13.7. </span>Geodesics<a class="headerlink" href="#geodesics" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">13.8. </span>Geodesics<a class="headerlink" href="#geodesics" title="Permalink to this heading">#</a></h2>
 <p>How can we understand this perplexing fact that a reference frame
 locked to a painter in constantly accelerating free fall is also an
 inertial reference frame?  We need to widen out our definition of what
@@ -1069,7 +1067,7 @@ will not be back yet by the time event <span class="math notranslate nohighlight
 <p>We therefore know that the geodesic should be a parabola in space.
 Can we understand this result within the formalism of relativity?  We
 need to modify Eq. <a class="reference internal" href="#equation-intint">(13.1)</a> to include the curvature effects near
-the surface of the Earth, using Eq. <code class="xref eq docutils literal notranslate"><span class="pre">gravred</span></code>.  If the object
+the surface of the Earth, using Eq. <a class="reference internal" href="#equation-gravred">(13.5)</a>.  If the object
 increases in altitude by <span class="math notranslate nohighlight">\(dx\)</span>, going from <span class="math notranslate nohighlight">\(x=0\)</span> to <span class="math notranslate nohighlight">\(x=dx\)</span>,
 the clocks will all run slower by <span class="math notranslate nohighlight">\(gx/c^2\)</span>, going from <span class="math notranslate nohighlight">\(dt\)</span> to
 <span class="math notranslate nohighlight">\(dt(1+gx/c^2)\)</span>.  As explained in the merry-go-round example, above,
@@ -1077,11 +1075,11 @@ rulers will also shrink as you go up, so the length of an interval
 <span class="math notranslate nohighlight">\(dx\)</span> will also grow, and by the same factor.</p>
 <p>If we multiply out <span class="math notranslate nohighlight">\(ds^2\)</span>, we get a new version of Eq. <a class="reference internal" href="#equation-intint">(13.1)</a>:</p>
 <div class="math notranslate nohighlight" id="equation-curveds">
-<span class="eqno">(13.8)<a class="headerlink" href="#equation-curveds" title="Permalink to this equation">#</a></span>\[ds^2 = -c^2dt^2\left[1+\frac{gx}{c^2}\right]^2+dx^2\left[1+\frac{gx}{c^2}\right]^2\]</div>
+<span class="eqno">(13.9)<a class="headerlink" href="#equation-curveds" title="Permalink to this equation">#</a></span>\[ds^2 = -c^2dt^2\left[1+\frac{gx}{c^2}\right]^2+dx^2\left[1+\frac{gx}{c^2}\right]^2\]</div>
 <p>take the square root and factor out the common factors to set up the
 integral over the path to get the proper time <span class="math notranslate nohighlight">\(\Delta t_0\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-curvepropt">
-<span class="eqno">(13.9)<a class="headerlink" href="#equation-curvepropt" title="Permalink to this equation">#</a></span>\[c\Delta t_0 = \int_{\rm path} cdt\sqrt{1-\frac{dx^2}{c^2dt^2}}\left[1+\frac{gx}{c^2}\right] = \int_0^T
+<span class="eqno">(13.10)<a class="headerlink" href="#equation-curvepropt" title="Permalink to this equation">#</a></span>\[c\Delta t_0 = \int_{\rm path} cdt\sqrt{1-\frac{dx^2}{c^2dt^2}}\left[1+\frac{gx}{c^2}\right] = \int_0^T
 cdt\sqrt{1-\frac{v^2}{c^2}}\left[1+\frac{gx}{c^2}\right]\]</div>
 <p>as long as <span class="math notranslate nohighlight">\(x(t=0)=x(t=T)=0\)</span>.  In so far as <span class="math notranslate nohighlight">\(g\)</span> is small but not zero,
 the spacetime is curved away from flatness.  Note that for the Earth,
@@ -1090,10 +1088,10 @@ the spacetime is curved away from flatness.  Note that for the Earth,
 the speed of light, so <span class="math notranslate nohighlight">\(v\ll c\)</span> and we can replace the square root with
 a linear approximation:</p>
 <div class="math notranslate nohighlight" id="equation-curveprop2">
-<span class="eqno">(13.10)<a class="headerlink" href="#equation-curveprop2" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{v^2}{2c^2}\right]\left[1+\frac{gx}{c^2}\right]\]</div>
+<span class="eqno">(13.11)<a class="headerlink" href="#equation-curveprop2" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{v^2}{2c^2}\right]\left[1+\frac{gx}{c^2}\right]\]</div>
 <p>Next we multiply the two binomials and drop second order terms:</p>
 <div class="math notranslate nohighlight" id="equation-curveprop3">
-<span class="eqno">(13.11)<a class="headerlink" href="#equation-curveprop3" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{v^2}{2c^2}+\frac{gx}{c^2}\right]\]</div>
+<span class="eqno">(13.12)<a class="headerlink" href="#equation-curveprop3" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{v^2}{2c^2}+\frac{gx}{c^2}\right]\]</div>
 <p>This is technically as far as we can go without the Calculus of Variations.
 To solve this integral, we would need some function of <span class="math notranslate nohighlight">\(x(t)\)</span>, which would
 define the path.  Then we could take <span class="math notranslate nohighlight">\(v=dx/dt\)</span> to be able to get the
@@ -1106,19 +1104,19 @@ is just <span class="math notranslate nohighlight">\(T\)</span>.  For a paraboli
 would have to be <span class="math notranslate nohighlight">\(x(t) = v_0t - 1/2 at^2\)</span>, and therefore <span class="math notranslate nohighlight">\(v(t) = v_0-at\)</span>.
 So the path integral becomes</p>
 <div class="math notranslate nohighlight" id="equation-paraprop">
-<span class="eqno">(13.12)<a class="headerlink" href="#equation-paraprop" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{(v_0-at)^2}{2c^2}+\frac{g}{c^2}(v_0t-at^2/2)\right]\]</div>
+<span class="eqno">(13.13)<a class="headerlink" href="#equation-paraprop" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{(v_0-at)^2}{2c^2}+\frac{g}{c^2}(v_0t-at^2/2)\right]\]</div>
 <p>Multiply everything out to get</p>
 <div class="math notranslate nohighlight" id="equation-parapropout">
-<span class="eqno">(13.13)<a class="headerlink" href="#equation-parapropout" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}+\frac{2v_0at}{2c^2}-
+<span class="eqno">(13.14)<a class="headerlink" href="#equation-parapropout" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}+\frac{2v_0at}{2c^2}-
 \frac{a^2t^2}{2c^2}+\frac{gv_0t}{c^2}
 -\frac{gat^2}{2c^2}\right]\]</div>
 <p>Regroup by like powers of <span class="math notranslate nohighlight">\(t\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-parapropregroup">
-<span class="eqno">(13.14)<a class="headerlink" href="#equation-parapropregroup" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}+\frac{v_0(g+a)t}{c^2}-
+<span class="eqno">(13.15)<a class="headerlink" href="#equation-parapropregroup" title="Permalink to this equation">#</a></span>\[\Delta t_0 = \int_0^T dt\left[1-\frac{v_0^2}{2c^2}+\frac{v_0(g+a)t}{c^2}-
 \frac{a(g+a)t^2}{2c^2}\right]\]</div>
 <p>and integrate:</p>
 <div class="math notranslate nohighlight" id="equation-parapropresult">
-<span class="eqno">(13.15)<a class="headerlink" href="#equation-parapropresult" title="Permalink to this equation">#</a></span>\[\Delta t_0 = T - \frac{v_0^2T}{2c^2}+\frac{v_0(g+a)T^2}{2c^2}
+<span class="eqno">(13.16)<a class="headerlink" href="#equation-parapropresult" title="Permalink to this equation">#</a></span>\[\Delta t_0 = T - \frac{v_0^2T}{2c^2}+\frac{v_0(g+a)T^2}{2c^2}
 -\frac{a(g+a)T^3}{6c^2}\]</div>
 <p>At this point, we can use simple calculus to ask what value of <span class="math notranslate nohighlight">\(a\)</span>
 will maximize <span class="math notranslate nohighlight">\(\Delta t_0\)</span>?  In other words, of all the possible
@@ -1126,34 +1124,34 @@ parabolas that go through <span class="math notranslate nohighlight">\(A\)</span
 maximize the proper time?  That doesn’t prove anything about all
 possible paths of <em>any</em> shape, but it’s the best we can do without
 Calculus of Variations.</p>
-<p>We need to differentiate Eq. <a class="reference internal" href="#equation-parapropresult">(13.15)</a> with respect to <span class="math notranslate nohighlight">\(a\)</span>
+<p>We need to differentiate Eq. <a class="reference internal" href="#equation-parapropresult">(13.16)</a> with respect to <span class="math notranslate nohighlight">\(a\)</span>
 and set to zero.  But we also know from the path equation that for the
 ball to come back down in time (<span class="math notranslate nohighlight">\(x(T)=0\)</span>), <span class="math notranslate nohighlight">\(v_0 = aT/2\)</span>.  Plug that in
 first:</p>
 <div class="math notranslate nohighlight" id="equation-dtda">
-<span class="eqno">(13.16)<a class="headerlink" href="#equation-dtda" title="Permalink to this equation">#</a></span>\[\frac{d\Delta t_0}{da} = \frac{d}{da}\left[T - \frac{(aT)^2T}{8c^2}+\frac{aT(g+a)T^2}{4c^2}
+<span class="eqno">(13.17)<a class="headerlink" href="#equation-dtda" title="Permalink to this equation">#</a></span>\[\frac{d\Delta t_0}{da} = \frac{d}{da}\left[T - \frac{(aT)^2T}{8c^2}+\frac{aT(g+a)T^2}{4c^2}
 -\frac{a(g+a)T^3}{6c^2}\right]\]</div>
 <div class="math notranslate nohighlight" id="equation-dtdaout">
-<span class="eqno">(13.17)<a class="headerlink" href="#equation-dtdaout" title="Permalink to this equation">#</a></span>\[\frac{d\Delta t_0}{da} = \frac{d}{da}\left[T - \frac{a^2T^3}{8c^2}
+<span class="eqno">(13.18)<a class="headerlink" href="#equation-dtdaout" title="Permalink to this equation">#</a></span>\[\frac{d\Delta t_0}{da} = \frac{d}{da}\left[T - \frac{a^2T^3}{8c^2}
 +\frac{agT^3}{12c^2}
 +\frac{a^2T^3}{12c^2}
 \right]\]</div>
 <div class="math notranslate nohighlight" id="equation-dtda1">
-<span class="eqno">(13.18)<a class="headerlink" href="#equation-dtda1" title="Permalink to this equation">#</a></span>\[\frac{d\Delta t_0}{da} = - \frac{aT^3}{4c^2}
+<span class="eqno">(13.19)<a class="headerlink" href="#equation-dtda1" title="Permalink to this equation">#</a></span>\[\frac{d\Delta t_0}{da} = - \frac{aT^3}{4c^2}
 +\frac{gT^3}{12c^2}
 +\frac{aT^3}{6c^2}=0\]</div>
 <div class="math notranslate nohighlight" id="equation-solvefora">
-<span class="eqno">(13.19)<a class="headerlink" href="#equation-solvefora" title="Permalink to this equation">#</a></span>\[-3a+g+2a=0\rightarrow a=g\]</div>
+<span class="eqno">(13.20)<a class="headerlink" href="#equation-solvefora" title="Permalink to this equation">#</a></span>\[-3a+g+2a=0\rightarrow a=g\]</div>
 <p>So of all the possible parabolic paths between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, the one
 with <span class="math notranslate nohighlight">\(a=g\)</span> will maximize the proper time elapsed between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>.</p>
 <p>It remains to be shown that the parabolic path has a larger proper time
-than the straight line path.  For this, we return to Eq. <a class="reference internal" href="#equation-parapropresult">(13.15)</a>
+than the straight line path.  For this, we return to Eq. <a class="reference internal" href="#equation-parapropresult">(13.16)</a>
 and plug in <span class="math notranslate nohighlight">\(a=g\)</span> to see what the proper time is along the parabola:</p>
 <div class="math notranslate nohighlight" id="equation-proptimepara">
-<span class="eqno">(13.20)<a class="headerlink" href="#equation-proptimepara" title="Permalink to this equation">#</a></span>\[\Delta t_0 = T - \frac{g^2T^3}{8c^2}+\frac{g^2T^3}{2c^2}
+<span class="eqno">(13.21)<a class="headerlink" href="#equation-proptimepara" title="Permalink to this equation">#</a></span>\[\Delta t_0 = T - \frac{g^2T^3}{8c^2}+\frac{g^2T^3}{2c^2}
 -\frac{g^2T^3}{3c^2}\]</div>
 <div class="math notranslate nohighlight" id="equation-proptimecomp">
-<span class="eqno">(13.21)<a class="headerlink" href="#equation-proptimecomp" title="Permalink to this equation">#</a></span>\[\Delta t_0 = T + \frac{g^2T^3}{24c^2}\]</div>
+<span class="eqno">(13.22)<a class="headerlink" href="#equation-proptimecomp" title="Permalink to this equation">#</a></span>\[\Delta t_0 = T + \frac{g^2T^3}{24c^2}\]</div>
 <p>Since the term on the right is always positive, this proper time will
 always be bigger than <span class="math notranslate nohighlight">\(T\)</span>, which is the proper time for a ball sitting
 still the whole time.  In the presence of a weak, uniform gravitational
@@ -1188,7 +1186,7 @@ relative velocities, thereby distinguishing <em>special</em> relativity from
 <em>general</em> relativity.</p>
 </section>
 <section id="summary">
-<h2><span class="section-number">13.8. </span>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">13.9. </span>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
 <p>Putting your brain into the mindset of the General Theory of
 Relativity requires a radical reconceptualizing of space, time,
 motion, and gravity.  From within the paradigm of GR, gravity becomes
@@ -1219,7 +1217,7 @@ We will explore some of these in <a class="reference internal" href="c14applGR.h
 chapter</span></a>.</p>
 </section>
 <section id="problems">
-<h2><span class="section-number">13.9. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">13.10. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Project GREAT.  In 2005 Tom Van Baak carried out a home experiment in
 General Relativity.  He carefully synchronized six precise computer clocks
@@ -1321,12 +1319,13 @@ maximum and not a minimum or inflection point.</p></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-twin-paradox-revisited">13.1. The Twin Paradox Revisited</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accelerating-reference-frames">13.2. Accelerating Reference Frames</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-equivalence-principle">13.3. The Equivalence Principle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-weight-of-a-box-of-photons">13.4. The Weight of a Box of Photons</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einstein-s-equation">13.5. Einstein’s Equation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metrics">13.6. Metrics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geodesics">13.7. Geodesics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">13.8. Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">13.9. Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-pound-rebkha-experiment">13.4. The Pound-Rebkha Experiment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-weight-of-a-box-of-photons">13.5. The Weight of a Box of Photons</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einstein-s-equation">13.6. Einstein’s Equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metrics">13.7. Metrics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geodesics">13.8. Geodesics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">13.9. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">13.10. Problems</a></li>
 </ul>
   </nav></div>
 
