@@ -101,8 +101,8 @@ propagation of light, Michelson was awarded the Nobel prize in 1907.
 As with most interesting experiments, Michelson got a result that did
 not agree with his intuition about the outcome of the
 experiment. After a number of very bright physicists examined these
-results, a relatively simple and rather clever model was developed
-that agreed with the experimental results.
+results (see, e.g. {cite}`Williams02`), a relatively simple and rather
+clever model was developed that agreed with the experimental results.
 
 ```{code-cell}
 :tags: ["remove-cell"]
