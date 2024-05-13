@@ -884,10 +884,10 @@ approached the event horizon.
 
 ```{code-cell}
 :tags: ["remove-cell"]
-# Insert VPython simulation of simple lensing
-# Allow user to change impact parameter
+# Insert VPython simulation of lightlike paths near a black hole
+# Allow user to change starting event
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRschwartzschild"
-test = display.IFrame(src=url1,width=800,height=600)
+test = display.IFrame(src=url1,width=800,height=800)
 glue("eventhorizonanimfig",test, display=False)
 
 ```
