@@ -476,6 +476,28 @@ long as you are sitting in the chair, it's just as if you were in that
 accelerating rocket, pushing up against you.  The situations are
 equivalent.
 
+{note}```
+
+One of the weirder implications of the equivalence principle is that
+$E=mc^2$ really runs both directions.  Energy has a gravitational
+effect, despite not really existing in space.  Consider, for example,
+atomic nuclei.  The rest energy of, say, a carbon 12 nucleus is less
+than the rest energy of six protons and neutrons.  We associate a
+"binding energy" with the strong interaction that holds these
+particles together as a nucleus.  For C12, that's about 92 MeV.  A
+proton has a mass of $1.672623\times10^{-27}$ kg, and the neutron has
+$1.674929\times10^{-27}$ kg.  The mass of a C12 nucleus is about
+$1.99265\times10^{-26}$ kg.  Add the mass of a proton to the mass of
+the neutron and multiply by six and you get $2.0085\times10^{-26}$ kg.
+The bound nucleus has a lower energy and therefore a lower mass, and
+therefore less gravity than six protons and six neutrons would on
+their own.  A cup of hot water loses thermal energy as it cools off,
+and therefore would have less mass and less gravity at lower
+temperature (although the mass loss due to steam rising off the water
+would be much greater).
+
+```
+
 ## The Pound-Rebkha Experiment
 
 If the Equivalence Principle is valid, than *any* situation where the
