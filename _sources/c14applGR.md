@@ -887,7 +887,7 @@ approached the event horizon.
 # Insert VPython simulation of lightlike paths near a black hole
 # Allow user to change starting event
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRschwartzschild"
-test = display.IFrame(src=url1,width=800,height=800)
+test = display.IFrame(src=url1,width=800,height=850)
 glue("eventhorizonanimfig",test, display=False)
 
 ```
