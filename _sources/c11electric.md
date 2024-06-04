@@ -994,7 +994,7 @@ again in [the next chapter](chEMdyn).
 # Insert VPython illustration of the EM tensoe
 #
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SREMtensor"
-bshft = display.IFrame(src=url1,width=750,height=670)
+bshft = display.IFrame(src=url1,width=750,height=800)
 glue("EMtensorfig",bshft, display=False)
 
 ```
