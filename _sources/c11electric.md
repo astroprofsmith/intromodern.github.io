@@ -1009,7 +1009,7 @@ and cyan arrows, respectively).  There is a slider for each vector component
 below the image, and as you change each component, the relevant elements of
 the EM tensor will change, as will the arrow representation of the vector.
 Note where the minus signs go.  (The value of $c$ is $1$, so the units
-are arbitrary, but identical for all components.)
+identical for all components.)
 
 ```
 
