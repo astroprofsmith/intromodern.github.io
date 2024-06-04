@@ -989,6 +989,30 @@ tend to use the $F$ rather than the $G$.  They both transform the same
 way when you switch reference frames.  You will see both of these
 again in [the next chapter](chEMdyn).
 
+```{code-cell}
+:tags: ["remove-cell"]
+# Insert VPython illustration of the EM tensoe
+#
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SREMtensor"
+bshft = display.IFrame(src=url1,width=750,height=670)
+glue("EMtensorfig",bshft, display=False)
+
+```
+
+```{glue:figure} EMtensorfig
+:figwidth: 800px
+:name: Fmunufig
+
+Illustration of how the EM field tensor (displayed to the upper right)
+relates to the electric and magnetic field vectors (shown as magenta
+and cyan arrows, respectively).  There is a slider for each vector component
+below the image, and as you change each component, the relevant elements of
+the EM tensor will change, as will the arrow representation of the vector.
+Note where the minus signs go.  (The value of $c$ is $1$, so the units
+are arbitrary, but identical for all components.)
+
+```
+
 ## Summary
 
 You have seen in this chapter that it is possible to think of

@@ -789,9 +789,14 @@ current-carrying wire?  Use a Lorentz transformation to convert this
 four vector into the rest frame of the charge.  Compare with the
 derivation in <a class="reference internal" href="c11electric.html#chemten"><span class="std std-ref">the last chapter</span></a> that didn’t use Lorentz
 transformations and four-vectors.</p></li>
-<li><p>The plane-wave solution to Maxwell’s Equations is a travelling E-M wave
-that would take the following form:</p></li>
+<li><p>Einstein famously claimed one of the questions that led him to
+develop the system of special relativity was wondering what light
+would look like if you were travelling along with the electromagnetic
+wave.  We can answer that question with Lorentz transformations
+of the E-M tensor.</p></li>
 </ol>
+<p>The plane-wave solution to Maxwell’s Equations is a travelling E-M wave
+that would take the following form:</p>
 <div class="math notranslate nohighlight">
 \[\vec{E}(x,t) = E_0 \cos{(kx-\omega t)}\hat{y}\]</div>
 <div class="math notranslate nohighlight">
@@ -800,11 +805,15 @@ that would take the following form:</p></li>
 is <span class="math notranslate nohighlight">\(\omega/2\pi\)</span>. The speed is <span class="math notranslate nohighlight">\(c=\omega/k\)</span>.</p>
 <p>a) Write out the EM field tensor for this situation.</p>
 <p>b) Carry out the double Lorentz transformation to express this solution in a
-reference frame moving at a relative speed of <span class="math notranslate nohighlight">\(\beta\)</span> in the <span class="math notranslate nohighlight">\(x\)</span> direction.
+reference frame moving at a relative speed of <span class="math notranslate nohighlight">\(+\beta\)</span> in the <span class="math notranslate nohighlight">\(x\)</span> direction.
 Find <span class="math notranslate nohighlight">\(E\)</span>, <span class="math notranslate nohighlight">\(k\)</span>, <span class="math notranslate nohighlight">\(\omega\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> in the new frame.</p>
-<p>c) Verify that <span class="math notranslate nohighlight">\(c'=c\)</span> and that the wavelength and frequency change according
-to the Doppler formula.</p>
-<p>d) What happens to the light intensity?</p>
+<p>c) Verify that <span class="math notranslate nohighlight">\(c'=c\)</span> and that the wavelength and frequency change
+according to the Doppler formula.  Think about whether the second
+frame is moving toward the source of light or away from it.  What happens
+if <span class="math notranslate nohighlight">\(\beta\rightarrow -\beta\)</span>?</p>
+<p>d) What happens to the light intensity?  Does that change if <span class="math notranslate nohighlight">\(\beta\)</span>
+is positive or negative?</p>
+<p>e) How would you answer Einstein’s original question, if <span class="math notranslate nohighlight">\(\beta\rightarrow 1\)</span>?</p>
 <ol class="arabic simple" start="3">
 <li><p>Write a Python program to apply the momentum principle and
 iteratively update the velocity and position of a particle with rest

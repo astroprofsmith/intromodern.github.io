@@ -506,7 +506,13 @@ four vector into the rest frame of the charge.  Compare with the
 derivation in [the last chapter](chEMten) that didn't use Lorentz
 transformations and four-vectors.
 
-2) The plane-wave solution to Maxwell's Equations is a travelling E-M wave
+2) Einstein famously claimed one of the questions that led him to
+develop the system of special relativity was wondering what light
+would look like if you were travelling along with the electromagnetic
+wave.  We can answer that question with Lorentz transformations
+of the E-M tensor.
+
+The plane-wave solution to Maxwell's Equations is a travelling E-M wave
 that would take the following form:
 ```{math}
 \vec{E}(x,t) = E_0 \cos{(kx-\omega t)}\hat{y}
@@ -520,13 +526,18 @@ is $\omega/2\pi$. The speed is $c=\omega/k$.
 a) Write out the EM field tensor for this situation.
 
 b) Carry out the double Lorentz transformation to express this solution in a
-reference frame moving at a relative speed of $\beta$ in the $x$ direction.
+reference frame moving at a relative speed of $+\beta$ in the $x$ direction.
 Find $E$, $k$, $\omega$, and $c$ in the new frame.
 
-c) Verify that $c'=c$ and that the wavelength and frequency change according
-to the Doppler formula.
+c) Verify that $c'=c$ and that the wavelength and frequency change
+according to the Doppler formula.  Think about whether the second
+frame is moving toward the source of light or away from it.  What happens
+if $\beta\rightarrow -\beta$?
 
-d) What happens to the light intensity?
+d) What happens to the light intensity?  Does that change if $\beta$
+is positive or negative?
+
+e) How would you answer Einstein's original question, if $\beta\rightarrow 1$?
 
 
 3) Write a Python program to apply the momentum principle and
