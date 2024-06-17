@@ -442,8 +442,8 @@ fall at the same rate thereafter.
 <video controls src="_static/EquivV.m4v"></video>
 </center>
 
-<img src="images/frameAfig.png" onmouseover="this.src='images/frameBfig.png'"
-onmouseout="this.src='images/frameAfig.png'"/>
+<img src="_static/frameAfig.png" onmouseover="this.src='_static/frameBfig.png'"
+onmouseout="this.src='_static/frameAfig.png'"/>
 
 This insight is so important that this "Equivalence Principle"
 occupies a similar place in the foundation of GR that the two
