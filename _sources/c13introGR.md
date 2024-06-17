@@ -443,7 +443,7 @@ fall at the same rate thereafter.
 </center>
 
 <img src="images/frameAfig.png" onmouseover="this.src='images/frameBfig.png'"
-onmouseout="this.src='images/frameA.png'">
+onmouseout="this.src='images/frameA.png'"/>
 
 This insight is so important that this "Equivalence Principle"
 occupies a similar place in the foundation of GR that the two
