@@ -604,7 +604,7 @@ It doesn't make sense to ask whether the source or the receiver is
 "really" moving, because all motion is relative.  For a sound wave,
 the medium it moves through provides a context in which it might make
 sense to say one or the other is "really" moving (relative to the
-medium), but in [Chapter 1](chSRroots) we showed that the Michaelson
+medium), but in [Chapter 1](chSRroots) we showed that the Michelson
 Morely experiment disproves the hypothesis that light has a medium.
 So any motion of source or receiver is equivalent and
 indistinguishable.

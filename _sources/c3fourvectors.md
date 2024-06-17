@@ -750,7 +750,7 @@ icdt_{\rm rocket}\\
 0
 \end{bmatrix}
 \end{equation}
-The Michaelson-Morely experiment demands that the size of these two
+The Michelson-Morely experiment demands that the size of these two
 four-vectors be the same.  Clearly, the observer on the spacecraft will
 measure a different duration for the trip than the clocks in the
 reference frame at rest with respect to the Earth will!  Note this has

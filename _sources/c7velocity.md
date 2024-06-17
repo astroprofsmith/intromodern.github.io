@@ -282,7 +282,7 @@ flashes a laser pointer toward the front of the train.  The people on
 the train would certainly measure the photons in the laser beam to be
 moving at the speed of light, but Galileo would expect to measure the
 light moving at $c+v_t$, which both Einstein's theory and the
-Michaelson-Morely experiment say is impossible.
+Michelson-Morely experiment say is impossible.
 
 How do we resolve this dilemma???  By Lorentz-transforming the
 velocity four vector, we can determine how someone like Galileo would
@@ -467,7 +467,7 @@ found to be going at the speed of light in **any** other frame!  The
 person with the laser on the train *and* the person on the ground will
 *both* measure the light as having the same speed.  The speed of light
 is the same in all inertial frames, as consistent with the first
-postulate and the Michaelson-Morely experiment.
+postulate and the Michelson-Morely experiment.
 
 ## Example of Off-Axis Motion
 

@@ -812,15 +812,18 @@ or some other specific procedure.  What an observer would actually
 light, would also depend on the light travel time to the observer from
 the object, how far the object moves in that time, and also the
 three-dimensionality of the object -- its depth away from the
-observer.  A full treatment of these complications is beyond the scope
-of this book, but I will mention that it is possible to see the side
-of an object while the face is still toward you, because the front has
+observer.
+
+A full treatment of these complications is beyond the scope of this
+book, but I will mention that it is possible to see the side of an
+object while the face is still toward you, because the front has
 essentially gotten out of the way of light coming from the back of the
 side.  For dump trucks, the near corner would block that light, but
 for a fast-moving object, you could actually see around the corner,
 while the dimension along the line of sight contracts, and it would
-look like the object was rotating.  See, e.g. {cite}`freund08` or
-{cite}`skinner69` for a more detailed treatment of this topic.
+look (actually look) like the object was rotating.  See,
+e.g. {cite}`freund08` or {cite}`skinner69` for a more detailed
+treatment of this topic.
 ```
 
 ## Muon decay revisited
@@ -877,15 +880,15 @@ definition of what it means for one object to "fit" inside another.
 Let's retell this story in terms of events that we can plot on a
 spacetime diagram and then use to define some useful displacement
 four-vectors.  Let's start in the rest frame of the garage.  The
-ladder is racing toward the garage, and the first important event
-is when the front of the ladder goes into the front of the garage.
-Let's say we have two helpers, Frank and Betty, who are standing at
-the front and back of the garage, respectively.  When the front
-of the ladder gets to the back of the garage, Betty opens a door
-that allows it to proceed without crashing into the wall.  Meanwhile,
-Frank will close his door when the back of the ladder passes through
-the front door.  If Frank closes his door before or at the same time
-as Betty, then the ladder can reasonably be said to be **in** the
+ladder is racing toward the garage, and the first important event is
+when the front of the ladder goes into the front of the garage.  Let's
+say we have two helpers, Frank and Betty, who are standing at the
+front and back of the garage, respectively.  When the front of the
+ladder gets to the back of the garage, Betty opens a door that allows
+it to proceed without crashing into the wall.  Meanwhile, Frank will
+close his door when the back of the ladder passes through the front
+door.  If Frank closes his door before or at the same time as Betty
+closes hers, then the ladder can reasonably be said to be **in** the
 garage.
 
 We now have four events we can plot on a ST diagram: the front of the

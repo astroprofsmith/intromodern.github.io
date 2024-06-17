@@ -105,7 +105,7 @@ clever model was developed that agreed with the experimental results.
 
 ```{code-cell}
 :tags: ["remove-cell"]
-# Insert VPython simulation of a Michaelson Interferometer
+# Insert VPython simulation of a Michelson Interferometer
 # Allow user to rotate system, relative to ether
 # Have radio button to include/remove ether
 url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRinterferometer"
@@ -118,7 +118,7 @@ glue("interfig",test, display=False)
 :figwidth: 800px
 :name: michelfig
 
-Animation of a simplified schematic of a Michaelson
+Animation of a simplified schematic of a Michelson
 interferometer.  A laser, represented by the red cylinder to the left,
 shines a beam to the right.  The light is split by a diagonal
 half-silvered mirror.  Half the beam continues to the right, while
