@@ -442,6 +442,9 @@ fall at the same rate thereafter.
 <video controls src="_static/EquivV.m4v"></video>
 </center>
 
+<img src="images/frameAfig.png" onmouseover="this.src='frameBfig.png'"
+onmouseout="this.src='frameA.png'">
+
 This insight is so important that this "Equivalence Principle"
 occupies a similar place in the foundation of GR that the two
 postulates of SR do for that theory.  Within the formulation of GR,
