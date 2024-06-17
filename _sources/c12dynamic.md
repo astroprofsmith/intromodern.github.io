@@ -527,7 +527,8 @@ a) Write out the EM field tensor for this situation.
 
 b) Carry out the double Lorentz transformation to express this solution in a
 reference frame moving at a relative speed of $+\beta$ in the $x$ direction.
-Find $E$, $k$, $\omega$, and $c$ in the new frame.
+Find $E$, $k$, $\omega$, and $c$ in the new frame.  For $k$ and $\omega$,
+remember length contraction and time dilation!
 
 c) Verify that $c'=c$ and that the wavelength and frequency change
 according to the Doppler formula.  Think about whether the second
