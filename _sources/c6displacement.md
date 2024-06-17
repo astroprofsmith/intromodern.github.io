@@ -804,20 +804,23 @@ the object is moving.  See [Chapter 5](chSTdiag) for more examples.
 We are often very casual when we talk about length contraction.
 Sometimes we talk about how long a passing object "looks", or we might
 discuss what an observer "sees".  What we **mean** is what an observer
-in an inertial reference frame **measures** the length to be.  What an
-observer would actually *see* (with their actual eyes), as an object
-zips by near the speed of light, would also depend on the light travel
-time to the observer from the object, how far the object moves in that
-time, and also the three-dimensionality of the object -- its depth
-away from the observer.  A full treatment of these complications is
-beyond the scope of this book, but I will mention that it is possible
-to see the side of an object while the face is still toward you,
-because the front has essentially gotten out of the way of light
-coming from the back of the side.  For dump trucks, the near corner
-would block that light, but for a fast-moving object, you could
-actually see around the corner, and it would look like the object was
-rotating.  See, e.g. {cite}`freund08` or {cite}`skinner69` for a more
-detailed treatment of this topic.
+in an inertial reference frame **measures** the length to be, using
+some procedure, like bouncing a laser and measuring the time interval,
+or measuring how much time passes for an certain spatial displacement,
+or some other specific procedure.  What an observer would actually
+*see* (with their actual eyes), as an object zips by near the speed of
+light, would also depend on the light travel time to the observer from
+the object, how far the object moves in that time, and also the
+three-dimensionality of the object -- its depth away from the
+observer.  A full treatment of these complications is beyond the scope
+of this book, but I will mention that it is possible to see the side
+of an object while the face is still toward you, because the front has
+essentially gotten out of the way of light coming from the back of the
+side.  For dump trucks, the near corner would block that light, but
+for a fast-moving object, you could actually see around the corner,
+while the dimension along the line of sight contracts, and it would
+look like the object was rotating.  See, e.g. {cite}`freund08` or
+{cite}`skinner69` for a more detailed treatment of this topic.
 ```
 
 ## Muon decay revisited

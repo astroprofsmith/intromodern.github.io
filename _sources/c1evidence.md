@@ -85,18 +85,17 @@ the arm was at rest with respect to the ether or moving with respect
 to the ether. Michelson had this terse description of the experiment:
 "The interpretation of these results is that there is no displacement
 of the interference bands. ... The result of the hypothesis of a
-stationary ether is thus shown to be incorrect." (A. A. Michelson,
-Am. J. Sci, 122, 120 (1881)).  Michelson was encouraged by some
-important English physicists to continue his research. Along with
-E.W. Morley, he built a much bigger interferometer that had multiple
-mirrors and was 10 times as sensitive to the relative motion. He could
-measure a relative velocity of 30 m/s. Again, they found no
-difference in the speed in the two arms. (A. A. Michelson and
-E. W. Morley, Am. J. Sci., 134, 333 (1887)). The experiment was
-repeated often over the next few years, at even greater precision, but
-always gave the same null result: there is no stationary ether. As a
-consequence of his careful and brilliant work about the nature of the
-propagation of light, Michelson was awarded the Nobel prize in 1907.
+stationary ether is thus shown to be incorrect." {cite}`michelson81`
+Michelson was encouraged by some important English physicists to
+continue his research. Along with E.W. Morley, he built a much bigger
+interferometer that had multiple mirrors and was 10 times as sensitive
+to the relative motion. He could measure a relative velocity of 30
+m/s. Again, they found no difference in the speed in the two
+arms. {cite}`mm1887` The experiment was repeated often over the next
+few years, at even greater precision, but always gave the same null
+result: there is no stationary ether. As a consequence of his careful
+and brilliant work about the nature of the propagation of light,
+Michelson was awarded the Nobel prize in 1907.
 
 As with most interesting experiments, Michelson got a result that did
 not agree with his intuition about the outcome of the
