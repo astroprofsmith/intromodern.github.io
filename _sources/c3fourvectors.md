@@ -36,16 +36,31 @@ for the minus sign in the last term.  If it were not for that minus
 sign, we could well imagine we were looking at the magnitude of a
 four-dimensional displacment vector, just adding time as a new
 component.  If a spacial displacement vector is $d\vec{r} =
-(dx,dy,dz)$, and its magnitude is $dx^2+dy^2+dz^2$, perhaps it would
-make sense to have a four-dimensional vector $dx_4 = (cdt,dx,dy,dz)$,
-except that if we were to square each term and add them up, we would
-get $+c^2dt^2$, not minus.
+(dx,dy,dz)$, and its magnitude squared is $dx^2+dy^2+dz^2$, perhaps it
+would make sense to have a four-dimensional vector $dx_4 =
+(cdt,dx,dy,dz)$.  The problem is that when we square each term of this
+vector and add them up, we get $+c^2dt^2$, not minus.
+
+
+```{margin}
+Once you have a displacement $dx$ and a duration $dt$, it is possible
+to define an average veclocity $v=dx/dt$.  Because in Relativity so
+much is compared to the speed of light, it is useful to express
+velocities as a fraction of the speed of light.  We typically use the
+greek letter $\beta$ to represent this fraction.  We would say if the
+velocity were $2\times10^8$ m/s, that would be two-thirds the speed of
+light, or $\beta = 2/3$.  Using $\beta = v/c$ is much more useful than
+just $v$ in most cases.  Since $v=dx/dt$, then $\beta=v/c=dx/cdt$.  It
+would be helpful for you to memorize this now.
+```
+
 
 We need a way to remember to include that minus sign.  There are two
 ways of keeping track of it.  One is simpler for the beginner, and the
 other makes the more complicated material later easier to manage.
 First, we look at using the imaginary number $i^2=-1$ to keep track of
 the minus sign, and then we will look at the Einstein notation method.
+
 
 ### Using Imaginary Numbers
 
@@ -143,6 +158,13 @@ four vector is the same in any inertial reference frame, and to
 convert a four vector from one frame to another, there is a specific
 procedure one must follow (see [Chapter 4](chLTrans)).
 
+```{margin}
+The **size** of any four vector is always measured to be the same
+number in any inertial reference frames, although observers in
+different frames can, and will, disagree on the values of any of
+the four components.
+```
+
 (secEinNot)=
 ### Einstein Notation
 
@@ -159,9 +181,10 @@ The second way, called Einstein notation, involves being aware of a
 distinction between **covariant** and **contravariant** four-vectors.
 The mathematical details are not necessary at this stage, but suffice
 to say that the **contravariant** version of a four vector should be
-written as a column, as in Equation 6, only without the $i$.  The
-standard notion is to use a superscript greek letter to refer to the
-components, where the Greek letter could stand for 0, 1, 2, or 3.  So
+written as a column, as in Equation {eq}`contravar`, only without the
+$i$.  The standard notion is to use a superscript greek letter to
+refer to the components, where the Greek letter could stand for 0, 1,
+2, or 3.  So
 ```{math}
 :label: contravar
 dx^\alpha =
@@ -184,7 +207,7 @@ dz
 The superscript here does NOT mean "raised to the power of".  In this
 notation, $dy$ would be written $dx^2$, but the 2 does not mean squared,
 it means the third component of the contravariant four-vector.  If
-people are using this notation, you have to be aware from the context
+people are using this notation, you *have* to be aware from the context
 whether they mean a contravariant component or an exponent.
 ```
 

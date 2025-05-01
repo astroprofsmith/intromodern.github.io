@@ -432,10 +432,22 @@ for the minus sign in the last term.  If it were not for that minus
 sign, we could well imagine we were looking at the magnitude of a
 four-dimensional displacment vector, just adding time as a new
 component.  If a spacial displacement vector is <span class="math notranslate nohighlight">\(d\vec{r} =
-(dx,dy,dz)\)</span>, and its magnitude is <span class="math notranslate nohighlight">\(dx^2+dy^2+dz^2\)</span>, perhaps it would
-make sense to have a four-dimensional vector <span class="math notranslate nohighlight">\(dx_4 = (cdt,dx,dy,dz)\)</span>,
-except that if we were to square each term and add them up, we would
-get <span class="math notranslate nohighlight">\(+c^2dt^2\)</span>, not minus.</p>
+(dx,dy,dz)\)</span>, and its magnitude squared is <span class="math notranslate nohighlight">\(dx^2+dy^2+dz^2\)</span>, perhaps it
+would make sense to have a four-dimensional vector <span class="math notranslate nohighlight">\(dx_4 =
+(cdt,dx,dy,dz)\)</span>.  The problem is that when we square each term of this
+vector and add them up, we get <span class="math notranslate nohighlight">\(+c^2dt^2\)</span>, not minus.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Once you have a displacement <span class="math notranslate nohighlight">\(dx\)</span> and a duration <span class="math notranslate nohighlight">\(dt\)</span>, it is possible
+to define an average veclocity <span class="math notranslate nohighlight">\(v=dx/dt\)</span>.  Because in Relativity so
+much is compared to the speed of light, it is useful to express
+velocities as a fraction of the speed of light.  We typically use the
+greek letter <span class="math notranslate nohighlight">\(\beta\)</span> to represent this fraction.  We would say if the
+velocity were <span class="math notranslate nohighlight">\(2\times10^8\)</span> m/s, that would be two-thirds the speed of
+light, or <span class="math notranslate nohighlight">\(\beta = 2/3\)</span>.  Using <span class="math notranslate nohighlight">\(\beta = v/c\)</span> is much more useful than
+just <span class="math notranslate nohighlight">\(v\)</span> in most cases.  Since <span class="math notranslate nohighlight">\(v=dx/dt\)</span>, then <span class="math notranslate nohighlight">\(\beta=v/c=dx/cdt\)</span>.  It
+would be helpful for you to memorize this now.</p>
+</aside>
 <p>We need a way to remember to include that minus sign.  There are two
 ways of keeping track of it.  One is simpler for the beginner, and the
 other makes the more complicated material later easier to manage.
@@ -535,6 +547,13 @@ three have the properties of normal three vectors.  The size of any
 four vector is the same in any inertial reference frame, and to
 convert a four vector from one frame to another, there is a specific
 procedure one must follow (see <a class="reference internal" href="c4lorentztrans.html#chltrans"><span class="std std-ref">Chapter 4</span></a>).</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>The <strong>size</strong> of any four vector is always measured to be the same
+number in any inertial reference frames, although observers in
+different frames can, and will, disagree on the values of any of
+the four components.</p>
+</aside>
 </section>
 <section id="einstein-notation">
 <span id="seceinnot"></span><h3><span class="section-number">3.1.2. </span>Einstein Notation<a class="headerlink" href="#einstein-notation" title="Link to this heading">#</a></h3>
@@ -550,9 +569,10 @@ use the <span class="math notranslate nohighlight">\(i\)</span> until we get to 
 distinction between <strong>covariant</strong> and <strong>contravariant</strong> four-vectors.
 The mathematical details are not necessary at this stage, but suffice
 to say that the <strong>contravariant</strong> version of a four vector should be
-written as a column, as in Equation 6, only without the <span class="math notranslate nohighlight">\(i\)</span>.  The
-standard notion is to use a superscript greek letter to refer to the
-components, where the Greek letter could stand for 0, 1, 2, or 3.  So</p>
+written as a column, as in Equation <a class="reference internal" href="#equation-contravar">(3.2)</a>, only without the
+<span class="math notranslate nohighlight">\(i\)</span>.  The standard notion is to use a superscript greek letter to
+refer to the components, where the Greek letter could stand for 0, 1,
+2, or 3.  So</p>
 <div class="math notranslate nohighlight" id="equation-contravar">
 <span class="eqno">(3.2)<a class="headerlink" href="#equation-contravar" title="Link to this equation">#</a></span>\[\begin{split}dx^\alpha =
 \begin{bmatrix}
@@ -573,7 +593,7 @@ dz
 <p>The superscript here does NOT mean “raised to the power of”.  In this
 notation, <span class="math notranslate nohighlight">\(dy\)</span> would be written <span class="math notranslate nohighlight">\(dx^2\)</span>, but the 2 does not mean squared,
 it means the third component of the contravariant four-vector.  If
-people are using this notation, you have to be aware from the context
+people are using this notation, you <em>have</em> to be aware from the context
 whether they mean a contravariant component or an exponent.</p>
 </div>
 <p>There is also a <strong>covariant</strong> version of the four-vector, which is written
@@ -952,8 +972,8 @@ in the same place.</span><a class="headerlink" href="#shipfig" title="Link to th
 </figure>
 <p>We can therefore write a displacement four vector in the reference
 frame at rest with respect to the Earth:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5f373c6f-dc01-4b9a-b47b-e8fdd8426def">
-<span class="eqno">(3.10)<a class="headerlink" href="#equation-5f373c6f-dc01-4b9a-b47b-e8fdd8426def" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-6b2bda54-dab6-42e5-b505-362ccfc6b461">
+<span class="eqno">(3.10)<a class="headerlink" href="#equation-6b2bda54-dab6-42e5-b505-362ccfc6b461" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_\oplus =
 \begin{bmatrix}
 icdt_\oplus\\
@@ -977,8 +997,8 @@ aboard the space craft will measure some time interval, <span class="math notran
 between the time he sees the earth outside of his window and sees
 alpha centauri outside the window. The observer aboard the space craft
 measures a displacement 4-vector:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-14d67995-1766-41da-bb28-08cd37eefd8c">
-<span class="eqno">(3.11)<a class="headerlink" href="#equation-14d67995-1766-41da-bb28-08cd37eefd8c" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-1c58a2a4-9db1-4578-8544-145386ecb9ed">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-1c58a2a4-9db1-4578-8544-145386ecb9ed" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm rocket} =
 \begin{bmatrix}
 icdt_{\rm rocket}\\
@@ -995,13 +1015,13 @@ nothing to do with the first observer being physically <strong>on</strong> the E
 the <span class="math notranslate nohighlight">\(dt_\oplus\)</span> is measured by the infinite lattice of clocks at
 rest with respect to the Earth.</p>
 <p>The sizes of the two four vectors are:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1cee24d0-2aa4-4d2a-8f7e-b71a48032828">
-<span class="eqno">(3.12)<a class="headerlink" href="#equation-1cee24d0-2aa4-4d2a-8f7e-b71a48032828" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-22502e7d-d39a-4ab8-a3c8-f15d3548a5a0">
+<span class="eqno">(3.12)<a class="headerlink" href="#equation-22502e7d-d39a-4ab8-a3c8-f15d3548a5a0" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dx_\oplus^2 - (cdt_\oplus)^2 = -(cdt_{\rm rocket})^2
 \end{equation}\]</div>
 <p>Solve for <span class="math notranslate nohighlight">\(dt_{\rm rocket}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-361dec1a-a3e7-4c89-a7c3-93a7eccf7da8">
-<span class="eqno">(3.13)<a class="headerlink" href="#equation-361dec1a-a3e7-4c89-a7c3-93a7eccf7da8" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-60f5cb38-6dde-4e1d-a5be-41855a5d48f5">
+<span class="eqno">(3.13)<a class="headerlink" href="#equation-60f5cb38-6dde-4e1d-a5be-41855a5d48f5" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dt_{\rm rocket} = dt_\oplus\sqrt{1-\left(\frac{dx_\oplus}{cdt_\oplus}\right)^2}
 = dt_\oplus \sqrt{1-\beta^2}
 \end{equation}\]</div>
@@ -1203,8 +1223,8 @@ The reference frame at rest with respect to the ground is the unprimed
 frame on the left.  The red dot is the emission of the light and the
 blue dot is the detection of the light.  The displacement four vector
 in the train frame would be:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dae979dc-227c-4a85-9ca4-06069cc48ec1">
-<span class="eqno">(3.17)<a class="headerlink" href="#equation-dae979dc-227c-4a85-9ca4-06069cc48ec1" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-60d9f93d-1bfa-4a81-9e58-a40036505881">
+<span class="eqno">(3.17)<a class="headerlink" href="#equation-60d9f93d-1bfa-4a81-9e58-a40036505881" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm train} =
 \begin{bmatrix}
 icdt_0\\
@@ -1214,8 +1234,8 @@ icdt_0\\
 \end{bmatrix}
 \end{equation}\]</div>
 <p>while the displacement four vector from the ground’s reference frame is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3ae26118-552a-48c1-8442-04927fbe284f">
-<span class="eqno">(3.18)<a class="headerlink" href="#equation-3ae26118-552a-48c1-8442-04927fbe284f" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-51c262ed-ecee-4296-8e76-4d8533ae5ba9">
+<span class="eqno">(3.18)<a class="headerlink" href="#equation-51c262ed-ecee-4296-8e76-4d8533ae5ba9" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm ground} =
 \begin{bmatrix}
 icdt\\

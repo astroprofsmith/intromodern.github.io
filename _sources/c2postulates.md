@@ -182,9 +182,9 @@ means.  In essence, a "reference frame" refers to a single set of
 space and time coordinates.  Pick an origin in space and time, and
 then clock readings mark locations along a time axis, and ruler
 readings mark locations along spacial axes, which usually are the
-standard cartesian $x$, $y$, and $z$.  Four numbers can therefore define a
-moment location in space at a moment in time, relative to the chosen
-origin.
+standard cartesian $x$, $y$, and $z$.  Four numbers can therefore
+define a particular location in space at a particular moment in time,
+relative to the chosen origin.
 
 Once we have multiple sets of four numbers, we can define
 displacements and durations.  If you consider smaller and smaller
@@ -222,7 +222,7 @@ therefore the number of rulers in each direction from the origin, and
 each clock has a reading, based on the overall synchronization.  A
 single event, therefore, can be recorded as happening at the nearest
 clock (as long as these rulers are imaginary, we can imagine them
-being as small as we need them to be to achieve the desired spacial
+being as small as we need them to be to achieve the desired spatial
 resolution), marked at that clock reading: $x$, $y$, $z$, and $t$.
 Those numbers can be collected after the events by bringing the clocks
 back together and collating their readings.
@@ -239,7 +239,9 @@ relative velocity, which we will designate as $v_R$.  For special
 relativity, we require that $v_R$ be constant.  {numref}`relmotionfig`
 shows an animated representation of two reference frames in relative
 motion, although you have to imagine the lattice of rulers and clocks
-extending off to infinity.
+extending off to infinity.  If you zoom in far enough to move the edges
+of the lattice outside the frame of the animation, that will convey
+the feeling of the infinite lattice, for a while.
 
 ```{code-cell}
 :tags: ["remove-cell"]
@@ -265,18 +267,19 @@ loop, to represent more clocks and rods coming in from the side.
 
 Ultimately, we are interested in how objects in the universe move and
 interact with each other.  To study this motion, we need to make
-measurements of location and duration, which needs to happen within a
-chosen reference frame.  Measurements recorded in different reference
-frames can and will be compared, but they should never be mixed
-together.  A displacement measured in one reference frame divided by a
-duration measured in another reference frame would not represent a
-real velocity.  An object could be at rest (velocity of zero) in one
-reference frame, but to observers recording in a second reference
-frame, moving at a relative velocity to the first, the object would be
-recorded in different places at different times.  In other words, to
-the observers at rest with respect to the second reference frame, the
-object (and the lattice of rulers and clocks linked to it) would be
-moving, not their own lattice of rulers and clocks.
+measurements of location and duration.  These measurements need to
+happen within a single, consistent reference frame.  Measurements
+recorded in different reference frames can and will be compared, but
+they should never be mixed together.  A displacement measured in one
+reference frame divided by a duration measured in another reference
+frame would not represent a real velocity.  An object could be at rest
+(velocity of zero) in one reference frame, but to observers recording
+in a second reference frame, moving at a relative velocity to the
+first, the object would be recorded in different places at different
+times.  In other words, to the observers at rest with respect to the
+second reference frame, the object (and the lattice of rulers and
+clocks linked to it) would be moving, not their own lattice of rulers
+and clocks.
 
 Another important assumption we must make about the reference frames
 we consider in special relativity is that they be "inertial frames".
@@ -356,16 +359,15 @@ motion of the reference frames is not constant, the theory must be
 modified to a more general form, which makes it General Relativity
 (see [Chapter 13](chGRcon)).
 
-So, we are comparing two different inertial reference frames.  Before
-we go any further, it is important to state three characteristics of
-these reference frames that might seem self-evident, but they have
-important implications that are worth articulating explicitly.  First,
-imagine each frame of reference has a set of observers associated with
-it, or acting within it.  Both sets of observers have to agree that the
-same events happened.  Switching reference frames does not change what
-actually happens.  People in different reference frames may well
-disagree on when and where events happen, but they should not disagree
-on *whether* the events happen.
+Before we go any further, it is important to state three
+characteristics of these reference frames that might seem
+self-evident, but they have important implications that are worth
+articulating explicitly.  First, imagine each frame of reference has a
+set of observers associated with it, or acting within it.  Both sets
+of observers have to agree that the same events happened.  Switching
+reference frames does not change what actually happens.  People in
+different reference frames may well disagree on when and where events
+happen, but they should not disagree on *whether* the events happen.
 
 Second, each set of observers must agree on what the results of
 measurements are.  Not only must there be agreement within the set of
@@ -401,8 +403,15 @@ are dealing with the speeds of horses and dump trucks.  Although SR
 can (and will) make wildly different predictions at high speeds near
 the speed of light, the predicted relationships **must** reduce to the
 Newtonian predictions when you let the speed be very small.  This
-important check on our imagination is called the correspondence
-principle.
+important check on our imagination is called **the correspondence
+principle**.
+
+```{margin}
+The correspondence principle demands that whatever relationship we
+derive using the tools of Relativity Theory, no matter how
+counter-intuitive or startling, should reduce to the classical,
+Newtonian model in the limit of small speed ($v\ll c$).
+```
 
 ## Model to describe the experimental results.
 
@@ -441,8 +450,9 @@ Using the distances represented by the arrows in {numref}`expanding`, equation {
 (dx)^2+(dy)^2+(dz)^2 = (cdt)^2,
 ```
 where $dx$, $dy$, and $dz$ are how much the observer measured the wave
-front to propagate during the time interval $dt$, and $c$ is the speed
-of light as measured by the observer.
+front to propagate in each of the three cartesian directions during
+the time interval $dt$, and $c$ is the speed of light as measured by
+the observer.
 
 Consider a second reference frame, which we designate "the primed
 frame" (all variables measured in this frame will have a prime on
@@ -495,7 +505,7 @@ where $dx^\prime$, $dy^\prime$, and $dz^\prime$ are how much the
 second observer measured the wave front to propagate in time interval 
 $dt^\prime$, and $c$ (not $c^\prime$!) is the speed of light.
 
-Equations {eq}`eqsph2` and {eq}`eqsphp` can be combined to be:
+If you subtract Equation {eq}`eqsphp` from {eq}`eqsph2`, you get:
 ```{math}
 :label: eqnds
 (dx)^2+(dy)^2+(dz)^2 - (cdt)^2 = (dx^\prime)^2 + (dy^\prime)^2 + (dz^\prime)^2 - (c dt^\prime)^2
@@ -512,9 +522,10 @@ statement can be written as a conservation law. The sum:
 ```
 must remain constant. This conservation law is quite different from
 what Newton and his contemporaries would have thought was 'conserved'
-in the measurement of the motion of an thing. In the Newtonian world,
-the value of $dt$ would be the same for both observers, implying a
-$c^\prime \neq c$, not this strange looking sum. But, if this model
+in the measurement of the motion of an object. In the Newtonian world,
+the value of $dt$ would be the same for both observers, demanding that
+we infer different speeds: $c^\prime \neq c$. Instead we insist that
+it is this strange looking sum that remains unchanged. But, if this model
 agrees with the experiments, it is not wrong; even if it disagrees
 with Newton's model.
 
