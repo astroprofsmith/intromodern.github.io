@@ -95,7 +95,7 @@ and you will see that the nearby "star" is actually Neptune!
 :align: center
 :name: neptune
 
-Above is a sketch from Galileo's observing notebook on the night of 27
+A sketch from Galileo's observing notebook on the night of 27
 Dec 1612.  The dotted line leads to a nearby star that Galileo was
 using as a reference, but back extrapolation shows that this "star"
 was actually, unbeknownst to anyone at the time, the planet Neptune!

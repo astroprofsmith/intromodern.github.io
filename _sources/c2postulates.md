@@ -79,7 +79,7 @@ we need clocks and rulers.
 
 What makes a clock?  Think of everything you have ever heard of being
 used as a clock.  Your list might include the water clock, the
-hourglass, the sundial, the pendulum (grandfather) clock, a analog
+hourglass, the sundial, the pendulum (grandfather) clock, an analog
 clock face, and an atomic clock.  Before you read any further, try to
 determine what they all have in common that makes them work as clocks.
 The answer is that they all involve repeating patterns in space.  Each
@@ -496,9 +496,10 @@ second observer measured the wave front to propagate in time interval
 $dt^\prime$, and $c$ (not $c^\prime$!) is the speed of light.
 
 Equations {eq}`eqsph2` and {eq}`eqsphp` can be combined to be:
-\begin{equation}
+```{math}
+:label: eqnds
 (dx)^2+(dy)^2+(dz)^2 - (cdt)^2 = (dx^\prime)^2 + (dy^\prime)^2 + (dz^\prime)^2 - (c dt^\prime)^2
-\end{equation}(eqn:ds)
+```
 
 It appears that there is a sum of squares of measured displacements
 and time intervals for the measurement of the propagation of the wave

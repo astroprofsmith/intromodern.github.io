@@ -1,9 +1,8 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
@@ -15,53 +14,49 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c7velocity';</script>
@@ -78,28 +73,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -121,12 +111,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -141,9 +139,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="intro.html">
+  
   
   
   
@@ -153,12 +155,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Introduction to Modern Physics - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Introduction to Modern Physics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -200,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -209,14 +222,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -338,26 +351,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -381,7 +396,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">7.1. Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-four-velocity">7.2. The Four Velocity</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-of-velocities">7.3. Addition of Velocities</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-off-axis-motion">7.4. Example of Off-Axis Motion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#off-axis-components-of-velocity">7.4. Off-Axis Components of Velocity</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">7.5. Problems</a></li>
 </ul>
             </nav>
@@ -392,10 +407,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="the-velocity-four-vector">
-<span id="ch4vel"></span><h1><span class="section-number">7. </span>The Velocity Four-Vector<a class="headerlink" href="#the-velocity-four-vector" title="Permalink to this heading">#</a></h1>
+<span id="ch4vel"></span><h1><span class="section-number">7. </span>The Velocity Four-Vector<a class="headerlink" href="#the-velocity-four-vector" title="Link to this heading">#</a></h1>
 <p>Once we have carefully defined what we mean by position and
 displacement, as measured in a particular reference frame,
 we can turn our attention to the question of motion.  Specifically,
@@ -420,17 +435,17 @@ forward, will that ball not exceed the speed of light limit?
 How can a careful treatment of velocity help us understand such
 apparent contradictions?</p>
 <section id="background">
-<h2><span class="section-number">7.1. </span>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.1. </span>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h2>
 <p>In the slow moving world of dump trucks and physics professors, the
 physical velocity of an object as measured by an observer is given by
 the vector quantity:</p>
 <div class="math notranslate nohighlight" id="equation-oldvel">
-<span class="eqno">(7.1)<a class="headerlink" href="#equation-oldvel" title="Permalink to this equation">#</a></span>\[\vec{v} = \frac{d\vec{r}}{dt} = (dx/dt,dy/dt,dz/dt) = v_x\hat{x}
+<span class="eqno">(7.1)<a class="headerlink" href="#equation-oldvel" title="Link to this equation">#</a></span>\[\vec{v} = \frac{d\vec{r}}{dt} = (dx/dt,dy/dt,dz/dt) = v_x\hat{x}
 +v_y\hat{y}+v_z\hat{z}\]</div>
 <p>A second observer, moving at velocity <span class="math notranslate nohighlight">\(\vec{v}_R\)</span> in some direction,
 measures this same object moving with velocity:</p>
 <div class="math notranslate nohighlight" id="equation-olddvel">
-<span class="eqno">(7.2)<a class="headerlink" href="#equation-olddvel" title="Permalink to this equation">#</a></span>\[\vec{v}' = \vec{v}-\vec{v}_R = \frac{d\vec{r}'}{dt} = (dx'/dt,dy'/dt,dz'/dt) \]</div>
+<span class="eqno">(7.2)<a class="headerlink" href="#equation-olddvel" title="Link to this equation">#</a></span>\[\vec{v}' = \vec{v}-\vec{v}_R = \frac{d\vec{r}'}{dt} = (dx'/dt,dy'/dt,dz'/dt) \]</div>
 <p>The value of the time interval <span class="math notranslate nohighlight">\(dt\)</span> is the same for both observers.  Prior
 to Einstein, it would have never occured to anyone to question whether
 <span class="math notranslate nohighlight">\(dt\)</span> might be different for different observers.</p>
@@ -445,7 +460,7 @@ in scalar time.</p>
 3-vector and <span class="math notranslate nohighlight">\(dt\)</span> is a scalar. A vector divided by a scalar is a vector.</p>
 </section>
 <section id="the-four-velocity">
-<h2><span class="section-number">7.2. </span>The Four Velocity<a class="headerlink" href="#the-four-velocity" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.2. </span>The Four Velocity<a class="headerlink" href="#the-four-velocity" title="Link to this heading">#</a></h2>
 <p>We cannot define a four velocity by simply taking the displacement
 four vector <span class="math notranslate nohighlight">\([dx_4]\)</span> and dividing by <span class="math notranslate nohighlight">\(dt\)</span>, because <span class="math notranslate nohighlight">\(dt\)</span> is not, in
 fact, a scalar.  It changes under a Lorentz transformation, and
@@ -454,7 +469,7 @@ defined in <a class="reference internal" href="c2postulates.html#chsrpost"><span
 interval, <span class="math notranslate nohighlight">\(dt_0\)</span>, <strong>is</strong> a scalar!  So we can define a four velocity
 as</p>
 <div class="math notranslate nohighlight" id="equation-eq4vdef">
-<span class="eqno">(7.3)<a class="headerlink" href="#equation-eq4vdef" title="Permalink to this equation">#</a></span>\[[v_4] = \frac{[dx_4]}{dt_0}\]</div>
+<span class="eqno">(7.3)<a class="headerlink" href="#equation-eq4vdef" title="Link to this equation">#</a></span>\[[v_4] = \frac{[dx_4]}{dt_0}\]</div>
 <p>where <span class="math notranslate nohighlight">\(dt_0\)</span> is the Lorentz scalar as described in <a class="reference internal" href="c6displacement.html#ch4disp"><span class="std std-ref">Chapter
 6</span></a>. Since <span class="math notranslate nohighlight">\(dt_0\)</span> is a scalar, <span class="math notranslate nohighlight">\(1/dt_0\)</span> is also a scalar.  The
 4-velocity is a proper 4-vector because the displacement 4-vector is a
@@ -465,7 +480,7 @@ you multiply each of the components of the vector by that scalar
 quantity. Putting in the components of the displacement 4-vector into
 equation <a class="reference internal" href="#equation-eq4vdef">(7.3)</a> and multiplying each by <span class="math notranslate nohighlight">\(1/dt_0\)</span> gives:</p>
 <div class="math notranslate nohighlight" id="equation-eq4v0">
-<span class="eqno">(7.4)<a class="headerlink" href="#equation-eq4v0" title="Permalink to this equation">#</a></span>\[\begin{split}[v_4] = \frac{[dx_4]}{dt_0} =
+<span class="eqno">(7.4)<a class="headerlink" href="#equation-eq4v0" title="Link to this equation">#</a></span>\[\begin{split}[v_4] = \frac{[dx_4]}{dt_0} =
 \begin{bmatrix}
 ic\frac{dt}{dt_0}\\
 \frac{dx}{dt_0}\\
@@ -487,7 +502,7 @@ Then we define <span class="math notranslate nohighlight">\(\gamma\)</span> the 
 Equation <a class="reference internal" href="#equation-eq4v0">(7.4)</a> then can be
 written as:</p>
 <div class="math notranslate nohighlight" id="equation-eq4vgam">
-<span class="eqno">(7.5)<a class="headerlink" href="#equation-eq4vgam" title="Permalink to this equation">#</a></span>\[\begin{split}[v_4] = \frac{[dx_4]}{dt_0} = \gamma \frac{[dx_4]}{dt}=
+<span class="eqno">(7.5)<a class="headerlink" href="#equation-eq4vgam" title="Link to this equation">#</a></span>\[\begin{split}[v_4] = \frac{[dx_4]}{dt_0} = \gamma \frac{[dx_4]}{dt}=
 \begin{bmatrix}
 ic\gamma\\
 \gamma v_x\\
@@ -551,10 +566,10 @@ side effect of how we define velocity.</p>
 the demand of the Michelson-Morley experiment that its size must be a
 scalar. The size of the 4-velocity is:</p>
 <div class="math notranslate nohighlight" id="equation-sizev4a">
-<span class="eqno">(7.6)<a class="headerlink" href="#equation-sizev4a" title="Permalink to this equation">#</a></span>\[[v_4]^2 = -\gamma^2c^2 + \gamma^2v_x^2+\gamma^2v_y^2+\gamma^2v_z^2\]</div>
+<span class="eqno">(7.6)<a class="headerlink" href="#equation-sizev4a" title="Link to this equation">#</a></span>\[[v_4]^2 = -\gamma^2c^2 + \gamma^2v_x^2+\gamma^2v_y^2+\gamma^2v_z^2\]</div>
 <p>factor out the gamma and use <span class="math notranslate nohighlight">\(v^2=v_x^2+v_y^2+v_z^2\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-sizev4b">
-<span class="eqno">(7.7)<a class="headerlink" href="#equation-sizev4b" title="Permalink to this equation">#</a></span>\[[v_4]^2 = \gamma^2 (v^2-c^2) = -c^2\gamma^2\left(1-\left(\frac{v}{c}\right)^2\right) = -c^2\gamma^2(1-\beta^2) = -c^2\]</div>
+<span class="eqno">(7.7)<a class="headerlink" href="#equation-sizev4b" title="Link to this equation">#</a></span>\[[v_4]^2 = \gamma^2 (v^2-c^2) = -c^2\gamma^2\left(1-\left(\frac{v}{c}\right)^2\right) = -c^2\gamma^2(1-\beta^2) = -c^2\]</div>
 <div class="math notranslate nohighlight">
 \[\boxed{[v_4]^2 = -c^2}\]</div>
 <p>Once again, the size of a 4-vector is a negative number. The
@@ -566,7 +581,7 @@ the Michelson-Morley experiment.</p>
 to define is a unitless 4-velocity known as the 4-beta. This saves
 writing down  “<span class="math notranslate nohighlight">\(\times 10^8\)</span> m/s” over and over again.</p>
 <div class="math notranslate nohighlight" id="equation-eqbeta4">
-<span class="eqno">(7.8)<a class="headerlink" href="#equation-eqbeta4" title="Permalink to this equation">#</a></span>\[\begin{split}[\beta_4] = \frac{[v_4]}{c} = 
+<span class="eqno">(7.8)<a class="headerlink" href="#equation-eqbeta4" title="Link to this equation">#</a></span>\[\begin{split}[\beta_4] = \frac{[v_4]}{c} = 
 \begin{bmatrix}
 i\gamma\\
 \gamma \frac{v_x}{c}\\
@@ -597,9 +612,26 @@ and add the terms is <span class="math notranslate nohighlight">\(-1\)</span>, w
 took the square of the four velocity and divided by <span class="math notranslate nohighlight">\(c^2\)</span>.  The constant
 <span class="math notranslate nohighlight">\(-1\)</span> is of course also invarient across reference frames, and therefore
 also a Lorentz scalar, as the size of a four vector must be.</p>
+<p>It can be interesting to think about this four vector in the context
+of spacetime hyperbolic rotations as explained in
+<a class="reference internal" href="c5spacetime.html#sechyperot"><span class="std std-numref">Section 5.6</span></a>.  The magnitude of the beta four vector is <span class="math notranslate nohighlight">\(-1\)</span>.
+That is its size, which must maintain the same value through Lorentz
+transformations into reference frames in relative motion.  For an
+object at rest, we would say its velocity is zero, but the
+four-velocity must still have a size of <span class="math notranslate nohighlight">\(-1\)</span>, so it has a time
+component of <span class="math notranslate nohighlight">\(i\)</span>.  As you “boost” into a moving reference frame, the
+object gains velocity through space, but to maintain the same size, it
+must also gain velocity in time, and the Lorentz factor <span class="math notranslate nohighlight">\(\gamma\)</span>
+ensures that the total size remains the same.  The speed limit of the
+universe, <span class="math notranslate nohighlight">\(\beta=1\)</span> is set by the demand that the size of the velocity
+four-vector remain <span class="math notranslate nohighlight">\(-1\)</span>, no matter how far you rotate it through
+hyperbolic space time.  Thinking of changing speed as a rotation is
+also helpful in understanding what happens to velocities when
+you consider them from the point of view of a relatively moving frame
+of reference, as explored in the next section.</p>
 </section>
 <section id="addition-of-velocities">
-<h2><span class="section-number">7.3. </span>Addition of Velocities<a class="headerlink" href="#addition-of-velocities" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.3. </span>Addition of Velocities<a class="headerlink" href="#addition-of-velocities" title="Link to this heading">#</a></h2>
 <p>The universality of the speed of light poses a very difficult
 interpretive problem that we are now in a position to start to
 address.  If a person is on a train and throws a ball toward the front
@@ -633,7 +665,7 @@ moving with respect to her.  A second observer, A’, moving with speed
 also measures the components of the 4-velocity for the object. How are
 the components of these two 4-vectors related?</p>
 <figure class="align-default" id="stbeta4fig" style="width: 800px">
-<img alt="_images/58db201e0f57fee45142d197a7db27151d5102c717cc1b1a2b65aef9740f627c.png" src="_images/58db201e0f57fee45142d197a7db27151d5102c717cc1b1a2b65aef9740f627c.png" />
+<img alt="_images/24bb903bdab437b23579c4660f23939fffba9fd66f5554f9f12b41764249c010.png" src="_images/24bb903bdab437b23579c4660f23939fffba9fd66f5554f9f12b41764249c010.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 7.1 </span><span class="caption-text">A beta four vector represented in a spacetime diagram for a reference
 frame <span class="math notranslate nohighlight">\(A\)</span>.  A second reference frame <span class="math notranslate nohighlight">\(A'\)</span> is moving to the right,
@@ -641,7 +673,7 @@ relative to the first, with a speed <span class="math notranslate nohighlight">\
 component of the beta four vector represented by the diagonal arrow is
 1.0 and the space component is 0.7, so the actual speed being
 represented here is <span class="math notranslate nohighlight">\(\beta = 0.7/1.0 = 0.7\)</span>, or seven tenths the speed
-of light.</span><a class="headerlink" href="#stbeta4fig" title="Permalink to this image">#</a></p>
+of light.</span><a class="headerlink" href="#stbeta4fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>To figure this out, let us first diagram this situation.  It’s not
@@ -670,7 +702,7 @@ later.</p>
 </div>
 <p>The unprimed observer measures a 4-beta:</p>
 <div class="math notranslate nohighlight" id="equation-b4unp">
-<span class="eqno">(7.9)<a class="headerlink" href="#equation-b4unp" title="Permalink to this equation">#</a></span>\[\begin{split}[\beta_4]
+<span class="eqno">(7.9)<a class="headerlink" href="#equation-b4unp" title="Link to this equation">#</a></span>\[\begin{split}[\beta_4]
 = 
 \begin{bmatrix}
 i\gamma\\
@@ -681,7 +713,7 @@ i\gamma\\
 <p>from here, we will drop the zeros and just work with the
 first two components:</p>
 <div class="math notranslate nohighlight" id="equation-ltbeta">
-<span class="eqno">(7.10)<a class="headerlink" href="#equation-ltbeta" title="Permalink to this equation">#</a></span>\[\begin{split}[\beta_4]' =
+<span class="eqno">(7.10)<a class="headerlink" href="#equation-ltbeta" title="Link to this equation">#</a></span>\[\begin{split}[\beta_4]' =
 {\cal L}_x(\beta_R)[\beta_4]
 =
 \begin{bmatrix}
@@ -693,7 +725,7 @@ i\gamma\\
 \gamma \beta
 \end{bmatrix}\end{split}\]</div>
 <div class="math notranslate nohighlight" id="equation-b4p">
-<span class="eqno">(7.11)<a class="headerlink" href="#equation-b4p" title="Permalink to this equation">#</a></span>\[\begin{split}[\beta_4]' =
+<span class="eqno">(7.11)<a class="headerlink" href="#equation-b4p" title="Link to this equation">#</a></span>\[\begin{split}[\beta_4]' =
 \begin{bmatrix}
 i\gamma^\prime\\
 \gamma^\prime \beta^\prime
@@ -722,7 +754,7 @@ a consistent notation, it’s easier to hold the connections in your head.</p>
 
 cancel common factors to get</p>
 <div class="math notranslate nohighlight" id="equation-veladd1">
-<span class="eqno">(7.12)<a class="headerlink" href="#equation-veladd1" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(7.12)<a class="headerlink" href="#equation-veladd1" title="Link to this equation">#</a></span>\[\boxed{
 \beta' = \frac{\beta - \beta_R}{1-\beta\beta_R}}\]</div>
 <p>This is known as <strong>the velocity addition formula</strong>.  Note that
 although it is quite different from what Newton or Galileo would have
@@ -761,9 +793,54 @@ person with the laser on the train <em>and</em> the person on the ground will
 <em>both</em> measure the light as having the same speed.  The speed of light
 is the same in all inertial frames, as consistent with the first
 postulate and the Michelson-Morely experiment.</p>
+<p>It is important to be able to visualize the implications of Equation
+<a class="reference internal" href="#equation-veladd1">(7.12)</a>.  The relationships between relative velocities is shown
+in <a class="reference internal" href="#addvelfig"><span class="std std-numref">Fig. 7.2</span></a>.  The animation shows the worldlines for three
+objects in relative motion, while the slider allows you to change
+reference frames via your own relative velocity.  The default
+beginning state of the figure is that your observation frame is at
+rest with respect to the red object.  In this reference frame, the
+blue object is moving left at <span class="math notranslate nohighlight">\(\beta_b=0.3\)</span> and the green object is
+moving right at <span class="math notranslate nohighlight">\(\beta_g=0.7\)</span>.  You could interpret this as the
+worldlines of a spaceship (red) passing by a planet (blue) while being
+overtaken by a faster spaceship (green).  At the origin, all three
+objects are at the same location.</p>
+<p>By moving the slider, you can shift your perspective into reference
+frames with different relative motion.  Slide the bar to the right
+until the blue line is vertical.  This is the reference frame of
+the planet as two spaceships going at difference speeds pass it.
+The green spaceship is faster than the blue spaceship, as it must
+be, but it does not exceed the speed of light.  Continue moving the
+slider to the left, and you can see the speed of all three objects will
+approach the speed of light, but never reach it.  If you move the
+slider to the right, you can reach the reference frame of the
+green object, where the red and blue objects will be falling
+behind, and the blue object is moving faster than the red one.</p>
+<figure class="align-default" id="addvelfig" style="width: 800px">
+<div class="output text_html">
+        <iframe
+            width="800"
+            height="700"
+            src="https://glowscript.org/#/user/dasmith/folder/Public/program/SRVelAdd"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div><figcaption>
+<p><span class="caption-number">Fig. 7.2 </span><span class="caption-text">Animation of how velocity addition works.  The figure shows a
+spacetime diagram for three objects in relative constant velocity
+motion.  The velocity of the object is displayed in a box above the
+top of the worldline.  By moving the slider, you can change the
+relative velocity of the reference frame of the diagram.  A vertical
+worldline indicates an object at rest, and then the boxed numbers
+display the relative velocities of the other two objects in that
+reference frame.  Move the slider to find the rest frames for all
+three objects.</span><a class="headerlink" href="#addvelfig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
-<section id="example-of-off-axis-motion">
-<h2><span class="section-number">7.4. </span>Example of Off-Axis Motion<a class="headerlink" href="#example-of-off-axis-motion" title="Permalink to this heading">#</a></h2>
+<section id="off-axis-components-of-velocity">
+<h2><span class="section-number">7.4. </span>Off-Axis Components of Velocity<a class="headerlink" href="#off-axis-components-of-velocity" title="Link to this heading">#</a></h2>
 <p>Suppose that a particle is traveling with a velocity of <span class="math notranslate nohighlight">\(\beta\)</span> at an
 angle <span class="math notranslate nohighlight">\(\theta\)</span> with respect to the <span class="math notranslate nohighlight">\(x\)</span> axis of the unprimed frame.
 The 4-beta measured by an observer in the unprimed frame now has more
@@ -771,7 +848,7 @@ than two non-zero terms in it. The <span class="math notranslate nohighlight">\(
 applying trigonometry (which is to say, if the hypoteneuse is <span class="math notranslate nohighlight">\(\gamma\beta\)</span>,
 then <span class="math notranslate nohighlight">\(x=\gamma\beta\cos{\theta}\)</span> and <span class="math notranslate nohighlight">\(y = \gamma\beta\sin{\theta}\)</span>):</p>
 <div class="math notranslate nohighlight" id="equation-b4offax">
-<span class="eqno">(7.13)<a class="headerlink" href="#equation-b4offax" title="Permalink to this equation">#</a></span>\[\begin{split}[\beta_4] =
+<span class="eqno">(7.13)<a class="headerlink" href="#equation-b4offax" title="Link to this equation">#</a></span>\[\begin{split}[\beta_4] =
 \begin{bmatrix}
 i\gamma\\
 \gamma\beta\cos{\theta}\\
@@ -784,7 +861,7 @@ direction with respect to the first observer would measure this same
 velocity as having a different size and direction.  Setting up a
 Lorentz transformation into a primed frame:</p>
 <div class="math notranslate nohighlight" id="equation-b4offaxlt">
-<span class="eqno">(7.14)<a class="headerlink" href="#equation-b4offaxlt" title="Permalink to this equation">#</a></span>\[\begin{split}[\beta_4]' =
+<span class="eqno">(7.14)<a class="headerlink" href="#equation-b4offaxlt" title="Link to this equation">#</a></span>\[\begin{split}[\beta_4]' =
 \begin{bmatrix}
 i\gamma'\\
 \gamma'\beta'\cos{\theta'}\\
@@ -807,7 +884,7 @@ i\gamma\\
 \end{bmatrix}\end{split}\]</div>
 <p>which yields</p>
 <div class="math notranslate nohighlight" id="equation-b4poffax">
-<span class="eqno">(7.15)<a class="headerlink" href="#equation-b4poffax" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
+<span class="eqno">(7.15)<a class="headerlink" href="#equation-b4poffax" title="Link to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
 i\gamma'\\
 \gamma'\beta'\cos{\theta'}\\
 \gamma'\beta'\sin{\theta'}\\
@@ -831,7 +908,7 @@ i(1 - \beta_R\beta\cos{\theta})\\
 <p>To deduce what the angle with the <span class="math notranslate nohighlight">\(x'\)</span> axis is, we take the ratio of the
 first two spatial components in the primed frame:</p>
 <div class="math notranslate nohighlight" id="equation-tanthp">
-<span class="eqno">(7.16)<a class="headerlink" href="#equation-tanthp" title="Permalink to this equation">#</a></span>\[\tan{\theta'} = 
+<span class="eqno">(7.16)<a class="headerlink" href="#equation-tanthp" title="Link to this equation">#</a></span>\[\tan{\theta'} = 
 \frac{\gamma'\beta'\sin{\theta'}}{\gamma'\beta'\cos{\theta'}}
 =
 \frac{\gamma_R\gamma(\beta\sin{\theta}/\gamma_R)}{\gamma_R\gamma(\beta\cos{\theta}-\beta_R)}
@@ -848,7 +925,7 @@ divide each space component of <span class="math notranslate nohighlight">\([\be
 (to get rid of the <span class="math notranslate nohighlight">\(\gamma'\)</span>) then square them and add them (to
 get rid of the trig functions):</p>
 <div class="math notranslate nohighlight" id="equation-bpmag">
-<span class="eqno">(7.17)<a class="headerlink" href="#equation-bpmag" title="Permalink to this equation">#</a></span>\[\beta^{'2} = \left(\frac{\gamma'\beta'\cos{\theta'}}{\gamma'}\right)^2
+<span class="eqno">(7.17)<a class="headerlink" href="#equation-bpmag" title="Link to this equation">#</a></span>\[\beta^{'2} = \left(\frac{\gamma'\beta'\cos{\theta'}}{\gamma'}\right)^2
 +  \left(\frac{\gamma'\beta'\sin{\theta'}}{\gamma'}\right)^2
 =
 \left(\frac{\beta\cos{\theta}-\beta_R}{1 - \beta_R\beta\cos{\theta}}\right)^2
@@ -859,17 +936,17 @@ that at slow speeds, as <span class="math notranslate nohighlight">\(\beta_R\rig
 are just what Newton would expect, as explained above.  So the
 correspondence principle is satisfied.  To try to get some more
 intuition about the implications of this equation, a graph is more
-helpful than an equation.  <a class="reference internal" href="#figoffaxis"><span class="std std-numref">Fig. 7.2</span></a> shows a graph of
+helpful than an equation.  <a class="reference internal" href="#figoffaxis"><span class="std std-numref">Fig. 7.3</span></a> shows a graph of
 <span class="math notranslate nohighlight">\(\beta'\)</span> as a function of <span class="math notranslate nohighlight">\(\gamma_R\)</span> for an arbitrary choice of
 unprimed values of <span class="math notranslate nohighlight">\(\beta=0.866\)</span> and <span class="math notranslate nohighlight">\(\theta=\pi/4\)</span>.</p>
 <figure class="align-default" id="figoffaxis" style="width: 800px">
-<img alt="_images/6784df33799c254120ad323d6bc7b72f4819087e91116dcdac5f69d52b909d97.png" src="_images/6784df33799c254120ad323d6bc7b72f4819087e91116dcdac5f69d52b909d97.png" />
+<img alt="_images/fdf86e9ef5d88789d05c26a2cae19af7f286a2bd9033a8a66ce9e2dc732cc156.png" src="_images/fdf86e9ef5d88789d05c26a2cae19af7f286a2bd9033a8a66ce9e2dc732cc156.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 7.2 </span><span class="caption-text">Values for the off-axis beta velocity in the primed
+<p><span class="caption-number">Fig. 7.3 </span><span class="caption-text">Values for the off-axis beta velocity in the primed
 frame, for an unprimed <span class="math notranslate nohighlight">\(\beta=0.866\)</span> at <span class="math notranslate nohighlight">\(\pi/4\)</span> above the <span class="math notranslate nohighlight">\(x\)</span> axis.
 The blue line shows the horizontal component of <span class="math notranslate nohighlight">\(\beta'\)</span> while the red
 line shows the vertical component.  The magenta line is the total
-magnitude of <span class="math notranslate nohighlight">\(\beta'\)</span>.  A dotted green line shows the answer that
+magnitude of <span class="math notranslate nohighlight">\(\beta'\)</span>.  The green line shows the answer that
 Newtonian physics predicts for the magnitude of <span class="math notranslate nohighlight">\(\beta'\)</span>.  Note that
 the two theories agree near <span class="math notranslate nohighlight">\(\beta_R=0\)</span>, as the correspondence
 principle says they should, although the Newtonian theory of course
@@ -877,12 +954,96 @@ predicts speeds faster than light.  Horizontal dotted lines show zero
 velocity and the speed of light, while a vertical dotted line shows
 the original magnitude of <span class="math notranslate nohighlight">\(\beta\)</span>.  Note that the horizontal component
 switches direction, as you expect.  All components of <span class="math notranslate nohighlight">\(\beta'\)</span> head
-toward one as the relative speed goes to one, in either direction.</span><a class="headerlink" href="#figoffaxis" title="Permalink to this image">#</a></p>
+toward one as the relative speed goes to one, in either direction.</span><a class="headerlink" href="#figoffaxis" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<p>The implications of this graph are difficult to visualize, so I have
+also provided an interactive vector visualization of the same
+equations in <a class="reference internal" href="#bxbyfig"><span class="std std-numref">Fig. 7.4</span></a>.  The slider changes the relative
+velocity of the observer frame.  The white arrow shows the
+relativistic velocity, where the components are defined by the blue
+and red lines in <a class="reference internal" href="#figoffaxis"><span class="std std-numref">Fig. 7.3</span></a>.  The magnitude of the vector
+(the magenta line) is in a box at the end of the arrow, and the angle
+with the x-axis (in degrees) is in the orange box. The green arrow
+shows the Newtonian prediction.  As you move the slider, that is
+like moving horizontally in <a class="reference internal" href="#figoffaxis"><span class="std std-numref">Fig. 7.3</span></a>, and the values
+of the lines in <a class="reference internal" href="#figoffaxis"><span class="std std-numref">Fig. 7.3</span></a> are used to construct the
+arrows you see in <a class="reference internal" href="#bxbyfig"><span class="std std-numref">Fig. 7.4</span></a>.  As you move the slider, make
+sure you understand how the behavior of the arrows matches the
+curves in <a class="reference internal" href="#figoffaxis"><span class="std std-numref">Fig. 7.3</span></a>.</p>
+<p>The default relative velocity, zero, is the frame in which the
+<span class="math notranslate nohighlight">\(\beta=0.866\)</span> is measured, so the green and white arrows agree at that
+<span class="math notranslate nohighlight">\(\beta_R\)</span>.  Note that as you change the relative velocity, the
+magnitude of the relativistic velocity never goes above one.  At
+<span class="math notranslate nohighlight">\(\beta_R=0.866\times\cos{\theta_0}\)</span>, which is about 0.62, the
+horizontal components of both arrows will be the same (zero), but the
+vertical components are not the same.  Note also that the vertical
+component of the green arrow does not change – in Newtonian physics,
+relative motion in the x direction has no effect on speed in the
+y-direction.  However, the y component of the relativistic velocity
+changes significantly, so for large values of <span class="math notranslate nohighlight">\(\beta_R\)</span>, the
+directions of the velocities are quite significantly different.</p>
+<figure class="align-default" id="bxbyfig" style="width: 800px">
+<div class="output text_html">
+        <iframe
+            width="800"
+            height="700"
+            src="https://glowscript.org/#/user/dasmith/folder/Public/program/SRoffaxis"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div><figcaption>
+<p><span class="caption-number">Fig. 7.4 </span><span class="caption-text">Interactive representation of the velocity vectors for off-axis
+motion, as a function of the relative velocity of the observer’s
+frame.  The relative velocity can be changed with the slider.
+The white arrow shows the relativistic velocity, where the components
+are defined by the blue and red lines in <a class="reference internal" href="#figoffaxis"><span class="std std-numref">Fig. 7.3</span></a>.
+The magnitude of the vector (the magenta line) is in a box at the
+end of the arrow, and the angle with the x-axis (in degrees) is in
+the orange box.
+The green arrow shows the Newtonian expectation.  To help
+guide the eye, the height of the y-component of the Newtonian
+velocity is marked with a horizontal red line.</span><a class="headerlink" href="#bxbyfig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The implications of this analysis are bizarre and uncomfortable
+when viewed from our life experience down here in the world of
+dump trucks and horses.  We learn in introductory physics that
+perpendicular directions can be treated independently.  A ball
+tossed at an angle relative to the ground accelerates in the
+vertical direction and therefore traces out a parabola in height,
+while the horizontal velocity remains unchanged.  Run alongside
+the ball at that horizontal velocity, and it will look to you like
+the ball simply goes straight up and back down again.  The horizontal
+motion has no effect on the vertical motion.</p>
+<p>But this analysis demands that the off-axis velocity <em>is</em> affected by
+the relative motion along the axis.  As the on-axis velocity increases
+(follow the blue line to either the right or left end), the off-axis
+velocity (the red line) must decrease.  This counter-intuitive result
+is the direct result of demanding that the overall magnitude of the
+four-vector remain constant.  If <span class="math notranslate nohighlight">\(\beta_x^2+\beta_y^2\leq 1\)</span>, then
+as <span class="math notranslate nohighlight">\(\beta_x\rightarrow 1\)</span>, <span class="math notranslate nohighlight">\(\beta_y\)</span> must get smaller.  If it didn’t,
+the sum of the squares would exceed the speed limit of the universe.</p>
+<p>However, this leaves us with the unsettling conclusion that changing
+the relative motion of two reference frames can actually change the
+velocity in a perpendicular direction.  Classically, we define a change
+in velocity as an acceleration, and Newton’s second law demands that
+an acceleration be linked to a force.  There are no forces involved
+in changing reference frames – if I pass you on the highway, I
+exert no force on your car to make it move backwards relative to
+mine.  If there is no force involved, how can there be a change
+in velocity?  How do Newton’s Laws work in the context of Special
+Relativity?</p>
+<p>To answer these questions, we must turn to the analysis of the four
+vectors for acceleration and force, which we tackle in
+<a class="reference internal" href="c10force.html#chforce"><span class="std std-ref">Chapter 10</span></a>.  However, force is fundamentally the rate of change
+of momentum.  Before we can understand force, we must first grapple
+with how relativity affects the concept of momentum.  This is
+the main topic of <a class="reference internal" href="c8momentum.html#ch4mom"><span class="std std-ref">Chapter 8</span></a>.</p>
 </section>
 <section id="problems">
-<h2><span class="section-number">7.5. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.5. </span>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Janet is taking a joy ride on a rocket, traveling with <span class="math notranslate nohighlight">\(\beta =
 0.72\)</span> with respect to the Earth, when an alien space craft overtakes
@@ -921,7 +1082,7 @@ make sense? Why?</p></li>
 <li><p>Show that for particles traveling very near the speed of light</p></li>
 </ol>
 <div class="math notranslate nohighlight" id="equation-gamnearc">
-<span class="eqno">(7.18)<a class="headerlink" href="#equation-gamnearc" title="Permalink to this equation">#</a></span>\[\gamma \approx 0.707 \sqrt{\frac{c}{c-v}}\]</div>
+<span class="eqno">(7.18)<a class="headerlink" href="#equation-gamnearc" title="Link to this equation">#</a></span>\[\gamma \approx 0.707 \sqrt{\frac{c}{c-v}}\]</div>
 <p>Use this result to find <span class="math notranslate nohighlight">\(\gamma\)</span> for an electron that is traveling
 at a speed of 0.1 m/s less than the speed of light.</p>
 <ol class="arabic simple" start="8">
@@ -970,8 +1131,8 @@ never exceed <span class="math notranslate nohighlight">\(c\)</span>, even for a
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="c6displacement.html"
@@ -1000,6 +1161,7 @@ never exceed <span class="math notranslate nohighlight">\(c\)</span>, even for a
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
@@ -1009,7 +1171,7 @@ never exceed <span class="math notranslate nohighlight">\(c\)</span>, even for a
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">7.1. Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-four-velocity">7.2. The Four Velocity</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-of-velocities">7.3. Addition of Velocities</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-off-axis-motion">7.4. Example of Off-Axis Motion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#off-axis-components-of-velocity">7.4. Off-Axis Components of Velocity</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">7.5. Problems</a></li>
 </ul>
   </nav></div>
@@ -1032,9 +1194,10 @@ By Donald A. Smith and Rex Adelberger
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1058,8 +1221,8 @@ By Donald A. Smith and Rex Adelberger
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

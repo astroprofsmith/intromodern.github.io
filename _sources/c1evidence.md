@@ -60,7 +60,8 @@ m/s.  If a light beam on earth travels in the same direction as the
 orbital motion about the sun, then that beam of light is in a frame of
 reference that is moving at $3.0 \times 10^4$ m/s with respect to the
 speed of the ether. If the beam of light is heading towards the sun,
-it is moving in a frame of reference that is at respect to the ether.
+it is moving in a frame of reference that is at rest with respect to
+the ether.
 
 Michelson designed an interferometer (schematically shown in
 {numref}`michelfig`) that used partially silvered mirrors to split a

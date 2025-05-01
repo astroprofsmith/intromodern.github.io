@@ -1,9 +1,8 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
@@ -15,53 +14,49 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c10force';</script>
@@ -78,28 +73,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -121,12 +111,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -141,9 +139,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="intro.html">
+  
   
   
   
@@ -153,12 +155,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Introduction to Modern Physics - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Introduction to Modern Physics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -200,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -209,14 +222,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -338,26 +351,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -381,15 +396,17 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">10.1. Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamics-from-the-lorentz-factor">10.2. Dynamics from the Lorentz Factor</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-second-law-with-four-vectors">10.3. Newton’s Second Law with Four Vectors</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-minkowski-force">10.4. The Minkowski Force</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-10-1">10.4.1. Example 10.1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-minkowski-force">10.4. The Minkowski Force</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-size-of-the-minkowski-force">10.5. The Size of the Minkowski Force</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lorentz-transforming-forces">10.6. Lorentz Transforming Forces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-acceleration-four-vector">10.7. The Acceleration Four Vector</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">10.8. Examples</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-10-1">10.8.1. Example 10.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-10-2">10.8.2. Example 10.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-10-3">10.8.3. Example 10.3</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-acceleration-four-vector">10.5. The Acceleration Four Vector</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-10-2">10.5.1. Example 10.2</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">10.6. Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">10.9. Problems</a></li>
 </ul>
             </nav>
         </div>
@@ -399,12 +416,12 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="relativistic-force-and-acceleration">
-<h1><span class="section-number">10. </span>Relativistic Force and Acceleration<a class="headerlink" href="#relativistic-force-and-acceleration" title="Permalink to this heading">#</a></h1>
+<span id="chforce"></span><h1><span class="section-number">10. </span>Relativistic Force and Acceleration<a class="headerlink" href="#relativistic-force-and-acceleration" title="Link to this heading">#</a></h1>
 <section id="background">
-<h2><span class="section-number">10.1. </span>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">10.1. </span>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h2>
 <p>Dynamics is the study of how motion of an object changes with time. In
 the late 1600’s Issac Newton proposed a model for predicting the
 changes in motion of a slow moving (in 21st century terms)
@@ -414,13 +431,19 @@ characterized by a vector, called a force, that is determined by
 where the object is, how fast it is traveling, and values of
 quantities such as mass, electrical charge, etc.</p>
 <p>Newton suggested that if one calculates the vector sum of
-all the forces acting on the object, then this net force</p>
+all the forces acting on the object, then this net force
+equals the rate of change of the momentum of the object.
+Mathematically,</p>
 <div class="math notranslate nohighlight" id="equation-newton2nd">
-<span class="eqno">(10.1)<a class="headerlink" href="#equation-newton2nd" title="Permalink to this equation">#</a></span>\[\vec{F}_{\rm net} = \Sigma_n \vec{F}_n =
+<span class="eqno">(10.1)<a class="headerlink" href="#equation-newton2nd" title="Link to this equation">#</a></span>\[\vec{F}_{\rm net} = \sum_n \vec{F}_n =
 \frac{d\vec{p}}{dt} = \frac{d(m\vec{v})}{dt}\]</div>
 <p>where <span class="math notranslate nohighlight">\(m\)</span> is the mass of the slow moving object, <span class="math notranslate nohighlight">\(\vec{v}\)</span> is the
 velocity relative to the observer of the object and <span class="math notranslate nohighlight">\(dt\)</span> is the
-(infinitesimal) time interval. While this model worked well for the
+(infinitesimal) time interval.  If the net force is zero, the momentum
+will remain constant.  If we can take <span class="math notranslate nohighlight">\(m\)</span> to be a constant, the last
+term becomes mass time acceleration, or the famous <span class="math notranslate nohighlight">\(\vec{F}=m\vec{a}\)</span>.
+This encapsulates Newton’s first and second laws of motion.</p>
+<p>While this model worked well for the
 speeds that were known in the 1700s, its application to objects moving
 near the speed of light has some problems. One problem is with the
 <span class="math notranslate nohighlight">\(dt\)</span> term. As we know now, <span class="math notranslate nohighlight">\(dt\)</span> depends on the reference frame of the
@@ -433,6 +456,13 @@ fast value.  This is no problem for Newton, who never had to deal with
 very large speeds, but we now know that nothing can move faster than
 <span class="math notranslate nohighlight">\(c\)</span>, the speed limit of the universe.  Equation <a class="reference internal" href="#equation-newton2nd">(10.1)</a> has
 no built in speed limit.</p>
+<p>Third, the relativity of simultaneity means that Newton’s Third Law
+can no longer be relied upon.  If every force is to be paired with
+a reverse force that acts at the same time, that simultaneity may
+no longer be valid in all reference frames, and one could imagine
+a reference frame in which the interacting forces are no longer
+simultaneous and therefore not balancing each other out.  Only
+constant forces could consistently maintain reciprocity.</p>
 <p>To fix these problems, we need to cast Equation <a class="reference internal" href="#equation-newton2nd">(10.1)</a> in
 four-vector form.  Then we can predict the acceleration of objects
 near the speed of light and characterize their motion.  But before
@@ -441,13 +471,13 @@ to be made about how the structure of the Lorentz factor itself is tied
 deeply into the mechanics of energy and motion.</p>
 </section>
 <section id="dynamics-from-the-lorentz-factor">
-<h2><span class="section-number">10.2. </span>Dynamics from the Lorentz Factor<a class="headerlink" href="#dynamics-from-the-lorentz-factor" title="Permalink to this heading">#</a></h2>
-<p>We originally derived the Lorentz factor as a way to keep the speed of
-light constant in all relatively moving reference frames, leading to
-an interpretation of the factor as a ratio of the time interval
-between two events in the same location to the time interval between
-those same two events in a relatively moving reference frame (aka time
-dilation).</p>
+<h2><span class="section-number">10.2. </span>Dynamics from the Lorentz Factor<a class="headerlink" href="#dynamics-from-the-lorentz-factor" title="Link to this heading">#</a></h2>
+<p>We originally derived the Lorentz factor back in <a class="reference internal" href="c3fourvectors.html#secgamma"><span class="std std-numref">Section 3.3</span></a> as
+a way to keep the speed of light constant in all relatively moving
+reference frames, leading to an interpretation of the factor as a
+ratio of the time interval between two events in the same location to
+the time interval between those same two events in a relatively moving
+reference frame (aka time dilation).</p>
 <p>As we expanded our understanding of the process of characterizing
 space, time, and motion as observed in reference frames in relative
 motion, the same Lorentz factor showed up over and over again in different
@@ -463,35 +493,45 @@ it can lead to connections between space, time, energy, and momentum.
 Start with writing the Lorentz factor this way, assuming <span class="math notranslate nohighlight">\(c=1\)</span> to make our
 lives easier:</p>
 <div class="math notranslate nohighlight" id="equation-gamma1">
-<span class="eqno">(10.2)<a class="headerlink" href="#equation-gamma1" title="Permalink to this equation">#</a></span>\[\gamma = (1-\vec{v}\cdot\vec{v})^{-1/2}\]</div>
+<span class="eqno">(10.2)<a class="headerlink" href="#equation-gamma1" title="Link to this equation">#</a></span>\[\gamma = (1-\vec{v}\cdot\vec{v})^{-1/2}\]</div>
 <p>Square both sides and move the right side to the left:</p>
 <div class="math notranslate nohighlight" id="equation-gamma2">
-<span class="eqno">(10.3)<a class="headerlink" href="#equation-gamma2" title="Permalink to this equation">#</a></span>\[\gamma^2 - \gamma^2 \vec{v}\cdot\vec{v} = 1\]</div>
+<span class="eqno">(10.3)<a class="headerlink" href="#equation-gamma2" title="Link to this equation">#</a></span>\[\gamma^2 - \gamma^2 \vec{v}\cdot\vec{v} = 1\]</div>
 <p>Take the differential, treating <span class="math notranslate nohighlight">\(\gamma \vec{v}\)</span> as a single entity:</p>
 <div class="math notranslate nohighlight" id="equation-diffgam">
-<span class="eqno">(10.4)<a class="headerlink" href="#equation-diffgam" title="Permalink to this equation">#</a></span>\[2\gamma d\gamma - 2(\gamma \vec{v})\cdot d(\gamma\vec{v}) = 0\]</div>
+<span class="eqno">(10.4)<a class="headerlink" href="#equation-diffgam" title="Link to this equation">#</a></span>\[2\gamma d\gamma - 2(\gamma \vec{v})\cdot d(\gamma\vec{v}) = 0\]</div>
 <p>Divide out the <span class="math notranslate nohighlight">\(2\gamma\)</span> and multiply through by rest mass <span class="math notranslate nohighlight">\(m_0\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-bringmin">
-<span class="eqno">(10.5)<a class="headerlink" href="#equation-bringmin" title="Permalink to this equation">#</a></span>\[m_0 d\gamma - (m_0 \vec{v})\cdot d(\gamma\vec{v}) = 0\]</div>
+<span class="eqno">(10.5)<a class="headerlink" href="#equation-bringmin" title="Link to this equation">#</a></span>\[m_0 d\gamma - (m_0 \vec{v})\cdot d(\gamma\vec{v}) = 0\]</div>
 <p>Move the second term to the right and move the scalar inside the
 differential, while putting the <span class="math notranslate nohighlight">\(c\)</span> back in:</p>
 <div class="math notranslate nohighlight" id="equation-gettingclose">
-<span class="eqno">(10.6)<a class="headerlink" href="#equation-gettingclose" title="Permalink to this equation">#</a></span>\[d(m_0 c^2 \gamma) =  \vec{v}\cdot d(\gamma m_0 \vec{v})\]</div>
+<span class="eqno">(10.6)<a class="headerlink" href="#equation-gettingclose" title="Link to this equation">#</a></span>\[d(m_0 c^2 \gamma) =  \vec{v}\cdot d(\gamma m_0 \vec{v})\]</div>
 <p>We can identify the left side as <span class="math notranslate nohighlight">\(dE\)</span> and the right side as having <span class="math notranslate nohighlight">\(\vec{p} = \gamma m_0 \vec{v}\)</span>,
 so this is none other than</p>
 <div class="math notranslate nohighlight" id="equation-workke">
-<span class="eqno">(10.7)<a class="headerlink" href="#equation-workke" title="Permalink to this equation">#</a></span>\[dE = \vec{v} \cdot d\vec{p} = d\vec{r} \cdot \frac{d\vec{p}}{dt} = \vec{F} \cdot d\vec{r}.\]</div>
+<span class="eqno">(10.7)<a class="headerlink" href="#equation-workke" title="Link to this equation">#</a></span>\[dE = \vec{v} \cdot d\vec{p} = d\vec{r} \cdot \frac{d\vec{p}}{dt} = \vec{F} \cdot d\vec{r}.\]</div>
 <p>So the work-kinetic energy theorem could be said to be contained right inside
 the Lorentz factor from the beginning!</p>
+<p>This derivation sometimes seems a little magical, because the introduction
+of such things as <span class="math notranslate nohighlight">\(m_0\)</span> seems arbitrary at the moment.  It is perhaps
+useful to start with the work-energy theorem (Equation <a class="reference internal" href="#equation-workke">(10.7)</a>) and
+work backwards to see how the Lorentz factor falls out of it, rather
+than the other way around.  It’s not magic; it’s that the Lorentz factor
+ties together space, time, and motion, and once you throw mass into the
+mix, that brings in energy as well, so this is just a beautiful, if perhaps
+startling, example of how the universal speed limit ties concepts together
+for self-consistency, even when we think down here in our world of slow
+speeds that these concepts are independent.</p>
 </section>
 <section id="newton-s-second-law-with-four-vectors">
-<h2><span class="section-number">10.3. </span>Newton’s Second Law with Four Vectors<a class="headerlink" href="#newton-s-second-law-with-four-vectors" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">10.3. </span>Newton’s Second Law with Four Vectors<a class="headerlink" href="#newton-s-second-law-with-four-vectors" title="Link to this heading">#</a></h2>
 <p>To fix Equation <a class="reference internal" href="#equation-newton2nd">(10.1)</a>, we keep the underlying meaning
 of the equation but recast it in relativistic terms, as we did to
 get four velocity from four displacement.  Instead of <span class="math notranslate nohighlight">\(d\vec{p}/dt\)</span>,
 we write</p>
 <div class="math notranslate nohighlight" id="equation-minkforce">
-<span class="eqno">(10.8)<a class="headerlink" href="#equation-minkforce" title="Permalink to this equation">#</a></span>\[[K_4] = \frac{d}{dt_0}[p_4]\]</div>
+<span class="eqno">(10.8)<a class="headerlink" href="#equation-minkforce" title="Link to this equation">#</a></span>\[[K_4] = \frac{d}{dt_0}[p_4]\]</div>
 <p>The four force is the derivative (with respect to the proper time, a
 scalar) of the four momentum.  Since <span class="math notranslate nohighlight">\([p_4]\)</span> is a proper 4- vector and
 <span class="math notranslate nohighlight">\(dt_0\)</span> is a scalar, then <span class="math notranslate nohighlight">\([K4]\)</span> is also a proper 4-vector. The letter
@@ -503,7 +543,7 @@ called the Minkowski Force in honor of H. Minkowski, who introduced the
 Newtonian velocity <span class="math notranslate nohighlight">\(\vec{v}\)</span>, with components <span class="math notranslate nohighlight">\(v_x\)</span>, <span class="math notranslate nohighlight">\(v_y\)</span>, and <span class="math notranslate nohighlight">\(v_z\)</span>
 gives:</p>
 <div class="math notranslate nohighlight" id="equation-fourforce">
-<span class="eqno">(10.9)<a class="headerlink" href="#equation-fourforce" title="Permalink to this equation">#</a></span>\[\begin{split}[K_4] = \frac{d(m_0[v_4])}{dt_0} =
+<span class="eqno">(10.9)<a class="headerlink" href="#equation-fourforce" title="Link to this equation">#</a></span>\[\begin{split}[K_4] = \frac{d(m_0[v_4])}{dt_0} =
 \begin{bmatrix}
 i \frac{1}{c} dE/dt_0\\
 d\vec{p}/dt_0
@@ -518,7 +558,7 @@ the relativistic <span class="math notranslate nohighlight">\(\gamma\)</span> te
 measured objects moving near the speed of light.</p>
 </section>
 <section id="the-minkowski-force">
-<h2><span class="section-number">10.4. </span>The Minkowski Force<a class="headerlink" href="#the-minkowski-force" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">10.4. </span>The Minkowski Force<a class="headerlink" href="#the-minkowski-force" title="Link to this heading">#</a></h2>
 <p>The Newtonian force vector is related to the momentum by Equation
 <a class="reference internal" href="#equation-newton2nd">(10.1)</a> In this equation, <span class="math notranslate nohighlight">\(dt\)</span> is the time as measured by an
 observer who sees the object moving with velocity <span class="math notranslate nohighlight">\(\vec{v}\)</span>, not the
@@ -527,7 +567,7 @@ Equation <a class="reference internal" href="#equation-fourforce">(10.9)</a> fro
 frame using the time dilation Equation <a class="reference internal" href="c6displacement.html#equation-timedilation">(6.6)</a>, Equation
 <a class="reference internal" href="#equation-fourforce">(10.9)</a> becomes:</p>
 <div class="math notranslate nohighlight" id="equation-m4force">
-<span class="eqno">(10.10)<a class="headerlink" href="#equation-m4force" title="Permalink to this equation">#</a></span>\[\begin{split}[K_4] = 
+<span class="eqno">(10.10)<a class="headerlink" href="#equation-m4force" title="Link to this equation">#</a></span>\[\begin{split}[K_4] = 
 \begin{bmatrix}
 i \frac{\gamma}{c} dE/dt\\
 \gamma d\vec{p}/dt
@@ -561,30 +601,30 @@ the object displaces by some amount <span class="math notranslate nohighlight">\
 <p>Let us therefore see what happens when we take
 the dot product of the four velocity with the four force:</p>
 <div class="math notranslate nohighlight" id="equation-v4dotf41">
-<span class="eqno">(10.11)<a class="headerlink" href="#equation-v4dotf41" title="Permalink to this equation">#</a></span>\[[v_4]\cdot[K_4] = [v_4]\cdot \frac{d(m_0[v_4])}{dt_0}\]</div>
+<span class="eqno">(10.11)<a class="headerlink" href="#equation-v4dotf41" title="Link to this equation">#</a></span>\[[v_4]\cdot[K_4] = [v_4]\cdot \frac{d(m_0[v_4])}{dt_0}\]</div>
 <p>However, we can take advantage of the fact that <span class="math notranslate nohighlight">\(d(x^2)=2xdx\)</span>
 to write this as</p>
 <div class="math notranslate nohighlight" id="equation-v4dotf42">
-<span class="eqno">(10.12)<a class="headerlink" href="#equation-v4dotf42" title="Permalink to this equation">#</a></span>\[[v_4]\cdot[K_4] = \frac{d}{dt_0}\left(\frac{m_0}{2}[v_4]\cdot[v_4]\right)\]</div>
+<span class="eqno">(10.12)<a class="headerlink" href="#equation-v4dotf42" title="Link to this equation">#</a></span>\[[v_4]\cdot[K_4] = \frac{d}{dt_0}\left(\frac{m_0}{2}[v_4]\cdot[v_4]\right)\]</div>
 <p>But we know that <span class="math notranslate nohighlight">\([v_4]^2\)</span> is the Lorentz invariant <span class="math notranslate nohighlight">\(-c^2\)</span>,
 which is also a constant in time.  So</p>
 <div class="math notranslate nohighlight" id="equation-v4dotf43">
-<span class="eqno">(10.13)<a class="headerlink" href="#equation-v4dotf43" title="Permalink to this equation">#</a></span>\[[v_4]\cdot[K_4] = \frac{d}{dt_0}\left(-\frac{m_0c^2}{2}\right) = 0\]</div>
+<span class="eqno">(10.13)<a class="headerlink" href="#equation-v4dotf43" title="Link to this equation">#</a></span>\[[v_4]\cdot[K_4] = \frac{d}{dt_0}\left(-\frac{m_0c^2}{2}\right) = 0\]</div>
 <p>The result of the four dimensional dot product must therefore be
 zero, so let’s write it out in terms of components:</p>
 <div class="math notranslate nohighlight" id="equation-v4dotf4comp">
-<span class="eqno">(10.14)<a class="headerlink" href="#equation-v4dotf4comp" title="Permalink to this equation">#</a></span>\[[v_4]\cdot[K_4] = \gamma^2(v_xF_x + v_yF_y +v_zF_z) + i\gamma c K^0 = 0\]</div>
+<span class="eqno">(10.14)<a class="headerlink" href="#equation-v4dotf4comp" title="Link to this equation">#</a></span>\[[v_4]\cdot[K_4] = \gamma^2(v_xF_x + v_yF_y +v_zF_z) + i\gamma c K^0 = 0\]</div>
 <p>Therefore</p>
 <div class="math notranslate nohighlight" id="equation-findingk0">
-<span class="eqno">(10.15)<a class="headerlink" href="#equation-findingk0" title="Permalink to this equation">#</a></span>\[\gamma^2(\vec{v}\cdot\vec{F}) = -i\gamma c K^0\]</div>
+<span class="eqno">(10.15)<a class="headerlink" href="#equation-findingk0" title="Link to this equation">#</a></span>\[\gamma^2(\vec{v}\cdot\vec{F}) = -i\gamma c K^0\]</div>
 <p>and</p>
 <div class="math notranslate nohighlight" id="equation-ktime">
-<span class="eqno">(10.16)<a class="headerlink" href="#equation-ktime" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(10.16)<a class="headerlink" href="#equation-ktime" title="Link to this equation">#</a></span>\[\boxed{
 K^0 = i\gamma(\vec{F}\cdot\vec{\beta})
 }\]</div>
 <p>So the Minkowski force becomes</p>
 <div class="math notranslate nohighlight" id="equation-m4forcefin">
-<span class="eqno">(10.17)<a class="headerlink" href="#equation-m4forcefin" title="Permalink to this equation">#</a></span>\[\begin{split}\boxed{
+<span class="eqno">(10.17)<a class="headerlink" href="#equation-m4forcefin" title="Link to this equation">#</a></span>\[\begin{split}\boxed{
 [K_4] = 
 \begin{bmatrix}
 i\gamma (\vec{F}\cdot\vec{\beta})\\
@@ -595,7 +635,7 @@ change of the energy of an object is <span class="math notranslate nohighlight">
 and if we compare the forms of <span class="math notranslate nohighlight">\(K^0\)</span> in Equations <a class="reference internal" href="#equation-fourforce">(10.9)</a>
 and <a class="reference internal" href="#equation-m4forcefin">(10.17)</a>, we see that</p>
 <div class="math notranslate nohighlight" id="equation-kpower">
-<span class="eqno">(10.18)<a class="headerlink" href="#equation-kpower" title="Permalink to this equation">#</a></span>\[K^0 = i\gamma(\vec{F}\cdot\vec{\beta}) = i\frac{\gamma}{c}\frac{dE}{dt}
+<span class="eqno">(10.18)<a class="headerlink" href="#equation-kpower" title="Link to this equation">#</a></span>\[K^0 = i\gamma(\vec{F}\cdot\vec{\beta}) = i\frac{\gamma}{c}\frac{dE}{dt}
 = i\gamma\frac{d}{dt}(\gamma m_0 c)\]</div>
 <p>so <span class="math notranslate nohighlight">\(\vec{F}\cdot\vec{\beta} = d(\gamma m_0 c)/dt\)</span>, as you might
 expect, and the time component of the Minkowski force is telling
@@ -606,56 +646,95 @@ us the power being delivered to the object experiencing the force.</p>
 power, and has dimensions of energy per time, <span class="math notranslate nohighlight">\(\vec{F}\cdot\vec{\beta}\)</span>
 has dimensions of force, and yet it is <strong>telling</strong> us the power,
 because all you need to do is multiply <span class="math notranslate nohighlight">\(K^0\)</span> by <span class="math notranslate nohighlight">\(c/\gamma\)</span> and you
-get the power.</p>
+get the power.  This is analogous to expressing time in units
+of distance (like in a spacetime diagram) through
+multiplication by the speed of light.</p>
 </div>
-<section id="example-10-1">
-<h3><span class="section-number">10.4.1. </span>Example 10.1<a class="headerlink" href="#example-10-1" title="Permalink to this heading">#</a></h3>
-<p>Calculate the Minkowski force exerted on an electron traveling
-vertically upward near the surface of the earth with <span class="math notranslate nohighlight">\(\beta = 0.866\)</span>.</p>
-<p>Solution: Let the <span class="math notranslate nohighlight">\(z\)</span> axis be vertical with the positive value
-pointing up. Near the surface of the earth, the electron experiences a
-gravitational force <span class="math notranslate nohighlight">\(\vec{F}_g = m\vec{g} = -m\times9.81~{\rm
-N/kg}~\hat{z}\)</span>.  The mass of the electron has a value of
-<span class="math notranslate nohighlight">\((9.10938188\pm0.00000072)\times 10^{-31}\)</span> kg.  The force exerted by
-gravity on the electron is therefore:</p>
-<div class="math notranslate nohighlight" id="equation-fgemin">
-<span class="eqno">(10.19)<a class="headerlink" href="#equation-fgemin" title="Permalink to this equation">#</a></span>\[\vec{F}_g = (9.11\times10^{-31}~{\rm kg})\times(9.81~{\rm N/kg})(-\hat{z})
-= 8.93\times10^{-30}~{\rm N}(-\hat{z})\]</div>
-<aside class="margin sidebar">
-<p class="sidebar-title"></p>
-<p>Always good to remember that for <span class="math notranslate nohighlight">\(\beta=0.866\)</span>, <span class="math notranslate nohighlight">\(\gamma=2\)</span></p>
-</aside>
-<p>Since the force is pointing only in the <span class="math notranslate nohighlight">\(-\hat{z}\)</span> direction, the
-<span class="math notranslate nohighlight">\(F_x\)</span> and <span class="math notranslate nohighlight">\(F_y\)</span> components are zero. Using Equation <a class="reference internal" href="#equation-m4forcefin">(10.17)</a> we
-now can find the spatial components of <span class="math notranslate nohighlight">\([K_4]\)</span> by calculating the
-value of <span class="math notranslate nohighlight">\(\gamma\)</span> when <span class="math notranslate nohighlight">\(\beta=0.866\)</span>.  <span class="math notranslate nohighlight">\(K_x\)</span> and <span class="math notranslate nohighlight">\(K_y\)</span> are therefore
-zero, but <span class="math notranslate nohighlight">\(K_z = \gamma m g\)</span>, or <span class="math notranslate nohighlight">\(-1.78\times10^{-29}~{\rm N}\)</span>.  Since
-the motion is in the <span class="math notranslate nohighlight">\(+\hat{z}\)</span> direction, the time component becomes:</p>
-<div class="math notranslate nohighlight" id="equation-fgtime">
-<span class="eqno">(10.20)<a class="headerlink" href="#equation-fgtime" title="Permalink to this equation">#</a></span>\[K^0 = i\gamma F_g(-\hat{z}) \cdot (\beta \hat{z}) =
--i (2.00 \times 8.93\times10^{-30}~{\rm N} \times 0.866) =
-- i 1.54\times10^{-29}~{\rm N}\]</div>
-<p>Combining these results gives the Minkowski force:</p>
-<div class="math notranslate nohighlight" id="equation-fgmink">
-<span class="eqno">(10.21)<a class="headerlink" href="#equation-fgmink" title="Permalink to this equation">#</a></span>\[\begin{split}[K_4] =
-\begin{bmatrix}
--i 1.54\times10^{-29}~{\rm N}\\
-0\\
-0\\
--1.78\times10^{-29}~{\rm N}
-\end{bmatrix}\end{split}\]</div>
-<p>Remember that the actual force experienced by the electron will be
-<span class="math notranslate nohighlight">\(K_3/\gamma\)</span>, or half the number given in Equation <a class="reference internal" href="#equation-fgmink">(10.21)</a>,
-because <span class="math notranslate nohighlight">\(\gamma=2\)</span> at this speed.  The time component still has units
-of newtons, because <span class="math notranslate nohighlight">\(K^0\)</span> has a factor of <span class="math notranslate nohighlight">\(1/c\)</span> in it.  If you want
-to know the power delivered to the electron, you have to take the
-<span class="math notranslate nohighlight">\(K^0\)</span> term as given in Equation <a class="reference internal" href="#equation-fgmink">(10.21)</a> (without the <span class="math notranslate nohighlight">\(i\)</span>, of
-course) and multiply it by <span class="math notranslate nohighlight">\(c/\gamma\)</span>.  This would imply the electron
-is losing energy at a rate of <span class="math notranslate nohighlight">\(2.31\times10^{-21}\)</span> watts.</p>
 </section>
+<section id="the-size-of-the-minkowski-force">
+<h2><span class="section-number">10.5. </span>The Size of the Minkowski Force<a class="headerlink" href="#the-size-of-the-minkowski-force" title="Link to this heading">#</a></h2>
+<p>With all the other four-vectors we have explored so far, it was useful
+to take advantage of the fact that their sizes are Lorentz invariants.
+For the displacement four-vector, the size was <span class="math notranslate nohighlight">\(-c^2dt_0^2\)</span>, the proper
+time.  The size of the velocity was <span class="math notranslate nohighlight">\(-c^2\)</span> and the four-beta was simply
+<span class="math notranslate nohighlight">\(-1\)</span>.  For the four-momentum we got a size of <span class="math notranslate nohighlight">\(-m_0^2c_2\)</span>.  The size
+of the Minkowski Force is nowhere near as simple, but the fact that
+it is still Lorentz invariant leads to interesting implications.</p>
+<p>To get the size of the Minkowski force, we do the same thing we’ve always
+done – square each term and add them up:</p>
+<div class="math notranslate nohighlight" id="equation-sizek4setup">
+<span class="eqno">(10.19)<a class="headerlink" href="#equation-sizek4setup" title="Link to this equation">#</a></span>\[[K_4]^2 = K^{02} + \gamma^2F^2,\]</div>
+<p>where we take <span class="math notranslate nohighlight">\(F\)</span> to be the magnitude of the regular three-fource
+(<span class="math notranslate nohighlight">\(F_x^2+F_y^2+F_z^2\)</span>).
+We plug in the zeroth component from Equation <a class="reference internal" href="#equation-ktime">(10.16)</a> to get</p>
+<div class="math notranslate nohighlight" id="equation-sizek4">
+<span class="eqno">(10.20)<a class="headerlink" href="#equation-sizek4" title="Link to this equation">#</a></span>\[[K_4]^2 = -\gamma^2(\vec{F}\cdot\vec{\beta})^2 + \gamma^2F^2=
+\frac{1-\beta^2\cos^2{\theta}}{1-\beta^2}~F^2,\]</div>
+<p>using the dot product such that <span class="math notranslate nohighlight">\(\theta\)</span> is the angle between
+<span class="math notranslate nohighlight">\(\vec{F}\)</span> and <span class="math notranslate nohighlight">\(\vec{\beta}\)</span> (in this frame).  This looks much
+more complicated than the four-vector sizes we’ve seen before,
+but since <span class="math notranslate nohighlight">\([K_4]\)</span> is a four-vector, it must also be Lorentz
+invariant.  In particular, it must be the same value in the
+frame where the particle is instantaneously at rest.  In that
+frame, <span class="math notranslate nohighlight">\(\beta=0\)</span>, so we just get <span class="math notranslate nohighlight">\(F^2\)</span> (it’s interesting that
+<em>this</em> four-vector size is positive, while all the other ones
+we’ve seen so far were negative!).</p>
+<p>Therefore, if <span class="math notranslate nohighlight">\(F^\prime\)</span> is the force in some other frame</p>
+<div class="math notranslate nohighlight" id="equation-ftrans">
+<span class="eqno">(10.21)<a class="headerlink" href="#equation-ftrans" title="Link to this equation">#</a></span>\[F^2 = \frac{1-\beta^2\cos^2{\theta}}{1-\beta^2}~F^{\prime2}.\]</div>
+<p>This has interesting implications depending on the angle
+between the force and the velocity.  If the force is parallel
+to the velocity, then the cosine is 1 and the fraction cancels
+to one: the force is the same in both frames!  If, on the other
+hand, the force is perpendicular to the motion, then the cosine
+is zero and <span class="math notranslate nohighlight">\(F^\prime = F/\gamma\)</span>: the perpendicular force in the moving
+frame is smaller than the force in the frame at rest.  This
+will be very important in understanding the relation between
+electricity and magnetism in <a class="reference internal" href="c11electric.html#chemten"><span class="std std-ref">the next chapter</span></a>.</p>
+</section>
+<section id="lorentz-transforming-forces">
+<h2><span class="section-number">10.6. </span>Lorentz Transforming Forces<a class="headerlink" href="#lorentz-transforming-forces" title="Link to this heading">#</a></h2>
+<p>Another way of thinking about how the forces transform (thanks to
+<a class="reference external" href="https://www.pas.rochester.edu/~dmw/phy218/">Dan Watson</a> for this
+idea) is to go back to the definition of force as the limit of <span class="math notranslate nohighlight">\(\Delta
+\vec{p}/\Delta t\)</span> in the limit as <span class="math notranslate nohighlight">\(\Delta t \rightarrow 0\)</span>.  We know
+how both momentum and time transform between reference frames, so we
+can see how this limit transforms.</p>
+<p>We know going all the way back to Equation <a class="reference internal" href="c6displacement.html#equation-eqdtp">(6.4)</a> that</p>
+<div class="math notranslate nohighlight" id="equation-dttrans">
+<span class="eqno">(10.22)<a class="headerlink" href="#equation-dttrans" title="Link to this equation">#</a></span>\[c\Delta t^\prime = \gamma \left(c\Delta t - \beta \Delta x\right)\]</div>
+<p>More recently, Equation <a class="reference internal" href="c8momentum.html#equation-p4p">(8.9)</a> tells us how to transform the
+three-momentum:</p>
+<div class="math notranslate nohighlight" id="equation-p3p">
+<span class="eqno">(10.23)<a class="headerlink" href="#equation-p3p" title="Link to this equation">#</a></span>\[\begin{split}\Delta \vec{p}' =
+\begin{bmatrix}
+\frac{\gamma}{c} (c\Delta p_x-\beta \Delta E)\\
+\Delta p_y\\
+\Delta p_z
+\end{bmatrix}\end{split}\]</div>
+<p>Which means we can construct a limit-based definition of force:</p>
+<div class="math notranslate nohighlight" id="equation-flim">
+<span class="eqno">(10.24)<a class="headerlink" href="#equation-flim" title="Link to this equation">#</a></span>\[F_x^\prime = \lim\limits_{\Delta t,\Delta p \to 0} \frac{\Delta p^\prime}{\Delta t^\prime} =
+\lim\limits_{\Delta t,\Delta p \to 0} \frac{\frac{\gamma}{c} (c\Delta p_x-\beta \Delta E)}{\frac{\gamma}{c} \left(c\Delta t - \beta \Delta x\right)}\]</div>
+<p>In this case, since we are taking <span class="math notranslate nohighlight">\(\Delta t\)</span> to be <em>very</em> small, we
+can approximate the acceleration as constant, which means <span class="math notranslate nohighlight">\(\Delta x
+\propto \Delta t^2\)</span>.  This is second order in <span class="math notranslate nohighlight">\(\Delta t\)</span> so in the
+limit, the second term in the denominator will be much smaller than
+the first, and can therefore be ignored.</p>
+<p>The numerator is a little more complicated, but consider that the
+work energy theorem lets us connect the change in energy to <span class="math notranslate nohighlight">\(\Delta x\)</span>,
+which is again second order in <span class="math notranslate nohighlight">\(\Delta t\)</span>.  We can therefore drop that,
+too.  The terms out front cancel, and <span class="math notranslate nohighlight">\(F_x^\prime = F_x\)</span>, the same
+result we got from the size of the Minkowski force.</p>
+<p>For the perpendicular directions, the denominator is unchanged, but the
+numerator is now just <span class="math notranslate nohighlight">\(\Delta p_y\)</span> (or <span class="math notranslate nohighlight">\(z\)</span>, of course).  This
+means that although we can discount the <span class="math notranslate nohighlight">\(\beta\Delta x\)</span> as being too
+small, we cannot cancel the <span class="math notranslate nohighlight">\(\gamma\)</span> out front.  Therefore <span class="math notranslate nohighlight">\(F_y^\prime
+= F_y/\gamma\)</span>, which is also the same result we derived from the
+size of Minkowski force.</p>
 </section>
 <section id="the-acceleration-four-vector">
-<h2><span class="section-number">10.5. </span>The Acceleration Four Vector<a class="headerlink" href="#the-acceleration-four-vector" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">10.7. </span>The Acceleration Four Vector<a class="headerlink" href="#the-acceleration-four-vector" title="Link to this heading">#</a></h2>
 <p>Although Special Relativity demands that any inertial reference frames
 we consider be moving at constant relative velocities, there is nothing
 to prevent objects within a particular reference from from accelerating.
@@ -666,11 +745,11 @@ object!</p>
 be modeled in two ways. First, it would be the proper time derivative
 of the 4-velocity:</p>
 <div class="math notranslate nohighlight" id="equation-acc4dv">
-<span class="eqno">(10.22)<a class="headerlink" href="#equation-acc4dv" title="Permalink to this equation">#</a></span>\[[a_4] = \frac{d([v_4])}{dt_0} = \gamma \frac{d([v_4])}{dt}\]</div>
+<span class="eqno">(10.25)<a class="headerlink" href="#equation-acc4dv" title="Link to this equation">#</a></span>\[[a_4] = \frac{d([v_4])}{dt_0} = \gamma \frac{d([v_4])}{dt}\]</div>
 <p>or one could use the relativistic analog of Newton’s law for a
 particle of constant rest energy (mass):</p>
 <div class="math notranslate nohighlight" id="equation-acc4ma">
-<span class="eqno">(10.23)<a class="headerlink" href="#equation-acc4ma" title="Permalink to this equation">#</a></span>\[[a_4] = [K_4]/m_0\]</div>
+<span class="eqno">(10.26)<a class="headerlink" href="#equation-acc4ma" title="Link to this equation">#</a></span>\[[a_4] = [K_4]/m_0\]</div>
 <p>Consider an observer in the lab who sees a particle of mass <span class="math notranslate nohighlight">\(m_0\)</span>,
 traveling in the <span class="math notranslate nohighlight">\(+x\)</span> direction with some speed <span class="math notranslate nohighlight">\(v\)</span>.  A force is then
 applied to the particle in some arbitrary direction, causing the
@@ -679,7 +758,7 @@ and <span class="math notranslate nohighlight">\(z\)</span> directions (<span cl
 measure an acceleration <span class="math notranslate nohighlight">\(\vec{a} = d\vec{v}/dt\)</span>.  We can write down
 the four-acceleration as observed in the lab as:</p>
 <div class="math notranslate nohighlight" id="equation-acc4lab">
-<span class="eqno">(10.24)<a class="headerlink" href="#equation-acc4lab" title="Permalink to this equation">#</a></span>\[\begin{split}[a_4] =
+<span class="eqno">(10.27)<a class="headerlink" href="#equation-acc4lab" title="Link to this equation">#</a></span>\[\begin{split}[a_4] =
 \gamma
 \begin{bmatrix}
 i\frac{d(\gamma c)}{dt}\\
@@ -691,9 +770,9 @@ i\frac{d(\gamma c)}{dt}\\
 components of velocity in it: <span class="math notranslate nohighlight">\(\beta^2\equiv \beta_x^2 + \beta_y^2
 +\beta_z^2\)</span>.  Since both <span class="math notranslate nohighlight">\(\gamma\)</span> and the velocity are changing
 with time, we must use the product rule of calculus to evaluate
-Equation <a class="reference internal" href="#equation-acc4lab">(10.24)</a>:</p>
+Equation <a class="reference internal" href="#equation-acc4lab">(10.27)</a>:</p>
 <div class="math notranslate nohighlight" id="equation-acc4prodrule">
-<span class="eqno">(10.25)<a class="headerlink" href="#equation-acc4prodrule" title="Permalink to this equation">#</a></span>\[\begin{split}[a_4] =
+<span class="eqno">(10.28)<a class="headerlink" href="#equation-acc4prodrule" title="Link to this equation">#</a></span>\[\begin{split}[a_4] =
 \gamma
 \begin{bmatrix}
 ic\frac{d\gamma}{dt}\\
@@ -711,13 +790,13 @@ i\frac{dc}{dt}\\
 \end{bmatrix}\end{split}\]</div>
 <p>Taking the derivative of <span class="math notranslate nohighlight">\(\gamma\)</span> works like this:</p>
 <div class="math notranslate nohighlight" id="equation-dgamma">
-<span class="eqno">(10.26)<a class="headerlink" href="#equation-dgamma" title="Permalink to this equation">#</a></span>\[d\gamma = d\left((1-\beta^2)^{-1/2}\right) = -\frac{1}{2}\left(1-\beta^2\right)^{-3/2}(-2\beta)d\beta = \gamma^3\beta d\beta\]</div>
+<span class="eqno">(10.29)<a class="headerlink" href="#equation-dgamma" title="Link to this equation">#</a></span>\[d\gamma = d\left((1-\beta^2)^{-1/2}\right) = -\frac{1}{2}\left(1-\beta^2\right)^{-3/2}(-2\beta)d\beta = \gamma^3\beta d\beta\]</div>
 <p>This is a complicated relationship that depends on the three components
 of the velocity as well as <span class="math notranslate nohighlight">\(dv_x\)</span>, <span class="math notranslate nohighlight">\(dv_y\)</span>, and <span class="math notranslate nohighlight">\(dv_z\)</span>.</p>
-<p>Placing this result back into Equation <a class="reference internal" href="#equation-acc4prodrule">(10.25)</a> and using
+<p>Placing this result back into Equation <a class="reference internal" href="#equation-acc4prodrule">(10.28)</a> and using
 the fact that <span class="math notranslate nohighlight">\(dc/dt=0\)</span> gives us:</p>
 <div class="math notranslate nohighlight" id="equation-acc4dgam">
-<span class="eqno">(10.27)<a class="headerlink" href="#equation-acc4dgam" title="Permalink to this equation">#</a></span>\[\begin{split}[a_4] =
+<span class="eqno">(10.30)<a class="headerlink" href="#equation-acc4dgam" title="Link to this equation">#</a></span>\[\begin{split}[a_4] =
 \gamma^2
 \begin{bmatrix}
 i\gamma^2\beta\frac{d\beta}{dt}c\\
@@ -725,7 +804,7 @@ i\gamma^2\beta\frac{d\beta}{dt}c\\
 \gamma^2v_y\beta\frac{d\beta}{dt}+\frac{dv_y}{dt}\\
 \gamma^2v_z\beta\frac{d\beta}{dt}+\frac{dv_z}{dt}
 \end{bmatrix}\end{split}\]</div>
-<p>Equation <a class="reference internal" href="#equation-acc4dgam">(10.27)</a> is a very complex equation, not least because
+<p>Equation <a class="reference internal" href="#equation-acc4dgam">(10.30)</a> is a very complex equation, not least because
 each component of <span class="math notranslate nohighlight">\([a_4]\)</span> depends on all three components of both the
 velocity (through <span class="math notranslate nohighlight">\(\beta\)</span>) and the acceleration measured by the
 observer in the lab.  This is very new to us at this point: that the
@@ -738,25 +817,25 @@ can see that if <span class="math notranslate nohighlight">\(\beta\rightarrow 0\
 of the velocity, with independent dimensions, just as we expect in
 Newtonian mechanics.</p>
 <p>It is hard, perhaps impossible, to get any kind of intuition out of
-Equation <a class="reference internal" href="#equation-acc4dgam">(10.27)</a>, but we can look at a special case to see what
+Equation <a class="reference internal" href="#equation-acc4dgam">(10.30)</a>, but we can look at a special case to see what
 happens.  Consider the case where a constant force is being exerted on
 a particle in the <span class="math notranslate nohighlight">\(x\)</span> direction only (<span class="math notranslate nohighlight">\(\vec{F} = F_x\hat{x}\)</span>), and the
 particle starts from rest.  Then the velocity will only have an <span class="math notranslate nohighlight">\(x\)</span>
 component, so we can just use <span class="math notranslate nohighlight">\(\vec{v} = v\hat{x}\)</span> and drop the last
 two components of the four vector, since there will never be any
-motion in the <span class="math notranslate nohighlight">\(y\)</span> or <span class="math notranslate nohighlight">\(z\)</span> directions.  Then Equation <a class="reference internal" href="#equation-acc4dgam">(10.27)</a>
+motion in the <span class="math notranslate nohighlight">\(y\)</span> or <span class="math notranslate nohighlight">\(z\)</span> directions.  Then Equation <a class="reference internal" href="#equation-acc4dgam">(10.30)</a>
 simplifies a bit:</p>
 <div class="math notranslate nohighlight" id="equation-acc4fx">
-<span class="eqno">(10.28)<a class="headerlink" href="#equation-acc4fx" title="Permalink to this equation">#</a></span>\[\begin{split}[a_4] =
+<span class="eqno">(10.31)<a class="headerlink" href="#equation-acc4fx" title="Link to this equation">#</a></span>\[\begin{split}[a_4] =
 \gamma^2
 \begin{bmatrix}
 i\gamma^2\frac{v}{c}\frac{dv}{dt}\\
 \gamma^2\left(\frac{v}{c}\right)^2\frac{dv}{dt}+\frac{dv}{dt}\\
 \end{bmatrix}\end{split}\]</div>
-<p>The relativistic form for Newton’s Second law (Equation <a class="reference internal" href="#equation-acc4ma">(10.23)</a>)
+<p>The relativistic form for Newton’s Second law (Equation <a class="reference internal" href="#equation-acc4ma">(10.26)</a>)
 then becomes</p>
 <div class="math notranslate nohighlight" id="equation-newton2x">
-<span class="eqno">(10.29)<a class="headerlink" href="#equation-newton2x" title="Permalink to this equation">#</a></span>\[\begin{split}m_0[a_4] = [K_4] \rightarrow
+<span class="eqno">(10.32)<a class="headerlink" href="#equation-newton2x" title="Link to this equation">#</a></span>\[\begin{split}m_0[a_4] = [K_4] \rightarrow
 m_0\frac{dv}{dt}\gamma^4
 \begin{bmatrix}
 i\frac{v}{c}\\
@@ -771,7 +850,7 @@ i\frac{v}{c}\\
 <p>Since the four-vectors are the same, we can compare the factors out
 front to find that</p>
 <div class="math notranslate nohighlight" id="equation-relacc">
-<span class="eqno">(10.30)<a class="headerlink" href="#equation-relacc" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(10.33)<a class="headerlink" href="#equation-relacc" title="Link to this equation">#</a></span>\[\boxed{
 \frac{dv}{dt} = \frac{1}{\gamma^3}\frac{F_x}{m_0}}\]</div>
 <p>The correspondence principle check is satisfied because for
 <span class="math notranslate nohighlight">\(\gamma\approx 1\)</span>, this is just <span class="math notranslate nohighlight">\(a=F/m\)</span>, as Newton would expect.
@@ -786,14 +865,14 @@ it doesn’t matter how fast the object is moving to begin with.  Even
 under a constant force, it will never move faster than the universal
 speed limit.</p>
 <figure class="align-default" id="constaccfig" style="width: 800px">
-<img alt="_images/bcee43dcacb28b13e5844e25789437a8f3f7ddfcfd2fb05a07762ee8378eeb27.png" src="_images/bcee43dcacb28b13e5844e25789437a8f3f7ddfcfd2fb05a07762ee8378eeb27.png" />
+<img alt="_images/4ff7a98625023dd77a909c9e70f2b2f1004f2a0411e3ddee3c6dfc6f9b86a887.png" src="_images/4ff7a98625023dd77a909c9e70f2b2f1004f2a0411e3ddee3c6dfc6f9b86a887.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 10.1 </span><span class="caption-text">A graph of <span class="math notranslate nohighlight">\(\beta\)</span> as a function of time (in years) in
 the lab frame for an object of mass 1 kg, experiencing a constant
 force of <span class="math notranslate nohighlight">\(9.81\)</span> N in the <span class="math notranslate nohighlight">\(x\)</span> direction.  The blue line shows the
 object starting from rest, while the magenta line shows the object
 starting from <span class="math notranslate nohighlight">\(\beta=0.8\)</span>.  In neither case does the speed increase
-beyond <span class="math notranslate nohighlight">\(\beta=1\)</span>, which is indicated by the red horizontal dotted line.</span><a class="headerlink" href="#constaccfig" title="Permalink to this image">#</a></p>
+beyond <span class="math notranslate nohighlight">\(\beta=1\)</span>, which is indicated by the red horizontal dotted line.</span><a class="headerlink" href="#constaccfig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p><a class="reference internal" href="#constaccfig"><span class="std std-numref">Fig. 10.1</span></a> also shows that if you could push an object with
@@ -803,14 +882,14 @@ even if it started out from rest.  However, in practical terms,
 maintaining even such a modest thrust for years without fail is hard
 to do without running out of fuel.  But that’s another topic for
 another day.</p>
-<p>The time component of Equation <a class="reference internal" href="#equation-newton2x">(10.29)</a> shows yet another reason
+<p>The time component of Equation <a class="reference internal" href="#equation-newton2x">(10.32)</a> shows yet another reason
 that it is impossible to get a particle of non-zero rest energy to
 travel at the speed of light. Recalling that the time component of the
 force is related to the energy required to change the velocity in time
 interval <span class="math notranslate nohighlight">\(dt\)</span> (Equation <a class="reference internal" href="#equation-kpower">(10.18)</a>), we can rewrite Equation
-<a class="reference internal" href="#equation-newton2x">(10.29)</a> as</p>
+<a class="reference internal" href="#equation-newton2x">(10.32)</a> as</p>
 <div class="math notranslate nohighlight" id="equation-newnewton">
-<span class="eqno">(10.31)<a class="headerlink" href="#equation-newnewton" title="Permalink to this equation">#</a></span>\[\begin{split}m_0\frac{dv_x}{dt}\gamma^4
+<span class="eqno">(10.34)<a class="headerlink" href="#equation-newnewton" title="Link to this equation">#</a></span>\[\begin{split}m_0\frac{dv_x}{dt}\gamma^4
 \begin{bmatrix}
 i\frac{v_x}{c}\\
 1
@@ -824,10 +903,10 @@ F_x
 <p>The change in energy <span class="math notranslate nohighlight">\(dE\)</span> associated with a velocity change
 <span class="math notranslate nohighlight">\(dv_x\)</span> can be found by examining the time component:</p>
 <div class="math notranslate nohighlight" id="equation-dedv">
-<span class="eqno">(10.32)<a class="headerlink" href="#equation-dedv" title="Permalink to this equation">#</a></span>\[\frac{\gamma^4}{c}m_0v_x\frac{dv_x}{dt} = \frac{\gamma}{c}\frac{dE}{dt}\]</div>
+<span class="eqno">(10.35)<a class="headerlink" href="#equation-dedv" title="Link to this equation">#</a></span>\[\frac{\gamma^4}{c}m_0v_x\frac{dv_x}{dt} = \frac{\gamma}{c}\frac{dE}{dt}\]</div>
 <p>or</p>
 <div class="math notranslate nohighlight" id="equation-de">
-<span class="eqno">(10.33)<a class="headerlink" href="#equation-de" title="Permalink to this equation">#</a></span>\[dE = \gamma^3 m_0 v_x dv_x\]</div>
+<span class="eqno">(10.36)<a class="headerlink" href="#equation-de" title="Link to this equation">#</a></span>\[dE = \gamma^3 m_0 v_x dv_x\]</div>
 <p>The rest mass is constant, but as <span class="math notranslate nohighlight">\(v_x\)</span> gets close to <span class="math notranslate nohighlight">\(c\)</span>,
 <span class="math notranslate nohighlight">\(\gamma\rightarrow\infty\)</span>, so the <span class="math notranslate nohighlight">\(dE\)</span> that would need to be provided
 to keep providing a finite <span class="math notranslate nohighlight">\(dv\)</span> would go to infinity.  Once again, it
@@ -839,7 +918,7 @@ is a constant, so <span class="math notranslate nohighlight">\(dv_x\)</span> has
 keep <span class="math notranslate nohighlight">\(dE\)</span> constant.  The same energy input causes a smaller and
 smaller change in velocity.  As long as <span class="math notranslate nohighlight">\(v_x\ll c\)</span>, then
 <span class="math notranslate nohighlight">\(\gamma\approx 1\)</span> and then you could simply integrate both
-sides to get <span class="math notranslate nohighlight">\(\Delta E = 1/2 m_0 \Delta (v_x^2)\)</span>
+sides to get <span class="math notranslate nohighlight">\(\Delta E = \frac{1}{2} m_0 \Delta (v_x^2)\)</span>
 This is what your newtonian intuition would expect for increasing
 kinetic energy.
 However, as <span class="math notranslate nohighlight">\(v_x\rightarrow c\)</span>, that intuition is no longer accurate.</p>
@@ -849,9 +928,129 @@ directions, as well as the force having all three components is very
 complicated, as <span class="math notranslate nohighlight">\(\beta\)</span> and <span class="math notranslate nohighlight">\(\gamma\)</span> have all three components of the
 velocity in them. In general, the force and the acceleration will not
 be in the same direction, something that does not happen in classical
-physics.</p>
+physics.  This is the resolution of the dilemma we first encountered
+at the end of <a class="reference internal" href="c7velocity.html#ch4vel"><span class="std std-numref">Chapter 7</span></a>.</p>
+</section>
+<section id="examples">
+<h2><span class="section-number">10.8. </span>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h2>
+<section id="example-10-1">
+<h3><span class="section-number">10.8.1. </span>Example 10.1<a class="headerlink" href="#example-10-1" title="Link to this heading">#</a></h3>
+<p>Calculate the Minkowski force exerted on an electron traveling
+vertically upward near the surface of the earth with <span class="math notranslate nohighlight">\(\beta = 0.866\)</span>.</p>
+<p>Solution: Let the <span class="math notranslate nohighlight">\(z\)</span> axis be vertical with the positive value
+pointing up. Near the surface of the earth, the electron experiences a
+gravitational force <span class="math notranslate nohighlight">\(\vec{F}_g = m\vec{g} = -m\times9.81~{\rm
+N/kg}~\hat{z}\)</span>.  The mass of the electron has a value of
+<span class="math notranslate nohighlight">\((9.10938188\pm0.00000072)\times 10^{-31}\)</span> kg.  The force exerted by
+gravity on the electron is therefore:</p>
+<div class="math notranslate nohighlight" id="equation-fgemin">
+<span class="eqno">(10.37)<a class="headerlink" href="#equation-fgemin" title="Link to this equation">#</a></span>\[\vec{F}_g = (9.11\times10^{-31}~{\rm kg})\times(9.81~{\rm N/kg})(-\hat{z})
+= 8.93\times10^{-30}~{\rm N}(-\hat{z})\]</div>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Always good to remember that for <span class="math notranslate nohighlight">\(\beta=0.866\)</span>, <span class="math notranslate nohighlight">\(\gamma=2\)</span></p>
+</aside>
+<p>Since the force is pointing only in the <span class="math notranslate nohighlight">\(-\hat{z}\)</span> direction, the
+<span class="math notranslate nohighlight">\(F_x\)</span> and <span class="math notranslate nohighlight">\(F_y\)</span> components are zero. Using Equation <a class="reference internal" href="#equation-m4forcefin">(10.17)</a> we
+now can find the spatial components of <span class="math notranslate nohighlight">\([K_4]\)</span> by calculating the
+value of <span class="math notranslate nohighlight">\(\gamma\)</span> when <span class="math notranslate nohighlight">\(\beta=0.866\)</span>.  <span class="math notranslate nohighlight">\(K_x\)</span> and <span class="math notranslate nohighlight">\(K_y\)</span> are therefore
+zero, but <span class="math notranslate nohighlight">\(K_z = \gamma m g\)</span>, or <span class="math notranslate nohighlight">\(-1.78\times10^{-29}~{\rm N}\)</span>.  Since
+the motion is in the <span class="math notranslate nohighlight">\(+\hat{z}\)</span> direction, the time component becomes:</p>
+<div class="math notranslate nohighlight" id="equation-fgtime">
+<span class="eqno">(10.38)<a class="headerlink" href="#equation-fgtime" title="Link to this equation">#</a></span>\[K^0 = i\gamma F_g(-\hat{z}) \cdot (\beta \hat{z}) =
+-i (2.00 \times 8.93\times10^{-30}~{\rm N} \times 0.866) =
+- i 1.54\times10^{-29}~{\rm N}\]</div>
+<p>Combining these results gives the Minkowski force:</p>
+<div class="math notranslate nohighlight" id="equation-fgmink">
+<span class="eqno">(10.39)<a class="headerlink" href="#equation-fgmink" title="Link to this equation">#</a></span>\[\begin{split}[K_4] =
+\begin{bmatrix}
+-i 1.54\times10^{-29}~{\rm N}\\
+0\\
+0\\
+-1.78\times10^{-29}~{\rm N}
+\end{bmatrix}\end{split}\]</div>
+<p>Remember that the actual force experienced by the electron will be
+<span class="math notranslate nohighlight">\(K_3/\gamma\)</span>, or half the number given in Equation <a class="reference internal" href="#equation-fgmink">(10.39)</a>,
+because <span class="math notranslate nohighlight">\(\gamma=2\)</span> at this speed.  The time component still has units
+of newtons, because <span class="math notranslate nohighlight">\(K^0\)</span> has a factor of <span class="math notranslate nohighlight">\(1/c\)</span> in it.  If you want
+to know the power delivered to the electron, you have to take the
+<span class="math notranslate nohighlight">\(K^0\)</span> term as given in Equation <a class="reference internal" href="#equation-fgmink">(10.39)</a> (without the <span class="math notranslate nohighlight">\(i\)</span>, of
+course) and multiply it by <span class="math notranslate nohighlight">\(c/\gamma\)</span>.  This would imply the electron
+is losing energy at a rate of <span class="math notranslate nohighlight">\(2.31\times10^{-21}\)</span> watts.</p>
+</section>
 <section id="example-10-2">
-<h3><span class="section-number">10.5.1. </span>Example 10.2<a class="headerlink" href="#example-10-2" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">10.8.2. </span>Example 10.2<a class="headerlink" href="#example-10-2" title="Link to this heading">#</a></h3>
+<p>Another way to examine the four-acceleration in action is to consider
+the trajectory of a particle starting from rest and experiencing a
+constant force in x direction (This example is adapted from
+<span id="id1">[<a class="reference internal" href="c15bibliography.html#id35" title="David Griffiths. Electrodynamics. Cambridge University Press, 2023.">Griffiths, 2023</a>]</span>).  In Newtonian mechanics, we would expect the
+particle to undergo a constant acceleration of <span class="math notranslate nohighlight">\(a=F/m_0\)</span>, and
+therefore have a velocity of <span class="math notranslate nohighlight">\(v(t) = Ft/m_0\)</span>.  If we place the origin
+at the starting location of the particle, the particle position as
+a function of time would be a parabola <span class="math notranslate nohighlight">\(x(t) = Ft^2/2m_0\)</span>.</p>
+<p>Of course, we now know that <span class="math notranslate nohighlight">\(v(t)\)</span> cannot, in fact increase forever,
+and as the graph in <a class="reference internal" href="#constaccfig"><span class="std std-numref">Fig. 10.1</span></a> shows, it must level off at
+<span class="math notranslate nohighlight">\(v=c\)</span>.  We can use our new tools to derive a more accurate trajectory
+of <span class="math notranslate nohighlight">\(x(t)\)</span> that will take this speed limit into account.</p>
+<p>We start with Newton’s second law in one dimension, understanding that
+we are treating it as relativistic from the beginning: <span class="math notranslate nohighlight">\(F=dp/dt\)</span>.
+If <span class="math notranslate nohighlight">\(F\)</span> is a constant, we can integrate both sides to get <span class="math notranslate nohighlight">\(p(t) = Ft\)</span>.
+However, we can’t just divide through by <span class="math notranslate nohighlight">\(m_0\)</span> to get the classical
+result, because there is also a factor of <span class="math notranslate nohighlight">\(\gamma\)</span> inside the <span class="math notranslate nohighlight">\(p\)</span>!
+We therefore get the slightly more complicated version of</p>
+<div class="math notranslate nohighlight" id="equation-speedvst">
+<span class="eqno">(10.40)<a class="headerlink" href="#equation-speedvst" title="Link to this equation">#</a></span>\[\frac{v}{\sqrt{1-\frac{v^2}{c^2}}} = \frac{Ft}{m_0}\]</div>
+<p>Solve for <span class="math notranslate nohighlight">\(v\)</span> to get</p>
+<div class="math notranslate nohighlight" id="equation-vsolveone">
+<span class="eqno">(10.41)<a class="headerlink" href="#equation-vsolveone" title="Link to this equation">#</a></span>\[v^2 = \frac{F^2t^2}{c^2m_0^2}(c^2-v^2) \rightarrow v^2\left(1+ \frac{F^2t^2}{c^2m_0^2}\right) =  \frac{F^2t^2}{m_0^2}\]</div>
+<p>or</p>
+<div class="math notranslate nohighlight" id="equation-vsolve">
+<span class="eqno">(10.42)<a class="headerlink" href="#equation-vsolve" title="Link to this equation">#</a></span>\[v =  \frac{dx}{dt} = \frac{\frac{Ft}{m_0}}{\sqrt{1+\frac{F^2t^2}{c^2m_0^2}}}\]</div>
+<p>We can move the <span class="math notranslate nohighlight">\(dt\)</span> over to the right side and integrate both sides.</p>
+<div class="math notranslate nohighlight" id="equation-xintegralone">
+<span class="eqno">(10.43)<a class="headerlink" href="#equation-xintegralone" title="Link to this equation">#</a></span>\[x(t)-x(0) = \frac{F}{m_0} \int_0^t \frac{z~dz}{\sqrt{1+\frac{F^2z^2}{c^2m_0^2}}},\]</div>
+<p>where <span class="math notranslate nohighlight">\(z\)</span> is a dummy variable standing in for the time dependence.
+This is a u-substitution integral, using <span class="math notranslate nohighlight">\(u(z) = 1+F^2z^2/m_0^2c^2\)</span>.
+Then <span class="math notranslate nohighlight">\(du = 2F^2 z dz/m_0^2c^2\)</span> and the integral becomes</p>
+<div class="math notranslate nohighlight" id="equation-xintegral">
+<span class="eqno">(10.44)<a class="headerlink" href="#equation-xintegral" title="Link to this equation">#</a></span>\[x(t)-x(0) = \frac{F}{m_0} \frac{m_0^2c^2}{2F^2} \int_0^{u(t)} u^{-1/2}~du = \frac{m_0c^2}{2F}~2u^{1/2} =  \frac{m_0c^2}{F}\sqrt{1+F^2t^2/m_0^2c^2}\]</div>
+<p>We can simplify a little bit to get</p>
+<div class="math notranslate nohighlight" id="equation-xvst">
+<span class="eqno">(10.45)<a class="headerlink" href="#equation-xvst" title="Link to this equation">#</a></span>\[\boxed{
+x(t)-x(0) = \frac{c}{F}\sqrt{m_0^2c^2+F^2t^2}}\]</div>
+<p>Note that as <span class="math notranslate nohighlight">\(t\rightarrow\infty\)</span>, this turns into <span class="math notranslate nohighlight">\(x(t)\rightarrow
+ct\)</span> (the square root becomes just <span class="math notranslate nohighlight">\(Ft\)</span> and the <span class="math notranslate nohighlight">\(F\)</span> cancels), which is
+linear and has a slope of <span class="math notranslate nohighlight">\(c\)</span>.  The speed limit of the universe is
+thus preserved.  The correspondance principle also holds, because for
+very small values of <span class="math notranslate nohighlight">\(t\)</span>, we can use a Taylor expansion to write the
+square root (in the form expressed in Equation <a class="reference internal" href="#equation-xintegral">(10.44)</a>) as
+<span class="math notranslate nohighlight">\(1+F^2t^2/2m_0^2c^2\)</span>.  Multiply through the <span class="math notranslate nohighlight">\(m_0c^2/F\)</span> to get</p>
+<div class="math notranslate nohighlight" id="equation-xcorresp">
+<span class="eqno">(10.46)<a class="headerlink" href="#equation-xcorresp" title="Link to this equation">#</a></span>\[x(t)-x(0) \approx  \frac{m_0c^2}{F} + \frac{1}{2}\frac{F}{m_0}t^2\]</div>
+<p>We can interpret the first term as simply the position of the particle at
+<span class="math notranslate nohighlight">\(t=0\)</span> and subtract it off, but the second term is precisely what
+Newton would have predicted.  <a class="reference internal" href="#pcompfig"><span class="std std-numref">Fig. 10.2</span></a> shows the functional
+form of Equation <a class="reference internal" href="#equation-xvst">(10.45)</a> as a magenta line, while the classical
+Newtonian parabola is the blue curve.  To guide your eye, a speed
+of light trajectory is shown as a red dotted line.  Note that the
+two solid curves coincide at small values of <span class="math notranslate nohighlight">\(t\)</span>, as the correspondence
+principle says they should, but they diverge as the speeds get larger.
+The magenta curve eventually becomes parallel to the red dotted
+line as the slope approaches <span class="math notranslate nohighlight">\(c\)</span>.</p>
+<figure class="align-default" id="pcompfig" style="width: 800px">
+<img alt="_images/4c1964d2044d040b70b32557fdaccf4ed9c1bd61c3b190ce1314d6baf7d2286f.png" src="_images/4c1964d2044d040b70b32557fdaccf4ed9c1bd61c3b190ce1314d6baf7d2286f.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 10.2 </span><span class="caption-text">A graph of <span class="math notranslate nohighlight">\(x\)</span> as a function of time (in arbitrary units)
+under constant acceleration,
+comparing the parabola predicted by classical physics with the
+hyperbola predicted by relativistic physics.  The red dotted line
+is what you would expect a particle moving at the constant speed
+of <span class="math notranslate nohighlight">\(c\)</span> to do.</span><a class="headerlink" href="#pcompfig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="example-10-3">
+<h3><span class="section-number">10.8.3. </span>Example 10.3<a class="headerlink" href="#example-10-3" title="Link to this heading">#</a></h3>
 <p>An electron, traveling in the <span class="math notranslate nohighlight">\(+x\)</span> direction with <span class="math notranslate nohighlight">\(\beta = 0.8666\)</span>, is
 subjected to an electric field that exerts a force (as measured in the
 laboratory reference frame) of <span class="math notranslate nohighlight">\(1.000\times10^{-13}\)</span> newtons in the
@@ -867,14 +1066,14 @@ could be used to model this situation.</p>
 <p>This is really an awesome acceleration. In <span class="math notranslate nohighlight">\(10^{-14}\)</span> seconds, itself
 an unimaginably small time interval, the electron would gain <span class="math notranslate nohighlight">\(10^3\)</span>
 m/s in velocity.</p>
-<p>b) Equation <a class="reference internal" href="#equation-relacc">(10.30)</a> is used to find the valid acceleration.  With <span class="math notranslate nohighlight">\(\beta=0.8666\)</span>,
+<p>b) Equation <a class="reference internal" href="#equation-relacc">(10.33)</a> is used to find the valid acceleration.  With <span class="math notranslate nohighlight">\(\beta=0.8666\)</span>,
 <span class="math notranslate nohighlight">\(\gamma = 2\)</span>, so <span class="math notranslate nohighlight">\(\gamma^3=8\)</span>.  The Newtonian model is eight times too fast.</p>
 <div class="math notranslate nohighlight">
 \[a_{\rm Einst} = \frac{F_x}{\gamma^3m_0} = \frac{1}{8}1.098\times10^{17}~{\rm m/s}^2
 = 1.372\times10^{16}~{\rm m/s}^2\]</div>
-<p>The acceleration is down by afactor of 8, but it still is incomprehensibly fast.</p>
+<p>The acceleration is down by a factor of 8, but it still is incomprehensibly fast.</p>
 <p>c) The energy required to increase the speed by 1000 m/sec (an
-increase in speed of only 10 parts per million) is found with Equation <a class="reference internal" href="#equation-de">(10.33)</a>:</p>
+increase in speed of only 10 parts per million) is found with Equation <a class="reference internal" href="#equation-de">(10.36)</a>:</p>
 <div class="math notranslate nohighlight">
 \[dE= \gamma^3m_0v_xdv_x = 8 * 9.109\times10^{-31}~{\rm kg}*0.8666* 3.000\times10^8~{\rm m/s}* 1.000\times10^3~{\rm m/s}\]</div>
 <div class="math notranslate nohighlight">
@@ -890,7 +1089,7 @@ it costs to get less speed.</p>
 </section>
 </section>
 <section id="problems">
-<h2><span class="section-number">10.6. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">10.9. </span>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>An electron, with electrical charge <span class="math notranslate nohighlight">\(q_e = 1.602\times10^{-19}\)</span>
 couloumbs, is traveling at speed <span class="math notranslate nohighlight">\(\beta = .9999980\)</span> in the horizontal
@@ -971,6 +1170,14 @@ baseball to be <span class="math notranslate nohighlight">\(m_0=0.1\)</span> kg.
 and velocity four-vectors, and verify that you do indeed get a
 parabola.</p>
 <p>c) Increase speed – is this useful?  Try it myself.</p>
+<ol class="arabic simple" start="5">
+<li><p>Equation <a class="reference internal" href="#equation-v4dotf4comp">(10.14)</a> shows that four-velocity and the
+Minkowski force are orthogonal.  Since <span class="math notranslate nohighlight">\([K_4]=m_0[a_4]\)</span>, the
+four-velocity and the four-acceleration should also be orthogonal.
+Show that works with Equation <a class="reference internal" href="#equation-acc4dgam">(10.30)</a>.</p></li>
+<li><p>Show that taking the time derivative of Equation <a class="reference internal" href="#equation-vsolve">(10.42)</a> will
+indeed get you Equation <a class="reference internal" href="#equation-relacc">(10.33)</a>.</p></li>
+</ol>
 </section>
 </section>
 
@@ -1001,8 +1208,8 @@ parabola.</p>
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="c9examples.html"
@@ -1031,6 +1238,7 @@ parabola.</p>
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
@@ -1040,15 +1248,17 @@ parabola.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">10.1. Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamics-from-the-lorentz-factor">10.2. Dynamics from the Lorentz Factor</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-second-law-with-four-vectors">10.3. Newton’s Second Law with Four Vectors</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-minkowski-force">10.4. The Minkowski Force</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-10-1">10.4.1. Example 10.1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-minkowski-force">10.4. The Minkowski Force</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-size-of-the-minkowski-force">10.5. The Size of the Minkowski Force</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lorentz-transforming-forces">10.6. Lorentz Transforming Forces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-acceleration-four-vector">10.7. The Acceleration Four Vector</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">10.8. Examples</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-10-1">10.8.1. Example 10.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-10-2">10.8.2. Example 10.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-10-3">10.8.3. Example 10.3</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-acceleration-four-vector">10.5. The Acceleration Four Vector</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-10-2">10.5.1. Example 10.2</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">10.6. Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">10.9. Problems</a></li>
 </ul>
   </nav></div>
 
@@ -1070,9 +1280,10 @@ By Donald A. Smith and Rex Adelberger
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1096,8 +1307,8 @@ By Donald A. Smith and Rex Adelberger
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

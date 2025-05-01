@@ -15,10 +15,12 @@ kernelspec:
 ```{code-cell}
 :tags: ["remove-cell"]
 
+from ipywidgets import interact
 from IPython import display
 import numpy as np
 import matplotlib.pyplot as plt
 from myst_nb import glue
+import ipywidgets as widgets
 
 ```
 
@@ -257,6 +259,23 @@ took the square of the four velocity and divided by $c^2$.  The constant
 $-1$ is of course also invarient across reference frames, and therefore
 also a Lorentz scalar, as the size of a four vector must be.
 
+It can be interesting to think about this four vector in the context
+of spacetime hyperbolic rotations as explained in
+{numref}`sechyperot`.  The magnitude of the beta four vector is $-1$.
+That is its size, which must maintain the same value through Lorentz
+transformations into reference frames in relative motion.  For an
+object at rest, we would say its velocity is zero, but the
+four-velocity must still have a size of $-1$, so it has a time
+component of $i$.  As you "boost" into a moving reference frame, the
+object gains velocity through space, but to maintain the same size, it
+must also gain velocity in time, and the Lorentz factor $\gamma$
+ensures that the total size remains the same.  The speed limit of the
+universe, $\beta=1$ is set by the demand that the size of the velocity
+four-vector remain $-1$, no matter how far you rotate it through
+hyperbolic space time.  Thinking of changing speed as a rotation is
+also helpful in understanding what happens to velocities when
+you consider them from the point of view of a relatively moving frame
+of reference, as explored in the next section.
 
 ## Addition of Velocities
 
@@ -469,7 +488,59 @@ person with the laser on the train *and* the person on the ground will
 is the same in all inertial frames, as consistent with the first
 postulate and the Michelson-Morely experiment.
 
-## Example of Off-Axis Motion
+It is important to be able to visualize the implications of Equation
+{eq}`veladd1`.  The relationships between relative velocities is shown
+in {numref}`addvelfig`.  The animation shows the worldlines for three
+objects in relative motion, while the slider allows you to change
+reference frames via your own relative velocity.  The default
+beginning state of the figure is that your observation frame is at
+rest with respect to the red object.  In this reference frame, the
+blue object is moving left at $\beta_b=0.3$ and the green object is
+moving right at $\beta_g=0.7$.  You could interpret this as the
+worldlines of a spaceship (red) passing by a planet (blue) while being
+overtaken by a faster spaceship (green).  At the origin, all three
+objects are at the same location.
+
+By moving the slider, you can shift your perspective into reference
+frames with different relative motion.  Slide the bar to the right
+until the blue line is vertical.  This is the reference frame of
+the planet as two spaceships going at difference speeds pass it.
+The green spaceship is faster than the blue spaceship, as it must
+be, but it does not exceed the speed of light.  Continue moving the
+slider to the left, and you can see the speed of all three objects will
+approach the speed of light, but never reach it.  If you move the
+slider to the right, you can reach the reference frame of the
+green object, where the red and blue objects will be falling
+behind, and the blue object is moving faster than the red one.
+
+
+```{code-cell}
+:tags: ["remove-cell"]
+# Insert VPython simulation of a Michelson Interferometer
+# Allow user to rotate system, relative to ether
+# Have radio button to include/remove ether
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRVelAdd"
+test = display.IFrame(src=url1,width=800,height=700)
+glue("veladdfig",test, display=False)
+
+```
+
+```{glue:figure} veladdfig
+:figwidth: 800px
+:name: addvelfig
+
+Animation of how velocity addition works.  The figure shows a
+spacetime diagram for three objects in relative constant velocity
+motion.  The velocity of the object is displayed in a box above the
+top of the worldline.  By moving the slider, you can change the
+relative velocity of the reference frame of the diagram.  A vertical
+worldline indicates an object at rest, and then the boxed numbers
+display the relative velocities of the other two objects in that
+reference frame.  Move the slider to find the rest frames for all
+three objects.
+```
+
+## Off-Axis Components of Velocity
 
 Suppose that a particle is traveling with a velocity of $\beta$ at an
 angle $\theta$ with respect to the $x$ axis of the unprimed frame.
@@ -600,7 +671,7 @@ fig=plt.figure(figsize=(9,5))
 plt.plot(betar,bp,'m-',label='Total Magnitude')
 plt.plot(betar,bpx,'b-',label='Horizontal Component')
 plt.plot(betar,bpy,'r-',label='Vertical Component')
-plt.plot(betar,bpnosr,'g.-',label='Newtonian Answer')
+plt.plot(betar,bpnosr,'g.-',label='Newtonian Magnitude')
 plt.plot([-1,1],[0,0],'k:')
 plt.plot([-1,1],[1,1],'k:')
 plt.plot([beta,beta],[-1,1],'k:')
@@ -620,7 +691,7 @@ Values for the off-axis beta velocity in the primed
 frame, for an unprimed $\beta=0.866$ at $\pi/4$ above the $x$ axis.
 The blue line shows the horizontal component of $\beta'$ while the red
 line shows the vertical component.  The magenta line is the total
-magnitude of $\beta'$.  A dotted green line shows the answer that
+magnitude of $\beta'$.  The green line shows the answer that
 Newtonian physics predicts for the magnitude of $\beta'$.  Note that
 the two theories agree near $\beta_R=0$, as the correspondence
 principle says they should, although the Newtonian theory of course
@@ -631,6 +702,98 @@ switches direction, as you expect.  All components of $\beta'$ head
 toward one as the relative speed goes to one, in either direction.
 ```
 
+The implications of this graph are difficult to visualize, so I have
+also provided an interactive vector visualization of the same
+equations in {numref}`bxbyfig`.  The slider changes the relative
+velocity of the observer frame.  The white arrow shows the
+relativistic velocity, where the components are defined by the blue
+and red lines in {numref}`figoffaxis`.  The magnitude of the vector
+(the magenta line) is in a box at the end of the arrow, and the angle
+with the x-axis (in degrees) is in the orange box. The green arrow
+shows the Newtonian prediction.  As you move the slider, that is
+like moving horizontally in {numref}`figoffaxis`, and the values
+of the lines in {numref}`figoffaxis` are used to construct the
+arrows you see in {numref}`bxbyfig`.  As you move the slider, make
+sure you understand how the behavior of the arrows matches the
+curves in {numref}`figoffaxis`.
+
+The default relative velocity, zero, is the frame in which the
+$\beta=0.866$ is measured, so the green and white arrows agree at that
+$\beta_R$.  Note that as you change the relative velocity, the
+magnitude of the relativistic velocity never goes above one.  At
+$\beta_R=0.866\times\cos{\theta_0}$, which is about 0.62, the
+horizontal components of both arrows will be the same (zero), but the
+vertical components are not the same.  Note also that the vertical
+component of the green arrow does not change -- in Newtonian physics,
+relative motion in the x direction has no effect on speed in the
+y-direction.  However, the y component of the relativistic velocity
+changes significantly, so for large values of $\beta_R$, the
+directions of the velocities are quite significantly different.
+
+
+```{code-cell}
+:tags: ["remove-cell"]
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRoffaxis"
+test = display.IFrame(src=url1,width=800,height=700)
+glue("offaxarr",test, display=False)
+
+```
+
+```{glue:figure} offaxarr
+:figwidth: 800px
+:name: bxbyfig
+
+Interactive representation of the velocity vectors for off-axis
+motion, as a function of the relative velocity of the observer's
+frame.  The relative velocity can be changed with the slider.
+The white arrow shows the relativistic velocity, where the components
+are defined by the blue and red lines in {numref}`figoffaxis`.
+The magnitude of the vector (the magenta line) is in a box at the
+end of the arrow, and the angle with the x-axis (in degrees) is in
+the orange box. 
+The green arrow shows the Newtonian expectation.  To help
+guide the eye, the height of the y-component of the Newtonian
+velocity is marked with a horizontal red line.
+```
+
+
+The implications of this analysis are bizarre and uncomfortable
+when viewed from our life experience down here in the world of
+dump trucks and horses.  We learn in introductory physics that
+perpendicular directions can be treated independently.  A ball
+tossed at an angle relative to the ground accelerates in the
+vertical direction and therefore traces out a parabola in height,
+while the horizontal velocity remains unchanged.  Run alongside
+the ball at that horizontal velocity, and it will look to you like
+the ball simply goes straight up and back down again.  The horizontal
+motion has no effect on the vertical motion.
+
+But this analysis demands that the off-axis velocity *is* affected by
+the relative motion along the axis.  As the on-axis velocity increases
+(follow the blue line to either the right or left end), the off-axis
+velocity (the red line) must decrease.  This counter-intuitive result
+is the direct result of demanding that the overall magnitude of the
+four-vector remain constant.  If $\beta_x^2+\beta_y^2\leq 1$, then
+as $\beta_x\rightarrow 1$, $\beta_y$ must get smaller.  If it didn't,
+the sum of the squares would exceed the speed limit of the universe.
+
+However, this leaves us with the unsettling conclusion that changing
+the relative motion of two reference frames can actually change the
+velocity in a perpendicular direction.  Classically, we define a change
+in velocity as an acceleration, and Newton's second law demands that
+an acceleration be linked to a force.  There are no forces involved
+in changing reference frames -- if I pass you on the highway, I
+exert no force on your car to make it move backwards relative to
+mine.  If there is no force involved, how can there be a change
+in velocity?  How do Newton's Laws work in the context of Special
+Relativity?
+
+To answer these questions, we must turn to the analysis of the four
+vectors for acceleration and force, which we tackle in
+[Chapter 10](chForce).  However, force is fundamentally the rate of change
+of momentum.  Before we can understand force, we must first grapple
+with how relativity affects the concept of momentum.  This is
+the main topic of [Chapter 8](ch4mom).
 
 ## Problems
 

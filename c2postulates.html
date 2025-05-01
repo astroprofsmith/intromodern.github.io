@@ -1,9 +1,8 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
@@ -15,53 +14,49 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c2postulates';</script>
@@ -78,28 +73,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -121,12 +111,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -141,9 +139,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="intro.html">
+  
   
   
   
@@ -153,12 +155,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Introduction to Modern Physics - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Introduction to Modern Physics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -200,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -209,14 +222,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -338,26 +351,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -394,12 +409,12 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="postulates-of-relativity">
-<span id="chsrpost"></span><h1><span class="section-number">2. </span>Postulates of Relativity<a class="headerlink" href="#postulates-of-relativity" title="Permalink to this heading">#</a></h1>
+<span id="chsrpost"></span><h1><span class="section-number">2. </span>Postulates of Relativity<a class="headerlink" href="#postulates-of-relativity" title="Link to this heading">#</a></h1>
 <section id="two-postulates-of-relativity">
-<h2><span class="section-number">2.1. </span>Two Postulates of Relativity<a class="headerlink" href="#two-postulates-of-relativity" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">2.1. </span>Two Postulates of Relativity<a class="headerlink" href="#two-postulates-of-relativity" title="Link to this heading">#</a></h2>
 <p>All of relativity follows from two surprisingly simple postulates.
 Once you accept these postulates, you can use the tools of mathematics
 to derive predictions for how space and time will behave, and how
@@ -441,7 +456,7 @@ in <a class="reference internal" href="c1evidence.html#chsrroots"><span class="s
 nature.</p>
 </section>
 <section id="clocks-and-rulers">
-<span id="secclocks"></span><h2><span class="section-number">2.2. </span>Clocks and Rulers<a class="headerlink" href="#clocks-and-rulers" title="Permalink to this heading">#</a></h2>
+<span id="secclocks"></span><h2><span class="section-number">2.2. </span>Clocks and Rulers<a class="headerlink" href="#clocks-and-rulers" title="Link to this heading">#</a></h2>
 <p>The Theory of Relativity starts with considering motion, which involves
 changes in location and time.  If we’re going to compare the predictions
 of the theory with actual reality, we’re going to need to make careful,
@@ -451,7 +466,7 @@ around like space and time (or spacetime).  To measure time and space,
 we need clocks and rulers.</p>
 <p>What makes a clock?  Think of everything you have ever heard of being
 used as a clock.  Your list might include the water clock, the
-hourglass, the sundial, the pendulum (grandfather) clock, a analog
+hourglass, the sundial, the pendulum (grandfather) clock, an analog
 clock face, and an atomic clock.  Before you read any further, try to
 determine what they all have in common that makes them work as clocks.
 The answer is that they all involve repeating patterns in space.  Each
@@ -541,7 +556,7 @@ word “perspective” means – we need to define an inertial reference
 frame.</p>
 </section>
 <section id="inertial-reference-frames-and-events">
-<h2><span class="section-number">2.3. </span>Inertial Reference Frames and Events<a class="headerlink" href="#inertial-reference-frames-and-events" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">2.3. </span>Inertial Reference Frames and Events<a class="headerlink" href="#inertial-reference-frames-and-events" title="Link to this heading">#</a></h2>
 <p>The term “inertial reference frame” has come up several times already.
 Before we go any further, we need to be very clear on what this term
 means.  In essence, a “reference frame” refers to a single set of
@@ -618,7 +633,7 @@ The spheres represent clocks, and the rods represent rulers.  The viewer
 must imagine that the lattice continues on indefinitely an all directions.
 The camera is at rest with respect to the reference frame colored red,
 while the blue frame is in constant relative motion.  The animation will
-loop, to represent more clocks and rods coming in from the side.</span><a class="headerlink" href="#relmotionfig" title="Permalink to this image">#</a></p>
+loop, to represent more clocks and rods coming in from the side.</span><a class="headerlink" href="#relmotionfig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Ultimately, we are interested in how objects in the universe move and
@@ -657,7 +672,7 @@ scope of this book, although <a class="reference internal" href="c13introGR.html
 famous implications.</p>
 </section>
 <section id="important-correlaries-to-the-postulates">
-<h2><span class="section-number">2.4. </span>Important Correlaries to the Postulates<a class="headerlink" href="#important-correlaries-to-the-postulates" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">2.4. </span>Important Correlaries to the Postulates<a class="headerlink" href="#important-correlaries-to-the-postulates" title="Link to this heading">#</a></h2>
 <p>Nothing physical can travel faster than <span class="math notranslate nohighlight">\(c\)</span>.  We will see why in later
 chapters of this book, but it’s important to be aware of that from the
 beginning.  Once you demand that a speed be the same in all reference
@@ -694,7 +709,7 @@ rest in your own reference frame.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/fande.jpg"><img alt="frankearnest" class="bg-primary mb-1" src="_images/fande.jpg" style="width: 700px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 2.2 </span><span class="caption-text">Frank and Earnest cartoon from Sunday, July 8, 2023.  Image copyright
-Bob Thaves.</span><a class="headerlink" href="#fande" title="Permalink to this image">#</a></p>
+Bob Thaves.</span><a class="headerlink" href="#fande" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Most of special relativity is about comparing measurements according
@@ -733,7 +748,7 @@ of space and time that you are used to thinking of as universal.
 However, causes must still come before effects.  This is, as some have
 suggested, a kind of definition of time.  As the old saying goes,
 “Time… is what keeps everything from happening at once.”
-<span id="id1">[<a class="reference internal" href="c15bibliography.html#id23" title="R. Cummings. The Girl in the Golden Atom. Harper and Brothers, 1923.">Cummings, 1923</a>]</span> See also <a class="reference external" href="https://www.youtube.com/watch?v=7HBKEDyFTv8">this Science Asylum YouTube
+<span id="id1">[<a class="reference internal" href="c15bibliography.html#id24" title="R. Cummings. The Girl in the Golden Atom. Harper and Brothers, 1923.">Cummings, 1923</a>]</span> See also <a class="reference external" href="https://www.youtube.com/watch?v=7HBKEDyFTv8">this Science Asylum YouTube
 video</a>.  Not an
 <strong>operational</strong> definition, mind you (the operational definition is
 described with the clocks in <a class="reference internal" href="#secclocks"><span class="std std-ref">Section 2.2</span></a>, but a useful
@@ -750,7 +765,7 @@ important check on our imagination is called the correspondence
 principle.</p>
 </section>
 <section id="model-to-describe-the-experimental-results">
-<h2><span class="section-number">2.5. </span>Model to describe the experimental results.<a class="headerlink" href="#model-to-describe-the-experimental-results" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">2.5. </span>Model to describe the experimental results.<a class="headerlink" href="#model-to-describe-the-experimental-results" title="Link to this heading">#</a></h2>
 <p>One interpretation of Michelson’s experimental results (See <a class="reference internal" href="c1evidence.html#chsrroots"><span class="std std-ref">Chapter
 1</span></a>) is to say that observers in any inertial reference
 frame will measure that light travels at the same speed.  This is
@@ -775,10 +790,10 @@ time interval <span class="math notranslate nohighlight">\(dt\)</span>, the wave
 <span class="math notranslate nohighlight">\(r = c dt\)</span>. The 3-dimensional equation for a spherical shape centered
 at the origin is:</p>
 <div class="math notranslate nohighlight" id="equation-eqsph">
-<span class="eqno">(2.1)<a class="headerlink" href="#equation-eqsph" title="Permalink to this equation">#</a></span>\[x^2+y^2+z^2= r^2\]</div>
+<span class="eqno">(2.1)<a class="headerlink" href="#equation-eqsph" title="Link to this equation">#</a></span>\[x^2+y^2+z^2= r^2\]</div>
 <p>Using the distances represented by the arrows in <a class="reference internal" href="#expanding"><span class="std std-numref">Fig. 2.3</span></a>, equation <a class="reference internal" href="#equation-eqsph">(2.1)</a> becomes:</p>
 <div class="math notranslate nohighlight" id="equation-eqsph2">
-<span class="eqno">(2.2)<a class="headerlink" href="#equation-eqsph2" title="Permalink to this equation">#</a></span>\[(dx)^2+(dy)^2+(dz)^2 = (cdt)^2,\]</div>
+<span class="eqno">(2.2)<a class="headerlink" href="#equation-eqsph2" title="Link to this equation">#</a></span>\[(dx)^2+(dy)^2+(dz)^2 = (cdt)^2,\]</div>
 <p>where <span class="math notranslate nohighlight">\(dx\)</span>, <span class="math notranslate nohighlight">\(dy\)</span>, and <span class="math notranslate nohighlight">\(dz\)</span> are how much the observer measured the wave
 front to propagate during the time interval <span class="math notranslate nohighlight">\(dt\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> is the speed
 of light as measured by the observer.</p>
@@ -805,7 +820,7 @@ see?</p>
 initial flash.  The radius of the sphere, with length <span class="math notranslate nohighlight">\(ct\)</span>
 is shown as a black arrow, with the cartesian components indicated
 by red arrows.  The animation will rotate to display the three-dimensional
-nature of the diagram.</span><a class="headerlink" href="#expanding" title="Permalink to this image">#</a></p>
+nature of the diagram.</span><a class="headerlink" href="#expanding" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Common sense says that the wave front should not longer seem to be
@@ -823,22 +838,20 @@ frame measures is a spherical wave that propagates outward at the same
 speed as shown in Equation <a class="reference internal" href="#equation-eqsph">(2.1)</a>. The second (primed) observer
 also sees a spherical wave, but this time the observer measures:</p>
 <div class="math notranslate nohighlight" id="equation-eqsphp">
-<span class="eqno">(2.3)<a class="headerlink" href="#equation-eqsphp" title="Permalink to this equation">#</a></span>\[(dx^\prime)^2 + (dy^\prime)^2 + (dz^\prime)^2 = (c dt^\prime)^2\]</div>
+<span class="eqno">(2.3)<a class="headerlink" href="#equation-eqsphp" title="Link to this equation">#</a></span>\[(dx^\prime)^2 + (dy^\prime)^2 + (dz^\prime)^2 = (c dt^\prime)^2\]</div>
 <p>where <span class="math notranslate nohighlight">\(dx^\prime\)</span>, <span class="math notranslate nohighlight">\(dy^\prime\)</span>, and <span class="math notranslate nohighlight">\(dz^\prime\)</span> are how much the
 second observer measured the wave front to propagate in time interval
 <span class="math notranslate nohighlight">\(dt^\prime\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> (not <span class="math notranslate nohighlight">\(c^\prime\)</span>!) is the speed of light.</p>
 <p>Equations <a class="reference internal" href="#equation-eqsph2">(2.2)</a> and <a class="reference internal" href="#equation-eqsphp">(2.3)</a> can be combined to be:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1e72e85c-b804-4a23-865e-736364dcd6a6">
-<span class="eqno">(2.4)<a class="headerlink" href="#equation-1e72e85c-b804-4a23-865e-736364dcd6a6" title="Permalink to this equation">#</a></span>\[\begin{equation}
-(dx)^2+(dy)^2+(dz)^2 - (cdt)^2 = (dx^\prime)^2 + (dy^\prime)^2 + (dz^\prime)^2 - (c dt^\prime)^2
-\end{equation}\]</div>
+<div class="math notranslate nohighlight" id="equation-eqnds">
+<span class="eqno">(2.4)<a class="headerlink" href="#equation-eqnds" title="Link to this equation">#</a></span>\[(dx)^2+(dy)^2+(dz)^2 - (cdt)^2 = (dx^\prime)^2 + (dy^\prime)^2 + (dz^\prime)^2 - (c dt^\prime)^2\]</div>
 <p>It appears that there is a sum of squares of measured displacements
 and time intervals for the measurement of the propagation of the wave
 front of a light wave that are the same for each of the two observers
 (moving with respect to each other) that remains constant. This
 statement can be written as a conservation law. The sum:</p>
 <div class="math notranslate nohighlight" id="equation-pyth">
-<span class="eqno">(2.5)<a class="headerlink" href="#equation-pyth" title="Permalink to this equation">#</a></span>\[(dx^\prime)^2 + (dy^\prime)^2 + (dz^\prime)^2 - (c dt^\prime)^2 \]</div>
+<span class="eqno">(2.5)<a class="headerlink" href="#equation-pyth" title="Link to this equation">#</a></span>\[(dx^\prime)^2 + (dy^\prime)^2 + (dz^\prime)^2 - (c dt^\prime)^2 \]</div>
 <p>must remain constant. This conservation law is quite different from
 what Newton and his contemporaries would have thought was ‘conserved’
 in the measurement of the motion of an thing. In the Newtonian world,
@@ -848,13 +861,13 @@ agrees with the experiments, it is not wrong; even if it disagrees
 with Newton’s model.</p>
 </section>
 <section id="then-let-s-begin">
-<h2><span class="section-number">2.6. </span>Then Let’s Begin…<a class="headerlink" href="#then-let-s-begin" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">2.6. </span>Then Let’s Begin…<a class="headerlink" href="#then-let-s-begin" title="Link to this heading">#</a></h2>
 <p>Armed with these postulates, concepts, and principles, we are
 ready to begin characterizing the universe of space and time,
 and to discover the surprises waiting therein…</p>
 </section>
 <section id="problems">
-<h2><span class="section-number">2.7. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">2.7. </span>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Alice and Bob are trying to cross a river in a canoe.  The river is
 20 m wide.  The velocity of the water is to the left with a speed of
@@ -920,8 +933,8 @@ at a location that is not right where you are.</p></li>
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="c1evidence.html"
@@ -949,6 +962,7 @@ at a location that is not right where you are.</p></li>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -984,9 +998,10 @@ By Donald A. Smith and Rex Adelberger
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1010,8 +1025,8 @@ By Donald A. Smith and Rex Adelberger
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

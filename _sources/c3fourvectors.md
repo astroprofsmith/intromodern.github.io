@@ -516,7 +516,7 @@ which is above and to the right.  The x and x' axes are defined to be
 parallel to the vector direction of v_R.
 ```
 
-
+(secGamma)=
 ## Examples of Displacement Four Vectors
 
 The key to using this model of special relativity to describe
@@ -574,7 +574,7 @@ glue("muontrajfig", fig, display=False)
 Two diagrams to display the motion of particles.  On the left,
 we have a plot of $y$ vs. $x$, which shows the trajectories of the particles.
 A pion enters from the lower left going up and to the right, turns into a
-muon and goes stright to the right, and then turns into an electron that goes
+muon and goes (mostly) straight to the right, and then turns into an electron that goes
 down and to the right.  This diagram tells you nothing about how fast the
 particles are going, or how much time passes between the events.  On the right,
 we have a spacetime diagram, which tells us nothing about the motion in the $y$
@@ -771,28 +771,16 @@ Note that the quantity under the square root will always be less than one,
 so the time interval on the rocket will always be less than the time
 interval in the Earth's reference frame!
 
-```{margin} Example 3.2
-
-The half-life for a muon is $2.20 \times 10^{-6}$ seconds as ineasured
-in the rest frame of the muon. A particle accelerator, in the
-laboratory reference frame, produces a beam of a large number of muons,
-traveling at a speed $v = 2.900 \times 10^8$ m/s as observed in the
-laboratory. Find the half-life of the muons as measured by the
-observer in the laboratory frame of reference.
-
-The value of $dt_0 = 2.20\times 10^{-6}$ s. What I am looking for is $dt$.
-Equation {eq}`eqtimed` relates the
-two. What I need is to figure out a value for $\beta$.  Since $\beta
-= v/c,$ it must be $2.900\times 10^8$ m/s/($3.000\times 10^8$ m/s)=.9666.
-The Lorentz Factor is therefore $\gamma = 3.906$, so
-$dt = \gamma dt_0 = 8.59\times 10^{-6}$ s
+```{margin}
+Time Dilation:  a clock in a reference frame at rest with respect to two events will
+measure the shortest possible time interval between those two events.
 ```
 
 This is the famous **Time Dilation**, which is sometimes characterized as
 "moving clocks run slow", but I find this phrase confusing, as all clocks
 could be in motion, relative to something else.  A more precise formulation
-is "a clock in a reference frame at rest with respect to two events will
-measure the shortest possible time interval between those two events."
+is **"a clock in a reference frame at rest with respect to two events will
+measure the shortest possible time interval between those two events."**
 This time interval, being unique, also gets a name, and is called the
 **proper time interval**, and is often designated $dt_0$.
 If you are not clear on which clock is moving, draw a spacetime diagram and
@@ -850,6 +838,23 @@ such that at a particular moment, it will cause the laser to flash.  The
 laser is pointed at the ceiling of the train car, where a mirror reflects
 the laser beam right back down to the floor, where a detector stops the
 clock and therefore measures a time interval.
+
+```{margin} Example 3.2
+
+The half-life for a muon is $2.20 \times 10^{-6}$ seconds as ineasured
+in the rest frame of the muon. A particle accelerator, in the
+laboratory reference frame, produces a beam of a large number of muons,
+traveling at a speed $v = 2.900 \times 10^8$ m/s as observed in the
+laboratory. Find the half-life of the muons as measured by the
+observer in the laboratory frame of reference.
+
+The value of $dt_0 = 2.20\times 10^{-6}$ s. What I am looking for is $dt$.
+Equation {eq}`eqtimed` relates the
+two. What I need is to figure out a value for $\beta$.  Since $\beta
+= v/c,$ it must be $2.900\times 10^8$ m/s/($3.000\times 10^8$ m/s)=.9666.
+The Lorentz Factor is therefore $\gamma = 3.906$, so
+$dt = \gamma dt_0 = 8.59\times 10^{-6}$ s
+```
 
 To put this narrative into mathematical format, we define two events:
 the emission of the laser flash and the detection of the returning

@@ -45,9 +45,9 @@ Equations is automatically consistent with SR.  Newtonian mechanics
 needs massive modifications to work with SR, but the bulk of
 relativistic E&M is learning how to write it in four-vector notation
 and remarking, "Wow!  It works!"  For a full treatment of this topic,
-I recommend an advanced electrodynamics book such as Griffiths.  In
-this eBook, I only plan to introduce the subject, not explore all the
-implications.
+I recommend an advanced electrodynamics book such as
+{cite}`griffiths23`.  In this eBook, I only plan to introduce the
+subject, not explore all the implications.
 
 ## Magnetic Force as a Relativistic Effect
 

@@ -1,9 +1,8 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
@@ -15,53 +14,49 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c8momentum';</script>
@@ -78,28 +73,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -121,12 +111,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -141,9 +139,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="intro.html">
+  
   
   
   
@@ -153,12 +155,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Introduction to Modern Physics - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Introduction to Modern Physics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -200,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -209,14 +222,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -338,26 +351,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -396,10 +411,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="the-momentum-four-vector">
-<span id="ch4mom"></span><h1><span class="section-number">8. </span>The Momentum Four-Vector<a class="headerlink" href="#the-momentum-four-vector" title="Permalink to this heading">#</a></h1>
+<span id="ch4mom"></span><h1><span class="section-number">8. </span>The Momentum Four-Vector<a class="headerlink" href="#the-momentum-four-vector" title="Link to this heading">#</a></h1>
 <p>You have been introduced to the displacement 4-vector, the Lorentz
 transformation and to the velocity 4-vector. These quantities can be
 used to locate objects and determine their motion. Borrowing an idea
@@ -410,17 +425,17 @@ by the Lorentz transformation, and its size is a Lorentz scalar as
 demanded by the Michelson- Morley experiment.</p>
 <p>Knowing that if I multiply a proper 4-vector by a Lorentz scalar, I will get another proper 4-vector, I introduce:</p>
 <div class="math notranslate nohighlight" id="equation-p4def">
-<span class="eqno">(8.1)<a class="headerlink" href="#equation-p4def" title="Permalink to this equation">#</a></span>\[[p_4]=m_0[v_4]\]</div>
+<span class="eqno">(8.1)<a class="headerlink" href="#equation-p4def" title="Link to this equation">#</a></span>\[[p_4]=m_0[v_4]\]</div>
 <p>where <span class="math notranslate nohighlight">\(m_0\)</span> is the mass as measured by an observer in the rest frame
 of the object. As is true with the time interval as measured in the
 rest frame, the ‘rest mass’ , the mass measured in the rest frame of
 the object, is a Lorentz invariant.</p>
 <section id="momentum">
-<h2><span class="section-number">8.1. </span>Momentum<a class="headerlink" href="#momentum" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.1. </span>Momentum<a class="headerlink" href="#momentum" title="Link to this heading">#</a></h2>
 <p>The components of the momentum 4-vector introduced in equation
 <a class="reference internal" href="#equation-p4def">(8.1)</a> are</p>
 <div class="math notranslate nohighlight" id="equation-p4comp">
-<span class="eqno">(8.2)<a class="headerlink" href="#equation-p4comp" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4] = m_0[v_4] = m_0 \gamma \frac{[dx_4]}{dt}=
+<span class="eqno">(8.2)<a class="headerlink" href="#equation-p4comp" title="Link to this equation">#</a></span>\[\begin{split}[p_4] = m_0[v_4] = m_0 \gamma \frac{[dx_4]}{dt}=
 \begin{bmatrix}
 icm_0\gamma\\
 m_0\gamma v_x\\
@@ -449,10 +464,10 @@ is different from the value 1 by just a few parts in <span class="math notransla
 hardly worth taking into account.</p>
 <p>So, let us re-define the physical momentum of a particle as:</p>
 <div class="math notranslate nohighlight" id="equation-pdef">
-<span class="eqno">(8.3)<a class="headerlink" href="#equation-pdef" title="Permalink to this equation">#</a></span>\[\vec{p}\equiv m_0 \gamma \vec{v}\]</div>
+<span class="eqno">(8.3)<a class="headerlink" href="#equation-pdef" title="Link to this equation">#</a></span>\[\vec{p}\equiv m_0 \gamma \vec{v}\]</div>
 <p>which means Equation <a class="reference internal" href="#equation-p4def">(8.1)</a> becomes</p>
 <div class="math notranslate nohighlight" id="equation-p4full">
-<span class="eqno">(8.4)<a class="headerlink" href="#equation-p4full" title="Permalink to this equation">#</a></span>\[\begin{split}\boxed{
+<span class="eqno">(8.4)<a class="headerlink" href="#equation-p4full" title="Link to this equation">#</a></span>\[\begin{split}\boxed{
 [p_4] =
 \begin{bmatrix}
 icm_0\gamma\\
@@ -466,9 +481,9 @@ Michelson-Morley experiment, we use the form for the
 4-momentum found in Equation <a class="reference internal" href="#equation-p4comp">(8.2)</a> and take the dot
 product of the 4-vector with itself:</p>
 <div class="math notranslate nohighlight" id="equation-pmag">
-<span class="eqno">(8.5)<a class="headerlink" href="#equation-pmag" title="Permalink to this equation">#</a></span>\[[p_4]^2 = m_0^2\gamma^2(-c^2+v_x^2+v_y^2+v_z^2)\]</div>
+<span class="eqno">(8.5)<a class="headerlink" href="#equation-pmag" title="Link to this equation">#</a></span>\[[p_4]^2 = m_0^2\gamma^2(-c^2+v_x^2+v_y^2+v_z^2)\]</div>
 <div class="math notranslate nohighlight" id="equation-pmag2">
-<span class="eqno">(8.6)<a class="headerlink" href="#equation-pmag2" title="Permalink to this equation">#</a></span>\[[p_4]^2 = -m_0^2c^2\gamma^2(1-v^2/c^2) = -m_0^2c^2\]</div>
+<span class="eqno">(8.6)<a class="headerlink" href="#equation-pmag2" title="Link to this equation">#</a></span>\[[p_4]^2 = -m_0^2c^2\gamma^2(1-v^2/c^2) = -m_0^2c^2\]</div>
 <p>Since <span class="math notranslate nohighlight">\(m_0\)</span> is an invariant and so is <span class="math notranslate nohighlight">\(c\)</span>, the size of the
 momentum 4-vector is a Lorentz invariant. Once again, it’s
 negative.</p>
@@ -479,13 +494,13 @@ momentum of each of the pieces) 4-momentum that is a Lorentz
 scalar.</p>
 </section>
 <section id="momentum-and-lorentz-transformations">
-<h2><span class="section-number">8.2. </span>Momentum and Lorentz Transformations<a class="headerlink" href="#momentum-and-lorentz-transformations" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.2. </span>Momentum and Lorentz Transformations<a class="headerlink" href="#momentum-and-lorentz-transformations" title="Link to this heading">#</a></h2>
 <p>The components of the momentum 4-vector transform from those
 measured by one inertial observer to those measured by a second
 inertial observer moving with respect to the first with <span class="math notranslate nohighlight">\(\beta_R\)</span>
 in the <span class="math notranslate nohighlight">\(+x\)</span> direction in the same manner as any other 4-vector:</p>
 <div class="math notranslate nohighlight" id="equation-p4lortsetup">
-<span class="eqno">(8.7)<a class="headerlink" href="#equation-p4lortsetup" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]' = {\cal L}_x(\beta_R)[p_4]
+<span class="eqno">(8.7)<a class="headerlink" href="#equation-p4lortsetup" title="Link to this equation">#</a></span>\[\begin{split}[p_4]' = {\cal L}_x(\beta_R)[p_4]
 =
 \begin{bmatrix}
 \gamma_R &amp; -i\beta_R\gamma_R &amp; 0 &amp; 0\\
@@ -501,7 +516,7 @@ m_0\gamma v_z
 \end{bmatrix}\end{split}\]</div>
 <p>Carry out the matrix multiplication to get</p>
 <div class="math notranslate nohighlight" id="equation-p4lort">
-<span class="eqno">(8.8)<a class="headerlink" href="#equation-p4lort" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]'
+<span class="eqno">(8.8)<a class="headerlink" href="#equation-p4lort" title="Link to this equation">#</a></span>\[\begin{split}[p_4]'
 =
 \gamma_Rm_0\gamma
 \begin{bmatrix}
@@ -512,7 +527,7 @@ v_z
 \end{bmatrix}\end{split}\]</div>
 <p>factor out a <span class="math notranslate nohighlight">\(c\)</span> and compare with the primed variables:</p>
 <div class="math notranslate nohighlight" id="equation-p4p">
-<span class="eqno">(8.9)<a class="headerlink" href="#equation-p4p" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]' =
+<span class="eqno">(8.9)<a class="headerlink" href="#equation-p4p" title="Link to this equation">#</a></span>\[\begin{split}[p_4]' =
 \gamma_R\gamma m_0c
 \begin{bmatrix}
 i(1-\beta_R\beta_x)\\
@@ -529,15 +544,15 @@ p'_z
 \end{bmatrix}\end{split}\]</div>
 <p>From this we can deduce predictions like</p>
 <div class="math notranslate nohighlight" id="equation-gamp">
-<span class="eqno">(8.10)<a class="headerlink" href="#equation-gamp" title="Permalink to this equation">#</a></span>\[\gamma' = \gamma_R\gamma(1-\beta_R\beta_x)\]</div>
+<span class="eqno">(8.10)<a class="headerlink" href="#equation-gamp" title="Link to this equation">#</a></span>\[\gamma' = \gamma_R\gamma(1-\beta_R\beta_x)\]</div>
 <p>or</p>
 <div class="math notranslate nohighlight" id="equation-pxp">
-<span class="eqno">(8.11)<a class="headerlink" href="#equation-pxp" title="Permalink to this equation">#</a></span>\[p'_x = \gamma_R\gamma m_0c(\beta_x-\beta_R)=\gamma'm_0v'_x\]</div>
+<span class="eqno">(8.11)<a class="headerlink" href="#equation-pxp" title="Link to this equation">#</a></span>\[p'_x = \gamma_R\gamma m_0c(\beta_x-\beta_R)=\gamma'm_0v'_x\]</div>
 <p>Divide Equation <a class="reference internal" href="#equation-pxp">(8.11)</a> by Equation <a class="reference internal" href="#equation-gamp">(8.10)</a> to get the
 velocity addition formula again!</p>
 </section>
 <section id="example-of-transforming-momentum">
-<h2><span class="section-number">8.3. </span>Example of Transforming Momentum<a class="headerlink" href="#example-of-transforming-momentum" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.3. </span>Example of Transforming Momentum<a class="headerlink" href="#example-of-transforming-momentum" title="Link to this heading">#</a></h2>
 <p>Example 8.2: Suppose that two observers in different reference frames
 were measuring the momentum of the particle in Example 8.1 above.  Say
 the primed observer is moving with <span class="math notranslate nohighlight">\(\beta_R=0.866\)</span> in the <span class="math notranslate nohighlight">\(+x\)</span>
@@ -574,27 +589,27 @@ The time component in the rest frame should be the rest mass times
 <span class="math notranslate nohighlight">\(c\)</span>, which you can easily check is the case here.</p>
 </section>
 <section id="momentum-and-energy">
-<h2><span class="section-number">8.4. </span>Momentum and Energy<a class="headerlink" href="#momentum-and-energy" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.4. </span>Momentum and Energy<a class="headerlink" href="#momentum-and-energy" title="Link to this heading">#</a></h2>
 <p>The size of the momentum 4-vector can be found by squaring each of the
 components in Equation <a class="reference internal" href="#equation-p4comp">(8.2)</a> and adding them up.</p>
 <div class="math notranslate nohighlight" id="equation-p4size">
-<span class="eqno">(8.12)<a class="headerlink" href="#equation-p4size" title="Permalink to this equation">#</a></span>\[[p_4]^2 = p_x^2+p_y^2+p_z^2-(\gamma m_0 c)^2 = p^2 - (\gamma m_0 c)^2\]</div>
+<span class="eqno">(8.12)<a class="headerlink" href="#equation-p4size" title="Link to this equation">#</a></span>\[[p_4]^2 = p_x^2+p_y^2+p_z^2-(\gamma m_0 c)^2 = p^2 - (\gamma m_0 c)^2\]</div>
 <p>where we take <span class="math notranslate nohighlight">\(p\)</span> to be the physical momentum (including the <span class="math notranslate nohighlight">\(\gamma\)</span>!).
 Multiplying both sides by <span class="math notranslate nohighlight">\(c^2\)</span> and doing a bit of algebra gives</p>
 <div class="math notranslate nohighlight" id="equation-eqcp1">
-<span class="eqno">(8.13)<a class="headerlink" href="#equation-eqcp1" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(8.13)<a class="headerlink" href="#equation-eqcp1" title="Link to this equation">#</a></span>\[\boxed{
 (cp)^2 +(m_0 c^2)^2 = (\gamma m_0 c^2)^2}\]</div>
 <p>The term on the right of Equation <a class="reference internal" href="#equation-eqcp1">(8.13)</a> can be identified
 by making use of the correspondence principle. Expanding the <span class="math notranslate nohighlight">\(\gamma\)</span>
 on the right using a Taylor expansion about <span class="math notranslate nohighlight">\(\beta = 0\)</span> gives:</p>
 <div class="math notranslate nohighlight" id="equation-gammataylor">
-<span class="eqno">(8.14)<a class="headerlink" href="#equation-gammataylor" title="Permalink to this equation">#</a></span>\[\gamma = (1-\beta^2)^{-1/2} \rightarrow 1 +\frac{1}{2}
+<span class="eqno">(8.14)<a class="headerlink" href="#equation-gammataylor" title="Link to this equation">#</a></span>\[\gamma = (1-\beta^2)^{-1/2} \rightarrow 1 +\frac{1}{2}
 \beta^2 + \frac{3}{8} \beta^4  + \frac{15}{48} \beta^6 + ...\]</div>
 <p>If we assume that <span class="math notranslate nohighlight">\(\beta\)</span> is small enough that we can ignore
 all the higher order powers, then <span class="math notranslate nohighlight">\(\gamma \approx 1+ \beta^2/2\)</span>
 and <span class="math notranslate nohighlight">\(\gamma m_0 c^2\)</span> becomes approximately</p>
 <div class="math notranslate nohighlight" id="equation-totaleexp">
-<span class="eqno">(8.15)<a class="headerlink" href="#equation-totaleexp" title="Permalink to this equation">#</a></span>\[\gamma m_0 c^2 \approx \left(1+\frac{1}{2}\beta^2\right) m_0 c^2
+<span class="eqno">(8.15)<a class="headerlink" href="#equation-totaleexp" title="Link to this equation">#</a></span>\[\gamma m_0 c^2 \approx \left(1+\frac{1}{2}\beta^2\right) m_0 c^2
 = m_0c^2 + \frac{1}{2}m_0 v^2\]</div>
 <p>The last term on the right is recognizable as definition of the
 kinetic energy of the particle, according to Newtonian mechanics. The
@@ -607,7 +622,7 @@ associated with the particle when it is at rest.  This we therefore
 dub the rest energy of the particle, giving rise to that most famous
 of equations,</p>
 <div class="math notranslate nohighlight" id="equation-emc2">
-<span class="eqno">(8.16)<a class="headerlink" href="#equation-emc2" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(8.16)<a class="headerlink" href="#equation-emc2" title="Link to this equation">#</a></span>\[\boxed{
 E_0 = m_0 c^2}\]</div>
 <p>To be completely accurate, then, the kinetic energy should really
 include all those higher order terms.  Not just <span class="math notranslate nohighlight">\(1/2mv^2\)</span>, but
@@ -654,22 +669,22 @@ energy plus the classical kinetic energy (Eq. <a class="reference internal" href
 <span class="math notranslate nohighlight">\(1/2 mv^2\)</span> rule for kinetic energy that we all learned in introductory
 physics is therefore only an approximation.  A full equation would be</p>
 <div class="math notranslate nohighlight" id="equation-etotal">
-<span class="eqno">(8.17)<a class="headerlink" href="#equation-etotal" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(8.17)<a class="headerlink" href="#equation-etotal" title="Link to this equation">#</a></span>\[\boxed{
 E_{\rm total} =  \gamma m_0 c^2 = E_0 + KE }\]</div>
 <p>We can use Equation <a class="reference internal" href="#equation-eqcp1">(8.13)</a> to say that</p>
 <div class="math notranslate nohighlight" id="equation-etotal2">
-<span class="eqno">(8.18)<a class="headerlink" href="#equation-etotal2" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(8.18)<a class="headerlink" href="#equation-etotal2" title="Link to this equation">#</a></span>\[\boxed{
 E_{\rm total}^2 =  (\gamma m_0 c^2)^2 = E_0^2 + (cp)^2 }\]</div>
 <p>or we could turn it around and solve for the momentum
 of a particle given its energies:</p>
 <div class="math notranslate nohighlight" id="equation-pfrome1">
-<span class="eqno">(8.19)<a class="headerlink" href="#equation-pfrome1" title="Permalink to this equation">#</a></span>\[cp = \sqrt{E_{\rm total}^2 - E_0^2}\]</div>
+<span class="eqno">(8.19)<a class="headerlink" href="#equation-pfrome1" title="Link to this equation">#</a></span>\[cp = \sqrt{E_{\rm total}^2 - E_0^2}\]</div>
 <p>Expanding the square using Equation <a class="reference internal" href="#equation-etotal">(8.17)</a>:</p>
 <div class="math notranslate nohighlight" id="equation-pfrome">
-<span class="eqno">(8.20)<a class="headerlink" href="#equation-pfrome" title="Permalink to this equation">#</a></span>\[cp = \sqrt{E_0^2+2E_0KE+KE^2 - E_0^2} = \sqrt{KE^2+2E_0KE}\]</div>
+<span class="eqno">(8.20)<a class="headerlink" href="#equation-pfrome" title="Link to this equation">#</a></span>\[cp = \sqrt{E_0^2+2E_0KE+KE^2 - E_0^2} = \sqrt{KE^2+2E_0KE}\]</div>
 <p>You could pull the KE out of the square root, to get</p>
 <div class="math notranslate nohighlight" id="equation-pfrome2">
-<span class="eqno">(8.21)<a class="headerlink" href="#equation-pfrome2" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(8.21)<a class="headerlink" href="#equation-pfrome2" title="Link to this equation">#</a></span>\[\boxed{
 p = \frac{KE}{c}\sqrt{1+2\frac{E_0}{KE}}}\]</div>
 <p>In the world of fast moving objects, the momentum and energy of the
 system are connected as shown in equation <a class="reference internal" href="#equation-etotal2">(8.18)</a>.</p>
@@ -693,7 +708,7 @@ below, for how easy eV units can be.</p>
 that the momentum 4-vector can be written in terms of the physical
 momentum and total energy of the system as:</p>
 <div class="math notranslate nohighlight" id="equation-p4fulle">
-<span class="eqno">(8.22)<a class="headerlink" href="#equation-p4fulle" title="Permalink to this equation">#</a></span>\[\begin{split}\boxed{
+<span class="eqno">(8.22)<a class="headerlink" href="#equation-p4fulle" title="Link to this equation">#</a></span>\[\begin{split}\boxed{
 [p_4] =
 \begin{bmatrix}
 iE_{\rm tot}/c\\
@@ -719,7 +734,7 @@ can see that they are related but not equal in Equation <a class="reference inte
 known rest and kinetic energy.  If the total energy is rest plus kinetic,
 and the total energy is <span class="math notranslate nohighlight">\(\gamma\)</span> times the rest energy, then</p>
 <div class="math notranslate nohighlight" id="equation-game">
-<span class="eqno">(8.23)<a class="headerlink" href="#equation-game" title="Permalink to this equation">#</a></span>\[E_{\rm tot} = \gamma E_0 = E_0 + KE \rightarrow \boxed{\gamma = 1 + \frac{KE}{E_0}}\]</div>
+<span class="eqno">(8.23)<a class="headerlink" href="#equation-game" title="Link to this equation">#</a></span>\[E_{\rm tot} = \gamma E_0 = E_0 + KE \rightarrow \boxed{\gamma = 1 + \frac{KE}{E_0}}\]</div>
 <p>This suggests an easy test for deciding if you have to use the
 relativistic formulae to describe the motion of an object.  If you
 know the <span class="math notranslate nohighlight">\(KE\)</span> and the <span class="math notranslate nohighlight">\(E_0\)</span>, use Equation <a class="reference internal" href="#equation-game">(8.23)</a> to get <span class="math notranslate nohighlight">\(\gamma\)</span>.
@@ -744,7 +759,7 @@ miles an hour isn’t fast enough to really need to use relativity theory.</p>
 </aside>
 </section>
 <section id="the-rest-energy">
-<h2><span class="section-number">8.5. </span>The Rest Energy<a class="headerlink" href="#the-rest-energy" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.5. </span>The Rest Energy<a class="headerlink" href="#the-rest-energy" title="Link to this heading">#</a></h2>
 <p>The rest energy is the energy measured in the rest frame of a particle.
 It can be determined from the rest mass using Equation <a class="reference internal" href="#equation-emc2">(8.16)</a>.
 The elementary particles have fixed rest energies.  For the proton –
@@ -789,7 +804,7 @@ light to slightly more than the speed of light.  As the saying goes…</p>
 <p><strong>The speed of light. It’s not only a good idea, it’s the law!</strong></p>
 </section>
 <section id="example-of-using-the-definitions">
-<h2><span class="section-number">8.6. </span>Example of Using the Definitions<a class="headerlink" href="#example-of-using-the-definitions" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.6. </span>Example of Using the Definitions<a class="headerlink" href="#example-of-using-the-definitions" title="Link to this heading">#</a></h2>
 <p>An electron (rest energy = 0.511 MeV) moving in the <span class="math notranslate nohighlight">\(x\)</span>-direction has
 a kinetic energy of 1.000 MeV (1 eV = <span class="math notranslate nohighlight">\(1.602 \times 10^{-19}\)</span> joules)
 Find the total energy, the physical momentum, the momentum 4-vector
@@ -810,7 +825,7 @@ elementary particles. If you <em>really</em> wanted to convert this to the
 dump truck units (SI) for momentum, kg m/s,
 use the conversion factor</p>
 <div class="math notranslate nohighlight" id="equation-evunit">
-<span class="eqno">(8.24)<a class="headerlink" href="#equation-evunit" title="Permalink to this equation">#</a></span>\[1~{\rm eV}/c = 5.340 \times 10^{-28}~{\rm kg m/s}\]</div>
+<span class="eqno">(8.24)<a class="headerlink" href="#equation-evunit" title="Link to this equation">#</a></span>\[1~{\rm eV}/c = 5.340 \times 10^{-28}~{\rm kg m/s}\]</div>
 <p>The momentum 4-vector now can be
 written (using Equation <a class="reference internal" href="#equation-p4fulle">(8.22)</a>) as:</p>
 <div class="math notranslate nohighlight">
@@ -840,7 +855,7 @@ Divide by the mass of the electron (<span class="math notranslate nohighlight">\
 than light speed.</p>
 </section>
 <section id="conservation-laws-and-the-momentum-four-vector">
-<h2><span class="section-number">8.7. </span>Conservation Laws and the Momentum Four-Vector<a class="headerlink" href="#conservation-laws-and-the-momentum-four-vector" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.7. </span>Conservation Laws and the Momentum Four-Vector<a class="headerlink" href="#conservation-laws-and-the-momentum-four-vector" title="Link to this heading">#</a></h2>
 <p>If an interaction happens that is isolated from its surroundings, the
 total energy <span class="math notranslate nohighlight">\(E_{\rm tot}\)</span> (as measured by a particular inertial
 observer) of that system will be constant before, during, and after
@@ -885,13 +900,13 @@ If you switch to another reference frame, you must recalculate the
 energy number from scratch – it will not in general be the same.</p>
 </section>
 <section id="example-of-momentum-conservation">
-<h2><span class="section-number">8.8. </span>Example of Momentum Conservation<a class="headerlink" href="#example-of-momentum-conservation" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.8. </span>Example of Momentum Conservation<a class="headerlink" href="#example-of-momentum-conservation" title="Link to this heading">#</a></h2>
 <p>A neutral pion (rest energy <span class="math notranslate nohighlight">\(E_0=135\)</span> MeV) decays into
 two photons. Show that in the rest frame of the pion, the two photons
 move in opposite directions. Find the energy of these two photons.</p>
 <p>In the rest frame of the pion, the momentum 4-vector for the pion is:</p>
 <div class="math notranslate nohighlight" id="equation-p4pi">
-<span class="eqno">(8.25)<a class="headerlink" href="#equation-p4pi" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm before} =
+<span class="eqno">(8.25)<a class="headerlink" href="#equation-p4pi" title="Link to this equation">#</a></span>\[\begin{split}[p_4]_{\rm before} =
 \begin{bmatrix}
 i135~{\rm MeV}/c\\
 0.0\\
@@ -903,7 +918,7 @@ The <span class="math notranslate nohighlight">\(x\)</span>-direction is defined
 takes. The second photon travels in some unknown direction. The observer in
 the rest frame of the pion measures a momentum 4-vector of the two photons as:</p>
 <div class="math notranslate nohighlight" id="equation-p42pho">
-<span class="eqno">(8.26)<a class="headerlink" href="#equation-p42pho" title="Permalink to this equation">#</a></span>\[\begin{split}[p_4]_{\rm after} =
+<span class="eqno">(8.26)<a class="headerlink" href="#equation-p42pho" title="Link to this equation">#</a></span>\[\begin{split}[p_4]_{\rm after} =
 \begin{bmatrix}
 i(E_1+E_2)/c\\
 p_{x1}+p_{x2}\\
@@ -935,7 +950,7 @@ photon has an energy of 67.5 MeV, and therefore a momentum of 67.5
 MeV/c, but each in an opposite direction to the other.</p>
 </section>
 <section id="problems">
-<span id="sec4momprobs"></span><h2><span class="section-number">8.9. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
+<span id="sec4momprobs"></span><h2><span class="section-number">8.9. </span>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Find the physical momentum of a 100 MeV proton, a 100 MeV positive
 pion and a 100 MeV electron. (the units should be in MeV/c).</p></li>
@@ -967,7 +982,7 @@ the second observer.</p></li>
 <li><p>An observer in the lab watches a neutral <span class="math notranslate nohighlight">\(K^0\)</span> (rest energy 497.7 MeV) decay into a positive and negative pion.  The kaon is traveling with <span class="math notranslate nohighlight">\(\beta = 0.8666\)</span> before it decays.  We write this decay as</p></li>
 </ol>
 <div class="math notranslate nohighlight" id="equation-kaondecay">
-<span class="eqno">(8.27)<a class="headerlink" href="#equation-kaondecay" title="Permalink to this equation">#</a></span>\[K^0 \rightarrow \pi^+ + \pi^-\]</div>
+<span class="eqno">(8.27)<a class="headerlink" href="#equation-kaondecay" title="Link to this equation">#</a></span>\[K^0 \rightarrow \pi^+ + \pi^-\]</div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>In this context, the zero in <span class="math notranslate nohighlight">\(K^0\)</span> means a neutral particle, not the
@@ -1038,8 +1053,8 @@ energy inside to increase by 1 joule?</p>
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="c7velocity.html"
@@ -1067,6 +1082,7 @@ energy inside to increase by 1 joule?</p>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1104,9 +1120,10 @@ By Donald A. Smith and Rex Adelberger
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1130,8 +1147,8 @@ By Donald A. Smith and Rex Adelberger
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

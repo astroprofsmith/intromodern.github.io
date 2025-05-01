@@ -1,9 +1,8 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
@@ -15,53 +14,49 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c3fourvectors';</script>
@@ -78,28 +73,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -121,12 +111,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -141,9 +139,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="intro.html">
+  
   
   
   
@@ -153,12 +155,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Introduction to Modern Physics - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Introduction to Modern Physics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -200,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -209,14 +222,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -338,26 +351,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -400,12 +415,12 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="four-vectors">
-<span id="ch4vec"></span><h1><span class="section-number">3. </span>Four Vectors<a class="headerlink" href="#four-vectors" title="Permalink to this heading">#</a></h1>
+<span id="ch4vec"></span><h1><span class="section-number">3. </span>Four Vectors<a class="headerlink" href="#four-vectors" title="Link to this heading">#</a></h1>
 <section id="time-as-a-dimension">
-<h2><span class="section-number">3.1. </span>Time as a Dimension<a class="headerlink" href="#time-as-a-dimension" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.1. </span>Time as a Dimension<a class="headerlink" href="#time-as-a-dimension" title="Link to this heading">#</a></h2>
 <p>At the end of <a class="reference internal" href="c2postulates.html#chsrpost"><span class="std std-ref">the last chapter</span></a>, we argued that if the
 speed of light was to be invariant – to be measured the same in any
 reference frame – then the quantity <div class="math notranslate nohighlight">
@@ -427,7 +442,7 @@ other makes the more complicated material later easier to manage.
 First, we look at using the imaginary number <span class="math notranslate nohighlight">\(i^2=-1\)</span> to keep track of
 the minus sign, and then we will look at the Einstein notation method.</p>
 <section id="using-imaginary-numbers">
-<h3><span class="section-number">3.1.1. </span>Using Imaginary Numbers<a class="headerlink" href="#using-imaginary-numbers" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">3.1.1. </span>Using Imaginary Numbers<a class="headerlink" href="#using-imaginary-numbers" title="Link to this heading">#</a></h3>
 <p>The simpler way is to introduce complex numbers as a bookkeeping
 trick.  If <span class="math notranslate nohighlight">\(i^2 = -1\)</span>, then we can write the time component of the
 vector as <span class="math notranslate nohighlight">\(icdt\)</span>, and its square will be <span class="math notranslate nohighlight">\(-c^2dt^2\)</span>.  This method
@@ -443,7 +458,7 @@ a space component, then you have made a mistake in your math somewhere.</p>
 </div>
 <p>With this tool, we can define a displacement four-vector as</p>
 <div class="math notranslate nohighlight" id="equation-eqdx4">
-<span class="eqno">(3.1)<a class="headerlink" href="#equation-eqdx4" title="Permalink to this equation">#</a></span>\[\begin{split}[dx_4] =
+<span class="eqno">(3.1)<a class="headerlink" href="#equation-eqdx4" title="Link to this equation">#</a></span>\[\begin{split}[dx_4] =
 \begin{bmatrix}
 icdt\\
 dx\\
@@ -522,7 +537,7 @@ convert a four vector from one frame to another, there is a specific
 procedure one must follow (see <a class="reference internal" href="c4lorentztrans.html#chltrans"><span class="std std-ref">Chapter 4</span></a>).</p>
 </section>
 <section id="einstein-notation">
-<span id="seceinnot"></span><h3><span class="section-number">3.1.2. </span>Einstein Notation<a class="headerlink" href="#einstein-notation" title="Permalink to this heading">#</a></h3>
+<span id="seceinnot"></span><h3><span class="section-number">3.1.2. </span>Einstein Notation<a class="headerlink" href="#einstein-notation" title="Link to this heading">#</a></h3>
 <p>Using <span class="math notranslate nohighlight">\(i\)</span> starts out simpler, and gets you a long way, but eventually,
 it gets cumbersome, carting that <span class="math notranslate nohighlight">\(i\)</span> around, and there are more
 advanced equations that are easier to deal with another way.  The
@@ -539,7 +554,7 @@ written as a column, as in Equation 6, only without the <span class="math notran
 standard notion is to use a superscript greek letter to refer to the
 components, where the Greek letter could stand for 0, 1, 2, or 3.  So</p>
 <div class="math notranslate nohighlight" id="equation-contravar">
-<span class="eqno">(3.2)<a class="headerlink" href="#equation-contravar" title="Permalink to this equation">#</a></span>\[\begin{split}dx^\alpha =
+<span class="eqno">(3.2)<a class="headerlink" href="#equation-contravar" title="Link to this equation">#</a></span>\[\begin{split}dx^\alpha =
 \begin{bmatrix}
 dx^0\\
 dx^1\\
@@ -564,7 +579,7 @@ whether they mean a contravariant component or an exponent.</p>
 <p>There is also a <strong>covariant</strong> version of the four-vector, which is written
 as a row with a subscript Greek letter, but also includes the minus sign:</p>
 <div class="math notranslate nohighlight" id="equation-covariant">
-<span class="eqno">(3.3)<a class="headerlink" href="#equation-covariant" title="Permalink to this equation">#</a></span>\[dx_\alpha =
+<span class="eqno">(3.3)<a class="headerlink" href="#equation-covariant" title="Link to this equation">#</a></span>\[dx_\alpha =
 \begin{bmatrix}
 -cdt&amp;dx&amp;dy&amp;dz
 \end{bmatrix}\]</div>
@@ -616,7 +631,7 @@ as rows (with a negative zeroth component).</p>
 <span class="math notranslate nohighlight">\(dx_1=dx^1\)</span>, <span class="math notranslate nohighlight">\(dx_2=dx^2\)</span>, and <span class="math notranslate nohighlight">\(dx_3=dx^3\)</span>.  So if you multiply the two
 together, according to the Einstein summation rule</p>
 <div class="math notranslate nohighlight" id="equation-eqsumm">
-<span class="eqno">(3.4)<a class="headerlink" href="#equation-eqsumm" title="Permalink to this equation">#</a></span>\[dx_\alpha dx^\alpha = dx_0dx^0 + dx_1dx^1+dx_2dx^2+dx_3dx^3\]</div>
+<span class="eqno">(3.4)<a class="headerlink" href="#equation-eqsumm" title="Link to this equation">#</a></span>\[dx_\alpha dx^\alpha = dx_0dx^0 + dx_1dx^1+dx_2dx^2+dx_3dx^3\]</div>
 <div class="math notranslate nohighlight">
 \[dx_\alpha dx^\alpha = -dx^0dx^0 + dx^1dx^1+dx^2dx^2+dx^3dx^3\]</div>
 <div class="math notranslate nohighlight">
@@ -639,7 +654,7 @@ we say we are in “flat spacetime”.  If the values deviate from 1, we
 say the space is curved.  As a matrix, the metric for flat spacetime
 looks like:</p>
 <div class="math notranslate nohighlight" id="equation-themetric">
-<span class="eqno">(3.5)<a class="headerlink" href="#equation-themetric" title="Permalink to this equation">#</a></span>\[\begin{split}g_{\mu\nu} =
+<span class="eqno">(3.5)<a class="headerlink" href="#equation-themetric" title="Link to this equation">#</a></span>\[\begin{split}g_{\mu\nu} =
 \begin{bmatrix}
 -1&amp;0&amp;0&amp;0\\
 0&amp;1&amp;0&amp;0\\
@@ -649,7 +664,7 @@ looks like:</p>
 <p>So if you follow the Einstein notation, <span class="math notranslate nohighlight">\(g_{\mu\nu}dx^\nu\)</span> is a row
 with <span class="math notranslate nohighlight">\((-dx^0,dx^1, dx^2,dx^3)\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-lowerindex">
-<span class="eqno">(3.6)<a class="headerlink" href="#equation-lowerindex" title="Permalink to this equation">#</a></span>\[g_{\mu\nu}dx^\nu = g_{\mu 0}dx^0 +
+<span class="eqno">(3.6)<a class="headerlink" href="#equation-lowerindex" title="Link to this equation">#</a></span>\[g_{\mu\nu}dx^\nu = g_{\mu 0}dx^0 +
 g_{\mu 1}dx^1 +
 g_{\mu 2}dx^2 +
 g_{\mu 3}dx^3
@@ -660,7 +675,7 @@ everywhere a <span class="math notranslate nohighlight">\(\mu\)</span> appears i
 first term of the sum survives, but with a minus sign, because
 <span class="math notranslate nohighlight">\(g_{00}=-1\)</span>.  The others are all zero.</p>
 <div class="math notranslate nohighlight" id="equation-lowerindex0">
-<span class="eqno">(3.7)<a class="headerlink" href="#equation-lowerindex0" title="Permalink to this equation">#</a></span>\[dx_0 = 
+<span class="eqno">(3.7)<a class="headerlink" href="#equation-lowerindex0" title="Link to this equation">#</a></span>\[dx_0 = 
 g_{0\nu}dx^\nu = g_{00}dx^0 +
 g_{01}dx^1 +
 g_{02}dx^2 +
@@ -671,7 +686,7 @@ you with <span class="math notranslate nohighlight">\(dx_0 = -dx^0\)</span>.</p>
 around a spherically symmetric massive object, for example (called
 “the Schwarzschild Metric”) looks like this:</p>
 <div class="math notranslate nohighlight" id="equation-spheremetric">
-<span class="eqno">(3.8)<a class="headerlink" href="#equation-spheremetric" title="Permalink to this equation">#</a></span>\[\begin{split}g_{\mu\nu} =
+<span class="eqno">(3.8)<a class="headerlink" href="#equation-spheremetric" title="Link to this equation">#</a></span>\[\begin{split}g_{\mu\nu} =
 \begin{bmatrix}
 -\left(1-\frac{r_s}{r}\right)&amp;0&amp;0&amp;0\\
 0&amp;\left(1-r_s/r\right)^{-1}&amp;0&amp;0\\
@@ -730,7 +745,7 @@ in much more depth in <a class="reference internal" href="c5spacetime.html#chstd
 </section>
 </section>
 <section id="spacetime-diagrams">
-<h2><span class="section-number">3.2. </span>Spacetime Diagrams<a class="headerlink" href="#spacetime-diagrams" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.2. </span>Spacetime Diagrams<a class="headerlink" href="#spacetime-diagrams" title="Link to this heading">#</a></h2>
 <p>Superficially, a spacetime diagram hardly seems worthy of its own
 distinct name: the convention is to use the vertical axis to represent
 time measurements (clock readings), and the horizontal axis to
@@ -779,7 +794,7 @@ Click and drag to rotate the “cube” so that you are
 looking face-on to the side bounded by <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(ct\)</span>, with the origin
 in the lower left corner.  This is the standard way to draw a 2D
 spacetime diagram.  The <span class="math notranslate nohighlight">\(y\)</span> axis would then be diagonal in projection.
-There is nowhere to put a <span class="math notranslate nohighlight">\(z\)</span> axis on the computer screen.</span><a class="headerlink" href="#spacetimefig" title="Permalink to this image">#</a></p>
+There is nowhere to put a <span class="math notranslate nohighlight">\(z\)</span> axis on the computer screen.</span><a class="headerlink" href="#spacetimefig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Events, being infinitesimal in duration and extent, are represented on
@@ -820,7 +835,7 @@ two spacetime diagrams in relative motion.  All the equations we will
 develop take this diagram as the starting point and the definition of
 the variables involved.</p>
 <figure class="align-default" id="yerbasicst" style="width: 800px">
-<img alt="_images/3b364438442bd3d8e5c617076cc9ca5090d8f9f5b48d9e0d14a2f50674308940.png" src="_images/3b364438442bd3d8e5c617076cc9ca5090d8f9f5b48d9e0d14a2f50674308940.png" />
+<img alt="_images/74cc426cb44b8d7543c52c65a81dd72a33e06861819db0304afd7b37287772c7.png" src="_images/74cc426cb44b8d7543c52c65a81dd72a33e06861819db0304afd7b37287772c7.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 3.2 </span><span class="caption-text">Spacetime diagram of two reference frames in relative
 motion.  The primed frame S’ (drawn to the left and down a little,
@@ -828,12 +843,12 @@ although of course both reference frames are infinite in extent, and
 the origins may or may not coincide at a particular moment in time) is
 moving to the right at speed v_R, relative to the unprimed frame S,
 which is above and to the right.  The x and x’ axes are defined to be
-parallel to the vector direction of v_R.</span><a class="headerlink" href="#yerbasicst" title="Permalink to this image">#</a></p>
+parallel to the vector direction of v_R.</span><a class="headerlink" href="#yerbasicst" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="examples-of-displacement-four-vectors">
-<h2><span class="section-number">3.3. </span>Examples of Displacement Four Vectors<a class="headerlink" href="#examples-of-displacement-four-vectors" title="Permalink to this heading">#</a></h2>
+<span id="secgamma"></span><h2><span class="section-number">3.3. </span>Examples of Displacement Four Vectors<a class="headerlink" href="#examples-of-displacement-four-vectors" title="Link to this heading">#</a></h2>
 <p>The key to using this model of special relativity to describe
 physically real happenings is to be able to write down the
 displacement 4-vector for that happening. To do this, there must be
@@ -842,7 +857,7 @@ each observer measures the physical displacements andthe time interval
 between the two events and converts them into the components of the
 displacement 4-vector as shown in Equation <a class="reference internal" href="#equation-eqdx4">(3.1)</a>.</p>
 <section id="muon-decay">
-<h3><span class="section-number">3.3.1. </span>Muon Decay<a class="headerlink" href="#muon-decay" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">3.3.1. </span>Muon Decay<a class="headerlink" href="#muon-decay" title="Link to this heading">#</a></h3>
 <p>For example, consider the following sequence of events: I am watching
 a pion travel along in a bubble chamber, leaving a track of
 bubbles. At some time and place, it decays into a muon. I know that
@@ -854,19 +869,19 @@ shown in <a class="reference internal" href="#muonfig"><span class="std std-numr
 diagram of what happens in space, while the figure on the right is a
 spacetime diagram!</p>
 <figure class="align-default" id="muonfig" style="width: 800px">
-<img alt="_images/538b4421b5af9122464200d66b0898194e3209b9c22184361808ad8218d254e5.png" src="_images/538b4421b5af9122464200d66b0898194e3209b9c22184361808ad8218d254e5.png" />
+<img alt="_images/4d46cf91c58e5597bff7f4e053f80945225bec180590ad40b3a2ab2226178efe.png" src="_images/4d46cf91c58e5597bff7f4e053f80945225bec180590ad40b3a2ab2226178efe.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 3.3 </span><span class="caption-text">Two diagrams to display the motion of particles.  On the left,
 we have a plot of <span class="math notranslate nohighlight">\(y\)</span> vs. <span class="math notranslate nohighlight">\(x\)</span>, which shows the trajectories of the particles.
 A pion enters from the lower left going up and to the right, turns into a
-muon and goes stright to the right, and then turns into an electron that goes
+muon and goes (mostly) straight to the right, and then turns into an electron that goes
 down and to the right.  This diagram tells you nothing about how fast the
 particles are going, or how much time passes between the events.  On the right,
 we have a spacetime diagram, which tells us nothing about the motion in the <span class="math notranslate nohighlight">\(y\)</span>
 direction on the left plot (the tracks on this diagram do not turn around),
 but does convey the velocity in the <span class="math notranslate nohighlight">\(x\)</span> direction (not the <span class="math notranslate nohighlight">\(y\)</span> or <span class="math notranslate nohighlight">\(z\)</span>!).
 Can you describe how this velocity component changes throughout
-this sequence of events?  (Note: this is not realistic.)</span><a class="headerlink" href="#muonfig" title="Permalink to this image">#</a></p>
+this sequence of events?  (Note: this is not realistic.)</span><a class="headerlink" href="#muonfig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>If we consider the two events of the creation and disappearence of the
@@ -875,7 +890,7 @@ could measure the displacement and time duration between these events
 (and we can read them off the graph, albiet with no units), and then
 put them into the four-vector format:</p>
 <div class="math notranslate nohighlight" id="equation-exdx4">
-<span class="eqno">(3.9)<a class="headerlink" href="#equation-exdx4" title="Permalink to this equation">#</a></span>\[\begin{split}[dx_4] =
+<span class="eqno">(3.9)<a class="headerlink" href="#equation-exdx4" title="Link to this equation">#</a></span>\[\begin{split}[dx_4] =
 \begin{bmatrix}
 icdt\\
 dx\\
@@ -893,7 +908,7 @@ i2\\
 about whether there was any displacement in the <span class="math notranslate nohighlight">\(z\)</span> direction.</p>
 </section>
 <section id="space-ship">
-<h3><span class="section-number">3.3.2. </span>Space ship<a class="headerlink" href="#space-ship" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">3.3.2. </span>Space ship<a class="headerlink" href="#space-ship" title="Link to this heading">#</a></h3>
 <p>Often in SR problems, it is important to make a graph showing the
 events under consideration, and to indicate the relative motion of the
 reference frames, as in <a class="reference internal" href="#yerbasicst"><span class="std std-numref">Fig. 3.2</span></a>.  This will help you
@@ -922,7 +937,7 @@ rocket}} = \frac{4.2~{\rm LY}}{0.75c} \rightarrow cdt_\oplus =
 5.6~{\rm LY}\]</div>
  Note that <span class="math notranslate nohighlight">\(cdt_\oplus\)</span> has units of length.</p>
 <figure class="align-default" id="shipfig" style="width: 800px">
-<img alt="_images/9190c9efd0eaf83713580073d2684a7efb645edbe8eec2ca7815e023b0fa19ef.png" src="_images/9190c9efd0eaf83713580073d2684a7efb645edbe8eec2ca7815e023b0fa19ef.png" />
+<img alt="_images/133c716fea131f5445dcfb63dd913903e72b46f602086db6a7c7079d5d35bd62.png" src="_images/133c716fea131f5445dcfb63dd913903e72b46f602086db6a7c7079d5d35bd62.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 3.4 </span><span class="caption-text">Spacetime diagrams of two events in two different
 reference frames in relative motion.  The left diagram represents the
@@ -932,13 +947,13 @@ LY and arrives at the blue dot 5.6 years later.  The primed frame in
 this case is the rest frame of the rocket.  The right diagram shows
 the same two events from the primed frame: the Earth falls away behind
 the rocket while Alpha Centauri comes to meet it, while the rocket remains
-in the same place.</span><a class="headerlink" href="#shipfig" title="Permalink to this image">#</a></p>
+in the same place.</span><a class="headerlink" href="#shipfig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>We can therefore write a displacement four vector in the reference
 frame at rest with respect to the Earth:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7d7a4b76-d64e-4b9a-99ca-bc19a2fe8bd1">
-<span class="eqno">(3.10)<a class="headerlink" href="#equation-7d7a4b76-d64e-4b9a-99ca-bc19a2fe8bd1" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5f373c6f-dc01-4b9a-b47b-e8fdd8426def">
+<span class="eqno">(3.10)<a class="headerlink" href="#equation-5f373c6f-dc01-4b9a-b47b-e8fdd8426def" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_\oplus =
 \begin{bmatrix}
 icdt_\oplus\\
@@ -962,8 +977,8 @@ aboard the space craft will measure some time interval, <span class="math notran
 between the time he sees the earth outside of his window and sees
 alpha centauri outside the window. The observer aboard the space craft
 measures a displacement 4-vector:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fe909e9d-dcc8-4f88-be62-063e49d3f7ee">
-<span class="eqno">(3.11)<a class="headerlink" href="#equation-fe909e9d-dcc8-4f88-be62-063e49d3f7ee" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-14d67995-1766-41da-bb28-08cd37eefd8c">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-14d67995-1766-41da-bb28-08cd37eefd8c" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm rocket} =
 \begin{bmatrix}
 icdt_{\rm rocket}\\
@@ -980,13 +995,13 @@ nothing to do with the first observer being physically <strong>on</strong> the E
 the <span class="math notranslate nohighlight">\(dt_\oplus\)</span> is measured by the infinite lattice of clocks at
 rest with respect to the Earth.</p>
 <p>The sizes of the two four vectors are:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-741e52c4-bce5-4746-a797-f220b10f5cb2">
-<span class="eqno">(3.12)<a class="headerlink" href="#equation-741e52c4-bce5-4746-a797-f220b10f5cb2" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-1cee24d0-2aa4-4d2a-8f7e-b71a48032828">
+<span class="eqno">(3.12)<a class="headerlink" href="#equation-1cee24d0-2aa4-4d2a-8f7e-b71a48032828" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dx_\oplus^2 - (cdt_\oplus)^2 = -(cdt_{\rm rocket})^2
 \end{equation}\]</div>
 <p>Solve for <span class="math notranslate nohighlight">\(dt_{\rm rocket}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cc256932-4894-423e-9a7b-c1b13adeec9f">
-<span class="eqno">(3.13)<a class="headerlink" href="#equation-cc256932-4894-423e-9a7b-c1b13adeec9f" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-361dec1a-a3e7-4c89-a7c3-93a7eccf7da8">
+<span class="eqno">(3.13)<a class="headerlink" href="#equation-361dec1a-a3e7-4c89-a7c3-93a7eccf7da8" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dt_{\rm rocket} = dt_\oplus\sqrt{1-\left(\frac{dx_\oplus}{cdt_\oplus}\right)^2}
 = dt_\oplus \sqrt{1-\beta^2}
 \end{equation}\]</div>
@@ -994,25 +1009,15 @@ dt_{\rm rocket} = dt_\oplus\sqrt{1-\left(\frac{dx_\oplus}{cdt_\oplus}\right)^2}
 so the time interval on the rocket will always be less than the time
 interval in the Earth’s reference frame!</p>
 <aside class="margin sidebar">
-<p class="sidebar-title">Example 3.2</p>
-<p>The half-life for a muon is <span class="math notranslate nohighlight">\(2.20 \times 10^{-6}\)</span> seconds as ineasured
-in the rest frame of the muon. A particle accelerator, in the
-laboratory reference frame, produces a beam of a large number of muons,
-traveling at a speed <span class="math notranslate nohighlight">\(v = 2.900 \times 10^8\)</span> m/s as observed in the
-laboratory. Find the half-life of the muons as measured by the
-observer in the laboratory frame of reference.</p>
-<p>The value of <span class="math notranslate nohighlight">\(dt_0 = 2.20\times 10^{-6}\)</span> s. What I am looking for is <span class="math notranslate nohighlight">\(dt\)</span>.
-Equation <a class="reference internal" href="#equation-eqtimed">(3.14)</a> relates the
-two. What I need is to figure out a value for <span class="math notranslate nohighlight">\(\beta\)</span>.  Since <span class="math notranslate nohighlight">\(\beta
-= v/c,\)</span> it must be <span class="math notranslate nohighlight">\(2.900\times 10^8\)</span> m/s/(<span class="math notranslate nohighlight">\(3.000\times 10^8\)</span> m/s)=.9666.
-The Lorentz Factor is therefore <span class="math notranslate nohighlight">\(\gamma = 3.906\)</span>, so
-<span class="math notranslate nohighlight">\(dt = \gamma dt_0 = 8.59\times 10^{-6}\)</span> s</p>
+<p class="sidebar-title"></p>
+<p>Time Dilation:  a clock in a reference frame at rest with respect to two events will
+measure the shortest possible time interval between those two events.</p>
 </aside>
 <p>This is the famous <strong>Time Dilation</strong>, which is sometimes characterized as
 “moving clocks run slow”, but I find this phrase confusing, as all clocks
 could be in motion, relative to something else.  A more precise formulation
-is “a clock in a reference frame at rest with respect to two events will
-measure the shortest possible time interval between those two events.”
+is <strong>“a clock in a reference frame at rest with respect to two events will
+measure the shortest possible time interval between those two events.”</strong>
 This time interval, being unique, also gets a name, and is called the
 <strong>proper time interval</strong>, and is often designated <span class="math notranslate nohighlight">\(dt_0\)</span>.
 If you are not clear on which clock is moving, draw a spacetime diagram and
@@ -1026,7 +1031,7 @@ other side of the equation, since the clock on the rocket is the one
 at rest and therefore <span class="math notranslate nohighlight">\(dt_{\rm rocket}\)</span> is the proper time interval.
 In this case,</p>
 <div class="math notranslate nohighlight" id="equation-eqtimed">
-<span class="eqno">(3.14)<a class="headerlink" href="#equation-eqtimed" title="Permalink to this equation">#</a></span>\[dt_\oplus = \frac{dt_{\rm rocket}}{\sqrt{1-\beta^2}} = dt_{\rm rocket}\gamma,\]</div>
+<span class="eqno">(3.14)<a class="headerlink" href="#equation-eqtimed" title="Link to this equation">#</a></span>\[dt_\oplus = \frac{dt_{\rm rocket}}{\sqrt{1-\beta^2}} = dt_{\rm rocket}\gamma,\]</div>
 <p>where <span class="math notranslate nohighlight">\(\gamma \equiv 1/\sqrt{1-\beta^2}\)</span> is the Lorentz Factor.
 The Lorentz Factor is always greater than or equal to one (equality
 in the case of <span class="math notranslate nohighlight">\(\beta=0\)</span> – no relative motion means the clocks will agree),
@@ -1059,13 +1064,28 @@ the measured elapsed times, on the orders of a hundred nanoseconds!
 Look up descriptions of the <a class="reference external" href="https://en.wikipedia.org/wiki/Hafele%E2%80%93Keating_experiment">Hafele-Keating Experiment</a> for more details.</p>
 </section>
 <section id="clock-on-a-train">
-<h3><span class="section-number">3.3.3. </span>Clock on a Train<a class="headerlink" href="#clock-on-a-train" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">3.3.3. </span>Clock on a Train<a class="headerlink" href="#clock-on-a-train" title="Link to this heading">#</a></h3>
 <p>One more example of how you can use four-vectors to predict time dilation.
 Consider a clock, sitting on the floor of a train.  It is linked to a laser,
 such that at a particular moment, it will cause the laser to flash.  The
 laser is pointed at the ceiling of the train car, where a mirror reflects
 the laser beam right back down to the floor, where a detector stops the
 clock and therefore measures a time interval.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title">Example 3.2</p>
+<p>The half-life for a muon is <span class="math notranslate nohighlight">\(2.20 \times 10^{-6}\)</span> seconds as ineasured
+in the rest frame of the muon. A particle accelerator, in the
+laboratory reference frame, produces a beam of a large number of muons,
+traveling at a speed <span class="math notranslate nohighlight">\(v = 2.900 \times 10^8\)</span> m/s as observed in the
+laboratory. Find the half-life of the muons as measured by the
+observer in the laboratory frame of reference.</p>
+<p>The value of <span class="math notranslate nohighlight">\(dt_0 = 2.20\times 10^{-6}\)</span> s. What I am looking for is <span class="math notranslate nohighlight">\(dt\)</span>.
+Equation <a class="reference internal" href="#equation-eqtimed">(3.14)</a> relates the
+two. What I need is to figure out a value for <span class="math notranslate nohighlight">\(\beta\)</span>.  Since <span class="math notranslate nohighlight">\(\beta
+= v/c,\)</span> it must be <span class="math notranslate nohighlight">\(2.900\times 10^8\)</span> m/s/(<span class="math notranslate nohighlight">\(3.000\times 10^8\)</span> m/s)=.9666.
+The Lorentz Factor is therefore <span class="math notranslate nohighlight">\(\gamma = 3.906\)</span>, so
+<span class="math notranslate nohighlight">\(dt = \gamma dt_0 = 8.59\times 10^{-6}\)</span> s</p>
+</aside>
 <p>To put this narrative into mathematical format, we define two events:
 the emission of the laser flash and the detection of the returning
 light.  The emission and detection of the light happen at the same
@@ -1116,7 +1136,7 @@ the laser beam travels.  Try it first with <span class="math notranslate nohighl
 straight up and down.  The height of the train is 6, in these units, so
 you should see the time of flight as 12.  Try increasing <span class="math notranslate nohighlight">\(\beta\)</span> and run
 it again, to see how the time and distance increase.  An observer
-on the train would only ever measure the <span class="math notranslate nohighlight">\(\beta=0\)</span> case.</span><a class="headerlink" href="#trainclockfig" title="Permalink to this image">#</a></p>
+on the train would only ever measure the <span class="math notranslate nohighlight">\(\beta=0\)</span> case.</span><a class="headerlink" href="#trainclockfig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>This is the essence of time dilation: if the light is to travel a
@@ -1133,10 +1153,10 @@ time interval the person on the ground will measure is thus:</p>
 \[dt^2  = \frac{4(cdt_0/2)^2+(vdt/2)^2}{c^2}\]</div>
 <p>The four cancels, and if we multiply both sides by <span class="math notranslate nohighlight">\(c^2\)</span>,</p>
 <div class="math notranslate nohighlight" id="equation-eqdxlaser">
-<span class="eqno">(3.15)<a class="headerlink" href="#equation-eqdxlaser" title="Permalink to this equation">#</a></span>\[c^2dt^2  = (cdt_0)^2+(vdt)^2 \rightarrow dt^2(c^2-v^2) = c^2dt_0^2\]</div>
+<span class="eqno">(3.15)<a class="headerlink" href="#equation-eqdxlaser" title="Link to this equation">#</a></span>\[c^2dt^2  = (cdt_0)^2+(vdt)^2 \rightarrow dt^2(c^2-v^2) = c^2dt_0^2\]</div>
 <p>which means</p>
 <div class="math notranslate nohighlight" id="equation-eqpropertd">
-<span class="eqno">(3.16)<a class="headerlink" href="#equation-eqpropertd" title="Permalink to this equation">#</a></span>\[dt  = dt_0\frac{1}{\sqrt{1-(v/c)^2}} = \gamma dt_0,\]</div>
+<span class="eqno">(3.16)<a class="headerlink" href="#equation-eqpropertd" title="Link to this equation">#</a></span>\[dt  = dt_0\frac{1}{\sqrt{1-(v/c)^2}} = \gamma dt_0,\]</div>
 <p>which is the same as Equation <a class="reference internal" href="#equation-eqtimed">(3.14)</a>!  The clock on the ground
 will measure a longer time interval than the clock on the train by a
 factor of <span class="math notranslate nohighlight">\(\gamma\)</span>.  From the point of view of the person on the
@@ -1183,8 +1203,8 @@ The reference frame at rest with respect to the ground is the unprimed
 frame on the left.  The red dot is the emission of the light and the
 blue dot is the detection of the light.  The displacement four vector
 in the train frame would be:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b3c65c91-8749-45b8-8b9b-b74ea1110eab">
-<span class="eqno">(3.17)<a class="headerlink" href="#equation-b3c65c91-8749-45b8-8b9b-b74ea1110eab" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-dae979dc-227c-4a85-9ca4-06069cc48ec1">
+<span class="eqno">(3.17)<a class="headerlink" href="#equation-dae979dc-227c-4a85-9ca4-06069cc48ec1" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm train} =
 \begin{bmatrix}
 icdt_0\\
@@ -1194,8 +1214,8 @@ icdt_0\\
 \end{bmatrix}
 \end{equation}\]</div>
 <p>while the displacement four vector from the ground’s reference frame is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a2f9da84-b3a5-4637-9212-292dd3da3e75">
-<span class="eqno">(3.18)<a class="headerlink" href="#equation-a2f9da84-b3a5-4637-9212-292dd3da3e75" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-3ae26118-552a-48c1-8442-04927fbe284f">
+<span class="eqno">(3.18)<a class="headerlink" href="#equation-3ae26118-552a-48c1-8442-04927fbe284f" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm ground} =
 \begin{bmatrix}
 icdt\\
@@ -1215,7 +1235,7 @@ the rules of time are the same.</p>
 </section>
 </section>
 <section id="problems">
-<h2><span class="section-number">3.4. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.4. </span>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>An experimenter measures the following physical changes between two
 events <span class="math notranslate nohighlight">\(dx = 1.00\)</span> m, <span class="math notranslate nohighlight">\(dy = 0.300\)</span> m, <span class="math notranslate nohighlight">\(dz = -0.100\)</span> m, and <span class="math notranslate nohighlight">\(dt = 6.00\)</span> ns.
@@ -1283,8 +1303,8 @@ sun and the speed of a neutrino?</p></li>
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="c2postulates.html"
@@ -1312,6 +1332,7 @@ sun and the speed of a neutrino?</p></li>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1353,9 +1374,10 @@ By Donald A. Smith and Rex Adelberger
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1379,8 +1401,8 @@ By Donald A. Smith and Rex Adelberger
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

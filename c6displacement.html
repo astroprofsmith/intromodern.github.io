@@ -1,9 +1,8 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
@@ -15,53 +14,49 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c6displacement';</script>
@@ -78,28 +73,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -121,12 +111,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -141,9 +139,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="intro.html">
+  
   
   
   
@@ -153,12 +155,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Introduction to Modern Physics - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Introduction to Modern Physics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -200,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -209,14 +222,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -338,26 +351,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -394,16 +409,16 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="the-displacement-four-vector">
-<span id="ch4disp"></span><h1><span class="section-number">6. </span>The Displacement Four Vector<a class="headerlink" href="#the-displacement-four-vector" title="Permalink to this heading">#</a></h1>
+<span id="ch4disp"></span><h1><span class="section-number">6. </span>The Displacement Four Vector<a class="headerlink" href="#the-displacement-four-vector" title="Link to this heading">#</a></h1>
 <p>In this chapter, we will take a deep dive into the properties of
 the displacement four vector, using all the tools developed in the
 previous chapters.  Some of the material will repeat what has been
 presented already, but in more depth.</p>
 <section id="the-difference-between-two-events">
-<h2><span class="section-number">6.1. </span>The Difference Between Two Events<a class="headerlink" href="#the-difference-between-two-events" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.1. </span>The Difference Between Two Events<a class="headerlink" href="#the-difference-between-two-events" title="Link to this heading">#</a></h2>
 <p>The model we will be using to predict the behavior of systems moving
 with speeds significant compared to the speed of light require that
 the physical process be one such that there are two events occurring
@@ -438,16 +453,16 @@ first observer, would measure as the difference between these two
 events.</p>
 </section>
 <section id="a-summary-of-the-story-so-far">
-<h2><span class="section-number">6.2. </span>A Summary of The Story So Far<a class="headerlink" href="#a-summary-of-the-story-so-far" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.2. </span>A Summary of The Story So Far<a class="headerlink" href="#a-summary-of-the-story-so-far" title="Link to this heading">#</a></h2>
 <p>Before diving into the analysis, a quick summary of what we have
 established so far.  <a class="reference internal" href="#dejavu"><span class="std std-numref">Fig. 6.1</span></a> reproduces
 <a class="reference internal" href="c4lorentztrans.html#stwithvecfig"><span class="std std-numref">Fig. 4.1</span></a>, showing two events in spacetime diagram with a
 displacement four vector between them.</p>
 <figure class="align-default" id="dejavu" style="width: 800px">
-<img alt="_images/2ed33ab054c8f86a87ee3651a7b9613b7e604a7f05104d57ea22de877e7525de.png" src="_images/2ed33ab054c8f86a87ee3651a7b9613b7e604a7f05104d57ea22de877e7525de.png" />
+<img alt="_images/5f3be46f42db6a1e23c6c6230462326bf4c158306fb4ab165d5b29e2479572ab.png" src="_images/5f3be46f42db6a1e23c6c6230462326bf4c158306fb4ab165d5b29e2479572ab.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 6.1 </span><span class="caption-text">Two events in a spacetime diagram with a displacement
-four vector between them.</span><a class="headerlink" href="#dejavu" title="Permalink to this image">#</a></p>
+four vector between them.</span><a class="headerlink" href="#dejavu" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The displacement between these two events is to be analyzed by two
@@ -459,7 +474,7 @@ interval <span class="math notranslate nohighlight">\((dt)\)</span> between the 
 observer then constructs the displacement 4-vector that describes
 these two events:</p>
 <div class="math notranslate nohighlight" id="equation-eqtwo4disp">
-<span class="eqno">(6.1)<a class="headerlink" href="#equation-eqtwo4disp" title="Permalink to this equation">#</a></span>\[\begin{split}[dx_4] =
+<span class="eqno">(6.1)<a class="headerlink" href="#equation-eqtwo4disp" title="Link to this equation">#</a></span>\[\begin{split}[dx_4] =
 \begin{bmatrix}
 icdt\\
 dx\\
@@ -481,7 +496,7 @@ two events as measured by the unprimed observer (shown in
 can therefore ignore the last two components and write the
 displacement 4-vector in the unprimed coordinate system as:</p>
 <div class="math notranslate nohighlight" id="equation-equnprime">
-<span class="eqno">(6.2)<a class="headerlink" href="#equation-equnprime" title="Permalink to this equation">#</a></span>\[\begin{split}[dx_4] =
+<span class="eqno">(6.2)<a class="headerlink" href="#equation-equnprime" title="Link to this equation">#</a></span>\[\begin{split}[dx_4] =
 \begin{bmatrix}
 icdt\\
 dx
@@ -494,7 +509,7 @@ observer are found by operating on the unprimed displacement 4-vector
 \[[dx_4]^\prime = {\cal L}_x(\beta_R) [dx_4]\]</div>
 </p>
 <div class="math notranslate nohighlight" id="equation-lortrans">
-<span class="eqno">(6.3)<a class="headerlink" href="#equation-lortrans" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
+<span class="eqno">(6.3)<a class="headerlink" href="#equation-lortrans" title="Link to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
 icdt^\prime\\
 dx'
 \end{bmatrix}
@@ -525,13 +540,13 @@ components of the displacement 4-vector as measured by the primed
 observer in terms of the values of the components measured by the
 unprimed observer gives:</p>
 <div class="math notranslate nohighlight" id="equation-eqdtp">
-<span class="eqno">(6.4)<a class="headerlink" href="#equation-eqdtp" title="Permalink to this equation">#</a></span>\[cdt' = \gamma_R(cdt - \beta_R dx)\]</div>
+<span class="eqno">(6.4)<a class="headerlink" href="#equation-eqdtp" title="Link to this equation">#</a></span>\[cdt' = \gamma_R(cdt - \beta_R dx)\]</div>
 <div class="math notranslate nohighlight" id="equation-eqdxp">
-<span class="eqno">(6.5)<a class="headerlink" href="#equation-eqdxp" title="Permalink to this equation">#</a></span>\[dx' = \gamma_R(dx - \beta_R c dt)\]</div>
+<span class="eqno">(6.5)<a class="headerlink" href="#equation-eqdxp" title="Link to this equation">#</a></span>\[dx' = \gamma_R(dx - \beta_R c dt)\]</div>
 <p>In particular, we note that if <span class="math notranslate nohighlight">\(dx=0\)</span> and therefore <span class="math notranslate nohighlight">\(dt=dt_0\)</span>, then
 equations <a class="reference internal" href="#equation-eqdtp">(6.4)</a> and <a class="reference internal" href="#equation-eqdxp">(6.5)</a> simplify to</p>
 <div class="math notranslate nohighlight" id="equation-timedilation">
-<span class="eqno">(6.6)<a class="headerlink" href="#equation-timedilation" title="Permalink to this equation">#</a></span>\[dt' = \gamma_R dt_0\]</div>
+<span class="eqno">(6.6)<a class="headerlink" href="#equation-timedilation" title="Link to this equation">#</a></span>\[dt' = \gamma_R dt_0\]</div>
 <p>and</p>
 <div class="math notranslate nohighlight">
 \[dx'=-\gamma_R\beta_R c dt_0 = -v_R dt' \rightarrow
@@ -557,13 +572,13 @@ or
 Plugging in the definition for <span class="math notranslate nohighlight">\(\gamma_R\)</span> and expaning the
 binomial squares:</p>
 <div class="math notranslate nohighlight" id="equation-eqinvar">
-<span class="eqno">(6.7)<a class="headerlink" href="#equation-eqinvar" title="Permalink to this equation">#</a></span>\[\frac{dx^2-2dx\beta_Rcdt+\beta_R^2c^2dt^2-c^2dt^2+2cdt\beta_Rdx-\beta_R^2dx^2}{1-\beta_R^2}\]</div>
+<span class="eqno">(6.7)<a class="headerlink" href="#equation-eqinvar" title="Link to this equation">#</a></span>\[\frac{dx^2-2dx\beta_Rcdt+\beta_R^2c^2dt^2-c^2dt^2+2cdt\beta_Rdx-\beta_R^2dx^2}{1-\beta_R^2}\]</div>
 <p>The cross terms cancel:</p>
 <div class="math notranslate nohighlight" id="equation-eqinvar2">
-<span class="eqno">(6.8)<a class="headerlink" href="#equation-eqinvar2" title="Permalink to this equation">#</a></span>\[\frac{dx^2+\beta_R^2c^2dt^2-c^2dt^2-\beta_R^2dx^2}{1-\beta_R^2}\]</div>
+<span class="eqno">(6.8)<a class="headerlink" href="#equation-eqinvar2" title="Link to this equation">#</a></span>\[\frac{dx^2+\beta_R^2c^2dt^2-c^2dt^2-\beta_R^2dx^2}{1-\beta_R^2}\]</div>
 <p>regroup and pull out a factor of <span class="math notranslate nohighlight">\(-\beta_R^2\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-eqinvar3">
-<span class="eqno">(6.9)<a class="headerlink" href="#equation-eqinvar3" title="Permalink to this equation">#</a></span>\[\frac{dx^2-c^2dt^2-\beta_R^2(dx^2-c^2dt^2)}{1-\beta_R^2}\]</div>
+<span class="eqno">(6.9)<a class="headerlink" href="#equation-eqinvar3" title="Link to this equation">#</a></span>\[\frac{dx^2-c^2dt^2-\beta_R^2(dx^2-c^2dt^2)}{1-\beta_R^2}\]</div>
 <p>Pull out the common factor and the <span class="math notranslate nohighlight">\(1-\beta_R^2\)</span> will cancel,
 leaving <span class="math notranslate nohighlight">\(dx^2-c^2dt^2\)</span>, which is the same interval we started
 with in the unprimed frame!  The interval does not change under
@@ -580,7 +595,7 @@ quantity is negative! This is quite different from the traditional 3
 vectors used in Newtonian mechanics.</p>
 </section>
 <section id="muons-in-the-atmosphere">
-<h2><span class="section-number">6.3. </span>Muons in the Atmosphere<a class="headerlink" href="#muons-in-the-atmosphere" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.3. </span>Muons in the Atmosphere<a class="headerlink" href="#muons-in-the-atmosphere" title="Link to this heading">#</a></h2>
 <p>A good example of a system that has two clear events is the creation
 and decay of an unstable subatomic particle such as a neutron,
 lambda, pion or muon. The first event that is detected is the creation
@@ -589,7 +604,7 @@ particle decays into something else. In the case of a muon, it decays
 into three particles: an electron, a mu-neutrino and an
 electron-neutrino:</p>
 <div class="math notranslate nohighlight" id="equation-muondecay">
-<span class="eqno">(6.10)<a class="headerlink" href="#equation-muondecay" title="Permalink to this equation">#</a></span>\[\mu^- \rightarrow e^- + \nu_\mu + \bar{\nu}_e\]</div>
+<span class="eqno">(6.10)<a class="headerlink" href="#equation-muondecay" title="Link to this equation">#</a></span>\[\mu^- \rightarrow e^- + \nu_\mu + \bar{\nu}_e\]</div>
 <p>The experimentally measured half-life (the time for half of a large
 sample to decay) is <span class="math notranslate nohighlight">\(2.20~\mu\)</span>s as determined by an observer in the
 rest frame of the decay.</p>
@@ -615,13 +630,13 @@ using the half-life and flux measurements.  Then velocity =
 distance/duration.  Particle decay rates are an exponentially
 dropping function,</p>
 <div class="math notranslate nohighlight" id="equation-particledecay">
-<span class="eqno">(6.11)<a class="headerlink" href="#equation-particledecay" title="Permalink to this equation">#</a></span>\[N(t) = N_0e^{-\ln{2}\frac{t}{halflife}}\]</div>
+<span class="eqno">(6.11)<a class="headerlink" href="#equation-particledecay" title="Link to this equation">#</a></span>\[N(t) = N_0e^{-\ln{2}\frac{t}{halflife}}\]</div>
 <p>The <span class="math notranslate nohighlight">\(\ln{2}\)</span> is to ensure that when <span class="math notranslate nohighlight">\(t=\)</span>halflife, then you have
 <span class="math notranslate nohighlight">\(e^{-\ln{2}}\)</span>, which is 1/2.  Given the flux numbers reported
 by Frisch and Smith, we can solve equation <a class="reference internal" href="#equation-particledecay">(6.11)</a>
 for time to get:</p>
 <div class="math notranslate nohighlight" id="equation-muonduration">
-<span class="eqno">(6.12)<a class="headerlink" href="#equation-muonduration" title="Permalink to this equation">#</a></span>\[\Delta t = -\frac{{\rm halflife}}{\ln{2}}\ln{\left(\frac{N_{\rm
+<span class="eqno">(6.12)<a class="headerlink" href="#equation-muonduration" title="Link to this equation">#</a></span>\[\Delta t = -\frac{{\rm halflife}}{\ln{2}}\ln{\left(\frac{N_{\rm
 sea level}}{N_{\rm Mt. Washington}}\right)}
 = -\frac{2.2\times 10^{-6}~{\rm s}}{0.693}\ln{0.725} = 1.0\times10^{-6}~{\rm s}\]</div>
 <p>Now converting the altitude of Mt Washington to meters, the speed is</p>
@@ -649,14 +664,14 @@ speed of the two reference frames <span class="math notranslate nohighlight">\(\
 of the relative speed is negative since the apparent motion of the
 Earth is up toward the muon).</p>
 <figure class="align-default" id="muonfigatm" style="width: 800px">
-<img alt="_images/51d75f9b7f84d24c664e3029b564a0b6181709c3ec6bd9d802dfdc9aa4cc63ac.png" src="_images/51d75f9b7f84d24c664e3029b564a0b6181709c3ec6bd9d802dfdc9aa4cc63ac.png" />
+<img alt="_images/4f71eef16832a0cd35d52601d54e160972dd6e1e67e4bd8bdf298a057cc109d8.png" src="_images/4f71eef16832a0cd35d52601d54e160972dd6e1e67e4bd8bdf298a057cc109d8.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 6.2 </span><span class="caption-text">Two spacetime diagrams to represent the creation of a
 muon in the upper atmosphere (red dot) and its subsequent decay at
 the Earth’s surface (blue dot).  The unprimed frame (right diagram)
 is at rest with respect to the muon, while the primed frame (left
 diagram) is at rest with respect to the Earth.  The primed frame
-is moving left (up in real space) with respect to the unprimed frame.</span><a class="headerlink" href="#muonfigatm" title="Permalink to this image">#</a></p>
+is moving left (up in real space) with respect to the unprimed frame.</span><a class="headerlink" href="#muonfigatm" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>I know how far the particles have to travel in the rest frame of the
@@ -670,7 +685,7 @@ that each of the observers measure for the two events and use
 the Lorentz transformation to figure out the unknowns.</p>
 <p>The two displacement 4-vectors for this problem are</p>
 <div class="math notranslate nohighlight" id="equation-dx4muon">
-<span class="eqno">(6.13)<a class="headerlink" href="#equation-dx4muon" title="Permalink to this equation">#</a></span>\[\begin{split}[dx_4] =
+<span class="eqno">(6.13)<a class="headerlink" href="#equation-dx4muon" title="Link to this equation">#</a></span>\[\begin{split}[dx_4] =
 \begin{bmatrix}
 ic 1.0\times10^{-6}~{\rm s}\\
 0.0~{\rm m}
@@ -679,14 +694,14 @@ ic 1.0\times10^{-6}~{\rm s}\\
 given by the analysis in Equation <a class="reference internal" href="#equation-muonduration">(6.12)</a> as this observer
 does not observe that the muon moves with respect to him.</p>
 <div class="math notranslate nohighlight" id="equation-dx4earth">
-<span class="eqno">(6.14)<a class="headerlink" href="#equation-dx4earth" title="Permalink to this equation">#</a></span>\[\begin{split}[dx_4]' =
+<span class="eqno">(6.14)<a class="headerlink" href="#equation-dx4earth" title="Link to this equation">#</a></span>\[\begin{split}[dx_4]' =
 \begin{bmatrix}
 ic dt'\\
 1920~{\rm m}
 \end{bmatrix}\end{split}\]</div>
 <p>We set up the Lorentz transformation as per Equation <a class="reference internal" href="#equation-lortrans">(6.3)</a></p>
 <div class="math notranslate nohighlight" id="equation-muonlort">
-<span class="eqno">(6.15)<a class="headerlink" href="#equation-muonlort" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
+<span class="eqno">(6.15)<a class="headerlink" href="#equation-muonlort" title="Link to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
 icdt\\
 dx
 \end{bmatrix}
@@ -706,7 +721,7 @@ icdt\\
 0
 \end{bmatrix}\end{split}\]</div>
 <div class="math notranslate nohighlight" id="equation-muonlort2">
-<span class="eqno">(6.16)<a class="headerlink" href="#equation-muonlort2" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
+<span class="eqno">(6.16)<a class="headerlink" href="#equation-muonlort2" title="Link to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
 icdt\\
 dx
 \end{bmatrix}
@@ -718,9 +733,9 @@ i\gamma_Rcdt_0\\
 <p>The second element in this matrix tells us that <span class="math notranslate nohighlight">\(\beta_R\gamma_Rcdt_0\)</span>
 must equal 1920 m.</p>
 <div class="math notranslate nohighlight" id="equation-muonheight">
-<span class="eqno">(6.17)<a class="headerlink" href="#equation-muonheight" title="Permalink to this equation">#</a></span>\[1920~{\rm m} = \beta_R\gamma_Rcdt_0 \rightarrow \gamma_R\beta_R = \frac{1920~{\rm m}}{c1.0\times10^{-6}~{\rm s}} = 6.40\]</div>
+<span class="eqno">(6.17)<a class="headerlink" href="#equation-muonheight" title="Link to this equation">#</a></span>\[1920~{\rm m} = \beta_R\gamma_Rcdt_0 \rightarrow \gamma_R\beta_R = \frac{1920~{\rm m}}{c1.0\times10^{-6}~{\rm s}} = 6.40\]</div>
 <div class="math notranslate nohighlight" id="equation-muonbeta">
-<span class="eqno">(6.18)<a class="headerlink" href="#equation-muonbeta" title="Permalink to this equation">#</a></span>\[\gamma_R\beta_R = \frac{\beta_R}{\sqrt{1-\beta_R^2}} = 6.40
+<span class="eqno">(6.18)<a class="headerlink" href="#equation-muonbeta" title="Link to this equation">#</a></span>\[\gamma_R\beta_R = \frac{\beta_R}{\sqrt{1-\beta_R^2}} = 6.40
 \rightarrow \frac{\beta_R^2}{1-\beta_R^2} = 40.96
 \rightarrow \beta_R = \sqrt{\frac{40.96}{1+40.96}} = 0.988\]</div>
 <p>Using the relativistically correct analysis gives a speed of the muon
@@ -757,7 +772,7 @@ called <strong>Length Contraction</strong>, and we will explore this effect in
 greater detail in <a class="reference internal" href="#seclencon"><span class="std std-ref">the next section</span></a>.</p>
 </section>
 <section id="length-contraction">
-<span id="seclencon"></span><h2><span class="section-number">6.4. </span>Length Contraction<a class="headerlink" href="#length-contraction" title="Permalink to this heading">#</a></h2>
+<span id="seclencon"></span><h2><span class="section-number">6.4. </span>Length Contraction<a class="headerlink" href="#length-contraction" title="Link to this heading">#</a></h2>
 <p>To determine how length contraction happens, we will first find a
 method of converting a length measurement into two events as required
 by the model for special relativity. Then, we can use the
@@ -789,19 +804,19 @@ speed of the object.  The first event is where the green line crosses
 the red line, and the second event is where the blue line crosses the
 red line.</p>
 <figure class="align-default" id="obsrest" style="width: 800px">
-<img alt="_images/f782d9dc17cee44b26a4b8017f48a1947eb45d20dec18fd06adb4db5fa3238f5.png" src="_images/f782d9dc17cee44b26a4b8017f48a1947eb45d20dec18fd06adb4db5fa3238f5.png" />
+<img alt="_images/ff1458b45b3b99219b7eb1df86c717d11057cdf446872fcdee8fb3ca8e9e14d4.png" src="_images/ff1458b45b3b99219b7eb1df86c717d11057cdf446872fcdee8fb3ca8e9e14d4.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 6.3 </span><span class="caption-text">A spacetime diagram that shows an object passing by
 an observer at rest.  The red line is the world line of the observer.
 The green line and the blue lines are the front and back of the object,
-respectively.  The object is moving to the left, at some speed <span class="math notranslate nohighlight">\(v_R\)</span>.</span><a class="headerlink" href="#obsrest" title="Permalink to this image">#</a></p>
+respectively.  The object is moving to the left, at some speed <span class="math notranslate nohighlight">\(v_R\)</span>.</span><a class="headerlink" href="#obsrest" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The physical displacement as measured by this
 observer between the two events is 0.0 m (the observer has not moved).
 The time interval between the two events would be calculated as</p>
 <div class="math notranslate nohighlight" id="equation-dt0obj">
-<span class="eqno">(6.19)<a class="headerlink" href="#equation-dt0obj" title="Permalink to this equation">#</a></span>\[dt_0 = \frac{\ell_m}{-v_R} =  -\frac{\ell_m}{c\beta_R}\]</div>
+<span class="eqno">(6.19)<a class="headerlink" href="#equation-dt0obj" title="Link to this equation">#</a></span>\[dt_0 = \frac{\ell_m}{-v_R} =  -\frac{\ell_m}{c\beta_R}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\ell_m\)</span> is the deduced (measured) length of the moving
 object: the duration of time it takes to pass, multiplied by the
 speed of travel.  The minus sign is because we have set this up with
@@ -809,7 +824,7 @@ speed of travel.  The minus sign is because we have set this up with
 is always positive concept.</p>
 <p>As a four vector, we would write</p>
 <div class="math notranslate nohighlight" id="equation-dx4movobj">
-<span class="eqno">(6.20)<a class="headerlink" href="#equation-dx4movobj" title="Permalink to this equation">#</a></span>\[\begin{split}[dx_4]_m = 
+<span class="eqno">(6.20)<a class="headerlink" href="#equation-dx4movobj" title="Link to this equation">#</a></span>\[\begin{split}[dx_4]_m = 
 \begin{bmatrix}
 -i\ell_m/\beta_R\\
 0.0
@@ -825,7 +840,7 @@ physical displacement between the two events is the rest length of the
 object: <span class="math notranslate nohighlight">\(\ell_r = dx_{\rm rest}\)</span>, where <span class="math notranslate nohighlight">\(\ell_r\)</span> represents the length
 of the object at rest.</p>
 <figure class="align-default" id="objrest" style="width: 800px">
-<img alt="_images/9a4026c7b95339a54933d2b119b8e7aeb612099ef9686ea10f42b6c172bf3f85.png" src="_images/9a4026c7b95339a54933d2b119b8e7aeb612099ef9686ea10f42b6c172bf3f85.png" />
+<img alt="_images/fa72f0cee4b83d8c60bb31a2e8acb998f130dc9c04ee7b0071c1bca2d06075b1.png" src="_images/fa72f0cee4b83d8c60bb31a2e8acb998f130dc9c04ee7b0071c1bca2d06075b1.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 6.4 </span><span class="caption-text">A spacetime diagram that shows an observer passing by
 an object at rest.  The red line is the world line of the observer.
@@ -833,12 +848,12 @@ The green line and the blue lines are the front and back of the object,
 respectively.  The observer is moving to the right, at some speed <span class="math notranslate nohighlight">\(v_R\)</span>.
 Note that the lines in this diagram have been <strong>calculated</strong> by
 performing Lorentz transformations on points in the lines shown in
-<a class="reference internal" href="#obsrest"><span class="std std-numref">Fig. 6.3</span></a> – they have not been simply redrawn.</span><a class="headerlink" href="#objrest" title="Permalink to this image">#</a></p>
+<a class="reference internal" href="#obsrest"><span class="std std-numref">Fig. 6.3</span></a> – they have not been simply redrawn.</span><a class="headerlink" href="#objrest" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>When we write the four vector in this reference frame, it looks like</p>
 <div class="math notranslate nohighlight" id="equation-dx4restobj">
-<span class="eqno">(6.21)<a class="headerlink" href="#equation-dx4restobj" title="Permalink to this equation">#</a></span>\[\begin{split}[dx_4]_r = 
+<span class="eqno">(6.21)<a class="headerlink" href="#equation-dx4restobj" title="Link to this equation">#</a></span>\[\begin{split}[dx_4]_r = 
 \begin{bmatrix}
 icdt_r\\
 \ell_r
@@ -846,10 +861,10 @@ icdt_r\\
 <p>We can connect Equation <a class="reference internal" href="#equation-dx4restobj">(6.21)</a> and <a class="reference internal" href="#equation-dx4movobj">(6.20)</a> through
 a Lorentz transformation:</p>
 <div class="math notranslate nohighlight" id="equation-lmobj">
-<span class="eqno">(6.22)<a class="headerlink" href="#equation-lmobj" title="Permalink to this equation">#</a></span>\[[dx_4]_m = {\cal L}_x(\beta_R)[dx_4]_r\]</div>
+<span class="eqno">(6.22)<a class="headerlink" href="#equation-lmobj" title="Link to this equation">#</a></span>\[[dx_4]_m = {\cal L}_x(\beta_R)[dx_4]_r\]</div>
 <p>based on the diagram in <a class="reference internal" href="#objrest"><span class="std std-numref">Fig. 6.4</span></a>.</p>
 <div class="math notranslate nohighlight" id="equation-lmobj2">
-<span class="eqno">(6.23)<a class="headerlink" href="#equation-lmobj2" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
+<span class="eqno">(6.23)<a class="headerlink" href="#equation-lmobj2" title="Link to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
 -i\ell_m/\beta_R\\
 0.0
 \end{bmatrix} =
@@ -862,7 +877,7 @@ icdt_r\\
 \ell_r
 \end{bmatrix}\end{split}\]</div>
 <div class="math notranslate nohighlight" id="equation-lmobj3">
-<span class="eqno">(6.24)<a class="headerlink" href="#equation-lmobj3" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
+<span class="eqno">(6.24)<a class="headerlink" href="#equation-lmobj3" title="Link to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
 -i\ell_m/\beta_R\\
 0.0
 \end{bmatrix} =
@@ -880,11 +895,11 @@ We can set the second element to zero to get</p>
 \[-\frac{\ell_m}{\beta_R} = -\gamma_R\frac{\ell_r}{\beta_R} + \beta_R\gamma_R\ell_r\]</div>
 <p>multiply through by <span class="math notranslate nohighlight">\(\beta_R\)</span> and factor out a <span class="math notranslate nohighlight">\(\gamma_R\ell_r\)</span> to get</p>
 <div class="math notranslate nohighlight" id="equation-lencon1">
-<span class="eqno">(6.25)<a class="headerlink" href="#equation-lencon1" title="Permalink to this equation">#</a></span>\[\ell_m = \gamma_R\ell_r(1 -\beta_R^2)\]</div>
+<span class="eqno">(6.25)<a class="headerlink" href="#equation-lencon1" title="Link to this equation">#</a></span>\[\ell_m = \gamma_R\ell_r(1 -\beta_R^2)\]</div>
 <p>but the term in the parentheses is just <span class="math notranslate nohighlight">\(1/\gamma_R^2\)</span>!!! So we get
 that</p>
 <div class="math notranslate nohighlight" id="equation-lencon">
-<span class="eqno">(6.26)<a class="headerlink" href="#equation-lencon" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(6.26)<a class="headerlink" href="#equation-lencon" title="Link to this equation">#</a></span>\[\boxed{
 \ell_r = \gamma_R\ell_m
 }\]</div>
 <p>In other words, as the object moves faster and faster, <span class="math notranslate nohighlight">\(\gamma_R\)</span> gets
@@ -928,14 +943,14 @@ treatment of this topic.</p>
 </div>
 </section>
 <section id="muon-decay-revisited">
-<h2><span class="section-number">6.5. </span>Muon decay revisited<a class="headerlink" href="#muon-decay-revisited" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.5. </span>Muon decay revisited<a class="headerlink" href="#muon-decay-revisited" title="Link to this heading">#</a></h2>
 <p>A second way of working the muon problem is to use the contraction of
 the measured vertical distance between the top of the Mt Washington
 and Cambridge as determined by the fast moving muon.  According to
 Equation <a class="reference internal" href="#equation-lencon">(6.26)</a>, the observer at rest with the muon measures the
 distance it has to travel to get to the surface of the earth to be:</p>
 <div class="math notranslate nohighlight" id="equation-dxcam">
-<span class="eqno">(6.27)<a class="headerlink" href="#equation-dxcam" title="Permalink to this equation">#</a></span>\[{\rm distance~to~Cambridge} = \frac{\ell_{\rm Earth}}{\gamma_R}
+<span class="eqno">(6.27)<a class="headerlink" href="#equation-dxcam" title="Link to this equation">#</a></span>\[{\rm distance~to~Cambridge} = \frac{\ell_{\rm Earth}}{\gamma_R}
 = \frac{1920~{\rm m}}{6.478} = 296~{\rm m}\]</div>
 <p>So, the muon thinks that it only has to travel 296 m to get to sea
 level. Now, from Equation <a class="reference internal" href="#equation-muonduration">(6.12)</a>, the muon thinks that it
@@ -953,7 +968,7 @@ ground happen in both frames, but the reasons they can happen are
 interpreted differently in each frame.</p>
 </section>
 <section id="the-ladder-in-the-garage-paradox">
-<h2><span class="section-number">6.6. </span>The Ladder in the Garage Paradox<a class="headerlink" href="#the-ladder-in-the-garage-paradox" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.6. </span>The Ladder in the Garage Paradox<a class="headerlink" href="#the-ladder-in-the-garage-paradox" title="Link to this heading">#</a></h2>
 <p>When people first grapple with length contraction, there is a common
 so-called paradox that often confuses them.  Sometimes it refers to a
 pole in a barn, or a train in a tunnel, but I will use a ladder in a
@@ -995,7 +1010,7 @@ the same instant Betty opens hers.  The spacetime diagram is shown in
 the front and back of the ladder and the garage.  Our four events are
 the points where these four lines cross.</p>
 <figure class="align-default" id="laddermov" style="width: 800px">
-<img alt="_images/35734d3ad4ac6bbdfee101680e46941ecc06823ecb1f1e92ed33006c5964eb75.png" src="_images/35734d3ad4ac6bbdfee101680e46941ecc06823ecb1f1e92ed33006c5964eb75.png" />
+<img alt="_images/d127765bbfaae746b11389d1c514a484763d459be142e849ad73f1d30f62de6b.png" src="_images/d127765bbfaae746b11389d1c514a484763d459be142e849ad73f1d30f62de6b.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 6.5 </span><span class="caption-text">A spacetime diagram showing a moving ladder
 passing through a garage at rest.  The green line is the
@@ -1006,7 +1021,7 @@ four events are: front of ladder enters from of garage (red
 crosses green), front of ladder reaches back of garage (red
 crosses blue), back of ladder enters front of garage (cyan
 crosses green), and back of ladder exits back of garage (cyan
-crosses blue).</span><a class="headerlink" href="#laddermov" title="Permalink to this image">#</a></p>
+crosses blue).</span><a class="headerlink" href="#laddermov" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In this reference frame, the ladder can be (barely) said to be in the
@@ -1023,14 +1038,14 @@ lines tilt to the left.  The green and blue lines are closer together
 than they were (1 m in this frame) while the cyan and red lines are
 further apart (4 m long ladder at rest).</p>
 <figure class="align-default" id="garagemov" style="width: 800px">
-<img alt="_images/e61d7878c6611b2a8ac82c4244c2b7d3fdf8e43cc23db18f26e9aee60fb55aa5.png" src="_images/e61d7878c6611b2a8ac82c4244c2b7d3fdf8e43cc23db18f26e9aee60fb55aa5.png" />
+<img alt="_images/a695e2660e94f6f07dc66b1ada3e07d5b9f11f749ab9d84b0b7d8923e297ef34.png" src="_images/a695e2660e94f6f07dc66b1ada3e07d5b9f11f749ab9d84b0b7d8923e297ef34.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 6.6 </span><span class="caption-text">A spacetime diagram showing a stationary ladder
 with a garage passing around it.  The axes have been shifted four
 meters to the left to avoid crowding.  The colors of the worldlines
 and the four events are the same as in <a class="reference internal" href="#laddermov"><span class="std std-numref">Fig. 6.5</span></a>, but note that
 these worldlines have been calculated via a Lorentz transformation.
-You must imagine the red and cyan lines extending indefinitely up and down.</span><a class="headerlink" href="#garagemov" title="Permalink to this image">#</a></p>
+You must imagine the red and cyan lines extending indefinitely up and down.</span><a class="headerlink" href="#garagemov" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Reading up the vertical axis, our four events as seen in this frame
@@ -1060,7 +1075,7 @@ order, so it is no paradox: the fact is that the ladder can fit inside
 the garage in one frame and not in another.</p>
 </section>
 <section id="problems">
-<h2><span class="section-number">6.7. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.7. </span>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>A beam of negative pions is produced in the lab, traveIing at
 <span class="math notranslate nohighlight">\(\beta = 0.9980\)</span>.</p></li>
@@ -1074,8 +1089,8 @@ particle accelerator. The number of sigma particles left in the beam
 as a function of distance away from the particle accelerator is shown in
 Table <a class="reference internal" href="#sigma"><span class="std std-numref">Table 6.1</span></a>:</p></li>
 </ol>
-<table class="table" id="sigma">
-<caption><span class="caption-number">Table 6.1 </span><span class="caption-text">Sigma Beam</span><a class="headerlink" href="#sigma" title="Permalink to this table">#</a></caption>
+<div class="pst-scrollable-table-container"><table class="table" id="sigma">
+<caption><span class="caption-number">Table 6.1 </span><span class="caption-text">Sigma Beam</span><a class="headerlink" href="#sigma" title="Link to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Number of Sigmas</p></th>
 <th class="head"><p>Distance from Accelerator (cm)</p></th>
@@ -1105,6 +1120,7 @@ Table <a class="reference internal" href="#sigma"><span class="std std-numref">T
 </tr>
 </tbody>
 </table>
+</div>
 <p>Determine the speed of the sigma particles produced by the accelerator.</p>
 <ol class="arabic simple" start="3">
 <li><p>The nearest star to us is 4.600 light years away. A space ship
@@ -1211,8 +1227,8 @@ cause and effect.</p>
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="c5spacetime.html"
@@ -1240,6 +1256,7 @@ cause and effect.</p>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1275,9 +1292,10 @@ By Donald A. Smith and Rex Adelberger
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1301,8 +1319,8 @@ By Donald A. Smith and Rex Adelberger
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

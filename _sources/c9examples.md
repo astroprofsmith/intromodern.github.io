@@ -946,11 +946,34 @@ to carry out the test!
 Unfortunately, Arthur Compton's Nobel Prize-winning 1923 paper does
 not actually include such a plot, but he does include the original
 spectra he recorded that show the energy shift for eight different
-values of $\theta$.  From these graphs, it is possible to measure
-$E_{\rm photlab}$ and construct the graph we need to test the
-hypothesis posed by Equation {eq}`csEeq`.  Such a graph for four of
-the measurements reported in 1923 is shown in {numref}`csresultsfig`.
+values of $\theta$.  These graphs are copied here as
+{numref}`23compfig`.  From these graphs, and the information given in
+the paper, it is possible to measure $E_{\rm photlab}$ and construct
+the graph we need to test the hypothesis posed by Equation
+{eq}`csEeq`.  Such a graph for four of the measurements reported in
+1923 is shown in {numref}`csresultsfig`.
 
+
+```{figure} images/Compton.png
+:alt: comptonspectrafrompaper
+:class: bg-primary mb-1
+:width: 750px
+:align: center
+:name: 23compfig
+
+Figures from Compton's original 1923 paper. The intensity of X-rays is shown
+as a function of glancing scattering angle off a calcite crystal, which is
+proportional to energy.  The graphs clearly show two peaks when the scattering
+angle is greater than zero, and the greater
+the angle of scattering, the more the second peak (T) shifts away from the first
+(P).
+The "P" peak is made of X-rays that scatter off the bound electrons in
+the crystal lattice, which therefore have much higher effective inertias, since
+they are attached to their nuclei.  The free electrons can absorb the energy
+of the X-rays, and therefore these collisions result in the energy shift
+between T and P.  Compton points out that the vertical lines are not averages,
+but the predictions of where the lines should be made by Equation {eq}`csEeq`.
+```
 
 
 ```{code-cell}
@@ -1017,7 +1040,10 @@ print("The estimate of Egam is ({0:4.2f} +- {1:3.2f}) keV".format(Eg,eEg))
 Note the excellent agreement between experiment and the predictions of
 Equation {eq}`csEeq`! One over the y-intercept is $17.51\pm0.01$ keV,
 which is within one $\sigma$ of the known 17.5 keV value for the
-incoming photons in the lab frame.  The best fit slope in
+incoming photons in the lab frame.  Since the known value of the X-ray
+energy is critical in converting the angle in the figure to an energy,
+this is not surprising, but it is a nice self-consistency check.  The
+best fit slope is the important result.  The slope shown in
 {numref}`csresultsfig` is $(1.90\pm0.04)\times10^{-3}$ 1/keV, which
 means the best estimate of the rest mass of the electron from this
 experiment is $526\pm10$ keV.  This is within 1.4 $\sigma$ of the
@@ -1029,7 +1055,7 @@ current accepted best value, 511 keV.
 
 Graph constructed from measurements reported
 in Compton's 1923 paper.  He measured the wavelength of 17.5 keV
-X-rays scatteredfrom graphite. Notice the agreement with the
+X-rays scattered from graphite. Notice the agreement with the
 predictions of Equation {eq}`csEeq`. The slope can be interpreted
 as 1/(rest energy of an electron).
 ```

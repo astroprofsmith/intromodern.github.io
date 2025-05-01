@@ -1,9 +1,8 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
@@ -15,53 +14,49 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c4lorentztrans';</script>
@@ -78,28 +73,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -121,12 +111,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -141,9 +139,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="intro.html">
+  
   
   
   
@@ -153,12 +155,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Introduction to Modern Physics - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Introduction to Modern Physics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -200,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -209,14 +222,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -338,26 +351,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -397,10 +412,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lorentz-transformations">
-<span id="chltrans"></span><h1><span class="section-number">4. </span>Lorentz Transformations<a class="headerlink" href="#lorentz-transformations" title="Permalink to this heading">#</a></h1>
+<span id="chltrans"></span><h1><span class="section-number">4. </span>Lorentz Transformations<a class="headerlink" href="#lorentz-transformations" title="Link to this heading">#</a></h1>
 <p>We have already seen that requiring the size of a four-vector
 to be invariant across reference frames leads to interesting
 implications (time dilation, for example).  However, there are
@@ -411,7 +426,7 @@ in a first reference frame.  The change of a four vector from
 one reference frame to another with a constant relative velocity
 is called a <strong>Lorentz Transformation</strong>.</p>
 <section id="setting-up-the-problem">
-<h2><span class="section-number">4.1. </span>Setting Up the Problem<a class="headerlink" href="#setting-up-the-problem" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.1. </span>Setting Up the Problem<a class="headerlink" href="#setting-up-the-problem" title="Link to this heading">#</a></h2>
 <p>The Lorentz transformation converts the components of a 4-vector
 in one inertial reference frame to the components as measured in
 a second frame moving at a constant velocity relative to the first.
@@ -423,7 +438,7 @@ useful to always start by recreating this diagram and making sure that
 you are assigning the correct numbers to the elements, as defined in
 this diagram.</p>
 <figure class="align-default" id="stwithvecfig" style="width: 800px">
-<img alt="_images/2ed33ab054c8f86a87ee3651a7b9613b7e604a7f05104d57ea22de877e7525de.png" src="_images/2ed33ab054c8f86a87ee3651a7b9613b7e604a7f05104d57ea22de877e7525de.png" />
+<img alt="_images/5f3be46f42db6a1e23c6c6230462326bf4c158306fb4ab165d5b29e2479572ab.png" src="_images/5f3be46f42db6a1e23c6c6230462326bf4c158306fb4ab165d5b29e2479572ab.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 4.1 </span><span class="caption-text">The spacetime diagram that defines a Lorentz transformation.
 There are two events, indicated by red and blue dots, and we define a
@@ -431,7 +446,7 @@ displacement four vector between them (indicated by an arrow).  These
 components are defined in the reference frame <span class="math notranslate nohighlight">\(S\)</span>, and we want to know
 the components in a second frame <span class="math notranslate nohighlight">\(S^\prime\)</span>, which is moving with a
 constant relative velocity <span class="math notranslate nohighlight">\(\vec{v}_R\)</span>.  We <strong>define</strong> <span class="math notranslate nohighlight">\(x\)</span> such that it lies
-parallel to <span class="math notranslate nohighlight">\(\vec{v}_R\)</span>.</span><a class="headerlink" href="#stwithvecfig" title="Permalink to this image">#</a></p>
+parallel to <span class="math notranslate nohighlight">\(\vec{v}_R\)</span>.</span><a class="headerlink" href="#stwithvecfig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The 4-vector components are determined by the two events shown as
@@ -442,7 +457,7 @@ simpler. Putting the diagram of <a class="reference internal" href="#stwithvecfi
 notation, we need a tool that will take us from <span class="math notranslate nohighlight">\([dx_4]\)</span> to
 <span class="math notranslate nohighlight">\([dx_4]^\prime\)</span>, like so:</p>
 <div class="math notranslate nohighlight" id="equation-eqlort">
-<span class="eqno">(4.1)<a class="headerlink" href="#equation-eqlort" title="Permalink to this equation">#</a></span>\[[dx_4]^\prime = {\cal L}_x(\beta_R)[dx_4]\]</div>
+<span class="eqno">(4.1)<a class="headerlink" href="#equation-eqlort" title="Link to this equation">#</a></span>\[[dx_4]^\prime = {\cal L}_x(\beta_R)[dx_4]\]</div>
 <p>The Lorentz transformation can be mathematically represented as a
 matrix, because it transforms one vector into another. The Lorentz
 transformation, therefore, is a <span class="math notranslate nohighlight">\(4 \times 4\)</span> matrix because there are
@@ -451,7 +466,7 @@ element of this matrix (row <span class="math notranslate nohighlight">\(\alpha\
 Greek letters stand for 0, 1, 2, and 3), the transformation
 matrix has the form:</p>
 <div class="math notranslate nohighlight" id="equation-lormat1">
-<span class="eqno">(4.2)<a class="headerlink" href="#equation-lormat1" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L}_{\alpha\beta} = 
+<span class="eqno">(4.2)<a class="headerlink" href="#equation-lormat1" title="Link to this equation">#</a></span>\[\begin{split}{\cal L}_{\alpha\beta} = 
 \begin{bmatrix}
 L_{00} &amp; L_{01} &amp; L_{02} &amp; L_{03}\\
 L_{10} &amp; L_{11} &amp; L_{12} &amp; L_{13}\\
@@ -473,7 +488,7 @@ able to tell whether <span class="math notranslate nohighlight">\(\beta\)</span>
 </div>
 </section>
 <section id="determining-the-elements">
-<h2><span class="section-number">4.2. </span>Determining the Elements<a class="headerlink" href="#determining-the-elements" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.2. </span>Determining the Elements<a class="headerlink" href="#determining-the-elements" title="Link to this heading">#</a></h2>
 <p>Is there a way that we can determine some of the elements of the of
 the Lorentz transformation? We must figure out how the transformation
 works in specific cases, and these cases will then point to general
@@ -485,7 +500,7 @@ be contradicted.</p>
 <p>To determine some of the elements of the Lorentz transformation
 matrix, consider what happens when the displacement 4-vector</p>
 <div class="math notranslate nohighlight" id="equation-eqdisp4">
-<span class="eqno">(4.3)<a class="headerlink" href="#equation-eqdisp4" title="Permalink to this equation">#</a></span>\[\begin{split}[dx_4] =
+<span class="eqno">(4.3)<a class="headerlink" href="#equation-eqdisp4" title="Link to this equation">#</a></span>\[\begin{split}[dx_4] =
 \begin{bmatrix}
 icdt\\
 dx\\
@@ -519,7 +534,7 @@ of <span class="math notranslate nohighlight">\(dt\)</span>, <span class="math n
 elements are zero.  The same logic can be applied to the fourth row to
 deduce <span class="math notranslate nohighlight">\(L_{33}=1\)</span>, so we know the matrix must look like</p>
 <div class="math notranslate nohighlight" id="equation-lormat2">
-<span class="eqno">(4.4)<a class="headerlink" href="#equation-lormat2" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L} = 
+<span class="eqno">(4.4)<a class="headerlink" href="#equation-lormat2" title="Link to this equation">#</a></span>\[\begin{split}{\cal L} = 
 \begin{bmatrix}
 L_{00} &amp; L_{01} &amp; L_{02} &amp; L_{03}\\
 L_{10} &amp; L_{11} &amp; L_{12} &amp; L_{13}\\
@@ -534,7 +549,7 @@ reference frame in which there would have to be motion for something
 to get from one event to the other.  We know therefore that the
 original four displacement is</p>
 <div class="math notranslate nohighlight" id="equation-eqrestdx4">
-<span class="eqno">(4.5)<a class="headerlink" href="#equation-eqrestdx4" title="Permalink to this equation">#</a></span>\[\begin{split}[dx_4] =
+<span class="eqno">(4.5)<a class="headerlink" href="#equation-eqrestdx4" title="Link to this equation">#</a></span>\[\begin{split}[dx_4] =
 \begin{bmatrix}
 icdt_0\\
 0\\
@@ -564,7 +579,7 @@ if you take <span class="math notranslate nohighlight">\(L_{00}=\gamma_R\)</span
 the equation for <span class="math notranslate nohighlight">\(dx^\prime\)</span> as long as <span class="math notranslate nohighlight">\(L_{10}=i\beta_R\gamma_R\)</span>.</p>
 <p>This leaves us with (so far):</p>
 <div class="math notranslate nohighlight" id="equation-lormat3">
-<span class="eqno">(4.6)<a class="headerlink" href="#equation-lormat3" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L} = 
+<span class="eqno">(4.6)<a class="headerlink" href="#equation-lormat3" title="Link to this equation">#</a></span>\[\begin{split}{\cal L} = 
 \begin{bmatrix}
 \gamma_R &amp; L_{01} &amp; L_{02} &amp; L_{03}\\
 i\beta_R\gamma_R &amp; L_{11} &amp; L_{12} &amp; L_{13}\\
@@ -580,7 +595,7 @@ are exhausted, the Lorentz transformation between two frames of
 reference (<a class="reference internal" href="#stwithvecfig"><span class="std std-numref">Fig. 4.1</span></a>) that have a relative speed of
 <span class="math notranslate nohighlight">\(\beta_R\)</span> in the positive x direction is given by the matrix:</p>
 <div class="math notranslate nohighlight" id="equation-lormat">
-<span class="eqno">(4.7)<a class="headerlink" href="#equation-lormat" title="Permalink to this equation">#</a></span>\[\begin{split}\boxed{
+<span class="eqno">(4.7)<a class="headerlink" href="#equation-lormat" title="Link to this equation">#</a></span>\[\begin{split}\boxed{
 {\cal L}_x(\beta_R) = 
 \begin{bmatrix}
 \gamma_R &amp; -i\beta_R\gamma_R &amp; 0 &amp; 0\\
@@ -597,12 +612,12 @@ direction, the <span class="math notranslate nohighlight">\(\beta_R\)</span> wou
 Lorentz transformation</strong>.</p>
 </section>
 <section id="examples-of-lorentz-transformations">
-<h2><span class="section-number">4.3. </span>Examples of Lorentz Transformations<a class="headerlink" href="#examples-of-lorentz-transformations" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.3. </span>Examples of Lorentz Transformations<a class="headerlink" href="#examples-of-lorentz-transformations" title="Link to this heading">#</a></h2>
 <section id="transform-a-displacement-four-vector">
-<h3><span class="section-number">4.3.1. </span>Transform a Displacement Four-vector<a class="headerlink" href="#transform-a-displacement-four-vector" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.3.1. </span>Transform a Displacement Four-vector<a class="headerlink" href="#transform-a-displacement-four-vector" title="Link to this heading">#</a></h3>
 <p>An observer measures the 4-displacement between two events:</p>
 <div class="math notranslate nohighlight" id="equation-eqdx41">
-<span class="eqno">(4.8)<a class="headerlink" href="#equation-eqdx41" title="Permalink to this equation">#</a></span>\[\begin{split}[dR_4] =
+<span class="eqno">(4.8)<a class="headerlink" href="#equation-eqdx41" title="Link to this equation">#</a></span>\[\begin{split}[dR_4] =
 \begin{bmatrix}
 i3.00~{\rm m}\\
 1.00~{\rm m}\\
@@ -619,7 +634,7 @@ in equation <a class="reference internal" href="#equation-lormat">(4.7)</a>, plu
 Multiply the two to get <span class="math notranslate nohighlight">\(\beta_R\gamma_R=0.4854\)</span>.</p>
 <p>Now, we are ready to find the elements of <span class="math notranslate nohighlight">\([dR_4]'\)</span></p>
 <div class="math notranslate nohighlight" id="equation-ex41">
-<span class="eqno">(4.9)<a class="headerlink" href="#equation-ex41" title="Permalink to this equation">#</a></span>\[\begin{split}[dR_4]' = {\cal L}_x(\beta_R)[dR_4] = 
+<span class="eqno">(4.9)<a class="headerlink" href="#equation-ex41" title="Link to this equation">#</a></span>\[\begin{split}[dR_4]' = {\cal L}_x(\beta_R)[dR_4] = 
 \begin{bmatrix}
 1.1116 &amp; -i0.4854 &amp; 0 &amp; 0\\
 i0.4854 &amp; 1.1116 &amp; 0 &amp; 0\\
@@ -661,7 +676,7 @@ Note which minus signs are squared (and therefore go away) and which
 ones are not.  Also note that all components have units of length.</p>
 </section>
 <section id="graphical-lorentz-transform">
-<h3><span class="section-number">4.3.2. </span>Graphical Lorentz Transform<a class="headerlink" href="#graphical-lorentz-transform" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.3.2. </span>Graphical Lorentz Transform<a class="headerlink" href="#graphical-lorentz-transform" title="Link to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 </div>
 <figure class="align-default" id="figltrans" style="width: 800px">
@@ -678,14 +693,14 @@ ones are not.  Also note that all components have units of length.</p>
 <p><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Interactive spacetime diagram.  A displacement four vector is shown as a white
 arrow, the space component is green, and the time component is magenta.  Moving
 the slider will transform this four vector into a reference frame moving at a
-relative speed shown to the right of the slider.</span><a class="headerlink" href="#figltrans" title="Permalink to this image">#</a></p>
+relative speed shown to the right of the slider.</span><a class="headerlink" href="#figltrans" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>It is possible, even easy, to program a computer to perform a Lorentz transformation
 on any four-vector you might like to contemplate from another inertial reference
 frame.  <a class="reference internal" href="#figltrans"><span class="std std-numref">Fig. 4.2</span></a> illustrates this process.  A displacement vector</p>
 <div class="math notranslate nohighlight" id="equation-eqdx42">
-<span class="eqno">(4.10)<a class="headerlink" href="#equation-eqdx42" title="Permalink to this equation">#</a></span>\[\begin{split}[dR_4] =
+<span class="eqno">(4.10)<a class="headerlink" href="#equation-eqdx42" title="Link to this equation">#</a></span>\[\begin{split}[dR_4] =
 \begin{bmatrix}
 i0.6~{\rm m}\\
 0.3~{\rm m}\\
@@ -712,7 +727,7 @@ separately.  Which method you use would be irrelevant to the output.</p>
 </div>
 </section>
 <section id="angles-in-space">
-<h3><span class="section-number">4.3.3. </span>Angles in Space<a class="headerlink" href="#angles-in-space" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.3.3. </span>Angles in Space<a class="headerlink" href="#angles-in-space" title="Link to this heading">#</a></h3>
 <p>Find the physical angle that the displacement given in Example 4.3.1
 makes with respect to the <span class="math notranslate nohighlight">\(x\)</span> axis. Determine the angle as measured by
 the primed observer.</p>
@@ -736,7 +751,7 @@ Essentially, the second observer is overtaking the first, so the
 horizontal displacement flips around and points the other way.</p>
 </section>
 <section id="using-an-inverse-lorentz-transformation">
-<h3><span class="section-number">4.3.4. </span>Using an Inverse Lorentz Transformation<a class="headerlink" href="#using-an-inverse-lorentz-transformation" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.3.4. </span>Using an Inverse Lorentz Transformation<a class="headerlink" href="#using-an-inverse-lorentz-transformation" title="Link to this heading">#</a></h3>
 <p>The primed observer in example 4.3.1 believes that the unprimed
 observer is moving with speed <span class="math notranslate nohighlight">\(v_R = 1.3\times10^8\)</span> m/s in the <span class="math notranslate nohighlight">\(-x\)</span>
 direction with respect to him. Show that this is a reasonable
@@ -748,7 +763,7 @@ from the given four vectors.</p>
 <p>Going back to the transformation in example 4.3.1, but setting it
 up as an inverse transformation, we get:</p>
 <div class="math notranslate nohighlight" id="equation-eqinvlort">
-<span class="eqno">(4.11)<a class="headerlink" href="#equation-eqinvlort" title="Permalink to this equation">#</a></span>\[[dx_4] = {\cal L}_x(-\beta_R)[dx_4]'\]</div>
+<span class="eqno">(4.11)<a class="headerlink" href="#equation-eqinvlort" title="Link to this equation">#</a></span>\[[dx_4] = {\cal L}_x(-\beta_R)[dx_4]'\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{bmatrix}
 i3.00~{\rm m}\\
@@ -783,7 +798,7 @@ as expected.</p>
 </section>
 </section>
 <section id="problems">
-<h2><span class="section-number">4.4. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.4. </span>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>A star is <span class="math notranslate nohighlight">\(25.0\)</span> light years away from the earth. If a space craft
 were to travel with <span class="math notranslate nohighlight">\(\beta = 0.998\)</span> with respect to the earth, how
@@ -850,10 +865,10 @@ diagonal elements and has value of <span class="math notranslate nohighlight">\(
 elements. In general, if a matrix has an inverse, then:</p></li>
 </ol>
 <div class="math notranslate nohighlight" id="equation-unitmat">
-<span class="eqno">(4.12)<a class="headerlink" href="#equation-unitmat" title="Permalink to this equation">#</a></span>\[M^{-1} M = {\rm unit~matrix}\]</div>
+<span class="eqno">(4.12)<a class="headerlink" href="#equation-unitmat" title="Link to this equation">#</a></span>\[M^{-1} M = {\rm unit~matrix}\]</div>
 <p>Show that for the Lorentz transformation matrix</p>
 <div class="math notranslate nohighlight" id="equation-lunitmat">
-<span class="eqno">(4.13)<a class="headerlink" href="#equation-lunitmat" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L}_x^{-1}(\beta_R){\cal L}_x(\beta_R) =
+<span class="eqno">(4.13)<a class="headerlink" href="#equation-lunitmat" title="Link to this equation">#</a></span>\[\begin{split}{\cal L}_x^{-1}(\beta_R){\cal L}_x(\beta_R) =
 \begin{bmatrix}
 1 &amp; 0 &amp; 0 &amp; 0\\
 0 &amp; 1 &amp; 0 &amp; 0\\
@@ -917,8 +932,8 @@ and Lorentz’s predictions are not different.</em></p>
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="c3fourvectors.html"
@@ -946,6 +961,7 @@ and Lorentz’s predictions are not different.</em></p>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -984,9 +1000,10 @@ By Donald A. Smith and Rex Adelberger
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1010,8 +1027,8 @@ By Donald A. Smith and Rex Adelberger
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

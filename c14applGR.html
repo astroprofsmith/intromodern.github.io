@@ -1,9 +1,8 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
@@ -15,53 +14,49 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c14applGR';</script>
@@ -78,28 +73,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -121,12 +111,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -141,9 +139,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="intro.html">
+  
   
   
   
@@ -153,12 +155,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Introduction to Modern Physics - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Introduction to Modern Physics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -200,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -209,14 +222,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -338,26 +351,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -392,10 +407,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="some-applications-of-general-relativity">
-<span id="chgrapp"></span><h1><span class="section-number">14. </span>Some Applications of General Relativity<a class="headerlink" href="#some-applications-of-general-relativity" title="Permalink to this heading">#</a></h1>
+<span id="chgrapp"></span><h1><span class="section-number">14. </span>Some Applications of General Relativity<a class="headerlink" href="#some-applications-of-general-relativity" title="Link to this heading">#</a></h1>
 <p>In this chapter, I show four examples of how applying the principles
 and concepts of General Relativity, as laid out in <a class="reference internal" href="c13introGR.html#chgrcon"><span class="std std-ref">the last
 chapter</span></a>, lead to astonishing (but very real) observations in
@@ -417,7 +432,7 @@ common mistakes that popularized versions of the theories often lead
 to, when people try to understand them in a more intuitive Newtonian
 paradigm.</p>
 <section id="mercury-s-orbit">
-<h2><span class="section-number">14.1. </span>Mercury’s Orbit<a class="headerlink" href="#mercury-s-orbit" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">14.1. </span>Mercury’s Orbit<a class="headerlink" href="#mercury-s-orbit" title="Link to this heading">#</a></h2>
 <p>General Relativity demands a complete reconceptualization of how
 gravity works.   Why go to so much effort?  What about Newtonian
 gravity is so inadequate as to merit such a radical move?  Well,
@@ -456,7 +471,7 @@ and you will see that the nearby “star” is actually Neptune!</p>
 <figure class="align-center" id="neptune">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/Galileo.png"><img alt="galileoneptune" class="bg-primary mb-1" src="_images/Galileo.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 14.1 </span><span class="caption-text">Above is a sketch from Galileo’s observing notebook on the night of 27
+<p><span class="caption-number">Fig. 14.1 </span><span class="caption-text">A sketch from Galileo’s observing notebook on the night of 27
 Dec 1612.  The dotted line leads to a nearby star that Galileo was
 using as a reference, but back extrapolation shows that this “star”
 was actually, unbeknownst to anyone at the time, the planet Neptune!
@@ -464,7 +479,7 @@ Below is a screen grab from the planetarium program Stellarium set to
 just before midnight on that night.  You can see the moons we now call
 the Galilean moons, labelled left to right: Ganymede, Io, Europa, and
 Callisto.  Off to the left, and slightly above, right where Galileo
-drew a dot, is Neptune.</span><a class="headerlink" href="#neptune" title="Permalink to this image">#</a></p>
+drew a dot, is Neptune.</span><a class="headerlink" href="#neptune" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -500,7 +515,7 @@ other orbits.</p>
 <figcaption>
 <p><span class="caption-number">Fig. 14.2 </span><span class="caption-text">Solar System map produced for education in 1846.  The
 planet Vulcan is shown as orbiting closer to the Sun
-than Mercury.  See <a class="reference external" href="https://www.loc.gov/resource/g3180.ct003790">Library of Congress</a> for more details.</span><a class="headerlink" href="#vulcan" title="Permalink to this image">#</a></p>
+than Mercury.  See <a class="reference external" href="https://www.loc.gov/resource/g3180.ct003790">Library of Congress</a> for more details.</span><a class="headerlink" href="#vulcan" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>How does GR help us understand this result?  First of all, if the Sun
@@ -534,7 +549,7 @@ blue planes make circular and elliptical orbits, respectively.  The
 precession of the orbit of Mercury is interpreted in GR as an effect
 of the shape of spacetime around the Sun causing gravity to deviate
 from the Newtonian <span class="math notranslate nohighlight">\(1/r^2\)</span> shape, and therefore causing Mercury’s
-orbit to deviate from the simple conic section.</span><a class="headerlink" href="#consecfig" title="Permalink to this image">#</a></p>
+orbit to deviate from the simple conic section.</span><a class="headerlink" href="#consecfig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Without delving too deep into the details, the correspondence
@@ -552,7 +567,7 @@ closed ellipse without resorting to hypothesizing an extra planet.
 The search for Vulcan was abandoned.</p>
 </section>
 <section id="gravitational-lensing">
-<h2><span class="section-number">14.2. </span>Gravitational Lensing<a class="headerlink" href="#gravitational-lensing" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">14.2. </span>Gravitational Lensing<a class="headerlink" href="#gravitational-lensing" title="Link to this heading">#</a></h2>
 <p>If objects, including photons, really follow the paths through
 spacetime that maximize the elapsed time, then their paths through
 curved space would not be what we would consider to be straight lines.
@@ -697,14 +712,14 @@ middle shaved off.  The flat rope light appears curved above the center
 of the lens, and a second image of the light appears below the center,
 just as a point gravitational lens would create two images of a
 background star, if you considered the lensing to be happening along
-a vertical plane sliced through the middle of this picture.</span><a class="headerlink" href="#glasslens" title="Permalink to this image">#</a></p>
+a vertical plane sliced through the middle of this picture.</span><a class="headerlink" href="#glasslens" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In 1919, multiple expeditions from the Royal Society of London set out
 to South America and Africa to wait along the path of the Moon’s
 shadow and image the sky during the eclipse (the exciting story of
 these expeditions is told in such books as
-<span id="id1">[<a class="reference internal" href="c15bibliography.html#id17" title="J. Gates and C. Pelletier. Proving Einstein Right. Hachette Book Group, 2019.">Gates and Pelletier, 2019</a>, <a class="reference internal" href="c15bibliography.html#id16" title="Daniel Kennefick. No Shadow of a Doubt. Princeton University Press, 2019.">Kennefick, 2019</a>]</span>).  Frank Dyson and Arthur Eddington led
+<span id="id1">[<a class="reference internal" href="c15bibliography.html#id18" title="J. Gates and C. Pelletier. Proving Einstein Right. Hachette Book Group, 2019.">Gates and Pelletier, 2019</a>, <a class="reference internal" href="c15bibliography.html#id17" title="Daniel Kennefick. No Shadow of a Doubt. Princeton University Press, 2019.">Kennefick, 2019</a>]</span>).  Frank Dyson and Arthur Eddington led
 these expeditions, and when they returned, they published their
 measured shifts in the stars’ positions.  The graph from their 1920
 report is shown in <a class="reference internal" href="#edd19"><span class="std std-numref">Fig. 14.5</span></a>.  Stars nearer to the Sun are
@@ -728,7 +743,7 @@ lighter solid line is the best-fit linear relationship, while the
 darker solid line in the middle is the prediction from GR.  The
 prediction from Newtonian physics is shown by the dotted line below, a
 factor of two less than what Einstein predicted, and clearly
-inconsistent with the measured results.</span><a class="headerlink" href="#edd19" title="Permalink to this image">#</a></p>
+inconsistent with the measured results.</span><a class="headerlink" href="#edd19" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>How can we understand this deflection in more depth?  The easiest
@@ -753,7 +768,7 @@ from.  The angles in <a class="reference internal" href="#thingravlens"><span cl
 they can be seen by eye.  In real life, all these angles are very
 small, so we use the small angle approximation for all of them.</p>
 <figure class="align-default" id="thingravlens" style="width: 800px">
-<img alt="_images/dfb261631af422d2dd8a46c4f572ddc91886872a145c235bd403a91aab906189.png" src="_images/dfb261631af422d2dd8a46c4f572ddc91886872a145c235bd403a91aab906189.png" />
+<img alt="_images/31da520e61065e0b9d1ceec17f06aa5be1332acaf3d25b1e81b71c1f3b86add0.png" src="_images/31da520e61065e0b9d1ceec17f06aa5be1332acaf3d25b1e81b71c1f3b86add0.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 14.6 </span><span class="caption-text">The thin gravitational lens diagram.  The lens is the black dot
 at the bottom center.  The source is the red dot to the left, and
@@ -765,7 +780,7 @@ dotted line would have reached the observer if the lens weren’t there,
 but in this case would be deflected far below the observer (this
 deflection is not shown).  With the lens, the photons appear to the
 observer to be coming from the location of the cyan dot, and therefore
-the image of the source is shifted by an angle <span class="math notranslate nohighlight">\(\theta-\beta\)</span>.</span><a class="headerlink" href="#thingravlens" title="Permalink to this image">#</a></p>
+the image of the source is shifted by an angle <span class="math notranslate nohighlight">\(\theta-\beta\)</span>.</span><a class="headerlink" href="#thingravlens" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>We split the vertical height of the right side into two pieces
@@ -776,7 +791,7 @@ relate <span class="math notranslate nohighlight">\(\theta-\beta\)</span> to <sp
 same side of their triangles on the left side of the image:
 <span class="math notranslate nohighlight">\(\alpha SL = (\theta-\beta)(SL+LO)\)</span>.</p>
 <div class="math notranslate nohighlight" id="equation-imshift">
-<span class="eqno">(14.1)<a class="headerlink" href="#equation-imshift" title="Permalink to this equation">#</a></span>\[\beta = \theta - \alpha \frac{SL}{SL+LO}\]</div>
+<span class="eqno">(14.1)<a class="headerlink" href="#equation-imshift" title="Link to this equation">#</a></span>\[\beta = \theta - \alpha \frac{SL}{SL+LO}\]</div>
 <p>To go any further, we need to know the deflection angle as a function
 of <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(M\)</span>.  There are many different ways of doing this.  For
 example, Schutz (1990) uses the four-vector momentum of a photon in
@@ -790,7 +805,7 @@ also possible to take a Fermat’s Principle approach and use calculus
 of variations to derive a path that maximizes the total elapsed time.
 In all cases, GR predicts a total deflection angle of</p>
 <div class="math notranslate nohighlight" id="equation-grdeflect">
-<span class="eqno">(14.2)<a class="headerlink" href="#equation-grdeflect" title="Permalink to this equation">#</a></span>\[\alpha = \frac{4GM}{c^2b}\]</div>
+<span class="eqno">(14.2)<a class="headerlink" href="#equation-grdeflect" title="Link to this equation">#</a></span>\[\alpha = \frac{4GM}{c^2b}\]</div>
 <p>For light just grazing the surface of the Sun, we can plug in
 <span class="math notranslate nohighlight">\(b=1~R_\odot\)</span> and <span class="math notranslate nohighlight">\(M=1~M_\odot\)</span> to get <span class="math notranslate nohighlight">\(\alpha = 8.5\times10^{-6}\)</span> radians,
 which is <span class="math notranslate nohighlight">\(1.75^{\prime\prime}\)</span>.</p>
@@ -799,19 +814,19 @@ Again using the triangles in <a class="reference internal" href="#thingravlens">
 angle approximation, <span class="math notranslate nohighlight">\(b=\theta LO\)</span>, so we can rewrite Equation <a class="reference internal" href="#equation-imshift">(14.1)</a>
 as</p>
 <div class="math notranslate nohighlight" id="equation-lenseq">
-<span class="eqno">(14.3)<a class="headerlink" href="#equation-lenseq" title="Permalink to this equation">#</a></span>\[\beta = \theta - \frac{4GM}{c^2\theta}\frac{SL}{LO(SL+LO)}\]</div>
+<span class="eqno">(14.3)<a class="headerlink" href="#equation-lenseq" title="Link to this equation">#</a></span>\[\beta = \theta - \frac{4GM}{c^2\theta}\frac{SL}{LO(SL+LO)}\]</div>
 <p>It is convenient to define a special angle as</p>
 <div class="math notranslate nohighlight" id="equation-einrad">
-<span class="eqno">(14.4)<a class="headerlink" href="#equation-einrad" title="Permalink to this equation">#</a></span>\[\theta_E^2 \equiv \frac{4GM}{c^2}\frac{SL}{LO(SL+LO)}\]</div>
+<span class="eqno">(14.4)<a class="headerlink" href="#equation-einrad" title="Link to this equation">#</a></span>\[\theta_E^2 \equiv \frac{4GM}{c^2}\frac{SL}{LO(SL+LO)}\]</div>
 <p>so that the lensing equation can be written as</p>
 <div class="math notranslate nohighlight" id="equation-lenseqe">
-<span class="eqno">(14.5)<a class="headerlink" href="#equation-lenseqe" title="Permalink to this equation">#</a></span>\[\beta = \theta - \frac{\theta_E^2}{\theta}\]</div>
+<span class="eqno">(14.5)<a class="headerlink" href="#equation-lenseqe" title="Link to this equation">#</a></span>\[\beta = \theta - \frac{\theta_E^2}{\theta}\]</div>
 <p>We can multiply through by <span class="math notranslate nohighlight">\(\theta\)</span> to get</p>
 <div class="math notranslate nohighlight" id="equation-quadlens">
-<span class="eqno">(14.6)<a class="headerlink" href="#equation-quadlens" title="Permalink to this equation">#</a></span>\[\theta^2-\beta\theta-\theta_E^2=0\]</div>
+<span class="eqno">(14.6)<a class="headerlink" href="#equation-quadlens" title="Link to this equation">#</a></span>\[\theta^2-\beta\theta-\theta_E^2=0\]</div>
 <p>This is a quadratic equation, so there must be two solutions:</p>
 <div class="math notranslate nohighlight" id="equation-lensqsol">
-<span class="eqno">(14.7)<a class="headerlink" href="#equation-lensqsol" title="Permalink to this equation">#</a></span>\[\theta = \frac{1}{2}\left(\beta \pm \sqrt{\beta^2 + 4\theta_E^2}\right)\]</div>
+<span class="eqno">(14.7)<a class="headerlink" href="#equation-lensqsol" title="Link to this equation">#</a></span>\[\theta = \frac{1}{2}\left(\beta \pm \sqrt{\beta^2 + 4\theta_E^2}\right)\]</div>
 <p>It is this equation, using the <span class="math notranslate nohighlight">\(+\)</span> solution, that leads to the solid
 dark line in <a class="reference internal" href="#edd19"><span class="std std-numref">Fig. 14.5</span></a>, using <span class="math notranslate nohighlight">\(\theta-\beta\)</span> for the <span class="math notranslate nohighlight">\(y\)</span> axis.
 The line in <a class="reference internal" href="#edd19"><span class="std std-numref">Fig. 14.5</span></a> is straight because the x-axis tick marks
@@ -859,7 +874,7 @@ Eq. <a class="reference internal" href="#equation-lensqsol">(14.7)</a>.  Note th
 spheres due to the fact that the size of the Earth is greatly
 exaggerated.  You can change the relative position of the source with
 the slider below the illustration, to see how the lensing changes for
-different configurations of source, lens, and observer.</span><a class="headerlink" href="#lensanimate" title="Permalink to this image">#</a></p>
+different configurations of source, lens, and observer.</span><a class="headerlink" href="#lensanimate" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p><a class="reference internal" href="#lensanimate"><span class="std std-numref">Fig. 14.7</span></a> provides an interactive animated version of
@@ -915,7 +930,7 @@ are representations of the images formed by the lensing.  Hit
 the “w”,”a”,”x”, and “d” keys to move the source around.  If you
 can line up the source with the lens, you will get an Einstein Ring.
 If you see straight magenta lines, those are computation artifacts,
-and you should ignore them.</span><a class="headerlink" href="#ringanimate" title="Permalink to this image">#</a></p>
+and you should ignore them.</span><a class="headerlink" href="#ringanimate" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Such a perfect alignment is very rare, but there are a lot of galaxies
@@ -937,7 +952,7 @@ Many are complete, or near complete, Einstein Rings (the lower right,
 in particular).  The third image in the top row shows a nice example of
 two images, one on either side of the lens, while several of the others
 show more than two images, indicative of asymmetries in the lensing
-mass distribution.</span><a class="headerlink" href="#hubblenses" title="Permalink to this image">#</a></p>
+mass distribution.</span><a class="headerlink" href="#hubblenses" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>This analysis is only of the simplest possible case, where the lens is
@@ -957,7 +972,7 @@ has proven a very useful phenomenon for studying the distribution of
 mass in the universe.</p>
 </section>
 <section id="black-holes">
-<h2><span class="section-number">14.3. </span>Black Holes<a class="headerlink" href="#black-holes" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">14.3. </span>Black Holes<a class="headerlink" href="#black-holes" title="Link to this heading">#</a></h2>
 <p>The topic of black holes could feasibly fill a whole book all by
 itself.  My goal in this section is to show you how understanding the
 basics of Relativity Theory help you understand what a black hole is,
@@ -968,7 +983,7 @@ object for which the escape velocity reaches the speed of light.
 Therefore, it is said, not even light can escape from the black hole.
 The first suggestion of a “Dark Star”, made independently by John
 Michell and Pierre-Simon Laplace in the 1700s, was based on this
-logic.  The history is laid out well in <span id="id3">[<a class="reference internal" href="c15bibliography.html#id15" title="Kip Thorne. Black Holes and Time Warps: Einstein's Outrageous Legacy. W. W. Norton and Co., 1994.">Thorne, 1994</a>]</span>.</p>
+logic.  The history is laid out well in <span id="id3">[<a class="reference internal" href="c15bibliography.html#id16" title="Kip Thorne. Black Holes and Time Warps: Einstein's Outrageous Legacy. W. W. Norton and Co., 1994.">Thorne, 1994</a>]</span>.</p>
 <p>The (misleading) idea goes: take a two-object
 gravitationally-interacting system, like, say, you and the Earth.  If
 we give you some kinetic energy by launching you in the air, you will
@@ -977,12 +992,12 @@ the potential energy associated with the gravitational interaction
 will increase, and your kinetic energy will decrease by the same
 amount, because the energy is conserved:</p>
 <div class="math notranslate nohighlight" id="equation-convsofe">
-<span class="eqno">(14.8)<a class="headerlink" href="#equation-convsofe" title="Permalink to this equation">#</a></span>\[\Delta E = 0 = \Delta KE + \Delta PE =
+<span class="eqno">(14.8)<a class="headerlink" href="#equation-convsofe" title="Link to this equation">#</a></span>\[\Delta E = 0 = \Delta KE + \Delta PE =
 \frac{1}{2}mv_f^2-\frac{1}{2}mv_i^2-\frac{GMm}{r_f}+\frac{GMm}{r_i}\]</div>
 <p>where the subscripts <span class="math notranslate nohighlight">\(i\)</span> and <span class="math notranslate nohighlight">\(f\)</span> refer to initial and final, respectively.
 When <span class="math notranslate nohighlight">\(v_f\rightarrow 0\)</span>, <span class="math notranslate nohighlight">\(r_f\)</span> will reach a maximum.</p>
 <div class="math notranslate nohighlight" id="equation-maxheight">
-<span class="eqno">(14.9)<a class="headerlink" href="#equation-maxheight" title="Permalink to this equation">#</a></span>\[\frac{1}{r_f}=\frac{1}{r_i}-\frac{1}{2GM}v_i^2\rightarrow
+<span class="eqno">(14.9)<a class="headerlink" href="#equation-maxheight" title="Link to this equation">#</a></span>\[\frac{1}{r_f}=\frac{1}{r_i}-\frac{1}{2GM}v_i^2\rightarrow
 r_f = \frac{2GMr_i}{2GM-r_iv_i^2}\]</div>
 <p>The bigger <span class="math notranslate nohighlight">\(v_i\)</span> gets, the smaller the denominator will become, and
 the larger <span class="math notranslate nohighlight">\(r_f\)</span> will be.  If <span class="math notranslate nohighlight">\(v_i^2=2GM/r_i\)</span>, the denominator will be
@@ -1027,12 +1042,12 @@ is that of a point mass <span class="math notranslate nohighlight">\(M\)</span> 
 solves Einstein’s equation for this configuration was first derived by
 Karl Schwartzschild in 1915 while on the Russian front of World War I,
 just a year before his untimely death from disease at only 42 years
-old (<span id="id4">[<a class="reference internal" href="c15bibliography.html#id19" title="S. Shapiro and S. Teukolsky. Black Holes, White Dwarfs, and Neutron Stars. John Wiley and Sons, Inc., 1983.">Shapiro and Teukolsky, 1983</a>]</span>).  Because this configuration is spherically
+old (<span id="id4">[<a class="reference internal" href="c15bibliography.html#id20" title="S. Shapiro and S. Teukolsky. Black Holes, White Dwarfs, and Neutron Stars. John Wiley and Sons, Inc., 1983.">Shapiro and Teukolsky, 1983</a>]</span>).  Because this configuration is spherically
 symmetric, the spatial coordinates are expressed in terms of the
 radial distance <span class="math notranslate nohighlight">\(r\)</span> from the mass and the angles <span class="math notranslate nohighlight">\(\theta\)</span> and <span class="math notranslate nohighlight">\(\phi\)</span>
 (that basically correspond to latitude and longitude, respectively):</p>
 <div class="math notranslate nohighlight" id="equation-ssmetric">
-<span class="eqno">(14.10)<a class="headerlink" href="#equation-ssmetric" title="Permalink to this equation">#</a></span>\[ds^2 = -\left(1-\frac{2GM}{r}\right)c^2dt^2 + \left(1-\frac{2GM}{r}\right)^{-1} dr^2
+<span class="eqno">(14.10)<a class="headerlink" href="#equation-ssmetric" title="Link to this equation">#</a></span>\[ds^2 = -\left(1-\frac{2GM}{r}\right)c^2dt^2 + \left(1-\frac{2GM}{r}\right)^{-1} dr^2
 + r^2d\Omega^2\]</div>
 <p>where <span class="math notranslate nohighlight">\(d\Omega^2 = d\theta^2 + \sin^2{\theta}d\phi^2\)</span>.  Note that for
 <span class="math notranslate nohighlight">\(M=0\)</span> as well as for <span class="math notranslate nohighlight">\(r\rightarrow\infty\)</span>, this metric returns to the
@@ -1050,11 +1065,11 @@ follows trajectories in spacetime that have a zero interval
 (“lightlike”).  We can therefore plug <span class="math notranslate nohighlight">\(ds=0\)</span> and <span class="math notranslate nohighlight">\(d\Omega=0\)</span> into
 Eq. <a class="reference internal" href="#equation-ssmetric">(14.10)</a>:</p>
 <div class="math notranslate nohighlight" id="equation-nullpath">
-<span class="eqno">(14.11)<a class="headerlink" href="#equation-nullpath" title="Permalink to this equation">#</a></span>\[0 = -\left(1-\frac{2GM}{c^2r}\right)c^2dt^2 + \left(1-\frac{2GM}{c^2r}\right)^{-1} dr^2\]</div>
+<span class="eqno">(14.11)<a class="headerlink" href="#equation-nullpath" title="Link to this equation">#</a></span>\[0 = -\left(1-\frac{2GM}{c^2r}\right)c^2dt^2 + \left(1-\frac{2GM}{c^2r}\right)^{-1} dr^2\]</div>
 <p>In the context of a spacetime diagram, the slope of a worldline would be
 <span class="math notranslate nohighlight">\(cdt/dr\)</span>, and we can solve for that:</p>
 <div class="math notranslate nohighlight" id="equation-slopewl">
-<span class="eqno">(14.12)<a class="headerlink" href="#equation-slopewl" title="Permalink to this equation">#</a></span>\[\frac{cdt}{dr} =  \pm \left|1-\frac{2GM}{c^2r}\right|^{-1}\]</div>
+<span class="eqno">(14.12)<a class="headerlink" href="#equation-slopewl" title="Link to this equation">#</a></span>\[\frac{cdt}{dr} =  \pm \left|1-\frac{2GM}{c^2r}\right|^{-1}\]</div>
 <p>Note that for large <span class="math notranslate nohighlight">\(r\)</span>, far from the mass, the right side of this
 equation goes to 1, which is the result we would expect from special
 relativity: that worldlines all photons are lines at a <span class="math notranslate nohighlight">\(45^\circ\)</span>
@@ -1128,7 +1143,7 @@ original event approaches the event horizon.  In the limit as the
 original event reaches the event horizon, the light cone collapses
 to a vertical line.  No physical object at the red event could ever
 travel, influence, or communicate with anything to the right of the
-outbound yellow line.</span><a class="headerlink" href="#ehanimate" title="Permalink to this image">#</a></p>
+outbound yellow line.</span><a class="headerlink" href="#ehanimate" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>I should stress that the fact that the inbound slope blows up at the
@@ -1146,8 +1161,8 @@ a different set of variables, where the null geodesic does not blow up
 at <span class="math notranslate nohighlight">\(R_S\)</span>.  In that variable system the light cone does not so much
 pinch as tilt left.  The outbound side still goes vertical at <span class="math notranslate nohighlight">\(R_S\)</span>,
 but the inbound side does not (see GR texts such as <span id="id5">[<a class="reference internal" href="c15bibliography.html#id7" title="Sean Carroll. Spacetime and Geometry: An Introduction to General Relativity. Cambridge University Press, 2004.">Carroll, 2004</a>]</span>
-or <span id="id6">[<a class="reference internal" href="c15bibliography.html#id8" title="Bernard Schutz. A First Course in General Relativity. Cambridge University Press, 1985.">Schutz, 1985</a>]</span> for more details.  <span id="id7">[<a class="reference internal" href="c15bibliography.html#id14" title="Nick Lucid. Advanced Theoretical Physics. Self-published, 2015.">Lucid, 2015</a>]</span> also has a very
-clear explanation with useful figures.  Finally, <span id="id8">[<a class="reference internal" href="c15bibliography.html#id25" title="Sean Carroll. The Biggest Ideas in the Universe, Vol. 1. Oneworld Publications, 2022.">Carroll, 2022</a>]</span>
+or <span id="id6">[<a class="reference internal" href="c15bibliography.html#id8" title="Bernard Schutz. A First Course in General Relativity. Cambridge University Press, 1985.">Schutz, 1985</a>]</span> for more details.  <span id="id7">[<a class="reference internal" href="c15bibliography.html#id15" title="Nick Lucid. Advanced Theoretical Physics. Self-published, 2015.">Lucid, 2015</a>]</span> also has a very
+clear explanation with useful figures.  Finally, <span id="id8">[<a class="reference internal" href="c15bibliography.html#id26" title="Sean Carroll. The Biggest Ideas in the Universe, Vol. 1. Oneworld Publications, 2022.">Carroll, 2022</a>]</span>
 explains this for the layperson as well.).  The conclusion remains the
 same: the futures of all events along the event horizon lie inside
 that horizon.  It is not possible for a real object to return to
@@ -1176,7 +1191,7 @@ a piece of paper, but an object dense enough to have an event horizon.</p>
 continues to mount.  The first suggestion of measured event horizons
 came from Narayan, Garcia, and McClintock in 1997, who measured the
 faint X-ray emission coming from slowly accreting compact object
-binary systems <span id="id9">[<a class="reference internal" href="c15bibliography.html#id26" title="Ramesh Narayan, Michael R. Garcia, and Jeffrey E. McClintock. Advection-dominated Accretion and Black Hole Event Horizons. ApJL, 478(2):L79-L82, April 1997. arXiv:astro-ph/9701139, doi:10.1086/310554.">Narayan <em>et al.</em>, 1997</a>]</span>.  They found that the systems known
+binary systems <span id="id9">[<a class="reference internal" href="c15bibliography.html#id27" title="Ramesh Narayan, Michael R. Garcia, and Jeffrey E. McClintock. Advection-dominated Accretion and Black Hole Event Horizons. ApJL, 478(2):L79-L82, April 1997. arXiv:astro-ph/9701139, doi:10.1086/310554.">Narayan <em>et al.</em>, 1997</a>]</span>.  They found that the systems known
 to be neutron stars were all significantly brighter than the systems
 suspected to be black holes, which is just what you expect if the
 accreting material is disappearing behind an event
@@ -1191,7 +1206,7 @@ the lower right.</p>
 <figcaption>
 <p><span class="caption-number">Fig. 14.11 </span><span class="caption-text">Possible evidence of event horizons.  Material that falls onto a neutron
 star heats up the star and causes it to be brighter, while material that
-falls into a black hole disappears forever.  Image from <span id="id10">[<a class="reference internal" href="c15bibliography.html#id26" title="Ramesh Narayan, Michael R. Garcia, and Jeffrey E. McClintock. Advection-dominated Accretion and Black Hole Event Horizons. ApJL, 478(2):L79-L82, April 1997. arXiv:astro-ph/9701139, doi:10.1086/310554.">Narayan <em>et al.</em>, 1997</a>]</span>.</span><a class="headerlink" href="#adafeventhorizon" title="Permalink to this image">#</a></p>
+falls into a black hole disappears forever.  Image from <span id="id10">[<a class="reference internal" href="c15bibliography.html#id27" title="Ramesh Narayan, Michael R. Garcia, and Jeffrey E. McClintock. Advection-dominated Accretion and Black Hole Event Horizons. ApJL, 478(2):L79-L82, April 1997. arXiv:astro-ph/9701139, doi:10.1086/310554.">Narayan <em>et al.</em>, 1997</a>]</span>.</span><a class="headerlink" href="#adafeventhorizon" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>There are many known objects in the universe that have so much mass in
@@ -1232,12 +1247,12 @@ getting harder and harder to discount.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/2018m87.png"><img alt="2018m87ehtimage" class="bg-primary mb-1" src="_images/2018m87.png" style="width: 600px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 14.12 </span><span class="caption-text">Event Horizon Telescope image of the black hole at the center of
-elliptical galaxy M87.  Image from the 2024 update by Akiyama et al.</span><a class="headerlink" href="#ehtm87" title="Permalink to this image">#</a></p>
+elliptical galaxy M87.  Image from the 2024 update by Akiyama et al.</span><a class="headerlink" href="#ehtm87" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="the-big-bang">
-<h2><span class="section-number">14.4. </span>The Big Bang<a class="headerlink" href="#the-big-bang" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">14.4. </span>The Big Bang<a class="headerlink" href="#the-big-bang" title="Link to this heading">#</a></h2>
 <p>To close out this chapter, and indeed this entire book, we widen our
 attention to take in the entire universe.  The universe has space and
 time, and it contains matter and energy, so presumably GR has
@@ -1249,8 +1264,8 @@ form, the Big Bang Theory can be summarized as “the Universe was in
 the past very dense and very hot, and it has been expanding and
 cooling ever since.”  As with black holes, many books could be and
 have been written about the Big Bang Theory (some for a general
-audience, such as <span id="id11">[<a class="reference internal" href="c15bibliography.html#id22" title="J. Silk. The Big Bang. W. H. Freeman and Co., 1980.">Silk, 1980</a>]</span>, others highly technical such as
-<span id="id12">[<a class="reference internal" href="c15bibliography.html#id24" title="P. Peebles. Principles of Physical Cosmology. Princeton University Press, 1993.">Peebles, 1993</a>]</span>).  My goal in this section is focused on helping you
+audience, such as <span id="id11">[<a class="reference internal" href="c15bibliography.html#id23" title="J. Silk. The Big Bang. W. H. Freeman and Co., 1980.">Silk, 1980</a>]</span>, others highly technical such as
+<span id="id12">[<a class="reference internal" href="c15bibliography.html#id25" title="P. Peebles. Principles of Physical Cosmology. Princeton University Press, 1993.">Peebles, 1993</a>]</span>).  My goal in this section is focused on helping you
 see how the theory arises from GR, and how that understanding helps
 you avoid common misconceptions about the theory that often arise in
 the popular understanding.  This section is in no way a comprehensive
@@ -1303,7 +1318,7 @@ a description of the universe on the <em>largest</em> scales.</p>
 <figcaption>
 <p><span class="caption-number">Fig. 14.13 </span><span class="caption-text">A slice through the SDSS galaxy catalog containing 34,000 galaxies
 out to a distance of about 700 million light years.  Each blue dot is
-a galaxy.  The Earth is at the center of the graph.</span><a class="headerlink" href="#sdssslice" title="Permalink to this image">#</a></p>
+a galaxy.  The Earth is at the center of the graph.</span><a class="headerlink" href="#sdssslice" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="sdssside">
@@ -1311,7 +1326,7 @@ a galaxy.  The Earth is at the center of the graph.</span><a class="headerlink" 
 <figcaption>
 <p><span class="caption-number">Fig. 14.14 </span><span class="caption-text">Side view of the full SDSS galaxy catalog of 100 thousand galaxies.
 Note that there is more coverage of the left side, which is why the
-slice graph looks like the left side has more galaxies.</span><a class="headerlink" href="#sdssside" title="Permalink to this image">#</a></p>
+slice graph looks like the left side has more galaxies.</span><a class="headerlink" href="#sdssside" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>If the universe is everywhere homogeneous and isotropic, a metric that
@@ -1323,7 +1338,7 @@ advance on whether those dimensions are curved or flat.  To meet
 these conditions, we need to use what’s called a Robertson-Walker
 metric:</p>
 <div class="math notranslate nohighlight" id="equation-rwmetric">
-<span class="eqno">(14.13)<a class="headerlink" href="#equation-rwmetric" title="Permalink to this equation">#</a></span>\[-ds^2 = -c^2dt^2 + \frac{dr^2}{1-kr^2} + r^2d\theta^2 + r^2\sin^2{\theta}d\phi^2\]</div>
+<span class="eqno">(14.13)<a class="headerlink" href="#equation-rwmetric" title="Link to this equation">#</a></span>\[-ds^2 = -c^2dt^2 + \frac{dr^2}{1-kr^2} + r^2d\theta^2 + r^2\sin^2{\theta}d\phi^2\]</div>
 <p>This needs a bit of unpacking as to what this means.  First of all
 what kind of time are we talking about here?  This <span class="math notranslate nohighlight">\(t\)</span> could be
 considered a cosmological time: the proper time for any individual
@@ -1355,16 +1370,16 @@ make <span class="math notranslate nohighlight">\(k=\pm 1\)</span>.  If <span cl
 <p>The next step is to introduce a new, dimensionless, coordinate <span class="math notranslate nohighlight">\(\chi\)</span>
 such that <span class="math notranslate nohighlight">\(d\chi\)</span> replaces <span class="math notranslate nohighlight">\(dr\)</span>.  We let</p>
 <div class="math notranslate nohighlight" id="equation-dchi">
-<span class="eqno">(14.14)<a class="headerlink" href="#equation-dchi" title="Permalink to this equation">#</a></span>\[d\chi = \frac{dr}{\sqrt{1-kr^2}}\]</div>
+<span class="eqno">(14.14)<a class="headerlink" href="#equation-dchi" title="Link to this equation">#</a></span>\[d\chi = \frac{dr}{\sqrt{1-kr^2}}\]</div>
 <p>which can be integrated for the three possible cases of <span class="math notranslate nohighlight">\(k\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-chi">
-<span class="eqno">(14.15)<a class="headerlink" href="#equation-chi" title="Permalink to this equation">#</a></span>\[r = \cases{        \sin{\chi}       &amp; k=+1 \cr
+<span class="eqno">(14.15)<a class="headerlink" href="#equation-chi" title="Link to this equation">#</a></span>\[r = \cases{        \sin{\chi}       &amp; k=+1 \cr
                  \chi &amp; k=0 \cr
                     \sinh{\chi}       &amp; k=-1}\]</div>
 <p>We can therefore write the whole Robertson-Walker metric in the
 following way:</p>
 <div class="math notranslate nohighlight" id="equation-rwmetricfull">
-<span class="eqno">(14.16)<a class="headerlink" href="#equation-rwmetricfull" title="Permalink to this equation">#</a></span>\[-ds^2 = -c^2dt^2 + a^2\left[\frac{dr^2}{1-kR^2} + r^2d\theta^2 + r^2\sin^2{\theta}d\phi^2\right]\]</div>
+<span class="eqno">(14.16)<a class="headerlink" href="#equation-rwmetricfull" title="Link to this equation">#</a></span>\[-ds^2 = -c^2dt^2 + a^2\left[\frac{dr^2}{1-kR^2} + r^2d\theta^2 + r^2\sin^2{\theta}d\phi^2\right]\]</div>
 <p>as long as we use Eq. <a class="reference internal" href="#equation-chi">(14.15)</a> as a way to define a dimensionless
 <span class="math notranslate nohighlight">\(r\)</span>.  Again, remember if <span class="math notranslate nohighlight">\(k=0\)</span>, this is just flat spacetime with the
 space part written in spherical coordinates.</p>
@@ -1430,7 +1445,7 @@ physical distance between them increases.  Each ant would insist that
 <em>it</em> was not moving; the <em>other</em> ant is receding.  Rotate the ball
 so that each ant is in turn directly in front of the camera (with
 the origin of the magenta arrows directly behind it) to see
-the scenario from each ant’s perspective.</span><a class="headerlink" href="#comovingsphere" title="Permalink to this image">#</a></p>
+the scenario from each ant’s perspective.</span><a class="headerlink" href="#comovingsphere" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>This is the mindset you need to be in when discussing the Big Bang
@@ -1465,7 +1480,7 @@ the points in the entire observable universe would have been
 arbitrarily close together at arbitrarily small values of <span class="math notranslate nohighlight">\(t\)</span>.  It is
 for this reason that people sometimes describe the universe as
 emerging from a point (Lemaitre called it a “Primeval Atom”,
-<span id="id13">[<a class="reference internal" href="c15bibliography.html#id18" title="J. Farrell. The Day Without Yesterday. Basic Books, 2005.">Farrell, 2005</a>]</span>), but this is misleading our imagination, because we
+<span id="id13">[<a class="reference internal" href="c15bibliography.html#id19" title="J. Farrell. The Day Without Yesterday. Basic Books, 2005.">Farrell, 2005</a>]</span>), but this is misleading our imagination, because we
 imagine an egg or a point as having edges.  The space described by the
 metric is still infinite; it’s just that our entire <em>observable</em>
 universe (14 billion light years in every direction from us) would be
@@ -1483,7 +1498,7 @@ when it was emitted far away.  If we take the ratio of the wavelength
 now to the wavelength then, the ratio might not be one, if the
 scale factor of the universe has changed while the photon was travelling.</p>
 <div class="math notranslate nohighlight" id="equation-redshift">
-<span class="eqno">(14.17)<a class="headerlink" href="#equation-redshift" title="Permalink to this equation">#</a></span>\[\frac{\lambda_{\rm now}}{\lambda_{\rm then}}
+<span class="eqno">(14.17)<a class="headerlink" href="#equation-redshift" title="Link to this equation">#</a></span>\[\frac{\lambda_{\rm now}}{\lambda_{\rm then}}
 = \frac{a(t_{\rm now})(\chi_b-\chi_f)}{a(t_{\rm then})(\chi_b-\chi_f)}
 =  \frac{a(t_{\rm now})}{a(t_{\rm then})}\]</div>
 <p>The comoving coordinates cancel because they don’t change.  The ratio
@@ -1511,7 +1526,7 @@ longer ago and therefore further away to be redshifted more and more,
 the further it has traveled across the universe.  It is useful to
 define the fractional rate of change of the scale factor:</p>
 <div class="math notranslate nohighlight" id="equation-hubbleparam">
-<span class="eqno">(14.18)<a class="headerlink" href="#equation-hubbleparam" title="Permalink to this equation">#</a></span>\[H(t) = \frac{da/dt}{a}=\frac{da/a}{dt}\]</div>
+<span class="eqno">(14.18)<a class="headerlink" href="#equation-hubbleparam" title="Link to this equation">#</a></span>\[H(t) = \frac{da/dt}{a}=\frac{da/a}{dt}\]</div>
 <p>which is given the name <em>Hubble Parameter</em>.  The value of <span class="math notranslate nohighlight">\(H\)</span> now is
 called <span class="math notranslate nohighlight">\(H_0\)</span>, the Hubble Constant, but it’s important to note that the
 Hubble parameter has clearly not been constant over the history of the
@@ -1540,22 +1555,22 @@ For a photon, <span class="math notranslate nohighlight">\(ds=0\)</span>, and if
 toward us from some distant location, then the angular displacement
 terms drop out, leaving us with</p>
 <div class="math notranslate nohighlight" id="equation-photonmetric">
-<span class="eqno">(14.19)<a class="headerlink" href="#equation-photonmetric" title="Permalink to this equation">#</a></span>\[0 =  -c^2dt^2 + a^2\left[\frac{dr^2}{1-kR^2}\right]\rightarrow cdt = -\frac{adR}{\sqrt{1-kR^2}}\]</div>
+<span class="eqno">(14.19)<a class="headerlink" href="#equation-photonmetric" title="Link to this equation">#</a></span>\[0 =  -c^2dt^2 + a^2\left[\frac{dr^2}{1-kR^2}\right]\rightarrow cdt = -\frac{adR}{\sqrt{1-kR^2}}\]</div>
 <p>I take <span class="math notranslate nohighlight">\(dR&gt;0\)</span>, so the minus sign indicates that photons are travelling
 inward toward the origin, which is where we are.
 I can use <span class="math notranslate nohighlight">\(\dot{a}=da/dt\)</span> to replace <span class="math notranslate nohighlight">\(t\)</span> as a variable with <span class="math notranslate nohighlight">\(a\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-scalefaceq">
-<span class="eqno">(14.20)<a class="headerlink" href="#equation-scalefaceq" title="Permalink to this equation">#</a></span>\[\frac{cda}{a\dot{a}} = -\frac{dR}{\sqrt{1-kR^2}}\]</div>
+<span class="eqno">(14.20)<a class="headerlink" href="#equation-scalefaceq" title="Link to this equation">#</a></span>\[\frac{cda}{a\dot{a}} = -\frac{dR}{\sqrt{1-kR^2}}\]</div>
 <p>Then I can use the definition of the Hubble parameter (Equation
 <a class="reference internal" href="#equation-hubbleparam">(14.18)</a>) to include <span class="math notranslate nohighlight">\(H\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-scalefaceqh">
-<span class="eqno">(14.21)<a class="headerlink" href="#equation-scalefaceqh" title="Permalink to this equation">#</a></span>\[\frac{cda}{a^2H} = -\frac{dR}{\sqrt{1-kR^2}}\]</div>
+<span class="eqno">(14.21)<a class="headerlink" href="#equation-scalefaceqh" title="Link to this equation">#</a></span>\[\frac{cda}{a^2H} = -\frac{dR}{\sqrt{1-kR^2}}\]</div>
 <p>To apply this to a photon travelling across the universe, we would
 need to integrate from <span class="math notranslate nohighlight">\(a_{\rm emit}\)</span> to <span class="math notranslate nohighlight">\(a_{\rm now}\)</span> (which we
 define as 1) on the left and from the physical distance <span class="math notranslate nohighlight">\(D\)</span> to zero on
 the right.</p>
 <div class="math notranslate nohighlight" id="equation-hubblegeneral">
-<span class="eqno">(14.22)<a class="headerlink" href="#equation-hubblegeneral" title="Permalink to this equation">#</a></span>\[\int_{a_{\rm emit}}^1\frac{cda}{a^2H} = -\int_D^0\frac{dR}{\sqrt{1-kR^2}}\]</div>
+<span class="eqno">(14.22)<a class="headerlink" href="#equation-hubblegeneral" title="Link to this equation">#</a></span>\[\int_{a_{\rm emit}}^1\frac{cda}{a^2H} = -\int_D^0\frac{dR}{\sqrt{1-kR^2}}\]</div>
 <p>This may look terribly messy, but it does impose a relationship
 between <span class="math notranslate nohighlight">\(H\)</span>, <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(D\)</span>, and <span class="math notranslate nohighlight">\(k\)</span>.  And since <span class="math notranslate nohighlight">\(a\)</span> is related to the shift
 in wavelength, <span class="math notranslate nohighlight">\(z\)</span>, then there is a direct link between <span class="math notranslate nohighlight">\(D\)</span> and <span class="math notranslate nohighlight">\(z\)</span>.</p>
@@ -1587,7 +1602,7 @@ size.</p>
 <p><span class="caption-number">Fig. 14.16 </span><span class="caption-text">Hubble Diagram constructed from gamma-ray burst light curves, plotting
 distance modulus (the distance in logarithmic units) vs. redshift.
 The standard Big Bang Theory prediction is shown as a solid line.
-Image from <span id="id14">[<a class="reference internal" href="c15bibliography.html#id27" title="Bradley E. Schaefer. The Hubble Diagram to Redshift &gt;6 from 69 Gamma-Ray Bursts. ApJ, 660(1):16-46, May 2007. arXiv:astro-ph/0612285, doi:10.1086/511742.">Schaefer, 2007</a>]</span>.</span><a class="headerlink" href="#grbhubb" title="Permalink to this image">#</a></p>
+Image from <span id="id14">[<a class="reference internal" href="c15bibliography.html#id28" title="Bradley E. Schaefer. The Hubble Diagram to Redshift &gt;6 from 69 Gamma-Ray Bursts. ApJ, 660(1):16-46, May 2007. arXiv:astro-ph/0612285, doi:10.1086/511742.">Schaefer, 2007</a>]</span>.</span><a class="headerlink" href="#grbhubb" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>We can turn Eq. <a class="reference internal" href="#equation-hubblegeneral">(14.22)</a> into something a little bit more
@@ -1598,19 +1613,19 @@ assume that <span class="math notranslate nohighlight">\(\dot{a}=H_0\)</span> an
 <span class="math notranslate nohighlight">\(H_0/a\)</span> into Eq. <a class="reference internal" href="#equation-hubblegeneral">(14.22)</a>, then one factor of <span class="math notranslate nohighlight">\(a\)</span> will
 cancel out of the denominator, leaving us with</p>
 <div class="math notranslate nohighlight" id="equation-hubbleflat">
-<span class="eqno">(14.23)<a class="headerlink" href="#equation-hubbleflat" title="Permalink to this equation">#</a></span>\[\frac{c}{H_0}\int_{a_{\rm emit}}^{a_{\rm now}}\frac{da}{a} = \int_0^D dR\]</div>
+<span class="eqno">(14.23)<a class="headerlink" href="#equation-hubbleflat" title="Link to this equation">#</a></span>\[\frac{c}{H_0}\int_{a_{\rm emit}}^{a_{\rm now}}\frac{da}{a} = \int_0^D dR\]</div>
 <div class="math notranslate nohighlight" id="equation-hubbleeuc">
-<span class="eqno">(14.24)<a class="headerlink" href="#equation-hubbleeuc" title="Permalink to this equation">#</a></span>\[\frac{c}{H_0}\left[\ln{a_{\rm now}}-\ln{a_{\rm emit}}\right] 
+<span class="eqno">(14.24)<a class="headerlink" href="#equation-hubbleeuc" title="Link to this equation">#</a></span>\[\frac{c}{H_0}\left[\ln{a_{\rm now}}-\ln{a_{\rm emit}}\right] 
 = \frac{c}{H_0}\ln{\frac{a_{\rm now}}{a_{\rm emit}}} = D\]</div>
 <p>The fraction in the log is just <span class="math notranslate nohighlight">\(1+z\)</span>, and we can use a Taylor expansion
 for small <span class="math notranslate nohighlight">\(z\)</span> to get <span class="math notranslate nohighlight">\(\ln{(1+z)}\approx z\)</span>, which leaves us
 with</p>
 <div class="math notranslate nohighlight" id="equation-hubblesmall">
-<span class="eqno">(14.25)<a class="headerlink" href="#equation-hubblesmall" title="Permalink to this equation">#</a></span>\[\frac{cz}{H_0} = D \rightarrow H_0D=cz\]</div>
+<span class="eqno">(14.25)<a class="headerlink" href="#equation-hubblesmall" title="Link to this equation">#</a></span>\[\frac{cz}{H_0} = D \rightarrow H_0D=cz\]</div>
 <p>and if we use Eq. <a class="reference internal" href="c9examples.html#equation-ldopp">(9.27)</a> as the Doppler shift interpretation for
 small <span class="math notranslate nohighlight">\(z\)</span> then we get <span class="math notranslate nohighlight">\(z\approx\beta\)</span> and therefore</p>
 <div class="math notranslate nohighlight" id="equation-hubblelaw">
-<span class="eqno">(14.26)<a class="headerlink" href="#equation-hubblelaw" title="Permalink to this equation">#</a></span>\[\boxed{H_0D=v}\]</div>
+<span class="eqno">(14.26)<a class="headerlink" href="#equation-hubblelaw" title="Link to this equation">#</a></span>\[\boxed{H_0D=v}\]</div>
 <p>which is the famous Hubble Law, that the velocity of receding galaxies
 is linear with their distance, and the slope of the line is the Hubble
 Constant.  This is where Hubble started in the 1920s, as shown in
@@ -1635,8 +1650,8 @@ the slope of this curve is extremely wrong compared to modern
 measurements, the general trend of increasing recessional speed with
 increasing distance is clear, and led to the acceptance of the Big
 Bang Theory as the dominant paradigm for understanding the origin and
-evolution of our universe.  See <span id="id15">[<a class="reference internal" href="c15bibliography.html#id28" title="Robert P. Kirshner. Hubble's diagram and cosmic expansion. Proceedings of the National Academy of Science, 101(1):8-13, January 2004. doi:10.1073/pnas.2536799100.">Kirshner, 2004</a>]</span> for a
-fascinating exploration of the creation of this diagram.</span><a class="headerlink" href="#edwinfig" title="Permalink to this image">#</a></p>
+evolution of our universe.  See <span id="id15">[<a class="reference internal" href="c15bibliography.html#id29" title="Robert P. Kirshner. Hubble's diagram and cosmic expansion. Proceedings of the National Academy of Science, 101(1):8-13, January 2004. doi:10.1073/pnas.2536799100.">Kirshner, 2004</a>]</span> for a
+fascinating exploration of the creation of this diagram.</span><a class="headerlink" href="#edwinfig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="riess98fig">
@@ -1649,9 +1664,9 @@ in the bottom panel.  At the furthest distances, the galaxies are
 dimmer than expected, implying they are further away than expected,
 implying that the universe has expanded more than a constant expansion
 rate would predict: the expansion of the universe is speeding up!
-(Image available in many sources, e.g. <span id="id16">[<a class="reference internal" href="c15bibliography.html#id29" title="Adam G. Riess. The Case for an Accelerating Universe from Supernovae. PASP, 112(776):1284-1299, October 2000. arXiv:astro-ph/0005229, doi:10.1086/316624.">Riess, 2000</a>]</span>)  The
+(Image available in many sources, e.g. <span id="id16">[<a class="reference internal" href="c15bibliography.html#id30" title="Adam G. Riess. The Case for an Accelerating Universe from Supernovae. PASP, 112(776):1284-1299, October 2000. arXiv:astro-ph/0005229, doi:10.1086/316624.">Riess, 2000</a>]</span>)  The
 full story of the discovery of the acceleration can be read in, e.g.
-<span id="id17">[<a class="reference internal" href="c15bibliography.html#id21" title="R. Kirshner. The Extravagant Universe. Princeton University Press, 2002.">Kirshner, 2002</a>, <a class="reference internal" href="c15bibliography.html#id20" title="M. Livio. The Accelerating Universe. John Wiley and Sons, Inc., 2000.">Livio, 2000</a>]</span>.</span><a class="headerlink" href="#riess98fig" title="Permalink to this image">#</a></p>
+<span id="id17">[<a class="reference internal" href="c15bibliography.html#id22" title="R. Kirshner. The Extravagant Universe. Princeton University Press, 2002.">Kirshner, 2002</a>, <a class="reference internal" href="c15bibliography.html#id21" title="M. Livio. The Accelerating Universe. John Wiley and Sons, Inc., 2000.">Livio, 2000</a>]</span>.</span><a class="headerlink" href="#riess98fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The Big Bang Theory in its entirety extrapolates this currently
@@ -1672,7 +1687,7 @@ solid foundation on which to understand the rest of the theory and the
 story it narrates about our universe.</p>
 </section>
 <section id="problems">
-<h2><span class="section-number">14.5. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">14.5. </span>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>One way to think about a black hole is when all of an object’s mass
 fits inside its event horizon.  This means that for a given mass, a
@@ -1738,8 +1753,8 @@ four million solar masses on the central mass.</p></li>
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="c13introGR.html"
@@ -1767,6 +1782,7 @@ four million solar masses on the central mass.</p></li>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1800,9 +1816,10 @@ By Donald A. Smith and Rex Adelberger
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1826,8 +1843,8 @@ By Donald A. Smith and Rex Adelberger
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -1,9 +1,8 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
@@ -15,53 +14,49 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c5spacetime';</script>
@@ -78,28 +73,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -121,12 +111,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -141,9 +139,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="intro.html">
+  
   
   
   
@@ -153,12 +155,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Introduction to Modern Physics - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Introduction to Modern Physics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -200,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -209,14 +222,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -338,26 +351,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -394,16 +409,16 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="properties-of-spacetime-diagrams">
-<span id="chstdiag"></span><h1><span class="section-number">5. </span>Properties of Spacetime Diagrams<a class="headerlink" href="#properties-of-spacetime-diagrams" title="Permalink to this heading">#</a></h1>
+<span id="chstdiag"></span><h1><span class="section-number">5. </span>Properties of Spacetime Diagrams<a class="headerlink" href="#properties-of-spacetime-diagrams" title="Link to this heading">#</a></h1>
 <p>Now that we have the tools of the displacement four vector, the
 spacetime diagram, and the Lorentz transformation, it is worth taking
 some time to look at what we can learn about the properties of space
 and time by applying these tools to the spacetime diagram.</p>
 <section id="summary-so-far">
-<h2><span class="section-number">5.1. </span>Summary so Far<a class="headerlink" href="#summary-so-far" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.1. </span>Summary so Far<a class="headerlink" href="#summary-so-far" title="Link to this heading">#</a></h2>
 <p>So far in our journey through Special Relativity, we have been
 considering the relative displacement in spacetime of two events, as
 measured in two different inertial frames of reference that are in
@@ -417,11 +432,11 @@ measured as moving to the left, separated by some displacement <span class="math
 and some time interval <span class="math notranslate nohighlight">\(dt'\)</span> (which is different from the time
 interval <span class="math notranslate nohighlight">\(dt_0\)</span> in the rest frame).</p>
 <figure class="align-default" id="fig2events" style="width: 800px">
-<img alt="_images/a3c289315d6e866253fbc08a1c0afbeb1ef6592b58a9f975d32dba07b2fcd1e0.png" src="_images/a3c289315d6e866253fbc08a1c0afbeb1ef6592b58a9f975d32dba07b2fcd1e0.png" />
+<img alt="_images/8f8e69340c786c3f9e739730ccd386c6b0d406a6568f70ce04d65a2cfe929c7d.png" src="_images/8f8e69340c786c3f9e739730ccd386c6b0d406a6568f70ce04d65a2cfe929c7d.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 5.1 </span><span class="caption-text">Two events at rest in an unprimed frame and in a primed frame
 moving to the right (which means the events displace to the left) with a speed
-of <span class="math notranslate nohighlight">\(\beta_R = 0.75\)</span>.</span><a class="headerlink" href="#fig2events" title="Permalink to this image">#</a></p>
+of <span class="math notranslate nohighlight">\(\beta_R = 0.75\)</span>.</span><a class="headerlink" href="#fig2events" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>For two events at rest, we call the time interval between them the proper time, <span class="math notranslate nohighlight">\(dt_0\)</span>,
@@ -438,7 +453,7 @@ be the size of the displacement four vector in the S’ frame as well, which mea
 \[dt_0^2 = dt^{'2} (1 - \beta_R^2)\]</div>
 <p>and if we take <span class="math notranslate nohighlight">\(\gamma_R^2\equiv 1/(1-\beta_R^2)\)</span>, then</p>
 <div class="math notranslate nohighlight" id="equation-timedilation5">
-<span class="eqno">(5.1)<a class="headerlink" href="#equation-timedilation5" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(5.1)<a class="headerlink" href="#equation-timedilation5" title="Link to this equation">#</a></span>\[\boxed{
 dt' = \gamma_R dt_0
 }\]</div>
 <p>which we call <strong>Time Dilation</strong>, and that is why the blue dot on the
@@ -449,7 +464,7 @@ intuition about the implications that SR demands, which are so contrary to
 our day to day experience.</p>
 </section>
 <section id="types-of-intervals">
-<h2><span class="section-number">5.2. </span>Types of Intervals<a class="headerlink" href="#types-of-intervals" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.2. </span>Types of Intervals<a class="headerlink" href="#types-of-intervals" title="Link to this heading">#</a></h2>
 <p>In the list of principles that SR demands is the insistance that an
 observer can never “just know” what is going on somewhere else.  Since
 in many frames of reference two events are separated by some spatial
@@ -515,7 +530,7 @@ a <span class="math notranslate nohighlight">\(\Delta t\)</span>, as described i
 well as the interval you get from the displacement four vector
 are shown on the diagram.  Move the slider to move <span class="math notranslate nohighlight">\(q\)</span> up and down
 relative to <span class="math notranslate nohighlight">\(p\)</span>, and click the box to turn light cones for <span class="math notranslate nohighlight">\(p\)</span> on
-and off.</span><a class="headerlink" href="#figinterval" title="Permalink to this image">#</a></p>
+and off.</span><a class="headerlink" href="#figinterval" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Given such a setup, the observer can define two time intervals, which
@@ -540,11 +555,11 @@ get, and the earlier the blue dot shifts, the more negative <span class="math no
 should get.  Therefore, our observer can conclude that the temporal
 displacement between the red and blue dots is</p>
 <div class="math notranslate nohighlight" id="equation-cdtp5">
-<span class="eqno">(5.2)<a class="headerlink" href="#equation-cdtp5" title="Permalink to this equation">#</a></span>\[dt' = \frac{t_1-t_2}{2}\]</div>
+<span class="eqno">(5.2)<a class="headerlink" href="#equation-cdtp5" title="Link to this equation">#</a></span>\[dt' = \frac{t_1-t_2}{2}\]</div>
 <p>The total time to go out and back is <span class="math notranslate nohighlight">\(t_1+t_2\)</span>.  At the speed of
 light, the distance traveled would be duration times speed, so</p>
 <div class="math notranslate nohighlight" id="equation-cdxp5">
-<span class="eqno">(5.3)<a class="headerlink" href="#equation-cdxp5" title="Permalink to this equation">#</a></span>\[dx' = c\frac{t_1+t_2}{2}\]</div>
+<span class="eqno">(5.3)<a class="headerlink" href="#equation-cdxp5" title="Link to this equation">#</a></span>\[dx' = c\frac{t_1+t_2}{2}\]</div>
 <p>These numbers are also displayed in <a class="reference internal" href="#figinterval"><span class="std std-numref">Fig. 5.2</span></a> (without the primes),
 using units where <span class="math notranslate nohighlight">\(c=1\)</span>, for simplicity.
 The numbers in the diagram have been calculated from <span class="math notranslate nohighlight">\(t_1\)</span> and <span class="math notranslate nohighlight">\(t_2\)</span>,
@@ -671,7 +686,7 @@ the world line of the Earth, and only then would the horrific darkness
 and bitter cold ensue.  So enjoy your eight minutes!</p>
 </section>
 <section id="how-do-the-axes-change">
-<h2><span class="section-number">5.3. </span>How do the Axes Change?<a class="headerlink" href="#how-do-the-axes-change" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.3. </span>How do the Axes Change?<a class="headerlink" href="#how-do-the-axes-change" title="Link to this heading">#</a></h2>
 <p>Consider the vertical and horizontal axes in a spacetime diagram.
 Each point on either axis is itself an event, with a coordinate of
 <span class="math notranslate nohighlight">\(x=0\)</span> or <span class="math notranslate nohighlight">\(t=0\)</span>.  So an axis on a spacetime diagram is the set of
@@ -724,7 +739,7 @@ a Lorentz transformation.  We can ask, of all the points <span class="math notra
 in the spacetime plane, which ones will end up having <span class="math notranslate nohighlight">\(x'=0\)</span> in the
 primed frame?  The transformation looks like:</p>
 <div class="math notranslate nohighlight" id="equation-axistrans5">
-<span class="eqno">(5.4)<a class="headerlink" href="#equation-axistrans5" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
+<span class="eqno">(5.4)<a class="headerlink" href="#equation-axistrans5" title="Link to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
 ict'\\
 x'
 \end{bmatrix}
@@ -783,12 +798,12 @@ and the arrows will tilt to indicate which events will end up on the
 axes of the primed frame, were you to redraw the diagram in the new
 frame.  Note that the sets of events tilt together as you increase the
 relative velocity to the right.  The original axes remain where they
-were, indicated by white arrows.</span><a class="headerlink" href="#figaxestilt" title="Permalink to this image">#</a></p>
+were, indicated by white arrows.</span><a class="headerlink" href="#figaxestilt" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="simultaneity-is-relative">
-<h2><span class="section-number">5.4. </span>Simultaneity is Relative<a class="headerlink" href="#simultaneity-is-relative" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.4. </span>Simultaneity is Relative<a class="headerlink" href="#simultaneity-is-relative" title="Link to this heading">#</a></h2>
 <p>The behavior of the vertical axis is easy to understand just by
 imagining someone walking.  The faster you walk, the further apart in
 space the events that you pass by will be, and therefore your worldline
@@ -848,7 +863,7 @@ you think of as “simultaneous” will depend on what reference frame
 you are in.</p>
 </section>
 <section id="conclusions-from-sets-of-events">
-<h2><span class="section-number">5.5. </span>Conclusions from Sets of Events<a class="headerlink" href="#conclusions-from-sets-of-events" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.5. </span>Conclusions from Sets of Events<a class="headerlink" href="#conclusions-from-sets-of-events" title="Link to this heading">#</a></h2>
 <p>To sum up what we have learned about spacetime from exploring how
 these diagrams change under Lorentz transformations, I have created
 one more interactive diagram, shown in  <a class="reference internal" href="#fig16events"><span class="std std-numref">Fig. 5.4</span></a>.  This diagram
@@ -889,7 +904,7 @@ change the slider is that the program applies a Lorentz transformation
 to each event and then plots the 16 events in a new reference frame.
 Each time you change the slider, you are changing to a new reference
 frame.  Certain points are marked in color, and the implications of
-how they shift are discussed in the text.</span><a class="headerlink" href="#fig16events" title="Permalink to this image">#</a></p>
+how they shift are discussed in the text.</span><a class="headerlink" href="#fig16events" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>As you change the relative speed of the primed frame, these sixteen
@@ -964,6 +979,13 @@ ago and the front end of the car now, then you are including the
 distance driven by the car during those ten seconds as part of the
 length of the car, which is not the way we usually would think of the
 length of the car.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It might be useful to look at <a class="reference external" href="https://alexonscience.com/projects/spacetimeglobe/">this interactive
+version</a> of
+<a class="reference internal" href="#fig16events"><span class="std std-numref">Fig. 5.4</span></a> – it lets you add your own events and see how
+they shift around under Lorentz transformations.</p>
+</div>
 <p>Instead, we must consider the magenta event, which is simultaneous in
 <strong>this</strong> reference frame with the cyan event.  Since it was at the end
 of the object in the original frame, it must also be at the end of the
@@ -973,16 +995,9 @@ and magenta events, which you can see from the trails is smaller than
 the spatial displacement between cyan and blue in the original frame
 of reference.  Lengths contract.  We will work out examples of length
 contraction more thoroughly in <a class="reference internal" href="c6displacement.html#ch4disp"><span class="std std-ref">the next chapter</span></a>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>It might be useful to look at <a class="reference external" href="https://alexonscience.com/projects/spacetimeglobe/">this interactive
-version</a> of
-<a class="reference internal" href="#fig16events"><span class="std std-numref">Fig. 5.4</span></a> – it lets you add your own events and see how
-they shift around under Lorentz transformations.</p>
-</div>
 </section>
 <section id="hyperbolic-rotation-and-rapidity">
-<h2><span class="section-number">5.6. </span>Hyperbolic Rotation and Rapidity<a class="headerlink" href="#hyperbolic-rotation-and-rapidity" title="Permalink to this heading">#</a></h2>
+<span id="sechyperot"></span><h2><span class="section-number">5.6. </span>Hyperbolic Rotation and Rapidity<a class="headerlink" href="#hyperbolic-rotation-and-rapidity" title="Link to this heading">#</a></h2>
 <p>It might, when you move the slider in <a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 5.3</span></a>, remind
 you of rotation.  Certainly there is rotation going on – the axes are
 swinging around the origin.  But it’s also clearly not the kind of
@@ -999,7 +1014,7 @@ can even mathematically make it look like a rotation.  Recall that when
 we rotated the coordinate axes around the <span class="math notranslate nohighlight">\(z\)</span> axis, we determined how
 that would affect a vector by multiplying the vector by a matrix:</p>
 <div class="math notranslate nohighlight" id="equation-normalrot">
-<span class="eqno">(5.5)<a class="headerlink" href="#equation-normalrot" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{pmatrix}
+<span class="eqno">(5.5)<a class="headerlink" href="#equation-normalrot" title="Link to this equation">#</a></span>\[\begin{split}\begin{pmatrix}
 v_x'\\
 v_y'\\
 v_z'
@@ -1018,7 +1033,7 @@ v_z
 <p>When you multiply that out, you
 get</p>
 <div class="math notranslate nohighlight" id="equation-rotang">
-<span class="eqno">(5.6)<a class="headerlink" href="#equation-rotang" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{pmatrix}
+<span class="eqno">(5.6)<a class="headerlink" href="#equation-rotang" title="Link to this equation">#</a></span>\[\begin{split}\begin{pmatrix}
 v_x'\\
 v_y'\\
 v_z'
@@ -1053,20 +1068,20 @@ them to find <span class="math notranslate nohighlight">\(\cosh^2-\sinh^2 = 1\)<
 the right).  Since <span class="math notranslate nohighlight">\(\tanh = \sinh/\cosh\)</span>, we can square both sides and substitute
 for <span class="math notranslate nohighlight">\(\sinh^2 = \cosh^2-1\)</span> to get</p>
 <div class="math notranslate nohighlight" id="equation-tanh">
-<span class="eqno">(5.7)<a class="headerlink" href="#equation-tanh" title="Permalink to this equation">#</a></span>\[\tanh^2{\phi} = \frac{\cosh^2{\phi} -1}{\cosh^2{\phi}} = 1 - \frac{1}{\cosh^2{\phi}} = \beta^2\]</div>
+<span class="eqno">(5.7)<a class="headerlink" href="#equation-tanh" title="Link to this equation">#</a></span>\[\tanh^2{\phi} = \frac{\cosh^2{\phi} -1}{\cosh^2{\phi}} = 1 - \frac{1}{\cosh^2{\phi}} = \beta^2\]</div>
 <p>But we already know that <span class="math notranslate nohighlight">\(\beta^2 = 1 - 1/\gamma^2\)</span>, from the definition
 of <span class="math notranslate nohighlight">\(\gamma\)</span>, so <span class="math notranslate nohighlight">\(\cosh{\phi} = \gamma\)</span>!</p>
 <p>Finally, since <span class="math notranslate nohighlight">\(\cosh{\phi} = \gamma\)</span> and
 <span class="math notranslate nohighlight">\(\sinh^2{\phi} = \cosh^2{\phi}-1\)</span>, then</p>
 <div class="math notranslate nohighlight" id="equation-sinh">
-<span class="eqno">(5.8)<a class="headerlink" href="#equation-sinh" title="Permalink to this equation">#</a></span>\[\sinh^2{\phi} = \gamma^2-1 = \frac{1}{1-\beta^2}-1 = \frac{1-(1-\beta^2)}{1-\beta^2}
+<span class="eqno">(5.8)<a class="headerlink" href="#equation-sinh" title="Link to this equation">#</a></span>\[\sinh^2{\phi} = \gamma^2-1 = \frac{1}{1-\beta^2}-1 = \frac{1-(1-\beta^2)}{1-\beta^2}
 = \frac{\beta^2}{1-\beta^2}
 = \beta^2\gamma^2\]</div>
 <p>So <span class="math notranslate nohighlight">\(\sinh{\phi} = \beta\gamma\)</span> and <span class="math notranslate nohighlight">\(\cosh{\phi} = \gamma\)</span>.
 But <span class="math notranslate nohighlight">\(\gamma\)</span> and <span class="math notranslate nohighlight">\(\beta\gamma\)</span> are just the elements of the Lorentz
 transformation matrix!  This means we can write the Lorentz matrix as</p>
 <div class="math notranslate nohighlight" id="equation-lortrapid">
-<span class="eqno">(5.9)<a class="headerlink" href="#equation-lortrapid" title="Permalink to this equation">#</a></span>\[\begin{split}{\cal L}_x(\phi) =
+<span class="eqno">(5.9)<a class="headerlink" href="#equation-lortrapid" title="Link to this equation">#</a></span>\[\begin{split}{\cal L}_x(\phi) =
 \begin{bmatrix}
 \cosh{\phi} &amp; -i\sinh{\phi} &amp; 0&amp; 0\\
 i\sinh{\phi} &amp; \cosh{\phi} &amp; 0&amp; 0\\
@@ -1094,7 +1109,7 @@ spacetime.</p>
 <p>The letter <span class="math notranslate nohighlight">\(\phi\)</span> in these equations is called the “rapidity”, and it depends on
 <span class="math notranslate nohighlight">\(\beta\)</span> as</p>
 <div class="math notranslate nohighlight" id="equation-rapidity">
-<span class="eqno">(5.10)<a class="headerlink" href="#equation-rapidity" title="Permalink to this equation">#</a></span>\[\phi = \ln{\left(\sqrt{\frac{1+\beta}{1-\beta}}\right)}\]</div>
+<span class="eqno">(5.10)<a class="headerlink" href="#equation-rapidity" title="Link to this equation">#</a></span>\[\phi = \ln{\left(\sqrt{\frac{1+\beta}{1-\beta}}\right)}\]</div>
 <p>However, despite the trig functions, don’t get confused and think that
 <span class="math notranslate nohighlight">\(\phi\)</span> is an angle in the regular sense of how you think of that term.
 In Equation <a class="reference internal" href="#equation-normalrot">(5.5)</a>, the letter <span class="math notranslate nohighlight">\(\theta\)</span> corresponds to the
@@ -1118,7 +1133,7 @@ could save a lot of number crunching, as the Lorentz matrices do NOT
 add this simply if you use <span class="math notranslate nohighlight">\(\beta\)</span> and <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
 </section>
 <section id="problems">
-<h2><span class="section-number">5.7. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.7. </span>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>According to observers in a reference frame at rest with respect to
 both the Earth and a star 3.25 LY away, an astronaut on a spaceship
@@ -1214,8 +1229,8 @@ light cones from the original event?</p></li>
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="c4lorentztrans.html"
@@ -1243,6 +1258,7 @@ light cones from the original event?</p></li>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1278,9 +1294,10 @@ By Donald A. Smith and Rex Adelberger
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1304,8 +1321,8 @@ By Donald A. Smith and Rex Adelberger
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

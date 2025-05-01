@@ -22,6 +22,7 @@ from myst_nb import glue
 
 ```
 
+(chForce)=
 # Relativistic Force and Acceleration
 
 ## Background
@@ -38,15 +39,22 @@ quantities such as mass, electrical charge, etc.
 
 Newton suggested that if one calculates the vector sum of
 all the forces acting on the object, then this net force
+equals the rate of change of the momentum of the object.
+Mathematically,
 ```{math}
 :label: Newton2nd
-\vec{F}_{\rm net} = \Sigma_n \vec{F}_n =
+\vec{F}_{\rm net} = \sum_n \vec{F}_n =
 \frac{d\vec{p}}{dt} = \frac{d(m\vec{v})}{dt}
 ```
 
 where $m$ is the mass of the slow moving object, $\vec{v}$ is the
 velocity relative to the observer of the object and $dt$ is the
-(infinitesimal) time interval. While this model worked well for the
+(infinitesimal) time interval.  If the net force is zero, the momentum
+will remain constant.  If we can take $m$ to be a constant, the last
+term becomes mass time acceleration, or the famous $\vec{F}=m\vec{a}$.
+This encapsulates Newton's first and second laws of motion.
+
+While this model worked well for the
 speeds that were known in the 1700s, its application to objects moving
 near the speed of light has some problems. One problem is with the
 $dt$ term. As we know now, $dt$ depends on the reference frame of the
@@ -61,6 +69,14 @@ very large speeds, but we now know that nothing can move faster than
 $c$, the speed limit of the universe.  Equation {eq}`Newton2nd` has
 no built in speed limit.
 
+Third, the relativity of simultaneity means that Newton's Third Law
+can no longer be relied upon.  If every force is to be paired with
+a reverse force that acts at the same time, that simultaneity may
+no longer be valid in all reference frames, and one could imagine
+a reference frame in which the interacting forces are no longer
+simultaneous and therefore not balancing each other out.  Only
+constant forces could consistently maintain reciprocity.
+
 To fix these problems, we need to cast Equation {eq}`Newton2nd` in
 four-vector form.  Then we can predict the acceleration of objects
 near the speed of light and characterize their motion.  But before
@@ -70,12 +86,12 @@ deeply into the mechanics of energy and motion.
 
 ## Dynamics from the Lorentz Factor
 
-We originally derived the Lorentz factor as a way to keep the speed of
-light constant in all relatively moving reference frames, leading to
-an interpretation of the factor as a ratio of the time interval
-between two events in the same location to the time interval between
-those same two events in a relatively moving reference frame (aka time
-dilation).
+We originally derived the Lorentz factor back in {numref}`secGamma` as
+a way to keep the speed of light constant in all relatively moving
+reference frames, leading to an interpretation of the factor as a
+ratio of the time interval between two events in the same location to
+the time interval between those same two events in a relatively moving
+reference frame (aka time dilation).
 
 As we expanded our understanding of the process of characterizing
 space, time, and motion as observed in reference frames in relative
@@ -125,6 +141,17 @@ dE = \vec{v} \cdot d\vec{p} = d\vec{r} \cdot \frac{d\vec{p}}{dt} = \vec{F} \cdot
 ```
 So the work-kinetic energy theorem could be said to be contained right inside
 the Lorentz factor from the beginning!
+
+This derivation sometimes seems a little magical, because the introduction
+of such things as $m_0$ seems arbitrary at the moment.  It is perhaps
+useful to start with the work-energy theorem (Equation {eq}`workKE`) and
+work backwards to see how the Lorentz factor falls out of it, rather
+than the other way around.  It's not magic; it's that the Lorentz factor
+ties together space, time, and motion, and once you throw mass into the
+mix, that brings in energy as well, so this is just a beautiful, if perhaps
+startling, example of how the universal speed limit ties concepts together
+for self-consistency, even when we think down here in our world of slow
+speeds that these concepts are independent.
 
 ## Newton's Second Law with Four Vectors
 
@@ -273,61 +300,109 @@ It's interesting to note that although $\vec{F}\cdot\vec{v}$ is
 power, and has dimensions of energy per time, $\vec{F}\cdot\vec{\beta}$
 has dimensions of force, and yet it is **telling** us the power,
 because all you need to do is multiply $K^0$ by $c/\gamma$ and you
-get the power.
+get the power.  This is analogous to expressing time in units
+of distance (like in a spacetime diagram) through
+multiplication by the speed of light. 
 ```
 
+## The Size of the Minkowski Force
 
+With all the other four-vectors we have explored so far, it was useful
+to take advantage of the fact that their sizes are Lorentz invariants.
+For the displacement four-vector, the size was $-c^2dt_0^2$, the proper
+time.  The size of the velocity was $-c^2$ and the four-beta was simply
+$-1$.  For the four-momentum we got a size of $-m_0^2c_2$.  The size
+of the Minkowski Force is nowhere near as simple, but the fact that
+it is still Lorentz invariant leads to interesting implications.
 
-### Example 10.1
-
-Calculate the Minkowski force exerted on an electron traveling
-vertically upward near the surface of the earth with $\beta = 0.866$.
-
-Solution: Let the $z$ axis be vertical with the positive value
-pointing up. Near the surface of the earth, the electron experiences a
-gravitational force $\vec{F}_g = m\vec{g} = -m\times9.81~{\rm
-N/kg}~\hat{z}$.  The mass of the electron has a value of
-$(9.10938188\pm0.00000072)\times 10^{-31}$ kg.  The force exerted by
-gravity on the electron is therefore:
+To get the size of the Minkowski force, we do the same thing we've always
+done -- square each term and add them up:
 ```{math}
-:label: Fgemin
-\vec{F}_g = (9.11\times10^{-31}~{\rm kg})\times(9.81~{\rm N/kg})(-\hat{z})
-= 8.93\times10^{-30}~{\rm N}(-\hat{z})
+:label: sizeK4setup
+[K_4]^2 = K^{02} + \gamma^2F^2,
 ```
-```{margin}
-Always good to remember that for $\beta=0.866$, $\gamma=2$
-```
-Since the force is pointing only in the $-\hat{z}$ direction, the
-$F_x$ and $F_y$ components are zero. Using Equation {eq}`M4forcefin` we
-now can find the spatial components of $[K_4]$ by calculating the
-value of $\gamma$ when $\beta=0.866$.  $K_x$ and $K_y$ are therefore
-zero, but $K_z = \gamma m g$, or $-1.78\times10^{-29}~{\rm N}$.  Since
-the motion is in the $+\hat{z}$ direction, the time component becomes:
+where we take $F$ to be the magnitude of the regular three-fource
+($F_x^2+F_y^2+F_z^2$).
+We plug in the zeroth component from Equation {eq}`Ktime` to get
 ```{math}
-:label: Fgtime
-K^0 = i\gamma F_g(-\hat{z}) \cdot (\beta \hat{z}) =
--i (2.00 \times 8.93\times10^{-30}~{\rm N} \times 0.866) =
-- i 1.54\times10^{-29}~{\rm N}
+:label: sizeK4
+[K_4]^2 = -\gamma^2(\vec{F}\cdot\vec{\beta})^2 + \gamma^2F^2=
+\frac{1-\beta^2\cos^2{\theta}}{1-\beta^2}~F^2,
 ```
-Combining these results gives the Minkowski force:
+using the dot product such that $\theta$ is the angle between
+$\vec{F}$ and $\vec{\beta}$ (in this frame).  This looks much
+more complicated than the four-vector sizes we've seen before,
+but since $[K_4]$ is a four-vector, it must also be Lorentz
+invariant.  In particular, it must be the same value in the
+frame where the particle is instantaneously at rest.  In that
+frame, $\beta=0$, so we just get $F^2$ (it's interesting that
+*this* four-vector size is positive, while all the other ones
+we've seen so far were negative!).
+
+Therefore, if $F^\prime$ is the force in some other frame
 ```{math}
-:label: Fgmink
-[K_4] =
+:label: Ftrans
+F^2 = \frac{1-\beta^2\cos^2{\theta}}{1-\beta^2}~F^{\prime2}.
+```
+This has interesting implications depending on the angle
+between the force and the velocity.  If the force is parallel
+to the velocity, then the cosine is 1 and the fraction cancels
+to one: the force is the same in both frames!  If, on the other
+hand, the force is perpendicular to the motion, then the cosine
+is zero and $F^\prime = F/\gamma$: the perpendicular force in the moving
+frame is smaller than the force in the frame at rest.  This
+will be very important in understanding the relation between
+electricity and magnetism in [the next chapter](chEMten).
+
+## Lorentz Transforming Forces
+
+Another way of thinking about how the forces transform (thanks to
+[Dan Watson](https://www.pas.rochester.edu/~dmw/phy218/) for this
+idea) is to go back to the definition of force as the limit of $\Delta
+\vec{p}/\Delta t$ in the limit as $\Delta t \rightarrow 0$.  We know
+how both momentum and time transform between reference frames, so we
+can see how this limit transforms.
+
+We know going all the way back to Equation {eq}`eqdtp` that
+```{math}
+:label: dttrans
+c\Delta t^\prime = \gamma \left(c\Delta t - \beta \Delta x\right)
+```
+More recently, Equation {eq}`p4p` tells us how to transform the
+three-momentum:
+```{math}
+:label: p3p
+\Delta \vec{p}' =
 \begin{bmatrix}
--i 1.54\times10^{-29}~{\rm N}\\
-0\\
-0\\
--1.78\times10^{-29}~{\rm N}
+\frac{\gamma}{c} (c\Delta p_x-\beta \Delta E)\\
+\Delta p_y\\
+\Delta p_z
 \end{bmatrix}
 ```
-Remember that the actual force experienced by the electron will be
-$K_3/\gamma$, or half the number given in Equation {eq}`Fgmink`,
-because $\gamma=2$ at this speed.  The time component still has units
-of newtons, because $K^0$ has a factor of $1/c$ in it.  If you want
-to know the power delivered to the electron, you have to take the
-$K^0$ term as given in Equation {eq}`Fgmink` (without the $i$, of
-course) and multiply it by $c/\gamma$.  This would imply the electron
-is losing energy at a rate of $2.31\times10^{-21}$ watts.
+Which means we can construct a limit-based definition of force:
+```{math}
+:label: Flim
+F_x^\prime = \lim\limits_{\Delta t,\Delta p \to 0} \frac{\Delta p^\prime}{\Delta t^\prime} =
+\lim\limits_{\Delta t,\Delta p \to 0} \frac{\frac{\gamma}{c} (c\Delta p_x-\beta \Delta E)}{\frac{\gamma}{c} \left(c\Delta t - \beta \Delta x\right)}
+```
+In this case, since we are taking $\Delta t$ to be *very* small, we
+can approximate the acceleration as constant, which means $\Delta x
+\propto \Delta t^2$.  This is second order in $\Delta t$ so in the
+limit, the second term in the denominator will be much smaller than
+the first, and can therefore be ignored.
+
+The numerator is a little more complicated, but consider that the
+work energy theorem lets us connect the change in energy to $\Delta x$,
+which is again second order in $\Delta t$.  We can therefore drop that,
+too.  The terms out front cancel, and $F_x^\prime = F_x$, the same
+result we got from the size of the Minkowski force.
+
+For the perpendicular directions, the denominator is unchanged, but the
+numerator is now just $\Delta p_y$ (or $z$, of course).  This
+means that although we can discount the $\beta\Delta x$ as being too
+small, we cannot cancel the $\gamma$ out front.  Therefore $F_y^\prime
+= F_y/\gamma$, which is also the same result we derived from the
+size of Minkowski force.
 
 ## The Acceleration Four Vector
 
@@ -588,7 +663,7 @@ is a constant, so $dv_x$ has to go to zero to balance the $\gamma$ and
 keep $dE$ constant.  The same energy input causes a smaller and
 smaller change in velocity.  As long as $v_x\ll c$, then
 $\gamma\approx 1$ and then you could simply integrate both
-sides to get $\Delta E = 1/2 m_0 \Delta (v_x^2)$
+sides to get $\Delta E = \frac{1}{2} m_0 \Delta (v_x^2)$
 This is what your newtonian intuition would expect for increasing
 kinetic energy.
 However, as $v_x\rightarrow c$, that intuition is no longer accurate.
@@ -599,9 +674,178 @@ directions, as well as the force having all three components is very
 complicated, as $\beta$ and $\gamma$ have all three components of the
 velocity in them. In general, the force and the acceleration will not
 be in the same direction, something that does not happen in classical
-physics.
+physics.  This is the resolution of the dilemma we first encountered
+at the end of {numref}`Chapter %s <ch4vel>`.
+
+## Examples 
+
+### Example 10.1
+
+Calculate the Minkowski force exerted on an electron traveling
+vertically upward near the surface of the earth with $\beta = 0.866$.
+
+Solution: Let the $z$ axis be vertical with the positive value
+pointing up. Near the surface of the earth, the electron experiences a
+gravitational force $\vec{F}_g = m\vec{g} = -m\times9.81~{\rm
+N/kg}~\hat{z}$.  The mass of the electron has a value of
+$(9.10938188\pm0.00000072)\times 10^{-31}$ kg.  The force exerted by
+gravity on the electron is therefore:
+```{math}
+:label: Fgemin
+\vec{F}_g = (9.11\times10^{-31}~{\rm kg})\times(9.81~{\rm N/kg})(-\hat{z})
+= 8.93\times10^{-30}~{\rm N}(-\hat{z})
+```
+```{margin}
+Always good to remember that for $\beta=0.866$, $\gamma=2$
+```
+Since the force is pointing only in the $-\hat{z}$ direction, the
+$F_x$ and $F_y$ components are zero. Using Equation {eq}`M4forcefin` we
+now can find the spatial components of $[K_4]$ by calculating the
+value of $\gamma$ when $\beta=0.866$.  $K_x$ and $K_y$ are therefore
+zero, but $K_z = \gamma m g$, or $-1.78\times10^{-29}~{\rm N}$.  Since
+the motion is in the $+\hat{z}$ direction, the time component becomes:
+```{math}
+:label: Fgtime
+K^0 = i\gamma F_g(-\hat{z}) \cdot (\beta \hat{z}) =
+-i (2.00 \times 8.93\times10^{-30}~{\rm N} \times 0.866) =
+- i 1.54\times10^{-29}~{\rm N}
+```
+Combining these results gives the Minkowski force:
+```{math}
+:label: Fgmink
+[K_4] =
+\begin{bmatrix}
+-i 1.54\times10^{-29}~{\rm N}\\
+0\\
+0\\
+-1.78\times10^{-29}~{\rm N}
+\end{bmatrix}
+```
+Remember that the actual force experienced by the electron will be
+$K_3/\gamma$, or half the number given in Equation {eq}`Fgmink`,
+because $\gamma=2$ at this speed.  The time component still has units
+of newtons, because $K^0$ has a factor of $1/c$ in it.  If you want
+to know the power delivered to the electron, you have to take the
+$K^0$ term as given in Equation {eq}`Fgmink` (without the $i$, of
+course) and multiply it by $c/\gamma$.  This would imply the electron
+is losing energy at a rate of $2.31\times10^{-21}$ watts.
+
 
 ### Example 10.2
+
+Another way to examine the four-acceleration in action is to consider
+the trajectory of a particle starting from rest and experiencing a
+constant force in x direction (This example is adapted from
+{cite}`griffiths23`).  In Newtonian mechanics, we would expect the
+particle to undergo a constant acceleration of $a=F/m_0$, and
+therefore have a velocity of $v(t) = Ft/m_0$.  If we place the origin
+at the starting location of the particle, the particle position as
+a function of time would be a parabola $x(t) = Ft^2/2m_0$.
+
+Of course, we now know that $v(t)$ cannot, in fact increase forever,
+and as the graph in {numref}`constaccfig` shows, it must level off at
+$v=c$.  We can use our new tools to derive a more accurate trajectory
+of $x(t)$ that will take this speed limit into account.
+
+We start with Newton's second law in one dimension, understanding that
+we are treating it as relativistic from the beginning: $F=dp/dt$.
+If $F$ is a constant, we can integrate both sides to get $p(t) = Ft$.
+However, we can't just divide through by $m_0$ to get the classical
+result, because there is also a factor of $\gamma$ inside the $p$!
+We therefore get the slightly more complicated version of
+```{math}
+:label: speedvst
+\frac{v}{\sqrt{1-\frac{v^2}{c^2}}} = \frac{Ft}{m_0}
+```
+Solve for $v$ to get
+```{math}
+:label: vsolveone
+v^2 = \frac{F^2t^2}{c^2m_0^2}(c^2-v^2) \rightarrow v^2\left(1+ \frac{F^2t^2}{c^2m_0^2}\right) =  \frac{F^2t^2}{m_0^2}
+```
+or
+```{math}
+:label: vsolve
+v =  \frac{dx}{dt} = \frac{\frac{Ft}{m_0}}{\sqrt{1+\frac{F^2t^2}{c^2m_0^2}}}
+```
+We can move the $dt$ over to the right side and integrate both sides.
+```{math}
+:label: xintegralone
+x(t)-x(0) = \frac{F}{m_0} \int_0^t \frac{z~dz}{\sqrt{1+\frac{F^2z^2}{c^2m_0^2}}},
+```
+where $z$ is a dummy variable standing in for the time dependence.
+This is a u-substitution integral, using $u(z) = 1+F^2z^2/m_0^2c^2$.
+Then $du = 2F^2 z dz/m_0^2c^2$ and the integral becomes
+```{math}
+:label: xintegral
+x(t)-x(0) = \frac{F}{m_0} \frac{m_0^2c^2}{2F^2} \int_0^{u(t)} u^{-1/2}~du = \frac{m_0c^2}{2F}~2u^{1/2} =  \frac{m_0c^2}{F}\sqrt{1+F^2t^2/m_0^2c^2}
+```
+We can simplify a little bit to get
+```{math}
+:label: xvst
+\boxed{
+x(t)-x(0) = \frac{c}{F}\sqrt{m_0^2c^2+F^2t^2}}
+```
+Note that as $t\rightarrow\infty$, this turns into $x(t)\rightarrow
+ct$ (the square root becomes just $Ft$ and the $F$ cancels), which is
+linear and has a slope of $c$.  The speed limit of the universe is
+thus preserved.  The correspondance principle also holds, because for
+very small values of $t$, we can use a Taylor expansion to write the
+square root (in the form expressed in Equation {eq}`xintegral`) as
+$1+F^2t^2/2m_0^2c^2$.  Multiply through the $m_0c^2/F$ to get
+```{math}
+:label: xcorresp
+x(t)-x(0) \approx  \frac{m_0c^2}{F} + \frac{1}{2}\frac{F}{m_0}t^2
+```
+We can interpret the first term as simply the position of the particle at
+$t=0$ and subtract it off, but the second term is precisely what
+Newton would have predicted.  {numref}`pcompfig` shows the functional
+form of Equation {eq}`xvst` as a magenta line, while the classical
+Newtonian parabola is the blue curve.  To guide your eye, a speed
+of light trajectory is shown as a red dotted line.  Note that the
+two solid curves coincide at small values of $t$, as the correspondence
+principle says they should, but they diverge as the speeds get larger.
+The magenta curve eventually becomes parallel to the red dotted
+line as the slope approaches $c$.
+
+
+```{code-cell}
+:tags: ["remove-cell"]
+F = .5
+c = 1
+m = 0.5
+
+
+t = np.linspace(0,5,200)
+xclass = 0.5*F*t**2/m
+xrel = c/F*(-m*c + np.sqrt(m**2*c**2+F**2*t**2))
+
+fig = plt.figure(figsize=(10,10))
+plt.plot(t,xclass,'b-',label='Classical Parabola')
+plt.plot(t,xrel,'m-',label='Relativistic Hyperbola')
+plt.plot([t[-1]-xrel[-1],t[-1]],[-0.2,xrel[-1]-0.2],'r:',label='Light Speed Motion')
+ax = plt.gca()
+ax.set_ylim([0, 5])
+ax.set_xlim([0, 5])
+ax.set_aspect('equal', adjustable='box')
+plt.xlabel('Time')
+plt.ylabel('Position')
+plt.legend()
+glue("xposgfig", fig, display=False)
+```
+
+```{glue:figure} xposgfig
+:figwidth: 800px
+:name: pcompfig
+
+A graph of $x$ as a function of time (in arbitrary units)
+under constant acceleration,
+comparing the parabola predicted by classical physics with the
+hyperbola predicted by relativistic physics.  The red dotted line
+is what you would expect a particle moving at the constant speed
+of $c$ to do.
+```
+
+### Example 10.3
 
 An electron, traveling in the $+x$ direction with $\beta = 0.8666$, is
 subjected to an electric field that exerts a force (as measured in the
@@ -632,7 +876,7 @@ $\gamma = 2$, so $\gamma^3=8$.  The Newtonian model is eight times too fast.
 a_{\rm Einst} = \frac{F_x}{\gamma^3m_0} = \frac{1}{8}1.098\times10^{17}~{\rm m/s}^2
 = 1.372\times10^{16}~{\rm m/s}^2
 ```
-The acceleration is down by afactor of 8, but it still is incomprehensibly fast.
+The acceleration is down by a factor of 8, but it still is incomprehensibly fast.
 
 c) The energy required to increase the speed by 1000 m/sec (an
 increase in speed of only 10 parts per million) is found with Equation {eq}`dE`:
@@ -653,6 +897,8 @@ it costs to get less speed.
 
 
 ## Problems
+
+
 
 1) An electron, with electrical charge $q_e = 1.602\times10^{-19}$
 couloumbs, is traveling at speed $\beta = .9999980$ in the horizontal
@@ -748,3 +994,11 @@ and velocity four-vectors, and verify that you do indeed get a
 parabola.
 
 c) Increase speed -- is this useful?  Try it myself.
+
+5) Equation {eq}`v4dotF4comp` shows that four-velocity and the
+Minkowski force are orthogonal.  Since $[K_4]=m_0[a_4]$, the
+four-velocity and the four-acceleration should also be orthogonal.
+Show that works with Equation {eq}`acc4dgam`.
+
+6) Show that taking the time derivative of Equation {eq}`vsolve` will
+indeed get you Equation {eq}`relacc`.

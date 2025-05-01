@@ -697,6 +697,14 @@ distance driven by the car during those ten seconds as part of the
 length of the car, which is not the way we usually would think of the
 length of the car.
 
+
+```{note}
+It might be useful to look at [this interactive
+version](https://alexonscience.com/projects/spacetimeglobe/) of
+{numref}`fig16events` -- it lets you add your own events and see how
+they shift around under Lorentz transformations.
+```
+
 Instead, we must consider the magenta event, which is simultaneous in
 **this** reference frame with the cyan event.  Since it was at the end
 of the object in the original frame, it must also be at the end of the
@@ -707,13 +715,8 @@ the spatial displacement between cyan and blue in the original frame
 of reference.  Lengths contract.  We will work out examples of length
 contraction more thoroughly in [the next chapter](ch4disp).
 
-```{note}
-It might be useful to look at [this interactive
-version](https://alexonscience.com/projects/spacetimeglobe/) of
-{numref}`fig16events` -- it lets you add your own events and see how
-they shift around under Lorentz transformations.
-```
 
+(sechyperot)=
 ## Hyperbolic Rotation and Rapidity
 
 It might, when you move the slider in {numref}`figaxestilt`, remind

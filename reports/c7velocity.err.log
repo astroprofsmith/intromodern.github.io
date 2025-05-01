@@ -1,48 +1,82 @@
 Traceback (most recent call last):
-  File "/Users/dsmith4/anaconda3/lib/python3.10/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+  File "/Users/dsmith4/anaconda3/lib/python3.11/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
     executenb(
-  File "/Users/dsmith4/anaconda3/lib/python3.10/site-packages/nbclient/client.py", line 1204, in execute
+  File "/Users/dsmith4/anaconda3/lib/python3.11/site-packages/nbclient/client.py", line 1305, in execute
     return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
-  File "/Users/dsmith4/anaconda3/lib/python3.10/site-packages/nbclient/util.py", line 84, in wrapped
-    return just_run(coro(*args, **kwargs))
-  File "/Users/dsmith4/anaconda3/lib/python3.10/site-packages/nbclient/util.py", line 62, in just_run
-    return loop.run_until_complete(coro)
-  File "/Users/dsmith4/anaconda3/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dsmith4/anaconda3/lib/python3.11/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dsmith4/anaconda3/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
     return future.result()
-  File "/Users/dsmith4/anaconda3/lib/python3.10/site-packages/nbclient/client.py", line 663, in async_execute
+           ^^^^^^^^^^^^^^^
+  File "/Users/dsmith4/anaconda3/lib/python3.11/site-packages/nbclient/client.py", line 705, in async_execute
     await self.async_execute_cell(
-  File "/Users/dsmith4/anaconda3/lib/python3.10/site-packages/nbclient/client.py", line 965, in async_execute_cell
+  File "/Users/dsmith4/anaconda3/lib/python3.11/site-packages/nbclient/client.py", line 1058, in async_execute_cell
     await self._check_raise_for_error(cell, cell_index, exec_reply)
-  File "/Users/dsmith4/anaconda3/lib/python3.10/site-packages/nbclient/client.py", line 862, in _check_raise_for_error
+  File "/Users/dsmith4/anaconda3/lib/python3.11/site-packages/nbclient/client.py", line 914, in _check_raise_for_error
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-betar = np.arange(-0.95,1.0,0.01)
-gamr = 1/np.sqrt(1-betar**2)
-th = np.pi/4
-beta = 0.866
-denom = 1-betar*beta*np.cos(th)
-bpx = (beta*np.cos(th)-betar)/denom
-bpy = beta*np.sin(th)/gamr/denom
-bp = np.sqrt(bpx**2+bpy**2)
-bpnosr = np.sqrt(((beta*np.cos(th)-betar)**2+(beta*np.sin(th))**2)
-plt.figure(figsize=(9,5))
-plt.plot(betar,bp,'m-',label='Total Magnitude')
-plt.plot(betar,bpx,'b-',label='Horizontal Component')
-plt.plot(betar,bpy,'r-',label='Vertical Component')
-plt.plot(betar,bpnosr,'g.-',label='Newtonian Answer')
-plt.plot([-1,1],[0,0],'k:')
-plt.plot([beta,beta],[-1,1],'k:')
-plt.xlabel('Relative velocity between frames')
-plt.ylabel('Speed of object in primed frame')
-plt.legend()
-plt.show()
+@interact
+def plotoffax(betar):
+    gamr = 1/np.sqrt(1-betar**2)
+    th = np.pi/4
+    beta = 0.866
+    denom = 1-betar*beta*np.cos(th)
+    bpx = (beta*np.cos(th)-betar)/denom
+    bpy = beta*np.sin(th)/gamr/denom
+    plt.arrow(0,0,bpx,bpy,head_width=0.1)
+
+interact(plotoffax, betar = widgets.FloatSlider(value=0., min=-0.99, max=0.99, step=0.01))
 ------------------
 
-[0;36m  Cell [0;32mIn[3], line 9[0;36m[0m
-[0;31m    bpnosr = np.sqrt(((beta*np.cos(th)-betar)**2+(beta*np.sin(th))**2)[0m
-[0m                    ^[0m
-[0;31mSyntaxError[0m[0;31m:[0m '(' was never closed
 
-SyntaxError: '(' was never closed (1698138277.py, line 9)
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mValueError[0m                                Traceback (most recent call last)
+Cell [0;32mIn[5], line 1[0m
+[0;32m----> 1[0m [38;5;129m@interact[39m
+[1;32m      2[0m [38;5;28;01mdef[39;00m [38;5;21mplotoffax[39m(betar):
+[1;32m      3[0m     gamr [38;5;241m=[39m [38;5;241m1[39m[38;5;241m/[39mnp[38;5;241m.[39msqrt([38;5;241m1[39m[38;5;241m-[39mbetar[38;5;241m*[39m[38;5;241m*[39m[38;5;241m2[39m)
+[1;32m      4[0m     th [38;5;241m=[39m np[38;5;241m.[39mpi[38;5;241m/[39m[38;5;241m4[39m
+
+File [0;32m~/anaconda3/lib/python3.11/site-packages/ipywidgets/widgets/interaction.py:536[0m, in [0;36m_InteractFactory.__call__[0;34m(self, _InteractFactory__interact_f, **kwargs)[0m
+[1;32m    528[0m     [38;5;28;01mreturn[39;00m [38;5;28mself[39m
+[1;32m    530[0m [38;5;66;03m# positional arg support in: https://gist.github.com/8851331[39;00m
+[1;32m    531[0m [38;5;66;03m# Handle the cases 1 and 2[39;00m
+[1;32m    532[0m [38;5;66;03m# 1. interact(f, **kwargs)[39;00m
+[1;32m    533[0m [38;5;66;03m# 2. @interact[39;00m
+[1;32m    534[0m [38;5;66;03m#    def f(*args, **kwargs):[39;00m
+[1;32m    535[0m [38;5;66;03m#        ...[39;00m
+[0;32m--> 536[0m w [38;5;241m=[39m [38;5;28mself[39m[38;5;241m.[39mwidget(f)
+[1;32m    537[0m [38;5;28;01mtry[39;00m:
+[1;32m    538[0m     f[38;5;241m.[39mwidget [38;5;241m=[39m w
+
+File [0;32m~/anaconda3/lib/python3.11/site-packages/ipywidgets/widgets/interaction.py:452[0m, in [0;36m_InteractFactory.widget[0;34m(self, f)[0m
+[1;32m    436[0m [38;5;28;01mdef[39;00m [38;5;21mwidget[39m([38;5;28mself[39m, f):
+[1;32m    437[0m [38;5;250m    [39m[38;5;124;03m"""[39;00m
+[1;32m    438[0m [38;5;124;03m    Return an interactive function widget for the given function.[39;00m
+[1;32m    439[0m 
+[0;32m   (...)[0m
+[1;32m    450[0m [38;5;124;03m        The function to which the interactive widgets are tied.[39;00m
+[1;32m    451[0m [38;5;124;03m    """[39;00m
+[0;32m--> 452[0m     [38;5;28;01mreturn[39;00m [38;5;28mself[39m[38;5;241m.[39mcls(f, [38;5;28mself[39m[38;5;241m.[39mopts, [38;5;241m*[39m[38;5;241m*[39m[38;5;28mself[39m[38;5;241m.[39mkwargs)
+
+File [0;32m~/anaconda3/lib/python3.11/site-packages/ipywidgets/widgets/interaction.py:175[0m, in [0;36minteractive.__init__[0;34m(self, _interactive__interact_f, _interactive__options, **kwargs)[0m
+[1;32m    172[0m [38;5;28mself[39m[38;5;241m.[39mmanual_name [38;5;241m=[39m __options[38;5;241m.[39mget([38;5;124m"[39m[38;5;124mmanual_name[39m[38;5;124m"[39m, [38;5;124m"[39m[38;5;124mRun Interact[39m[38;5;124m"[39m)
+[1;32m    173[0m [38;5;28mself[39m[38;5;241m.[39mauto_display [38;5;241m=[39m __options[38;5;241m.[39mget([38;5;124m"[39m[38;5;124mauto_display[39m[38;5;124m"[39m, [38;5;28;01mFalse[39;00m)
+[0;32m--> 175[0m new_kwargs [38;5;241m=[39m [38;5;28mself[39m[38;5;241m.[39mfind_abbreviations(kwargs)
+[1;32m    176[0m [38;5;66;03m# Before we proceed, let's make sure that the user has passed a set of args+kwargs[39;00m
+[1;32m    177[0m [38;5;66;03m# that will lead to a valid call of the function. This protects against unspecified[39;00m
+[1;32m    178[0m [38;5;66;03m# and doubly-specified arguments.[39;00m
+[1;32m    179[0m [38;5;28;01mtry[39;00m:
+
+File [0;32m~/anaconda3/lib/python3.11/site-packages/ipywidgets/widgets/interaction.py:275[0m, in [0;36minteractive.find_abbreviations[0;34m(self, kwargs)[0m
+[1;32m    273[0m     [38;5;28;01mfor[39;00m name, value, default [38;5;129;01min[39;00m _yield_abbreviations_for_parameter(param, kwargs):
+[1;32m    274[0m         [38;5;28;01mif[39;00m value [38;5;129;01mis[39;00m empty:
+[0;32m--> 275[0m             [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m([38;5;124m'[39m[38;5;124mcannot find widget or abbreviation for argument: [39m[38;5;132;01m{!r}[39;00m[38;5;124m'[39m[38;5;241m.[39mformat(name))
+[1;32m    276[0m         new_kwargs[38;5;241m.[39mappend((name, value, default))
+[1;32m    277[0m [38;5;28;01mreturn[39;00m new_kwargs
+
+[0;31mValueError[0m: cannot find widget or abbreviation for argument: 'betar'
 

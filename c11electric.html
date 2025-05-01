@@ -1,9 +1,8 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
@@ -15,53 +14,49 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c11electric';</script>
@@ -78,28 +73,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -121,12 +111,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -141,9 +139,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="intro.html">
+  
   
   
   
@@ -153,12 +155,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Introduction to Modern Physics - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Introduction to Modern Physics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -200,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -209,14 +222,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -338,26 +351,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -397,10 +412,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="the-electromagnetic-tensor">
-<span id="chemten"></span><h1><span class="section-number">11. </span>The Electromagnetic Tensor<a class="headerlink" href="#the-electromagnetic-tensor" title="Permalink to this heading">#</a></h1>
+<span id="chemten"></span><h1><span class="section-number">11. </span>The Electromagnetic Tensor<a class="headerlink" href="#the-electromagnetic-tensor" title="Link to this heading">#</a></h1>
 <p>Many introductory relativity textbooks stop with dynamics, but I think
 it’s important to include some of the implications of realtivity
 theory for the understanding of electricity and magnetism.  There are
@@ -419,19 +434,19 @@ Equations is automatically consistent with SR.  Newtonian mechanics
 needs massive modifications to work with SR, but the bulk of
 relativistic E&amp;M is learning how to write it in four-vector notation
 and remarking, “Wow!  It works!”  For a full treatment of this topic,
-I recommend an advanced electrodynamics book such as Griffiths.  In
-this eBook, I only plan to introduce the subject, not explore all the
-implications.</p>
+I recommend an advanced electrodynamics book such as
+<span id="id1">[<a class="reference internal" href="c15bibliography.html#id35" title="David Griffiths. Electrodynamics. Cambridge University Press, 2023.">Griffiths, 2023</a>]</span>.  In this eBook, I only plan to introduce the
+subject, not explore all the implications.</p>
 <section id="magnetic-force-as-a-relativistic-effect">
-<h2><span class="section-number">11.1. </span>Magnetic Force as a Relativistic Effect<a class="headerlink" href="#magnetic-force-as-a-relativistic-effect" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">11.1. </span>Magnetic Force as a Relativistic Effect<a class="headerlink" href="#magnetic-force-as-a-relativistic-effect" title="Link to this heading">#</a></h2>
 <section id="reminder-of-classical-situation">
-<span id="subsecclass"></span><h3><span class="section-number">11.1.1. </span>Reminder of Classical Situation<a class="headerlink" href="#reminder-of-classical-situation" title="Permalink to this heading">#</a></h3>
+<span id="subsecclass"></span><h3><span class="section-number">11.1.1. </span>Reminder of Classical Situation<a class="headerlink" href="#reminder-of-classical-situation" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="classicfig">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/classicIBF.png"><img alt="classicalEMBforce" class="bg-primary mb-1" src="_images/classicIBF.png" style="width: 800px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 11.1 </span><span class="caption-text">Schematic of the classical understanding of the force on a charge
 moving antiparallel to a current-carrying wire.  A description of
-all the pieces of this figure is in the text.</span><a class="headerlink" href="#classicfig" title="Permalink to this image">#</a></p>
+all the pieces of this figure is in the text.</span><a class="headerlink" href="#classicfig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Before we dive into tackling how relativity implies we must rethink
@@ -446,7 +461,7 @@ distance <span class="math notranslate nohighlight">\(r\)</span> from the center
 the charge experiences an upward force (toward the wire) with a
 magnitude of</p>
 <div class="math notranslate nohighlight" id="equation-fclassic">
-<span class="eqno">(11.1)<a class="headerlink" href="#equation-fclassic" title="Permalink to this equation">#</a></span>\[\vec{F} = -\hat{r} \frac{qu\mu_0 I}{2\pi r}\]</div>
+<span class="eqno">(11.1)<a class="headerlink" href="#equation-fclassic" title="Link to this equation">#</a></span>\[\vec{F} = -\hat{r} \frac{qu\mu_0 I}{2\pi r}\]</div>
 <p>and this force remains perpendicular to the motion of the particle,
 no matter how we rotate the system around the wire.</p>
 <p>We therefore invent a field we  call <span class="math notranslate nohighlight">\(\vec{B}\)</span> and we say there’s
@@ -456,7 +471,7 @@ points tangent to a circle around the wire and has a magnitude of
 <span class="math notranslate nohighlight">\(\mu_0 I/2\pi r\)</span>.</p>
 </section>
 <section id="the-relativistic-model">
-<h3><span class="section-number">11.1.2. </span>The Relativistic Model<a class="headerlink" href="#the-relativistic-model" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">11.1.2. </span>The Relativistic Model<a class="headerlink" href="#the-relativistic-model" title="Link to this heading">#</a></h3>
 <p>As with most relativity problems, this one comes down to setting up
 the situation in different reference frames and then switching between
 them with Lorentz transformations.  There are three frames we will
@@ -484,7 +499,7 @@ reference frame where the total charge density of the wire is zero.
 We define the current as <span class="math notranslate nohighlight">\(2\lambda v\)</span>, but there is a <span class="math notranslate nohighlight">\(+\lambda\)</span> moving
 to the right (red) and a <span class="math notranslate nohighlight">\(-\lambda\)</span> moving to the left (blue).  The sum
 of the two <span class="math notranslate nohighlight">\(\lambda\)</span> is zero, but since the <span class="math notranslate nohighlight">\(v\)</span> values are also opposite,
-<span class="math notranslate nohighlight">\(\lambda v\)</span> adds up instead of cancelling.</span><a class="headerlink" href="#frameafig" title="Permalink to this image">#</a></p>
+<span class="math notranslate nohighlight">\(\lambda v\)</span> adds up instead of cancelling.</span><a class="headerlink" href="#frameafig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>We then need to transform into a frame moving with <span class="math notranslate nohighlight">\(v_R=u\)</span> to the
@@ -516,13 +531,13 @@ change, and since these sets of charges have different velocities,
 relative to <span class="math notranslate nohighlight">\(\vec{v}_R\)</span>, they will contract by different amounts.
 Given our formula for length contraction, we know</p>
 <div class="math notranslate nohighlight" id="equation-lambdapm">
-<span class="eqno">(11.2)<a class="headerlink" href="#equation-lambdapm" title="Permalink to this equation">#</a></span>\[\lambda_\pm =\pm\frac{dq}{dz} =
+<span class="eqno">(11.2)<a class="headerlink" href="#equation-lambdapm" title="Link to this equation">#</a></span>\[\lambda_\pm =\pm\frac{dq}{dz} =
 \pm\gamma_\pm\frac{dq}{dz_0} = \pm\gamma_\pm\lambda_0\]</div>
 <p>In this frame, the two charge densities will <strong>not</strong>
 cancel out, since they will no longer be equal.  The wire will <strong>not</strong>
 be electrically neutral.</p>
 <div class="math notranslate nohighlight" id="equation-labdatot">
-<span class="eqno">(11.3)<a class="headerlink" href="#equation-labdatot" title="Permalink to this equation">#</a></span>\[\lambda_{\rm totB} = \lambda_+-\lambda_- = \lambda_0(\gamma_+-\gamma_-)\]</div>
+<span class="eqno">(11.3)<a class="headerlink" href="#equation-labdatot" title="Link to this equation">#</a></span>\[\lambda_{\rm totB} = \lambda_+-\lambda_- = \lambda_0(\gamma_+-\gamma_-)\]</div>
 <figure class="align-center" id="framebfig">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/frameBfig.png"><img alt="frameBpicture" class="bg-primary mb-1" src="_images/frameBfig.png" style="width: 800px;" /></a>
 <figcaption>
@@ -530,7 +545,7 @@ be electrically neutral.</p>
 and the wire is moving to the left with a speed <span class="math notranslate nohighlight">\(u\)</span>.  In this frame,
 because the positive and negative charges are moving at different speeds,
 the distances between those charges will be contracted by different
-amounts.</span><a class="headerlink" href="#framebfig" title="Permalink to this image">#</a></p>
+amounts.</span><a class="headerlink" href="#framebfig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>To be more specific, instead of talking about just one <span class="math notranslate nohighlight">\(\lambda\)</span>, we
@@ -539,11 +554,11 @@ be different.  (Note that <span class="math notranslate nohighlight">\(\lambda_\
 B).  To know how much they are contracted, we have to know their
 speeds.  We have a formula for that:</p>
 <div class="math notranslate nohighlight" id="equation-vplusminus">
-<span class="eqno">(11.4)<a class="headerlink" href="#equation-vplusminus" title="Permalink to this equation">#</a></span>\[v_\pm = \frac{v\mp u}{1\mp uv}\]</div>
+<span class="eqno">(11.4)<a class="headerlink" href="#equation-vplusminus" title="Link to this equation">#</a></span>\[v_\pm = \frac{v\mp u}{1\mp uv}\]</div>
 <p>where <span class="math notranslate nohighlight">\(v\)</span> (the speed of the current) and <span class="math notranslate nohighlight">\(u\)</span> (the relative velocity
 between A and B) are measured in Frame A.  On the other hand,</p>
 <div class="math notranslate nohighlight" id="equation-gammapm">
-<span class="eqno">(11.5)<a class="headerlink" href="#equation-gammapm" title="Permalink to this equation">#</a></span>\[\gamma_\pm = \frac{1}{\sqrt{1-v_{\pm}^2/c^2}}\]</div>
+<span class="eqno">(11.5)<a class="headerlink" href="#equation-gammapm" title="Link to this equation">#</a></span>\[\gamma_\pm = \frac{1}{\sqrt{1-v_{\pm}^2/c^2}}\]</div>
 <p>where <span class="math notranslate nohighlight">\(v_\pm\)</span> is measured in Frame B.</p>
 <p>But what are <span class="math notranslate nohighlight">\(v_\pm\)</span> measured with respect <em>to</em>?  These velocities
 represent the velocities of the charges in the wire, the <span class="math notranslate nohighlight">\(+\)</span> and <span class="math notranslate nohighlight">\(-\)</span>
@@ -565,23 +580,23 @@ B and C, we know <span class="math notranslate nohighlight">\(\lambda_\pm = \pm\
 = 1/\sqrt{1-v_\pm^2}\)</span>.  We also know that <span class="math notranslate nohighlight">\(v_\pm = (v\mp u)/(1\mp vu)\)</span>.
 If we plug in the velocity formula for <span class="math notranslate nohighlight">\(v_\pm\)</span>, we get</p>
 <div class="math notranslate nohighlight" id="equation-gampmuv">
-<span class="eqno">(11.6)<a class="headerlink" href="#equation-gampmuv" title="Permalink to this equation">#</a></span>\[\gamma_\pm = \frac{1}{\sqrt{1-\left(\frac{v\mp u}{1\mp uv}\right)^2}}\]</div>
+<span class="eqno">(11.6)<a class="headerlink" href="#equation-gampmuv" title="Link to this equation">#</a></span>\[\gamma_\pm = \frac{1}{\sqrt{1-\left(\frac{v\mp u}{1\mp uv}\right)^2}}\]</div>
 <p>find a common denominator and flip it upside down to get</p>
 <div class="math notranslate nohighlight" id="equation-gampmflip">
-<span class="eqno">(11.7)<a class="headerlink" href="#equation-gampmflip" title="Permalink to this equation">#</a></span>\[\gamma_\pm = \sqrt{\frac{(1\mp uv)^2}{(1\mp vu)^2 - (v\mp u)^2}}\]</div>
+<span class="eqno">(11.7)<a class="headerlink" href="#equation-gampmflip" title="Link to this equation">#</a></span>\[\gamma_\pm = \sqrt{\frac{(1\mp uv)^2}{(1\mp vu)^2 - (v\mp u)^2}}\]</div>
 <p>Expand out the squared terms in the denominator</p>
 <div class="math notranslate nohighlight" id="equation-gampmexpand">
-<span class="eqno">(11.8)<a class="headerlink" href="#equation-gampmexpand" title="Permalink to this equation">#</a></span>\[\gamma_\pm = \frac{1\mp uv}{\sqrt{(1\mp 2vu+v^2u^2 - v^2\pm 2vu-u^2)}}\]</div>
+<span class="eqno">(11.8)<a class="headerlink" href="#equation-gampmexpand" title="Link to this equation">#</a></span>\[\gamma_\pm = \frac{1\mp uv}{\sqrt{(1\mp 2vu+v^2u^2 - v^2\pm 2vu-u^2)}}\]</div>
 <p>Note the factors of <span class="math notranslate nohighlight">\(2vu\)</span> will cancel, as whatever sign they have, the
 other will be opposite.  That will leave <span class="math notranslate nohighlight">\(1+v^2u^2-v^2-u^2\)</span> in the
 denominator, but that’s just the same as <span class="math notranslate nohighlight">\((1-v^2)(1-u^2)\)</span>
 and <span class="math notranslate nohighlight">\(1/\sqrt{1-v^2}\)</span> is just <span class="math notranslate nohighlight">\(\gamma\)</span>!  So this becomes</p>
 <div class="math notranslate nohighlight" id="equation-gampmcollapse">
-<span class="eqno">(11.9)<a class="headerlink" href="#equation-gampmcollapse" title="Permalink to this equation">#</a></span>\[\gamma_\pm = \gamma\frac{1\mp uv}{\sqrt{(1-u^2)}}\]</div>
+<span class="eqno">(11.9)<a class="headerlink" href="#equation-gampmcollapse" title="Link to this equation">#</a></span>\[\gamma_\pm = \gamma\frac{1\mp uv}{\sqrt{(1-u^2)}}\]</div>
 <p>Now we have equations for <span class="math notranslate nohighlight">\(\gamma_\pm\)</span>, we can figure out the total
 charge density in Frame B:</p>
 <div class="math notranslate nohighlight" id="equation-lamtotb">
-<span class="eqno">(11.10)<a class="headerlink" href="#equation-lamtotb" title="Permalink to this equation">#</a></span>\[\lambda_{\rm totB} = \lambda_++\lambda_- = \lambda_0(\gamma_+-\gamma_-)=
+<span class="eqno">(11.10)<a class="headerlink" href="#equation-lamtotb" title="Link to this equation">#</a></span>\[\lambda_{\rm totB} = \lambda_++\lambda_- = \lambda_0(\gamma_+-\gamma_-)=
 \gamma\lambda_0\left[\frac{1-vu}{\sqrt{1-u^2}}-\frac{1+vu}{\sqrt{1-u^2}}\right] =
 \lambda\left[\frac{-2vu}{\sqrt{1-u^2}}\right]\]</div>
 <p>Note that the total density in Frame B is negative!  There are some
@@ -592,20 +607,20 @@ transformation between Frames A and B.</p>
 <p>We know that a line charge density in Frame B will have an <em>electric</em>
 field given by</p>
 <div class="math notranslate nohighlight" id="equation-eline">
-<span class="eqno">(11.11)<a class="headerlink" href="#equation-eline" title="Permalink to this equation">#</a></span>\[\vec{E} = \hat{r}\frac{\lambda_{\rm totB}}{2\pi \epsilon_0 r}\]</div>
+<span class="eqno">(11.11)<a class="headerlink" href="#equation-eline" title="Link to this equation">#</a></span>\[\vec{E} = \hat{r}\frac{\lambda_{\rm totB}}{2\pi \epsilon_0 r}\]</div>
 <p>But we have an equation for <span class="math notranslate nohighlight">\(\lambda_{\rm totB}\)</span>, it’s Equation <a class="reference internal" href="#equation-lamtotb">(11.10)</a>!</p>
 <div class="math notranslate nohighlight" id="equation-elinelam">
-<span class="eqno">(11.12)<a class="headerlink" href="#equation-elinelam" title="Permalink to this equation">#</a></span>\[\vec{E} = \hat{r}\frac{-Iu}{2\pi \epsilon_0 rc^2}\gamma_R\]</div>
+<span class="eqno">(11.12)<a class="headerlink" href="#equation-elinelam" title="Link to this equation">#</a></span>\[\vec{E} = \hat{r}\frac{-Iu}{2\pi \epsilon_0 rc^2}\gamma_R\]</div>
 <p>where I put the <span class="math notranslate nohighlight">\(c\)</span> back in, now.  Since <span class="math notranslate nohighlight">\(\vec{F}_e = q\vec{E}\)</span>, and using
 <span class="math notranslate nohighlight">\(c^2=1/\mu_0\epsilon_0\)</span>, we can
 write this as</p>
 <div class="math notranslate nohighlight" id="equation-eforceb">
-<span class="eqno">(11.13)<a class="headerlink" href="#equation-eforceb" title="Permalink to this equation">#</a></span>\[\vec{F}_E = q\vec{E} = -\hat{r}\frac{qu\mu_0I}{2\pi r}\gamma_R\]</div>
+<span class="eqno">(11.13)<a class="headerlink" href="#equation-eforceb" title="Link to this equation">#</a></span>\[\vec{F}_E = q\vec{E} = -\hat{r}\frac{qu\mu_0I}{2\pi r}\gamma_R\]</div>
 <p>for the <em>electric</em> force experienced in Frame B.  If we want to switch
 back into Frame A, we use the formula we found for the Minkowski force
 (Equation <a class="reference internal" href="c10force.html#equation-m4forcefin">(10.17)</a>) and drop the <span class="math notranslate nohighlight">\(\gamma_R\)</span> to get</p>
 <div class="math notranslate nohighlight" id="equation-efofrb">
-<span class="eqno">(11.14)<a class="headerlink" href="#equation-efofrb" title="Permalink to this equation">#</a></span>\[\vec{F}_{EA} = \vec{F}_{EB}/\gamma_R = -\hat{r}\frac{qu\mu_0I}{2\pi r}\]</div>
+<span class="eqno">(11.14)<a class="headerlink" href="#equation-efofrb" title="Link to this equation">#</a></span>\[\vec{F}_{EA} = \vec{F}_{EB}/\gamma_R = -\hat{r}\frac{qu\mu_0I}{2\pi r}\]</div>
 <p>This is the exact same force that, classically, we would have said was a
 <em>magnetic</em> force!  We had the same equation back at the start of the
 chapter, as Equation <a class="reference internal" href="#equation-fclassic">(11.1)</a>!</p>
@@ -641,7 +656,7 @@ is relevant to them.</p>
 </section>
 </section>
 <section id="how-the-fields-transform">
-<h2><span class="section-number">11.2. </span>How the Fields Transform<a class="headerlink" href="#how-the-fields-transform" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">11.2. </span>How the Fields Transform<a class="headerlink" href="#how-the-fields-transform" title="Link to this heading">#</a></h2>
 <p>The goal for this section is to develop a model for how electric and
 magnetic fields will change when we switch to another frame of
 reference, moving with a velocity <span class="math notranslate nohighlight">\(\beta_R\)</span> along the <span class="math notranslate nohighlight">\(x\)</span> axis.  Once
@@ -682,7 +697,7 @@ between the plates will get smaller, but the value of the field does
 not depend on the distance between the plates.  The density of charge
 on the plates will not change, so the field will not change.  Therefore</p>
 <div class="math notranslate nohighlight" id="equation-extrans">
-<span class="eqno">(11.15)<a class="headerlink" href="#equation-extrans" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(11.15)<a class="headerlink" href="#equation-extrans" title="Link to this equation">#</a></span>\[\boxed{
 E'_x = E_x
 }\]</div>
 <p>How about a uniform magnetic field?  The way to get a uniform magnetic
@@ -700,7 +715,7 @@ is also a relevant time interval, which will dilate by the same factor
 coil density goes up, the two factors of <span class="math notranslate nohighlight">\(\gamma\)</span> will cancel each
 other out, and the magnetic field will remain unchanged:</p>
 <div class="math notranslate nohighlight" id="equation-bxtrans">
-<span class="eqno">(11.16)<a class="headerlink" href="#equation-bxtrans" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(11.16)<a class="headerlink" href="#equation-bxtrans" title="Link to this equation">#</a></span>\[\boxed{
 B'_x = B_x
 }\]</div>
 <figure class="align-default" id="slidecylfig" style="width: 800px">
@@ -725,7 +740,7 @@ the cylinder in that frame.  The animation cheats, though, by not
 showing the cylinder in motion (it would be frustrating to have to chase
 after it).  The circles will compress due to length contraction, but
 the rate of rotation (the current) will slow due to time dilation.
-These effects cancel, leaving the <span class="math notranslate nohighlight">\(B\)</span> field unchanged.</span><a class="headerlink" href="#slidecylfig" title="Permalink to this image">#</a></p>
+These effects cancel, leaving the <span class="math notranslate nohighlight">\(B\)</span> field unchanged.</span><a class="headerlink" href="#slidecylfig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Now things get a little more complicated.  If we want to get the <span class="math notranslate nohighlight">\(E\)</span>
@@ -771,7 +786,7 @@ shown).  The slider and the magenta arrow are the same as in
 motion of the plate along <span class="math notranslate nohighlight">\(x\)</span> is not shown.  The dots will compress
 due to length contraction.  The cyan arrows show the electric field,
 while the white arrows show the magnetic field.  The red-green-blue
-arrows at the center show the x-y-z cartesian axes, in that order.</span><a class="headerlink" href="#slideplatefig" title="Permalink to this image">#</a></p>
+arrows at the center show the x-y-z cartesian axes, in that order.</span><a class="headerlink" href="#slideplatefig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>This means we really picked a special case when we first chose our
@@ -788,15 +803,15 @@ where the capacitor is at rest (which means there is a Lorentz factor
 of <span class="math notranslate nohighlight">\(\gamma_u=1/\sqrt{1-u^2/c^2}\)</span> between the unprimed frame and the
 rest frame).  In that case, the fields in the unprimed frame will be</p>
 <div class="math notranslate nohighlight" id="equation-eyunp">
-<span class="eqno">(11.17)<a class="headerlink" href="#equation-eyunp" title="Permalink to this equation">#</a></span>\[\vec{E} = \gamma_u \sigma_0 /\epsilon_0\hat{y}\]</div>
+<span class="eqno">(11.17)<a class="headerlink" href="#equation-eyunp" title="Link to this equation">#</a></span>\[\vec{E} = \gamma_u \sigma_0 /\epsilon_0\hat{y}\]</div>
 <p>and</p>
 <div class="math notranslate nohighlight" id="equation-bzunp">
-<span class="eqno">(11.18)<a class="headerlink" href="#equation-bzunp" title="Permalink to this equation">#</a></span>\[\vec{B} = \mu_0 \gamma_u \sigma_0 u \hat{z}\]</div>
+<span class="eqno">(11.18)<a class="headerlink" href="#equation-bzunp" title="Link to this equation">#</a></span>\[\vec{B} = \mu_0 \gamma_u \sigma_0 u \hat{z}\]</div>
 <p>We now want to switch into a reference frame that is moving at <span class="math notranslate nohighlight">\(v_R\)</span>
 relative to this new unprimed frame.  We will also need to relate
 the primed reference frame back to the rest frame, so note that</p>
 <div class="math notranslate nohighlight" id="equation-vprimeto0">
-<span class="eqno">(11.19)<a class="headerlink" href="#equation-vprimeto0" title="Permalink to this equation">#</a></span>\[v' = \frac{v_R+u}{1+v_Ru/c^2}\]</div>
+<span class="eqno">(11.19)<a class="headerlink" href="#equation-vprimeto0" title="Link to this equation">#</a></span>\[v' = \frac{v_R+u}{1+v_Ru/c^2}\]</div>
 <p>is the speed of the primed frame relative to the rest frame, and
 we will need a <span class="math notranslate nohighlight">\(\gamma' = 1/\sqrt{1-v'^2/c^2}\)</span>.  This means that
 the charge density on the plates will be <span class="math notranslate nohighlight">\(\sigma' = \gamma'\sigma_0\)</span>
@@ -813,32 +828,32 @@ know <span class="math notranslate nohighlight">\(\sigma' = \gamma' \sigma_0\)</
 Lorentz factors (I am going to use <span class="math notranslate nohighlight">\(c=1\)</span> and then put the <span class="math notranslate nohighlight">\(c\)</span> back at
 the end):</p>
 <div class="math notranslate nohighlight" id="equation-lorfacrat1">
-<span class="eqno">(11.20)<a class="headerlink" href="#equation-lorfacrat1" title="Permalink to this equation">#</a></span>\[\frac{\gamma'}{\gamma_u} = \sqrt{\frac{1-u^2}{1-v'^2}}
+<span class="eqno">(11.20)<a class="headerlink" href="#equation-lorfacrat1" title="Link to this equation">#</a></span>\[\frac{\gamma'}{\gamma_u} = \sqrt{\frac{1-u^2}{1-v'^2}}
 = \sqrt{\frac{1-u^2}{1-\left(\frac{v_R+u}{1+v_Ru}\right)^2}}
 = \sqrt{\frac{(1-u^2)(1+v_Ru)^2}{(1+v_Ru)^2-(v_R+u)^2}}\]</div>
 <p>Expand the denominator and take the square root of the square in the numerator:</p>
 <div class="math notranslate nohighlight" id="equation-lorfacrat2">
-<span class="eqno">(11.21)<a class="headerlink" href="#equation-lorfacrat2" title="Permalink to this equation">#</a></span>\[\frac{\gamma'}{\gamma_u} 
+<span class="eqno">(11.21)<a class="headerlink" href="#equation-lorfacrat2" title="Link to this equation">#</a></span>\[\frac{\gamma'}{\gamma_u} 
 = (1+v_Ru)\sqrt{\frac{1-u^2}{1+2v_Ru+v_R^2u^2-v_R^2-2v_Ru-u^2}}\]</div>
 <p>Cancel out the common factors in the denominator:</p>
 <div class="math notranslate nohighlight" id="equation-lorfacrat3">
-<span class="eqno">(11.22)<a class="headerlink" href="#equation-lorfacrat3" title="Permalink to this equation">#</a></span>\[\frac{\gamma'}{\gamma_u} 
+<span class="eqno">(11.22)<a class="headerlink" href="#equation-lorfacrat3" title="Link to this equation">#</a></span>\[\frac{\gamma'}{\gamma_u} 
 = (1+v_Ru)\sqrt{\frac{1-u^2}{1+v_R^2u^2-v_R^2-u^2}}\]</div>
 <p>The four terms in the denominator are just <span class="math notranslate nohighlight">\((1-v_R^2)(1-u^2)\)</span>, and the
 factor of <span class="math notranslate nohighlight">\((1-u^2)\)</span> will cancel!  That leaves (putting the <span class="math notranslate nohighlight">\(c\)</span>s back)</p>
 <div class="math notranslate nohighlight" id="equation-lorfacrat">
-<span class="eqno">(11.23)<a class="headerlink" href="#equation-lorfacrat" title="Permalink to this equation">#</a></span>\[\frac{\gamma'}{\gamma_u} 
+<span class="eqno">(11.23)<a class="headerlink" href="#equation-lorfacrat" title="Link to this equation">#</a></span>\[\frac{\gamma'}{\gamma_u} 
 = \frac{1+v_Ru/c^2}{\sqrt{1-v_R^2/c^2}} = \gamma_R(1+v_Ru/c^2)\]</div>
 <p>This means we can write our primed electric field as</p>
 <div class="math notranslate nohighlight" id="equation-eprimey1">
-<span class="eqno">(11.24)<a class="headerlink" href="#equation-eprimey1" title="Permalink to this equation">#</a></span>\[E'_y = \frac{\sigma}{\epsilon_0}  \gamma_R(1+v_Ru/c^2)\]</div>
+<span class="eqno">(11.24)<a class="headerlink" href="#equation-eprimey1" title="Link to this equation">#</a></span>\[E'_y = \frac{\sigma}{\epsilon_0}  \gamma_R(1+v_Ru/c^2)\]</div>
 <p>but <span class="math notranslate nohighlight">\(1/c^2=\mu_0\epsilon_0\)</span>, so if we multiply through the parentheses, we get</p>
 <div class="math notranslate nohighlight" id="equation-eprimey2">
-<span class="eqno">(11.25)<a class="headerlink" href="#equation-eprimey2" title="Permalink to this equation">#</a></span>\[E'_y = \gamma_R \frac{\sigma}{\epsilon_0}  + \gamma_Rv_R\mu_0 \sigma u\]</div>
+<span class="eqno">(11.25)<a class="headerlink" href="#equation-eprimey2" title="Link to this equation">#</a></span>\[E'_y = \gamma_R \frac{\sigma}{\epsilon_0}  + \gamma_Rv_R\mu_0 \sigma u\]</div>
 <p>But those equations contain the formulae for <span class="math notranslate nohighlight">\(E_y\)</span> and <span class="math notranslate nohighlight">\(B_z\)</span> in the unprimed frame!
 So we end up with</p>
 <div class="math notranslate nohighlight" id="equation-eprimey">
-<span class="eqno">(11.26)<a class="headerlink" href="#equation-eprimey" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(11.26)<a class="headerlink" href="#equation-eprimey" title="Link to this equation">#</a></span>\[\boxed{
 E'_y = \gamma_R E_y  - \gamma_Rv_RB_z
 }\]</div>
 <p>So, much like we talked about with rotations, the electric and
@@ -856,13 +871,13 @@ together in another frame.</p>
 There is a common factor in both numerator and denominator that will
 cancel!</p>
 <div class="math notranslate nohighlight" id="equation-bprimez1">
-<span class="eqno">(11.27)<a class="headerlink" href="#equation-bprimez1" title="Permalink to this equation">#</a></span>\[B'_z =  -\mu_0 \sigma v_R
+<span class="eqno">(11.27)<a class="headerlink" href="#equation-bprimez1" title="Link to this equation">#</a></span>\[B'_z =  -\mu_0 \sigma v_R
 \gamma_R - \mu_0\sigma\gamma_R u \]</div>
 <p>The second term is just the original <span class="math notranslate nohighlight">\(B_z\)</span> times a <span class="math notranslate nohighlight">\(\gamma_R\)</span> factor,
 and the first term depends on <span class="math notranslate nohighlight">\(\sigma\)</span>, which we know is proportional to
 the original <span class="math notranslate nohighlight">\(E_y\)</span>, so we can plug in the formulae for the fields to get</p>
 <div class="math notranslate nohighlight" id="equation-bprimez">
-<span class="eqno">(11.28)<a class="headerlink" href="#equation-bprimez" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(11.28)<a class="headerlink" href="#equation-bprimez" title="Link to this equation">#</a></span>\[\boxed{
 B'_z = \gamma_R B_z - \gamma_R \frac{v_R}{c^2}E_y
 }\]</div>
 <p>To make sure you have understood the logic, here, you should rotate
@@ -873,12 +888,12 @@ will make a magnetic field in the <span class="math notranslate nohighlight">\(+
 yourself of that, the rest of the math is exactly the same, just
 substituting <span class="math notranslate nohighlight">\(E_z\)</span> for <span class="math notranslate nohighlight">\(E_y\)</span> and <span class="math notranslate nohighlight">\(+B_y\)</span> for <span class="math notranslate nohighlight">\(-B_z\)</span>.  You should get</p>
 <div class="math notranslate nohighlight" id="equation-eprimez">
-<span class="eqno">(11.29)<a class="headerlink" href="#equation-eprimez" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(11.29)<a class="headerlink" href="#equation-eprimez" title="Link to this equation">#</a></span>\[\boxed{
 E'_z = \gamma_R E_z  + \gamma_Rv_RB_y
 }\]</div>
 <p>and</p>
 <div class="math notranslate nohighlight" id="equation-bprimey">
-<span class="eqno">(11.30)<a class="headerlink" href="#equation-bprimey" title="Permalink to this equation">#</a></span>\[\boxed{
+<span class="eqno">(11.30)<a class="headerlink" href="#equation-bprimey" title="Link to this equation">#</a></span>\[\boxed{
 B'_y = \gamma_R B_y + \gamma_R \frac{v_R}{c^2}E_z
 }\]</div>
 <p>All right, that tells us how all three components of <span class="math notranslate nohighlight">\(\vec{E}\)</span> and
@@ -888,7 +903,7 @@ Lorentz transformation we have used for such a change up to this
 point?</p>
 </section>
 <section id="example">
-<h2><span class="section-number">11.3. </span>Example<a class="headerlink" href="#example" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">11.3. </span>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
 <p>Let’s think through a possible experiment that one could (in principle)
 do that would reveal why <span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(B\)</span> have to transform like this.  A full
 solution of this problem is beyond the scope of this course, but we can
@@ -938,17 +953,17 @@ speed as the cart.</p>
 <p>You can’t resolve this paradox without relativity, and the speeds
 involved are obviously nowhere even close to the speed of light.</p>
 <figure class="align-default" id="circularpathfig" style="width: 800px">
-<img alt="_images/80586f2165228d681d5a9d52cd8d70f39fd24c83619072b6f427229549a22379.png" src="_images/80586f2165228d681d5a9d52cd8d70f39fd24c83619072b6f427229549a22379.png" />
+<img alt="_images/c0257840725bd7c5f76203ed9f359f13909d8a00b71fe1f821b2d9c819bc2ab9.png" src="_images/c0257840725bd7c5f76203ed9f359f13909d8a00b71fe1f821b2d9c819bc2ab9.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 11.6 </span><span class="caption-text">Plot of electron trajectory in frame with moving cart.  The center
 of the circle drifts right with the same speed as the cart.  If you
 were to transform this shape back into a frame moving at <span class="math notranslate nohighlight">\(+v\)</span>, the
-trajectory would be a circle, and the cart would be at rest.</span><a class="headerlink" href="#circularpathfig" title="Permalink to this image">#</a></p>
+trajectory would be a circle, and the cart would be at rest.</span><a class="headerlink" href="#circularpathfig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="the-electromagnetic-field-tensor">
-<span id="secemten"></span><h2><span class="section-number">11.4. </span>The Electromagnetic Field Tensor<a class="headerlink" href="#the-electromagnetic-field-tensor" title="Permalink to this heading">#</a></h2>
+<span id="secemten"></span><h2><span class="section-number">11.4. </span>The Electromagnetic Field Tensor<a class="headerlink" href="#the-electromagnetic-field-tensor" title="Link to this heading">#</a></h2>
 <p>For the rest of this book up to this point, when we wanted to see
 what would happen to some quantity when measured in a reference
 frame in relative motion, we cast the quantity in question as a
@@ -970,7 +985,7 @@ B'_y = \gamma_R B_y + \gamma_R \frac{v_R}{c^2}E_z\]</div>
 B'_z = \gamma_R B_z - \gamma_R \frac{v_R}{c^2}E_y\]</div>
 <p>and recall that the Lorentz matrix can be written as</p>
 <div class="math notranslate nohighlight" id="equation-lormate">
-<span class="eqno">(11.31)<a class="headerlink" href="#equation-lormate" title="Permalink to this equation">#</a></span>\[\begin{split}\Lambda^\alpha_\beta =
+<span class="eqno">(11.31)<a class="headerlink" href="#equation-lormate" title="Link to this equation">#</a></span>\[\begin{split}\Lambda^\alpha_\beta =
 \begin{pmatrix}
 \gamma_R &amp; -\gamma_R\beta_R &amp; 0 &amp; 0\\
 -\gamma_R\beta_R &amp; \gamma_R &amp; 0 &amp; 0\\
@@ -1006,7 +1021,7 @@ by a three-row column.</p>
 <p>If it were as simple as performing two Lorentz transformations, you
 would write that as</p>
 <div class="math notranslate nohighlight" id="equation-twolormat">
-<span class="eqno">(11.32)<a class="headerlink" href="#equation-twolormat" title="Permalink to this equation">#</a></span>\[\Lambda^\alpha_\beta\Lambda^\mu_\nu\]</div>
+<span class="eqno">(11.32)<a class="headerlink" href="#equation-twolormat" title="Link to this equation">#</a></span>\[\Lambda^\alpha_\beta\Lambda^\mu_\nu\]</div>
 <p>where the <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\mu\)</span> refer to the rows and the <span class="math notranslate nohighlight">\(\beta\)</span>
 and <span class="math notranslate nohighlight">\(\nu\)</span> refer to the columns.</p>
 <p>This short equation represents multiplying two <span class="math notranslate nohighlight">\(4\times 4\)</span> matrices
@@ -1019,7 +1034,7 @@ result would be <em>another</em> <span class="math notranslate nohighlight">\(4\
 as the values of the same matrix, just in the new relative reference frame.
 Mathematically, that would be</p>
 <div class="math notranslate nohighlight" id="equation-twotransforms">
-<span class="eqno">(11.33)<a class="headerlink" href="#equation-twotransforms" title="Permalink to this equation">#</a></span>\[F'^{\alpha\mu} = \Lambda^\alpha_\beta\Lambda^\mu_\nu F^{\beta\nu}\]</div>
+<span class="eqno">(11.33)<a class="headerlink" href="#equation-twotransforms" title="Link to this equation">#</a></span>\[F'^{\alpha\mu} = \Lambda^\alpha_\beta\Lambda^\mu_\nu F^{\beta\nu}\]</div>
 <p>The Einstein notation means that this equation is really representing
 sixteen equations, one for each term in the <span class="math notranslate nohighlight">\(4\times 4\)</span> matrix that
 results from all these multiplications.  There’s a double sum over
@@ -1027,7 +1042,7 @@ results from all these multiplications.  There’s a double sum over
 unchanged from the right side to the left.  So a single one of these
 sixteen terms would look like</p>
 <div class="math notranslate nohighlight" id="equation-oneofsixteen">
-<span class="eqno">(11.34)<a class="headerlink" href="#equation-oneofsixteen" title="Permalink to this equation">#</a></span>\[\begin{split}F'^{01} =
+<span class="eqno">(11.34)<a class="headerlink" href="#equation-oneofsixteen" title="Link to this equation">#</a></span>\[\begin{split}F'^{01} =
 \Lambda^0_0\Lambda^1_0 F^{00} +
 \Lambda^0_0\Lambda^1_1 F^{01} +
 \Lambda^0_0\Lambda^1_2 F^{02} +
@@ -1061,7 +1076,7 @@ case of Equation <a class="reference internal" href="#equation-oneofsixteen">(11
 or second row.  And the last two columns are both zeros!
 If we plug in for the elements of <span class="math notranslate nohighlight">\(\Lambda\)</span>, we get</p>
 <div class="math notranslate nohighlight" id="equation-killzeros">
-<span class="eqno">(11.35)<a class="headerlink" href="#equation-killzeros" title="Permalink to this equation">#</a></span>\[F'^{01} =
+<span class="eqno">(11.35)<a class="headerlink" href="#equation-killzeros" title="Link to this equation">#</a></span>\[F'^{01} =
 -\gamma_R^2\beta_R F^{00} +
 \gamma_R^2 F^{01} +
 \beta_R^2\gamma_R^2 F^{10} 
@@ -1073,7 +1088,7 @@ what if (crazy thought), what if <span class="math notranslate nohighlight">\(F^
 and <span class="math notranslate nohighlight">\(\beta\)</span> factors would disappear, and we’d just have <span class="math notranslate nohighlight">\(F^{01}\)</span> in
 there.</p>
 <div class="math notranslate nohighlight" id="equation-antisym">
-<span class="eqno">(11.36)<a class="headerlink" href="#equation-antisym" title="Permalink to this equation">#</a></span>\[F'^{01} = F^{01}
+<span class="eqno">(11.36)<a class="headerlink" href="#equation-antisym" title="Link to this equation">#</a></span>\[F'^{01} = F^{01}
 -\gamma_R^2\beta_R (F^{00} + F^{11} )\]</div>
 <p>Now, we know that <span class="math notranslate nohighlight">\(E'_x=E_x\)</span>, so this is starting to look like that.
 What do with the last part, though?  Well, if <span class="math notranslate nohighlight">\(F^{01}=-F^{10}\)</span>, that
@@ -1093,7 +1108,7 @@ five components of <span class="math notranslate nohighlight">\(\vec{E}\)</span>
 <p>So let’s go back to Equation <a class="reference internal" href="#equation-oneofsixteen">(11.34)</a> and rewrite it
 to allow for an anti-symmetric matrix:</p>
 <div class="math notranslate nohighlight" id="equation-oneofsixteenanti">
-<span class="eqno">(11.37)<a class="headerlink" href="#equation-oneofsixteenanti" title="Permalink to this equation">#</a></span>\[\begin{split}F'^{\alpha\mu} =
+<span class="eqno">(11.37)<a class="headerlink" href="#equation-oneofsixteenanti" title="Link to this equation">#</a></span>\[\begin{split}F'^{\alpha\mu} =
 (\Lambda^\alpha_0\Lambda^\mu_1 -\Lambda^\alpha_1\Lambda^\mu_0) F^{01}+
 (\Lambda^\alpha_0\Lambda^\mu_2 -\Lambda^\alpha_2\Lambda^\mu_0) F^{02} +\\
 (\Lambda^\alpha_0\Lambda^\mu_3 -\Lambda^\alpha_3\Lambda^\mu_0) F^{03} +
@@ -1104,7 +1119,7 @@ to allow for an anti-symmetric matrix:</p>
 If <span class="math notranslate nohighlight">\(F^{01}\)</span> might be <span class="math notranslate nohighlight">\(E_x\)</span>, maybe <span class="math notranslate nohighlight">\(F^{02}\)</span> is <span class="math notranslate nohighlight">\(E_y\)</span>, and we know what
 that is supposed to be.  So let’s look at <span class="math notranslate nohighlight">\(F'^{02}\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-oneofsixteen02">
-<span class="eqno">(11.38)<a class="headerlink" href="#equation-oneofsixteen02" title="Permalink to this equation">#</a></span>\[\begin{split}F'^{02} =
+<span class="eqno">(11.38)<a class="headerlink" href="#equation-oneofsixteen02" title="Link to this equation">#</a></span>\[\begin{split}F'^{02} =
 (\Lambda^0_0\Lambda^2_1 -\Lambda^0_1\Lambda^2_0) F^{01}+
 (\Lambda^0_0\Lambda^2_2 -\Lambda^0_2\Lambda^2_0) F^{02} +\\
 (\Lambda^0_0\Lambda^2_3 -\Lambda^0_3\Lambda^2_0) F^{03} +
@@ -1115,7 +1130,7 @@ that is supposed to be.  So let’s look at <span class="math notranslate nohigh
 with a 2 or 3 will be zero, unless it’s a 22 or 33, in which case
 it’s 1.</p>
 <div class="math notranslate nohighlight" id="equation-oneofsixteen02b">
-<span class="eqno">(11.39)<a class="headerlink" href="#equation-oneofsixteen02b" title="Permalink to this equation">#</a></span>\[\begin{split}F'^{02} =
+<span class="eqno">(11.39)<a class="headerlink" href="#equation-oneofsixteen02b" title="Link to this equation">#</a></span>\[\begin{split}F'^{02} =
 (\gamma_R \times 0 + \beta_R \gamma_R \times 0) F^{01}+
 (\gamma_R \times 1 - 0 \times 0) F^{02} +\\
 (1 \times 0 - 0 \times 0) F^{03} +
@@ -1123,7 +1138,7 @@ it’s 1.</p>
 (-\gamma_R\beta_R\times 0 - 0\times 0) F^{13} +
 (0\times 0 - 0\times 1) F^{23} \end{split}\]</div>
 <div class="math notranslate nohighlight" id="equation-oneofsixteen02c">
-<span class="eqno">(11.40)<a class="headerlink" href="#equation-oneofsixteen02c" title="Permalink to this equation">#</a></span>\[F'^{02} = \gamma_R F^{02} -\gamma_R\beta_R F^{12}\]</div>
+<span class="eqno">(11.40)<a class="headerlink" href="#equation-oneofsixteen02c" title="Link to this equation">#</a></span>\[F'^{02} = \gamma_R F^{02} -\gamma_R\beta_R F^{12}\]</div>
 <p>If you compare this result with Equation <a class="reference internal" href="#equation-eprimey">(11.26)</a>, that suggests
 I can make this work if <span class="math notranslate nohighlight">\(F^{02}\)</span> is <span class="math notranslate nohighlight">\(E_y/c\)</span> and <span class="math notranslate nohighlight">\(F^{12} = B_z\)</span>.  I
 need to divide <span class="math notranslate nohighlight">\(E_y\)</span> by <span class="math notranslate nohighlight">\(c\)</span> so that I can multiply the whole equation
@@ -1145,7 +1160,7 @@ becomes irrelevant.</p>
 figure out that one way of writing <span class="math notranslate nohighlight">\(F\)</span> that will satisfy Equation
 <a class="reference internal" href="#equation-twotransforms">(11.33)</a> is:</p>
 <div class="math notranslate nohighlight" id="equation-emtensorfin">
-<span class="eqno">(11.41)<a class="headerlink" href="#equation-emtensorfin" title="Permalink to this equation">#</a></span>\[\begin{split}\boxed{
+<span class="eqno">(11.41)<a class="headerlink" href="#equation-emtensorfin" title="Link to this equation">#</a></span>\[\begin{split}\boxed{
 F^{\alpha\mu} =
 \begin{pmatrix}
 0 &amp; E_x/c &amp; E_y/c &amp; E_z/c\\
@@ -1167,7 +1182,7 @@ sequence of logic following that point could flow just as well if we started
 from <span class="math notranslate nohighlight">\(B'_x=B_x\)</span> instead of going to <span class="math notranslate nohighlight">\(E_x\)</span> first!  If you start with <span class="math notranslate nohighlight">\(B_x\)</span>,
 you would construct the following matrix:</p>
 <div class="math notranslate nohighlight" id="equation-dualtensorfin">
-<span class="eqno">(11.42)<a class="headerlink" href="#equation-dualtensorfin" title="Permalink to this equation">#</a></span>\[\begin{split}\boxed{
+<span class="eqno">(11.42)<a class="headerlink" href="#equation-dualtensorfin" title="Link to this equation">#</a></span>\[\begin{split}\boxed{
 G^{\alpha\mu} =
 \begin{pmatrix}
 0 &amp; B_x &amp; B_y &amp; B_z\\
@@ -1198,12 +1213,12 @@ and cyan arrows, respectively).  There is a slider for each vector component
 below the image, and as you change each component, the relevant elements of
 the EM tensor will change, as will the arrow representation of the vector.
 Note where the minus signs go.  (The value of <span class="math notranslate nohighlight">\(c\)</span> is <span class="math notranslate nohighlight">\(1\)</span>, so the units
-identical for all components.)</span><a class="headerlink" href="#fmunufig" title="Permalink to this image">#</a></p>
+identical for all components.)</span><a class="headerlink" href="#fmunufig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="summary">
-<h2><span class="section-number">11.5. </span>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">11.5. </span>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
 <p>You have seen in this chapter that it is possible to think of
 magnetism as simply a manifestation of how space and time distort when
 you switch into different reference frames.  Since all magnetic fields
@@ -1232,7 +1247,7 @@ others to climb outside those limitations and perceive how the
 universe works on its own.</p>
 </section>
 <section id="problems">
-<h2><span class="section-number">11.6. </span>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">11.6. </span>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Consider a long line of charge lying at rest along the <span class="math notranslate nohighlight">\(x\)</span>-axis.
 Say that a little piece of it <span class="math notranslate nohighlight">\(dx\)</span> has a charge <span class="math notranslate nohighlight">\(q=\lambda dx\)</span>, where
@@ -1240,7 +1255,7 @@ Say that a little piece of it <span class="math notranslate nohighlight">\(dx\)<
 <span class="math notranslate nohighlight">\(yz\)</span> plane of a piece of line charge at the origin would be</p></li>
 </ol>
 <div class="math notranslate nohighlight" id="equation-linee">
-<span class="eqno">(11.43)<a class="headerlink" href="#equation-linee" title="Permalink to this equation">#</a></span>\[d\vec{E} = \frac{dx \lambda}{4\pi\epsilon_0(y^2+z^2)^{3/2}}(y\cos{\theta}\hat{y}
+<span class="eqno">(11.43)<a class="headerlink" href="#equation-linee" title="Link to this equation">#</a></span>\[d\vec{E} = \frac{dx \lambda}{4\pi\epsilon_0(y^2+z^2)^{3/2}}(y\cos{\theta}\hat{y}
 -z\sin{\theta}\hat{z})\]</div>
 <p>(note the full electric field would be an integral over the whole line,
 but you don’t have to do that for this problem.)  The angle <span class="math notranslate nohighlight">\(\theta\)</span>
@@ -1312,8 +1327,8 @@ force.</p></li>
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="c10force.html"
@@ -1341,6 +1356,7 @@ force.</p></li>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1379,9 +1395,10 @@ By Donald A. Smith and Rex Adelberger
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1405,8 +1422,8 @@ By Donald A. Smith and Rex Adelberger
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
