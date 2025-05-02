@@ -197,7 +197,10 @@
 <li class="toctree-l1"><a class="reference internal" href="c12dynamic.html">12. Relativistic Electrodynamics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c13introGR.html">13. Concepts of General Relativity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c14applGR.html">14. Some Applications of General Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="c15bibliography.html">15. References and Further Reading</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="c15bibliography.html">References and Further Reading</a></li>
 </ul>
 
     </div>
@@ -405,7 +408,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clock-on-a-train">3.3.3. Clock on a Train</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">3.4. Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-dilation">3.4. Time Dilation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">3.5. Problems</a></li>
 </ul>
             </nav>
         </div>
@@ -972,8 +976,8 @@ in the same place.</span><a class="headerlink" href="#shipfig" title="Link to th
 </figure>
 <p>We can therefore write a displacement four vector in the reference
 frame at rest with respect to the Earth:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6b2bda54-dab6-42e5-b505-362ccfc6b461">
-<span class="eqno">(3.10)<a class="headerlink" href="#equation-6b2bda54-dab6-42e5-b505-362ccfc6b461" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-624cf40d-8ccf-49b8-bc1a-8ef651d7808b">
+<span class="eqno">(3.10)<a class="headerlink" href="#equation-624cf40d-8ccf-49b8-bc1a-8ef651d7808b" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_\oplus =
 \begin{bmatrix}
 icdt_\oplus\\
@@ -997,8 +1001,8 @@ aboard the space craft will measure some time interval, <span class="math notran
 between the time he sees the earth outside of his window and sees
 alpha centauri outside the window. The observer aboard the space craft
 measures a displacement 4-vector:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1c58a2a4-9db1-4578-8544-145386ecb9ed">
-<span class="eqno">(3.11)<a class="headerlink" href="#equation-1c58a2a4-9db1-4578-8544-145386ecb9ed" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-cc8048cc-4e79-4f62-bd38-656e53b99d8b">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-cc8048cc-4e79-4f62-bd38-656e53b99d8b" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm rocket} =
 \begin{bmatrix}
 icdt_{\rm rocket}\\
@@ -1015,40 +1019,33 @@ nothing to do with the first observer being physically <strong>on</strong> the E
 the <span class="math notranslate nohighlight">\(dt_\oplus\)</span> is measured by the infinite lattice of clocks at
 rest with respect to the Earth.</p>
 <p>The sizes of the two four vectors are:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-22502e7d-d39a-4ab8-a3c8-f15d3548a5a0">
-<span class="eqno">(3.12)<a class="headerlink" href="#equation-22502e7d-d39a-4ab8-a3c8-f15d3548a5a0" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5bf00bee-b85c-46dd-8c19-3ce3edb1ec3e">
+<span class="eqno">(3.12)<a class="headerlink" href="#equation-5bf00bee-b85c-46dd-8c19-3ce3edb1ec3e" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dx_\oplus^2 - (cdt_\oplus)^2 = -(cdt_{\rm rocket})^2
 \end{equation}\]</div>
 <p>Solve for <span class="math notranslate nohighlight">\(dt_{\rm rocket}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-60f5cb38-6dde-4e1d-a5be-41855a5d48f5">
-<span class="eqno">(3.13)<a class="headerlink" href="#equation-60f5cb38-6dde-4e1d-a5be-41855a5d48f5" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-16a17ecf-5fd1-40ca-bd29-9be79c2ce8b0">
+<span class="eqno">(3.13)<a class="headerlink" href="#equation-16a17ecf-5fd1-40ca-bd29-9be79c2ce8b0" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dt_{\rm rocket} = dt_\oplus\sqrt{1-\left(\frac{dx_\oplus}{cdt_\oplus}\right)^2}
 = dt_\oplus \sqrt{1-\beta^2}
 \end{equation}\]</div>
 <p>Note that the quantity under the square root will always be less than one,
 so the time interval on the rocket will always be less than the time
 interval in the Earth’s reference frame!</p>
+<p>This is the famous <strong>Time Dilation</strong>, which will be explored in much
+more detail in <a class="reference internal" href="#sectimedi"><span class="std std-numref">Section 3.4</span></a>.  For now, it is sufficient to
+point out that the constant speed of light demands that the clocks
+attached to the lattice moving with the rocket measure a smaller
+time interval between these events than the clocks attached to the
+lattice that is at rest with respect to the Earth.</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
-<p>Time Dilation:  a clock in a reference frame at rest with respect to two events will
-measure the shortest possible time interval between those two events.</p>
+<p>The Lorentz Factor: <span class="math notranslate nohighlight">\(\gamma = \frac{1}{\sqrt{1-\beta^2}}\)</span></p>
 </aside>
-<p>This is the famous <strong>Time Dilation</strong>, which is sometimes characterized as
-“moving clocks run slow”, but I find this phrase confusing, as all clocks
-could be in motion, relative to something else.  A more precise formulation
-is <strong>“a clock in a reference frame at rest with respect to two events will
-measure the shortest possible time interval between those two events.”</strong>
-This time interval, being unique, also gets a name, and is called the
-<strong>proper time interval</strong>, and is often designated <span class="math notranslate nohighlight">\(dt_0\)</span>.
-If you are not clear on which clock is moving, draw a spacetime diagram and
-see whether the two events you are considering are in the same place.
-Often, the confusion arises because someone is not carefully considering
-what the two events in question actually are, and mistakenly compares
-two different time intervals.</p>
 <p>The quantity <span class="math notranslate nohighlight">\(\sqrt{1-\beta^2}\)</span> comes up so often it has a name: the
-Lorentz Factor, although it is usually more covenient to move it to the
+<strong>Lorentz Factor</strong>, although it is usually more covenient to move it to the
 other side of the equation, since the clock on the rocket is the one
-at rest and therefore <span class="math notranslate nohighlight">\(dt_{\rm rocket}\)</span> is the proper time interval.
+at rest and therefore <span class="math notranslate nohighlight">\(dt_{\rm rocket}\)</span> is the smaller time interval.
 In this case,</p>
 <div class="math notranslate nohighlight" id="equation-eqtimed">
 <span class="eqno">(3.14)<a class="headerlink" href="#equation-eqtimed" title="Link to this equation">#</a></span>\[dt_\oplus = \frac{dt_{\rm rocket}}{\sqrt{1-\beta^2}} = dt_{\rm rocket}\gamma,\]</div>
@@ -1177,42 +1174,17 @@ time interval the person on the ground will measure is thus:</p>
 <p>which means</p>
 <div class="math notranslate nohighlight" id="equation-eqpropertd">
 <span class="eqno">(3.16)<a class="headerlink" href="#equation-eqpropertd" title="Link to this equation">#</a></span>\[dt  = dt_0\frac{1}{\sqrt{1-(v/c)^2}} = \gamma dt_0,\]</div>
-<p>which is the same as Equation <a class="reference internal" href="#equation-eqtimed">(3.14)</a>!  The clock on the ground
-will measure a longer time interval than the clock on the train by a
-factor of <span class="math notranslate nohighlight">\(\gamma\)</span>.  From the point of view of the person on the
-ground, the clock on the train is therefore running slow, so often
-time dilation is summarized as “moving clocks run slow.”</p>
-<p>This is a confusing and imprecise statement, for all its pithy brevity.
-One of the central premises of relativity is that all motion is relative.
-So which clock is moving?  From the point of view of the train, the
-ground is moving, but from the point of view of the ground, the train
-is moving.  If “moving clocks run slow”, could we determine which clock
-is running slow, and then that would tell us which clock is <strong>really</strong>
-moving?</p>
-<p>The trick is that you have to make sure you are making symmetric
-comparisons.  From the ground, the train is moving, and therefore its
-clock runs slow when measuring time intervals <strong>on the train</strong>.  To
-make the comparison properly, if you wanted to test whether the clock
-on the ground was running slow, because it is moving relative to the
-train, you would have to pick two events at rest with respect to the
-<strong>ground</strong>.  In other words, the phrase really should be “moving
-clocks run slow when measuring the time interval between two events at
-rest in the moving frame.”  Or, more clearly, “a clock at rest with
-respect to two events will measure the shortest possible time interval
-between those two events.”  There is only one frame where two events
-are at rest, and that breaks the symmetry underlying the question
-about which clock is moving.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Make sure you understand that nothing in SR makes any demands on what
-kind of clock is being used to make the measurements.  Time dilation
-is not a mechanical effect of the particular clock making the measurements.
-<strong>Any</strong> spatially repeating system (rotation, vibration, oscillation)
-can act as a clock, and <strong>all</strong> of them will measure time dilation.
-It’s a necessary implication of the two postulates of Relativity,
-a property of time itself, not a description of gears winding down or
-some other feature of a particular kind of clock.</p>
-</div>
+<p>which is the same as Equation <a class="reference internal" href="#equation-eqtimed">(3.14)</a>!  Just as with the rocket,
+the clocks that are associated with the reference frame at rest with
+respect to the two events (the clocks on the train) measure a shorter
+time interval than the clocks in the reference frame where these two
+events are not in the same place.  The clock on the ground will
+measure a longer time interval than the clock on the train by a factor
+of <span class="math notranslate nohighlight">\(\gamma\)</span>.  From the point of view of the person on the ground, the
+clock on the train is therefore running slow, so often time dilation
+is summarized as “moving clocks run slow.”  However, see <a class="reference internal" href="#sectimedi"><span class="std std-numref">Section 3.4</span></a>
+for an exploration of important ways in which this statement is
+misleading and easily misunderstood.</p>
 <p>You can also express this example through the formalism of the
 displacement four vectors, and in fact, <a class="reference internal" href="#shipfig"><span class="std std-numref">Fig. 3.4</span></a> will serve
 just as well to represent this situation.  In the reference frame of
@@ -1223,8 +1195,8 @@ The reference frame at rest with respect to the ground is the unprimed
 frame on the left.  The red dot is the emission of the light and the
 blue dot is the detection of the light.  The displacement four vector
 in the train frame would be:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-60d9f93d-1bfa-4a81-9e58-a40036505881">
-<span class="eqno">(3.17)<a class="headerlink" href="#equation-60d9f93d-1bfa-4a81-9e58-a40036505881" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-206e9ddb-d772-4c66-80c0-3f51bbf014ff">
+<span class="eqno">(3.17)<a class="headerlink" href="#equation-206e9ddb-d772-4c66-80c0-3f51bbf014ff" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm train} =
 \begin{bmatrix}
 icdt_0\\
@@ -1234,8 +1206,8 @@ icdt_0\\
 \end{bmatrix}
 \end{equation}\]</div>
 <p>while the displacement four vector from the ground’s reference frame is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-51c262ed-ecee-4296-8e76-4d8533ae5ba9">
-<span class="eqno">(3.18)<a class="headerlink" href="#equation-51c262ed-ecee-4296-8e76-4d8533ae5ba9" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-7c040442-dec5-4a09-a326-461161b7bebb">
+<span class="eqno">(3.18)<a class="headerlink" href="#equation-7c040442-dec5-4a09-a326-461161b7bebb" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm ground} =
 \begin{bmatrix}
 icdt\\
@@ -1254,8 +1226,122 @@ physics of the rocket and the train are exactly the same, because
 the rules of time are the same.</p>
 </section>
 </section>
+<section id="time-dilation">
+<span id="sectimedi"></span><h2><span class="section-number">3.4. </span>Time Dilation<a class="headerlink" href="#time-dilation" title="Link to this heading">#</a></h2>
+<p>Time Dilation is one of the most important, and most confusing,
+demands of the theory of Special Relativity.  The principle is often
+characterized by the phrase “moving clocks run slow”, but I find this
+phrase confusing, as all clocks could be in motion, relative to
+something else.  In the examples above, the Earth is moving in the
+rocket’s frame of reference, and the ground is moving in the train’s
+frame of reference, so which clock is moving?  If “moving clocks run
+slow”, could we determine which clock is running slow, and then that
+would tell us which clock is <strong>really</strong> moving?</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Time Dilation: a set of clocks in a reference frame at rest with
+respect to two events will measure the shortest possible time interval
+between those two events.</p>
+</aside>
+<p>A more precise formulation of the principle is <strong>“a set of clocks in a
+reference frame at rest with respect to two events will measure the
+shortest possible time interval between those two events.”</strong>  Specifying
+which frame of reference has the two events at rest (at the same location
+in space) breaks the symmetry and avoids the confusion as to which clock
+is moving.  There is only one relative reference frame where the two
+events are at rest.  In this reference frame, the time interval is
+a minimum.  Switching into any other reference frame will result in
+clock measurements that yield a longer time interval.  In the rocket
+example, the events of leaving Earth and arriving at the distant star
+are in the same location from the rocket’s point of view, not the Earth’s.
+The light returning to the floor of the train is at the same location
+on the train, not from the reference frame of the ground.  The rocket
+and the train will therefore measure the shortest time interval.</p>
+<p>This shortest time interval, being unique, also gets a name, and is
+called the <strong>proper time interval</strong>, and is often designated <span class="math notranslate nohighlight">\(dt_0\)</span>.
+If you are not clear on which clock is moving, draw a spacetime
+diagram and see whether the two events you are considering are in the
+same place.  Often, the confusion arises because someone is not
+carefully considering what the two events in question actually are,
+and mistakenly compares two different time intervals.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure you understand that nothing in SR makes any demands on what
+kind of clock is being used to make the measurements.  Time dilation
+is not a mechanical effect of the particular clock making the measurements.
+<strong>Any</strong> spatially repeating system (rotation, vibration, oscillation)
+can act as a clock, and <strong>all</strong> of them will measure time dilation.
+It’s a necessary implication of the two postulates of Relativity,
+a property of time itself, not a description of gears winding down or
+some other feature of a particular kind of clock.</p>
+</div>
+<p>It is worth reminding one’s self at this point that we are not
+demanding that time have some kind of universal flow that somehow
+changes when you change the speed of your reference frame.  Relativity
+demands you let go of the Newtonian idea of a universal grid of space
+and time that underlies our lattice of rulers and clocks and is there
+whether we have a lattice or not.  In SR, the measurements of the
+clocks <strong>is</strong> time.  If you still think of some kind of universal time
+flow that changes its rate in different frames, you are still hanging
+on to aspects of the classical way of thinking that you need to
+release.</p>
+<p>The local nature of the effect of time dilation on time intervals is
+shown in <a class="reference internal" href="#timeintervalsfig"><span class="std std-numref">Fig. 3.6</span></a>, which is an animated adaptation
+of a graph in the delighful <span id="id1">[<a class="reference internal" href="c15bibliography.html#id11" title="Tatsu Takeuchi. An Illlustrated Guide to Relativity. Cambridge University Press, 2010.">Takeuchi, 2010</a>]</span>.  The figure shows a
+spacetime diagram with four particular events marked as colored dots.
+In the initial reference frame, these four events are at two different
+locations: the first and last are to the right of the second and
+third.  The events are spaced evenly in time, with <span class="math notranslate nohighlight">\(c\Delta t\)</span> being
+0.2 units between each successive pair of events.  Horizontal colored
+lines show where the clock readings would be read off the time axis,
+and the clock reading numbers themselves are indicated in white boxes
+to the left of the axis.</p>
+<p>By moving the slider to the right or left, you can have the yellow
+arrows shift to indicate the set of events that would lie on the
+axes in reference frames in relative motion.  The colored lines will
+shift to indicate where the clock readings for the new axes would be,
+and the clock readings themselves will change to indicate which events
+on the new time axis are simultaneous with the four events.</p>
+<p>If the flow of time were some universal thing; something that changed
+according to your frame of reference but still existed everywhere,
+the numbers in the boxes would maintain the same differences.  However,
+if you shift all the way to the left, you can see that the second event
+happens more quickly after the first than the fourth does after the
+third. If you shift the slider all the way to the right, it’s the
+last two events that happen in quicker succession than the first two
+events.</p>
+<p>The conclusion is inescapable: the time interval between two events
+depends on where and when the pairs of events are, and not some kind
+of universal rate of the flow of time.  In the next few chapters, we
+will explore more productive ways to think about the relationships
+between space, time, and motion, but the most important step to make
+now is to let go of the idea of a single, universal, underlying space
+that exists independent of our measurements of it, and a flow of time
+that functions independent of space and our motion through it.</p>
+<figure class="align-default" id="timeintervalsfig" style="width: 800px">
+<div class="output text_html">
+        <iframe
+            width="800"
+            height="650"
+            src="https://glowscript.org/#/user/dasmith/folder/Public/program/SRfourevents"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div><figcaption>
+<p><span class="caption-number">Fig. 3.6 </span><span class="caption-text">Interactive animation of time intervals.  Four events are indicated in different
+colors.  A slider changes the relative velocity to another reference frame.
+The four numbers in the white boxes indicate the clock readings along the time
+axis at the events that are simultaneous with the four colored events in the
+relatively moving reference frame.  The key takeaway is that while the four
+events are evenly spaced in time in the original frame (<span class="math notranslate nohighlight">\(\beta_R=0\)</span>), the
+time intervals between events do not stretch identically in every other frame.
+Time dilation is not a <strong>universal</strong>, uniform, change in the “flow of time”.</span><a class="headerlink" href="#timeintervalsfig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
 <section id="problems">
-<h2><span class="section-number">3.4. </span>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.5. </span>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>An experimenter measures the following physical changes between two
 events <span class="math notranslate nohighlight">\(dx = 1.00\)</span> m, <span class="math notranslate nohighlight">\(dy = 0.300\)</span> m, <span class="math notranslate nohighlight">\(dz = -0.100\)</span> m, and <span class="math notranslate nohighlight">\(dt = 6.00\)</span> ns.
@@ -1372,7 +1458,8 @@ sun and the speed of a neutrino?</p></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clock-on-a-train">3.3.3. Clock on a Train</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">3.4. Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-dilation">3.4. Time Dilation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">3.5. Problems</a></li>
 </ul>
   </nav></div>
 

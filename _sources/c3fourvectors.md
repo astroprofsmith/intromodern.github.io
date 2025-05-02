@@ -794,28 +794,21 @@ Note that the quantity under the square root will always be less than one,
 so the time interval on the rocket will always be less than the time
 interval in the Earth's reference frame!
 
+This is the famous **Time Dilation**, which will be explored in much
+more detail in {numref}`secTimeDi`.  For now, it is sufficient to
+point out that the constant speed of light demands that the clocks
+attached to the lattice moving with the rocket measure a smaller
+time interval between these events than the clocks attached to the
+lattice that is at rest with respect to the Earth.
+
 ```{margin}
-Time Dilation:  a clock in a reference frame at rest with respect to two events will
-measure the shortest possible time interval between those two events.
+The Lorentz Factor: $\gamma = \frac{1}{\sqrt{1-\beta^2}}$
 ```
 
-This is the famous **Time Dilation**, which is sometimes characterized as
-"moving clocks run slow", but I find this phrase confusing, as all clocks
-could be in motion, relative to something else.  A more precise formulation
-is **"a clock in a reference frame at rest with respect to two events will
-measure the shortest possible time interval between those two events."**
-This time interval, being unique, also gets a name, and is called the
-**proper time interval**, and is often designated $dt_0$.
-If you are not clear on which clock is moving, draw a spacetime diagram and
-see whether the two events you are considering are in the same place.
-Often, the confusion arises because someone is not carefully considering
-what the two events in question actually are, and mistakenly compares
-two different time intervals.
-
 The quantity $\sqrt{1-\beta^2}$ comes up so often it has a name: the
-Lorentz Factor, although it is usually more covenient to move it to the
+**Lorentz Factor**, although it is usually more covenient to move it to the
 other side of the equation, since the clock on the rocket is the one
-at rest and therefore $dt_{\rm rocket}$ is the proper time interval.
+at rest and therefore $dt_{\rm rocket}$ is the smaller time interval.
 In this case,
 ```{math}
 :label: eqtimed
@@ -961,44 +954,17 @@ which means
 :label: eqpropertd
 dt  = dt_0\frac{1}{\sqrt{1-(v/c)^2}} = \gamma dt_0,
 ```
-which is the same as Equation {eq}`eqtimed`!  The clock on the ground
-will measure a longer time interval than the clock on the train by a
-factor of $\gamma$.  From the point of view of the person on the
-ground, the clock on the train is therefore running slow, so often
-time dilation is summarized as "moving clocks run slow."
-
-This is a confusing and imprecise statement, for all its pithy brevity.
-One of the central premises of relativity is that all motion is relative.
-So which clock is moving?  From the point of view of the train, the
-ground is moving, but from the point of view of the ground, the train
-is moving.  If "moving clocks run slow", could we determine which clock
-is running slow, and then that would tell us which clock is **really**
-moving?
-
-The trick is that you have to make sure you are making symmetric
-comparisons.  From the ground, the train is moving, and therefore its
-clock runs slow when measuring time intervals **on the train**.  To
-make the comparison properly, if you wanted to test whether the clock
-on the ground was running slow, because it is moving relative to the
-train, you would have to pick two events at rest with respect to the
-**ground**.  In other words, the phrase really should be "moving
-clocks run slow when measuring the time interval between two events at
-rest in the moving frame."  Or, more clearly, "a clock at rest with
-respect to two events will measure the shortest possible time interval
-between those two events."  There is only one frame where two events
-are at rest, and that breaks the symmetry underlying the question
-about which clock is moving.
-
-```{note}
-Make sure you understand that nothing in SR makes any demands on what
-kind of clock is being used to make the measurements.  Time dilation
-is not a mechanical effect of the particular clock making the measurements.
-**Any** spatially repeating system (rotation, vibration, oscillation)
-can act as a clock, and **all** of them will measure time dilation.
-It's a necessary implication of the two postulates of Relativity,
-a property of time itself, not a description of gears winding down or
-some other feature of a particular kind of clock.
-```
+which is the same as Equation {eq}`eqtimed`!  Just as with the rocket,
+the clocks that are associated with the reference frame at rest with
+respect to the two events (the clocks on the train) measure a shorter
+time interval than the clocks in the reference frame where these two
+events are not in the same place.  The clock on the ground will
+measure a longer time interval than the clock on the train by a factor
+of $\gamma$.  From the point of view of the person on the ground, the
+clock on the train is therefore running slow, so often time dilation
+is summarized as "moving clocks run slow."  However, see {numref}`secTimeDi`
+for an exploration of important ways in which this statement is
+misleading and easily misunderstood.
 
 You can also express this example through the formalism of the
 displacement four vectors, and in fact, {numref}`shipfig` will serve
@@ -1036,6 +1002,132 @@ $$-c^2dt_0^2 = -c^2dt^2+v^2dt^2,$$ which is exactly the same as Equation
 Despite what seem to be completely different contexts, the underlying
 physics of the rocket and the train are exactly the same, because
 the rules of time are the same.
+
+(secTimeDi)=
+## Time Dilation
+
+Time Dilation is one of the most important, and most confusing,
+demands of the theory of Special Relativity.  The principle is often
+characterized by the phrase "moving clocks run slow", but I find this
+phrase confusing, as all clocks could be in motion, relative to
+something else.  In the examples above, the Earth is moving in the
+rocket's frame of reference, and the ground is moving in the train's
+frame of reference, so which clock is moving?  If "moving clocks run
+slow", could we determine which clock is running slow, and then that
+would tell us which clock is **really** moving?
+
+```{margin}
+Time Dilation: a set of clocks in a reference frame at rest with
+respect to two events will measure the shortest possible time interval
+between those two events.
+```
+
+A more precise formulation of the principle is **"a set of clocks in a
+reference frame at rest with respect to two events will measure the
+shortest possible time interval between those two events."**  Specifying
+which frame of reference has the two events at rest (at the same location
+in space) breaks the symmetry and avoids the confusion as to which clock
+is moving.  There is only one relative reference frame where the two
+events are at rest.  In this reference frame, the time interval is
+a minimum.  Switching into any other reference frame will result in
+clock measurements that yield a longer time interval.  In the rocket
+example, the events of leaving Earth and arriving at the distant star
+are in the same location from the rocket's point of view, not the Earth's.
+The light returning to the floor of the train is at the same location
+on the train, not from the reference frame of the ground.  The rocket
+and the train will therefore measure the shortest time interval.
+
+This shortest time interval, being unique, also gets a name, and is
+called the **proper time interval**, and is often designated $dt_0$.
+If you are not clear on which clock is moving, draw a spacetime
+diagram and see whether the two events you are considering are in the
+same place.  Often, the confusion arises because someone is not
+carefully considering what the two events in question actually are,
+and mistakenly compares two different time intervals.
+
+```{note}
+Make sure you understand that nothing in SR makes any demands on what
+kind of clock is being used to make the measurements.  Time dilation
+is not a mechanical effect of the particular clock making the measurements.
+**Any** spatially repeating system (rotation, vibration, oscillation)
+can act as a clock, and **all** of them will measure time dilation.
+It's a necessary implication of the two postulates of Relativity,
+a property of time itself, not a description of gears winding down or
+some other feature of a particular kind of clock.
+```
+
+It is worth reminding one's self at this point that we are not
+demanding that time have some kind of universal flow that somehow
+changes when you change the speed of your reference frame.  Relativity
+demands you let go of the Newtonian idea of a universal grid of space
+and time that underlies our lattice of rulers and clocks and is there
+whether we have a lattice or not.  In SR, the measurements of the
+clocks **is** time.  If you still think of some kind of universal time
+flow that changes its rate in different frames, you are still hanging
+on to aspects of the classical way of thinking that you need to
+release.
+
+The local nature of the effect of time dilation on time intervals is
+shown in {numref}`timeintervalsfig`, which is an animated adaptation
+of a graph in the delighful {cite}`Takeuchi10`.  The figure shows a
+spacetime diagram with four particular events marked as colored dots.
+In the initial reference frame, these four events are at two different
+locations: the first and last are to the right of the second and
+third.  The events are spaced evenly in time, with $c\Delta t$ being
+0.2 units between each successive pair of events.  Horizontal colored
+lines show where the clock readings would be read off the time axis,
+and the clock reading numbers themselves are indicated in white boxes
+to the left of the axis.
+
+By moving the slider to the right or left, you can have the yellow
+arrows shift to indicate the set of events that would lie on the
+axes in reference frames in relative motion.  The colored lines will
+shift to indicate where the clock readings for the new axes would be,
+and the clock readings themselves will change to indicate which events
+on the new time axis are simultaneous with the four events.
+
+If the flow of time were some universal thing; something that changed
+according to your frame of reference but still existed everywhere,
+the numbers in the boxes would maintain the same differences.  However,
+if you shift all the way to the left, you can see that the second event
+happens more quickly after the first than the fourth does after the
+third. If you shift the slider all the way to the right, it's the
+last two events that happen in quicker succession than the first two
+events.
+
+The conclusion is inescapable: the time interval between two events
+depends on where and when the pairs of events are, and not some kind
+of universal rate of the flow of time.  In the next few chapters, we
+will explore more productive ways to think about the relationships
+between space, time, and motion, but the most important step to make
+now is to let go of the idea of a single, universal, underlying space
+that exists independent of our measurements of it, and a flow of time
+that functions independent of space and our motion through it.
+
+
+
+```{code-cell}
+:tags: ["remove-cell"]
+# Showing that time dilation is not a change in universal time flow
+url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRfourevents"
+test = display.IFrame(src=url1,width=800,height=650)
+glue("noUdtfig",test, display=False)
+
+```
+
+```{glue:figure} noUdtfig
+:figwidth: 800px
+:name: timeintervalsfig
+
+Interactive animation of time intervals.  Four events are indicated in different
+colors.  A slider changes the relative velocity to another reference frame.
+The four numbers in the white boxes indicate the clock readings along the time
+axis at the events that are simultaneous with the four colored events in the
+relatively moving reference frame.  The key takeaway is that while the four
+events are evenly spaced in time in the original frame ($\beta_R=0$), the
+time intervals between events do not stretch identically in every other frame.
+Time dilation is not a **universal**, uniform, change in the "flow of time".
+```
 
 
 ## Problems
