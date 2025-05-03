@@ -115,7 +115,8 @@ of $\beta_R = 0.75$.
 For two events at rest, we call the time interval between them the proper time, $dt_0$,
 and the square of the displacement four vector is $-c^2dt_0^2$.  Because the
 size of a four vector is invariant through a Lorentz transformation, this must
-be the size of the displacement four vector in the S' frame as well, which means
+be the size of the displacement four vector in the S' frame as well, which means,
+according to Equation {eq}`eqnds`:
 ```{math}
 -c^2dt_0^2 = dx^{'2} - c^2dt^{'2}
 ```
@@ -134,8 +135,9 @@ and if we take $\gamma_R^2\equiv 1/(1-\beta_R^2)$, then
 dt' = \gamma_R dt_0
 }
 ```
-which we call **Time Dilation**, and that is why the blue dot on the
-right is higher than the blue dot on the left.
+which we call **Time Dilation** (explained in more detail in
+{numref}`secTimeDi`), and that is why the blue dot on the right
+is higher than the blue dot on the left.
 
 What I wish to do in this chapter is to apply this kind of analysis to sets
 of events, to present patterns in spacetime that will help you improve your
@@ -671,10 +673,11 @@ What counts as "simultaneous" depends on your frame of reference.
 
 Finally, note that the blue event leaves a trail that looks just like
 the orange trail, only rotated $90^\circ$.  You might think from this
-similarity that there must also be a length dilation to match the
-time dilation illustrated by the orange trail.  This is not the case.
-Instead, we talk about a length **contraction**.  How can this be?
-The difference lies in what we mean by "length."
+similarity that there must also be a length dilation to match the time
+dilation illustrated by the orange trail.  This is not the case.
+Instead, we talk about a length **contraction** (explained further in
+{numref}`secLenCon`).  How can this be?  The difference lies in what we
+mean by "length."
 
 Imagine that the leftmost and rightmost column of events lie upon
 vertical worldlines that represent the left and right ends of an
@@ -773,6 +776,18 @@ v_z
 Note that the $x$ and $y$ components of the vector get "mixed up" when you
 rotate the coordinate system.  By rotation, you are turning part of $x$ into $y$
 and vice versa.
+
+You can gain an intuitive understanding of how this works by standing up and
+pointing your left hand straight ahead of you, and your right hand straight
+to the right, with your arms at full extension.  Now, turn to your right without
+changing the relative orientation of your arms.  Your left arm is now pointing
+where your right arm was, and your right arm is now pointing opposite to where your
+left arm was.  If we take your original right arm to be $v_x$ and your original
+left arm to be $v_y$, you can plug ninety degrees into Equation {eq}`rotang`
+and see that $v_x^\prime$ (where your right arm is now) is $-v_y$ (opposite
+where your left arm was) and $v_y^\prime$ (where your left arm is now) is
+$v_x$ (where your right arm was).  For intermediate angles, you would express
+your new arm directions as combinations of your original arm directions.
 
 The periodic nature of the sinusoidal functions corresponds to the angle
 being able to go around and around and around.  To have the angle approach

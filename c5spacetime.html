@@ -197,7 +197,10 @@
 <li class="toctree-l1"><a class="reference internal" href="c12dynamic.html">12. Relativistic Electrodynamics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c13introGR.html">13. Concepts of General Relativity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c14applGR.html">14. Some Applications of General Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="c15bibliography.html">15. References and Further Reading</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="c15bibliography.html">References and Further Reading</a></li>
 </ul>
 
     </div>
@@ -442,7 +445,8 @@ of <span class="math notranslate nohighlight">\(\beta_R = 0.75\)</span>.</span><
 <p>For two events at rest, we call the time interval between them the proper time, <span class="math notranslate nohighlight">\(dt_0\)</span>,
 and the square of the displacement four vector is <span class="math notranslate nohighlight">\(-c^2dt_0^2\)</span>.  Because the
 size of a four vector is invariant through a Lorentz transformation, this must
-be the size of the displacement four vector in the S’ frame as well, which means</p>
+be the size of the displacement four vector in the S’ frame as well, which means,
+according to Equation <a class="reference internal" href="c2postulates.html#equation-eqnds">(2.4)</a>:</p>
 <div class="math notranslate nohighlight">
 \[-c^2dt_0^2 = dx^{'2} - c^2dt^{'2}\]</div>
 <p>Factor out the <span class="math notranslate nohighlight">\(cdt'\)</span> and divide through by <span class="math notranslate nohighlight">\(c^2\)</span> to get</p>
@@ -456,8 +460,9 @@ be the size of the displacement four vector in the S’ frame as well, which mea
 <span class="eqno">(5.1)<a class="headerlink" href="#equation-timedilation5" title="Link to this equation">#</a></span>\[\boxed{
 dt' = \gamma_R dt_0
 }\]</div>
-<p>which we call <strong>Time Dilation</strong>, and that is why the blue dot on the
-right is higher than the blue dot on the left.</p>
+<p>which we call <strong>Time Dilation</strong> (explained in more detail in
+<a class="reference internal" href="c3fourvectors.html#sectimedi"><span class="std std-numref">Section 3.4</span></a>), and that is why the blue dot on the right
+is higher than the blue dot on the left.</p>
 <p>What I wish to do in this chapter is to apply this kind of analysis to sets
 of events, to present patterns in spacetime that will help you improve your
 intuition about the implications that SR demands, which are so contrary to
@@ -534,7 +539,7 @@ and off.</span><a class="headerlink" href="#figinterval" title="Link to this ima
 </figcaption>
 </figure>
 <p>Given such a setup, the observer can define two time intervals, which
-we will call <span class="math notranslate nohighlight">\(t_1\)</span> and <span class="math notranslate nohighlight">\(t_2\)</span>, following <span id="id1">[<a class="reference internal" href="c15bibliography.html#id9" title="Robert Geroch. General Relativity from A to B. Dover, 1981.">Geroch, 1981</a>]</span>.  The first
+we will call <span class="math notranslate nohighlight">\(t_1\)</span> and <span class="math notranslate nohighlight">\(t_2\)</span>, following <span id="id1">[<a class="reference internal" href="c15bibliography.html#id10" title="Robert Geroch. General Relativity from A to B. Dover, 1981.">Geroch, 1981</a>]</span>.  The first
 is the time from the red dot until the light returns, and the second
 is the time from the moment the light is sent out until the time of
 the red dot.  These time intervals are represented in
@@ -956,10 +961,11 @@ interval, and you can find ranges of <span class="math notranslate nohighlight">
 What counts as “simultaneous” depends on your frame of reference.</p>
 <p>Finally, note that the blue event leaves a trail that looks just like
 the orange trail, only rotated <span class="math notranslate nohighlight">\(90^\circ\)</span>.  You might think from this
-similarity that there must also be a length dilation to match the
-time dilation illustrated by the orange trail.  This is not the case.
-Instead, we talk about a length <strong>contraction</strong>.  How can this be?
-The difference lies in what we mean by “length.”</p>
+similarity that there must also be a length dilation to match the time
+dilation illustrated by the orange trail.  This is not the case.
+Instead, we talk about a length <strong>contraction</strong> (explained further in
+<a class="reference internal" href="c6displacement.html#seclencon"><span class="std std-numref">Section 6.4</span></a>).  How can this be?  The difference lies in what we
+mean by “length.”</p>
 <p>Imagine that the leftmost and rightmost column of events lie upon
 vertical worldlines that represent the left and right ends of an
 object at rest.  Then the magenta sphere and the blue sphere are in
@@ -1047,6 +1053,17 @@ v_z
 <p>Note that the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> components of the vector get “mixed up” when you
 rotate the coordinate system.  By rotation, you are turning part of <span class="math notranslate nohighlight">\(x\)</span> into <span class="math notranslate nohighlight">\(y\)</span>
 and vice versa.</p>
+<p>You can gain an intuitive understanding of how this works by standing up and
+pointing your left hand straight ahead of you, and your right hand straight
+to the right, with your arms at full extension.  Now, turn to your right without
+changing the relative orientation of your arms.  Your left arm is now pointing
+where your right arm was, and your right arm is now pointing opposite to where your
+left arm was.  If we take your original right arm to be <span class="math notranslate nohighlight">\(v_x\)</span> and your original
+left arm to be <span class="math notranslate nohighlight">\(v_y\)</span>, you can plug ninety degrees into Equation <a class="reference internal" href="#equation-rotang">(5.6)</a>
+and see that <span class="math notranslate nohighlight">\(v_x^\prime\)</span> (where your right arm is now) is <span class="math notranslate nohighlight">\(-v_y\)</span> (opposite
+where your left arm was) and <span class="math notranslate nohighlight">\(v_y^\prime\)</span> (where your left arm is now) is
+<span class="math notranslate nohighlight">\(v_x\)</span> (where your right arm was).  For intermediate angles, you would express
+your new arm directions as combinations of your original arm directions.</p>
 <p>The periodic nature of the sinusoidal functions corresponds to the angle
 being able to go around and around and around.  To have the angle approach
 an asymptote, as in a spacetime diagram, we need the hyperbolic trig functions,
