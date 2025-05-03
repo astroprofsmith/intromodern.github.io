@@ -335,14 +335,16 @@ g_{01}dx^1 +
 g_{02}dx^2 +
 g_{03}dx^3
 ```
-That leaves
-you with $dx_0 = -dx^0$.  In this notation, we can write {eq}`eqnds`
-as
+That leaves you with $dx_0 = -dx^0$.  In this notation, we can write
+Equation {eq}`eqnds` as
 ```{math}
 :label: invareq
 (dx^\prime - dx)^\mu g_{\mu\nu}(dx^\prime - dx)^\nu = 0,
 ```
-as noted by {cite}`coleman22`.
+as noted by {cite}`coleman22`.  Although the sub- and super-scripts
+are moved outside the parentheses, the implication is that the four-vectors
+are subtracted by components, so $(dx^\prime - dx)^0$ means the
+same as $dx^{\prime 0}-dx^0$.
 
 The metric doesn't have to look like this.  The metric for spacetime
 around a spherically symmetric massive object, for example (called
@@ -1049,7 +1051,8 @@ If you are not clear on which clock is moving, draw a spacetime
 diagram and see whether the two events you are considering are in the
 same place.  Often, the confusion arises because someone is not
 carefully considering what the two events in question actually are,
-and mistakenly compares two different time intervals.
+and they mistakenly compare two different time intervals, rather than
+the same interval in different reference frames.
 
 ```{note}
 Make sure you understand that nothing in SR makes any demands on what
