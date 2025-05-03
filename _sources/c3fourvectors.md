@@ -336,7 +336,13 @@ g_{02}dx^2 +
 g_{03}dx^3
 ```
 That leaves
-you with $dx_0 = -dx^0$.
+you with $dx_0 = -dx^0$.  In this notation, we can write {eq}`eqnds`
+as
+```{math}
+:label: invareq
+(dx^\prime - dx)^\mu g_{\mu\nu}(dx^\prime - dx)^\nu = 0,
+```
+as noted by {cite}`coleman22`.
 
 The metric doesn't have to look like this.  The metric for spacetime
 around a spherically symmetric massive object, for example (called
