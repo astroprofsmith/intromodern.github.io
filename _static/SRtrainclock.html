@@ -1,0 +1,162 @@
+<div id="glowscript" class="glowscript">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" href="https://www.glowscript.org/css/redmond/2.1/jquery-ui.custom.css" rel="stylesheet" />
+<link type="text/css" href="https://www.glowscript.org/css/ide.css" rel="stylesheet" />
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery-ui.custom.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/glow.3.2.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/RSrun.3.2.min.js"></script>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+// START JAVASCRIPT
+;(function() {;
+var ρσ_modules = {};
+ρσ_modules.pythonize = {};
+
+(function(){
+    function strings() {
+        var string_funcs, exclude, name;
+        string_funcs = set("capitalize strip lstrip rstrip islower isupper isspace lower upper swapcase center count endswith startswith find rfind index rindex format join ljust rjust partition rpartition replace split rsplit splitlines zfill".split(" "));
+        if (!arguments.length) {
+            exclude = (function(){
+                var s = ρσ_set();
+                s.jsset.add("split");
+                s.jsset.add("replace");
+                return s;
+            })();
+        } else if (arguments[0]) {
+            exclude = Array.prototype.slice.call(arguments);
+        } else {
+            exclude = null;
+        }
+        if (exclude) {
+            string_funcs = string_funcs.difference(set(exclude));
+        }
+        var ρσ_Iter0 = string_funcs;
+        ρσ_Iter0 = ((typeof ρσ_Iter0[Symbol.iterator] === "function") ? (ρσ_Iter0 instanceof Map ? ρσ_Iter0.keys() : ρσ_Iter0) : Object.keys(ρσ_Iter0));
+        for (var ρσ_Index0 of ρσ_Iter0) {
+            name = ρσ_Index0;
+            (ρσ_expr_temp = String.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name] = (ρσ_expr_temp = ρσ_str.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name];
+        }
+    };
+    if (!strings.__module__) Object.defineProperties(strings, {
+        __module__ : {value: "pythonize"}
+    });
+
+    ρσ_modules.pythonize.strings = strings;
+})();
+async function __main__() {
+"use strict";
+    var display = canvas;
+    var scene = canvas();
+
+    function round(num, n=0) {return Number(num.toFixed(n))}
+
+    var version, print, arange, __name__, type, ρσ_ls, fig, h, length, train, klock, laser, sl, wt, v, dxtext, dt, beta, gamma, t, k, dir;
+    version = ρσ_list_decorate([ "3.2", "glowscript" ]);
+    Array.prototype['+'] = function(r) {return this.concat(r)}
+    Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
+    window.__GSlang = "vpython";
+    print = GSprint;
+    arange = range;
+    __name__ = "__main__";
+    type = pytype;
+    var strings = ρσ_modules.pythonize.strings;
+
+    strings();
+    "2";
+    fig = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Laser Clock on a Train", width: 750, height: 500})]);
+    "4";
+    h = 6;
+    "5";
+    length = 20;
+    "7";
+    train = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), color: color.yellow, size: vec(length, h, 6), opacity: .3})]);
+    "8";
+    klock = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](h)["/"](2), 0), color: color.red, size: h["/"](10)["*"](vec(1, 1, 1))})]);
+    "9";
+    laser = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vec(0, 1["-u"]()["*"](h)["/"](2), 0), color: color.white, radius: h["/"](25), make_trail: true})]);
+    "11";
+    fig.caption = "Set beta with slider then hit space bar to shoot laser\n";
+    "12";
+    async function shiftq(s) {
+        "13";
+        wt.text = "betaR = {:1.2f}".format(s.value);
+    };
+    if (!shiftq.__argnames__) Object.defineProperties(shiftq, {
+        __argnames__ : {value: ["s"]},
+        __module__ : {value: null}
+    });
+
+    "15";
+    sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 0, max: .99, value: 0, length: 600, bind: shiftq, right: 15})]);
+    "16";
+    wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "betaR = {:1.2f} \n\n".format(sl.value)})]);
+    "18";
+    v = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](h), 0), color: color.magenta, axis: vector(0, 0, 0)})]);
+    "20";
+    dxtext = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](length)["/"](2), 1["-u"]()["*"](h)["/"](2)["*"](1.5), 0), text: "D = 0.00", color: color.green, height: 20})]);
+    "22";
+    dt = .001;
+    "23";
+    while (true) {
+        "24";
+        (await rate(1["/"](dt)));
+        "26";
+        beta = sl.value;
+        "27";
+        gamma = 1["/"](sqrt(1["-"](1["*"](Math.pow(beta, 2)))));
+        "28";
+        v.axis.x = beta["*"](length)["/"](2);
+        "29";
+        t = 0;
+        "31";
+        k = (await keysdown());
+        "32";
+        if (ρσ_in(" ", k)) {
+            "33";
+            train.pos = vec(0, 0, 0);
+            "34";
+            klock.pos = vector(0, 1["-u"]()["*"](h)["/"](2), 0);
+            "35";
+            laser.pos = vector(0, 1["-u"]()["*"](h)["/"](2), 0);
+            "36";
+            t = 0;
+            "37";
+            dir = 1;
+            "38";
+            dxtext.text = "D = {:1.2f}".format(t);
+            "40";
+            while (laser.pos.y[">="](1["-u"]()["*"](h)["/"](2)) || (t === 0 || typeof t === "object" && ρσ_equals(t, 0))) {
+                "41";
+                (await rate(1e4));
+                "42";
+                train.pos.x=train.pos.x["+"](beta["*"](dt));
+                "43";
+                klock.pos.x=klock.pos.x["+"](beta["*"](dt));
+                "44";
+                laser.pos.x=laser.pos.x["+"](beta["*"](dt));
+                "45";
+                laser.pos.y=laser.pos.y["+"](dir["*"](sqrt(1["-"](1["*"](Math.pow(beta, 2)))))["*"](dt));
+                "46";
+                if (laser.pos.y[">="](h["/"](2))) {
+                    "47";
+                    dir = 1["-u"]()["*"](1);
+                }
+                "49";
+                dxtext.text = "D = {:1.2f}".format(t);
+                "50";
+                t=t["+"](dt);
+            }
+        }
+    }
+};
+if (!__main__.__module__) Object.defineProperties(__main__, {
+    __module__ : {value: null}
+});
+
+;$(function(){ window.__context = { glowscript_container: $("#glowscript").removeAttr("id") }; __main__() })})()
+// END JAVASCRIPT
+
+//--><!]]></script>
+</div>

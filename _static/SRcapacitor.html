@@ -1,0 +1,226 @@
+<div id="glowscript" class="glowscript">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" href="https://www.glowscript.org/css/redmond/2.1/jquery-ui.custom.css" rel="stylesheet" />
+<link type="text/css" href="https://www.glowscript.org/css/ide.css" rel="stylesheet" />
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery-ui.custom.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/glow.3.2.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/RSrun.3.2.min.js"></script>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+// START JAVASCRIPT
+;(function() {;
+var ρσ_modules = {};
+ρσ_modules.pythonize = {};
+
+(function(){
+    function strings() {
+        var string_funcs, exclude, name;
+        string_funcs = set("capitalize strip lstrip rstrip islower isupper isspace lower upper swapcase center count endswith startswith find rfind index rindex format join ljust rjust partition rpartition replace split rsplit splitlines zfill".split(" "));
+        if (!arguments.length) {
+            exclude = (function(){
+                var s = ρσ_set();
+                s.jsset.add("split");
+                s.jsset.add("replace");
+                return s;
+            })();
+        } else if (arguments[0]) {
+            exclude = Array.prototype.slice.call(arguments);
+        } else {
+            exclude = null;
+        }
+        if (exclude) {
+            string_funcs = string_funcs.difference(set(exclude));
+        }
+        var ρσ_Iter0 = string_funcs;
+        ρσ_Iter0 = ((typeof ρσ_Iter0[Symbol.iterator] === "function") ? (ρσ_Iter0 instanceof Map ? ρσ_Iter0.keys() : ρσ_Iter0) : Object.keys(ρσ_Iter0));
+        for (var ρσ_Index0 of ρσ_Iter0) {
+            name = ρσ_Index0;
+            (ρσ_expr_temp = String.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name] = (ρσ_expr_temp = ρσ_str.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name];
+        }
+    };
+    if (!strings.__module__) Object.defineProperties(strings, {
+        __module__ : {value: "pythonize"}
+    });
+
+    ρσ_modules.pythonize.strings = strings;
+})();
+async function __main__() {
+"use strict";
+    var display = canvas;
+    var scene = canvas();
+
+    function round(num, n=0) {return Number(num.toFixed(n))}
+
+    var version, print, arange, __name__, type, ρσ_ls, myscreen, Nside, Nq, lengthside, speed, Nsidearrow, Nvec, NBarrowside, NBarrow, xhat, yhat, zhat, v, q, i, n, j, E, B, sl, wt, betaR, gamR;
+    version = ρσ_list_decorate([ "3.2", "glowscript" ]);
+    Array.prototype['+'] = function(r) {return this.concat(r)}
+    Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
+    window.__GSlang = "vpython";
+    print = GSprint;
+    arange = range;
+    __name__ = "__main__";
+    type = pytype;
+    var strings = ρσ_modules.pythonize.strings;
+
+    strings();
+    "2";
+    myscreen = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Frame Shifting a Parallel Plate Capacitor", width: 750, height: 500})]);
+    "4";
+    Nside = 20;
+    "5";
+    Nq = Math.pow(Nside, 2);
+    "6";
+    lengthside = 5;
+    "7";
+    speed = 0;
+    "8";
+    Nsidearrow = 5;
+    "9";
+    Nvec = Math.pow(Nsidearrow, 2);
+    "10";
+    NBarrowside = 4;
+    "11";
+    NBarrow = Math.pow(NBarrowside, 2);
+    "13";
+    xhat = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({color: color.red, axis: vector(1, 0, 0)})]);
+    "14";
+    yhat = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({color: color.green, axis: vector(0, 1, 0)})]);
+    "15";
+    zhat = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({color: color.blue, axis: vector(0, 0, 1)})]);
+    "17";
+    v = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, lengthside["/"](2)), color: color.magenta, axis: vector(speed, 0, 0)})]);
+    "19";
+    myscreen.camera.pos = vector(0, lengthside, lengthside);
+    "20";
+    myscreen.camera.axis = 1["-u"]()["*"](myscreen.camera.pos);
+    "22";
+    q = (function() {
+        var ρσ_Iter = range(Nq), ρσ_Result = [], i;
+        ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
+        for (var ρσ_Index of ρσ_Iter) {
+            i = ρσ_Index;
+            ρσ_Result.push(ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), color: color.orange, radius: .05})]));
+        }
+        ρσ_Result = ρσ_list_constructor(ρσ_Result);
+        return ρσ_Result;
+    })();
+    "23";
+    for (var ρσ_Index1 = 0; ρσ_Index1["<"](Nside); ρσ_Index1++) {
+        i = ρσ_Index1;
+        "24";
+        for (var ρσ_Index2 = 0; ρσ_Index2["<"](Nside); ρσ_Index2++) {
+            j = ρσ_Index2;
+            "25";
+            n = i["*"](Nside)["+"](j);
+            "26";
+            ρσ_getitem(q, n).pos = vector(i["/"](Nside)["-"](.5)["*"](lengthside), 0, j["/"](Nside)["-"](.5)["*"](lengthside));
+        }
+    }
+    "28";
+    E = (function() {
+        var ρσ_Iter = range(Nvec), ρσ_Result = [], i;
+        ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
+        for (var ρσ_Index of ρσ_Iter) {
+            i = ρσ_Index;
+            ρσ_Result.push(ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), color: color.cyan, axis: vector(0, 1, 0)})]));
+        }
+        ρσ_Result = ρσ_list_constructor(ρσ_Result);
+        return ρσ_Result;
+    })();
+    "29";
+    for (var ρσ_Index3 = 0; ρσ_Index3["<"](Nsidearrow); ρσ_Index3++) {
+        i = ρσ_Index3;
+        "30";
+        for (var ρσ_Index4 = 0; ρσ_Index4["<"](Nsidearrow); ρσ_Index4++) {
+            j = ρσ_Index4;
+            "31";
+            n = i["*"](Nsidearrow)["+"](j);
+            "32";
+            ρσ_getitem(E, n).pos = vector(i["/"](Nsidearrow)["-"](1["*"](.42))["*"](lengthside)["*"](.7), 0, j["/"](Nsidearrow)["-"](1["*"](.42))["*"](lengthside)["*"](.7));
+        }
+    }
+    "35";
+    B = (function() {
+        var ρσ_Iter = range(NBarrow), ρσ_Result = [], i;
+        ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
+        for (var ρσ_Index of ρσ_Iter) {
+            i = ρσ_Index;
+            ρσ_Result.push(ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), color: color.white, axis: vector(0, 0, 1["-u"]()["*"](1))})]));
+        }
+        ρσ_Result = ρσ_list_constructor(ρσ_Result);
+        return ρσ_Result;
+    })();
+    "36";
+    for (var ρσ_Index5 = 0; ρσ_Index5["<"](NBarrowside); ρσ_Index5++) {
+        i = ρσ_Index5;
+        "37";
+        for (var ρσ_Index6 = 0; ρσ_Index6["<"](NBarrowside); ρσ_Index6++) {
+            j = ρσ_Index6;
+            "38";
+            n = i["*"](NBarrowside)["+"](j);
+            "39";
+            ρσ_getitem(B, n).pos = vector(i["/"](NBarrowside)["-"](.35)["*"](lengthside), 1, j["/"](NBarrowside)["-"](.3)["*"](lengthside)["*"](.9));
+        }
+    }
+    "42";
+    myscreen.caption = "\n";
+    "43";
+    async function shiftq(s) {
+        "44";
+        wt.text = "betaR = {:1.2f}".format(s.value);
+    };
+    if (!shiftq.__argnames__) Object.defineProperties(shiftq, {
+        __argnames__ : {value: ["s"]},
+        __module__ : {value: null}
+    });
+
+    "46";
+    sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](.9), max: .9, value: 0, length: 600, bind: shiftq, right: 15})]);
+    "47";
+    wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "betaR = {:1.2f} \n\n".format(sl.value)})]);
+    "49";
+    while (true) {
+        "50";
+        (await rate(100));
+        "51";
+        betaR = sl.value;
+        "52";
+        gamR = 1["/"](sqrt(1["-"](1["*"](Math.pow(betaR, 2)))));
+        "53";
+        v.axis = vector(1["-u"]()["*"](sl.value)["*"](2), 0, 0);
+        "54";
+        for (var ρσ_Index7 = 0; ρσ_Index7["<"](Nside); ρσ_Index7++) {
+            i = ρσ_Index7;
+            "55";
+            for (var ρσ_Index8 = 0; ρσ_Index8["<"](Nside); ρσ_Index8++) {
+                j = ρσ_Index8;
+                "56";
+                n = i["*"](Nside)["+"](j);
+                "57";
+                ρσ_getitem(q, n).pos.x = i["/"](Nside)["-"](.5)["*"](lengthside)["/"](gamR);
+            }
+        }
+        "59";
+        for (var ρσ_Index9 = 0; ρσ_Index9["<"](Nvec); ρσ_Index9++) {
+            i = ρσ_Index9;
+            "60";
+            ρσ_getitem(E, i).axis.y = gamR;
+        }
+        "62";
+        for (var ρσ_Index10 = 0; ρσ_Index10["<"](NBarrow); ρσ_Index10++) {
+            i = ρσ_Index10;
+            "63";
+            ρσ_getitem(B, i).axis.z = 1["-u"]()["*"](gamR)["*"](betaR);
+        }
+    }
+};
+if (!__main__.__module__) Object.defineProperties(__main__, {
+    __module__ : {value: null}
+});
+
+;$(function(){ window.__context = { glowscript_container: $("#glowscript").removeAttr("id") }; __main__() })})()
+// END JAVASCRIPT
+
+//--><!]]></script>
+</div>

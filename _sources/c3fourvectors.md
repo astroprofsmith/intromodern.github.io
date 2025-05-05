@@ -447,7 +447,7 @@ confuse the beginner.
 ```{code-cell}
 :tags: ["remove-input"]
 # 3D plot of a spacetime diagram with x, ct, and y
-url='https://glowscript.org/#/user/dasmith/folder/Public/program/SRspacetimediag'
+url='_static/SRspacetimediag.html'
 stfig = display.IFrame(src=url,width=800,height=600)
 glue("stdiagfig",stfig, display=False)
 ```
@@ -915,7 +915,7 @@ visualizing the situation.
 ```{code-cell}
 :tags: ["remove-cell"]
 # Interactive simulation of the laser clock on a train example
-url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRtrainclock"
+url1 = "_static/SRtrainclock.html"
 test = display.IFrame(src=url1,width=800,height=650)
 glue("tclockfig",test, display=False)
 
@@ -1118,7 +1118,7 @@ that functions independent of space and our motion through it.
 ```{code-cell}
 :tags: ["remove-cell"]
 # Showing that time dilation is not a change in universal time flow
-url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRfourevents"
+url1 = "_static/SRfourevents.html"
 test = display.IFrame(src=url1,width=800,height=650)
 glue("noUdtfig",test, display=False)
 

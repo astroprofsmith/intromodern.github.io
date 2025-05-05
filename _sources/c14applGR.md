@@ -167,7 +167,7 @@ the intersection wider, that would yield the hyperbolic solutions.
 :tags: ["remove-cell"]
 # Insert VPython simulation of conic sections
 # Allow user to rotate system, for better view
-url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRconic"
+url1 = "_static/SRconic.html"
 test = display.IFrame(src=url1,width=800,height=700)
 glue("conicfig",test, display=False)
 
@@ -576,7 +576,7 @@ therefore does not play a role in {numref}`Edd19`.
 :tags: ["remove-cell"]
 # Insert VPython simulation of simple lensing
 # Allow user to change impact parameter
-url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRgravlensbend"
+url1 = "_static/SRgravlensbend.html"
 test = display.IFrame(src=url1,width=800,height=700)
 glue("lensanimfig",test, display=False)
 
@@ -642,7 +642,7 @@ animation is essentially the same as {numref}`lensanimate`, but from
 the point of view of the Earth.  In this case, the source is not
 treated as a point, but as a small circle of points, each of which is
 lensed independently.  You can move the source around horizontally and
-vertically by pressing keys on the keyboard.  If you line the source
+vertically by shifting the sliders.  If you line the source
 up with the lens, you will see the magneta images of the source distort
 into a full circle.
 
@@ -663,8 +663,8 @@ glue("ringanimfig",test, display=False)
 Interactive illustration of gravitational lensing with a point
 lens, but an extended (circular) source.  The cyan shape is the
 source, located behind the yellow lens.  The two magenta shapes
-are representations of the images formed by the lensing.  Hit
-the "w","a","x", and "d" keys to move the source around.  If you
+are representations of the images formed by the lensing. Shift
+the sliders to move the source around.  If you
 can line up the source with the lens, you will get an Einstein Ring.
 If you see straight magenta lines, those are computation artifacts,
 and you should ignore them.
@@ -886,7 +886,7 @@ approached the event horizon.
 :tags: ["remove-cell"]
 # Insert VPython simulation of lightlike paths near a black hole
 # Allow user to change starting event
-url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRschwartzschild"
+url1 = "_static/SRschwartzschild.html"
 test = display.IFrame(src=url1,width=800,height=850)
 glue("eventhorizonanimfig",test, display=False)
 
@@ -1239,7 +1239,7 @@ An animation of this basketball universe is shown in
 ```{code-cell}
 :tags: ["remove-cell"]
 # Insert VPython simulation of expanding basketball
-url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRcomoving"
+url1 = "_static/SRcomoving.html"
 test = display.IFrame(src=url1,width=800,height=700)
 glue("comovingfig",test, display=False)
 

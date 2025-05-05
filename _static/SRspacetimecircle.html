@@ -1,0 +1,126 @@
+<div id="glowscript" class="glowscript">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" href="https://www.glowscript.org/css/redmond/2.1/jquery-ui.custom.css" rel="stylesheet" />
+<link type="text/css" href="https://www.glowscript.org/css/ide.css" rel="stylesheet" />
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery-ui.custom.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/glow.3.2.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/RSrun.3.2.min.js"></script>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+// START JAVASCRIPT
+;(function() {;
+var ρσ_modules = {};
+ρσ_modules.pythonize = {};
+
+(function(){
+    function strings() {
+        var string_funcs, exclude, name;
+        string_funcs = set("capitalize strip lstrip rstrip islower isupper isspace lower upper swapcase center count endswith startswith find rfind index rindex format join ljust rjust partition rpartition replace split rsplit splitlines zfill".split(" "));
+        if (!arguments.length) {
+            exclude = (function(){
+                var s = ρσ_set();
+                s.jsset.add("split");
+                s.jsset.add("replace");
+                return s;
+            })();
+        } else if (arguments[0]) {
+            exclude = Array.prototype.slice.call(arguments);
+        } else {
+            exclude = null;
+        }
+        if (exclude) {
+            string_funcs = string_funcs.difference(set(exclude));
+        }
+        var ρσ_Iter0 = string_funcs;
+        ρσ_Iter0 = ((typeof ρσ_Iter0[Symbol.iterator] === "function") ? (ρσ_Iter0 instanceof Map ? ρσ_Iter0.keys() : ρσ_Iter0) : Object.keys(ρσ_Iter0));
+        for (var ρσ_Index0 of ρσ_Iter0) {
+            name = ρσ_Index0;
+            (ρσ_expr_temp = String.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name] = (ρσ_expr_temp = ρσ_str.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name];
+        }
+    };
+    if (!strings.__module__) Object.defineProperties(strings, {
+        __module__ : {value: "pythonize"}
+    });
+
+    ρσ_modules.pythonize.strings = strings;
+})();
+async function __main__() {
+"use strict";
+    var display = canvas;
+    var scene = canvas();
+
+    function round(num, n=0) {return Number(num.toFixed(n))}
+    fontloading();
+    await waitforfonts();
+
+    var version, print, arange, __name__, type, ρσ_ls, myscreen, ev1, ev2, xax, yax, ctax, xctbx, ctybx, xybx, n, dth, p1, p2, circ, j, newpos, i;
+    version = ρσ_list_decorate([ "3.2", "glowscript" ]);
+    Array.prototype['+'] = function(r) {return this.concat(r)}
+    Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
+    window.__GSlang = "vpython";
+    print = GSprint;
+    arange = range;
+    __name__ = "__main__";
+    type = pytype;
+    var strings = ρσ_modules.pythonize.strings;
+
+    strings();
+    "2";
+    myscreen = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.white, title: "Spacetime Diagram", width: 750, height: 500})]);
+    "4";
+    ev1 = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(.2, .25, .3), radius: .05, color: color.orange})]);
+    "5";
+    ev2 = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(.2, .95, .3), radius: .05, color: color.purple})]);
+    "8";
+    xax = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(1, 0, 0), color: color.red})]);
+    "9";
+    yax = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(0, 0, 1), color: color.green})]);
+    "10";
+    ctax = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(0, 1, 0), color: color.blue})]);
+    "12";
+    xctbx = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(.5, .5, 0), size: vector(1, 1, .01), color: color.magenta, opacity: .2})]);
+    "13";
+    ctybx = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, .5, .5), size: vector(.01, 1, 1), color: color.cyan, opacity: .2})]);
+    "14";
+    xybx = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(.5, 0, .5), size: vector(1, .01, 1), color: color.yellow, opacity: .2})]);
+    "16";
+    n = 100;
+    "17";
+    dth = 2["*"](pi)["/"](n);
+    "18";
+    p1 = ev1.pos;
+    "19";
+    p2 = vec(1["-u"]()["*"](.3)["+"](.5["*"](cos(dth))), ev1.pos.y["+"](ev2.pos.y["-"](1["*"](ev1.pos.y))["/"](n)), .3["+"](.5["*"](sin(dth))));
+    "20";
+    circ = curve(p1, p2);
+    "21";
+    circ.color = color.black;
+    "22";
+    circ.radius = .02;
+    "23";
+    for (var ρσ_Index1 = 0; ρσ_Index1["<"](n["-"](1["*"](1))); ρσ_Index1++) {
+        i = ρσ_Index1;
+        "24";
+        j = i["+"](2);
+        "25";
+        newpos = vec(1["-u"]()["*"](.3)["+"](.5["*"](cos(j["*"](dth)))), ev1.pos.y["+"](j["*"](ev2.pos.y["-"](1["*"](ev1.pos.y)))["/"](n)), .3["+"](.5["*"](sin(j["*"](dth)))));
+        "26";
+        circ.append(newpos);
+    }
+    "28";
+    ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1.1, 1["-u"]()["*"](.05), 0), text: "x", height: .2})]);
+    "29";
+    ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](.05), 1.1), text: "y", height: .2})]);
+    "30";
+    ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](.1), 1.1, 0), text: "ct", height: .2})]);
+};
+if (!__main__.__module__) Object.defineProperties(__main__, {
+    __module__ : {value: null}
+});
+
+;$(function(){ window.__context = { glowscript_container: $("#glowscript").removeAttr("id") }; __main__() })})()
+// END JAVASCRIPT
+
+//--><!]]></script>
+</div>

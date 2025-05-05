@@ -1,0 +1,251 @@
+<div id="glowscript" class="glowscript">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" href="https://www.glowscript.org/css/redmond/2.1/jquery-ui.custom.css" rel="stylesheet" />
+<link type="text/css" href="https://www.glowscript.org/css/ide.css" rel="stylesheet" />
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery-ui.custom.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/glow.3.2.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/RSrun.3.2.min.js"></script>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+// START JAVASCRIPT
+;(function() {;
+var ρσ_modules = {};
+ρσ_modules.pythonize = {};
+
+(function(){
+    function strings() {
+        var string_funcs, exclude, name;
+        string_funcs = set("capitalize strip lstrip rstrip islower isupper isspace lower upper swapcase center count endswith startswith find rfind index rindex format join ljust rjust partition rpartition replace split rsplit splitlines zfill".split(" "));
+        if (!arguments.length) {
+            exclude = (function(){
+                var s = ρσ_set();
+                s.jsset.add("split");
+                s.jsset.add("replace");
+                return s;
+            })();
+        } else if (arguments[0]) {
+            exclude = Array.prototype.slice.call(arguments);
+        } else {
+            exclude = null;
+        }
+        if (exclude) {
+            string_funcs = string_funcs.difference(set(exclude));
+        }
+        var ρσ_Iter0 = string_funcs;
+        ρσ_Iter0 = ((typeof ρσ_Iter0[Symbol.iterator] === "function") ? (ρσ_Iter0 instanceof Map ? ρσ_Iter0.keys() : ρσ_Iter0) : Object.keys(ρσ_Iter0));
+        for (var ρσ_Index0 of ρσ_Iter0) {
+            name = ρσ_Index0;
+            (ρσ_expr_temp = String.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name] = (ρσ_expr_temp = ρσ_str.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name];
+        }
+    };
+    if (!strings.__module__) Object.defineProperties(strings, {
+        __module__ : {value: "pythonize"}
+    });
+
+    ρσ_modules.pythonize.strings = strings;
+})();
+async function __main__() {
+"use strict";
+    var display = canvas;
+    var scene = canvas();
+
+    function round(num, n=0) {return Number(num.toFixed(n))}
+
+    var version, print, arange, __name__, type, ρσ_ls, fig, LH, BxF1, ByF1, BzF1, BxF2, ByF2, BzF2, Bvec, DiagF01, DiagF11, DiagF21, DiagF31, ExF1, EyF1, EzF1, ExF2, EyF2, EzF2, Evec, xhat, yhat, zhat, slEx, Ext, slEy, Eyt, slEz, Ezt, slBx, Bxt, slBy, Byt, slBz, Bzt, dt;
+    version = ρσ_list_decorate([ "3.2", "glowscript" ]);
+    Array.prototype['+'] = function(r) {return this.concat(r)}
+    Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
+    window.__GSlang = "vpython";
+    print = GSprint;
+    arange = range;
+    __name__ = "__main__";
+    type = pytype;
+    var strings = ρσ_modules.pythonize.strings;
+
+    strings();
+    "2";
+    fig = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Electromagnetic Tensor", width: 700, height: 500})]);
+    "3";
+    fig.camera.pos = vec(1, .1, 4);
+    "5";
+    LH = 15;
+    "7";
+    BxF1 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(3, 1, 0), text: "1.00", color: color.cyan, height: LH})]);
+    "8";
+    ByF1 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(3, 1.5, 0), text: "-0.50", color: color.cyan, height: LH})]);
+    "9";
+    BzF1 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(2.5, 1.5, 0), text: "0.25", color: color.cyan, height: LH})]);
+    "10";
+    BxF2 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(2.5, .5, 0), text: "-1.00", color: color.cyan, height: LH})]);
+    "11";
+    ByF2 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(2, .5, 0), text: "0.50", color: color.cyan, height: LH})]);
+    "12";
+    BzF2 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(2, 1, 0), text: "-0.25", color: color.cyan, height: LH})]);
+    "14";
+    Bvec = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(1, 1, 1), color: color.cyan, shaftwidth: .04, headwidth: .08})]);
+    "16";
+    DiagF01 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(1.5, 2, 0), text: "0.00", color: color.white, height: LH})]);
+    "17";
+    DiagF11 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(2, 1.5, 0), text: "0.00", color: color.white, height: LH})]);
+    "18";
+    DiagF21 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(2.5, 1, 0), text: "0.00", color: color.white, height: LH})]);
+    "19";
+    DiagF31 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(3, .5, 0), text: "0.00", color: color.white, height: LH})]);
+    "22";
+    ExF1 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(2, 2, 0), text: "1.00", color: color.magenta, height: LH})]);
+    "23";
+    EyF1 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(2.5, 2, 0), text: "-1.00", color: color.magenta, height: LH})]);
+    "24";
+    EzF1 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(3, 2, 0), text: "-0.50", color: color.magenta, height: LH})]);
+    "25";
+    ExF2 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(1.5, 1.5, 0), text: "-1.00", color: color.magenta, height: LH})]);
+    "26";
+    EyF2 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(1.5, 1, 0), text: "1.00", color: color.magenta, height: LH})]);
+    "27";
+    EzF2 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(1.5, .5, 0), text: "0.50", color: color.magenta, height: LH})]);
+    "30";
+    Evec = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(1, 1["-u"]()["*"](1), 1["-u"]()["*"](1)), color: color.magenta, shaftwidth: .04, headwith: .08})]);
+    "32";
+    xhat = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vec(0, 0, 0), axis: vec(1, 0, 0), color: color.red, shaftwidth: .1, headwidth: .2})]);
+    "33";
+    yhat = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vec(0, 0, 0), axis: vec(0, 1, 0), color: color.green, shaftwidth: .1, headwidth: .2})]);
+    "34";
+    zhat = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vec(0, 0, 0), axis: vec(0, 0, 1), color: color.blue, shaftwidth: .1, headwidth: .2})]);
+    "37";
+    async function changeEx(s) {
+        "38";
+        Ext.text = "Ex = {:1.2f} \n\n".format(s.value);
+    };
+    if (!changeEx.__argnames__) Object.defineProperties(changeEx, {
+        __argnames__ : {value: ["s"]},
+        __module__ : {value: null}
+    });
+
+    "40";
+    slEx = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](1), max: 1, value: 1, length: 600, bind: changeEx, right: 15})]);
+    "41";
+    Ext = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "Ex = {:1.2f} \n\n".format(slEx.value)})]);
+    "43";
+    async function changeEy(s) {
+        "44";
+        Eyt.text = "Ey = {:1.2f} \n\n".format(s.value);
+    };
+    if (!changeEy.__argnames__) Object.defineProperties(changeEy, {
+        __argnames__ : {value: ["s"]},
+        __module__ : {value: null}
+    });
+
+    "46";
+    slEy = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](1), max: 1, value: 1["-u"]()["*"](1), length: 600, bind: changeEy, right: 15})]);
+    "47";
+    Eyt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "Ey = {:1.2f} \n\n".format(slEy.value)})]);
+    "49";
+    async function changeEz(s) {
+        "50";
+        Ezt.text = "Ez = {:1.2f} \n\n".format(s.value);
+    };
+    if (!changeEz.__argnames__) Object.defineProperties(changeEz, {
+        __argnames__ : {value: ["s"]},
+        __module__ : {value: null}
+    });
+
+    "52";
+    slEz = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](1), max: 1, value: 1["-u"]()["*"](.5), length: 600, bind: changeEz, right: 15})]);
+    "53";
+    Ezt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "Ez = {:1.2f} \n\n".format(slEz.value)})]);
+    "55";
+    async function changeBx(s) {
+        "56";
+        Bxt.text = "Bx = {:1.2f} \n\n".format(s.value);
+    };
+    if (!changeBx.__argnames__) Object.defineProperties(changeBx, {
+        __argnames__ : {value: ["s"]},
+        __module__ : {value: null}
+    });
+
+    "58";
+    slBx = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](1), max: 1, value: 1, length: 600, bind: changeBx, right: 15})]);
+    "59";
+    Bxt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "Bx = {:1.2f} \n\n".format(slBx.value)})]);
+    "61";
+    async function changeBy(s) {
+        "62";
+        Byt.text = "By = {:1.2f} \n\n".format(s.value);
+    };
+    if (!changeBy.__argnames__) Object.defineProperties(changeBy, {
+        __argnames__ : {value: ["s"]},
+        __module__ : {value: null}
+    });
+
+    "64";
+    slBy = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](1), max: 1, value: .5, length: 600, bind: changeBy, right: 15})]);
+    "65";
+    Byt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "By = {:1.2f} \n\n".format(slBy.value)})]);
+    "67";
+    async function changeBz(s) {
+        "68";
+        Bzt.text = "Bz = {:1.2f} \n\n".format(s.value);
+    };
+    if (!changeBz.__argnames__) Object.defineProperties(changeBz, {
+        __argnames__ : {value: ["s"]},
+        __module__ : {value: null}
+    });
+
+    "70";
+    slBz = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](1), max: 1, value: .25, length: 600, bind: changeBz, right: 15})]);
+    "71";
+    Bzt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "Bz = {:1.2f} \n\n".format(slBz.value)})]);
+    "73";
+    dt = .01;
+    "74";
+    while (true) {
+        "75";
+        (await rate(1["/"](dt)));
+        "76";
+        Evec.axis.x = slEx.value;
+        "78";
+        ExF1.text = "{:1.2f}".format(Evec.axis.x);
+        "79";
+        ExF2.text = "{:1.2f}".format(1["-u"]()["*"](Evec.axis.x));
+        "81";
+        Evec.axis.y = slEy.value;
+        "83";
+        EyF1.text = "{:1.2f}".format(Evec.axis.y);
+        "84";
+        EyF2.text = "{:1.2f}".format(1["-u"]()["*"](Evec.axis.y));
+        "86";
+        Evec.axis.z = slEz.value;
+        "88";
+        EzF1.text = "{:1.2f}".format(Evec.axis.z);
+        "89";
+        EzF2.text = "{:1.2f}".format(1["-u"]()["*"](Evec.axis.z));
+        "91";
+        Bvec.axis.x = slBx.value;
+        "93";
+        BxF1.text = "{:1.2f}".format(Bvec.axis.x);
+        "94";
+        BxF2.text = "{:1.2f}".format(1["-u"]()["*"](Bvec.axis.x));
+        "96";
+        Bvec.axis.y = slBy.value;
+        "98";
+        ByF1.text = "{:1.2f}".format(1["-u"]()["*"](Bvec.axis.y));
+        "99";
+        ByF2.text = "{:1.2f}".format(Bvec.axis.y);
+        "101";
+        Bvec.axis.z = slBz.value;
+        "103";
+        BzF1.text = "{:1.2f}".format(Bvec.axis.z);
+        "104";
+        BzF2.text = "{:1.2f}".format(1["-u"]()["*"](Bvec.axis.z));
+    }
+};
+if (!__main__.__module__) Object.defineProperties(__main__, {
+    __module__ : {value: null}
+});
+
+;$(function(){ window.__context = { glowscript_container: $("#glowscript").removeAttr("id") }; __main__() })})()
+// END JAVASCRIPT
+
+//--><!]]></script>
+</div>

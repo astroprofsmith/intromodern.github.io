@@ -242,7 +242,7 @@ pass through those two events).
 ```{code-cell}
 :tags: ["remove-cell"]
 # 3D spacetime diagram of circular motion
-url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRspacetimecircle"
+url1 = "_static/SRspacetimecircle.html"
 test = display.IFrame(src=url1,width=800,height=620)
 glue("stcircfig",test, display=False)
 

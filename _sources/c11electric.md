@@ -399,7 +399,7 @@ B'_x = B_x
 :tags: ["remove-cell"]
 # Insert VPython simulation of a moving solenoid
 #
-url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRsolenoidSR"
+url1 = "_static/SRsolenoid.html"
 solshft = display.IFrame(src=url1,width=800,height=670)
 glue("slidecyl",solshft, display=False)
 
@@ -455,7 +455,7 @@ velocity of the frames and see how the fields change.
 :tags: ["remove-cell"]
 # Insert VPython simulation of a moving capacitor plate
 #
-url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRcapacitorframeshift"
+url1 = "_static/SRcapacitor.html"
 bshft = display.IFrame(src=url1,width=800,height=670)
 glue("slideplate",bshft, display=False)
 
@@ -993,7 +993,7 @@ again in [the next chapter](chEMdyn).
 :tags: ["remove-cell"]
 # Insert VPython illustration of the EM tensoe
 #
-url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SREMtensor"
+url1 = "_static/SREMtensor.html"
 bshft = display.IFrame(src=url1,width=750,height=800)
 glue("EMtensorfig",bshft, display=False)
 

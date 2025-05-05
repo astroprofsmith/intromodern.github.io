@@ -519,7 +519,7 @@ behind, and the blue object is moving faster than the red one.
 # Insert VPython simulation of a Michelson Interferometer
 # Allow user to rotate system, relative to ether
 # Have radio button to include/remove ether
-url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRVelAdd"
+url1 = "_static/SRVelAdd.html"
 test = display.IFrame(src=url1,width=800,height=700)
 glue("veladdfig",test, display=False)
 
@@ -733,7 +733,7 @@ directions of the velocities are quite significantly different.
 
 ```{code-cell}
 :tags: ["remove-cell"]
-url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRoffaxis"
+url1 = "_static/SRoffaxis.html"
 test = display.IFrame(src=url1,width=800,height=700)
 glue("offaxarr",test, display=False)
 

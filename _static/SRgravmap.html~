@@ -1,0 +1,198 @@
+<div id="glowscript" class="glowscript">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" href="https://www.glowscript.org/css/redmond/2.1/jquery-ui.custom.css" rel="stylesheet" />
+<link type="text/css" href="https://www.glowscript.org/css/ide.css" rel="stylesheet" />
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery-ui.custom.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/glow.3.2.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/RSrun.3.2.min.js"></script>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+// START JAVASCRIPT
+;(function() {;
+var ρσ_modules = {};
+ρσ_modules.pythonize = {};
+
+(function(){
+    function strings() {
+        var string_funcs, exclude, name;
+        string_funcs = set("capitalize strip lstrip rstrip islower isupper isspace lower upper swapcase center count endswith startswith find rfind index rindex format join ljust rjust partition rpartition replace split rsplit splitlines zfill".split(" "));
+        if (!arguments.length) {
+            exclude = (function(){
+                var s = ρσ_set();
+                s.jsset.add("split");
+                s.jsset.add("replace");
+                return s;
+            })();
+        } else if (arguments[0]) {
+            exclude = Array.prototype.slice.call(arguments);
+        } else {
+            exclude = null;
+        }
+        if (exclude) {
+            string_funcs = string_funcs.difference(set(exclude));
+        }
+        var ρσ_Iter0 = string_funcs;
+        ρσ_Iter0 = ((typeof ρσ_Iter0[Symbol.iterator] === "function") ? (ρσ_Iter0 instanceof Map ? ρσ_Iter0.keys() : ρσ_Iter0) : Object.keys(ρσ_Iter0));
+        for (var ρσ_Index0 of ρσ_Iter0) {
+            name = ρσ_Index0;
+            (ρσ_expr_temp = String.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name] = (ρσ_expr_temp = ρσ_str.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name];
+        }
+    };
+    if (!strings.__module__) Object.defineProperties(strings, {
+        __module__ : {value: "pythonize"}
+    });
+
+    ρσ_modules.pythonize.strings = strings;
+})();
+async function __main__() {
+"use strict";
+    var display = canvas;
+    var scene = canvas();
+
+    function round(num, n=0) {return Number(num.toFixed(n))}
+
+    var version, print, arange, __name__, type, ρσ_ls, myscreen, Nsource, SL, OL, SO, Nray, bmax, squig, soinit, thein, dr, xmax, ymax, R, dbeta, source, imagp, imagm, beta, i, lens, k, oldpos, sopos, dispsopl, thimp, thimm, newimp, newimvecp, newimm, newimvecm;
+    version = ρσ_list_decorate([ "3.2", "glowscript" ]);
+    Array.prototype['+'] = function(r) {return this.concat(r)}
+    Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
+    window.__GSlang = "vpython";
+    print = GSprint;
+    arange = range;
+    __name__ = "__main__";
+    type = pytype;
+    var strings = ρσ_modules.pythonize.strings;
+
+    strings();
+    "2";
+    myscreen = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Images formed by Gravitational Lensing", width: 750, height: 500})]);
+    "4";
+    Nsource = 321;
+    "5";
+    myscreen.camera.pos = vector(0, 0, 7);
+    "7";
+    SL = 1["-u"]()["*"](25);
+    "8";
+    OL = 7;
+    "9";
+    SO = 1["-u"]()["*"](SL)["+"](OL);
+    "10";
+    Nray = 20;
+    "11";
+    bmax = 15;
+    "12";
+    squig = .1;
+    "13";
+    soinit = 1.51;
+    "14";
+    thein = sqrt(squig["*"](1["-u"]())["*"](SL)["/"](OL)["/"](1["-u"]()["*"](SL)["+"](OL)));
+    "15";
+    dr = .013;
+    "17";
+    xmax = 20;
+    "18";
+    ymax = 15;
+    "20";
+    R = .2;
+    "21";
+    dbeta = 2["*"](pi)["/"](Nsource);
+    "22";
+    source = ρσ_interpolate_kwargs.call(this, curve, [ρσ_desugar_kwargs({pos: ρσ_list_decorate([ vec(R, 0, SL), vec(R["*"](cos(dbeta)), R["*"](sin(dbeta)), SL) ]), color: color.cyan, radius: .3})]);
+    "24";
+    imagp = ρσ_interpolate_kwargs.call(this, curve, [ρσ_desugar_kwargs({pos: ρσ_list_decorate([ vec(R, 0, SL), vec(R["*"](cos(dbeta)), R["*"](sin(dbeta)), SL) ]), color: color.magenta, radius: .3})]);
+    "26";
+    imagm = ρσ_interpolate_kwargs.call(this, curve, [ρσ_desugar_kwargs({pos: ρσ_list_decorate([ vec(R, 0, SL), vec(R["*"](cos(dbeta)), R["*"](sin(dbeta)), SL) ]), color: color.magenta, radius: .3})]);
+    "28";
+    for (var ρσ_Index1 = 0; ρσ_Index1["<"](Nsource); ρσ_Index1++) {
+        i = ρσ_Index1;
+        "29";
+        if (i[">"](1)) {
+            "30";
+            beta = i["*"](dbeta);
+            "31";
+            source.append(vec(R["*"](cos(beta)), R["*"](sin(beta)), SL));
+            "32";
+            imagp.append(vec(R["*"](cos(beta)), R["*"](sin(beta)), SL));
+            "33";
+            imagm.append(vec(R["*"](cos(beta)), R["*"](sin(beta)), SL));
+        }
+    }
+    "35";
+    source.append(vec(R, 0, SL));
+    "36";
+    imagp.append(vec(R, 0, SL));
+    "37";
+    imagm.append(vec(R, 0, SL));
+    "39";
+    source.origin = vec(5, 5, 0);
+    "41";
+    lens = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), radius: .2, color: color.yellow, opacity: .5})]);
+    "43";
+    while (true) {
+        "44";
+        (await rate(300));
+        "45";
+        k = (await keysdown());
+        "46";
+        if (ρσ_in("a", k) && source.origin.x[">"](1["-u"]()["*"](xmax))) {
+            "47";
+            source.origin.x=source.origin.x["-"](dr);
+            "48";
+        }
+        if (ρσ_in("d", k) && source.origin.x["<"](xmax)) {
+            "49";
+            source.origin.x=source.origin.x["+"](dr);
+            "50";
+        }
+        if (ρσ_in("w", k) && source.origin.y["<"](ymax)) {
+            "51";
+            source.origin.y=source.origin.y["+"](dr);
+            "52";
+        }
+        if (ρσ_in("x", k) && source.origin.y[">"](1["-u"]()["*"](ymax))) {
+            "53";
+            source.origin.y=source.origin.y["-"](dr);
+        }
+        "55";
+        for (var ρσ_Index2 = 0; ρσ_Index2["<"](Nsource["+"](1)); ρσ_Index2++) {
+            i = ρσ_Index2;
+            "56";
+            oldpos = source.point(i);
+            "57";
+            sopos = oldpos.pos["+"](source.origin);
+            "58";
+            dispsopl = vec(sopos.x, sopos.y, 0);
+            "59";
+            beta = atan(dispsopl.mag["/"](OL["-"](1["*"](SL))));
+            "60";
+            thimp = .5["*"](beta["+"](sqrt(Math.pow(beta, 2)["+"](4["*"](Math.pow(thein, 2))))));
+            "61";
+            thimm = .5["*"](beta["-"](1["*"](sqrt(Math.pow(beta, 2)["+"](4["*"](Math.pow(thein, 2)))))));
+            "62";
+            newimp = 1["-u"]()["*"](SL)["+"](OL)["*"](tan(thimp));
+            "63";
+            newimvecp = dispsopl.hat["*"](newimp);
+            "64";
+            newimvecp.z = SL;
+            "65";
+            ρσ_interpolate_kwargs.call(imagp, imagp.modify, [i].concat([ρσ_desugar_kwargs({pos: newimvecp})]));
+            "66";
+            newimm = 1["-u"]()["*"](SL)["+"](OL)["*"](tan(thimm));
+            "67";
+            newimvecm = dispsopl.hat["*"](newimm);
+            "68";
+            newimvecm.z = SL;
+            "69";
+            ρσ_interpolate_kwargs.call(imagm, imagm.modify, [i].concat([ρσ_desugar_kwargs({pos: newimvecm})]));
+        }
+    }
+};
+if (!__main__.__module__) Object.defineProperties(__main__, {
+    __module__ : {value: null}
+});
+
+;$(function(){ window.__context = { glowscript_container: $("#glowscript").removeAttr("id") }; __main__() })})()
+// END JAVASCRIPT
+
+//--><!]]></script>
+</div>
