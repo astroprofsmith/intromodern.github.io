@@ -247,7 +247,7 @@ the feeling of the infinite lattice, for a while.
 :tags: ["remove-cell"]
 # Insert animation of expanding sphere of light.  Show radial
 # arrow and overlay x, y, z, and ct
-url = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRrefframes"
+url = "_static/SRrefframes.html"
 relfram = display.IFrame(src=url,width=800,height=900)
 glue("relfig",relfram,display=False)
 ```
@@ -467,7 +467,7 @@ see?
 :tags: ["remove-cell"]
 # Insert animation of expanding sphere of light.  Show radial
 # arrow and overlay x, y, z, and ct
-url = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRExpandSphere"
+url = "_static/SRExpandSphere.html"
 bigsphere = display.IFrame(src=url,width=800,height=600)
 glue("spherefig",bigsphere,display=False)
 ```

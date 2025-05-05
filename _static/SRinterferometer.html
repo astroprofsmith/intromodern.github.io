@@ -1,0 +1,256 @@
+<div id="glowscript" class="glowscript">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" href="https://www.glowscript.org/css/redmond/2.1/jquery-ui.custom.css" rel="stylesheet" />
+<link type="text/css" href="https://www.glowscript.org/css/ide.css" rel="stylesheet" />
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery-ui.custom.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/glow.3.2.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/RSrun.3.2.min.js"></script>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+// START JAVASCRIPT
+;(function() {;
+var ρσ_modules = {};
+ρσ_modules.pythonize = {};
+
+(function(){
+    function strings() {
+        var string_funcs, exclude, name;
+        string_funcs = set("capitalize strip lstrip rstrip islower isupper isspace lower upper swapcase center count endswith startswith find rfind index rindex format join ljust rjust partition rpartition replace split rsplit splitlines zfill".split(" "));
+        if (!arguments.length) {
+            exclude = (function(){
+                var s = ρσ_set();
+                s.jsset.add("split");
+                s.jsset.add("replace");
+                return s;
+            })();
+        } else if (arguments[0]) {
+            exclude = Array.prototype.slice.call(arguments);
+        } else {
+            exclude = null;
+        }
+        if (exclude) {
+            string_funcs = string_funcs.difference(set(exclude));
+        }
+        var ρσ_Iter0 = string_funcs;
+        ρσ_Iter0 = ((typeof ρσ_Iter0[Symbol.iterator] === "function") ? (ρσ_Iter0 instanceof Map ? ρσ_Iter0.keys() : ρσ_Iter0) : Object.keys(ρσ_Iter0));
+        for (var ρσ_Index0 of ρσ_Iter0) {
+            name = ρσ_Index0;
+            (ρσ_expr_temp = String.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name] = (ρσ_expr_temp = ρσ_str.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name];
+        }
+    };
+    if (!strings.__module__) Object.defineProperties(strings, {
+        __module__ : {value: "pythonize"}
+    });
+
+    ρσ_modules.pythonize.strings = strings;
+})();
+async function __main__() {
+"use strict";
+    var display = canvas;
+    var scene = canvas();
+
+    function round(num, n=0) {return Number(num.toFixed(n))}
+
+    var version, print, arange, __name__, type, ρσ_ls, myscreen, ether, boxether, ethsl, wt, f, om, c, k, amp, nbeam, beamin, beamright, beamleft, beamup, beamdown, beamout, laser, halfmir, mir1, mir2, t, dt, xx, i, kr, kl, ku, kd, cr, cl, cu, cd;
+    version = ρσ_list_decorate([ "3.2", "glowscript" ]);
+    Array.prototype['+'] = function(r) {return this.concat(r)}
+    Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
+    window.__GSlang = "vpython";
+    print = GSprint;
+    arange = range;
+    __name__ = "__main__";
+    type = pytype;
+    var strings = ρσ_modules.pythonize.strings;
+
+    strings();
+    "2";
+    myscreen = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Michaelson Interferometer", width: 750, height: 500})]);
+    "5";
+    ether = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](1), 1, 0), axis: vector(1["-u"]()["*"](1), 0, 0)["/"](2), color: color.magenta, visible: false})]);
+    "8";
+    async function isetheron(b) {
+        "9";
+        if (b.checked) {
+            "10";
+            ether.visible = true;
+            "11";
+        } else {
+            "12";
+            ether.visible = false;
+        }
+    };
+    if (!isetheron.__argnames__) Object.defineProperties(isetheron, {
+        __argnames__ : {value: ["b"]},
+        __module__ : {value: null}
+    });
+
+    "14";
+    myscreen.caption = "\n";
+    "15";
+    boxether = ρσ_interpolate_kwargs.call(this, checkbox, [ρσ_desugar_kwargs({bind: isetheron, text: "Is there ether?"})]);
+    "17";
+    async function S(s) {
+        "18";
+        ether.axis = ether.axis.mag["*"](vector(cos(s.value), sin(s.value), 0));
+        "19";
+        wt.text = "{:1.2f}".format(s.value);
+    };
+    if (!S.__argnames__) Object.defineProperties(S, {
+        __argnames__ : {value: ["s"]},
+        __module__ : {value: null}
+    });
+
+    "21";
+    myscreen.append_to_caption("\nVary the angle of the ether motion: \n\n");
+    "22";
+    ethsl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({bind: S, min: 0, max: 2["*"](pi), value: pi})]);
+    "23";
+    myscreen.append_to_caption("Angle of Ether Velocity: ");
+    "24";
+    wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "{:1.2f}".format(ethsl.value)})]);
+    "27";
+    async function isetheron(b) {
+        "28";
+        if (b.checked) {
+            "29";
+            ether.visible = true;
+            "30";
+        } else {
+            "31";
+            ether.visible = false;
+        }
+    };
+    if (!isetheron.__argnames__) Object.defineProperties(isetheron, {
+        __argnames__ : {value: ["b"]},
+        __module__ : {value: null}
+    });
+
+    "33";
+    f = 2.5;
+    "34";
+    om = 2["*"](pi)["*"](f);
+    "35";
+    c = 1;
+    "36";
+    k = om["/"](c);
+    "37";
+    amp = .1;
+    "39";
+    nbeam = 100;
+    "41";
+    beamin = curve();
+    "42";
+    beamin.origin = vector(1["-u"]()["*"](1), 0, 0);
+    "44";
+    beamright = curve();
+    "45";
+    beamright.origin = vector(0, 0, 0);
+    "47";
+    beamleft = curve();
+    "48";
+    beamleft.origin = vector(0, 0, amp);
+    "50";
+    beamup = curve();
+    "51";
+    beamup.origin = vector(0, 0, 0);
+    "53";
+    beamdown = curve();
+    "54";
+    beamdown.origin = vector(0, 1, amp);
+    "56";
+    beamout = curve();
+    "57";
+    beamout.origin = vector(0, 0, amp);
+    "59";
+    laser = ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: beamin.origin, color: vector(.5, 0, 0), axis: vector(1["-u"]()["*"](1), 0, 0), radius: .1})]);
+    "60";
+    halfmir = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), color: color.orange, opacity: .7, size: vector(amp["/"](5), amp["*"](4), amp["*"](4)), axis: vector(1["-u"]()["*"](1), 1, 0)})]);
+    "61";
+    mir1 = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(1, 0, 0), color: color.orange, opacity: .7, size: vector(amp["/"](5), amp["*"](4), amp["*"](4))})]);
+    "62";
+    mir2 = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 1, 0), color: color.orange, opacity: .7, size: vector(amp["*"](4), amp["/"](5), amp["*"](4))})]);
+    "65";
+    t = 0;
+    "66";
+    dt = .01;
+    "68";
+    for (var ρσ_Index1 = 0; ρσ_Index1["<"](nbeam); ρσ_Index1++) {
+        i = ρσ_Index1;
+        "69";
+        xx = i["/"](nbeam);
+        "70";
+        ρσ_interpolate_kwargs.call(beamin, beamin.append, [ρσ_desugar_kwargs({pos: vector(xx, amp["*"](cos(k["*"](1["-u"]()["*"](1)["+"](xx))["-"](1["*"](om)["*"](t)))), 0)})]);
+        "71";
+        ρσ_interpolate_kwargs.call(beamright, beamright.append, [ρσ_desugar_kwargs({pos: vector(xx, amp["*"](cos(k["*"](xx)["-"](1["*"](om)["*"](t)))), 0)})]);
+        "72";
+        ρσ_interpolate_kwargs.call(beamleft, beamleft.append, [ρσ_desugar_kwargs({pos: vector(xx, amp["*"](sin(k["*"](xx)["+"](om["*"](t)))), 0)})]);
+        "73";
+        ρσ_interpolate_kwargs.call(beamup, beamup.append, [ρσ_desugar_kwargs({pos: vector(amp["*"](sin(k["*"](xx)["-"](1["*"](om)["*"](t)))), xx, 0)})]);
+        "74";
+        ρσ_interpolate_kwargs.call(beamdown, beamdown.append, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](amp)["*"](sin(k["*"](xx)["-"](1["*"](om)["*"](t)))), 1["-u"]()["*"](xx), 0)})]);
+        "75";
+        ρσ_interpolate_kwargs.call(beamout, beamout.append, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](amp)["*"](sin(k["*"](xx)["-"](1["*"](om)["*"](t))))["+"](amp["*"](cos(k["*"](xx)["+"](om["*"](t))))), 1["-u"]()["*"](xx), 0)})]);
+    }
+    "80";
+    while (true) {
+        "81";
+        (await rate(20));
+        "82";
+        t=t["+"](dt);
+        "84";
+        for (var ρσ_Index2 = 0; ρσ_Index2["<"](nbeam); ρσ_Index2++) {
+            i = ρσ_Index2;
+            "85";
+            xx = i["/"](nbeam);
+            "86";
+            kr = k;
+            "87";
+            kl = k;
+            "88";
+            ku = k;
+            "89";
+            kd = k;
+            "90";
+            if (boxether.checked) {
+                "91";
+                cr = c["+"](ether.axis.x);
+                "92";
+                kr = om["/"](cr);
+                "93";
+                cl = c["-"](1["*"](ether.axis.x));
+                "94";
+                kl = om["/"](cl);
+                "95";
+                cu = c["+"](ether.axis.y);
+                "96";
+                ku = om["/"](cu);
+                "97";
+                cd = c["-"](1["*"](ether.axis.y));
+                "98";
+                kd = om["/"](cd);
+            }
+            "99";
+            ρσ_interpolate_kwargs.call(beamin, beamin.modify, [i].concat([ρσ_desugar_kwargs({pos: vector(xx, amp["*"](cos(kr["*"](1["-u"]()["*"](1)["+"](xx))["-"](1["*"](om)["*"](t)))), 0)})]));
+            "100";
+            ρσ_interpolate_kwargs.call(beamright, beamright.modify, [i].concat([ρσ_desugar_kwargs({pos: vector(xx, amp["*"](cos(kr["*"](xx)["-"](1["*"](om)["*"](t)))), 0)})]));
+            "101";
+            ρσ_interpolate_kwargs.call(beamleft, beamleft.modify, [i].concat([ρσ_desugar_kwargs({pos: vector(xx, amp["*"](sin(kl["*"](xx)["+"](om["*"](t)))), 0)})]));
+            "102";
+            ρσ_interpolate_kwargs.call(beamup, beamup.modify, [i].concat([ρσ_desugar_kwargs({pos: vector(amp["*"](sin(ku["*"](xx)["-"](1["*"](om)["*"](t)))), xx, 0)})]));
+            "103";
+            ρσ_interpolate_kwargs.call(beamdown, beamdown.modify, [i].concat([ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](amp)["*"](sin(kd["*"](xx)["-"](1["*"](om)["*"](t)))), 1["-u"]()["*"](xx), 0)})]));
+            "104";
+            ρσ_interpolate_kwargs.call(beamout, beamout.modify, [i].concat([ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](amp)["*"](sin(kl["*"](xx)["-"](1["*"](om)["*"](t))))["+"](amp["*"](cos(kd["*"](xx)["+"](om["*"](t))))), 1["-u"]()["*"](xx), 0)})]));
+        }
+    }
+};
+if (!__main__.__module__) Object.defineProperties(__main__, {
+    __module__ : {value: null}
+});
+
+;$(function(){ window.__context = { glowscript_container: $("#glowscript").removeAttr("id") }; __main__() })})()
+// END JAVASCRIPT
+
+//--><!]]></script>
+</div>

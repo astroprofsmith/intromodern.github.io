@@ -178,13 +178,14 @@ blue dot on the $cdt'$ axis), and returns to the location of the
 observer at some later time.
 
 Such a setup is illustrated in {numref}`figinterval`.  The worldline
-of the (stationary) observer is a vertical red line.  The red dot is
-stationary along this line, while the blue dot is off to the side.
-Orange lines represent the worldlines of the light that the observer
-must send and receive if they are to get information about the blue
-event back to their location.  There is a slider at the bottom of the
-diagram that allows you to move the blue dot up and down, relative to
-the red dot.  Note that "up and down" means "earlier or later" in
+of the (stationary) observer is a vertical red line.  Two events are
+indicated by colored dots.  The blue dot is a single moment along the
+oserver's worldline, while the green dot is off to the side.  Orange
+lines represent the worldlines of the light that the observer must
+send and receive if they are to get information about the green event
+back to their location.  There is a slider at the bottom of the
+diagram that allows you to move the green dot up and down, relative to
+the blue dot.  Note that "up and down" means "earlier or later" in
 time.
 
 
@@ -204,44 +205,44 @@ glue("intervalfig",geroch, display=False)
 
 Interactive spacetime diagram.  The red line represents
 the worldline of a stationary observer.  The blue dot represents some
-event $p$ on that worldline.  The green dot represents some other event
-$q$ that most definitely does not reside on the worldline with $p$.
-To get information about $q$, therefore, the observer must send a
-light ray out to $q$ and get the reflection back.  The worldlines of
+event $q$ on that worldline.  The green dot represents some other event
+$p$ that most definitely does not reside on the worldline with $q$.
+To get information about $p$, therefore, the observer must send a
+light ray out to $p$ and get the reflection back.  The worldlines of
 these light rays are shown in orange.  The speed of light is taken to
 be 1.  The observer can therefore
 define two time intervals that represent the elapsed time between
-event $p$ and the events when the light was emitted and received.
+event $q$ and the events when the light was emitted and received.
 From $t_1$ and $t_2$ the observer can calculate a $\Delta x$ and
 a $\Delta t$, as described in the text.  These four values as
 well as the interval you get from the displacement four vector
-are shown on the diagram.  Move the slider to move $q$ up and down
-relative to $p$, and click the box to turn light cones for $p$ on
+are shown on the diagram.  Move the slider to move $p$ up and down
+relative to $q$, and click the box to turn light cones for $q$ on
 and off.  
 ```
 
 Given such a setup, the observer can define two time intervals, which
 we will call $t_1$ and $t_2$, following {cite}`Geroch81`.  The first
-is the time from the red dot until the light returns, and the second
+is the time from the blue dot until the light returns, and the second
 is the time from the moment the light is sent out until the time of
-the red dot.  These time intervals are represented in
+the blue dot.  These time intervals are represented in
 {numref}`figinterval` by a white and a magenta arrow, respectively.
-The value of $t_1$ is positive if the red dot happens before the light
+The value of $t_1$ is positive if the blue dot happens before the light
 returns, and the value of $t_2$ is positive if the light is sent out
-before the red dot.  These two values, $t_1$ and $t_2$, are printed
+before the blue dot.  These two values, $t_1$ and $t_2$, are printed
 out on the diagram, and you can see by moving the slider that if you
-shift the order of the red and blue events, either $t_1$ or $t_2$ (but
+shift the order of the blue and green events, either $t_1$ or $t_2$ (but
 not both!) will switch to negative.
 
 Given these two numbers and our knowledge about the speed of light, we
 can help our observer calculate values for $dx'$ and $cdt'$, without
-ever going over to the blue dot!  If the red and blue dots are
+ever going over to the green dot!  If the blue and green dots are
 simultaneous, then $dt'=0$, and $t_1$ must equal $t_2$ (this is the
 initial setup for {numref}`figinterval`, and you can see the symmetry
-yourself).  The later the blue dot shifts, the larger $dt'$ should
-get, and the earlier the blue dot shifts, the more negative $dt'$
+yourself).  The later the green dot shifts, the larger $dt'$ should
+get, and the earlier the green dot shifts, the more negative $dt'$
 should get.  Therefore, our observer can conclude that the temporal
-displacement between the red and blue dots is
+displacement between the blue and green dots is
 ```{math}
 :label: cdtp5
 dt' = \frac{t_1-t_2}{2}
@@ -275,14 +276,14 @@ product of $t_1$ and $t_2$ is the interval!
 ```
 
 The interval of the displacement four vector, $dx'^2-c^2dt'^2$ is also
-shown to the right of the red dot.  What is interesting is that we can
+shown to the right of the blue dot.  What is interesting is that we can
 take Equations {eq}`cdtp5` and {eq}`cdxp5` and solve them for $t_1$
 and $t_2$, and if you multiply $t_1$ by $t_2$, you can show this
 equals $dx'^2-c^2dt'^2$!  The product $t_1t_2$ (shown in the diagram
-to the right of the blue dot) is just another way of writing the
+to the right of the green dot) is just another way of writing the
 square of the displacement four vector!
 
-Try sliding the blue dot up and down and verify that these two ways of
+Try sliding the green dot up and down and verify that these two ways of
 writing the interval are always the same (to within possible rounding
 errors).  The lesson here is that it **is** possible to measure the
 displacement between two events without an observer actually going from
@@ -303,13 +304,13 @@ It is useful to classify a displacement four-vector into one of these
 three categories, because there are specific properties that each of
 these types of displacement four-vector have.  Move the slider such
 that the interval displays zero.  In this case, the displacement from
-red to blue will be one of the orange lines -- the worldline of the
+blue to green will be one of the orange lines -- the worldline of the
 light that travels either out from or back to the observer's
-worldline.  The displacement between red and blue in this case must be
+worldline.  The displacement between blue and green in this case must be
 just like the displacement that light would follow, so this kind of
 interval is called a "lightlike interval".  For a lightlike interval,
-either $t_1$ or $t_2$ is zero (depending on whether the red or the
-blue event happened first), which means that $dx'=cdt'$, or
+either $t_1$ or $t_2$ is zero (depending on whether the blue or the
+green event happened first), which means that $dx'=cdt'$, or
 $dx'/dt'=c$, which means anything moving along that worldline has to
 be moving at the speed of light.
 
@@ -331,43 +332,45 @@ all reference frames, although of course the time and space components
 can change individually.
 
 For example, consider all the possible events that are lightlike
-displaced from the red dot.  These are all events that lie along
-diagonal lines that cross at the red dot and make $45^\circ$ angles
+displaced from the blue dot.  These are all events that lie along
+diagonal lines that cross at the blue dot and make $45^\circ$ angles
 with the horizontal (if $dx'=cdt'$, then the slope is 1 and it makes a
-$45^\circ$ angle).  If the red dot sends out light, that light will go
-up and away from the red dot at a $45^\circ$ angle.  Any event that
-sends light to the red dot must lie below the red dot at a $45^\circ$
-angle.  All the lightlike intervals that connect to the red dot
+$45^\circ$ angle).  If the blue dot sends out light, that light will go
+up and away from the blue dot at a $45^\circ$ angle.  Any event that
+sends light to the blue dot must lie below the red dot at a $45^\circ$
+angle.  All the lightlike intervals that connect to the blue dot
 therefore make an $\times$ across this diagram.  However, this set of
 events is actually referred to as a "light cone".  Why a cone?
 Because if we do include the $y$ dimension as pointing into the
 computer screen, then the $\times$ can be rotated around the vertical
 axis, and instead of an $\times$, we get a cone.  Click the button on
-{numref}`figinterval` to see the light cones associated with the red
-dot.
+{numref}`figinterval` to see the light cones associated with the blue
+dot.  Rotate the figure to get a sense of the three-dimensionality of
+the cone.
 
 Of course, it's only a cone if we include two space dimensions, $x$
-and $y$.  If we could include $z$, the light would be travelling in a
-sphere, either expanding out from the red dot or collapsing to it.  We
-can't make a four-dimensional graph, though, so we represent the
-sphere as a cone, and the term "light cone" has stuck.
+and $y$, along with the time dimension.  If we could include $z$, the
+light would be travelling in a sphere, either expanding out from the
+red dot or collapsing to it.  We can't make a four-dimensional graph,
+though, so we represent the sphere as a cone, and the term "light
+cone" has stuck.
 
 ```{warning}
 We will always talk about the "light cones" associated with any event,
 but please remember that it's really an expanding sphere in 3D space.
 ```
 
-If any real thing wanted to get from the red dot to a point on the
-upper light cone, or from a point on the lower light cone to the red
+If any real thing wanted to get from the blue dot to a point on the
+upper light cone, or from a point on the lower light cone to the blue
 dot, this thing would have to travel at the speed of light to do so.
 However, for any event **inside** these cones, it would in principle
-be possible to get to or from the red dot without hitting light speed.
+be possible to get to or from the blue dot without hitting light speed.
 Therefore, the set of events inside the upper light cone are all the
-events on which the event at the red dot could **possibly** exert any
+events on which the event at the blue dot could **possibly** exert any
 kind of influence.  We therefore call the events inside the cone the
-"future" of the red dot.  All the events in the lower cone could
-**possibly** influence what happens at the red dot, so we call this
-set of events the "past" of the red dot.  Every single event has
+"future" of the blue dot.  All the events in the lower cone could
+**possibly** influence what happens at the blue dot, so we call this
+set of events the "past" of the blue dot.  Every single event has
 its own light cones, and therefore its own set of past and future.
 
 Events that lie outside these light cones are neither past nor future,
@@ -379,6 +382,143 @@ that event would be outside the light cone of the Earth right now.  It
 would take eight minutes for the light cone of that event to intersect
 the world line of the Earth, and only then would the horrific darkness
 and bitter cold ensue.  So enjoy your eight minutes!
+
+## Example of Intervals
+
+To further understand how intervals and four-vectors are useful,
+consider the following example, adapted from {cite}`Geroch81`.
+Consider the worldlines of two people (Asha and Bob) that reach the
+same location in space at a particular moment in time.  Call this
+event Q.  In the frame of reference of Bob, Asha is moving left
+at some (so far) unknown velocity.  A spacetime diagram for this
+situation is shown in {numref}`BobAshaFig`.
+
+At some earlier time, we define an event P on the worldline of Asha.
+Since Asha is traveling slower than light, any light that leaves Asha at the
+time of event P will reach Bob before Asha does, and therefore before event
+Q.  Call this event, when the light from P reaches Bob, event S.  There
+is one more event we need, which is when light would have to leave Bob
+to reach Asha precisely at event P.  Call this event R.  All these events
+are marked in {numref}`BobAshaFig`.
+
+To sum up the narrative of these events, therefore, we have Bob
+emitting light at R that reaches Asha at P, bounces off Asha and returns
+to Bob at event S.  At a later time, Asha reaches Bob and we have
+event Q.  You could imagine this light carrying the information about
+the clock at P, so at S, Bob would know what Asha's clock was reading
+at P.  As Bob moves from S to Q, further light from Asha could reach
+Bob from later events along Asha's world line, and Bob could watch
+Asha's watch measure later and later times until both clocks reached
+the same time at Q.  It would be possible to synchronize the clocks
+at that point and speak of clock readings relative to Q.
+
+
+```{code-cell}
+:tags: ["remove-cell"]
+# 3D plot of a spacetime diagram with x, ct, and y
+fig = plt.figure(figsize=(5,5))
+
+plt.plot([.5,.5],[0,2],'b.-')
+plt.plot([0,2],[3.11,3.11-13/5*2],'r.-')
+plt.plot([0.5,1.0],[0,0.5],'g.-')
+plt.plot([1.0,0.5],[0.5,1.0],'g.-')
+
+ax = plt.gca()
+plt.axis([0,2,0,2])
+ax.text(0.37, 1.75, "Q")
+ax.text(1.1, 0.5, "P")
+ax.text(0.37,0.05, "R")
+ax.text(0.37,1.0, "S")
+ax.set_xlabel("x")
+ax.set_ylabel("ct")
+plt.arrow(0.95,0.5,-0.4,0,head_width=0.03,length_includes_head=True)
+glue("gerochfig", fig, display=False)
+
+```
+
+```{glue:figure} gerochfig
+:figwidth: 800px
+:name: BobAshaFig
+
+Asha passes Bob at a constant speed.  At event Q, both people are in
+the same place.  At event R, Bob sends a pulse of light to Asha, which
+reaches her and reflects back at event P.  The light returns to Bob at
+event S.  The arrow indicates how Bob chooses an event on his own
+worldline to be simultaneous to P, halfway between R and S.
+```
+
+We can compare the four events in {numref}`BobAshaFig` to the
+spacetime structure defined in {numref}`figinterval`.  If you drag the
+slider far to the left, the blue dot would be Q, the green dot would
+be P, and R and S would be where the orange lines intersect the
+vertical red line.  Bob can therefore directly measure $t_1$ and $t_2$
+off his own clock, without needing to assume any knowledge about what
+is going over on Asha's worldline.  To make the math simpler, let's
+say $t_2$ is 9 s and $t_1$ is $-4$ s.  Bob would therefore conclude
+that event P happens 6.5 s before event Q (halfway between 9 s and 4
+s, as indicated by the horizontal arrow).  Given that it takes light 5
+s to go out and back Bob would conclude that event P happened 2.5
+light seconds away from him.  Bob would therefore conclude that Asha
+covered 2.5 light seconds of distance in 6.5 s of time and is
+therefore moving at 5/13 the speed of light, or $\beta=0.385$.
+
+It gets much more interesting when we consider the situation from
+Asha's point of view.  The interval between P and Q in this situation
+would be $t_1t_2$, which is $-36$ square seconds (square light seconds
+to consider it in distance units).  Asha would measure P and Q to be
+at the same location, so to her this interval can only consist of a
+time component, which would have to be the square root of 36, or 6 s.
+She would say event P is 6 s before event Q, not the 6.5 s that Bob
+has measured.  Bob would therefore conclude that Asha's clock is
+running a half-second slow, consistent with the pithy "moving clocks
+run slow" adage.  It is also consistent with the longer formulation
+that a clock at rest with respect to the two events measures a shorter
+time interval.
+
+The conceptual challenge comes when considering Asha's perspective, in
+which Bob's clock is the one that is moving.  If "moving clocks run
+slow", shouldn't she be the one saying Bob's clock is slow?  How can
+we understand the lack of symmetry in the language, when the
+perspective seems perfectly symmetric?  The symmetry is broken because
+P is not on Bob's worldline.  To consider a symmetric situation, we
+would have to pick an event on Bob's worldline that Asha considers to
+be simultaneous with P.  Time dilation tells us that Bob's clock would
+read 5.5 s before Q at the same time (according to Asha) that Asha's
+clock reads six seconds.  This is NOT the same event that Bob measures
+as simultaneous with P, because he measures that point to be 6.5 s
+before Q.  Asha would conclude, symmetrically, that *his* clock is
+running slow, because what takes 6 s for her takes 5.5 s for him.
+Bob, on the other hand, measures 6.5 s to pass in the time Asha's
+clock to measure 6 s, as derived above.  He concludes her clock is
+running slow.  The disagreement arises because they don't agree on
+what simultaneous means.  This relativity of simultaneity is explored
+further in {numref}`secSimultaneity`.
+
+To specifically identify that simultaneous (to her) event on Bob's
+worldline, Asha would have to have her own versions of R and S, where
+she would send and receive a light pulse to reflect off the moment on
+Bob's worldline that measures at 6 s prior to Q in her reference frame
+(by the clocks in her lattice that lie along Bob's worldline).  Let's
+call that event P$_b$.  For Bob, the interval between P$_b$ and Q has
+to be $-(5.5)^2=-30.7$ square light seconds.  Asha would have to agree
+on the interval, but since she has a time component of 6 s, she would
+conclude that Bob is $dx=2.3$ light seconds away at the event P$_b$
+($dx^2 - 36=-30.7$).  Her version of R and S would would therefore have
+to be 1.15 s before and after P on her own clock.  She would conclude
+that Bob traveled 2.3 light seconds in 6 s, for a speed of
+$\beta=0.385$; the same speed Bob measures Asha as travelling.
+
+It is also informative to consider how the two clocks appear to Bob
+between the events S and Q: at S (4 s before Q), Bob gets the light
+from P that tells him Asha's clock read 6 s ago, not 6.5 s as he would
+have expected.  Over the next four seconds, as Asha comes to meet him,
+the light coming from Asha to him will show him her clock ticking off
+six seconds in the time his own clock ticks off four.  So when
+comparing *these* events, Bob would conclude that Asha's clock is
+running faster than his.  As also illustrated in
+{numref}`timeintervalsfig`, whether you think a clock is running
+faster or slower depends on the events you choose to define your
+interval.
 
 
 ## How do the Axes Change?
@@ -506,6 +646,7 @@ relative velocity to the right.  The original axes remain where they
 were, indicated by white arrows.
 ```
 
+(secSimultaneity)=
 ## Simultaneity is Relative
 
 The behavior of the vertical axis is easy to understand just by
@@ -679,15 +820,16 @@ Instead, we talk about a length **contraction** (explained further in
 {numref}`secLenCon`).  How can this be?  The difference lies in what we
 mean by "length."
 
-Imagine that the leftmost and rightmost column of events lie upon
-vertical worldlines that represent the left and right ends of an
-object at rest.  Then the magenta sphere and the blue sphere are in
-the same place, and are separated from the cyan sphere by the same
-spatial distance.  However, the cyan and blue events are simultaneous,
-so we define the length of the object by the locations in space of
-these events.  The magenta event is the same distance away from the
-cyan event as the blue event, and therefore its location on the
-horizontal also measures the length of the object.
+Return the relative speed slider to zero.  Now imagine that the
+leftmost and rightmost column of events lie upon vertical worldlines
+that represent the left and right ends of an object at rest.  Then the
+magenta sphere and the blue sphere are in the same place, and are
+separated from the cyan sphere by the same spatial distance.  However,
+the cyan and blue events are simultaneous, so we define the length of
+the object by the locations in space of these events.  The magenta
+event is the same distance away from the cyan event as the blue event,
+and therefore its location on the horizontal also measures the length
+of the object.
 
 If you increase the relative speed $\beta_R$ to about $0.67$, you will
 see that although the blue event is much further away, it also happens

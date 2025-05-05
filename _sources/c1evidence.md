@@ -109,8 +109,8 @@ clever model was developed that agreed with the experimental results.
 # Insert VPython simulation of a Michelson Interferometer
 # Allow user to rotate system, relative to ether
 # Have radio button to include/remove ether
-url1 = "https://glowscript.org/#/user/dasmith/folder/Public/program/SRinterferometer"
-test = display.IFrame(src=url1,width=800,height=700)
+url2 = "_static/SRinterferometer.html"
+test = display.IFrame(src=url2,width=800,height=700)
 glue("interfig",test, display=False)
 
 ```
