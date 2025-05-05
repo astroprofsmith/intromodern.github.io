@@ -144,6 +144,7 @@ of events, to present patterns in spacetime that will help you improve your
 intuition about the implications that SR demands, which are so contrary to
 our day to day experience.
 
+(secIntervalTypes)=
 ## Types of Intervals
 
 In the list of principles that SR demands is the insistance that an
@@ -393,13 +394,14 @@ event Q.  In the frame of reference of Bob, Asha is moving left
 at some (so far) unknown velocity.  A spacetime diagram for this
 situation is shown in {numref}`BobAshaFig`.
 
-At some earlier time, we define an event P on the worldline of Asha.
-Since Asha is traveling slower than light, any light that leaves Asha at the
-time of event P will reach Bob before Asha does, and therefore before event
-Q.  Call this event, when the light from P reaches Bob, event S.  There
-is one more event we need, which is when light would have to leave Bob
-to reach Asha precisely at event P.  Call this event R.  All these events
-are marked in {numref}`BobAshaFig`.
+At some earlier time (compared to Q), we define an event P on the
+worldline of Asha.  Since Asha is traveling slower than light, any
+light that leaves Asha at the time of event P will reach Bob before
+Asha does, and therefore before event Q.  Call this event, when the
+light from P reaches Bob, event S.  There is one more event we need,
+which is when light would have to leave Bob to reach Asha precisely at
+event P.  Call this event R.  All these events are marked in
+{numref}`BobAshaFig`.
 
 To sum up the narrative of these events, therefore, we have Bob
 emitting light at R that reaches Asha at P, bounces off Asha and returns
@@ -418,20 +420,20 @@ at that point and speak of clock readings relative to Q.
 # 3D plot of a spacetime diagram with x, ct, and y
 fig = plt.figure(figsize=(5,5))
 
-plt.plot([.5,.5],[0,2],'b.-')
-plt.plot([0,2],[3.11,3.11-13/5*2],'r.-')
-plt.plot([0.5,1.0],[0,0.5],'g.-')
-plt.plot([1.0,0.5],[0.5,1.0],'g.-')
+plt.plot([2.5,2.5],[0,10],'b.-')
+plt.plot([0,10],[3.11*5,(3.11-13/5*2)*5],'r.-')
+plt.plot([2.5,5.0],[0,2.5],'g.-')
+plt.plot([5.0,2.5],[2.5,5.0],'g.-')
 
 ax = plt.gca()
-plt.axis([0,2,0,2])
-ax.text(0.37, 1.75, "Q")
-ax.text(1.1, 0.5, "P")
-ax.text(0.37,0.05, "R")
-ax.text(0.37,1.0, "S")
+plt.axis([0,10,0,10])
+ax.text(0.37*5, 1.75*5, "Q")
+ax.text(5.5, 2.5, "P")
+ax.text(0.37*5,0.25, "R")
+ax.text(0.37*5,5.0, "S")
 ax.set_xlabel("x")
 ax.set_ylabel("ct")
-plt.arrow(0.95,0.5,-0.4,0,head_width=0.03,length_includes_head=True)
+plt.arrow(4.7,2.5,-2.0,0,head_width=0.15,length_includes_head=True)
 glue("gerochfig", fig, display=False)
 
 ```
@@ -440,59 +442,73 @@ glue("gerochfig", fig, display=False)
 :figwidth: 800px
 :name: BobAshaFig
 
-Asha passes Bob at a constant speed.  At event Q, both people are in
-the same place.  At event R, Bob sends a pulse of light to Asha, which
-reaches her and reflects back at event P.  The light returns to Bob at
-event S.  The arrow indicates how Bob chooses an event on his own
-worldline to be simultaneous to P, halfway between R and S.
+Spacetime diagram of Asha (red worldline) passing Bob (blue worldline)
+at a constant speed, as measured in a reference frame where Bob is at
+rest.  At event Q, both people are in the same place.  At event R (9 s
+before Q), Bob sends a pulse of light to Asha, which reaches her and
+reflects back at event P (worldline of light is in green).  The light
+returns to Bob at event S (4 s before Q).  The arrow indicates how Bob
+chooses an event on his own worldline to be simultaneous to P, halfway
+between R and S.
 ```
 
 We can compare the four events in {numref}`BobAshaFig` to the
 spacetime structure defined in {numref}`figinterval`.  If you drag the
 slider far to the left, the blue dot would be Q, the green dot would
 be P, and R and S would be where the orange lines intersect the
-vertical red line.  Bob can therefore directly measure $t_1$ and $t_2$
-off his own clock, without needing to assume any knowledge about what
-is going over on Asha's worldline.  To make the math simpler, let's
-say $t_2$ is 9 s and $t_1$ is $-4$ s.  Bob would therefore conclude
-that event P happens 6.5 s before event Q (halfway between 9 s and 4
-s, as indicated by the horizontal arrow).  Given that it takes light 5
-s to go out and back Bob would conclude that event P happened 2.5
-light seconds away from him.  Bob would therefore conclude that Asha
-covered 2.5 light seconds of distance in 6.5 s of time and is
-therefore moving at 5/13 the speed of light, or $\beta=0.385$.
+vertical red line.  Asha's worldline does not appear explicitly in
+{numref}`figinterval`, but it would be a diagonal straight line that
+hits both the green and the blue dots.
 
-It gets much more interesting when we consider the situation from
-Asha's point of view.  The interval between P and Q in this situation
-would be $t_1t_2$, which is $-36$ square seconds (square light seconds
-to consider it in distance units).  Asha would measure P and Q to be
-at the same location, so to her this interval can only consist of a
-time component, which would have to be the square root of 36, or 6 s.
-She would say event P is 6 s before event Q, not the 6.5 s that Bob
-has measured.  Bob would therefore conclude that Asha's clock is
-running a half-second slow, consistent with the pithy "moving clocks
-run slow" adage.  It is also consistent with the longer formulation
-that a clock at rest with respect to the two events measures a shorter
-time interval.
+Bob can therefore directly measure $t_1$ and $t_2$ off his own clock,
+without needing to assume any knowledge about what is going on over at
+Asha's worldline.  To make the math simpler, let's say $t_2$ is 9 s
+and $t_1$ is $-4$ s.  Note that $t_2$ is positive and $t_1$ is
+negative, according to the rules under which they are defined in
+{numref}`secIntervalTypes`.
 
-The conceptual challenge comes when considering Asha's perspective, in
-which Bob's clock is the one that is moving.  If "moving clocks run
-slow", shouldn't she be the one saying Bob's clock is slow?  How can
-we understand the lack of symmetry in the language, when the
-perspective seems perfectly symmetric?  The symmetry is broken because
-P is not on Bob's worldline.  To consider a symmetric situation, we
-would have to pick an event on Bob's worldline that Asha considers to
-be simultaneous with P.  Time dilation tells us that Bob's clock would
-read 5.5 s before Q at the same time (according to Asha) that Asha's
-clock reads six seconds.  This is NOT the same event that Bob measures
-as simultaneous with P, because he measures that point to be 6.5 s
-before Q.  Asha would conclude, symmetrically, that *his* clock is
-running slow, because what takes 6 s for her takes 5.5 s for him.
-Bob, on the other hand, measures 6.5 s to pass in the time Asha's
-clock to measure 6 s, as derived above.  He concludes her clock is
-running slow.  The disagreement arises because they don't agree on
-what simultaneous means.  This relativity of simultaneity is explored
-further in {numref}`secSimultaneity`.
+Bob would therefore conclude that event P happens 6.5 s before event Q
+(halfway between 9 s and 4 s, as indicated by the horizontal arrow).
+Given that he measures light to take 5 s to go out and back, Bob would
+calculate that event P happened 2.5 light seconds away from him.  Bob
+would therefore conclude that to reach Q from P, Asha covered 2.5
+light seconds of distance in 6.5 s of time and is therefore moving at
+5/13 the speed of light, or $\beta_{\rm Asha}=0.385$.
+
+The situation gets more complex when we consider the events from
+Asha's point of view.  The interval between P and Q in this situation,
+as indicated in {numref}`BobAshaFig`, is $t_1t_2$, which is
+$9\times(-4)=-36$ square seconds (square light seconds in distance
+units).  Asha would measure P and Q to be at the same location, so to
+her this interval can only consist of a time component, which would
+have to be the square root of 36, or 6 s.  She would say event P is 6
+s before event Q, not the 6.5 s that Bob has calculated.  Bob would
+therefore conclude that Asha's clock is running a half-second slow,
+consistent with the pithy "moving clocks run slow" adage.  It is also
+consistent with the longer formulation that a clock at rest with
+respect to the two events measures a shorter time interval.
+
+The conceptual challenge comes when considering how to narrate these
+events from Asha's perspective, in which Bob's clock is the one that
+is moving.  If "moving clocks run slow", shouldn't she be the one
+saying Bob's clock is slow?  How can we understand the lack of
+symmetry in the language, when the perspective seems perfectly
+symmetric?  The symmetry is broken because P is not on Bob's
+worldline.  To consider a symmetric situation, we would have to pick
+an event on Bob's worldline that Asha considers to be simultaneous
+with P, and then compare how their two clocks measure these intervals.
+
+Time dilation tells us that Bob's clock would read 5.5 s before Q at
+the same time (according to Asha) that Asha's clock reads six seconds.
+This is NOT the same event that Bob measures as simultaneous with P,
+because he measures that point to be 6.5 s before Q.  Asha would
+conclude, symmetrically, that *his* clock is running slow, because
+what takes 6 s for her takes 5.5 s for him.  Bob, on the other hand,
+measures 6.5 s to pass in the time Asha's clock to measure 6 s, as
+derived above.  He concludes her clock is running slow.  The
+disagreement arises because they don't agree on what simultaneous
+means.  This relativity of simultaneity is explored further in
+{numref}`secSimultaneity`.
 
 To specifically identify that simultaneous (to her) event on Bob's
 worldline, Asha would have to have her own versions of R and S, where
@@ -503,10 +519,11 @@ call that event P$_b$.  For Bob, the interval between P$_b$ and Q has
 to be $-(5.5)^2=-30.7$ square light seconds.  Asha would have to agree
 on the interval, but since she has a time component of 6 s, she would
 conclude that Bob is $dx=2.3$ light seconds away at the event P$_b$
-($dx^2 - 36=-30.7$).  Her version of R and S would would therefore have
-to be 1.15 s before and after P on her own clock.  She would conclude
-that Bob traveled 2.3 light seconds in 6 s, for a speed of
-$\beta=0.385$; the same speed Bob measures Asha as travelling.
+($dx^2 - 36=-30.7$).  Her version of R and S would would therefore
+have to be 1.15 s before and after P on her own clock.  She would
+conclude that Bob traveled 2.3 light seconds in 6 s, for a speed of
+$\beta_{\rm Bob}=0.385$; the same speed Bob measures Asha as
+travelling.
 
 It is also informative to consider how the two clocks appear to Bob
 between the events S and Q: at S (4 s before Q), Bob gets the light
@@ -1040,11 +1057,24 @@ eats lunch at five hours later.  How fast would an observer in a rocket
 need to travel, and in what direction, to conclude that the spouse ate
 lunch before the astronaut ate breakfast?
 
-2) George Gamov, in his delightful but dated book, *Mr. Tompkins in
-Wonderland*, posits a world where the speed of light is only a few
-km/hr, and all these odd effects of relativity are commonplace for
-people in that world.  *Need to look in the book and recreate his
-argument about the murder observed from the train*
+2) George Gamow, in his delightful but dated book, *Mr. Tompkins in
+Wonderland*, ({cite}`Gamow99`) posits a world where the speed of light
+is only a few km/hr, and all these odd effects of relativity are
+commonplace for people in that world.  In one example, Mr. Tompkins is
+the witness to a murder on the train platform while he was on the
+train pulling into the station.  Mr. Tompkins observes a young man
+reading a newspaper when the ticket collector is shot.  When
+Mr. Tompkins emerges from the train, the young man is holding a
+smoking gun.  A police officer places the young man under arrest,
+despite the young man's protestations that he only picked up the gun
+after the murderer dropped it.  Mr. Tompkins affirms that he can
+support the young man's alibi, as he saw the young man reading the
+paper at the moment the ticket collector was shot.  The police officer
+is not convinced, pointing out that Mr. Tompkins was on a moving
+train, and therefore his sense of what events are simultaneous will
+not match up with simultaneous events on the platform.  For this
+reason, his testimony does not conclusively exonerate the young man.
+What do you think?  Is the police officer correct, or is Mr. Tompkins?
 
 3) Show that even when you tilt the axes as in {numref}`figaxestilt`,
 the properties of the Lorentz transformation are such that the new
@@ -1105,3 +1135,12 @@ spacelike.  With appropriate scaling, you can use
 {numref}`figinterval` to represent these situations.  Do your
 classifications make intuitive sense, and how do they compare with the
 light cones from the original event?
+
+9) Draw {numref}`BobAshaFig` in the frame of reference where Asha is
+at rest and Bob is moving to the right.  R, P, and S will all be along
+the vertical line representing Asha's worldline, where P is 6 s before
+Q.  Verify the claims in the text about the relative locations of R,
+S, P, and P$_b$.  Calculate $t_1t_2$ to get the interval between P$_b$
+and Q (claimed to be $-30.7$ square light seconds), and compute the
+$dx$ (2.3 light seconds) and $cdt_0$ (5.5 light seconds) that Asha
+would calculate for these events.
