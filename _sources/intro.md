@@ -36,6 +36,16 @@ math used consists primarily of algebra, with a very little calculus.
 The relationship of exponentials and logarithms is important for the
 material on radioactive decay and halflife.
 
+
+```{note}
+This book **will** consist of two parts.  The second part, an
+introduction to relativity theory, is basically done.  I am
+currently working on the first part, and introduction to particle
+physics, but that part is not yet included in this online version
+of the book.
+```
+
+
 The second volume, an explanation of Einstein's theory of Relativity,
 is aimed at an audience of students that have completed at least a
 year of introductory Physics and are comfortable with the mathematics
@@ -49,7 +59,7 @@ as a fourth dimension.
 
 There have been many books written on Relativity Theory since Albert
 Einstein first proposed it in 1905.  You could go right to the source
-and read {cite}`Einstein61`.  However, our hope is that this synthesis
+and read {cite}`Einstein61`.  However, my hope is that this synthesis
 of different ways of explaining the concepts and presenting the ideas
 with the interactive visualizations will help the reader become
 proficient with the tools and concepts more easily.
@@ -57,11 +67,12 @@ proficient with the tools and concepts more easily.
 **Acknowledgements:**
 
 I would like to thank colleagues A. Titus and J. Heafner for reading
-early drafts and giving feedback.  Thanks to my students in the Fall
-2023 semester for their careful reading: they spotted typos and let me
-know which sections were not as clear as they could be.  Of course
-this book could not exit without the leadership and mentorship of
-Prof.  Rexford Adelberger, and I owe him a great debt.  Thank you most
+early drafts and giving feedback.  Thanks to my students in 2023 and
+2024 for their careful reading: they spotted typos and let me know
+which sections were not as clear as they could be.  Of course this
+book could not exist without the leadership and mentorship of Prof.
+Rexford Adelberger, and I owe him a great debt.  Thank you to his
+family for their support in my taking on this project.  Thank you most
 of all to Kembra Howdeshell, who put up with my disappearing into the
 computer to add just another section before dinner.
 

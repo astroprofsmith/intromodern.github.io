@@ -303,6 +303,7 @@ scope of this book, although [Chapter 13](chGRcon) and [Chapter
 14](chGRapp) introduce the main ideas and explore some of the most
 famous implications.
 
+(secDemands)=
 ## Important Correlaries to the Postulates
 
 Nothing physical can travel faster than $c$.  We will see why in later

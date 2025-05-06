@@ -147,18 +147,18 @@ our day to day experience.
 (secIntervalTypes)=
 ## Types of Intervals
 
-In the list of principles that SR demands is the insistance that an
-observer can never "just know" what is going on somewhere else.  Since
-in many frames of reference two events are separated by some spatial
-displacement $dx$, it is worth considering just how the observer is to
-know that this displacement is indeed $dx$ and not some other number.
-In the primed frame shown in {numref}`fig2events`, an observer cannot
-move from the red dot to the blue dot -- such an observer would not in
-fact be **in** the primed frame.  Such an observer would be at rest
-with respect to the unprimed frame, and the blue dot would be at the
-observer's location.  If the observer is at the location of the red
-dot in the primed frame they cannot be at the location of the blue
-dot.
+In the list of principles that SR demands ({numref}`secDemands`) is
+the insistance that an observer can never "just know" what is going on
+somewhere else.  Since in many frames of reference two events are
+separated by some spatial displacement $dx$, it is worth considering
+just how the observer is to know that this displacement is indeed $dx$
+and not some other number.  In the primed frame shown in
+{numref}`fig2events`, an observer cannot move from the red dot to the
+blue dot -- such an observer would not in fact be **in** the primed
+frame.  Such an observer would be at rest with respect to the unprimed
+frame, and the blue dot would be at the observer's location.  If the
+observer is at the location of the red dot in the primed frame they
+cannot be at the location of the blue dot.
 
 How, then, is our primed observer to measure the distance to the blue
 dot, if they cannot walk over there?  One imaginative method that is
@@ -227,13 +227,15 @@ we will call $t_1$ and $t_2$, following {cite}`Geroch81`.  The first
 is the time from the blue dot until the light returns, and the second
 is the time from the moment the light is sent out until the time of
 the blue dot.  These time intervals are represented in
-{numref}`figinterval` by a white and a magenta arrow, respectively.
-The value of $t_1$ is positive if the blue dot happens before the light
+{numref}`figinterval` by a white and a magenta arrow, respectively The
+value of $t_1$ is positive if the blue dot happens before the light
 returns, and the value of $t_2$ is positive if the light is sent out
 before the blue dot.  These two values, $t_1$ and $t_2$, are printed
-out on the diagram, and you can see by moving the slider that if you
-shift the order of the blue and green events, either $t_1$ or $t_2$ (but
-not both!) will switch to negative.
+out on the diagram (technically multiplied by $c$, but $c=1$ -- the
+factor of $c$ will be ignored for the rest of this analysis), and you
+can see by moving the slider that if you shift the order of the blue
+and green events, either $t_1$ or $t_2$ (but not both!) will switch to
+negative.
 
 Given these two numbers and our knowledge about the speed of light, we
 can help our observer calculate values for $dx'$ and $cdt'$, without
@@ -255,10 +257,10 @@ light, the distance traveled would be duration times speed, so
 :label: cdxp5
 dx' = c\frac{t_1+t_2}{2}
 ```
-These numbers are also displayed in {numref}`figinterval` (without the primes),
-using units where $c=1$, for simplicity.
-The numbers in the diagram have been calculated from $t_1$ and $t_2$,
-not measured directly from the graph.
+These numbers are also displayed in {numref}`figinterval` as $c\Delta
+t$ and $\Delta x$, to the left of the red line, using units where
+$c=1$, for simplicity.  The numbers in the diagram have been
+calculated from $t_1$ and $t_2$, not measured from the graph.
 
 ```{margin}
 To show that $t_1t_2$ is the same as the interval, multiply
@@ -273,11 +275,13 @@ which is
 $$c^2t_1t_2 = dx'^2-c^2dt'^2$$
 and the latter is just the square of the displacement four
 vector that we have been using.  So in units of $c=1$, the
-product of $t_1$ and $t_2$ is the interval!
+product of $t_1$ and $t_2$ is the interval!  Note that if
+$c^2dt'^2> dx'^2$, either $t_1$ or $t_2$ (but not both) must
+be negative.
 ```
 
 The interval of the displacement four vector, $dx'^2-c^2dt'^2$ is also
-shown to the right of the blue dot.  What is interesting is that we can
+shown to the left of the blue dot.  What is interesting is that we can
 take Equations {eq}`cdtp5` and {eq}`cdxp5` and solve them for $t_1$
 and $t_2$, and if you multiply $t_1$ by $t_2$, you can show this
 equals $dx'^2-c^2dt'^2$!  The product $t_1t_2$ (shown in the diagram
@@ -1117,7 +1121,7 @@ adding those together would be a problem?).  However, you can just add
 rapidities, because they can go as high as you like.  Start with
 $\phi_{1+2} = \phi_1+\phi_2$ and plug in Equation {eq}`rapidity` to
 get a formula for $\beta_{1+2}$ as a function of $\beta_1$ and
-$\beta_2$.  You will see this formula again in [Chapter 7](ch4vel)).
+$\beta_2$.  You will see this formula again in [Chapter 7](ch4vel).
 
 7) An event is at $(ct,x)=(1~{\rm m},2~{\rm m})$ in some reference
 frame.  Is the displacement from the origin to this event timelike,
