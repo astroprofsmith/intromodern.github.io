@@ -52,7 +52,7 @@ async function __main__() {
 
     function round(num, n=0) {return Number(num.toFixed(n))}
 
-    var version, print, arange, __name__, type, ρσ_ls, fig, h, length, train, klock, laser, beginanim, sl, wt, v, dxtext, dt, beta, gamma, t, dir;
+    var version, print, arange, __name__, type, ρσ_ls, fig, h, length, radorb, evel, omega, cart, Bfield, electron, motion, beginanim, sl, wt, dt, beta, t;
     version = ρσ_list_decorate([ "3.2", "glowscript" ]);
     Array.prototype['+'] = function(r) {return this.concat(r)}
     Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
@@ -65,30 +65,38 @@ async function __main__() {
 
     strings();
     "2";
-    fig = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Laser Clock on a Train", width: 750, height: 500})]);
+    fig = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Electron on a Magnetic Cart", width: 750, height: 500})]);
     "4";
     h = 6;
     "5";
     length = 20;
+    "6";
+    radorb = 2;
     "7";
-    train = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), color: color.yellow, size: vec(length, h, 6), opacity: .3})]);
+    evel = vec(0, 0, 1);
     "8";
-    klock = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](h)["/"](2), 0), color: color.red, size: h["/"](10)["*"](vec(1, 1, 1))})]);
-    "9";
-    laser = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vec(0, 1["-u"]()["*"](h)["/"](2), 0), color: color.white, radius: h["/"](25), make_trail: true})]);
+    omega = 1["-u"]()["*"](evel.mag)["/"](radorb);
+    "10";
+    cart = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](3), 0), color: color.orange, size: vec(h, 1, h)})]);
     "11";
-    fig.caption = "Set beta with slider then click button to shoot laser\n";
+    Bfield = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), color: color.white, size: vec(h, 6, h), opacity: .2})]);
     "12";
+    electron = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vec(radorb, 0, 0), color: color.red, radius: h["/"](25), make_trail: true})]);
+    "13";
+    motion = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vec(1["-u"]()["*"](h)["*"](1.2), 1["-u"]()["*"](4), 0), color: color.blue, axis: vec(1, 0, 0), visible: false})]);
+    "15";
+    fig.caption = "Set speed with slider then click button to start animation\n";
+    "16";
     beginanim = ρσ_interpolate_kwargs.call(this, checkbox, [ρσ_desugar_kwargs({bind: beginanimation, text: "Click to run animation\n"})]);
-    "14";
+    "18";
     async function beginanimation(b) {
-        "15";
+        "19";
         if (b.checked) {
-            "16";
+            "20";
             motion.visible = true;
-            "17";
+            "21";
         } else {
-            "18";
+            "22";
             motion.visible = false;
         }
     };
@@ -97,76 +105,53 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "20";
+    "24";
     async function shiftq(s) {
-        "21";
-        wt.text = "betaR = {:1.2f}".format(s.value);
+        "25";
+        wt.text = "v = {:1.2f} m/s".format(s.value);
     };
     if (!shiftq.__argnames__) Object.defineProperties(shiftq, {
         __argnames__ : {value: ["s"]},
         __module__ : {value: null}
     });
 
-    "23";
-    sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 0, max: .99, value: 0, length: 600, bind: shiftq, right: 15})]);
-    "24";
-    wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "betaR = {:1.2f} \n\n".format(sl.value)})]);
-    "26";
-    v = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](h), 0), color: color.magenta, axis: vector(0, 0, 0)})]);
+    "27";
+    sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 0, max: 1, value: 0, length: 600, bind: shiftq, right: 15})]);
     "28";
-    dxtext = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](length)["/"](2), 1["-u"]()["*"](h)["/"](2)["*"](1.5), 0), text: "D = 0.00", color: color.green, height: 20})]);
-    "30";
+    wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "v = {:1.2f} m/s\n\n".format(sl.value)})]);
+    "32";
     dt = .001;
-    "31";
+    "33";
     while (true) {
-        "32";
-        (await rate(1["/"](dt)));
         "34";
-        beta = sl.value;
-        "35";
-        gamma = 1["/"](sqrt(1["-"](1["*"](Math.pow(beta, 2)))));
+        (await rate(1["/"](dt)));
         "36";
-        v.axis.x = beta["*"](length)["/"](2);
+        beta = sl.value;
         "37";
         t = 0;
         "39";
         if (beginanim.checked) {
             "40";
-            train.pos = vec(0, 0, 0);
+            cart.pos = vec(0, 1["-u"]()["*"](3), 0);
             "41";
-            klock.pos = vector(0, 1["-u"]()["*"](h)["/"](2), 0);
+            Bfield.pos = vector(0, 0, 0);
             "42";
-            laser.pos = vector(0, 1["-u"]()["*"](h)["/"](2), 0);
+            electron.pos = vector(radorb, 0, 0);
             "43";
-            t = 0;
-            "44";
-            dir = 1;
+            electron.clear_trail();
             "45";
-            dxtext.text = "D = {:1.2f}".format(t);
-            "47";
-            while (laser.pos.y[">="](1["-u"]()["*"](h)["/"](2)) || (t === 0 || typeof t === "object" && ρσ_equals(t, 0))) {
+            while (t["<"](100) && beginanim.checked) {
+                "46";
+                (await rate(2e3));
+                "47";
+                cart.pos.x=cart.pos.x["+"](beta["*"](dt));
                 "48";
-                (await rate(1e4));
+                Bfield.pos.x=Bfield.pos.x["+"](beta["*"](dt));
                 "49";
-                train.pos.x=train.pos.x["+"](beta["*"](dt));
+                electron.pos = vec(beta["*"](t)["+"](radorb["*"](cos(omega["*"](t)))), 0, radorb["*"](sin(omega["*"](t))));
                 "50";
-                klock.pos.x=klock.pos.x["+"](beta["*"](dt));
-                "51";
-                laser.pos.x=laser.pos.x["+"](beta["*"](dt));
-                "52";
-                laser.pos.y=laser.pos.y["+"](dir["*"](sqrt(1["-"](1["*"](Math.pow(beta, 2)))))["*"](dt));
-                "53";
-                if (laser.pos.y[">="](h["/"](2))) {
-                    "54";
-                    dir = 1["-u"]()["*"](1);
-                }
-                "56";
-                dxtext.text = "D = {:1.2f}".format(t);
-                "57";
                 t=t["+"](dt);
             }
-            "58";
-            beginanim.checked = false;
         }
     }
 };

@@ -42,7 +42,7 @@ would make sense to have a four-dimensional vector $dx_4 =
 vector and add them up, we get $+c^2dt^2$, not minus.
 
 
-```{margin}
+```{Note}
 Once you have a displacement $dx$ and a duration $dt$, it is possible
 to define an average veclocity $v=dx/dt$.  Because in Relativity so
 much is compared to the speed of light, it is useful to express
@@ -64,19 +64,21 @@ the minus sign, and then we will look at the Einstein notation method.
 
 ### Using Imaginary Numbers
 
-The simpler way is to introduce complex numbers as a bookkeeping
-trick.  If $i^2 = -1$, then we can write the time component of the
-vector as $icdt$, and its square will be $-c^2dt^2$.  This method
-ensures that the minus sign always goes in the right place.  There is
-nothing physical or mysterious about the $i$; it is no more and no
-less than a handy way to keep track of where to put the minus sign.
-It always shows up in the time component of the four-vector, and it
-never shows up in the space components.
+The method that beginners usually find simpler is to introduce complex
+numbers as a bookkeeping trick.  If $i^2 = -1$, then we can write the
+time component of the vector as $icdt$, and its square will be
+$-c^2dt^2$.  This method ensures that the minus sign always goes in
+the right place.  There is nothing physical or mysterious about the
+$i$; it is no more and no less than a handy way to keep track of where
+to put the minus sign.  It always shows up in the time component of
+the four-vector, and it never shows up in the space components.
 
 ```{warning}
 If you ever see a time component without an $i$, or find an $i$ in
 a space component, then you have made a mistake in your math somewhere.
 ```
+
+
 
 With this tool, we can define a displacement four-vector as
 ```{math}
@@ -313,7 +315,7 @@ g_{\mu\nu} =
 ```
 
 So if you follow the Einstein notation, $g_{\mu\nu}dx^\nu$ is a row
-with $(-dx^0,dx^1, dx^2,dx^3)$:
+with $(-dx^0,dx^1, dx^2,dx^3)$, which is $dx_\mu$:
 ```{math}
 :label: lowerindex
 g_{\mu\nu}dx^\nu = g_{\mu 0}dx^0 +
@@ -388,20 +390,26 @@ $i$ until [Chapter 11](chEMten). I mention it here to stress that
 using the $i$ is not the **only** way to keep track of the minus sign.
 
 ```{note}
-For the purposes of this book, there are only three things you need
+For the purposes of this book, there are only five things you need
 to remember about Einstein notation:
 
 1) Greek letters represent the numbers 0 through 3.
 
 2) If there is the same Greek letter above and below,
 that represents a sum over the four possibilities, like a
-dummy integration variable.  Letters that do not repeat
+dummy integration variable.
+
+3) Letters that do not repeat
 must stay in the same place on both sides of the equals.
 
-3) If you raise or lower the index, you multiply the time
+4) If you plug in a single number for a particular Greek letter,
+you must plug in that number everywhere that Greek letter
+appears.
+
+5) If you raise or lower the index, you multiply the time
 component by $-1$.
 
-If you are consistent with these three rules, you will get the same
+If you are consistent with these five rules, you will get the same
 answers as carrying around the factor of $i$.  For most of this book,
 we will use the $i$ notation, but when we get to the final chapters
 about electromagnetism and General Relativity, the Einstein notation
@@ -438,11 +446,11 @@ vector has a time component of $cdt$, so having the $c$ included in
 the axis means that distances on the diagram can accurately represent
 the components of the displacement four-vector.
 
-Experts in the field avoid the whole issue by using units where $c=1$.
-Then you can leave out the $c$ altogether, since multiplying anything
-by 1 leaves it unchanged (and it saves writing to leave it out).  I
-will leave the $c$ in most of the time, as its absence tends to
-confuse the beginner.
+Experts in the field avoid the whole issue of whether to include $c$
+or not by using units where $c=1$.  Then you can leave out the $c$
+altogether, since multiplying anything by 1 leaves it unchanged (and
+it saves writing to leave it out).  I will leave the $c$ in most of
+the time, as its absence tends to confuse the beginner.
 
 ```{code-cell}
 :tags: ["remove-input"]
@@ -926,7 +934,7 @@ glue("tclockfig",test, display=False)
 :name: trainclockfig
 
 Animation of a laser clock on a train.  Use the slider to set the speed
-of the train and then hit the space bar to run the animation.  The
+of the train and then click the button to run the animation.  The
 white ball represents the pulse of light from the laser.  It will travel
 from the floor of the train, reflect off the ceiling, and return to the
 floor.  The readout to the lower left shows the time elapsed while the

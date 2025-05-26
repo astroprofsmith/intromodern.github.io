@@ -651,15 +651,17 @@ from under the electron, at which point the electron is outside the
 field, and it will shoot off into space.
 
 However, now consider this situation from the reference frame where
-the cart is at rest.  According to our postulates, if the cart moves
-out from under the electron in the lab frame, the electron would have
-to drift off the cart (in the opposite direction) in the cart frame.
-However, in the cart frame, nothing is moving -- it's exactly the same
-as the original lab frame when the cart was at rest.  So there is
+the cart is at rest and the lab is moving.  According to our
+postulates, if the cart moves out from under the electron in the rest
+frame of the lab, the electron would have to drift off the cart (in
+the opposite direction) in the rest frame of the cart.  However, in
+the cart frame, nothing relevant is moving -- it's exactly the same as
+the original lab frame when the cart was at rest.  So there is
 absolutely no reason why the electron would start drifting off the
-cart at all, let alone why should the electron pick that direction to
-drift?  If nothing is moving in this frame, there is no reason for the
-electron to move in any particular direction except around in its
+cart at all, and the symmetry is such that there's no reason for the
+electron to pick the direction of the lab motion for its drift
+direction.  If nothing is moving in this frame, there is no reason for
+the electron to move in any particular direction except around in its
 circle.
 
 What is the resolution of this paradox?  Now that you know how the $E$
@@ -671,12 +673,13 @@ frame ($E'_z = \gamma_Rv_RBy$), in addition to the altered value of
 $B$ ($B'_y = \gamma_R B_y$).  Although solving the equations of motion
 under these primed fields is beyond the scope of this book, the
 solution is a shape much like the path of a point on the wheel of a
-bike -- the center of the circular motion will move in the $+x$
+bicycle -- the center of the circular motion will move in the $+x$
 direction at the speed of the cart.  This trajectory is shown in
-{numref}`circularpathfig`.  The electron will not fall off the edge of
-the cart in either frame: either it moves in a circle, or it moves
-in a circle where the center drifts to the right at the same
-speed as the cart.
+{numref}`circularpathfig`, and an animation is shown in
+{numref}`cartanim`.  The electron will not fall off the edge of the
+cart in either frame: the center of its circular motion is at rest
+with respect to the cart!  If the cart is moving, so does the center
+of the circle.  The electron stays with the cart.
 
 You can't resolve this paradox without relativity, and the speeds
 involved are obviously nowhere even close to the speed of light.
@@ -707,6 +710,37 @@ of the circle drifts right with the same speed as the cart.  If you
 were to transform this shape back into a frame moving at $+v$, the
 trajectory would be a circle, and the cart would be at rest.
 ```
+
+
+
+```{code-cell}
+:tags: ["remove-cell"]
+# Insert VPython simulation of an electron on a moving cart
+#
+url1 = "_static/SReoncart.html"
+bshft = display.IFrame(src=url1,width=800,height=670)
+glue("eoncart",bshft, display=False)
+
+```
+
+```{glue:figure} eoncart
+:figwidth: 800px
+:name: cartanim
+
+Animation of how the cyclotron motion of an electron in a magnetic
+field changes in reference frames in relative motion.  The red sphere
+is an electron, and the orange rectangle is the cart described in the
+text.  The translucent square represents a region of magnetic field
+(pointing up).  First, leave the speed at zero and click the button
+to run the animation in the rest frame of the cart.  Rotate the
+perspective to see the circular cyclotron motion from above.  Unclick
+the button to stop the animation, then move the slider.  Now when you
+click the button, the cart will move.  Again, if you rotate the
+display and view from above, you can see how the electron stays with
+the cart as it moves.  Try some different speeds!
+
+```
+
 
 (secEMten)=
 ## The Electromagnetic Field Tensor
