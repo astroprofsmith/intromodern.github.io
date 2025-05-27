@@ -625,7 +625,7 @@ frame.  Now what do we *do* with them, and how does this relate to the
 Lorentz transformation we have used for such a change up to this
 point?
 
-## Example
+## A paradox that shows why the fields must change
 
 Let's think through a possible experiment that one could (in principle)
 do that would reveal why $E$ and $B$ have to transform like this.  A full
@@ -660,9 +660,9 @@ the original lab frame when the cart was at rest.  So there is
 absolutely no reason why the electron would start drifting off the
 cart at all, and the symmetry is such that there's no reason for the
 electron to pick the direction of the lab motion for its drift
-direction.  If nothing is moving in this frame, there is no reason for
-the electron to move in any particular direction except around in its
-circle.
+direction, if it were to drift, which it wouldn't.  There is no reason
+for the electron to move in any particular direction except around in
+its circle.
 
 What is the resolution of this paradox?  Now that you know how the $E$
 and $B$ fields transform, you will understand that when you switch
@@ -730,14 +730,17 @@ glue("eoncart",bshft, display=False)
 Animation of how the cyclotron motion of an electron in a magnetic
 field changes in reference frames in relative motion.  The red sphere
 is an electron, and the orange rectangle is the cart described in the
-text.  The translucent square represents a region of magnetic field
-(pointing up).  First, leave the speed at zero and click the button
-to run the animation in the rest frame of the cart.  Rotate the
-perspective to see the circular cyclotron motion from above.  Unclick
-the button to stop the animation, then move the slider.  Now when you
-click the button, the cart will move.  Again, if you rotate the
-display and view from above, you can see how the electron stays with
-the cart as it moves.  Try some different speeds!
+text.  The translucent square represents a region of magnetic field.
+Buttons will show or hide magnetic (blue) and electric (yellow) field
+vector arrows, as well as the total force on the electron (green).
+First, leave the speed at zero and click the button to run the
+animation in the rest frame of the cart.  Rotate the perspective to
+see the circular cyclotron motion from above.  Unclick the button to
+stop the animation, then move the slider.  Now when you click the
+button, the cart will move, but there will be an electric field as
+well as the magnetic field.  Again, if you rotate the display and view
+from above, you can see how the force on the electron changes to keep
+the electron with the cart as it moves.  Try some different speeds!
 
 ```
 
