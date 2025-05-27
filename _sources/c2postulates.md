@@ -69,13 +69,32 @@ nature.
 (secClocks)=
 ## Clocks and Rulers
 
-The Theory of Relativity starts with considering motion, which involves
-changes in location and time.  If we're going to compare the predictions
-of the theory with actual reality, we're going to need to make careful,
-quantitative measurements of what actually happens.  This means we need
-to be clear on what we are actually talking about when we throw words
-around like space and time (or spacetime).  To measure time and space,
+The Theory of Relativity starts with considering motion, which
+involves changes in location and time.  If we're going to compare the
+predictions of the theory with actual reality, we're going to need to
+make careful, quantitative measurements of what actually happens.  Not
+what we think should happen, not what our intuition leads us to
+believe, but what actually does happen.  This means we need to be
+clear on what we are actually talking about when we throw words around
+like space and time (or spacetime).  To avoid linguistic confusion and
+cultural ambguity, physicists use **operational definitions** to
+clearly deliniate what we mean.  The process by which we measure the
+thing *is* the definition of that thing.  To measure time and space,
 we need clocks and rulers.
+
+```{margin}
+**Operational Definitions** are a tool that physicists use to try to
+avoid the confusion when two people are using the same word to refer
+to different concepts.  An operational definition is a careful description
+of a procedure that leads to a measurement or calculation.  That
+measurement **is** the thing being defined.  The word "force" can be used
+many different ways in English, but in Physics, it means the rate
+of change of the momentum.  No more and no less.  The implications of
+Relativity Theory with regards to space and time are so counter-intuitive,
+it is critical that we define careful procedures for what we mean, or
+else we risk hopeless confusion when we start talking about time dilating
+or length contracting.
+```
 
 What makes a clock?  Think of everything you have ever heard of being
 used as a clock.  Your list might include the water clock, the
