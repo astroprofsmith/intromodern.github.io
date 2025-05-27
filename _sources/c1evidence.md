@@ -182,19 +182,19 @@ than other light.
 :align: center
 :name: nonsrlc
 
-Simulation of a simplified binary star system light curve.
-One star is three times as bright as the other.  This light curve
-shows two cycles of the stars' orbit as seen from Earth, 100 light
-years away.  The deeper eclipse is when the brighter star's light is
-blocked by the dimmer star.  The upper figure uses a constant speed of
-light for all photons, while the lower figure shows what such a light
-curve might look like if the light from the approaching star moved
-faster than the light from the receeding star (the speed of the stars
-has been exaggerated to accentuate the effect).  The upper figure
-matches what binary stars actually look like.  See, e.g. [this example
-of HIP
-59683](https://www.atnf.csiro.au/outreach/education/senior/astrophysics/binary_types.html#bintypeeclipse),
-a star in the Hipparcos database or [this collection of light curves](https://www.boulder.swri.edu/~terrell/talks/aavso2001/frame04.html) from the AAVSO.
+Simulation of a simplified binary star system light curve.  One star
+is three times as bright as the other.  This light curve shows two
+cycles of the stars' orbit as seen from Earth, 100 light years away.
+The deeper eclipse is when the brighter star's light is blocked by the
+dimmer star.  The upper figure uses a constant speed of light for all
+photons, while the lower figure shows what such a light curve might
+look like if the light from the approaching star moved faster than the
+light from the receeding star (the speed of the stars has been
+exaggerated to accentuate the effect).  The upper figure matches what
+binary stars actually look like.  See, e.g. [this collection of light
+curves](https://www.boulder.swri.edu/~terrell/talks/aavso2001/frame04.html)
+from the AAVSO.
+
 ```
 
 Once you accept the idea that the speed of light is the same
