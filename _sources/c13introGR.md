@@ -285,15 +285,16 @@ a nice illustration of this.
 The circumference being equal to $2\pi r$ is proven within a flat
 (also called Euclidian) space.  If space is curved, that equation no
 longer holds.  Consider the circle formed by a latitude line near the
-South Pole: because the surface of the Earth is curved, the measured
-radius of the Earth along the surface is going to be longer than the
-radius of the circle you would get by slicing a flat circle along the
-latitude line.  Therefore, the circumference of the latitude circle
-will be shorter than $2\pi r$, because the Earth is curved.  Due to
-the length contraction of the meter sticks, our scientist on the
-merry-go-round would also conclude that she is in a curved space, as
-the geometry is not behaving according to the rules of flat space, and
-the stronger the centrifugal force, the more curvature she measures.
+North Pole, as illustrated in {numref}`PolarSlice`: because the
+surface of the Earth is curved, the measured radius of the Earth along
+the surface is going to be longer than the radius of the circle you
+would get by slicing a flat circle along the latitude line.
+Therefore, the circumference of the latitude circle will be shorter
+than $2\pi r$, because the Earth is curved.  Due to the length
+contraction of the meter sticks, our scientist on the merry-go-round
+would also conclude that she is in a curved space, as the geometry is
+not behaving according to the rules of flat space, and the stronger
+the centrifugal force, the more curvature she measures.
 
 
 ```{figure} images/PolarCap.png
