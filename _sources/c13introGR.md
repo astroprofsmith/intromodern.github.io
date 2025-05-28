@@ -363,7 +363,7 @@ off the clock tower.  The painter, who luckily survived, reported that
 he was just fine until he hit the ground.  It occurred to Einstein
 that during the fall, the painter was effectively feeling no gravity.
 Only when he hit the ground could he tell that he was being
-accelerated downward.  In the SR part of this book, we insisted on
+accelerated.  In the SR part of this book, we insisted on
 only dealing with reference frames moving at constant speed, which we
 considered to be "inertial reference frames".  However, a reference
 frame in gravitational free fall is *also* an inertial frame, because
@@ -920,9 +920,44 @@ first:
 ```
 So of all the possible parabolic paths between $A$ and $B$, the one
 with $a=g$ will maximize the proper time elapsed between $A$ and $B$.
+The math represented here symbolically is also shown graphically in
+{numref}`parabolicSTfig`.  You can move the slider to change the
+acceleration, while the graph shows the spacetime trajectory and the
+number in the box represents the size of the deviation between the
+time interval for the parabolic path and that of an object at rest
+(set acceleration to zero and the number in the box will also go
+to zero).  You can see that the largest deviation in time is when
+$a=9.81$ m/s$^2$.
+
+```{code-cell}
+:tags: ["remove-cell"]
+# 3D spacetime diagram of parabolic motion
+url1 = "_static/SRparabolic.html"
+test = display.IFrame(src=url1,width=800,height=620)
+glue("stparafig",test, display=False)
+
+```
+
+```{glue:figure} stparafig
+:figwidth: 800px
+:name: parabolicSTfig
+
+3D spacetime diagram of an object moving in a parabola near the surface
+of the Earth.  The $x$ direction represents the vertical and the $y$
+direction represents the horizontal.  With the slider you can change the
+acceleration.  The ends of the parabola are fixed to the start and stop
+events.  The black number in the box represents the deviation of the proper
+time along the parabolic path from the proper time for an object at
+rest between the two events, in arbitary units.  You should be able to
+see that the time takes a maximum when you set the acceleration equal
+to $g$ ($-9.8$ m/s$^2$).
+
+```
 
 It remains to be shown that the parabolic path has a larger proper time
-than the straight line path.  For this, we return to Eq. {eq}`parapropresult`
+than the straight line path (you can see this in the number in the box
+in {numref}`parabolicSTfig`, but we should show the equations for it).
+For this, we return to Eq. {eq}`parapropresult`
 and plug in $a=g$ to see what the proper time is along the parabola:
 ```{math}
 :label: proptimepara
