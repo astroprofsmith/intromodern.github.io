@@ -295,6 +295,25 @@ merry-go-round would also conclude that she is in a curved space, as
 the geometry is not behaving according to the rules of flat space, and
 the stronger the centrifugal force, the more curvature she measures.
 
+
+```{figure} images/PolarCap.png
+:alt: SlicedPolarCap
+:class: bg-primary mb-1
+:width: 700px
+:align: center
+:name: PolarSlice
+
+Comparison of flat and curved geometry by slicing off a polar cap on
+the Earth.  The flat surface formed by the cut has a circumference of
+$2\pi$ times the radius, as you would expect.  The curved
+surface of the cap has the same circumference, but an observer laying
+down meter sticks along a longitude line from the pole out to the edge
+would measure a longer radius than someone on the flat surface.  They
+would therefore conclude the circumference is less than $2\pi$ times
+the radius.
+
+```
+
 The effects on time and geometry are tightly linked to the
 acceleration of the reference frame of the merry-go-round.  The larger
 the radius, the larger the acceleration needs to be ($a=\omega^2 r$)
