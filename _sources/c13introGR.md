@@ -946,24 +946,35 @@ first:
 \right]
 ```
 ```{math}
-:label: dtda1
-\frac{d\Delta t_0}{da} = - \frac{aT^3}{4c^2}
-+\frac{gT^3}{12c^2}
-+\frac{aT^3}{6c^2}=0
+:label: dtdaout2
+\frac{d\Delta t_0}{da} = \frac{d}{da}\left[T +\frac{T^3}{c^2}\left(- \frac{a^2}{8}
++\frac{g}{12}
++\frac{a^2}{12}
+\right)
+\right]
 ```
 ```{math}
-:label: solvefora
--3a+g+2a=0\rightarrow a=g
+:label: dtdaout3
+\frac{d\Delta t_0}{da} = \frac{d}{da}\left[T +\frac{T^3}{c^2}\left(\frac{g}{12}
+-\frac{a^2}{24}
+\right)
+\right]
 ```
-So of all the possible parabolic paths between $A$ and $B$, the one
-with $a=g$ will maximize the proper time elapsed between $A$ and $B$.
-The math represented here symbolically is also shown graphically in
+```{math}
+:label: dtda1
+\frac{d\Delta t_0}{da} = \frac{(a-g)T^3}{12c^2} = 0,
+```
+which demands $a=g$!
+
+Of all the possible parabolic paths between $A$ and $B$, the one with
+$a=g$ will maximize the proper time elapsed between $A$ and $B$.  The
+math represented here symbolically is also shown graphically in
 {numref}`parabolicSTfig`.  You can move the slider to change the
 acceleration, while the graph shows the spacetime trajectory and the
 number in the box represents the size of the deviation between the
 time interval for the parabolic path and that of an object at rest
-(set acceleration to zero and the number in the box will also go
-to zero).  You can see that the largest deviation in time is when
+(set acceleration to zero and the number in the box will also go to
+zero).  You can see that the largest deviation in time is when
 $a=9.81$ m/s$^2$.
 
 ```{code-cell}
