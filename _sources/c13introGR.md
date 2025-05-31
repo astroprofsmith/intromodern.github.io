@@ -775,6 +775,43 @@ experiencing no net force will follow a path in spacetime that maximizes
 the time as measured by a co-moving clock.  Such a path is called a
 *geodesic*.
 
+```{note}
+
+It is worth taking a moment to recall the operational definition of
+"proper time".  The requirement that the proper time be a maximum can
+be confusing in the light of how we defined time dilation.  In
+{numref}`secTimeDi`, we established the proper time as the *minimum*
+time interval between two events, as measured by a lattice of clocks
+at rest with respect to those events.  There are two clock readings,
+measured on different clocks, and we take the difference to get the
+proper time interval.  Since the reference frames we were considering
+were all moving at constant relative velocities, it was easy to
+imagine straight lines between these events, and to consider the
+difference in clock readings as telling us the vertical lengths of
+those lines on a space-time diagram.  However, the way we are defining
+proper time here is a little more subtle.  We are breaking a
+not-necessarily-straight wordline up into infinitely many, infinitely
+small, intervals, each of which can be considered to be approximately
+straight, and measuring the difference between two clock readings on
+the *same* clock, as it moves from one event to the next.  In the
+(possibly accelerating) rest frame of that clock, the sum of all those
+tiny time intervals would be not different from the proper time, as we
+understood it in {numref}`secTimeDi`.  Allowing the clock to
+accelerate yields a different numerical answer, while preserving the
+same operational definition as in the non-accelerating case.  We can
+then talk about finding the path that maximizes the proper time, a
+process which is unrelated to the previous discussion of time
+dilation.  Here we are discussing alternate paths and comparing
+multiple proper times; time dilation is a comparison of a single
+proper time to a different time interval measured in a reference frame
+in relative motion.  The proper time is the maximum time interval when
+comparing all the possible paths between two events, but it is still
+shorter when the two events are at rest when compared to the time
+interval in a reference frame where the two events are not at rest.
+These two definitions do not contradict each other, because they are
+considering different comparisons.
+```
+
 A photon is an ideal object to use as a test case, because a photon
 has no mass, and can therefore never experience a force, and will
 always follow a geodesic path.  In fact, we can often determine what
@@ -970,12 +1007,15 @@ and plug in $a=g$ to see what the proper time is along the parabola:
 ```
 Since the term on the right is always positive, this proper time will
 always be bigger than $T$, which is the proper time for a ball sitting
-still the whole time.  In the presence of a weak, uniform gravitational
-field, the parabolic path will have a larger proper time than the
-straight line path, which means the ball will not follow the straight
-line path.  I have not proved that the parabolic path maximizes the
-proper time out of *all* the possible paths between $A$ and $B$,
-but it is certainly a larger time than sitting still.
+still the whole time.  In the presence of a weak, uniform
+gravitational field, the parabolic path will have a larger proper time
+than the straight line path, which means the ball will not follow the
+straight line path.  However, if we remove the gravitational field by
+setting $g=0$, then the geodesic will be a straight line -- it reduces
+to the special case as the correspondence principle demands.  I have
+not proved that the parabolic path maximizes the proper time out of
+*all* the possible paths between $A$ and $B$, but it is certainly a
+larger time than sitting still, in the presence of uniform gravity.
 
 In other words (accepting provisionally that a parabola does indeed
 maximize $\Delta t_0$ out of all possible paths), if no forces are
@@ -986,9 +1026,9 @@ a force on it.  For example, if the ball is lying on the ground, the
 force from the ground will push upward and keep the ball from falling
 down.  The geodesic path therefore represents the natural trajectory
 through spacetime, in the absence of forces.  All objects following
-geodesics will be in an inertial frame of reference, and will appear
-within a reference frame moving with them to be experiencing no net
-forces.  That reference frame is therefore inertial.
+geodesics will, within a reference frame moving with them, to be
+experiencing no net forces.  That reference frame is therefore
+inertial.
 
 The reference frame that is not in free-fall near the Earth (for
 example, the reference frame at rest with respect to the ground) is

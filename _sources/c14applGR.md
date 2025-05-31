@@ -27,7 +27,7 @@ from myst_nb import glue
 
 In this chapter, I show four examples of how applying the principles
 and concepts of General Relativity, as laid out in [the last
-chapter](chGRcon), lead to astonishing (but very real) observations in
+chapter](chGRcon), connect to astonishing (but very real) observations in
 our universe.  I start close to home with variations in Mercury's
 Orbit that Newtonian Physics could not explain.  This was known in
 Einstein's time, and the fact that his theory could explain the
@@ -247,7 +247,7 @@ would, to strike the wall below the mark.
 How far would the photons fall?  At a speed of $c$, it would take the
 photons ten nanoseconds to cross a 3 m room in the rocket.  At an
 acceleration of 10 m/s/s, the photons would fall $5\times10^{-16}$ m
-in ten nanosecond.  This is on the order of the size of subatomic
+in ten nanoseconds.  This is on the order of the size of subatomic
 particle, like an electron.  The Equivalence Principle demands
 that light moving across a 3 m room on the surface of the Earth should
 also fall by $5\times10^{-16}$ m.  If not, we could determine whether
@@ -328,7 +328,7 @@ that Newton just didn't know to stick a "2" in the equation.  The
 total (integrated) deflection works out to be twice as big, but
 the GR deflection is bigger than twice as the photon falls into
 and climbs out of the gravity of the Sun, while being the same
-at the point of closest approach.  The total average deflection
+at the point of closest approach.  The total deflection
 is twice.
 ```
 
@@ -995,7 +995,8 @@ Milky Way.  There is clearly a strong source of gravity at the
 location of the star symbol, and if you measure the width of the orbit
 that approaches closest to the core (SO-16), that central mass must be
 contained in a volume comparable to the size of the solar system.
-Four million Suns in a volume that here only has a single one!
+Four million Suns inside a volume that in our neighborhood only has a
+single one!
 
 <center><video controls src="_static/gehz.mp4"></video></center>
 
@@ -1010,15 +1011,15 @@ of one sixtieth of one sixtieth of a single degree.  The size of a
 baseball on the Moon, as viewed from Earth.  From analyzing this
 image, they report a mass for the black hole of seven billion solar
 masses, completely consistent with the mass estimate derived from the
-motion of gas around it (similar to the Gehz video, above).  For a
-seven billion solar mass object, the Schwarzschild Radius is about
-twenty billion km, or 120 times the distance from the Earth to the Sun
--- the black hole itself is about as big as our whole solar system!
-At the 54 million light year distance to M87, the black hole diameter
-would span about 16 $\mu$as, which is a little less than half of the
-40 $\mu$as bar shown in {numref}`ehtm87`, very similar in size to the
-dark shadow region in the image.  The existence of black holes is
-getting harder and harder to discount.
+motion of gas around it (using methods similar to the Gehz video,
+above).  For a seven billion solar mass object, the Schwarzschild
+Radius is about twenty billion km, or 120 times the distance from the
+Earth to the Sun -- the black hole itself is about as big as our whole
+solar system!  At the 54 million light year distance to M87, the black
+hole diameter would span about 16 $\mu$as, which is a little less than
+half of the 40 $\mu$as bar shown in {numref}`ehtm87`, very similar in
+size to the dark shadow region in the image.  The existence of black
+holes is getting harder and harder to discount.
 
 ```{figure} images/2018m87.png
 :alt: 2018m87ehtimage
@@ -1210,7 +1211,7 @@ If $k=1$, we say this space is closed, which means it really is the
 surface of a four-sphere, and if you could travel indefinitely in one
 direction, you would come back to where you started.  If $k=0$, then
 the space is simply flat, Euclidean, with no overal curvature at all.
-A $k=-1$ space curves outward, much like a saddle, or a pringles
+A $k=-1$ space curves outward, much like a saddle, or a Pringles
 potato chip.  Triangles in an analogous two-dimensional space have
 interior angles that add up to less than $180^\circ$.
 

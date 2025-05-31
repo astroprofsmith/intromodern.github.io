@@ -891,11 +891,10 @@ $dt = \gamma dt_0 = 8.59\times 10^{-6}$ s
 To put this narrative into mathematical format, we define two events:
 the emission of the laser flash and the detection of the returning
 light.  The emission and detection of the light happen at the same
-position in space, so the clock is at rest with respect to the events,
-and therefore the time interval it measures is the proper time $dt_0$.
-If the height of the train car is designated $h$, then the proper time
-interval will be $dt_0 = 2h/c$, since the laser beam moves at the
-speed of light.
+position in space, so the clock is at rest with respect to the events.
+Let us designate the time interval it measures as $dt_0$.  If the
+height of the train car is designated $h$, then $dt_0 = 2h/c$, since
+the laser beam moves at the speed of light.
 
 Now consider that the train is moving along horizontal tracks at a
 speed $v$, relative to the ground.  Standing on the ground is another
