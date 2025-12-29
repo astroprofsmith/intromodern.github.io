@@ -524,16 +524,16 @@ overtaken by a faster spaceship (green).  At the origin, all three
 objects are at the same location.
 
 By moving the slider, you can shift your perspective into reference
-frames with different relative motion.  Slide the bar to the right
-until the blue line is vertical.  This is the reference frame of
-the planet as two spaceships going at difference speeds pass it.
-The green spaceship is faster than the blue spaceship, as it must
-be, but it does not exceed the speed of light.  Continue moving the
-slider to the left, and you can see the speed of all three objects will
-approach the speed of light, but never reach it.  If you move the
-slider to the right, you can reach the reference frame of the
-green object, where the red and blue objects will be falling
-behind, and the blue object is moving faster than the red one.
+frames with different relative motion.  Slide the bar to the left
+until the blue line is vertical.  This is the reference frame of the
+planet as two spaceships going at difference speeds pass it.  The
+green spaceship is faster than the blue spaceship, as it must be, but
+it does not exceed the speed of light.  Continue moving the slider to
+the left, and you can see the speed of all three objects will approach
+the speed of light, but never reach it.  If you move the slider to the
+right, you can reach the reference frame of the green object, where
+the red and blue objects will be falling behind, and the blue object
+is moving faster than the red one.
 
 
 ```{code-cell}
@@ -790,14 +790,15 @@ the ball at that horizontal velocity, and it will look to you like
 the ball simply goes straight up and back down again.  The horizontal
 motion has no effect on the vertical motion.
 
-But this analysis demands that the off-axis velocity *is* affected by
-the relative motion along the axis.  As the on-axis velocity increases
-(follow the blue line to either the right or left end), the off-axis
-velocity (the red line) must decrease.  This counter-intuitive result
-is the direct result of demanding that the overall magnitude of the
-four-vector remain constant.  If $\beta_x^2+\beta_y^2\leq 1$, then
-as $\beta_x\rightarrow 1$, $\beta_y$ must get smaller.  If it didn't,
-the sum of the squares would exceed the speed limit of the universe.
+But the relativistic analysis demands that the off-axis velocity *is*
+affected by the relative motion along the axis.  As the on-axis
+velocity increases (follow the blue line in {numref}`figoffaxis` to
+either the right or left end), the off-axis velocity (the red line)
+must decrease.  This counter-intuitive result is the direct result of
+demanding that the overall magnitude of the four-vector remain
+constant.  If $\beta_x^2+\beta_y^2\leq 1$, then as $\beta_x\rightarrow
+1$, $\beta_y$ must get smaller.  If it didn't, the sum of the squares
+would exceed the speed limit of the universe.
 
 However, this leaves us with the unsettling conclusion that changing
 the relative motion of two reference frames can actually change the
