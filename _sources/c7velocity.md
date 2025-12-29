@@ -266,16 +266,38 @@ That is its size, which must maintain the same value through Lorentz
 transformations into reference frames in relative motion.  For an
 object at rest, we would say its velocity is zero, but the
 four-velocity must still have a size of $-1$, so it has a time
-component of $i$.  As you "boost" into a moving reference frame, the
-object gains velocity through space, but to maintain the same size, it
-must also gain velocity in time, and the Lorentz factor $\gamma$
-ensures that the total size remains the same.  The speed limit of the
-universe, $\beta=1$ is set by the demand that the size of the velocity
-four-vector remain $-1$, no matter how far you rotate it through
-hyperbolic space time.  Thinking of changing speed as a rotation is
-also helpful in understanding what happens to velocities when
-you consider them from the point of view of a relatively moving frame
-of reference, as explored in the next section.
+component of $i$.  It's not wrong to think of this component as defining
+a "velocity in time".  Any object sitting still in space is still moving
+forward in time, at a rate of one second per second (in its own rest
+frame).
+
+It is tempting to say that the velocity through time will change if
+you increase the velocity through space.  This isn't wrong, exactly,
+but you have to be very careful with how the words connect to the
+mathematics.  We define velocity through space as the space components
+of the velocity four vector divided by $\gamma$.  If we define a
+velocity through time, we must be consistent and also divide by
+$\gamma$.  That would imply the time velocity is $1$ (or $c$) no
+matter what the speed ($dx/dt$, without the $\gamma$) is.  The change
+in the time component of the four-velocity comes from the time
+dilation factor, and we do not include that factor in our definition
+of the word "velocity".  The velocity through time is therefore a
+universal, unchanging constant.
+
+As long as you are consistent with your definitions, it is fair to say
+that the speed limit of the universe, $\beta=1$ is set by the demand
+that the size of the velocity four-vector remain $-1$, no matter how
+far you rotate it through hyperbolic space time.  Since both time and
+space components increase by the same factor $\gamma$, the fact that
+the time component of $[v_4]$ is $i\gamma c$ means that the space
+velocity can never get bigger than $c$, no matter how big $\gamma$
+gets.  If it did, then the difference of the squared components would
+no longer be $-c^2$.  Hyperbolic rotation preserves the size of a
+four-vector just as spacial rotation preserves the size of a
+three-vector.  Thinking of changing speed as a rotation is also
+helpful in understanding what happens to velocities when you consider
+them from the point of view of a relatively moving frame of reference,
+as explored in the next section.
 
 ## Addition of Velocities
 

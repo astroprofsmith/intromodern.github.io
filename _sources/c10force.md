@@ -54,16 +54,36 @@ will remain constant.  If we can take $m$ to be a constant, the last
 term becomes mass time acceleration, or the famous $\vec{F}=m\vec{a}$.
 This encapsulates Newton's first and second laws of motion.
 
-While this model worked well for the
-speeds that were known in the 1700s, its application to objects moving
-near the speed of light has some problems. One problem is with the
-$dt$ term. As we know now, $dt$ depends on the reference frame of the
-observer and is therefore not actally a scalar, as Newton would have
-understood it to be. If the velocity is a vector, and $dt$ is not a
-scalar, then the net force is not a vector.
+Newton also has a third law, which comes into play when a system has
+multiple interacting pieces, each with its own momentum.  For two
+masses, say $m_1$ and $m_2$, the $m\vec{v}$ in Eq. {eq}`Newton2nd`
+becomes $m_1\vec{v}_1 + m_2\vec{v}_2$ to represent the total momentum.
+If the net force on the system from the outside is zero,
+Eq. {eq}`Newton2nd` demands that the rates of change of the momenta of
+the pieces of system must be equal and opposite.  The force on each
+piece of the system from the other piece of the system (since there is
+no net external force) must therefore be equal and opposite.
+
+This law is often mischaracterized as "every action has an equal and
+opposite reaction", but this expression gives the impression it deals
+with two *different* actions: you hit me, and I'll hit you back.  But
+really it means that if a truck hits an insect, the insect will exert
+the same force on the truck as the truck exerts on the insect (the
+enormous difference in masses leads to the change in the velocity of
+the truck being much, much, much smaller than the change in velocity
+of the insect).  The third law is about a single, mutual,
+simultaneous, force of interaction between two objects.
+
+While this model of three laws worked well for the speeds that were
+known in the 1700s, its application to objects moving near the speed
+of light raises some problems. One problem is with the $dt$ term. As
+we know now, $dt$ depends on the reference frame of the observer and
+is therefore not actally a scalar, as Newton would have understood it
+to be. If the velocity is a vector, and $dt$ is not a scalar, then the
+net force is not a vector.
 
 Second, there is nothing inherent in Equation {eq}`Newton2nd` to
-inhibit a net force from changing the objects speed to an arbitrarily
+inhibit a net force from changing the object's speed to an arbitrarily
 fast value.  This is no problem for Newton, who never had to deal with
 very large speeds, but we now know that nothing can move faster than
 $c$, the speed limit of the universe.  Equation {eq}`Newton2nd` has
@@ -165,7 +185,7 @@ we write
 ```
 The four force is the derivative (with respect to the proper time, a
 scalar) of the four momentum.  Since $[p_4]$ is a proper 4- vector and
-$dt_0$ is a scalar, then $[K4]$ is also a proper 4-vector. The letter
+$dt_0$ is a scalar, then $[K_4]$ is also a proper 4-vector. The letter
 K is in the 4-force to make it easier to distinguish between it and
 the vector force used by Newton. This form of the force is often
 called the Minkowski Force in honor of H. Minkowski, who introduced the
@@ -233,8 +253,8 @@ energy of the object experiencing the force.  This rate of change is
 called the power delivered to the object.  How is this related to the
 force?  In Newtonian terms, the work done on an object by a force as
 the object displaces by some amount $d\vec{x}$ is given by $dW =
-\vec{F}\cdot d\vec{x}$.  The power is therefore $P = dW/dt =
-\vec{F}\cdot \vec{v}$ (if the force is constant!).
+\vec{F}\cdot d\vec{x}$ (Eq. {eq}`workKE`).  The power is therefore $P
+= dW/dt = \vec{F}\cdot \vec{v}$ (if the force is constant!).
 
 Let us therefore see what happens when we take
 the dot product of the four velocity with the four force:

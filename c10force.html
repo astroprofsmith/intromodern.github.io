@@ -197,7 +197,10 @@
 <li class="toctree-l1"><a class="reference internal" href="c12dynamic.html">12. Relativistic Electrodynamics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c13introGR.html">13. Concepts of General Relativity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c14applGR.html">14. Some Applications of General Relativity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="c15bibliography.html">15. References and Further Reading</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="c15bibliography.html">References and Further Reading</a></li>
 </ul>
 
     </div>
@@ -443,15 +446,33 @@ velocity relative to the observer of the object and <span class="math notranslat
 will remain constant.  If we can take <span class="math notranslate nohighlight">\(m\)</span> to be a constant, the last
 term becomes mass time acceleration, or the famous <span class="math notranslate nohighlight">\(\vec{F}=m\vec{a}\)</span>.
 This encapsulates Newton’s first and second laws of motion.</p>
-<p>While this model worked well for the
-speeds that were known in the 1700s, its application to objects moving
-near the speed of light has some problems. One problem is with the
-<span class="math notranslate nohighlight">\(dt\)</span> term. As we know now, <span class="math notranslate nohighlight">\(dt\)</span> depends on the reference frame of the
-observer and is therefore not actally a scalar, as Newton would have
-understood it to be. If the velocity is a vector, and <span class="math notranslate nohighlight">\(dt\)</span> is not a
-scalar, then the net force is not a vector.</p>
+<p>Newton also has a third law, which comes into play when a system has
+multiple interacting pieces, each with its own momentum.  For two
+masses, say <span class="math notranslate nohighlight">\(m_1\)</span> and <span class="math notranslate nohighlight">\(m_2\)</span>, the <span class="math notranslate nohighlight">\(m\vec{v}\)</span> in Eq. <a class="reference internal" href="#equation-newton2nd">(10.1)</a>
+becomes <span class="math notranslate nohighlight">\(m_1\vec{v}_1 + m_2\vec{v}_2\)</span> to represent the total momentum.
+If the net force on the system from the outside is zero,
+Eq. <a class="reference internal" href="#equation-newton2nd">(10.1)</a> demands that the rates of change of the momenta of
+the pieces of system must be equal and opposite.  The force on each
+piece of the system from the other piece of the system (since there is
+no net external force) must therefore be equal and opposite.</p>
+<p>This law is often mischaracterized as “every action has an equal and
+opposite reaction”, but this expression gives the impression it deals
+with two <em>different</em> actions: you hit me, and I’ll hit you back.  But
+really it means that if a truck hits an insect, the insect will exert
+the same force on the truck as the truck exerts on the insect (the
+enormous difference in masses leads to the change in the velocity of
+the truck being much, much, much smaller than the change in velocity
+of the insect).  The third law is about a single, mutual,
+simultaneous, force of interaction between two objects.</p>
+<p>While this model of three laws worked well for the speeds that were
+known in the 1700s, its application to objects moving near the speed
+of light raises some problems. One problem is with the <span class="math notranslate nohighlight">\(dt\)</span> term. As
+we know now, <span class="math notranslate nohighlight">\(dt\)</span> depends on the reference frame of the observer and
+is therefore not actally a scalar, as Newton would have understood it
+to be. If the velocity is a vector, and <span class="math notranslate nohighlight">\(dt\)</span> is not a scalar, then the
+net force is not a vector.</p>
 <p>Second, there is nothing inherent in Equation <a class="reference internal" href="#equation-newton2nd">(10.1)</a> to
-inhibit a net force from changing the objects speed to an arbitrarily
+inhibit a net force from changing the object’s speed to an arbitrarily
 fast value.  This is no problem for Newton, who never had to deal with
 very large speeds, but we now know that nothing can move faster than
 <span class="math notranslate nohighlight">\(c\)</span>, the speed limit of the universe.  Equation <a class="reference internal" href="#equation-newton2nd">(10.1)</a> has
@@ -534,7 +555,7 @@ we write</p>
 <span class="eqno">(10.8)<a class="headerlink" href="#equation-minkforce" title="Link to this equation">#</a></span>\[[K_4] = \frac{d}{dt_0}[p_4]\]</div>
 <p>The four force is the derivative (with respect to the proper time, a
 scalar) of the four momentum.  Since <span class="math notranslate nohighlight">\([p_4]\)</span> is a proper 4- vector and
-<span class="math notranslate nohighlight">\(dt_0\)</span> is a scalar, then <span class="math notranslate nohighlight">\([K4]\)</span> is also a proper 4-vector. The letter
+<span class="math notranslate nohighlight">\(dt_0\)</span> is a scalar, then <span class="math notranslate nohighlight">\([K_4]\)</span> is also a proper 4-vector. The letter
 K is in the 4-force to make it easier to distinguish between it and
 the vector force used by Newton. This form of the force is often
 called the Minkowski Force in honor of H. Minkowski, who introduced the
@@ -596,8 +617,8 @@ energy of the object experiencing the force.  This rate of change is
 called the power delivered to the object.  How is this related to the
 force?  In Newtonian terms, the work done on an object by a force as
 the object displaces by some amount <span class="math notranslate nohighlight">\(d\vec{x}\)</span> is given by <span class="math notranslate nohighlight">\(dW =
-\vec{F}\cdot d\vec{x}\)</span>.  The power is therefore <span class="math notranslate nohighlight">\(P = dW/dt =
-\vec{F}\cdot \vec{v}\)</span> (if the force is constant!).</p>
+\vec{F}\cdot d\vec{x}\)</span> (Eq. <a class="reference internal" href="#equation-workke">(10.7)</a>).  The power is therefore <span class="math notranslate nohighlight">\(P
+= dW/dt = \vec{F}\cdot \vec{v}\)</span> (if the force is constant!).</p>
 <p>Let us therefore see what happens when we take
 the dot product of the four velocity with the four force:</p>
 <div class="math notranslate nohighlight" id="equation-v4dotf41">
@@ -865,7 +886,7 @@ it doesn’t matter how fast the object is moving to begin with.  Even
 under a constant force, it will never move faster than the universal
 speed limit.</p>
 <figure class="align-default" id="constaccfig" style="width: 800px">
-<img alt="_images/4ff7a98625023dd77a909c9e70f2b2f1004f2a0411e3ddee3c6dfc6f9b86a887.png" src="_images/4ff7a98625023dd77a909c9e70f2b2f1004f2a0411e3ddee3c6dfc6f9b86a887.png" />
+<img alt="_images/680c6914465662bcf5fb27551ba1fb4c1026cd9430eec51eda5b1661dfe6aa75.png" src="_images/680c6914465662bcf5fb27551ba1fb4c1026cd9430eec51eda5b1661dfe6aa75.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 10.1 </span><span class="caption-text">A graph of <span class="math notranslate nohighlight">\(\beta\)</span> as a function of time (in years) in
 the lab frame for an object of mass 1 kg, experiencing a constant
@@ -983,7 +1004,7 @@ is losing energy at a rate of <span class="math notranslate nohighlight">\(2.31\
 <p>Another way to examine the four-acceleration in action is to consider
 the trajectory of a particle starting from rest and experiencing a
 constant force in x direction (This example is adapted from
-<span id="id1">[<a class="reference internal" href="c15bibliography.html#id35" title="David Griffiths. Electrodynamics. Cambridge University Press, 2023.">Griffiths, 2023</a>]</span>).  In Newtonian mechanics, we would expect the
+<span id="id1">[<a class="reference internal" href="c15bibliography.html#id37" title="David Griffiths. Electrodynamics. Cambridge University Press, 2023.">Griffiths, 2023</a>]</span>).  In Newtonian mechanics, we would expect the
 particle to undergo a constant acceleration of <span class="math notranslate nohighlight">\(a=F/m_0\)</span>, and
 therefore have a velocity of <span class="math notranslate nohighlight">\(v(t) = Ft/m_0\)</span>.  If we place the origin
 at the starting location of the particle, the particle position as
@@ -1038,7 +1059,7 @@ principle says they should, but they diverge as the speeds get larger.
 The magenta curve eventually becomes parallel to the red dotted
 line as the slope approaches <span class="math notranslate nohighlight">\(c\)</span>.</p>
 <figure class="align-default" id="pcompfig" style="width: 800px">
-<img alt="_images/4c1964d2044d040b70b32557fdaccf4ed9c1bd61c3b190ce1314d6baf7d2286f.png" src="_images/4c1964d2044d040b70b32557fdaccf4ed9c1bd61c3b190ce1314d6baf7d2286f.png" />
+<img alt="_images/d9b253c487d532233b1c41b3a694fd14c289ef97cd8f139f301992c9e4096da9.png" src="_images/d9b253c487d532233b1c41b3a694fd14c289ef97cd8f139f301992c9e4096da9.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 10.2 </span><span class="caption-text">A graph of <span class="math notranslate nohighlight">\(x\)</span> as a function of time (in arbitrary units)
 under constant acceleration,
