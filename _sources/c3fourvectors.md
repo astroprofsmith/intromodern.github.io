@@ -1135,14 +1135,22 @@ glue("noUdtfig",test, display=False)
 :figwidth: 800px
 :name: timeintervalsfig
 
-Interactive animation of time intervals.  Four events are indicated in different
-colors.  A slider changes the relative velocity to another reference frame.
-The four numbers in the white boxes indicate the clock readings along the time
-axis at the events that are simultaneous with the four colored events in the
-relatively moving reference frame.  The key takeaway is that while the four
-events are evenly spaced in time in the original frame ($\beta_R=0$), the
-time intervals between events do not stretch identically in every other frame.
-Time dilation is not a **universal**, uniform, change in the "flow of time".
+Interactive animation of time intervals.  Four events are indicated as
+dots of different colors.  You could imagine this sequence as: snap
+the fingers on your left hand, then snap the fingers on your right
+hand twice, and finally snap the fingers of your left hand again.  In
+your rest frame, these events are evenly spaced in time: every 0.2 s
+you snap one set of fingers.  A slider changes the relative velocity
+to another reference frame.  The four numbers in the white boxes
+indicate the clock readings along the time axis at the events that are
+simultaneous with the four colored events in the relatively moving
+reference frame.  Note how the differences in the time stamps change.
+The key takeaway is that while the four events are evenly spaced in
+time in the original frame ($\beta_R=0$), the time intervals between
+events do not stretch identically in every other frame.  Time dilation
+is not a **universal**, uniform, change in "the flow of time" -- there
+is no such thing as a unversal flow of time.  Time is a local
+phenomenon.
 ```
 
 

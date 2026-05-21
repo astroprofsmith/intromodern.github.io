@@ -1250,7 +1250,7 @@ glue("comovingfig",test, display=False)
 :figwidth: 800px
 :name: comovingsphere
 
-Animation of expanding 2D closed universe.  A red ant and a blue ant
+Animation of expanding 2D closed universe.  A red ant and a white ant
 sit on an inflating basketball.  The white arrows represent comoving
 coordinates that do not change as the ball inflates.  The ants are
 always 3 comoving coordinates away from each other, while the

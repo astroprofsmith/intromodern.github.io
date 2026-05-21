@@ -729,10 +729,10 @@ glue("eoncart",bshft, display=False)
 :name: cartanim
 
 Animation of how the cyclotron motion of an electron in a magnetic
-field changes in reference frames in relative motion.  The red sphere
+field changes in reference frames in relative motion.  The white sphere
 is an electron, and the orange rectangle is the cart described in the
 text.  The translucent square represents a region of magnetic field.
-Buttons will show or hide magnetic (blue) and electric (yellow) field
+Buttons will show or hide magnetic (red) and electric (yellow) field
 vector arrows, as well as the total force on the electron (green).
 First, leave the speed at zero and click the button to run the
 animation in the rest frame of the cart.  Rotate the perspective to
@@ -742,6 +742,8 @@ button, the cart will move, but there will be an electric field as
 well as the magnetic field.  Again, if you rotate the display and view
 from above, you can see how the force on the electron changes to keep
 the electron with the cart as it moves.  Try some different speeds!
+Hit the reset button to retun the cart and camera to their original
+positions.
 
 ```
 

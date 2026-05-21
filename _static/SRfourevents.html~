@@ -70,29 +70,23 @@ async function __main__() {
     fig = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Spacetime Diagram", width: 750, height: 450})]);
     "3";
     fig.camera.pos = vector(.5, .5, 2.5);
-    "5";
-    fig.userspin = false;
     "6";
-    fig.userpan = false;
-    "7";
-    fig.userzoom = false;
-    "10";
     defaultx = vector(1, 0, 0);
-    "11";
+    "7";
     defaulty = vector(0, 1, 0);
-    "12";
+    "8";
     xar = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: defaultx, color: color.yellow, shaftwidth: .02})]);
-    "13";
+    "9";
     ctar = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: defaulty, color: color.yellow, shaftwidth: .02})]);
-    "15";
+    "11";
     xarorignal = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: defaultx, color: color.white, shaftwidth: .02, opacity: .2})]);
-    "16";
+    "12";
     ctaroriginal = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: defaulty, color: color.white, shaftwidth: .02, opacity: .2})]);
-    "18";
+    "14";
     ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1.1, 1["-u"]()["*"](.05), 0), text: "x", height: .2})]);
-    "19";
+    "15";
     ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](.1), 1.1, 0), text: "ct", height: .2})]);
-    "21";
+    "17";
     ev = (function() {
         var ρσ_Iter = range(4), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -103,23 +97,23 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "22";
+    "18";
     ρσ_getitem(ev, 0).pos = vector(.15, .3, 0);
-    "23";
-    ρσ_getitem(ev, 0).color = color.orange;
-    "24";
+    "19";
+    ρσ_getitem(ev, 0).color = color.blue;
+    "20";
     ρσ_getitem(ev, 1).pos = vector(.05, .5, 0);
-    "25";
+    "21";
     ρσ_getitem(ev, 1).color = color.red;
-    "26";
+    "22";
     ρσ_getitem(ev, 2).pos = vector(.05, .7, 0);
-    "27";
+    "23";
     ρσ_getitem(ev, 2).color = color.cyan;
-    "28";
+    "24";
     ρσ_getitem(ev, 3).pos = vector(.15, .9, 0);
-    "29";
+    "25";
     ρσ_getitem(ev, 3).color = color.magenta;
-    "31";
+    "27";
     timearr = (function() {
         var ρσ_Iter = range(4), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -130,7 +124,7 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "32";
+    "28";
     timeval = (function() {
         var ρσ_Iter = range(4), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -141,7 +135,7 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "33";
+    "29";
     timelab = (function() {
         var ρσ_Iter = range(4), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -152,11 +146,11 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "37";
+    "33";
     fig.caption = "\n";
-    "38";
+    "34";
     async function shiftq(s) {
-        "39";
+        "35";
         wt.text = "betaR = {:1.2f}".format(s.value);
     };
     if (!shiftq.__argnames__) Object.defineProperties(shiftq, {
@@ -164,22 +158,22 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "41";
+    "37";
     sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](.75), max: .75, value: 0, length: 600, bind: shiftq, right: 15})]);
-    "42";
+    "38";
     wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "betaR = {:1.2f} \n\n".format(sl.value)})]);
-    "44";
+    "40";
     async function lort(b, dx4) {
         var ρσ_ls, g, dxp4;
-        "45";
+        "41";
         g = 1["/"](sqrt(1["-"](1["*"](Math.pow(b, 2)))));
-        "46";
+        "42";
         dxp4 = vector(0, 0, 0);
-        "47";
+        "43";
         dxp4.y = g["*"](dx4.y["-"](1["*"](b)["*"](dx4.x)));
-        "48";
+        "44";
         dxp4.x = g["*"](dx4.x["-"](1["*"](b)["*"](dx4.y)));
-        "49";
+        "45";
         return dxp4;
     };
     if (!lort.__argnames__) Object.defineProperties(lort, {
@@ -187,46 +181,46 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "51";
+    "47";
     dt = .01;
-    "52";
+    "48";
     oldsl = sl.value;
-    "54";
+    "50";
     while (true) {
-        "55";
+        "51";
         (await rate(1["/"](dt)));
-        "57";
+        "53";
         newsl = sl.value;
-        "58";
+        "54";
         if ((newsl !== oldsl && (typeof newsl !== "object" || ρσ_not_equals(newsl, oldsl)))) {
-            "59";
+            "55";
             ctar.axis = (await lort(1["-u"]()["*"](sl.value), defaulty));
-            "60";
+            "56";
             xar.axis = (await lort(1["-u"]()["*"](sl.value), defaultx));
-            "61";
+            "57";
             slope = atan2(xar.axis.y, xar.axis.x);
-            "63";
+            "59";
             for (var ρσ_Index1 = 0; ρσ_Index1["<"](4); ρσ_Index1++) {
                 i = ρσ_Index1;
-                "64";
+                "60";
                 newcoords = (await lort(sl.value, ρσ_getitem(ev, i).pos));
-                "65";
+                "61";
                 ρσ_getitem(timearr, i).axis = ρσ_interpolate_kwargs.call(this, rotate, [vector(1["-u"]()["*"](ρσ_getitem(ev, i).pos.x), 0, 0)].concat([ρσ_desugar_kwargs({angle: slope, axis: vector(0, 0, 1)})]));
-                "66";
+                "62";
                 ρσ_getitem(timearr, i).axis = ρσ_getitem(timearr, i).axis.hat["*"](newcoords.x);
-                "67";
+                "63";
                 ρσ_getitem(timelab, i).text = "{:4.2f}".format(newcoords.y);
-                "68";
+                "64";
                 if (sl.value["<"](0)) {
-                    "69";
+                    "65";
                     ρσ_getitem(timelab, i).pos = ρσ_getitem(ev, i).pos["+"](ρσ_getitem(timearr, i).axis)["+"](vector(1["-u"]()["*"](.3), 0, 0));
                 }
             }
-            "71";
+            "67";
             ctar.axis = ρσ_getitem(ev, 3).pos["+"](ρσ_getitem(timearr, 3).axis);
-            "72";
+            "68";
             ctar.axis = ctar.axis.hat["*"](ctar.axis.mag)["*"](1.111);
-            "76";
+            "72";
             oldsl = newsl;
         }
     }

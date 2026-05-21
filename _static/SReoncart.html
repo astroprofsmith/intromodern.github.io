@@ -52,7 +52,7 @@ async function __main__() {
 
     function round(num, n=0) {return Number(num.toFixed(n))}
 
-    var version, print, arange, __name__, type, ρσ_ls, fig, h, length, radorb, evel, omega, q, m, speed, Bmag, cart, Bzone, electron, Bfield, Efield, Force, beginanim, showBfield, showEfield, showForce, runanim, sl, wt, t, dt, beta;
+    var version, print, arange, __name__, type, ρσ_ls, fig, defpos, deffor, defcen, defaxi, h, length, radorb, evel, omega, q, m, speed, Bmag, cart, Bzone, electron, Bfield, Efield, Force, beginanim, showBfield, showEfield, showForce, runanim, sl, wt, clrbtn, t, dt, beta;
     version = ρσ_list_decorate([ "3.2", "glowscript" ]);
     Array.prototype['+'] = function(r) {return this.concat(r)}
     Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
@@ -66,60 +66,104 @@ async function __main__() {
     strings();
     "2";
     fig = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Electron on a Magnetic Cart", width: 750, height: 500})]);
-    "4";
-    h = 6;
     "5";
-    length = 20;
+    defpos = vec(0, 0, 17);
     "6";
-    radorb = 2;
+    deffor = vec(0, 0, 1["-u"]()["*"](17));
     "7";
-    evel = vec(0, 0, 1);
+    defcen = vec(0, 0, 0);
     "8";
-    omega = 1["-u"]()["*"](evel.mag)["/"](radorb);
-    "9";
-    q = 1["-u"]()["*"](1);
+    defaxi = vec(0, 0, 1["-u"]()["*"](17));
     "10";
-    m = 1;
+    fig.camera.pos = defpos;
     "11";
-    speed = 1;
+    fig.camera.forward = deffor;
     "12";
-    Bmag = 1["-u"]()["*"](m)["*"](speed)["/"](q)["/"](radorb)["*"](3);
-    "14";
-    cart = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](3), 0), color: color.orange, size: vec(h, 1, h)})]);
-    "15";
-    Bzone = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), color: color.white, size: vec(h, 6, h), opacity: .2})]);
+    fig.camera.center = defcen;
+    "13";
+    fig.camera.axis = defaxi;
     "16";
-    electron = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vec(radorb, 0, 0), color: color.red, radius: h["/"](25), make_trail: true, v: vec(0, 0, 1["-u"]()["*"](speed))})]);
+    h = 6;
     "17";
-    Bfield = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: electron.pos, color: color.blue, axis: vec(0, Bmag, 0), visible: false})]);
+    length = 20;
     "18";
-    Efield = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: electron.pos, color: color.yellow, axis: vec(0, 0, 0), visible: false})]);
+    radorb = 2;
     "19";
-    Force = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: electron.pos, color: color.green, axis: vec(1["-u"]()["*"](1), 0, 0), visible: false})]);
+    evel = vec(0, 0, 1);
     "20";
-    Force.axis = q["*"](Efield.axis)["+"](q["*"](electron.v.cross(Bfield.axis)));
+    omega = 1["-u"]()["*"](evel.mag)["/"](radorb);
+    "21";
+    q = 1["-u"]()["*"](1);
     "22";
-    fig.caption = "Set speed with slider then click button to start animation\n";
+    m = 1;
     "23";
-    beginanim = ρσ_interpolate_kwargs.call(this, checkbox, [ρσ_desugar_kwargs({bind: beginanimation, text: "Click to run animation\n"})]);
+    speed = 1;
     "24";
-    showBfield = ρσ_interpolate_kwargs.call(this, checkbox, [ρσ_desugar_kwargs({bind: showB, text: "Show B vector (blue)"})]);
-    "25";
-    showEfield = ρσ_interpolate_kwargs.call(this, checkbox, [ρσ_desugar_kwargs({bind: showE, text: "Show E vector (yellow)"})]);
+    Bmag = 1["-u"]()["*"](m)["*"](speed)["/"](q)["/"](radorb)["*"](3);
     "26";
-    showForce = ρσ_interpolate_kwargs.call(this, checkbox, [ρσ_desugar_kwargs({bind: showF, text: "Show F vector (green)\n"})]);
+    cart = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](3), 0), color: color.orange, size: vec(h, 1, h)})]);
+    "27";
+    Bzone = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), color: color.white, size: vec(h, 6, h), opacity: .2})]);
     "28";
-    runanim = false;
+    electron = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vec(radorb, 0, 0), color: color.white, radius: h["/"](25), make_trail: true, v: vec(0, 0, 1["-u"]()["*"](speed))})]);
+    "29";
+    Bfield = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: electron.pos, color: color.red, axis: vec(0, Bmag, 0), visible: false})]);
     "30";
+    Efield = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: electron.pos, color: color.yellow, axis: vec(0, 0, 0), visible: false})]);
+    "31";
+    Force = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: electron.pos, color: color.green, axis: vec(1["-u"]()["*"](1), 0, 0), visible: false})]);
+    "32";
+    Force.axis = q["*"](Efield.axis)["+"](q["*"](electron.v.cross(Bfield.axis)));
+    "34";
+    async function resetview(evt) {
+        "35";
+        fig.camera.pos = defpos;
+        "36";
+        fig.camera.forward = deffor;
+        "37";
+        fig.camera.center = defcen;
+        "38";
+        fig.camera.axis = defaxi;
+        "39";
+        cart.pos = vector(0, 1["-u"]()["*"](3), 0);
+        "40";
+        electron.pos = vec(radorb, 0, 0);
+        "41";
+        electron.clear_trail();
+        "42";
+        Bzone.pos = vector(0, 0, 0);
+        "43";
+        sl.value = 0;
+        "44";
+        wt.text = "v_R = 0.0 m/s\n\n";
+    };
+    if (!resetview.__argnames__) Object.defineProperties(resetview, {
+        __argnames__ : {value: ["evt"]},
+        __module__ : {value: null}
+    });
+
+    "47";
+    fig.caption = "Set speed with slider then click button to start animation\n";
+    "48";
+    beginanim = ρσ_interpolate_kwargs.call(this, checkbox, [ρσ_desugar_kwargs({bind: beginanimation, text: "Click to run animation\n"})]);
+    "49";
+    showBfield = ρσ_interpolate_kwargs.call(this, checkbox, [ρσ_desugar_kwargs({bind: showB, text: "Show B vector (red)"})]);
+    "50";
+    showEfield = ρσ_interpolate_kwargs.call(this, checkbox, [ρσ_desugar_kwargs({bind: showE, text: "Show E vector (yellow)"})]);
+    "51";
+    showForce = ρσ_interpolate_kwargs.call(this, checkbox, [ρσ_desugar_kwargs({bind: showF, text: "Show F vector (green)\n"})]);
+    "53";
+    runanim = false;
+    "55";
     async function beginanimation(b) {
         var ρσ_ls, runanim;
-        "31";
+        "56";
         if (b.checked) {
-            "32";
+            "57";
             runanim = true;
-            "33";
+            "58";
         } else {
-            "34";
+            "59";
             runanim = false;
         }
     };
@@ -128,15 +172,15 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "36";
+    "61";
     async function showB(b) {
-        "37";
+        "62";
         if (b.checked) {
-            "38";
+            "63";
             Bfield.visible = true;
-            "39";
+            "64";
         } else {
-            "40";
+            "65";
             Bfield.visible = false;
         }
     };
@@ -145,15 +189,15 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "42";
+    "67";
     async function showE(b) {
-        "43";
+        "68";
         if (b.checked) {
-            "44";
+            "69";
             Efield.visible = true;
-            "45";
+            "70";
         } else {
-            "46";
+            "71";
             Efield.visible = false;
         }
     };
@@ -162,15 +206,15 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "48";
+    "73";
     async function showF(b) {
-        "49";
+        "74";
         if (b.checked) {
-            "50";
+            "75";
             Force.visible = true;
-            "51";
+            "76";
         } else {
-            "52";
+            "77";
             Force.visible = false;
         }
     };
@@ -179,69 +223,71 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "54";
+    "79";
     async function shiftq(s) {
-        "55";
-        wt.text = "v_R = {:1.2f} m/s".format(s.value);
+        "80";
+        wt.text = "v_R = {:1.2f} m/s\n\n".format(s.value);
     };
     if (!shiftq.__argnames__) Object.defineProperties(shiftq, {
         __argnames__ : {value: ["s"]},
         __module__ : {value: null}
     });
 
-    "57";
+    "82";
     sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 0, max: 1, value: 0, length: 600, bind: shiftq, right: 15})]);
-    "58";
+    "83";
     wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "v_R = {:1.2f} m/s\n\n".format(sl.value)})]);
-    "61";
+    "85";
+    clrbtn = ρσ_interpolate_kwargs.call(this, button, [ρσ_desugar_kwargs({bind: resetview, text: "Reset Animation", background: color.white})]);
+    "88";
     t = 0;
-    "62";
+    "89";
     dt = .001;
-    "63";
+    "90";
     while (true) {
-        "64";
+        "91";
         (await rate(1["/"](dt)));
-        "66";
+        "93";
         beta = sl.value;
-        "67";
+        "94";
         Efield.axis = vec(0, 0, 1["-u"]()["*"](beta)["*"](Bfield.axis.y));
-        "68";
+        "95";
         electron.v = vec(beta["-"](1["*"](radorb)["*"](omega)["*"](sin(omega["*"](t)))), 0, radorb["*"](omega)["*"](cos(omega["*"](t))));
-        "69";
+        "96";
         Force.axis = q["*"](Efield.axis)["+"](q["*"](cross(electron.v, Bfield.axis)));
-        "71";
+        "98";
         if (beginanim.checked) {
-            "72";
+            "99";
             cart.pos = vec(0, 1["-u"]()["*"](3), 0);
-            "73";
+            "100";
             Bzone.pos = vector(0, 0, 0);
-            "74";
+            "101";
             electron.pos = vector(radorb, 0, 0);
-            "75";
+            "102";
             electron.clear_trail();
-            "76";
+            "103";
             t = 0;
-            "78";
+            "105";
             while (t["<"](100) && beginanim.checked) {
-                "79";
+                "106";
                 (await rate(2e3));
-                "80";
+                "107";
                 cart.pos.x=cart.pos.x["+"](beta["*"](dt));
-                "81";
+                "108";
                 Bzone.pos.x=Bzone.pos.x["+"](beta["*"](dt));
-                "82";
+                "109";
                 electron.pos = vec(beta["*"](t)["+"](radorb["*"](cos(omega["*"](t)))), 0, radorb["*"](sin(omega["*"](t))));
-                "83";
+                "110";
                 electron.v = vec(beta["-"](1["*"](radorb)["*"](omega)["*"](sin(omega["*"](t)))), 0, radorb["*"](omega)["*"](cos(omega["*"](t))));
-                "84";
+                "111";
                 Force.axis = q["*"](Efield.axis)["+"](q["*"](electron.v.cross(Bfield.axis)));
-                "85";
+                "112";
                 Bfield.pos = electron.pos;
-                "86";
+                "113";
                 Efield.pos = electron.pos;
-                "87";
+                "114";
                 Force.pos = electron.pos;
-                "89";
+                "116";
                 t=t["+"](dt);
             }
         }

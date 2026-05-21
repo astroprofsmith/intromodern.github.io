@@ -73,7 +73,7 @@ async function __main__() {
     "6";
     p2 = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, .7, 0), size: vector(1, .02, 1), color: color.green})]);
     "7";
-    p3 = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, .5, 0), size: vector(2, .02, 2), color: color.yellow})]);
+    p3 = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, .5, 0), size: vector(2, .02, 2), color: color.blue})]);
     "8";
     ρσ_interpolate_kwargs.call(p3, p3.rotate, [ρσ_desugar_kwargs({axis: vector(0, 0, 1), angle: 7["*"](pi)["/"](8)})]);
 };

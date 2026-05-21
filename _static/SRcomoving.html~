@@ -66,35 +66,31 @@ async function __main__() {
     strings();
     "2";
     myscreen = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Expanding Basketball Universe", width: 750, height: 500})]);
-    "3";
-    myscreen.userzoom = false;
     "4";
-    myscreen.userpan = false;
-    "6";
     ballrad = 1;
-    "7";
+    "5";
     drad = .05;
-    "8";
+    "6";
     ballmax = 15;
-    "9";
+    "7";
     basketball = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), radius: ballrad, opacity: .5, color: color.orange})]);
-    "11";
+    "9";
     theta1 = 85["*"](pi)["/"](180);
-    "12";
+    "10";
     theta2 = 20["*"](pi)["/"](180);
-    "13";
+    "11";
     phi = pi["/"](4);
-    "14";
+    "12";
     ant1 = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: ballrad["*"](vector(cos(phi)["*"](sin(theta1)), cos(theta1), sin(phi)["*"](sin(theta1)))), color: color.red, radius: .5})]);
+    "13";
+    ant2 = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: ballrad["*"](vector(cos(phi)["*"](sin(theta2)), cos(theta2), sin(phi)["*"](sin(theta2)))), color: color.blue, radius: .5})]);
     "15";
-    ant2 = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: ballrad["*"](vector(cos(phi)["*"](sin(theta2)), cos(theta2), sin(phi)["*"](sin(theta2)))), color: color.white, radius: .5})]);
-    "17";
     x = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: ballmax["*"](vector(1, 0, 0)), color: color.magenta, shaftwidth: .1})]);
-    "18";
+    "16";
     y = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: ballmax["*"](vector(0, 1, 0)), color: color.magenta, shaftwidth: .1})]);
-    "19";
+    "17";
     z = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: ballmax["*"](vector(0, 0, 1)), color: color.magenta, shaftwidth: .1})]);
-    "21";
+    "19";
     comov = (function() {
         var ρσ_Iter = range(4), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -105,35 +101,35 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "22";
+    "20";
     for (var ρσ_Index1 = 0; ρσ_Index1["<"](4); ρσ_Index1++) {
         ith = ρσ_Index1;
-        "23";
+        "21";
         theta = theta1["+"](ith["/"](3)["*"](theta2["-"](1["*"](theta1))));
-        "24";
+        "22";
         ρσ_getitem(comov, ith).axis = ballrad["*"](vector(cos(phi)["*"](sin(theta)), cos(theta), sin(phi)["*"](sin(theta))));
     }
-    "34";
+    "32";
     while (true) {
-        "35";
+        "33";
         (await rate(20));
-        "36";
+        "34";
         ballrad=ballrad["+"](drad);
-        "37";
+        "35";
         basketball.radius = ballrad;
-        "39";
+        "37";
         ant1.pos = ant1.pos.hat["*"](ballrad);
-        "40";
+        "38";
         ant2.pos = ant2.pos.hat["*"](ballrad);
-        "42";
+        "40";
         for (var ρσ_Index2 = 0; ρσ_Index2["<"](4); ρσ_Index2++) {
             ith = ρσ_Index2;
-            "43";
+            "41";
             ρσ_getitem(comov, ith).axis = ρσ_getitem(comov, ith).axis.hat["*"](ballrad);
-            "52";
+            "50";
         }
         if (ballrad[">"](ballmax)) {
-            "53";
+            "51";
             ballrad = 1;
         }
     }
