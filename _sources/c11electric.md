@@ -474,6 +474,7 @@ motion of the plate along $x$ is not shown.  The dots will compress
 due to length contraction.  The cyan arrows show the electric field,
 while the white arrows show the magnetic field.  The red-green-blue
 arrows at the center show the x-y-z cartesian axes, in that order.
+The reset button returns the display to the initial conditions.
 
 ```
 

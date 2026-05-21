@@ -52,7 +52,7 @@ async function __main__() {
 
     function round(num, n=0) {return Number(num.toFixed(n))}
 
-    var version, print, arange, __name__, type, ρσ_ls, fig, defpos, deffor, defcen, defaxi, savepos, savefor, savecen, LH, BxF1, ByF1, BzF1, BxF2, ByF2, BzF2, Bvec, DiagF01, DiagF11, DiagF21, DiagF31, ExF1, EyF1, EzF1, ExF2, EyF2, EzF2, Evec, xhat, yhat, zhat, slEx, Ext, slEy, Eyt, slEz, Ezt, slBx, Bxt, slBy, Byt, slBz, Bzt, dt;
+    var version, print, arange, __name__, type, ρσ_ls, fig, ltbl, defpos, deffor, defcen, defaxi, savepos, savefor, savecen, LH, BxF1, ByF1, BzF1, BxF2, ByF2, BzF2, Bvec, DiagF01, DiagF11, DiagF21, DiagF31, ExF1, EyF1, EzF1, ExF2, EyF2, EzF2, Evec, xhat, yhat, zhat, slEx, Ext, slEy, Eyt, slEz, Ezt, slBx, Bxt, slBy, Byt, slBz, Bzt, clrbtn, dt;
     version = ρσ_list_decorate([ "3.2", "glowscript" ]);
     Array.prototype['+'] = function(r) {return this.concat(r)}
     Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
@@ -66,6 +66,8 @@ async function __main__() {
     strings();
     "2";
     fig = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Electromagnetic Tensor", width: 700, height: 500})]);
+    "4";
+    ltbl = vector(.3, .3, .9);
     "6";
     defpos = vec(1, .5, 4);
     "7";
@@ -85,15 +87,31 @@ async function __main__() {
     "19";
     fig.userzoom = false;
     "20";
-    fig.userspin = false;
+    scene.userspin = false;
     "21";
-    fig.userpan = false;
+    scene.userpan = false;
     "22";
     savepos = fig.camera.pos;
     "23";
     savefor = fig.camera.forward;
     "24";
     savecen = fig.camera.center;
+    "26";
+    async function resetview(evt) {
+        "27";
+        fig.camera.pos = defpos;
+        "28";
+        fig.camera.forward = deffor;
+        "29";
+        fig.camera.center = defcen;
+        "30";
+        fig.camera.axis = defaxi;
+    };
+    if (!resetview.__argnames__) Object.defineProperties(resetview, {
+        __argnames__ : {value: ["evt"]},
+        __module__ : {value: null}
+    });
+
     "32";
     LH = 15;
     "34";
@@ -222,6 +240,8 @@ async function __main__() {
     slBz = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](1), max: 1, value: .25, length: 600, bind: changeBz, right: 15})]);
     "98";
     Bzt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "Bz = {:1.2f} \n\n".format(slBz.value)})]);
+    "101";
+    clrbtn = ρσ_interpolate_kwargs.call(this, button, [ρσ_desugar_kwargs({bind: resetview, text: "Reset View", background: color.white})]);
     "103";
     dt = .01;
     "104";

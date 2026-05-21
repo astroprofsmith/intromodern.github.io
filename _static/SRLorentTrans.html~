@@ -69,24 +69,18 @@ async function __main__() {
     "2";
     fig = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Spacetime Diagram", width: 750, height: 500})]);
     "4";
-    fig.userzoom = false;
-    "5";
-    fig.userspin = false;
-    "6";
-    fig.userpan = false;
-    "8";
     xar = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(1, 0, 0), color: color.yellow, shaftwidth: .02})]);
-    "9";
+    "5";
     ctar = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(0, 1, 0), color: color.yellow, shaftwidth: .02})]);
-    "11";
+    "7";
     ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1.1, 1["-u"]()["*"](.05), 0), text: "x", height: .2})]);
-    "12";
+    "8";
     ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](.1), 1.1, 0), text: "ct", height: .2})]);
-    "14";
+    "10";
     fig.camera.pos = vector(.5, .5, 2.7);
-    "16";
+    "12";
     numev = 2;
-    "17";
+    "13";
     event = (function() {
         var ρσ_Iter = range(numev), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -97,7 +91,7 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "18";
+    "14";
     originalpos = (function() {
         var ρσ_Iter = range(numev), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -108,31 +102,31 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "19";
+    "15";
     ρσ_getitem(event, 0).color = color.red;
-    "21";
+    "17";
     ρσ_getitem(event, 0).pos = vec(.1, .3, 0);
-    "22";
+    "18";
     ρσ_getitem(event, 1).pos = vec(.4, .9, 0);
-    "23";
+    "19";
     ρσ_setitem(originalpos, 0, ρσ_getitem(event, 0).pos);
-    "24";
+    "20";
     ρσ_setitem(originalpos, 1, ρσ_getitem(event, 1).pos);
-    "26";
+    "22";
     xarr = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: ρσ_getitem(event, 0).pos, axis: vec(ρσ_getitem(event, 1).pos.x["-"](1["*"](ρσ_getitem(event, 0).pos.x)), 0, 0), color: color.green, shaftwidth: .02})]);
-    "27";
+    "23";
     ctarr = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: ρσ_getitem(event, 0).pos["+"](xarr.axis), axis: vec(0, ρσ_getitem(event, 1).pos.y["-"](1["*"](ρσ_getitem(event, 0).pos.y)), 0), color: color.magenta, shaftwidth: .02})]);
-    "28";
+    "24";
     dx4arr = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: ρσ_getitem(event, 0).pos, axis: ρσ_getitem(event, 1).pos["-"](1["*"](ρσ_getitem(event, 0).pos)), color: color.white, shaftwidth: .04})]);
-    "30";
+    "26";
     dxtext = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: xarr.pos["+"](xarr.axis["/"](2))["-"](1["*"](ctarr.axis)["/"](5)), text: "∆x = 1.00", color: color.green, height: 20})]);
-    "31";
+    "27";
     cdttext = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: ctarr.pos["+"](ctarr.axis["/"](2))["-"](1["*"](xarr.axis)["/"](5)), text: "c∆t = 1.00", color: color.magenta, height: 20})]);
-    "33";
+    "29";
     fig.caption = "\n";
-    "34";
+    "30";
     async function shiftq(s) {
-        "35";
+        "31";
         wt.text = "betaR = {:1.2f}".format(s.value);
     };
     if (!shiftq.__argnames__) Object.defineProperties(shiftq, {
@@ -140,22 +134,22 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "37";
+    "33";
     sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](.75), max: .75, value: 0, length: 600, bind: shiftq, right: 15})]);
-    "38";
+    "34";
     wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "betaR = {:1.2f} \n\n".format(sl.value)})]);
-    "40";
+    "36";
     async function lort(b, dx4) {
         var ρσ_ls, g, dxp4;
-        "41";
+        "37";
         g = 1["/"](sqrt(1["-"](1["*"](Math.pow(b, 2)))));
-        "42";
+        "38";
         dxp4 = vector(0, 0, 0);
-        "43";
+        "39";
         dxp4.y = g["*"](dx4.y["-"](1["*"](b)["*"](dx4.x)));
-        "44";
+        "40";
         dxp4.x = g["*"](dx4.x["-"](1["*"](b)["*"](dx4.y)));
-        "45";
+        "41";
         return dxp4;
     };
     if (!lort.__argnames__) Object.defineProperties(lort, {
@@ -163,43 +157,43 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "47";
+    "43";
     dt = .01;
-    "48";
+    "44";
     oldsl = sl.value;
-    "50";
+    "46";
     while (true) {
-        "51";
+        "47";
         (await rate(1["/"](dt)));
-        "53";
+        "49";
         newsl = sl.value;
-        "54";
+        "50";
         for (var ρσ_Index1 = 0; ρσ_Index1["<"](numev); ρσ_Index1++) {
             i = ρσ_Index1;
-            "55";
+            "51";
             ρσ_getitem(event, i).pos = (await lort(sl.value, ρσ_getitem(originalpos, i)));
         }
-        "56";
+        "52";
         xarr.pos = ρσ_getitem(event, 0).pos;
-        "57";
+        "53";
         xarr.axis = vec(ρσ_getitem(event, 1).pos.x["-"](1["*"](ρσ_getitem(event, 0).pos.x)), 0, 0);
-        "58";
+        "54";
         ctarr.pos = ρσ_getitem(event, 0).pos["+"](xarr.axis);
-        "59";
+        "55";
         ctarr.axis = vec(0, ρσ_getitem(event, 1).pos.y["-"](1["*"](ρσ_getitem(event, 0).pos.y)), 0);
-        "60";
+        "56";
         dx4arr.axis = ρσ_getitem(event, 1).pos["-"](1["*"](ρσ_getitem(event, 0).pos));
-        "61";
+        "57";
         dx4arr.pos = ρσ_getitem(event, 0).pos;
-        "63";
+        "59";
         dxtext.pos = xarr.pos["+"](xarr.axis["/"](2))["-"](1["*"](ctarr.axis.hat)["*"](.2));
-        "64";
+        "60";
         cdttext.pos = ctarr.pos["+"](ctarr.axis["/"](2))["+"](xarr.axis.hat["*"](.4));
-        "66";
+        "62";
         dxtext.text = "∆x = {:1.2f}".format(xarr.axis.x);
-        "67";
+        "63";
         cdttext.text = "c∆t = {:1.2f}".format(ctarr.axis.y);
-        "69";
+        "65";
         oldsl = newsl;
     }
 };
