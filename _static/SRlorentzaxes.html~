@@ -54,7 +54,7 @@ async function __main__() {
     fontloading();
     await waitforfonts();
 
-    var version, print, arange, __name__, type, ρσ_ls, fig, xar, ctar, nside, numev, evgrid, i, originalpos, nn, j, sl, wt, dt, oldsl, newsl;
+    var version, print, arange, __name__, type, ρσ_ls, fig, defaultx, defaulty, xar, ctar, xarorignal, ctaroriginal, p, q, sl, wt, dt, oldsl, newsl;
     version = ρσ_list_decorate([ "3.2", "glowscript" ]);
     Array.prototype['+'] = function(r) {return this.concat(r)}
     Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
@@ -68,101 +68,31 @@ async function __main__() {
     strings();
     "2";
     fig = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Spacetime Diagram", width: 750, height: 500})]);
-    "4";
-    fig.userzoom = false;
     "5";
-    fig.userspin = false;
+    defaultx = vector(1, 0, 0);
     "6";
-    fig.userpan = false;
+    defaulty = vector(0, 1, 0);
+    "7";
+    xar = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: defaultx, color: color.yellow, shaftwidth: .02})]);
     "8";
-    xar = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(1, 0, 0), color: color.yellow, shaftwidth: .02})]);
-    "9";
-    ctar = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(0, 1, 0), color: color.yellow, shaftwidth: .02})]);
+    ctar = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: defaulty, color: color.yellow, shaftwidth: .02})]);
+    "10";
+    xarorignal = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: defaultx, color: color.white, shaftwidth: .02, opacity: .2})]);
     "11";
+    ctaroriginal = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: defaulty, color: color.white, shaftwidth: .02, opacity: .2})]);
+    "13";
     ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1.1, 1["-u"]()["*"](.05), 0), text: "x", height: .2})]);
-    "12";
-    ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](.1), 1.1, 0), text: "ct", height: .2})]);
     "14";
-    fig.camera.pos = vector(.5, .5, 2.7);
+    ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](.1), 1.1, 0), text: "ct", height: .2})]);
     "16";
-    nside = 4;
+    p = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(.3, 1, 0), radius: .05, color: color.blue})]);
     "17";
-    numev = Math.pow(nside, 2);
-    "18";
-    evgrid = (function() {
-        var ρσ_Iter = range(numev), ρσ_Result = [], i;
-        ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
-        for (var ρσ_Index of ρσ_Iter) {
-            i = ρσ_Index;
-            ρσ_Result.push(ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), radius: .04, color: color.white, make_trail: false, trail_radius: .02})]));
-        }
-        ρσ_Result = ρσ_list_constructor(ρσ_Result);
-        return ρσ_Result;
-    })();
+    q = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(.8, .2, 0), radius: .05, color: color.red})]);
     "19";
-    originalpos = (function() {
-        var ρσ_Iter = range(numev), ρσ_Result = [], i;
-        ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
-        for (var ρσ_Index of ρσ_Iter) {
-            i = ρσ_Index;
-            ρσ_Result.push(vector(0, 0, 0));
-        }
-        ρσ_Result = ρσ_list_constructor(ρσ_Result);
-        return ρσ_Result;
-    })();
-    "21";
-    for (var ρσ_Index1 = 0; ρσ_Index1["<"](nside); ρσ_Index1++) {
-        i = ρσ_Index1;
-        "22";
-        for (var ρσ_Index2 = 0; ρσ_Index2["<"](nside); ρσ_Index2++) {
-            j = ρσ_Index2;
-            "23";
-            nn = i["*"](nside)["+"](j);
-            "24";
-            ρσ_getitem(evgrid, nn).pos = vector(i["/"](nside), j["/"](nside), 0);
-            "25";
-            ρσ_setitem(originalpos, nn, vector(i["/"](nside), j["/"](nside), 0));
-            "26";
-            if ((i === j || typeof i === "object" && ρσ_equals(i, j))) {
-                "27";
-                ρσ_getitem(evgrid, nn).color = color.red;
-                "28";
-            }
-            if (ρσ_equals(i, nside["-"](1)) && (j === 0 || typeof j === "object" && ρσ_equals(j, 0))) {
-                "29";
-                ρσ_getitem(evgrid, nn).color = color.green;
-                "30";
-                ρσ_getitem(evgrid, nn).make_trail = true;
-                "31";
-                ρσ_getitem(evgrid, nn).trail_color = color.green;
-                "32";
-            }
-            if (ρσ_equals(i, nside["-"](1)) && ρσ_equals(j, nside["-"](2))) {
-                "33";
-                ρσ_getitem(evgrid, nn).color = color.magenta;
-                "34";
-                ρσ_getitem(evgrid, nn).make_trail = true;
-                "35";
-                ρσ_getitem(evgrid, nn).trail_color = color.magenta;
-                "36";
-            }
-            if ((i === 0 || typeof i === "object" && ρσ_equals(i, 0)) && ρσ_equals(j, nside["-"](1))) {
-                "37";
-                ρσ_getitem(evgrid, nn).color = color.orange;
-                "38";
-                ρσ_getitem(evgrid, nn).make_trail = true;
-                "39";
-                ρσ_getitem(evgrid, nn).trail_color = color.orange;
-            }
-        }
-    }
-    "40";
-    ρσ_getitem(evgrid, 0).color = color.cyan;
-    "43";
     fig.caption = "\n";
-    "44";
+    "20";
     async function shiftq(s) {
-        "45";
+        "21";
         wt.text = "betaR = {:1.2f}".format(s.value);
     };
     if (!shiftq.__argnames__) Object.defineProperties(shiftq, {
@@ -170,22 +100,22 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "47";
+    "23";
     sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](.75), max: .75, value: 0, length: 600, bind: shiftq, right: 15})]);
-    "48";
+    "24";
     wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "betaR = {:1.2f} \n\n".format(sl.value)})]);
-    "50";
+    "26";
     async function lort(b, dx4) {
         var ρσ_ls, g, dxp4;
-        "51";
+        "27";
         g = 1["/"](sqrt(1["-"](1["*"](Math.pow(b, 2)))));
-        "52";
+        "28";
         dxp4 = vector(0, 0, 0);
-        "53";
+        "29";
         dxp4.y = g["*"](dx4.y["-"](1["*"](b)["*"](dx4.x)));
-        "54";
+        "30";
         dxp4.x = g["*"](dx4.x["-"](1["*"](b)["*"](dx4.y)));
-        "55";
+        "31";
         return dxp4;
     };
     if (!lort.__argnames__) Object.defineProperties(lort, {
@@ -193,24 +123,25 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "57";
+    "33";
     dt = .01;
-    "58";
+    "34";
     oldsl = sl.value;
-    "60";
+    "36";
     while (true) {
-        "61";
+        "37";
         (await rate(1["/"](dt)));
-        "63";
+        "39";
         newsl = sl.value;
-        "64";
-        for (var ρσ_Index3 = 0; ρσ_Index3["<"](numev); ρσ_Index3++) {
-            i = ρσ_Index3;
-            "65";
-            ρσ_getitem(evgrid, i).pos = (await lort(sl.value, ρσ_getitem(originalpos, i)));
+        "40";
+        if ((newsl !== oldsl && (typeof newsl !== "object" || ρσ_not_equals(newsl, oldsl)))) {
+            "41";
+            ctar.axis = (await lort(1["-u"]()["*"](sl.value), defaulty));
+            "42";
+            xar.axis = (await lort(1["-u"]()["*"](sl.value), defaultx));
+            "44";
+            oldsl = newsl;
         }
-        "66";
-        oldsl = newsl;
     }
 };
 if (!__main__.__module__) Object.defineProperties(__main__, {

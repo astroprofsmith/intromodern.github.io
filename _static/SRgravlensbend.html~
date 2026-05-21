@@ -71,34 +71,28 @@ async function __main__() {
     "11";
     myscreen.camera.pos = vector(0, 0, 40);
     "14";
-    myscreen.userzoom = false;
-    "15";
-    myscreen.userspin = false;
-    "16";
-    myscreen.userpan = false;
-    "18";
     SL = 1["-u"]()["*"](25);
-    "19";
+    "15";
     OL = 7;
-    "20";
+    "16";
     SO = 1["-u"]()["*"](SL)["+"](OL);
-    "21";
+    "17";
     Nray = 20;
-    "22";
+    "18";
     bmax = 15;
-    "23";
+    "19";
     squig = .1;
-    "24";
+    "20";
     soinit = 1.51;
-    "25";
+    "21";
     thein = sqrt(squig["*"](1["-u"]())["*"](SL)["/"](OL)["/"](1["-u"]()["*"](SL)["+"](OL)));
-    "27";
+    "23";
     source = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(SL, soinit, 0), radius: .6, color: color.cyan})]);
-    "28";
+    "24";
     lens = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), radius: .6, color: color.yellow})]);
-    "29";
-    earth = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(OL, 0, 0), radius: .6, color: vector(.6, .6, 1)})]);
-    "31";
+    "25";
+    earth = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(OL, 0, 0), radius: .6, color: vector(.5, .5, 1)})]);
+    "27";
     ray1 = (function() {
         var ρσ_Iter = range(Nray), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -109,7 +103,7 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "32";
+    "28";
     ray2 = (function() {
         var ρσ_Iter = range(Nray), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -120,7 +114,7 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "33";
+    "29";
     back = (function() {
         var ρσ_Iter = range(Nray), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -131,7 +125,7 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "35";
+    "31";
     imag = (function() {
         var ρσ_Iter = range(2), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -142,11 +136,11 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "37";
+    "33";
     myscreen.caption = "\n";
-    "38";
+    "34";
     async function shiftq(s) {
-        "39";
+        "35";
         wt.text = "source y = {:1.2f}".format(s.value);
     };
     if (!shiftq.__argnames__) Object.defineProperties(shiftq, {
@@ -154,79 +148,79 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "41";
+    "37";
     sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](bmax)["*"](.8), max: bmax["*"](.8), value: 1, length: 600, bind: shiftq, right: 15})]);
-    "42";
+    "38";
     wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "source y = {:1.2f} \n\n".format(sl.value)})]);
-    "44";
+    "40";
     while (true) {
-        "45";
+        "41";
         (await rate(100));
-        "46";
+        "42";
         source.pos.y = sl.value;
-        "47";
+        "43";
         displace = source.pos["-"](1["*"](earth.pos));
-        "48";
+        "44";
         beta = asin(source.pos.y["/"](displace.mag));
-        "49";
+        "45";
         thim1 = .5["*"](beta["+"](sqrt(Math.pow(beta, 2)["+"](4["*"](Math.pow(thein, 2))))));
-        "50";
+        "46";
         thim2 = .5["*"](beta["-"](1["*"](sqrt(Math.pow(beta, 2)["+"](4["*"](Math.pow(thein, 2)))))));
-        "51";
+        "47";
         ρσ_getitem(imag, 0).pos.y = displace.mag["*"](sin(thim1));
-        "52";
+        "48";
         ρσ_getitem(imag, 1).pos.y = displace.mag["*"](sin(thim2));
-        "53";
+        "49";
         shift1 = ρσ_getitem(imag, 0).pos.y["-"](1["*"](source.pos.y));
-        "54";
+        "50";
         ρσ_getitem(imag, 0).opacity = exp(1["-u"]()["*"](shift1)["/"](10));
-        "55";
+        "51";
         shift2 = 1["-u"]()["*"](ρσ_getitem(imag, 1).pos.y)["+"](source.pos.y);
-        "56";
+        "52";
         ρσ_getitem(imag, 1).opacity = exp(1["-u"]()["*"](shift2)["/"](10));
-        "58";
+        "54";
         for (var ρσ_Index1 = 0; ρσ_Index1["<"](Nray); ρσ_Index1++) {
             i = ρσ_Index1;
-            "59";
+            "55";
             ρσ_getitem(ray1, i).pos = source.pos;
-            "60";
+            "56";
             ρσ_getitem(ray2, i).pos = source.pos["+"](ρσ_getitem(ray1, i).axis);
-            "61";
+            "57";
             if (abs(ρσ_getitem(ray1, i).pos.y["+"](ρσ_getitem(ray1, i).axis.y))[">"](lens.radius["*"](.6))) {
-                "62";
+                "58";
                 ρσ_getitem(ray2, i).visible = true;
-                "63";
+                "59";
                 alpha = squig["/"](ρσ_getitem(ray2, i).pos.y);
-                "64";
+                "60";
                 ρσ_getitem(ray2, i).axis.x = ρσ_getitem(ray1, i).axis.x["*"](cos(alpha))["+"](ρσ_getitem(ray1, i).axis.y["*"](sin(alpha)));
-                "65";
+                "61";
                 ρσ_getitem(ray2, i).axis.y = 1["-u"]()["*"](ρσ_getitem(ray1, i).axis.x)["*"](sin(alpha))["+"](ρσ_getitem(ray1, i).axis.y["*"](cos(alpha)));
-                "66";
+                "62";
                 theta = asin(ρσ_getitem(ray2, i).axis.y["/"](ρσ_getitem(ray2, i).axis.mag));
-                "67";
+                "63";
                 rayatob = tan(theta)["*"](OL)["+"](ρσ_getitem(ray2, i).pos.y);
-                "68";
+                "64";
                 if (abs(rayatob)["<"](earth.radius["/"](2))) {
-                    "69";
+                    "65";
                     ρσ_getitem(ray2, i).color = color.red;
-                    "70";
+                    "66";
                     ρσ_getitem(back, i).visible = true;
-                    "71";
+                    "67";
                     ρσ_getitem(back, i).pos = ρσ_getitem(ray2, i).pos;
-                    "72";
+                    "68";
                     ρσ_getitem(back, i).axis = vector(SL, tan(theta)["*"](SL), 0);
-                    "73";
+                    "69";
                 } else {
-                    "74";
+                    "70";
                     ρσ_getitem(ray2, i).color = color.white;
-                    "75";
+                    "71";
                     ρσ_getitem(back, i).visible = false;
-                    "76";
+                    "72";
                 }
             } else {
-                "77";
+                "73";
                 ρσ_getitem(ray2, i).visible = false;
-                "78";
+                "74";
                 ρσ_getitem(back, i).visible = false;
             }
         }

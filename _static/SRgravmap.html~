@@ -52,7 +52,7 @@ async function __main__() {
 
     function round(num, n=0) {return Number(num.toFixed(n))}
 
-    var version, print, arange, __name__, type, ρσ_ls, myscreen, Nsource, SL, OL, SO, Nray, bmax, squig, soinit, thein, dr, xmax, ymax, R, dbeta, source, imagp, imagm, beta, i, lens, k, oldpos, sopos, dispsopl, thimp, thimm, newimp, newimvecp, newimm, newimvecm;
+    var version, print, arange, __name__, type, ρσ_ls, myscreen, Nsource, SL, OL, SO, Nray, bmax, squig, soinit, thein, dr, xmax, ymax, R, dbeta, source, imagp, imagm, beta, i, lens, slEx, Ext, slEy, Eyt, k, oldpos, sopos, dispsopl, thimp, thimm, newimp, newimvecp, newimm, newimvecm;
     version = ρσ_list_decorate([ "3.2", "glowscript" ]);
     Array.prototype['+'] = function(r) {return this.concat(r)}
     Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
@@ -127,62 +127,74 @@ async function __main__() {
     source.origin = vec(5, 5, 0);
     "41";
     lens = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), radius: .2, color: color.yellow, opacity: .5})]);
-    "43";
-    while (true) {
-        "44";
-        (await rate(300));
+    "44";
+    async function changex(s) {
         "45";
+        Ext.text = "Source x = {:1.2f} \n\n".format(s.value);
+    };
+    if (!changex.__argnames__) Object.defineProperties(changex, {
+        __argnames__ : {value: ["s"]},
+        __module__ : {value: null}
+    });
+
+    "47";
+    slEx = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](xmax), max: xmax, value: 1, length: 600, bind: changex, right: 15})]);
+    "48";
+    Ext = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "Source x = {:1.2f} \n\n".format(slEx.value)})]);
+    "50";
+    async function changey(s) {
+        "51";
+        Eyt.text = "Source y = {:1.2f} \n\n".format(s.value);
+    };
+    if (!changey.__argnames__) Object.defineProperties(changey, {
+        __argnames__ : {value: ["s"]},
+        __module__ : {value: null}
+    });
+
+    "53";
+    slEy = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](ymax), max: ymax, value: 1["-u"]()["*"](1), length: 600, bind: changey, right: 15})]);
+    "54";
+    Eyt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "Source y = {:1.2f} \n\n".format(slEy.value)})]);
+    "57";
+    while (true) {
+        "58";
+        (await rate(300));
+        "59";
         k = (await keysdown());
-        "46";
-        if (ρσ_in("a", k) && source.origin.x[">"](1["-u"]()["*"](xmax))) {
-            "47";
-            source.origin.x=source.origin.x["-"](dr);
-            "48";
-        }
-        if (ρσ_in("d", k) && source.origin.x["<"](xmax)) {
-            "49";
-            source.origin.x=source.origin.x["+"](dr);
-            "50";
-        }
-        if (ρσ_in("w", k) && source.origin.y["<"](ymax)) {
-            "51";
-            source.origin.y=source.origin.y["+"](dr);
-            "52";
-        }
-        if (ρσ_in("x", k) && source.origin.y[">"](1["-u"]()["*"](ymax))) {
-            "53";
-            source.origin.y=source.origin.y["-"](dr);
-        }
-        "55";
+        "60";
+        source.origin.x = slEx.value;
+        "61";
+        source.origin.y = slEy.value;
+        "63";
         for (var ρσ_Index2 = 0; ρσ_Index2["<"](Nsource["+"](1)); ρσ_Index2++) {
             i = ρσ_Index2;
-            "56";
-            oldpos = source.point(i);
-            "57";
-            sopos = oldpos.pos["+"](source.origin);
-            "58";
-            dispsopl = vec(sopos.x, sopos.y, 0);
-            "59";
-            beta = atan(dispsopl.mag["/"](OL["-"](1["*"](SL))));
-            "60";
-            thimp = .5["*"](beta["+"](sqrt(Math.pow(beta, 2)["+"](4["*"](Math.pow(thein, 2))))));
-            "61";
-            thimm = .5["*"](beta["-"](1["*"](sqrt(Math.pow(beta, 2)["+"](4["*"](Math.pow(thein, 2)))))));
-            "62";
-            newimp = 1["-u"]()["*"](SL)["+"](OL)["*"](tan(thimp));
-            "63";
-            newimvecp = dispsopl.hat["*"](newimp);
             "64";
-            newimvecp.z = SL;
+            oldpos = source.point(i);
             "65";
-            ρσ_interpolate_kwargs.call(imagp, imagp.modify, [i].concat([ρσ_desugar_kwargs({pos: newimvecp})]));
+            sopos = oldpos.pos["+"](source.origin);
             "66";
-            newimm = 1["-u"]()["*"](SL)["+"](OL)["*"](tan(thimm));
+            dispsopl = vec(sopos.x, sopos.y, 0);
             "67";
-            newimvecm = dispsopl.hat["*"](newimm);
+            beta = atan(dispsopl.mag["/"](OL["-"](1["*"](SL))));
             "68";
-            newimvecm.z = SL;
+            thimp = .5["*"](beta["+"](sqrt(Math.pow(beta, 2)["+"](4["*"](Math.pow(thein, 2))))));
             "69";
+            thimm = .5["*"](beta["-"](1["*"](sqrt(Math.pow(beta, 2)["+"](4["*"](Math.pow(thein, 2)))))));
+            "70";
+            newimp = 1["-u"]()["*"](SL)["+"](OL)["*"](tan(thimp));
+            "71";
+            newimvecp = dispsopl.hat["*"](newimp);
+            "72";
+            newimvecp.z = SL;
+            "73";
+            ρσ_interpolate_kwargs.call(imagp, imagp.modify, [i].concat([ρσ_desugar_kwargs({pos: newimvecp})]));
+            "74";
+            newimm = 1["-u"]()["*"](SL)["+"](OL)["*"](tan(thimm));
+            "75";
+            newimvecm = dispsopl.hat["*"](newimm);
+            "76";
+            newimvecm.z = SL;
+            "77";
             ρσ_interpolate_kwargs.call(imagm, imagm.modify, [i].concat([ρσ_desugar_kwargs({pos: newimvecm})]));
         }
     }

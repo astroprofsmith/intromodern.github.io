@@ -52,7 +52,7 @@ async function __main__() {
 
     function round(num, n=0) {return Number(num.toFixed(n))}
 
-    var version, print, arange, __name__, type, ρσ_ls, myscreen, defpos, deffor, defcen, defaxi, savepos, savefor, savecen, ether, boxether, ethsl, wt, f, om, c, k, amp, nbeam, beamin, beamright, beamleft, beamup, beamdown, beamout, laser, halfmir, mir1, mir2, clrbtn, t, dt, xx, i, kr, kl, ku, kd, cr, cl, cu, cd;
+    var version, print, arange, __name__, type, ρσ_ls, myscreen, ether, boxether, ethsl, wt, f, om, c, k, amp, nbeam, beamin, beamright, beamleft, beamup, beamdown, beamout, laser, halfmir, mir1, mir2, t, dt, xx, i, kr, kl, ku, kd, cr, cl, cu, cd;
     version = ρσ_list_decorate([ "3.2", "glowscript" ]);
     Array.prototype['+'] = function(r) {return this.concat(r)}
     Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
@@ -66,55 +66,17 @@ async function __main__() {
     strings();
     "2";
     myscreen = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Michaelson Interferometer", width: 750, height: 500})]);
-    "6";
-    defpos = vec(0, 0, 3);
-    "7";
-    deffor = vec(0, 0, 1["-u"]()["*"](1));
-    "8";
-    defcen = vec(0, 0, 1["-u"]()["*"](1));
-    "9";
-    defaxi = vec(0, 0, 1["-u"]()["*"](17));
-    "11";
-    myscreen.camera.pos = defpos;
-    "12";
-    myscreen.camera.forward = deffor;
-    "13";
-    myscreen.camera.center = defcen;
-    "14";
-    myscreen.camera.axis = defaxi;
-    "16";
-    savepos = myscreen.camera.pos;
-    "17";
-    savefor = myscreen.camera.forward;
-    "18";
-    savecen = myscreen.camera.center;
-    "20";
-    async function resetview(evt) {
-        "21";
-        myscreen.camera.pos = defpos;
-        "22";
-        myscreen.camera.forward = deffor;
-        "23";
-        myscreen.camera.center = defcen;
-        "24";
-        myscreen.camera.axis = defaxi;
-    };
-    if (!resetview.__argnames__) Object.defineProperties(resetview, {
-        __argnames__ : {value: ["evt"]},
-        __module__ : {value: null}
-    });
-
-    "27";
+    "5";
     ether = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](1), 1, 0), axis: vector(1["-u"]()["*"](1), 0, 0)["/"](2), color: color.magenta, visible: false})]);
-    "30";
+    "8";
     async function isetheron(b) {
-        "31";
+        "9";
         if (b.checked) {
-            "32";
+            "10";
             ether.visible = true;
-            "33";
+            "11";
         } else {
-            "34";
+            "12";
             ether.visible = false;
         }
     };
@@ -123,159 +85,162 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "36";
+    "14";
     myscreen.caption = "\n";
-    "37";
+    "15";
     boxether = ρσ_interpolate_kwargs.call(this, checkbox, [ρσ_desugar_kwargs({bind: isetheron, text: "Is there ether?"})]);
-    "39";
+    "17";
     async function S(s) {
-        "40";
+        "18";
         ether.axis = ether.axis.mag["*"](vector(cos(s.value), sin(s.value), 0));
-        "41";
-        wt.text = "{:1.2f}\n".format(s.value);
+        "19";
+        wt.text = "{:1.2f}".format(s.value);
     };
     if (!S.__argnames__) Object.defineProperties(S, {
         __argnames__ : {value: ["s"]},
         __module__ : {value: null}
     });
 
-    "43";
+    "21";
     myscreen.append_to_caption("\nVary the angle of the ether motion: \n\n");
-    "44";
+    "22";
     ethsl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({bind: S, min: 0, max: 2["*"](pi), value: pi})]);
-    "45";
+    "23";
     myscreen.append_to_caption("Angle of Ether Velocity: ");
-    "46";
-    wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "{:1.2f}\n".format(ethsl.value)})]);
-    "48";
+    "24";
+    wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "{:1.2f}".format(ethsl.value)})]);
+    "27";
+    async function isetheron(b) {
+        "28";
+        if (b.checked) {
+            "29";
+            ether.visible = true;
+            "30";
+        } else {
+            "31";
+            ether.visible = false;
+        }
+    };
+    if (!isetheron.__argnames__) Object.defineProperties(isetheron, {
+        __argnames__ : {value: ["b"]},
+        __module__ : {value: null}
+    });
+
+    "33";
     f = 2.5;
-    "49";
+    "34";
     om = 2["*"](pi)["*"](f);
-    "50";
+    "35";
     c = 1;
-    "51";
+    "36";
     k = om["/"](c);
-    "52";
+    "37";
     amp = .1;
-    "54";
+    "39";
     nbeam = 100;
-    "56";
+    "41";
     beamin = curve();
-    "57";
+    "42";
     beamin.origin = vector(1["-u"]()["*"](1), 0, 0);
-    "58";
-    beamin.radius = .01;
-    "60";
+    "44";
     beamright = curve();
-    "61";
+    "45";
     beamright.origin = vector(0, 0, 0);
-    "62";
-    beamright.radius = .01;
-    "64";
+    "47";
     beamleft = curve();
-    "65";
+    "48";
     beamleft.origin = vector(0, 0, amp);
-    "66";
-    beamleft.radius = .01;
-    "68";
+    "50";
     beamup = curve();
-    "69";
+    "51";
     beamup.origin = vector(0, 0, 0);
-    "70";
-    beamup.radius = .01;
-    "72";
+    "53";
     beamdown = curve();
-    "73";
+    "54";
     beamdown.origin = vector(0, 1, amp);
-    "74";
-    beamdown.radius = .01;
-    "76";
+    "56";
     beamout = curve();
-    "77";
+    "57";
     beamout.origin = vector(0, 0, amp);
-    "78";
-    beamout.radius = .01;
-    "80";
+    "59";
     laser = ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: beamin.origin, color: vector(.5, 0, 0), axis: vector(1["-u"]()["*"](1), 0, 0), radius: .1})]);
-    "81";
+    "60";
     halfmir = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), color: color.orange, opacity: .7, size: vector(amp["/"](5), amp["*"](4), amp["*"](4)), axis: vector(1["-u"]()["*"](1), 1, 0)})]);
-    "82";
+    "61";
     mir1 = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(1, 0, 0), color: color.orange, opacity: .7, size: vector(amp["/"](5), amp["*"](4), amp["*"](4))})]);
-    "83";
+    "62";
     mir2 = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 1, 0), color: color.orange, opacity: .7, size: vector(amp["*"](4), amp["/"](5), amp["*"](4))})]);
-    "85";
-    clrbtn = ρσ_interpolate_kwargs.call(this, button, [ρσ_desugar_kwargs({bind: resetview, text: "Reset View", background: color.white})]);
-    "88";
+    "65";
     t = 0;
-    "89";
+    "66";
     dt = .01;
-    "91";
+    "68";
     for (var ρσ_Index1 = 0; ρσ_Index1["<"](nbeam); ρσ_Index1++) {
         i = ρσ_Index1;
-        "92";
+        "69";
         xx = i["/"](nbeam);
-        "93";
+        "70";
         ρσ_interpolate_kwargs.call(beamin, beamin.append, [ρσ_desugar_kwargs({pos: vector(xx, amp["*"](cos(k["*"](1["-u"]()["*"](1)["+"](xx))["-"](1["*"](om)["*"](t)))), 0)})]);
-        "94";
+        "71";
         ρσ_interpolate_kwargs.call(beamright, beamright.append, [ρσ_desugar_kwargs({pos: vector(xx, amp["*"](cos(k["*"](xx)["-"](1["*"](om)["*"](t)))), 0)})]);
-        "95";
+        "72";
         ρσ_interpolate_kwargs.call(beamleft, beamleft.append, [ρσ_desugar_kwargs({pos: vector(xx, amp["*"](sin(k["*"](xx)["+"](om["*"](t)))), 0)})]);
-        "96";
+        "73";
         ρσ_interpolate_kwargs.call(beamup, beamup.append, [ρσ_desugar_kwargs({pos: vector(amp["*"](sin(k["*"](xx)["-"](1["*"](om)["*"](t)))), xx, 0)})]);
-        "97";
+        "74";
         ρσ_interpolate_kwargs.call(beamdown, beamdown.append, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](amp)["*"](sin(k["*"](xx)["-"](1["*"](om)["*"](t)))), 1["-u"]()["*"](xx), 0)})]);
-        "98";
+        "75";
         ρσ_interpolate_kwargs.call(beamout, beamout.append, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](amp)["*"](sin(k["*"](xx)["-"](1["*"](om)["*"](t))))["+"](amp["*"](cos(k["*"](xx)["+"](om["*"](t))))), 1["-u"]()["*"](xx), 0)})]);
     }
-    "103";
+    "80";
     while (true) {
-        "104";
+        "81";
         (await rate(20));
-        "105";
+        "82";
         t=t["+"](dt);
-        "107";
+        "84";
         for (var ρσ_Index2 = 0; ρσ_Index2["<"](nbeam); ρσ_Index2++) {
             i = ρσ_Index2;
-            "108";
+            "85";
             xx = i["/"](nbeam);
-            "109";
+            "86";
             kr = k;
-            "110";
+            "87";
             kl = k;
-            "111";
+            "88";
             ku = k;
-            "112";
+            "89";
             kd = k;
-            "113";
+            "90";
             if (boxether.checked) {
-                "114";
+                "91";
                 cr = c["+"](ether.axis.x);
-                "115";
+                "92";
                 kr = om["/"](cr);
-                "116";
+                "93";
                 cl = c["-"](1["*"](ether.axis.x));
-                "117";
+                "94";
                 kl = om["/"](cl);
-                "118";
+                "95";
                 cu = c["+"](ether.axis.y);
-                "119";
+                "96";
                 ku = om["/"](cu);
-                "120";
+                "97";
                 cd = c["-"](1["*"](ether.axis.y));
-                "121";
+                "98";
                 kd = om["/"](cd);
             }
-            "122";
+            "99";
             ρσ_interpolate_kwargs.call(beamin, beamin.modify, [i].concat([ρσ_desugar_kwargs({pos: vector(xx, amp["*"](cos(kr["*"](1["-u"]()["*"](1)["+"](xx))["-"](1["*"](om)["*"](t)))), 0)})]));
-            "123";
+            "100";
             ρσ_interpolate_kwargs.call(beamright, beamright.modify, [i].concat([ρσ_desugar_kwargs({pos: vector(xx, amp["*"](cos(kr["*"](xx)["-"](1["*"](om)["*"](t)))), 0)})]));
-            "124";
+            "101";
             ρσ_interpolate_kwargs.call(beamleft, beamleft.modify, [i].concat([ρσ_desugar_kwargs({pos: vector(xx, amp["*"](sin(kl["*"](xx)["+"](om["*"](t)))), 0)})]));
-            "125";
+            "102";
             ρσ_interpolate_kwargs.call(beamup, beamup.modify, [i].concat([ρσ_desugar_kwargs({pos: vector(amp["*"](sin(ku["*"](xx)["-"](1["*"](om)["*"](t)))), xx, 0)})]));
-            "126";
+            "103";
             ρσ_interpolate_kwargs.call(beamdown, beamdown.modify, [i].concat([ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](amp)["*"](sin(kd["*"](xx)["-"](1["*"](om)["*"](t)))), 1["-u"]()["*"](xx), 0)})]));
-            "127";
+            "104";
             ρσ_interpolate_kwargs.call(beamout, beamout.modify, [i].concat([ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](amp)["*"](sin(kl["*"](xx)["-"](1["*"](om)["*"](t))))["+"](amp["*"](cos(kd["*"](xx)["+"](om["*"](t))))), 1["-u"]()["*"](xx), 0)})]));
         }
     }

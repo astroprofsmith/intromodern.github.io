@@ -136,8 +136,8 @@ dt' = \gamma_R dt_0
 }
 ```
 which we call **Time Dilation** (explained in more detail in
-{numref}`secTimeDi`), and that is why the blue dot on the right
-is higher than the blue dot on the left.
+{numref}`secTimeDi`), and that is why the blue dot in the right graph
+is higher than the blue dot in the left graph.
 
 What I wish to do in this chapter is to apply this kind of analysis to sets
 of events, to present patterns in spacetime that will help you improve your
@@ -180,13 +180,13 @@ observer at some later time.
 
 Such a setup is illustrated in {numref}`figinterval`.  The worldline
 of the (stationary) observer is a vertical red line.  Two events are
-indicated by colored dots.  The blue dot is a single moment along the
+indicated by colored dots.  The cyan dot is a single moment along the
 oserver's worldline, while the green dot is off to the side.  Orange
 lines represent the worldlines of the light that the observer must
 send and receive if they are to get information about the green event
 back to their location.  There is a slider at the bottom of the
 diagram that allows you to move the green dot up and down, relative to
-the blue dot.  Note that "up and down" means "earlier or later" in
+the cyan dot.  Note that "up and down" means "earlier or later" in
 time.
 
 
@@ -205,7 +205,7 @@ glue("intervalfig",geroch, display=False)
 :name: figinterval
 
 Interactive spacetime diagram.  The red line represents
-the worldline of a stationary observer.  The blue dot represents some
+the worldline of a stationary observer.  The cyan dot represents some
 event $q$ on that worldline.  The green dot represents some other event
 $p$ that most definitely does not reside on the worldline with $q$.
 To get information about $p$, therefore, the observer must send a
@@ -219,33 +219,33 @@ a $\Delta t$, as described in the text.  These four values as
 well as the interval you get from the displacement four vector
 are shown on the diagram.  Move the slider to move $p$ up and down
 relative to $q$, and click the box to turn light cones for $q$ on
-and off.  
+and off.  The button will reset the camera to the original location.
 ```
 
 Given such a setup, the observer can define two time intervals, which
 we will call $t_1$ and $t_2$, following {cite}`Geroch81`.  The first
-is the time from the blue dot until the light returns, and the second
+is the time from the cyan dot until the light returns, and the second
 is the time from the moment the light is sent out until the time of
-the blue dot.  These time intervals are represented in
+the cyan dot.  These time intervals are represented in
 {numref}`figinterval` by a white and a magenta arrow, respectively The
-value of $t_1$ is positive if the blue dot happens before the light
+value of $t_1$ is positive if the cyan dot happens before the light
 returns, and the value of $t_2$ is positive if the light is sent out
-before the blue dot.  These two values, $t_1$ and $t_2$, are printed
+before the cyan dot.  These two values, $t_1$ and $t_2$, are printed
 out on the diagram (technically multiplied by $c$, but $c=1$ -- the
 factor of $c$ will be ignored for the rest of this analysis), and you
-can see by moving the slider that if you shift the order of the blue
+can see by moving the slider that if you shift the order of the cyan
 and green events, either $t_1$ or $t_2$ (but not both!) will switch to
 negative.
 
 Given these two numbers and our knowledge about the speed of light, we
 can help our observer calculate values for $dx'$ and $cdt'$, without
-ever going over to the green dot!  If the blue and green dots are
+ever going over to the green dot!  If the cyan and green dots are
 simultaneous, then $dt'=0$, and $t_1$ must equal $t_2$ (this is the
 initial setup for {numref}`figinterval`, and you can see the symmetry
 yourself).  The later the green dot shifts, the larger $dt'$ should
 get, and the earlier the green dot shifts, the more negative $dt'$
 should get.  Therefore, our observer can conclude that the temporal
-displacement between the blue and green dots is
+displacement between the cyan and green dots is
 ```{math}
 :label: cdtp5
 dt' = \frac{t_1-t_2}{2}
@@ -281,7 +281,7 @@ be negative.
 ```
 
 The interval of the displacement four vector, $dx'^2-c^2dt'^2$ is also
-shown to the left of the blue dot.  What is interesting is that we can
+shown to the left of the cyan dot.  What is interesting is that we can
 take Equations {eq}`cdtp5` and {eq}`cdxp5` and solve them for $t_1$
 and $t_2$, and if you multiply $t_1$ by $t_2$, you can show this
 equals $dx'^2-c^2dt'^2$!  The product $t_1t_2$ (shown in the diagram
@@ -309,12 +309,12 @@ It is useful to classify a displacement four-vector into one of these
 three categories, because there are specific properties that each of
 these types of displacement four-vector have.  Move the slider such
 that the interval displays zero.  In this case, the displacement from
-blue to green will be one of the orange lines -- the worldline of the
+cyan to green will be one of the orange lines -- the worldline of the
 light that travels either out from or back to the observer's
-worldline.  The displacement between blue and green in this case must be
+worldline.  The displacement between cyan and green in this case must be
 just like the displacement that light would follow, so this kind of
 interval is called a "lightlike interval".  For a lightlike interval,
-either $t_1$ or $t_2$ is zero (depending on whether the blue or the
+either $t_1$ or $t_2$ is zero (depending on whether the cyan or the
 green event happened first), which means that $dx'=cdt'$, or
 $dx'/dt'=c$, which means anything moving along that worldline has to
 be moving at the speed of light.
@@ -337,19 +337,19 @@ all reference frames, although of course the time and space components
 can change individually.
 
 For example, consider all the possible events that are lightlike
-displaced from the blue dot.  These are all events that lie along
-diagonal lines that cross at the blue dot and make $45^\circ$ angles
+displaced from the cyan dot.  These are all events that lie along
+diagonal lines that cross at the cyan dot and make $45^\circ$ angles
 with the horizontal (if $dx'=cdt'$, then the slope is 1 and it makes a
-$45^\circ$ angle).  If the blue dot sends out light, that light will go
-up and away from the blue dot at a $45^\circ$ angle.  Any event that
-sends light to the blue dot must lie below the red dot at a $45^\circ$
-angle.  All the lightlike intervals that connect to the blue dot
+$45^\circ$ angle).  If the cyan dot sends out light, that light will go
+up and away from the cyan dot at a $45^\circ$ angle.  Any event that
+sends light to the cyan dot must lie below the red dot at a $45^\circ$
+angle.  All the lightlike intervals that connect to the cyan dot
 therefore make an $\times$ across this diagram.  However, this set of
 events is actually referred to as a "light cone".  Why a cone?
 Because if we do include the $y$ dimension as pointing into the
 computer screen, then the $\times$ can be rotated around the vertical
 axis, and instead of an $\times$, we get a cone.  Click the button on
-{numref}`figinterval` to see the light cones associated with the blue
+{numref}`figinterval` to see the light cones associated with the cyan
 dot.  Rotate the figure to get a sense of the three-dimensionality of
 the cone.
 
@@ -365,18 +365,19 @@ We will always talk about the "light cones" associated with any event,
 but please remember that it's really an expanding sphere in 3D space.
 ```
 
-If any real thing wanted to get from the blue dot to a point on the
-upper light cone, or from a point on the lower light cone to the blue
-dot, this thing would have to travel at the speed of light to do so.
-However, for any event **inside** these cones, it would in principle
-be possible to get to or from the blue dot without hitting light speed.
-Therefore, the set of events inside the upper light cone are all the
-events on which the event at the blue dot could **possibly** exert any
-kind of influence.  We therefore call the events inside the cone the
-"future" of the blue dot.  All the events in the lower cone could
-**possibly** influence what happens at the blue dot, so we call this
-set of events the "past" of the blue dot.  Every single event has
-its own light cones, and therefore its own set of past and future.
+If any real, physical, thing wanted to get from the cyan dot to a
+point on the upper light cone, or from a point on the lower light cone
+to the cyan dot, this thing would have to travel at the speed of light
+to do so.  However, for any event **inside** these cones, it would in
+principle be possible to get to or from the cyan dot without hitting
+light speed.  Therefore, the set of events inside the upper light cone
+are all the events on which the event at the cyan dot could
+**possibly** exert any kind of influence.  We therefore call the
+events inside the cone the "future" of the cyan dot.  All the events
+in the lower cone could **possibly** influence what happens at the
+cyan dot, so we call this set of events the "past" of the cyan dot.
+Every single event in all of spacetime has its own light cones, and
+therefore its own set of past and future.
 
 Events that lie outside these light cones are neither past nor future,
 but some "other" that we don't have a good name for.  Events that are
@@ -458,11 +459,11 @@ between R and S.
 
 We can compare the four events in {numref}`BobAshaFig` to the
 spacetime structure defined in {numref}`figinterval`.  If you drag the
-slider far to the left, the blue dot would be Q, the green dot would
+slider far to the left, the cyan dot would be Q, the green dot would
 be P, and R and S would be where the orange lines intersect the
 vertical red line.  Asha's worldline does not appear explicitly in
 {numref}`figinterval`, but it would be a diagonal straight line that
-hits both the green and the blue dots.
+hits both the green and the cyan dots.
 
 Bob can therefore directly measure $t_1$ and $t_2$ off his own clock,
 without needing to assume any knowledge about what is going on over at
@@ -676,23 +677,23 @@ space the events that you pass by will be, and therefore your worldline
 (which is by definition the vertical axis in the primed frame) will
 tilt further and further.
 
-Consider the event represented by the blue dot in
+Consider the event represented by the cyan dot in
 {numref}`figaxestilt`: as the diagram is first drawn, with the
 observer at rest in the unprimed frame, the event is to the right of
 the vertical axis.  As you move the slider to the right and the axis
 tilts, you can choose a speed such that the yellow arrow lies on the
-blue dot.  This represents walking just fast enough that you get from
-the origin to the location of the blue dot just as it happens.  If you
-walk faster, you will pass the blue dot before it happens, and the
+cyan dot.  This represents walking just fast enough that you get from
+the origin to the location of the cyan dot just as it happens.  If you
+walk faster, you will pass the cyan dot before it happens, and the
 event will happen to the left of the axis in the primed frame.
 
 It is therefore possible, by altering the relative speed, to choose a
-reference frame in which the blue dot event is either left, right, or
+reference frame in which the cyan dot event is either left, right, or
 at the same location as the origin.  This amounts to simply choosing a
 speed so that you fall short, overtake, or precisely reach the event
-as it happens.  Since you can get to the blue dot from the origin by
-moving at a speed less than $c$, the blue dot lies inside the light
-cone of the origin, and the interval between the origin and the blue
+as it happens.  Since you can get to the cyan dot from the origin by
+moving at a speed less than $c$, the cyan dot lies inside the light
+cone of the origin, and the interval between the origin and the cyan
 dot is timelike.  This leads to the conclusion that through a careful
 choice of reference frame, a later event can be right, left, or at the
 same position in space as an earlier one, if the two are timelike
@@ -703,7 +704,7 @@ events many times in your life, so hopefully it is not hard to imagine
 the implications of shifting the vertical axis as shown in
 {numref}`figaxestilt`.  However, it is much harder to imagine how the
 red dot interacts with the horizontal axis.  The mathematical
-description is almost identical to the case of the blue dot, only
+description is almost identical to the case of the cyan dot, only
 rotated $90^\circ$.  I will repeat what I said above, in only slightly
 different words: through a careful choice of reference frame, an event
 to the right can be before, after, or at the same time as an event to
@@ -720,7 +721,7 @@ at the same time, or in which order they happen, depends on your
 choice of reference frame, as long as the events are spacelike
 separated.  The fastest you can go is $\beta_R=1$, which is a line
 with a $45^\circ$ angle slope, so you can never go fast enough to get
-the horizontal axis to reach, say, the blue dot.
+the horizontal axis to reach, say, the cyan dot.
 
 One of the reasons this may bother you is it may seem like this may
 contradict causality.  If I can arbitrarily switch the order of events by
@@ -826,14 +827,14 @@ cyan sphere.  You can see that no matter how you move the slider, you
 can never change a timelike interval into a spacelike interval, or
 vice versa.
 
-The blue sphere represents an event that is simulataneous with the
+The green sphere represents an event that is simulataneous with the
 cyan event at the origin in the original frame.  By moving the slider,
 you can see that the temporal order of these events can be switched.
 In fact, pick any two events you like that are separated by a spacelike
 interval, and you can find ranges of $\beta_R$ where the order is switched.
 What counts as "simultaneous" depends on your frame of reference.
 
-Finally, note that the blue event leaves a trail that looks just like
+Finally, note that the green event leaves a trail that looks just like
 the orange trail, only rotated $90^\circ$.  You might think from this
 similarity that there must also be a length dilation to match the time
 dilation illustrated by the orange trail.  This is not the case.
@@ -844,18 +845,18 @@ mean by "length."
 Return the relative speed slider to zero.  Now imagine that the
 leftmost and rightmost column of events lie upon vertical worldlines
 that represent the left and right ends of an object at rest.  Then the
-magenta sphere and the blue sphere are in the same place, and are
+magenta sphere and the green sphere are in the same place, and are
 separated from the cyan sphere by the same spatial distance.  However,
-the cyan and blue events are simultaneous, so we define the length of
+the cyan and green events are simultaneous, so we define the length of
 the object by the locations in space of these events.  The magenta
-event is the same distance away from the cyan event as the blue event,
+event is the same distance away from the cyan event as the green event,
 and therefore its location on the horizontal also measures the length
 of the object.
 
 If you increase the relative speed $\beta_R$ to about $0.67$, you will
-see that although the blue event is much further away, it also happens
+see that although the green event is much further away, it also happens
 much earlier than the cyan event.  The spatial displacement between
-blue and cyan can no longer be considered to be the length of the
+green and cyan can no longer be considered to be the length of the
 object!  In this reference frame, the object is moving, and if you
 consider the distance between the back end of a moving car ten seconds
 ago and the front end of the car now, then you are including the
@@ -877,7 +878,7 @@ of the object in the original frame, it must also be at the end of the
 object in this frame, so in **this** frame, we would consider the
 "length" of the object to be the spatial displacement between the cyan
 and magenta events, which you can see from the trails is smaller than
-the spatial displacement between cyan and blue in the original frame
+the spatial displacement between cyan and green in the original frame
 of reference.  Lengths contract.  We will work out examples of length
 contraction more thoroughly in [the next chapter](ch4disp).
 

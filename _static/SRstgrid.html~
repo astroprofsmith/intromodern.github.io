@@ -69,26 +69,20 @@ async function __main__() {
     "2";
     fig = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Spacetime Diagram", width: 750, height: 500})]);
     "4";
-    fig.userzoom = false;
-    "5";
-    fig.userspin = false;
-    "6";
-    fig.userpan = false;
-    "8";
     xar = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(1, 0, 0), color: color.yellow, shaftwidth: .02})]);
-    "9";
+    "5";
     ctar = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(0, 1, 0), color: color.yellow, shaftwidth: .02})]);
-    "11";
+    "7";
     ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1.1, 1["-u"]()["*"](.05), 0), text: "x", height: .2})]);
-    "12";
+    "8";
     ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](.1), 1.1, 0), text: "ct", height: .2})]);
-    "14";
+    "10";
     fig.camera.pos = vector(.5, .5, 2.7);
-    "16";
+    "12";
     nside = 4;
-    "17";
+    "13";
     numev = Math.pow(nside, 2);
-    "18";
+    "14";
     evgrid = (function() {
         var ρσ_Iter = range(numev), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -99,7 +93,7 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "19";
+    "15";
     originalpos = (function() {
         var ρσ_Iter = range(numev), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -110,59 +104,59 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "21";
+    "17";
     for (var ρσ_Index1 = 0; ρσ_Index1["<"](nside); ρσ_Index1++) {
         i = ρσ_Index1;
-        "22";
+        "18";
         for (var ρσ_Index2 = 0; ρσ_Index2["<"](nside); ρσ_Index2++) {
             j = ρσ_Index2;
-            "23";
+            "19";
             nn = i["*"](nside)["+"](j);
-            "24";
+            "20";
             ρσ_getitem(evgrid, nn).pos = vector(i["/"](nside), j["/"](nside), 0);
-            "25";
+            "21";
             ρσ_setitem(originalpos, nn, vector(i["/"](nside), j["/"](nside), 0));
-            "26";
+            "22";
             if ((i === j || typeof i === "object" && ρσ_equals(i, j))) {
-                "27";
+                "23";
                 ρσ_getitem(evgrid, nn).color = color.red;
-                "28";
+                "24";
             }
             if (ρσ_equals(i, nside["-"](1)) && (j === 0 || typeof j === "object" && ρσ_equals(j, 0))) {
+                "25";
+                ρσ_getitem(evgrid, nn).color = color.blue;
+                "26";
+                ρσ_getitem(evgrid, nn).make_trail = true;
+                "27";
+                ρσ_getitem(evgrid, nn).trail_color = color.blue;
+                "28";
+            }
+            if (ρσ_equals(i, nside["-"](1)) && ρσ_equals(j, nside["-"](2))) {
                 "29";
-                ρσ_getitem(evgrid, nn).color = color.green;
+                ρσ_getitem(evgrid, nn).color = color.magenta;
                 "30";
                 ρσ_getitem(evgrid, nn).make_trail = true;
                 "31";
-                ρσ_getitem(evgrid, nn).trail_color = color.green;
+                ρσ_getitem(evgrid, nn).trail_color = color.magenta;
                 "32";
             }
-            if (ρσ_equals(i, nside["-"](1)) && ρσ_equals(j, nside["-"](2))) {
+            if ((i === 0 || typeof i === "object" && ρσ_equals(i, 0)) && ρσ_equals(j, nside["-"](1))) {
                 "33";
-                ρσ_getitem(evgrid, nn).color = color.magenta;
+                ρσ_getitem(evgrid, nn).color = color.orange;
                 "34";
                 ρσ_getitem(evgrid, nn).make_trail = true;
                 "35";
-                ρσ_getitem(evgrid, nn).trail_color = color.magenta;
-                "36";
-            }
-            if ((i === 0 || typeof i === "object" && ρσ_equals(i, 0)) && ρσ_equals(j, nside["-"](1))) {
-                "37";
-                ρσ_getitem(evgrid, nn).color = color.orange;
-                "38";
-                ρσ_getitem(evgrid, nn).make_trail = true;
-                "39";
                 ρσ_getitem(evgrid, nn).trail_color = color.orange;
             }
         }
     }
-    "40";
+    "36";
     ρσ_getitem(evgrid, 0).color = color.cyan;
-    "43";
+    "39";
     fig.caption = "\n";
-    "44";
+    "40";
     async function shiftq(s) {
-        "45";
+        "41";
         wt.text = "betaR = {:1.2f}".format(s.value);
     };
     if (!shiftq.__argnames__) Object.defineProperties(shiftq, {
@@ -170,22 +164,22 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "47";
+    "43";
     sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](.75), max: .75, value: 0, length: 600, bind: shiftq, right: 15})]);
-    "48";
+    "44";
     wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "betaR = {:1.2f} \n\n".format(sl.value)})]);
-    "50";
+    "46";
     async function lort(b, dx4) {
         var ρσ_ls, g, dxp4;
-        "51";
+        "47";
         g = 1["/"](sqrt(1["-"](1["*"](Math.pow(b, 2)))));
-        "52";
+        "48";
         dxp4 = vector(0, 0, 0);
-        "53";
+        "49";
         dxp4.y = g["*"](dx4.y["-"](1["*"](b)["*"](dx4.x)));
-        "54";
+        "50";
         dxp4.x = g["*"](dx4.x["-"](1["*"](b)["*"](dx4.y)));
-        "55";
+        "51";
         return dxp4;
     };
     if (!lort.__argnames__) Object.defineProperties(lort, {
@@ -193,23 +187,23 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "57";
+    "53";
     dt = .01;
-    "58";
+    "54";
     oldsl = sl.value;
-    "60";
+    "56";
     while (true) {
-        "61";
+        "57";
         (await rate(1["/"](dt)));
-        "63";
+        "59";
         newsl = sl.value;
-        "64";
+        "60";
         for (var ρσ_Index3 = 0; ρσ_Index3["<"](numev); ρσ_Index3++) {
             i = ρσ_Index3;
-            "65";
+            "61";
             ρσ_getitem(evgrid, i).pos = (await lort(sl.value, ρσ_getitem(originalpos, i)));
         }
-        "66";
+        "62";
         oldsl = newsl;
     }
 };
