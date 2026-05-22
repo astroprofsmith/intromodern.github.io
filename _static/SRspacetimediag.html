@@ -54,7 +54,7 @@ async function __main__() {
     fontloading();
     await waitforfonts();
 
-    var version, print, arange, __name__, type, ρσ_ls, myscreen, ev1, ev2, x, y, xy, yz, zx, dx4, dx4c1, dx4c2, dx4c3;
+    var version, print, arange, __name__, type, ρσ_ls, myscreen, savepos, saveforward, saveup, ev1, ev2, x, y, xy, yz, zx, dx4, dx4c1, dx4c2, dx4c3, clrbtn;
     version = ρσ_list_decorate([ "3.2", "glowscript" ]);
     Array.prototype['+'] = function(r) {return this.concat(r)}
     Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
@@ -69,35 +69,61 @@ async function __main__() {
     "2";
     myscreen = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.white, title: "Spacetime Diagram", width: 750, height: 500})]);
     "4";
-    ev1 = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(.2, .25, .3), radius: .05, color: color.orange})]);
+    savepos = vector(myscreen.camera.pos)["+"](vector(.2, 0, 1["-u"]()["*"](15)));
     "5";
-    ev2 = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(.8, .75, .9), radius: .05, color: color.purple})]);
+    saveforward = vector(myscreen.forward)["+"](vector(0, 0, 0));
+    "6";
+    saveup = vector(myscreen.up)["+"](vector(0, 0, 0));
     "8";
-    x = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(1, 0, 0), color: color.red})]);
-    "9";
-    y = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(0, 0, 1), color: color.green})]);
-    "10";
-    x = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(0, 1, 0), color: color.blue})]);
-    "12";
-    xy = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(.5, .5, 0), size: vector(1, 1, .01), color: color.magenta, opacity: .2})]);
-    "13";
-    yz = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, .5, .5), size: vector(.01, 1, 1), color: color.cyan, opacity: .2})]);
-    "14";
-    zx = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(.5, 0, .5), size: vector(1, .01, 1), color: color.yellow, opacity: .2})]);
+    async function resetview(evt) {
+        "9";
+        myscreen.camera.pos = savepos;
+        "10";
+        myscreen.up = saveup;
+        "11";
+        myscreen.forward = saveforward;
+        "12";
+        myscreen.center = vector(0, 0, 0);
+        "13";
+        myscreen.range = 1.5;
+    };
+    if (!resetview.__argnames__) Object.defineProperties(resetview, {
+        __argnames__ : {value: ["evt"]},
+        __module__ : {value: null}
+    });
+
+    "15";
+    ev1 = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(.2, .25, .3), radius: .05, color: color.orange})]);
     "16";
-    dx4 = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: ev1.pos, axis: ev2.pos["-"](1["*"](ev1.pos)), color: color.black, shaftwidth: .03})]);
-    "18";
-    dx4c1 = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: ev1.pos, axis: vector(0, 0, dx4.axis.z), color: color.black, shaftwidth: .03})]);
+    ev2 = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(.8, .75, .9), radius: .05, color: color.purple})]);
     "19";
-    dx4c2 = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: ev1.pos["+"](dx4c1.axis), axis: vector(dx4.axis.x, 0, 0), color: color.black, shaftwidth: .03})]);
+    x = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(1, 0, 0), color: color.red})]);
     "20";
-    dx4c3 = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: ev1.pos["+"](dx4c1.axis)["+"](dx4c2.axis), axis: vector(0, dx4.axis.y, 0), color: color.black, shaftwidth: .03})]);
-    "22";
-    ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1.1, 1["-u"]()["*"](.05), 0), text: "x", height: .2})]);
+    y = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(0, 0, 1), color: color.green})]);
+    "21";
+    x = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(0, 1, 0), color: color.blue})]);
     "23";
-    ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](.05), 1.1), text: "y", height: .2})]);
+    xy = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(.5, .5, 0), size: vector(1, 1, .01), color: color.magenta, opacity: .2})]);
     "24";
+    yz = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, .5, .5), size: vector(.01, 1, 1), color: color.cyan, opacity: .2})]);
+    "25";
+    zx = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(.5, 0, .5), size: vector(1, .01, 1), color: color.yellow, opacity: .2})]);
+    "27";
+    dx4 = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: ev1.pos, axis: ev2.pos["-"](1["*"](ev1.pos)), color: color.black, shaftwidth: .03})]);
+    "29";
+    dx4c1 = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: ev1.pos, axis: vector(0, 0, dx4.axis.z), color: color.black, shaftwidth: .03})]);
+    "30";
+    dx4c2 = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: ev1.pos["+"](dx4c1.axis), axis: vector(dx4.axis.x, 0, 0), color: color.black, shaftwidth: .03})]);
+    "31";
+    dx4c3 = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: ev1.pos["+"](dx4c1.axis)["+"](dx4c2.axis), axis: vector(0, dx4.axis.y, 0), color: color.black, shaftwidth: .03})]);
+    "33";
+    ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1.1, 1["-u"]()["*"](.05), 0), text: "x", height: .2})]);
+    "34";
+    ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](.05), 1.1), text: "y", height: .2})]);
+    "35";
     ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](.1), 1.1, 0), text: "ct", height: .2})]);
+    "37";
+    clrbtn = ρσ_interpolate_kwargs.call(this, button, [ρσ_desugar_kwargs({bind: resetview, text: "Reset View", background: color.white})]);
 };
 if (!__main__.__module__) Object.defineProperties(__main__, {
     __module__ : {value: null}

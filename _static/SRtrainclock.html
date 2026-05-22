@@ -67,28 +67,34 @@ async function __main__() {
     "2";
     fig = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Laser Clock on a Train", width: 750, height: 500})]);
     "4";
-    h = 6;
+    fig.userzoom = false;
     "5";
-    length = 20;
-    "7";
-    train = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), color: color.yellow, size: vec(length, h, 6), opacity: .3})]);
+    fig.userspin = false;
+    "6";
+    fig.userpan = false;
     "8";
-    klock = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](h)["/"](2), 0), color: color.red, size: h["/"](10)["*"](vec(1, 1, 1))})]);
+    h = 6;
     "9";
-    laser = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vec(0, 1["-u"]()["*"](h)["/"](2), 0), color: color.white, radius: h["/"](25), make_trail: true})]);
+    length = 20;
     "11";
-    fig.caption = "Set beta with slider then click button to shoot laser\n";
+    train = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), color: color.yellow, size: vec(length, h, 6), opacity: .3})]);
     "12";
+    klock = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](h)["/"](2), 0), color: color.red, size: h["/"](10)["*"](vec(1, 1, 1))})]);
+    "13";
+    laser = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vec(0, 1["-u"]()["*"](h)["/"](2), 0), color: color.white, radius: h["/"](25), make_trail: true})]);
+    "15";
+    fig.caption = "Set beta with slider then click button to shoot laser\n";
+    "16";
     beginanim = ρσ_interpolate_kwargs.call(this, checkbox, [ρσ_desugar_kwargs({bind: beginanimation, text: "Click to run animation\n"})]);
-    "14";
+    "18";
     async function beginanimation(b) {
-        "15";
+        "19";
         if (b.checked) {
-            "16";
+            "20";
             motion.visible = true;
-            "17";
+            "21";
         } else {
-            "18";
+            "22";
             motion.visible = false;
         }
     };
@@ -97,75 +103,75 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "20";
+    "24";
     async function shiftq(s) {
-        "21";
-        wt.text = "betaR = {:1.2f}".format(s.value);
+        "25";
+        wt.text = "betaR = {:1.2f}\n\n".format(s.value);
     };
     if (!shiftq.__argnames__) Object.defineProperties(shiftq, {
         __argnames__ : {value: ["s"]},
         __module__ : {value: null}
     });
 
-    "23";
+    "27";
     sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 0, max: .99, value: 0, length: 600, bind: shiftq, right: 15})]);
-    "24";
-    wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "betaR = {:1.2f} \n\n".format(sl.value)})]);
-    "26";
-    v = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](h), 0), color: color.magenta, axis: vector(0, 0, 0)})]);
     "28";
-    dxtext = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](length)["/"](2), 1["-u"]()["*"](h)["/"](2)["*"](1.5), 0), text: "D = 0.00", color: color.green, height: 20})]);
+    wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "betaR = {:1.2f} \n\n".format(sl.value)})]);
     "30";
+    v = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](h), 0), color: color.magenta, axis: vector(0, 0, 0)})]);
+    "32";
+    dxtext = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](length)["/"](2), 1["-u"]()["*"](h)["/"](2)["*"](1.5), 0), text: "D = 0.00", color: color.green, height: 20})]);
+    "36";
     dt = .001;
-    "31";
+    "37";
     while (true) {
-        "32";
+        "38";
         (await rate(1["/"](dt)));
-        "34";
+        "40";
         beta = sl.value;
-        "35";
+        "41";
         gamma = 1["/"](sqrt(1["-"](1["*"](Math.pow(beta, 2)))));
-        "36";
+        "42";
         v.axis.x = beta["*"](length)["/"](2);
-        "37";
+        "43";
         t = 0;
-        "39";
+        "45";
         if (beginanim.checked) {
-            "40";
+            "46";
             train.pos = vec(0, 0, 0);
-            "41";
-            klock.pos = vector(0, 1["-u"]()["*"](h)["/"](2), 0);
-            "42";
-            laser.pos = vector(0, 1["-u"]()["*"](h)["/"](2), 0);
-            "43";
-            t = 0;
-            "44";
-            dir = 1;
-            "45";
-            dxtext.text = "D = {:1.2f}".format(t);
             "47";
+            klock.pos = vector(0, 1["-u"]()["*"](h)["/"](2), 0);
+            "48";
+            laser.pos = vector(0, 1["-u"]()["*"](h)["/"](2), 0);
+            "49";
+            t = 0;
+            "50";
+            dir = 1;
+            "51";
+            dxtext.text = "D = {:1.2f}".format(t);
+            "53";
             while (laser.pos.y[">="](1["-u"]()["*"](h)["/"](2)) || (t === 0 || typeof t === "object" && ρσ_equals(t, 0))) {
-                "48";
+                "54";
                 (await rate(1e4));
-                "49";
+                "55";
                 train.pos.x=train.pos.x["+"](beta["*"](dt));
-                "50";
+                "56";
                 klock.pos.x=klock.pos.x["+"](beta["*"](dt));
-                "51";
+                "57";
                 laser.pos.x=laser.pos.x["+"](beta["*"](dt));
-                "52";
+                "58";
                 laser.pos.y=laser.pos.y["+"](dir["*"](sqrt(1["-"](1["*"](Math.pow(beta, 2)))))["*"](dt));
-                "53";
+                "59";
                 if (laser.pos.y[">="](h["/"](2))) {
-                    "54";
+                    "60";
                     dir = 1["-u"]()["*"](1);
                 }
-                "56";
+                "62";
                 dxtext.text = "D = {:1.2f}".format(t);
-                "57";
+                "63";
                 t=t["+"](dt);
             }
-            "58";
+            "64";
             beginanim.checked = false;
         }
     }

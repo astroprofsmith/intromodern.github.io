@@ -942,7 +942,8 @@ the laser beam travels.  Try it first with $\beta=0$ and see the ball go
 straight up and down.  The height of the train is 6, in these units, so
 you should see the time of flight as 12.  Try increasing $\beta$ and run
 it again, to see how the time and distance increase.  An observer
-on the train would only ever measure the $\beta=0$ case.
+on the train would only ever measure the $\beta=0$ case.  Reload the page
+to clear all the lines and reset the simulation.
 ```
 
 This is the essence of time dilation: if the light is to travel a
