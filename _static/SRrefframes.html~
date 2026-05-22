@@ -52,7 +52,7 @@ async function __main__() {
 
     function round(num, n=0) {return Number(num.toFixed(n))}
 
-    var version, print, arange, __name__, type, ρσ_ls, myscreen, edge, rulerL, clocks1, i, n, k, j, rulers1x, rulers1y, rulers1z, clocks2, rulers2x, rulers2y, rulers2z, dt, vR, clrbtn;
+    var version, print, arange, __name__, type, ρσ_ls, myscreen, edge, rulerL, clocks1, i, n, k, j, rulers1x, rulers1y, rulers1z, clocks2, rulers2x, rulers2y, rulers2z, dt, vR;
     version = ρσ_list_decorate([ "3.2", "glowscript" ]);
     Array.prototype['+'] = function(r) {return this.concat(r)}
     Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
@@ -69,24 +69,8 @@ async function __main__() {
     "4";
     edge = 10;
     "5";
-    myscreen.camera.pos = vector(0, 0, .8["*"](edge));
-    "6";
-    myscreen.camera.axis = vector(0, 0, 1["-u"]()["*"](1));
-    "8";
-    async function resetview(evt) {
-        "9";
-        myscreen.camera.pos = vector(0, 0, .8["*"](edge));
-        "10";
-        myscreen.camera.axis = vector(0, 0, 1["-u"]()["*"](1));
-    };
-    if (!resetview.__argnames__) Object.defineProperties(resetview, {
-        __argnames__ : {value: ["evt"]},
-        __module__ : {value: null}
-    });
-
-    "12";
     rulerL = .7;
-    "13";
+    "6";
     clocks1 = (function() {
         var ρσ_Iter = range(Math.pow(edge, 3)), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -97,23 +81,23 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "15";
+    "8";
     for (var ρσ_Index1 = 0; ρσ_Index1["<"](edge); ρσ_Index1++) {
         i = ρσ_Index1;
-        "16";
+        "9";
         for (var ρσ_Index2 = 0; ρσ_Index2["<"](edge); ρσ_Index2++) {
             j = ρσ_Index2;
-            "17";
+            "10";
             for (var ρσ_Index3 = 0; ρσ_Index3["<"](edge); ρσ_Index3++) {
                 k = ρσ_Index3;
-                "18";
+                "11";
                 n = edge["*"](i)["+"](j)["*"](edge)["+"](k);
-                "19";
+                "12";
                 ρσ_getitem(clocks1, n).pos = rulerL["*"](vector(i["-"](1["*"](edge)["/"](2)), j["-"](1["*"](edge)["/"](2)), k["-"](1["*"](edge)["/"](2))));
             }
         }
     }
-    "21";
+    "14";
     rulers1x = (function() {
         var ρσ_Iter = range(Math.pow(edge, 3)), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -124,7 +108,7 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "22";
+    "15";
     rulers1y = (function() {
         var ρσ_Iter = range(Math.pow(edge, 3)), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -135,7 +119,7 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "23";
+    "16";
     rulers1z = (function() {
         var ρσ_Iter = range(Math.pow(edge, 3)), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -146,114 +130,114 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "26";
+    "19";
     clocks2 = (function() {
         var ρσ_Iter = range(Math.pow(edge, 3)), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
         for (var ρσ_Index of ρσ_Iter) {
             i = ρσ_Index;
-            ρσ_Result.push(ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), radius: .2, color: color.green})]));
+            ρσ_Result.push(ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), radius: .2, color: color.blue})]));
         }
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "28";
+    "21";
     for (var ρσ_Index4 = 0; ρσ_Index4["<"](edge); ρσ_Index4++) {
         i = ρσ_Index4;
-        "29";
+        "22";
         for (var ρσ_Index5 = 0; ρσ_Index5["<"](edge); ρσ_Index5++) {
             j = ρσ_Index5;
-            "30";
+            "23";
             for (var ρσ_Index6 = 0; ρσ_Index6["<"](edge); ρσ_Index6++) {
                 k = ρσ_Index6;
-                "31";
+                "24";
                 n = edge["*"](i)["+"](j)["*"](edge)["+"](k);
-                "32";
+                "25";
                 ρσ_getitem(clocks2, n).pos = rulerL["*"](vector(i["-"](1["*"](edge)), j["-"](1["*"](edge)), k["-"](1["*"](edge))));
             }
         }
     }
-    "34";
+    "27";
     rulers2x = (function() {
         var ρσ_Iter = range(Math.pow(edge, 3)), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
         for (var ρσ_Index of ρσ_Iter) {
             i = ρσ_Index;
-            ρσ_Result.push(ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: ρσ_getitem(clocks2, i).pos, axis: vector(1, 0, 0), radius: .05, color: color.green})]));
+            ρσ_Result.push(ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: ρσ_getitem(clocks2, i).pos, axis: vector(1, 0, 0), radius: .05, color: color.blue})]));
         }
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "35";
+    "28";
     rulers2y = (function() {
         var ρσ_Iter = range(Math.pow(edge, 3)), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
         for (var ρσ_Index of ρσ_Iter) {
             i = ρσ_Index;
-            ρσ_Result.push(ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: ρσ_getitem(clocks2, i).pos, axis: vector(0, 1, 0), radius: .05, color: color.green})]));
+            ρσ_Result.push(ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: ρσ_getitem(clocks2, i).pos, axis: vector(0, 1, 0), radius: .05, color: color.blue})]));
         }
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "36";
+    "29";
     rulers2z = (function() {
         var ρσ_Iter = range(Math.pow(edge, 3)), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
         for (var ρσ_Index of ρσ_Iter) {
             i = ρσ_Index;
-            ρσ_Result.push(ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: ρσ_getitem(clocks2, i).pos, axis: vector(0, 0, 1), radius: .05, color: color.green})]));
+            ρσ_Result.push(ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: ρσ_getitem(clocks2, i).pos, axis: vector(0, 0, 1), radius: .05, color: color.blue})]));
         }
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "38";
+    "31";
     dt = .05;
-    "39";
+    "32";
     vR = vector(1, 1, 1);
-    "41";
-    clrbtn = ρσ_interpolate_kwargs.call(this, button, [ρσ_desugar_kwargs({bind: resetview, text: "Reset View", background: color.white})]);
-    "43";
+    "34";
+    myscreen.camera.pos = vector(0, 0, edge);
+    "36";
     while (true) {
-        "44";
+        "37";
         (await rate(50));
-        "45";
+        "38";
         for (var ρσ_Index7 = 0; ρσ_Index7["<"](Math.pow(edge, 3)); ρσ_Index7++) {
             i = ρσ_Index7;
-            "46";
+            "39";
             ρσ_getitem(clocks2, i).pos=ρσ_getitem(clocks2, i).pos["+"](vR["*"](dt));
-            "47";
+            "40";
             ρσ_getitem(rulers2x, i).pos=ρσ_getitem(rulers2x, i).pos["+"](vR["*"](dt));
-            "48";
+            "41";
             ρσ_getitem(rulers2y, i).pos=ρσ_getitem(rulers2y, i).pos["+"](vR["*"](dt));
-            "49";
+            "42";
             ρσ_getitem(rulers2z, i).pos=ρσ_getitem(rulers2z, i).pos["+"](vR["*"](dt));
-            "51";
+            "44";
         }
         if (ρσ_getitem(clocks2, 0).pos.x[">"](rulerL["*"](edge)["/"](2))) {
-            "52";
+            "45";
             for (var ρσ_Index8 = 0; ρσ_Index8["<"](edge); ρσ_Index8++) {
                 i = ρσ_Index8;
-                "53";
+                "46";
                 for (var ρσ_Index9 = 0; ρσ_Index9["<"](edge); ρσ_Index9++) {
                     j = ρσ_Index9;
-                    "54";
+                    "47";
                     for (var ρσ_Index10 = 0; ρσ_Index10["<"](edge); ρσ_Index10++) {
                         k = ρσ_Index10;
-                        "55";
+                        "48";
                         n = edge["*"](i)["+"](j)["*"](edge)["+"](k);
-                        "56";
+                        "49";
                         ρσ_getitem(clocks2, n).pos = rulerL["*"](vector(i["-"](1["*"](edge)), j["-"](1["*"](edge)), k["-"](1["*"](edge))));
                     }
                 }
             }
-            "57";
+            "50";
             for (var ρσ_Index11 = 0; ρσ_Index11["<"](Math.pow(edge, 3)); ρσ_Index11++) {
                 i = ρσ_Index11;
-                "58";
+                "51";
                 ρσ_getitem(rulers2x, i).pos = ρσ_getitem(clocks2, i).pos;
-                "59";
+                "52";
                 ρσ_getitem(rulers2y, i).pos = ρσ_getitem(clocks2, i).pos;
-                "60";
+                "53";
                 ρσ_getitem(rulers2z, i).pos = ρσ_getitem(clocks2, i).pos;
             }
         }

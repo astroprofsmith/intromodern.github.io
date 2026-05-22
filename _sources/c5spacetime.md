@@ -260,7 +260,8 @@ dx' = c\frac{t_1+t_2}{2}
 These numbers are also displayed in {numref}`figinterval` as $c\Delta
 t$ and $\Delta x$, to the left of the red line, using units where
 $c=1$, for simplicity.  The numbers in the diagram have been
-calculated from $t_1$ and $t_2$, not measured from the graph.
+calculated from $t_1$ and $t_2$, using Equations {eq}`cdtp5` and {eq}`cdxp5`
+not measured from the graph using the graph's $x$ and $y$ coordinates.
 
 ```{margin}
 To show that $t_1t_2$ is the same as the interval, multiply
@@ -284,9 +285,35 @@ The interval of the displacement four vector, $dx'^2-c^2dt'^2$ is also
 shown to the left of the cyan dot.  What is interesting is that we can
 take Equations {eq}`cdtp5` and {eq}`cdxp5` and solve them for $t_1$
 and $t_2$, and if you multiply $t_1$ by $t_2$, you can show this
-equals $dx'^2-c^2dt'^2$!  The product $t_1t_2$ (shown in the diagram
+equals $dx'^2-c^2dt'^2$! (The derivation is in the right margin of
+this page.)  The product $t_1t_2$ (shown in the diagram
 to the right of the green dot) is just another way of writing the
 square of the displacement four vector!
+
+```{note}
+It is worth stressing here that this procedure, combined with an
+operational definition of a clock and the two postulates of
+relativity, creates an operational definition for the distance between
+these two events and the time elapsed between them.  This definition
+does not depend on any assumptions about the space and time between
+the events.  If we were to assume an Aristotalean, Euclidian absolute
+space and time grid (as the software does to make the graph), the
+geometry of the triangles shows that this operational definition will
+match your intuition about absolute space and time.  However, in the
+relativistic model, where there is no such absolute underlying grid,
+this definition is still valid, whereas the challenge is to let go of
+your idea that the calculation is matching some underlying value.  If
+we were to carry out this calculation in spacetime near a black hole,
+for example, we would get numbers for $\Delta x$ and $\Delta t$, but
+it wouldn't make sense to ask whether those numbers matched the "real"
+separation of the events, in an absolute sense.  In relativity, there
+is no absolute knowledge of all events, everywhere (unless it can be
+hypothetically reconstructed after the events are all over).
+Information has to travel to the specific location of an observer at
+the finite speed of light.  This definition has the advantage of only
+depending on local measurements, and not any a priori knowledge of
+distant events that shortcuts the universal speed limit.
+```
 
 Try sliding the green dot up and down and verify that these two ways of
 writing the interval are always the same (to within possible rounding

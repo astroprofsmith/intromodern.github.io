@@ -278,7 +278,7 @@ Animation of two reference frames in relative motion.
 The spheres represent clocks, and the rods represent rulers.  The viewer
 must imagine that the lattice continues on indefinitely an all directions.
 The camera is at rest with respect to the reference frame colored red,
-while the blue frame is in constant relative motion.  The animation will
+while the green frame is in constant relative motion.  The animation will
 loop, to represent more clocks and rods coming in from the side.
 ```
 
@@ -569,12 +569,12 @@ across the river.  How is this problem relevant to the topics of this
 chapter?
 
 2. At time $t=0$, two reference frames (call one red and the other
-blue) have their origins at the same location.  However, the blue one
+green) have their origins at the same location.  However, the green one
 is moving relative to the red one with a velocity of $\vec{v} =
 (1~{\rm m/s})\hat{x} + (2~{\rm m/s})\hat{y} - (0.5~{\rm m/s})\hat{z}$.
 If an observer in the red frame measures an event to occur at $t=2$ s
 in the location $\vec{r} = (0.5~{\rm m})\hat{x} - (4~{\rm m})\hat{y} +
-(3~{\rm m})\hat{z}$, approximately what will an observer in the blue
+(3~{\rm m})\hat{z}$, approximately what will an observer in the green
 frame measure as the time and space coordinates for this event?
 
 3. Do both observers get the same answer for Equation {eq}`pyth`

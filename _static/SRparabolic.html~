@@ -69,9 +69,9 @@ async function __main__() {
     "2";
     myscreen = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.white, title: "Spacetime Diagram of Parabolic Motion", width: 750, height: 500})]);
     "4";
-    ev1 = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(.02, .05, .03), radius: .005, color: color.orange})]);
+    ev1 = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(.02, .01, .03), radius: .005, color: color.orange})]);
     "5";
-    ev2 = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(.02, .1, .06), radius: .005, color: color.purple})]);
+    ev2 = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(.02, .08, .03), radius: .005, color: color.purple})]);
     "8";
     xax = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(.1, 0, 0), color: color.red})]);
     "9";
@@ -116,7 +116,7 @@ async function __main__() {
     });
 
     "28";
-    sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](20), max: 0, value: 1["-u"]()["*"](10), length: 600, bind: changeacc, right: 15})]);
+    sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](15), max: 0, value: 1["-u"]()["*"](10), length: 600, bind: changeacc, right: 15})]);
     "29";
     wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "acc = {:1.2f} \n\n".format(sl.value)})]);
     "31";
@@ -156,7 +156,7 @@ async function __main__() {
         para.append(newpos);
     }
     "50";
-    dttext = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(ev1.pos.x["*"](4), ev1.pos.y["+"](ev2.pos.y)["/"](2), ev1.pos.z["+"](ev2.pos.z)["/"](2)), text: "{:5.1f}".format((await calctime(para, acc))), color: color.black, height: 20})]);
+    dttext = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(ev1.pos.x["*"](4), ev1.pos.y["+"](ev2.pos.y)["/"](2), ev1.pos.z["+"](ev2.pos.z)["/"](2)), text: "{:5.2f}".format((await calctime(para, acc))), color: color.black, height: 20})]);
     "53";
     while (true) {
         "54";
@@ -182,7 +182,7 @@ async function __main__() {
                 ct=ct["+"](dt);
             }
             "64";
-            dttext.text = "{:5.1f}".format((await calctime(para, acc)));
+            dttext.text = "{:5.2f}".format((await calctime(para, acc)));
         }
     }
 };

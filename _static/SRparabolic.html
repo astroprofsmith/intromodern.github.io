@@ -54,7 +54,7 @@ async function __main__() {
     fontloading();
     await waitforfonts();
 
-    var version, print, arange, __name__, type, ρσ_ls, myscreen, ev1, ev2, xax, yax, ctax, xctbx, ctybx, xybx, sl, wt, acc, T, vy, vx, n, dt, p1, p2, para, ct, j, newpos, i, dttext, oldacc;
+    var version, print, arange, __name__, type, ρσ_ls, myscreen, defpos, defaxi, ev1, ev2, xax, yax, ctax, xctbx, ctybx, xybx, sl, wt, clrbtn, acc, T, vy, vx, n, dt, p1, p2, para, ct, j, newpos, i, dttext, oldacc;
     version = ρσ_list_decorate([ "3.2", "glowscript" ]);
     Array.prototype['+'] = function(r) {return this.concat(r)}
     Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
@@ -69,35 +69,55 @@ async function __main__() {
     "2";
     myscreen = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.white, title: "Spacetime Diagram of Parabolic Motion", width: 750, height: 500})]);
     "4";
-    ev1 = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(.02, .01, .03), radius: .005, color: color.orange})]);
+    defpos = vec(.04, .08, .2);
     "5";
-    ev2 = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(.02, .08, .03), radius: .005, color: color.purple})]);
+    defaxi = vec(1["-u"]()["*"](.02), 1["-u"]()["*"](.05), 1["-u"]()["*"](.17));
+    "7";
+    myscreen.camera.pos = defpos;
     "8";
-    xax = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(.1, 0, 0), color: color.red})]);
-    "9";
-    yax = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(0, 0, .1), color: color.green})]);
+    myscreen.camera.axis = defaxi;
     "10";
-    ctax = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(0, .1, 0), color: color.blue})]);
-    "12";
-    ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1.1, 1["-u"]()["*"](.05), 0)["/"](10), text: "x", height: .02})]);
-    "13";
-    ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](.05), 1.1)["/"](10), text: "y", height: .02})]);
+    async function resetview(evt) {
+        "11";
+        myscreen.camera.pos = defpos;
+        "12";
+        myscreen.camera.axis = defaxi;
+    };
+    if (!resetview.__argnames__) Object.defineProperties(resetview, {
+        __argnames__ : {value: ["evt"]},
+        __module__ : {value: null}
+    });
+
     "14";
-    ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](.1), 1.1, 0)["/"](10), text: "ct", height: .02})]);
-    "16";
-    xctbx = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(.5, .5, 0)["/"](10), size: vector(1, 1, .01)["/"](10), color: color.magenta, opacity: .2})]);
-    "17";
-    ctybx = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, .5, .5)["/"](10), size: vector(.01, 1, 1)["/"](10), color: color.cyan, opacity: .2})]);
+    ev1 = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(.02, .01, .03), radius: .005, color: color.orange})]);
+    "15";
+    ev2 = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(.02, .08, .03), radius: .005, color: color.purple})]);
     "18";
-    xybx = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(.5, 0, .5)["/"](10), size: vector(1, .01, 1)["/"](10), color: color.yellow, opacity: .2})]);
+    xax = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(.1, 0, 0), color: color.red})]);
+    "19";
+    yax = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(0, 0, .1), color: color.green})]);
     "20";
+    ctax = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(0, .1, 0), color: color.blue})]);
+    "22";
+    ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1.1, 1["-u"]()["*"](.05), 0)["/"](10), text: "x", height: .02})]);
+    "23";
+    ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](.05), 1.1)["/"](10), text: "y", height: .02})]);
+    "24";
+    ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](.1), 1.1, 0)["/"](10), text: "ct", height: .02})]);
+    "26";
+    xctbx = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(.5, .5, 0)["/"](10), size: vector(1, 1, .01)["/"](10), color: color.magenta, opacity: .2})]);
+    "27";
+    ctybx = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, .5, .5)["/"](10), size: vector(.01, 1, 1)["/"](10), color: color.cyan, opacity: .2})]);
+    "28";
+    xybx = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(.5, 0, .5)["/"](10), size: vector(1, .01, 1)["/"](10), color: color.yellow, opacity: .2})]);
+    "30";
     async function calctime(traj, a) {
         var ρσ_ls, g, mytime;
-        "21";
+        "31";
         g = 9.81;
-        "22";
+        "32";
         mytime = 1["-u"]()["*"](a)["*"](g)["-"](1["*"](Math.pow(a, 2))["/"](2));
-        "23";
+        "33";
         return mytime;
     };
     if (!calctime.__argnames__) Object.defineProperties(calctime, {
@@ -105,83 +125,85 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "25";
+    "35";
     async function changeacc(s) {
-        "26";
-        wt.text = "acc = {:1.2f}".format(s.value);
+        "36";
+        wt.text = "acc = {:1.2f}\n\n".format(s.value);
     };
     if (!changeacc.__argnames__) Object.defineProperties(changeacc, {
         __argnames__ : {value: ["s"]},
         __module__ : {value: null}
     });
 
-    "28";
-    sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](15), max: 0, value: 1["-u"]()["*"](10), length: 600, bind: changeacc, right: 15})]);
-    "29";
-    wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "acc = {:1.2f} \n\n".format(sl.value)})]);
-    "31";
-    acc = sl.value;
-    "32";
-    T = ev2.pos.y["-"](1["*"](ev1.pos.y));
-    "33";
-    vy = ev2.pos.z["-"](1["*"](ev1.pos.z))["/"](T);
-    "34";
-    vx = 1["-u"]()["*"](acc)["*"](T)["/"](2);
-    "36";
-    n = 100;
-    "37";
-    dt = T["/"](n["-"](1["*"](1)));
     "38";
-    p1 = ev1.pos;
+    sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](15), max: 0, value: 1["-u"]()["*"](10), length: 600, bind: changeacc, right: 15})]);
     "39";
-    p2 = vec(ev1.pos.x["+"](vx["*"](dt))["+"](.5["*"](acc)["*"](Math.pow(dt, 2))), ev1.pos.y["+"](dt), ev1.pos.z["+"](vy["*"](dt)));
-    "40";
-    para = curve(p1, p2);
+    wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "acc = {:1.2f} \n\n".format(sl.value)})]);
     "41";
-    para.color = color.black;
-    "42";
-    para.radius = .002;
+    clrbtn = ρσ_interpolate_kwargs.call(this, button, [ρσ_desugar_kwargs({bind: resetview, text: "Reset View", background: color.white})]);
     "43";
-    ct = dt;
+    acc = sl.value;
     "44";
+    T = ev2.pos.y["-"](1["*"](ev1.pos.y));
+    "45";
+    vy = ev2.pos.z["-"](1["*"](ev1.pos.z))["/"](T);
+    "46";
+    vx = 1["-u"]()["*"](acc)["*"](T)["/"](2);
+    "48";
+    n = 100;
+    "49";
+    dt = T["/"](n["-"](1["*"](1)));
+    "50";
+    p1 = ev1.pos;
+    "51";
+    p2 = vec(ev1.pos.x["+"](vx["*"](dt))["+"](.5["*"](acc)["*"](Math.pow(dt, 2))), ev1.pos.y["+"](dt), ev1.pos.z["+"](vy["*"](dt)));
+    "52";
+    para = curve(p1, p2);
+    "53";
+    para.color = color.black;
+    "54";
+    para.radius = .002;
+    "55";
+    ct = dt;
+    "56";
     for (var ρσ_Index1 = 0; ρσ_Index1["<"](n["-"](1["*"](2))); ρσ_Index1++) {
         i = ρσ_Index1;
-        "45";
+        "57";
         j = i["+"](2);
-        "46";
+        "58";
         ct=ct["+"](dt);
-        "47";
+        "59";
         newpos = vec(ev1.pos.x["+"](vx["*"](ct))["+"](.5["*"](acc)["*"](Math.pow(ct, 2))), ev1.pos.y["+"](ct), ev1.pos.z["+"](vy["*"](ct)));
-        "48";
+        "60";
         para.append(newpos);
     }
-    "50";
+    "62";
     dttext = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(ev1.pos.x["*"](4), ev1.pos.y["+"](ev2.pos.y)["/"](2), ev1.pos.z["+"](ev2.pos.z)["/"](2)), text: "{:5.2f}".format((await calctime(para, acc))), color: color.black, height: 20})]);
-    "53";
+    "65";
     while (true) {
-        "54";
+        "66";
         (await rate(100));
-        "55";
+        "67";
         oldacc = acc;
-        "56";
+        "68";
         acc = sl.value;
-        "57";
+        "69";
         if ((acc !== oldacc && (typeof acc !== "object" || ρσ_not_equals(acc, oldacc)))) {
-            "58";
+            "70";
             vx = 1["-u"]()["*"](acc)["*"](T)["/"](2);
-            "59";
+            "71";
             ct = 0;
-            "60";
+            "72";
             for (var ρσ_Index2 = 0; ρσ_Index2["<"](para.npoints); ρσ_Index2++) {
                 i = ρσ_Index2;
-                "61";
+                "73";
                 newpos = vec(ev1.pos.x["+"](vx["*"](ct))["+"](.5["*"](acc)["*"](Math.pow(ct, 2))), ev1.pos.y["+"](ct), ev1.pos.z["+"](vy["*"](ct)));
-                "62";
+                "74";
                 ρσ_interpolate_kwargs.call(para, para.modify, [i].concat([ρσ_desugar_kwargs({pos: newpos})]));
-                "63";
+                "75";
                 ct=ct["+"](dt);
             }
-            "64";
+            "76";
             dttext.text = "{:5.2f}".format((await calctime(para, acc)));
         }
     }
