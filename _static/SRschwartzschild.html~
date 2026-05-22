@@ -68,26 +68,20 @@ async function __main__() {
     fig = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({title: "Lightlike Worldlines in Schwartzschild Metric", width: 750, height: 700, background: color.black})]);
     "4";
     fig.camera.pos = vector(8, 7, 20);
-    "7";
-    fig.userzoom = false;
     "8";
-    fig.userspin = false;
-    "9";
-    fig.userpan = false;
-    "12";
     raxis = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(15, 0, 0), color: color.white, shaftwidth: .2})]);
-    "13";
+    "9";
     ctaxis = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), axis: vector(0, 12, 0), color: color.white, shaftwidth: .2})]);
-    "14";
+    "10";
     squig = 2;
-    "15";
+    "11";
     rschwatz = ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: vec(squig, 0, 0), axis: vec(0, 15, 0), color: color.red, opacity: .6, radius: .1})]);
-    "17";
+    "13";
     async function cdt(deltar, rnow) {
         var ρσ_ls, deltat;
-        "18";
+        "14";
         deltat = deltar["/"](1["-"](1["*"](squig)["/"](rnow)));
-        "19";
+        "15";
         return deltat;
     };
     if (!cdt.__argnames__) Object.defineProperties(cdt, {
@@ -95,21 +89,21 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "21";
+    "17";
     nelem = 1e3;
-    "22";
+    "18";
     Rinit = 13;
-    "23";
+    "19";
     dr = .006;
-    "24";
+    "20";
     ctinit = .5;
-    "25";
+    "21";
     event = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vec(Rinit, ctinit, 0), color: color.red, radius: .5})]);
-    "27";
+    "23";
     fig.caption = "\n";
-    "28";
+    "24";
     async function shiftq(s) {
-        "29";
+        "25";
         wt.text = "event x = {:1.2f}".format(s.value);
     };
     if (!shiftq.__argnames__) Object.defineProperties(shiftq, {
@@ -117,75 +111,75 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "31";
+    "27";
     sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: squig["*"](1.0001), max: 13, value: 13, length: 600, bind: shiftq, right: 15})]);
-    "32";
+    "28";
     wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "event x = {:1.2f} \n\n".format(sl.value)})]);
-    "34";
+    "30";
     ctout = ctinit["+"]((await cdt(dr, Rinit)));
-    "35";
+    "31";
     ctin = ctout;
-    "36";
+    "32";
     Rout = Rinit["+"](dr);
-    "37";
+    "33";
     Rin = Rinit["-"](1["*"](dr));
-    "38";
+    "34";
     outbound = ρσ_interpolate_kwargs.call(this, curve, [ρσ_desugar_kwargs({pos: ρσ_list_decorate([ vec(Rinit, ctinit, 0), vec(Rout, ctout, 0) ]), color: color.yellow, radius: .1})]);
-    "40";
+    "36";
     inbound = ρσ_interpolate_kwargs.call(this, curve, [ρσ_desugar_kwargs({pos: ρσ_list_decorate([ vec(Rinit, ctinit, 0), vec(Rin, ctin, 0) ]), color: color.yellow, radius: .1})]);
-    "42";
+    "38";
     for (var ρσ_Index1 = 0; ρσ_Index1["<"](nelem); ρσ_Index1++) {
         i = ρσ_Index1;
-        "43";
+        "39";
         if (i[">"](1)) {
-            "44";
+            "40";
             ctout=ctout["+"]((await cdt(dr, Rout)));
-            "45";
+            "41";
             Rout=Rout["+"](dr);
-            "46";
+            "42";
             outbound.append(vec(Rout, ctout, 0));
-            "48";
+            "44";
             ctin=ctin["+"]((await cdt(dr, Rin)));
-            "49";
+            "45";
             Rin=Rin["-"](dr);
-            "50";
+            "46";
             inbound.append(vec(Rin, ctin, 0));
         }
     }
-    "53";
+    "49";
     while (true) {
-        "54";
+        "50";
         (await rate(100));
-        "55";
+        "51";
         event.pos.x = sl.value;
-        "56";
+        "52";
         ρσ_interpolate_kwargs.call(outbound, outbound.modify, [0].concat([ρσ_desugar_kwargs({pos: event.pos})]));
-        "57";
+        "53";
         ρσ_interpolate_kwargs.call(inbound, inbound.modify, [0].concat([ρσ_desugar_kwargs({pos: event.pos})]));
-        "58";
+        "54";
         for (var ρσ_Index2 = 0; ρσ_Index2["<"](nelem); ρσ_Index2++) {
             i = ρσ_Index2;
-            "59";
+            "55";
             if (i[">"](0)) {
-                "60";
+                "56";
                 oldpos = outbound.point(i["-"](1["*"](1)));
-                "61";
+                "57";
                 newoutpos = oldpos.pos["+"](vec(dr, (await cdt(dr, oldpos.pos.x)), 0));
-                "62";
+                "58";
                 ρσ_interpolate_kwargs.call(outbound, outbound.modify, [i].concat([ρσ_desugar_kwargs({pos: newoutpos})]));
-                "64";
+                "60";
                 oldpos = inbound.point(i["-"](1["*"](1)));
-                "65";
+                "61";
                 newinpos = oldpos.pos["+"](vec(1["-u"]()["*"](dr), (await cdt(dr, oldpos.pos.x)), 0));
-                "66";
+                "62";
                 ρσ_interpolate_kwargs.call(inbound, inbound.modify, [i].concat([ρσ_desugar_kwargs({pos: newinpos})]));
-                "67";
+                "63";
                 if (newinpos.x["<"](squig)) {
-                    "68";
+                    "64";
                     ρσ_interpolate_kwargs.call(inbound, inbound.modify, [i].concat([ρσ_desugar_kwargs({color: color.black})]));
-                    "69";
+                    "65";
                 } else {
-                    "70";
+                    "66";
                     ρσ_interpolate_kwargs.call(inbound, inbound.modify, [i].concat([ρσ_desugar_kwargs({color: color.yellow})]));
                 }
             }

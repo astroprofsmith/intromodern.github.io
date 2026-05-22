@@ -67,20 +67,18 @@ async function __main__() {
     "2";
     myscreen = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Frame Shifting a Solenoid", width: 750, height: 500})]);
     "4";
-    myscreen.userzoom = false;
-    "6";
     sollen = 15;
-    "7";
+    "5";
     solrad = 3;
-    "8";
+    "6";
     nrings = 30;
-    "9";
+    "7";
     nqinring = 50;
-    "10";
+    "8";
     curr0 = 2;
-    "11";
+    "9";
     nqtot = nrings["*"](nqinring);
-    "12";
+    "10";
     q = (function() {
         var ρσ_Iter = range(nqtot), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
@@ -91,85 +89,85 @@ async function __main__() {
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "13";
+    "11";
     for (var ρσ_Index1 = 0; ρσ_Index1["<"](nrings); ρσ_Index1++) {
         i = ρσ_Index1;
-        "14";
+        "12";
         ρσ_getitem(q, i["*"](nqinring)).color = color.white;
     }
-    "16";
+    "14";
     myscreen.caption = "\n";
-    "17";
+    "15";
     async function shiftq(s) {
-        "18";
-        wt.text = "betaR = {:1.2f}\n\n".format(s.value);
+        "16";
+        wt.text = "betaR = {:1.2f}".format(s.value);
     };
     if (!shiftq.__argnames__) Object.defineProperties(shiftq, {
         __argnames__ : {value: ["s"]},
         __module__ : {value: null}
     });
 
-    "20";
+    "18";
     sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](.9), max: .9, value: 0, length: 600, bind: shiftq, right: 15})]);
-    "21";
+    "19";
     wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "betaR = {:1.2f} \n\n".format(sl.value)})]);
-    "24";
+    "21";
     for (var ρσ_Index2 = 0; ρσ_Index2["<"](nrings); ρσ_Index2++) {
         ir = ρσ_Index2;
-        "25";
+        "22";
         xco = ir["-"](1["*"](nrings)["/"](2))["*"](sollen)["/"](nrings);
-        "26";
+        "23";
         for (var ρσ_Index3 = 0; ρσ_Index3["<"](nqinring); ρσ_Index3++) {
             jr = ρσ_Index3;
-            "27";
+            "24";
             th = jr["*"](2)["*"](pi)["/"](nqinring);
-            "28";
+            "25";
             n = ir["*"](nqinring)["+"](jr);
-            "29";
+            "26";
             ρσ_getitem(q, n).pos = vector(xco, solrad["*"](cos(th)), solrad["*"](sin(th)));
         }
     }
-    "31";
+    "28";
     v = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](solrad), solrad), color: color.magenta, axis: vector(0, 0, 0)})]);
-    "33";
+    "30";
     nblue = 5;
-    "34";
+    "31";
     B = (function() {
         var ρσ_Iter = range(nblue), ρσ_Result = [], i;
         ρσ_Iter = ((typeof ρσ_Iter[Symbol.iterator] === "function") ? (ρσ_Iter instanceof Map ? ρσ_Iter.keys() : ρσ_Iter) : Object.keys(ρσ_Iter));
         for (var ρσ_Index of ρσ_Iter) {
             i = ρσ_Index;
-            ρσ_Result.push(ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: solrad["*"](vector(cos(i["*"](2)["*"](pi)["/"](nblue))["+"](sollen["*"](.04)), sin(i["*"](2)["*"](pi)["/"](nblue)), cos(i["*"](2)["*"](pi)["/"](nblue))))["*"](.5), color: color.green, axis: vector(1["-u"]()["*"](1.5), 0, 0)})]));
+            ρσ_Result.push(ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: solrad["*"](vector(cos(i["*"](2)["*"](pi)["/"](nblue))["+"](sollen["*"](.04)), sin(i["*"](2)["*"](pi)["/"](nblue)), cos(i["*"](2)["*"](pi)["/"](nblue))))["*"](.5), color: color.blue, axis: vector(1["-u"]()["*"](1.5), 0, 0)})]));
         }
         ρσ_Result = ρσ_list_constructor(ρσ_Result);
         return ρσ_Result;
     })();
-    "37";
+    "34";
     while (true) {
-        "38";
+        "35";
         (await rate(50));
-        "39";
+        "36";
         beta = sl.value;
-        "40";
+        "37";
         gamma = 1["/"](sqrt(1["-"](1["*"](Math.pow(beta, 2)))));
-        "41";
+        "38";
         gamma = 1["+"](gamma["-"](1["*"](1))["*"](3));
-        "42";
+        "39";
         curr = curr0["*"](gamma);
-        "43";
+        "40";
         dth = 2["*"](pi)["/"](nqinring)["/"](5)["/"](curr);
-        "44";
+        "41";
         v.axis.x = 1["-u"]()["*"](beta);
-        "45";
+        "42";
         for (var ρσ_Index4 = 0; ρσ_Index4["<"](nqtot); ρσ_Index4++) {
             i = ρσ_Index4;
-            "46";
+            "43";
             ρσ_getitem(q, i).pos.z = cos(dth)["*"](ρσ_getitem(q, i).pos.z)["-"](1["*"](sin(dth))["*"](ρσ_getitem(q, i).pos.y));
-            "47";
+            "44";
             ρσ_getitem(q, i).pos.y = sin(dth)["*"](ρσ_getitem(q, i).pos.z)["+"](cos(dth)["*"](ρσ_getitem(q, i).pos.y));
-            "48";
+            "45";
             iring = int(i["/"](nqinring));
-            "49";
+            "46";
             ρσ_getitem(q, i).pos.x = iring["-"](1["*"](nrings)["/"](2))["*"](sollen)["/"](nrings)["/"](gamma);
         }
     }
