@@ -1086,15 +1086,16 @@ release.
 
 The local nature of the effect of time dilation on time intervals is
 shown in {numref}`timeintervalsfig`, which is an animated adaptation
-of a graph in the delighful {cite}`Takeuchi10`.  The figure shows a
-spacetime diagram with four particular events marked as colored dots.
-In the initial reference frame, these four events are at two different
-locations: the first and last are to the right of the second and
-third.  The events are spaced evenly in time, with $c\Delta t$ being
-0.2 units between each successive pair of events.  Horizontal colored
-lines show where the clock readings would be read off the time axis,
-and the clock reading numbers themselves are indicated in white boxes
-to the left of the axis.
+of a graph in the delighful *An Illlustrated Guide to Relativity*
+{cite}`Takeuchi10`.  The figure shows a spacetime diagram with four
+particular events marked as colored dots.  In the initial reference
+frame, these four events are at two different locations: the first and
+last are to the right of the second and third.  The events are spaced
+evenly in time, with $c\Delta t$ being 0.2 units between each
+successive pair of events.  Horizontal colored lines show where the
+clock readings would be read off the time axis, and the clock reading
+numbers themselves are indicated in white boxes to the left of the
+axis.
 
 By moving the slider to the right or left, you can have the yellow
 arrows shift to indicate the set of events that would lie on the
