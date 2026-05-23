@@ -80,7 +80,7 @@ like space and time (or spacetime).  To avoid linguistic confusion and
 cultural ambguity, physicists use **operational definitions** to
 clearly deliniate what we mean.  The process by which we measure the
 thing *is* the definition of that thing.  To measure time and space,
-we need clocks and rulers.
+we need **clocks** and **rulers**.
 
 ```{margin}
 **Operational Definitions** are a tool that physicists use to try to
@@ -116,11 +116,11 @@ the thing that we call "time".
 Once you have a clock, the pattern of its repetition defines a cycle,
 and we can split that cycle up into convenient segments and assign a
 number to each one.  As the clock goes through its cycle, the numbers
-change, and any particular number is called a "clock reading".  If we
+change, and any particular number is called a "**clock reading**".  If we
 represent a clock reading in general by the letter $t$, then a
 particular clock reading might be $t_1$ or $t_2$, or "10.5 s" or 15:30
 on a 24 hour clock.  The difference between any two clock readings is
-called a "time interval" or a "duration".
+called a "time interval" or a "**duration**".
 
 It's important to keep these two concepts distinct, as often in casual
 language both "clock reading" and "duration" get referred to as
@@ -182,13 +182,13 @@ is, in fact, the official international way to define a meter: the
 distance light moves in $1/299792458$ of a second.
 
 Much like with clocks, once you have a ruler, you can subdivide it
-with numbered markings.  Each mark would be a ruler reading, and the
-difference between two marks would be a distance.  If you include the
-direction of the distance, then it's called a displacement.  (If I
-walk two miles, I have walked a distance of two miles, but if it's two
-miles to the East, that's a displacement.  If I walk in a circle and
-return to where I started, I will have a zero total displacement, but
-I have walked a non-zero distance.)
+with numbered markings.  Each mark would be a **ruler reading**, and
+the difference between two marks would be a **distance**.  If you
+include the direction of the distance, then it's called a
+**displacement**.  (If I walk two miles, I have walked a distance of
+two miles, but if it's two miles to the East, that's a displacement.
+If I walk in a circle and return to where I started, I will have a
+zero total displacement, but I have walked a non-zero distance.)
 
 The most important implication of these definitions that you should
 understand is that these *are* the definitions of space and time.
@@ -213,6 +213,25 @@ we just happen to be measuring.  If you can make the mental jump that
 the measurements define the quantities; that the quantities don't
 exist out there independent of the measurements, that will help you
 understand some of the implications later that seem like paradoxes.
+
+
+```{admonition} Checkpoint
+For each of the following, would you think of them as a ruler reading, a distance, or a displacement?
+<div id="004">
+<form name="radioForm" action="#" method="get" id="choiceMyform3">
+<input type="radio" name="question4" id="q4a1" value="a."/>Please move over two seats to allow this family to sit.<br>
+<input type="radio" name="question4" id="q4a2" value="b."/>The tape measure has a mark at 1.98 m.<br>
+<input type="radio" name="question4" id="q4a3" value="c."/>My dog is 35.2 cm tall.<br>
+<input type="radio" name="question4" id="q4a4" value="d."/>My house is 2.3 miles to the West of yours.<br>
+</form>
+<div class="quiz">
+<p id="Answer_q4">Choose an option, above, think of how you would classify the example, and click on "Reveal Discussion", below.  This text will change to an explanation of my answer, which could be debatable.</p>
+<hr>
+<p><button id="q4" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Reveal Dsicussion</button></p>
+</div></div>
+```
 
 Armed with (often idealized) clocks and rulers, we can define a method
 of identifying where and when something occurs in space and time by

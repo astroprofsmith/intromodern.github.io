@@ -34,7 +34,7 @@ function validate_ans(myq) {
 	}
     }
 
-        if (myq == 'q3') {
+    if (myq == 'q3') {
 	// Clock reading or duration?
 	if (document.getElementById('q3a1').checked) {
             document.getElementById('Answer_q3').textContent = "The 08:32 would nominally be a clock reading, although it could of course be the duration since the most recent noon or midnight.";
@@ -47,6 +47,22 @@ function validate_ans(myq) {
 	}
 	if (document.getElementById('q3a4').checked) {
             document.getElementById('Answer_q3').textContent = "This would be a clock reading for a sundial.  It could also represent a duration, if you measured how much the angle changed since some earlier time in the day.";
+	}
+    }
+
+    if (myq == 'q4') {
+	// Ruler reading, distance, or displacement?
+	if (document.getElementById('q4a1').checked) {
+            document.getElementById('Answer_q4').textContent = "This is a little tricky, because of the word 'over'.  If there were a word like 'right' or 'left' included, it would be a displacement. Since no direction is specified, it would have to be a distance of two seats, with the direction left ambiguous.";
+	}
+	if (document.getElementById('q4a2').checked) {
+            document.getElementById('Answer_q4').textContent = "This would be a ruler reading -- a mark on a specific place on the ruler.  It could also be a distance of 1.98 m from the end of the tape.";
+	}
+	if (document.getElementById('q4a3').checked) {
+            document.getElementById('Answer_q4').textContent = "This is a distance.  The difference in ruler readings between the top and the bottom of the dog.";
+	}
+	if (document.getElementById('q4a4').checked) {
+            document.getElementById('Answer_q4').textContent = "This is a displacement: distance and direction.";
 	}
     }
 }
