@@ -163,7 +163,7 @@ For each of the following, would you think of them as a clock reading or a durat
 <hr>
 <p><button id="q3" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
     py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
-    onclick="validate_ans(this.id)">Reveal Dsicussion</button></p>
+    onclick="validate_ans(this.id)">Reveal Discussion</button></p>
 </div></div>
 ```
 
@@ -229,7 +229,7 @@ For each of the following, would you think of them as a ruler reading, a distanc
 <hr>
 <p><button id="q4" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
     py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
-    onclick="validate_ans(this.id)">Reveal Dsicussion</button></p>
+    onclick="validate_ans(this.id)">Reveal Discussion</button></p>
 </div></div>
 ```
 
@@ -247,7 +247,7 @@ frame.
 
 The term "inertial reference frame" has come up several times already.
 Before we go any further, we need to be very clear on what this term
-means.  In essence, a "reference frame" refers to a single set of
+means.  In essence, a "**reference frame**" refers to a single set of
 space and time coordinates.  Pick an origin in space and time, and
 then clock readings mark locations along a time axis, and ruler
 readings mark locations along spatial axes, which often are the
@@ -262,8 +262,8 @@ will shrink to be a mathematical point in space and an instantaneous
 moment in time.  This is sometimes represented as a finger snap or a
 lightning flash, although in reality neither of those actions are
 infinitesimal in extent.  An infinitesimal chunk of space and time is
-called an "event".  The total collection of all events is considered
-to be "reality".
+called an "**event**".  The total collection of all events is
+considered to be "reality".
 
 If reality is the collection of all events that happen throughout
 space and time, the question that concerns us in this course on
@@ -277,24 +277,25 @@ locations in space and time have an absolute meaning independent of
 who is trying to measure them.  One of the goals of this book is to
 convince you this intuitive picture does not actually match reality.
 
-Therefore, we must be more specific about what these four numbers are
-and how they might be measured.  The typical image that is called
-forth to represent this process is a lattice of rulers and clocks.
-Imagine you had an infinite number of clocks and also an infinite
-number of rulers.  You painstakingly synchronize all these clocks, and
-confirm that the rulers are all not different in length.  Now, you
-very slowly move the clocks out through space, putting one at the end
-of each ruler, and then extending the rulers out from each placed
-clock, so that in the end, you have a lattice of cubes made by the
-rulers, with a clock at each vertex.  The location of each clock is
-therefore the number of rulers in each direction from the origin, and
-each clock has a reading, based on the overall synchronization.  A
-single event, therefore, can be recorded as happening at the nearest
-clock (as long as these rulers are imaginary, we can imagine them
-being as small as we need them to be to achieve the desired spatial
-resolution), marked at that clock reading: $x$, $y$, $z$, and $t$.
-Those numbers can be collected after the events by bringing the clocks
-back together and collating their readings.
+Therefore, we must be more specific about what these four numbers
+($x$, $y$, $z$, and $t$) are and how they might be measured.  The
+typical image that is called forth to represent this process is a
+lattice of rulers and clocks.  Imagine you had an infinite number of
+clocks and also an infinite number of rulers.  You painstakingly
+synchronize all these clocks, and confirm that the rulers are all not
+different in length.  Now, you very slowly move the clocks out through
+space, putting one at the end of each ruler, and then extending the
+rulers out from each placed clock, so that in the end, you have a
+lattice of cubes made by the rulers, with a clock at each vertex.  The
+location of each clock is therefore the number of rulers in each
+direction from the origin, and each clock has a reading, based on the
+overall synchronization.  A single event, therefore, can be recorded
+as happening at the nearest clock (as long as these rulers are
+imaginary, we can imagine them being as small as we need them to be to
+achieve the desired spatial resolution), marked at that clock reading:
+$x$, $y$, $z$, and $t$.  Those numbers can be collected after the
+events by bringing the clocks back together and collating their
+readings.
 
 This concept of an infinite lattice of synchronized clocks represents
 our idea of a "reference frame".  As long as we are imagining an
@@ -462,7 +463,7 @@ suggested, a kind of definition of time.  As the old saying goes,
 {cite}`Cummings23` See also [this Science Asylum YouTube
 video](https://www.youtube.com/watch?v=7HBKEDyFTv8).  Not an
 **operational** definition, mind you (the operational definition is
-described with the clocks in [Section 2.2](secClocks), but a useful
+described with the clocks in [Section 2.2](secClocks)), but a useful
 description.
 
 Finally, it is important to articulate a principle that **every**
@@ -490,15 +491,15 @@ One interpretation of Michelson's experimental results (See [Chapter
 frame will measure that light travels at the same speed.  This is
 quite in contrast to how sound moves through the air. If I am moving
 towards the source, the sound seems to be traveling faster than when I
-am moving away from the source of the sound.  If an inertial observer
-measures the speed of the photons that come from a flashlight that she
-holds in her hand, she would get the value $c = 3.0 \times 10^8$
-m/s. If a second observer, moving at a speed of $2.8 \times 10^8$ runs
-away from (or towards) the flashlight would also measure the speed of
-the photons emitted by that same flashlight to be $c$, precisely the
-same value as the other observer. This is intuitatively absurd, but it
-agrees with the experiments, so it is a 'not wrong' model for the
-propagation of light.
+am moving away from the source.  If an inertial observer measures the
+speed of the photons that come from a flashlight that she holds in her
+hand, she would get the value $c = 3.0 \times 10^8$ m/s. If a second
+observer, moving at a speed of $2.8 \times 10^8$ runs away from (or
+towards) the flashlight would also measure the speed of the photons
+emitted by that same flashlight to be $c$, precisely the same value as
+the other observer. This is intuitatively absurd, but it agrees with
+the experiments, so it is a 'not wrong' model for the propagation of
+light.
 
 The next step in developing the model is to transform this literary
 statement into mathematical terms so that quantitative predictions can
@@ -552,7 +553,7 @@ by red arrows.  The animation will rotate to display the three-dimensional
 nature of the diagram.
 ```
 
-Common sense says that the wave front should not longer seem to be
+Common sense says that the wave front should no longer seem to be
 spherical, but should appear to be oblate (a squashed sphere).  The
 light moving toward the observer should be travelling faster, and the
 light moving away should be travelling more slowly, so the expanding
@@ -560,20 +561,18 @@ light should not be able to maintain its spherical shape.  If it were
 an expanding sound wave, like from someone clapping their hands once,
 that is indeed what we would observe.
 
-However, what Michelson found was that this spherical wave
-had to look the same to this observer as it appeared to the first
+However, what Michelson found was that this spherical wave had to look
+the same to the second observer as it appeared to the first
 observer. Otherwise, the second observer would measure a different
 velocity for the light wave. What the observer in the primed reference
 frame measures is a spherical wave that propagates outward at the same
 speed as shown in Equation {eq}`eqsph`. The second (primed) observer
 also sees a spherical wave, but this time the observer measures:
-```{math}
-:label: eqsphp
-(dx^\prime)^2 + (dy^\prime)^2 + (dz^\prime)^2 = (c dt^\prime)^2
-```
-where $dx^\prime$, $dy^\prime$, and $dz^\prime$ are how much the
-second observer measured the wave front to propagate in time interval 
-$dt^\prime$, and $c$ (not $c^\prime$!) is the speed of light.
+```{math} :label: eqsphp (dx^\prime)^2 + (dy^\prime)^2 + (dz^\prime)^2
+= (c dt^\prime)^2 ``` where $dx^\prime$, $dy^\prime$, and $dz^\prime$
+are how much the second observer measured the wave front to propagate
+in time interval $dt^\prime$, and $c$ (not $c^\prime$!) is the speed
+of light.
 
 If you subtract Equation {eq}`eqsphp` from {eq}`eqsph2`, you get:
 ```{math}
