@@ -218,7 +218,7 @@ from the AAVSO.
 
 
 ```{admonition} Checkpoint
-Why does the light curve in {numref}`nonsrlc` get so bright in the middle?
+Why does the light curve in the lower panel of {numref}`nonsrlc` get so bright in the middle?
 <div id="002">
 <form name="radioForm" action="#" method="get" id="choiceMyform2">
 <input type="radio" name="question2" id="q2a1" value="a."/>Light from the approaching star is catching up to light from the receding star<br/>
