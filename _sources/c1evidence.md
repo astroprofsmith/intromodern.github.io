@@ -139,6 +139,23 @@ observed.
 ```
 
 
+```{admonition} Checkpoint
+What is the key parameter being varied in the Michelson-Morely experiment?
+<div id="001">
+<form name="radioForm" action="#" method="get" id="choiceMyform1">
+<input type="radio" name="question1" id="q1a1" value="a."/>The distance to the mirrors<br/>
+<input type="radio" name="question1" id="q1a2" value="b."/>The wavelength of the light<br/>
+<input type="radio" name="question1" id="q1a3" value="c."/>The orientation of the apparatus<br/>
+<input type="radio" name="question1" id="q1a4" value="d."/>The speed of the ether<br/>
+</form>
+<div class="quiz">
+<p id="Answer_q1">Choose an option and click on "Check Answer", below.</p>
+<hr>
+<p><button id="q1" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div></div>
+```
 
 ## Example of Binary Star Systems
 
@@ -196,6 +213,28 @@ curves](https://www.boulder.swri.edu/~terrell/talks/aavso2001/frame04.html)
 from the AAVSO.
 
 ```
+
+
+
+
+```{admonition} Checkpoint
+Why does the light curve in {numref}`nonsrlc` get so bright in the middle?
+<div id="002">
+<form name="radioForm" action="#" method="get" id="choiceMyform2">
+<input type="radio" name="question2" id="q2a1" value="a."/>Light from the approaching star is catching up to light from the receding star<br/>
+<input type="radio" name="question2" id="q2a2" value="b."/>The brighter star is in front of the dimmer star<br/>
+<input type="radio" name="question2" id="q2a3" value="c."/>The stars get hotter as they move faster<br/>
+<input type="radio" name="question2" id="q2a4" value="d."/>The faster light is brighter than the slower light<br/>
+</form>
+<div class="quiz">
+<p id="Answer_q2">Choose an option and click on "Check Answer", below.</p>
+<hr>
+<p><button id="q2" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div></div>
+```
+
 
 Once you accept the idea that the speed of light is the same
 for all observers, many counter-intuitive results follow, but
