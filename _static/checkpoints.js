@@ -27,7 +27,7 @@ function validate_ans(myq) {
             document.getElementById('Answer_q2').textContent = "No -- that does explain why one of the eclipse dips is deeper than the other, but not why the brightness of BOTH stars together would get brighter.";
 	}
 	if (document.getElementById('q2a3').checked) {
-            document.getElementById('Answer_q2').textContent = "No, although a hotter star would be brighter, the speed of the stars does not affect their temperature.";
+            document.getElementById('Answer_q2').textContent = "No, although a hotter star would be brighter, the speed of the stars does not affect their temperature.  The speeds involved are nowhere near what you would need for relativitisic Doppler boosting to make approaching star seem brighter and hotter than the receding.";
 	}
 	if (document.getElementById('q2a4').checked) {
             document.getElementById('Answer_q2').textContent = "No, the speed of the star alone would not affect the brightness, but it does affect the arrival time of the photons!";
