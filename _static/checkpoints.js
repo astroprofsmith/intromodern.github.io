@@ -33,4 +33,20 @@ function validate_ans(myq) {
             document.getElementById('Answer_q2').textContent = "No, the speed of the star alone would not affect the brightness, but it does affect the arrival time of the photons!";
 	}
     }
+
+        if (myq == 'q3') {
+	// Clock reading or duration?
+	if (document.getElementById('q3a1').checked) {
+            document.getElementById('Answer_q3').textContent = "The 08:32 would nominally be a clock reading, although it could of course be the duration since the most recent noon or midnight.";
+	}
+	if (document.getElementById('q3a2').checked) {
+            document.getElementById('Answer_q3').textContent = "This would be the difference in two clock readings (stop and start) so therefore a duration.  If the start time were zero, it could also be a clock reading.";
+	}
+	if (document.getElementById('q3a3').checked) {
+            document.getElementById('Answer_q3').textContent = "This most likely a duration -- a second event happened one day after a first event.  However, it is of course possible that the first clock reading was zero, and therefore the clock reading at the end of the duration would also be one day.";
+	}
+	if (document.getElementById('q3a4').checked) {
+            document.getElementById('Answer_q3').textContent = "This would be a clock reading for a sundial.  It could also represent a duration, if you measured how much the angle changed since some earlier time in the day.";
+	}
+    }
 }

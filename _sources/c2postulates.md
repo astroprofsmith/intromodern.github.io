@@ -116,9 +116,11 @@ the thing that we call "time".
 Once you have a clock, the pattern of its repetition defines a cycle,
 and we can split that cycle up into convenient segments and assign a
 number to each one.  As the clock goes through its cycle, the numbers
-change, and any particular number is called a "clock reading".  The
-difference between any two clock readings is called a "time interval"
-or a "duration".
+change, and any particular number is called a "clock reading".  If we
+represent a clock reading in general by the letter $t$, then a
+particular clock reading might be $t_1$ or $t_2$, or "10.5 s" or 15:30
+on a 24 hour clock.  The difference between any two clock readings is
+called a "time interval" or a "duration".
 
 It's important to keep these two concepts distinct, as often in casual
 language both "clock reading" and "duration" get referred to as
@@ -126,15 +128,44 @@ language both "clock reading" and "duration" get referred to as
 will come at 8:26 am" refers to a clock reading, but "the bus is
 running 17 minutes late" refers to a time interval.  We often write
 intervals with the Greek letter delta ($\Delta$), where the delta
-indicates a *difference*.  This change is *always* understood to be
-the later value minus the earlier value, so for example, a time
+indicates a *difference*.  This difference is *always* understood to
+be the later value minus the earlier value, so for example, a time
 interval would be the difference between two clock readings: $\Delta t
-= t_2 - t_1$.  Sometimes this can be confusing, because if the first
-clock reading happens to be zero, then the time interval happens to be
-numerically the same as the second clock reading.  The bus will come
-at a time interval of eight hours and twenty-six minutes after
-midnight.  This property of zero makes for convenient shortcuts, but
-also blurs the defintions of these two distinct concepts.
+= t_2 - t_1$.  
+
+Sometimes this can be confusing, because if the first clock reading
+happens to be zero, then the time interval happens to be numerically
+the same as the second clock reading.  The bus will arrive at a time
+interval of eight hours and twenty-six minutes after midnight, at
+which point the clock reading is 08:26.  This property of zero makes
+for convenient shortcuts, but also blurs the defintions of these two
+distinct concepts.  People, even professional scientists, often
+refer to both clock readings and durations as "time", particularly
+in graphs, which leads to even more confusion for beginners.  A plot
+might show temperature vs. time over the course of a day, in which
+case the horizontal axis is clock reading, or a plot might show a
+histogram of how many times the bus was late as a function of the
+delay time, in which case the horizontal axis is a duration.
+
+
+
+```{admonition} Checkpoint
+For each of the following, would you think of them as a clock reading or a duration?
+<div id="003">
+<form name="radioForm" action="#" method="get" id="choiceMyform3">
+<input type="radio" name="question3" id="q3a1" value="a."/>The numbers displayed on a cell phone lock screen when it lights up.<br/>
+<input type="radio" name="question3" id="q3a2" value="b."/>The time between starting and stopping a stopwatch<br/>
+<input type="radio" name="question3" id="q3a3" value="c."/>A day<br/>
+<input type="radio" name="question3" id="q3a4" value="d."/>The location of the shadow of a building<br/>
+</form>
+<div class="quiz">
+<p id="Answer_q3">Choose an option, above, think of how you would classify the example, and click on "Reveal Discussion", below.  This text will change to an explanation of my answer, which could be debatable.</p>
+<hr>
+<p><button id="q3" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Reveal Dsicussion</button></p>
+</div></div>
+```
 
 Rulers are the clocks of space.  In practice, a ruler is something
 that has a fixed length in space.  In so far as the length is not
@@ -200,7 +231,7 @@ Before we go any further, we need to be very clear on what this term
 means.  In essence, a "reference frame" refers to a single set of
 space and time coordinates.  Pick an origin in space and time, and
 then clock readings mark locations along a time axis, and ruler
-readings mark locations along spacial axes, which usually are the
+readings mark locations along spatial axes, which often are the
 standard cartesian $x$, $y$, and $z$.  Four numbers can therefore
 define a particular location in space at a particular moment in time,
 relative to the chosen origin.

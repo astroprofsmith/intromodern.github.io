@@ -1,4 +1,5 @@
 function validate_ans(myq) {
+    // What is the paramter being changed in the MM experiment
     if (myq == 'q1') {
 	if (document.getElementById('q1a1').checked) {
             document.getElementById('Answer_q1').textContent = "You might be confusing this experiment with other interferometery experiments, where one varies the number of wavelengths along each path by changing the length of the path.  In this experiment, it's important that the paths stay the same length.";
@@ -11,6 +12,25 @@ function validate_ans(myq) {
 	}
 	if (document.getElementById('q1a4').checked) {
             document.getElementById('Answer_q1').textContent = "Technically, one cannot change the speed of the ether.  If there were an ether, and one did this experiment at different times, the motion of the Earth through the ether would be different, so one could say that one has changed the relative speed of the apparatus and the ether, but that is not technically what the scientists are changing.";
+	}
+    }
+
+
+
+
+    if (myq == 'q2') {
+	// Why is the light curve brighter?
+	if (document.getElementById('q2a1').checked) {
+            document.getElementById('Answer_q2').textContent = "Yes!  If light got a speed boost from the motion of the stars, by the time the light got here, we would see changes in brightness depending on how the stars were moving when the light was emitted.  We don't see that.";
+	}
+	if (document.getElementById('q2a2').checked) {
+            document.getElementById('Answer_q2').textContent = "No -- that does explain why one of the eclipse dips is deeper than the other, but not why the brightness of BOTH stars together would get brighter.";
+	}
+	if (document.getElementById('q2a3').checked) {
+            document.getElementById('Answer_q2').textContent = "No, although a hotter star would be brighter, the speed of the stars does not affect their temperature.  The speeds involved are nowhere near what you would need for relativitisic Doppler boosting to make approaching star seem brighter and hotter than the receding.";
+	}
+	if (document.getElementById('q2a4').checked) {
+            document.getElementById('Answer_q2').textContent = "No, the speed of the star alone would not affect the brightness, but it does affect the arrival time of the photons!";
 	}
     }
 }
