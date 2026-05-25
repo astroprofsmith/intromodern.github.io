@@ -62,6 +62,25 @@ First, we look at using the imaginary number $i^2=-1$ to keep track of
 the minus sign, and then we will look at the Einstein notation method.
 
 
+
+```{admonition} Checkpoint
+What speed would correspond to $\beta = 0.5$?
+<div id="008">
+<form name="radioForm" action="#" method="get" id="choiceMyform8">
+<input type="radio" name="question8" id="q8a1" value="a."/>5 miles per hour<br>
+<input type="radio" name="question8" id="q8a2" value="b."/>93000 miles per second<br>
+<input type="radio" name="question8" id="q8a3" value="c."/>11200 km per second<br>
+<input type="radio" name="question8" id="q8a4" value="d."/>300000 km per second<br>
+</form>
+<div class="quiz">
+<p id="Answer_q8">Choose your answer above and check the button below.</p>
+<hr>
+<p><button id="q8" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Reveal Discussion</button></p>
+</div></div>
+```
+
 ### Using Imaginary Numbers
 
 The method that beginners usually find simpler is to introduce complex

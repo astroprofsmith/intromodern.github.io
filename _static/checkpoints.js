@@ -65,4 +65,74 @@ function validate_ans(myq) {
             document.getElementById('Answer_q4').textContent = "This is a displacement: distance and direction.";
 	}
     }
+
+
+    if (myq == 'q5') {
+	// Inertial reference frames
+	if (document.getElementById('q5a1').checked) {
+            document.getElementById('Answer_q5').textContent = "If your room is in a standard building on stable ground, it can be considered an inertial reference frame.";
+	}
+	if (document.getElementById('q5a2').checked) {
+            document.getElementById('Answer_q5').textContent = "If the elevator is in free-fall, objects will drift with apparaent constant velocities in the elevator.  It does act like an inertial reference frame.";
+	}
+	if (document.getElementById('q5a3').checked) {
+            document.getElementById('Answer_q5').textContent = "As long as the spaceship doesn't change its velocity, it will act as an inertial reference frame.  If it rotates, however, an apparent force inside the ship will seem to push objects toward the hull, making an artificial gravity.  That would not be an inertial frame.";
+	}
+	if (document.getElementById('q5a4').checked) {
+            document.getElementById('Answer_q5').textContent = "From the inside of the plane, it would seem like mysterious forces were pushing the people and objects around the cabin.  This is not an inertial reference frame.";
+	}
+    }
+
+    if (myq == 'q6') {
+	// Operational definitions
+	if (document.getElementById('q6a1').checked) {
+            document.getElementById('Answer_q6').textContent = "No, this is at best a poetic expression, not a definition, and certainly not an operational definition.  There's no procedure or measurement.";
+	}
+	if (document.getElementById('q6a2').checked) {
+            document.getElementById('Answer_q6').textContent = "No, this is more a metaphor, and a confusing one at that.";
+	}
+	if (document.getElementById('q6a3').checked) {
+            document.getElementById('Answer_q6').textContent = "This is operational.  Stop an object from falling and measure the force exerted to do so.  Call that force the weight.";
+	}
+	if (document.getElementById('q6a4').checked) {
+            document.getElementById('Answer_q6').textContent = "This is operational.  Measure the volume of the object, exert the standard pressure, measure the new volume, calculate the percentage change, and call that softness.";
+	}
+	if (document.getElementById('q6a5').checked) {
+            document.getElementById('Answer_q6').textContent = "This is not operational.  There is no procedure and nothing being measured or calculated.";
+	}
+    }
+
+
+    if (myq =='q7') {
+	// Postulates and implications
+	if (document.getElementById('q7a1').checked) {
+            document.getElementById('Answer_q7').textContent = "I cannot just know how far away a distant event is.  I would need to either assemble clocks and rulers, or send a signal to you at a known speed, to figure out a remote distance.";
+	}
+	if (document.getElementById('q7a2').checked) {
+            document.getElementById('Answer_q7').textContent = "The catching is an effect, and the throwing is a cause.  Therefore, it is not possible to observe these particular events in the opposite order. (But as you will see, events that are not cause and effect can be in the other order from a different reference frame.)";
+	}
+	if (document.getElementById('q7a3').checked) {
+            document.getElementById('Answer_q7').textContent = "No.  We will see that the runner (you) might measure a different duration for the race on their own stopwatch than the person on the field (me), but you and I need to agree what my stopwatch actually says.";
+	}
+	if (document.getElementById('q7a4').checked) {
+            document.getElementById('Answer_q7').textContent = "Events must still happen in any reference frame.  The time and space coordinates of events may well be different in different frames, but the events have to still happen.";
+	}
+    }
+
+
+    if (myq =='q8') {
+	//  Half the sped of light
+	if (document.getElementById('q8a1').checked) {
+            document.getElementById('Answer_q8').textContent = "This is a ludicrously small speed compared to the speed of light.  Much less than half.";
+	}
+	if (document.getElementById('q8a2').checked) {
+            document.getElementById('Answer_q8').textContent = "Yes!  This is half of the speed of light.";
+	}
+	if (document.getElementById('q8a3').checked) {
+            document.getElementById('Answer_q8').textContent = "This is the escape velocity of the Earth.  Still small compared to c.";
+	}
+	if (document.getElementById('q8a4').checked) {
+            document.getElementById('Answer_q8').textContent = "This is the actual speed of light.";
+	}
+    }    
 }

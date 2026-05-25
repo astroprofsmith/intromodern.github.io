@@ -30,7 +30,7 @@ Once you accept these postulates, you can use the tools of mathematics
 to derive predictions for how space and time will behave, and how
 objects will move within them.  
 
-1. The laws of physics are the same in all inertial reference frames.
+**1. The laws of physics are the same in all inertial reference frames.**
 
 Another way to express this postulate is to assert that there is no
 universally preferred, or absolute, reference frame.  If you are on a
@@ -52,18 +52,17 @@ frame.  The answers could be different, but they wouldn't be "more
 right" or "more wrong" than measurements carried out in some other
 inertial reference frame.
 
-2. The speed of light is the same in all inertial reference frames.
+**2. The speed of light is the same in all inertial reference frames.**
 
-This is the most surprising one, but as explained above, nature seems
-to have forced this idea onto us.  No other speed behaves like this.
-When someone walks forward on an airplane in flight, a fellow
-passenger would perceive them as walking at a meter per second or so,
-but someone on the ground would perceive them as moving at hundreds of
-meters per second.  This seems obvious.  The premise that light from a
-flashlight on an airplane would be measured as having the same speed
-on the plane as from the ground seems absurd.  However, as explained
-in [Chapter 1](chSRroots), this is what actually does happen in
-nature.
+This is the most surprising one, but nature seems to have forced this
+idea onto us.  No other speed behaves like this.  When someone walks
+forward on an airplane in flight, a fellow passenger would perceive
+them as walking at a meter per second or so, but someone on the ground
+would perceive them as moving at hundreds of meters per second.  This
+seems obvious.  The premise that light from a flashlight on an
+airplane would be measured as having the same speed on the plane as
+from the ground seems absurd.  However, as explained in [Chapter
+1](chSRroots), this is what actually does happen in nature.
 
 
 (secClocks)=
@@ -133,19 +132,20 @@ be the later value minus the earlier value, so for example, a time
 interval would be the difference between two clock readings: $\Delta t
 = t_2 - t_1$.  
 
-Sometimes this can be confusing, because if the first clock reading
-happens to be zero, then the time interval happens to be numerically
-the same as the second clock reading.  The bus will arrive at a time
-interval of eight hours and twenty-six minutes after midnight, at
-which point the clock reading is 08:26.  This property of zero makes
-for convenient shortcuts, but also blurs the defintions of these two
-distinct concepts.  People, even professional scientists, often
-refer to both clock readings and durations as "time", particularly
-in graphs, which leads to even more confusion for beginners.  A plot
-might show temperature vs. time over the course of a day, in which
-case the horizontal axis is clock reading, or a plot might show a
-histogram of how many times the bus was late as a function of the
-delay time, in which case the horizontal axis is a duration.
+Sometimes the distinction between value and difference can be
+confusing, because if the first clock reading happens to be zero, then
+the length of the time interval is numerically the same as the second
+clock reading.  The bus will arrive at a time interval of eight hours
+and twenty-six minutes after midnight, at which point the clock
+reading is 08:26.  This property of zero makes for convenient
+shortcuts, but also blurs the defintions of these two distinct
+concepts.  People, even professional scientists, often refer to both
+clock readings and durations as "time", particularly in graphs, which
+leads to even more confusion for beginners.  A plot might show
+temperature vs. time over the course of a day, in which case the
+horizontal axis is clock reading, or a plot might show a histogram of
+how many times the bus was late as a function of the delay time, in
+which case the horizontal axis is a duration.
 
 
 
@@ -218,7 +218,7 @@ understand some of the implications later that seem like paradoxes.
 ```{admonition} Checkpoint
 For each of the following, would you think of them as a ruler reading, a distance, or a displacement?
 <div id="004">
-<form name="radioForm" action="#" method="get" id="choiceMyform3">
+<form name="radioForm" action="#" method="get" id="choiceMyform4">
 <input type="radio" name="question4" id="q4a1" value="a."/>Please move over two seats to allow this family to sit.<br>
 <input type="radio" name="question4" id="q4a2" value="b."/>The tape measure has a mark at 1.98 m.<br>
 <input type="radio" name="question4" id="q4a3" value="c."/>My dog is 35.2 cm tall.<br>
@@ -361,8 +361,8 @@ would be if you put the reference frame lattice on a carousel.  Using
 this rotating lattice of rulers and clocks, objects could be observed
 to move in complicated, changing patterns, without any observable
 forces causing the changes in motion (so we make up fictitious forces
-and call them names like "centrifugal" to make Newton's laws keep
-working).
+and call them names like "centrifugal" or "coriolis" to make Newton's
+laws keep working).
 
 The rules of Special Relativity (SR) only work in inertial reference
 frames.  Usually, but not always, this means reference frames that
@@ -372,6 +372,24 @@ the General Theory of Relativity (GR).  The GR is mostly outside the
 scope of this book, although [Chapter 13](chGRcon) and [Chapter
 14](chGRapp) introduce the main ideas and explore some of the most
 famous implications.
+
+```{admonition} Checkpoint
+Which of the following is NOT an inertial reference frame?
+<div id="005">
+<form name="radioForm" action="#" method="get" id="choiceMyform5">
+<input type="radio" name="question5" id="q5a1" value="a."/>The room you are sitting in<br>
+<input type="radio" name="question5" id="q5a2" value="b."/>An elevator whose cable has snapped and is free-falling<br>
+<input type="radio" name="question5" id="q5a3" value="c."/>A spaceship coasting through deep space<br>
+<input type="radio" name="question5" id="q5a4" value="d."/>An airplane experience turbulance<br>
+</form>
+<div class="quiz">
+<p id="Answer_q5">Choose your answer above and check the button below.</p>
+<hr>
+<p><button id="q5" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Reveal Answer</button></p>
+</div></div>
+```
 
 (secDemands)=
 ## Important Correlaries to the Postulates
@@ -390,22 +408,33 @@ that's the fastest speed the universe allows.  Anything with no
 inertial mass will move at that speed (the particles called neutrinos
 also have almost no mass, and they move that fast, too).  So it is not
 possible for anything to move from one place to another faster than
-$c$.
+$c$.  We really should call it "the maximum speed of the universe,
+at which light in a vacuum happens to move", but that's a mouthful,
+so we just call it "the speed of light", or $c$.  Please do remember,
+though, that the motion of light is a consequence of the speed limit
+and not its cause.
 
-For precisely that reason, you can't "just know" what's happening at
-some other location than your own.  It takes time for anything, anything
-that might convey information or have an effect, to move.  Even when
-you look across the room, you are seeing the room as it was a few
-nanoseconds ago.  The Moon you see in the sky is the Moon as it was
-about a second ago.  The Sun that shines on us is the Sun from eight
-minutes ago.  We often describe physical situations as if we have an
-instantaneous overview of everything everywhere all at once.  This is
-impossible.  Even to measure the ends of an object with a ruler demands
-either moving one's self to the other side of the object, or sending a
-light beam to the other side and back.  Many misunderstandings and
-confusions in special relativity arise from people assuming they just
-know what is going on at another location, without allowing for the
-time it would take to get from one location to another.  {numref}`fande`
+Because of the absolute speed limit, you can't "just know" what's
+happening at some other location than your own.  It takes time for
+anything, anything that might convey information or have an effect, to
+move from another location to yours.  Even when you look across the
+room, you are seeing the opposite wall as it was a few nanoseconds
+ago.  The Moon you see in the sky is the Moon as it was about a second
+ago.  The Sun that shines on us is the Sun from eight minutes ago.  We
+often describe physical situations as if we have an instantaneous
+overview of everything everywhere all at once.  This is impossible.
+Even to measure the ends of an object with a ruler demands either
+moving one's self to the other side of the object, or sending a light
+beam to the other side and back.
+
+Many misunderstandings and confusions in special relativity arise from
+people assuming they just know what is going on at another location,
+without allowing for the time it would take to get from one location
+to another.  We can shortcut this limitation by supposing the events
+in question were surrounded by a clock/ruler lattice that enables us
+to reconstruct all the clock and ruler readings after the fact, and
+retroactively describe what happened.  However, in real time, you can
+only know about information at your location.  {numref}`fande`
 displays in a humorous way the very real principle that you always
 make observations where you are, and that your location is always at
 rest in your own reference frame.
@@ -462,17 +491,17 @@ suggested, a kind of definition of time.  As the old saying goes,
 “Time... is what keeps everything from happening at once.”
 {cite}`Cummings23` See also [this Science Asylum YouTube
 video](https://www.youtube.com/watch?v=7HBKEDyFTv8).  Not an
-**operational** definition, mind you (the operational definition is
-described with the clocks in [Section 2.2](secClocks)), but a useful
-description.
+*operational* definition, mind you (the operational definition of time
+is described with the clocks in [Section 2.2](secClocks)), but a
+useful description.
 
-Finally, it is important to articulate a principle that **every**
+Finally, it is important to articulate a principle that *every*
 prediction SR makes, every formula we derive, should not contradict
-what Newtonian Mechanics predicts **when the speed is very small**.
+what Newtonian Mechanics predicts *when the speed is very small*.
 We know Newtonian Mechanics works as well as you could like when you
 are dealing with the speeds of horses and dump trucks.  Although SR
 can (and will) make wildly different predictions at high speeds near
-the speed of light, the predicted relationships **must** reduce to the
+the speed of light, the predicted relationships *must* reduce to the
 Newtonian predictions when you let the speed be very small.  This
 important check on our imagination is called **the correspondence
 principle**.
@@ -482,6 +511,27 @@ The correspondence principle demands that whatever relationship we
 derive using the tools of Relativity Theory, no matter how
 counter-intuitive or startling, should reduce to the classical,
 Newtonian model in the limit of small speed ($v\ll c$).
+```
+
+
+
+
+```{admonition} Checkpoint
+For each of the following, decide whether it's possible or impossible under the rules of special relativity, then click the button.
+<div id="007">
+<form name="radioForm" action="#" method="get" id="choiceMyform7">
+<input type="radio" name="question7" id="q7a1" value="a."/>I know that you are 12 m away from me when you blow your nose.<br>
+<input type="radio" name="question7" id="q7a2" value="b."/>On a train platform, I observe someone throw a ball to someone else.  You are on a train passing through the station, but you observe the catch before the ball is thrown.<br>
+<input type="radio" name="question7" id="q7a3" value="c."/>I use a stopwatch to measure how long it takes you to race down a track.  To me, the stapwatch reads 10.25 s, but you see my stopwatch reading 5.32 s as you pass by at the end of the race.<br>
+<input type="radio" name="question7" id="q7a4" value="d."/>A rocket flies from Earth to a distant star.  A person on Earth observes that the rocket arrives at the star, but a person on the rocket never observes the rocket to get there.<br>
+</form>
+<div class="quiz">
+<p id="Answer_q7">Choose an option, above, think of how you would answer the question, and click on "Reveal Discussion", below.  This text will change to an explanation of my answer, which could be debatable.</p>
+<hr>
+<p><button id="q7" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Reveal Discussion</button></p>
+</div></div>
 ```
 
 ## Model to describe the experimental results.
@@ -599,6 +649,24 @@ agrees with the experiments, it is not wrong; even if it disagrees
 with Newton's model.
 
 
+```{admonition} Checkpoint
+For each of the following, could you consider it an operational definition or not?
+<div id="006">
+<form name="radioForm" action="#" method="get" id="choiceMyform6">
+<input type="radio" name="question6" id="q6a1" value="a."/>Love is never having to say you're sorry<br>
+<input type="radio" name="question6" id="q6a2" value="b."/>Understanding is a three-edged sword<br>
+<input type="radio" name="question6" id="q6a3" value="c."/>Weight is the force needed to stop an object from falling<br>
+<input type="radio" name="question6" id="q6a4" value="d."/>Softness is the percentage change in volume of an object when it is compressed at a standard pressure<br>
+<input type="radio" name="question6" id="q6a5" value="d."/>Anger is the emotion you feel when people hurt you<br>
+</form>
+<div class="quiz">
+<p id="Answer_q6">Choose your answer above and check the button below.</p>
+<hr>
+<p><button id="q6" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Reveal Discussion</button></p>
+</div></div>
+```
 
 
 ## Then Let's Begin...

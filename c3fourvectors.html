@@ -60,7 +60,7 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c3fourvectors';</script>
-    <script src="_static/checkpoints.js?v=597e3a68"></script>
+    <script src="_static/checkpoints.js?v=77f5aa52"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="4. Lorentz Transformations" href="c4lorentztrans.html" />
@@ -458,6 +458,24 @@ ways of keeping track of it.  One is simpler for the beginner, and the
 other makes the more complicated material later easier to manage.
 First, we look at using the imaginary number <span class="math notranslate nohighlight">\(i^2=-1\)</span> to keep track of
 the minus sign, and then we will look at the Einstein notation method.</p>
+<div class="admonition-checkpoint admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>What speed would correspond to <span class="math notranslate nohighlight">\(\beta = 0.5\)</span>?</p>
+<div id="008">
+<form name="radioForm" action="#" method="get" id="choiceMyform8">
+<input type="radio" name="question8" id="q8a1" value="a."/>5 miles per hour<br>
+<input type="radio" name="question8" id="q8a2" value="b."/>93000 miles per second<br>
+<input type="radio" name="question8" id="q8a3" value="c."/>11200 km per second<br>
+<input type="radio" name="question8" id="q8a4" value="d."/>300000 km per second<br>
+</form>
+<div class="quiz">
+<p id="Answer_q8">Choose your answer above and check the button below.</p>
+<hr>
+<p><button id="q8" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Reveal Discussion</button></p>
+</div></div>
+</div>
 <section id="using-imaginary-numbers">
 <h3><span class="section-number">3.1.1. </span>Using Imaginary Numbers<a class="headerlink" href="#using-imaginary-numbers" title="Link to this heading">#</a></h3>
 <p>The method that beginners usually find simpler is to introduce complex
@@ -706,7 +724,7 @@ g_{01}dx^1 +
 g_{02}dx^2 +
 g_{03}dx^3\]</div>
 <p>That leaves you with <span class="math notranslate nohighlight">\(dx_0 = -dx^0\)</span>.  In this notation, we can write
-Equation <a class="reference internal" href="c2postulates.html#equation-eqnds">(2.4)</a> as</p>
+Equation <code class="xref eq docutils literal notranslate"><span class="pre">eqnds</span></code> as</p>
 <div class="math notranslate nohighlight" id="equation-invareq">
 <span class="eqno">(3.8)<a class="headerlink" href="#equation-invareq" title="Link to this equation">#</a></span>\[(dx^\prime - dx)^\mu g_{\mu\nu}(dx^\prime - dx)^\nu = 0,\]</div>
 <p>as noted by <span id="id1">[<a class="reference internal" href="c15bibliography.html#id6" title="Sidney Coleman. Sidney Coleman's Lectures on Relativity. Cambridge University Press, 2022.">Coleman, 2022</a>]</span>.  Although the sub- and super-scripts
@@ -987,8 +1005,8 @@ in the same place.</span><a class="headerlink" href="#shipfig" title="Link to th
 </figure>
 <p>We can therefore write a displacement four vector in the reference
 frame at rest with respect to the Earth:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cacf2223-38a5-4eb9-804a-7189bc8717e9">
-<span class="eqno">(3.11)<a class="headerlink" href="#equation-cacf2223-38a5-4eb9-804a-7189bc8717e9" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-315a6478-5bbe-4348-b85d-36e0886a525d">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-315a6478-5bbe-4348-b85d-36e0886a525d" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_\oplus =
 \begin{bmatrix}
 icdt_\oplus\\
@@ -1012,8 +1030,8 @@ aboard the space craft will measure some time interval, <span class="math notran
 between the time he sees the earth outside of his window and sees
 alpha centauri outside the window. The observer aboard the space craft
 measures a displacement 4-vector:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2874a223-b3a1-4077-95f8-09debe88deac">
-<span class="eqno">(3.12)<a class="headerlink" href="#equation-2874a223-b3a1-4077-95f8-09debe88deac" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-026fb82f-f027-4ef1-993b-ba13d14cbbca">
+<span class="eqno">(3.12)<a class="headerlink" href="#equation-026fb82f-f027-4ef1-993b-ba13d14cbbca" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm rocket} =
 \begin{bmatrix}
 icdt_{\rm rocket}\\
@@ -1030,13 +1048,13 @@ nothing to do with the first observer being physically <strong>on</strong> the E
 the <span class="math notranslate nohighlight">\(dt_\oplus\)</span> is measured by the infinite lattice of clocks at
 rest with respect to the Earth.</p>
 <p>The sizes of the two four vectors are:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e35f3923-f1ae-4c63-9cde-fc0c76b7c399">
-<span class="eqno">(3.13)<a class="headerlink" href="#equation-e35f3923-f1ae-4c63-9cde-fc0c76b7c399" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5c571944-2e12-4ff9-a78e-2a691f047a9d">
+<span class="eqno">(3.13)<a class="headerlink" href="#equation-5c571944-2e12-4ff9-a78e-2a691f047a9d" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dx_\oplus^2 - (cdt_\oplus)^2 = -(cdt_{\rm rocket})^2
 \end{equation}\]</div>
 <p>Solve for <span class="math notranslate nohighlight">\(dt_{\rm rocket}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ed062b22-ed4e-48b4-bf97-1440860437dd">
-<span class="eqno">(3.14)<a class="headerlink" href="#equation-ed062b22-ed4e-48b4-bf97-1440860437dd" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-57439f4b-face-4d19-9e2b-22e608611939">
+<span class="eqno">(3.14)<a class="headerlink" href="#equation-57439f4b-face-4d19-9e2b-22e608611939" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dt_{\rm rocket} = dt_\oplus\sqrt{1-\left(\frac{dx_\oplus}{cdt_\oplus}\right)^2}
 = dt_\oplus \sqrt{1-\beta^2}
 \end{equation}\]</div>
@@ -1206,8 +1224,8 @@ The reference frame at rest with respect to the ground is the unprimed
 frame on the left.  The red dot is the emission of the light and the
 blue dot is the detection of the light.  The displacement four vector
 in the train frame would be:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b37e4a77-f649-46ee-93ed-e8f5d7df3469">
-<span class="eqno">(3.18)<a class="headerlink" href="#equation-b37e4a77-f649-46ee-93ed-e8f5d7df3469" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-16a25098-b423-41e5-9dc8-543e617b5166">
+<span class="eqno">(3.18)<a class="headerlink" href="#equation-16a25098-b423-41e5-9dc8-543e617b5166" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm train} =
 \begin{bmatrix}
 icdt_0\\
@@ -1217,8 +1235,8 @@ icdt_0\\
 \end{bmatrix}
 \end{equation}\]</div>
 <p>while the displacement four vector from the ground’s reference frame is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f693f75f-d219-4146-989b-a01133dd4f36">
-<span class="eqno">(3.19)<a class="headerlink" href="#equation-f693f75f-d219-4146-989b-a01133dd4f36" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-cb956642-836d-4f3c-b314-45ade5d68965">
+<span class="eqno">(3.19)<a class="headerlink" href="#equation-cb956642-836d-4f3c-b314-45ade5d68965" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm ground} =
 \begin{bmatrix}
 icdt\\
