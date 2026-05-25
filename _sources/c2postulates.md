@@ -629,7 +629,7 @@ of light.
 
 If you subtract Equation {eq}`eqsphp` from {eq}`eqsph2`, you get:
 ```{math}
-:label: eqnds
+:label: eqndschap2
 (dx)^2+(dy)^2+(dz)^2 - (cdt)^2 = (dx^\prime)^2 + (dy^\prime)^2 + (dz^\prime)^2 - (c dt^\prime)^2
 ```
 
