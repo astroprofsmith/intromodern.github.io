@@ -618,8 +618,11 @@ velocity for the light wave. What the observer in the primed reference
 frame measures is a spherical wave that propagates outward at the same
 speed as shown in Equation {eq}`eqsph`. The second (primed) observer
 also sees a spherical wave, but this time the observer measures:
-```{math} :label: eqsphp (dx^\prime)^2 + (dy^\prime)^2 + (dz^\prime)^2
-= (c dt^\prime)^2 ``` where $dx^\prime$, $dy^\prime$, and $dz^\prime$
+```{math}
+:label: eqsphp
+(dx^\prime)^2 + (dy^\prime)^2 + (dz^\prime)^2= (c dt^\prime)^2
+```
+where $dx^\prime$, $dy^\prime$, and $dz^\prime$
 are how much the second observer measured the wave front to propagate
 in time interval $dt^\prime$, and $c$ (not $c^\prime$!) is the speed
 of light.
