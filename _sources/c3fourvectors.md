@@ -473,23 +473,27 @@ Click and drag to rotate the "cube" so that you are
 looking face-on to the side bounded by $x$ and $ct$, with the origin
 in the lower left corner.  This is the standard way to draw a 2D
 spacetime diagram.  The $y$ axis would then be diagonal in projection.
-There is nowhere to put a $z$ axis on the computer screen.
+There is nowhere to put a $z$ axis on the computer screen.  If you
+rotate the display such that you look down on the $x$-$y$ plane, you
+would see the spatial diplacement from orange to purple, without any
+sense of how much time passed between these events.
 ```
 
 Events, being infinitesimal in duration and extent, are represented on
 the spacetime diagram as dots.  A collection of events that represent
 the motion of a single object through space over time are called a
-worldline.  The tip of my nose at any given moment could be said to be
-an event, and if I am not moving, then the worldline of my nose would
-be a vertical line on a spacetime diagram.  If I were to walk at a
-constant speed, my nose's worldline would be a tilted straight line,
-since for every time interval $cdt$ I would have moved my nose a
-distance $dx=vdt=\beta cdt$.  The slope of the line, rise over run,
-would therefore be $1/\beta$, since we put the time axis on the
-vertical.  As my speed goes to zero, the slope becomes infinite: a
-vertical line.  The lowest slope the worldline of a real object can
-have is 1, since that would imply $1/\beta=1$ or $v=c$, the fastest a
-real object can move.
+**worldline**.  The tip of my nose at any given moment could be said
+to be an event, and if I am not moving, then the worldline of my nose
+would be a vertical line on a spacetime diagram (each event at my nose
+is in the same place right to left for all times top to bottom).  If I
+were to walk at a constant speed, my nose's worldline would be a
+tilted straight line, since for every time interval $cdt$ I would have
+moved my nose a distance $dx=vdt=\beta cdt$.  The slope of the line,
+rise over run, would therefore be $1/\beta$, since we put the time
+axis on the vertical.  As my speed goes to zero, the slope becomes
+infinite: a vertical line.  The lowest slope the worldline of a real
+object can have is 1, since that would imply $1/\beta=1$ or $v=c$, the
+fastest a real object can move.
 
 We'll explore the implications of these properties more in the next
 chapter.  For now, it is sufficient to note that we can define a
@@ -507,7 +511,7 @@ in one reference frame to that of a second reference frame moving
 relative to the first.  By convention, we usually define the $x$ axis
 to point along the direction of the relative motion, so that the
 second frame is moving to the right.  This is the default assumption,
-although it is certainly not **necessary**.  If you must choose $x$ to
+although it is certainly not *necessary*.  If you must choose $x$ to
 lie in a different direction than the relative velocity, that will
 make the math more complicated, so always make sure to draw a picture
 before you start doing math, to make sure the equations actually match
@@ -553,6 +557,30 @@ the origins may or may not coincide at a particular moment in time) is
 moving to the right at speed v_R, relative to the unprimed frame S,
 which is above and to the right.  The x and x' axes are defined to be
 parallel to the vector direction of v_R.
+```
+
+
+
+```{admonition} Checkpoint
+The diagram in {numref}`yerbasicST` corresponds to a situation where you
+have measurements of events in the $S$ frame, and you want to know how
+observers in the $S^\prime$ frame would measure those events.  How would
+you need to change the diagram if you had measurements in the $S^\prime$
+frame and wanted to know what people would observe in the $S$ frame?
+<div id="010">
+<form name="radioForm" action="#" method="get" id="choiceMyform10">
+<input type="radio" name="question10" id="q10a1" value="a."/>Flip the whole diagram left to right.<br>
+<input type="radio" name="question10" id="q10a2" value="b."/>Reverse the direction of the $v_R$ arrow.<br>
+<input type="radio" name="question10" id="q10a3" value="c."/>Make the time axes point down.<br>
+<input type="radio" name="question10" id="q10a4" value="d."/>Rotate the diagram $90^\circ$ counter-clockwise.<br>
+</form>
+<div class="quiz">
+<p id="Answer_q10">Choose your answer above and check the button below.</p>
+<hr>
+<p><button id="q10" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Reveal Discussion</button></p>
+</div></div>
 ```
 
 (secGamma)=
@@ -1186,7 +1214,7 @@ a ball straight up in the air and then catches it again when it comes back down.
 <input type="radio" name="question9" id="q9a1" value="a."/>Adam is standing right next to Griffin<br>
 <input type="radio" name="question9" id="q9a2" value="b."/>Braden is driving past Griffin in a car at 50 mph.<br>
 <input type="radio" name="question9" id="q9a3" value="c."/>Cathy is in an airplane flying over Griffin at 500 km/hr.<br>
-<input type="radio" name="question9" id="q9a4" value="d."/>Zaphod is in a flying saucer, zipping past Griffin at $\beta=0.86$<br>
+<input type="radio" name="question9" id="q9a4" value="d."/>Zaphod is in a flying saucer, zipping past Griffin at beta=0.86<br>
 </form>
 <div class="quiz">
 <p id="Answer_q9">Who measures the shortest duration between these two events, and who measures the longest? Do you see why trying to define time dilation in terms of which clock is moving is confusing?</p>

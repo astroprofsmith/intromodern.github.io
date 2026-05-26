@@ -60,7 +60,7 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c3fourvectors';</script>
-    <script src="_static/checkpoints.js?v=4be26b09"></script>
+    <script src="_static/checkpoints.js?v=3d847b96"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="4. Lorentz Transformations" href="c4lorentztrans.html" />
@@ -829,23 +829,27 @@ Click and drag to rotate the “cube” so that you are
 looking face-on to the side bounded by <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(ct\)</span>, with the origin
 in the lower left corner.  This is the standard way to draw a 2D
 spacetime diagram.  The <span class="math notranslate nohighlight">\(y\)</span> axis would then be diagonal in projection.
-There is nowhere to put a <span class="math notranslate nohighlight">\(z\)</span> axis on the computer screen.</span><a class="headerlink" href="#spacetimefig" title="Link to this image">#</a></p>
+There is nowhere to put a <span class="math notranslate nohighlight">\(z\)</span> axis on the computer screen.  If you
+rotate the display such that you look down on the <span class="math notranslate nohighlight">\(x\)</span>-<span class="math notranslate nohighlight">\(y\)</span> plane, you
+would see the spatial diplacement from orange to purple, without any
+sense of how much time passed between these events.</span><a class="headerlink" href="#spacetimefig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Events, being infinitesimal in duration and extent, are represented on
 the spacetime diagram as dots.  A collection of events that represent
 the motion of a single object through space over time are called a
-worldline.  The tip of my nose at any given moment could be said to be
-an event, and if I am not moving, then the worldline of my nose would
-be a vertical line on a spacetime diagram.  If I were to walk at a
-constant speed, my nose’s worldline would be a tilted straight line,
-since for every time interval <span class="math notranslate nohighlight">\(cdt\)</span> I would have moved my nose a
-distance <span class="math notranslate nohighlight">\(dx=vdt=\beta cdt\)</span>.  The slope of the line, rise over run,
-would therefore be <span class="math notranslate nohighlight">\(1/\beta\)</span>, since we put the time axis on the
-vertical.  As my speed goes to zero, the slope becomes infinite: a
-vertical line.  The lowest slope the worldline of a real object can
-have is 1, since that would imply <span class="math notranslate nohighlight">\(1/\beta=1\)</span> or <span class="math notranslate nohighlight">\(v=c\)</span>, the fastest a
-real object can move.</p>
+<strong>worldline</strong>.  The tip of my nose at any given moment could be said
+to be an event, and if I am not moving, then the worldline of my nose
+would be a vertical line on a spacetime diagram (each event at my nose
+is in the same place right to left for all times top to bottom).  If I
+were to walk at a constant speed, my nose’s worldline would be a
+tilted straight line, since for every time interval <span class="math notranslate nohighlight">\(cdt\)</span> I would have
+moved my nose a distance <span class="math notranslate nohighlight">\(dx=vdt=\beta cdt\)</span>.  The slope of the line,
+rise over run, would therefore be <span class="math notranslate nohighlight">\(1/\beta\)</span>, since we put the time
+axis on the vertical.  As my speed goes to zero, the slope becomes
+infinite: a vertical line.  The lowest slope the worldline of a real
+object can have is 1, since that would imply <span class="math notranslate nohighlight">\(1/\beta=1\)</span> or <span class="math notranslate nohighlight">\(v=c\)</span>, the
+fastest a real object can move.</p>
 <p>We’ll explore the implications of these properties more in the next
 chapter.  For now, it is sufficient to note that we can define a
 displacement four-vector between two dots on a spacetime diagram
@@ -861,7 +865,7 @@ in one reference frame to that of a second reference frame moving
 relative to the first.  By convention, we usually define the <span class="math notranslate nohighlight">\(x\)</span> axis
 to point along the direction of the relative motion, so that the
 second frame is moving to the right.  This is the default assumption,
-although it is certainly not <strong>necessary</strong>.  If you must choose <span class="math notranslate nohighlight">\(x\)</span> to
+although it is certainly not <em>necessary</em>.  If you must choose <span class="math notranslate nohighlight">\(x\)</span> to
 lie in a different direction than the relative velocity, that will
 make the math more complicated, so always make sure to draw a picture
 before you start doing math, to make sure the equations actually match
@@ -881,6 +885,28 @@ which is above and to the right.  The x and x’ axes are defined to be
 parallel to the vector direction of v_R.</span><a class="headerlink" href="#yerbasicst" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<div class="admonition-checkpoint admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>The diagram in <a class="reference internal" href="#yerbasicst"><span class="std std-numref">Fig. 3.2</span></a> corresponds to a situation where you
+have measurements of events in the <span class="math notranslate nohighlight">\(S\)</span> frame, and you want to know how
+observers in the <span class="math notranslate nohighlight">\(S^\prime\)</span> frame would measure those events.  How would
+you need to change the diagram if you had measurements in the <span class="math notranslate nohighlight">\(S^\prime\)</span>
+frame and wanted to know what people would observe in the <span class="math notranslate nohighlight">\(S\)</span> frame?</p>
+<div id="010">
+<form name="radioForm" action="#" method="get" id="choiceMyform10">
+<input type="radio" name="question10" id="q10a1" value="a."/>Flip the whole diagram left to right.<br>
+<input type="radio" name="question10" id="q10a2" value="b."/>Reverse the direction of the $v_R$ arrow.<br>
+<input type="radio" name="question10" id="q10a3" value="c."/>Make the time axes point down.<br>
+<input type="radio" name="question10" id="q10a4" value="d."/>Rotate the diagram $90^\circ$ counter-clockwise.<br>
+</form>
+<div class="quiz">
+<p id="Answer_q10">Choose your answer above and check the button below.</p>
+<hr>
+<p><button id="q10" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Reveal Discussion</button></p>
+</div></div>
+</div>
 </section>
 <section id="examples-of-displacement-four-vectors">
 <span id="secgamma"></span><h2><span class="section-number">3.3. </span>Examples of Displacement Four Vectors<a class="headerlink" href="#examples-of-displacement-four-vectors" title="Link to this heading">#</a></h2>
@@ -987,8 +1013,8 @@ in the same place.</span><a class="headerlink" href="#shipfig" title="Link to th
 </figure>
 <p>We can therefore write a displacement four vector in the reference
 frame at rest with respect to the Earth:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-91b03a41-b982-4c75-bb3e-9583a21332f5">
-<span class="eqno">(3.11)<a class="headerlink" href="#equation-91b03a41-b982-4c75-bb3e-9583a21332f5" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-13fd3f91-499f-4e25-a889-e6cfa0e1b882">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-13fd3f91-499f-4e25-a889-e6cfa0e1b882" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_\oplus =
 \begin{bmatrix}
 icdt_\oplus\\
@@ -1012,8 +1038,8 @@ aboard the space craft will measure some time interval, <span class="math notran
 between the time he sees the earth outside of his window and sees
 alpha centauri outside the window. The observer aboard the space craft
 measures a displacement 4-vector:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-94d4b7d0-1522-40ef-bc44-82e9b10cf7fc">
-<span class="eqno">(3.12)<a class="headerlink" href="#equation-94d4b7d0-1522-40ef-bc44-82e9b10cf7fc" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-1c4a2a1d-ced3-47d3-9a2f-5ad9a7070ddf">
+<span class="eqno">(3.12)<a class="headerlink" href="#equation-1c4a2a1d-ced3-47d3-9a2f-5ad9a7070ddf" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm rocket} =
 \begin{bmatrix}
 icdt_{\rm rocket}\\
@@ -1030,13 +1056,13 @@ nothing to do with the first observer being physically <strong>on</strong> the E
 the <span class="math notranslate nohighlight">\(dt_\oplus\)</span> is measured by the infinite lattice of clocks at
 rest with respect to the Earth.</p>
 <p>The sizes of the two four vectors are:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cd678a12-11c7-4818-9cf9-99f5253ff69c">
-<span class="eqno">(3.13)<a class="headerlink" href="#equation-cd678a12-11c7-4818-9cf9-99f5253ff69c" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-7cc32869-acfd-476a-b014-951ab09287fc">
+<span class="eqno">(3.13)<a class="headerlink" href="#equation-7cc32869-acfd-476a-b014-951ab09287fc" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dx_\oplus^2 - (cdt_\oplus)^2 = -(cdt_{\rm rocket})^2
 \end{equation}\]</div>
 <p>Solve for <span class="math notranslate nohighlight">\(dt_{\rm rocket}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-352828fb-5d5c-4645-996f-e4931bbcbed3">
-<span class="eqno">(3.14)<a class="headerlink" href="#equation-352828fb-5d5c-4645-996f-e4931bbcbed3" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-095f1721-87a1-4970-9926-1026e7dd1974">
+<span class="eqno">(3.14)<a class="headerlink" href="#equation-095f1721-87a1-4970-9926-1026e7dd1974" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dt_{\rm rocket} = dt_\oplus\sqrt{1-\left(\frac{dx_\oplus}{cdt_\oplus}\right)^2}
 = dt_\oplus \sqrt{1-\beta^2}
 \end{equation}\]</div>
@@ -1206,8 +1232,8 @@ The reference frame at rest with respect to the ground is the unprimed
 frame on the left.  The red dot is the emission of the light and the
 blue dot is the detection of the light.  The displacement four vector
 in the train frame would be:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-38af3668-7d3c-4c15-8d70-22fc2d4c4f0b">
-<span class="eqno">(3.18)<a class="headerlink" href="#equation-38af3668-7d3c-4c15-8d70-22fc2d4c4f0b" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-8f26f53b-c59a-480b-9cf8-40dcab5d0463">
+<span class="eqno">(3.18)<a class="headerlink" href="#equation-8f26f53b-c59a-480b-9cf8-40dcab5d0463" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm train} =
 \begin{bmatrix}
 icdt_0\\
@@ -1217,8 +1243,8 @@ icdt_0\\
 \end{bmatrix}
 \end{equation}\]</div>
 <p>while the displacement four vector from the ground’s reference frame is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-90b577f3-6dd1-4261-9b27-f0dc2a00ada0">
-<span class="eqno">(3.19)<a class="headerlink" href="#equation-90b577f3-6dd1-4261-9b27-f0dc2a00ada0" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-436c7bd2-26a5-4979-ac84-ddb2fbd58905">
+<span class="eqno">(3.19)<a class="headerlink" href="#equation-436c7bd2-26a5-4979-ac84-ddb2fbd58905" title="Permalink to this equation">#</a></span>\[\begin{equation}
 [dx_4]_{\rm ground} =
 \begin{bmatrix}
 icdt\\
@@ -1387,7 +1413,7 @@ a ball straight up in the air and then catches it again when it comes back down.
 <input type="radio" name="question9" id="q9a1" value="a."/>Adam is standing right next to Griffin<br>
 <input type="radio" name="question9" id="q9a2" value="b."/>Braden is driving past Griffin in a car at 50 mph.<br>
 <input type="radio" name="question9" id="q9a3" value="c."/>Cathy is in an airplane flying over Griffin at 500 km/hr.<br>
-<input type="radio" name="question9" id="q9a4" value="d."/>Zaphod is in a flying saucer, zipping past Griffin at $\beta=0.86$<br>
+<input type="radio" name="question9" id="q9a4" value="d."/>Zaphod is in a flying saucer, zipping past Griffin at beta=0.86<br>
 </form>
 <div class="quiz">
 <p id="Answer_q9">Who measures the shortest duration between these two events, and who measures the longest? Do you see why trying to define time dilation in terms of which clock is moving is confusing?</p>
