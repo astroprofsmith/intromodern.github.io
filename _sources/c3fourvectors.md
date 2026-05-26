@@ -350,7 +350,7 @@ same as $dx^{\prime 0}-dx^0$.
 
 The metric doesn't have to look like this.  The metric for spacetime
 around a spherically symmetric massive object, for example (called
-"the Schwarzschild Metric") looks like this:
+"the Schwarzschild Metric"), looks like this:
 ```{math}
 :label: spheremetric
 g_{\mu\nu} =
