@@ -116,7 +116,7 @@ For two events at rest, we call the time interval between them the proper time, 
 and the square of the displacement four vector is $-c^2dt_0^2$.  Because the
 size of a four vector is invariant through a Lorentz transformation, this must
 be the size of the displacement four vector in the S' frame as well, which means,
-according to Equation {eq}`eqnds`:
+according to Equation {eq}`eqndschap2`:
 ```{math}
 -c^2dt_0^2 = dx^{'2} - c^2dt^{'2}
 ```
