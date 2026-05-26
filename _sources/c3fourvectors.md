@@ -1079,7 +1079,7 @@ something else.  In the examples above, the Earth is moving in the
 rocket's frame of reference, and the ground is moving in the train's
 frame of reference, so which clock is moving?  If "moving clocks run
 slow", could we determine which clock is running slow, and then that
-would tell us which clock is **really** moving?
+would tell us which clock is *really* moving?
 
 ```{margin}
 Time Dilation: a set of clocks in a reference frame at rest with
