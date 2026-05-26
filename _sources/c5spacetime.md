@@ -136,8 +136,10 @@ dt' = \gamma_R dt_0
 }
 ```
 which we call **Time Dilation** (explained in more detail in
-{numref}`secTimeDi`), and that is why the blue dot in the right graph
-is higher than the blue dot in the left graph.
+{numref}`secTimeDi`, where I derived $\gamma$ in a manner that looks
+completely different, but is geometrically identical to this one), and
+that is why the blue dot in the right graph is higher than the blue
+dot in the left graph.
 
 What I wish to do in this chapter is to apply this kind of analysis to sets
 of events, to present patterns in spacetime that will help you improve your

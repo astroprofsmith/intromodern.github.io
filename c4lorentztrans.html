@@ -60,7 +60,7 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c4lorentztrans';</script>
-    <script src="_static/checkpoints.js?v=597e3a68"></script>
+    <script src="_static/checkpoints.js?v=3d847b96"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="5. Properties of Spacetime Diagrams" href="c5spacetime.html" />
@@ -434,7 +434,7 @@ is called a <strong>Lorentz Transformation</strong>.</p>
 <p>The Lorentz transformation converts the components of a 4-vector
 in one inertial reference frame to the components as measured in
 a second frame moving at a constant velocity relative to the first.
-This method works for <strong>any</strong> four-vector, but we will define it
+This method works for <em>any</em> four-vector, but we will define it
 using the displacement four-vector, as that is easy to visualize.</p>
 <p>We start by recreating <a class="reference internal" href="c3fourvectors.html#yerbasicst"><span class="std std-numref">Fig. 3.2</span></a> as <a class="reference internal" href="#stwithvecfig"><span class="std std-numref">Fig. 4.1</span></a>
 – to make sure you are applying the transformation properly, it is
@@ -442,7 +442,7 @@ useful to always start by recreating this diagram and making sure that
 you are assigning the correct numbers to the elements, as defined in
 this diagram.</p>
 <figure class="align-default" id="stwithvecfig" style="width: 800px">
-<img alt="_images/5f3be46f42db6a1e23c6c6230462326bf4c158306fb4ab165d5b29e2479572ab.png" src="_images/5f3be46f42db6a1e23c6c6230462326bf4c158306fb4ab165d5b29e2479572ab.png" />
+<img alt="_images/dc6e5c9ff501c50aa05981324744f3f247682185f56870c163ea03b6635a37bd.png" src="_images/dc6e5c9ff501c50aa05981324744f3f247682185f56870c163ea03b6635a37bd.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 4.1 </span><span class="caption-text">The spacetime diagram that defines a Lorentz transformation.
 There are two events, indicated by red and blue dots, and we define a
@@ -485,10 +485,11 @@ and <span class="math notranslate nohighlight">\(\beta\)</span> as ways of count
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Note that the <span class="math notranslate nohighlight">\(\beta\)</span> used as the index counter of the matrices has
-nothing to do with the relative velocity <span class="math notranslate nohighlight">\(\beta_R\)</span>.  Sometimes other
-Greek letters are used for counting indices, <span class="math notranslate nohighlight">\(\mu\)</span> and <span class="math notranslate nohighlight">\(\nu\)</span> in
-particular.  You must notice how the letter is being used to be
-able to tell whether <span class="math notranslate nohighlight">\(\beta\)</span> is a speed or a matrix index.</p>
+nothing to do with the relative velocity <span class="math notranslate nohighlight">\(\beta_R\)</span> or any velocity
+<span class="math notranslate nohighlight">\(\beta\)</span> at all.  Sometimes other Greek letters are used for counting
+indices, <span class="math notranslate nohighlight">\(\mu\)</span> and <span class="math notranslate nohighlight">\(\nu\)</span> in particular.  You must notice how the
+letter is being used to be able to tell whether <span class="math notranslate nohighlight">\(\beta\)</span> is a speed or
+a matrix index.</p>
 </div>
 </section>
 <section id="determining-the-elements">
@@ -498,9 +499,8 @@ the Lorentz transformation? We must figure out how the transformation
 works in specific cases, and these cases will then point to general
 values that could be used in any situation.  All that we really know
 about the Lorentz transformation is that the 4-vector that is produced
-by its operation on the original 4-vector must have the same size as
-the first 4-vector, or the Michelson-Morley experimental results would
-be contradicted.</p>
+by the transformation must have the same size as the first 4-vector,
+or the Michelson-Morley experimental results would be contradicted.</p>
 <p>To determine some of the elements of the Lorentz transformation
 matrix, consider what happens when the displacement 4-vector</p>
 <div class="math notranslate nohighlight" id="equation-eqdisp4">
@@ -521,7 +521,7 @@ far from the poles, of course).</p>
 <p class="admonition-title">Note</p>
 <p>Although the displacements perpendicular to the direction of relative
 motion are not affected by a Lorentz transformation, this independence
-does not apply to <strong>any</strong> object that you might perform a Lorentz transformation
+does not apply to <em>any</em> object that you might perform a Lorentz transformation
 on.  In electromagnetism, for example, the electric and mangetic fields in
 the <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> direction are different in a frame moving in the <span class="math notranslate nohighlight">\(x\)</span> direction.
 We use the dimensional independence of <span class="math notranslate nohighlight">\(dy\)</span> and <span class="math notranslate nohighlight">\(dz\)</span> to derive values for
@@ -533,8 +533,8 @@ row of Equation <a class="reference internal" href="#equation-eqlort">(4.1)</a>,
 \[dy^\prime = L_{20}icdt+L_{21}dx
 +L_{22}dy + L_{32}dz.\]</div>
  The only way this equality can hold for
-<strong>all</strong> displacement four vectors (which is to say for <strong>any</strong> values
-of <span class="math notranslate nohighlight">\(dt\)</span>, <span class="math notranslate nohighlight">\(dx\)</span>, <span class="math notranslate nohighlight">\(dy\)</span>, <strong>and</strong> <span class="math notranslate nohighlight">\(dz\)</span>) is if <span class="math notranslate nohighlight">\(L_{22}=1\)</span> and the other
+*<em>ll</em> displacement four vectors (which is to say for <em>any</em> values
+of <span class="math notranslate nohighlight">\(dt\)</span>, <span class="math notranslate nohighlight">\(dx\)</span>, <span class="math notranslate nohighlight">\(dy\)</span>, <em>and</em> <span class="math notranslate nohighlight">\(dz\)</span>) is if <span class="math notranslate nohighlight">\(L_{22}=1\)</span> and the other
 elements are zero.  The same logic can be applied to the fourth row to
 deduce <span class="math notranslate nohighlight">\(L_{33}=1\)</span>, so we know the matrix must look like</p>
 <div class="math notranslate nohighlight" id="equation-lormat2">
@@ -551,7 +551,7 @@ the examples at the end of <a class="reference internal" href="c3fourvectors.htm
 switching from a reference frame where two events were at rest into a
 reference frame in which there would have to be motion for something
 to get from one event to the other.  We know therefore that the
-original four displacement is</p>
+original four displacement only has a time component:</p>
 <div class="math notranslate nohighlight" id="equation-eqrestdx4">
 <span class="eqno">(4.5)<a class="headerlink" href="#equation-eqrestdx4" title="Link to this equation">#</a></span>\[\begin{split}[dx_4] =
 \begin{bmatrix}
@@ -560,6 +560,7 @@ icdt_0\\
 0\\
 0
 \end{bmatrix}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(dt_0\)</span> is the proper time duration.</p>
 <p>We can also figure out what the transformed components have to be.  We
 know that the time interval will be dilated in the primed frame: <span class="math notranslate nohighlight">\(dt =
 \gamma_R dt_0\)</span>.  Furthermore, if the events are at rest in the
@@ -596,8 +597,8 @@ For example, you could set up the events in <a class="reference internal" href="
 such that the primed observer was in the rest frame of the events and
 work out the values for the rest of the unknowns. When all such tricks
 are exhausted, the Lorentz transformation between two frames of
-reference (<a class="reference internal" href="#stwithvecfig"><span class="std std-numref">Fig. 4.1</span></a>) that have a relative speed of
-<span class="math notranslate nohighlight">\(\beta_R\)</span> in the positive x direction is given by the matrix:</p>
+reference that have a relative speed of <span class="math notranslate nohighlight">\(\beta_R\)</span> in the positive x
+direction is given by the matrix:</p>
 <div class="math notranslate nohighlight" id="equation-lormat">
 <span class="eqno">(4.7)<a class="headerlink" href="#equation-lormat" title="Link to this equation">#</a></span>\[\begin{split}\boxed{
 {\cal L}_x(\beta_R) = 

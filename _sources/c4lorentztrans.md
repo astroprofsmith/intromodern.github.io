@@ -41,7 +41,7 @@ is called a **Lorentz Transformation**.
 The Lorentz transformation converts the components of a 4-vector
 in one inertial reference frame to the components as measured in
 a second frame moving at a constant velocity relative to the first.
-This method works for **any** four-vector, but we will define it
+This method works for *any* four-vector, but we will define it
 using the displacement four-vector, as that is easy to visualize.
 
 We start by recreating {numref}`yerbasicST` as {numref}`stwithvecfig`
@@ -134,10 +134,11 @@ and $\beta$ as ways of counting rows and columns.
 
 ```{warning} 
 Note that the $\beta$ used as the index counter of the matrices has
-nothing to do with the relative velocity $\beta_R$.  Sometimes other
-Greek letters are used for counting indices, $\mu$ and $\nu$ in
-particular.  You must notice how the letter is being used to be
-able to tell whether $\beta$ is a speed or a matrix index.
+nothing to do with the relative velocity $\beta_R$ or any velocity
+$\beta$ at all.  Sometimes other Greek letters are used for counting
+indices, $\mu$ and $\nu$ in particular.  You must notice how the
+letter is being used to be able to tell whether $\beta$ is a speed or
+a matrix index.
 ```
 
 ## Determining the Elements
@@ -147,9 +148,8 @@ the Lorentz transformation? We must figure out how the transformation
 works in specific cases, and these cases will then point to general
 values that could be used in any situation.  All that we really know
 about the Lorentz transformation is that the 4-vector that is produced
-by its operation on the original 4-vector must have the same size as
-the first 4-vector, or the Michelson-Morley experimental results would
-be contradicted.
+by the transformation must have the same size as the first 4-vector,
+or the Michelson-Morley experimental results would be contradicted.
 
 To determine some of the elements of the Lorentz transformation
 matrix, consider what happens when the displacement 4-vector
@@ -173,7 +173,7 @@ far from the poles, of course).
 ```{note}
 Although the displacements perpendicular to the direction of relative
 motion are not affected by a Lorentz transformation, this independence
-does not apply to **any** object that you might perform a Lorentz transformation
+does not apply to *any* object that you might perform a Lorentz transformation
 on.  In electromagnetism, for example, the electric and mangetic fields in
 the $y$ and $z$ direction are different in a frame moving in the $x$ direction.
 We use the dimensional independence of $dy$ and $dz$ to derive values for
@@ -184,8 +184,8 @@ $z$ for all vectors are unaffected in all circumstances at all times.  Be cautio
 This means that $dy^\prime = dy$.  However, if we write out the third
 row of Equation {eq}`eqlort`, we get $$dy^\prime = L_{20}icdt+L_{21}dx
 +L_{22}dy + L_{32}dz.$$ The only way this equality can hold for
-**all** displacement four vectors (which is to say for **any** values
-of $dt$, $dx$, $dy$, **and** $dz$) is if $L_{22}=1$ and the other
+**ll* displacement four vectors (which is to say for *any* values
+of $dt$, $dx$, $dy$, *and* $dz$) is if $L_{22}=1$ and the other
 elements are zero.  The same logic can be applied to the fourth row to
 deduce $L_{33}=1$, so we know the matrix must look like
 ```{math}
@@ -205,7 +205,7 @@ the examples at the end of [Chapter 3](ch4vec).  They all involved
 switching from a reference frame where two events were at rest into a
 reference frame in which there would have to be motion for something
 to get from one event to the other.  We know therefore that the
-original four displacement is
+original four displacement only has a time component:
 ```{math}
 :label: eqrestdx4
 [dx_4] =
@@ -216,6 +216,8 @@ icdt_0\\
 0
 \end{bmatrix}
 ```
+where $dt_0$ is the proper time duration.
+
 We can also figure out what the transformed components have to be.  We
 know that the time interval will be dilated in the primed frame: $dt =
 \gamma_R dt_0$.  Furthermore, if the events are at rest in the
@@ -253,8 +255,8 @@ For example, you could set up the events in {numref}`stwithvecfig`
 such that the primed observer was in the rest frame of the events and
 work out the values for the rest of the unknowns. When all such tricks
 are exhausted, the Lorentz transformation between two frames of
-reference ({numref}`stwithvecfig`) that have a relative speed of
-$\beta_R$ in the positive x direction is given by the matrix:
+reference that have a relative speed of $\beta_R$ in the positive x
+direction is given by the matrix:
 ```{math}
 :label: lormat
 \boxed{

@@ -52,7 +52,7 @@ async function __main__() {
 
     function round(num, n=0) {return Number(num.toFixed(n))}
 
-    var version, print, arange, __name__, type, ρσ_ls, fig, p, q, light1, light2, worldline, T1text, T2text, T1T2text, t1vec, t2vec, futurecone, pastcone, dxtext, cdttext, intervaltext, dx, cdt, interval, boxether, sl, wt, dt, t1, t2, t1t2;
+    var version, print, arange, __name__, type, ρσ_ls, fig, defpos, deffor, defcen, defaxi, savepos, savefor, savecen, p, q, light1, light2, worldline, T1text, T2text, T1T2text, t1vec, t2vec, futurecone, pastcone, dxtext, cdttext, intervaltext, dx, cdt, interval, boxether, sl, wt, clrbtn, dt, t1, t2, t1t2;
     version = ρσ_list_decorate([ "3.2", "glowscript" ]);
     Array.prototype['+'] = function(r) {return this.concat(r)}
     Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
@@ -66,55 +66,93 @@ async function __main__() {
     strings();
     "2";
     fig = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({background: color.black, title: "Spacetime Diagram", width: 750, height: 500})]);
-    "4";
-    p = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), color: color.blue, radius: .1})]);
-    "5";
-    q = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(1, 0, 0), color: color.green, radius: .1})]);
     "6";
-    light1 = ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: q.pos, axis: vector(1["-u"]()["*"](1), 1["-u"]()["*"](1), 0), radius: .05, color: color.orange})]);
+    defpos = vec(0, 0, 8);
     "7";
-    light2 = ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: q.pos, axis: vector(1["-u"]()["*"](1), 1, 0), radius: .05, color: color.orange})]);
+    deffor = vec(0, 0, 1["-u"]()["*"](1));
     "8";
-    worldline = ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](4), 0), axis: vector(0, 8, 0), radius: .02, color: color.red})]);
+    defcen = vec(0, 0, 1["-u"]()["*"](1));
     "9";
-    T1text = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(2, 2.5, 0), text: "t1 = 1.00", color: color.green, height: 20})]);
-    "10";
-    T2text = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(2, 1["-u"]()["*"](2.5), 0), text: "t2 = 1.00", color: color.yellow, height: 20})]);
+    defaxi = vec(0, 0, 1["-u"]()["*"](17));
     "11";
-    T1T2text = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(2, 0, 0), text: "t1t2 = 1.00", color: color.cyan, height: 20})]);
+    fig.camera.pos = defpos;
     "12";
-    t1vec = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](.1), 0, 0), axis: vector(0, 1, 0), color: color.white, shaftwidth: .04, headwidth: .08})]);
+    fig.camera.forward = deffor;
     "13";
-    t2vec = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](.1), 0, 0), axis: vector(0, 1["-u"]()["*"](1), 0), color: color.magenta, shaftwidth: .04, headwith: .08})]);
+    fig.camera.center = defcen;
     "14";
-    futurecone = ρσ_interpolate_kwargs.call(this, cone, [ρσ_desugar_kwargs({pos: vector(0, 4, 0), axis: vector(0, 1["-u"]()["*"](4), 0), radius: 4, color: color.yellow, opacity: .3, visible: false})]);
-    "15";
-    pastcone = ρσ_interpolate_kwargs.call(this, cone, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](4), 0), axis: vector(0, 4, 0), radius: 4, color: color.yellow, opacity: .3, visible: false})]);
+    fig.camera.axis = defaxi;
+    "16";
+    savepos = fig.camera.pos;
     "17";
-    dxtext = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](2), 1["-u"]()["*"](2.5), 0), text: "∆x = 1.00", color: color.green, height: 20})]);
+    savefor = fig.camera.forward;
     "18";
-    cdttext = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](2), 2.5, 0), text: "c∆t = 1.00", color: color.yellow, height: 20})]);
-    "19";
-    intervaltext = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](2), 0, 0), text: "Interval = 1.00", color: color.cyan, height: 20})]);
+    savecen = fig.camera.center;
     "20";
+    async function resetview(evt) {
+        "21";
+        fig.camera.pos = defpos;
+        "22";
+        fig.camera.forward = deffor;
+        "23";
+        fig.camera.center = defcen;
+        "24";
+        fig.camera.axis = defaxi;
+    };
+    if (!resetview.__argnames__) Object.defineProperties(resetview, {
+        __argnames__ : {value: ["evt"]},
+        __module__ : {value: null}
+    });
+
+    "27";
+    p = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), color: color.cyan, radius: .1})]);
+    "28";
+    q = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(1, 0, 0), color: color.green, radius: .1})]);
+    "29";
+    light1 = ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: q.pos, axis: vector(1["-u"]()["*"](1), 1["-u"]()["*"](1), 0), radius: .05, color: color.orange})]);
+    "30";
+    light2 = ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: q.pos, axis: vector(1["-u"]()["*"](1), 1, 0), radius: .05, color: color.orange})]);
+    "31";
+    worldline = ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](4), 0), axis: vector(0, 8, 0), radius: .02, color: color.red})]);
+    "32";
+    T1text = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(2, 2.5, 0), text: "t1 = 1.00", color: color.green, height: 20})]);
+    "33";
+    T2text = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(2, 1["-u"]()["*"](2.5), 0), text: "t2 = 1.00", color: color.yellow, height: 20})]);
+    "34";
+    T1T2text = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(2, 0, 0), text: "t1t2 = 1.00", color: color.cyan, height: 20})]);
+    "35";
+    t1vec = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](.1), 0, 0), axis: vector(0, 1, 0), color: color.white, shaftwidth: .04, headwidth: .08})]);
+    "36";
+    t2vec = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](.1), 0, 0), axis: vector(0, 1["-u"]()["*"](1), 0), color: color.magenta, shaftwidth: .04, headwith: .08})]);
+    "37";
+    futurecone = ρσ_interpolate_kwargs.call(this, cone, [ρσ_desugar_kwargs({pos: vector(0, 4, 0), axis: vector(0, 1["-u"]()["*"](4), 0), radius: 4, color: color.yellow, opacity: .3, visible: false})]);
+    "38";
+    pastcone = ρσ_interpolate_kwargs.call(this, cone, [ρσ_desugar_kwargs({pos: vector(0, 1["-u"]()["*"](4), 0), axis: vector(0, 4, 0), radius: 4, color: color.yellow, opacity: .3, visible: false})]);
+    "40";
+    dxtext = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](2), 1["-u"]()["*"](2.5), 0), text: "∆x = 1.00", color: color.green, height: 20})]);
+    "41";
+    cdttext = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](2), 2.5, 0), text: "c∆t = 1.00", color: color.yellow, height: 20})]);
+    "42";
+    intervaltext = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](2), 0, 0), text: "Interval = 1.00", color: color.cyan, height: 20})]);
+    "43";
     dx = 1;
-    "21";
+    "44";
     cdt = p.pos.y["-"](1["*"](q.pos.y));
-    "22";
+    "45";
     interval = Math.pow(dx, 2)["-"](1["*"](Math.pow(cdt, 2)));
-    "24";
+    "47";
     async function isetheron(b) {
-        "25";
+        "48";
         if (b.checked) {
-            "26";
+            "49";
             futurecone.visible = true;
-            "27";
+            "50";
             pastcone.visible = true;
-            "28";
+            "51";
         } else {
-            "29";
+            "52";
             futurecone.visible = false;
-            "30";
+            "53";
             pastcone.visible = false;
         }
     };
@@ -123,75 +161,77 @@ async function __main__() {
         __module__ : {value: null}
     });
 
-    "32";
+    "55";
     fig.caption = "\n";
-    "33";
+    "56";
     boxether = ρσ_interpolate_kwargs.call(this, checkbox, [ρσ_desugar_kwargs({bind: isetheron, text: "Click to turn on light cones.\n\n"})]);
-    "35";
+    "58";
     async function shiftq(s) {
-        "36";
-        wt.text = "q.pos.y = {:1.2f}".format(s.value);
+        "59";
+        wt.text = "q.pos.y = {:1.2f}\n\n".format(s.value);
     };
     if (!shiftq.__argnames__) Object.defineProperties(shiftq, {
         __argnames__ : {value: ["s"]},
         __module__ : {value: null}
     });
 
-    "38";
+    "61";
     sl = ρσ_interpolate_kwargs.call(this, slider, [ρσ_desugar_kwargs({min: 1["-u"]()["*"](2.5), max: 2.5, value: 0, length: 600, bind: shiftq, right: 15})]);
-    "39";
+    "62";
     wt = ρσ_interpolate_kwargs.call(this, wtext, [ρσ_desugar_kwargs({text: "q.pos.y = {:1.2f} \n\n".format(sl.value)})]);
-    "41";
+    "64";
+    clrbtn = ρσ_interpolate_kwargs.call(this, button, [ρσ_desugar_kwargs({bind: resetview, text: "Reset View", background: color.white})]);
+    "66";
     dt = .01;
-    "42";
+    "67";
     while (true) {
-        "43";
+        "68";
         (await rate(1["/"](dt)));
-        "44";
+        "69";
         q.pos.y = sl.value;
-        "45";
+        "70";
         light1.pos = q.pos;
-        "46";
+        "71";
         light2.pos = q.pos;
-        "48";
+        "73";
         t1 = q.pos.y["+"](1);
-        "49";
+        "74";
         t2 = 1["-"](1["*"](q.pos.y));
-        "50";
+        "75";
         t1t2 = t1["*"](t2);
-        "52";
+        "77";
         t1vec.axis.y = t1;
-        "53";
+        "78";
         t2vec.axis.y = 1["-u"]()["*"](t2);
-        "55";
+        "80";
         t1vec.shaftwidth = .04;
-        "56";
+        "81";
         t2vec.shaftwidth = .04;
-        "57";
+        "82";
         if (t1["<"](0)) {
-            "58";
+            "83";
             t1vec.shaftwidth = .05;
-            "59";
+            "84";
         }
         if (t2["<"](0)) {
-            "60";
+            "85";
             t2vec.shaftwidth = .05;
         }
-        "62";
+        "87";
         T1text.text = "t1 = {:1.2f}".format(t1);
-        "63";
+        "88";
         T2text.text = "t2 = {:1.2f}".format(t2);
-        "64";
+        "89";
         T1T2text.text = "t1t2 = {:1.2f}".format(t1t2);
-        "66";
+        "91";
         cdt = p.pos.y["-"](1["*"](q.pos.y));
-        "67";
+        "92";
         interval = Math.pow(dx, 2)["-"](1["*"](Math.pow(cdt, 2)));
-        "68";
+        "93";
         dxtext.text = "∆x = {:1.2f}".format(dx);
-        "69";
+        "94";
         cdttext.text = "c∆t = {:1.2f}".format(cdt);
-        "70";
+        "95";
         intervaltext.text = "Interval = {:1.2f}".format(interval);
     }
 };
