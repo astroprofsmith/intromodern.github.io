@@ -570,9 +570,9 @@ frame and wanted to know what people would observe in the $S$ frame?
 <div id="010">
 <form name="radioForm" action="#" method="get" id="choiceMyform10">
 <input type="radio" name="question10" id="q10a1" value="a."/>Flip the whole diagram left to right.<br>
-<input type="radio" name="question10" id="q10a2" value="b."/>Reverse the direction of the $v_R$ arrow.<br>
+<input type="radio" name="question10" id="q10a2" value="b."/>Reverse the direction of the v<sub>R</sub> arrow.<br>
 <input type="radio" name="question10" id="q10a3" value="c."/>Make the time axes point down.<br>
-<input type="radio" name="question10" id="q10a4" value="d."/>Rotate the diagram $90^\circ$ counter-clockwise.<br>
+<input type="radio" name="question10" id="q10a4" value="d."/>Rotate the diagram 90 deg counter-clockwise.<br>
 </form>
 <div class="quiz">
 <p id="Answer_q10">Choose your answer above and check the button below.</p>
