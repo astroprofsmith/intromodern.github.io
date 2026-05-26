@@ -134,5 +134,22 @@ function validate_ans(myq) {
 	if (document.getElementById('q8a4').checked) {
             document.getElementById('Answer_q8').textContent = "This is the actual speed of light.";
 	}
-    }    
+    }
+
+    if (myq =='q9') {
+	//  Time dilation
+	if (document.getElementById('q9a1').checked) {
+            document.getElementById('Answer_q9').textContent = "Adam is at rest with respect to the two events, and will therefore measure the shortest time interval.  Of the four reference frames, this clock is running slowest.";
+	}
+	if (document.getElementById('q9a2').checked) {
+            document.getElementById('Answer_q9').textContent = "The relative speed here is not zero, so Braden will measure a longer time interval than Adam, but not by much (50 mph is *very* slow, compared to c.";
+	}
+	if (document.getElementById('q9a3').checked) {
+            document.getElementById('Answer_q9').textContent = "Even at 500 km/hr, this is still very, very slow compared to c.  Cathy will measure a (slightly) longer time interval than Adam or Braden, but not the longest.";
+	}
+	if (document.getElementById('q9a4').checked) {
+            document.getElementById('Answer_q9').textContent = "At this speed, Zaphod will measure an interval roughly twice as long as Adam does.  This is the longest duration of the four, and therefore was can say Zaphod's clock is running the fastest.  This is why 'moving clocks run slow' is so confusing. The phrase itself does not make it clear which clock is moving.";
+	}
+    }
+    
 }

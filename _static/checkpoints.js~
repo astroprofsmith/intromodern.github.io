@@ -76,7 +76,7 @@ function validate_ans(myq) {
             document.getElementById('Answer_q5').textContent = "If the elevator is in free-fall, objects will drift with apparaent constant velocities in the elevator.  It does act like an inertial reference frame.";
 	}
 	if (document.getElementById('q5a3').checked) {
-            document.getElementById('Answer_q5').textContent = "As long as the spaceship doesn't change its velocity, it will act as an inertial reference frame.  If it rotates, however, an apparent force will seem to push objects inside toward the hull, making an artificial gravity.  That would not be an inertial frame.";
+            document.getElementById('Answer_q5').textContent = "As long as the spaceship doesn't change its velocity, it will act as an inertial reference frame.  If it rotates, however, an apparent force inside the ship will seem to push objects toward the hull, making an artificial gravity.  That would not be an inertial frame.";
 	}
 	if (document.getElementById('q5a4').checked) {
             document.getElementById('Answer_q5').textContent = "From the inside of the plane, it would seem like mysterious forces were pushing the people and objects around the cabin.  This is not an inertial reference frame.";

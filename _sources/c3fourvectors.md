@@ -62,25 +62,6 @@ First, we look at using the imaginary number $i^2=-1$ to keep track of
 the minus sign, and then we will look at the Einstein notation method.
 
 
-
-```{admonition} Checkpoint
-What speed would correspond to $\beta = 0.5$?
-<div id="008">
-<form name="radioForm" action="#" method="get" id="choiceMyform8">
-<input type="radio" name="question8" id="q8a1" value="a."/>5 miles per hour<br>
-<input type="radio" name="question8" id="q8a2" value="b."/>93000 miles per second<br>
-<input type="radio" name="question8" id="q8a3" value="c."/>11200 km per second<br>
-<input type="radio" name="question8" id="q8a4" value="d."/>300000 km per second<br>
-</form>
-<div class="quiz">
-<p id="Answer_q8">Choose your answer above and check the button below.</p>
-<hr>
-<p><button id="q8" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
-    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
-    onclick="validate_ans(this.id)">Reveal Discussion</button></p>
-</div></div>
-```
-
 ### Using Imaginary Numbers
 
 The method that beginners usually find simpler is to introduce complex
@@ -1038,6 +1019,27 @@ Despite what seem to be completely different contexts, the underlying
 physics of the rocket and the train are exactly the same, because
 the rules of time are the same.
 
+
+
+```{admonition} Checkpoint
+What speed would correspond to $\beta = 0.5$?
+<div id="008">
+<form name="radioForm" action="#" method="get" id="choiceMyform8">
+<input type="radio" name="question8" id="q8a1" value="a."/>5 miles per hour<br>
+<input type="radio" name="question8" id="q8a2" value="b."/>93000 miles per second<br>
+<input type="radio" name="question8" id="q8a3" value="c."/>11200 km per second<br>
+<input type="radio" name="question8" id="q8a4" value="d."/>300000 km per second<br>
+</form>
+<div class="quiz">
+<p id="Answer_q8">Choose your answer above and check the button below.</p>
+<hr>
+<p><button id="q8" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Reveal Discussion</button></p>
+</div></div>
+```
+
+
 (secTimeDi)=
 ## Time Dilation
 
@@ -1085,8 +1087,8 @@ the same interval in different reference frames.
 Make sure you understand that nothing in SR makes any demands on what
 kind of clock is being used to make the measurements.  Time dilation
 is not a mechanical effect of the particular clock making the measurements.
-**Any** spatially repeating system (rotation, vibration, oscillation)
-can act as a clock, and **all** of them will measure time dilation.
+*Any* spatially repeating system (rotation, vibration, oscillation)
+can act as a clock, and *all* of them will measure time dilation.
 It's a necessary implication of the two postulates of Relativity,
 a property of time itself, not a description of gears winding down or
 some other feature of a particular kind of clock.
@@ -1172,6 +1174,27 @@ events do not stretch identically in every other frame.  Time dilation
 is not a **universal**, uniform, change in "the flow of time" -- there
 is no such thing as a unversal flow of time.  Time is a local
 phenomenon.
+```
+
+
+
+```{admonition} Checkpoint
+Consider the following four observers who measure two events: Griffin throws
+a ball straight up in the air and then catches it again when it comes back down.
+<div id="009">
+<form name="radioForm" action="#" method="get" id="choiceMyform9">
+<input type="radio" name="question9" id="q9a1" value="a."/>Adam is standing right next to Griffin<br>
+<input type="radio" name="question9" id="q9a2" value="b."/>Braden is driving past Griffin in a car at 50 mph.<br>
+<input type="radio" name="question9" id="q9a3" value="c."/>Cathy is in an airplane flying over Griffin at 500 km/hr.<br>
+<input type="radio" name="question9" id="q9a4" value="d."/>Zaphod is in a flying saucer, zipping past Griffin at $\beta=0.86$<br>
+</form>
+<div class="quiz">
+<p id="Answer_q9">Who measures the shortest duration between these two events, and who measures the longest? Do you see why trying to define time dilation in terms of which clock is moving is confusing?</p>
+<hr>
+<p><button id="q9" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Reveal Discussion</button></p>
+</div></div>
 ```
 
 
