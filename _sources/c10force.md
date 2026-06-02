@@ -711,12 +711,14 @@ For example, let's say a particle has both $v_x$ and $v_y$ greater
 than zero.  Further, let's say that there is a force acting on this
 particle in only the $x$ direction that is increasing the speed
 $\beta$.  If you look at $[K_4]^2$ (the third component of the
-Minkowski force) in Equation {eq}`acc4dgam`, there are two terms.  If
-$v_y>0$, and the total speed is increasing ($d\beta/dt>0$), then
-$\gamma^2v_y\beta d\beta/dt>0$.  If there is no force in the $y$
-direction, then $[K_4]^2=0$, which means $dv_y/dt<0$, to make sure
-these two terms cancel out.  The particle must slow down in the $y$
-direction as it keeps increasing its velocity in the $x$ direction.
+Minkowski force) in Equation {eq}`acc4dgam`, there are two terms being
+added together.  If $v_y>0$, and the total speed is increasing
+($d\beta/dt>0$), then the first term $\gamma^2v_y\beta d\beta/dt$ is
+greater than zero.  If there is no force in the $y$ direction, then
+$[K_4]^2=0$, which means the second term $dv_y/dt$ must be less than
+zero, to make sure the two terms cancel out.  A negative $dv_y/dt$
+means that the particle slows down in the $y$ direction even as it
+keeps increasing its velocity in the $x$ direction.
 
 ## Examples 
 
