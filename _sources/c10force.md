@@ -699,20 +699,21 @@ physics.
 This is the resolution of the dilemma we first encountered at the end
 of {numref}`Chapter %s <ch4vel>`: the acceleration is a *second*
 derivative, so time dilation comes into play in an even more complex
-manner, through the $d/dt$.  Time dilation depends on the total
-relative speed, not just the separate perpendicular components.  The
-total speed, including all directions, combined with the effect of
-time dilation through the various $\gamma$ and $dt$ factors, provides
-the mechanism by which the motion in one dimension can affect the
-motion in a perpendicular direction, ensuring that the total speed
-never goes above $c$.
+manner, through the two applications of $d/dt$.  Time dilation depends
+on the total relative speed, not just the separate perpendicular
+components of velocity.  The total speed, including all directions,
+combined with the effect of time dilation through the various $\gamma$
+and $dt$ factors, provides the mechanism by which the motion in one
+dimension can affect the motion in a perpendicular direction, ensuring
+that the total speed never goes above $c$.
 
 For example, let's say a particle has both $v_x$ and $v_y$ greater
 than zero.  Further, let's say that there is a force acting on this
 particle in only the $x$ direction that is increasing the speed
 $\beta$.  If you look at $[K_4]^2$ (the third component of the
-Minkowski force) in {eq}`acc4dgam`, there are two terms.  If $v_y>0$,
-then $\gamma^2v_y\beta d\beta/dt>0$.  If there is no force in the $y$
+Minkowski force) in Equation {eq}`acc4dgam`, there are two terms.  If
+$v_y>0$, and the total speed is increasing ($d\beta/dt>0$), then
+$\gamma^2v_y\beta d\beta/dt>0$.  If there is no force in the $y$
 direction, then $[K_4]^2=0$, which means $dv_y/dt<0$, to make sure
 these two terms cancel out.  The particle must slow down in the $y$
 direction as it keeps increasing its velocity in the $x$ direction.
