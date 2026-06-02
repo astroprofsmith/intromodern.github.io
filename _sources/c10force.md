@@ -1001,24 +1001,10 @@ You just have to remember that the approximation is only valid *at*
 a particular moment.
 ```
 
-4) Consider a fast-pitch baseball with an initial velocity of
-$\vec{v} = 50~{\rm m/s}~\hat{x}$, where $\hat{x}$ points toward
-home plate and $\hat{z}$ points up.  Take the rest mass of a
-baseball to be $m_0=0.1$ kg.
-
-a) Write the (initial) Minkowski force four-vector for this baseball.
-
-b) Write a python program to model the trajectory of this baseball
-(ignore interactions with the air) using the diplacement, momentum,
-and velocity four-vectors, and verify that you do indeed get a
-parabola.
-
-c) Increase speed -- is this useful?  Try it myself.
-
-5) Equation {eq}`v4dotF4comp` shows that four-velocity and the
+4) Equation {eq}`v4dotF4comp` shows that four-velocity and the
 Minkowski force are orthogonal.  Since $[K_4]=m_0[a_4]$, the
 four-velocity and the four-acceleration should also be orthogonal.
 Show that works with Equation {eq}`acc4dgam`.
 
-6) Show that taking the time derivative of Equation {eq}`vsolve` will
+5) Show that taking the time derivative of Equation {eq}`vsolve` will
 indeed get you Equation {eq}`relacc`.
