@@ -730,14 +730,16 @@ equations in {numref}`bxbyfig`.  The slider changes the relative
 velocity of the observer frame.  The white arrow shows the
 relativistic velocity, where the components are defined by the blue
 and red lines in {numref}`figoffaxis`.  The magnitude of the vector
-(the magenta line) is in a box at the end of the arrow, and the angle
-with the x-axis (in degrees) is in the orange box. The green arrow
-shows the Newtonian prediction.  As you move the slider, that is
-like moving horizontally in {numref}`figoffaxis`, and the values
-of the lines in {numref}`figoffaxis` are used to construct the
-arrows you see in {numref}`bxbyfig`.  As you move the slider, make
-sure you understand how the behavior of the arrows matches the
-curves in {numref}`figoffaxis`.
+(the magenta line in {numref}`figoffaxis`) is in a white box at the
+end of the arrow, and the angle with the x-axis (in degrees) is in the
+orange box. The green arrow shows the Newtonian prediction, where the
+y-component of the velocity is not affected by the motion in the
+x-direction.  As you move the slider, that is like moving horizontally
+in {numref}`figoffaxis`, and the values of the lines in
+{numref}`figoffaxis` are used to construct the arrows you see in
+{numref}`bxbyfig`.  As you move the slider, make sure you understand
+how the behavior of the arrows matches the curves in
+{numref}`figoffaxis`.
 
 The default relative velocity, zero, is the frame in which the
 $\beta=0.866$ is measured, so the green and white arrows agree at that
@@ -767,15 +769,15 @@ glue("offaxarr",test, display=False)
 
 Interactive representation of the velocity vectors for off-axis
 motion, as a function of the relative velocity of the observer's
-frame.  The relative velocity can be changed with the slider.
-The white arrow shows the relativistic velocity, where the components
-are defined by the blue and red lines in {numref}`figoffaxis`.
-The magnitude of the vector (the magenta line) is in a box at the
-end of the arrow, and the angle with the x-axis (in degrees) is in
-the orange box. 
-The green arrow shows the Newtonian expectation.  To help
-guide the eye, the height of the y-component of the Newtonian
-velocity is marked with a horizontal red line.
+frame.  The relative velocity can be changed with the slider.  The
+white arrow shows the relativistic velocity, where the components are
+defined by the blue and red lines in {numref}`figoffaxis`.  The
+magnitude of the vector (the magenta line in {numref}`figoffaxis`) is
+in a white box at the end of the arrow, and the angle with the x-axis
+(in degrees) is in the orange box.  The green arrow shows the
+Newtonian expectation.  To help guide the eye, the height of the
+y-component of the Newtonian velocity is marked with a horizontal red
+line.
 ```
 
 
