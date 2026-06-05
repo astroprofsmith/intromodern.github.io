@@ -61,6 +61,24 @@ other makes the more complicated material later easier to manage.
 First, we look at using the imaginary number $i^2=-1$ to keep track of
 the minus sign, and then we will look at the Einstein notation method.
 
+```{admonition} Checkpoint
+Which of the following are necessary properties of four vectors?
+<div id="011">
+<form name="radioForm" action="#" method="get" id="choiceMyform11">
+<input type="radio" name="question11" id="q11a1" value="a."/>The square of the zeroth component is negative.<br>
+<input type="radio" name="question11" id="q11a2" value="b."/>The size is always the same in any inertial reference frame.<br>
+<input type="radio" name="question11" id="q11a3" value="c."/>Time is an imaginary number.<br>
+<input type="radio" name="question11" id="q11a4" value="d."/>It has four components (one or more of which could be zero).<br>
+</form>
+<div class="quiz">
+<p id="Answer_q11">Choose your answer above and check the button below.</p>
+<hr>
+<p><button id="q11" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Reveal Answer</button></p>
+</div></div>
+```
+
 
 ### Using Imaginary Numbers
 

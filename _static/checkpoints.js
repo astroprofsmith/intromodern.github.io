@@ -153,13 +153,13 @@ function validate_ans(myq) {
     }
 
 
-        if (myq =='q10') {
+    if (myq =='q10') {
 	//  How to set up inverse transform
 	if (document.getElementById('q10a1').checked) {
             document.getElementById('Answer_q10').textContent = "No, you don't want x to point the other way.  The relative motion is in the other direction, not which way x is increasing.";
 	}
 	if (document.getElementById('q10a2').checked) {
-            document.getElementById('Answer_q10').textContent = "Yes, this.  You should also switch which of the two frames you call prime -- the starting frame is always on top.";
+            document.getElementById('Answer_q10').textContent = "Yes, this.  You could also switch which of the two frames you call prime -- the starting frame is always on top.";
 	}
 	if (document.getElementById('q10a3').checked) {
             document.getElementById('Answer_q10').textContent = "No, time axes always point up.";
@@ -168,5 +168,21 @@ function validate_ans(myq) {
             document.getElementById('Answer_q10').textContent = "No, we keep the same orientation of the axes -- we just want to switch the relative direction of the motion.";
 	}
     }
+
+    if (myq =='q11') {
+	//  Properties of four vectors
+	if (document.getElementById('q11a1').checked) {
+            document.getElementById('Answer_q11').textContent = "This is accurate.  All four-vectors will have a negative squared time component.";
+	}
+	if (document.getElementById('q11a2').checked) {
+            document.getElementById('Answer_q11').textContent = "This is accurate.  This follows from the requirement that c be the same in all reference frames.";
+	}
+	if (document.getElementById('q11a3').checked) {
+            document.getElementById('Answer_q11').textContent = "This is not accurate.  You CAN put an i on the time component, but you do not HAVE to.  It's not really an imaginary number, either -- it's a way of keeping track of the minus sign.";
+	}
+	if (document.getElementById('q11a4').checked) {
+            document.getElementById('Answer_q11').textContent = "This is accurate.  We do not always write down all four components, but they are there.";
+	}
+    }    
     
 }
