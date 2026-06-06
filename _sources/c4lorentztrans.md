@@ -288,6 +288,24 @@ in {numref}`stwithvecfig` -- if the velocity were in the opposite
 direction, the $\beta_R$ would become $-\beta_R$, the **inverse
 Lorentz transformation**.
 
+```{admonition} Checkpoint
+If the primed frame is moving at a speed of 0.867 relative to the unprimed frame, what are the numbers that go into the Lorentz matrix?
+<div id="012">
+<form name="radioForm" action="#" method="get" id="choiceMyform10">
+<input type="radio" name="question12" id="q12a1" value="a."/>0.87,8.1<br>
+<input type="radio" name="question12" id="q12a2" value="b."/>0.13,7.7<br>
+<input type="radio" name="question12" id="q12a3" value="c."/>2.0,5.4<br>
+<input type="radio" name="question12" id="q12a4" value="d."/>2.0,1.7<br>
+</form>
+<div class="quiz">
+<p id="Answer_q12">Choose your answer above and check the button below.</p>
+<hr>
+<p><button id="q12" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Reveal Answer</button></p>
+</div></div>
+```
+
 ## Examples of Lorentz Transformations
 
 ### Transform a Displacement Four-vector
