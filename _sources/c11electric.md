@@ -818,6 +818,39 @@ At this point, you may wish to go back to [Chapter 3](ch4vec) and re-read the
 [section on Einstein notation](secEinNot).
 ```
 
+It is worth stressing that in Einstein notation, both the off-diagonal
+elements are negative, while in the "$i$" notation, only the
+upper-right element was negative.  This is because when you use the
+matrix multiplication rules, you work across the row of the matrix and
+down the column of the vector.  So if you are looking at the first row
+(the time component), you pick up an $i$ from the first row of the
+vector in the first term, and then an $i$ from the second column of
+the matrix in the second term (no $i$ in the second row of the vector)
+so that both terms have an $i$.  The minus sign in the matrix ensures
+that the second term in the result is negative.  This minus sign stays
+when we switch to Einstein notation, to ensure we get the same result
+without the $i$.  When you move to the second row, you don't want an
+$i$ in the result (it's a space term), so the $i$ in the first column
+of the matrix multiplies the $i$ in the first row of the vector,
+yielding a minus sign.  In the Einstein notation, there's no $i$ to
+square, so there needs to be a minus in the matrix, to make sure the
+result is the same in either notation.  
+
+If you're comfortable with the Lorentz transformation in Einstein
+notation, now, the next step is to figure out how to use the Lorentz
+transformation to represent how the fields transform.  We know that the
+Lorentz transformation is the correct, relativistic, way to express
+how quantities we know in a particular frame of reference will be
+expressed in the context of a second frame of reference moving at
+constant velocity relative to the first frame.  In previous chapters,
+we expressed the quantities of displacement, velocity, momentum, and
+force as four-vectors, but it's not clear how $\vec{E}$ and $\vec{B}$
+might relate to the four-vector concept.  The transformations summarized
+at the start of this section don't look like the space and time transforms
+we have seen before, although we do see $\gamma_R$ and $\gamma_R\beta_R$.
+The six terms in $\vec{E}$ and $\vec{B}$ can't simply be stuck into the
+four components of a four-vector.
+
 At this point, many books jump to the answer and show that it works.
 While there is nothing formally wrong with that, it's not very
 emotionally satisfying.  I'd like to give you some kind of intuition

@@ -1053,6 +1053,37 @@ prime four-vector, you would have</p>
 <p>At this point, you may wish to go back to <a class="reference internal" href="c3fourvectors.html#ch4vec"><span class="std std-ref">Chapter 3</span></a> and re-read the
 <a class="reference internal" href="c3fourvectors.html#seceinnot"><span class="std std-ref">section on Einstein notation</span></a>.</p>
 </div>
+<p>It is worth stressing that in Einstein notation, both the off-diagonal
+elements are negative, while in the “<span class="math notranslate nohighlight">\(i\)</span>” notation, only the
+upper-right element was negative.  This is because when you use the
+matrix multiplication rules, you work across the row of the matrix and
+down the column of the vector.  So if you are looking at the first row
+(the time component), you pick up an <span class="math notranslate nohighlight">\(i\)</span> from the first row of the
+vector in the first term, and then an <span class="math notranslate nohighlight">\(i\)</span> from the second column of
+the matrix in the second term (no <span class="math notranslate nohighlight">\(i\)</span> in the second row of the vector)
+so that both terms have an <span class="math notranslate nohighlight">\(i\)</span>.  The minus sign in the matrix ensures
+that the second term in the result is negative.  This minus sign stays
+when we switch to Einstein notation, to ensure we get the same result
+without the <span class="math notranslate nohighlight">\(i\)</span>.  When you move to the second row, you don’t want an
+<span class="math notranslate nohighlight">\(i\)</span> in the result (it’s a space term), so the <span class="math notranslate nohighlight">\(i\)</span> in the first column
+of the matrix multiplies the <span class="math notranslate nohighlight">\(i\)</span> in the first row of the vector,
+yielding a minus sign.  In the Einstein notation, there’s no <span class="math notranslate nohighlight">\(i\)</span> to
+square, so there needs to be a minus in the matrix, to make sure the
+result is the same in either notation.</p>
+<p>If you’re comfortable with the Lorentz transformation in Einstein
+notation, now, the next step is to figure out how to use the Lorentz
+transformation to represent how the fields transform.  We know that the
+Lorentz transformation is the correct, relativistic, way to express
+how quantities we know in a particular frame of reference will be
+expressed in the context of a second frame of reference moving at
+constant velocity relative to the first frame.  In previous chapters,
+we expressed the quantities of displacement, velocity, momentum, and
+force as four-vectors, but it’s not clear how <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span>
+might relate to the four-vector concept.  The transformations summarized
+at the start of this section don’t look like the space and time transforms
+we have seen before, although we do see <span class="math notranslate nohighlight">\(\gamma_R\)</span> and <span class="math notranslate nohighlight">\(\gamma_R\beta_R\)</span>.
+The six terms in <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> can’t simply be stuck into the
+four components of a four-vector.</p>
 <p>At this point, many books jump to the answer and show that it works.
 While there is nothing formally wrong with that, it’s not very
 emotionally satisfying.  I’d like to give you some kind of intuition
