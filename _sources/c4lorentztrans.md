@@ -127,10 +127,7 @@ L_{30} & L_{31} & L_{32} & L_{33}
 \end{bmatrix}
 ```
 The problem then is to figure out what the 16 numbers in ${\cal L}$
-are that will achieve our goal.  Note this is not quite the same thing as
-Einstein notation -- in later chapters we'll see how the sub and superscript
-notation works for the Lorentz matrix, but here I'm just using $\alpha$
-and $\beta$ as ways of counting rows and columns.
+are that will achieve our goal. 
 
 ```{warning} 
 Note that the $\beta$ used as the index counter of the matrices has
@@ -139,6 +136,21 @@ $\beta$ at all.  Sometimes other Greek letters are used for counting
 indices, $\mu$ and $\nu$ in particular.  You must notice how the
 letter is being used to be able to tell whether $\beta$ is a speed or
 a matrix index.
+```
+
+```{note}
+I have used two Greek letter subscripts to keep track of the rows and
+columns in Equation {eq}`lormat1`, but this is not the same thing as
+Einstein notation -- in [Chapter 11](chEMten) we'll see how the sub
+and superscript notation works for the Lorentz matrix.  Much like how
+the covariant four-vector is a row and the contravariant four-vector
+is a column, the matrix has covariant rows and contravariant columns,
+so the Lorentz transformation matrix is called $\Lambda^\alpha_\beta$.
+If you multiply $\Lambda^\alpha_\beta$ by a contravariant four-vector,
+you get a new contravariant four-vector
+Here I'm just using $\alpha$ and $\beta$ as ways of counting rows and
+columns respectively, so I call it ${\cal L}$ and not $\Lambda$ to try
+to keep the notation distinct.
 ```
 
 ## Determining the Elements

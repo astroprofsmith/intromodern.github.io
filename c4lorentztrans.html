@@ -60,7 +60,7 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c4lorentztrans';</script>
-    <script src="_static/checkpoints.js?v=3d847b96"></script>
+    <script src="_static/checkpoints.js?v=e3705ba0"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="5. Properties of Spacetime Diagrams" href="c5spacetime.html" />
@@ -478,10 +478,7 @@ L_{20} &amp; L_{21} &amp; L_{22} &amp; L_{23}\\
 L_{30} &amp; L_{31} &amp; L_{32} &amp; L_{33}
 \end{bmatrix}\end{split}\]</div>
 <p>The problem then is to figure out what the 16 numbers in <span class="math notranslate nohighlight">\({\cal L}\)</span>
-are that will achieve our goal.  Note this is not quite the same thing as
-Einstein notation – in later chapters we’ll see how the sub and superscript
-notation works for the Lorentz matrix, but here I’m just using <span class="math notranslate nohighlight">\(\alpha\)</span>
-and <span class="math notranslate nohighlight">\(\beta\)</span> as ways of counting rows and columns.</p>
+are that will achieve our goal.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Note that the <span class="math notranslate nohighlight">\(\beta\)</span> used as the index counter of the matrices has
@@ -490,6 +487,21 @@ nothing to do with the relative velocity <span class="math notranslate nohighlig
 indices, <span class="math notranslate nohighlight">\(\mu\)</span> and <span class="math notranslate nohighlight">\(\nu\)</span> in particular.  You must notice how the
 letter is being used to be able to tell whether <span class="math notranslate nohighlight">\(\beta\)</span> is a speed or
 a matrix index.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I have used two Greek letter subscripts to keep track of the rows and
+columns in Equation <a class="reference internal" href="#equation-lormat1">(4.2)</a>, but this is not the same thing as
+Einstein notation – in <a class="reference internal" href="c11electric.html#chemten"><span class="std std-ref">Chapter 11</span></a> we’ll see how the sub
+and superscript notation works for the Lorentz matrix.  Much like how
+the covariant four-vector is a row and the contravariant four-vector
+is a column, the matrix has covariant rows and contravariant columns,
+so the Lorentz transformation matrix is called <span class="math notranslate nohighlight">\(\Lambda^\alpha_\beta\)</span>.
+If you multiply <span class="math notranslate nohighlight">\(\Lambda^\alpha_\beta\)</span> by a contravariant four-vector,
+you get a new contravariant four-vector
+Here I’m just using <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> as ways of counting rows and
+columns respectively, so I call it <span class="math notranslate nohighlight">\({\cal L}\)</span> and not <span class="math notranslate nohighlight">\(\Lambda\)</span> to try
+to keep the notation distinct.</p>
 </div>
 </section>
 <section id="determining-the-elements">

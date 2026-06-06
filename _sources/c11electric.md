@@ -778,7 +778,7 @@ B'_y = \gamma_R B_y + \gamma_R \frac{v_R}{c^2}E_z
 E'_z = \gamma_R E_z  + \gamma_Rv_RB_y\hspace{3cm}
 B'_z = \gamma_R B_z - \gamma_R \frac{v_R}{c^2}E_y
 ```
-and recall that the Lorentz matrix can be written as
+and in Einstein notation the Lorentz matrix can be written as
 ```{math}
 :label: lormatE
 \Lambda^\alpha_\beta =
@@ -789,13 +789,29 @@ and recall that the Lorentz matrix can be written as
 0 & 0 & 0 & 1
 \end{pmatrix}
 ```
-Note now I have switched to using Einstein notation and have left out
-the complex number $i$.  The letter $\alpha$ refers to the row number
-of the matrix, and the $\beta$ refers to the column number (0 through
-3, of course).  So $\Lambda^0_1 = -\gamma_R\beta_R$ (first row, second
-column).  Of course, this is also the same number as $\Lambda^1_0$ --
-with the complex number notation, these numbers had opposite sign, to
-account for the $i^2$, but that is not necessary in this notation.
+
+Note that in Einstein notation I have left out the complex number $i$.
+The letter $\alpha$ refers to the row number of the matrix, and the
+$\beta$ refers to the column number (0 through 3, of course).  So
+$\Lambda^0_1 = -\gamma_R\beta_R$ (first row, second column).  Of
+course, this is also the same number as $\Lambda^1_0$ -- with the
+complex number notation, these numbers had opposite sign, to account
+for the $i^2$, but that is not necessary in this notation.  The
+Lorentz transformation (Equation {eq}`eqlort`), then, in this
+notation, looks like
+```{math}
+:label: einlort
+dx^{\prime\alpha} = \Lambda^\alpha_\beta dx^\beta.
+```
+Pick a row number ($\alpha$) and then multiply and add across
+all the columns of that row in the matrix with the rows in the
+four-vector.  So, for example, to get the fourth component of the
+prime four-vector, you would have
+```{math}
+:label: einlortcomp
+dx^{\prime 3} = \Lambda^3_0 dx^0+\Lambda^3_1 dx^1+\Lambda^3_2 dx^2+\Lambda^3_3 dx^3.
+```
+
 
 ```{note}
 At this point, you may wish to go back to [Chapter 3](ch4vec) and re-read the
@@ -891,7 +907,7 @@ F'^{01} =
 \beta_R^2\gamma_R^2 F^{10} 
 -\gamma_R^2\beta_R F^{11} 
 ```
-Now, this looks a bit simpler.  The next clue is the fact that there's
+This looks a bit simpler.  The next clue is the fact that there's
 a $\gamma_R^2 + \gamma_R^2\beta_R^2$ in there.  If it were just
 $\gamma_R^2 - \gamma_R^2\beta_R^2$, that would just be *ONE*!!!  So,
 what if (crazy thought), what if $F^{01}=-F^{10}$?  Then the $\gamma$

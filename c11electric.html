@@ -60,7 +60,7 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c11electric';</script>
-    <script src="_static/checkpoints.js?v=597e3a68"></script>
+    <script src="_static/checkpoints.js?v=e3705ba0"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="12. Relativistic Electrodynamics" href="c12dynamic.html" />
@@ -1022,7 +1022,7 @@ B'_y = \gamma_R B_y + \gamma_R \frac{v_R}{c^2}E_z\]</div>
 <div class="math notranslate nohighlight">
 \[E'_z = \gamma_R E_z  + \gamma_Rv_RB_y\hspace{3cm}
 B'_z = \gamma_R B_z - \gamma_R \frac{v_R}{c^2}E_y\]</div>
-<p>and recall that the Lorentz matrix can be written as</p>
+<p>and in Einstein notation the Lorentz matrix can be written as</p>
 <div class="math notranslate nohighlight" id="equation-lormate">
 <span class="eqno">(11.31)<a class="headerlink" href="#equation-lormate" title="Link to this equation">#</a></span>\[\begin{split}\Lambda^\alpha_\beta =
 \begin{pmatrix}
@@ -1031,13 +1031,23 @@ B'_z = \gamma_R B_z - \gamma_R \frac{v_R}{c^2}E_y\]</div>
 0 &amp; 0 &amp; 1 &amp; 0\\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{pmatrix}\end{split}\]</div>
-<p>Note now I have switched to using Einstein notation and have left out
-the complex number <span class="math notranslate nohighlight">\(i\)</span>.  The letter <span class="math notranslate nohighlight">\(\alpha\)</span> refers to the row number
-of the matrix, and the <span class="math notranslate nohighlight">\(\beta\)</span> refers to the column number (0 through
-3, of course).  So <span class="math notranslate nohighlight">\(\Lambda^0_1 = -\gamma_R\beta_R\)</span> (first row, second
-column).  Of course, this is also the same number as <span class="math notranslate nohighlight">\(\Lambda^1_0\)</span> –
-with the complex number notation, these numbers had opposite sign, to
-account for the <span class="math notranslate nohighlight">\(i^2\)</span>, but that is not necessary in this notation.</p>
+<p>Note that in Einstein notation I have left out the complex number <span class="math notranslate nohighlight">\(i\)</span>.
+The letter <span class="math notranslate nohighlight">\(\alpha\)</span> refers to the row number of the matrix, and the
+<span class="math notranslate nohighlight">\(\beta\)</span> refers to the column number (0 through 3, of course).  So
+<span class="math notranslate nohighlight">\(\Lambda^0_1 = -\gamma_R\beta_R\)</span> (first row, second column).  Of
+course, this is also the same number as <span class="math notranslate nohighlight">\(\Lambda^1_0\)</span> – with the
+complex number notation, these numbers had opposite sign, to account
+for the <span class="math notranslate nohighlight">\(i^2\)</span>, but that is not necessary in this notation.  The
+Lorentz transformation (Equation <a class="reference internal" href="c4lorentztrans.html#equation-eqlort">(4.1)</a>), then, in this
+notation, looks like</p>
+<div class="math notranslate nohighlight" id="equation-einlort">
+<span class="eqno">(11.32)<a class="headerlink" href="#equation-einlort" title="Link to this equation">#</a></span>\[dx^{\prime\alpha} = \Lambda^\alpha_\beta dx^\beta.\]</div>
+<p>Pick a row number (<span class="math notranslate nohighlight">\(\alpha\)</span>) and then multiply and add across
+all the columns of that row in the matrix with the rows in the
+four-vector.  So, for example, to get the fourth component of the
+prime four-vector, you would have</p>
+<div class="math notranslate nohighlight" id="equation-einlortcomp">
+<span class="eqno">(11.33)<a class="headerlink" href="#equation-einlortcomp" title="Link to this equation">#</a></span>\[dx^{\prime 3} = \Lambda^3_0 dx^0+\Lambda^3_1 dx^1+\Lambda^3_2 dx^2+\Lambda^3_3 dx^3.\]</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>At this point, you may wish to go back to <a class="reference internal" href="c3fourvectors.html#ch4vec"><span class="std std-ref">Chapter 3</span></a> and re-read the
@@ -1060,7 +1070,7 @@ by a three-row column.</p>
 <p>If it were as simple as performing two Lorentz transformations, you
 would write that as</p>
 <div class="math notranslate nohighlight" id="equation-twolormat">
-<span class="eqno">(11.32)<a class="headerlink" href="#equation-twolormat" title="Link to this equation">#</a></span>\[\Lambda^\alpha_\beta\Lambda^\mu_\nu\]</div>
+<span class="eqno">(11.34)<a class="headerlink" href="#equation-twolormat" title="Link to this equation">#</a></span>\[\Lambda^\alpha_\beta\Lambda^\mu_\nu\]</div>
 <p>where the <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\mu\)</span> refer to the rows and the <span class="math notranslate nohighlight">\(\beta\)</span>
 and <span class="math notranslate nohighlight">\(\nu\)</span> refer to the columns.</p>
 <p>This short equation represents multiplying two <span class="math notranslate nohighlight">\(4\times 4\)</span> matrices
@@ -1073,7 +1083,7 @@ result would be <em>another</em> <span class="math notranslate nohighlight">\(4\
 as the values of the same matrix, just in the new relative reference frame.
 Mathematically, that would be</p>
 <div class="math notranslate nohighlight" id="equation-twotransforms">
-<span class="eqno">(11.33)<a class="headerlink" href="#equation-twotransforms" title="Link to this equation">#</a></span>\[F'^{\alpha\mu} = \Lambda^\alpha_\beta\Lambda^\mu_\nu F^{\beta\nu}\]</div>
+<span class="eqno">(11.35)<a class="headerlink" href="#equation-twotransforms" title="Link to this equation">#</a></span>\[F'^{\alpha\mu} = \Lambda^\alpha_\beta\Lambda^\mu_\nu F^{\beta\nu}\]</div>
 <p>The Einstein notation means that this equation is really representing
 sixteen equations, one for each term in the <span class="math notranslate nohighlight">\(4\times 4\)</span> matrix that
 results from all these multiplications.  There’s a double sum over
@@ -1081,7 +1091,7 @@ results from all these multiplications.  There’s a double sum over
 unchanged from the right side to the left.  So a single one of these
 sixteen terms would look like</p>
 <div class="math notranslate nohighlight" id="equation-oneofsixteen">
-<span class="eqno">(11.34)<a class="headerlink" href="#equation-oneofsixteen" title="Link to this equation">#</a></span>\[\begin{split}F'^{01} =
+<span class="eqno">(11.36)<a class="headerlink" href="#equation-oneofsixteen" title="Link to this equation">#</a></span>\[\begin{split}F'^{01} =
 \Lambda^0_0\Lambda^1_0 F^{00} +
 \Lambda^0_0\Lambda^1_1 F^{01} +
 \Lambda^0_0\Lambda^1_2 F^{02} +
@@ -1101,40 +1111,40 @@ sixteen terms would look like</p>
 <p>You have to think about Einstein notation like writing a computer
 program: once you assign <span class="math notranslate nohighlight">\(\alpha\)</span> a particular value, like
 <span class="math notranslate nohighlight">\(0\)</span>, then that value has to go in everywhere that there’s an <span class="math notranslate nohighlight">\(\alpha\)</span>.
-So you can see in Equation <a class="reference internal" href="#equation-oneofsixteen">(11.34)</a> that there’s a <span class="math notranslate nohighlight">\(1\)</span>
+So you can see in Equation <a class="reference internal" href="#equation-oneofsixteen">(11.36)</a> that there’s a <span class="math notranslate nohighlight">\(1\)</span>
 in the <span class="math notranslate nohighlight">\(\mu\)</span> location, so everywhere in the huge sum where there
 would be a <span class="math notranslate nohighlight">\(\mu\)</span>, there’s a <span class="math notranslate nohighlight">\(1\)</span> in each of those locations (the
 superscript on the second <span class="math notranslate nohighlight">\(\Lambda\)</span>).  The lower index on the
 second <span class="math notranslate nohighlight">\(\Lambda\)</span> is always the second number in the superscript
 on the <span class="math notranslate nohighlight">\(F\)</span>, because those positions both have a <span class="math notranslate nohighlight">\(\nu\)</span> in Equation
-<a class="reference internal" href="#equation-twotransforms">(11.33)</a>.</p>
+<a class="reference internal" href="#equation-twotransforms">(11.35)</a>.</p>
 <p>Now, this looks like a huge mess, but luckily for us, most of
 the numbers in the <span class="math notranslate nohighlight">\(\Lambda\)</span> matrix (Equation <a class="reference internal" href="#equation-lormate">(11.31)</a>) are
 zero!  All the examples of <span class="math notranslate nohighlight">\(\Lambda\)</span> elements in the specific
-case of Equation <a class="reference internal" href="#equation-oneofsixteen">(11.34)</a> are either in the first
+case of Equation <a class="reference internal" href="#equation-oneofsixteen">(11.36)</a> are either in the first
 or second row.  And the last two columns are both zeros!
 If we plug in for the elements of <span class="math notranslate nohighlight">\(\Lambda\)</span>, we get</p>
 <div class="math notranslate nohighlight" id="equation-killzeros">
-<span class="eqno">(11.35)<a class="headerlink" href="#equation-killzeros" title="Link to this equation">#</a></span>\[F'^{01} =
+<span class="eqno">(11.37)<a class="headerlink" href="#equation-killzeros" title="Link to this equation">#</a></span>\[F'^{01} =
 -\gamma_R^2\beta_R F^{00} +
 \gamma_R^2 F^{01} +
 \beta_R^2\gamma_R^2 F^{10} 
 -\gamma_R^2\beta_R F^{11} \]</div>
-<p>Now, this looks a bit simpler.  The next clue is the fact that there’s
+<p>This looks a bit simpler.  The next clue is the fact that there’s
 a <span class="math notranslate nohighlight">\(\gamma_R^2 + \gamma_R^2\beta_R^2\)</span> in there.  If it were just
 <span class="math notranslate nohighlight">\(\gamma_R^2 - \gamma_R^2\beta_R^2\)</span>, that would just be <em>ONE</em>!!!  So,
 what if (crazy thought), what if <span class="math notranslate nohighlight">\(F^{01}=-F^{10}\)</span>?  Then the <span class="math notranslate nohighlight">\(\gamma\)</span>
 and <span class="math notranslate nohighlight">\(\beta\)</span> factors would disappear, and we’d just have <span class="math notranslate nohighlight">\(F^{01}\)</span> in
 there.</p>
 <div class="math notranslate nohighlight" id="equation-antisym">
-<span class="eqno">(11.36)<a class="headerlink" href="#equation-antisym" title="Link to this equation">#</a></span>\[F'^{01} = F^{01}
+<span class="eqno">(11.38)<a class="headerlink" href="#equation-antisym" title="Link to this equation">#</a></span>\[F'^{01} = F^{01}
 -\gamma_R^2\beta_R (F^{00} + F^{11} )\]</div>
 <p>Now, we know that <span class="math notranslate nohighlight">\(E'_x=E_x\)</span>, so this is starting to look like that.
 What do with the last part, though?  Well, if <span class="math notranslate nohighlight">\(F^{01}=-F^{10}\)</span>, that
 suggests that <span class="math notranslate nohighlight">\(F^{00}=0\)</span>, as that’s an example of something that is
 equal to negative itself.  If the diagonal elements are all zero, and
 the matrix as a whole is anti-symmetric, then our specific example of
-Equation <a class="reference internal" href="#equation-oneofsixteen">(11.34)</a> has just turned into <span class="math notranslate nohighlight">\(E'_x = E_x\)</span>!  Not
+Equation <a class="reference internal" href="#equation-oneofsixteen">(11.36)</a> has just turned into <span class="math notranslate nohighlight">\(E'_x = E_x\)</span>!  Not
 only that, but if the matrix is indeed anti-symmetric, then instead of
 sixteen elements, you can discount the diagonal (because those four
 are all zeros), which leaves twelve, and if half of them are equal and
@@ -1144,10 +1154,10 @@ opposite to the other half, we actually only have (drumroll) SIX!!!</p>
 <span class="math notranslate nohighlight">\(F^{\alpha\mu}\)</span> could well be <span class="math notranslate nohighlight">\(E_x\)</span>, which suggests that the other
 five remaining components of <span class="math notranslate nohighlight">\(F^{\alpha\mu}\)</span> could well be the other
 five components of <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span>.</p>
-<p>So let’s go back to Equation <a class="reference internal" href="#equation-oneofsixteen">(11.34)</a> and rewrite it
+<p>So let’s go back to Equation <a class="reference internal" href="#equation-oneofsixteen">(11.36)</a> and rewrite it
 to allow for an anti-symmetric matrix:</p>
 <div class="math notranslate nohighlight" id="equation-oneofsixteenanti">
-<span class="eqno">(11.37)<a class="headerlink" href="#equation-oneofsixteenanti" title="Link to this equation">#</a></span>\[\begin{split}F'^{\alpha\mu} =
+<span class="eqno">(11.39)<a class="headerlink" href="#equation-oneofsixteenanti" title="Link to this equation">#</a></span>\[\begin{split}F'^{\alpha\mu} =
 (\Lambda^\alpha_0\Lambda^\mu_1 -\Lambda^\alpha_1\Lambda^\mu_0) F^{01}+
 (\Lambda^\alpha_0\Lambda^\mu_2 -\Lambda^\alpha_2\Lambda^\mu_0) F^{02} +\\
 (\Lambda^\alpha_0\Lambda^\mu_3 -\Lambda^\alpha_3\Lambda^\mu_0) F^{03} +
@@ -1158,7 +1168,7 @@ to allow for an anti-symmetric matrix:</p>
 If <span class="math notranslate nohighlight">\(F^{01}\)</span> might be <span class="math notranslate nohighlight">\(E_x\)</span>, maybe <span class="math notranslate nohighlight">\(F^{02}\)</span> is <span class="math notranslate nohighlight">\(E_y\)</span>, and we know what
 that is supposed to be.  So let’s look at <span class="math notranslate nohighlight">\(F'^{02}\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-oneofsixteen02">
-<span class="eqno">(11.38)<a class="headerlink" href="#equation-oneofsixteen02" title="Link to this equation">#</a></span>\[\begin{split}F'^{02} =
+<span class="eqno">(11.40)<a class="headerlink" href="#equation-oneofsixteen02" title="Link to this equation">#</a></span>\[\begin{split}F'^{02} =
 (\Lambda^0_0\Lambda^2_1 -\Lambda^0_1\Lambda^2_0) F^{01}+
 (\Lambda^0_0\Lambda^2_2 -\Lambda^0_2\Lambda^2_0) F^{02} +\\
 (\Lambda^0_0\Lambda^2_3 -\Lambda^0_3\Lambda^2_0) F^{03} +
@@ -1169,7 +1179,7 @@ that is supposed to be.  So let’s look at <span class="math notranslate nohigh
 with a 2 or 3 will be zero, unless it’s a 22 or 33, in which case
 it’s 1.</p>
 <div class="math notranslate nohighlight" id="equation-oneofsixteen02b">
-<span class="eqno">(11.39)<a class="headerlink" href="#equation-oneofsixteen02b" title="Link to this equation">#</a></span>\[\begin{split}F'^{02} =
+<span class="eqno">(11.41)<a class="headerlink" href="#equation-oneofsixteen02b" title="Link to this equation">#</a></span>\[\begin{split}F'^{02} =
 (\gamma_R \times 0 + \beta_R \gamma_R \times 0) F^{01}+
 (\gamma_R \times 1 - 0 \times 0) F^{02} +\\
 (1 \times 0 - 0 \times 0) F^{03} +
@@ -1177,7 +1187,7 @@ it’s 1.</p>
 (-\gamma_R\beta_R\times 0 - 0\times 0) F^{13} +
 (0\times 0 - 0\times 1) F^{23} \end{split}\]</div>
 <div class="math notranslate nohighlight" id="equation-oneofsixteen02c">
-<span class="eqno">(11.40)<a class="headerlink" href="#equation-oneofsixteen02c" title="Link to this equation">#</a></span>\[F'^{02} = \gamma_R F^{02} -\gamma_R\beta_R F^{12}\]</div>
+<span class="eqno">(11.42)<a class="headerlink" href="#equation-oneofsixteen02c" title="Link to this equation">#</a></span>\[F'^{02} = \gamma_R F^{02} -\gamma_R\beta_R F^{12}\]</div>
 <p>If you compare this result with Equation <a class="reference internal" href="#equation-eprimey">(11.26)</a>, that suggests
 I can make this work if <span class="math notranslate nohighlight">\(F^{02}\)</span> is <span class="math notranslate nohighlight">\(E_y/c\)</span> and <span class="math notranslate nohighlight">\(F^{12} = B_z\)</span>.  I
 need to divide <span class="math notranslate nohighlight">\(E_y\)</span> by <span class="math notranslate nohighlight">\(c\)</span> so that I can multiply the whole equation
@@ -1197,9 +1207,9 @@ becomes irrelevant.</p>
 </div>
 <p>You can go through all four remaining elements of <span class="math notranslate nohighlight">\(F^{\alpha\mu}\)</span> and
 figure out that one way of writing <span class="math notranslate nohighlight">\(F\)</span> that will satisfy Equation
-<a class="reference internal" href="#equation-twotransforms">(11.33)</a> is:</p>
+<a class="reference internal" href="#equation-twotransforms">(11.35)</a> is:</p>
 <div class="math notranslate nohighlight" id="equation-emtensorfin">
-<span class="eqno">(11.41)<a class="headerlink" href="#equation-emtensorfin" title="Link to this equation">#</a></span>\[\begin{split}\boxed{
+<span class="eqno">(11.43)<a class="headerlink" href="#equation-emtensorfin" title="Link to this equation">#</a></span>\[\begin{split}\boxed{
 F^{\alpha\mu} =
 \begin{pmatrix}
 0 &amp; E_x/c &amp; E_y/c &amp; E_z/c\\
@@ -1210,18 +1220,18 @@ F^{\alpha\mu} =
 }\end{split}\]</div>
 <p>You can (and should) check that you will reproduce the the other four
 of the six transform equations summarized at the top of this section
-if you plug this matrix into Equation <a class="reference internal" href="#equation-twotransforms">(11.33)</a>.  This object
+if you plug this matrix into Equation <a class="reference internal" href="#equation-twotransforms">(11.35)</a>.  This object
 is called “the electromagnetic field tensor”, and it combines both
 <span class="math notranslate nohighlight">\(\vec{E}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> into a single object, much like how <span class="math notranslate nohighlight">\(d\vec{x}\)</span>
 combines <span class="math notranslate nohighlight">\(dx\)</span>, <span class="math notranslate nohighlight">\(dy\)</span>, and <span class="math notranslate nohighlight">\(dz\)</span> into a single object.</p>
-<p>Now, I pulled a fast one on you.  When I hit Equation <a class="reference internal" href="#equation-antisym">(11.36)</a>, I
+<p>Now, I pulled a fast one on you.  When I hit Equation <a class="reference internal" href="#equation-antisym">(11.38)</a>, I
 said “well, gosh, we want <span class="math notranslate nohighlight">\(E_x\)</span> to stay the same, so this might be <span class="math notranslate nohighlight">\(E_x\)</span>!”.
 But if you were paying attention, you might have noticed that the entire
 sequence of logic following that point could flow just as well if we started
 from <span class="math notranslate nohighlight">\(B'_x=B_x\)</span> instead of going to <span class="math notranslate nohighlight">\(E_x\)</span> first!  If you start with <span class="math notranslate nohighlight">\(B_x\)</span>,
 you would construct the following matrix:</p>
 <div class="math notranslate nohighlight" id="equation-dualtensorfin">
-<span class="eqno">(11.42)<a class="headerlink" href="#equation-dualtensorfin" title="Link to this equation">#</a></span>\[\begin{split}\boxed{
+<span class="eqno">(11.44)<a class="headerlink" href="#equation-dualtensorfin" title="Link to this equation">#</a></span>\[\begin{split}\boxed{
 G^{\alpha\mu} =
 \begin{pmatrix}
 0 &amp; B_x &amp; B_y &amp; B_z\\
@@ -1294,14 +1304,14 @@ Say that a little piece of it <span class="math notranslate nohighlight">\(dx\)<
 <span class="math notranslate nohighlight">\(yz\)</span> plane of a piece of line charge at the origin would be</p></li>
 </ol>
 <div class="math notranslate nohighlight" id="equation-linee">
-<span class="eqno">(11.43)<a class="headerlink" href="#equation-linee" title="Link to this equation">#</a></span>\[d\vec{E} = \frac{dx \lambda}{4\pi\epsilon_0(y^2+z^2)^{3/2}}(y\cos{\theta}\hat{y}
+<span class="eqno">(11.45)<a class="headerlink" href="#equation-linee" title="Link to this equation">#</a></span>\[d\vec{E} = \frac{dx \lambda}{4\pi\epsilon_0(y^2+z^2)^{3/2}}(y\cos{\theta}\hat{y}
 -z\sin{\theta}\hat{z})\]</div>
 <p>(note the full electric field would be an integral over the whole line,
 but you don’t have to do that for this problem.)  The angle <span class="math notranslate nohighlight">\(\theta\)</span>
 increases counter-clockwise from the <span class="math notranslate nohighlight">\(y\)</span> axis around the <span class="math notranslate nohighlight">\(yz\)</span> plane.</p>
 <p>a) Write out the EM field tensor for this situation.</p>
 <p>b) Carry out a double-Lorentz transformation (Equation
-<a class="reference internal" href="#equation-oneofsixteenanti">(11.37)</a>) on this tensor to derive the fields from this
+<a class="reference internal" href="#equation-oneofsixteenanti">(11.39)</a>) on this tensor to derive the fields from this
 piece of charge in a frame that is moving with a velocity <span class="math notranslate nohighlight">\(\beta
 \hat{x}\)</span> relative to the rest frame.</p>
 <p>c) Compare your answer with the Biot-Savart Law.</p>
