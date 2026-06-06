@@ -196,8 +196,8 @@ $z$ for all vectors are unaffected in all circumstances at all times.  Be cautio
 This means that $dy^\prime = dy$.  However, if we write out the third
 row of Equation {eq}`eqlort`, we get $$dy^\prime = L_{20}icdt+L_{21}dx
 +L_{22}dy + L_{32}dz.$$ The only way this equality can hold for
-**ll* displacement four vectors (which is to say for *any* values
-of $dt$, $dx$, $dy$, *and* $dz$) is if $L_{22}=1$ and the other
+*all* displacement four vectors (which is to say for *any* values
+of $dt$, $dx$, $dy$, *AND* $dz$) is if $L_{22}=1$ and the other
 elements are zero.  The same logic can be applied to the fourth row to
 deduce $L_{33}=1$, so we know the matrix must look like
 ```{math}
@@ -212,12 +212,12 @@ L_{10} & L_{11} & L_{12} & L_{13}\\
 ```
 That takes care of half the numbers in one go!
 
-To get the next set, we have to look at a particular case.  Consider
-the examples at the end of [Chapter 3](ch4vec).  They all involved
-switching from a reference frame where two events were at rest into a
-reference frame in which there would have to be motion for something
-to get from one event to the other.  We know therefore that the
-original four displacement only has a time component:
+To get the next set, we have to look at another particular case.
+Consider the examples at the end of [Chapter 3](ch4vec).  They all
+involved switching from a reference frame where two events were at
+rest into a reference frame in which there would have to be motion for
+something to get from one event to the other.  We know therefore that
+the original four displacement only has a time component:
 ```{math}
 :label: eqrestdx4
 [dx_4] =
