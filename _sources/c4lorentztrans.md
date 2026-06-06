@@ -147,10 +147,10 @@ the covariant four-vector is a row and the contravariant four-vector
 is a column, the matrix has covariant rows and contravariant columns,
 so the Lorentz transformation matrix is called $\Lambda^\alpha_\beta$.
 If you multiply $\Lambda^\alpha_\beta$ by a contravariant four-vector,
-you get a new contravariant four-vector
-Here I'm just using $\alpha$ and $\beta$ as ways of counting rows and
-columns respectively, so I call it ${\cal L}$ and not $\Lambda$ to try
-to keep the notation distinct.
+you get a new contravariant four-vector.  Here I'm just using $\alpha$
+and $\beta$ as ways of counting rows and columns respectively, so I
+call it ${\cal L}$ and not $\Lambda$ to try to keep the notation
+distinct.
 ```
 
 ## Determining the Elements
