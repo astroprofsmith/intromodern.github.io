@@ -132,7 +132,7 @@ function validate_ans(myq) {
             document.getElementById('Answer_q8').textContent = "This is the escape velocity of the Earth.  Still small compared to c.";
 	}
 	if (document.getElementById('q8a4').checked) {
-            document.getElementById('Answer_q8').textContent = "This is the actual speed of light.";
+            document.getElementById('Answer_q8').textContent = "This is the actual speed of light.  beta = 1, not one-half.";
 	}
     }
 
@@ -172,7 +172,7 @@ function validate_ans(myq) {
     if (myq =='q11') {
 	//  Properties of four vectors
 	if (document.getElementById('q11a1').checked) {
-            document.getElementById('Answer_q11').textContent = "This is accurate.  All four-vectors will have a negative squared time component.";
+            document.getElementById('Answer_q11').textContent = "This is accurate.  All four-vectors will have a negative squared time component.  Even if the time component itself is negative, that minus will become plus in the square, while the i (or the covariant term) will ensure a minus.";
 	}
 	if (document.getElementById('q11a2').checked) {
             document.getElementById('Answer_q11').textContent = "This is accurate.  This follows from the requirement that c be the same in all reference frames.";

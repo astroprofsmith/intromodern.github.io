@@ -407,6 +407,12 @@ because it is absolutely necessary in GR, but I am going to stick with
 $i$ until [Chapter 11](chEMten). I mention it here to stress that
 using the $i$ is not the **only** way to keep track of the minus sign.
 
+Once you have the concept of a four-vector, mathematically, it is
+useful to also have a method of displaying them, graphically.  Such a
+graph is called a "spacetime diagram".  I will give a brief
+introduction to them here, and then we will explore their properties
+in much more depth in [Chapter 5](chSTdiag).
+
 ```{note}
 For the purposes of this book, there are only five things you need
 to remember about Einstein notation:
@@ -434,11 +440,7 @@ about electromagnetism and General Relativity, the Einstein notation
 is much easier to work with, so it will come back then.
 ```
 
-Once you have the concept of a four-vector, mathematically, it is
-useful to also have a method of displaying them, graphically.  Such a
-graph is called a "spacetime diagram".  I will give a brief
-introduction to them here, and then we will explore their properties
-in much more depth in [Chapter 5](chSTdiag).
+
 
 ## Spacetime Diagrams
 
