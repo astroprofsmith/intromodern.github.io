@@ -444,7 +444,7 @@ For the following statements, determine whether you think they are true or false
 <div id="015">
 <form name="radioForm" action="#" method="get" id="choiceMyform15">
 <input type="radio" name="question15" id="q15a1" value="a."/>Lightlike intervals always have a slope of 1.<br>
-<input type="radio" name="question15" id="q15a2" value="b."/>Light cones are pinned to a specific event.<br>
+<input type="radio" name="question15" id="q15a2" value="b."/>Light cones are pinned to a specific, unique event.<br>
 <input type="radio" name="question15" id="q15a3" value="c."/>Distance and time separation are defined by the sides of the triangle on a graph.<br>
 <input type="radio" name="question15" id="q15a4" value="d."/>Spacelike intervals are always positive.<br>
 </form>
@@ -504,6 +504,8 @@ ax.text(0.37*5, 1.75*5, "Q")
 ax.text(5.5, 2.5, "P")
 ax.text(0.37*5,0.25, "R")
 ax.text(0.37*5,5.0, "S")
+ax.text(0.37*5,2.5, "T")
+ax.text(0.37*5,3.5, "U")
 ax.set_xlabel("x")
 ax.set_ylabel("ct")
 plt.arrow(4.7,2.5,-2.0,0,head_width=0.15,length_includes_head=True)
@@ -542,11 +544,14 @@ negative, according to the rules under which they are defined in
 
 Bob would therefore conclude that event P happens 6.5 s before event Q
 (halfway between 9 s and 4 s, as indicated by the horizontal arrow).
-Given that he measures light to take 5 s to go out and back, Bob would
-calculate that event P happened 2.5 light seconds away from him.  Bob
-would therefore conclude that to reach Q from P, Asha covered 2.5
-light seconds of distance in 6.5 s of time and is therefore moving at
-5/13 the speed of light, or $\beta_{\rm Asha}=0.385$.
+Let's call T the event on Bob's worldline that he infers to be at the
+same time as P.  Given that he measures light to take 5 s to go out
+and back, Bob would calculate that event P happened 2.5 light seconds
+away from him.  Bob would therefore conclude that to reach Q from P,
+Asha covered 2.5 light seconds of distance in 6.5 s of time and is
+therefore moving at 5/13 the speed of light, or $\beta_{\rm
+Asha}=0.385$ (which means the Lorentz factor between the two reference
+frames is $\gamma_R = 1.0835).
 
 The situation gets more complex when we consider the events from
 Asha's point of view.  The interval between P and Q in this situation,
@@ -571,17 +576,28 @@ worldline.  To consider a symmetric situation, we would have to pick
 an event on Bob's worldline that Asha considers to be simultaneous
 with P, and then compare how their two clocks measure these intervals.
 
-Time dilation tells us that Bob's clock would read 5.5 s before Q at
-the same time (according to Asha) that Asha's clock reads six seconds.
-This is NOT the same event that Bob measures as simultaneous with P,
-because he measures that point to be 6.5 s before Q.  Asha would
+If Asha measures 6 s between P and Q, with no spatial displacement,
+then we can ask how much time according to Bob would look like 6 s to
+Asha.  In other words, if Bob measures a proper time interval of 5.5
+s, Asha would measure 6 s for the same interval (which has a spatial
+displacement in her reference frame), which we get by multiplying 5.5
+s by $\gamma_R$.  If we take Q to be the end of that interval, the
+beginning would be 5.5 s earlier down Bob's worldline.  This event
+(call it U) would be on the blue line in {numref}`BobAshaFig`, between
+P and S.  Asha would say that U is at the same time as P.
+
+This is NOT the same event (T) that Bob measures as simultaneous with
+P, because he measures that point to be 6.5 s before Q.  Asha would
 conclude, symmetrically, that *his* clock is running slow, because
 what takes 6 s for her takes 5.5 s for him.  Bob, on the other hand,
 measures 6.5 s to pass in the time Asha's clock to measure 6 s, as
 derived above.  He concludes her clock is running slow.  The
 disagreement arises because they don't agree on what simultaneous
-means.  This relativity of simultaneity is explored further in
-{numref}`secSimultaneity`.
+means, and they are actually considering different intervals.
+This relativity of simultaneity is explored further in
+{numref}`secSimultaneity`, but this is an example of a case where
+the assumption that you know what is going on outside your light
+cone leads to confusion.
 
 To specifically identify that simultaneous (to her) event on Bob's
 worldline, Asha would have to have her own versions of R and S, where
