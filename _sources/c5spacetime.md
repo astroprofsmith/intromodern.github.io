@@ -680,14 +680,16 @@ The vertical axis is all the events that occur at $x=0$.  A vertical
 worldline represents an object at rest.  Let's say I am an observer at
 rest at the origin, so my worldline is the vertical axis.  If I
 consider the perspective of my friend Dave, who is in a primed
-reference frame moving to the right at $v_R$, each successive event on
-my worldline will shift further to his left, as Dave moves further and
-futher to the right.  So the original axis will tilt left in the
-primed frame.  Furthermore, as Dave walks to the right, successive
-events that are to my right will now be right next to Dave.  If I were
-to draw Dave's worldline on my spacetime diagram, it would be a
-rightward tilting line, and so this line will be the vertical axis in
-Dave's primed frame.
+reference frame moving to the right at $v_R$ (assume Dave and I are at
+the same location at time $t=0$), each successive event on my
+worldline will shift further to his left, as Dave moves further and
+futher to the right.  So the original axis (my vertical worldline)
+will tilt left in the primed frame (Dave's point of view, as I fall
+further and further behind him).  Furthermore, as Dave walks to the
+right, successive events that are to my right will now be at Dave's
+location.  If I were to draw Dave's worldline on my spacetime diagram,
+it would be a rightward tilting line, but this line will be the
+vertical axis in Dave's primed frame.
 
 Therefore, if I want to draw the set of events on the unprimed frame
 that will be the vertical axis in a primed frame, I will draw a tilted
@@ -707,7 +709,7 @@ make up a tilted line in the unprimed frame.  {numref}`fig16events` shows a case
 where the axes are implicitly redrawn every time the reference frame
 is shifted, while {numref}`figaxestilt` is keeping the same original axes while
 showing which events would be on the horizontal and vertical axes, if
-you were to redraw them.
+you were to redraw them.  
 ```
 
 We can show this intuitive prediction mathematically by performing
@@ -847,6 +849,16 @@ something would have to move faster than light to carry the influence
 from one event to the other.  Nature preserves causality, but what
 you think of as "simultaneous" will depend on what reference frame
 you are in.
+
+```{Note}
+It is important to note that this discussion of simultenaeity involves
+the question of whether two events at different locations in space
+happen at the same time (as measured by our lattice of clocks).  If
+two events happen at the same place *and* the same time, then those
+are not actually two events, but only a single event.  For there to be
+two events at all, at least one component of the displacement
+four-vector has to be non-zero.
+```
 
 ## Conclusions from Sets of Events
 
