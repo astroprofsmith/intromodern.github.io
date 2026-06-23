@@ -855,8 +855,12 @@ It is important to note that this discussion of simultenaeity involves
 the question of whether two events at different locations in space
 happen at the same time (as measured by our lattice of clocks).  If
 two events happen at the same place *and* the same time, then those
-are not actually two events, but only a single event.  For there to be
-two events at all, at least one component of the displacement
+are not actually two events, but only a single event, and that can't
+be split into two events in a different reference frame.  There is room
+to discuss whether one interaction is actually two events, which has
+implications for the meaning of Newton's 3rd Law, among other issues,
+but I will save that for [Chapter 10](chForce).  For now, for there
+to be two events at all, at least one component of the displacement
 four-vector has to be non-zero.
 ```
 
