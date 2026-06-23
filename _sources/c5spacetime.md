@@ -551,7 +551,7 @@ away from him.  Bob would therefore conclude that to reach Q from P,
 Asha covered 2.5 light seconds of distance in 6.5 s of time and is
 therefore moving at 5/13 the speed of light, or $\beta_{\rm
 Asha}=0.385$ (which means the Lorentz factor between the two reference
-frames is $\gamma_R = 1.0835).
+frames is $\gamma_R = 1.0835$).
 
 The situation gets more complex when we consider the events from
 Asha's point of view.  The interval between P and Q in this situation,
@@ -564,7 +564,8 @@ s before event Q, not the 6.5 s that Bob has calculated.  Bob would
 therefore conclude that Asha's clock is running a half-second slow,
 consistent with the pithy "moving clocks run slow" adage.  It is also
 consistent with the longer formulation that a clock at rest with
-respect to the two events measures a shorter time interval.
+respect to the two events (Asha's clock) measures a shorter time
+interval (than Bob's clock).
 
 The conceptual challenge comes when considering how to narrate these
 events from Asha's perspective, in which Bob's clock is the one that
@@ -603,11 +604,11 @@ To specifically identify that simultaneous (to her) event on Bob's
 worldline, Asha would have to have her own versions of R and S, where
 she would send and receive a light pulse to reflect off the moment on
 Bob's worldline that measures at 6 s prior to Q in her reference frame
-(by the clocks in her lattice that lie along Bob's worldline).  Let's
-call that event P$_b$.  For Bob, the interval between P$_b$ and Q has
-to be $-(5.5)^2=-30.7$ square light seconds.  Asha would have to agree
-on the interval, but since she has a time component of 6 s, she would
-conclude that Bob is $dx=2.3$ light seconds away at the event P$_b$
+(by the clocks in her lattice that lie along Bob's worldline).  That
+would be event U.  For Bob, the interval between U and Q has to be
+$-(5.5)^2=-30.7$ square light seconds.  Asha would have to agree on
+the interval, but since she has a time component of 6 s, she would
+conclude that Bob is $dx=2.3$ light seconds away at the event U
 ($dx^2 - 36=-30.7$).  Her version of R and S would would therefore
 have to be 1.15 s before and after P on her own clock.  She would
 conclude that Bob traveled 2.3 light seconds in 6 s, for a speed of
@@ -626,6 +627,21 @@ running faster than his.  As also illustrated in
 faster or slower depends on the events you choose to define your
 interval.
 
+In summary, when trying to ask whose clock is running slow, you have
+to be careful that you are considering the same events in each
+reference frame, and that you are not making assumptions that you just
+know what is going on along someone else's world line.  When Bob just
+assumed that T was at the same time as P, and that Asha would agree
+with him, that led to an apparent paradox about which clock was
+"actually" moving.  Although "which clock is moving" will be relative
+and therefore have no absolute answer, there is a unique reference
+frame for any two specific events for which those two events are in
+the same place (at rest).  That breaks the symmetry, because all other
+reference frames are moving with respect to that frame, so we can
+speak sensibily about which clocks are moving and which not, with
+respect to those specific events.  Observers in different frames will
+measure different space and time displacements between two events, but
+they will agree on the relative speeds of the reference frames.
 
 ## How do the Axes Change?
 
