@@ -1198,7 +1198,8 @@ What do you think?  Is the police officer correct, or is Mr. Tompkins?
 3) Show that even when you tilt the axes as in {numref}`figaxestilt`,
 the properties of the Lorentz transformation are such that the new
 axes are still orthogonal, even though they are clearly not
-perpendicular in the figure.
+perpendicular in the figure.  In other words, show that $[dt]^\prime\cdot
+[dx]^\prime = 0$, when expressed in the unprimed variables.
 
 4) The following questions are with regard to {numref}`fig16events`: 
 
