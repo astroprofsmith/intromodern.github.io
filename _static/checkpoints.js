@@ -202,7 +202,7 @@ function validate_ans(myq) {
     }    
 
     if (myq =='q13') {
-	//  this is a template to make new questions
+	//  What changes and what doesn't under a LT
 	if (document.getElementById('q13a1').checked) {
             document.getElementById('Answer_q13').textContent = "Yes, the x-axis value will change.";
 	}
@@ -218,7 +218,25 @@ function validate_ans(myq) {
 	if (document.getElementById('q13a5').checked) {
             document.getElementById('Answer_q13').textContent = "Yes, the displacement will be different, even if the object is stationary -- it won't be stationary in the second frame (plus time dilation will change the time-displacement).";
 	}
+    }
+
+
+    if (myq =='q14') {
+	//  this is a template to make new questions
+	if (document.getElementById('q14a1').checked) {
+            document.getElementById('Answer_q14').textContent = "No, in spacetime diagrams, the vertical axis is time, not height.";
+	}
+	if (document.getElementById('q14a2').checked) {
+            document.getElementById('Answer_q14').textContent = "No, higher up means later.";
+	}
+	if (document.getElementById('q14a3').checked) {
+            document.getElementById('Answer_q14').textContent = "Yes! Lower down means earlier.";
+	}
+	if (document.getElementById('q14a4').checked) {
+            document.getElementById('Answer_q14').textContent = "No, the events would have to be at the same height to be at the same time in this diagram.";
+	}
     }    
+    
 
     if (myq =='qX') {
 	//  this is a template to make new questions
