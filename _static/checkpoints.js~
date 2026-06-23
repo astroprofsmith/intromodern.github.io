@@ -183,6 +183,38 @@ function validate_ans(myq) {
 	if (document.getElementById('q11a4').checked) {
             document.getElementById('Answer_q11').textContent = "This is accurate.  We do not always write down all four components, but they are there.";
 	}
+    }
+
+    if (myq =='q12') {
+	//  Values of the Lorentz Transformation
+	if (document.getElementById('q12a1').checked) {
+            document.getElementById('Answer_q12').textContent = "No.";
+	}
+	if (document.getElementById('q12a2').checked) {
+            document.getElementById('Answer_q12').textContent = "No.";
+	}
+	if (document.getElementById('q12a3').checked) {
+            document.getElementById('Answer_q12').textContent = "No.";
+	}
+	if (document.getElementById('q12a4').checked) {
+            document.getElementById('Answer_q12').textContent = "Yes!  That's it!";
+	}
     }    
-    
+
+
+    if (myq =='qX') {
+	//  this is a template to make new questions
+	if (document.getElementById('qXa1').checked) {
+            document.getElementById('Answer_qX').textContent = "";
+	}
+	if (document.getElementById('qXa2').checked) {
+            document.getElementById('Answer_qX').textContent = "";
+	}
+	if (document.getElementById('qXa3').checked) {
+            document.getElementById('Answer_qX').textContent = "";
+	}
+	if (document.getElementById('qXa4').checked) {
+            document.getElementById('Answer_qX').textContent = "";
+	}
+    }    
 }

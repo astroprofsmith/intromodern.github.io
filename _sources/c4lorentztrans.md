@@ -408,8 +408,8 @@ i0.6~{\rm m}\\
 \end{bmatrix}
 ```
 is shown as a white arrow when $\beta_R=0.0$.  There is a red sphere
-at $[dR_4]_{red} = [i0.1~{\rm m},0.3~{\rm m}]$ and a blue sphere at
-$[dR_4]_{blue} = [i0.4~{\rm m},0.9~{\rm m}]$.  The displacement
+at $[dR_4]_{red} = [i0.3~{\rm m},0.1~{\rm m}]$ and a blue sphere at
+$[dR_4]_{blue} = [i0.9~{\rm m},0.4~{\rm m}]$.  The displacement
 four-vector shows the displacement from red to blue.  If you move the
 slider to a different $\beta_R$, the computer will Lorentz Transform
 the four-position of each sphere and then recalculate the
@@ -458,7 +458,7 @@ The primed observer in example 4.3.1 believes that the unprimed
 observer is moving with speed $v_R = 1.3\times10^8$ m/s in the $-x$
 direction with respect to him. Show that this is a reasonable
 assumption by finding the elements of the inverse Lorentz
-transformation that transform the coinponents she measured for
+transformation that transform the components she measured for
 $[dR4]'$ into those measured by the observer in the unprimed reference
 frame.  In other words, imagine you didn't know $\beta_R$ and find it
 from the given four vectors.
@@ -499,6 +499,26 @@ $$\frac{dx}{cdt}=\frac{1.00~{\rm m}}{3.00~{\rm m}} =
 The factors of $\gamma_R$ cancel, and then you can sove for $\beta_R$
 to get $\beta_R = 0.44$ which means $v_R = 1.3\times10^8$ m/s,
 as expected.
+
+```{admonition} Checkpoint
+For each of the following quantities, will they change or not under a
+Lorentz transformation in the $x$ direction?
+<div id="013">
+<form name="radioForm" action="#" method="get" id="choiceMyform13">
+<input type="radio" name="question13" id="q13a1" value="a."/>The x-component of the displacement of an object.<br>
+<input type="radio" name="question13" id="q13a2" value="b."/>The y-component of the displacement of an object.<br>
+<input type="radio" name="question13" id="q13a3" value="c."/>The speed of an object.<br>
+<input type="radio" name="question13" id="q13a4" value="d."/>The angle at which an object's displacement makes with the x-axis.<br>
+<input type="radio" name="question13" id="q13a5" value="e."/>The displacement of a stationary object after one second.<br>
+</form>
+<div class="quiz">
+<p id="Answer_q13">Think of your answer and click the button below to see my answer.</p>
+<hr>
+<p><button id="q13" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Reveal Answer</button></p>
+</div></div>
+```
 
 
 

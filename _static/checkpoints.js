@@ -201,6 +201,24 @@ function validate_ans(myq) {
 	}
     }    
 
+    if (myq =='q13') {
+	//  this is a template to make new questions
+	if (document.getElementById('q13a1').checked) {
+            document.getElementById('Answer_q13').textContent = "Yes, the x-axis calue will change.";
+	}
+	if (document.getElementById('q13a2').checked) {
+            document.getElementById('Answer_q13').textContent = "No, the y-axis value will not change.";
+	}
+	if (document.getElementById('q13a3').checked) {
+            document.getElementById('Answer_q13').textContent = "Yes, the speed of an object will change, unless it is already going at the speed of light (c).";
+	}
+	if (document.getElementById('q13a4').checked) {
+            document.getElementById('Answer_q13').textContent = "Yes, the angle will change, unless it is zero or pi.";
+	}
+	if (document.getElementById('q13a5').checked) {
+            document.getElementById('Answer_q13').textContent = "Yes, the displacement will be different, even if the object is stationary -- it won't be stationary in the second frame (plus time dilation will change the time-displacement.";
+	}
+    }    
 
     if (myq =='qX') {
 	//  this is a template to make new questions
