@@ -237,6 +237,21 @@ function validate_ans(myq) {
 	}
     }    
     
+    if (myq =='q15') {
+	//  this is a template to make new questions
+	if (document.getElementById('q15a1').checked) {
+            document.getElementById('Answer_q15').textContent = "True.  For light, the sides of the triangle are equal, so the slope is one.";
+	}
+	if (document.getElementById('q15a2').checked) {
+            document.getElementById('Answer_q15').textContent = "False.  EVERY event has its own set of light cones.";
+	}
+	if (document.getElementById('q15a3').checked) {
+            document.getElementById('Answer_q15').textContent = "False.  The DEFINITION comes from calculating with t1 and t2.  We interpret those numbers as lengths of the sides of a triangle in Aristotalean space and time, but those triangle sides are not the definition.";
+	}
+	if (document.getElementById('q15a4').checked) {
+            document.getElementById('Answer_q15').textContent = "True.  Although you could use the convention that the time component (squared) is positive, in the convention I am using in this book, space terms are positive, so if the space displacement is bigger than the time displacement, the difference of the squares will be positive.";
+	}
+    }    
 
     if (myq =='qX') {
 	//  this is a template to make new questions

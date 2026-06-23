@@ -437,6 +437,26 @@ would take eight minutes for the light cone of that event to intersect
 the world line of the Earth, and only then would the horrific darkness
 and bitter cold ensue.  So enjoy your eight minutes!
 
+
+
+```{admonition} Checkpoint
+For the following statements, determine whether you think they are true or false.
+<div id="015">
+<form name="radioForm" action="#" method="get" id="choiceMyform15">
+<input type="radio" name="question15" id="q15a1" value="a."/>Lightlike intervals always have a slope of 1.<br>
+<input type="radio" name="question15" id="q15a2" value="b."/>Light cones are pinned to a specific event.<br>
+<input type="radio" name="question15" id="q15a3" value="c."/>Distance and time separation are defined by the sides of the triangle on a graph.<br>
+<input type="radio" name="question15" id="q15a4" value="d."/>Spacelike intervals are always positive.<br>
+</form>
+<div class="quiz">
+<p id="Answer_q15">Pick a statement, choose your answer, and then click the button.
+<hr>
+<p><button id="q15" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Reveal Answer</button></p>
+</div></div>
+```
+
 ## Example of Intervals
 
 To further understand how intervals and four-vectors are useful,
