@@ -146,6 +146,25 @@ of events, to present patterns in spacetime that will help you improve your
 intuition about the implications that SR demands, which are so contrary to
 our day to day experience.
 
+
+
+```{admonition} Checkpoint
+If one event (call it B) is higher than another (call it A) on a spacetime diagram, then...<div id="014">
+<form name="radioForm" action="#" method="get" id="choiceMyform14">
+<input type="radio" name="question14" id="q14a1" value="a."/>B is higher above the ground than A.<br>
+<input type="radio" name="question14" id="q14a2" value="b."/>B happens earlier than A.<br>
+<input type="radio" name="question14" id="q14a3" value="c."/>B happens later than A.<br>
+<input type="radio" name="question14" id="q14a4" value="d."/>B happens at the same time as A.<br>
+</form>
+<div class="quiz">
+<p id="Answer_q14">Choose the answer you think is correct and then click the button.
+<hr>
+<p><button id="q14" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div></div>
+```
+
 (secIntervalTypes)=
 ## Types of Intervals
 
