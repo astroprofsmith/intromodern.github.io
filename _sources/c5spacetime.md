@@ -1242,10 +1242,10 @@ classifications make intuitive sense, and how do they compare with the
 light cones from the original event?
 
 9) Draw {numref}`BobAshaFig` in the frame of reference where Asha is
-at rest and Bob is moving to the right.  R, P, and S will all be along
-the vertical line representing Asha's worldline, where P is 6 s before
-Q.  Verify the claims in the text about the relative locations of R,
-S, P, and P$_b$.  Calculate $t_1t_2$ to get the interval between P$_b$
-and Q (claimed to be $-30.7$ square light seconds), and compute the
-$dx$ (2.3 light seconds) and $cdt_0$ (5.5 light seconds) that Asha
-would calculate for these events.
+at rest and Bob is moving to the right.  P is now 6 s before Q on
+Asha's line, and the lines between P and R and P and S are still at 45
+degree angles.  Verify the claims in the text about the relative
+locations of R, S, P, and U.  Calculate $t_1t_2$ to get the interval
+between U and Q (claimed to be $-30.7$ square light seconds), and
+compute the $dx$ (2.3 light seconds) and $cdt_0$ (5.5 light seconds)
+that Asha would calculate for these events.
