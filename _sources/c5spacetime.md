@@ -643,6 +643,20 @@ respect to those specific events.  Observers in different frames will
 measure different space and time displacements between two events, but
 they will agree on the relative speeds of the reference frames.
 
+```{Note}
+The story of Bob and Asha can be very confusing.  I strongly recommend
+you make your own version of  {numref}`BobAshaFig` on a piece of
+paper and carry out the calculations step by step yourself as you
+mark each interval on the paper.  If you do it on graph paper, you can
+measure $\Delta t$ and $\Delta x$ with a ruler to verify that you
+are using $t1$ and $t2$ correctly.  Then work through Problem 9,
+below, which asks you to create the whole narrative from Asha's
+frame of reference, to show that she measures the same speed
+for Bob as he does for her, even though they disagree on the
+timing of events.
+```
+
+
 ## How do the Axes Change?
 
 Consider the vertical and horizontal axes in a spacetime diagram.
@@ -1243,9 +1257,11 @@ light cones from the original event?
 
 9) Draw {numref}`BobAshaFig` in the frame of reference where Asha is
 at rest and Bob is moving to the right.  P is now 6 s before Q on
-Asha's line, and the lines between P and R and P and S are still at 45
-degree angles.  Verify the claims in the text about the relative
-locations of R, S, P, and U.  Calculate $t_1t_2$ to get the interval
-between U and Q (claimed to be $-30.7$ square light seconds), and
-compute the $dx$ (2.3 light seconds) and $cdt_0$ (5.5 light seconds)
-that Asha would calculate for these events.
+Asha's line, but now R and S will be on Asha's line, and they will
+both connect to U on Bob's line.  Remember that the lines between P
+and R and P and S are still at 45 degree angles.  Verify the claims in
+the text about the relative locations of R, S, P, and U.  Calculate
+$t_1t_2$ to get the interval between U and Q (claimed to be $-30.7$
+square light seconds), and compute the $dx$ (2.3 light seconds) and
+$cdt_0$ (5.5 light seconds) that Asha would calculate for these
+events.
