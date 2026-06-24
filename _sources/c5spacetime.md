@@ -808,10 +808,12 @@ event at the origin?
 ## Simultaneity is Relative
 
 The behavior of the vertical axis is easy to understand just by
-imagining someone walking.  The faster you walk, the further apart in
-space the events that you pass by will be, and therefore your worldline
-(which is by definition the vertical axis in the primed frame) will
-tilt further and further.
+imagining yourself walking.  If you stand still, your worldline will
+be a vertical straight line, and we call that the time axis on the
+spacetime diagram in the rest frame (unprimed).  The faster you walk,
+for each second that passes you will reach more distant events, and
+therefore your worldline (which is by definition the vertical axis in
+the primed frame) will tilt further and further toward a slope of one.
 
 Consider the event represented by the cyan dot in
 {numref}`figaxestilt`: as the diagram is first drawn, with the
@@ -836,7 +838,7 @@ same position in space as an earlier one, if the two are timelike
 separated.
 
 This hopefully seems rather intuitive.  You have overtaken or reached
-events many times in your life, so hopefully it is not hard to imagine
+events many times in your life, so it is perhaps not hard to imagine
 the implications of shifting the vertical axis as shown in
 {numref}`figaxestilt`.  However, it is much harder to imagine how the
 red dot interacts with the horizontal axis.  The mathematical
@@ -852,12 +854,13 @@ horizontal axis (the red event happens after the event at the origin),
 below the horizontal axis (the red event happens before the event at
 the origin), or on the horizontal axis (the red event happens at the
 same time as the event at the origin).  This is very hard to accept,
-but this means that simultaneity is relative.  Whether events happen
-at the same time, or in which order they happen, depends on your
-choice of reference frame, as long as the events are spacelike
-separated.  The fastest you can go is $\beta_R=1$, which is a line
-with a $45^\circ$ angle slope, so you can never go fast enough to get
-the horizontal axis to reach, say, the cyan dot.
+but this means that simultaneity is relative, as demonstrated in the
+story of Asha and Bob.  Whether events happen at the same time, or in
+which order they happen, depends on your choice of reference frame, as
+long as the events are spacelike separated.  The fastest you can go is
+$\beta_R=1$, which is a line with a $45^\circ$ angle slope, so you can
+never go fast enough to get the horizontal axis to reach a timelike
+separated event, like the cyan dot.
 
 One of the reasons this may bother you is it may seem like this may
 contradict causality.  If I can arbitrarily switch the order of events by
