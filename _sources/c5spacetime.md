@@ -1212,7 +1212,7 @@ What rapidity would you need to raise the horizontal axis by 30 degrees?
 <input type="radio" name="question17" id="q17a1" value="a."/>0<br>
 <input type="radio" name="question17" id="q17a2" value="b."/>0.659<br>
 <input type="radio" name="question17" id="q17a3" value="c."/>1.529<br>
-<input type="radio" name="question17" id="q17a4" value="d."/>$\infty$<br>
+<input type="radio" name="question17" id="q17a4" value="d."/>25.421<br>
 </form>
 <div class="quiz">
 <p id="Answer_q17">Choose the answer you think is correct and then click the button.

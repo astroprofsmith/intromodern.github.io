@@ -281,7 +281,7 @@ function validate_ans(myq) {
             document.getElementById('Answer_q17').textContent = "No, that corresponds to beta=0.856 and a 40 deg angle.";
 	}
 	if (document.getElementById('q17a4').checked) {
-            document.getElementById('Answer_q17').textContent = "No, that would be a 45 deg angle.";
+            document.getElementById('Answer_q17').textContent = "No, that would be very close to a 45 deg angle.";
 	}
     }
 
