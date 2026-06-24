@@ -60,7 +60,7 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c5spacetime';</script>
-    <script src="_static/checkpoints.js?v=3d5f1ce2"></script>
+    <script src="_static/checkpoints.js?v=9ad55232"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="6. The Displacement Four Vector" href="c6displacement.html" />
@@ -1189,8 +1189,9 @@ how they shift are discussed in the text.</span><a class="headerlink" href="#fig
 events will shift around according to the Lorentz transformation.
 This is the opposite operation to pinching the axes in
 <a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 5.4</span></a> – here, the points between the axes are being
-stretched.  Play with sliding the marker back and forth and see how
-the events move.  You could imagine this as the “pinched” axes in
+stretched, while the axes are redrawn to be perpendicular every time.
+Play with sliding the marker back and forth and see how the events
+move.  You could imagine this as the “pinched” axes in
 <a class="reference internal" href="#figaxestilt"><span class="std std-numref">Fig. 5.4</span></a> being streched back to perpendicular, and
 therefore all the events between them being pulled outward, too, as if
 they were on a rubber sheet.</p>
@@ -1213,9 +1214,7 @@ possible time interval will be measured in the frame where the two
 events (cyan and orange) are at rest.  If you zoom in on the orange
 sphere, you will see that the trail gets flatter and flatter, the more
 you zoom in.  This is a representation that for small <span class="math notranslate nohighlight">\(\beta_R\)</span>, the
-Lorentz factor gets close to one, in which case <span class="math notranslate nohighlight">\(dt'\approx dt_0\)</span>.  If
-the intervals are equal, the trail would be flat, and the closer you
-zoom in, the flatter it gets.</p>
+Lorentz factor gets close to one, in which case <span class="math notranslate nohighlight">\(dt'\approx dt_0\)</span>.</p>
 <p>The red spheres are all lightlike separated from the origin, and you
 can see that when you move the slider, they <strong>stay</strong> along the
 <span class="math notranslate nohighlight">\(45^\circ\)</span> line through the origin.  Since the speed of light is the
@@ -1409,19 +1408,37 @@ the case of Equation <a class="reference internal" href="#equation-lortrapid">(5
 axis will pinch to an angle of <span class="math notranslate nohighlight">\(45^\circ\)</span>, while
 <span class="math notranslate nohighlight">\(\phi\rightarrow\infty\)</span> (the <span class="math notranslate nohighlight">\(1-\beta\)</span> in the denominator of Equation
 <a class="reference internal" href="#equation-rapidity">(5.10)</a> goes to zero).</p>
-<p>Why might you want to do this?  Two reasons.  First of all, it’s kind
-of neat to think about a “boost” (the name of the operation of
-changing speed into a new reference frame) as a kind of rotation between
-space and time.  Secondly, should you need to apply two Lorentz
-transformations in a row, you may recall there are trig identities
-that let you write the product of trig functions as a trig function of
-the sum of the angles.  In this case, you can work out that two
-successive Lorentz transformations, if you write them like Equation
-<a class="reference internal" href="#equation-lortrapid">(5.9)</a>, work out to a single Lorentz transformation using the
-sum of the rapidities of the two original transformations: <span class="math notranslate nohighlight">\({\cal
-L}_x(\phi_1) {\cal L}_x(\phi_2) = {\cal L}_x(\phi_1+\phi_2)\)</span>.  This
-could save a lot of number crunching, as the Lorentz matrices do NOT
-add this simply if you use <span class="math notranslate nohighlight">\(\beta\)</span> and <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
+<p>Why might you want to use rapidity and hyperbolic rotation?  Two
+reasons.  First of all, it’s kind of neat to think about a “boost”
+(the name of the operation of changing speed into a new reference
+frame) as a kind of rotation between space and time.  Secondly, should
+you need to apply two Lorentz transformations in a row, you may recall
+there are trig identities that let you write the product of trig
+functions as a trig function of the sum of the angles.  In this case,
+you can work out that two successive Lorentz transformations, if you
+write them like Equation <a class="reference internal" href="#equation-lortrapid">(5.9)</a>, work out to a single Lorentz
+transformation using the sum of the rapidities of the two original
+transformations: <span class="math notranslate nohighlight">\({\cal L}_x(\phi_1) {\cal L}_x(\phi_2) = {\cal
+L}_x(\phi_1+\phi_2)\)</span>.  This could save a lot of number crunching, as
+the Lorentz matrices do NOT add this simply if you use <span class="math notranslate nohighlight">\(\beta\)</span> and
+<span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
+<div class="admonition-checkpoint admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>What rapidity would you need to raise the horizontal axis by 30 degrees?</p>
+<form name="radioForm" action="#" method="get" id="choiceMyform17">
+<input type="radio" name="question17" id="q17a1" value="a."/>0<br>
+<input type="radio" name="question17" id="q17a2" value="b."/>0.659<br>
+<input type="radio" name="question17" id="q17a3" value="c."/>1.529<br>
+<input type="radio" name="question17" id="q17a4" value="d."/>$\infty$<br>
+</form>
+<div class="quiz">
+<p id="Answer_q17">Choose the answer you think is correct and then click the button.
+<hr>
+<p><button id="q17" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div>
+</div>
 </section>
 <section id="problems">
 <h2><span class="section-number">5.8. </span>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>

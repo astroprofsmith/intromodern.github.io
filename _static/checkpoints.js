@@ -269,19 +269,36 @@ function validate_ans(myq) {
 	}
     }
     
+    if (myq =='q17') {
+	//  rapidity and angle
+	if (document.getElementById('q17a1').checked) {
+            document.getElementById('Answer_q17').textContent = "No, that will not move the axis at all.";
+	}
+	if (document.getElementById('q17a2').checked) {
+            document.getElementById('Answer_q17').textContent = "Yes!  For beta=0.578, the angle will be 30 deg.";
+	}
+	if (document.getElementById('q17a3').checked) {
+            document.getElementById('Answer_q17').textContent = "No, that corresponds to beta=0.856 and a 40 deg angle.";
+	}
+	if (document.getElementById('q17a4').checked) {
+            document.getElementById('Answer_q17').textContent = "No, that would be a 45 deg angle.";
+	}
+    }
+
+
     if (myq =='q1X') {
 	//  this is a template to make new questions
 	if (document.getElementById('q1Xa1').checked) {
-            document.getElementById('Answer_q1X').textContent = "";
+            document.getElementById('Answer_q1X').textContent = "No, that will not move the axis at all.";
 	}
 	if (document.getElementById('q1Xa2').checked) {
-            document.getElementById('Answer_q1X').textContent = "";
+            document.getElementById('Answer_q1X').textContent = "Yes!  For beta=0.578, the angle will be 30 deg.";
 	}
 	if (document.getElementById('q1Xa3').checked) {
-            document.getElementById('Answer_q1X').textContent = "";
+            document.getElementById('Answer_q1X').textContent = "No, that corresponds to beta=0.856 and a 40 deg angle.";
 	}
 	if (document.getElementById('q1Xa4').checked) {
-            document.getElementById('Answer_q1X').textContent = "";
+            document.getElementById('Answer_q1X').textContent = "No, that would be a 45 deg angle.";
 	}
     }    
 }

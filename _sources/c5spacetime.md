@@ -939,8 +939,9 @@ As you change the relative speed of the primed frame, these sixteen
 events will shift around according to the Lorentz transformation.
 This is the opposite operation to pinching the axes in
 {numref}`figaxestilt` -- here, the points between the axes are being
-stretched.  Play with sliding the marker back and forth and see how
-the events move.  You could imagine this as the "pinched" axes in
+stretched, while the axes are redrawn to be perpendicular every time.
+Play with sliding the marker back and forth and see how the events
+move.  You could imagine this as the "pinched" axes in
 {numref}`figaxestilt` being streched back to perpendicular, and
 therefore all the events between them being pulled outward, too, as if
 they were on a rubber sheet.
@@ -965,9 +966,7 @@ possible time interval will be measured in the frame where the two
 events (cyan and orange) are at rest.  If you zoom in on the orange
 sphere, you will see that the trail gets flatter and flatter, the more
 you zoom in.  This is a representation that for small $\beta_R$, the
-Lorentz factor gets close to one, in which case $dt'\approx dt_0$.  If
-the intervals are equal, the trail would be flat, and the closer you
-zoom in, the flatter it gets.
+Lorentz factor gets close to one, in which case $dt'\approx dt_0$. 
 
 The red spheres are all lightlike separated from the origin, and you
 can see that when you move the slider, they **stay** along the
@@ -1191,20 +1190,38 @@ $\phi\rightarrow\infty$ (the $1-\beta$ in the denominator of Equation
 {eq}`rapidity` goes to zero).
 
 
-Why might you want to do this?  Two reasons.  First of all, it's kind
-of neat to think about a "boost" (the name of the operation of
-changing speed into a new reference frame) as a kind of rotation between
-space and time.  Secondly, should you need to apply two Lorentz
-transformations in a row, you may recall there are trig identities
-that let you write the product of trig functions as a trig function of
-the sum of the angles.  In this case, you can work out that two
-successive Lorentz transformations, if you write them like Equation
-{eq}`lortrapid`, work out to a single Lorentz transformation using the
-sum of the rapidities of the two original transformations: ${\cal
-L}_x(\phi_1) {\cal L}_x(\phi_2) = {\cal L}_x(\phi_1+\phi_2)$.  This
-could save a lot of number crunching, as the Lorentz matrices do NOT
-add this simply if you use $\beta$ and $\gamma$.
+Why might you want to use rapidity and hyperbolic rotation?  Two
+reasons.  First of all, it's kind of neat to think about a "boost"
+(the name of the operation of changing speed into a new reference
+frame) as a kind of rotation between space and time.  Secondly, should
+you need to apply two Lorentz transformations in a row, you may recall
+there are trig identities that let you write the product of trig
+functions as a trig function of the sum of the angles.  In this case,
+you can work out that two successive Lorentz transformations, if you
+write them like Equation {eq}`lortrapid`, work out to a single Lorentz
+transformation using the sum of the rapidities of the two original
+transformations: ${\cal L}_x(\phi_1) {\cal L}_x(\phi_2) = {\cal
+L}_x(\phi_1+\phi_2)$.  This could save a lot of number crunching, as
+the Lorentz matrices do NOT add this simply if you use $\beta$ and
+$\gamma$.
 
+
+```{admonition} Checkpoint
+What rapidity would you need to raise the horizontal axis by 30 degrees?
+<form name="radioForm" action="#" method="get" id="choiceMyform17">
+<input type="radio" name="question17" id="q17a1" value="a."/>0<br>
+<input type="radio" name="question17" id="q17a2" value="b."/>0.659<br>
+<input type="radio" name="question17" id="q17a3" value="c."/>1.529<br>
+<input type="radio" name="question17" id="q17a4" value="d."/>$\infty$<br>
+</form>
+<div class="quiz">
+<p id="Answer_q17">Choose the answer you think is correct and then click the button.
+<hr>
+<p><button id="q17" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div>
+```
 
 ## Problems
 
