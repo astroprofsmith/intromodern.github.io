@@ -438,7 +438,6 @@ the world line of the Earth, and only then would the horrific darkness
 and bitter cold ensue.  So enjoy your eight minutes!
 
 
-
 ```{admonition} Checkpoint
 For the following statements, determine whether you think they are true or false.
 <div id="015">
@@ -454,7 +453,7 @@ For the following statements, determine whether you think they are true or false
 <p><button id="q15" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
     py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
     onclick="validate_ans(this.id)">Reveal Answer</button></p>
-</div></div>
+</div>
 ```
 
 ## Example of Intervals
