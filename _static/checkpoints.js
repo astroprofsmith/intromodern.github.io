@@ -253,19 +253,35 @@ function validate_ans(myq) {
 	}
     }    
 
-    if (myq =='qX') {
+    if (myq =='q16') {
+	//  How to line up the axes
+	if (document.getElementById('q16a1').checked) {
+            document.getElementById('Answer_q16').textContent = "Neither.  Cyan is to the right, red happens after.";
+	}
+	if (document.getElementById('q16a2').checked) {
+            document.getElementById('Answer_q16').textContent = "Cyan is to the right, red is at the same time.";
+	}
+	if (document.getElementById('q16a3').checked) {
+            document.getElementById('Answer_q16').textContent = "Cyan is in the same place, red happens earlier.";
+	}
+	if (document.getElementById('q16a4').checked) {
+            document.getElementById('Answer_q16').textContent = "Neither.  Cyan is to the left, and red happens earlier.";
+	}
+    }
+    
+    if (myq =='q1X') {
 	//  this is a template to make new questions
-	if (document.getElementById('qXa1').checked) {
-            document.getElementById('Answer_qX').textContent = "";
+	if (document.getElementById('q1Xa1').checked) {
+            document.getElementById('Answer_q1X').textContent = "";
 	}
-	if (document.getElementById('qXa2').checked) {
-            document.getElementById('Answer_qX').textContent = "";
+	if (document.getElementById('q1Xa2').checked) {
+            document.getElementById('Answer_q1X').textContent = "";
 	}
-	if (document.getElementById('qXa3').checked) {
-            document.getElementById('Answer_qX').textContent = "";
+	if (document.getElementById('q1Xa3').checked) {
+            document.getElementById('Answer_q1X').textContent = "";
 	}
-	if (document.getElementById('qXa4').checked) {
-            document.getElementById('Answer_qX').textContent = "";
+	if (document.getElementById('q1Xa4').checked) {
+            document.getElementById('Answer_q1X').textContent = "";
 	}
     }    
 }

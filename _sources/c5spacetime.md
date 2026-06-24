@@ -784,6 +784,27 @@ relative velocity to the right.  The original axes remain where they
 were, indicated by white arrows.
 ```
 
+```{admonition} Checkpoint
+In {numref}`figaxestilt`, at what relative speed will the event marked with
+the cyan ball happen in the same place as the event at the origin?  At what
+speed will the event marked with the red ball happen at the same time as the
+event at the origin?
+<form name="radioForm" action="#" method="get" id="choiceMyform16">
+<input type="radio" name="question16" id="q16a1" value="a."/>-0.1<br>
+<input type="radio" name="question16" id="q16a2" value="b."/>0.25<br>
+<input type="radio" name="question16" id="q16a3" value="c."/>0.3<br>
+<input type="radio" name="question16" id="q16a4" value="d."/>0.5<br>
+</form>
+<div class="quiz">
+<p id="Answer_q16">Choose the answer you think is correct for each question and then click the button.
+<hr>
+<p><button id="q16" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div></div>
+```
+
+
 (secSimultaneity)=
 ## Simultaneity is Relative
 
