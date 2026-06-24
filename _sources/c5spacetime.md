@@ -801,7 +801,7 @@ event at the origin?
 <p><button id="q16" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
     py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
     onclick="validate_ans(this.id)">Check Answer</button></p>
-</div></div>
+</div>
 ```
 
 
