@@ -589,6 +589,25 @@ reference frame.  Move the slider to find the rest frames for all
 three objects.
 ```
 
+
+
+```{admonition} Checkpoint
+If you are driving your spaceship at 30% the speed of light, compared to a nearby planet, and an alien flying saucer passes you at 70% the speed of light, as measured by you, what would someone on the planet measure for the speed of the alien ship?
+<form name="radioForm" action="#" method="get" id="choiceMyform21">
+<input type="radio" name="question21" id="q21a1" value="a.">30%<br>
+<input type="radio" name="question21" id="q21a2" value="b.">70%<br>
+<input type="radio" name="question21" id="q21a3" value="c.">83%<br>
+<input type="radio" name="question21" id="q21a4" value="d.">100%<br>
+</form>
+<div class="quiz">
+<p id="Answer_q21">Choose the answer you think is correct and then click the button.
+<hr>
+<p><button id="q21" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div>
+```
+
 ## Off-Axis Components of Velocity
 
 Suppose that a particle is traveling with a velocity of $\beta$ at an

@@ -335,20 +335,40 @@ function validate_ans(myq) {
             document.getElementById('Answer_q20').textContent = "Yup!  It's all three of them.";
 	}
     }    
-    
-    if (myq =='q1X') {
+
+ 
+    if (myq =='q21') {
 	//  this is a template to make new questions
-	if (document.getElementById('q1Xa1').checked) {
-            document.getElementById('Answer_q1X').textContent = "";
+	if (document.getElementById('q21a1').checked) {
+            document.getElementById('Answer_q21').textContent = "No, the person on the planet would still have to see the alien going faster than you.";
 	}
-	if (document.getElementById('q1Xa2').checked) {
-            document.getElementById('Answer_q1X').textContent = "";
+	if (document.getElementById('q21a2').checked) {
+            document.getElementById('Answer_q21').textContent = "No, the person on the planet would have to measure a faster speed for the alien than you do.";
 	}
-	if (document.getElementById('q1Xa3').checked) {
-            document.getElementById('Answer_q1X').textContent = "";
+	if (document.getElementById('q21a3').checked) {
+            document.getElementById('Answer_q21').textContent = "Yes, this is how your speed and the alien's speed would add.";
 	}
-	if (document.getElementById('q1Xa4').checked) {
-            document.getElementById('Answer_q1X').textContent = "";
+	if (document.getElementById('q21a4').checked) {
+            document.getElementById('Answer_q21').textContent = "No, no physical object with mass, even an alien, can move at c.";
+	}
+    }    
+
+
+
+    
+    if (myq =='q2X') {
+	//  this is a template to make new questions
+	if (document.getElementById('q2Xa1').checked) {
+            document.getElementById('Answer_q2X').textContent = "";
+	}
+	if (document.getElementById('q2Xa2').checked) {
+            document.getElementById('Answer_q2X').textContent = "";
+	}
+	if (document.getElementById('q2Xa3').checked) {
+            document.getElementById('Answer_q2X').textContent = "";
+	}
+	if (document.getElementById('q2Xa4').checked) {
+            document.getElementById('Answer_q2X').textContent = "";
 	}
     }    
 }
