@@ -1189,9 +1189,8 @@ axis will pinch to an angle of $45^\circ$, while
 $\phi\rightarrow\infty$ (the $1-\beta$ in the denominator of Equation
 {eq}`rapidity` goes to zero).  On the other hand, if you carry out a
 Taylor expansion of this formula, to first order for small values of
-$\beta$, $\phi\approx\beta$.
-
-
+$\beta$, $\phi\approx\beta$.  So rapidity is much like speed, but
+unlike speed, it has no upper limit.
 
 Why might you want to use rapidity and hyperbolic rotation?  Two
 reasons.  First of all, it's kind of neat to think about a "boost"

@@ -285,20 +285,41 @@ function validate_ans(myq) {
 	}
     }
 
+   if (myq =='q18') {
+	//  What does not change in a Lorentz transformation?
+	if (document.getElementById('q18a1').checked) {
+            document.getElementById('Answer_q18').textContent = "This will not change.  It's important to recognize that an observer in a moving frame will measure a different time interval, but must still agree that the observer in the rest frame measures the proper time interval.";
+	}
+	if (document.getElementById('q18a2').checked) {
+            document.getElementById('Answer_q18').textContent = "This will change.";
+	}
+	if (document.getElementById('q18a3').checked) {
+            document.getElementById('Answer_q18').textContent = "Since the displacement in x changes, the total displacement through space must also change.  The displacement through spacetime remains the same (the size of the four-displacement), but the displacements through space and time separately both change.";
+	}
+	if (document.getElementById('q18a4').checked) {
+            document.getElementById('Answer_q18').textContent = "This will change.  This is time dilation.";
+	}
+    }    
 
+
+
+
+
+
+    
     if (myq =='q1X') {
 	//  this is a template to make new questions
 	if (document.getElementById('q1Xa1').checked) {
-            document.getElementById('Answer_q1X').textContent = "No, that will not move the axis at all.";
+            document.getElementById('Answer_q1X').textContent = "";
 	}
 	if (document.getElementById('q1Xa2').checked) {
-            document.getElementById('Answer_q1X').textContent = "Yes!  For beta=0.578, the angle will be 30 deg.";
+            document.getElementById('Answer_q1X').textContent = "";
 	}
 	if (document.getElementById('q1Xa3').checked) {
-            document.getElementById('Answer_q1X').textContent = "No, that corresponds to beta=0.856 and a 40 deg angle.";
+            document.getElementById('Answer_q1X').textContent = "";
 	}
 	if (document.getElementById('q1Xa4').checked) {
-            document.getElementById('Answer_q1X').textContent = "No, that would be a 45 deg angle.";
+            document.getElementById('Answer_q1X').textContent = "";
 	}
     }    
 }

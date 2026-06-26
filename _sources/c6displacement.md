@@ -116,9 +116,10 @@ glue("copyfig", fig, display=False)
 :figwidth: 800px
 :name: dejavu
 
-
-Two events in a spacetime diagram with a displacement
-four vector between them.
+Two events (marked with red and blue dots) in a spacetime diagram with a displacement
+four vector between them.  A second frame of reference is indicated with primes, and
+the primed frame is moving to the right with a speed $v_R$ relative to the first reference
+frame.
 ```
 
 The displacement between these two events is to be analyzed by two
@@ -268,6 +269,25 @@ Lorentz Transformation.  Therefore, we say that it is a Lorentz
 **scalar**.  It is interesting to note that the size of this invariant
 quantity is negative! This is quite different from the traditional 3
 vectors used in Newtonian mechanics.
+
+
+
+```{admonition} Checkpoint
+Which of these quantities does not change in a Lorentz transformation?
+<form name="radioForm" action="#" method="get" id="choiceMyform18">
+<input type="radio" name="question18" id="q18a1" value="a."/><br>
+<input type="radio" name="question18" id="q18a2" value="b."/><br>
+<input type="radio" name="question18" id="q18a3" value="c."/><br>
+<input type="radio" name="question18" id="q18a4" value="d."/><br>
+</form>
+<div class="quiz">
+<p id="Answer_q18">Choose the answer you think is correct and then click the button.
+<hr>
+<p><button id="q18" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div>
+```
 
 ## Muons in the Atmosphere
 
