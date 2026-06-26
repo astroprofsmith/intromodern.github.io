@@ -302,7 +302,22 @@ function validate_ans(myq) {
     }    
 
 
-
+   
+    if (myq =='q19') {
+	//  True statement about muons
+	if (document.getElementById('q19a1').checked) {
+            document.getElementById('Answer_q19').textContent = "Yes, this is the distance traveled as measured in the Earth's rest frame.";
+	}
+	if (document.getElementById('q19a2').checked) {
+            document.getElementById('Answer_q19').textContent = "Yes, this is how fast the muons are traveling, and this is how fast the muons would think the Earth is traveling.";
+	}
+	if (document.getElementById('q19a3').checked) {
+            document.getElementById('Answer_q19').textContent = "Yes, this observation has to be valid in all reference frames.";
+	}
+	if (document.getElementById('q19a4').checked) {
+            document.getElementById('Answer_q19').textContent = "No, the lifetime of a particle is always reported in its own rest frame, since it will be longer in any other frame (and in particular, longer in the Earth's rest frame.";
+	}
+    }    
 
 
 

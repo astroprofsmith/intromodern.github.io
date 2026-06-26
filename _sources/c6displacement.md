@@ -560,6 +560,8 @@ when the relative speed between the two observers increases.  This is
 called **Length Contraction**, and we will explore this effect in
 greater detail in [the next section](secLenCon).
 
+
+
 (secLenCon)=
 ## Length Contraction
 
@@ -822,7 +824,11 @@ in the "m" frame, the $x$ component of the four vector is zero -- this
 is not the length of the object.  But if you define your operation by
 which you are measuring the length of the object in a particular
 reference frame, you will always find that it is shorter the faster
-the object is moving.  See [Chapter 5](chSTdiag) for more examples.
+the object is moving.  It would be worth your time at this point to
+go back and re-read the explanation of length contraction shown in
+{numref}`fig16events`, which demonstrates the importance of simultaneity
+as an integral piece of the definition of length.
+
 
 ```{warning}
 We are often very casual when we talk about length contraction.
