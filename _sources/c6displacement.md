@@ -887,6 +887,26 @@ in the shorter time they have.  The events of being created and
 reaching the ground happen in both frames, but the reasons they can
 happen are interpreted differently in each frame.
 
+
+
+```{admonition} Checkpoint
+Which of these statements is invalid in the rest frame of the Earth?
+<form name="radioForm" action="#" method="get" id="choiceMyform19">
+<input type="radio" name="question19" id="q19a1" value="a.">The muons travel for 1920 m<br>
+<input type="radio" name="question19" id="q19a2" value="b.">The muons travel at a speed of 0.988<br>
+<input type="radio" name="question19" id="q19a3" value="c.">73% of the muons reach Cambridge<br>
+<input type="radio" name="question19" id="q19a4" value="d.">The lifetime of the muons is 2 microseconds<br>
+</form>
+<div class="quiz">
+<p id="Answer_q19">Choose the answer you think is correct and then click the button.
+<hr>
+<p><button id="q19" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div>
+```
+
+
 ## The Ladder in the Garage Paradox
 
 When people first grapple with length contraction, there is a common
