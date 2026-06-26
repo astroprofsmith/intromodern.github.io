@@ -540,10 +540,12 @@ respect to the muons or the one at respect to the earth.  In the frame
 that is at rest with respect to the muons, there is no time dilation
 -- the one microsecond is the measured time interval.  If the Earth is
 coming at the muon at 98.8% the speed of light, and is to reach the
-muon across 1920 m in one microsecond, the numbers don't add up.  But
-one of our postulates is that observers in both reference frames have
-to agree on what happens.  The second event **has** to happen in both
-reference frames.
+muon across 1920 m in one microsecond, the numbers don't add up.
+Even at exactly the speed of light, it would take more than six
+microseconds to travel 1920 m!  But one of our postulates is that
+observers in both reference frames have to agree on what happens.
+The second event, the muon reaching the Earth, **has** to happen in
+both reference frames.
 
 The only available parameter we can change, if the time and the speed
 are set, is the distance.  The vertical distance between the top of
