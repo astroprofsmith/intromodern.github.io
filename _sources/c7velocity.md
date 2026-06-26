@@ -305,8 +305,8 @@ as explored in the next section.
 ```{admonition} Checkpoint
 Why is it important to change the $dt_0$ to a $dt$?
 <form name="radioForm" action="#" method="get" id="choiceMyform20">
-<input type="radio" name="question20" id="q20a1" value="a.">$dx$ and $dt_0$ are measured in different frames<br>
-<input type="radio" name="question20" id="q20a2" value="b.">The proper time is valid for something at rest, and if $\beta\neq 0$, this isn't at rest<br>
+<input type="radio" name="question20" id="q20a1" value="a.">dx and proper time are measured in different frames<br>
+<input type="radio" name="question20" id="q20a2" value="b.">The proper time is valid for something at rest, and this isn't at rest<br>
 <input type="radio" name="question20" id="q20a3" value="c.">Time will be running at a different rate for the object<br>
 <input type="radio" name="question20" id="q20a4" value="d.">All of the above.<br>
 </form>
