@@ -451,12 +451,12 @@ However, not all particles have rest energy. A photon (gamma ray) does
 not have any rest energy, and a neutrino's is so small it can barely be
 measured.
 
-Equation {eq}`gamE` would therefore imply that the value for the $\gamma$
-of these particles is infinite. If $\gamma$ is infinite, then $\beta= 1$,
-and these particles must be traveling at the speed of light.  Always.
-This is not surprising for the gamma ray, as it is light. What is
-surprising is that other particles such as the neutrino, which are
-not photons, also travel at the same speed.
+Equation {eq}`gamE` would therefore imply that the value for the
+$\gamma$ of the messless particles is infinite. If $\gamma$ is
+infinite, then $\beta= 1$, and these particles must be traveling at
+the speed of light.  Always.  This is not surprising for the gamma
+ray, as it is light. What is surprising is that other particles such
+as the neutrino, which are not photons, also travel at the same speed.
 
 Also surprising is that all of these particles have momentum even
 though they do not have any rest mass.  You might think, if you think
@@ -466,12 +466,16 @@ equation can work for particles that have energy but no mass is if
 $p=E/c$.  Particles with energy but no mass **still have momentum**!!!
 
 ```{note}
-You can also see this in Equation {eq}`pfrome2`: if the rest energy
-goes to zero, $p\rightarrow KE/c$.  For a photon, the KE is $hf$,
+You can also see that massless particles have momentum in Equation
+{eq}`pfrome2`: if the rest energy goes to zero (or the KE gets very,
+very large), $p\rightarrow KE/c$.  For a photon, the KE is $hf$,
 Planck's constant times the frequency, so the momentum of a photon is
 $hf/c$, or $h/\lambda$, where $\lambda$ is the wavelength.  See also
 the treatment in the section of [Chapter 9](chSRexam) on the [Doppler
-Shift](secDoppler).
+Shift](secDoppler).  Even for massive particles, if their KE becomes
+huge compared to their rest energy, they start to look more and more
+like photons, with a momentum equal to E/$c$.  Photons have $E=h\nu$
+and a momentum of $p=h\nu/c=h/\lambda$.
 ```
 
 On the other hand, for a particle with $E_0 \neq 0$ to travel **at**

@@ -894,7 +894,7 @@ her and leaves her in its cosmic dust trail.  She measures its speed
 as $\beta=0.82$.  How fast is this alien space craft traveling with
 respect to the Earth?
 
-2) A muon is traveling in the $x$ direction in the lab at a speed $\beta
+2) A muon is traveling in the $x$ direction in the lab at a speed $\beta=
 0.66$. In its rest frame, it decides to decay by ejecting an electron
 in the y direction with a $\beta = 0.42$. What is the speed and direction
 of motion of the electron as seen by an observer in the lab.
