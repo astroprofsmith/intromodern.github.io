@@ -474,8 +474,7 @@ $hf/c$, or $h/\lambda$, where $\lambda$ is the wavelength.  See also
 the treatment in the section of [Chapter 9](chSRexam) on the [Doppler
 Shift](secDoppler).  Even for massive particles, if their KE becomes
 huge compared to their rest energy, they start to look more and more
-like photons, with a momentum equal to E/$c$.  Photons have $E=h\nu$
-and a momentum of $p=h\nu/c=h/\lambda$.
+like photons, with a momentum equal to KE/$c$.  
 ```
 
 On the other hand, for a particle with $E_0 \neq 0$ to travel **at**
