@@ -543,15 +543,15 @@ Then use the definition of $\gamma$ to get
 ```{math}
 \beta = \sqrt{1-\frac{1}{\gamma^2}} = 0.941
 ```
-If you really want that in SI units, that would be $2.82\times10^8$ m/s.
-The other way to do it would be to go from the four vector.
-We have $p_x = 1.422\times10^6$ eV/c, which by the conversion ({eq}`eVunit`)
-above is $7.593\times10^{-22}$ kg m/s.  This momentum is $\gamma m_0 v_x$,
-so we divide by $\gamma = 2.957$ to get $2.568\times10^{-22}$ kg m/s.
-Divide by the mass of the electron ($9.109\times 10^{-31}$ kg) to get
-$2.82\times10^8$ m/s, as before.  If you forget that momentum has a
-$\gamma$ built into it, you would get a speed almost three times faster
-than light speed.
+If you really want that in SI units, that would be $2.82\times10^8$
+m/s.  The other way to do it would be to go from the four vector.  We
+have $p_x = 1.422\times10^6$ eV/c, which by the conversion in Equation
+{eq}`eVunit` is $7.593\times10^{-22}$ kg m/s.  This momentum is
+$\gamma m_0 v_x$, so we divide by $\gamma = 2.957$ to get
+$2.568\times10^{-22}$ kg m/s.  Divide by the mass of the electron
+($9.109\times 10^{-31}$ kg) to get $2.82\times10^8$ m/s, as before.
+If you forget that momentum has a $\gamma$ built into it, you would
+get a speed almost three times faster than light speed.
 
 ## Conservation Laws and the Momentum Four-Vector
 
