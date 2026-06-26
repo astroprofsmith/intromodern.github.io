@@ -354,7 +354,23 @@ function validate_ans(myq) {
     }    
 
 
+    if (myq =='q22') {
+	//  this is a template to make new questions
+	if (document.getElementById('q22a1').checked) {
+            document.getElementById('Answer_q22').textContent = "Not true.  If an object needs to actually move through the displacement between two events, then the four displacement needs to be timelike, yes, but one can define a four-displacement between any two events.";
+	}
+	if (document.getElementById('q22a2').checked) {
+            document.getElementById('Answer_q22').textContent = "Yes, all components of the four velocity are affected by time dilation, and this provides a channel by which motion in x can affect motion in y.  This becomes even more extreme when we consider four-acceleration!";
+	}
+	if (document.getElementById('q22a3').checked) {
+            document.getElementById('Answer_q22').textContent = "This is just not true.";
+	}
+	if (document.getElementById('q22a4').checked) {
+            document.getElementById('Answer_q22').textContent = "No, there's a gamma in the time component, which is not a constant.";
+	}
+    }
 
+    
     
     if (myq =='q2X') {
 	//  this is a template to make new questions

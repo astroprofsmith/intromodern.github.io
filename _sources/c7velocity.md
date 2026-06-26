@@ -866,6 +866,26 @@ of momentum.  Before we can understand force, we must first grapple
 with how relativity affects the concept of momentum.  This is
 the main topic of [Chapter 8](ch4mom).
 
+```{admonition} Checkpoint
+Lorentz Transformations of displacement four vectors do not cause the displacement
+perpendicular to the relative motion ($dy$ and $dz$) to change.  What is different
+about the velocity four vector that allows the same operation to change $v_y$ and
+$v_z$?
+<form name="radioForm" action="#" method="get" id="choiceMyform22">
+<input type="radio" name="question22" id="q22a1" value="a.">Four displacement is not subject to the universal speed limit<br>
+<input type="radio" name="question22" id="q22a2" value="b.">Time dilation affects dy/dt, but not dy<br>
+<input type="radio" name="question22" id="q22a3" value="c.">Four velocity doesn't have off axis components<br>
+<input type="radio" name="question22" id="q22a4" value="d.">Four velocity has a constant time component<br>
+</form>
+<div class="quiz">
+<p id="Answer_q22">Choose the answer you think is correct and then click the button.
+<hr>
+<p><button id="q22" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div>
+```
+
 ## Problems
 
 1) Janet is taking a joy ride on a rocket, traveling with $\beta =
