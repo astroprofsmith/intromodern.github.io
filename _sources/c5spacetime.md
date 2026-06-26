@@ -1187,7 +1187,10 @@ angle through which we rotate the axes of the diagram.  However, in
 the case of Equation {eq}`lortrapid`, if $v\rightarrow c$, then the
 axis will pinch to an angle of $45^\circ$, while
 $\phi\rightarrow\infty$ (the $1-\beta$ in the denominator of Equation
-{eq}`rapidity` goes to zero).
+{eq}`rapidity` goes to zero).  On the other hand, if you carry out a
+Taylor expansion of this formula, to first order for small values of
+$\beta$, $\phi\approx\beta$.
+
 
 
 Why might you want to use rapidity and hyperbolic rotation?  Two
@@ -1285,15 +1288,16 @@ boost with the sum of the rapidities.  In other words, show that
 {\cal L}_x(\phi_2){\cal L}_x(\phi_1) = {\cal L}_x(\phi_1+\phi_2)
 ```
 
-6) Note that in considering two successive boosts, you can't just
-conclude that the final speed $\beta_{1+2}$ will be the sum of the two
-individual boosts ($\beta_{1+2}\neq\beta_1+\beta_2$ -- if you doubt
-this, consider the case where $\beta_1=\beta_2=0.75$.  Do you see how
-adding those together would be a problem?).  However, you can just add
-rapidities, because they can go as high as you like.  Start with
-$\phi_{1+2} = \phi_1+\phi_2$ and plug in Equation {eq}`rapidity` to
-get a formula for $\beta_{1+2}$ as a function of $\beta_1$ and
-$\beta_2$.  You will see this formula again in [Chapter 7](ch4vel).
+6) Note that in considering two successive boosts, unless the values
+of $\beta$ are small, you can't just conclude that the final speed
+$\beta_{1+2}$ will be the sum of the two individual boosts
+($\beta_{1+2}\neq\beta_1+\beta_2$ -- if you doubt this, consider the
+case where $\beta_1=\beta_2=0.75$.  Do you see how adding those
+together would be a problem?).  However, you can just add rapidities,
+because they can go as high as you like.  Start with $\phi_{1+2} =
+\phi_1+\phi_2$ and plug in Equation {eq}`rapidity` to get a formula
+for $\beta_{1+2}$ as a function of $\beta_1$ and $\beta_2$.  You will
+see this formula again in [Chapter 7](ch4vel).
 
 7) An event is at $(ct,x)=(1~{\rm m},2~{\rm m})$ in some reference
 frame.  Is the displacement from the origin to this event timelike,

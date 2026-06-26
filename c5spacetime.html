@@ -61,6 +61,7 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c5spacetime';</script>
     <script src="_static/checkpoints.js?v=af89075a"></script>
+    <script src="_static/."></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="6. The Displacement Four Vector" href="c6displacement.html" />
@@ -1407,7 +1408,9 @@ angle through which we rotate the axes of the diagram.  However, in
 the case of Equation <a class="reference internal" href="#equation-lortrapid">(5.9)</a>, if <span class="math notranslate nohighlight">\(v\rightarrow c\)</span>, then the
 axis will pinch to an angle of <span class="math notranslate nohighlight">\(45^\circ\)</span>, while
 <span class="math notranslate nohighlight">\(\phi\rightarrow\infty\)</span> (the <span class="math notranslate nohighlight">\(1-\beta\)</span> in the denominator of Equation
-<a class="reference internal" href="#equation-rapidity">(5.10)</a> goes to zero).</p>
+<a class="reference internal" href="#equation-rapidity">(5.10)</a> goes to zero).  On the other hand, if you carry out a
+Taylor expansion of this formula, to first order for small values of
+<span class="math notranslate nohighlight">\(\beta\)</span>, <span class="math notranslate nohighlight">\(\phi\approx\beta\)</span>.</p>
 <p>Why might you want to use rapidity and hyperbolic rotation?  Two
 reasons.  First of all, it’s kind of neat to think about a “boost”
 (the name of the operation of changing speed into a new reference
@@ -1496,15 +1499,16 @@ boost with the sum of the rapidities.  In other words, show that</p></li>
 <div class="math notranslate nohighlight">
 \[{\cal L}_x(\phi_2){\cal L}_x(\phi_1) = {\cal L}_x(\phi_1+\phi_2)\]</div>
 <ol class="arabic simple" start="6">
-<li><p>Note that in considering two successive boosts, you can’t just
-conclude that the final speed <span class="math notranslate nohighlight">\(\beta_{1+2}\)</span> will be the sum of the two
-individual boosts (<span class="math notranslate nohighlight">\(\beta_{1+2}\neq\beta_1+\beta_2\)</span> – if you doubt
-this, consider the case where <span class="math notranslate nohighlight">\(\beta_1=\beta_2=0.75\)</span>.  Do you see how
-adding those together would be a problem?).  However, you can just add
-rapidities, because they can go as high as you like.  Start with
-<span class="math notranslate nohighlight">\(\phi_{1+2} = \phi_1+\phi_2\)</span> and plug in Equation <a class="reference internal" href="#equation-rapidity">(5.10)</a> to
-get a formula for <span class="math notranslate nohighlight">\(\beta_{1+2}\)</span> as a function of <span class="math notranslate nohighlight">\(\beta_1\)</span> and
-<span class="math notranslate nohighlight">\(\beta_2\)</span>.  You will see this formula again in <a class="reference internal" href="c7velocity.html#ch4vel"><span class="std std-ref">Chapter 7</span></a>.</p></li>
+<li><p>Note that in considering two successive boosts, unless the values
+of <span class="math notranslate nohighlight">\(\beta\)</span> are small, you can’t just conclude that the final speed
+<span class="math notranslate nohighlight">\(\beta_{1+2}\)</span> will be the sum of the two individual boosts
+(<span class="math notranslate nohighlight">\(\beta_{1+2}\neq\beta_1+\beta_2\)</span> – if you doubt this, consider the
+case where <span class="math notranslate nohighlight">\(\beta_1=\beta_2=0.75\)</span>.  Do you see how adding those
+together would be a problem?).  However, you can just add rapidities,
+because they can go as high as you like.  Start with <span class="math notranslate nohighlight">\(\phi_{1+2} =
+\phi_1+\phi_2\)</span> and plug in Equation <a class="reference internal" href="#equation-rapidity">(5.10)</a> to get a formula
+for <span class="math notranslate nohighlight">\(\beta_{1+2}\)</span> as a function of <span class="math notranslate nohighlight">\(\beta_1\)</span> and <span class="math notranslate nohighlight">\(\beta_2\)</span>.  You will
+see this formula again in <a class="reference internal" href="c7velocity.html#ch4vel"><span class="std std-ref">Chapter 7</span></a>.</p></li>
 <li><p>An event is at <span class="math notranslate nohighlight">\((ct,x)=(1~{\rm m},2~{\rm m})\)</span> in some reference
 frame.  Is the displacement from the origin to this event timelike,
 lightlike, or spacelike?  How fast would another reference frame have
