@@ -315,12 +315,26 @@ function validate_ans(myq) {
             document.getElementById('Answer_q19').textContent = "Yes, this observation has to be valid in all reference frames.";
 	}
 	if (document.getElementById('q19a4').checked) {
-            document.getElementById('Answer_q19').textContent = "No, the lifetime of a particle is always reported in its own rest frame, since it will be longer in any other frame (and in particular, longer in the Earth's rest frame.";
+            document.getElementById('Answer_q19').textContent = "No, the lifetime of a particle is always reported in its own rest frame, since it will be longer in any other frame (and in particular, longer in the Earth's rest frame).";
 	}
     }    
 
 
-
+    if (myq =='q20') {
+	//  Why not use dt0?
+	if (document.getElementById('q20a1').checked) {
+            document.getElementById('Answer_q20').textContent = "This isn't wrong, but is it the only valid answer?";
+	}
+	if (document.getElementById('q20a2').checked) {
+            document.getElementById('Answer_q20').textContent = "Not wrong, but not the only one.";
+	}
+	if (document.getElementById('q20a3').checked) {
+            document.getElementById('Answer_q20').textContent = "Sure, could be, but is there nothing else?";
+	}
+	if (document.getElementById('q20a4').checked) {
+            document.getElementById('Answer_q20').textContent = "Yup!  It's all three of them.";
+	}
+    }    
     
     if (myq =='q1X') {
 	//  this is a template to make new questions

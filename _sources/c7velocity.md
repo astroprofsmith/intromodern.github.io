@@ -301,6 +301,24 @@ helpful in understanding what happens to velocities when you consider
 them from the point of view of a relatively moving frame of reference,
 as explored in the next section.
 
+
+```{admonition} Checkpoint
+Why is it important to change the $dt_0$ to a $dt$?
+<form name="radioForm" action="#" method="get" id="choiceMyform20">
+<input type="radio" name="question20" id="q20a1" value="a.">$dx$ and $dt_0$ are measured in different frames<br>
+<input type="radio" name="question20" id="q20a2" value="b.">The proper time is valid for something at rest, and if $\beta\neq 0$, this isn't at rest<br>
+<input type="radio" name="question20" id="q20a3" value="c.">Time will be running at a different rate for the object<br>
+<input type="radio" name="question20" id="q20a4" value="d.">All of the above.<br>
+</form>
+<div class="quiz">
+<p id="Answer_q20">Choose the answer you think is correct and then click the button.
+<hr>
+<p><button id="q20" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div>
+```
+
 ## Addition of Velocities
 
 The universality of the speed of light poses a very difficult
