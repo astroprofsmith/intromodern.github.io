@@ -151,7 +151,7 @@ dz'
 Now, as an example, let us consider the displacement 4-vector as
 measured by two different observers. For simplicitly, we assume the
 two events as measured by the unprimed observer (shown in
-{numref}`dejavu`) have real displacements $dy$ and $dz$ equal O. We
+{numref}`dejavu`) have real displacements $dy$ and $dz$ equal 0. We
 can therefore ignore the last two components and write the
 displacement 4-vector in the unprimed coordinate system as:
 ```{math}
@@ -433,6 +433,9 @@ rest frame of the earth, I need to find the displacement 4-vectors
 that each of the observers measure for the two events and use
 the Lorentz transformation to figure out the unknowns.
 
+The time as measured by the observer in the rest frame is correctly
+given by the analysis in Equation {eq}`muonduration` as this observer
+does not observe that the muon moves with respect to him.
 The two displacement 4-vectors for this problem are
 ```{math}
 :label: dx4muon
@@ -442,10 +445,7 @@ ic 1.0\times10^{-6}~{\rm s}\\
 0.0~{\rm m}
 \end{bmatrix}
 ```
-The time as measured by the observer in the rest frame is correctly
-given by the analysis in Equation {eq}`muonduration` as this observer
-does not observe that the muon moves with respect to him.
-
+(The muon is at rest and experiences a time interval of 1 ms) and
 ```{math}
 :label: dx4earth
 [dx_4]' =
@@ -454,7 +454,9 @@ ic dt'\\
 1920~{\rm m}
 \end{bmatrix}
 ```
-We set up the Lorentz transformation as per Equation {eq}`lortrans`
+(the Earth is at rest and the muon travels 1920 m in an unknown
+time interval $dt^\prime$).  We set up the Lorentz transformation
+as per Equation {eq}`lortrans`
 ```{math}
 :label: muonlort
 \begin{bmatrix}
@@ -565,8 +567,8 @@ observer creates a flash of light.  That is the first event. When the
 back edge passes the observer, a second flash is created. A spacetime
 diagram for this process is shown in {numref}`obsrest`, where the
 worldline of the observer (at rest) is a red vertical line.  The
-worldline of the front of the object is represented as a blue tilted
-line, and the worldline of the back of the obejct is a green tilted
+worldline of the front of the object is represented as a green tilted
+line, and the worldline of the back of the obejct is a blue tilted
 line.  The slope of these lines is $1/\beta$, where $\beta$ is the
 speed of the object.  The first event is where the green line crosses
 the red line, and the second event is where the blue line crosses the
@@ -633,7 +635,7 @@ where $\ell_m$ is the deduced (measured) length of the moving
 object: the duration of time it takes to pass, multiplied by the
 speed of travel.  The minus sign is because we have set this up with
 $v_R$ going to the left, so it will have a negative value, but length
-is always positive concept.
+is always a positive concept.
 
 As a four vector, we would write
 ```{math}
@@ -650,11 +652,11 @@ Let the second observer be in the rest frame of the object whose
 length you wish to measure. This observer will see the same two events
 as the first observer, a flash occurring on the left edge of the
 object and at a later time, $dt_{\rm rest}$, a second flash occurring
-at the right edge of the object. This observer is passing by the
-object as it is at rest, and this observer would interpret the
-physical displacement between the two events is the rest length of the
-object: $\ell_r = dx_{\rm rest}$, where $\ell_r$ represents the length
-of the object at rest.
+at the right edge of the object. The first observer is passing by the
+object as it is at rest, but the second observer (at rest) would
+interpret the physical displacement between the two events is the rest
+length of the object: $\ell_r = dx_{\rm rest}$, where $\ell_r$
+represents the length of the object at rest.
 
 
 ```{code-cell}
@@ -841,20 +843,21 @@ distance it has to travel to get to the surface of the earth to be:
 ```
 
 So, the muon thinks that it only has to travel 296 m to get to sea
-level. Now, from Equation {eq}`muonduration`, the muon thinks that it
-has traveled for 1 microsecond, so it calculates its velocity as:
+level. Now, from Equation {eq}`muonduration`, the muon thinks that the
+Earth has been hurtling toward it for 1 microsecond, so it calculates
+the Earth's velocity as:
 ```{math}
 \frac{296~{\rm m}}{1.0\times10^{-6}~{\rm s}} =
 2.96\times10^8~{\rm m/s} \rightarrow \beta = 0.988
 ```
-a value not different from the speed as measured by the observer on
-the Earth, calculated in Equation {eq}`muonbeta`.  In the frame of the
-Earth, the time is dilated, so the muons live longer and can reach the
-ground.  In the frame moving with the muon, the distance to the ground
-is shorter, and therefore the muons can reach the ground in the
-shorter time they have.  The events of being created and reaching the
-ground happen in both frames, but the reasons they can happen are
-interpreted differently in each frame.
+a value not different from the speed of the muon as measured by the
+observer on the Earth, calculated in Equation {eq}`muonbeta`.  In the
+frame of the Earth, the time is dilated, so the muons live longer and
+can reach the ground.  In the frame moving with the muon, the distance
+to the ground is shorter, and therefore the muons can reach the ground
+in the shorter time they have.  The events of being created and
+reaching the ground happen in both frames, but the reasons they can
+happen are interpreted differently in each frame.
 
 ## The Ladder in the Garage Paradox
 
@@ -957,7 +960,7 @@ passing through a garage at rest.  The green line is the
 front of the garage while the blue line is the back of the garage.
 The red line is the front of the ladder, while the cyan line
 is the back end of the ladder.  Reading up the time axis, the
-four events are: front of ladder enters from of garage (red
+four events are: front of ladder enters front of garage (red
 crosses green), front of ladder reaches back of garage (red
 crosses blue), back of ladder enters front of garage (cyan
 crosses green), and back of ladder exits back of garage (cyan

@@ -60,7 +60,7 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c7velocity';</script>
-    <script src="_static/checkpoints.js?v=3278bee5"></script>
+    <script src="_static/checkpoints.js?v=af89075a"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="8. The Momentum Four-Vector" href="c8momentum.html" />
@@ -576,11 +576,13 @@ scalar. The size of the 4-velocity is:</p>
 <span class="eqno">(7.7)<a class="headerlink" href="#equation-sizev4b" title="Link to this equation">#</a></span>\[[v_4]^2 = \gamma^2 (v^2-c^2) = -c^2\gamma^2\left(1-\left(\frac{v}{c}\right)^2\right) = -c^2\gamma^2(1-\beta^2) = -c^2\]</div>
 <div class="math notranslate nohighlight">
 \[\boxed{[v_4]^2 = -c^2}\]</div>
-<p>Once again, the size of a 4-vector is a negative number. The
-experimental evidence is that the speed of light has the same value
-for all inertial observers, so the size of the 4-velocity is therefore
-a scalar quantity. The 4-velocity meets the requirements set forth by
-the Michelson-Morley experiment.</p>
+<p>Once again, the size of a 4-vector is a negative number. (This is not
+surprising, since the size of the four displacement is negative, and
+<span class="math notranslate nohighlight">\(dt\)</span> is always defined to be postive.)  The experimental evidence is
+that the speed of light has the same value for all inertial observers,
+so the size of the 4-velocity is therefore a scalar quantity. The
+4-velocity meets the requirements set forth by the Michelson-Morley
+experiment.</p>
 <p>When objects are traveling near the speed of light, a convenient quantity
 to define is a unitless 4-velocity known as the 4-beta. This saves
 writing down  “<span class="math notranslate nohighlight">\(\times 10^8\)</span> m/s” over and over again.</p>
@@ -780,6 +782,12 @@ cancel common factors to get</p>
 <div class="math notranslate nohighlight" id="equation-veladd1">
 <span class="eqno">(7.12)<a class="headerlink" href="#equation-veladd1" title="Link to this equation">#</a></span>\[\boxed{
 \beta' = \frac{\beta - \beta_R}{1-\beta\beta_R}}\]</div>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>If you did the problem with adding rapidities in <a class="reference internal" href="c5spacetime.html#chstdiag"><span class="std std-ref">Chapter 5</span></a>,
+you derived this same formula from the addition of the two rapidity
+equations.</p>
+</aside>
 <p>This is known as <strong>the velocity addition formula</strong>.  Note that
 although it is quite different from what Newton or Galileo would have
 expected, it does meet all the conditions we laid out before we
@@ -824,21 +832,21 @@ objects in relative motion, while the slider allows you to change
 reference frames via your own relative velocity.  The default
 beginning state of the figure is that your observation frame is at
 rest with respect to the red object.  In this reference frame, the
-blue object is moving left at <span class="math notranslate nohighlight">\(\beta_b=0.3\)</span> and the green object is
+orange object is moving left at <span class="math notranslate nohighlight">\(\beta_b=0.3\)</span> and the green object is
 moving right at <span class="math notranslate nohighlight">\(\beta_g=0.7\)</span>.  You could interpret this as the
-worldlines of a spaceship (red) passing by a planet (blue) while being
+worldlines of a spaceship (red) passing by a planet (orange) while being
 overtaken by a faster spaceship (green).  At the origin, all three
 objects are at the same location.</p>
 <p>By moving the slider, you can shift your perspective into reference
 frames with different relative motion.  Slide the bar to the left
-until the blue line is vertical.  This is the reference frame of the
+until the orange line is vertical.  This is the reference frame of the
 planet as two spaceships going at difference speeds pass it.  The
 green spaceship is faster than the blue spaceship, as it must be, but
 it does not exceed the speed of light.  Continue moving the slider to
 the left, and you can see the speed of all three objects will approach
 the speed of light, but never reach it.  If you move the slider to the
 right, you can reach the reference frame of the green object, where
-the red and blue objects will be falling behind, and the blue object
+the red and orange objects will be falling behind, and the orange object
 is moving faster than the red one.</p>
 <figure class="align-default" id="addvelfig" style="width: 800px">
 <div class="output text_html">

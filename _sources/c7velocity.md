@@ -215,11 +215,13 @@ factor out the gamma and use $v^2=v_x^2+v_y^2+v_z^2$:
 ```
 $$\boxed{[v_4]^2 = -c^2}$$
 
-Once again, the size of a 4-vector is a negative number. The
-experimental evidence is that the speed of light has the same value
-for all inertial observers, so the size of the 4-velocity is therefore
-a scalar quantity. The 4-velocity meets the requirements set forth by
-the Michelson-Morley experiment.
+Once again, the size of a 4-vector is a negative number. (This is not
+surprising, since the size of the four displacement is negative, and
+$dt$ is always defined to be postive.)  The experimental evidence is
+that the speed of light has the same value for all inertial observers,
+so the size of the 4-velocity is therefore a scalar quantity. The
+4-velocity meets the requirements set forth by the Michelson-Morley
+experiment.
 
 When objects are traveling near the speed of light, a convenient quantity
 to define is a unitless 4-velocity known as the 4-beta. This saves
@@ -469,6 +471,13 @@ cancel common factors to get
 \boxed{
 \beta' = \frac{\beta - \beta_R}{1-\beta\beta_R}}
 ```
+
+```{margin}
+If you did the problem with adding rapidities in [Chapter 5](chSTdiag),
+you derived this same formula from the addition of the two rapidity
+equations.
+```
+
 This is known as **the velocity addition formula**.  Note that
 although it is quite different from what Newton or Galileo would have
 expected, it does meet all the conditions we laid out before we
@@ -517,22 +526,22 @@ objects in relative motion, while the slider allows you to change
 reference frames via your own relative velocity.  The default
 beginning state of the figure is that your observation frame is at
 rest with respect to the red object.  In this reference frame, the
-blue object is moving left at $\beta_b=0.3$ and the green object is
+orange object is moving left at $\beta_b=0.3$ and the green object is
 moving right at $\beta_g=0.7$.  You could interpret this as the
-worldlines of a spaceship (red) passing by a planet (blue) while being
+worldlines of a spaceship (red) passing by a planet (orange) while being
 overtaken by a faster spaceship (green).  At the origin, all three
 objects are at the same location.
 
 By moving the slider, you can shift your perspective into reference
 frames with different relative motion.  Slide the bar to the left
-until the blue line is vertical.  This is the reference frame of the
+until the orange line is vertical.  This is the reference frame of the
 planet as two spaceships going at difference speeds pass it.  The
 green spaceship is faster than the blue spaceship, as it must be, but
 it does not exceed the speed of light.  Continue moving the slider to
 the left, and you can see the speed of all three objects will approach
 the speed of light, but never reach it.  If you move the slider to the
 right, you can reach the reference frame of the green object, where
-the red and blue objects will be falling behind, and the blue object
+the red and orange objects will be falling behind, and the orange object
 is moving faster than the red one.
 
 
