@@ -125,6 +125,27 @@ of each of the pieces. It is the size of the net (sum of
 momentum of each of the pieces) 4-momentum that is a Lorentz
 scalar.
 
+
+
+```{admonition} Checkpoint
+One of the most confusing aspects of momentum in relativity is that we include the
+$\gamma$ in the definition, when we didn't do that with velocity.  Why might we do that?
+<form name="radioForm" action="#" method="get" id="choiceMyform23">
+<input type="radio" name="question23" id="q23a1" value="a.">It's more or less arbitrary -- a definition.<br>
+<input type="radio" name="question23" id="q23a2" value="b.">The important thing about momentum is that it's conserved, and the gamma is part of what's conserved.<br>
+<input type="radio" name="question23" id="q23a3" value="c.">If we had included it in the velocity, we wouldn't need to include it again here.<br>
+<input type="radio" name="question23" id="q23a4" value="d.">All of the above.<br>
+</form>
+<div class="quiz">
+<p id="Answer_q23">Choose the answer you think is correct and then click the button.
+<hr>
+<p><button id="q23" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div>
+```
+
+
 ## Momentum and Lorentz Transformations
 
 
