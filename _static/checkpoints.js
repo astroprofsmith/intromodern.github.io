@@ -370,6 +370,23 @@ function validate_ans(myq) {
 	}
     }
 
+    if (myq =='q23') {
+	//  Why use gamma in momentum?
+	if (document.getElementById('q23a1').checked) {
+            document.getElementById('Answer_q23').textContent = "This isn't wrong, but is it the only valid answer?";
+	}
+	if (document.getElementById('q23a2').checked) {
+            document.getElementById('Answer_q23').textContent = "Not wrong, but not the only one.";
+	}
+	if (document.getElementById('q23a3').checked) {
+            document.getElementById('Answer_q23').textContent = "Sure, that makes sense, but is there nothing else?";
+	}
+	if (document.getElementById('q23a4').checked) {
+            document.getElementById('Answer_q23').textContent = "Yup!  It's all three of them.";
+	}
+    }    
+
+
     
     
     if (myq =='q2X') {

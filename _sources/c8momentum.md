@@ -116,7 +116,8 @@ product of the 4-vector with itself:
 ```
 Since $m_0$ is an invariant and so is $c$, the size of the
 momentum 4-vector is a Lorentz invariant. Once again, it's
-negative.
+negative, because the rest mass is positive, and the size of
+the four-velocity is negative.
 
 If a system is made up of more than one particle, the total
 4-momentum for the system is the sum of the momentum 4-vectors
@@ -457,6 +458,8 @@ infinite, then $\beta= 1$, and these particles must be traveling at
 the speed of light.  Always.  This is not surprising for the gamma
 ray, as it is light. What is surprising is that other particles such
 as the neutrino, which are not photons, also travel at the same speed.
+You can see now why $c$ is better understood as a speed limit to the
+universe, at which light travels because it has no rest mass.
 
 Also surprising is that all of these particles have momentum even
 though they do not have any rest mass.  You might think, if you think
@@ -620,7 +623,7 @@ i135~{\rm MeV}/c\\
 \end{bmatrix}
 ```
 The observer in the rest frame of the pion watches the decay take place.
-The $x$-direction is defined as the direction that one of the dautgher photons
+The $x$-direction is defined as the direction that one of the daughter photons
 takes. The second photon travels in some unknown direction. The observer in
 the rest frame of the pion measures a momentum 4-vector of the two photons as:
 ```{math}
@@ -667,9 +670,9 @@ pion and a 100 MeV electron. (the units should be in MeV/c).
 
 
 2) Make a plot of the kinetic energy of an electron as a function of
-$\beta$ for $\beta = 0 to 0.999$ (or some maximum number just slightly
-less than one). On the same graph, plot the classical value of the
-kinetic energy of this electron ($KE = 1/2 mv^2= 1/2 Eo
+$\beta$ for $\beta = 0$ to $0.999$ (or some maximum number just
+slightly less than one). On the same graph, plot the classical value
+of the kinetic energy of this electron ($KE = 1/2 mv^2= 1/2 E_0
 \beta^2$). Describe the difference between these two graphs. What does
 this graph predict about the chances of an electron to travel the
 speed of light?

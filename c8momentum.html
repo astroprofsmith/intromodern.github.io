@@ -60,7 +60,7 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c8momentum';</script>
-    <script src="_static/checkpoints.js?v=9d6ea11c"></script>
+    <script src="_static/checkpoints.js?v=29103eb4"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="9. Examples of Relativity in Action" href="c9examples.html" />
@@ -490,7 +490,8 @@ product of the 4-vector with itself:</p>
 <span class="eqno">(8.6)<a class="headerlink" href="#equation-pmag2" title="Link to this equation">#</a></span>\[[p_4]^2 = -m_0^2c^2\gamma^2(1-v^2/c^2) = -m_0^2c^2\]</div>
 <p>Since <span class="math notranslate nohighlight">\(m_0\)</span> is an invariant and so is <span class="math notranslate nohighlight">\(c\)</span>, the size of the
 momentum 4-vector is a Lorentz invariant. Once again, it’s
-negative.</p>
+negative, because the rest mass is positive, and the size of
+the four-velocity is negative.</p>
 <p>If a system is made up of more than one particle, the total
 4-momentum for the system is the sum of the momentum 4-vectors
 of each of the pieces. It is the size of the net (sum of
@@ -776,7 +777,9 @@ measured.</p>
 infinite, then <span class="math notranslate nohighlight">\(\beta= 1\)</span>, and these particles must be traveling at
 the speed of light.  Always.  This is not surprising for the gamma
 ray, as it is light. What is surprising is that other particles such
-as the neutrino, which are not photons, also travel at the same speed.</p>
+as the neutrino, which are not photons, also travel at the same speed.
+You can see now why <span class="math notranslate nohighlight">\(c\)</span> is better understood as a speed limit to the
+universe, at which light travels because it has no rest mass.</p>
 <p>Also surprising is that all of these particles have momentum even
 though they do not have any rest mass.  You might think, if you think
 of momentum as mass times velocity, that no mass means no momentum.
@@ -921,7 +924,7 @@ i135~{\rm MeV}/c\\
 0.0
 \end{bmatrix}\end{split}\]</div>
 <p>The observer in the rest frame of the pion watches the decay take place.
-The <span class="math notranslate nohighlight">\(x\)</span>-direction is defined as the direction that one of the dautgher photons
+The <span class="math notranslate nohighlight">\(x\)</span>-direction is defined as the direction that one of the daughter photons
 takes. The second photon travels in some unknown direction. The observer in
 the rest frame of the pion measures a momentum 4-vector of the two photons as:</p>
 <div class="math notranslate nohighlight" id="equation-p42pho">
@@ -962,9 +965,9 @@ MeV/c, but each in an opposite direction to the other.</p>
 <li><p>Find the physical momentum of a 100 MeV proton, a 100 MeV positive
 pion and a 100 MeV electron. (the units should be in MeV/c).</p></li>
 <li><p>Make a plot of the kinetic energy of an electron as a function of
-<span class="math notranslate nohighlight">\(\beta\)</span> for <span class="math notranslate nohighlight">\(\beta = 0 to 0.999\)</span> (or some maximum number just slightly
-less than one). On the same graph, plot the classical value of the
-kinetic energy of this electron (<span class="math notranslate nohighlight">\(KE = 1/2 mv^2= 1/2 Eo
+<span class="math notranslate nohighlight">\(\beta\)</span> for <span class="math notranslate nohighlight">\(\beta = 0\)</span> to <span class="math notranslate nohighlight">\(0.999\)</span> (or some maximum number just
+slightly less than one). On the same graph, plot the classical value
+of the kinetic energy of this electron (<span class="math notranslate nohighlight">\(KE = 1/2 mv^2= 1/2 E_0
 \beta^2\)</span>). Describe the difference between these two graphs. What does
 this graph predict about the chances of an electron to travel the
 speed of light?</p></li>
