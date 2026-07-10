@@ -457,12 +457,12 @@ away with using Newtonian mechanics.
 
 
 ```{admonition} Checkpoint
-The Sun emits approximately $4\times 10^26$ joules of energy every second.
+The Sun emits approximately $4\times 10^{26}$ joules of energy every second.
 How much mass is being destroyed in the Sun in a single second?
 <form name="radioForm" action="#" method="get" id="choiceMyform24">
-<input type="radio" name="question24" id="q24a1" value="a.">Five thousand tons<br>
-<input type="radio" name="question24" id="q24a2" value="b.">Five million tons<br>
-<input type="radio" name="question24" id="q24a3" value="c.">Five billion tons<br>
+<input type="radio" name="question24" id="q24a1" value="a.">Four thousand tons<br>
+<input type="radio" name="question24" id="q24a2" value="b.">Four million tons<br>
+<input type="radio" name="question24" id="q24a3" value="c.">Four billion tons<br>
 <input type="radio" name="question24" id="q24a4" value="d.">None.  Mass is conserved.<br>
 </form>
 <div class="quiz">
