@@ -473,6 +473,27 @@ just how fast "close to the speed of light" really is.  Even 25 million
 miles an hour isn't fast enough to really need to use relativity theory.
 ```
 
+
+```{admonition} Checkpoint
+The Sun emits approximately $4\times 10^26$ joules of energy every second.
+How much mass is being destroyed in the Sun in a single second?
+<form name="radioForm" action="#" method="get" id="choiceMyform24">
+<input type="radio" name="question24" id="q24a1" value="a.">Five thousand tons<br>
+<input type="radio" name="question24" id="q24a2" value="b.">Five million tons<br>
+<input type="radio" name="question24" id="q24a3" value="c.">Five billion tons<br>
+<input type="radio" name="question24" id="q24a4" value="d.">None.  Mass is conserved.<br>
+</form>
+<div class="quiz">
+<p id="Answer_q24">Choose the answer you think is correct and then click the button.
+<hr>
+<p><button id="q24" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div>
+```
+
+
+
 ## The Rest Energy
 
 The rest energy is the energy measured in the rest frame of a particle.
