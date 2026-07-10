@@ -386,7 +386,21 @@ function validate_ans(myq) {
 	}
     }    
 
-
+    if (myq =='q24') {
+	//  this is a template to make new questions
+	if (document.getElementById('q24a1').checked) {
+            document.getElementById('Answer_q24').textContent = "Not nearly enough.";
+	}
+	if (document.getElementById('q24a2').checked) {
+            document.getElementById('Answer_q24').textContent = "Yes! To produce that much energy, you would need to destroy this much mass.";
+	}
+	if (document.getElementById('q24a3').checked) {
+            document.getElementById('Answer_q24').textContent = "It would be five billion kg, not tons.";
+	}
+	if (document.getElementById('q24a4').checked) {
+            document.getElementById('Answer_q24').textContent = "Mass is not conserved!";
+	}
+    }    
     
     
     if (myq =='q2X') {
