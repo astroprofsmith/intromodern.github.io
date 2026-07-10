@@ -401,8 +401,25 @@ converting everything to kg m/s.  See the example 8.3 in the margin,
 below, for how easy eV units can be.
 ```
 
+It is interesting to consider Equation {eq}`pfrome2` in the extreme
+limits.  If $E_0\gg KE$, such as with a baseball, then the $1$ can
+be ignored.  Square both sides to get
+```{math}
+\frac{c^2p^2}{2} = E_0KE.
+```
+Plug in $p=m_0v$, $E_0=m_0c^2$, and $KE=\frac{1}{2}m_0v^2$ to see that
+this is consistent with the classical mechanics for everyday objects,
+as the correspondance principle demands.  In the other extreme, where
+a particle's $KE\gg E_0$, we can use a Taylor expansion:
+```{math}
+cp = KE\left(1+\frac{E_0}{KE}\right)=KE+E_0\approx KE.
+```
+In which case $p\approx KE/c$, which is very similar to the properties
+of a photon, where $E_0=0$ and $p=h\nu/c$.  So as a particle's kinetic
+energy grows to much more than its rest energy, it starts to look
+more and more like a photon.
 
-This means
+This definition of momentum means
 that the momentum 4-vector can be written in terms of the physical
 momentum and total energy of the system as:
 ```{math}

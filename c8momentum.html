@@ -60,7 +60,7 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c8momentum';</script>
-    <script src="_static/checkpoints.js?v=29103eb4"></script>
+    <script src="_static/checkpoints.js?v=fa26db19"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="9. Examples of Relativity in Action" href="c9examples.html" />
@@ -727,7 +727,22 @@ express the momentum in eV/c.  Then you don’t have to worry about
 converting everything to kg m/s.  See the example 8.3 in the margin,
 below, for how easy eV units can be.</p>
 </div>
-<p>This means
+<p>It is interesting to consider Equation <a class="reference internal" href="#equation-pfrome2">(8.21)</a> in the extreme
+limits.  If <span class="math notranslate nohighlight">\(E_0\gg KE\)</span>, such as with a baseball, then the <span class="math notranslate nohighlight">\(1\)</span> can
+be ignored.  Square both sides to get</p>
+<div class="math notranslate nohighlight">
+\[\frac{c^2p^2}{2} = E_0KE.\]</div>
+<p>Plug in <span class="math notranslate nohighlight">\(p=m_0v\)</span>, <span class="math notranslate nohighlight">\(E_0=m_0c^2\)</span>, and <span class="math notranslate nohighlight">\(KE=\frac{1}{2}m_0v^2\)</span> to see that
+this is consistent with the classical mechanics for everyday objects,
+as the correspondance principle demands.  In the other extreme, where
+a particle’s <span class="math notranslate nohighlight">\(KE\gg E_0\)</span>, we can use a Taylor expansion:</p>
+<div class="math notranslate nohighlight">
+\[cp = KE\left(1+\frac{E_0}{KE}\right)=KE+E_0\approx KE.\]</div>
+<p>In which case <span class="math notranslate nohighlight">\(p\approx KE/c\)</span>, which is very similar to the properties
+of a photon, where <span class="math notranslate nohighlight">\(E_0=0\)</span> and <span class="math notranslate nohighlight">\(p=h\nu/c\)</span>.  So as a particle’s kinetic
+energy grows to much more than its rest energy, it starts to look
+more and more like a photon.</p>
+<p>This definition of momentum means
 that the momentum 4-vector can be written in terms of the physical
 momentum and total energy of the system as:</p>
 <div class="math notranslate nohighlight" id="equation-p4fulle">
