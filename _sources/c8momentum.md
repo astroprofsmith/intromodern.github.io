@@ -455,24 +455,6 @@ If this number is significantly greater than one, then you need to use
 the relativistic equations, but if it's very close to one, you can get
 away with using Newtonian mechanics.
 
-```{margin}
-Example 8.3:
-
-An electron gun in the lab can accelerate electrons through a potential
-difference of up to 500 V.  In energy terms, this means the electron will
-gain 500 eV of kinetic energy.  The rest energy of an electron is about
-500 keV.  Therefore, the Lorentz factor for the electrons in this device
-will never be greater than $\gamma = 1 + 5\times10^2/5\times10^5 = 1.001$,
-and it is not important to use relativistic equations to describe the
-motion of the electrons in this apparatus.
-
-At $\gamma=1.001$, we can figure out the speed, and we get $\beta
-= \sqrt{1-1/\gamma^2} = 0.0447$, which works out to $1.3\times10^7$ m/s.
-That's still something like 25 million miles an hour, which shows you
-just how fast "close to the speed of light" really is.  Even 25 million
-miles an hour isn't fast enough to really need to use relativity theory.
-```
-
 
 ```{admonition} Checkpoint
 The Sun emits approximately $4\times 10^26$ joules of energy every second.
@@ -503,6 +485,24 @@ The elementary particles have fixed rest energies.  For the proton --
 However, not all particles have rest energy. A photon (gamma ray) does
 not have any rest energy, and a neutrino's is so small it can barely be
 measured.
+
+```{margin}
+Example 8.3:
+
+An electron gun in the lab can accelerate electrons through a potential
+difference of up to 500 V.  In energy terms, this means the electron will
+gain 500 eV of kinetic energy.  The rest energy of an electron is about
+500 keV.  Therefore, the Lorentz factor for the electrons in this device
+will never be greater than $\gamma = 1 + 5\times10^2/5\times10^5 = 1.001$,
+and it is not important to use relativistic equations to describe the
+motion of the electrons in this apparatus.
+
+At $\gamma=1.001$, we can figure out the speed, and we get $\beta
+= \sqrt{1-1/\gamma^2} = 0.0447$, which works out to $1.3\times10^7$ m/s.
+That's still something like 25 million miles an hour, which shows you
+just how fast "close to the speed of light" really is.  Even 25 million
+miles an hour isn't fast enough to really need to use relativity theory.
+```
 
 Equation {eq}`gamE` would therefore imply that the value for the
 $\gamma$ of the messless particles is infinite. If $\gamma$ is
