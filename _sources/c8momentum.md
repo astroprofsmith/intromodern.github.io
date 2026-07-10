@@ -409,15 +409,8 @@ be ignored.  Square both sides to get
 ```
 Plug in $p=m_0v$, $E_0=m_0c^2$, and $KE=\frac{1}{2}m_0v^2$ to see that
 this is consistent with the classical mechanics for everyday objects,
-as the correspondance principle demands.  In the other extreme, where
-a particle's $KE\gg E_0$, we can use a Taylor expansion:
-```{math}
-cp = KE\left(1+\frac{E_0}{KE}\right)=KE+E_0\approx KE.
-```
-In which case $p\approx KE/c$, which is very similar to the properties
-of a photon, where $E_0=0$ and $p=h\nu/c$.  So as a particle's kinetic
-energy grows to much more than its rest energy, it starts to look
-more and more like a photon.
+as the correspondance principle demands.  For the other extreme, where
+$KE\gg E_0$, see the note in the next section.
 
 This definition of momentum means
 that the momentum 4-vector can be written in terms of the physical
@@ -515,7 +508,7 @@ $hf/c$, or $h/\lambda$, where $\lambda$ is the wavelength.  See also
 the treatment in the section of [Chapter 9](chSRexam) on the [Doppler
 Shift](secDoppler).  Even for massive particles, if their KE becomes
 huge compared to their rest energy, they start to look more and more
-like photons, with a momentum equal to KE/$c$.  
+like photons, with a momentum approximately equal to KE/$c$.  
 ```
 
 On the other hand, for a particle with $E_0 \neq 0$ to travel **at**
