@@ -486,8 +486,17 @@ h/\lambda_1\\
 0\\
 0
 \end{bmatrix}
+=
+\frac{h}{\lambda_1}
+\begin{bmatrix}
+i\\
+1\\
+0\\
+0
+\end{bmatrix}
 ```
-where we use $E=hf$ and $c=\lambda f$ to get the latter form.
+where we use $E=hf$ and $c=\lambda f$ to express in terms of
+wavelength.
 
 Notice that the size of the momentum 4-vector for a photon (or any
 zero rest energy particle) is 0. That is because the size of the
@@ -542,8 +551,9 @@ i\\
 1
 \end{bmatrix}
 ```
-The part in brackets is clearly the same, so $E_2=\gamma_R(1-\beta_R)E_1$.
-Plug in the definition of $\gamma_R$ to get
+The part in brackets is clearly the same as in Equation {eq}`p4phot`, so
+$E_2=\gamma_R(1-\beta_R)E_1$.  Plug in the definition of $\gamma_R$ to
+get
 ```{math}
 :label: Edopp
 E_2 = E_1 \frac{1-\beta_R}{\sqrt{1-\beta_R^2}}
