@@ -551,7 +551,7 @@ i\\
 1
 \end{bmatrix}
 ```
-The part in brackets is clearly the same as in Equation {eq}`p4phot`, so
+The part in brackets is clearly the same across that last equals sign, so
 $E_2=\gamma_R(1-\beta_R)E_1$.  Plug in the definition of $\gamma_R$ to
 get
 ```{math}
