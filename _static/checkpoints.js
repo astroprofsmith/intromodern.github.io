@@ -418,6 +418,24 @@ function validate_ans(myq) {
 	}
     }        
     
+    if (myq =='q26') {
+	//  this is a template to make new questions
+	if (document.getElementById('q26a1').checked) {
+            document.getElementById('Answer_q26').textContent = "Yes, that integral ignores the presence of the gamma.";
+	}
+	if (document.getElementById('q26a2').checked) {
+            document.getElementById('Answer_q26').textContent = "Yes, you may integrate a vector.";
+	}
+	if (document.getElementById('q26a3').checked) {
+            document.getElementById('Answer_q26').textContent = "The dot product is not an issue here.";
+	}
+	if (document.getElementById('q26a4').checked) {
+            document.getElementById('Answer_q26').textContent = "As long as speeds are small, you can get away with this, but be careful!  This derivation does not have any speed limit!";
+	}
+    }
+
+
+
     
     if (myq =='q2X') {
 	//  this is a template to make new questions

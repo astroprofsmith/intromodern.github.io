@@ -192,6 +192,27 @@ startling, example of how the universal speed limit ties concepts together
 for self-consistency, even when we think down here in our world of slow
 speeds that these concepts are independent.
 
+
+
+```{admonition} Checkpoint
+Sometimes you might see $\vec{v}\cdot d\vec{p}$ integrated to get
+$\frac{1}{2}mv^2$, supposedly showing that force through a displacement
+changes kinetic energy.  Why should you be suspicious of this derivation?
+<form name="radioForm" action="#" method="get" id="choiceMyform26">
+<input type="radio" name="question26" id="q26a1" value="a.">It ignores the Lorentz factor.<br>
+<input type="radio" name="question26" id="q26a2" value="b.">You can't integrate a vector.<br>
+<input type="radio" name="question26" id="q26a3" value="c.">It ignores the dot product.<br>
+<input type="radio" name="question26" id="q26a4" value="d.">No need to be suspicious.  It's fine.<br>
+</form>
+<div class="quiz">
+<p id="Answer_q26">Choose the answer you think is correct and then click the button.
+<hr>
+<p><button id="q26" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div>
+```
+
 ## Newton's Second Law with Four Vectors
 
 To fix Equation {eq}`Newton2nd`, we keep the underlying meaning
@@ -330,9 +351,10 @@ and {eq}`M4forcefin`, we see that
 K^0 = i\gamma(\vec{F}\cdot\vec{\beta}) = i\frac{\gamma}{c}\frac{dE}{dt}
 = i\gamma\frac{d}{dt}(\gamma m_0 c)
 ```
-so $\vec{F}\cdot\vec{\beta} = d(\gamma m_0 c)/dt$, as you might
-expect, and the time component of the Minkowski force is telling
-us the power being delivered to the object experiencing the force.
+so $\vec{F}\cdot\vec{\beta} = d(\gamma m_0 c)/dt$, as you might expect
+from Equation {eq}`workKE`, and the time component of the Minkowski
+force is telling us the power being delivered to the object
+experiencing the force.
 
 ```{note}
 It's interesting to note that although $\vec{F}\cdot\vec{v}$ is
