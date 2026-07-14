@@ -400,7 +400,23 @@ function validate_ans(myq) {
 	if (document.getElementById('q24a4').checked) {
             document.getElementById('Answer_q24').textContent = "Mass is not conserved!";
 	}
-    }    
+    }
+
+    if (myq =='q25') {
+	//  this is a template to make new questions
+	if (document.getElementById('q25a1').checked) {
+            document.getElementById('Answer_q25').textContent = "No, too slow.  You might be ignoring units.";
+	}
+	if (document.getElementById('q25a2').checked) {
+            document.getElementById('Answer_q25').textContent = "No, too slow.";
+	}
+	if (document.getElementById('q25a3').checked) {
+            document.getElementById('Answer_q25').textContent = "Yes, five divided by 0.5 is ten.";
+	}
+	if (document.getElementById('q25a4').checked) {
+            document.getElementById('Answer_q25').textContent = "No, too fast.";
+	}
+    }        
     
     
     if (myq =='q2X') {

@@ -60,9 +60,10 @@ masses, say $m_1$ and $m_2$, the $m\vec{v}$ in Eq. {eq}`Newton2nd`
 becomes $m_1\vec{v}_1 + m_2\vec{v}_2$ to represent the total momentum.
 If the net force on the system from the outside is zero,
 Eq. {eq}`Newton2nd` demands that the rates of change of the momenta of
-the pieces of system must be equal and opposite.  The force on each
-piece of the system from the other piece of the system (since there is
-no net external force) must therefore be equal and opposite.
+the pieces of system must be equal and opposite.  Since force is the
+rate of change of the momentum, the force on each piece of the system
+from the other piece of the system (since there is no net external
+force) must therefore be equal and opposite.
 
 This law is often mischaracterized as "every action has an equal and
 opposite reaction", but this expression gives the impression it deals
@@ -103,6 +104,24 @@ near the speed of light and characterize their motion.  But before
 we dive into the four-vector analysis, there is an interesting observation
 to be made about how the structure of the Lorentz factor itself is tied
 deeply into the mechanics of energy and motion.
+
+```{admonition} Checkpoint
+If the Earth exerts 10 N of force on a 1 kg ball, and there are no other
+forces involved, how much will the speed of the ball change in 1 s?
+<form name="radioForm" action="#" method="get" id="choiceMyform25">
+<input type="radio" name="question25" id="q25a1" value="a.">1 m/s<br>
+<input type="radio" name="question25" id="q25a2" value="b.">5 m/s<br>
+<input type="radio" name="question25" id="q25a3" value="c.">10 m/s<br>
+<input type="radio" name="question25" id="q25a4" value="d.">20 m/s<br>
+</form>
+<div class="quiz">
+<p id="Answer_q25">Choose the answer you think is correct and then click the button.
+<hr>
+<p><button id="q25" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div>
+```
 
 ## Dynamics from the Lorentz Factor
 
