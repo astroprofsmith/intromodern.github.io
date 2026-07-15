@@ -387,7 +387,7 @@ function validate_ans(myq) {
     }    
 
     if (myq =='q24') {
-	//  this is a template to make new questions
+	//  Sun destroys mass into light energy
 	if (document.getElementById('q24a1').checked) {
             document.getElementById('Answer_q24').textContent = "Not nearly enough.";
 	}
@@ -403,7 +403,7 @@ function validate_ans(myq) {
     }
 
     if (myq =='q25') {
-	//  this is a template to make new questions
+	//  Acceleration from force
 	if (document.getElementById('q25a1').checked) {
             document.getElementById('Answer_q25').textContent = "No, too slow.  You might be ignoring units.";
 	}
@@ -419,7 +419,7 @@ function validate_ans(myq) {
     }        
     
     if (myq =='q26') {
-	//  this is a template to make new questions
+	//  work to KE theorem
 	if (document.getElementById('q26a1').checked) {
             document.getElementById('Answer_q26').textContent = "Yes, that integral ignores the presence of the gamma.";
 	}
@@ -434,7 +434,21 @@ function validate_ans(myq) {
 	}
     }
 
-
+    if (myq =='q27') {
+	//  Why F or F'?
+	if (document.getElementById('q27a1').checked) {
+            document.getElementById('Answer_q27').textContent = "No, the location of the prime does change the meaning.";
+	}
+	if (document.getElementById('q27a2').checked) {
+            document.getElementById('Answer_q27').textContent = "No, then it would be upside down.";
+	}
+	if (document.getElementById('q27a3').checked) {
+            document.getElementById('Answer_q27').textContent = "Always possible, but I am pretty sure I got this one right.";
+	}
+	if (document.getElementById('q27a4').checked) {
+            document.getElementById('Answer_q27').textContent = "Yes, it's there on both sides.  It's just that for F, beta is zero, so the fraction is one.";
+	}
+    }    
 
     
     if (myq =='q2X') {

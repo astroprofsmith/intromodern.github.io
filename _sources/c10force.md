@@ -415,6 +415,29 @@ frame is smaller than the force in the frame at rest.  This
 will be very important in understanding the relation between
 electricity and magnetism in [the next chapter](chEMten).
 
+
+
+```{admonition} Checkpoint
+In Equation {eq}`sizeK4`, the complicated fraction with $\beta$ and $\cos{\theta}$ is
+multiplying $F$, but in Equation {eq}`Ftrans`, it's multiplying $F^\prime$.  Why the switch?
+<form name="radioForm" action="#" method="get" id="choiceMyform27">
+<input type="radio" name="question27" id="q27a1" value="a.">It's just a notation triviality.<br>
+<input type="radio" name="question27" id="q27a2" value="b.">It's been multiplied over to the other side of the equals.<br>
+<input type="radio" name="question27" id="q27a3" value="c.">It's a typo in the text.<br>
+<input type="radio" name="question27" id="q27a4" value="d.">It's actually there on both sides.<br>
+</form>
+<div class="quiz">
+<p id="Answer_q27">Choose the answer you think is correct and then click the button.
+<hr>
+<p><button id="q27" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div>
+```
+
+
+
+
 ## Lorentz Transforming Forces
 
 Another way of thinking about how the forces transform (thanks to
