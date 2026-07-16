@@ -491,11 +491,12 @@ size of Minkowski force.
 ## The Acceleration Four Vector
 
 Although Special Relativity demands that any inertial reference frames
-we consider be moving at constant relative velocities, there is nothing
-to prevent objects within a particular reference from from accelerating.
-You do have to be careful about switching frames, though, because you
-can't use the SR rules to switch into a rest frame for an accelerating
-object!
+we consider be moving at constant relative velocities, there is
+nothing to prevent objects within a particular reference from from
+accelerating.  You do have to be careful about switching frames,
+though, because you can't use the SR rules to switch into a permanent
+rest frame for an accelerating object!  An accelerating object can
+only be instantaneously at rest, in any choice of frame.
 
 The relativistic acceleration, a well defined but strange quantity, can
 be modeled in two ways. First, it would be the proper time derivative
@@ -505,7 +506,7 @@ of the 4-velocity:
 [a_4] = \frac{d([v_4])}{dt_0} = \gamma \frac{d([v_4])}{dt}
 ```
 or one could use the relativistic analog of Newton's law for a
-particle of constant rest energy (mass):
+particle of constant non-zero rest energy (mass):
 ```{math}
 :label: acc4ma
 [a_4] = [K_4]/m_0
@@ -746,11 +747,12 @@ $dt$), as $v_x\rightarrow c$, $\gamma \rightarrow \infty$, while $m_0$
 is a constant, so $dv_x$ has to go to zero to balance the $\gamma$ and
 keep $dE$ constant.  The same energy input causes a smaller and
 smaller change in velocity.  As long as $v_x\ll c$, then
-$\gamma\approx 1$ and then you could simply integrate both
-sides to get $\Delta E = \frac{1}{2} m_0 \Delta (v_x^2)$
-This is what your newtonian intuition would expect for increasing
-kinetic energy.
-However, as $v_x\rightarrow c$, that intuition is no longer accurate.
+$\gamma\approx 1$ and then you could simply integrate both sides to
+get $\Delta E = \frac{1}{2} m_0 \Delta (v_x^2)$, as the classical
+treatment of the work-kinetic energy theorem would tell you (see the
+Checkpoint question, above).  This is what your newtonian intuition
+would expect for increasing kinetic energy.  However, as
+$v_x\rightarrow c$, that intuition is no longer accurate.
 
 The general case of applying the relativistic Newton's law to a
 particle having laboratory accelerations and velocities in all three
@@ -775,14 +777,15 @@ For example, let's say a particle has both $v_x$ and $v_y$ greater
 than zero.  Further, let's say that there is a force acting on this
 particle in only the $x$ direction that is increasing the speed
 $\beta$.  If you look at $[K_4]^2$ (the third component of the
-Minkowski force) in Equation {eq}`acc4dgam`, there are two terms being
-added together.  If $v_y>0$, and the total speed is increasing
-($d\beta/dt>0$), then the first term $\gamma^2v_y\beta d\beta/dt$ is
-greater than zero.  If there is no force in the $y$ direction, then
-$[K_4]^2=0$, which means the second term $dv_y/dt$ must be less than
-zero, to make sure the two terms cancel out.  A negative $dv_y/dt$
-means that the particle slows down in the $y$ direction even as it
-keeps increasing its velocity in the $x$ direction.
+Minkowski force, not the square of the four-vector!) in Equation
+{eq}`acc4dgam`, there are two terms being added together.  If $v_y>0$,
+and the total speed is increasing ($d\beta/dt>0$), then the first term
+$\gamma^2v_y\beta d\beta/dt$ is greater than zero.  If there is no
+force in the $y$ direction, then $[K_4]^2=0$, which means the second
+term $dv_y/dt$ must be less than zero, to make sure the two terms
+cancel out.  A negative $dv_y/dt$ means that the particle slows down
+in the $y$ direction even as it keeps increasing its velocity in the
+$x$ direction.
 
 ## Examples 
 

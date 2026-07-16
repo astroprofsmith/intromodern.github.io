@@ -92,6 +92,24 @@ points tangent to a circle around the wire and has a magnitude of
 $\mu_0 I/2\pi r$.
 
 
+```{admonition} Checkpoint
+Which of the following statements is incorrect, given the classical analysis above?
+<form name="radioForm" action="#" method="get" id="choiceMyform28">
+<input type="radio" name="question28" id="q28a1" value="a.">Currents have magnetic fields around them.<br>
+<input type="radio" name="question28" id="q28a2" value="b.">Currents in the same direction will attract each other through magnetic forces.<br>
+<input type="radio" name="question28" id="q28a3" value="c.">Charges in motion attract each other.<br>
+<input type="radio" name="question28" id="q28a4" value="d.">Charges at rest experience no magnetic force.<br>
+</form>
+<div class="quiz">
+<p id="Answer_q28">Choose the answer you think is incorrect and then click the button.
+<hr>
+<p><button id="q28" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div>
+```
+
+
 ### The Relativistic Model
 
 As with most relativity problems, this one comes down to setting up

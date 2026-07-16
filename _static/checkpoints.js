@@ -450,6 +450,22 @@ function validate_ans(myq) {
 	}
     }    
 
+    if (myq =='q28') {
+	//  this is a template to make new questions
+	if (document.getElementById('q28a1').checked) {
+            document.getElementById('Answer_q28').textContent = "This statement is correct.";
+	}
+	if (document.getElementById('q28a2').checked) {
+            document.getElementById('Answer_q28').textContent = "This statement is correct.";
+	}
+	if (document.getElementById('q28a3').checked) {
+            document.getElementById('Answer_q28').textContent = "This statement is too broad.  Electric repulsion can overwhelm magnetic attraction, and currents in opposite directions repel each other.";
+	}
+	if (document.getElementById('q28a4').checked) {
+            document.getElementById('Answer_q28').textContent = "This statement is correct.";
+	}
+    }    
+
     
     if (myq =='q2X') {
 	//  this is a template to make new questions

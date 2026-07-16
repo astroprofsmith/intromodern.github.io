@@ -60,7 +60,7 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'c10force';</script>
-    <script src="_static/checkpoints.js?v=441bdf31"></script>
+    <script src="_static/checkpoints.js?v=3c96dbea"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="11. The Electromagnetic Tensor" href="c11electric.html" />
@@ -815,18 +815,19 @@ size of Minkowski force.</p>
 <section id="the-acceleration-four-vector">
 <h2><span class="section-number">10.7. </span>The Acceleration Four Vector<a class="headerlink" href="#the-acceleration-four-vector" title="Link to this heading">#</a></h2>
 <p>Although Special Relativity demands that any inertial reference frames
-we consider be moving at constant relative velocities, there is nothing
-to prevent objects within a particular reference from from accelerating.
-You do have to be careful about switching frames, though, because you
-can’t use the SR rules to switch into a rest frame for an accelerating
-object!</p>
+we consider be moving at constant relative velocities, there is
+nothing to prevent objects within a particular reference from from
+accelerating.  You do have to be careful about switching frames,
+though, because you can’t use the SR rules to switch into a permanent
+rest frame for an accelerating object!  An accelerating object can
+only be instantaneously at rest, in any choice of frame.</p>
 <p>The relativistic acceleration, a well defined but strange quantity, can
 be modeled in two ways. First, it would be the proper time derivative
 of the 4-velocity:</p>
 <div class="math notranslate nohighlight" id="equation-acc4dv">
 <span class="eqno">(10.25)<a class="headerlink" href="#equation-acc4dv" title="Link to this equation">#</a></span>\[[a_4] = \frac{d([v_4])}{dt_0} = \gamma \frac{d([v_4])}{dt}\]</div>
 <p>or one could use the relativistic analog of Newton’s law for a
-particle of constant rest energy (mass):</p>
+particle of constant non-zero rest energy (mass):</p>
 <div class="math notranslate nohighlight" id="equation-acc4ma">
 <span class="eqno">(10.26)<a class="headerlink" href="#equation-acc4ma" title="Link to this equation">#</a></span>\[[a_4] = [K_4]/m_0\]</div>
 <p>Consider an observer in the lab who sees a particle of mass <span class="math notranslate nohighlight">\(m_0\)</span>,
@@ -996,11 +997,12 @@ energy <span class="math notranslate nohighlight">\(dE\)</span> for each “kick
 is a constant, so <span class="math notranslate nohighlight">\(dv_x\)</span> has to go to zero to balance the <span class="math notranslate nohighlight">\(\gamma\)</span> and
 keep <span class="math notranslate nohighlight">\(dE\)</span> constant.  The same energy input causes a smaller and
 smaller change in velocity.  As long as <span class="math notranslate nohighlight">\(v_x\ll c\)</span>, then
-<span class="math notranslate nohighlight">\(\gamma\approx 1\)</span> and then you could simply integrate both
-sides to get <span class="math notranslate nohighlight">\(\Delta E = \frac{1}{2} m_0 \Delta (v_x^2)\)</span>
-This is what your newtonian intuition would expect for increasing
-kinetic energy.
-However, as <span class="math notranslate nohighlight">\(v_x\rightarrow c\)</span>, that intuition is no longer accurate.</p>
+<span class="math notranslate nohighlight">\(\gamma\approx 1\)</span> and then you could simply integrate both sides to
+get <span class="math notranslate nohighlight">\(\Delta E = \frac{1}{2} m_0 \Delta (v_x^2)\)</span>, as the classical
+treatment of the work-kinetic energy theorem would tell you (see the
+Checkpoint question, above).  This is what your newtonian intuition
+would expect for increasing kinetic energy.  However, as
+<span class="math notranslate nohighlight">\(v_x\rightarrow c\)</span>, that intuition is no longer accurate.</p>
 <p>The general case of applying the relativistic Newton’s law to a
 particle having laboratory accelerations and velocities in all three
 directions, as well as the force having all three components is very
@@ -1022,14 +1024,15 @@ that the total speed never goes above <span class="math notranslate nohighlight"
 than zero.  Further, let’s say that there is a force acting on this
 particle in only the <span class="math notranslate nohighlight">\(x\)</span> direction that is increasing the speed
 <span class="math notranslate nohighlight">\(\beta\)</span>.  If you look at <span class="math notranslate nohighlight">\([K_4]^2\)</span> (the third component of the
-Minkowski force) in Equation <a class="reference internal" href="#equation-acc4dgam">(10.30)</a>, there are two terms being
-added together.  If <span class="math notranslate nohighlight">\(v_y&gt;0\)</span>, and the total speed is increasing
-(<span class="math notranslate nohighlight">\(d\beta/dt&gt;0\)</span>), then the first term <span class="math notranslate nohighlight">\(\gamma^2v_y\beta d\beta/dt\)</span> is
-greater than zero.  If there is no force in the <span class="math notranslate nohighlight">\(y\)</span> direction, then
-<span class="math notranslate nohighlight">\([K_4]^2=0\)</span>, which means the second term <span class="math notranslate nohighlight">\(dv_y/dt\)</span> must be less than
-zero, to make sure the two terms cancel out.  A negative <span class="math notranslate nohighlight">\(dv_y/dt\)</span>
-means that the particle slows down in the <span class="math notranslate nohighlight">\(y\)</span> direction even as it
-keeps increasing its velocity in the <span class="math notranslate nohighlight">\(x\)</span> direction.</p>
+Minkowski force, not the square of the four-vector!) in Equation
+<a class="reference internal" href="#equation-acc4dgam">(10.30)</a>, there are two terms being added together.  If <span class="math notranslate nohighlight">\(v_y&gt;0\)</span>,
+and the total speed is increasing (<span class="math notranslate nohighlight">\(d\beta/dt&gt;0\)</span>), then the first term
+<span class="math notranslate nohighlight">\(\gamma^2v_y\beta d\beta/dt\)</span> is greater than zero.  If there is no
+force in the <span class="math notranslate nohighlight">\(y\)</span> direction, then <span class="math notranslate nohighlight">\([K_4]^2=0\)</span>, which means the second
+term <span class="math notranslate nohighlight">\(dv_y/dt\)</span> must be less than zero, to make sure the two terms
+cancel out.  A negative <span class="math notranslate nohighlight">\(dv_y/dt\)</span> means that the particle slows down
+in the <span class="math notranslate nohighlight">\(y\)</span> direction even as it keeps increasing its velocity in the
+<span class="math notranslate nohighlight">\(x\)</span> direction.</p>
 </section>
 <section id="examples">
 <h2><span class="section-number">10.8. </span>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h2>
