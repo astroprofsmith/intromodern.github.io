@@ -167,7 +167,7 @@ Shouldn't the laws of Physics be the same in all reference frames?
 Einstein was troubled by the idea that two different models were
 needed to describe the same phenomenon, purely dependent on your
 choice of reference frame.  His 1905 paper that introduced SR to the
-world was not called "Special Relativity" after all.  The name of that
+world was not called "Special Relativity" after all.  The title of that
 paper was "On the Electrodynamics of Moving Bodies".
 ```
 
@@ -340,6 +340,23 @@ switch frames.  Then we can see if and how the Lorentz transformation
 is relevant to them.
 
 
+```{admonition} Checkpoint
+Which of the three frames does not have a non-zero magnetic field from the wire?
+<form name="radioForm" action="#" method="get" id="choiceMyform29">
+<input type="radio" name="question29" id="q29a1" value="a.">Frame A<br>
+<input type="radio" name="question29" id="q29a2" value="b.">Frame B<br>
+<input type="radio" name="question29" id="q29a3" value="c.">Frame C<br>
+<input type="radio" name="question29" id="q29a4" value="d.">All three frames have a magnetic field<br>
+</form>
+<div class="quiz">
+<p id="Answer_q29">Choose the answer you think is incorrect and then click the button.
+<hr>
+<p><button id="q29" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div>
+```
+
 ## How the Fields Transform
 
 The goal for this section is to develop a model for how electric and
@@ -491,8 +508,9 @@ shown).  The slider and the magenta arrow are the same as in
 {numref}`slidecylfig`.  Also as in {numref}`slidecylfig`, the actual
 motion of the plate along $x$ is not shown.  The dots will compress
 due to length contraction.  The cyan arrows show the electric field,
-while the white arrows show the magnetic field.  The red-green-blue
+while the white arrows show the magnetic field.  The red-green-yellow
 arrows at the center show the x-y-z cartesian axes, in that order.
+Click and drag to see the animation from different angles.
 The reset button returns the display to the initial conditions.
 
 ```
@@ -689,7 +707,7 @@ and $B$ fields transform, you will understand that when you switch
 reference frames from the frame where the cart is at rest (vertical
 $\vec{B} = B_y\hat{y}$, $E=0$) to a frame where the cart is moving,
 there will be an *electric* field in the $z$ direction in the new
-frame ($E'_z = \gamma_Rv_RBy$), in addition to the altered value of
+frame ($E'_z = \gamma_Rv_RB_y$), in addition to the altered value of
 $B$ ($B'_y = \gamma_R B_y$).  Although solving the equations of motion
 under these primed fields is beyond the scope of this book, the
 solution is a shape much like the path of a point on the wheel of a

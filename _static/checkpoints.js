@@ -466,6 +466,22 @@ function validate_ans(myq) {
 	}
     }    
 
+
+    if (myq =='q29') {
+	//  this is a template to make new questions
+	if (document.getElementById('q29a1').checked) {
+            document.getElementById('Answer_q29').textContent = "In the lab frame, there is a current I moving right, so there will be a magnetic field.";
+	}
+	if (document.getElementById('q29a2').checked) {
+            document.getElementById('Answer_q29').textContent = "In this frame, the charge outside the wire is at rest, but the charges inside the wire are still moving, so there is a magnetic field.";
+	}
+	if (document.getElementById('q29a3').checked) {
+            document.getElementById('Answer_q29').textContent = "In this frame, the positive charges in the wire are at rest, but the negative charges are moving even faster.  So the negative current will still have a magnetic field.";
+	}
+	if (document.getElementById('q29a4').checked) {
+            document.getElementById('Answer_q29').textContent = "This is correct.  In all three of these frames, there are charges moving in the wire, so they will have a magnetic field.";
+	}
+    }        
     
     if (myq =='q2X') {
 	//  this is a template to make new questions
