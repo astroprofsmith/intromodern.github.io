@@ -483,19 +483,38 @@ function validate_ans(myq) {
 	}
     }        
     
-    if (myq =='q2X') {
+
+
+    if (myq =='q30') {
 	//  this is a template to make new questions
-	if (document.getElementById('q2Xa1').checked) {
-            document.getElementById('Answer_q2X').textContent = "";
+	if (document.getElementById('q30a1').checked) {
+            document.getElementById('Answer_q30').textContent = "There is no such very large number in this context.";
 	}
-	if (document.getElementById('q2Xa2').checked) {
-            document.getElementById('Answer_q2X').textContent = "";
+	if (document.getElementById('q30a2').checked) {
+            document.getElementById('Answer_q30').textContent = "Yes, this is correct.";
 	}
-	if (document.getElementById('q2Xa3').checked) {
-            document.getElementById('Answer_q2X').textContent = "";
+	if (document.getElementById('q30a3').checked) {
+            document.getElementById('Answer_q30').textContent = "Not correct.";
 	}
-	if (document.getElementById('q2Xa4').checked) {
-            document.getElementById('Answer_q2X').textContent = "";
+	if (document.getElementById('q30a4').checked) {
+            document.getElementById('Answer_q30').textContent = "There is no requirement that E and B are opposite.";
+	}
+    }    
+
+
+    if (myq =='q3X') {
+	//  this is a template to make new questions
+	if (document.getElementById('q3Xa1').checked) {
+            document.getElementById('Answer_q3X').textContent = "";
+	}
+	if (document.getElementById('q3Xa2').checked) {
+            document.getElementById('Answer_q3X').textContent = "";
+	}
+	if (document.getElementById('q3Xa3').checked) {
+            document.getElementById('Answer_q3X').textContent = "";
+	}
+	if (document.getElementById('q3Xa4').checked) {
+            document.getElementById('Answer_q3X').textContent = "";
 	}
     }    
 }

@@ -636,7 +636,7 @@ B'_z = \gamma_R B_z - \gamma_R \frac{v_R}{c^2}E_y
 ```
 
 
-To make sure you have understood the logic, here, you should rotate
+To make sure you have understood the logic here, you should rotate
 the capacitor and work out the last two components yourself.  If you
 rotate the capacitor so that the plates lie parallel to the $xy$
 plane, then you'll get $E_z$, and the motion of the capacitor in $x$
@@ -791,7 +791,7 @@ positions.
 For the rest of this book up to this point, when we wanted to see
 what would happen to some quantity when measured in a reference
 frame in relative motion, we cast the quantity in question as a
-four-vector and performed a Lorentz transformation.  We can't do that,
+four-vector and performed a Lorentz transformation.  We can't do that
 here, because $\vec{E}$ and $\vec{B}$ together have six components,
 which don't easily fit into a four-vector.  We need some way to
 deal with these fields, and we need to *use* the Lorentz transformation,
@@ -1163,12 +1163,31 @@ call $\vec{E}$ and $\vec{B}$ are just whatever numbers fall into the
 appropriate slots of $F^{\alpha\mu}$ or $G^{\alpha\mu}$.  Nature does
 not make a distinction between the two -- it's our own interpretation
 of the application.  There is only one thing that is better called
-"elecromagnetic field tensor", much like there is only one thing that
+"the elecromagnetic field tensor", much like there is only one thing that
 we call "spacetime".  The perception that these are separate things
 are an artefact of the limits of human senses, and it took the hard
 work and genius of people like Einstein, Lorentz, Minkowski, and
 others to climb outside those limitations and perceive how the
 universe works on its own.
+
+
+```{admonition} Checkpoint
+Why do the diagonal elements of the EM tensor have to be zero?
+<form name="radioForm" action="#" method="get" id="choiceMyform30">
+<input type="radio" name="question30" id="q30a1" value="a.">Those elements are divided by a very, very large number.
+<input type="radio" name="question30" id="q30a2" value="b.">Zero is the only number equal its own negative.<br>
+<input type="radio" name="question30" id="q30a3" value="c.">We only have six elements from E and B -- there aren't enough numbers, so we put in zeros.<br>
+<input type="radio" name="question30" id="q30a4" value="d.">The vectors point in opposite directions, so they cancel to zero.<br>
+</form>
+<div class="quiz">
+<p id="Answer_q30">Choose the answer you think is incorrect and then click the button.
+<hr>
+<p><button id="q30" class="rounded-md border border-neutral-600 bg-neutral-900 px-3
+    py-1.5 text-sm text-neutral-100 hover:bg-neutral-800"
+    onclick="validate_ans(this.id)">Check Answer</button></p>
+</div>
+```
+
 
 ## Problems
 
