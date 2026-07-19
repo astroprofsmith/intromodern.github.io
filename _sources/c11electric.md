@@ -1174,7 +1174,7 @@ universe works on its own.
 ```{admonition} Checkpoint
 Why do the diagonal elements of the EM tensor have to be zero?
 <form name="radioForm" action="#" method="get" id="choiceMyform30">
-<input type="radio" name="question30" id="q30a1" value="a.">Those elements are divided by a very, very large number.
+<input type="radio" name="question30" id="q30a1" value="a.">Those elements are divided by a very, very large number.<br>
 <input type="radio" name="question30" id="q30a2" value="b.">Zero is the only number equal its own negative.<br>
 <input type="radio" name="question30" id="q30a3" value="c.">We only have six elements from E and B -- there aren't enough numbers, so we put in zeros.<br>
 <input type="radio" name="question30" id="q30a4" value="d.">The vectors point in opposite directions, so they cancel to zero.<br>
