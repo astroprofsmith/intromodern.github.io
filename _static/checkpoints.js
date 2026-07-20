@@ -486,7 +486,7 @@ function validate_ans(myq) {
 
 
     if (myq =='q30') {
-	//  this is a template to make new questions
+	//  Why are diagonal elements zeros
 	if (document.getElementById('q30a1').checked) {
             document.getElementById('Answer_q30').textContent = "There is no such very large number in this context.";
 	}

@@ -53,7 +53,13 @@ of calculus as well as vector and matrix manipulation.  I will assume
 the reader is familiar with the relationships between displacement,
 velocity, acceleration, momentum, and force, as defined in classical
 Physics, as well as the classical properties of electric and magnetic
-fields.  The Pythagorean Theorem is ubiquitous, although the reader
+fields.
+```{margin}
+The E&M material is self-contained in chapters 11 and 12, and could
+easily be skipped if the reader is unfamiliar with the classical theory
+of electromagnetism.
+```
+The Pythagorean Theorem is ubiquitous, although the reader
 will see that it works a little differently when time is incorporated
 as a fourth dimension.
 
