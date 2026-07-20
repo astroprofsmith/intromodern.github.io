@@ -45,7 +45,11 @@ physics, but that part is not yet included in this online version
 of the book.
 ```
 
-
+```{margin}
+The E&M material is self-contained in chapters 11 and 12, and could
+easily be skipped if the reader is unfamiliar with the classical theory
+of electromagnetism.
+```
 The second volume, an explanation of Einstein's theory of Relativity,
 is aimed at an audience of students that have completed at least a
 year of introductory Physics and are comfortable with the mathematics
@@ -56,11 +60,7 @@ Physics, as well as the classical properties of electric and magnetic
 fields.  The Pythagorean Theorem is ubiquitous, although the reader
 will see that it works a little differently when time is incorporated
 as a fourth dimension.
-```{margin}
-The E&M material is self-contained in chapters 11 and 12, and could
-easily be skipped if the reader is unfamiliar with the classical theory
-of electromagnetism.
-```
+
 
 
 There have been many books written on Relativity Theory since Albert
