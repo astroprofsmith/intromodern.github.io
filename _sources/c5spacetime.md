@@ -1042,18 +1042,28 @@ It might, when you move the slider in {numref}`figaxestilt`, remind
 you of rotation.  Certainly there is rotation going on -- the axes are
 swinging around the origin.  But it's also clearly not the kind of
 rotation you're used to.  When we usually rotate the $x$ and $y$
-coordinate axes around the $z$ axis, the two arrows move together.
-However, in {numref}`figaxestilt` , the arrows are moving
+coordinate axes around the $z$ axis, the two arrows move together.  A
+vector maintains the same size, as represented by the sum of the
+squares of the components.  This is a normal space the way we know it.
+
+However, in {numref}`figaxestilt`, the arrows are moving
 symmetrically in opposite directions.  In the familiar kind of
 rotations, you can keep swinging the axes around and around and
 around, increasing the angle as far as you like.  However, in a
 spacetime diagram, there is an asymptotic limit to how far the axis
 will swing -- they will both move toward a slope of 1.
 
-This is still a rotation, but it's called a hyperbolic rotation.  You
-can even mathematically make it look like a rotation.  Recall that when
-we rotated the coordinate axes around the $z$ axis, we determined how
-that would affect a vector by multiplying the vector by a matrix:
+This is still a rotation, but it's called a hyperbolic rotation.  Spacetime
+is a hyperbolic space.  Instead of the sum of squares maintaining
+a constant value, the *difference* of squares maintains a constant
+value.  The equation $x^2-y^2=R^2$ is a hyperbola.   The size of a
+four vector ($x^2-c^2t^2=R^2$) traces a hyperbola on a spacetime
+diagram.
+
+It is even possible to make a change in relative speed mathematically
+look "like" a rotation.  Recall that when we rotated the coordinate
+axes around the $z$ axis, we determined how that would affect a vector
+by multiplying the vector by a matrix:
 ```{math}
 :label: normalrot
 \begin{pmatrix}
@@ -1073,8 +1083,7 @@ v_y\\
 v_z
 \end{pmatrix}
 ```
-When you multiply that out, you
-get
+When you multiply that out, you get
 ```{math}
 :label: rotang
 \begin{pmatrix}
@@ -1089,30 +1098,35 @@ v_x\sin{\theta}+v_y\cos{\theta}\\
 v_z
 \end{pmatrix}
 ```
-Note that the $x$ and $y$ components of the vector get "mixed up" when you
-rotate the coordinate system.  By rotation, you are turning part of $x$ into $y$
-and vice versa.
+Note that the $x$ and $y$ components of the vector get "mixed up" when
+you rotate the coordinate system.  By rotation, you are turning part
+of $x$ into $y$ and vice versa.  However, the sum of the squares of
+the components is still the same, because cosine squared plus sine
+squared is one.
 
-You can gain an intuitive understanding of how this works by standing up and
-pointing your left hand straight ahead of you, and your right hand straight
-to the right, with your arms at full extension.  Now, turn to your right without
-changing the relative orientation of your arms.  Your left arm is now pointing
-where your right arm was, and your right arm is now pointing opposite to where your
-left arm was.  If we take your original right arm to be $v_x$ and your original
-left arm to be $v_y$, you can plug ninety degrees into Equation {eq}`rotang`
-and see that $v_x^\prime$ (where your right arm is now) is $-v_y$ (opposite
-where your left arm was) and $v_y^\prime$ (where your left arm is now) is
-$v_x$ (where your right arm was).  For intermediate angles, you would express
-your new arm directions as combinations of your original arm directions.
+You can gain an intuitive understanding of how the rotation mixes up
+the components by standing up and pointing your left hand straight
+ahead of you, and your right hand straight to the right, with your
+arms at full extension.  Now, turn to your right without changing the
+relative orientation of your arms.  Your left arm is now pointing
+where your right arm was, and your right arm is now pointing opposite
+to where your left arm was.  If we take your original right arm to be
+$v_x$ and your original left arm to be $v_y$, you can plug ninety
+degrees into Equation {eq}`rotang` and see that $v_x^\prime$ (where
+your right arm is now) is $-v_y$ (opposite where your left arm was)
+and $v_y^\prime$ (where your left arm is now) is $v_x$ (where your
+right arm was).  For intermediate angles, you would express your new
+arm directions as combinations of your original arm directions.
 
-The periodic nature of the sinusoidal functions corresponds to the angle
-being able to go around and around and around.  To have the angle approach
-an asymptote, as in a spacetime diagram, we need the hyperbolic trig functions,
-$\tanh$, $\sinh$, and $\cosh$.  In a normal $x-y$ plane, if you had a vector
-in that plane, the angle the vector would make with the $x$ axis would be
-$\tan{\theta} = v_y/v_x$, opposite over adjacent.  However, for spacetime,
-it's the hyperbolic tangent: $\tanh{\phi} = dx/cdt = v/c = \beta$.  Note
-that we put $x$ over $y$ to get $\beta$.
+The periodic nature of the sinusoidal functions corresponds to the
+angle being able to go around and around and around.  To have the
+angle approach an asymptote, as in a spacetime diagram, we need the
+hyperbolic trig functions, $\tanh$, $\sinh$, and $\cosh$.  In a normal
+$x-y$ plane, if you had a vector in that plane, the angle the vector
+would make with the $x$ axis would be $\tan{\theta} = v_y/v_x$,
+opposite over adjacent.  However, for spacetime, it's the hyperbolic
+tangent: $\tanh{\phi} = dx/cdt = v/c = \beta$.  Note that we put $x$
+over $y$ to get $\beta$.
 
 ```{margin}
 You can write the hyperbolic trigonometry functions in terms of exponentials.
