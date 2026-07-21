@@ -1134,7 +1134,8 @@ Instead of $e^{i\theta} = \cos{\theta} + i\sin{\theta}$, you get
 $e^\theta = \cosh{\theta} + \sinh{\theta}$.  So this means
 $e^\theta + e^{-\theta}=2\cosh{\theta}$ and $ e^\theta - e^{-\theta} = 2\sinh{\theta}$.
 Once you have those relations, you can square each one and subtract
-them to find $\cosh^2-\sinh^2 = 1$.
+them to find $\cosh^2-\sinh^2 = 1$.  Again, the *difference* of squares
+is preserved, not the sum: a hyperbola.
 ```
 
 There's a trig identity that says $\cosh^2-\sinh^2 = 1$ (see margin note to
